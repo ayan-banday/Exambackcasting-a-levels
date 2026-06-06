@@ -1,0 +1,9 @@
+HOW TO USE THIS TEMPLATE  (Biology H1)
+
+1. COPY this whole "_TEMPLATE_Topic" folder.
+2. RENAME the copy to the real topic name — underscores, no spaces, real content name
+   (e.g. Chemical_Energetics, NOT "Topic 1").
+3. Drop your files into the matching subfolders. Read each _put_here.txt for what goes where.
+4. Leave this "_TEMPLATE_Topic" folder untouched so it stays available for the next topic.
+
+Minimum 3 inputs per topic: past papers + official docs (syllabus & mark schemes) + mark schemes OR model answers.

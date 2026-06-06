@@ -1,0 +1,30 @@
+# ── OS / editor cruft ────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+.idea/
+.vscode/
+
+# ── Loom / voice transcripts: NEVER commit ───────────────────────────
+# System rule: transcripts are session-only and are never persisted to disk.
+# These patterns are a safety net in case one is ever saved by accident.
+**/transcripts/
+*loom*transcript*
+*_transcript.txt
+*_transcript.md
+
+# ── Privacy upgrade path (currently OFF — you chose to commit everything) ──
+# If this repo ever becomes public, or you want to reuse the engine as a
+# clean template for another student, uncomment the lines below to keep
+# personal materials and progress OUT of git (engine-only):
+#
+#   inputs/
+#   gaps/
+#   CSE/
+#   Maths/
+#   GP/
+#   Chemistry/
+#   Biology/
+#
+# (The engine = system/, CLAUDE.md, README.md, SYSTEM_MAP.md, .gitignore.)
