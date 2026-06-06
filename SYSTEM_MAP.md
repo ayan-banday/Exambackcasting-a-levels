@@ -41,11 +41,11 @@ actually uses), and tracks each weakness until it's genuinely closed.
 
 ## 3. The three roles (who does what)
 
-| Role | Who | Does | Does **not** |
-|---|---|---|---|
+| Role          | Who                 | Does                                                                                                                                 | Does **not**                                              |
+| ------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
 | **Assistant** | the client's helper | Loads raw materials into `inputs/` (past papers, syllabus, mark schemes, notes, model answers), organized by subject → level → topic | Run study sessions or touch anything the system generates |
-| **Student** | the client | Picks topics, studies, answers questions, sends a voice transcript or self-rates answers, takes the official papers | Hand-edit the tracking files (it breaks the history) |
-| **Claude** | the engine | Builds *everything generated*: examiner's guides, clusters, study sheets, questions, gap tracking, the next session's questions | Auto-start sessions, predict your grade, or over-generate |
+| **Student**   | the client          | Picks topics, studies, answers questions, sends a voice transcript or self-rates answers, takes the official papers                  | Hand-edit the tracking files (it breaks the history)      |
+| **Claude**    | the engine          | Builds *everything generated*: examiner's guides, clusters, study sheets, questions, gap tracking, the next session's questions      | Auto-start sessions, predict your grade, or over-generate |
 
 ---
 

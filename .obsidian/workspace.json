@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cse_example_subject_guide.md.md",
+                "file": "SYSTEM_MAP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "cse_example_subject_guide.md"
+              "title": "SYSTEM_MAP"
             }
           }
         ],
@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 229.5
+    "width": 229.5,
+    "collapsed": true
   },
   "right": {
     "id": "97dac4acb7f58d9f",
@@ -200,6 +201,11 @@
   },
   "active": "be40254654d66948",
   "lastOpenFiles": [
+    "HOW_TO_PUBLISH.md",
+    "HOW_TO_PUBLISH.md.tmp.21956.b436d365e5ee",
+    "README.md",
+    "SYSTEM_MAP.md",
+    "cse_example_subject_guide.md.md",
     "CLAUDE.md.tmp.21956.348967d7ee18",
     "system/prompts/02_topic_session_prompt.md",
     "system/spec.md.tmp.21956.9b4823e11c49",
@@ -220,10 +226,7 @@
     "Maths/H1/sedWfh1tB",
     "Chemistry/H2/sedEUwt9I",
     "Chemistry/H1/sedSwMMYl",
-    "Biology/H2/sedRWgfg7",
-    "Biology/H1/sedZS3KHI",
     "system/spec.md",
-    "cse_example_subject_guide.md.md",
     "system/architecture.md",
     "system/rules_and_logic.md",
     "system/playbooks/01_build_subject_guide.md",
