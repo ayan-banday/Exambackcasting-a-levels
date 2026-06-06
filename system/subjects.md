@@ -40,7 +40,7 @@ mark schemes or only `[INFERRED]` proxies (model answers / marked work), and the
 
 | Subject / Level | Guide status | Validation source | Confidence ceiling |
 |---|---|---|---|
-| CSE H2 | NOT BUILT | — | — |
+| CSE H2 | BUILT | MIXED ([OFFICIAL] format & marking; [SCHOOL]/[INFERRED] prediction & taste) | ~90% |
 | CSE H1 | NOT BUILT | — | — |
 | Maths H2 | NOT BUILT | — | — |
 | Maths H1 | NOT BUILT | — | — |
