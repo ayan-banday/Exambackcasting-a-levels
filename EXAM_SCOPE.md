@@ -32,7 +32,7 @@
 | GP | ✅ inbox | ❌ | ❌ | ❌ |
 | Bio | ✅ inbox | ❌ | ❌ | ❌ |
 | Chem | ✅ inbox | ❌ | ❌ | ❌ |
-| Math | ✅ inbox | ❌ | ❌ | ❌ |
+| Math | ✅ inbox | ✅ built (`Maths/H2/`) | ❌ | ❌ |
 
 ---
 

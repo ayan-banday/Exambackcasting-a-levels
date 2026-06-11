@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"d:\\\\Examb\\\\Maths\\\\H2\\\\\" -Recurse | Select-Object FullName | Head -20)"
+    ]
+  }
+}
