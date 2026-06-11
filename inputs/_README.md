@@ -4,6 +4,14 @@
 topic. Do **not** run sessions or touch anything outside `inputs/` (no gap files, guides, or status
 files — those belong to Claude and the student).
 
+## Easiest path: drop into `_inbox/`, let Claude file it
+Instead of hand-filing into the five subfolders, **drop raw materials into `inputs/_inbox/`** —
+loosely, or sorted into `_inbox/[Subject]/[Topic]/` subfolders if you know them — and have the
+student tell Claude *"ingest the inbox."* Claude reads each file, classifies it
+(subject/level/topic/category), renames it to the convention, **shows you the mapping**, and files it
+into the tree below. See `inputs/_inbox/_README.md` and `system/playbooks/00_ingest_inputs.md`. The
+manual route below still works if you prefer it.
+
 ## Folder pattern
 
 ```

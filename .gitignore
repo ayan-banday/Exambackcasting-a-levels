@@ -1,3 +1,9 @@
+# ── Inbox staging: transient drop zone, never committed ──────────────
+# The assistant drops raw files here; Claude files them into the tracked
+# inputs/ tree (playbook 00). Only the README is kept under version control.
+inputs/_inbox/*
+!inputs/_inbox/_README.md
+
 # ── OS / editor cruft ────────────────────────────────────────────────
 .DS_Store
 Thumbs.db

@@ -1,0 +1,13 @@
+MISSING INPUTS (3-minimum bar) — Vectors (Maths H2)
+Filed 2026-06-11 during inbox ingest.
+
+HAVE:
+  chapter_notes/  — HCI Chapter 7 lecture notes (121pp)
+  model_answers/  — HCI Tutorials 7A/7B/7C solutions + supplementary exercise solutions
+
+STILL NEEDED before the Vectors topic guide can hit a high confidence ceiling:
+  past_papers/    — official SEAB/Cambridge 9758 vector questions (Q-only or Q+A), labelled by year
+  official_docs/  — topic-level mark schemes (syllabus already lives at inputs/Maths/H2/official_docs/)
+
+Until past papers are loaded, the Vectors topic guide will lean on the HCI corpus + the
+9758 syllabus + research, and its 90% check will carry a stated [INFERRED] ceiling.

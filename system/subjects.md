@@ -42,7 +42,7 @@ mark schemes or only `[INFERRED]` proxies (model answers / marked work), and the
 |---|---|---|---|
 | CSE H2 | BUILT | MIXED ([OFFICIAL] format & marking; [SCHOOL]/[INFERRED] prediction & taste) | ~90% |
 | CSE H1 | NOT BUILT | — | — |
-| Maths H2 | NOT BUILT | — | — |
+| Maths H2 | BUILT | MIXED ([OFFICIAL] structure/scope/specimen; [INFERRED] trap model & Stats archetypes) | ~88% |
 | Maths H1 | NOT BUILT | — | — |
 | GP H1 | NOT BUILT | — | — |
 | Chemistry H2 | NOT BUILT | — | — |

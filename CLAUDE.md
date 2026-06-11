@@ -122,13 +122,15 @@ in `spec.md`; these are restated here deliberately because this file is always l
 
 ## 6. Roles
 
-- **Assistant (low-leverage):** loads raw materials into `inputs/[Subject]/[Level]/[Topic]/` and
-  organizes them. Confirms the 3 minimum inputs exist (past papers, official docs, mark schemes /
-  model answers). **Does not run sessions or touch any generated file.**
+- **Assistant (low-leverage):** drops raw materials into `inputs/_inbox/` — loosely, or hinted by
+  `[Subject]/[Topic]/` subfolders. (May still file directly into `inputs/[Subject]/[Level]/[Topic]/`
+  the manual way.) Confirms the 3 minimum inputs exist per topic. **Does not run sessions or touch
+  any generated file.**
 - **Student:** the only person who runs sessions — names topics, answers questions, submits
   answers/transcripts, requests the next cluster, runs model tests and official papers.
 - **You (Claude Code):** everything generated — guides, clusters, questions, concept docs, gap
-  tracking, next-session questions.
+  tracking, next-session questions. **Plus ingesting `inputs/_inbox/`** into the structured `inputs/`
+  tree (the one place you touch `inputs/`; mechanical filing only — playbook `00_ingest_inputs.md`).
 
 ---
 
@@ -137,7 +139,8 @@ in `spec.md`; these are restated here deliberately because this file is always l
 ```
 CLAUDE.md · README.md
 system/        spec.md · subjects.md · prompts/ · playbooks/ · templates/
-inputs/        [Subject]/[H2|H1]/[Topic]/{past_papers, official_docs, chapter_notes, model_answers, school_resources}/   ← assistant fills
+inputs/        _inbox/                                                                                                   ← assistant drops raw pile here
+inputs/        [Subject]/[H2|H1]/[Topic]/{past_papers, official_docs, chapter_notes, model_answers, school_resources}/   ← Claude files it here (playbook 00)
 gaps/          [Subject]/[H2|H1]/[Topic]_gaps.md                                                                          ← you generate
 [Subject]/[H2|H1]/
     subject_examiner_guide.md
