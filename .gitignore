@@ -37,3 +37,8 @@ desktop.ini
 
 # (Inputs are now tracked — source PDFs were converted from symlinks to real
 # file copies on 2026-06-13, so the full school corpus is pushed to GitHub.)
+
+# ── Files exceeding GitHub's 100MB hard limit (kept local only) ──────
+# These exceed GitHub's per-file size limit and are kept locally.
+# To push them, either split the PDF or set up Git LFS.
+inputs/CSC/H2/_Cross_Topic/school_resources/题集与练习/2025 C1 H2CSC ALL STUFF 010925.pdf
