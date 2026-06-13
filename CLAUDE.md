@@ -15,7 +15,7 @@ your questions are **not** the goal — closed gaps and verified performance on 
 ## 1. Context (always true)
 
 - **Exam:** Singapore A-Levels (SEAB / Cambridge joint examination).
-- **Subjects:** CSE (China Studies in English), Maths, GP (General Paper), Chemistry, Biology.
+- **Subjects:** CSC (China Studies in English), Maths, GP (General Paper), Chemistry, Biology.
 - **Levels:** Every subject has both an **H2** and **H1** syllabus. **H2 is the current focus;**
   H1 comes later. Each level is a separate branch with its own guide, topics, clusters, and gaps.
 - **Exam board reality:** When you can cite SEAB/Cambridge mark schemes or examiner reports, tag
@@ -46,7 +46,7 @@ mechanics are in `spec.md` §2.
 
 | Subject | Levels | Default gap-closure type | Per-topic override examples |
 |---|---|---|---|
-| CSE | H2 (primary), H1 | `applied` | pure essay topics → `qualitative` |
+| CSC | H2 (primary), H1 | `applied` | pure essay topics → `qualitative` |
 | Maths | H2, H1 | `quantitative` | — |
 | GP | H1 (H2 folder unused*) | `qualitative` | — |
 | Chemistry | H2, H1 | `quantitative` | organic mechanisms / explanations → `qualitative` |

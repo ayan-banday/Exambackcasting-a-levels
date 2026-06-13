@@ -1,5 +1,5 @@
 ---
-subject: CSE
+subject: CSC
 level: H2
 default_type: applied
 status: Built
@@ -613,7 +613,7 @@ Each recommendation, after 落实 (分步骤 / 分层面 宏观↔微观 / 分�
 
   
 
-**Avoid (outdated/colloquial):** 西部大开发 (→共同富裕), 家庭联产承包责任制 (→乡村振兴), 十二五 (→十四五), 二元户籍 (→户籍改革/城乡融合), 共产主义是否过时 (→中国特色社会主义), 韬光养晦 crude framings, 人善被人欺/金钱与武力 (→中国威胁论 vs 机遇论), 阐述/论述 as command words (these are GP/CSE, not CSC — CSC uses 评价/分析/探讨/讨论/评论).
+**Avoid (outdated/colloquial):** 西部大开发 (→共同富裕), 家庭联产承包责任制 (→乡村振兴), 十二五 (→十四五), 二元户籍 (→户籍改革/城乡融合), 共产主义是否过时 (→中国特色社会主义), 韬光养晦 crude framings, 人善被人欺/金钱与武力 (→中国威胁论 vs 机遇论), 阐述/论述 as command words (these are GP/CSC, not CSC — CSC uses 评价/分析/探讨/讨论/评论).
 
   
 

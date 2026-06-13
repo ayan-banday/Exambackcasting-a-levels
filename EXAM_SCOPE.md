@@ -6,8 +6,8 @@
 > context. The backcast starts here.
 >
 > **Sources.** Topic names + paper structure: the official 2026 SEAB/Cambridge syllabi (in
-> `inputs/_inbox/`). TPE window + standing + triage calls: the method vault. CSE exam-taste:
-> `CSE/H2/` examiner's guide.
+> `inputs/_inbox/`). TPE window + standing + triage calls: the method vault. CSC exam-taste:
+> `CSC/H2/` examiner's guide.
 > **Tags:** `[OFFICIAL]` = from the syllabus · `[TPE]` = mock-specific scope · `[TBD]` = unconfirmed.
 
 ---
@@ -16,11 +16,11 @@
 
 - **~30 Jun – 3 Jul 2026** (~20 days out as of 11 Jun).
 - Known: Bio practical P4 **30 Jun** · Bio P3 **2 Jul** · Chem **3 Jul**.
-- `[TBD]`: CSE date, Math TPE3 date. CSE's date is the real target (priority 1).
+- `[TBD]`: CSC date, Math TPE3 date. CSC's date is the real target (priority 1).
 
 ## Priority order
 
-1. **CSE** — weakest, highest pain, purest gaming target. Heavy build. **First theme: Governance.**
+1. **CSC** — weakest, highest pain, purest gaming target. Heavy build. **First theme: Governance.**
 2. **GP** — structure/format subject. Second build.
 3. **Bio / Math / Chem** — triage gap-hunt. Lean on existing base + school keeping-up.
 
@@ -28,7 +28,7 @@
 
 | Subject | Syllabus | Examiner's guide | Past papers | Model answers / notes |
 |---|---|---|---|---|
-| CSE | ✅ inbox | ✅ built (`CSE/H2/`) | ❌ needed | ❌ 199-pg model essays needed |
+| CSC | ✅ inbox | ✅ built (`CSC/H2/`) | ❌ needed | ❌ 199-pg model essays needed |
 | GP | ✅ inbox | ❌ | ❌ | ❌ |
 | Bio | ✅ inbox | ❌ | ❌ | ❌ |
 | Chem | ✅ inbox | ❌ | ❌ | ❌ |
@@ -36,7 +36,7 @@
 
 ---
 
-# CSE — China Studies in Chinese 中国通识 · 9629 · H2 `[OFFICIAL]`
+# CSC — China Studies in Chinese 中国通识 · 9629 · H2 `[OFFICIAL]`
 
 **Priority 1.** Standing: knows close to nothing, isolated facts only. Chinese-language barrier (translate first). Logic-chain marking is opaque. Computer-based (机考).
 
@@ -169,7 +169,7 @@ P1 A组 sub-marks: Q1(a) 6 · Q1(b) 9 · Q1(c) 8 · Q1(d) 12. Essays on 5-level 
 
 ## Open gaps to fill before this map is complete
 
-- CSE + Math TPE exact dates `[TBD]`.
+- CSC + Math TPE exact dates `[TBD]`.
 - Ethan's actual available study hours across the 20 days (sets how brutal the triage is).
 - Confirm Bio TPE genuinely excludes Infectious Diseases (Extension A).
-- Load CSE past papers + 199-page model essays (Governance first) to unblock session 1.
+- Load CSC past papers + 199-page model essays (Governance first) to unblock session 1.

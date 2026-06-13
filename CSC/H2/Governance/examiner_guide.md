@@ -1,5 +1,5 @@
 ---
-subject: CSE
+subject: CSC
 level: H2
 topic: Governance
 type: applied
@@ -9,7 +9,7 @@ confidence_ceiling: 88%
 last_updated: 2026-06-11
 ---
 
-# Topic Examiner's Guide — CSE H2 > 课题二: 中国的治理及其挑战
+# Topic Examiner's Guide — CSC H2 > 课题二: 中国的治理及其挑战
 # China's Governance and its Challenges
 
 > **How to use this file.** This is the deepened topic-level specialisation of the CSC 9629 Consolidated Final Guide (Parts 3–12) for 课题二 specifically. Open this before every governance session. It drives cluster generation (playbook 03), question generation (playbook 04), gap state tracking, and cross-topic linkage for the 18→19 wall. Confidence `[OFFICIAL]` = SEAB 2026 syllabus; `[SCHOOL]` = 朱/沈/华中 SOP + 2024 specimen + 2025 promos; `[INFERRED]` = cross-corpus pattern + research; `[RESEARCH]` = online-verified June 2026.

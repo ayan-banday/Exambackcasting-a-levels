@@ -1,4 +1,4 @@
-HOW TO USE THIS TEMPLATE  (CSE H2)
+HOW TO USE THIS TEMPLATE  (CSC H2)
 
 1. COPY this whole "_TEMPLATE_Topic" folder.
 2. RENAME the copy to the real topic name — underscores, no spaces, real content name

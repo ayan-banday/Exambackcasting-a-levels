@@ -23,7 +23,7 @@ inputs/[Subject]/[Level]/[Topic_Name]/
     school_resources/   ← anything else from school
 ```
 
-- `[Subject]` ∈ `CSE`, `Maths`, `GP`, `Chemistry`, `Biology`.
+- `[Subject]` ∈ `CSC`, `Maths`, `GP`, `Chemistry`, `Biology`.
 - `[Level]` ∈ `H2`, `H1`. (H2 is the current focus. GP is H1 only.)
 - `[Topic_Name]` uses **underscores, no spaces**, and a **real content name**
   (e.g. `Chemical_Energetics`, not `Topic_1`). Create the topic folder when you load its materials.

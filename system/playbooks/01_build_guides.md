@@ -16,7 +16,7 @@ validated by the same **90% check**. The conversational flow is in `prompts/01_s
 - **Subject guide:** `inputs/[Subject]/[Level]/` contains, at minimum, **past papers**, **official
   docs** (syllabus + mark schemes), and **model answers / marked work** where mark schemes are
   absent. The subject **type** is known from `subjects.md`. If a **gold-standard example** exists
-  (e.g. the CSE guide in `prompts/`), read it first — it is the quality bar.
+  (e.g. the CSC guide in `prompts/`), read it first — it is the quality bar.
 - **Topic guide:** the subject guide already exists. The topic guide inherits the subject's paper
   structure, mark logic, and trap model, then specialises them — but it is **grounded first in the
   topic's own loaded inputs** (`inputs/[Subject]/[Level]/[Topic]/`: chapter notes, model answers,

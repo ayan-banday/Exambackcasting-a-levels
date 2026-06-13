@@ -22,7 +22,7 @@ not generation.**
 ## Classify each file (four fields)
 For every file, determine four fields and **mark each as `given`** (from a hint subfolder or the
 filename) **or `inferred`** (read from the file's content):
-1. **Subject** ∈ CSE · Maths · GP · Chemistry · Biology.
+1. **Subject** ∈ CSC · Maths · GP · Chemistry · Biology.
 2. **Level** ∈ H2 · H1. (GP is H1 only.) If a paper doesn't state its level, infer from syllabus
    code / difficulty but mark it `inferred` and low-confidence.
 3. **Topic** — a real content name, underscores, no spaces (`Chinese_Politics`, never `Topic_1`).

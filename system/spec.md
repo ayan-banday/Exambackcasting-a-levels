@@ -58,7 +58,7 @@ explanation-style topics.
 - **Key hardness:** the concept doc must **name the misconception explicitly**, not just restate the
   correct knowledge.
 
-**`applied`** — CSE, source-based questions, case studies, professional scenarios.
+**`applied`** — CSC, source-based questions, case studies, professional scenarios.
 - **Gap closure:** concept doc **+ a full worked example** under realistic/timed conditions.
 - **"Full worked example" means:** the student sees the doc, then immediately practices the exact
   question type (same sources, same framework, same time constraint), and the example shows the

@@ -1,4 +1,4 @@
-# Master Status: CSE H2 > Governance
+# Master Status: CSC H2 > Governance
 Last updated: 2026-06-11 | Session 0 (pre-study, no submissions yet)
 
 > **APPEND-ONLY.** Each session appends its results; the Summary is recomputed at the top each time.

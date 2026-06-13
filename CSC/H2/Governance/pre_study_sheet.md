@@ -1,4 +1,4 @@
-# Pre-Study Sheet — CSE H2 > Governance
+# Pre-Study Sheet — CSC H2 > Governance
 
 > Big picture only. Light. Read before diving into clusters. Skip if you've done your own pre-study.
 

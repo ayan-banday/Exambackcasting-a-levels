@@ -59,7 +59,7 @@ LEVEL 2 — Topic Sessions       (REPEAT per topic until "ready")
    pick a topic   ─►  study it   ─►  get tested   ─►  close gaps   ─►  prove it on a real paper
 ```
 
-- A **subject** is e.g. *CSE H2*. Built once.
+- A **subject** is e.g. *CSC H2*. Built once.
 - A **topic** is a chapter/unit within it, e.g. *China's Governance*. You study these one at a time.
 - Each topic is split into **clusters** (named sub-topics) you study one at a time, at your pace.
 
@@ -141,8 +141,8 @@ else = what Claude produces from the two.
 4. That's it. You don't run sessions.
 
 ### If you're the **student** (studying), just talk to Claude:
-- *"Build the CSE H2 subject guide from the inputs."*
-- *"I want to study [topic] for CSE H2."* → Claude grounds it in your notes, builds the topic guide,
+- *"Build the CSC H2 subject guide from the inputs."*
+- *"I want to study [topic] for CSC H2."* → Claude grounds it in your notes, builds the topic guide,
   proposes clusters, waits for your approval.
 - *"Generate the next cluster."* → one cluster + a study sheet.
 - *"Give me questions on this cluster."* → an adversarial set.
@@ -155,22 +155,22 @@ else = what Claude produces from the two.
 
 ---
 
-## 8. The pilot: CSE, first chapter (the concrete first run)
+## 8. The pilot: CSC, first chapter (the concrete first run)
 
 This is exactly the flow you described, step by step:
 
-1. **Assistant populates CSE.** Loads CSE H2 materials into
-   `inputs/CSE/H2/[Topic]/...` — past papers, the syllabus + mark schemes, chapter notes, model answers.
-2. **Build the subject guide.** Student tells Claude: *"Build the CSE H2 subject guide from the
-   inputs."* Claude ingests the CSE inputs first, researches official SEAB/Cambridge sources to fill
-   gaps, runs the 90% validation check, and saves `CSE/H2/subject_examiner_guide.md`.
-   *(Optional but recommended: drop your gold-standard CSE example into `system/prompts/` first so it
+1. **Assistant populates CSC.** Loads CSC H2 materials into
+   `inputs/CSC/H2/[Topic]/...` — past papers, the syllabus + mark schemes, chapter notes, model answers.
+2. **Build the subject guide.** Student tells Claude: *"Build the CSC H2 subject guide from the
+   inputs."* Claude ingests the CSC inputs first, researches official SEAB/Cambridge sources to fill
+   gaps, runs the 90% validation check, and saves `CSC/H2/subject_examiner_guide.md`.
+   *(Optional but recommended: drop your gold-standard CSC example into `system/prompts/` first so it
    sets the quality bar — see `system/prompts/_README.md`.)*
-3. **Study the first chapter.** Student: *"I want to study [first chapter] for CSE H2."* Claude builds
+3. **Study the first chapter.** Student: *"I want to study [first chapter] for CSC H2."* Claude builds
    the topic guide (grounded in that chapter's notes/papers), proposes clusters, and waits for
    approval. Student works through clusters and answers the adversarial questions.
 4. **Feedback to you.** After the session, the student tells you how it went; the system's own record
-   (gap tracking under `CSE/H2/[Topic]/` and `gaps/CSE/H2/`) shows objectively where the real
+   (gap tracking under `CSC/H2/[Topic]/` and `gaps/CSC/H2/`) shows objectively where the real
    weaknesses are — that's the structured feedback, beyond "it felt fine."
 
 ---

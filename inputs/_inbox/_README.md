@@ -12,9 +12,9 @@ to infer the level + which of the 5 category folders:
 ```
 _inbox/
     Maths/Integration/          ← e.g. 2023 paper 1, the syllabus, lecture notes
-    CSE/Chinese_Politics/       ← drop that topic's files in here
+    CSC/Chinese_Politics/       ← drop that topic's files in here
 ```
-- `Subject` ∈ `CSE`, `Maths`, `GP`, `Chemistry`, `Biology`.
+- `Subject` ∈ `CSC`, `Maths`, `GP`, `Chemistry`, `Biology`.
 - `Topic` = a real content name, underscores, no spaces (e.g. `Chinese_Politics`, not `Topic_1`).
 
 **Raw pile (when you don't know / can't be bothered):** just drop the files loose in `_inbox/`.

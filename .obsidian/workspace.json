@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSE/H2/Governance/examiner_guide.md",
+                "file": "CSC/H2/Governance/examiner_guide.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cse_example_subject_guide.md.md",
+                "file": "csc_example_subject_guide.md.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for cse_example_subject_guide.md"
+              "title": "Backlinks for csc_example_subject_guide.md"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cse_example_subject_guide.md.md",
+                "file": "csc_example_subject_guide.md.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from cse_example_subject_guide.md"
+              "title": "Outgoing links from csc_example_subject_guide.md"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cse_example_subject_guide.md.md",
+                "file": "csc_example_subject_guide.md.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of cse_example_subject_guide.md"
+              "title": "Outline of csc_example_subject_guide.md"
             }
           }
         ]
@@ -185,22 +185,22 @@
   },
   "active": "f440e14ed2f447fe",
   "lastOpenFiles": [
-    "CSE/H2/Governance/clusters/Party_State_System_and_Legitimacy/flags.md",
-    "CSE/H2/Governance/clusters/Party_State_System_and_Legitimacy/flags.md.tmp.33280.cdf0baba2f0e",
-    "CSE/H2/Governance/clusters/Party_State_System_and_Legitimacy/study_sheet.md",
-    "CSE/H2/Governance/clusters/Party_State_System_and_Legitimacy/study_sheet.md.tmp.33280.6be9ac8e69f2",
-    "CSE/H2/Governance/clusters/Party_State_System_and_Legitimacy",
-    "CSE/H2/Governance/clusters",
-    "CSE/H2/Governance/master_status.md",
-    "CSE/H2/Governance/master_status.md.tmp.33280.6db97771bc33",
-    "CSE/H2/Governance/pre_study_sheet.md",
+    "CSC/H2/Governance/clusters/Party_State_System_and_Legitimacy/flags.md",
+    "CSC/H2/Governance/clusters/Party_State_System_and_Legitimacy/flags.md.tmp.33280.cdf0baba2f0e",
+    "CSC/H2/Governance/clusters/Party_State_System_and_Legitimacy/study_sheet.md",
+    "CSC/H2/Governance/clusters/Party_State_System_and_Legitimacy/study_sheet.md.tmp.33280.6be9ac8e69f2",
+    "CSC/H2/Governance/clusters/Party_State_System_and_Legitimacy",
+    "CSC/H2/Governance/clusters",
+    "CSC/H2/Governance/master_status.md",
+    "CSC/H2/Governance/master_status.md.tmp.33280.6db97771bc33",
+    "CSC/H2/Governance/pre_study_sheet.md",
     "SAMPLE_CLUSTER_DEMO.md",
     "SAMPLE_CLUSTER_DEMO.md.tmp.33280.32ca6449c2d4",
-    "CSE/H2/CSC 9629 — The Examiner's Guide (Consolidated Final).md",
+    "CSC/H2/CSC 9629 — The Examiner's Guide (Consolidated Final).md",
     "GP/H2/subject_examiner_guide.md",
     "Maths/H2/Maths H2 - Examiner's Guide (9758).md",
-    "CSE/H2/Governance/examiner_guide.md",
-    "cse_example_subject_guide.md.md",
+    "CSC/H2/Governance/examiner_guide.md",
+    "csc_example_subject_guide.md.md",
     "EXAM_SCOPE.md",
     "README.md",
     "SYSTEM_MAP.md",

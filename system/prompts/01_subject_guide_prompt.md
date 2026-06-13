@@ -27,7 +27,7 @@ you can see and the type from `subjects.md`:
 > [list]. Missing: [list]. Is this correct before I research?"
 
 If inputs are thin, **state the confidence ceiling you'll be able to reach** — do not proceed
-silently. If a **gold-standard example guide** exists (e.g. the CSE guide), read it first and match
+silently. If a **gold-standard example guide** exists (e.g. the CSC guide), read it first and match
 its depth, structure, and tone — it is the quality bar.
 
 ---

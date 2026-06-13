@@ -1,6 +1,6 @@
-# Inputs — CSE H1
+# Inputs — CSC H1
 
-Drop raw materials for **CSE (H1)** here, **one folder per topic**. Assistant-only — don't touch generated files.
+Drop raw materials for **CSC (H1)** here, **one folder per topic**. Assistant-only — don't touch generated files.
 
 ## Easiest way: copy the template
 A ready-made `_TEMPLATE_Topic/` folder sits in here with the five labelled subfolders already set up.
@@ -8,7 +8,7 @@ A ready-made `_TEMPLATE_Topic/` folder sits in here with the five labelled subfo
 
 Pattern per topic:
 ```
-CSE/H1/[Topic_Name]/
+CSC/H1/[Topic_Name]/
     past_papers/   official_docs/   chapter_notes/   model_answers/   school_resources/
 ```
 

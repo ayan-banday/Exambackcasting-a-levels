@@ -13,7 +13,7 @@ default first, then the topic override — the override wins **for that topic on
 
 | Subject | Full name | Levels | Default type | Per-topic override examples | Exam board |
 |---|---|---|---|---|---|
-| CSE | China Studies in English | H2 (primary), H1 | `applied` | a pure-essay topic with no sources → `qualitative` | SEAB/Cambridge |
+| CSC | China Studies in English | H2 (primary), H1 | `applied` | a pure-essay topic with no sources → `qualitative` | SEAB/Cambridge |
 | Maths | Mathematics | H2, H1 | `quantitative` | — | SEAB/Cambridge |
 | GP | General Paper | H1 only* | `qualitative` | — | SEAB/Cambridge |
 | Chemistry | Chemistry | H2, H1 | `quantitative` | organic mechanisms, qualitative analysis, explanation-style topics → `qualitative` | SEAB/Cambridge |
@@ -40,8 +40,8 @@ mark schemes or only `[INFERRED]` proxies (model answers / marked work), and the
 
 | Subject / Level | Guide status | Validation source | Confidence ceiling |
 |---|---|---|---|
-| CSE H2 | BUILT | MIXED ([OFFICIAL] format & marking; [SCHOOL]/[INFERRED] prediction & taste) | ~90% |
-| CSE H1 | NOT BUILT | — | — |
+| CSC H2 | BUILT | MIXED ([OFFICIAL] format & marking; [SCHOOL]/[INFERRED] prediction & taste) | ~90% |
+| CSC H1 | NOT BUILT | — | — |
 | Maths H2 | BUILT | MIXED ([OFFICIAL] structure/scope/specimen; [INFERRED] trap model & Stats archetypes) | ~88% |
 | Maths H1 | NOT BUILT | — | — |
 | GP H1 | NOT BUILT | — | — |
