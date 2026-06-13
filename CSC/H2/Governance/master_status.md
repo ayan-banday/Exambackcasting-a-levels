@@ -1,5 +1,5 @@
 # Master Status: CSC H2 > Governance
-Last updated: 2026-06-11 | Session 0 (pre-study, no submissions yet)
+Last updated: 2026-06-13 | Session 0 (pre-study, no submissions yet)
 
 > **APPEND-ONLY.** Each session appends its results; the Summary is recomputed at the top each time.
 > CLOSED gaps stay in this file but stop appearing in mocks. Never overwrite history.
@@ -11,16 +11,20 @@ ACTIVE: 0
 FRAGILE: 0  
 CLOSED: 0  
 UNTOUCHED nodes remaining: 13 (from examiner guide Part 1: 1A×3, 1B×6, 1C×6—see content node map)  
-Suggested session size: Start with **Cluster 1 (Party-State System & Legitimacy)** → 3–4 questions to establish baseline on:
-- 意识形态与政绩合法性 (ideological + performance legitimacy)
-- 党国体制 (party-state monopoly + democratic centralism)
-- 跨课题链接 (how legitimacy connects to economic/social outcomes)
+Pre-study sheet: **updated 2026-06-13** — restructured around 3 layers (Foundation & Power / Constraints / Society Management), HCI-anchored frameworks now primary, research-fresh 2026 events tagged supplementary.  
+Topic guide: **updated 2026-06-13** — added Part 0 "HCI School-Specific Frameworks" as primary canon (使命型政党, 党导法治, 服务型政府 三段, 接诉即办, 三去, 碎片化威权主义, 晋升锦标赛, 4E + 均等化, 18→19 wall cap rules).
+
+Next step: Ethan reads pre-study sheet → confirms understanding → 3-cluster breakdown proposed (Layer 1 → Cluster 1 / Layer 2 → Cluster 2 / Layer 3 → Cluster 3) → Cluster 1 study sheet + 10–15 adversarial questions to establish baseline on:
+- 意识形态与政绩合法性 (政绩 > 意识形态; 政绩困局; 塔西佗陷阱)
+- 党国体制 (使命型政党; 民主集中制; 党政分工)
+- 央地关系 (分税制 → 财权事权倒挂 → 土地财政 → LGFV)
+- 跨课题链接 (政绩 → 经济增长; default linkage)
 
 ---
 
-## Cluster 1: Party_State_System_and_Legitimacy
+## Cluster 1: Party_State_System_and_Legitimacy (pre-built by Ayan; will be merged into Layer-1 cluster)
 
-**No gaps recorded yet.** First session pending.
+**No gaps recorded yet.** First session pending. Will be expanded to cover all Layer-1 nodes (党国体制 + 政绩合法性 + 央地关系 + 执政能力/机构改革) once 3-cluster breakdown is approved.
 
 ---
 

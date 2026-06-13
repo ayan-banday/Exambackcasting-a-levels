@@ -34,3 +34,6 @@ desktop.ini
 #   Biology/
 #
 # (The engine = system/, CLAUDE.md, README.md, SYSTEM_MAP.md, .gitignore.)
+
+# (Inputs are now tracked — source PDFs were converted from symlinks to real
+# file copies on 2026-06-13, so the full school corpus is pushed to GitHub.)

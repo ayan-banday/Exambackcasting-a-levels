@@ -4,15 +4,190 @@ level: H2
 topic: Governance
 type: applied
 status: BUILT
-validation_source: MIXED
-confidence_ceiling: 88%
-last_updated: 2026-06-11
+validation_source: HCI_PRIMARY + RESEARCH_SUPPLEMENT
+confidence_ceiling: 92%
+last_updated: 2026-06-13
+school: HCI (华侨中学高中部)
+school_lecturers: 梁 (6 讲), 沈 (3 讲), YCK (5 tutorials)
 ---
 
 # Topic Examiner's Guide — CSC H2 > 课题二: 中国的治理及其挑战
 # China's Governance and its Challenges
 
 > **How to use this file.** This is the deepened topic-level specialisation of the CSC 9629 Consolidated Final Guide (Parts 3–12) for 课题二 specifically. Open this before every governance session. It drives cluster generation (playbook 03), question generation (playbook 04), gap state tracking, and cross-topic linkage for the 18→19 wall. Confidence `[OFFICIAL]` = SEAB 2026 syllabus; `[SCHOOL]` = 朱/沈/华中 SOP + 2024 specimen + 2025 promos; `[INFERRED]` = cross-corpus pattern + research; `[RESEARCH]` = online-verified June 2026.
+
+---
+
+## PART 0 — HCI School-Specific Frameworks (Primary Source)
+
+> **Read this first.** This is the school-taught canon — the frameworks, vocabulary, data points, and case bank that 华侨中学 (HCI) lecturers (梁/沈/YCK) teach and that HCI 范文 actually use. Parts 1–9 below are supplementary: examiner-mode analysis and 2026 research-driven updates. When deploying answers in essays, **lead with the HCI canon below**, and use research-driven additions as "current 时事" rather than core content. Source: 政治-讲义-knowledge-base + 第二课题范文 + YCK tutorials.
+
+### 0.1 Foundational frameworks (use these in every 政治 essay)
+
+**党国体制 — the five concepts HCI tests:**
+- **使命型政党 vs 选举型政党 (郑永年)** — CCP = 使命型 (mission-type), legitimacy from carrying historical mission, NOT from elections. Members deeply identify with mission internal to the organisation. Different *in kind* from Western competitive election parties.
+- **民主集中制 + 四个服从** — 民主 = full expression of party views; 集中 = unified will. 四个服从: 党员服从组织 / 少数服从多数 / 下级服从上级 / 全党服从党中央.
+- **一元化领导 → 党政分开 → 党政机构并列 → 党政分工 (evolution)** — Mao = 一元化 (party=state); 1980 Deng = 党政分开 (failed after 6.4); 江 post-1989 = 党政机构并列; **Xi = 党政分工 ≠ 党政分开** ("only division of labour, no separation").
+- **政治吸纳** — CCP absorbs intellectuals/elites/middle class into party structure rather than excluding them. Mechanism for stability.
+- **集中力量办大事 vs 单点故障 / 九龙治水** — the tradeoff: central concentration enables big projects but creates single-point-of-failure risks; previous Hu era 九龙治水 (fragmented authority) replaced by Xi's personalisation.
+
+**政绩合法性 — Weber/Habermas + 政绩困局:**
+- Three legitimacy sources (Chinese formulation): **意识形态合法性 + 政绩合法性 + 制度合法性**.
+- **Weber's typology:** 传统型 / 魅力型 / 法理型. China lacks 法理型 (no electoral legitimacy) → must over-deliver on 政绩 + 意识形态.
+- **政绩困局 (亨廷顿 trap)** — authoritarian regimes only have 政绩合法性. Bad performance → lose legitimacy. Good performance → ALSO lose legitimacy (development drives democratisation, weakens monolithic ideology). The signature CCP dilemma.
+- **塔西佗陷阱** — once basic trust is lost, no statement/action is believed regardless of content. The single most-cited concept in 政治 essays.
+- **CCP ideological evolution:** 马列/毛 → 改革开放 (Deng) → 三个代表 (江 2000) → 科学发展观 + 和谐社会 (胡 2003–04) → 中国梦 + 社会主义核心价值观 + 四个全面 + 五位一体 + 两个100年 (习 2012+).
+
+**反腐 — diagnosis + frame:**
+- **阿克顿定律** ("Power corrupts; absolute power corrupts absolutely.") — diagnostic frame.
+- **权力反腐 vs 制度反腐** — 权力反腐 = top-down campaign (治标); 制度反腐 = structural, "把权力关进制度的笼子里" (治本). Xi transition still incomplete — "一把手" retains overwhelming power.
+- **三阶段: 不敢腐 (deter) → 不能腐 (prevent) → 不想腐 (transform)** — Xi's official framing.
+- **打虎拍蝇猎狐打伞破网** — six anti-corruption fronts mantra. "老虎苍蝇一起打".
+- **2018 国家监察委员会 + 监察法 + 与中纪委合署办公** — milestone. Created 决策/执行/监察 三权分工.
+- **失败 modes:** 灯下黑 (enforcers themselves corrupt), 牛栏关猫 (loose institutions), 既得利益集团 ("触动利益比触及灵魂还难"), 跨境合作有限.
+
+**法治 — five-concept stack:**
+- **法治 vs 法制** — 法治 = law as supreme standard, constrains public power, "恶法非法". 法制 = ruling tool used by ruling class, can become political weapon. China since 1999 enshrines 依法治国 but practice closer to 法制.
+- **党主法治 vs 党导法治** — 党主法治 = Western critical label ("Party rules over rule of law"). 党导法治 = Chinese self-label ("Party guides"). 18届4中全会: "党的领导是社会主义法治最根本的保证". Tension: if Party leads, who supervises Party?
+- **全面依法治国 (2014) + 16字方针** — 科学立法 / 严格执法 / 公正司法 / 全民守法. One of 四个全面.
+- **三去 (司法改革三方向)** — 去地方化 (provincial unification of court personnel) / 去行政化 (separate adjudication from administrative hierarchy) / 去官僚化 (员额制 + 主审法官负责制).
+- **司法独立 — limit:** Dworkin: "judge = sovereign of law's empire". China selectively imitates technique, rejects principle. 政法委 still influences court decisions locally.
+
+**公共服务 + 服务型政府 — three-government progression:**
+- **全能主义 (1949–1978)** — party-state penetrates everything, 计划经济, 政企不分.
+- **发展型政府 (1978–2002)** — GDP-first, 锦标赛, 强政府弱市场. Catalysts: 1978 三中全会 + 1992 邓南巡.
+- **服务型政府 (2003+)** — SARS catalyst. 温家宝 2004 first proposed at 中央党校. "以人为本".
+- **4E criteria** — 经济性 (Economy) / 效率性 (Efficiency) / 效果性 (Effectiveness) / 公平性 (Equity).
+- **均等化-均衡性-可及性** — 均衡性 = base, 可及性 = guarantee, 均等化 = goal. 均等化 = equal opportunity (geographic + group). 可及性 = physical + institutional reach (no barriers, low cost).
+- **越位 / 缺位 / 错位** — three failures of government roles in 公共服务.
+
+**回应人民诉求 — responsiveness toolkit:**
+- **回应型政府 — 5 metrics:** 主动性 / 速度 / 可信度 / 清晰度 / 持续性.
+- **风险社会 (Beck 1986)** — core problem shifts from "how to distribute wealth" to "how to manage human-made systemic risks". Drives citizen demands.
+- **亨廷顿 制度化回应论** — demands MUST be channelled through institutional means (parties, parliaments, courts). "动员而无制度" = overload + collapse.
+- **HCI-named responsiveness mechanisms:** 接诉即办 (北京 12345 closed-loop) / 一网通办 (上海) / 最多跑一次 (浙江) / 网格化管理 (江苏无锡 / 贵州干部下访) / "互联网+政务服务" / "我向总理说句话" / 信访.
+- **群体性事件** — collective protests triggered by unanswered grievances (拆迁/环境/工资). 2010 peak: 9万件. Responsiveness ↑ → mass incidents ↓.
+- **政府公信力 (credibility)** = foundation of legitimacy; most direct source = timely accurate response.
+
+**执政能力 + 五种政府类型:**
+- **执政能力** = 公共服务 + 危机应对 + 制度创新/现代化 + 国际战略/全球治理 + 科学决策 + 组织执行 + 社会动员 capacities.
+- **法治政府** — power 依法设定/依法行使/依法受限.
+- **阳光政府** — political transparency, public info.
+- **有限政府** — limited by law (Western framing).
+- **责任政府** — accountable.
+- **有为政府** — active where market fails — China's adaptation distinguishing from 全能政府.
+- **三权分工 (Chinese reframing)** — 决策权 (Party + 人大) / 执行权 (国务院 + departments) / 监察权 (国监委 + 纪委合署). NOT Western three-branch — unified under Party. 2018 reform = milestone.
+- **以党代政 → 以党领政 → 党政分工** — evolution of party-government relationship.
+
+**央地关系 — five concepts:**
+- **大国善治** — vast territory + huge population → direct central management impossible → locals = extension of central + 因地制宜 flexibility.
+- **条条 vs 块块** — 条条 = vertical functional control (ministry → bureau, 上下对口, 一竿子插到底). 块块 = horizontal territorial control (province governs all sectors). Reform oscillates between these.
+- **分税制 (1994 朱镕基)** — 增值税 75/25 (中央/地方); 营改增 (2016) → 50/50. Central 财权 ↑, 事权 ↓; 地方 事权 ↑, 财权 ↓. 央: 权大责小, 地: 权小责大. "上级请客、下级埋单".
+- **晋升锦标赛 (周黎安)** — local cadres compete on GDP for promotion under central HR. 政绩 = 升迁.
+- **碎片化威权主义 (Lieberthal–Oksenberg)** — 威权 in name, fragmented in operation. 条条 + 块块 crosscut → 讨价还价 + 政策传导层层博弈 + 信息不对称 + 执行偏差.
+- **"上有政策, 下有对策"** — standard 央地博弈 mode. 选择性执行 / 变相执行 / 附加性执行 (e.g., 2017 唐山 closed 19 高炉 but built bigger steel plant).
+
+**政治参与 / 网络治理 — three-phase evolution (YCK 2-4 / 2-5):**
+- **萌芽期 (1994–2002):** internet enters China, early experimentation with 政务上网.
+- **形成期 (2003–2013):** SARS-triggered demand for transparency. 网络问政 emerges. 微博 era.
+- **完善期 (2014+):** Xi's 网信办 + 防火长城 + 社会信用 + 国家互联网身份认证. Three governance pillars: 网信办 + 工信部 + 公安部.
+- **赋权 vs 管控 双刃剑** — internet enables 政府回应 AND enables surveillance. Both true.
+- **协商民主** — official channel for participation alongside 信访 + 12345 + 人大政协.
+
+### 0.2 HCI-anchored data (deploy these in essays — research-fresh data in Part 7 is supplementary)
+
+| Indicator | HCI-taught data | Use in |
+|---|---|---|
+| 人均 GDP (40-year arc) | 1978: 381元 → 2019: ~7万元 (**183倍**) | 政绩合法性 |
+| Crossing $10K | 2019 人均 GDP **$10,276** (跨1万美元门槛) | 政绩 + 中等收入 |
+| GDP growth slowdown | 2019: **6.1%** (25年最低) | 政绩 + 经济新常态 |
+| 基尼系数 (HCI canon) | 2018: **0.474** (超 0.4 警戒线); 2000 (江): 0.465 | 阶层分化 + 政绩 |
+| 群体性事件 | 2010 peak: **9万件** | 社会矛盾 + 回应能力 |
+| 维稳经费 | 2019: **1.4万亿** (超军费) | 政治稳定成本 |
+| 民众对腐败感知 | **70%** 视腐败为社会不公主因 (社科院 2022) | 反腐 + 塔西佗 |
+| 习反腐落马大老虎 | 周永康 / 薄熙来 / 徐才厚 (习时期); 陈良宇 (胡时期); 陈希同 / 王宝森 (江时期) | 反腐历史脉络 |
+| 反腐处分总数 | ~**500万人** 受处分 (BBC估计) | 反腐成效 |
+| 2019上半年反腐 | **11 中管干部 + 225 厅局级** 落马 | 反腐持续性 |
+| 党员数量 | 1921: **50人** → 今: ~**9804.1万** | 党国体制 |
+| 习民意支持 | 国内 94.8% / 国际 93.8% 信心度 (10分制下9分) | 习权威 |
+| 民主党派 | **八个** — 参政党 status ("民主花瓶") | 党国体制 |
+| 国务院组成部门减少 | 52(1982) → **27(2018)** | 机构改革 |
+| 1998 朱镕基 reform | 国务院机关 **3.3万→1.6万** ("拆庙赶和尚") | 大部制 |
+| 央地财政变化 (1980→1992) | 中央占 GDP **29% → 12%** → post-1994 reverse | 分税制 |
+| 央地转移支付 (1994→2007) | 2389亿 → 1.8112万亿 (**6.6倍**, 年均 16.9%) | 央地关系 |
+| 央地支出比 (典型) | 教育: 中央 5.42% / 地方 94.58%; 医疗: 1.19/98.81; 社保: 4.77/95.23 | 财权事权倒挂 |
+| 中美对比 | 教育 中央占比: 中国 5.2% vs 美国 12.9%; 医疗: 中国 1% vs 美国 59.2% | 央地国际对比 |
+| 公共服务 2023 | 社保卡 13.68亿 (96.8%); 学校 49.83万所; 卫生人员 1523万人; 人均寿命 78.6岁 | 服务型政府成效 |
+| 改革开放 40 年 GDP | 年均 **9.3%** | 政绩 |
+
+### 0.3 HCI historical case bank (Tier-1 cases — use as evidence)
+
+**党国体制 / 机构改革 / 法治:**
+- 1921 建党; 1949 建国
+- 1980 邓《党和国家领导制度的改革》
+- 1986 邓"首先是党政要分开"
+- 1989 6.4风波 + 1991 苏东巨变 → 反 党政分开
+- 1992 邓南巡 → 改革重启
+- 1997 15大 — "依法治国" enters CCP doctrine
+- 1998 朱镕基 大部制 (最大幅度)
+- 1999 宪法修正案 — "建设社会主义法治国家"
+- 2008 大部制改革 — 工信部 + 人社部 + 交通运输部 + 住建部
+- 2013 改革主导权 from 国务院 → 中共中央
+- 2014 18届4中 — 全面依法治国
+- 2017 19大 — "党要领导一切"
+- 2018 国家监察委员会 + 监察法 + 党和国家机构改革
+
+**公共服务 / 回应:**
+- 2003 SARS → 服务型政府 catalyst
+- 2003 "9·8" 尾矿溃坝 + 2008 三鹿奶粉 → 问责制 (孟学农 引咎辞职)
+- 2004 温家宝 — 服务型政府 first proposed
+- 2008 《政府信息公开条例》
+- 2014 国家信访局 网上信访 platform
+- 2022《信访工作条例》
+- 北京 接诉即办; 上海 一网通办 (2022 访问 10亿+次); 浙江最多跑一次
+
+**反腐 / 法治:**
+- 八项规定 + 反四风 (2013+)
+- 平反冤假错案: 呼格吉勒图案; 聂树斌案
+- 2011 维稳经费首次超国防开支
+- "天网2018" 国际追逃
+
+**民族 / 异议 (Tier-1, used sparingly):**
+- 1989 六四 七条要求
+- 2009 七五事件 (新疆)
+- 2014 昆明暴恐
+- 2020 张展 (异议)
+- 2022 白纸运动 + 四通桥 (异议)
+- 2017 唐山 19 高炉案 (央地博弈)
+
+### 0.4 立场 templates HCI markers reward
+
+| 题型 | Template | Why it works |
+|---|---|---|
+| **因素是非题** (signature) | **DISAGREE → negate stated factor, name a rival** | Stated factor usually overstated; real foundation is deeper. E.g. "意识形态是合法性基础?" → DISAGREE → 政绩 is real, 意识形态 is backup |
+| **最字题** | Rank on **解决难度 axis (结构性 > 技术性)** | 结构性 problems (腐败, 央地, 不受制约权力) outrank 技术性 reforms. Use "运动式治标, 制度治本" as 合段 |
+| **是非题** | **正方 3 angles + 反方 genuine + 合 from 更高维度** | The 合段 must transcend (e.g. 结构 vs 表象, 短期 vs 长期, 局部 vs 全局) |
+| **程度题** | Commit to **高 / 较大 / 一定 / 较小** + genuine 平衡段 | NEVER hedge to "中等". Pick a degree, defend it |
+| **条件题** ("唯有/只有/必须...才能") | **两层反方:** (1) X 自身局限; (2) 其他路径 also work | Conditional logic = the question presupposes X is sufficient. Show it's neither necessary nor sufficient alone |
+
+### 0.5 The 18 → 19 wall — cap rules YCK explicitly teaches
+
+| Miss | Cap |
+|---|---|
+| **没跨课题** | **18** (Tier 三 ceiling) |
+| **没平衡论述** | **18** |
+| Both missed | **15** |
+| 只道理论证 (no data/cases) | **24** |
+| 述 > 论 (lists without mechanism) | **13–15** |
+| 跨课题 + 平衡 + 数据/案例 | **unlocks 25+** |
+
+**Default 跨课题 for governance essays:** 政绩合法性 → 经济增长. Use this unless the question forces 社会 or 外交.
+
+### 0.6 What's in Parts 1–9 below (and how to use it)
+
+Parts 1–9 contain examiner-mode analysis (archetype distribution, mark scheme logic, trap model, cross-topic map, reusable question bank) plus **2025–2026 research-driven data** (983K反腐 sanctions / 115 tigers / He Weidong purge / 2026 民族团结进步促进法 / National Cyber ID 2025 / 15th Five-Year Plan March 2026).
+
+**Important:** these 2025–2026 events are **NOT yet in HCI lectures**. Treat them as supplementary "current 时事" — deploy after the HCI canon (0.2–0.3 above), only if they strengthen your point. **HCI markers reward the canon they taught.** Cite a 2026 event as "近期发展" or "新近案例" — not as core content.
 
 ---
 
