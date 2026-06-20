@@ -40,10 +40,10 @@ mark schemes or only `[INFERRED]` proxies (model answers / marked work), and the
 
 | Subject | Guide status | Validation source | Confidence ceiling |
 |---|---|---|---|
-| CSC H2 | BUILT | MIXED ([OFFICIAL] format & marking; [SCHOOL]/[INFERRED] prediction & taste) | ~90% |
-| Maths H2 | BUILT | MIXED ([OFFICIAL] structure/scope/specimen; [INFERRED] trap model & Stats archetypes) | ~88% |
-| GP H1 | NOT BUILT | — | — |
-| Chemistry H2 | NOT BUILT | — | — |
-| Biology H2 | NOT BUILT | — | — |
+| CSC H2 | BUILT | MIXED ([OFFICIAL] format/AOs/band descriptors/content nodes from 2026 syllabus; [SCHOOL] 7-题型 method/traps/anchors from 朱/沈/华中 SOPs + 116 sources; [INFERRED] 2026 prediction) | ~92% |
+| Maths H2 | BUILT | MIXED ([OFFICIAL] 9758 syllabus only; [SCHOOL] archetypes/frequency/traps from TYS+prelim suggested-solutions; [RESEARCH] specimen not loaded; [INFERRED] band mechanics) | ~89% |
+| GP H1 | BUILT | MIXED ([OFFICIAL] 8881 structure/AOs/band descriptors; [SCHOOL] P2 architecture/technique/traps/archetypes from 2023–25 in-format prelims + AQ schemes; [INFERRED] essay prediction) | ~89% |
+| Chemistry H2 | BUILT | MIXED ([OFFICIAL] 9476 syllabus scope/structure/AOs/exclusions; [SCHOOL] marking DNA + traps from prelim schemes cited in chapter notes; [INFERRED] archetype frequencies) | ~85% |
+| Biology H2 | BUILT | MIXED ([OFFICIAL] 9477 syllabus scope/AOs/structure/exclusions; [SCHOOL] marking DNA/traps from 9744/9648-era prelim schemes; [INFERRED] frequencies + 6 empty-stub topics on LOs) | ~85% |
 
 Update a row when its guide is built (status → BUILT, source → OFFICIAL/INFERRED/MIXED, ceiling → %).

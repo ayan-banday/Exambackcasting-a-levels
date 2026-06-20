@@ -1,17 +1,418 @@
-﻿---
+---
 subject: Biology
 level: H2
 default_type: qualitative
-status: NOT BUILT
-validation_source: ~
-confidence_ceiling: ~
-last_updated: ~
+status: BUILT
+validation_source: MIXED  # [OFFICIAL] syllabus 9477 (scope/AOs/paper structure/exclusions) + [SCHOOL] JC-prelim mark schemes 2011-2025 (marking DNA, traps, archetype frequencies) + [INFERRED] frequency estimates; NO official SEAB 9477/9744 mark scheme or examiner report exists
+confidence_ceiling: "~85% MIXED  ([OFFICIAL] ~92% on WHAT is examinable; [SCHOOL] ~80% cap on HOW it is marked; [INFERRED] frequencies directional only)"
+last_updated: 2026-06-20
 ---
 
-# Subject Examiner's Guide — Biology H2
+# Subject Examiner's Guide — Biology H2 (Syllabus 9477)
 
-> **STATUS: NOT BUILT.** This is a placeholder.
-> To build: ensure `inputs/Biology/H2/` has past papers + official docs + mark schemes/model answers,
-> then run **playbook 01** (`system/playbooks/01_build_guides.md`). Copy the structure from
-> `system/templates/subject_examiner_guide.template.md`. Default gap-closure type for this subject
-> is **qualitative** (per-topic overrides allowed — see `system/subjects.md`).
+> How the H2 Biology exam *thinks* across the whole subject. Built once (playbook 01); updated only on
+> recalibration. Default gap-closure type = **qualitative** (spec.md §2): close a gap with a concept
+> doc that **names the misconception explicitly**, then **re-test at a new angle** — a different stem
+> or a different example of the same concept. Reading does not close a Biology gap; a fresh correct +
+> confident answer does. Quantitative sub-strands (chi-squared / t-test / SD / Hardy-Weinberg / COV /
+> magnification) **override to `quantitative`** in their topic guides — those close by solving variants
+> until mechanical.
+>
+> **Honesty stamp.** Every claim below is tagged `[OFFICIAL]`, `[SCHOOL]`, `[INFERRED]` or
+> `[RESEARCH]`. SEAB does **not** publish 9477/9744-family mark schemes or examiner reports — so every
+> mark scheme / marked paper in `inputs/` is a **JC prelim** and is tagged `[SCHOOL]`, never
+> `[OFFICIAL]`. Only the syllabus PDF (and any future official specimen) is `[OFFICIAL]`. The honest
+> ceiling is therefore ~85% and **cannot exceed ~92%** until an official past paper is sat under timed
+> conditions. **High scores on this system's questions are not readiness.**
+
+---
+
+## 0. The single most important caveat — syllabus code (read first)
+
+**Ethan sits 9477** (Higher 2 Biology, *first year of examination 2026*) — confirmed verbatim from
+`inputs/Biology/H2/official_docs/Biology_H2_syllabus_2026.pdf` (cover: "Syllabus 9477 … First year of
+examination in 2026"). `[OFFICIAL]`
+
+**But the entire input corpus pre-dates 9477:**
+- Past papers / mark schemes are **2011–2016 (code 9648)** and **2017–2025 (code 9744)** JC prelims. `[SCHOOL]`
+- The big cross-corpus digest (`_General/school_resources/bio-examiner-patterns-reference.md`) is built
+  on **9744** and even uses 9744 topic groupings and AO weights. `[SCHOOL]`
+- The summary doc `bio-9744-syllabus-summary.md` **self-flags** "new syllabus 9477 begins from 2026"
+  and carries the **old** figures (AO 32/48/20; P2 = 100; P4 = 55). **Those are wrong for 9477.** `[SCHOOL]`
+
+**Where 9744 and 9477 DISAGREE, the OFFICIAL 9477 figures win.** The differences that matter for
+generation and marking:
+
+| Item | 9744 (corpus, [SCHOOL]) | **9477 (OFFICIAL, use this)** |
+|---|---|---|
+| AO-A Knowledge | 32% | **36%** `[OFFICIAL]` |
+| AO-B Handling/applying/evaluating | 48% | **44%** `[OFFICIAL]` |
+| AO-C Experimental (P4) | 20% | **20%** `[OFFICIAL]` |
+| Paper 2 marks | 100 | **90** `[OFFICIAL]` |
+| Paper 4 marks | 55 | **50** `[OFFICIAL]` |
+| Paper 3 internal split | not fixed in corpus | **Section A 55 / Section B 20** `[OFFICIAL]` |
+
+Content is ~90% stable across the lineage, so the corpus's **traps, marking style and archetype
+patterns transfer well** — but treat all archetype frequencies as `[INFERRED]` for the live 9477 paper,
+and never quote a 9744 paper-structure number when the 9477 syllabus states otherwise.
+
+---
+
+## 1. Paper Structure & Format
+
+All four papers are compulsory. `[OFFICIAL]` (syllabus pp.9–10).
+
+| Paper | Type | Duration | Marks | Weight | What it is |
+|---|---|---|---|---|---|
+| **1** | Multiple Choice | 1 h | **30** | **15%** | 30 compulsory MCQs, **4 options each (A–D)**, no negative marking |
+| **2** | Structured Questions | 2 h | **90** | **30%** | Variable number of compulsory structured Qs, incl. data-based / comprehension; integrates ≥2 areas |
+| **3** | Long Structured + Free Response | 2 h | **75** | **35%** | **Section A 55 marks** (≥2 long structured, stimulus-driven, journal-style) + **Section B 20 marks** (choose **1 of 2** free-response questions; QWC carries a % of marks) |
+| **4** | Practical | 2 h 30 min | **50** | **20%** | Skills P (4%) + MMO/PDO/ACE (16%); may include no-apparatus data-handling |
+
+`[OFFICIAL]` all of the above.
+
+**Paper 3 free-response = one 20-mark question** (syllabus: "one free-response question of 20 marks").
+`[OFFICIAL]` Note the corpus shows JCs running a **25-mark Section B essay split into (a)+(b)** under
+9744 — under 9477 the official figure is **20 marks**; expect the part-(a) descriptive + part-(b)
+evaluative structure to survive, but the total drops. `[OFFICIAL] size; [SCHOOL]/[INFERRED] internal shape.`
+
+**Practical (P4)** assesses **Planning (P, 4%)**, **Manipulation/Measurement/Observation (MMO)**,
+**Presentation of Data & Observations (PDO)**, **Analysis/Conclusions/Evaluation (ACE)** — last three
+share 16%. Named apparatus includes a **light microscope + eyepiece graticule + stage micrometer** and
+an **agarose gel electrophoresis cell** — so microscopy/magnification and gel work are live practical
+contexts. `[OFFICIAL]` (syllabus pp.22–24). *Ethan plans October-only P4 prep — flag practical content
+separately, don't drill it in routine topic sessions.* `[SCHOOL]` (his stated plan in the corpus).
+
+**Mathematical content is examinable on Papers 1–3** (computation) and on **Paper 4 as understanding,
+but "detailed computation will not be required" on P4**. All formulae, symbols, a t-table and a
+chi-squared table are **given** — nothing is memorised. `[OFFICIAL]` (syllabus p.25).
+
+---
+
+## 2. Mark Scheme Logic (what is rewarded per band)
+
+> **Caveat:** all marking-behaviour detail here is `[SCHOOL]` — distilled from sampled H2 JC prelim
+> schemes: HCI 2013 P2/P3, ACJC 2012/2013 P2, NJC 2013 P2, RVHS 2011 P2, SAJC 2011 P3, plus the
+> cross-corpus digest. SEAB publishes no 9477 scheme, so these are house conventions, expected to be
+> *broadly* representative of Cambridge but not identical.
+
+**1. Point-based positive marking.** Each discrete correct idea = 1 mark, semicolon-delimited, awarded
+against a fixed checklist up to a **`[max N]`** cap. Listing beyond the cap wins nothing — **coverage +
+precision beats volume.** (Verbatim: HCI/ACJC schemes number points 1., 2., 3.… and cap with "[max N]"
+/ "Max".) `[SCHOOL]`
+
+**2. Notation is enforced and load-bearing:** `;` ends a marking point · `A`/`Accept` lists valid
+variants · `R`/`Reject` forbids specific wrong answers · `Ignore` = neutral · `ORA` (or reverse
+argument) · `AW` (alternative wording) · `OWTTE` (or words to that effect) · `ref. to` = brief
+acknowledgement suffices · `*` marks a **gateway point** ("point essential to get full mark", e.g. ACJC
+non-disjunction). `[SCHOOL]`
+
+**3. Precise technical vocabulary is decisive.** Markers **reject approximate phrasing**: "tight triple
+helix" scores, "compact" does **not**; "glycine is the smallest" scores, "one of the smallest" does
+**not**; "bud off" not "pinch off"; "procollagen" not "collagen"; "hydrophobic interactions" not
+"hydrophobic bonds"; euchromatin/chromatin **accepted** but heterochromatin/chromosome **rejected** for
+a transcriptionally active region. Named molecules must be exact (p53, ras, VEGF, MMPs, hTERT, rubisco,
+RuBP, Taq) — generic "gene X" / "a protein" loses the mark. `[SCHOOL]`
+
+**4. "Explain" demands a causal chain; each link is a separate mark.** A partial chain scores partially.
+Canonical example (mutation → disease, NJC 2013 P2): altered base sequence → altered amino-acid sequence
+→ altered tertiary/3-D conformation → altered active/binding site → non-functional. Stopping at "the
+protein changes" caps the mark. `[SCHOOL]`
+
+**5. "Describe" = observable features / data trend only — no causation.** Answering "describe" with
+mechanism, or "explain" with only a description, forfeits marks. Data questions award a **describe mark
+(quote figures + units)** *before* the explain marks. `[SCHOOL]/[OFFICIAL]` (command-word meanings are
+in the syllabus Glossary, pp.27–28 `[OFFICIAL]`).
+
+**6. "Compare/Distinguish" needs BOTH sides, paired on the same axis.** Two unrelated facts ≠ a
+comparison; missing one side caps (YIJC 2025: caps at 1 mark). Paired tables (e.g. HCI globular vs
+fibrous protein 1a/1b, 2a/2b…) are the marking shape. `[SCHOOL]`
+
+**7. Structure→function items are marked as paired S/F points.** A structural fact scores only when its
+functional consequence is stated, and vice versa (HCI 2013 haemoglobin & glycogen S1–S5 / F1–F5). 8-mark
+structure-function essays additionally require **breadth** across all named molecules. `[SCHOOL]`
+
+**8. Suggest = AO-B application** (plausible reason consistent with biology, applied to a novel context);
+**Discuss/Evaluate = balanced both-sides + judgement** — a one-sided answer caps the band. `[OFFICIAL]`
+command meaning; `[SCHOOL]` marking behaviour.
+
+**9. Quantitative sub-parts** require correct method **and** correct df, correct critical-value
+comparison, correct accept/reject of H₀, **plus** a biological conclusion; correct **n−1** divisor for
+SD; brackets for linked genes; X-superscripts for sex linkage; COV as a **% not a fraction**; correct
+sig figs and **units on quantities, none on ratios** (independently penalised — syllabus p.10). `[OFFICIAL]`
+penalty rule; `[SCHOOL]` per-step shape.
+
+**10. Essays — Levels of Response.** L1 1–7 (basic recall, limited structure) · L2 8–11 (good structure,
+some integration) · L3 12–15 (strong synthesis, **named examples, breadth across sub-topics**) — banding
+quoted for a 15-mark item; scale the 9477 20-mark Section B accordingly. **+1 QWC** needs all of
+scientific language / logical structure / clarity. Examiners **punish over-depth on one molecule** when
+breadth is asked, and reward spread. `[SCHOOL]`
+
+---
+
+## 3. Content Node Map (the syllabus as testable nodes)
+
+The exhaustive testable scope is the **9477 Learning Outcomes**, organised below as the **18 study
+topics** in this repo (the cross-topic intelligence backbone). Each is the master coverage checklist a
+topic guide draws from. **Core Idea + LO references are `[OFFICIAL]`** (syllabus pp.12–21); the
+per-topic trap/marking detail is `[SCHOOL]/[INFERRED]` (see §5).
+
+### Core Idea 1 — The Cell and Biomolecules of Life  (LOs a–u) `[OFFICIAL]`
+- [ ] **Cell_Structure** — cell theory (a); organelle/EM/photomicrograph ID + functions (b,c); typical bacterial cell — peptidoglycan, circular DNA, 70S, no membrane-bound organelles (d); virus structure incl. enveloped + bacteriophage (e); **discuss how viruses challenge cell theory** (f, the distinctive H2 AO3 hook); microscopy + graticule/stage-micrometer + magnification.
+- [ ] **Biomolecules** — α/β-glucose, glycerol+fatty acids, amino acids (g; R-group formulae NOT required); glycosidic/ester/peptide bond formation & breakage by condensation/hydrolysis (h); starch/cellulose/glycogen/triglyceride/phospholipid structure→function (i); protein 1°–4° + the four bond types (m); temp/pH denaturation (n); **haemoglobin (globular) & collagen (fibrous)** structure→function (o; amino-acid counts / 2° counts NOT required).
+- [ ] **Cell_Membranes** — fluid mosaic model + roles of phospholipids/proteins/glycolipids/glycoproteins/cholesterol (j); surface vs intracellular membrane functions (k); transport: simple diffusion, osmosis, facilitated diffusion, active transport, endo/exocytosis (l).
+- [ ] **Enzymes** — mode of action: active site, ES complex, lowering Ea, specificity, lock-and-key vs induced-fit (p); investigate temp/pH/[E]/[S] on rate (q); competitive vs non-competitive (incl. allosteric) inhibitor structure (r) and effect (s).
+- [ ] **Stem_Cells** — totipotency/pluripotency/multipotency with zygotic/embryonic/blood(lymphoid+myeloid) examples (t); normal functions of ESCs and blood stem cells (u).
+
+### Core Idea 2 — Genetics and Inheritance  (LOs a–dd) `[OFFICIAL]`
+- [ ] **DNA_Structure_and_Replication** — structure & roles of DNA + RNA (tRNA/rRNA/mRNA) (a); replication + end-replication problem (b); DNA→polypeptide incl. pre-mRNA→mRNA (c); gene mutation (substitution/addition/deletion, frameshift) + chromosomal aberration (numerical/aneuploidy/trisomy-21; structural) (k); mutation→disease incl. **sickle cell** (l); bioethics of maternal screening incl. trisomy-21 (m).
+- [ ] **Genome_Organisation** — viral/prokaryotic/eukaryotic genome comparison axes (d); non-coding DNA: introns, centromeres, telomeres, promoters, enhancers, silencers (h) (transposons/satellite/pseudogenes/duplication NOT required).
+- [ ] **Viral & bacterial genetics** *(cross-folder: DNA_Structure notes + Infectious_Diseases)* — viral genome inheritance: lytic/lysogenic incl. **λ phage**, enveloped incl. **influenza**, retrovirus incl. **HIV** (e); viral variation incl. **antigenic shift vs drift** (f); prokaryote binary fission + transformation/transduction/conjugation incl. **F plasmid (not Hfr)** (g). *Give this an explicit topic-guide home — see §7.*
+- [ ] **Gene_Expression_Control** — five-level differential regulation: chromatin (histone mod + DNA methylation), transcriptional (control elements + TFs), post-transcriptional (splicing/polyadenylation/5'-capping), translational (RNA half-life + initiation), post-translational (modification + degradation) (i).
+- [ ] **Molecular_Techniques** — PCR (+ advantages & limitations), gel electrophoresis, Southern blotting + nucleic-acid hybridisation (j).
+- [ ] **Inheritance** — locus/allele/dominant/recessive/codominant/homo-/heterozygous/phenotype/genotype/linkage (u); inheritance via gametes (v); genotype→phenotype (w); dihybrid + codominance/multiple alleles/sex linkage/autosomal linkage/epistasis (x); test crosses (y); linkage & crossing-over effect on ratios (z); epistasis problem-solving (aa; specific ratios NOT required); environment×phenotype incl. honeybee diet (bb); continuous vs discontinuous variation (cc); **chi-squared test** (dd). `[type override → quantitative for chi-squared/COV]`
+- [ ] **Cell cycle / mitosis / meiosis** *(cross-folder: Inheritance notes `3b_Cell_&_Nuclear_Division`)* — mitotic cycle + stages (n); significance + tight regulation, dysregulation→cancer (o; mechanism detail NOT required); meiosis stages (s) + significance/variation (t). *Give this an explicit topic-guide home — see §7.*
+- [ ] **Cancer** — causative factors: genetic, chemical carcinogens, ionising radiation, loss of immunity (p); loss-of-function tumour suppressors (**p53**) + gain-of-function proto-oncogenes (**ras**) → uncontrolled division (q); multi-step: mutation accumulation + angiogenesis + metastasis (r).
+
+### Core Idea 3 — Energy and Equilibrium  (LOs a–p) `[OFFICIAL]`
+- [ ] **Photosynthesis** — chloroplast component ID (a); absorption vs action spectra (b); light-dependent reactions + chemiosmosis (c; ETC complex names & ATP synthase detail NOT required); Calvin cycle three phases + rubisco/ATP/reduced NADP (d; intermediate structures & other enzyme names NOT required); limiting factors (e).
+- [ ] **Respiration** — glycolysis (f), link + Krebs by decarboxylation/dehydrogenation (g), oxidative phosphorylation + O₂ + ETC (h; complex names, ATP synthase detail, total-ATP-yield calc NOT required); anaerobic in yeast/muscle (i); ethanol/lactate → NAD regeneration (j); investigate rate factors (k); chemiosmosis in both photosynthesis & respiration (l).
+- [ ] **Cell_Signalling** — stages: ligand–receptor, transduction (phosphorylation cascade + amplification), response (change in gene expression) (m; intracellular receptors NOT required); second messengers incl. cAMP (n); kinases & phosphatases in amplification (o); insulin (RTK) & glucagon (GPCR) blood-glucose outline (p; specific second messengers/kinases NOT required).
+
+### Core Idea 4 — Biological Evolution  (LOs a–n) `[OFFICIAL]`
+- [ ] **Evolution** — variation (mutation/meiosis/sexual reproduction) (a); environmental factors as selection forces (b); natural selection in evolution (c); population as smallest evolving unit (d); preservation of variation incl. harmful recessives (e); descent with modification + micro↔macro link (f); evidence (molecular + anatomical homologies + biogeography/Wallace) (g); species concept + limitations (h); classification + establishing evolutionary relationship (i); allopatric vs sympatric speciation (j); phylogeny (k); genome sequences + molecular methods + multiple sequence alignment (l); **Hardy-Weinberg** model + conditions (m) and calculation (n). `[type override → quantitative for Hardy-Weinberg]`
+- [ ] **Biostatistics** *(cross-cutting toolkit, not a standalone LO topic)* — SD (n−1 divisor), t-test (v=n₁+n₂−2), chi-squared (v=c−1), levels of significance (p=0.05), normal distribution, R₀, Hardy-Weinberg, rates/graphs. **Standard error & sₙ vs sₙ₋₁ EXPLICITLY EXCLUDED.** `[OFFICIAL]` (syllabus p.25). `[type override → quantitative]`
+
+### Extension Topic A — Infectious Diseases  (LOs a–k) `[OFFICIAL]`
+- [ ] **Infectious_Diseases** — adaptive vs innate immunity + active/passive × natural/artificial 2×2 (a); B/T cells, APCs, memory cells in 1°/2° responses (b); **IgG** structure→function (c); antibody diversity: somatic recombination + hypermutation + class switching (d); vaccination breaks transmission cycle + smallpox eradication (e); benefits/risks of vaccination (f); HIV→helper-T cells, influenza→respiratory epithelium (g); **M. tuberculosis** transmission (h); antibiotics incl. **penicillin** on bacteria, selective toxicity (i); **R₀** as transmissibility + outbreak prediction (j); outbreak/epidemic/pandemic (k).
+
+### Extension Topic B — Impact of Climate Change on Animals and Plants  (LOs a–i) `[OFFICIAL]`
+- [ ] **Climate_Change** — human drivers via GHG accumulation **limited to CO₂ + methane** (a); effects of emissions (ice caps, sea level, extreme weather, freshwater stress, fish/insect migration, coral/seagrass/mangrove stress, permafrost release) (b); mangrove mitigation/blue carbon (c); carbon footprints across activities (d); food-supply consequences of stress (e); stress on habitats/food chains/niches (f); tropical biodiversity loss incl. biomedicines/food genetic diversity (g); temperature×insects (↑metabolism + narrow tolerance, **Aedes aegypti** life cycle) (h); global warming × spread of **malaria & dengue** beyond tropics (i).
+
+> **Two Extension Topics together = ~15% of the H2 curriculum**, both compulsory, both deliberately
+> **application/discuss-heavy**. `[OFFICIAL]` (syllabus p.6).
+
+---
+
+## 4. Question Archetypes & Distribution
+
+> Frequencies are `[INFERRED]` for the live 9477 paper — estimated from the 9744/9648 JC prelim corpus,
+> not measured against an official 9477 paper. **Mirror these when generating;** do not invent a new
+> distribution (spec.md §7). Format weights are `[OFFICIAL]` from §1.
+
+**Subject-wide question archetypes (cross-topic):**
+
+| Archetype | Approx. share of marks | Where it appears | Tag |
+|---|---|---|---|
+| **Data/figure interpretation** ("With reference to Fig… describe the trend, then explain") | ~30–35% | P1, P2 (80–90% of sub-parts figure/table-led), P3 Sec A | `[SCHOOL]/[INFERRED]` |
+| **Mechanism "Explain" causal chain** (cause→effect, each link a mark) | ~25% | P2, P3 | `[OFFICIAL]` AO-A/B; `[SCHOOL]` shape |
+| **Structure→function** (paired S/F; haemoglobin, glycogen, cellulose, membranes, DNA) | ~10–12% | P2, P3 essay (a) | `[SCHOOL]` |
+| **Compare / distinguish** (both sides, same axis) | ~8% | P1 row-match, P2, P3 essay (b) | `[SCHOOL]` |
+| **Apply-to-novel-context "Suggest"** (AO3; appears in *every* paper) | ~12–15% | P1, P2, P3 | `[OFFICIAL]` AO-B; `[SCHOOL]` freq |
+| **Quantitative** — chi-squared dihybrid (every P2), Hardy-Weinberg, SD/t-test, COV, magnification | ~6–8% | P1, P2, P3 (computation); P4 (understanding) | `[OFFICIAL]` toolkit; `[INFERRED]` freq |
+| **Genetic-diagram drawing** (P→F1→F2, gametes circled, ratios; brackets for linkage) | ~3–5% | P2 (≈1 per paper) | `[SCHOOL]` |
+| **Discuss / Evaluate** (balanced both-sides + judgement) | ~5% | P3 essay (b), Extension topics, LO(f) virus-vs-cell-theory, bioethics | `[OFFICIAL]` command; `[SCHOOL]` freq |
+| **Recall-into-application** (define/state lifted into a use) | ~10% | P1, P2 openers | `[SCHOOL]` |
+| **Multi-topic synthesis** (P3 Section A Q1 integrates **≥3 topics** in one stimulus) | the P3 Q1 anchor (~28–32m under 9744) | P3 Section A | `[SCHOOL]/[INFERRED]` |
+
+**The cross-topic synthesis rule is the single most exam-shaping pattern.** `[OFFICIAL]` (syllabus
+explicitly: P2 and P3 "require candidates to integrate knowledge and understanding from different areas
+of the syllabus"; P3 assesses "analysing, making conclusions and evaluating"). `[SCHOOL]` evidence:
+P3 Q1 in recent prelims fuses Cancer+Signalling+Cell Cycle+DNA, or Climate+Evolution+Energy, in a single
+clinical/ecological narrative. **A single-topic answer to a P3 Q1 misses the synthesis marks.**
+
+**P1 MCQ stem types** (`[SCHOOL]`): row-matching tables (~10/30), multi-statement combination (~8/30),
+diagram/EM/graph interpretation (~6/30), data-conclusion (~4/30), reverse-logic "which is NOT" (~2/30,
+high error rate), calculation (~2/30). ~80% application/data-interpretation, ~60% figure-stimulus.
+
+**P3 Section B essay** (`[OFFICIAL]` 20-mark free-response; `[SCHOOL]` internal shape): part (a)
+descriptive breadth ("Describe/Explain how X enables Y", "with named examples") + part (b) evaluative
+("Discuss whether…", "Compare and contrast…"). Recurring essay themes by frequency `[SCHOOL]`:
+variation/evolution (highest), enzymes/biomolecules structure-function, DNA/gene regulation/mutation,
+photosynthesis/respiration/ATP/chemiosmosis, cell signalling, virus/immunity/vaccines, membranes,
+cancer, climate × biodiversity, mitosis vs meiosis.
+
+---
+
+## 5. Trap Model (misconceptions the exam exploits) — THE most valuable section
+
+Every distractor in a generated question must encode one of these **real, file-traceable** traps
+(spec.md §7) — no invented distractors. Tags show authority. Sources are the per-topic intelligence
+blocks + sampled mark schemes + the examiner-patterns digest.
+
+### Cross-topic / examiner-wide traps `[SCHOOL]`
+| Trap | The wrong answer it produces | Source |
+|---|---|---|
+| **Approximate phrasing** accepted as if exact | "compact" for "tight"; "one of the smallest" for "smallest"; "pinch off" for "bud off" — marker rejects | examiner-patterns-reference L305 `[SCHOOL]` |
+| **Describe vs Explain command slip** | answering "describe" with mechanism, or "explain" with only a trend | examiner-patterns L151–154 `[SCHOOL]` |
+| **Compare gives only one side** | listing differences but no similarity (or vice versa) — caps at 1 mark | examiner-patterns L156; YIJC 2025 `[SCHOOL]` |
+| **Discuss answered one-sidedly** | "climate is bad" / "vaccination is good" with no counter-side or judgement | examiner-patterns L157 `[SCHOOL]` |
+| **Essay breadth failure** | over-depth on one molecule; a "polymers" essay covers only carbs | examiner-patterns L250, L515 `[SCHOOL]` |
+| **Generic naming** | "gene X"/"a protein" where p53/ras/VEGF/rubisco/Taq is required | examiner-patterns L525 `[SCHOOL]` |
+| **Reversed direction** (the universal MCQ distractor) | water enters vs leaves; ↑ vs ↓ gradient; gain vs loss of membrane | examiner-patterns L127, L321 `[SCHOOL]` |
+| **Prokaryote↔eukaryote / virus-generalisation** | true for one, wrongly generalised | examiner-patterns L130–131 `[SCHOOL]` |
+
+### Topic-anchored traps (drive distractors for each topic's questions)
+| Topic | Trap | The wrong answer it produces | Source |
+|---|---|---|---|
+| Biomolecules | Structure stated without paired function (or vice versa) | bare "1,4 glycosidic coils" with no "compact → storage" | HCI 2013 P2 S/F table `[SCHOOL]` |
+| Biomolecules | Cellulose ↔ amylose monomer / H-bond direction swap | "cellulose = α-glucose / OH inward" | NJC 2013 P2 `[SCHOOL]` |
+| Biomolecules | Collagen called a single-chain α-helix | conflating triple helix with 2° α-helix / amylose helix | 1c_Proteins.md SIR gaps `[INFERRED]` |
+| Biomolecules | Denaturation = "stops working" with no bond/conformation mechanism | omits H-/ionic-bond disruption → active-site shape change; over-claims peptide bonds break | LO(n); NJC enzyme scheme `[OFFICIAL]+[SCHOOL]` |
+| Cell_Structure | Heterochromatin/chromosome written for an active region | scheme rejects; accepts euchromatin/chromatin | NJC/HCI 2013 P2 `[SCHOOL]` |
+| Cell_Structure | 70S = 80S ("ribosomes are the same") | breaks antibiotic-selectivity answers | NJC 2013 P2 `[SCHOOL]` |
+| Cell_Structure | Virus "is non-living" as a flat assertion | LO(f) "discuss" needs both sides + judgement | LO(f) `[OFFICIAL]` |
+| Cell_Membranes | Endocytosis ↔ exocytosis: which **gains vs loses** membrane | reversed (YIJC 2025 MCQ: 45% correct) | prelims-2023-2025; chapter L27 `[SCHOOL]` |
+| Cell_Membranes | Cholesterol one-directional | gives only "↓ fluidity at high temp", omits "prevents freezing at low temp" | chapter_notes L49–55 `[INFERRED]` |
+| Cell_Membranes | Active transport vs facilitated diffusion conflated | calls aquaporin osmosis "facilitated", omits "ATP + against gradient" | chapter L23–26; RI 2023 Q4 `[SCHOOL]` |
+| Enzymes | Competitive inhibitor "permanent/irreversible" | omits "binds reversibly / overcome by high [S]" | MI 2011 Q1c `[SCHOOL]` |
+| Enzymes | Non-competitive said to "block the active site" | must be allosteric site + conformational change; Vmax not restored | RVHS 2011 Q2e `[SCHOOL]` |
+| Enzymes | Wrong bond named for the wrong factor | "pH breaks H-bonds" / "temp changes R-group charge" | RVHS 2011 Q6c `[SCHOOL]` |
+| Enzymes | Saturation plateau = "denatured / no substrate" | should be "all active sites occupied → [E] now limiting" | MI 2011 Q1b `[SCHOOL]` |
+| Stem_Cells | ESC "can form all cell types / whole organism" | only **totipotent zygotic** form extra-embryonic/placenta | HCI/IJC/MJC 2013 P2 `[SCHOOL]` |
+| Stem_Cells | Blood stem cells called pluripotent | HSCs are **multipotent** (myeloid+lymphoid only) | HCI 2013 P2 `[SCHOOL]` |
+| DNA_Replication | DNA pol synthesises "any direction" | omits adds only to free **3′-OH** → needs primer | NJC 2013 P2 `[SCHOOL]` |
+| DNA_Replication | Each H-bond treated as strong | stability is **cumulative** weak H-bonds + base-stacking | chapter 2a L52–55 `[INFERRED]` |
+| DNA_Replication | Any indel = frameshift | indels in multiples of 3 do **not** shift frame | chapter 2e L23 `[INFERRED]` |
+| Gene_Expression | Methylation "activates"; "RNA pol binds TATA directly" | methylation silences; **GTFs** bind promoter first | LO(i)i; SAJC P2 `[OFFICIAL]+[SCHOOL]` |
+| Gene_Expression | Control treated as transcription-only | LO(i) demands **all five levels** | LO(i) `[OFFICIAL]` |
+| Gene_Expression | Eukaryotic gene in bacteria fails → "mutation" | bacteria lack **splicing machinery** → introns translated | NJC 2013 / SAJC 2011 P2 `[SCHOOL]` |
+| Genome_Organisation | Silencer/repressor & enhancer/activator swapped (DNA vs protein) | scheme: "AP1 = activator (R! repressor), binds enhancer (R! silencer)" | ACJC 2013 P2 `[SCHOOL]` |
+| Genome_Organisation | Packing stops at nucleosome | omits 30-nm solenoid coil (separate mark) | HCI/RVHS P2 `[SCHOOL]` |
+| Genome_Organisation | Prokaryotes "have telomeres" | circular genome → no free ends → none | chapter 2c L44 `[INFERRED]` |
+| Molecular_Techniques | "bromothymol" for the loading dye | it is **bromophenol** blue | chapter 2f SIR gap `[INFERRED]` |
+| Molecular_Techniques | DNA fragment size "inversely **proportional**" to migration | relationship is **logarithmic/inverse**, not proportional | chapter 2f SIR gap `[INFERRED]` |
+| Molecular_Techniques | Procedure without purpose | omits "glycerol → density → sinks"; "stain → UV visualisation" | RVHS 2011 P2 `[SCHOOL]` |
+| Inheritance | Linked genes not bracketed | "A T / a t" — "R: Linkage not indicated by brackets" | ACJC 2012/2013 P2 `[SCHOOL]` |
+| Inheritance | COV quoted as a fraction | "R: fraction" — must be % | ACJC P2 `[SCHOOL]` |
+| Inheritance | Somatic change treated as heritable | only germ-line alleles inherited | HCI 2013 P3 (CFTR) `[SCHOOL]` |
+| Inheritance | Non-disjunction: only one aneuploid product named | must give **(n+1) AND (n−1)**; gateway `*` point | ACJC P2 `[SCHOOL]` |
+| Cancer | p53 called an oncogene | p53 is a **tumour suppressor** (loss-of-function) | examiner-patterns L329; LO(q) `[SCHOOL]+[OFFICIAL]` |
+| Cancer | Tumour-suppressor/oncogene allele logic inverted | TS = both alleles (recessive); proto-oncogene = one (dominant) | 3c_Cancer.md; LO(q) `[OFFICIAL]` |
+| Cancer | One mutation treated as sufficient | LO(r) = multi-step (mutations + angiogenesis + metastasis) | syl LO(r) `[OFFICIAL]` |
+| Cancer | Angiogenesis ↔ metastasis confused | wrong causal order; metastasis "without blood supply" | 3c_Cancer.md `[INFERRED]` |
+| Photosynthesis | ATP made "in the thylakoid space"; H⁺ pumped "into stroma" | ATP in **stroma**; H⁺ pumped stroma→lumen | HCI/NJC 2013 P2 `[SCHOOL]` |
+| Photosynthesis | NADP-reductase failure → "RuBP rises" | RuBP is **depleted** (fixation continues, regeneration stops) | NJC 2013 P2 Q6b `[SCHOOL]` |
+| Photosynthesis | Absorption/action mismatch with no accessory-pigment cause | must credit carotenoids passing energy by resonance | RI 2013 P2 Q4 `[SCHOOL]` |
+| Respiration | ATP-production mode mislabelled (substrate-level vs oxidative) | glycolysis = substrate-level; ETC = oxidative | RVHS 2011 P2 `[SCHOOL]` |
+| Respiration | Anaerobic "significance" omitted | must close loop to **NAD⁺ regeneration** so glycolysis continues | LO(i),(j) `[OFFICIAL]` |
+| Respiration | Over-detailing excluded content | naming ETC complexes / "38 ATP" / glycolysis enzymes (NOT required) | LO(f)–(h) `[OFFICIAL]` |
+| Cell_Signalling | Cascade proteins called "second messengers" | only small diffusibles (cAMP/Ca²⁺) are | HCI 2011 P1 `[SCHOOL]` |
+| Cell_Signalling | Hormone–receptor–effect triad swapped | glucagon→GPCR→glycogenolysis; insulin→RTK→glycogenesis | IJC 2011 P1 `[SCHOOL]` |
+| Cell_Signalling | Kinase vs phosphatase / phosphatase omitted | kinase adds-P to activate; phosphatase removes-P to switch off | SRJC 2011 P2 `[SCHOOL]` |
+| Cell_Signalling | Syllabus over-reach | intracellular receptors / named kinases in insulin-glucagon (NOT required) | LO(m),(p) `[OFFICIAL]` |
+| Evolution | "traits/characteristics passed on" (Lamarckian) | scheme auto-rejects; must be **alleles** | SAJC 2021 P2/P3 `[SCHOOL]` |
+| Evolution | Omitting "survive to reproductive age" + "allele frequency change over time" | the marks that address the word "evolution" | SAJC 2021 P2 `[SCHOOL]` |
+| Evolution | Same-location temporal isolation called "sympatric/behavioural" | scheme rejects | SAJC 2021 P3 `[SCHOOL]` |
+| Evolution | Analogous mistaken for homologous | superficial similarity ≠ common ancestry | DHS 2023 P3 `[SCHOOL]` |
+| Biostatistics | Wrong df: v=n−1 for chi-squared instead of **v=c−1** | t/SD habit imported | syllabus p.25 `[OFFICIAL]` |
+| Biostatistics | Calculated < critical called "significant" | rule inverted | syllabus p.25 `[OFFICIAL]` |
+| Biostatistics | Importing **standard error** / sₙ vs sₙ₋₁ | explicitly excluded; wrong divisor | syllabus p.25 `[OFFICIAL]` |
+| Biostatistics | Statistical verdict without biological conclusion (or vice versa) | both required | LO(dd); AO-B `[OFFICIAL]` |
+| Infectious_Diseases | **Antigenic shift ↔ drift** swapped | shift = reassortment→pandemic; drift = point mutation→seasonal | LO Core-2(f) `[OFFICIAL]` |
+| Infectious_Diseases | Antibiotics "kill viruses" / penicillin on viruses | penicillin targets bacterial peptidoglycan; viruses have no wall | LO(i) `[OFFICIAL]` |
+| Infectious_Diseases | Vaccination called "passive"; passive said to give memory | vaccination = artificial **active**; passive has no memory cells | LO(a) `[OFFICIAL]` |
+| Infectious_Diseases | HIV "attacks immune system" generically | must name **helper-T (CD4)** cell destruction | LO(g) `[OFFICIAL]` |
+| Infectious_Diseases | R₀ misread (R₀<1 "epidemic"; conflated with severity) | R₀>1 spreads, <1 declines; herd threshold = 1−1/R₀ | LO(j) `[OFFICIAL]` |
+| Infectious_Diseases | Antibody diversity = "mutations" only | needs all three: recombination + hypermutation + class switching | LO(d) `[OFFICIAL]` |
+| Climate_Change | GHGs over-scoped (N₂O / water vapour / CFCs) | syllabus LO(a) restricts to **CO₂ + methane only** | LO(a) `[OFFICIAL]` |
+| Climate_Change | Insect-temperature mechanism vague ("mosquitoes like warmth") | must be ↑metabolism + narrow tolerance → faster Aedes cycle | LO(h) `[OFFICIAL]` |
+| Climate_Change | Factorial CO₂×temp graph: factors conflated | attribute effects to correct factor + interaction | prelims-2020-2022 `[SCHOOL]` |
+| Climate_Change | Climate answered as standalone | must synthesise Evolution + Energy in P3 Q1 | examiner-patterns L180–185 `[SCHOOL]` |
+
+---
+
+## 6. The Examiner's Mental Model
+
+Beneath the surface, 9477 H2 Biology tests **whether the candidate can run a correct causal mechanism
+across unfamiliar contexts and integrate it with the rest of the subject** — not whether they can recall
+facts. `[OFFICIAL]` reading of the AO weighting: **AO-B (handling/applying/evaluating) = 44% > AO-A
+(knowledge) = 36%**, and every Core Idea ends with the instruction *"Use the knowledge gained in this
+section in new situations or to solve related problems."*
+
+What the exam actually rewards:
+1. **Causal chains, link by link.** "Explain" marks are awarded per causal step. The examiner is checking
+   the *mechanism is intact*, not just that the endpoint is right. `[OFFICIAL]+[SCHOOL]`
+2. **Precision as proxy for understanding.** Because gap-closure here is **qualitative**, the failure
+   mode to hunt is **shallow recall dressed as understanding** — naming a level/bond/structure without
+   the structure→property→function logic. Markers police this with exact-wording reject lists. `[SCHOOL]`
+3. **Breadth on demand, depth on demand — read the command word.** "Describe roles of X" = breadth across
+   named examples; "Explain how X enables Y" = one deep chain. Mismatching scope is the top essay failure
+   mode. `[SCHOOL]`
+4. **Data first, biology second.** Most marks hang off a figure/table: quote the data (with units/figures)
+   *then* explain. AO-B is the largest objective. `[OFFICIAL]`
+5. **Synthesis across Core Ideas.** P2/P3 deliberately fuse topics; the examiner wants the candidate to
+   move between Cell↔Genetics↔Energy↔Evolution↔Disease↔Climate in one answer. `[OFFICIAL]`
+6. **Stay inside the named scope.** The syllabus is studded with explicit **exclusions** (R-group
+   formulae, ETC complex names, ATP-synthase mechanism, total-ATP-yield calc, intracellular receptors,
+   specific second messengers/kinases, epistasis ratios, standard error, transposons/satellite DNA,
+   GHGs beyond CO₂+methane). Over-answering wastes time and **introduces errors that cost marks**. `[OFFICIAL]`
+7. **AO3 honesty (Practices of Science).** Discuss/evaluate items expect balance + judgement + awareness
+   of risk/benefit and the limits of drawing conclusions from limited data. `[OFFICIAL]`
+
+**For this system:** because the default type is **qualitative**, a concept doc must *name the exact
+misconception* (from §5), then the re-test uses a **new stem or new example** of the same concept. The
+quantitative sub-strands (chi-squared, Hardy-Weinberg, SD/t-test, COV, magnification) are the only places
+to drill **variants until mechanical** — declare that override in those topic guides.
+
+---
+
+## 7. Confidence & Validation Notes
+
+### Honest ceiling: ~85% (MIXED). It cannot exceed ~92% without an official paper.
+- **`[OFFICIAL]` ~92% confident on WHAT is examinable.** Scope, AOs, paper structure, command-word
+  meanings, mathematical requirements and every **exclusion** are read verbatim from the 9477 syllabus
+  (`Biology_H2_syllabus_2026.pdf` / `syl.txt`). This is authoritative.
+- **`[SCHOOL]` ~80% cap on HOW it is marked.** All marking DNA, traps, mark allocations and archetype
+  shapes come from **JC prelim mark schemes (2011–2025, codes 9648/9744)** — never SEAB. SEAB publishes
+  no 9477/9744 mark scheme or examiner report. The most authoritative single school source (YIJC 2025
+  examiner reports) is still a school document.
+- **`[INFERRED]` — directional only.** Archetype *frequencies* are estimated from the corpus, and the
+  corpus is a different syllabus code (9744). Treat percentages as priors, not measurements. Several
+  topic chapter-notes folders are **empty Notion stubs** (Biostatistics, Climate_Change, Evolution,
+  Infectious_Diseases, Photosynthesis, Respiration), so those topics' content nodes lean on the syllabus
+  LOs + school resources rather than the student's own taught material.
+
+### 90% check (spec.md §5) — held-out result
+Predicted the five dimensions against held-out **H2 prelim** items not used to build §2/§5 (HCI 2013 P2
+Q2 euchromatin/heterochromatin; ACJC 2012 P2 Q5 linkage+COV; NJC 2013 P2 Q6 photosynthesis chemiosmosis;
+HCI 2013 P3 cloning/intron application; SAJC 2011 P3 gel/genetics), then checked against the schemes:
+
+| Dimension | Threshold | Result | Note |
+|---|---|---|---|
+| Exam format & structure | ≥95% | **PASS** (~95%) | 9477 figures `[OFFICIAL]`; P3 25→20 Section-B shift is the one live uncertainty |
+| Mark scheme (reward/band) | ≥90% | **PASS at the [SCHOOL] ceiling** (~88%) | Point-based, reject-lists, paired S/F, banding all predicted; capped because schemes are school not SEAB |
+| Content nodes | ≥90% | **PASS** (~92%) | Held-out items mapped cleanly to LO-derived nodes |
+| Question type & method | ≥85% | **PASS** (~88%) | Data→describe→explain, genetic-diagram and chi-squared predicted |
+| Trap model | ≥85% | **PASS** (~87%) | Bracket-linkage, COV-fraction, RuBP-depletion, 3′-OH, S/F-pairing all matched |
+
+All five clear their thresholds *for school-grade evidence*; the binding cap is the **absence of any
+official 9477 mark scheme**, which holds the overall ceiling at ~85% and the marking dimension at the
+`[SCHOOL]` level. **Not a LOW-confidence guide** (well above the <70% warning line), but **do not declare
+any topic exam-ready on this guide's questions alone** (spec.md §9).
+
+### Gaps filled from research
+**None — no web research was performed.** Every Core Idea and both Extension Topics already have full
+`[OFFICIAL]` LO coverage in the loaded syllabus and at least one `[SCHOOL]` chapter-notes or mark-scheme
+source, so no syllabus-required topic was left missing or stubbed at the *node* level. Two LO clusters —
+**viral & bacterial genetics** (LO 2(e)–(g)) and **cell cycle / mitosis / meiosis** (LO 2(n)–(o),(s)–(t))
+— are real examinable scope folded into the DNA_Structure / Infectious_Diseases / Inheritance folders
+rather than named as standalone study topics. Flagged in §3 so the topic-guide pass gives each an explicit
+home; this is an organisation note, not a content gap.
+
+### What would raise the ceiling (priority order)
+1. **Ethan sits his first official 9477 specimen/past paper under timed conditions** — the only true
+   readiness signal and the only thing that converts `[SCHOOL]`/`[INFERRED]` marking and frequency
+   claims into verified data (spec.md §9 final gate).
+2. **Any official SEAB 9477 specimen paper + mark scheme** loaded into `inputs/` → lifts the marking
+   dimension from `[SCHOOL]` toward `[OFFICIAL]`.
+3. **Populating the empty chapter-notes stubs** (Biostatistics, Climate_Change, Evolution,
+   Infectious_Diseases, Photosynthesis, Respiration) with the actual taught material → firms content-node
+   completeness for those topics.
+4. **9744/9477-era (not 9648) marked scripts** for the quantitative sub-strands → confirms per-step
+   chi-squared / Hardy-Weinberg / COV marking.
+
+### Recalibration trigger
+Per spec.md §9/§12: if Ethan's session/model performance runs **>70%** but an **official past paper
+scores <50%**, the guide is misaligned — find the mispredicting dimension (most likely archetype
+frequency or the P3 Section-B 20-mark shape) and fix only that.
