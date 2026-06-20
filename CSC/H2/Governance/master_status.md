@@ -1,5 +1,46 @@
 # Master Status: CSC H2 > Governance
-Last updated: 2026-06-13 | Session 0 (pre-study, no submissions yet)
+Last updated: 2026-06-14 | Session 1 (Cluster 1 study + questions issued, awaiting answers)
+
+---
+
+## 2026-06-14 update
+- Cluster 1 (Foundation_and_Power_Structure) study sheet built at `clusters/Foundation_and_Power_Structure/study_sheet.md`
+- 10 adversarial questions issued (efficient coverage: 因素是非题 ×3, 是非题 ×3, 最字题 ×1, 程度题 ×1, 条件题 ×1, 比较题 ×1)
+- Old `Party_State_System_and_Legitimacy/` cluster Ayan pre-built is now superseded by Foundation_and_Power_Structure (covers the same node + more)
+
+## 2026-06-14 Session 1 — Q1–Q5 graded
+- Q1 (因素是非题 意识形态): Wrong verdict (AGREED when should DISAGREE), 50% confident → ACTIVE P1
+- Q2 (是非题 自我纠错): Right direction, 65% confident, multiple sub-gaps flagged → FRAGILE
+- Q3 (最字题 央地): Right framework, attribution error (晋升锦标赛 → 朱镕基, should be 周黎安), multiple sub-gaps → ACTIVE P1 (attribution) + FRAGILE (framework)
+- Q4 (程度题 党政分工): Right direction, term error (三权分立 should be 三权分工), many sub-gaps → ACTIVE P1 (term) + FRAGILE (direction)
+- Q5 (因素是非题 政绩困局): Got core mechanism, missing 亨廷顿 attribution + middle class data → FRAGILE
+- Q6: Not answered
+
+### Summary
+
+ACTIVE P1 (drill hardest, always first next session): 3
+- DISAGREE template mis-application (signature 2024 specimen archetype)
+- 三权分工 vs 三权分立 term
+- 晋升锦标赛 attribution
+
+ACTIVE P2: 9 (all in new Operational Mechanics cluster)
+FRAGILE: 5
+CLOSED: 0 (first session — nothing locked in yet)
+
+### Patterns
+- Right intuition, wrong verdict (Q1)
+- Confident attribution errors (Q3 晋升锦标赛, Q4 三权分立)
+- Strong on conceptual mechanisms, weak on data + cases + specific names
+- Many gaps around "how does it actually work" (operational mechanics)
+- Some Cluster 2 leakage (一把手, 灯下黑, 反腐 specifics) — will close when we hit Cluster 2
+
+### Next action
+- New cluster `Operational_Mechanics_of_Party_State_Power` built (2026-06-14) to consolidate all P2 ACTIVE gaps
+- After Ethan studies it: 5-question session covering Operational Mechanics + 3 re-tests of P1 ACTIVE gaps from Session 1
+
+UNTOUCHED nodes remaining: 8 (Cluster 2: 反腐 + 法治 + their strategies = 4 nodes; Cluster 3: 公共服务/回应 + 民族 + 政治参与 + 3 corresponding strategies = 4 nodes)
+
+---
 
 > **APPEND-ONLY.** Each session appends its results; the Summary is recomputed at the top each time.
 > CLOSED gaps stay in this file but stop appearing in mocks. Never overwrite history.
