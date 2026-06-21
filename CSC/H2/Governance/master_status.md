@@ -8,6 +8,45 @@ Last updated: 2026-06-14 | Session 1 (Cluster 1 study + questions issued, awaiti
 - 10 adversarial questions issued (efficient coverage: 因素是非题 ×3, 是非题 ×3, 最字题 ×1, 程度题 ×1, 条件题 ×1, 比较题 ×1)
 - Old `Party_State_System_and_Legitimacy/` cluster Ayan pre-built is now superseded by Foundation_and_Power_Structure (covers the same node + more)
 
+## 2026-06-21 Session 2 — Q1–Q4 graded (Q5 deferred)
+
+Re-attempts + new question set graded:
+- Q1 (因素是非题 意识形态 vs 政绩 re-attempt): **DISAGREE template applied correctly** → P1 CLOSED. Tier 三 ceiling (17-18) due to Point 3 weakness (face → personal not structural), no 跨课题, no 平衡, no data anchors
+- Q2 (程度题 碎片化威权主义): Tier 二 (8-13) — thin answer; never named 碎片化威权主义 by name, no Lieberthal-Oksenberg attribution, no Tangshan example, didn't commit to degree
+- Q3 (因素是非题 公共服务 + 中产 demands): Tier 三 edging Tier 四 (18-19) — strong analytical instinct ("suppression accumulation" insight), but wrong 公共服务 definition + wrong 最多跑一次 definition + invented date "1月31日" + forgot Level 2 of demand hierarchy
+- Q4 (比较题 党政分工 vs 党政机构并列): Tier 三 (17-19) — **三权分工 used correctly** → P1 CLOSED; deployed Operational Mechanics frameworks well; BUT conflated 党政关系 with 央地关系 (new P1), missed 朱镕基 vs 李克强 example
+- Q5: deferred to next session
+
+### P1 CLOSED this session
+- DISAGREE template (Q1)
+- 三权分工 vs 三权分立 (Q4)
+
+### New P1 from this session
+- 党政关系 vs 央地关系 axis conflation (Q4 structural confusion)
+
+### Recurring pattern errors
+- Definitional drift (4 errors across Q3, Q4)
+- Missing 5-element checklist (every Q missing 1-2: 立场, 平衡, 跨课题, data)
+- Vague reaching when uncertain (断网禁, 1月31日, wrong 公共服务 def)
+- Forgetting key mechanisms by name (接诉即办, Level 2 of hierarchy, 网格化)
+
+### Cluster built this session
+**Tier_Four_Discipline_and_Precision** at `clusters/Tier_Four_Discipline_and_Precision/study_sheet.md` — targets ALL recurring pattern errors. 11 sections covering: two axes (党政 vs 央地), 4-phase 党政关系 evolution, trap concept family, 公共服务 definition, complete responsiveness map, 6-level demand hierarchy, case bank by use case, data canon by use case, 5-element checklist, uncertain-term discipline, default 立场 cheat sheet.
+
+### Cluster coverage status
+- ✅ Cluster 1: Foundation_and_Power_Structure (built 2026-06-14)
+- ✅ Operational_Mechanics_of_Party_State_Power (built 2026-06-14)
+- ✅ Tier_Four_Discipline_and_Precision (built 2026-06-21) ← NEW
+- ⏳ Cluster 2: Constraining_Unchecked_Power (反腐 + 法治) — not yet started
+- ⏳ Cluster 3: Managing_Society_Voice_and_Identity (公共服务/回应 + 民族 + 网络) — not yet started
+
+### Next session plan
+1. Ethan re-reads Q4 comments + drills new Tier_Four cluster
+2. Attempts Q5 (最字题 on 权力不受制约)
+3. Optional: redo Q4 with refined structure (clear 立场 + 朱镕基/李克强 example + 跨课题 + clean axis separation)
+
+---
+
 ## 2026-06-14 Session 1 — Q1–Q5 graded
 - Q1 (因素是非题 意识形态): Wrong verdict (AGREED when should DISAGREE), 50% confident → ACTIVE P1
 - Q2 (是非题 自我纠错): Right direction, 65% confident, multiple sub-gaps flagged → FRAGILE
