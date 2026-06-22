@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cluster 1 — Differentiation &amp; Maclaurin</title>
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true, tags: 'none' },
+    svg: { fontCache: 'global' },
+    options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root {
+    --bg: #fafafa; --card-bg: #ffffff; --border: #e5e7eb; --text: #1a1a1a; --muted: #6b7280;
+    --blue: #2563eb; --blue-soft: #eff6ff; --amber: #d97706; --amber-soft: #fffbeb;
+    --green: #059669; --green-soft: #ecfdf5; --cover: #f3f4f6;
+    --purple: #7c3aed; --purple-soft: #f5f3ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Charter', 'Georgia', 'Times New Roman', serif;
+    max-width: 920px; margin: 0 auto; padding: 40px 24px 80px;
+    line-height: 1.65; color: var(--text); background: var(--bg);
+  }
+  h1, h2, h3, .label, .nav, .controls, button {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+  }
+  h1 { font-size: 2em; margin: 0 0 8px; color: #111; border-bottom: 3px solid #111; padding-bottom: 12px; }
+  h2 { font-size: 1.5em; margin-top: 56px; margin-bottom: 16px; color: #111; border-bottom: 1px solid #999; padding-bottom: 6px; }
+  h3 { font-size: 1.15em; margin: 0 0 14px; color: #1f2937; }
+  p { margin: 8px 0; }
+  .meta { color: var(--muted); font-size: 0.9em; margin: 4px 0 24px; }
+  .intro {
+    background: var(--card-bg); border: 1px solid var(--border); border-left: 4px solid var(--purple);
+    padding: 16px 20px; border-radius: 6px; margin: 16px 0 32px;
+  }
+  .intro ul { margin: 8px 0 0 0; padding-left: 22px; }
+  .intro li { margin: 4px 0; }
+  .controls {
+    position: sticky; top: 0; background: var(--bg); padding: 12px 0; z-index: 100;
+    border-bottom: 1px solid var(--border); margin-bottom: 20px;
+    display: flex; gap: 10px; flex-wrap: wrap;
+  }
+  .controls button {
+    background: #fff; border: 1px solid var(--border); padding: 6px 14px; border-radius: 5px;
+    cursor: pointer; font-size: 0.85em; color: var(--text); font-weight: 500;
+  }
+  .controls button:hover { background: #f3f4f6; }
+  .toc {
+    background: var(--card-bg); border: 1px solid var(--border); padding: 16px 24px;
+    border-radius: 6px; margin-bottom: 32px; font-size: 0.9em;
+  }
+  .toc strong { display: block; margin-bottom: 6px; color: #111; }
+  .toc a { color: var(--blue); text-decoration: none; margin-right: 16px; }
+  .toc a:hover { text-decoration: underline; }
+  .card {
+    background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px;
+    padding: 20px 24px; margin: 20px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .block { margin: 14px 0; padding: 12px 16px; border-radius: 6px; border-left: 4px solid var(--border); }
+  .block.archetype { background: var(--purple-soft); border-left-color: var(--purple); }
+  .block.example { background: #f9fafb; border-left-color: #6b7280; }
+  .block.practice { background: var(--amber-soft); border-left-color: var(--amber); }
+  .block.answer { background: var(--green-soft); border-left-color: var(--green); position: relative; min-height: 60px; }
+  .label {
+    display: block; text-transform: uppercase; font-size: 0.75em; letter-spacing: 0.08em;
+    font-weight: 700; margin-bottom: 6px; color: var(--muted);
+  }
+  .block.archetype .label { color: var(--purple); }
+  .block.example .label { color: #4b5563; }
+  .block.practice .label { color: var(--amber); }
+  .block.answer .label { color: var(--green); }
+  .stem {
+    background: #1e293b; color: #f1f5f9; padding: 12px 16px; border-radius: 6px;
+    margin: 10px 0; font-family: 'Charter', 'Georgia', serif;
+  }
+  .marks {
+    display: inline-block; font-size: 0.8em; background: #fde68a; color: #92400e;
+    padding: 2px 8px; border-radius: 10px; font-weight: 700; margin-left: 6px;
+    font-family: -apple-system, sans-serif;
+  }
+  .mark-step {
+    display: inline-block; font-size: 0.75em; background: #ddd6fe; color: #5b21b6;
+    padding: 1px 7px; border-radius: 8px; font-weight: 700; margin: 0 4px;
+    font-family: -apple-system, sans-serif;
+  }
+  .reveal-btn {
+    position: absolute; top: 10px; right: 10px; background: var(--green); color: #fff;
+    border: none; padding: 5px 12px; border-radius: 4px; cursor: pointer;
+    font-size: 0.8em; font-weight: 600; z-index: 3; box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+  .reveal-btn:hover { background: #047857; }
+  .reveal-btn.hide-state { background: var(--muted); }
+  .reveal-btn.hide-state:hover { background: #4b5563; }
+  .answer-content { transition: filter 0.2s, opacity 0.2s; }
+  .answer-overlay {
+    position: absolute; inset: 0; background: var(--cover); border-radius: 0 6px 6px 0;
+    display: flex; align-items: center; justify-content: center; color: var(--muted);
+    font-style: italic; font-size: 0.9em;
+    font-family: -apple-system, sans-serif;
+    border-left: 4px solid var(--muted); margin-left: -16px; padding-left: 16px;
+    z-index: 2; transition: opacity 0.2s;
+  }
+  .answer-overlay.hidden { opacity: 0; pointer-events: none; }
+  .block.answer .answer-content { padding-right: 60px; }
+  ul, ol { padding-left: 24px; }
+  li { margin: 4px 0; }
+  .mjx-container { font-size: 1.05em !important; }
+  hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+  @media print {
+    body { background: #fff; padding: 20px; max-width: 100%; }
+    .controls, .reveal-btn { display: none !important; }
+    .answer-overlay { display: none !important; }
+    .card { box-shadow: none; page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Cluster 1 — Differentiation &amp; Maclaurin</h1>
+<p class="meta">Maths H2 9758 · Syllabus §5.1 + §5.2 · Built 2026-06-22 · Prerequisite: pre-study sheet</p>
+
+<div class="intro">
+<strong>Format:</strong> exam-recognition drill. Each card is one archetype the exam tests, in the exact stem language the exam uses.
+<ul>
+  <li>The Example shows a real exam-style stem. Attempt it, then reveal the worked solution with mark-allocation breakdown (M1, A1, B1).</li>
+  <li>Then attempt the Practice cold (timed at 1.2 min/mark). Reveal and self-mark.</li>
+  <li>If you lost &gt;1 mark on a card, open a new Claude window and dig into the concept before moving on.</li>
+  <li>Cards are ordered by prerequisite — each only uses techniques from earlier cards or the pre-study.</li>
+</ul>
+</div>
+
+<div class="controls">
+  <button onclick="revealAll()">Reveal all</button>
+  <button onclick="hideAll()">Hide all</button>
+</div>
+
+<div class="toc">
+<strong>Archetypes</strong>
+<a href="#c1">1. Implicit diff</a>
+<a href="#c2">2. Parametric diff</a>
+<a href="#c3">3. Tangent / normal</a>
+<a href="#c4">4. Connected rates</a>
+<a href="#c5">5. Optimisation</a>
+<a href="#c6">6. Sketch f'</a>
+<a href="#c7">7. Mac: MF27 sub</a>
+<a href="#c8">8. Mac: repeated diff</a>
+<a href="#c9">9. Mac: combine series</a>
+<a href="#c10">10. Mac: implicit</a>
+<a href="#c11">11. Range of validity</a>
+<a href="#c12">12. Small-angle in trig</a>
+</div>
+
+<div class="card" id="c1">
+  <h3>Archetype 1 — Implicit Differentiation (find \( \tfrac{dy}{dx} \), then a tangent / stationary condition)</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "A curve has equation [relation in \( x, y \)]. (i) Find \( \dfrac{dy}{dx} \) in terms of \( x \) and \( y \). (ii) Find the coordinates of the points on the curve where the tangent is [parallel to the \( x \)-axis / vertical / equal to a given gradient]." Typical: (i) 3m, (ii) 4m.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A curve has equation \( x^{2} + y^{2} - xy = 7 \).<br>(i) Find \( \dfrac{dy}{dx} \) in terms of \( x \) and \( y \). <span class="marks">[3]</span><br>(ii) Find the coordinates of the points on the curve where the tangent is parallel to the \( x \)-axis. <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <strong>(i)</strong> Differentiate both sides w.r.t. \( x \) (chain rule on \( y^{2} \), product rule on \( xy \)):
+      \[ 2x + 2y\frac{dy}{dx} - \left(y + x\frac{dy}{dx}\right) = 0 \qquad \text{<span class="mark-step">M1</span>} \]
+      Group \( \dfrac{dy}{dx} \) terms:
+      \[ (2y - x)\frac{dy}{dx} = y - 2x \qquad \text{<span class="mark-step">M1</span>} \]
+      \[ \frac{dy}{dx} = \frac{y - 2x}{2y - x} \qquad \text{<span class="mark-step">A1</span>} \]
+      <strong>(ii)</strong> Tangent parallel to \( x \)-axis \(\Leftrightarrow \dfrac{dy}{dx} = 0 \Leftrightarrow y = 2x \). <span class="mark-step">M1</span><br>
+      Substitute into the curve: \( x^{2} + 4x^{2} - 2x^{2} = 7 \Rightarrow 3x^{2} = 7 \Rightarrow x = \pm\sqrt{7/3} \). <span class="mark-step">M1</span><br>
+      Points: \( \left(\sqrt{\tfrac{7}{3}},\; 2\sqrt{\tfrac{7}{3}}\right) \) and \( \left(-\sqrt{\tfrac{7}{3}},\; -2\sqrt{\tfrac{7}{3}}\right) \). <span class="mark-step">A1 A1</span>
+    </div><div class="answer-overlay">Solution hidden — attempt the example first</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">A curve has equation \( x^{2}y + y^{3} = 6 \).<br>(i) Show that \( \dfrac{dy}{dx} = -\dfrac{2xy}{x^{2} + 3y^{2}} \). <span class="marks">[3]</span><br>(ii) Find the exact coordinates of the points on the curve where the tangent is parallel to the \( y \)-axis. <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <strong>(i)</strong> Differentiate (product rule on \( x^{2}y \)):
+      \[ 2xy + x^{2}\frac{dy}{dx} + 3y^{2}\frac{dy}{dx} = 0 \qquad \text{<span class="mark-step">M1</span>} \]
+      \[ (x^{2} + 3y^{2})\frac{dy}{dx} = -2xy \qquad \text{<span class="mark-step">M1</span>} \]
+      \[ \frac{dy}{dx} = -\frac{2xy}{x^{2} + 3y^{2}} \qquad \text{<span class="mark-step">A1 (AG)</span>} \]
+      <strong>(ii)</strong> Tangent parallel to \( y \)-axis \(\Leftrightarrow\) denominator \( = 0 \): \( x^{2} + 3y^{2} = 0 \). <span class="mark-step">M1</span><br>
+      Since \( x^{2}, y^{2} \ge 0 \), only \( x = y = 0 \), but \( (0,0) \) does not satisfy the curve. <span class="mark-step">M1</span><br>
+      Therefore <strong>no such points exist</strong>. <span class="mark-step">A1</span>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c2">
+  <h3>Archetype 2 — Parametric Differentiation (find \( \tfrac{dy}{dx} \), then tangent at \( P \))</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "A curve has parametric equations \( x = f(t),\; y = g(t) \). (i) Show that \( \dfrac{dy}{dx} = [\text{simplified form}] \). (ii) Find the tangent at the point where \( t = p \). (iii) (often) find a locus or intersection condition."
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A curve has parametric equations \( x = t + \dfrac{1}{t},\; y = t - \dfrac{1}{t} \) for \( t \ne 0 \).<br>(i) Find \( \dfrac{dy}{dx} \) in terms of \( t \). <span class="marks">[2]</span><br>(ii) Show that the equation of the tangent at the point where \( t = p \) is \( (p^{2} - 1)x - (p^{2} + 1)y = \dfrac{4}{p} \). <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <strong>(i)</strong>
+      \[ \frac{dx}{dt} = 1 - \frac{1}{t^{2}} = \frac{t^{2} - 1}{t^{2}};\qquad \frac{dy}{dt} = 1 + \frac{1}{t^{2}} = \frac{t^{2} + 1}{t^{2}} \qquad \text{<span class="mark-step">M1</span>} \]
+      \[ \frac{dy}{dx} = \frac{t^{2} + 1}{t^{2} - 1} \qquad \text{<span class="mark-step">A1</span>} \]
+      <strong>(ii)</strong> At \( t = p \): point \( \left(p + \tfrac{1}{p},\; p - \tfrac{1}{p}\right) \), gradient \( m = \dfrac{p^{2} + 1}{p^{2} - 1} \). <span class="mark-step">B1</span><br>
+      Tangent: \( y - \left(p - \tfrac{1}{p}\right) = \dfrac{p^{2} + 1}{p^{2} - 1}\!\left[x - \left(p + \tfrac{1}{p}\right)\right] \). <span class="mark-step">M1</span><br>
+      Multiply both sides by \( p(p^{2} - 1) \), expand and simplify:
+      \[ (p^{2} - 1)x - (p^{2} + 1)y = \frac{4}{p} \qquad \text{<span class="mark-step">M1 A1 (AG)</span>} \]
+    </div><div class="answer-overlay">Solution hidden — attempt the example first</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">A curve has parametric equations \( x = 3t^{2},\; y = 2t^{3} \).<br>(i) Find \( \dfrac{dy}{dx} \) in terms of \( t \). <span class="marks">[2]</span><br>(ii) Show that the equation of the tangent at the point with parameter \( p \) is \( y = px - p^{3} \). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <strong>(i)</strong> \( \dfrac{dx}{dt} = 6t,\; \dfrac{dy}{dt} = 6t^{2} \). <span class="mark-step">M1</span>
+      \[ \frac{dy}{dx} = \frac{6t^{2}}{6t} = t \qquad \text{<span class="mark-step">A1</span>} \]
+      <strong>(ii)</strong> At \( t = p \): point \( (3p^{2}, 2p^{3}) \), gradient \( m = p \). <span class="mark-step">B1</span><br>
+      Tangent: \( y - 2p^{3} = p\,(x - 3p^{2}) \). <span class="mark-step">M1</span>
+      \[ y = px - 3p^{3} + 2p^{3} = px - p^{3} \qquad \text{<span class="mark-step">A1 (AG)</span>} \]
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c3">
+  <h3>Archetype 3 — Tangent / Normal Equations (pure or applied)</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Find the equation of the tangent / normal to \( y = f(x) \) at the point …", often followed by "find where the normal meets the curve again." 3–7m, often a P1 mid-paper question.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">The curve \( C \) has equation \( y = x^{3} - 2x^{2} \). The point \( A \) on \( C \) has \( x \)-coordinate \( 2 \).<br>(i) Find the equation of the normal to \( C \) at \( A \). <span class="marks">[3]</span><br>(ii) Determine whether the normal meets \( C \) again. <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <strong>(i)</strong> At \( x = 2 \): \( y = 8 - 8 = 0 \). \( A = (2, 0) \).<br>
+      \( \dfrac{dy}{dx} = 3x^{2} - 4x \). At \( x = 2 \): \( m = 4 \). <span class="mark-step">M1</span><br>
+      Normal gradient \( = -\tfrac{1}{4} \). Equation: <span class="mark-step">M1</span>
+      \[ y - 0 = -\tfrac{1}{4}(x - 2) \;\;\Rightarrow\;\; y = -\tfrac{1}{4}x + \tfrac{1}{2} \qquad \text{<span class="mark-step">A1</span>} \]
+      <strong>(ii)</strong> Solve \( x^{3} - 2x^{2} = -\tfrac{1}{4}x + \tfrac{1}{2} \). Multiply by 4: <span class="mark-step">M1</span>
+      \[ 4x^{3} - 8x^{2} + x - 2 = 0 \]
+      \( x = 2 \) is a root. Factor: \( (x - 2)(4x^{2} + 1) = 0 \). <span class="mark-step">M1</span><br>
+      \( 4x^{2} + 1 > 0 \) for all real \( x \), so no other real root. <span class="mark-step">A1</span><br>
+      <strong>The normal does not meet \( C \) again.</strong> <span class="mark-step">A1</span>
+    </div><div class="answer-overlay">Solution hidden — attempt the example first</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">The curve \( C \) has equation \( y = \dfrac{x^{2}}{x - 1} \) for \( x \ne 1 \).<br>(i) Show that \( \dfrac{dy}{dx} = \dfrac{x^{2} - 2x}{(x - 1)^{2}} \). <span class="marks">[2]</span><br>(ii) Find the equation of the tangent to \( C \) at the point where \( x = 2 \). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <strong>(i)</strong> Quotient rule with \( u = x^{2},\; v = x - 1 \): \( u' = 2x,\; v' = 1 \).
+      \[ \frac{dy}{dx} = \frac{2x(x-1) - x^{2}}{(x-1)^{2}} = \frac{x^{2} - 2x}{(x-1)^{2}} \qquad \text{<span class="mark-step">M1 A1 (AG)</span>} \]
+      <strong>(ii)</strong> At \( x = 2 \): \( y = 4 \), point \( (2, 4) \). <span class="mark-step">B1</span><br>
+      Gradient \( = \dfrac{4 - 4}{1} = 0 \). Tangent is horizontal. <span class="mark-step">M1</span><br>
+      Equation: \( y = 4 \). <span class="mark-step">A1</span>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c4">
+  <h3>Archetype 4 — Connected Rates of Change (real-world: tank, balloon, cone, meteorite)</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    A physical situation with two rates linked by geometry. Common contexts: cone draining, spherical balloon expanding, ice melting, oil spilling. Find one rate given another at a specific instant. Typical 4–6m, P1/P2 opener.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A right circular cone with semi-vertical angle \( 30^{\circ} \) is held vertex downward with its axis vertical. Water is poured in at \( 8 \) cm³ s\(^{-1}\). Find the rate at which the depth of water is increasing when the depth is \( 10 \) cm. <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      Geometry: \( \tan 30^{\circ} = \dfrac{r}{h} \Rightarrow r = \dfrac{h}{\sqrt{3}} \). <span class="mark-step">B1</span>
+      \[ V = \tfrac{1}{3}\pi r^{2} h = \tfrac{1}{3}\pi\cdot\tfrac{h^{2}}{3}\cdot h = \frac{\pi h^{3}}{9} \qquad \text{<span class="mark-step">M1</span>} \]
+      \[ \frac{dV}{dh} = \frac{\pi h^{2}}{3} \qquad \text{<span class="mark-step">M1</span>} \]
+      At \( h = 10 \): \( \dfrac{dV}{dh} = \dfrac{100\pi}{3} \). Chain rule \( \dfrac{dV}{dt} = \dfrac{dV}{dh}\cdot\dfrac{dh}{dt} \):
+      \[ 8 = \frac{100\pi}{3}\cdot\frac{dh}{dt} \qquad \text{<span class="mark-step">M1</span>} \]
+      \[ \frac{dh}{dt} = \frac{6}{25\pi} \approx 0.0764 \;\text{cm s}^{-1} \qquad \text{<span class="mark-step">A1 (with units)</span>} \]
+    </div><div class="answer-overlay">Solution hidden — attempt the example first</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">A spherical raindrop evaporates so that its volume decreases at \( 0.5 \) mm³ s\(^{-1}\). Find the rate at which the radius is decreasing when \( r = 2 \) mm. <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      \( V = \tfrac{4}{3}\pi r^{3} \Rightarrow \dfrac{dV}{dr} = 4\pi r^{2} \). <span class="mark-step">B1 M1</span><br>
+      At \( r = 2 \): \( \dfrac{dV}{dr} = 16\pi \). <span class="mark-step">A1</span><br>
+      Volume decreasing, so \( \dfrac{dV}{dt} = -0.5 \) (sign matters):
+      \[ -0.5 = 16\pi\cdot\frac{dr}{dt} \qquad \text{<span class="mark-step">M1</span>} \]
+      \[ \frac{dr}{dt} = -\frac{1}{32\pi} \approx -0.00995 \;\text{mm s}^{-1} \qquad \text{<span class="mark-step">A1</span>} \]
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c5">
+  <h3>Archetype 5 — Optimisation (max / min in a context)</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    Minimise material / cost / distance, OR maximise area / volume / profit. (1) Express the quantity in one variable via a constraint. (2) Differentiate, set to zero, solve. (3) Verify max/min (often "(You need not show that this is a min/max)"). Typical 6–10m.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A closed cylindrical can of fixed volume \( 500 \) cm³ is to be made. The top and bottom cost twice as much per unit area as the curved surface. Find the radius and height of the can that minimise the total cost. (You need not show that your answer gives a minimum.) <span class="marks">[7]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      Constraint: \( \pi r^{2}h = 500 \Rightarrow h = \dfrac{500}{\pi r^{2}} \). <span class="mark-step">B1</span><br>
+      Cost (let \( k \) = cost per unit area of curved surface):
+      \[ C = 2k(2\pi r^{2}) + k(2\pi r h) = 4\pi k r^{2} + 2\pi k r h \qquad \text{<span class="mark-step">M1</span>} \]
+      Substitute: \( C = 4\pi k r^{2} + \dfrac{1000k}{r} \). <span class="mark-step">M1</span><br>
+      Differentiate and set to zero:
+      \[ \frac{dC}{dr} = 8\pi k r - \frac{1000k}{r^{2}} = 0 \qquad \text{<span class="mark-step">M1</span>} \]
+      \[ 8\pi r^{3} = 1000 \;\Rightarrow\; r = \frac{5}{\sqrt[3]{\pi}} \approx 3.41 \;\text{cm} \qquad \text{<span class="mark-step">A1</span>} \]
+      \[ h = \frac{500}{\pi r^{2}} \approx 6.83 \;\text{cm} \qquad \text{<span class="mark-step">A1</span>} \]
+      Note: \( h = 2r \) at the optimum — a clean ratio result. <span class="mark-step">A1</span>
+    </div><div class="answer-overlay">Solution hidden — attempt the example first</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">A rectangle is inscribed in a semicircle of radius \( 10 \) cm, with one side on the diameter. Find the dimensions and the maximum area. (You need not show your answer is a maximum.) <span class="marks">[7]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      Semicircle: \( x^{2} + y^{2} = 100,\; y \ge 0 \). Rectangle vertices \( (\pm x, 0),\; (\pm x, y) \). Width \( 2x \), height \( y \). <span class="mark-step">B1</span><br>
+      Area: \( A = 2xy = 2x\sqrt{100 - x^{2}} \). <span class="mark-step">M1</span><br>
+      Product rule + chain:
+      \[ \frac{dA}{dx} = 2\sqrt{100 - x^{2}} + 2x\cdot\frac{-x}{\sqrt{100 - x^{2}}} = \frac{200 - 4x^{2}}{\sqrt{100 - x^{2}}} \qquad \text{<span class="mark-step">M1 A1</span>} \]
+      Set to zero: \( 200 - 4x^{2} = 0 \Rightarrow x = 5\sqrt{2} \). <span class="mark-step">M1</span><br>
+      \( y = \sqrt{50} = 5\sqrt{2} \). <span class="mark-step">A1</span><br>
+      Max area: \( A = 2 \cdot 5\sqrt{2} \cdot 5\sqrt{2} = 100 \;\text{cm}^{2} \). <span class="mark-step">A1</span><br>
+      Dimensions: width \( 10\sqrt{2} \approx 14.1 \) cm, height \( 5\sqrt{2} \approx 7.07 \) cm.
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c6">
+  <h3>Archetype 6 — Sketching \( y = f'(x) \) from \( y = f(x) \), or Sign Reasoning</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    Given a sketch of \( y = f(x) \), sketch \( y = f'(x) \). Turning points of \( f \) become \( x \)-axis crossings of \( f' \); intervals where \( f \) increases / decreases give the sign of \( f' \); inflexion points of \( f \) become turning points of \( f' \). Typical 3–5m opener.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A function \( f \) satisfies \( f'(x) = (x - 1)(x - 3)^{2} \).<br>(i) State the values of \( x \) where \( f \) has a local max or min, with reasons. <span class="marks">[3]</span><br>(ii) Sketch \( y = f'(x) \), indicating \( x \)-axis crossings and behaviour. <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <strong>(i)</strong> \( f'(x) = 0 \) at \( x = 1 \) (simple) and \( x = 3 \) (double). <span class="mark-step">B1</span><br>
+      Sign of \( f'(x) \):
+      <ul>
+        <li>\( x < 1 \): \( (-)\cdot(+) < 0 \). \( f \) decreasing.</li>
+        <li>\( 1 < x < 3 \): \( (+)\cdot(+) > 0 \). \( f \) increasing.</li>
+        <li>\( x > 3 \): \( (+)\cdot(+) > 0 \). \( f \) still increasing.</li>
+      </ul>
+      \( f' \) changes \( - \to + \) at \( x = 1 \) → <strong>local min at \( x = 1 \)</strong>. <span class="mark-step">M1 A1</span><br>
+      No sign change at \( x = 3 \) → stationary point of inflexion (not max/min).<br>
+      <strong>(ii)</strong> Sketch: cubic shape, crosses axis at \( x = 1 \), touches axis at \( x = 3 \). <span class="mark-step">B1 B1</span>
+    </div><div class="answer-overlay">Solution hidden — attempt the example first</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">The graph of \( y = f(x) \) has a local maximum at \( (-2, 5) \), a local minimum at \( (1, -3) \), and a non-stationary point of inflexion at \( x = 4 \). \( f \) is increasing on \( (-\infty, -2) \cup (1, \infty) \) and decreasing on \( (-2, 1) \). Sketch \( y = f'(x) \), labelling all \( x \)-axis crossings and turning points. <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      Key features of \( f'(x) \):
+      <ul>
+        <li>\( f'(-2) = 0 \) (turning point of \( f \)) — crosses \( x \)-axis from \( + \) to \( - \). <span class="mark-step">B1</span></li>
+        <li>\( f'(1) = 0 \) — crosses from \( - \) to \( + \). <span class="mark-step">B1</span></li>
+        <li>\( f''(4) = 0 \) (inflexion of \( f \)) — \( f' \) has a turning point at \( x = 4 \) (does NOT cross). <span class="mark-step">B1</span></li>
+        <li>Shape: \( f' > 0 \) on \( (-\infty, -2) \), \( f' < 0 \) on \( (-2, 1) \), \( f' > 0 \) on \( (1, \infty) \) with a local min at \( x = 4 \). <span class="mark-step">B1</span></li>
+      </ul>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c7">
+  <h3>Archetype 7 — Maclaurin by Substituting into Standard MF27 Series</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Using the standard series in the List of Formulae and Results, expand … up to and including the term in \( x^{n} \). State the range of \( x \) for which the expansion is valid." Pure mechanical recognition. Typical 3–5m.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Using the standard series in MF27, expand \( \dfrac{1}{(1 - 2x)^{3}} \) up to and including the term in \( x^{3} \). State the range of \( x \) for which the expansion is valid. <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      Recognise \( (1 + u)^{n} \) with \( u = -2x,\; n = -3 \). <span class="mark-step">M1</span>
+      \[ (1+u)^{-3} = 1 - 3u + 6u^{2} - 10u^{3} + \cdots \]
+      Substitute:
+      \[ = 1 + 6x + 24x^{2} + 80x^{3} + \cdots \qquad \text{<span class="mark-step">M1 A1</span>} \]
+      Validity: \( |-2x| < 1 \Rightarrow |x| < \tfrac{1}{2} \). <span class="mark-step">B1</span>
+    </div><div class="answer-overlay">Solution hidden — attempt the example first</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Using the standard series in MF27, expand \( \sqrt{1 + 3x} \) up to and including the term in \( x^{3} \). State the range of \( x \) for which the expansion is valid. <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      \( (1 + 3x)^{1/2} \) with \( u = 3x,\; n = \tfrac{1}{2} \). <span class="mark-step">M1</span>
+      \[ (1+u)^{1/2} = 1 + \tfrac{1}{2}u - \tfrac{1}{8}u^{2} + \tfrac{1}{16}u^{3} + \cdots \]
+      Substitute:
+      \[ = 1 + \tfrac{3}{2}x - \tfrac{9}{8}x^{2} + \tfrac{27}{16}x^{3} + \cdots \qquad \text{<span class="mark-step">M1 A1</span>} \]
+      Validity: \( |3x| < 1 \Rightarrow |x| < \tfrac{1}{3} \). <span class="mark-step">B1</span>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c8">
+  <h3>Archetype 8 — Maclaurin by Repeated Differentiation</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Given \( f(x) = [\text{non-standard function}] \), find \( f(0),\; f'(0),\; f''(0),\; \ldots \), and hence the Maclaurin series up to \( x^{n} \)." Used when the function isn't in MF27 (e.g. \( \sec x,\; \tan x,\; \sec 2x \)).
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">It is given that \( f(x) = \sec 2x \).<br>(i) Find \( f(0),\; f'(0),\; f''(0) \). <span class="marks">[4]</span><br>(ii) Hence find the Maclaurin series for \( f(x) \) up to and including the term in \( x^{2} \). <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <strong>(i)</strong>
+      \[ f(0) = \sec 0 = 1 \qquad \text{<span class="mark-step">B1</span>} \]
+      \[ f'(x) = 2\sec 2x\tan 2x \Rightarrow f'(0) = 2\cdot 1\cdot 0 = 0 \qquad \text{<span class="mark-step">M1 A1</span>} \]
+      \( f''(x) = 4\sec 2x\tan^{2} 2x + 4\sec^{3} 2x \). At \( x = 0 \): \( f''(0) = 0 + 4 = 4 \). <span class="mark-step">A1</span><br>
+      <strong>(ii)</strong>
+      \[ f(x) \approx 1 + 0\cdot x + \frac{4}{2}x^{2} = 1 + 2x^{2} \qquad \text{<span class="mark-step">M1 A1</span>} \]
+    </div><div class="answer-overlay">Solution hidden — attempt the example first</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">It is given that \( f(x) = \tan x \).<br>(i) Find \( f(0),\; f'(0),\; f''(0),\; f'''(0) \). <span class="marks">[5]</span><br>(ii) Hence find the Maclaurin series for \( \tan x \) up to and including the term in \( x^{3} \). <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <strong>(i)</strong>
+      \[ f(0) = 0;\quad f'(x) = \sec^{2}x \Rightarrow f'(0) = 1 \qquad \text{<span class="mark-step">B1 B1</span>} \]
+      \[ f''(x) = 2\sec^{2}x\tan x \Rightarrow f''(0) = 0 \qquad \text{<span class="mark-step">M1 A1</span>} \]
+      \( f'''(x) = 4\sec^{2}x\tan^{2}x + 2\sec^{4}x \). At \( x = 0 \): \( f'''(0) = 2 \). <span class="mark-step">A1</span><br>
+      <strong>(ii)</strong>
+      \[ \tan x \approx 0 + x + \frac{0}{2}x^{2} + \frac{2}{6}x^{3} = x + \tfrac{1}{3}x^{3} \qquad \text{<span class="mark-step">M1 A1</span>} \]
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c9">
+  <h3>Archetype 9 — Maclaurin by Combining Standard Series</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Using standard series in MF27, find the Maclaurin series of \( e^{2x}\cos x \) (or \( \ln(\cos 2x),\; \dfrac{1}{1 - \sin x} \), etc.) up to the term in \( x^{n} \)." Multiply or compose standard series; collect terms. Faster than repeated differentiation when applicable. Typical 4–6m.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Find the first three non-zero terms in the Maclaurin series of \( \ln(\cos 2x) \). <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      Step 1: \( \cos 2x = 1 - 2x^{2} + \tfrac{2}{3}x^{4} - \cdots \). <span class="mark-step">M1</span><br>
+      Step 2: Let \( u = -2x^{2} + \tfrac{2}{3}x^{4} - \cdots \), then \( \cos 2x = 1 + u \). Apply \( \ln(1 + u) = u - \tfrac{u^{2}}{2} + \tfrac{u^{3}}{3} - \cdots \). <span class="mark-step">M1</span><br>
+      Step 3: Compute up to \( x^{6} \):
+      \[ u = -2x^{2} + \tfrac{2}{3}x^{4};\qquad u^{2} = 4x^{4} - \tfrac{8}{3}x^{6} + \cdots;\qquad u^{3} = -8x^{6} + \cdots \]
+      \[ \ln(\cos 2x) = u - \tfrac{u^{2}}{2} + \tfrac{u^{3}}{3} \]
+      \[ = \left(-2x^{2} + \tfrac{2}{3}x^{4}\right) - \left(2x^{4} - \tfrac{4}{3}x^{6}\right) + \left(-\tfrac{8}{3}x^{6}\right) \qquad \text{<span class="mark-step">M1</span>} \]
+      \[ = -2x^{2} - \tfrac{4}{3}x^{4} - \tfrac{4}{3}x^{6} + \cdots \qquad \text{<span class="mark-step">A1 A1</span>} \]
+    </div><div class="answer-overlay">Solution hidden — attempt the example first</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Using standard series, find the Maclaurin series of \( e^{x}\sin 2x \) up to and including the term in \( x^{3} \). <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      \( e^{x} = 1 + x + \tfrac{x^{2}}{2} + \tfrac{x^{3}}{6} + \cdots \); \( \sin 2x = 2x - \tfrac{4}{3}x^{3} + \cdots \). <span class="mark-step">M1 M1</span><br>
+      Multiply, keep up to \( x^{3} \):
+      \[ (1)(2x) + (x)(2x) + (\tfrac{x^{2}}{2})(2x) + (1)(-\tfrac{4}{3}x^{3}) \]
+      \[ = 2x + 2x^{2} + x^{3} - \tfrac{4}{3}x^{3} = 2x + 2x^{2} - \tfrac{1}{3}x^{3} + \cdots \qquad \text{<span class="mark-step">M1 A1</span>} \]
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c10">
+  <h3>Archetype 10 — Maclaurin by Repeated Implicit Differentiation</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Given that \( y \) satisfies \( [\text{implicit equation}] \) and \( y = y_{0} \) when \( x = 0 \), find the first few terms of the Maclaurin series of \( y \)." Differentiate the relation implicitly, substitute \( (x, y) = (0, y_{0}) \) at each step to find \( y'(0), y''(0), \ldots \).
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">It is given that \( y \) satisfies \( y^{3} + y^{2} + y = x^{2} - 2x \) and \( y = 0 \) when \( x = 0 \).<br>(i) Show that \( \dfrac{dy}{dx} = -2 \) when \( x = 0 \). <span class="marks">[2]</span><br>(ii) Find \( \dfrac{d^{2}y}{dx^{2}} \) when \( x = 0 \). <span class="marks">[3]</span><br>(iii) Hence find the Maclaurin series for \( y \) up to \( x^{2} \). <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <strong>(i)</strong> Differentiate (chain rule on \( y \)-terms):
+      \[ 3y^{2}\frac{dy}{dx} + 2y\frac{dy}{dx} + \frac{dy}{dx} = 2x - 2 \qquad \text{<span class="mark-step">M1</span>} \]
+      At \( x = 0,\, y = 0 \): \( \dfrac{dy}{dx} = -2 \). <span class="mark-step">A1 (AG)</span><br>
+      <strong>(ii)</strong> Differentiate again:
+      \[ 6y\!\left(\tfrac{dy}{dx}\right)^{2} + 3y^{2}\tfrac{d^{2}y}{dx^{2}} + 2\!\left(\tfrac{dy}{dx}\right)^{2} + 2y\tfrac{d^{2}y}{dx^{2}} + \tfrac{d^{2}y}{dx^{2}} = 2 \qquad \text{<span class="mark-step">M1</span>} \]
+      At \( x = 0,\, y = 0,\, \dfrac{dy}{dx} = -2 \):
+      \[ 0 + 0 + 2(4) + 0 + \tfrac{d^{2}y}{dx^{2}} = 2 \Rightarrow \tfrac{d^{2}y}{dx^{2}} = -6 \qquad \text{<span class="mark-step">M1 A1</span>} \]
+      <strong>(iii)</strong>
+      \[ y \approx 0 + (-2)x + \tfrac{-6}{2}x^{2} = -2x - 3x^{2} \qquad \text{<span class="mark-step">M1 A1</span>} \]
+    </div><div class="answer-overlay">Solution hidden — attempt the example first</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">It is given that \( y \) satisfies \( e^{y} = 1 + \sin x \) and \( y = 0 \) when \( x = 0 \).<br>(i) Show that \( \dfrac{dy}{dx} = 1 \) when \( x = 0 \). <span class="marks">[2]</span><br>(ii) Find \( \dfrac{d^{2}y}{dx^{2}} \) when \( x = 0 \). <span class="marks">[3]</span><br>(iii) Hence find the Maclaurin series for \( y \) up to \( x^{2} \). <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <strong>(i)</strong>
+      \[ e^{y}\frac{dy}{dx} = \cos x \qquad \text{<span class="mark-step">M1</span>} \]
+      At \( x = 0,\,y = 0 \): \( 1\cdot\dfrac{dy}{dx} = 1 \). <span class="mark-step">A1 (AG)</span><br>
+      <strong>(ii)</strong> Differentiate \( e^{y}\dfrac{dy}{dx} = \cos x \) (product rule on LHS):
+      \[ e^{y}\!\left(\tfrac{dy}{dx}\right)^{2} + e^{y}\tfrac{d^{2}y}{dx^{2}} = -\sin x \qquad \text{<span class="mark-step">M1</span>} \]
+      At \( x = 0,\,y = 0,\,\tfrac{dy}{dx} = 1 \): \( 1 + \tfrac{d^{2}y}{dx^{2}} = 0 \Rightarrow \tfrac{d^{2}y}{dx^{2}} = -1 \). <span class="mark-step">M1 A1</span><br>
+      <strong>(iii)</strong>
+      \[ y \approx 0 + x - \tfrac{1}{2}x^{2} \qquad \text{<span class="mark-step">M1 A1</span>} \]
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c11">
+  <h3>Archetype 11 — Range of Convergence / Validity</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "State the range of values of \( x \) for which the expansion is valid" — usually 1–2m at the end of a Maclaurin question. \( (1+x)^{n} \to |x| < 1 \); \( e^{x},\sin x,\cos x \to \) all \( x \); \( \ln(1+x) \to -1 < x \le 1 \). When \( x \to g(x) \), substitute and solve the inequality.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A function is expanded as \( \ln(1 + 3x^{2}) = 3x^{2} - \tfrac{9}{2}x^{4} + 9x^{6} - \cdots \). State the range of values of \( x \) for which the expansion is valid. <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      Base series \( \ln(1 + u) \) valid for \( -1 < u \le 1 \). Here \( u = 3x^{2} \). <span class="mark-step">M1</span><br>
+      \( -1 < 3x^{2} \le 1 \). Lower bound automatic. Upper: \( x^{2} \le \tfrac{1}{3} \Rightarrow |x| \le \tfrac{1}{\sqrt{3}} \). <span class="mark-step">A1</span>
+    </div><div class="answer-overlay">Solution hidden — attempt the example first</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">The expansion of \( (4 - x)^{-1/2} \) is derived using a standard MF27 series. State the range of values of \( x \) for which the expansion is valid. <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      Rewrite to expose \( (1 + u)^{n} \):
+      \[ (4 - x)^{-1/2} = [4(1 - \tfrac{x}{4})]^{-1/2} = \tfrac{1}{2}(1 - \tfrac{x}{4})^{-1/2} \qquad \text{<span class="mark-step">M1</span>} \]
+      Valid for \( |u| < 1 \): <span class="mark-step">M1</span>
+      \[ \left|-\tfrac{x}{4}\right| < 1 \Leftrightarrow |x| < 4 \qquad \text{<span class="mark-step">A1</span>} \]
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c12">
+  <h3>Archetype 12 — Small-Angle Approximation in Trig / Applied Context</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "By using small-angle approximations, show that for small \( x \), \( \dfrac{[\text{expression}]}{[\text{expression}]} \approx [\text{simple form}] \)." Or evaluate a limit. Typical 3–5m. Often paired with "explain why this approximation is reasonable" or a range condition.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">It is given that \( y = \dfrac{\sin 3x}{1 - \cos 2x} \). Using small-angle approximations for \( \sin 3x \) and \( \cos 2x \), show that \( y \approx \dfrac{3}{2x} \) for small \( x \). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      \( \sin 3x \approx 3x \). <span class="mark-step">B1</span><br>
+      \( \cos 2x \approx 1 - 2x^{2} \), so \( 1 - \cos 2x \approx 2x^{2} \). <span class="mark-step">B1</span>
+      \[ y \approx \frac{3x}{2x^{2}} = \frac{3}{2x} \qquad \text{<span class="mark-step">A1 (AG)</span>} \]
+    </div><div class="answer-overlay">Solution hidden — attempt the example first</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">By using small-angle approximations, show that for small \( x \), \( \dfrac{\tan x - \sin x}{x^{3}} \approx \dfrac{1}{2} \). <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      Leading-order \( x \)-terms in \( \tan x \) and \( \sin x \) both equal \( x \) and cancel — must go to next order.<br>
+      \( \tan x \approx x + \tfrac{1}{3}x^{3} \) (from Archetype 8). <span class="mark-step">B1</span><br>
+      \( \sin x \approx x - \tfrac{1}{6}x^{3} \). <span class="mark-step">B1</span><br>
+      Subtract:
+      \[ \tan x - \sin x \approx \tfrac{1}{3}x^{3} + \tfrac{1}{6}x^{3} = \tfrac{1}{2}x^{3} \qquad \text{<span class="mark-step">M1 A1</span>} \]
+      \[ \frac{\tan x - \sin x}{x^{3}} \approx \tfrac{1}{2} \qquad \text{<span class="mark-step">A1 (AG)</span>} \]
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<hr>
+
+<h2>Closing notes</h2>
+<p>Score yourself honestly using the M/A/B breakdowns. If \( \ge 90\% \) across all 12 archetypes, the cluster is encoded — the next gate is a real past-paper question under timed conditions (1.2 min per mark). If \( < 70\% \) in real conditions but \( > 90\% \) here, the gap is exam pressure, not understanding.</p>
+
+<ul>
+  <li>Time per attempt: aim for 1.2 min × marks.</li>
+  <li>Open a new Claude window for any concept where you scored \( \le 50\% \) — do not derail this drill.</li>
+  <li>Once Cluster 1 is solid, request Cluster 2 (Integration_Techniques_And_Applications).</li>
+</ul>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const block = this.parentElement;
+      const overlay = block.querySelector('.answer-overlay');
+      if (overlay.classList.contains('hidden')) {
+        overlay.classList.remove('hidden');
+        this.textContent = 'Reveal';
+        this.classList.remove('hide-state');
+      } else {
+        overlay.classList.add('hidden');
+        this.textContent = 'Hide';
+        this.classList.add('hide-state');
+      }
+    });
+  });
+  function revealAll() {
+    document.querySelectorAll('.answer-overlay').forEach(o => o.classList.add('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b => { b.textContent = 'Hide'; b.classList.add('hide-state'); });
+  }
+  function hideAll() {
+    document.querySelectorAll('.answer-overlay').forEach(o => o.classList.remove('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b => { b.textContent = 'Reveal'; b.classList.remove('hide-state'); });
+  }
+</script>
+
+</body>
+</html>

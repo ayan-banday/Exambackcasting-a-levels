@@ -1,0 +1,2523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Study Sheet — Maths H2 &gt; Calculus</title>
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true, tags: 'none' },
+    svg: { fontCache: 'global' },
+    options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root {
+    --bg: #fafafa; --card-bg: #ffffff; --border: #e5e7eb; --text: #1a1a1a; --muted: #6b7280;
+    --blue: #2563eb; --blue-soft: #eff6ff; --amber: #d97706; --amber-soft: #fffbeb;
+    --green: #059669; --green-soft: #ecfdf5; --cover: #f3f4f6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Charter', 'Georgia', 'Times New Roman', serif;
+    max-width: 920px; margin: 0 auto; padding: 40px 24px 80px;
+    line-height: 1.65; color: var(--text); background: var(--bg);
+  }
+  h1, h2, h3, .label, .nav, .controls, button, .step-header {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+  }
+  h1 { font-size: 2em; margin: 0 0 8px; color: #111; border-bottom: 3px solid #111; padding-bottom: 12px; }
+  h2 { font-size: 1.5em; margin-top: 56px; margin-bottom: 16px; color: #111; border-bottom: 1px solid #999; padding-bottom: 6px; }
+  h3 { font-size: 1.15em; margin: 0 0 14px; color: #1f2937; }
+  p { margin: 8px 0; }
+  .meta { color: var(--muted); font-size: 0.9em; margin: 4px 0 24px; }
+  .intro {
+    background: var(--card-bg); border: 1px solid var(--border); border-left: 4px solid var(--blue);
+    padding: 16px 20px; border-radius: 6px; margin: 16px 0 32px;
+  }
+  .intro ul { margin: 8px 0 0 0; padding-left: 22px; }
+  .intro li { margin: 4px 0; }
+  .controls {
+    position: sticky; top: 0; background: var(--bg); padding: 12px 0; z-index: 100;
+    border-bottom: 1px solid var(--border); margin-bottom: 20px;
+    display: flex; gap: 10px; flex-wrap: wrap;
+  }
+  .controls button {
+    background: #fff; border: 1px solid var(--border); padding: 6px 14px; border-radius: 5px;
+    cursor: pointer; font-size: 0.85em; color: var(--text); font-weight: 500;
+  }
+  .controls button:hover { background: #f3f4f6; }
+  .toc {
+    background: var(--card-bg); border: 1px solid var(--border); padding: 16px 24px;
+    border-radius: 6px; margin-bottom: 32px; font-size: 0.9em;
+  }
+  .toc strong { display: block; margin-bottom: 6px; color: #111; }
+  .toc a { color: var(--blue); text-decoration: none; margin-right: 16px; }
+  .toc a:hover { text-decoration: underline; }
+  .card {
+    background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px;
+    padding: 20px 24px; margin: 20px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .block { margin: 14px 0; padding: 12px 16px; border-radius: 6px; border-left: 4px solid var(--border); }
+  .block.formula { background: var(--blue-soft); border-left-color: var(--blue); }
+  .block.concept { background: #f0fdfa; border-left-color: #0d9488; }
+  .block.example { background: #f9fafb; border-left-color: #6b7280; }
+  .block.practice { background: var(--amber-soft); border-left-color: var(--amber); }
+  .block.answer { background: var(--green-soft); border-left-color: var(--green); position: relative; min-height: 60px; }
+  .label {
+    display: block; text-transform: uppercase; font-size: 0.75em; letter-spacing: 0.08em;
+    font-weight: 700; margin-bottom: 6px; color: var(--muted);
+  }
+  .block.formula .label { color: var(--blue); }
+  .block.concept .label { color: #0f766e; }
+  .block.example .label { color: #4b5563; }
+  .block.practice .label { color: var(--amber); }
+  .block.answer .label { color: var(--green); }
+  .mf27 {
+    display: inline-block; font-size: 0.7em; background: var(--blue); color: #fff;
+    padding: 2px 7px; border-radius: 10px; font-weight: 700; margin-left: 8px;
+    vertical-align: middle; letter-spacing: 0.05em;
+    font-family: -apple-system, sans-serif;
+  }
+  .step {
+    margin: 10px 0;
+    padding: 8px 12px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 4px;
+    border-left: 2px solid var(--green);
+  }
+  .step-header {
+    font-size: 0.8em;
+    font-weight: 700;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+  }
+  .step-desc {
+    font-style: italic;
+    color: #374151;
+    margin-bottom: 6px;
+    font-size: 0.95em;
+  }
+  .final {
+    margin-top: 12px;
+    padding: 8px 12px;
+    background: #d1fae5;
+    border-radius: 4px;
+    border-left: 3px solid #059669;
+    font-weight: 600;
+  }
+  .reveal-btn {
+    position: absolute; top: 10px; right: 10px; background: var(--green); color: #fff;
+    border: none; padding: 5px 12px; border-radius: 4px; cursor: pointer;
+    font-size: 0.8em; font-weight: 600; z-index: 3; box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+  .reveal-btn:hover { background: #047857; }
+  .reveal-btn.hide-state { background: var(--muted); }
+  .reveal-btn.hide-state:hover { background: #4b5563; }
+  .answer-content { transition: filter 0.2s, opacity 0.2s; }
+  .answer-overlay {
+    position: absolute; inset: 0; background: var(--cover); border-radius: 0 6px 6px 0;
+    display: flex; align-items: center; justify-content: center; color: var(--muted);
+    font-style: italic; font-size: 0.9em;
+    font-family: -apple-system, sans-serif;
+    border-left: 4px solid var(--muted); margin-left: -16px; padding-left: 16px;
+    z-index: 2; transition: opacity 0.2s;
+  }
+  .answer-overlay.hidden { opacity: 0; pointer-events: none; }
+  .block.answer .answer-content { padding-right: 60px; }
+  ul, ol { padding-left: 24px; }
+  li { margin: 4px 0; }
+  .mjx-container { font-size: 1.05em !important; }
+  hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+  @media print {
+    body { background: #fff; padding: 20px; max-width: 100%; }
+    .controls, .reveal-btn { display: none !important; }
+    .answer-overlay { display: none !important; }
+    .card { box-shadow: none; page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Pre-Study Sheet — Maths H2 &gt; Calculus</h1>
+<p class="meta">Syllabus 9758 · Sections §5.1–§5.5 · Hwa Chong JC2 · Built 2026-06-22</p>
+
+<div class="intro">
+<strong>Format:</strong> formula → example (with hidden step-by-step solution) → practice (with hidden step-by-step answer).
+<ul>
+  <li>Read the Formula. Attempt the Example yourself, then Reveal to walk through the worked solution one step at a time.</li>
+  <li>Attempt the Practice cold and Reveal to check your steps against the model.</li>
+  <li>Every Solution and Answer is broken into <strong>numbered explicit steps</strong>. If a step is unclear, stop and re-encode that step alone.</li>
+  <li><span class="mf27">MF27</span> = formula is in the exam formula list.</li>
+  <li>Print the page (Cmd-P) and all answers auto-reveal.</li>
+</ul>
+</div>
+
+<div class="controls">
+  <button onclick="revealAll()">Reveal all</button>
+  <button onclick="hideAll()">Hide all</button>
+</div>
+
+<div class="toc">
+<strong>Topics</strong>
+<a href="#diff">§5.1 Differentiation (1–16)</a>
+<a href="#mac">§5.2 Maclaurin (17–24)</a>
+<a href="#int">§5.3 Integration techniques (25–37)</a>
+<a href="#def">§5.4 Area &amp; volume (38–42)</a>
+<a href="#de">§5.5 Differential equations (43–46)</a>
+</div>
+
+<h2 id="diff">§5.1 DIFFERENTIATION</h2>
+
+<div class="card">
+  <h3>Block 1 — Power Rule</h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \frac{d}{dx}\bigl(x^{n}\bigr) \;=\; n\,x^{n-1} \quad \text{for any rational } n \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Differentiate \( y = 3x^{5} - 2x^{-2} + \sqrt{x} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Rewrite every term in pure power form so the power rule applies.</div>
+        \( \sqrt{x} = x^{1/2} \), so \( y = 3x^{5} - 2x^{-2} + x^{1/2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Apply the power rule term by term: multiply by the old power, subtract 1 from the power.</div>
+        \( \dfrac{d}{dx}(3x^{5}) = 15x^{4} \).<br>
+        \( \dfrac{d}{dx}(-2x^{-2}) = -2 \cdot (-2)\,x^{-3} = 4x^{-3} \).<br>
+        \( \dfrac{d}{dx}(x^{1/2}) = \tfrac{1}{2}\,x^{-1/2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Combine and (optionally) rewrite negative/fractional powers in original notation.</div>
+        \[ \frac{dy}{dx} = 15x^{4} + 4x^{-3} + \tfrac{1}{2}x^{-1/2} = 15x^{4} + \frac{4}{x^{3}} + \frac{1}{2\sqrt{x}} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Differentiate \( y = 4x^{3} - \dfrac{1}{x^{2}} + \sqrt[3]{x} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Rewrite in power form.</div>
+        \( y = 4x^{3} - x^{-2} + x^{1/3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Power rule on each term.</div>
+        \( \dfrac{d}{dx}(4x^{3}) = 12x^{2} \).<br>
+        \( \dfrac{d}{dx}(-x^{-2}) = -(-2)x^{-3} = 2x^{-3} \).<br>
+        \( \dfrac{d}{dx}(x^{1/3}) = \tfrac{1}{3}x^{-2/3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Combine.</div>
+        \[ \frac{dy}{dx} = 12x^{2} + \frac{2}{x^{3}} + \frac{1}{3\sqrt[3]{x^{2}}} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 2 — Exponential Derivative \( e^{x} \) (no inner function)</h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \frac{d}{dx}\bigl(e^{x}\bigr) \;=\; e^{x} \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Differentiate \( y = 5e^{x} + 3x^{2} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate the exponential term. The derivative of \( e^{x} \) is itself; constants stay.</div>
+        \( \dfrac{d}{dx}(5e^{x}) = 5e^{x} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Differentiate the polynomial term using the power rule.</div>
+        \( \dfrac{d}{dx}(3x^{2}) = 6x \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Combine.</div>
+        \[ \frac{dy}{dx} = 5e^{x} + 6x \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Differentiate \( y = 2e^{x} - 4x + 1 \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate each term separately.</div>
+        \( \dfrac{d}{dx}(2e^{x}) = 2e^{x} \); \( \dfrac{d}{dx}(-4x) = -4 \); \( \dfrac{d}{dx}(1) = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Combine.</div>
+        \[ \frac{dy}{dx} = 2e^{x} - 4 \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 3 — Logarithm Derivative \( \ln x \) (no inner function)</h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \frac{d}{dx}\bigl(\ln x\bigr) \;=\; \frac{1}{x} \qquad (x > 0) \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Differentiate \( y = 4\ln x - 7x \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate the log term; the constant in front carries through.</div>
+        \( \dfrac{d}{dx}(4\ln x) = 4 \cdot \dfrac{1}{x} = \dfrac{4}{x} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Differentiate the linear term.</div>
+        \( \dfrac{d}{dx}(-7x) = -7 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Combine.</div>
+        \[ \frac{dy}{dx} = \frac{4}{x} - 7 \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Differentiate \( y = 3\ln x + 2x^{2} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate each term.</div>
+        \( \dfrac{d}{dx}(3\ln x) = \dfrac{3}{x} \); \( \dfrac{d}{dx}(2x^{2}) = 4x \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Combine.</div>
+        \[ \frac{dy}{dx} = \frac{3}{x} + 4x \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 4 — Trig Derivatives (no inner function)</h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \frac{d}{dx}(\sin x) = \cos x \qquad \frac{d}{dx}(\cos x) = -\sin x \qquad \frac{d}{dx}(\tan x) = \sec^{2}x \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Differentiate \( y = 3\sin x - 2\cos x + \tan x \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate each trig term separately.</div>
+        \( \dfrac{d}{dx}(3\sin x) = 3\cos x \).<br>
+        \( \dfrac{d}{dx}(-2\cos x) = -2 \cdot (-\sin x) = 2\sin x \).<br>
+        \( \dfrac{d}{dx}(\tan x) = \sec^{2}x \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Combine.</div>
+        \[ \frac{dy}{dx} = 3\cos x + 2\sin x + \sec^{2}x \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Differentiate \( y = \sin x + 4\cos x \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate each term.</div>
+        \( \dfrac{d}{dx}(\sin x) = \cos x \); \( \dfrac{d}{dx}(4\cos x) = -4\sin x \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Combine.</div>
+        \[ \frac{dy}{dx} = \cos x - 4\sin x \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 5 — Inverse Trig Derivatives <span class="mf27">MF27</span></h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \frac{d}{dx}\!\left(\sin^{-1}\!\frac{x}{a}\right) = \frac{1}{\sqrt{a^{2} - x^{2}}} \qquad \frac{d}{dx}\!\left(\tan^{-1}\!\frac{x}{a}\right) = \frac{a}{a^{2} + x^{2}} \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Differentiate \( y = \sin^{-1}\!\dfrac{x}{3} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify the value of \( a \) from the form \( \sin^{-1}\!\dfrac{x}{a} \).</div>
+        Comparing \( \sin^{-1}\!\dfrac{x}{3} \) with \( \sin^{-1}\!\dfrac{x}{a} \), we see \( a = 3 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Substitute \( a = 3 \) into the MF27 formula \( \dfrac{1}{\sqrt{a^{2} - x^{2}}} \).</div>
+        \[ \frac{dy}{dx} = \frac{1}{\sqrt{3^{2} - x^{2}}} = \frac{1}{\sqrt{9 - x^{2}}} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Differentiate \( y = \tan^{-1}\!\dfrac{x}{5} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( a \).</div>
+        \( a = 5 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Substitute into the MF27 formula \( \dfrac{a}{a^{2} + x^{2}} \).</div>
+        \[ \frac{dy}{dx} = \frac{5}{5^{2} + x^{2}} = \frac{5}{25 + x^{2}} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 6 — Chain Rule</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    A "function of a function" composes two changes. If \( y \) depends on \( u \), and \( u \) depends on \( x \), then the rate of change of \( y \) w.r.t. \( x \) is the product of the two rates: \( \dfrac{dy}{dx} = \dfrac{dy}{du}\cdot\dfrac{du}{dx} \). Think of it as multiplying the gear ratios.
+  </div>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \frac{d}{dx}\bigl[f\bigl(g(x)\bigr)\bigr] \;=\; f'\bigl(g(x)\bigr)\,\cdot g'(x) \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Differentiate \( y = (3x^{2} - 4x + 1)^{7} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify the inner function \( g(x) \) and the outer function \( f(u) \).</div>
+        Inner: \( g(x) = 3x^{2} - 4x + 1 \). Outer: \( f(u) = u^{7} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Differentiate the outer function with respect to \( u \), then evaluate at \( u = g(x) \).</div>
+        \( f'(u) = 7u^{6} \), so \( f'(g(x)) = 7(3x^{2} - 4x + 1)^{6} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Differentiate the inner function \( g(x) \).</div>
+        \( g'(x) = 6x - 4 \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Multiply outer × inner.</div>
+        \[ \frac{dy}{dx} = 7(3x^{2} - 4x + 1)^{6} \cdot (6x - 4) \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Differentiate \( y = \sqrt{2x^{3} - x^{2}} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Rewrite to expose the power. Identify inner / outer.</div>
+        \( y = (2x^{3} - x^{2})^{1/2} \). Inner \( g(x) = 2x^{3} - x^{2} \), outer \( f(u) = u^{1/2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Differentiate outer.</div>
+        \( f'(u) = \tfrac{1}{2}u^{-1/2} \), so \( f'(g(x)) = \tfrac{1}{2}(2x^{3} - x^{2})^{-1/2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Differentiate inner.</div>
+        \( g'(x) = 6x^{2} - 2x \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Multiply and simplify.</div>
+        \[ \frac{dy}{dx} = \tfrac{1}{2}(2x^{3} - x^{2})^{-1/2}(6x^{2} - 2x) = \frac{6x^{2} - 2x}{2\sqrt{2x^{3} - x^{2}}} = \frac{3x^{2} - x}{\sqrt{2x^{3} - x^{2}}} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 7 — Chain Rule applied to \( e^{f(x)} \) and \( \ln f(x) \)</h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \frac{d}{dx}\bigl(e^{f(x)}\bigr) = f'(x)\,e^{f(x)} \qquad \frac{d}{dx}\bigl(\ln f(x)\bigr) = \frac{f'(x)}{f(x)} \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Differentiate \( y = e^{3x^{2} - 2x} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( f(x) \), the function in the exponent.</div>
+        \( f(x) = 3x^{2} - 2x \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Differentiate the inner function.</div>
+        \( f'(x) = 6x - 2 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Apply the formula: \( f'(x) \times e^{f(x)} \).</div>
+        \[ \frac{dy}{dx} = (6x - 2)\,e^{3x^{2} - 2x} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Differentiate \( y = \ln(x^{2} + 1) \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( f(x) \) (the argument of \( \ln \)).</div>
+        \( f(x) = x^{2} + 1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Differentiate it.</div>
+        \( f'(x) = 2x \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Apply the formula \( \dfrac{f'(x)}{f(x)} \).</div>
+        \[ \frac{dy}{dx} = \frac{2x}{x^{2} + 1} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 8 — Chain Rule applied to Trig</h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \frac{d}{dx}\bigl(\sin f(x)\bigr) = f'(x)\cos f(x) \qquad \frac{d}{dx}\bigl(\cos f(x)\bigr) = -f'(x)\sin f(x) \qquad \frac{d}{dx}\bigl(\tan f(x)\bigr) = f'(x)\sec^{2}f(x) \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Differentiate \( y = \tan(5x + 1) \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( f(x) \), the argument of \( \tan \).</div>
+        \( f(x) = 5x + 1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Differentiate it.</div>
+        \( f'(x) = 5 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Apply \( f'(x)\sec^{2}f(x) \).</div>
+        \[ \frac{dy}{dx} = 5\sec^{2}(5x + 1) \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Differentiate \( y = \cos(2x^{3}) \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( f(x) \).</div>
+        \( f(x) = 2x^{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Differentiate.</div>
+        \( f'(x) = 6x^{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Apply \( -f'(x)\sin f(x) \). Note the minus sign from \( \cos \to -\sin \).</div>
+        \[ \frac{dy}{dx} = -6x^{2}\sin(2x^{3}) \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 9 — Product Rule</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    When two things multiply, the rate of change of their product has two contributions: "how much \( u \) changes (with \( v \) held fixed)" plus "how much \( v \) changes (with \( u \) held fixed)". That's why both terms appear.
+  </div>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \frac{d}{dx}[u\,v] \;=\; u'v + u\,v' \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Differentiate \( y = x^{2}\sin x \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Split the product into \( u \) and \( v \).</div>
+        \( u = x^{2},\; v = \sin x \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Differentiate each separately.</div>
+        \( u' = 2x \); \( v' = \cos x \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Plug into the product rule \( u'v + u v' \).</div>
+        \[ \frac{dy}{dx} = (2x)(\sin x) + (x^{2})(\cos x) = 2x\sin x + x^{2}\cos x \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Differentiate \( y = x\,e^{x} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Split the product.</div>
+        \( u = x,\; v = e^{x} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Differentiate each.</div>
+        \( u' = 1 \); \( v' = e^{x} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Apply the product rule and factorise.</div>
+        \[ \frac{dy}{dx} = (1)(e^{x}) + (x)(e^{x}) = e^{x}(1 + x) \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 10 — Quotient Rule</h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \frac{d}{dx}\!\left(\frac{u}{v}\right) \;=\; \frac{u'\,v - u\,v'}{v^{2}} \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Differentiate \( y = \dfrac{x}{x^{2} + 1} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Split into \( u \) (numerator) and \( v \) (denominator).</div>
+        \( u = x,\; v = x^{2} + 1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Differentiate each.</div>
+        \( u' = 1 \); \( v' = 2x \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Plug into \( \dfrac{u'v - u v'}{v^{2}} \).</div>
+        \[ \frac{dy}{dx} = \frac{(1)(x^{2} + 1) - (x)(2x)}{(x^{2} + 1)^{2}} \]
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Simplify the numerator.</div>
+        \[ \frac{dy}{dx} = \frac{x^{2} + 1 - 2x^{2}}{(x^{2} + 1)^{2}} = \frac{1 - x^{2}}{(x^{2} + 1)^{2}} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Differentiate \( y = \dfrac{\sin x}{x} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Split.</div>
+        \( u = \sin x,\; v = x \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Differentiate each.</div>
+        \( u' = \cos x \); \( v' = 1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Plug into the quotient rule.</div>
+        \[ \frac{dy}{dx} = \frac{(\cos x)(x) - (\sin x)(1)}{x^{2}} = \frac{x\cos x - \sin x}{x^{2}} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 11 — Implicit Differentiation</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    When the equation mixes \( x \) and \( y \) (not isolated as \( y = f(x) \)), we still treat \( y \) as a function of \( x \) — we just don't have an explicit formula for it. The chain rule kicks in on every \( y \)-term because differentiating an unknown function of \( x \) leaves an extra \( \dfrac{dy}{dx} \) factor.
+  </div>
+  <div class="block formula"><div class="label">Method</div>
+    Differentiate every term w.r.t. \( x \). Apply the chain rule on every \(y\)-term: \( \dfrac{d}{dx}(y^{n}) = n\,y^{n-1}\,\dfrac{dy}{dx} \). Then solve for \( \dfrac{dy}{dx} \).
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find \( \dfrac{dy}{dx} \) for the curve \( x^{2} + y^{2} = 25 \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate every term w.r.t. \( x \). For \( x \)-terms, use the power rule. For \( y \)-terms, apply the chain rule (multiply by \( \dfrac{dy}{dx} \)).</div>
+        \( \dfrac{d}{dx}(x^{2}) = 2x \).<br>
+        \( \dfrac{d}{dx}(y^{2}) = 2y \cdot \dfrac{dy}{dx} \) (chain rule on \( y \)).<br>
+        \( \dfrac{d}{dx}(25) = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Set the differentiated equation equal to zero (since RHS was a constant).</div>
+        \[ 2x + 2y\frac{dy}{dx} = 0 \]
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Solve for \( \dfrac{dy}{dx} \).</div>
+        \[ 2y\frac{dy}{dx} = -2x \;\;\Rightarrow\;\; \frac{dy}{dx} = -\frac{x}{y} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find \( \dfrac{dy}{dx} \) for the curve \( x^{2}y + y^{3} = 6 \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate term by term. For \( x^{2}y \), use the product rule (both factors depend on \( x \)).</div>
+        \( \dfrac{d}{dx}(x^{2}y) = 2xy + x^{2}\dfrac{dy}{dx} \).<br>
+        \( \dfrac{d}{dx}(y^{3}) = 3y^{2}\dfrac{dy}{dx} \).<br>
+        \( \dfrac{d}{dx}(6) = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Write out the differentiated equation.</div>
+        \[ 2xy + x^{2}\frac{dy}{dx} + 3y^{2}\frac{dy}{dx} = 0 \]
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Group all \( \dfrac{dy}{dx} \) terms on one side.</div>
+        \[ (x^{2} + 3y^{2})\frac{dy}{dx} = -2xy \]
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Solve for \( \dfrac{dy}{dx} \).</div>
+        \[ \frac{dy}{dx} = -\frac{2xy}{x^{2} + 3y^{2}} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 12 — Parametric Differentiation</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    Both \( x \) and \( y \) are functions of a third variable \( t \) (often time or angle). The chain rule says \( \dfrac{dy}{dt} = \dfrac{dy}{dx}\cdot\dfrac{dx}{dt} \). Solve for \( \dfrac{dy}{dx} \) by dividing — the \( dt \) effectively cancels.
+  </div>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \frac{dy}{dx} \;=\; \frac{dy/dt}{dx/dt} \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Curve \( x = t^{2},\; y = 2t \). Find \( \dfrac{dy}{dx} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate \( x \) with respect to \( t \).</div>
+        \( \dfrac{dx}{dt} = 2t \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Differentiate \( y \) with respect to \( t \).</div>
+        \( \dfrac{dy}{dt} = 2 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Divide \( \dfrac{dy}{dt} \) by \( \dfrac{dx}{dt} \) to get \( \dfrac{dy}{dx} \).</div>
+        \[ \frac{dy}{dx} = \frac{2}{2t} = \frac{1}{t} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Curve \( x = \cos t,\; y = \sin 2t \). Find \( \dfrac{dy}{dx} \) in terms of \( t \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate \( x \) w.r.t. \( t \).</div>
+        \( \dfrac{dx}{dt} = -\sin t \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Differentiate \( y \) w.r.t. \( t \) using the chain rule on \( \sin 2t \).</div>
+        \( \dfrac{dy}{dt} = 2\cos 2t \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Divide.</div>
+        \[ \frac{dy}{dx} = \frac{2\cos 2t}{-\sin t} = -\frac{2\cos 2t}{\sin t} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 13 — Equation of Tangent</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    The tangent at a point on a curve is the unique straight line that "just touches" the curve there: it passes through the point AND has the same gradient as the curve at that point. So we need (a) the point and (b) the gradient — both available from the curve and its derivative.
+  </div>
+  <div class="block formula"><div class="label">Formula</div>
+    At \( (x_{0}, y_{0}) \) with gradient \( m = \left.\dfrac{dy}{dx}\right|_{x = x_{0}} \):
+    \[ y - y_{0} = m(x - x_{0}) \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find the equation of the tangent to \( y = x^{2} \) at \( x = 3 \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Find the \( y \)-coordinate by substituting \( x = 3 \) into the curve equation.</div>
+        \( y_{0} = (3)^{2} = 9 \). So the point of tangency is \( (3, 9) \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Find \( \dfrac{dy}{dx} \) as a function of \( x \) (using the power rule).</div>
+        \( \dfrac{dy}{dx} = 2x \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Compute the gradient \( m \) at the point by substituting \( x = 3 \) into \( \dfrac{dy}{dx} \).</div>
+        \( m = 2(3) = 6 \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Apply the point-slope form \( y - y_{0} = m(x - x_{0}) \).</div>
+        \( y - 9 = 6(x - 3) \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Expand and simplify into \( y = \ldots \) form.</div>
+        \[ y = 6x - 18 + 9 \;\;\Rightarrow\;\; y = 6x - 9 \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find the equation of the tangent to \( y = \ln x \) at \( x = e \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Find \( y_{0} \) by substituting \( x = e \) into the curve.</div>
+        \( y_{0} = \ln(e) = 1 \). Point: \( (e, 1) \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Find \( \dfrac{dy}{dx} \).</div>
+        \( \dfrac{dy}{dx} = \dfrac{1}{x} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Compute the gradient at \( x = e \).</div>
+        \( m = \dfrac{1}{e} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Apply point-slope form.</div>
+        \( y - 1 = \tfrac{1}{e}(x - e) \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Expand and simplify.</div>
+        \[ y = \tfrac{x}{e} - 1 + 1 \;\;\Rightarrow\;\; y = \tfrac{x}{e} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 14 — Equation of Normal</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    The normal is the line <strong>perpendicular (90°) to the tangent</strong> at the point of contact. For two perpendicular lines, the product of gradients is \( -1 \). So if the tangent has gradient \( m \), the normal has gradient \( -\dfrac{1}{m} \). Everything else is the same as the tangent (same point, point-slope form).
+  </div>
+  <div class="block formula"><div class="label">Formula</div>
+    Normal gradient \( = -\dfrac{1}{m} \). Equation:
+    \[ y - y_{0} = -\frac{1}{m}(x - x_{0}) \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find the equation of the normal to \( y = x^{2} \) at \( x = 3 \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Find the point on the curve (carry over from Block 13).</div>
+        \( y_{0} = (3)^{2} = 9 \). Point: \( (3, 9) \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Find the tangent gradient \( m \) at \( x = 3 \).</div>
+        \( \dfrac{dy}{dx} = 2x \), so \( m = 2(3) = 6 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">The normal gradient is the negative reciprocal.</div>
+        Normal gradient \( = -\dfrac{1}{6} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Apply the point-slope formula with the normal gradient.</div>
+        \( y - 9 = -\tfrac{1}{6}(x - 3) \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Expand and simplify.</div>
+        \[ y = -\tfrac{1}{6}x + \tfrac{1}{2} + 9 \;\;\Rightarrow\;\; y = -\tfrac{x}{6} + \tfrac{19}{2} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find the equation of the normal to \( y = e^{x} \) at \( x = 0 \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Find \( y_{0} \).</div>
+        \( y_{0} = e^{0} = 1 \). Point: \( (0, 1) \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Find the tangent gradient at \( x = 0 \).</div>
+        \( \dfrac{dy}{dx} = e^{x} \), so \( m = e^{0} = 1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Normal gradient.</div>
+        \( -\dfrac{1}{m} = -1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Point-slope form.</div>
+        \( y - 1 = -1\,(x - 0) \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Simplify.</div>
+        \[ y = -x + 1 \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 15 — Nature of Stationary Points (2nd Derivative Test)</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    A stationary point is where the tangent is horizontal — the curve momentarily flattens, so \( \dfrac{dy}{dx} = 0 \). The 2nd derivative tells us the <em>concavity</em>: if \( \dfrac{d^{2}y}{dx^{2}} > 0 \) the curve bends upward (like a cup) → minimum. If \( < 0 \) it bends downward (like a cap) → maximum. If \( = 0 \), the test is inconclusive and we fall back to checking the sign of \( \dfrac{dy}{dx} \) on either side.
+  </div>
+  <div class="block formula"><div class="label">Method</div>
+    Solve \( \dfrac{dy}{dx} = 0 \) for stationary \( x \). Compute \( \dfrac{d^{2}y}{dx^{2}} \) at each. \( > 0 \) → local min; \( < 0 \) → local max; \( = 0 \) → fall back to 1st-derivative sign test.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find and classify the stationary points of \( y = x^{3} - 3x \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Find \( \dfrac{dy}{dx} \).</div>
+        \( \dfrac{dy}{dx} = 3x^{2} - 3 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Set it to zero and solve for the stationary \( x \)-values.</div>
+        \( 3x^{2} - 3 = 0 \Rightarrow x^{2} = 1 \Rightarrow x = \pm 1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Find the \( y \)-coordinates by substituting back into the original \( y = x^{3} - 3x \).</div>
+        At \( x = 1 \): \( y = 1 - 3 = -2 \). Point: \( (1, -2) \).<br>
+        At \( x = -1 \): \( y = -1 + 3 = 2 \). Point: \( (-1, 2) \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Compute the 2nd derivative.</div>
+        \( \dfrac{d^{2}y}{dx^{2}} = 6x \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Evaluate the 2nd derivative at each stationary point and classify.</div>
+        At \( x = 1 \): \( 6(1) = 6 > 0 \) → <strong>local min at \( (1, -2) \)</strong>.<br>
+        At \( x = -1 \): \( 6(-1) = -6 < 0 \) → <strong>local max at \( (-1, 2) \)</strong>.
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find and classify all stationary points of \( y = x^{4} - 4x^{3} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Find \( \dfrac{dy}{dx} \).</div>
+        \( \dfrac{dy}{dx} = 4x^{3} - 12x^{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Set to zero and factorise.</div>
+        \( 4x^{2}(x - 3) = 0 \Rightarrow x = 0 \) or \( x = 3 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Find \( y \)-coordinates.</div>
+        At \( x = 0 \): \( y = 0 \). Point: \( (0, 0) \).<br>
+        At \( x = 3 \): \( y = 81 - 108 = -27 \). Point: \( (3, -27) \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">2nd derivative.</div>
+        \( \dfrac{d^{2}y}{dx^{2}} = 12x^{2} - 24x \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Evaluate and classify each.</div>
+        At \( x = 3 \): \( 12(9) - 24(3) = 108 - 72 = 36 > 0 \) → <strong>local min at \( (3, -27) \)</strong>.<br>
+        At \( x = 0 \): \( 0 - 0 = 0 \) → inconclusive.
+      </div>
+      <div class="step"><div class="step-header">Step 6</div>
+        <div class="step-desc">Inconclusive case: use the 1st-derivative sign test around \( x = 0 \).</div>
+        Just before \( x = 0 \) (e.g. \( x = -0.1 \)): \( 4(-0.1)^{2}(-0.1 - 3) = 4(0.01)(-3.1) < 0 \).<br>
+        Just after \( x = 0 \) (e.g. \( x = 0.1 \)): \( 4(0.01)(-2.9) < 0 \).<br>
+        No sign change → <strong>stationary point of inflexion at \( (0, 0) \)</strong>.
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 16 — Connected Rates of Change</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    Two quantities change together with time (e.g. as the radius of a balloon grows, so does its volume). The chain rule links the rates: the rate of one is the rate of the other times the "conversion factor" \( \dfrac{dV}{dr} \) (how much volume changes per unit change in radius).
+  </div>
+  <div class="block formula"><div class="label">Method (chain rule on time)</div>
+    \[ \frac{dV}{dt} = \frac{dV}{dr}\cdot\frac{dr}{dt} \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    A spherical balloon expands so that its radius increases at \( 0.2 \) cm/s. Find the rate at which the volume is increasing when \( r = 5 \) cm.
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Write the formula relating the two quantities (volume to radius).</div>
+        \( V = \tfrac{4}{3}\pi r^{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Differentiate \( V \) with respect to \( r \).</div>
+        \( \dfrac{dV}{dr} = 4\pi r^{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Evaluate at the given \( r \).</div>
+        At \( r = 5 \): \( \dfrac{dV}{dr} = 4\pi (25) = 100\pi \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Apply the chain rule \( \dfrac{dV}{dt} = \dfrac{dV}{dr}\cdot\dfrac{dr}{dt} \) with the given \( \dfrac{dr}{dt} = 0.2 \).</div>
+        \[ \frac{dV}{dt} = 100\pi \times 0.2 = 20\pi \;\text{cm}^{3}/\text{s} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Water fills a cone (apex down) of half-angle \( 30^{\circ} \) at \( \dfrac{dV}{dt} = 8 \) cm³/s. Find \( \dfrac{dh}{dt} \) when \( h = 10 \) cm.
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Relate \( r \) to \( h \) using the half-angle geometry.</div>
+        \( \tan 30^{\circ} = \dfrac{r}{h} \Rightarrow r = \dfrac{h}{\sqrt{3}} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Express \( V \) in terms of \( h \) alone.</div>
+        \( V = \tfrac{1}{3}\pi r^{2} h = \tfrac{1}{3}\pi \cdot \tfrac{h^{2}}{3} \cdot h = \dfrac{\pi h^{3}}{9} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Differentiate \( V \) with respect to \( h \).</div>
+        \( \dfrac{dV}{dh} = \dfrac{\pi h^{2}}{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Evaluate at \( h = 10 \).</div>
+        \( \dfrac{dV}{dh} = \dfrac{100\pi}{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Apply chain rule \( \dfrac{dV}{dt} = \dfrac{dV}{dh}\cdot\dfrac{dh}{dt} \), then solve for \( \dfrac{dh}{dt} \).</div>
+        \( 8 = \dfrac{100\pi}{3}\cdot\dfrac{dh}{dt} \).
+        \[ \frac{dh}{dt} = \frac{8 \cdot 3}{100\pi} = \frac{6}{25\pi} \approx 0.0764 \;\text{cm/s} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<h2 id="mac">§5.2 MACLAURIN SERIES</h2>
+
+<div class="card">
+  <h3>Block 17 — General Maclaurin Formula</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    Approximate a function near \( x = 0 \) using a polynomial. The polynomial is built so its value, slope, curvature, and higher derivatives at \( x = 0 \) match the original function's. That's why each coefficient uses a derivative of \( f \) evaluated at 0. More terms = better approximation near 0.
+  </div>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ f(x) = f(0) + f'(0)\,x + \frac{f''(0)}{2!}\,x^{2} + \frac{f'''(0)}{3!}\,x^{3} + \cdots \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find the first 3 nonzero terms of the Maclaurin series of \( f(x) = \sec x \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Evaluate \( f \) at \( 0 \).</div>
+        \( f(0) = \sec(0) = 1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Differentiate once; evaluate at \( 0 \).</div>
+        \( f'(x) = \sec x\tan x \). \( f'(0) = 1 \cdot 0 = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Differentiate again; evaluate at \( 0 \).</div>
+        \( f''(x) = \sec x(2\sec^{2}x - 1) \). \( f''(0) = 1(2 - 1) = 1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Continue: \( f'''(0) = 0 \) (odd derivative of even function), \( f^{(4)}(0) = 5 \) by similar work.</div>
+        (For \( \sec x \), only even derivatives are nonzero at 0.)
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Assemble the series using \( f(x) = f(0) + f'(0)x + \dfrac{f''(0)}{2!}x^{2} + \cdots \).</div>
+        \[ \sec x = 1 + 0\,x + \tfrac{1}{2}x^{2} + 0\,x^{3} + \tfrac{5}{24}x^{4} + \cdots = 1 + \tfrac{1}{2}x^{2} + \tfrac{5}{24}x^{4} + \cdots \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find the first 3 nonzero terms of \( f(x) = e^{2x}\cos x \) by combining standard series.
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Write the standard series for \( e^{2x} \) (up to \( x^{2} \) is enough for this question).</div>
+        \( e^{2x} = 1 + 2x + 2x^{2} + \cdots \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Write the standard series for \( \cos x \) (up to \( x^{2} \)).</div>
+        \( \cos x = 1 - \tfrac{x^{2}}{2} + \cdots \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Multiply the two series, keeping only terms up to \( x^{2} \).</div>
+        Constant: \( 1 \cdot 1 = 1 \).<br>
+        \( x \) term: \( 2x \cdot 1 = 2x \).<br>
+        \( x^{2} \) terms: \( 2x^{2} \cdot 1 + 1 \cdot (-\tfrac{x^{2}}{2}) = 2x^{2} - \tfrac{x^{2}}{2} = \tfrac{3}{2}x^{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Combine.</div>
+        \[ e^{2x}\cos x = 1 + 2x + \tfrac{3}{2}x^{2} + \cdots \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 18 — Standard Series \( (1 + x)^{n} \) <span class="mf27">MF27</span></h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ (1 + x)^{n} = 1 + nx + \frac{n(n-1)}{2!}x^{2} + \frac{n(n-1)(n-2)}{3!}x^{3} + \cdots \qquad (|x| < 1) \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Expand \( (1 - 2x)^{1/2} \) up to and including the term in \( x^{3} \). State the range of validity.
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( n \) and what replaces \( x \) in the standard series.</div>
+        \( n = \tfrac{1}{2} \); replace \( x \) by \( -2x \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Substitute directly into the MF27 standard series and write each term.</div>
+        \( (1 - 2x)^{1/2} = 1 + \tfrac{1}{2}(-2x) + \dfrac{(1/2)(-1/2)}{2}(-2x)^{2} + \dfrac{(1/2)(-1/2)(-3/2)}{6}(-2x)^{3} + \cdots \)
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Simplify each term.</div>
+        \[ = 1 - x - \tfrac{1}{2}x^{2} - \tfrac{1}{2}x^{3} + \cdots \]
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">State the range of validity. The standard series needs the absolute value of the replacement (\( -2x \)) less than 1.</div>
+        \( |-2x| < 1 \Rightarrow |x| < \tfrac{1}{2} \).
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Expand \( (1 + 3x)^{-2} \) up to \( x^{3} \). State the range of validity.
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( n \) and what replaces \( x \).</div>
+        \( n = -2 \); replace \( x \) by \( 3x \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Substitute into the standard series.</div>
+        \( (1 + 3x)^{-2} = 1 + (-2)(3x) + \dfrac{(-2)(-3)}{2}(3x)^{2} + \dfrac{(-2)(-3)(-4)}{6}(3x)^{3} + \cdots \)
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Simplify.</div>
+        \[ = 1 - 6x + 27x^{2} - 108x^{3} + \cdots \]
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Range of validity.</div>
+        \( |3x| < 1 \Rightarrow |x| < \tfrac{1}{3} \).
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 19 — Standard Series \( e^{x} \) <span class="mf27">MF27</span></h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ e^{x} = 1 + x + \frac{x^{2}}{2!} + \frac{x^{3}}{3!} + \cdots \qquad (\text{all } x) \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find the first 4 terms of the expansion of \( e^{-x^{2}} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Replace \( x \) with \( -x^{2} \) in the standard series for \( e^{x} \).</div>
+        \( e^{-x^{2}} = 1 + (-x^{2}) + \dfrac{(-x^{2})^{2}}{2!} + \dfrac{(-x^{2})^{3}}{3!} + \cdots \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Simplify each term.</div>
+        \[ e^{-x^{2}} = 1 - x^{2} + \tfrac{x^{4}}{2} - \tfrac{x^{6}}{6} + \cdots \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find the first 4 terms of \( e^{2x} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Replace \( x \) with \( 2x \) in the standard series for \( e^{x} \).</div>
+        \( e^{2x} = 1 + (2x) + \dfrac{(2x)^{2}}{2!} + \dfrac{(2x)^{3}}{3!} + \cdots \)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Simplify each term.</div>
+        \[ e^{2x} = 1 + 2x + 2x^{2} + \tfrac{4}{3}x^{3} + \cdots \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 20 — Standard Series \( \sin x \) and \( \cos x \) <span class="mf27">MF27</span></h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \sin x = x - \frac{x^{3}}{3!} + \frac{x^{5}}{5!} - \cdots \qquad \cos x = 1 - \frac{x^{2}}{2!} + \frac{x^{4}}{4!} - \cdots \qquad (\text{all } x) \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find the first 3 nonzero terms of \( \sin(2x) \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Replace \( x \) with \( 2x \) in the standard series for \( \sin x \).</div>
+        \( \sin(2x) = (2x) - \dfrac{(2x)^{3}}{3!} + \dfrac{(2x)^{5}}{5!} - \cdots \)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Simplify each term.</div>
+        \[ \sin(2x) = 2x - \tfrac{4}{3}x^{3} + \tfrac{4}{15}x^{5} - \cdots \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find the first 3 nonzero terms of \( \cos(3x) \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Replace \( x \) with \( 3x \) in the standard series for \( \cos x \).</div>
+        \( \cos(3x) = 1 - \dfrac{(3x)^{2}}{2!} + \dfrac{(3x)^{4}}{4!} - \cdots \)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Simplify each term.</div>
+        \[ \cos(3x) = 1 - \tfrac{9}{2}x^{2} + \tfrac{27}{8}x^{4} - \cdots \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 21 — Standard Series \( \ln(1 + x) \) <span class="mf27">MF27</span></h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \ln(1 + x) = x - \frac{x^{2}}{2} + \frac{x^{3}}{3} - \frac{x^{4}}{4} + \cdots \qquad (-1 < x \le 1) \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Expand \( \ln(1 + 2x^{2}) \) up to and including the term in \( x^{6} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Replace \( x \) with \( 2x^{2} \) in the standard series for \( \ln(1+x) \), keeping terms up to \( x^{6} \) (i.e. up to the cubed term).</div>
+        \( \ln(1 + 2x^{2}) = (2x^{2}) - \dfrac{(2x^{2})^{2}}{2} + \dfrac{(2x^{2})^{3}}{3} - \cdots \)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Simplify each term.</div>
+        \[ \ln(1 + 2x^{2}) = 2x^{2} - 2x^{4} + \tfrac{8}{3}x^{6} - \cdots \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Expand \( \ln\!\dfrac{1 + x}{1 - x} \) up to \( x^{5} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Use log laws to split the expression.</div>
+        \( \ln\!\dfrac{1 + x}{1 - x} = \ln(1 + x) - \ln(1 - x) \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Expand \( \ln(1 + x) \) up to \( x^{5} \).</div>
+        \( \ln(1 + x) = x - \tfrac{x^{2}}{2} + \tfrac{x^{3}}{3} - \tfrac{x^{4}}{4} + \tfrac{x^{5}}{5} - \cdots \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Expand \( \ln(1 - x) \) by replacing \( x \to -x \).</div>
+        \( \ln(1 - x) = -x - \tfrac{x^{2}}{2} - \tfrac{x^{3}}{3} - \tfrac{x^{4}}{4} - \tfrac{x^{5}}{5} - \cdots \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Subtract. Even-power terms cancel; odd-power terms double.</div>
+        \[ \ln(1 + x) - \ln(1 - x) = 2x + \tfrac{2}{3}x^{3} + \tfrac{2}{5}x^{5} + \cdots \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 22 — Small-Angle: \( \sin x \approx x \)</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    Small-angle approximations are just the first one or two terms of the Maclaurin series. For \( x \) close to 0 (in radians), higher powers (\( x^{3},\,x^{5},\,\ldots \)) are tiny compared to \( x \), so we can drop them. \( \sin x \approx x \) is the tangent line to \( \sin x \) at the origin.
+  </div>
+  <div class="block formula"><div class="label">Formula</div>
+    For \( x \) close to \( 0 \) (in radians): \( \sin x \approx x \).
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Approximate \( \sin(0.04) \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Confirm \( x \) is small (in radians).</div>
+        \( x = 0.04 \) rad. Small enough.
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Apply the approximation.</div>
+        \( \sin(0.04) \approx 0.04 \). (Calculator: \( 0.039989\ldots \), accurate to 4 s.f.)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Use small-angle to find \( \dfrac{\sin 3x}{x} \) for small \( x \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Apply the small-angle approximation to \( \sin 3x \).</div>
+        Since \( 3x \) is small, \( \sin 3x \approx 3x \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Substitute and simplify.</div>
+        \[ \frac{\sin 3x}{x} \approx \frac{3x}{x} = 3 \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 23 — Small-Angle: \( \cos x \approx 1 - \tfrac{x^{2}}{2} \)</h3>
+  <div class="block formula"><div class="label">Formula</div>
+    For \( x \) close to \( 0 \): \( \cos x \approx 1 - \dfrac{x^{2}}{2} \).
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Approximate \( \cos(0.1) \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Plug \( x = 0.1 \) into the approximation.</div>
+        \( \cos(0.1) \approx 1 - \dfrac{(0.1)^{2}}{2} = 1 - \dfrac{0.01}{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Compute.</div>
+        \( = 1 - 0.005 = 0.995 \). (Calculator: \( 0.9950042\ldots \).)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Evaluate \( \dfrac{1 - \cos 2x}{x^{2}} \) for small \( x \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Apply small-angle to \( \cos 2x \).</div>
+        \( \cos 2x \approx 1 - \dfrac{(2x)^{2}}{2} = 1 - 2x^{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Compute the numerator.</div>
+        \( 1 - \cos 2x \approx 1 - (1 - 2x^{2}) = 2x^{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Divide.</div>
+        \[ \frac{1 - \cos 2x}{x^{2}} \approx \frac{2x^{2}}{x^{2}} = 2 \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 24 — Small-Angle: \( \tan x \approx x \)</h3>
+  <div class="block formula"><div class="label">Formula</div>
+    For \( x \) close to \( 0 \): \( \tan x \approx x \).
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Approximate \( \tan(0.02) \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Apply the approximation.</div>
+        \( \tan(0.02) \approx 0.02 \). (Calculator: \( 0.020003\ldots \).)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Evaluate \( \displaystyle\lim_{x \to 0}\,\dfrac{\tan 5x}{\sin 3x} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Apply small-angle to numerator and denominator.</div>
+        \( \tan 5x \approx 5x \); \( \sin 3x \approx 3x \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Substitute and simplify.</div>
+        \[ \lim_{x \to 0}\frac{\tan 5x}{\sin 3x} \approx \frac{5x}{3x} = \frac{5}{3} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<h2 id="int">§5.3 INTEGRATION TECHNIQUES</h2>
+
+<div class="card">
+  <h3>Block 25 — Power Rule for Integration</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    Integration is the reverse of differentiation. If differentiating \( x^{n+1} \) gives \( (n+1)x^{n} \), then to reverse it we divide by \( (n+1) \) and bump the power up by 1. The case \( n = -1 \) breaks this (division by zero), which is why \( \int x^{-1}\,dx = \ln|x| \) is a separate rule.
+  </div>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \int x^{n}\,dx \;=\; \frac{x^{n+1}}{n+1} + C \qquad (n \neq -1) \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find \( \displaystyle\int (3x^{2} - 4x + \sqrt{x})\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Rewrite \( \sqrt{x} \) as \( x^{1/2} \).</div>
+        Integrand: \( 3x^{2} - 4x + x^{1/2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Integrate each term: add 1 to the power, divide by the new power.</div>
+        \( \int 3x^{2}\,dx = x^{3} \).<br>
+        \( \int -4x\,dx = -2x^{2} \).<br>
+        \( \int x^{1/2}\,dx = \dfrac{x^{3/2}}{3/2} = \tfrac{2}{3}x^{3/2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Combine and add \( + C \).</div>
+        \[ \int (3x^{2} - 4x + \sqrt{x})\,dx = x^{3} - 2x^{2} + \tfrac{2}{3}x^{3/2} + C \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find \( \displaystyle\int (2x^{-3} + 5x^{1/4})\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Integrate each term using the power rule.</div>
+        \( \int 2x^{-3}\,dx = 2 \cdot \dfrac{x^{-2}}{-2} = -x^{-2} = -\dfrac{1}{x^{2}} \).<br>
+        \( \int 5x^{1/4}\,dx = 5 \cdot \dfrac{x^{5/4}}{5/4} = 4x^{5/4} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Combine, add \( + C \).</div>
+        \[ -\frac{1}{x^{2}} + 4x^{5/4} + C \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 26 — Standard Antiderivatives (\( e^{x},\; 1/x,\; \sin x,\; \cos x,\; \sec^{2}x \))</h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \int e^{x}\,dx = e^{x} + C \qquad \int \frac{1}{x}\,dx = \ln|x| + C \]
+    \[ \int \sin x\,dx = -\cos x + C \qquad \int \cos x\,dx = \sin x + C \qquad \int \sec^{2}x\,dx = \tan x + C \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find \( \displaystyle\int (e^{x} + \cos x)\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Integrate each term using the standard antiderivatives.</div>
+        \( \int e^{x}\,dx = e^{x} \); \( \int \cos x\,dx = \sin x \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Combine, add \( + C \).</div>
+        \[ \int (e^{x} + \cos x)\,dx = e^{x} + \sin x + C \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Evaluate \( \displaystyle\int_{1}^{e} \dfrac{3}{x}\,dx \) exactly.
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Pull the constant out, then integrate.</div>
+        \( \int \dfrac{3}{x}\,dx = 3\ln|x| \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Apply the limits.</div>
+        \( 3\bigl[\ln|x|\bigr]_{1}^{e} = 3(\ln e - \ln 1) \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Evaluate (\( \ln e = 1,\;\ln 1 = 0 \)).</div>
+        \[ = 3(1 - 0) = 3 \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 27 — \( f'(x)\,e^{f(x)} \) Pattern (Reverse Chain Rule for \( e \))</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    Differentiating \( e^{f(x)} \) gives \( f'(x)\,e^{f(x)} \) (chain rule). So if you see that exact combination in an integrand, you're looking at the chain rule running backwards — the answer is just \( e^{f(x)} \). The key is to spot that the extra factor outside the \( e \) IS the derivative of the exponent.
+  </div>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \int f'(x)\,e^{f(x)}\,dx \;=\; e^{f(x)} + C \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find \( \displaystyle\int 2x\,e^{x^{2}}\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify the function inside the exponent.</div>
+        \( f(x) = x^{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Compute its derivative and check it matches the factor outside.</div>
+        \( f'(x) = 2x \). Matches the \( 2x \) outside. Pattern applies.
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Apply the formula: the integral is \( e^{f(x)} + C \).</div>
+        \[ \int 2x\,e^{x^{2}}\,dx = e^{x^{2}} + C \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find \( \displaystyle\int \cos x\,e^{\sin x}\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( f(x) \).</div>
+        \( f(x) = \sin x \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Check \( f'(x) \).</div>
+        \( f'(x) = \cos x \). Matches. Pattern applies.
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Apply the formula.</div>
+        \[ \int \cos x\,e^{\sin x}\,dx = e^{\sin x} + C \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 28 — \( \dfrac{f'(x)}{f(x)} \) Pattern (Reverse Chain Rule for \( \ln \))</h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \int \frac{f'(x)}{f(x)}\,dx \;=\; \ln|f(x)| + C \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find \( \displaystyle\int \dfrac{2x}{x^{2} + 3}\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( f(x) \) (denominator).</div>
+        \( f(x) = x^{2} + 3 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Check \( f'(x) \) matches the numerator.</div>
+        \( f'(x) = 2x \). Matches the numerator exactly. Pattern applies.
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Apply the formula.</div>
+        \( \ln|x^{2} + 3| + C \). Since \( x^{2} + 3 > 0 \) always, drop the modulus.
+        \[ \int \frac{2x}{x^{2} + 3}\,dx = \ln(x^{2} + 3) + C \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find \( \displaystyle\int \tan x\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Rewrite \( \tan x \) using \( \sin \) and \( \cos \).</div>
+        \( \tan x = \dfrac{\sin x}{\cos x} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Recognise pattern \( \dfrac{f'}{f} \) — numerator should be the derivative of the denominator. \( \dfrac{d}{dx}(\cos x) = -\sin x \), so we have \( -\dfrac{f'}{f} \) with \( f = \cos x \).</div>
+        Pull a minus sign out: \( \tan x = -\dfrac{-\sin x}{\cos x} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Apply the formula and include the sign.</div>
+        \[ \int \tan x\,dx = -\ln|\cos x| + C \;=\; \ln|\sec x| + C \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 29 — \( f'(x)\,f(x)^{n} \) Pattern (Reverse Chain Rule for Powers)</h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \int f'(x)\,[f(x)]^{n}\,dx \;=\; \frac{[f(x)]^{n+1}}{n+1} + C \qquad (n \neq -1) \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find \( \displaystyle\int 2x\,(x^{2} + 1)^{3}\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify the inner function and its outer power.</div>
+        \( f(x) = x^{2} + 1 \), outer power \( n = 3 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Check \( f'(x) \) matches the factor outside.</div>
+        \( f'(x) = 2x \) — matches the \( 2x \). Pattern applies.
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Apply the formula: add 1 to the power, divide by the new power.</div>
+        \[ \int 2x\,(x^{2} + 1)^{3}\,dx = \frac{(x^{2} + 1)^{4}}{4} + C \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find \( \displaystyle\int \sin x\,\cos^{4}x\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( f(x) \) and \( n \).</div>
+        \( f(x) = \cos x \), \( n = 4 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Check \( f'(x) \). \( \dfrac{d}{dx}(\cos x) = -\sin x \), so we have \( -f'(x) \cdot f(x)^{4} \). Pull a minus sign out.</div>
+        \( \sin x\,\cos^{4}x = -(-\sin x)\cos^{4}x \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Apply the formula and include the sign.</div>
+        \[ \int \sin x\,\cos^{4}x\,dx = -\frac{\cos^{5}x}{5} + C \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 30 — Trig Identities for Integration</h3>
+  <div class="block formula"><div class="label">Identities</div>
+    \[ \sin^{2}x = \frac{1 - \cos 2x}{2} \qquad \cos^{2}x = \frac{1 + \cos 2x}{2} \qquad \tan^{2}x = \sec^{2}x - 1 \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find \( \displaystyle\int \cos^{2}x\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Rewrite the integrand using the double-angle identity.</div>
+        \( \cos^{2}x = \dfrac{1 + \cos 2x}{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Integrate each term. Remember \( \int \cos 2x\,dx = \tfrac{1}{2}\sin 2x \).</div>
+        \( \int \tfrac{1}{2}\,dx = \tfrac{1}{2}x \).<br>
+        \( \int \tfrac{1}{2}\cos 2x\,dx = \tfrac{1}{2} \cdot \tfrac{1}{2}\sin 2x = \tfrac{1}{4}\sin 2x \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Combine.</div>
+        \[ \int \cos^{2}x\,dx = \tfrac{1}{2}x + \tfrac{1}{4}\sin 2x + C \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find \( \displaystyle\int \tan^{2}x\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Use the identity to rewrite.</div>
+        \( \tan^{2}x = \sec^{2}x - 1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Integrate each term.</div>
+        \( \int \sec^{2}x\,dx = \tan x \); \( \int -1\,dx = -x \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Combine.</div>
+        \[ \int \tan^{2}x\,dx = \tan x - x + C \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 31 — Standard Form \( \dfrac{1}{a^{2} + x^{2}} \) <span class="mf27">MF27</span></h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \int \frac{1}{a^{2} + x^{2}}\,dx \;=\; \frac{1}{a}\tan^{-1}\!\frac{x}{a} + C \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find \( \displaystyle\int \dfrac{1}{9 + x^{2}}\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( a \) from \( a^{2} = 9 \).</div>
+        \( a = 3 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Substitute into the formula.</div>
+        \[ \int \frac{1}{9 + x^{2}}\,dx = \tfrac{1}{3}\tan^{-1}\!\tfrac{x}{3} + C \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find \( \displaystyle\int \dfrac{1}{4 + 9x^{2}}\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Factor to expose the standard form.</div>
+        \( 4 + 9x^{2} = 9\!\left(\tfrac{4}{9} + x^{2}\right) \). So \( a^{2} = \tfrac{4}{9} \), \( a = \tfrac{2}{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Pull out the \( \tfrac{1}{9} \) and apply the formula.</div>
+        \( \int \dfrac{1}{4 + 9x^{2}}\,dx = \tfrac{1}{9}\int \dfrac{1}{(2/3)^{2} + x^{2}}\,dx = \tfrac{1}{9}\cdot\dfrac{1}{2/3}\tan^{-1}\!\dfrac{x}{2/3} + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Simplify the constants.</div>
+        \[ = \tfrac{1}{9}\cdot\tfrac{3}{2}\tan^{-1}\!\tfrac{3x}{2} + C = \tfrac{1}{6}\tan^{-1}\!\tfrac{3x}{2} + C \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 32 — Standard Form \( \dfrac{1}{\sqrt{a^{2} - x^{2}}} \) <span class="mf27">MF27</span></h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \int \frac{1}{\sqrt{a^{2} - x^{2}}}\,dx \;=\; \sin^{-1}\!\frac{x}{a} + C \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find \( \displaystyle\int \dfrac{1}{\sqrt{25 - x^{2}}}\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( a \) from \( a^{2} = 25 \).</div>
+        \( a = 5 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Apply the formula.</div>
+        \[ \int \frac{1}{\sqrt{25 - x^{2}}}\,dx = \sin^{-1}\!\tfrac{x}{5} + C \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find \( \displaystyle\int \dfrac{3}{\sqrt{4 - x^{2}}}\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( a \).</div>
+        \( a^{2} = 4 \Rightarrow a = 2 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Pull out the constant \( 3 \).</div>
+        \( \int \dfrac{3}{\sqrt{4 - x^{2}}}\,dx = 3\int \dfrac{1}{\sqrt{4 - x^{2}}}\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Apply the formula.</div>
+        \[ = 3\sin^{-1}\!\tfrac{x}{2} + C \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 33 — Standard Form \( \dfrac{1}{a^{2} - x^{2}} \) <span class="mf27">MF27</span></h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \int \frac{1}{a^{2} - x^{2}}\,dx \;=\; \frac{1}{2a}\ln\!\left|\frac{a + x}{a - x}\right| + C \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find \( \displaystyle\int \dfrac{1}{16 - x^{2}}\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( a \).</div>
+        \( a^{2} = 16 \Rightarrow a = 4 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Apply the formula with \( \dfrac{1}{2a} = \dfrac{1}{8} \).</div>
+        \[ \int \frac{1}{16 - x^{2}}\,dx = \tfrac{1}{8}\ln\!\left|\tfrac{4 + x}{4 - x}\right| + C \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find \( \displaystyle\int \dfrac{1}{9 - x^{2}}\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( a \).</div>
+        \( a = 3 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Apply the formula with \( \dfrac{1}{2a} = \dfrac{1}{6} \).</div>
+        \[ \int \frac{1}{9 - x^{2}}\,dx = \tfrac{1}{6}\ln\!\left|\tfrac{3 + x}{3 - x}\right| + C \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 34 — Standard Form \( \dfrac{1}{x^{2} - a^{2}} \) <span class="mf27">MF27</span></h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \int \frac{1}{x^{2} - a^{2}}\,dx \;=\; \frac{1}{2a}\ln\!\left|\frac{x - a}{x + a}\right| + C \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find \( \displaystyle\int \dfrac{1}{x^{2} - 4}\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( a \).</div>
+        \( a = 2 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Apply with \( \dfrac{1}{2a} = \dfrac{1}{4} \).</div>
+        \[ \int \frac{1}{x^{2} - 4}\,dx = \tfrac{1}{4}\ln\!\left|\tfrac{x - 2}{x + 2}\right| + C \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find \( \displaystyle\int \dfrac{1}{x^{2} - 25}\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( a \).</div>
+        \( a = 5 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Apply with \( \dfrac{1}{2a} = \dfrac{1}{10} \).</div>
+        \[ \int \frac{1}{x^{2} - 25}\,dx = \tfrac{1}{10}\ln\!\left|\tfrac{x - 5}{x + 5}\right| + C \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 35 — Integration by Given Substitution</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    Substitution is the chain rule in reverse. We replace a complicated piece of the integrand with a new variable \( u \) so the integral becomes simpler. The differential \( du \) absorbs the chain-rule factor. In 9758, the substitution is always given — you don't have to invent it.
+  </div>
+  <div class="block formula"><div class="label">Method</div>
+    Question supplies the substitution. (1) Differentiate it. (2) Substitute into the integrand. (3) Change the limits if it's a definite integral. (4) Integrate in \( u \). (5) Substitute back / evaluate.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Use \( u = x^{2} + 1 \) to find \( \displaystyle\int \dfrac{2x}{\sqrt{x^{2} + 1}}\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate the substitution to get \( du \) in terms of \( dx \).</div>
+        \( u = x^{2} + 1 \Rightarrow \dfrac{du}{dx} = 2x \Rightarrow du = 2x\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Rewrite the integrand in terms of \( u \). \( 2x\,dx = du \), and \( \sqrt{x^{2} + 1} = \sqrt{u} \).</div>
+        \( \int \dfrac{2x}{\sqrt{x^{2} + 1}}\,dx = \int \dfrac{1}{\sqrt{u}}\,du = \int u^{-1/2}\,du \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Integrate in \( u \) using the power rule.</div>
+        \( \int u^{-1/2}\,du = \dfrac{u^{1/2}}{1/2} = 2u^{1/2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Substitute back \( u = x^{2} + 1 \) and add \( + C \).</div>
+        \[ \int \dfrac{2x}{\sqrt{x^{2} + 1}}\,dx = 2\sqrt{x^{2} + 1} + C \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Use \( x = 2\sin\theta \) to find \( \displaystyle\int \dfrac{1}{\sqrt{4 - x^{2}}}\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate the substitution.</div>
+        \( x = 2\sin\theta \Rightarrow \dfrac{dx}{d\theta} = 2\cos\theta \Rightarrow dx = 2\cos\theta\,d\theta \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Simplify the radical using \( \sin^{2}\theta + \cos^{2}\theta = 1 \).</div>
+        \( \sqrt{4 - x^{2}} = \sqrt{4 - 4\sin^{2}\theta} = \sqrt{4\cos^{2}\theta} = 2\cos\theta \) (taking the positive root).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Substitute everything into the integrand.</div>
+        \( \int \dfrac{1}{2\cos\theta}\cdot 2\cos\theta\,d\theta = \int d\theta \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Integrate.</div>
+        \( \int d\theta = \theta + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Substitute back. \( x = 2\sin\theta \Rightarrow \theta = \sin^{-1}\!\tfrac{x}{2} \).</div>
+        \[ \int \dfrac{1}{\sqrt{4 - x^{2}}}\,dx = \sin^{-1}\!\tfrac{x}{2} + C \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 36 — Integration by Parts</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    Integration by parts is the product rule in reverse. The product rule says \( (uv)' = u'v + uv' \). Rearranging and integrating gives \( \int u\,dv = uv - \int v\,du \). Pick \( u \) to be something that gets simpler when differentiated, and \( dv \) to be something easy to integrate.
+  </div>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ \int u\,dv \;=\; uv - \int v\,du \qquad \text{Choose } u \text{ by LIATE: Log, Inverse-trig, Algebraic, Trig, Exponential.} \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find \( \displaystyle\int x\,e^{x}\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Pick \( u \) and \( dv \) using LIATE.</div>
+        \( x \) (Algebraic) beats \( e^{x} \) (Exponential), so \( u = x \) and \( dv = e^{x}\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Differentiate \( u \) and integrate \( dv \).</div>
+        \( du = dx \); \( v = e^{x} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Apply the formula \( \int u\,dv = uv - \int v\,du \).</div>
+        \( \int x\,e^{x}\,dx = x\,e^{x} - \int e^{x}\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Evaluate the remaining integral and simplify.</div>
+        \( = x\,e^{x} - e^{x} + C = e^{x}(x - 1) + C \).
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find \( \displaystyle\int x\,\ln x\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">LIATE: Log beats Algebraic.</div>
+        \( u = \ln x \); \( dv = x\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Compute \( du \) and \( v \).</div>
+        \( du = \dfrac{1}{x}\,dx \); \( v = \dfrac{x^{2}}{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Apply the formula.</div>
+        \( \int x\,\ln x\,dx = \dfrac{x^{2}}{2}\ln x - \int \dfrac{x^{2}}{2}\cdot\dfrac{1}{x}\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Simplify the remaining integrand and integrate.</div>
+        \( = \dfrac{x^{2}}{2}\ln x - \int \dfrac{x}{2}\,dx = \dfrac{x^{2}}{2}\ln x - \dfrac{x^{2}}{4} + C \).
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 37 — Partial Fractions for Integration</h3>
+  <div class="block formula"><div class="label">Method</div>
+    Decompose a rational integrand into simpler fractions, then integrate each piece (typically using Block 26 \( \int \tfrac{1}{x} \) or Block 28 \( \int \tfrac{f'}{f} \)).
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find \( \displaystyle\int \dfrac{1}{(x - 1)(x + 2)}\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Set up the partial-fraction decomposition.</div>
+        \( \dfrac{1}{(x - 1)(x + 2)} = \dfrac{A}{x - 1} + \dfrac{B}{x + 2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Clear denominators and solve for \( A \) and \( B \) by substituting convenient \( x \)-values.</div>
+        \( 1 = A(x + 2) + B(x - 1) \).<br>
+        At \( x = 1 \): \( 1 = 3A \Rightarrow A = \tfrac{1}{3} \).<br>
+        At \( x = -2 \): \( 1 = -3B \Rightarrow B = -\tfrac{1}{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Rewrite the integrand using the decomposition.</div>
+        \( \int \dfrac{1}{(x-1)(x+2)}\,dx = \int \left[\dfrac{1/3}{x - 1} - \dfrac{1/3}{x + 2}\right]dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Integrate each piece (Block 28 pattern \( \int \tfrac{1}{x \pm c}\,dx = \ln|x \pm c| \)).</div>
+        \( = \tfrac{1}{3}\ln|x - 1| - \tfrac{1}{3}\ln|x + 2| + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Combine using log laws.</div>
+        \[ = \tfrac{1}{3}\ln\!\left|\dfrac{x - 1}{x + 2}\right| + C \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find \( \displaystyle\int \dfrac{3x + 1}{x(x + 1)}\,dx \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Set up decomposition.</div>
+        \( \dfrac{3x + 1}{x(x + 1)} = \dfrac{A}{x} + \dfrac{B}{x + 1} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Solve for \( A, B \).</div>
+        \( 3x + 1 = A(x + 1) + Bx \).<br>
+        At \( x = 0 \): \( 1 = A \).<br>
+        At \( x = -1 \): \( -2 = -B \Rightarrow B = 2 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Rewrite and integrate.</div>
+        \( \int \left[\dfrac{1}{x} + \dfrac{2}{x + 1}\right]dx = \ln|x| + 2\ln|x + 1| + C \).
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<h2 id="def">§5.4 DEFINITE INTEGRALS — AREA &amp; VOLUME</h2>
+
+<div class="card">
+  <h3>Block 38 — Area Under a Curve</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    The definite integral sums infinitesimally thin rectangles of width \( dx \) and height \( y \), giving the signed area between the curve and the \( x \)-axis. This is the geometric meaning of integration (the Fundamental Theorem of Calculus). When \( y \ge 0 \), the integral and the area are the same number.
+  </div>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ A \;=\; \int_{a}^{b} y\,dx \qquad (y \ge 0 \text{ on } [a, b]) \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find the area under \( y = x^{2} \) from \( x = 0 \) to \( x = 3 \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Set up the definite integral.</div>
+        \( A = \int_{0}^{3} x^{2}\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Find the antiderivative.</div>
+        \( \int x^{2}\,dx = \dfrac{x^{3}}{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Evaluate at the limits (upper minus lower).</div>
+        \[ A = \left[\frac{x^{3}}{3}\right]_{0}^{3} = \frac{27}{3} - 0 = 9 \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find the exact area under \( y = e^{x} \) from \( x = 0 \) to \( x = 2 \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Set up.</div>
+        \( A = \int_{0}^{2} e^{x}\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Antiderivative.</div>
+        \( \int e^{x}\,dx = e^{x} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Evaluate.</div>
+        \[ A = \bigl[e^{x}\bigr]_{0}^{2} = e^{2} - 1 \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 39 — Area Between Two Curves</h3>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ A \;=\; \int_{a}^{b} (y_{\text{upper}} - y_{\text{lower}})\,dx \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find the area enclosed between \( y = x \) and \( y = x^{2} \) on \( [0, 1] \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Decide which curve is upper on the interval. Test a point inside, e.g. \( x = 0.5 \): \( y_{1} = 0.5,\; y_{2} = 0.25 \). So \( y = x \) is upper.</div>
+        Upper: \( x \). Lower: \( x^{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Set up the integral as upper minus lower.</div>
+        \( A = \int_{0}^{1}(x - x^{2})\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Antiderivative.</div>
+        \( \int (x - x^{2})\,dx = \dfrac{x^{2}}{2} - \dfrac{x^{3}}{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Evaluate.</div>
+        \[ A = \left[\frac{x^{2}}{2} - \frac{x^{3}}{3}\right]_{0}^{1} = \tfrac{1}{2} - \tfrac{1}{3} = \tfrac{1}{6} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find the area enclosed between \( y = 4 - x^{2} \) and \( y = x + 2 \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Find the intersections.</div>
+        \( 4 - x^{2} = x + 2 \Rightarrow x^{2} + x - 2 = 0 \Rightarrow (x+2)(x-1) = 0 \Rightarrow x = -2,\,1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Decide upper. At \( x = 0 \): parabola = 4, line = 2. Parabola is upper.</div>
+        Upper: \( 4 - x^{2} \). Lower: \( x + 2 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Set up the integral.</div>
+        \( A = \int_{-2}^{1}\bigl[(4 - x^{2}) - (x + 2)\bigr]\,dx = \int_{-2}^{1}(2 - x^{2} - x)\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Antiderivative.</div>
+        \( \int (2 - x^{2} - x)\,dx = 2x - \dfrac{x^{3}}{3} - \dfrac{x^{2}}{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Evaluate.</div>
+        At \( x = 1 \): \( 2 - \tfrac{1}{3} - \tfrac{1}{2} = \tfrac{7}{6} \).<br>
+        At \( x = -2 \): \( -4 + \tfrac{8}{3} - 2 = -\tfrac{10}{3} \).
+        \[ A = \tfrac{7}{6} - \left(-\tfrac{10}{3}\right) = \tfrac{7}{6} + \tfrac{20}{6} = \tfrac{27}{6} = \tfrac{9}{2} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 40 — Area Below the \( x \)-axis</h3>
+  <div class="block formula"><div class="label">Method</div>
+    If \( y \le 0 \) on \( [a, b] \), \( \int_{a}^{b} y\,dx \) is negative; geometric area is its absolute value. If the curve crosses the \( x \)-axis, split at the intercepts and sum absolute values.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find the area enclosed between \( y = x^{2} - 4 \) and the \( x \)-axis (between the roots).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Find where the curve meets the \( x \)-axis.</div>
+        \( x^{2} - 4 = 0 \Rightarrow x = \pm 2 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Check the sign of \( y \) on \( (-2, 2) \).</div>
+        At \( x = 0 \): \( y = -4 < 0 \). Curve is below the axis throughout.
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Set up the integral and integrate.</div>
+        \( \int_{-2}^{2}(x^{2} - 4)\,dx = \left[\dfrac{x^{3}}{3} - 4x\right]_{-2}^{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Evaluate.</div>
+        At \( x = 2 \): \( \tfrac{8}{3} - 8 = -\tfrac{16}{3} \).<br>
+        At \( x = -2 \): \( -\tfrac{8}{3} + 8 = \tfrac{16}{3} \).
+        \( -\tfrac{16}{3} - \tfrac{16}{3} = -\tfrac{32}{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Take the absolute value for the geometric area.</div>
+        \[ A = \left|-\tfrac{32}{3}\right| = \tfrac{32}{3} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find the total area enclosed between \( y = \sin x \) and the \( x \)-axis on \( [0, 2\pi] \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify the sign of \( \sin x \) on the interval.</div>
+        \( \sin x \ge 0 \) on \( [0, \pi] \), \( \le 0 \) on \( [\pi, 2\pi] \). Must split.
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Integrate on \( [0, \pi] \).</div>
+        \( \int_{0}^{\pi}\sin x\,dx = \bigl[-\cos x\bigr]_{0}^{\pi} = -(-1) - (-1) = 2 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Integrate on \( [\pi, 2\pi] \) and take absolute value.</div>
+        \( \int_{\pi}^{2\pi}\sin x\,dx = \bigl[-\cos x\bigr]_{\pi}^{2\pi} = -1 - 1 = -2 \). Absolute value: \( 2 \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Sum.</div>
+        \[ A = 2 + 2 = 4 \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 41 — Volume of Revolution about the \( x \)-axis</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    Imagine rotating the region under the curve around the \( x \)-axis, sweeping out a 3D solid. Slice it into thin disks perpendicular to the axis. Each disk has radius \( y \), area \( \pi y^{2} \), and thickness \( dx \), so volume \( \pi y^{2}\,dx \). Sum (integrate) to get the total volume. That's where the \( \pi \) and the squared \( y \) come from.
+  </div>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ V \;=\; \pi\int_{a}^{b} y^{2}\,dx \qquad (\pi \text{ is mandatory!}) \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find the volume when \( y = x \) on \( [0, 2] \) is rotated about the \( x \)-axis.
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Square \( y \).</div>
+        \( y^{2} = x^{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Set up the volume integral with the \( \pi \) factor and the limits.</div>
+        \( V = \pi\int_{0}^{2} x^{2}\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Antiderivative.</div>
+        \( \int x^{2}\,dx = \dfrac{x^{3}}{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Evaluate.</div>
+        \[ V = \pi\left[\dfrac{x^{3}}{3}\right]_{0}^{2} = \pi\cdot\dfrac{8}{3} = \dfrac{8\pi}{3} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find the volume when \( y = \sqrt{x} \) on \( [0, 4] \) is rotated about the \( x \)-axis.
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Square \( y \).</div>
+        \( y^{2} = (\sqrt{x})^{2} = x \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Set up.</div>
+        \( V = \pi\int_{0}^{4} x\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Integrate and evaluate.</div>
+        \[ V = \pi\left[\dfrac{x^{2}}{2}\right]_{0}^{4} = \pi\cdot 8 = 8\pi \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 42 — Volume of Revolution about the \( y \)-axis</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    Same disk-slicing idea, but now the disks are stacked along the \( y \)-axis. Each disk has radius \( x \), area \( \pi x^{2} \), thickness \( dy \). So we need \( x \) as a function of \( y \) — that's why we rearrange the curve to \( x = g(y) \) first, and integrate w.r.t. \( y \).
+  </div>
+  <div class="block formula"><div class="label">Formula</div>
+    \[ V \;=\; \pi\int_{c}^{d} x^{2}\,dy \qquad (\text{rearrange to } x = g(y) \text{ first}) \]
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Find the volume when \( y = x^{2} \) on \( [0, 2] \) is rotated about the \( y \)-axis.
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Rearrange the curve to give \( x \) in terms of \( y \).</div>
+        \( y = x^{2} \Rightarrow x = \sqrt{y} \Rightarrow x^{2} = y \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Convert the \( x \)-limits to \( y \)-limits.</div>
+        At \( x = 0 \): \( y = 0 \). At \( x = 2 \): \( y = 4 \). So \( y \) runs from 0 to 4.
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Set up the volume integral.</div>
+        \( V = \pi\int_{0}^{4} y\,dy \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Integrate and evaluate.</div>
+        \[ V = \pi\left[\dfrac{y^{2}}{2}\right]_{0}^{4} = \pi\cdot 8 = 8\pi \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Find the volume when \( y = e^{x} \) on \( [0, 1] \) is rotated about the \( y \)-axis.
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Rearrange.</div>
+        \( y = e^{x} \Rightarrow x = \ln y \Rightarrow x^{2} = (\ln y)^{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Convert limits.</div>
+        At \( x = 0 \): \( y = 1 \). At \( x = 1 \): \( y = e \). So \( y \) runs from 1 to \( e \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Set up.</div>
+        \( V = \pi\int_{1}^{e}(\ln y)^{2}\,dy \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Use IBP. Let \( u = (\ln y)^{2},\; dv = dy \). Then \( du = \dfrac{2\ln y}{y}\,dy,\; v = y \).</div>
+        \( \int (\ln y)^{2}\,dy = y(\ln y)^{2} - \int 2\ln y\,dy \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Solve the new integral \( \int \ln y\,dy \) by IBP again: \( u = \ln y,\; dv = dy \to \int \ln y\,dy = y\ln y - y \).</div>
+        \( \int (\ln y)^{2}\,dy = y(\ln y)^{2} - 2(y\ln y - y) + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 6</div>
+        <div class="step-desc">Evaluate at the limits.</div>
+        At \( y = e \): \( e(1)^{2} - 2(e\cdot 1 - e) = e - 0 = e \).<br>
+        At \( y = 1 \): \( 1(0)^{2} - 2(0 - 1) = 0 + 2 = 2 \).<br>
+        Subtract: \( e - 2 \).
+      </div>
+      <div class="step"><div class="step-header">Step 7</div>
+        <div class="step-desc">Multiply by \( \pi \).</div>
+        \[ V = \pi(e - 2) \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<h2 id="de">§5.5 DIFFERENTIAL EQUATIONS</h2>
+
+<div class="card">
+  <h3>Block 43 — Solving a Separable First-Order DE</h3>
+  <div class="block concept"><div class="label">Concept</div>
+    A DE is an equation involving a derivative. "Separable" means you can move all \( y \)-stuff to one side and all \( x \)-stuff to the other, so each side can be integrated independently. The \( +C \) appears because anti-differentiation is only unique up to a constant; we pin \( C \) down using the initial condition to get the particular solution.
+  </div>
+  <div class="block formula"><div class="label">Method</div>
+    A DE of form \( \dfrac{dy}{dx} = f(x)\,g(y) \) is separable. Rearrange to \( \dfrac{dy}{g(y)} = f(x)\,dx \), integrate both sides, add \( + C \). For a particular solution, substitute the initial condition.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Solve \( \dfrac{dy}{dx} = xy \), given \( y = 2 \) when \( x = 0 \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Separate the variables — get all \( y \)-terms on one side, \( x \)-terms on the other.</div>
+        \( \dfrac{1}{y}\,dy = x\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Integrate both sides.</div>
+        \( \int \dfrac{1}{y}\,dy = \int x\,dx \Rightarrow \ln|y| = \dfrac{x^{2}}{2} + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Substitute the initial condition \( y = 2 \) when \( x = 0 \) to find \( C \).</div>
+        \( \ln 2 = 0 + C \Rightarrow C = \ln 2 \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Write the particular solution.</div>
+        \( \ln|y| = \dfrac{x^{2}}{2} + \ln 2 \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Solve for \( y \) explicitly by exponentiating.</div>
+        \( |y| = e^{x^{2}/2 + \ln 2} = e^{x^{2}/2}\cdot 2 = 2e^{x^{2}/2} \).<br>
+        Since \( y(0) = 2 > 0 \), drop the modulus.
+        \[ y = 2e^{x^{2}/2} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Solve \( \dfrac{dy}{dx} = \dfrac{1 + x^{2}}{y} \), given \( y = 1 \) when \( x = 0 \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Separate.</div>
+        \( y\,dy = (1 + x^{2})\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Integrate both sides.</div>
+        \( \int y\,dy = \int (1 + x^{2})\,dx \Rightarrow \dfrac{y^{2}}{2} = x + \dfrac{x^{3}}{3} + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Substitute \( y = 1,\; x = 0 \).</div>
+        \( \tfrac{1}{2} = 0 + 0 + C \Rightarrow C = \tfrac{1}{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Write the particular solution.</div>
+        \( \dfrac{y^{2}}{2} = x + \dfrac{x^{3}}{3} + \tfrac{1}{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Simplify (multiply through by 2).</div>
+        \[ y^{2} = 2x + \tfrac{2x^{3}}{3} + 1 \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 44 — DE by Given Substitution</h3>
+  <div class="block formula"><div class="label">Method</div>
+    Question supplies the substitution. (1) Differentiate it. (2) Substitute into the DE. (3) The result is separable. (4) Solve. (5) Substitute back.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Use \( u = \dfrac{y}{x} \) to solve \( \dfrac{dy}{dx} = \dfrac{x + y}{x} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Rewrite the substitution as \( y = ux \) and differentiate using the product rule.</div>
+        \( \dfrac{dy}{dx} = u + x\dfrac{du}{dx} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Rewrite the RHS of the DE in terms of \( u \). \( \dfrac{x + y}{x} = 1 + \dfrac{y}{x} = 1 + u \).</div>
+        DE becomes \( u + x\dfrac{du}{dx} = 1 + u \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Simplify (cancel the \( u \)).</div>
+        \( x\dfrac{du}{dx} = 1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Separate and integrate.</div>
+        \( du = \dfrac{dx}{x} \Rightarrow u = \ln|x| + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Substitute back \( u = \dfrac{y}{x} \).</div>
+        \( \dfrac{y}{x} = \ln|x| + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 6</div>
+        <div class="step-desc">Solve for \( y \).</div>
+        \[ y = x\ln|x| + Cx \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    Use \( v = x + y \) to solve \( \dfrac{dy}{dx} = (x + y)^{2} \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate the substitution \( v = x + y \) w.r.t. \( x \).</div>
+        \( \dfrac{dv}{dx} = 1 + \dfrac{dy}{dx} \Rightarrow \dfrac{dy}{dx} = \dfrac{dv}{dx} - 1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Substitute into the original DE. RHS \( (x + y)^{2} = v^{2} \).</div>
+        \( \dfrac{dv}{dx} - 1 = v^{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Rearrange.</div>
+        \( \dfrac{dv}{dx} = 1 + v^{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Separate and integrate.</div>
+        \( \dfrac{dv}{1 + v^{2}} = dx \Rightarrow \tan^{-1}v = x + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Solve for \( v \), then substitute back.</div>
+        \( v = \tan(x + C) \Rightarrow x + y = \tan(x + C) \).
+        \[ y = \tan(x + C) - x \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 45 — Formulating a DE from a Context</h3>
+  <div class="block formula"><div class="label">Common patterns</div>
+    <ul>
+      <li>"Rate of change of \( N \) is proportional to \( N \)" → \( \dfrac{dN}{dt} = kN \).</li>
+      <li>"Rate ∝ deficit \( (K - N) \)" → \( \dfrac{dN}{dt} = k(K - N) \) (cooling, drug clearance).</li>
+      <li>"Rate ∝ product \( N(K - N) \)" → \( \dfrac{dN}{dt} = kN(K - N) \) (logistic growth).</li>
+      <li>Always check the SIGN — increasing → \( + \), decreasing → \( - \).</li>
+    </ul>
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    Coffee at 80°C cools in a 20°C room. The cooling rate is proportional to the temperature difference between coffee and room. Set up the DE for temperature \( T \) at time \( t \).
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify the rate of change variable and what it depends on.</div>
+        Rate is \( \dfrac{dT}{dt} \); it depends on the difference \( T - 20 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Write "proportional to" as a constant times the quantity.</div>
+        \( \dfrac{dT}{dt} \propto (T - 20) \Rightarrow \dfrac{dT}{dt} = k(T - 20) \) for some constant \( k \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Determine the sign of \( k \). Coffee is cooling (T decreasing) and \( T - 20 > 0 \), so \( \dfrac{dT}{dt} < 0 \). Must have \( -k(T - 20) \) with \( k > 0 \).</div>
+        \[ \frac{dT}{dt} = -k(T - 20),\; k > 0 \]
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">State the initial condition.</div>
+        \( T(0) = 80 \).
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    A tank holds \( V \) litres of water. Water drains at a rate proportional to \( \sqrt{V} \). Initially \( V = 100 \) litres. Formulate the DE.
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Rate variable.</div>
+        \( \dfrac{dV}{dt} \); depends on \( \sqrt{V} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Write the proportionality.</div>
+        \( \dfrac{dV}{dt} = k\sqrt{V} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Determine the sign. Volume is decreasing (water draining), so the rate must be negative.</div>
+        \[ \frac{dV}{dt} = -k\sqrt{V},\; k > 0 \]
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Initial condition.</div>
+        \( V(0) = 100 \).
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Block 46 — Interpreting a DE and Its Solution in Context</h3>
+  <div class="block formula"><div class="label">Method</div>
+    Examine (1) long-term behaviour as \( t \to \infty \); (2) physical meaning of constants in their units; (3) how constants shape the curve (rate, asymptote, carrying capacity).
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    A drug concentration satisfies \( \dfrac{dC}{dt} = -0.2C,\; C(0) = 50 \) mg/L. Solve and interpret.
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Separate and integrate.</div>
+        \( \dfrac{1}{C}\,dC = -0.2\,dt \Rightarrow \ln|C| = -0.2t + K \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Exponentiate to make \( C \) explicit.</div>
+        \( C = Ae^{-0.2t} \) (where \( A = e^{K} \)).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Use initial condition to find \( A \).</div>
+        \( C(0) = 50 \Rightarrow A = 50 \). So \( C(t) = 50e^{-0.2t} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Interpret long-term behaviour.</div>
+        As \( t \to \infty,\; e^{-0.2t} \to 0 \), so \( C \to 0 \). The drug is cleared from the body exponentially.
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Compute the half-life (time when \( C = 25 \), i.e. half the initial value).</div>
+        \( 50e^{-0.2t} = 25 \Rightarrow e^{-0.2t} = \tfrac{1}{2} \Rightarrow t = \dfrac{\ln 2}{0.2} \approx 3.47 \) time units.
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    A population satisfies \( \dfrac{dP}{dt} = 0.5P\!\left(1 - \dfrac{P}{1000}\right),\; P(0) = 100 \). Without solving, describe (a) the long-term behaviour, (b) the carrying capacity, (c) the value of \( P \) where the growth rate is maximum.
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Recognise the logistic form \( \dfrac{dP}{dt} = kP(1 - P/K) \) with \( k = 0.5,\; K = 1000 \).</div>
+        Carrying capacity \( K = 1000 \). (Answer to (b).)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Long-term: as \( P \to K \), the growth term \( (1 - P/K) \to 0 \), so growth stops. \( P \) settles at \( K \).</div>
+        As \( t \to \infty,\; P \to 1000 \). (Answer to (a).)
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Maximum growth rate. \( \dfrac{dP}{dt} \) is itself maximised where its derivative is zero, which (for logistic) is at \( P = K/2 \).</div>
+        Maximum growth rate at \( P = 500 \). (Answer to (c).)
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<hr>
+
+<h2>Closing notes</h2>
+<p>If you walked through every Solution and Answer step by step, you have the formula surface of calculus. Anything you struggled with → flag now. Cluster 1 (Differentiation_And_Maclaurin) drills the same content in real exam-stem form with mark scheme allocation.</p>
+
+<p><strong>3-cluster plan:</strong></p>
+<ol>
+  <li><strong>Differentiation_And_Maclaurin</strong> (Blocks 1–24) — <em>ready</em></li>
+  <li><strong>Integration_Techniques_And_Applications</strong> (Blocks 25–42)</li>
+  <li><strong>Differential_Equations</strong> (Blocks 43–46)</li>
+</ol>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const block = this.parentElement;
+      const overlay = block.querySelector('.answer-overlay');
+      if (overlay.classList.contains('hidden')) {
+        overlay.classList.remove('hidden');
+        this.textContent = 'Reveal';
+        this.classList.remove('hide-state');
+      } else {
+        overlay.classList.add('hidden');
+        this.textContent = 'Hide';
+        this.classList.add('hide-state');
+      }
+    });
+  });
+  function revealAll() {
+    document.querySelectorAll('.answer-overlay').forEach(o => o.classList.add('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b => { b.textContent = 'Hide'; b.classList.add('hide-state'); });
+  }
+  function hideAll() {
+    document.querySelectorAll('.answer-overlay').forEach(o => o.classList.remove('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b => { b.textContent = 'Reveal'; b.classList.remove('hide-state'); });
+  }
+</script>
+
+</body>
+</html>

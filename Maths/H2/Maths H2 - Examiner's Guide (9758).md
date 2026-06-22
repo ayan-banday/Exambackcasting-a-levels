@@ -5,7 +5,7 @@ default_type: quantitative
 status: BUILT
 validation_source: MIXED — [OFFICIAL] only the 2026 SEAB 9758 syllabus (scope/structure/AOs/GC-rubric/exclusions), the sole official document in inputs/; [SCHOOL] archetypes/topic-frequency/trap-model/marking-conventions (multi-year tutor-solution corpus: real Cambridge TYS 2009-2022 suggested solutions + 2012-2025 JC prelims, all school-authored, NOT SEAB mark schemes); [RESEARCH] SEAB public specimen P1/P2 distribution (exists on seab.gov.sg but NOT loaded in inputs — unverified line-by-line here); [INFERRED] residual mark-band micro-mechanics
 confidence_ceiling: ~89% overall (structure/scope/AOs ~97% [OFFICIAL]; archetypes & topic frequency ~90% [SCHOOL]; trap model ~85% [SCHOOL]; specimen distribution ~80% [RESEARCH, not in inputs]; mark-band micro-mechanics ~80% [INFERRED]). HARD CAP ~92% — no SEAB mark scheme or examiner report exists in inputs, every marked paper is a school/tutor suggested solution, and the official specimen is NOT in the loaded corpus.
-last_updated: 2026-06-20
+last_updated: 2026-06-21
 ---
 
 # Subject Examiner's Guide — Mathematics H2 (9758)
@@ -343,8 +343,10 @@ really point-to-line minimisation (2017 Cambridge P1 Q10 "three cables, closest 
   logistic vs exponential; 2019 P1 Q11 — cooling+freezing): formulate the DE from a context → solve
   `dy/dx=f(x)g(y)` → apply initial conditions → interpret limiting behaviour. **The classic
   application/integration closer. First-order only.**
-- **Volume of revolution / area** often combined with **parametric** curves (~80% of P1s have a
-  volume/area item; 2015 P1 Q10, 2018 P1 Q2 corpus examples).
+- **Volume of revolution / area** appears on ~80% of P1s (2009 P1 Q11 `y=xe^(-x²)`; 2024 RI P2 Q4
+  line+parabola with parameter `a`). **Non-parametric curves only** — area/volume of revolution
+  where the curve is given parametrically was IN under 9740 (e.g. 2014 P1 Q11) but is **EXCLUDED in
+  9758** (syllabus 5.4). A trap for students drilled on pre-2017 papers — see 5.3.
 - **Connected rates of change** as a short opener (2016 P2 Q1 cone tank; 2023 RI P1 Q3 meteorite).
 - **Maclaurin** + **small-angle approximation** linked to trig/applied differentiation (~100% of
   P2 Sec A — verify standard series or derive by repeated/implicit differentiation; 2018 P2 Q4
