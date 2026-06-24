@@ -8,6 +8,45 @@ Last updated: 2026-06-14 | Session 1 (Cluster 1 study + questions issued, awaiti
 - 10 adversarial questions issued (efficient coverage: 因素是非题 ×3, 是非题 ×3, 最字题 ×1, 程度题 ×1, 条件题 ×1, 比较题 ×1)
 - Old `Party_State_System_and_Legitimacy/` cluster Ayan pre-built is now superseded by Foundation_and_Power_Structure (covers the same node + more)
 
+## 2026-06-24 Session 2.5 — Cluster 2 (Constraining_Unchecked_Power) Q1-Q4 graded; Q5 pending
+
+### Cluster 2 results — TEST COMPLETE
+- Q1 (最字题 贪腐): 17-18 Tier 三 ceiling
+- Q2 (程度题 国监委): 14-18 Tier 三
+- Q3 (因素是非题 高压反腐): not attempted — Ethan asked for model essay; provided full bilingual Tier 4+ example
+- Q4 (是非题 习近平法治思想): 15-17 Tier 三
+- Q5 (因素是非题 法治 为 制度反腐 前提): 17-19 Tier 三 — verdict CORRECT (DISAGREE handles "最关键" trap), insight strong (structural lock + 18届4中), but 立场 not upfront + zero 数据/案例/跨课题 → 3 caps trigger
+
+### Cluster 2 overall pattern
+- **Concept layer Tier 4 ready, structural layer Tier 三 ceiling**
+- Bottleneck = 5-element checklist execution (立场 upfront + 平衡 + 跨课题 + 数据 + 案例), NOT content knowledge
+- Recurring P1: 法制/法治 typo (appeared in Q4 AND Q5 despite §1 callout)
+
+### Cumulative cluster coverage status
+- ✅ Cluster 1: Foundation_and_Power_Structure (built 2026-06-14; 5-Q test session 1 complete)
+- ✅ Operational_Mechanics_of_Party_State_Power (built 2026-06-14; integrated into session 1 grading)
+- ✅ Tier_Four_Discipline_and_Precision (built 2026-06-21; reference cluster for discipline)
+- ✅ Constraining_Unchecked_Power (built 2026-06-22, updated with full bilingual + 9 missing concepts added 2026-06-22; Q1-Q5 graded 2026-06-24)
+- ✅ Tactical_Essay_Deployment (built 2026-06-24 from Cluster 2 patterns) — DEPLOYMENT-focused cluster fixing the Tier 三 ceiling pattern (立场 upfront discipline, 5-element checklist enforcement, transition phrase library, mandatory deploy set, concepts-you-keep-missing drill list, pre-submission audit, time budget)
+- ✅ Cluster 3: Managing_Society_Voice_and_Identity (built 2026-06-24; 4 pillars: 公共服务+回应 / 民族 / 网络 / 政治参与; 12 sections covering structural ceiling, Mode 1 vs Mode 2 framework, default 立场 cheat sheet for 15 stem patterns, data canon, case bank by use case) — awaiting study + 5-question test
+
+### New asset created 2026-06-24
+**`_memorization_reference.md`** at Governance root — comprehensive memorization reference consolidating ALL recurring errors, default 立场 cheat sheet, scholar attributions, term distinctions, data canon, case bank, structural lock pattern, default 跨课题, recurring critical insights. SINGLE reference Ethan opens before any essay practice.
+
+### Next session pickup
+1. Read `_memorization_reference.md` (especially §1 recurring errors + §3 term distinctions + §6 data canon + §7 case bank)
+2. Answer Q5 (法治 为 制度反腐 前提) — final question of Cluster 2 test
+3. After grading: move to Cluster 3 (Society Management) — last governance cluster
+4. After Cluster 3: governance topic complete; move to other CSC themes (经济, 社会, 外交) or other subjects per priority
+
+### Pending tasks before exam
+- ⏳ Cluster 3 build + test
+- ⏳ Retake Q4 + Q5 from session 1 (CSC subject guide questions)
+- ⏳ Other CSC themes (经济, 社会, 外交)
+- ⏳ Other subjects (GP, Math, Bio, Chem per priority)
+
+---
+
 ## 2026-06-21 Session 2 — Q1–Q4 graded (Q5 deferred)
 
 Re-attempts + new question set graded:

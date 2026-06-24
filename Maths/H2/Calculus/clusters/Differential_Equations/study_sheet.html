@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cluster 3 — Differential Equations</title>
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true, tags: 'none' },
+    svg: { fontCache: 'global' },
+    options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --amber-soft:#fffbeb;
+    --green:#059669; --green-soft:#ecfdf5; --cover:#f3f4f6;
+    --purple:#7c3aed; --purple-soft:#f5f3ff; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:40px 24px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h2,h3,.label,.controls,button,.step-header{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  h1{font-size:2em;margin:0 0 8px;color:#111;border-bottom:3px solid #111;padding-bottom:12px}
+  h2{font-size:1.5em;margin-top:56px;margin-bottom:16px;color:#111;border-bottom:1px solid #999;padding-bottom:6px}
+  h3{font-size:1.15em;margin:0 0 14px;color:#1f2937}
+  p{margin:8px 0}
+  .meta{color:var(--muted);font-size:.9em;margin:4px 0 24px}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--purple);padding:16px 20px;border-radius:6px;margin:16px 0 32px}
+  .intro ul{margin:8px 0 0 0;padding-left:22px}
+  .intro li{margin:4px 0}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;color:var(--text);font-weight:500}
+  .controls button:hover{background:#f3f4f6}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:32px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:6px;color:#111}
+  .toc a{color:var(--blue);text-decoration:none;margin-right:16px}
+  .toc a:hover{text-decoration:underline}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .block{margin:14px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border)}
+  .block.archetype{background:var(--purple-soft);border-left-color:var(--purple)}
+  .block.concept{background:#f0fdfa;border-left-color:#0d9488}
+  .block.example{background:#f9fafb;border-left-color:#6b7280}
+  .block.practice{background:var(--amber-soft);border-left-color:var(--amber)}
+  .block.answer{background:var(--green-soft);border-left-color:var(--green);position:relative;min-height:60px}
+  .label{display:block;text-transform:uppercase;font-size:.75em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--muted)}
+  .block.archetype .label{color:var(--purple)}
+  .block.concept .label{color:#0f766e}
+  .block.example .label{color:#4b5563}
+  .block.practice .label{color:var(--amber)}
+  .block.answer .label{color:var(--green)}
+  .stem{background:#1e293b;color:#f1f5f9;padding:12px 16px;border-radius:6px;margin:10px 0;font-family:'Charter','Georgia',serif}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px;font-family:-apple-system,sans-serif}
+  .mark-step{display:inline-block;font-size:.75em;background:#ddd6fe;color:#5b21b6;padding:1px 7px;border-radius:8px;font-weight:700;margin:0 4px;font-family:-apple-system,sans-serif}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.5);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.8em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .step-desc{font-style:italic;color:#374151;margin-bottom:6px;font-size:.95em}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3;box-shadow:0 1px 2px rgba(0,0,0,.1)}
+  .reveal-btn:hover{background:#047857}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .reveal-btn.hide-state:hover{background:#4b5563}
+  .answer-content{transition:filter .2s,opacity .2s}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;font-family:-apple-system,sans-serif;border-left:4px solid var(--muted);margin-left:-16px;padding-left:16px;z-index:2;transition:opacity .2s}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content{padding-right:60px}
+  ul,ol{padding-left:24px}
+  li{margin:4px 0}
+  .mjx-container{font-size:1.05em!important}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  @media print{
+    body{background:#fff;padding:20px;max-width:100%}
+    .controls,.reveal-btn{display:none!important}
+    .answer-overlay{display:none!important}
+    .card{box-shadow:none;page-break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<h1>Cluster 3 — Differential Equations</h1>
+<p class="meta">Maths H2 9758 · Syllabus §5.5 · Built 2026-06-24 · Prerequisite: pre-study Blocks 43–46, Cluster 2 integration techniques</p>
+
+<div class="intro">
+<strong>Format:</strong> exam-recognition drill. 7 cards covering every DE archetype the exam tests, including the full P1 closer style (12–14m applied DE).
+<ul>
+  <li>DEs are first-order only in 9758 (second-order is excluded).</li>
+  <li>A DE question appears on every P1, usually as the 10–14m closer.</li>
+  <li>Cluster 4 (Integration_DE_Mastery) goes deeper on pattern recognition and substitution mechanics — drill that after this.</li>
+</ul>
+</div>
+
+<div class="controls">
+  <button onclick="revealAll()">Reveal all</button>
+  <button onclick="hideAll()">Hide all</button>
+</div>
+
+<div class="toc">
+<strong>Cards</strong>
+<a href="#c1">1. Separable DE + particular solution</a>
+<a href="#c2">2. DE by given substitution</a>
+<a href="#c3">3. Formulating a DE from context</a>
+<a href="#c4">4. Newton's cooling (chasing K)</a>
+<a href="#c5">5. Logistic growth</a>
+<a href="#c6">6. Interpretation: equilibrium, half-life, long-term</a>
+<a href="#c7">7. Applied DE closer (multi-part 12-14m)</a>
+</div>
+
+<div class="card" id="c1">
+  <h3>Card 1 — Separable DE + Particular Solution</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Find the particular solution of the DE \( \dfrac{dy}{dx} = f(x)g(y) \) for which \( y = y_{0} \) when \( x = x_{0} \). Give your answer in the form \( y = … \)." Typical 5–7m.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Find the particular solution of \( \dfrac{dy}{dx} = \dfrac{2x}{y^{2} + 1} \) for which \( y = 0 \) when \( x = 1 \). <span class="marks">[6]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Separate variables. <span class="mark-step">M1</span></div>
+        \( (y^{2}+1)\,dy = 2x\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Integrate both sides. <span class="mark-step">M1 A1</span></div>
+        \( \dfrac{y^{3}}{3} + y = x^{2} + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Substitute initial condition. <span class="mark-step">M1</span></div>
+        At \( x=1, y=0 \): \( 0 + 0 = 1 + C \Rightarrow C = -1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Write particular solution. The answer is implicit in \( y \) — that's acceptable when \( y \) can't be isolated. <span class="mark-step">A1 A1</span></div>
+        \[ \dfrac{y^{3}}{3} + y = x^{2} - 1 \quad\text{or equivalently}\quad y^{3} + 3y = 3x^{2} - 3 \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Find the particular solution of \( \dfrac{dy}{dx} = y\cos x \) for which \( y = 3 \) when \( x = 0 \). <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Separate. <span class="mark-step">M1</span></div>
+        \( \dfrac{1}{y}\,dy = \cos x\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Integrate. <span class="mark-step">M1 A1</span></div>
+        \( \ln|y| = \sin x + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Substitute. <span class="mark-step">M1</span></div>
+        At \( x = 0, y = 3 \): \( \ln 3 = 0 + C \Rightarrow C = \ln 3 \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Exponentiate. \( y = 3 > 0 \), drop modulus. <span class="mark-step">A1</span></div>
+        \( \ln|y| = \sin x + \ln 3 \Rightarrow y = e^{\sin x + \ln 3} = 3\,e^{\sin x} \).
+        \[ y = 3\,e^{\sin x} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c2">
+  <h3>Card 2 — DE by Given Substitution</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Show, by using the substitution \( u = \ldots \) (or \( v = \ldots \)), that the DE can be written as \( \ldots \). Hence find the general solution." The substitution reduces a non-separable DE to a separable one. (Full mechanics drilled in Cluster 4 Card 9.)
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">By using the substitution \( u = x^{2} \), find the general solution of \( \dfrac{dy}{dx} = 2x\,y \). <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate substitution. <span class="mark-step">B1</span></div>
+        \( u = x^{2} \Rightarrow \dfrac{du}{dx} = 2x \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Rewrite the DE using \( 2x\,dx = du \). The RHS \( 2xy\,dx = y\,du \). So \( dy = y\,du \). <span class="mark-step">M1</span></div>
+        \( \dfrac{dy}{du} = y \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Separable. Solve. <span class="mark-step">M1</span></div>
+        \( \dfrac{1}{y}\,dy = du \Rightarrow \ln|y| = u + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Back-substitute \( u = x^{2} \). <span class="mark-step">M1</span></div>
+        \( \ln|y| = x^{2} + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Exponentiate. <span class="mark-step">A1</span></div>
+        \[ y = A\,e^{x^{2}} \quad (\text{where } A = \pm e^{C}) \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">By using the substitution \( u = \dfrac{y}{x} \), find the general solution of \( x\dfrac{dy}{dx} = y + 2x^{2}\cos x \). <span class="marks">[6]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">\( y = ux \Rightarrow \dfrac{dy}{dx} = u + x\dfrac{du}{dx} \). <span class="mark-step">M1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Substitute into DE. <span class="mark-step">M1</span></div>
+        \( x\!\left(u + x\dfrac{du}{dx}\right) = ux + 2x^{2}\cos x \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Simplify — \( ux \) terms cancel. <span class="mark-step">M1</span></div>
+        \( x^{2}\dfrac{du}{dx} = 2x^{2}\cos x \Rightarrow \dfrac{du}{dx} = 2\cos x \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Integrate. <span class="mark-step">M1</span></div>
+        \( u = 2\sin x + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Back-substitute. <span class="mark-step">A1 A1</span></div>
+        \( \dfrac{y}{x} = 2\sin x + C \Rightarrow y = 2x\sin x + Cx \).
+        \[ y = 2x\sin x + Cx \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c3">
+  <h3>Card 3 — Formulating a DE from Context</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    Words to DE. The exam expects: (1) right pattern from the verbal trigger, (2) right sign from the direction of change, (3) initial condition stated. (Pattern recognition drilled in Cluster 4 Card 8.)
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A radioactive substance decays at a rate proportional to the mass remaining. Initially the mass is 200 grams. After 5 years, the mass is 150 grams.<br>(i) Show that the mass \( M \) at time \( t \) (in years) satisfies \( \dfrac{dM}{dt} = -kM \) for some positive constant \( k \), and state the initial condition. <span class="marks">[2]</span><br>(ii) Solve the DE and find the value of \( k \), correct to 4 d.p. <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — (i) Pattern</div>
+        <div class="step-desc">"Rate \( \propto M \)" → pattern 1 (\( dN/dt = \pm kN \)). Decay → negative. <span class="mark-step">M1 A1</span></div>
+        \( \dfrac{dM}{dt} = -kM,\; k > 0,\; M(0) = 200 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii) Solve</div>
+        <div class="step-desc">Separable. <span class="mark-step">M1</span></div>
+        \( \dfrac{1}{M}\,dM = -k\,dt \Rightarrow \ln|M| = -kt + C \Rightarrow M = A\,e^{-kt} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Use \( M(0) = 200 \). <span class="mark-step">M1</span></div>
+        \( A = 200 \), so \( M = 200\,e^{-kt} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Use \( M(5) = 150 \) to find \( k \). <span class="mark-step">M1</span></div>
+        \( 150 = 200\,e^{-5k} \Rightarrow e^{-5k} = 0.75 \Rightarrow -5k = \ln 0.75 \Rightarrow k = -\dfrac{\ln 0.75}{5} \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Compute. <span class="mark-step">A1</span></div>
+        \( k = 0.0575 \) (4 d.p.).
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">A population of bacteria \( P \) doubles every 3 hours. Initially \( P = 1000 \).<br>(i) Set up a DE for \( P \) at time \( t \) (in hours), assuming the growth rate is proportional to the current population. <span class="marks">[2]</span><br>(ii) Solve for \( P(t) \) and find the value of the growth constant. <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc">Pattern 1, growing → positive. <span class="mark-step">M1 A1</span></div>
+        \( \dfrac{dP}{dt} = kP,\; k > 0,\; P(0) = 1000 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii) Solve</div>
+        <div class="step-desc">Separable. <span class="mark-step">M1</span></div>
+        \( \ln|P| = kt + C \Rightarrow P = A\,e^{kt} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">\( P(0) = 1000 \Rightarrow A = 1000 \). <span class="mark-step">M1</span></div>
+        \( P = 1000\,e^{kt} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">"Doubles every 3 hours": \( P(3) = 2000 \). <span class="mark-step">M1</span></div>
+        \( 2000 = 1000\,e^{3k} \Rightarrow e^{3k} = 2 \Rightarrow k = \dfrac{\ln 2}{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Compute. <span class="mark-step">A1</span></div>
+        \( k \approx 0.231 \) per hour. So \( P(t) = 1000\,e^{(\ln 2)t/3} = 1000 \cdot 2^{t/3} \).
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c4">
+  <h3>Card 4 — Newton's Cooling (chasing K)</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Coffee at \( T_{0} \) is left in a room of temperature \( T_{R} \). The cooling rate is proportional to the temperature difference …" Pattern 2: \( \dfrac{dT}{dt} = -k(T - T_{R}) \). Solution: \( T = T_{R} + (T_{0} - T_{R})e^{-kt} \).
+  </div>
+  <div class="block concept"><div class="label">Concept</div>
+    Recognise the limiting value \( T_{R} \) — that's the room temp (equilibrium). The \( (T_{0} - T_{R}) \) term is the initial deficit. The temperature approaches \( T_{R} \) exponentially as \( t \to \infty \).
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Coffee at \( 90\,^{\circ}\text{C} \) is left in a room at \( 20\,^{\circ}\text{C} \). The rate of cooling is proportional to the temperature difference. After 10 minutes the coffee is at \( 60\,^{\circ}\text{C} \).<br>(i) Show that the temperature \( T \) at time \( t \) (in minutes) satisfies \( T = 20 + 70\,e^{-kt} \). <span class="marks">[5]</span><br>(ii) Find the value of \( k \), correct to 4 d.p. <span class="marks">[2]</span><br>(iii) Find the temperature after 20 minutes. <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — (i) Set up DE</div>
+        <div class="step-desc">Cooling, decreasing T → negative coefficient. <span class="mark-step">B1</span></div>
+        \( \dfrac{dT}{dt} = -k(T - 20),\; k > 0,\; T(0) = 90 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Separate and integrate. <span class="mark-step">M1 M1</span></div>
+        \( \dfrac{1}{T - 20}\,dT = -k\,dt \Rightarrow \ln|T - 20| = -kt + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Exponentiate. \( T - 20 > 0 \) (always above room temp), so drop modulus. <span class="mark-step">M1</span></div>
+        \( T - 20 = A\,e^{-kt} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Apply \( T(0) = 90 \). <span class="mark-step">A1</span></div>
+        \( 90 - 20 = A \Rightarrow A = 70 \). So \( T = 20 + 70\,e^{-kt} \). (AG)
+      </div>
+      <div class="step"><div class="step-header">Step 5 — (ii) Find k</div>
+        <div class="step-desc">Use \( T(10) = 60 \). <span class="mark-step">M1</span></div>
+        \( 60 = 20 + 70\,e^{-10k} \Rightarrow e^{-10k} = \tfrac{40}{70} = \tfrac{4}{7} \Rightarrow k = -\dfrac{\ln(4/7)}{10} \).
+      </div>
+      <div class="step"><div class="step-header">Step 6</div>
+        <div class="step-desc">Compute. <span class="mark-step">A1</span></div>
+        \( k = 0.0560 \) (4 d.p.).
+      </div>
+      <div class="step"><div class="step-header">Step 7 — (iii) Temp at t = 20</div>
+        <div class="step-desc">Substitute. <span class="mark-step">M1 A1</span></div>
+        \( T(20) = 20 + 70\,e^{-0.0560 \times 20} = 20 + 70\,e^{-1.12} \approx 20 + 70(0.3265) \approx 42.9\,^{\circ}\text{C} \).
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">A cold drink at \( 5\,^{\circ}\text{C} \) is placed in a room at \( 25\,^{\circ}\text{C} \). The rate of warming is proportional to the temperature difference. After 6 minutes the drink is at \( 12\,^{\circ}\text{C} \).<br>(i) Formulate and solve the DE for \( T(t) \). <span class="marks">[6]</span><br>(ii) Find the time taken for the drink to reach \( 20\,^{\circ}\text{C} \), correct to the nearest minute. <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — (i) DE</div>
+        <div class="step-desc">Warming, T increasing toward 25 → positive coefficient, but the deficit \( (T - 25) \) is negative, so we use \( -k(T - 25) \) to get positive rate. <span class="mark-step">B1</span></div>
+        \( \dfrac{dT}{dt} = -k(T - 25),\; k > 0,\; T(0) = 5 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Solve. <span class="mark-step">M1 M1</span></div>
+        \( \ln|T - 25| = -kt + C \). Since \( T < 25 \), \( T - 25 < 0 \), so \( |T - 25| = 25 - T \). Or: write \( T = 25 + A\,e^{-kt} \) with \( A < 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Apply initial condition. <span class="mark-step">M1</span></div>
+        \( T(0) = 5 \Rightarrow 5 = 25 + A \Rightarrow A = -20 \). So \( T = 25 - 20\,e^{-kt} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Use \( T(6) = 12 \) to find \( k \). <span class="mark-step">M1</span></div>
+        \( 12 = 25 - 20\,e^{-6k} \Rightarrow 20\,e^{-6k} = 13 \Rightarrow e^{-6k} = 0.65 \Rightarrow k = -\dfrac{\ln 0.65}{6} \approx 0.0718 \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">State the solution. <span class="mark-step">A1</span></div>
+        \( T(t) = 25 - 20\,e^{-0.0718t} \).
+      </div>
+      <div class="step"><div class="step-header">Step 6 — (ii) Time to reach 20</div>
+        <div class="step-desc">Solve \( 20 = 25 - 20\,e^{-0.0718t} \). <span class="mark-step">M1</span></div>
+        \( 20\,e^{-0.0718t} = 5 \Rightarrow e^{-0.0718t} = 0.25 \Rightarrow t = -\dfrac{\ln 0.25}{0.0718} \approx 19.3 \) min.
+      </div>
+      <div class="step"><div class="step-header">Step 7</div>
+        <div class="step-desc">Round to nearest minute. <span class="mark-step">M1 A1</span></div>
+        \( t \approx 19 \) minutes.
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c5">
+  <h3>Card 5 — Logistic Growth</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Population \( P \) grows according to \( \dfrac{dP}{dt} = kP\!\left(1 - \dfrac{P}{K}\right) \) … " The S-curve. Solve using partial fractions (often a "show that" form like \( P = K/(1 + Ae^{-kt}) \)).
+  </div>
+  <div class="block concept"><div class="label">Concept</div>
+    Logistic DE is separable, but solving it requires partial fractions because \( \dfrac{1}{P(1 - P/K)} = \dfrac{1}{P} + \dfrac{1/K}{1 - P/K} \) (after manipulation). The solution form \( P = \dfrac{K}{1 + A\,e^{-kt}} \) is standard. \( P \to K \) as \( t \to \infty \).
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A virus spreads through a town of 10,000 people according to \( \dfrac{dI}{dt} = 0.0002\,I(10000 - I) \) where \( I \) is the number infected at time \( t \) (in days). Initially \( I(0) = 100 \).<br>(i) Show that \( I = \dfrac{10000}{1 + 99\,e^{-2t}} \). <span class="marks">[6]</span><br>(ii) Find the number infected after 3 days. <span class="marks">[2]</span><br>(iii) State the long-term behaviour of \( I \). <span class="marks">[1]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — (i) Separate</div>
+        <div class="step-desc">Separate and set up partial fractions. <span class="mark-step">M1</span></div>
+        \( \dfrac{1}{I(10000 - I)}\,dI = 0.0002\,dt \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Partial fractions: \( \dfrac{1}{I(10000 - I)} = \dfrac{A}{I} + \dfrac{B}{10000 - I} \). Solve: \( 1 = A(10000 - I) + BI \). At \( I = 0 \): \( A = \tfrac{1}{10000} \). At \( I = 10000 \): \( B = \tfrac{1}{10000} \). <span class="mark-step">M1</span></div>
+        So \( \dfrac{1}{I(10000 - I)} = \dfrac{1}{10000}\!\left(\dfrac{1}{I} + \dfrac{1}{10000 - I}\right) \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Integrate. <span class="mark-step">M1</span></div>
+        \( \tfrac{1}{10000}(\ln|I| - \ln|10000 - I|) = 0.0002t + C \).<br>
+        Multiply by 10000: \( \ln\!\left|\dfrac{I}{10000 - I}\right| = 2t + C' \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Exponentiate. <span class="mark-step">M1</span></div>
+        \( \dfrac{I}{10000 - I} = D\,e^{2t} \) (where \( D = \pm e^{C'} \)).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Apply \( I(0) = 100 \). <span class="mark-step">M1</span></div>
+        \( \dfrac{100}{9900} = D \Rightarrow D = \tfrac{1}{99} \).<br>
+        So \( \dfrac{I}{10000 - I} = \dfrac{e^{2t}}{99} \).
+      </div>
+      <div class="step"><div class="step-header">Step 6</div>
+        <div class="step-desc">Solve for \( I \). <span class="mark-step">A1</span></div>
+        \( 99 I = (10000 - I)\,e^{2t} \Rightarrow 99 I + I\,e^{2t} = 10000\,e^{2t} \Rightarrow I(99 + e^{2t}) = 10000\,e^{2t} \).<br>
+        Divide top and bottom by \( e^{2t} \):
+        \[ I = \dfrac{10000}{1 + 99\,e^{-2t}} \quad\text{(AG)} \]
+      </div>
+      <div class="step"><div class="step-header">Step 7 — (ii) After 3 days</div>
+        <div class="step-desc">Substitute. <span class="mark-step">M1 A1</span></div>
+        \( I(3) = \dfrac{10000}{1 + 99\,e^{-6}} = \dfrac{10000}{1 + 99(0.00248)} \approx \dfrac{10000}{1.245} \approx 8030 \) people.
+      </div>
+      <div class="step"><div class="step-header">Step 8 — (iii) Long-term</div>
+        <div class="step-desc">As \( t \to \infty,\; e^{-2t} \to 0 \). <span class="mark-step">B1</span></div>
+        \( I \to 10000 \). Eventually the whole population is infected (carrying capacity).
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">A rumour spreads through a community of 5000 people, modelled by \( \dfrac{dR}{dt} = 0.0004\,R(5000 - R) \) with \( R(0) = 50 \).<br>(i) Solve for \( R(t) \). <span class="marks">[6]</span><br>(ii) Find \( R \) when \( t = 2 \). <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Separate. <span class="mark-step">M1</span></div>
+        \( \dfrac{1}{R(5000 - R)}\,dR = 0.0004\,dt \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Partial fractions. <span class="mark-step">M1</span></div>
+        \( \dfrac{1}{R(5000 - R)} = \dfrac{1}{5000}\!\left(\dfrac{1}{R} + \dfrac{1}{5000 - R}\right) \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Integrate. <span class="mark-step">M1</span></div>
+        \( \tfrac{1}{5000}\ln\!\left|\dfrac{R}{5000 - R}\right| = 0.0004t + C \Rightarrow \ln\!\left|\dfrac{R}{5000 - R}\right| = 2t + C' \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Exponentiate and apply IC \( R(0) = 50 \). <span class="mark-step">M1</span></div>
+        \( \dfrac{R}{5000 - R} = D\,e^{2t} \). At \( t=0 \): \( \dfrac{50}{4950} = D \Rightarrow D = \tfrac{1}{99} \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Solve for \( R \). <span class="mark-step">M1 A1</span></div>
+        \[ R = \dfrac{5000}{1 + 99\,e^{-2t}} \]
+      </div>
+      <div class="step"><div class="step-header">Step 6 — (ii)</div>
+        <div class="step-desc">Substitute \( t = 2 \). <span class="mark-step">M1 A1</span></div>
+        \( R(2) = \dfrac{5000}{1 + 99\,e^{-4}} = \dfrac{5000}{1 + 99(0.01832)} \approx \dfrac{5000}{2.814} \approx 1777 \) people.
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c6">
+  <h3>Card 6 — Interpretation: Equilibrium, Half-life, Long-term</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    Final part of a DE question: "State the long-term value of \( y \) / Find the half-life / Find the equilibrium population / Describe what happens to \( P \) as \( t \) becomes large." 1–3 marks each — vocabulary precision.
+  </div>
+  <div class="block concept"><div class="label">Concept</div>
+    Definitions in one place: <strong>long-term</strong> = \( y \) as \( t \to \infty \). <strong>Equilibrium</strong> = \( y \) where \( dy/dt = 0 \). <strong>Carrying capacity</strong> = max equilibrium in a logistic model. <strong>Half-life</strong> = time for exponential decay to halve = \( (\ln 2)/k \). (Full glossary in Cluster 4 Card 10.)
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A radioactive isotope decays according to \( \dfrac{dN}{dt} = -0.0231\,N \) where \( N \) is in grams and \( t \) is in years, with \( N(0) = 500 \).<br>(i) Solve for \( N(t) \). <span class="marks">[3]</span><br>(ii) Find the half-life of the isotope. <span class="marks">[2]</span><br>(iii) Describe the long-term behaviour of \( N \). <span class="marks">[1]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc">Solve separable. <span class="mark-step">M1 A1</span></div>
+        \( N(t) = 500\,e^{-0.0231 t} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii) Half-life</div>
+        <div class="step-desc">Solve \( N(t_{1/2}) = 250 \). <span class="mark-step">M1</span></div>
+        \( 500\,e^{-0.0231 t_{1/2}} = 250 \Rightarrow e^{-0.0231 t_{1/2}} = \tfrac{1}{2} \Rightarrow t_{1/2} = \dfrac{\ln 2}{0.0231} \approx 30.0 \) years. <span class="mark-step">A1</span>
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (iii) Long-term</div>
+        <div class="step-desc">\( e^{-0.0231 t} \to 0 \). <span class="mark-step">B1</span></div>
+        \( N \to 0 \) as \( t \to \infty \). The isotope decays away completely in the long run.
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">A fish population \( P \) satisfies \( \dfrac{dP}{dt} = 0.2 P\!\left(1 - \dfrac{P}{5000}\right) \) with \( P(0) = 200 \).<br>(i) State the carrying capacity. <span class="marks">[1]</span><br>(ii) Find the equilibrium values. <span class="marks">[2]</span><br>(iii) State the value of \( P \) at which the population is growing fastest. <span class="marks">[1]</span><br>(iv) Describe the long-term behaviour of \( P \). <span class="marks">[1]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc">Read \( K \) off the logistic form. <span class="mark-step">B1</span></div>
+        \( K = 5000 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii) Equilibria</div>
+        <div class="step-desc">Set \( dP/dt = 0 \). <span class="mark-step">M1 A1</span></div>
+        \( 0.2P(1 - P/5000) = 0 \Rightarrow P = 0 \) or \( P = 5000 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (iii)</div>
+        <div class="step-desc">Maximum at \( K/2 \). <span class="mark-step">B1</span></div>
+        \( P = 2500 \).
+      </div>
+      <div class="step"><div class="step-header">Step 4 — (iv)</div>
+        <div class="step-desc">Starting from \( P_{0} = 200 \), below \( K \), population grows toward carrying capacity. <span class="mark-step">B1</span></div>
+        \( P \to 5000 \) as \( t \to \infty \).
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c7">
+  <h3>Card 7 — Applied DE Closer (P1 12-14m style)</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    The classic P1 closer. Real-world context (drug clearance, draining tank, water in a reservoir, terminal velocity, drone descent, virus spread, loan repayment). Multi-part: (a) formulate the DE from words, (b) solve, (c) find a specific value, (d) interpret long-term. Typical 10–14m, AO2-heavy.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A drug \( D \) (in mg) is injected into a patient at a constant rate of 4 mg per hour. The body simultaneously removes the drug at a rate proportional to the amount present, with constant of proportionality 0.5 per hour. Initially there is no drug in the body.<br>(i) Show that \( \dfrac{dD}{dt} = 4 - 0.5D \). <span class="marks">[2]</span><br>(ii) Solve to find \( D(t) \). <span class="marks">[5]</span><br>(iii) Find the long-term amount of drug in the body. <span class="marks">[2]</span><br>(iv) Find how long it takes for the drug level to reach 6 mg, correct to the nearest minute. <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — (i) Formulate</div>
+        <div class="step-desc">Net rate = input rate − output rate. <span class="mark-step">M1</span></div>
+        Input: \( +4 \) mg/hr. Output: \( 0.5D \) (proportional to amount). So \( \dfrac{dD}{dt} = 4 - 0.5D \). <span class="mark-step">A1 (AG)</span>
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii) Solve</div>
+        <div class="step-desc">Separate. <span class="mark-step">M1</span></div>
+        \( \dfrac{dD}{4 - 0.5D} = dt \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Integrate. <span class="mark-step">M1</span></div>
+        \( -\dfrac{1}{0.5}\ln|4 - 0.5D| = t + C \Rightarrow -2\ln|4 - 0.5D| = t + C \Rightarrow \ln|4 - 0.5D| = -\dfrac{t}{2} + C' \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Exponentiate. <span class="mark-step">M1</span></div>
+        \( 4 - 0.5D = A\,e^{-t/2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Apply \( D(0) = 0 \). <span class="mark-step">M1 A1</span></div>
+        \( 4 - 0 = A \Rightarrow A = 4 \). So \( 4 - 0.5D = 4\,e^{-t/2} \Rightarrow D = 8(1 - e^{-t/2}) \).
+      </div>
+      <div class="step"><div class="step-header">Step 6 — (iii) Long-term</div>
+        <div class="step-desc">As \( t \to \infty,\; e^{-t/2} \to 0 \). <span class="mark-step">M1 A1</span></div>
+        \( D \to 8 \) mg. (Equivalently: equilibrium where \( dD/dt = 0 \Rightarrow 4 = 0.5D \Rightarrow D = 8 \).)
+      </div>
+      <div class="step"><div class="step-header">Step 7 — (iv) Time to reach 6 mg</div>
+        <div class="step-desc">Solve \( 6 = 8(1 - e^{-t/2}) \). <span class="mark-step">M1</span></div>
+        \( 1 - e^{-t/2} = \tfrac{3}{4} \Rightarrow e^{-t/2} = \tfrac{1}{4} \Rightarrow t = -2\ln\tfrac{1}{4} = 2\ln 4 = 4\ln 2 \approx 2.77 \) hours.
+      </div>
+      <div class="step"><div class="step-header">Step 8</div>
+        <div class="step-desc">Convert to minutes. <span class="mark-step">M1 A1</span></div>
+        \( 2.77 \times 60 \approx 166 \) minutes.
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">A tank initially holds 500 litres of pure water. Salt water containing 0.1 kg of salt per litre flows in at 5 litres per minute, and the well-mixed solution drains out at the same rate. Let \( S(t) \) be the amount of salt (in kg) in the tank at time \( t \) (in minutes).<br>(i) Show that \( \dfrac{dS}{dt} = 0.5 - \dfrac{S}{100} \). <span class="marks">[3]</span><br>(ii) Solve for \( S(t) \). <span class="marks">[5]</span><br>(iii) Find the long-term amount of salt in the tank. <span class="marks">[2]</span><br>(iv) Find the time taken for the salt content to reach 25 kg, correct to 1 d.p. <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc">Rate in = \( 5 \cdot 0.1 = 0.5 \) kg/min. Rate out = (concentration) × (flow rate) = \( \dfrac{S}{500} \cdot 5 = \dfrac{S}{100} \). <span class="mark-step">M1 M1</span></div>
+        \( \dfrac{dS}{dt} = 0.5 - \dfrac{S}{100} \). <span class="mark-step">A1 (AG)</span>
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii) Solve</div>
+        <div class="step-desc">Rewrite \( 0.5 - \dfrac{S}{100} = \dfrac{50 - S}{100} \). Separable. <span class="mark-step">M1</span></div>
+        \( \dfrac{dS}{50 - S} = \dfrac{dt}{100} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Integrate. <span class="mark-step">M1</span></div>
+        \( -\ln|50 - S| = \dfrac{t}{100} + C \Rightarrow \ln|50 - S| = -\dfrac{t}{100} + C' \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Exponentiate. <span class="mark-step">M1</span></div>
+        \( 50 - S = A\,e^{-t/100} \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">IC \( S(0) = 0 \). <span class="mark-step">M1 A1</span></div>
+        \( 50 = A \Rightarrow S = 50(1 - e^{-t/100}) \).
+      </div>
+      <div class="step"><div class="step-header">Step 6 — (iii) Long-term</div>
+        <div class="step-desc">As \( t \to \infty,\; S \to 50 \) kg. <span class="mark-step">M1 A1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 7 — (iv) Reach 25</div>
+        <div class="step-desc">\( 25 = 50(1 - e^{-t/100}) \Rightarrow e^{-t/100} = \tfrac{1}{2} \Rightarrow t = 100\ln 2 \approx 69.3 \) min. <span class="mark-step">M1 M1 A1</span></div>
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<hr>
+
+<h2>Closing notes</h2>
+<p>Hit \( \ge 90\% \) on every card. Card 7 (the applied closer) is the most exam-realistic — that's what wins or loses you 12–14 marks in P1. Once Cluster 3 is solid, sit a full timed P1 question from 2017–2024 to validate. After that, Cluster 4 closes the residual gaps.</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn => {
+    btn.addEventListener('click', function(){
+      const block = this.parentElement;
+      const overlay = block.querySelector('.answer-overlay');
+      if (overlay.classList.contains('hidden')) {
+        overlay.classList.remove('hidden');
+        this.textContent = 'Reveal';
+        this.classList.remove('hide-state');
+      } else {
+        overlay.classList.add('hidden');
+        this.textContent = 'Hide';
+        this.classList.add('hide-state');
+      }
+    });
+  });
+  function revealAll(){
+    document.querySelectorAll('.answer-overlay').forEach(o => o.classList.add('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b => { b.textContent = 'Hide'; b.classList.add('hide-state'); });
+  }
+  function hideAll(){
+    document.querySelectorAll('.answer-overlay').forEach(o => o.classList.remove('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b => { b.textContent = 'Reveal'; b.classList.remove('hide-state'); });
+  }
+</script>
+
+</body>
+</html>

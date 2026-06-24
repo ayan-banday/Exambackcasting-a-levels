@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cluster 2 — Integration Techniques &amp; Applications</title>
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true, tags: 'none' },
+    svg: { fontCache: 'global' },
+    options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --amber-soft:#fffbeb;
+    --green:#059669; --green-soft:#ecfdf5; --cover:#f3f4f6;
+    --purple:#7c3aed; --purple-soft:#f5f3ff; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:40px 24px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h2,h3,.label,.controls,button,.step-header{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  h1{font-size:2em;margin:0 0 8px;color:#111;border-bottom:3px solid #111;padding-bottom:12px}
+  h2{font-size:1.5em;margin-top:56px;margin-bottom:16px;color:#111;border-bottom:1px solid #999;padding-bottom:6px}
+  h3{font-size:1.15em;margin:0 0 14px;color:#1f2937}
+  p{margin:8px 0}
+  .meta{color:var(--muted);font-size:.9em;margin:4px 0 24px}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--purple);padding:16px 20px;border-radius:6px;margin:16px 0 32px}
+  .intro ul{margin:8px 0 0 0;padding-left:22px}
+  .intro li{margin:4px 0}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;color:var(--text);font-weight:500}
+  .controls button:hover{background:#f3f4f6}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:32px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:6px;color:#111}
+  .toc a{color:var(--blue);text-decoration:none;margin-right:16px}
+  .toc a:hover{text-decoration:underline}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .block{margin:14px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border)}
+  .block.archetype{background:var(--purple-soft);border-left-color:var(--purple)}
+  .block.concept{background:#f0fdfa;border-left-color:#0d9488}
+  .block.example{background:#f9fafb;border-left-color:#6b7280}
+  .block.practice{background:var(--amber-soft);border-left-color:var(--amber)}
+  .block.answer{background:var(--green-soft);border-left-color:var(--green);position:relative;min-height:60px}
+  .label{display:block;text-transform:uppercase;font-size:.75em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--muted)}
+  .block.archetype .label{color:var(--purple)}
+  .block.concept .label{color:#0f766e}
+  .block.example .label{color:#4b5563}
+  .block.practice .label{color:var(--amber)}
+  .block.answer .label{color:var(--green)}
+  .stem{background:#1e293b;color:#f1f5f9;padding:12px 16px;border-radius:6px;margin:10px 0;font-family:'Charter','Georgia',serif}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px;font-family:-apple-system,sans-serif}
+  .mark-step{display:inline-block;font-size:.75em;background:#ddd6fe;color:#5b21b6;padding:1px 7px;border-radius:8px;font-weight:700;margin:0 4px;font-family:-apple-system,sans-serif}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.5);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.8em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .step-desc{font-style:italic;color:#374151;margin-bottom:6px;font-size:.95em}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3;box-shadow:0 1px 2px rgba(0,0,0,.1)}
+  .reveal-btn:hover{background:#047857}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .reveal-btn.hide-state:hover{background:#4b5563}
+  .answer-content{transition:filter .2s,opacity .2s}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;font-family:-apple-system,sans-serif;border-left:4px solid var(--muted);margin-left:-16px;padding-left:16px;z-index:2;transition:opacity .2s}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content{padding-right:60px}
+  ul,ol{padding-left:24px}
+  li{margin:4px 0}
+  .mjx-container{font-size:1.05em!important}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  @media print{
+    body{background:#fff;padding:20px;max-width:100%}
+    .controls,.reveal-btn{display:none!important}
+    .answer-overlay{display:none!important}
+    .card{box-shadow:none;page-break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<h1>Cluster 2 — Integration Techniques &amp; Applications</h1>
+<p class="meta">Maths H2 9758 · Syllabus §5.3 + §5.4 · Built 2026-06-24 · Prerequisite: pre-study sheet Blocks 25–42</p>
+
+<div class="intro">
+<strong>Format:</strong> exam-recognition drill. 10 cards covering the integration archetypes the exam tests.
+<ul>
+  <li>Each Example shows real exam-stem language with mark allocation (M1, A1, B1).</li>
+  <li>Attempt Practice cold (1.2 min/mark). Reveal and self-mark.</li>
+  <li>If you score &lt; 70% on any card, drill the corresponding pre-study Block before moving on.</li>
+  <li>For deeper gap-closing drills, go to Cluster 4 (Integration_DE_Mastery).</li>
+</ul>
+</div>
+
+<div class="controls">
+  <button onclick="revealAll()">Reveal all</button>
+  <button onclick="hideAll()">Hide all</button>
+</div>
+
+<div class="toc">
+<strong>Cards</strong>
+<a href="#c1">1. Reverse chain rule</a>
+<a href="#c2">2. Trig integration via identities</a>
+<a href="#c3">3. MF27 inverse-trig forms</a>
+<a href="#c4">4. MF27 log forms</a>
+<a href="#c5">5. Integration by given substitution</a>
+<a href="#c6">6. IBP single application</a>
+<a href="#c7">7. IBP cyclic</a>
+<a href="#c8">8. Partial fractions then integrate</a>
+<a href="#c9">9. Area between two curves</a>
+<a href="#c10">10. Volume of revolution</a>
+</div>
+
+<div class="card" id="c1">
+  <h3>Card 1 — Reverse Chain Rule (pattern recognition)</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Find \( \int f(x)\,dx \)" with no hint — you must spot which of the three reverse chain rule patterns applies: \( \dfrac{f'(x)}{f(x)},\;\;f'(x)\,e^{f(x)},\;\;f'(x)\,[f(x)]^{n} \). Typical 2–4m, opener.
+  </div>
+  <div class="block concept"><div class="label">Concept</div>
+    Look for the structure first: is the integrand a fraction with the numerator equal to the derivative of the denominator → \( \ln|f(x)| \). Is it something times \( e \) to a function → \( e^{f(x)} \). Is it a function-derivative times the function raised to a power → \( [f(x)]^{n+1}/(n+1) \). Sometimes you need to factor out or adjust a constant.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Find \( \displaystyle\int \dfrac{6x^{2}}{x^{3} + 4}\,dx \). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Spot the pattern. Denominator is \( x^{3} + 4 \). Derivative of denominator is \( 3x^{2} \). Numerator is \( 6x^{2} = 2 \cdot 3x^{2} \) — pattern \( \dfrac{f'}{f} \) with a constant multiplier. <span class="mark-step">M1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Pull out the constant. <span class="mark-step">M1</span></div>
+        \( \int \dfrac{6x^{2}}{x^{3}+4}\,dx = 2\int \dfrac{3x^{2}}{x^{3}+4}\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Apply the pattern (\( x^{3}+4 > 0 \) for all \( x \), so drop modulus). <span class="mark-step">A1</span></div>
+        \[ = 2\ln(x^{3}+4) + C \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Find \( \displaystyle\int x^{2}\,e^{x^{3}+2}\,dx \). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Pattern: \( f'(x)\,e^{f(x)} \). Here \( f(x) = x^{3} + 2,\; f'(x) = 3x^{2} \). Integrand has \( x^{2} = \tfrac{1}{3} \cdot 3x^{2} \). <span class="mark-step">M1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Pull out the \( \tfrac{1}{3} \). <span class="mark-step">M1</span></div>
+        \( \int x^{2}\,e^{x^{3}+2}\,dx = \tfrac{1}{3}\int 3x^{2}\,e^{x^{3}+2}\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Apply the formula. <span class="mark-step">A1</span></div>
+        \[ = \tfrac{1}{3}\,e^{x^{3}+2} + C \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c2">
+  <h3>Card 2 — Trig Integration via Identities</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Find \( \int \sin^{2}(2x)\,dx \)" or "Find the exact value of \( \int_{0}^{\pi/4}\cos^{2}x\,dx \)". Almost always uses one of: \( \sin^{2}\theta = \tfrac{1-\cos 2\theta}{2},\; \cos^{2}\theta = \tfrac{1+\cos 2\theta}{2},\; \tan^{2}\theta = \sec^{2}\theta - 1 \).
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Find the exact value of \( \displaystyle\int_{0}^{\pi/4} \sin^{2}(2x)\,dx \). <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Apply identity \( \sin^{2}\theta = \tfrac{1-\cos 2\theta}{2} \) with \( \theta = 2x \). <span class="mark-step">M1</span></div>
+        \( \sin^{2}(2x) = \dfrac{1 - \cos 4x}{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Integrate. <span class="mark-step">M1</span></div>
+        \( \int \dfrac{1-\cos 4x}{2}\,dx = \tfrac{1}{2}x - \tfrac{1}{8}\sin 4x + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Evaluate at limits. <span class="mark-step">M1</span></div>
+        At \( x = \pi/4 \): \( \tfrac{\pi}{8} - \tfrac{1}{8}\sin\pi = \tfrac{\pi}{8} - 0 = \tfrac{\pi}{8} \).<br>
+        At \( x = 0 \): \( 0 - 0 = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Subtract. <span class="mark-step">A1</span></div>
+        \[ \int_{0}^{\pi/4} \sin^{2}(2x)\,dx = \dfrac{\pi}{8} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Find the exact value of \( \displaystyle\int_{0}^{\pi/3}\tan^{2}x\,dx \). <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Apply identity \( \tan^{2}x = \sec^{2}x - 1 \). <span class="mark-step">M1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Integrate. <span class="mark-step">M1</span></div>
+        \( \int (\sec^{2}x - 1)\,dx = \tan x - x + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Evaluate. <span class="mark-step">M1</span></div>
+        At \( x = \pi/3 \): \( \tan(\pi/3) - \pi/3 = \sqrt{3} - \pi/3 \).<br>
+        At \( x = 0 \): \( 0 - 0 = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Subtract. <span class="mark-step">A1</span></div>
+        \[ \int_{0}^{\pi/3}\tan^{2}x\,dx = \sqrt{3} - \dfrac{\pi}{3} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c3">
+  <h3>Card 3 — MF27 Inverse-Trig Forms</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Find \( \int \dfrac{1}{a^{2}+x^{2}}\,dx \)" or "Find the exact value of \( \int_{0}^{a} \dfrac{1}{\sqrt{a^{2}-x^{2}}}\,dx \)". Direct application of MF27 \( \int \tfrac{1}{a^{2}+x^{2}}\,dx = \tfrac{1}{a}\tan^{-1}\tfrac{x}{a} \) and \( \int \tfrac{1}{\sqrt{a^{2}-x^{2}}}\,dx = \sin^{-1}\tfrac{x}{a} \).
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Find the exact value of \( \displaystyle\int_{0}^{2}\dfrac{1}{\sqrt{16 - x^{2}}}\,dx \). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify \( a^{2} = 16 \Rightarrow a = 4 \). MF27 form: \( \sin^{-1}\!\tfrac{x}{a} \). <span class="mark-step">M1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Apply. <span class="mark-step">A1</span></div>
+        \( \int \dfrac{1}{\sqrt{16-x^{2}}}\,dx = \sin^{-1}\!\dfrac{x}{4} + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Evaluate. <span class="mark-step">A1</span></div>
+        At \( x=2 \): \( \sin^{-1}(1/2) = \pi/6 \). At \( x=0 \): \( 0 \).
+        \[ \int_{0}^{2}\dfrac{1}{\sqrt{16-x^{2}}}\,dx = \dfrac{\pi}{6} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Find the exact value of \( \displaystyle\int_{0}^{3}\dfrac{1}{9 + x^{2}}\,dx \). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">\( a^{2} = 9 \Rightarrow a = 3 \). Form: \( \tfrac{1}{a}\tan^{-1}\!\tfrac{x}{a} \). <span class="mark-step">M1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Apply. <span class="mark-step">A1</span></div>
+        \( \int \dfrac{1}{9+x^{2}}\,dx = \tfrac{1}{3}\tan^{-1}\!\tfrac{x}{3} + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Evaluate. <span class="mark-step">A1</span></div>
+        At \( x=3 \): \( \tfrac{1}{3}\tan^{-1}(1) = \tfrac{1}{3}\cdot\tfrac{\pi}{4} = \tfrac{\pi}{12} \). At \( x=0 \): \( 0 \).
+        \[ \int_{0}^{3}\dfrac{1}{9+x^{2}}\,dx = \dfrac{\pi}{12} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c4">
+  <h3>Card 4 — MF27 Log Forms</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Find \( \int \dfrac{1}{a^{2}-x^{2}}\,dx \) or \( \int \dfrac{1}{x^{2}-a^{2}}\,dx \)". Direct MF27 application: \( \int \tfrac{1}{a^{2}-x^{2}}\,dx = \tfrac{1}{2a}\ln\!\left|\tfrac{a+x}{a-x}\right| \) and \( \int \tfrac{1}{x^{2}-a^{2}}\,dx = \tfrac{1}{2a}\ln\!\left|\tfrac{x-a}{x+a}\right| \). Check the SIGN of the constant carefully to pick the right form.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Find \( \displaystyle\int \dfrac{1}{x^{2} - 9}\,dx \). <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Form \( \dfrac{1}{x^{2}-a^{2}} \) with \( a = 3 \). <span class="mark-step">M1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Apply. <span class="mark-step">A1</span></div>
+        \[ \int \dfrac{1}{x^{2}-9}\,dx = \tfrac{1}{6}\ln\!\left|\dfrac{x-3}{x+3}\right| + C \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Find the exact value of \( \displaystyle\int_{0}^{1}\dfrac{1}{4 - x^{2}}\,dx \). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Form \( \dfrac{1}{a^{2}-x^{2}} \) with \( a = 2 \). <span class="mark-step">M1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Antiderivative. <span class="mark-step">M1</span></div>
+        \( \int \dfrac{1}{4-x^{2}}\,dx = \tfrac{1}{4}\ln\!\left|\dfrac{2+x}{2-x}\right| + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Evaluate. <span class="mark-step">A1</span></div>
+        At \( x=1 \): \( \tfrac{1}{4}\ln 3 \). At \( x=0 \): \( \tfrac{1}{4}\ln 1 = 0 \).
+        \[ \int_{0}^{1}\dfrac{1}{4-x^{2}}\,dx = \dfrac{1}{4}\ln 3 \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c5">
+  <h3>Card 5 — Integration by Given Substitution</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Use the substitution \( u = g(x) \) (or \( x = h(\theta) \)) to find …" — substitution is ALWAYS given. Five steps: differentiate substitution → rewrite integrand → change limits if definite → integrate in new variable → substitute back / evaluate.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Use the substitution \( u = 1 + x^{2} \) to find \( \displaystyle\int_{0}^{1} \dfrac{x}{(1 + x^{2})^{3}}\,dx \). <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate the substitution. <span class="mark-step">B1</span></div>
+        \( u = 1 + x^{2} \Rightarrow \dfrac{du}{dx} = 2x \Rightarrow du = 2x\,dx \Rightarrow x\,dx = \tfrac{1}{2}\,du \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Change limits. At \( x=0 \): \( u=1 \). At \( x=1 \): \( u=2 \). <span class="mark-step">B1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Rewrite the integrand. <span class="mark-step">M1</span></div>
+        \( \int_{0}^{1}\dfrac{x}{(1+x^{2})^{3}}\,dx = \int_{1}^{2}\dfrac{1}{u^{3}}\cdot\tfrac{1}{2}\,du = \tfrac{1}{2}\int_{1}^{2}u^{-3}\,du \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Integrate. <span class="mark-step">M1</span></div>
+        \( \tfrac{1}{2}\!\left[\dfrac{u^{-2}}{-2}\right]_{1}^{2} = -\tfrac{1}{4}\!\left[\dfrac{1}{u^{2}}\right]_{1}^{2} = -\tfrac{1}{4}(\tfrac{1}{4} - 1) = -\tfrac{1}{4}\cdot(-\tfrac{3}{4}) \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Simplify. <span class="mark-step">A1</span></div>
+        \[ = \dfrac{3}{16} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Use the substitution \( u = \ln x \) to find \( \displaystyle\int_{1}^{e}\dfrac{(\ln x)^{2}}{x}\,dx \). <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate. <span class="mark-step">B1</span></div>
+        \( u = \ln x \Rightarrow du = \tfrac{1}{x}\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Change limits. At \( x=1 \): \( u=0 \). At \( x=e \): \( u=1 \). <span class="mark-step">B1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Rewrite. \( (\ln x)^{2}\cdot\tfrac{1}{x}\,dx = u^{2}\,du \). <span class="mark-step">M1</span></div>
+        \( \int_{1}^{e}\dfrac{(\ln x)^{2}}{x}\,dx = \int_{0}^{1}u^{2}\,du \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Integrate. <span class="mark-step">M1</span></div>
+        \( \left[\dfrac{u^{3}}{3}\right]_{0}^{1} = \dfrac{1}{3} - 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Final. <span class="mark-step">A1</span></div>
+        \[ = \dfrac{1}{3} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c6">
+  <h3>Card 6 — Integration by Parts (single application)</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Find \( \int x\sin x\,dx \)" or "Find the exact value of \( \int_{0}^{1} x\,e^{-x}\,dx \)". Single IBP — integrand is product of two distinct function types.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Find the exact value of \( \displaystyle\int_{0}^{1} x\,e^{-x}\,dx \). <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">LIATE: \( u = x,\; dv = e^{-x}\,dx \). <span class="mark-step">B1</span></div>
+        \( du = dx,\; v = -e^{-x} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Apply IBP. <span class="mark-step">M1</span></div>
+        \( \int_{0}^{1} x\,e^{-x}\,dx = [-x\,e^{-x}]_{0}^{1} - \int_{0}^{1} -e^{-x}\,dx = [-x\,e^{-x}]_{0}^{1} + \int_{0}^{1} e^{-x}\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Compute each piece. <span class="mark-step">M1 M1</span></div>
+        \( [-x\,e^{-x}]_{0}^{1} = -e^{-1} - 0 = -\tfrac{1}{e} \).<br>
+        \( \int_{0}^{1} e^{-x}\,dx = [-e^{-x}]_{0}^{1} = -e^{-1} - (-1) = 1 - \tfrac{1}{e} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Combine. <span class="mark-step">A1</span></div>
+        \[ -\tfrac{1}{e} + 1 - \tfrac{1}{e} = 1 - \dfrac{2}{e} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Find \( \displaystyle\int x\sin 3x\,dx \). <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">LIATE: \( u = x,\; dv = \sin 3x\,dx \). <span class="mark-step">B1</span></div>
+        \( du = dx,\; v = -\tfrac{1}{3}\cos 3x \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Apply IBP. <span class="mark-step">M1</span></div>
+        \( \int x\sin 3x\,dx = -\tfrac{x}{3}\cos 3x - \int -\tfrac{1}{3}\cos 3x\,dx = -\tfrac{x}{3}\cos 3x + \tfrac{1}{3}\int \cos 3x\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Integrate. <span class="mark-step">M1</span></div>
+        \( \tfrac{1}{3}\int \cos 3x\,dx = \tfrac{1}{9}\sin 3x \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Combine. <span class="mark-step">A1</span></div>
+        \[ \int x\sin 3x\,dx = -\dfrac{x}{3}\cos 3x + \dfrac{1}{9}\sin 3x + C \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c7">
+  <h3>Card 7 — IBP Cyclic (\( e^{x}\sin x \) type)</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Find \( \int e^{x}\sin x\,dx \)" or similar. After IBP twice, the original integral reappears. Solve algebraically: set the original integral as \( I \), get an equation in \( I \), solve.
+  </div>
+  <div class="block concept"><div class="label">Concept</div>
+    \( e^{x}\sin x \) and \( e^{x}\cos x \) cycle under differentiation (sin → cos → -sin → -cos → sin). Two applications of IBP bring the original integrand back with a coefficient. Solve like a linear equation.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Find \( \displaystyle\int e^{x}\sin x\,dx \). <span class="marks">[6]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Let \( I = \int e^{x}\sin x\,dx \). First IBP: pick \( u = \sin x,\; dv = e^{x}\,dx \), so \( du = \cos x\,dx,\; v = e^{x} \). <span class="mark-step">M1</span></div>
+        \( I = e^{x}\sin x - \int e^{x}\cos x\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Second IBP on the remaining \( \int e^{x}\cos x\,dx \). Same orientation: \( u = \cos x,\; dv = e^{x}\,dx \), so \( du = -\sin x\,dx,\; v = e^{x} \). <span class="mark-step">M1</span></div>
+        \( \int e^{x}\cos x\,dx = e^{x}\cos x - \int e^{x}(-\sin x)\,dx = e^{x}\cos x + \int e^{x}\sin x\,dx = e^{x}\cos x + I \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Substitute back into Step 1. <span class="mark-step">M1</span></div>
+        \( I = e^{x}\sin x - (e^{x}\cos x + I) = e^{x}\sin x - e^{x}\cos x - I \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Solve algebraically for \( I \). <span class="mark-step">M1</span></div>
+        \( 2I = e^{x}\sin x - e^{x}\cos x \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Divide by 2 and add \( + C \). <span class="mark-step">A1 A1</span></div>
+        \[ I = \dfrac{1}{2}e^{x}(\sin x - \cos x) + C \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Find \( \displaystyle\int e^{2x}\cos x\,dx \). <span class="marks">[6]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Let \( I = \int e^{2x}\cos x\,dx \). First IBP: \( u = \cos x,\; dv = e^{2x}\,dx \). So \( du = -\sin x\,dx,\; v = \tfrac{1}{2}e^{2x} \). <span class="mark-step">M1</span></div>
+        \( I = \tfrac{1}{2}e^{2x}\cos x + \tfrac{1}{2}\int e^{2x}\sin x\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Second IBP on \( \int e^{2x}\sin x\,dx \). \( u = \sin x,\; dv = e^{2x}\,dx \). \( du = \cos x\,dx,\; v = \tfrac{1}{2}e^{2x} \). <span class="mark-step">M1</span></div>
+        \( \int e^{2x}\sin x\,dx = \tfrac{1}{2}e^{2x}\sin x - \tfrac{1}{2}\int e^{2x}\cos x\,dx = \tfrac{1}{2}e^{2x}\sin x - \tfrac{1}{2}I \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Substitute back. <span class="mark-step">M1</span></div>
+        \( I = \tfrac{1}{2}e^{2x}\cos x + \tfrac{1}{2}\!\left[\tfrac{1}{2}e^{2x}\sin x - \tfrac{1}{2}I\right] = \tfrac{1}{2}e^{2x}\cos x + \tfrac{1}{4}e^{2x}\sin x - \tfrac{1}{4}I \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Solve. <span class="mark-step">M1</span></div>
+        \( I + \tfrac{1}{4}I = \tfrac{1}{2}e^{2x}\cos x + \tfrac{1}{4}e^{2x}\sin x \Rightarrow \tfrac{5}{4}I = \tfrac{e^{2x}}{4}(2\cos x + \sin x) \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Final. <span class="mark-step">A1 A1</span></div>
+        \[ I = \dfrac{e^{2x}}{5}(2\cos x + \sin x) + C \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c8">
+  <h3>Card 8 — Partial Fractions then Integrate</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Express \( f(x) \) in partial fractions and hence find \( \int f(x)\,dx \)." Or just "Find \( \int f(x)\,dx \)" where \( f(x) \) is a rational function with a factorable denominator.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">(i) Express \( \dfrac{3x+5}{(x+1)(x-2)} \) in partial fractions. <span class="marks">[3]</span><br>(ii) Hence find \( \displaystyle\int \dfrac{3x+5}{(x+1)(x-2)}\,dx \). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc">Set up decomposition. <span class="mark-step">M1</span></div>
+        \( \dfrac{3x+5}{(x+1)(x-2)} = \dfrac{A}{x+1} + \dfrac{B}{x-2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Clear and solve. <span class="mark-step">M1</span></div>
+        \( 3x+5 = A(x-2) + B(x+1) \).<br>
+        At \( x = 2 \): \( 11 = 3B \Rightarrow B = \tfrac{11}{3} \).<br>
+        At \( x = -1 \): \( 2 = -3A \Rightarrow A = -\tfrac{2}{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Write the decomposition. <span class="mark-step">A1</span></div>
+        \( \dfrac{3x+5}{(x+1)(x-2)} = -\dfrac{2/3}{x+1} + \dfrac{11/3}{x-2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4 — (ii)</div>
+        <div class="step-desc">Integrate term by term. <span class="mark-step">M1 M1</span></div>
+        \( \int -\dfrac{2/3}{x+1}\,dx = -\tfrac{2}{3}\ln|x+1| \).<br>
+        \( \int \dfrac{11/3}{x-2}\,dx = \tfrac{11}{3}\ln|x-2| \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Combine. <span class="mark-step">A1</span></div>
+        \[ \int \dfrac{3x+5}{(x+1)(x-2)}\,dx = -\tfrac{2}{3}\ln|x+1| + \tfrac{11}{3}\ln|x-2| + C \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Find \( \displaystyle\int \dfrac{4}{x^{2} - 4}\,dx \), using partial fractions. <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Factor: \( x^{2} - 4 = (x-2)(x+2) \). Decompose. <span class="mark-step">M1</span></div>
+        \( \dfrac{4}{(x-2)(x+2)} = \dfrac{A}{x-2} + \dfrac{B}{x+2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Solve. <span class="mark-step">M1</span></div>
+        \( 4 = A(x+2) + B(x-2) \).<br>
+        At \( x=2 \): \( 4 = 4A \Rightarrow A = 1 \).<br>
+        At \( x=-2 \): \( 4 = -4B \Rightarrow B = -1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Integrate. <span class="mark-step">M1 M1</span></div>
+        \( \int \!\left[\dfrac{1}{x-2} - \dfrac{1}{x+2}\right]dx = \ln|x-2| - \ln|x+2| + C \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Combine with log laws. <span class="mark-step">A1</span></div>
+        \[ \int \dfrac{4}{x^{2}-4}\,dx = \ln\!\left|\dfrac{x-2}{x+2}\right| + C \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c9">
+  <h3>Card 9 — Area Between Two Curves</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "Find the exact area of the region enclosed by [curve 1] and [curve 2]." Or with a line. You need to (a) find intersections (these are the limits), (b) decide which curve is upper, (c) integrate (upper − lower).
+  </div>
+  <div class="block concept"><div class="label">Concept</div>
+    Intersection \( x \)-values become your limits: SMALLER value is the lower limit, LARGER is the upper. To decide which curve is "upper", pick any \( x \) between the limits and substitute — the one giving the bigger \( y \) is upper. Integrate (upper − lower). If the order is wrong, you get a negative; take absolute value.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Find the exact area of the region enclosed by the curve \( y = x^{2} \) and the line \( y = 2x + 3 \). <span class="marks">[6]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Find intersections. <span class="mark-step">M1</span></div>
+        \( x^{2} = 2x + 3 \Rightarrow x^{2} - 2x - 3 = 0 \Rightarrow (x-3)(x+1) = 0 \Rightarrow x = 3 \text{ or } x = -1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Decide upper. At \( x = 0 \): parabola \( = 0 \), line \( = 3 \). Line is upper. <span class="mark-step">B1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Set up. <span class="mark-step">M1</span></div>
+        \( A = \int_{-1}^{3} [(2x+3) - x^{2}]\,dx = \int_{-1}^{3}(2x + 3 - x^{2})\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Antiderivative.</div>
+        \( \int (2x + 3 - x^{2})\,dx = x^{2} + 3x - \tfrac{x^{3}}{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Evaluate. <span class="mark-step">M1</span></div>
+        At \( x = 3 \): \( 9 + 9 - 9 = 9 \).<br>
+        At \( x = -1 \): \( 1 - 3 + \tfrac{1}{3} = -\tfrac{5}{3} \).<br>
+        Difference: \( 9 - (-\tfrac{5}{3}) = \tfrac{32}{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 6</div>
+        <div class="step-desc">State exact value. <span class="mark-step">A1</span></div>
+        \[ A = \dfrac{32}{3} \;\text{units}^{2} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Find the exact area of the region enclosed by the curves \( y = x^{3} \) and \( y = x \). <span class="marks">[6]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Intersections. <span class="mark-step">M1</span></div>
+        \( x^{3} = x \Rightarrow x^{3} - x = 0 \Rightarrow x(x-1)(x+1) = 0 \Rightarrow x = -1, 0, 1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Two enclosed regions (one on \( [-1, 0] \), one on \( [0, 1] \)). Decide upper in each. At \( x = 0.5 \): \( y = x \to 0.5,\; y = x^{3} \to 0.125 \). So \( y = x \) is upper on \( [0, 1] \). At \( x = -0.5 \): \( y = x \to -0.5,\; y = x^{3} \to -0.125 \). \( y = x^{3} \) is upper on \( [-1, 0] \). <span class="mark-step">B1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Set up two integrals (by symmetry, both give the same value). <span class="mark-step">M1</span></div>
+        \( A = \int_{-1}^{0}(x^{3} - x)\,dx + \int_{0}^{1}(x - x^{3})\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Evaluate the second (\( [0,1] \)). <span class="mark-step">M1</span></div>
+        \( \int_{0}^{1}(x - x^{3})\,dx = \left[\tfrac{x^{2}}{2} - \tfrac{x^{4}}{4}\right]_{0}^{1} = \tfrac{1}{2} - \tfrac{1}{4} = \tfrac{1}{4} \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">By symmetry the first also gives \( \tfrac{1}{4} \). <span class="mark-step">M1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 6</div>
+        <div class="step-desc">Sum. <span class="mark-step">A1</span></div>
+        \[ A = \dfrac{1}{4} + \dfrac{1}{4} = \dfrac{1}{2} \;\text{units}^{2} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<div class="card" id="c10">
+  <h3>Card 10 — Volume of Revolution</h3>
+  <div class="block archetype"><div class="label">How the exam asks it</div>
+    "The region bounded by … is rotated through \( 360^{\circ} \) about the [x / y]-axis. Find the exact volume of the solid formed." About x-axis: \( V = \pi\int y^{2}\,dx \). About y-axis: rearrange to \( x = g(y) \), then \( V = \pi\int x^{2}\,dy \). \( \pi \) is mandatory.
+  </div>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">The region bounded by \( y = x^{2} + 1 \), the x-axis, and the lines \( x = 0 \) and \( x = 2 \) is rotated through \( 360^{\circ} \) about the x-axis. Find the exact volume of the solid formed. <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">About x-axis: \( V = \pi\int_{0}^{2} y^{2}\,dx \). <span class="mark-step">B1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Compute \( y^{2} \). <span class="mark-step">M1</span></div>
+        \( y^{2} = (x^{2}+1)^{2} = x^{4} + 2x^{2} + 1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Integrate term by term. <span class="mark-step">M1</span></div>
+        \( \int (x^{4} + 2x^{2} + 1)\,dx = \tfrac{x^{5}}{5} + \tfrac{2x^{3}}{3} + x \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Evaluate at limits. <span class="mark-step">M1</span></div>
+        At \( x=2 \): \( \tfrac{32}{5} + \tfrac{16}{3} + 2 \). Common denominator 15: \( \tfrac{96+80+30}{15} = \tfrac{206}{15} \).<br>
+        At \( x=0 \): \( 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Multiply by \( \pi \). <span class="mark-step">A1</span></div>
+        \[ V = \dfrac{206\pi}{15} \;\text{units}^{3} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">The region bounded by \( y = \sqrt{4 - x^{2}} \) and the x-axis is rotated through \( 360^{\circ} \) about the x-axis. Find the exact volume of the solid formed. <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">The curve is the upper semicircle \( x^{2}+y^{2}=4 \). Limits: \( y = 0 \Rightarrow x = \pm 2 \). <span class="mark-step">B1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Set up. <span class="mark-step">M1</span></div>
+        \( V = \pi\int_{-2}^{2} y^{2}\,dx = \pi\int_{-2}^{2}(4 - x^{2})\,dx \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Integrate. <span class="mark-step">M1</span></div>
+        \( \int (4 - x^{2})\,dx = 4x - \tfrac{x^{3}}{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Evaluate. <span class="mark-step">M1</span></div>
+        At \( x=2 \): \( 8 - \tfrac{8}{3} = \tfrac{16}{3} \). At \( x=-2 \): \( -8 + \tfrac{8}{3} = -\tfrac{16}{3} \). Difference: \( \tfrac{32}{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Multiply by \( \pi \). (Sanity check: this is the volume of a sphere of radius 2 = \( \tfrac{4}{3}\pi(8) = \tfrac{32\pi}{3} \). ✓) <span class="mark-step">A1</span></div>
+        \[ V = \dfrac{32\pi}{3} \;\text{units}^{3} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+</div>
+
+<hr>
+
+<h2>Closing notes</h2>
+<p>Hit \( \ge 90\% \) on every card. Anything &lt; 70% → drill the matching pre-study Block (25-42), then come back. Once Cluster 2 is solid, move on to Cluster 3 (Differential_Equations) and Cluster 4 (Integration_DE_Mastery).</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn => {
+    btn.addEventListener('click', function(){
+      const block = this.parentElement;
+      const overlay = block.querySelector('.answer-overlay');
+      if (overlay.classList.contains('hidden')) {
+        overlay.classList.remove('hidden');
+        this.textContent = 'Reveal';
+        this.classList.remove('hide-state');
+      } else {
+        overlay.classList.add('hidden');
+        this.textContent = 'Hide';
+        this.classList.add('hide-state');
+      }
+    });
+  });
+  function revealAll(){
+    document.querySelectorAll('.answer-overlay').forEach(o => o.classList.add('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b => { b.textContent = 'Hide'; b.classList.add('hide-state'); });
+  }
+  function hideAll(){
+    document.querySelectorAll('.answer-overlay').forEach(o => o.classList.remove('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b => { b.textContent = 'Reveal'; b.classList.remove('hide-state'); });
+  }
+</script>
+
+</body>
+</html>
