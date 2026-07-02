@@ -37,17 +37,17 @@
   .toc a:hover{text-decoration:underline}
   .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
   .block{margin:14px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border)}
-  .block.archetype{background:var(--purple-soft);border-left-color:var(--purple)}
   .block.concept{background:#f0fdfa;border-left-color:#0d9488}
   .block.example{background:#f9fafb;border-left-color:#6b7280}
   .block.practice{background:var(--amber-soft);border-left-color:var(--amber)}
   .block.answer{background:var(--green-soft);border-left-color:var(--green);position:relative;min-height:60px}
+  .block.reveal-archetype{background:var(--purple-soft);border-left-color:var(--purple);position:relative;min-height:60px;margin-top:24px}
   .label{display:block;text-transform:uppercase;font-size:.75em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--muted)}
-  .block.archetype .label{color:var(--purple)}
   .block.concept .label{color:#0f766e}
   .block.example .label{color:#4b5563}
   .block.practice .label{color:var(--amber)}
   .block.answer .label{color:var(--green)}
+  .block.reveal-archetype .label{color:var(--purple)}
   .stem{background:#1e293b;color:#f1f5f9;padding:12px 16px;border-radius:6px;margin:10px 0;font-family:'Charter','Georgia',serif}
   .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px;font-family:-apple-system,sans-serif}
   .mark-step{display:inline-block;font-size:.75em;background:#ddd6fe;color:#5b21b6;padding:1px 7px;border-radius:8px;font-weight:700;margin:0 4px;font-family:-apple-system,sans-serif}
@@ -58,10 +58,12 @@
   .reveal-btn:hover{background:#047857}
   .reveal-btn.hide-state{background:var(--muted)}
   .reveal-btn.hide-state:hover{background:#4b5563}
+  .block.reveal-archetype .reveal-btn{background:var(--purple)}
+  .block.reveal-archetype .reveal-btn:hover{background:#6d28d9}
   .answer-content{transition:filter .2s,opacity .2s}
   .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;font-family:-apple-system,sans-serif;border-left:4px solid var(--muted);margin-left:-16px;padding-left:16px;z-index:2;transition:opacity .2s}
   .answer-overlay.hidden{opacity:0;pointer-events:none}
-  .block.answer .answer-content{padding-right:60px}
+  .block.answer .answer-content,.block.reveal-archetype .answer-content{padding-right:60px}
   ul,ol{padding-left:24px}
   li{margin:4px 0}
   .mjx-container{font-size:1.05em!important}
@@ -69,6 +71,7 @@
   table{border-collapse:collapse;margin:12px 0;font-size:.95em}
   th,td{border:1px solid #ddd;padding:6px 12px;text-align:left}
   th{background:#f3f4f6;font-weight:600;font-family:-apple-system,sans-serif}
+  svg.sketch{display:block;margin:12px auto;max-width:400px;background:#fff;border:1px solid #e5e7eb;border-radius:4px}
   @media print{
     body{background:#fff;padding:20px;max-width:100%}
     .controls,.reveal-btn{display:none!important}
@@ -80,14 +83,13 @@
 <body>
 
 <h1>Cluster 4 — Integration &amp; DE Mastery</h1>
-<p class="meta">Maths H2 9758 · Gap-closing drills built from your 2026-06-24 pre-study session · 10 cards · Built 2026-06-24</p>
+<p class="meta">Maths H2 9758 · Gap-closing drills built from your 2026-06-24 pre-study session · 10 cards · Rebuilt 2026-06-24</p>
 
 <div class="intro">
 <strong>Why this cluster exists:</strong> 10 cards designed around the specific places where reasoning broke down or vocabulary wasn't defined. Master all 10 and the failure modes that bled marks in the pre-study can't happen in the exam.
 <ul>
-  <li>Same exam-recognition format as Cluster 1 — archetype, example with mark scheme, practice, hidden answer.</li>
-  <li>Heavier than Cluster 2 / 3: these are the hard cases, the synthesis cases, the vocabulary-precision cases.</li>
-  <li>Aim for &gt; 90% on every card. Anything &lt; 70% → drill the specific Block in the pre-study sheet first, then come back.</li>
+  <li>Archetype revealed at the bottom of each card — identify the technique yourself.</li>
+  <li>Aim for &gt; 90% on every card. Anything &lt; 70% → drill the underlying Block first.</li>
 </ul>
 </div>
 
@@ -97,43 +99,28 @@
 </div>
 
 <div class="toc">
-<strong>Cards</strong>
-<a href="#c1">1. Trig powers: identity-first reflex</a>
-<a href="#c2">2. Standard MF27 forms with non-unit coefficients</a>
-<a href="#c3">3. Substitution chains with mid-way identity</a>
-<a href="#c4">4. IBP execution discipline</a>
-<a href="#c5">5. Repeated IBP</a>
-<a href="#c6">6. Partial fractions: when to use</a>
-<a href="#c7">7. Volume of revolution requiring IBP</a>
-<a href="#c8">8. DE pattern recognition</a>
-<a href="#c9">9. DE by given substitution: full mechanics</a>
-<a href="#c10">10. DE interpretation vocabulary</a>
+<strong>Questions</strong>
+<a href="#c1">1</a><a href="#c2">2</a><a href="#c3">3</a><a href="#c4">4</a><a href="#c5">5</a><a href="#c6">6</a><a href="#c7">7</a><a href="#c8">8</a><a href="#c9">9</a><a href="#c10">10</a>
 </div>
 
 <div class="card" id="c1">
-  <h3>Card 1 — Trig Powers: Identity-First Reflex</h3>
-  <div class="block archetype"><div class="label">How the exam asks it</div>
-    Any integrand with \( \sin^{2}, \cos^{2}, \tan^{2}, \sin^{2}(ax+b), \cos^{2}(kx) \), etc. Even part of a longer chain (substitution-led integral that ends up with \( \cos^{2}\theta \)).
-  </div>
-  <div class="block concept"><div class="label">Concept</div>
-    Trig <em>powers</em> have NO direct antiderivative formula. You ALWAYS rewrite using a double-angle identity first, then integrate. The single exception is \( \sec^{2}x \) — that integrates directly to \( \tan x + C \) because it's literally the derivative of \( \tan x \) (and similarly \( \csc^{2}x \to -\cot x \), though not in MF27). Identities to remember: \( \sin^{2}x = \tfrac{1-\cos 2x}{2},\;\cos^{2}x = \tfrac{1+\cos 2x}{2},\;\tan^{2}x = \sec^{2}x - 1 \).
-  </div>
+  <h3>Question 1</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">Find \( \displaystyle\int 4\cos^{2}(3x)\,dx \). <span class="marks">[4]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Solution with mark scheme</div>
       <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">Apply the identity \( \cos^{2}\theta = \tfrac{1+\cos 2\theta}{2} \) with \( \theta = 3x \). <span class="mark-step">M1</span></div>
-        \( 4\cos^{2}(3x) = 4 \cdot \dfrac{1 + \cos 6x}{2} = 2 + 2\cos 6x \).
+        <div class="step-desc">Apply identity \( \cos^{2}\theta = \tfrac{1+\cos 2\theta}{2} \). <span class="mark-step">M1</span></div>
+        \( 4\cos^{2}(3x) = 4\cdot\tfrac{1+\cos 6x}{2} = 2 + 2\cos 6x \).
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Integrate term by term. Recall \( \int \cos(kx)\,dx = \tfrac{1}{k}\sin(kx) \). <span class="mark-step">M1 A1</span></div>
-        \( \int (2 + 2\cos 6x)\,dx = 2x + 2 \cdot \tfrac{1}{6}\sin 6x + C = 2x + \tfrac{1}{3}\sin 6x + C \).
+        <div class="step-desc">Integrate. <span class="mark-step">M1 A1</span></div>
+        \( \int (2 + 2\cos 6x)\,dx = 2x + \tfrac{1}{3}\sin 6x + C \).
       </div>
       <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">Don't forget \( +C \). <span class="mark-step">A1</span></div>
-        \[ \int 4\cos^{2}(3x)\,dx = 2x + \tfrac{1}{3}\sin 6x + C \]
+        <div class="step-desc">\( +C \) required. <span class="mark-step">A1</span></div>
+        \[ = 2x + \tfrac{1}{3}\sin 6x + C \]
       </div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
@@ -143,51 +130,49 @@
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Answer with mark scheme</div>
       <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">For \( 3\sin^{2}x \), apply identity. For \( 2\sec^{2}x \), integrate directly (do NOT rewrite as \( 1/\cos^{2}x \)). <span class="mark-step">M1</span></div>
-        \( 3\sin^{2}x = 3 \cdot \dfrac{1 - \cos 2x}{2} = \dfrac{3}{2} - \dfrac{3}{2}\cos 2x \).<br>
-        \( 2\sec^{2}x \) stays as is — its antiderivative is \( 2\tan x \).
+        <div class="step-desc">Identity on \( \sin^{2} \). Direct integration on \( \sec^{2}x \) (do NOT rewrite as \( 1/\cos^{2}x \) — it's the derivative of \( \tan x \)). <span class="mark-step">M1</span></div>
+        \( 3\sin^{2}x = \tfrac{3}{2} - \tfrac{3}{2}\cos 2x \).
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Integrate each piece. <span class="mark-step">M1 A1</span></div>
-        \( \int \tfrac{3}{2}\,dx = \tfrac{3}{2}x \).<br>
-        \( \int -\tfrac{3}{2}\cos 2x\,dx = -\tfrac{3}{2} \cdot \tfrac{1}{2}\sin 2x = -\tfrac{3}{4}\sin 2x \).<br>
-        \( \int 2\sec^{2}x\,dx = 2\tan x \).
+        <div class="step-desc">Integrate. <span class="mark-step">M1 A1</span></div>
+        \( \int (\tfrac{3}{2} - \tfrac{3}{2}\cos 2x + 2\sec^{2}x)\,dx = \tfrac{3}{2}x - \tfrac{3}{4}\sin 2x + 2\tan x + C \).
       </div>
       <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">Combine. <span class="mark-step">A1</span></div>
+        <div class="step-desc">Answer. <span class="mark-step">A1</span></div>
         \[ = \tfrac{3}{2}x - \tfrac{3}{4}\sin 2x + 2\tan x + C \]
       </div>
     </div><div class="answer-overlay">Answer hidden — click Reveal</div>
   </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Trig Powers: Identity-First Reflex.</strong>
+      <p>Any \( \sin^{2},\; \cos^{2},\; \tan^{2} \) needs identity rewrite first. Exception: \( \sec^{2}x \) integrates directly to \( \tan x \).</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
 </div>
 
 <div class="card" id="c2">
-  <h3>Card 2 — Standard MF27 Forms with Non-Unit Coefficients</h3>
-  <div class="block archetype"><div class="label">How the exam asks it</div>
-    Integrals like \( \dfrac{1}{4 + 9x^{2}},\;\dfrac{1}{\sqrt{9 - 4x^{2}}},\;\dfrac{1}{25 - 16x^{2}} \). The constant in the denominator is NOT 1, AND \( x^{2} \) has a coefficient. You can't read \( a \) straight off the formula.
-  </div>
-  <div class="block concept"><div class="label">Concept</div>
-    For all MF27 standard forms (\( \dfrac{1}{a^{2} \pm x^{2}},\;\dfrac{1}{\sqrt{a^{2} - x^{2}}} \)), the variable inside MUST be pure \( x^{2} \) (no coefficient). Two-step procedure: (1) FACTOR out the coefficient of \( x^{2} \) so the inside reads \( a^{2} + x^{2} \) (or similar). (2) Identify \( a \) by <strong>square-rooting</strong> the resulting constant. \( a \) is the number, \( a^{2} \) is its square. Confusing the two costs an A1 every time.
-  </div>
+  <h3>Question 2</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">Find \( \displaystyle\int \dfrac{1}{16 + 25x^{2}}\,dx \). <span class="marks">[3]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Solution with mark scheme</div>
       <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">Factor out the coefficient of \( x^{2} \) so the inside reads as constant + \( x^{2} \). <span class="mark-step">M1</span></div>
-        \( 16 + 25x^{2} = 25\!\left(\dfrac{16}{25} + x^{2}\right) \).
+        <div class="step-desc">Factor out coefficient of \( x^{2} \). <span class="mark-step">M1</span></div>
+        \( 16 + 25x^{2} = 25(\tfrac{16}{25} + x^{2}) \).
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Identify \( a^{2} \) and \( a \). Here \( a^{2} = \tfrac{16}{25} \), so \( a = \tfrac{4}{5} \).</div>
+        <div class="step-desc">Identify \( a^{2} \) and \( a \).</div>
+        \( a^{2} = \tfrac{16}{25},\; a = \tfrac{4}{5} \).
       </div>
       <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">Pull constant out and apply MF27 form \( \int \tfrac{1}{a^{2}+x^{2}}\,dx = \tfrac{1}{a}\tan^{-1}\!\tfrac{x}{a} \). <span class="mark-step">M1</span></div>
-        \( \int \dfrac{1}{16 + 25x^{2}}\,dx = \dfrac{1}{25}\int \dfrac{1}{(4/5)^{2} + x^{2}}\,dx = \dfrac{1}{25} \cdot \dfrac{1}{4/5}\tan^{-1}\!\dfrac{x}{4/5} + C \)
+        <div class="step-desc">Apply MF27. <span class="mark-step">M1</span></div>
+        \( \tfrac{1}{25}\cdot\tfrac{1}{4/5}\tan^{-1}\!\tfrac{x}{4/5} + C \).
       </div>
       <div class="step"><div class="step-header">Step 4</div>
-        <div class="step-desc">Simplify the constants and the inner fraction. <span class="mark-step">A1</span></div>
-        \[ = \dfrac{1}{25} \cdot \dfrac{5}{4}\tan^{-1}\!\dfrac{5x}{4} + C = \tfrac{1}{20}\tan^{-1}\!\dfrac{5x}{4} + C \]
+        <div class="step-desc">Simplify. <span class="mark-step">A1</span></div>
+        \[ = \tfrac{1}{20}\tan^{-1}\!\tfrac{5x}{4} + C \]
       </div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
@@ -197,56 +182,70 @@
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Answer with mark scheme</div>
       <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">Factor inside the square root. <span class="mark-step">M1</span></div>
-        \( 9 - 4x^{2} = 4\!\left(\dfrac{9}{4} - x^{2}\right) \), so \( \sqrt{9 - 4x^{2}} = 2\sqrt{\tfrac{9}{4} - x^{2}} \).
+        <div class="step-desc">Factor. <span class="mark-step">M1</span></div>
+        \( 9 - 4x^{2} = 4(\tfrac{9}{4} - x^{2}) \), so \( \sqrt{9 - 4x^{2}} = 2\sqrt{\tfrac{9}{4} - x^{2}} \).
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">\( a^{2} = \tfrac{9}{4} \Rightarrow a = \tfrac{3}{2} \).</div>
+        <div class="step-desc">\( a = \tfrac{3}{2} \).</div>
       </div>
       <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">Pull out and apply MF27 form \( \int \tfrac{1}{\sqrt{a^{2}-x^{2}}}\,dx = \sin^{-1}\!\tfrac{x}{a} \). <span class="mark-step">M1 A1</span></div>
-        \[ \int \dfrac{1}{\sqrt{9 - 4x^{2}}}\,dx = \dfrac{1}{2}\int \dfrac{1}{\sqrt{(3/2)^{2} - x^{2}}}\,dx = \tfrac{1}{2}\sin^{-1}\!\dfrac{2x}{3} + C \]
+        <div class="step-desc">Apply MF27. <span class="mark-step">M1 A1</span></div>
+        \[ \tfrac{1}{2}\sin^{-1}\!\tfrac{2x}{3} + C \]
       </div>
     </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Standard MF27 Forms with Non-Unit Coefficients.</strong>
+      <p>When \( x^{2} \) has a coefficient, FACTOR it out first, then square-root the resulting constant to get \( a \).</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
   </div>
 </div>
 
 <div class="card" id="c3">
-  <h3>Card 3 — Substitution Chains with Mid-Way Trig Identity</h3>
-  <div class="block archetype"><div class="label">How the exam asks it</div>
-    "Use the substitution \( x = a\sin\theta \) (or \( x = a\tan\theta \)) to find \( \int \sqrt{a^{2} - x^{2}}\,dx \) (or similar)." After substituting, the integrand becomes \( a^{2}\cos^{2}\theta \) or \( a^{2}\sec^{2}\theta \) — STOP and apply the trig identity before integrating.
-  </div>
-  <div class="block concept"><div class="label">Concept</div>
-    Two techniques chained: substitution to remove the radical, then trig-identity rewrite to integrate the resulting trig power. The trap: forgetting Step 2 (identity rewrite) and trying to integrate \( \cos^{2}\theta \) directly. Also: when \( x = a\sin\theta \), it's <strong>\( \dfrac{dx}{d\theta} = a\cos\theta \)</strong> (x is the one given, so x is the subject of derivative).
-  </div>
+  <h3>Question 3</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">Use the substitution \( x = 3\sin\theta \) to find \( \displaystyle\int \sqrt{9 - x^{2}}\,dx \). <span class="marks">[6]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <svg class="sketch" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+        <line x1="30" y1="160" x2="270" y2="160" stroke="#666" stroke-width="1"/>
+        <path d="M 60,160 A 90,90 0 0,1 240,160" stroke="#333" stroke-width="1.5" fill="none"/>
+        <line x1="150" y1="160" x2="150" y2="70" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4,2"/>
+        <text x="156" y="115" font-size="12" fill="#dc2626">3</text>
+        <line x1="150" y1="160" x2="200" y2="90" stroke="#2563eb" stroke-width="2"/>
+        <text x="180" y="115" font-size="12" fill="#2563eb">3</text>
+        <line x1="150" y1="90" x2="200" y2="90" stroke="#333" stroke-dasharray="3,2"/>
+        <text x="170" y="82" font-size="11" fill="#333">x = 3sin θ</text>
+        <path d="M 168,155 A 20,20 0 0,0 168,140" stroke="#666" fill="none"/>
+        <text x="172" y="152" font-size="11" fill="#666">θ</text>
+        <text x="130" y="176" font-size="10" fill="#666">O</text>
+        <text x="152" y="72" font-size="11" fill="#dc2626">√(9−x²) = 3cos θ</text>
+      </svg>
       <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">Differentiate the substitution. Note it is \( \dfrac{dx}{d\theta} \) (x is what was given). <span class="mark-step">B1</span></div>
-        \( x = 3\sin\theta \Rightarrow \dfrac{dx}{d\theta} = 3\cos\theta \Rightarrow dx = 3\cos\theta\,d\theta \).
+        <div class="step-desc">Differentiate substitution (x is subject). <span class="mark-step">B1</span></div>
+        \( \dfrac{dx}{d\theta} = 3\cos\theta \Rightarrow dx = 3\cos\theta\,d\theta \).
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Simplify the radical using \( \sin^{2} + \cos^{2} = 1 \). <span class="mark-step">M1</span></div>
-        \( \sqrt{9 - x^{2}} = \sqrt{9 - 9\sin^{2}\theta} = \sqrt{9\cos^{2}\theta} = 3\cos\theta \) (positive root).
+        <div class="step-desc">Simplify radical using \( \sin^{2}+\cos^{2}=1 \). <span class="mark-step">M1</span></div>
+        \( \sqrt{9 - 9\sin^{2}\theta} = 3\cos\theta \).
       </div>
       <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">Substitute everything.</div>
-        \( \int \sqrt{9 - x^{2}}\,dx = \int 3\cos\theta \cdot 3\cos\theta\,d\theta = \int 9\cos^{2}\theta\,d\theta \).
+        <div class="step-desc">Substitute.</div>
+        \( \int 3\cos\theta \cdot 3\cos\theta\,d\theta = 9\int\cos^{2}\theta\,d\theta \).
       </div>
       <div class="step"><div class="step-header">Step 4</div>
-        <div class="step-desc">STOP. \( \cos^{2}\theta \) needs the identity. Apply \( \cos^{2}\theta = \tfrac{1+\cos 2\theta}{2} \). <span class="mark-step">M1</span></div>
+        <div class="step-desc">Apply identity — DON'T try power rule. <span class="mark-step">M1</span></div>
         \( 9\cos^{2}\theta = \tfrac{9}{2}(1 + \cos 2\theta) \).
       </div>
       <div class="step"><div class="step-header">Step 5</div>
         <div class="step-desc">Integrate. <span class="mark-step">M1</span></div>
-        \( \int \tfrac{9}{2}(1 + \cos 2\theta)\,d\theta = \tfrac{9}{2}\theta + \tfrac{9}{4}\sin 2\theta + C \).
+        \( \tfrac{9}{2}\theta + \tfrac{9}{4}\sin 2\theta + C \).
       </div>
       <div class="step"><div class="step-header">Step 6</div>
-        <div class="step-desc">Back-substitute. \( \theta = \sin^{-1}\!\tfrac{x}{3} \). For \( \sin 2\theta = 2\sin\theta\cos\theta \): \( \sin\theta = \tfrac{x}{3} \), \( \cos\theta = \tfrac{\sqrt{9-x^{2}}}{3} \), so \( \sin 2\theta = \tfrac{2x\sqrt{9-x^{2}}}{9} \). <span class="mark-step">A1</span></div>
-        \[ \int \sqrt{9 - x^{2}}\,dx = \tfrac{9}{2}\sin^{-1}\!\tfrac{x}{3} + \tfrac{9}{4} \cdot \tfrac{2x\sqrt{9-x^{2}}}{9} + C = \tfrac{9}{2}\sin^{-1}\!\tfrac{x}{3} + \tfrac{x}{2}\sqrt{9-x^{2}} + C \]
+        <div class="step-desc">Back-substitute. \( \theta = \sin^{-1}\!\tfrac{x}{3} \). \( \sin 2\theta = 2\sin\theta\cos\theta = \tfrac{2x\sqrt{9-x^{2}}}{9} \). <span class="mark-step">A1</span></div>
+        \[ \int\sqrt{9-x^{2}}\,dx = \tfrac{9}{2}\sin^{-1}\!\tfrac{x}{3} + \tfrac{x}{2}\sqrt{9-x^{2}} + C \]
       </div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
@@ -256,42 +255,36 @@
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Answer with mark scheme</div>
       <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">Differentiate substitution. <span class="mark-step">B1</span></div>
-        \( \dfrac{dx}{d\theta} = \cos\theta \Rightarrow dx = \cos\theta\,d\theta \).
+        <div class="step-desc">\( dx = \cos\theta\,d\theta \). <span class="mark-step">B1</span></div>
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Simplify radical.</div>
-        \( \sqrt{1 - x^{2}} = \sqrt{1 - \sin^{2}\theta} = \cos\theta \).
+        <div class="step-desc">Simplify.</div>
+        \( \sqrt{1-x^{2}} = \cos\theta \).
       </div>
       <div class="step"><div class="step-header">Step 3</div>
         <div class="step-desc">Substitute. <span class="mark-step">M1</span></div>
-        \( \int \cos\theta \cdot \cos\theta\,d\theta = \int \cos^{2}\theta\,d\theta \).
+        \( \int \cos^{2}\theta\,d\theta \).
       </div>
       <div class="step"><div class="step-header">Step 4</div>
-        <div class="step-desc">Apply identity, then integrate. <span class="mark-step">M1</span></div>
-        \( \int \tfrac{1+\cos 2\theta}{2}\,d\theta = \tfrac{1}{2}\theta + \tfrac{1}{4}\sin 2\theta + C \).
+        <div class="step-desc">Identity + integrate. <span class="mark-step">M1</span></div>
+        \( \tfrac{1}{2}\theta + \tfrac{1}{4}\sin 2\theta + C \).
       </div>
       <div class="step"><div class="step-header">Step 5</div>
-        <div class="step-desc">Back-substitute. \( \theta = \sin^{-1}x \), \( \sin 2\theta = 2x\sqrt{1-x^{2}} \). <span class="mark-step">A1</span></div>
-        \[ \int \sqrt{1-x^{2}}\,dx = \tfrac{1}{2}\sin^{-1}x + \tfrac{x}{2}\sqrt{1-x^{2}} + C \]
+        <div class="step-desc">Back-substitute. <span class="mark-step">A1</span></div>
+        \[ = \tfrac{1}{2}\sin^{-1}x + \tfrac{x}{2}\sqrt{1-x^{2}} + C \]
       </div>
     </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Substitution Chains with Mid-Way Trig Identity.</strong>
+      <p>After trig substitution, the integrand becomes \( \cos^{2}\theta \) or similar — STOP and apply the identity, then integrate.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
   </div>
 </div>
 
 <div class="card" id="c4">
-  <h3>Card 4 — IBP Execution Discipline</h3>
-  <div class="block archetype"><div class="label">How the exam asks it</div>
-    Integrand is a product of two distinct types of functions (e.g. \( x\,e^{x},\;x\ln x,\;x\sin x,\;x^{2}\ln x \)). The exam expects clean IBP working with the formula stated.
-  </div>
-  <div class="block concept"><div class="label">Concept</div>
-    Three habits that prevent dropped marks:
-    <ol>
-      <li><strong>Memorise the formula:</strong> \( \int u\,dv = uv - \int v\,du \). Write it at the top of your working.</li>
-      <li><strong>LIATE for \( u \):</strong> Log, Inverse-trig, Algebraic, Trig, Exponential — earliest in the list goes as \( u \).</li>
-      <li><strong>Simplify \( v\,du \) algebraically BEFORE integrating.</strong> If \( v = \tfrac{x^{2}}{2} \) and \( du = \tfrac{1}{x}\,dx \), then \( v\,du = \tfrac{x}{2}\,dx \) — cancel before integrating, don't bury the simplification inside the integral.</li>
-    </ol>
-  </div>
+  <h3>Question 4</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">Find \( \displaystyle\int x^{2}\ln x\,dx \). <span class="marks">[5]</span></div>
   </div>
@@ -299,24 +292,19 @@
     <div class="answer-content"><div class="label">Solution with mark scheme</div>
       <div class="step"><div class="step-header">Step 1</div>
         <div class="step-desc">LIATE: Log beats Algebraic. <span class="mark-step">B1</span></div>
-        \( u = \ln x,\; dv = x^{2}\,dx \).
+        \( u = \ln x,\; dv = x^{2}\,dx \). \( du = \tfrac{1}{x}\,dx,\; v = \tfrac{x^{3}}{3} \).
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Differentiate \( u \), integrate \( dv \).</div>
-        \( du = \dfrac{1}{x}\,dx,\; v = \dfrac{x^{3}}{3} \).
+        <div class="step-desc">Apply formula. <span class="mark-step">M1</span></div>
+        \( \int x^{2}\ln x\,dx = \tfrac{x^{3}}{3}\ln x - \int \tfrac{x^{3}}{3}\cdot\tfrac{1}{x}\,dx \).
       </div>
       <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">Apply the formula. <span class="mark-step">M1</span></div>
-        \( \int x^{2}\ln x\,dx = \dfrac{x^{3}}{3}\ln x - \int \dfrac{x^{3}}{3} \cdot \dfrac{1}{x}\,dx \).
+        <div class="step-desc">SIMPLIFY the remaining integrand FIRST. <span class="mark-step">M1</span></div>
+        \( \tfrac{x^{3}}{3}\cdot\tfrac{1}{x} = \tfrac{x^{2}}{3} \).
       </div>
       <div class="step"><div class="step-header">Step 4</div>
-        <div class="step-desc">SIMPLIFY the integrand of the remaining integral BEFORE integrating. <span class="mark-step">M1</span></div>
-        \( \dfrac{x^{3}}{3} \cdot \dfrac{1}{x} = \dfrac{x^{2}}{3} \). So the remaining integral is \( \int \dfrac{x^{2}}{3}\,dx \).
-      </div>
-      <div class="step"><div class="step-header">Step 5</div>
-        <div class="step-desc">Integrate and combine. <span class="mark-step">A1</span></div>
-        \( \int \dfrac{x^{2}}{3}\,dx = \dfrac{x^{3}}{9} \).
-        \[ \int x^{2}\ln x\,dx = \dfrac{x^{3}}{3}\ln x - \dfrac{x^{3}}{9} + C \]
+        <div class="step-desc">Integrate. <span class="mark-step">A1</span></div>
+        \[ = \tfrac{x^{3}}{3}\ln x - \tfrac{x^{3}}{9} + C \]
       </div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
@@ -326,54 +314,49 @@
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Answer with mark scheme</div>
       <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">LIATE: Algebraic beats Trig. <span class="mark-step">B1</span></div>
-        \( u = x,\; dv = \cos 2x\,dx \).
+        <div class="step-desc">LIATE. <span class="mark-step">B1</span></div>
+        \( u = x,\; dv = \cos 2x\,dx \). \( du = dx,\; v = \tfrac{1}{2}\sin 2x \).
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Differentiate / integrate.</div>
-        \( du = dx,\; v = \tfrac{1}{2}\sin 2x \).
-      </div>
-      <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">Apply formula. <span class="mark-step">M1</span></div>
+        <div class="step-desc">Apply. <span class="mark-step">M1</span></div>
         \( \int x\cos 2x\,dx = \tfrac{x}{2}\sin 2x - \int \tfrac{1}{2}\sin 2x\,dx \).
       </div>
-      <div class="step"><div class="step-header">Step 4</div>
+      <div class="step"><div class="step-header">Step 3</div>
         <div class="step-desc">Integrate. <span class="mark-step">M1 A1</span></div>
-        \( \int \tfrac{1}{2}\sin 2x\,dx = -\tfrac{1}{4}\cos 2x \).
-        \[ \int x\cos 2x\,dx = \tfrac{x}{2}\sin 2x + \tfrac{1}{4}\cos 2x + C \]
+        \[ = \tfrac{x}{2}\sin 2x + \tfrac{1}{4}\cos 2x + C \]
       </div>
     </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>IBP Execution Discipline.</strong>
+      <p>Three habits: write formula \( \int u\,dv = uv - \int v\,du \) at top; LIATE picks \( u \); SIMPLIFY \( v\,du \) algebraically BEFORE integrating.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
   </div>
 </div>
 
 <div class="card" id="c5">
-  <h3>Card 5 — Repeated IBP</h3>
-  <div class="block archetype"><div class="label">How the exam asks it</div>
-    Integrand is \( x^{2}e^{x},\;x^{2}\sin x,\;(\ln x)^{2} \), or similar — one IBP leaves a remaining integral that needs IBP AGAIN. Also: \( e^{x}\sin x \) type — IBP twice produces a cyclic equation in the original integral.
-  </div>
-  <div class="block concept"><div class="label">Concept</div>
-    Recognise when one IBP isn't enough: if after IBP the remaining \( \int v\,du \) is STILL a product of two distinct function types, apply IBP again. For \( (\ln y)^{2} \), the second IBP integrand is \( \int \ln y\,dy \). For \( x^{n}e^{x} \), each IBP reduces the polynomial power by 1.
-  </div>
+  <h3>Question 5</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">Find \( \displaystyle\int x^{2}\,e^{x}\,dx \). <span class="marks">[5]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Solution with mark scheme</div>
       <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">First IBP. LIATE: \( u = x^{2},\; dv = e^{x}\,dx \). So \( du = 2x\,dx,\; v = e^{x} \). <span class="mark-step">M1</span></div>
+        <div class="step-desc">First IBP. \( u = x^{2},\; dv = e^{x}\,dx \). <span class="mark-step">M1</span></div>
         \( \int x^{2}e^{x}\,dx = x^{2}e^{x} - \int 2x\,e^{x}\,dx \).
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">The remaining integral \( \int 2x\,e^{x}\,dx \) is STILL Algebraic × Exponential. IBP again. \( u = 2x,\; dv = e^{x}\,dx \). So \( du = 2\,dx,\; v = e^{x} \). <span class="mark-step">M1</span></div>
-        \( \int 2x\,e^{x}\,dx = 2x\,e^{x} - \int 2e^{x}\,dx = 2x\,e^{x} - 2e^{x} \).
+        <div class="step-desc">Second IBP on \( \int 2x\,e^{x}\,dx \). <span class="mark-step">M1</span></div>
+        \( = 2x\,e^{x} - 2e^{x} \).
       </div>
       <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">Substitute back into Step 1's result. <span class="mark-step">M1</span></div>
-        \( \int x^{2}e^{x}\,dx = x^{2}e^{x} - (2x\,e^{x} - 2e^{x}) = x^{2}e^{x} - 2x\,e^{x} + 2e^{x} + C \).
+        <div class="step-desc">Substitute back. <span class="mark-step">M1</span></div>
+        \( \int x^{2}e^{x}\,dx = x^{2}e^{x} - 2x\,e^{x} + 2e^{x} + C \).
       </div>
       <div class="step"><div class="step-header">Step 4</div>
-        <div class="step-desc">Factor for tidiness. <span class="mark-step">A1 A1</span></div>
-        \[ \int x^{2}e^{x}\,dx = e^{x}(x^{2} - 2x + 2) + C \]
+        <div class="step-desc">Factor. <span class="mark-step">A1 A1</span></div>
+        \[ = e^{x}(x^{2} - 2x + 2) + C \]
       </div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
@@ -383,67 +366,53 @@
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Answer with mark scheme</div>
       <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">First IBP. \( u = (\ln x)^{2},\; dv = dx \). So \( du = \dfrac{2\ln x}{x}\,dx,\; v = x \). <span class="mark-step">M1</span></div>
-        \( \int (\ln x)^{2}\,dx = x(\ln x)^{2} - \int x \cdot \dfrac{2\ln x}{x}\,dx \).
+        <div class="step-desc">First IBP. \( u = (\ln x)^{2},\; dv = dx \). \( du = \tfrac{2\ln x}{x}\,dx,\; v = x \). <span class="mark-step">M1</span></div>
+        \( \int (\ln x)^{2}\,dx = x(\ln x)^{2} - \int 2\ln x\,dx \) (after simplifying).
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Simplify the new integrand BEFORE integrating: \( x \cdot \dfrac{2\ln x}{x} = 2\ln x \). <span class="mark-step">M1</span></div>
-        \( = x(\ln x)^{2} - \int 2\ln x\,dx \).
+        <div class="step-desc">Second IBP on \( \int 2\ln x\,dx \). <span class="mark-step">M1</span></div>
+        \( \int 2\ln x\,dx = 2x\ln x - 2x \).
       </div>
       <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">Second IBP on \( \int 2\ln x\,dx \). \( u = \ln x,\; dv = dx \). So \( du = \dfrac{1}{x}\,dx,\; v = x \). <span class="mark-step">M1</span></div>
-        \( \int 2\ln x\,dx = 2\!\left[x\ln x - \int x \cdot \dfrac{1}{x}\,dx\right] = 2(x\ln x - x) = 2x\ln x - 2x \).
-      </div>
-      <div class="step"><div class="step-header">Step 4</div>
-        <div class="step-desc">Substitute back into Step 2. <span class="mark-step">A1 A1</span></div>
+        <div class="step-desc">Substitute back. <span class="mark-step">M1 A1 A1</span></div>
         \[ \int (\ln x)^{2}\,dx = x(\ln x)^{2} - 2x\ln x + 2x + C \]
       </div>
     </div><div class="answer-overlay">Answer hidden — click Reveal</div>
   </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Repeated IBP.</strong>
+      <p>Integrand like \( x^{2}e^{x},\; (\ln x)^{2} \) — one IBP leaves an integral that needs IBP again. Reduce the polynomial power / peel the log by one each time.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
 </div>
 
 <div class="card" id="c6">
-  <h3>Card 6 — Partial Fractions: When to Use</h3>
-  <div class="block archetype"><div class="label">How the exam asks it</div>
-    Integrand is a rational function (polynomial over polynomial). Question may explicitly ask "express in partial fractions and hence integrate", or may just give the integral and expect you to recognise the trigger.
-  </div>
-  <div class="block concept"><div class="label">Concept</div>
-    Three diagnostic questions, in order:
-    <table>
-      <tr><th>Form</th><th>Method</th></tr>
-      <tr><td>Polynomial only (no denominator)</td><td>Integrate term by term using power rule</td></tr>
-      <tr><td>\( \dfrac{1}{x + a} \) or \( \dfrac{\text{something}}{x+a} \) with single linear factor</td><td>Use \( \int \tfrac{f'}{f}\,dx = \ln\|f\| \) directly (Block 28)</td></tr>
-      <tr><td>\( \dfrac{1}{a^{2}+x^{2}},\;\dfrac{1}{a^{2}-x^{2}} \) etc.</td><td>MF27 standard form (Block 31–34)</td></tr>
-      <tr><td><strong>\( \dfrac{P(x)}{(x+a)(x+b)\ldots} \) with TWO OR MORE distinct factors in denominator</strong></td><td><strong>Partial fractions, then integrate each piece</strong></td></tr>
-    </table>
-    Partial fractions are the trigger ONLY when the denominator factors into multiple distinct pieces. A single denominator factor → don't bother, use direct integration.
-  </div>
+  <h3>Question 6</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">Find \( \displaystyle\int \dfrac{2x + 1}{x^{2} + x - 2}\,dx \). <span class="marks">[5]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Solution with mark scheme</div>
       <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">Factor the denominator.</div>
-        \( x^{2} + x - 2 = (x+2)(x-1) \). Two distinct linear factors → partial fractions trigger.
+        <div class="step-desc">Factor denominator.</div>
+        \( x^{2}+x-2 = (x+2)(x-1) \). Two distinct factors → partial fractions.
       </div>
       <div class="step"><div class="step-header">Step 2</div>
         <div class="step-desc">Decompose. <span class="mark-step">M1</span></div>
         \( \dfrac{2x+1}{(x+2)(x-1)} = \dfrac{A}{x+2} + \dfrac{B}{x-1} \).
       </div>
       <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">Clear denominators and solve for \( A, B \). <span class="mark-step">M1</span></div>
-        \( 2x + 1 = A(x-1) + B(x+2) \).<br>
-        At \( x = 1 \): \( 3 = 3B \Rightarrow B = 1 \).<br>
-        At \( x = -2 \): \( -3 = -3A \Rightarrow A = 1 \).
+        <div class="step-desc">Solve. <span class="mark-step">M1</span></div>
+        \( 2x+1 = A(x-1) + B(x+2) \). At \( x = 1 \): \( 3 = 3B \Rightarrow B = 1 \). At \( x = -2 \): \( -3 = -3A \Rightarrow A = 1 \).
       </div>
       <div class="step"><div class="step-header">Step 4</div>
-        <div class="step-desc">Rewrite and integrate each piece using Block 28's \( \int \tfrac{1}{x+a}\,dx = \ln\|x+a\| \). <span class="mark-step">M1</span></div>
-        \( \int \dfrac{1}{x+2}\,dx = \ln|x+2| \); \( \int \dfrac{1}{x-1}\,dx = \ln|x-1| \).
+        <div class="step-desc">Integrate. <span class="mark-step">M1</span></div>
+        \( \int (\tfrac{1}{x+2} + \tfrac{1}{x-1})\,dx = \ln|x+2| + \ln|x-1| + C \).
       </div>
       <div class="step"><div class="step-header">Step 5</div>
-        <div class="step-desc">Combine using log laws. <span class="mark-step">A1</span></div>
-        \[ \int \dfrac{2x+1}{x^{2}+x-2}\,dx = \ln|x+2| + \ln|x-1| + C = \ln|(x+2)(x-1)| + C \]
+        <div class="step-desc">Combine. <span class="mark-step">A1</span></div>
+        \[ = \ln|(x+2)(x-1)| + C \]
       </div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
@@ -458,56 +427,65 @@
       </div>
       <div class="step"><div class="step-header">Step 2</div>
         <div class="step-desc">Solve. <span class="mark-step">M1</span></div>
-        \( 5x - 7 = A(x-2) + B(x-1) \).<br>
-        At \( x = 1 \): \( -2 = -A \Rightarrow A = 2 \).<br>
-        At \( x = 2 \): \( 3 = B \).
+        At \( x = 1 \): \( -2 = -A \Rightarrow A = 2 \). At \( x = 2 \): \( 3 = B \).
       </div>
       <div class="step"><div class="step-header">Step 3</div>
         <div class="step-desc">Integrate. <span class="mark-step">M1 A1</span></div>
-        \[ \int \dfrac{5x-7}{(x-1)(x-2)}\,dx = 2\ln|x-1| + 3\ln|x-2| + C \]
+        \[ = 2\ln|x-1| + 3\ln|x-2| + C \]
       </div>
     </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Partial Fractions: When to Use.</strong>
+      <p>Trigger: rational function with denominator factorable into TWO OR MORE distinct factors. Single-factor denominator → use Block 28 direct integration instead.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
   </div>
 </div>
 
 <div class="card" id="c7">
-  <h3>Card 7 — Volume of Revolution Requiring IBP</h3>
-  <div class="block archetype"><div class="label">How the exam asks it</div>
-    Curve given as \( y = e^{kx} \), \( y = \ln x \), or \( y = x e^{kx} \), rotated about the y-axis. After rearranging \( x = g(y) \) and squaring, the integrand is \( (\ln y)^{2} \), \( y e^{...} \), or similar — needs IBP (often twice).
-  </div>
-  <div class="block concept"><div class="label">Concept</div>
-    The hidden two-step trap: (1) Volume formula gives you \( \pi\int x^{2}\,dy \), so you need \( x \) in terms of \( y \) AND squared. (2) Squaring an exponential or log produces something IBP-shaped. Recognise the chain early so you don't get stuck mid-question.
-  </div>
+  <h3>Question 7</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">The region bounded by the curve \( y = e^{2x} \), the y-axis, and the line \( y = e^{2} \) is rotated through \( 360^{\circ} \) about the y-axis. Find the exact volume of the solid formed. <span class="marks">[7]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <svg class="sketch" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+        <line x1="30" y1="220" x2="300" y2="220" stroke="#666" stroke-width="1"/>
+        <polygon points="300,220 293,217 293,223" fill="#666"/>
+        <text x="306" y="224" font-size="12" fill="#666">x</text>
+        <line x1="80" y1="240" x2="80" y2="20" stroke="#666" stroke-width="1"/>
+        <polygon points="80,20 77,27 83,27" fill="#666"/>
+        <text x="66" y="24" font-size="12" fill="#666">y</text>
+        <text x="80" y="236" font-size="10" fill="#666" text-anchor="middle">O</text>
+        <line x1="80" y1="60" x2="220" y2="60" stroke="#dc2626" stroke-width="1" stroke-dasharray="5,3"/>
+        <text x="42" y="65" font-size="10" fill="#dc2626">e²</text>
+        <path d="M 80,190 Q 130,180 170,140 Q 200,100 220,60 L 80,60 Z" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+        <text x="115" y="120" font-size="11" fill="#2563eb">y = e^(2x)</text>
+        <text x="150" y="212" font-size="10" fill="#666">rotate about y-axis</text>
+      </svg>
       <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">Rearrange the curve to give \( x \) in terms of \( y \). <span class="mark-step">B1</span></div>
-        \( y = e^{2x} \Rightarrow 2x = \ln y \Rightarrow x = \tfrac{1}{2}\ln y \). So \( x^{2} = \tfrac{1}{4}(\ln y)^{2} \).
+        <div class="step-desc">Rearrange curve for x in terms of y. <span class="mark-step">B1</span></div>
+        \( y = e^{2x} \Rightarrow x = \tfrac{1}{2}\ln y \Rightarrow x^{2} = \tfrac{1}{4}(\ln y)^{2} \).
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Find y-limits. The region runs from where the curve meets the y-axis (\( x = 0 \Rightarrow y = 1 \)) up to \( y = e^{2} \). <span class="mark-step">B1</span></div>
-        \( y \) from 1 to \( e^{2} \).
+        <div class="step-desc">Limits in y. Curve meets y-axis at \( y = 1 \); top at \( y = e^{2} \). <span class="mark-step">B1</span></div>
       </div>
       <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">Set up the volume integral. <span class="mark-step">M1</span></div>
-        \( V = \pi\int_{1}^{e^{2}} x^{2}\,dy = \dfrac{\pi}{4}\int_{1}^{e^{2}} (\ln y)^{2}\,dy \).
+        <div class="step-desc">Set up. <span class="mark-step">M1</span></div>
+        \( V = \pi\int_{1}^{e^{2}} \tfrac{1}{4}(\ln y)^{2}\,dy = \tfrac{\pi}{4}\int_{1}^{e^{2}}(\ln y)^{2}\,dy \).
       </div>
       <div class="step"><div class="step-header">Step 4</div>
-        <div class="step-desc">Recognise \( \int (\ln y)^{2}\,dy \) needs IBP twice. (From Card 5.) <span class="mark-step">M1</span></div>
-        \( \int (\ln y)^{2}\,dy = y(\ln y)^{2} - 2y\ln y + 2y + C \).
+        <div class="step-desc">\( \int (\ln y)^{2}\,dy \) via IBP twice (Q5). <span class="mark-step">M1</span></div>
+        \( = y(\ln y)^{2} - 2y\ln y + 2y + C \).
       </div>
       <div class="step"><div class="step-header">Step 5</div>
-        <div class="step-desc">Evaluate at limits. <span class="mark-step">M1</span></div>
-        At \( y = e^{2} \): \( e^{2}(2)^{2} - 2e^{2}(2) + 2e^{2} = 4e^{2} - 4e^{2} + 2e^{2} = 2e^{2} \).<br>
-        At \( y = 1 \): \( 1(0)^{2} - 2(1)(0) + 2(1) = 2 \).<br>
-        Difference: \( 2e^{2} - 2 \).
+        <div class="step-desc">Evaluate. <span class="mark-step">M1</span></div>
+        At \( y = e^{2} \): \( 4e^{2} - 4e^{2} + 2e^{2} = 2e^{2} \). At \( y = 1 \): \( 0 - 0 + 2 = 2 \). Difference: \( 2e^{2} - 2 \).
       </div>
       <div class="step"><div class="step-header">Step 6</div>
-        <div class="step-desc">Multiply by \( \tfrac{\pi}{4} \) and simplify. <span class="mark-step">A1</span></div>
-        \[ V = \tfrac{\pi}{4}(2e^{2} - 2) = \tfrac{\pi}{2}(e^{2} - 1) \]
+        <div class="step-desc">Multiply by \( \tfrac{\pi}{4} \). <span class="mark-step">A1</span></div>
+        \[ V = \tfrac{\pi}{2}(e^{2} - 1) \]
       </div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
@@ -517,20 +495,19 @@
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Answer with mark scheme</div>
       <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">About the x-axis, so \( V = \pi\int y^{2}\,dx \). Limits in \( x \): curve meets x-axis at \( y = 0 \Rightarrow x = 1 \); up to \( x = e \). <span class="mark-step">B1</span></div>
+        <div class="step-desc">About x-axis: \( V = \pi\int y^{2}\,dx \). Limits: \( y = 0 \Rightarrow x = 1 \); up to \( e \). <span class="mark-step">B1</span></div>
       </div>
       <div class="step"><div class="step-header">Step 2</div>
         <div class="step-desc">Set up. <span class="mark-step">M1</span></div>
         \( V = \pi\int_{1}^{e}(\ln x)^{2}\,dx \).
       </div>
       <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">From Card 5: \( \int (\ln x)^{2}\,dx = x(\ln x)^{2} - 2x\ln x + 2x + C \). <span class="mark-step">M1 M1</span></div>
+        <div class="step-desc">IBP twice. <span class="mark-step">M1 M1</span></div>
+        \( \int (\ln x)^{2}\,dx = x(\ln x)^{2} - 2x\ln x + 2x + C \).
       </div>
       <div class="step"><div class="step-header">Step 4</div>
         <div class="step-desc">Evaluate. <span class="mark-step">M1</span></div>
-        At \( x = e \): \( e(1) - 2e(1) + 2e = e \).<br>
-        At \( x = 1 \): \( 0 - 0 + 2 = 2 \).<br>
-        Difference: \( e - 2 \).
+        At \( x = e \): \( e - 2e + 2e = e \). At \( x = 1 \): \( 0 - 0 + 2 = 2 \). Difference: \( e - 2 \).
       </div>
       <div class="step"><div class="step-header">Step 5</div>
         <div class="step-desc">Multiply by \( \pi \). <span class="mark-step">A1</span></div>
@@ -538,37 +515,40 @@
       </div>
     </div><div class="answer-overlay">Answer hidden — click Reveal</div>
   </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Volume of Revolution Requiring IBP.</strong>
+      <p>Exponential curve rotated about y-axis → \( x = g(y) \) becomes a log → \( x^{2} \) is \( (\ln y)^{2} \) → IBP twice.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
 </div>
 
 <div class="card" id="c8">
-  <h3>Card 8 — DE Pattern Recognition: Three Standard Rate Equations</h3>
-  <div class="block archetype"><div class="label">How the exam asks it</div>
-    "A quantity \( N \) changes such that ... [physical description]. Formulate a differential equation." The exam tests whether you can map the words to one of three canonical patterns.
-  </div>
-  <div class="block concept"><div class="label">Concept</div>
-    Three patterns, snap-recognise from the verbal trigger:
-    <table>
-      <tr><th>Verbal trigger</th><th>DE</th><th>Behaviour</th><th>Examples</th></tr>
-      <tr><td>"Rate \( \propto N \)" (only the quantity)</td><td>\( \dfrac{dN}{dt} = \pm kN \)</td><td>Exponential growth (+) or decay (−)</td><td>Bacterial growth, radioactive decay, simple interest with continuous compounding</td></tr>
-      <tr><td>"Rate \( \propto (K - N) \)" (chasing a target K)</td><td>\( \dfrac{dN}{dt} = k(K - N) \)</td><td>Approaches K from below; rate slows as you near K</td><td>Newton's cooling (T → room temp), drug clearance to baseline</td></tr>
-      <tr><td>"Rate \( \propto N(K - N) \)" (product of current and remaining capacity)</td><td>\( \dfrac{dN}{dt} = kN(K - N) \)</td><td>Logistic S-curve, levels off at K (carrying capacity)</td><td>Population with finite resources, virus spread in a population</td></tr>
-    </table>
-    Sign rule: positive coefficient if quantity is INCREASING; negative if DECREASING. Always state the initial condition.
-  </div>
+  <h3>Question 8</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">A hot metal bar at \( 200\,^{\circ}\text{C} \) is placed in a room at \( 25\,^{\circ}\text{C} \). The rate of cooling is proportional to the temperature difference between the bar and the room. Formulate a differential equation for the temperature \( T \) of the bar at time \( t \). <span class="marks">[3]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="block concept"><div class="label">Concept</div>
+        Three standard patterns:
+        <table>
+          <tr><th>Trigger</th><th>DE</th></tr>
+          <tr><td>Rate \( \propto N \)</td><td>\( dN/dt = \pm kN \)</td></tr>
+          <tr><td>Rate \( \propto (K - N) \) (chasing K)</td><td>\( dN/dt = k(K - N) \)</td></tr>
+          <tr><td>Rate \( \propto N(K - N) \)</td><td>\( dN/dt = kN(K-N) \) (logistic)</td></tr>
+        </table>
+        Sign: quantity INCREASING → positive; DECREASING → negative.
+      </div>
       <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">Identify the verbal pattern. "Rate proportional to difference (T − 25)" → second pattern (chasing K = 25). <span class="mark-step">M1</span></div>
+        <div class="step-desc">Pattern from wording. "Rate \( \propto (T - 25) \)" → chasing K = 25. <span class="mark-step">M1</span></div>
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Apply the sign rule. Bar is cooling, so \( T \) is DECREASING → negative coefficient. <span class="mark-step">M1</span></div>
+        <div class="step-desc">Sign. Cooling → \( T \) decreasing → negative. <span class="mark-step">M1</span></div>
       </div>
       <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">Write the DE plus initial condition. <span class="mark-step">A1</span></div>
-        \[ \frac{dT}{dt} = -k(T - 25),\quad k > 0,\quad T(0) = 200 \]
+        <div class="step-desc">Write. <span class="mark-step">A1</span></div>
+        \[ \frac{dT}{dt} = -k(T - 25),\; k > 0,\; T(0) = 200 \]
       </div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
@@ -578,59 +558,53 @@
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Answer with mark scheme</div>
       <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">Pattern: "rate \( \propto \) product of \( I \) and (5000 − I)" → third pattern (logistic). <span class="mark-step">M1</span></div>
+        <div class="step-desc">Pattern. "Rate \( \propto \) product of \( I \) and (5000 − I)" → logistic. <span class="mark-step">M1</span></div>
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Sign: virus is spreading, \( I \) increasing → positive coefficient. <span class="mark-step">M1</span></div>
+        <div class="step-desc">Sign. Spreading → positive. <span class="mark-step">M1</span></div>
       </div>
       <div class="step"><div class="step-header">Step 3</div>
         <div class="step-desc">Write. <span class="mark-step">A1</span></div>
-        \[ \frac{dI}{dt} = k\,I(5000 - I),\quad k > 0,\quad I(0) = 50 \]
+        \[ \frac{dI}{dt} = k\,I(5000 - I),\; k > 0,\; I(0) = 50 \]
       </div>
     </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>DE Pattern Recognition (Three Standard Rate Equations).</strong>
+      <p>Words to DE. Three patterns snap-recognisable from the verbal trigger. Sign from direction of change. Always state IC.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
   </div>
 </div>
 
 <div class="card" id="c9">
-  <h3>Card 9 — DE by Given Substitution: Full Mechanics</h3>
-  <div class="block archetype"><div class="label">How the exam asks it</div>
-    "Show, by using the substitution \( u = \ldots \), that the DE \( \ldots \) can be written as \( \ldots \). Hence solve the DE." The substitution always reduces a non-separable DE to a separable one.
-  </div>
-  <div class="block concept"><div class="label">Concept</div>
-    WHY differentiate the substitution? The original DE contains \( \dfrac{dy}{dx} \). To rewrite in terms of \( u \), you need to express \( \dfrac{dy}{dx} \) in terms of \( u, x, \dfrac{du}{dx} \). Differentiating the substitution gives that relationship.<br><br>
-    Six-step procedure (always the same):
-    <ol>
-      <li>Differentiate the substitution w.r.t. \( x \). Use product rule if needed.</li>
-      <li>Solve for \( \dfrac{dy}{dx} \) in terms of \( u, x, \dfrac{du}{dx} \).</li>
-      <li>Substitute \( \dfrac{dy}{dx} \) AND any \( y \)-terms in the original DE.</li>
-      <li>Simplify — the new DE in \( u \) and \( x \) should be separable.</li>
-      <li>Solve the separable DE.</li>
-      <li>Back-substitute to give the answer in original variables.</li>
-    </ol>
-  </div>
+  <h3>Question 9</h3>
   <div class="block example"><div class="label">Example</div>
-    <div class="stem">Use the substitution \( y = ux \) to find the general solution of the differential equation \( x\dfrac{dy}{dx} = y + x \). <span class="marks">[6]</span></div>
+    <div class="stem">Use the substitution \( y = ux \) to find the general solution of \( x\dfrac{dy}{dx} = y + x \). <span class="marks">[6]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="block concept"><div class="label">Concept</div>
+        Why differentiate the substitution? The original DE contains \( \dfrac{dy}{dx} \) — to rewrite in terms of \( u \), you need to convert \( \dfrac{dy}{dx} \) to \( \dfrac{du}{dx} \). Differentiating the substitution provides that link.
+      </div>
       <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">Differentiate \( y = ux \) w.r.t. \( x \) using the product rule. <span class="mark-step">M1</span></div>
+        <div class="step-desc">Differentiate substitution (product rule). <span class="mark-step">M1</span></div>
         \( \dfrac{dy}{dx} = u + x\dfrac{du}{dx} \).
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Substitute \( \dfrac{dy}{dx} \) and \( y = ux \) into the DE. <span class="mark-step">M1</span></div>
-        \( x\!\left(u + x\dfrac{du}{dx}\right) = ux + x \).
+        <div class="step-desc">Substitute into DE (with \( y = ux \)). <span class="mark-step">M1</span></div>
+        \( x(u + x\dfrac{du}{dx}) = ux + x \).
       </div>
       <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">Simplify. The \( ux \) terms cancel. <span class="mark-step">M1</span></div>
-        \( ux + x^{2}\dfrac{du}{dx} = ux + x \Rightarrow x^{2}\dfrac{du}{dx} = x \Rightarrow \dfrac{du}{dx} = \dfrac{1}{x} \).
+        <div class="step-desc">Simplify — \( ux \) cancels. <span class="mark-step">M1</span></div>
+        \( x^{2}\dfrac{du}{dx} = x \Rightarrow \dfrac{du}{dx} = \tfrac{1}{x} \).
       </div>
       <div class="step"><div class="step-header">Step 4</div>
         <div class="step-desc">Separate and integrate. <span class="mark-step">M1</span></div>
-        \( du = \dfrac{1}{x}\,dx \Rightarrow u = \ln|x| + C \).
+        \( u = \ln|x| + C \).
       </div>
       <div class="step"><div class="step-header">Step 5</div>
-        <div class="step-desc">Back-substitute \( u = \dfrac{y}{x} \). <span class="mark-step">M1</span></div>
+        <div class="step-desc">Back-substitute. <span class="mark-step">M1</span></div>
         \( \dfrac{y}{x} = \ln|x| + C \).
       </div>
       <div class="step"><div class="step-header">Step 6</div>
@@ -646,104 +620,100 @@
     <div class="answer-content"><div class="label">Answer with mark scheme</div>
       <div class="step"><div class="step-header">Step 1</div>
         <div class="step-desc">Differentiate. <span class="mark-step">M1</span></div>
-        \( v = y - x \Rightarrow \dfrac{dv}{dx} = \dfrac{dy}{dx} - 1 \Rightarrow \dfrac{dy}{dx} = \dfrac{dv}{dx} + 1 \).
+        \( \dfrac{dv}{dx} = \dfrac{dy}{dx} - 1 \Rightarrow \dfrac{dy}{dx} = \dfrac{dv}{dx} + 1 \).
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Substitute (use \( y - x = v \)). <span class="mark-step">M1</span></div>
+        <div class="step-desc">Substitute. <span class="mark-step">M1</span></div>
         \( \dfrac{dv}{dx} + 1 = v^{2} + 1 \).
       </div>
       <div class="step"><div class="step-header">Step 3</div>
         <div class="step-desc">Simplify and separate. <span class="mark-step">M1</span></div>
-        \( \dfrac{dv}{dx} = v^{2} \Rightarrow \dfrac{1}{v^{2}}\,dv = dx \).
+        \( \dfrac{dv}{v^{2}} = dx \).
       </div>
       <div class="step"><div class="step-header">Step 4</div>
         <div class="step-desc">Integrate. <span class="mark-step">M1</span></div>
-        \( \int v^{-2}\,dv = \int dx \Rightarrow -\dfrac{1}{v} = x + C \Rightarrow v = -\dfrac{1}{x + C} \).
+        \( -\dfrac{1}{v} = x + C \Rightarrow v = -\dfrac{1}{x + C} \).
       </div>
       <div class="step"><div class="step-header">Step 5</div>
         <div class="step-desc">Back-substitute. <span class="mark-step">A1</span></div>
-        \[ y - x = -\dfrac{1}{x + C} \;\Rightarrow\; y = x - \dfrac{1}{x + C} \]
+        \[ y = x - \dfrac{1}{x + C} \]
       </div>
     </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>DE by Given Substitution: Full Mechanics.</strong>
+      <p>Six steps: differentiate substitution → solve for \( \dfrac{dy}{dx} \) → substitute → simplify → integrate separable → back-substitute.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
   </div>
 </div>
 
 <div class="card" id="c10">
-  <h3>Card 10 — DE Interpretation Vocabulary</h3>
-  <div class="block archetype"><div class="label">How the exam asks it</div>
-    "Find the [long-term behaviour / equilibrium / carrying capacity / half-life] of …" — vocabulary-precision questions. Often a 1–3 mark interpretation rider on a longer DE question.
-  </div>
-  <div class="block concept"><div class="label">Concept</div>
-    Definitions, all in one place:
-    <table>
-      <tr><th>Term</th><th>Precise meaning</th><th>How to find</th></tr>
-      <tr><td><strong>Long-term behaviour</strong></td><td>What \( y \) approaches as \( t \to \infty \)</td><td>Substitute \( t \to \infty \) into the solved \( y(t) \); simplify</td></tr>
-      <tr><td><strong>Equilibrium / steady state</strong></td><td>A value \( y^{*} \) where \( \dfrac{dy}{dt} = 0 \)</td><td>Set RHS of original DE = 0, solve for \( y \)</td></tr>
-      <tr><td><strong>Carrying capacity (K)</strong></td><td>The maximum equilibrium for a logistic model \( \dfrac{dN}{dt} = kN(1 - N/K) \)</td><td>Read off from DE: the value of \( N \) where the rate becomes zero (other than \( N = 0 \))</td></tr>
-      <tr><td><strong>Half-life</strong></td><td>Time for an exponentially decaying quantity to halve</td><td>For \( y = y_{0}e^{-kt} \): solve \( y_{0}/2 = y_{0}e^{-kt} \Rightarrow t_{1/2} = (\ln 2)/k \)</td></tr>
-      <tr><td><strong>Maximum growth rate (logistic)</strong></td><td>The \( N \)-value where \( \dfrac{dN}{dt} \) is maximum</td><td>Inflection of S-curve: \( N = K/2 \)</td></tr>
-    </table>
-  </div>
+  <h3>Question 10</h3>
   <div class="block example"><div class="label">Example</div>
-    <div class="stem">A population satisfies \( \dfrac{dP}{dt} = 0.3\,P\!\left(1 - \dfrac{P}{2000}\right) \) with \( P(0) = 100 \).<br>(i) State the carrying capacity. <span class="marks">[1]</span><br>(ii) Find the equilibrium values. <span class="marks">[2]</span><br>(iii) State the value of \( P \) at which the population is growing fastest. <span class="marks">[1]</span><br>(iv) Describe the long-term behaviour of \( P \). <span class="marks">[1]</span></div>
+    <div class="stem">A population satisfies \( \dfrac{dP}{dt} = 0.3\,P\!\left(1 - \dfrac{P}{2000}\right) \) with \( P(0) = 100 \).<br>(i) State the carrying capacity. <span class="marks">[1]</span><br>(ii) Find the equilibrium values. <span class="marks">[2]</span><br>(iii) State the value of \( P \) at which the population is growing fastest. <span class="marks">[1]</span><br>(iv) Describe the long-term behaviour. <span class="marks">[1]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Solution with mark scheme</div>
-      <div class="step"><div class="step-header">Step 1 — (i) Carrying capacity</div>
-        <div class="step-desc">Recognise logistic form \( \dfrac{dP}{dt} = kP(1 - P/K) \) with \( k = 0.3,\; K = 2000 \). <span class="mark-step">B1</span></div>
+      <div class="block concept"><div class="label">Concept — vocabulary glossary</div>
+        <table>
+          <tr><th>Term</th><th>Meaning</th><th>Find by</th></tr>
+          <tr><td>Long-term behaviour</td><td>What \( y \) does as \( t \to \infty \)</td><td>Substitute \( t \to \infty \) into solution</td></tr>
+          <tr><td>Equilibrium</td><td>Value \( y^{*} \) where \( dy/dt = 0 \)</td><td>Set RHS of DE to zero, solve</td></tr>
+          <tr><td>Carrying capacity K</td><td>Max equilibrium in logistic model</td><td>Read from \( dP/dt = kP(1 - P/K) \)</td></tr>
+          <tr><td>Half-life</td><td>Time for exponential decay to halve</td><td>\( t_{1/2} = (\ln 2)/k \)</td></tr>
+          <tr><td>Max growth rate (logistic)</td><td>Where \( dN/dt \) peaks</td><td>\( N = K/2 \) (inflection)</td></tr>
+        </table>
+      </div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc">Read off logistic form. <span class="mark-step">B1</span></div>
         \( K = 2000 \).
       </div>
-      <div class="step"><div class="step-header">Step 2 — (ii) Equilibrium values</div>
-        <div class="step-desc">Set \( \dfrac{dP}{dt} = 0 \) and solve. <span class="mark-step">M1</span></div>
-        \( 0.3 P (1 - P/2000) = 0 \Rightarrow P = 0 \text{ or } P = 2000 \). <span class="mark-step">A1</span>
+      <div class="step"><div class="step-header">Step 2 — (ii)</div>
+        <div class="step-desc">Set \( dP/dt = 0 \). <span class="mark-step">M1 A1</span></div>
+        \( P = 0 \) or \( P = 2000 \).
       </div>
-      <div class="step"><div class="step-header">Step 3 — (iii) Maximum growth rate</div>
-        <div class="step-desc">Inflection of logistic S-curve is at \( P = K/2 \). <span class="mark-step">B1</span></div>
+      <div class="step"><div class="step-header">Step 3 — (iii)</div>
+        <div class="step-desc">Inflection at \( K/2 \). <span class="mark-step">B1</span></div>
         \( P = 1000 \).
       </div>
-      <div class="step"><div class="step-header">Step 4 — (iv) Long-term behaviour</div>
-        <div class="step-desc">Starting from \( P(0) = 100 \), below the carrying capacity, growth continues until reaching the upper equilibrium. <span class="mark-step">B1</span></div>
-        \( P \to 2000 \) as \( t \to \infty \).
+      <div class="step"><div class="step-header">Step 4 — (iv)</div>
+        <div class="step-desc">Below \( K \), rises to \( K \). <span class="mark-step">B1</span></div>
+        \( P \to 2000 \).
       </div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
   <div class="block practice"><div class="label">Practice</div>
-    <div class="stem">A drug concentration \( C(t) \) (in mg/L) satisfies \( \dfrac{dC}{dt} = -0.1C \) with \( C(0) = 80 \).<br>(i) Solve to find \( C(t) \). <span class="marks">[3]</span><br>(ii) Describe the long-term behaviour of \( C \). <span class="marks">[1]</span><br>(iii) Find the half-life of the drug, giving your answer to 3 significant figures. <span class="marks">[2]</span></div>
+    <div class="stem">A drug concentration \( C(t) \) (in mg/L) satisfies \( \dfrac{dC}{dt} = -0.1C \) with \( C(0) = 80 \).<br>(i) Solve for \( C(t) \). <span class="marks">[3]</span><br>(ii) Describe the long-term behaviour. <span class="marks">[1]</span><br>(iii) Find the half-life, correct to 3 s.f. <span class="marks">[2]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Answer with mark scheme</div>
-      <div class="step"><div class="step-header">Step 1 — (i) Solve</div>
-        <div class="step-desc">Separable. <span class="mark-step">M1</span></div>
-        \( \dfrac{1}{C}\,dC = -0.1\,dt \Rightarrow \ln|C| = -0.1t + K_{\text{const}} \).
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc">Solve separable. <span class="mark-step">M1 M1 A1</span></div>
+        \( C(t) = 80\,e^{-0.1t} \).
       </div>
-      <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Exponentiate. <span class="mark-step">M1</span></div>
-        \( C = A\,e^{-0.1t} \) (where \( A = e^{K_{\text{const}}} \)).
+      <div class="step"><div class="step-header">Step 2 — (ii)</div>
+        <div class="step-desc">As \( t \to \infty,\; C \to 0 \). <span class="mark-step">B1</span></div>
+        Drug fully cleared long-term.
       </div>
-      <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">Apply initial condition. <span class="mark-step">A1</span></div>
-        \( C(0) = 80 \Rightarrow A = 80 \Rightarrow C(t) = 80\,e^{-0.1t} \).
-      </div>
-      <div class="step"><div class="step-header">Step 4 — (ii) Long-term behaviour</div>
-        <div class="step-desc">As \( t \to \infty \), \( e^{-0.1t} \to 0 \). <span class="mark-step">B1</span></div>
-        \( C \to 0 \). The drug is fully cleared from the body in the long run.
-      </div>
-      <div class="step"><div class="step-header">Step 5 — (iii) Half-life</div>
-        <div class="step-desc">Solve \( C(t_{1/2}) = 40 \). <span class="mark-step">M1</span></div>
-        \( 80\,e^{-0.1\,t_{1/2}} = 40 \Rightarrow e^{-0.1\,t_{1/2}} = \tfrac{1}{2} \Rightarrow -0.1\,t_{1/2} = -\ln 2 \).
-      </div>
-      <div class="step"><div class="step-header">Step 6</div>
-        <div class="step-desc">Solve for \( t_{1/2} \). <span class="mark-step">A1</span></div>
+      <div class="step"><div class="step-header">Step 3 — (iii)</div>
+        <div class="step-desc">Half-life. <span class="mark-step">M1 A1</span></div>
         \( t_{1/2} = \dfrac{\ln 2}{0.1} = 10\ln 2 \approx 6.93 \) time units.
       </div>
     </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>DE Interpretation Vocabulary.</strong>
+      <p>Vocabulary precision: long-term / equilibrium / carrying capacity / half-life / max growth rate. 1-3 marks each rider.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
   </div>
 </div>
 
 <hr>
 
 <h2>Closing notes</h2>
-<p>Hit \( \ge 90\% \) on all 10 cards (use the M/A/B breakdown to self-mark honestly). If \( \le 70\% \) on any single card, drill the underlying pre-study Block first, then come back. Update <code>flags.md</code> in this folder with whichever cards stayed FRAGILE so the next session knows where to push hardest.</p>
+<p>Hit ≥ 90% on every card. Anything &lt; 70% → drill the underlying pre-study Block first. Update <code>flags.md</code> in this folder with residual FRAGILE cards.</p>
 
 <script>
   document.querySelectorAll('.reveal-btn').forEach(btn => {
@@ -752,7 +722,7 @@
       const overlay = block.querySelector('.answer-overlay');
       if (overlay.classList.contains('hidden')) {
         overlay.classList.remove('hidden');
-        this.textContent = 'Reveal';
+        this.textContent = block.classList.contains('reveal-archetype') ? 'Reveal archetype' : 'Reveal';
         this.classList.remove('hide-state');
       } else {
         overlay.classList.add('hidden');
@@ -767,7 +737,11 @@
   }
   function hideAll(){
     document.querySelectorAll('.answer-overlay').forEach(o => o.classList.remove('hidden'));
-    document.querySelectorAll('.reveal-btn').forEach(b => { b.textContent = 'Reveal'; b.classList.remove('hide-state'); });
+    document.querySelectorAll('.reveal-btn').forEach(b => {
+      const inArchetype = b.parentElement.classList.contains('reveal-archetype');
+      b.textContent = inArchetype ? 'Reveal archetype' : 'Reveal';
+      b.classList.remove('hide-state');
+    });
   }
 </script>
 

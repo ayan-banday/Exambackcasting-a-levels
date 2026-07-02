@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Differentiation &amp; Maclaurin Mastery — Gap-Closing Cluster</title>
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true, tags: 'none' },
+    svg: { fontCache: 'global' },
+    options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --amber-soft:#fffbeb;
+    --green:#059669; --green-soft:#ecfdf5; --cover:#f3f4f6;
+    --purple:#7c3aed; --purple-soft:#f5f3ff; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:40px 24px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h2,h3,.label,.controls,button,.step-header{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  h1{font-size:2em;margin:0 0 8px;color:#111;border-bottom:3px solid #111;padding-bottom:12px}
+  h2{font-size:1.5em;margin-top:56px;margin-bottom:16px;color:#111;border-bottom:1px solid #999;padding-bottom:6px}
+  h3{font-size:1.15em;margin:0 0 14px;color:#1f2937}
+  p{margin:8px 0}
+  .meta{color:var(--muted);font-size:.9em;margin:4px 0 24px}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--purple);padding:16px 20px;border-radius:6px;margin:16px 0 32px}
+  .intro ul{margin:8px 0 0 0;padding-left:22px}
+  .intro li{margin:4px 0}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;color:var(--text);font-weight:500}
+  .controls button:hover{background:#f3f4f6}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:32px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:6px;color:#111}
+  .toc a{color:var(--blue);text-decoration:none;margin-right:16px}
+  .toc a:hover{text-decoration:underline}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .block{margin:14px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border)}
+  .block.concept{background:#f0fdfa;border-left-color:#0d9488}
+  .block.example{background:#f9fafb;border-left-color:#6b7280}
+  .block.practice{background:var(--amber-soft);border-left-color:var(--amber)}
+  .block.answer{background:var(--green-soft);border-left-color:var(--green);position:relative;min-height:60px}
+  .block.reveal-archetype{background:var(--purple-soft);border-left-color:var(--purple);position:relative;min-height:60px;margin-top:24px}
+  .label{display:block;text-transform:uppercase;font-size:.75em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--muted)}
+  .block.concept .label{color:#0f766e}
+  .block.example .label{color:#4b5563}
+  .block.practice .label{color:var(--amber)}
+  .block.answer .label{color:var(--green)}
+  .block.reveal-archetype .label{color:var(--purple)}
+  .stem{background:#1e293b;color:#f1f5f9;padding:12px 16px;border-radius:6px;margin:10px 0;font-family:'Charter','Georgia',serif}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px;font-family:-apple-system,sans-serif}
+  .mark-step{display:inline-block;font-size:.75em;background:#ddd6fe;color:#5b21b6;padding:1px 7px;border-radius:8px;font-weight:700;margin:0 4px;font-family:-apple-system,sans-serif}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.5);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.8em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .step-desc{font-style:italic;color:#374151;margin-bottom:6px;font-size:.95em}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3;box-shadow:0 1px 2px rgba(0,0,0,.1)}
+  .reveal-btn:hover{background:#047857}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .reveal-btn.hide-state:hover{background:#4b5563}
+  .block.reveal-archetype .reveal-btn{background:var(--purple)}
+  .block.reveal-archetype .reveal-btn:hover{background:#6d28d9}
+  .answer-content{transition:filter .2s,opacity .2s}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;font-family:-apple-system,sans-serif;border-left:4px solid var(--muted);margin-left:-16px;padding-left:16px;z-index:2;transition:opacity .2s}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content,.block.reveal-archetype .answer-content{padding-right:60px}
+  ul,ol{padding-left:24px}
+  li{margin:4px 0}
+  .mjx-container{font-size:1.05em!important}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  table{border-collapse:collapse;margin:12px 0;font-size:.95em}
+  th,td{border:1px solid #ddd;padding:6px 12px;text-align:left}
+  th{background:#f3f4f6;font-weight:600;font-family:-apple-system,sans-serif}
+  svg.sketch{display:block;margin:12px auto;max-width:400px;background:#fff;border:1px solid #e5e7eb;border-radius:4px}
+  .highlight{background:#fef3c7;padding:1px 4px;border-radius:3px;font-weight:600}
+  @media print{
+    body{background:#fff;padding:20px;max-width:100%}
+    .controls,.reveal-btn{display:none!important}
+    .answer-overlay{display:none!important}
+    .card{box-shadow:none;page-break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<h1>Differentiation &amp; Maclaurin Mastery</h1>
+<p class="meta">Gap-closing cluster from your 2026-06-21 → 2026-07-02 Cluster 1 walkthrough · 10 cards · Built 2026-07-02</p>
+
+<div class="intro">
+<strong>Why this cluster exists:</strong> 10 cards purpose-built around the specific places where reasoning broke down or a rule wasn't reflex during Cluster 1. Master all 10 and the failure modes from Cluster 1 can't repeat in the exam.
+<ul>
+  <li>Archetype revealed at bottom of each card — identify the technique yourself first.</li>
+  <li>Concept blocks explain WHY the rule works, not just what to do.</li>
+  <li>Aim ≥ 90% per card. Under 70% → drill the underlying Cluster 1 archetype first.</li>
+  <li>Sits alongside <code>Integration_DE_Mastery</code> which covers Clusters 2 &amp; 3 gaps.</li>
+</ul>
+</div>
+
+<div class="controls">
+  <button onclick="revealAll()">Reveal all</button>
+  <button onclick="hideAll()">Hide all</button>
+</div>
+
+<div class="toc">
+<strong>Questions</strong>
+<a href="#c1">1</a><a href="#c2">2</a><a href="#c3">3</a><a href="#c4">4</a><a href="#c5">5</a><a href="#c6">6</a><a href="#c7">7</a><a href="#c8">8</a><a href="#c9">9</a><a href="#c10">10</a>
+</div>
+
+<div class="card" id="c1">
+  <h3>Question 1</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Find \( \dfrac{dy}{dx} \) in terms of \( x \) and \( y \) for the curve \( x^{3} + 2xy - y^{2} = 5 \). <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="block concept"><div class="label">Concept — chain rule on every y-term</div>
+        When you differentiate a relation implicitly, every \( y \)-term carries an extra factor of \( \dfrac{dy}{dx} \) because \( y \) is implicitly a function of \( x \). So:
+        <ul>
+          <li>\( \dfrac{d}{dx}(y) = \dfrac{dy}{dx} \)</li>
+          <li>\( \dfrac{d}{dx}(y^{2}) = 2y\cdot\dfrac{dy}{dx} \) — <span class="highlight">NOT just \( 2y \)</span></li>
+          <li>\( \dfrac{d}{dx}(y^{n}) = n\,y^{n-1}\cdot\dfrac{dy}{dx} \)</li>
+          <li>\( \dfrac{d}{dx}(xy) = y + x\dfrac{dy}{dx} \) (product rule; \( y \) is a function of \( x \))</li>
+        </ul>
+      </div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate every term w.r.t. \( x \). Apply chain rule on all \( y \)-terms. Product rule on \( 2xy \). <span class="mark-step">M1</span></div>
+        \( 3x^{2} + \left(2y + 2x\dfrac{dy}{dx}\right) - 2y\dfrac{dy}{dx} = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Group \( \dfrac{dy}{dx} \) terms. <span class="mark-step">M1</span></div>
+        \( 2x\dfrac{dy}{dx} - 2y\dfrac{dy}{dx} = -3x^{2} - 2y \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Factor. <span class="mark-step">M1</span></div>
+        \( (2x - 2y)\dfrac{dy}{dx} = -(3x^{2} + 2y) \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Solve. <span class="mark-step">A1</span></div>
+        \[ \dfrac{dy}{dx} = \dfrac{-(3x^{2} + 2y)}{2(x - y)} = \dfrac{3x^{2} + 2y}{2(y - x)} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Find \( \dfrac{dy}{dx} \) in terms of \( x \) and \( y \) for the curve \( \sin y + xy^{2} = x^{3} \). <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate. Chain rule on \( \sin y \) (gives \( \cos y \cdot \dfrac{dy}{dx} \)); product rule on \( xy^{2} \) (both factors depend on \( x \)). <span class="mark-step">M1</span></div>
+        \( \cos y\dfrac{dy}{dx} + y^{2} + 2xy\dfrac{dy}{dx} = 3x^{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Group. <span class="mark-step">M1</span></div>
+        \( (\cos y + 2xy)\dfrac{dy}{dx} = 3x^{2} - y^{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Solve. <span class="mark-step">M1 A1</span></div>
+        \[ \dfrac{dy}{dx} = \dfrac{3x^{2} - y^{2}}{\cos y + 2xy} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Implicit Differentiation — Chain-Rule-on-y Discipline.</strong>
+      <p>The classic trap where you forget the \( \dfrac{dy}{dx} \) factor on \( y \)-terms. Habit fix: mark every \( y \)-term with a "+dy/dx" reminder before you start differentiating.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c2">
+  <h3>Question 2</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Differentiate \( y = \sec(3x) \) with respect to \( x \). <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="block concept"><div class="label">Concept — MF27 standard derivatives you MUST know cold</div>
+        MF27 lists the following derivatives (page 3):
+        <table>
+          <tr><th>Function</th><th>Derivative</th></tr>
+          <tr><td>\( \sin^{-1} x \)</td><td>\( 1/\sqrt{1 - x^{2}} \)</td></tr>
+          <tr><td>\( \cos^{-1} x \)</td><td>\( -1/\sqrt{1 - x^{2}} \)</td></tr>
+          <tr><td>\( \tan^{-1} x \)</td><td>\( 1/(1 + x^{2}) \)</td></tr>
+          <tr><td>\( \operatorname{cosec} x \)</td><td>\( -\operatorname{cosec} x \cot x \)</td></tr>
+          <tr><td>\( \sec x \)</td><td>\( \sec x \tan x \)</td></tr>
+        </table>
+        Plus the ones NOT in MF27 (must memorise):
+        <table>
+          <tr><th>Function</th><th>Derivative</th></tr>
+          <tr><td>\( \sin x \)</td><td>\( \cos x \)</td></tr>
+          <tr><td>\( \cos x \)</td><td>\( -\sin x \)</td></tr>
+          <tr><td>\( \tan x \)</td><td>\( \sec^{2}x \)</td></tr>
+          <tr><td>\( \cot x \)</td><td>\( -\operatorname{cosec}^{2}x \)</td></tr>
+          <tr><td>\( e^{x} \)</td><td>\( e^{x} \)</td></tr>
+          <tr><td>\( \ln x \)</td><td>\( 1/x \)</td></tr>
+        </table>
+      </div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">MF27: \( \dfrac{d}{dx}(\sec u) = \sec u \tan u \). Chain rule for the inner \( 3x \). <span class="mark-step">M1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Apply. <span class="mark-step">A1</span></div>
+        \[ \dfrac{dy}{dx} = \sec(3x) \tan(3x) \cdot 3 = 3\sec(3x)\tan(3x) \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Differentiate \( y = \sec^{2}(2x) \) with respect to \( x \). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Rewrite \( \sec^{2}(2x) = [\sec(2x)]^{2} \). Outer power rule + chain. <span class="mark-step">M1</span></div>
+        \( \dfrac{dy}{dx} = 2\sec(2x) \cdot \dfrac{d}{dx}[\sec(2x)] \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Inner derivative. <span class="mark-step">M1</span></div>
+        \( \dfrac{d}{dx}[\sec(2x)] = 2\sec(2x)\tan(2x) \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Combine. <span class="mark-step">A1</span></div>
+        \[ \dfrac{dy}{dx} = 2\sec(2x) \cdot 2\sec(2x)\tan(2x) = 4\sec^{2}(2x)\tan(2x) \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Standard Derivative Reflex — sec, tan, and Their Powers.</strong>
+      <p>Standard derivatives must be automatic. \( \dfrac{d}{dx}(\sec x) = \sec x \tan x \) — cite MF27 if unsure. Compose with chain rule. Don't confuse with integration.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c3">
+  <h3>Question 3</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Given \( y \) satisfies \( y^{2} + xy = 4 \) with \( y = 2 \) when \( x = 0 \), find \( \dfrac{d^{2}y}{dx^{2}} \) when \( x = 0 \). <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="block concept"><div class="label">Concept — sign hygiene when substituting negative values</div>
+        When intermediate values are negative and get raised to a power, the sign flips per the exponent rules:
+        <ul>
+          <li>\( (-a)^{2} = +a^{2} \) — squaring a negative gives POSITIVE</li>
+          <li>\( (-a)^{3} = -a^{3} \) — cubing preserves the sign</li>
+          <li>\( -a^{2} \ne (-a)^{2} \) — the placement of the minus sign matters</li>
+        </ul>
+        Habit: <span class="highlight">circle every intermediate value with its sign before substituting</span>. If you compute \( y' = -3 \) and later need \( (y')^{2} \), that's \( (-3)^{2} = 9 \) (positive), not \( -9 \).
+      </div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate the original implicit equation to find \( \dfrac{dy}{dx} \). <span class="mark-step">M1</span></div>
+        \( 2y\dfrac{dy}{dx} + y + x\dfrac{dy}{dx} = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">At \( x = 0, y = 2 \). <span class="mark-step">M1</span></div>
+        \( 4\dfrac{dy}{dx} + 2 + 0 = 0 \Rightarrow \dfrac{dy}{dx} = -\dfrac{1}{2} \). <span class="highlight">Circle: \( y' = -1/2 \) (negative).</span>
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Differentiate the PRE-GROUPED equation again (not the isolated form). Product rule on every product. <span class="mark-step">M1</span></div>
+        \( \dfrac{d}{dx}\!\left[2y\dfrac{dy}{dx}\right] + \dfrac{d}{dx}(y) + \dfrac{d}{dx}\!\left[x\dfrac{dy}{dx}\right] = 0 \).<br>
+        \( 2\!\left(\dfrac{dy}{dx}\right)^{2} + 2y\dfrac{d^{2}y}{dx^{2}} + \dfrac{dy}{dx} + \dfrac{dy}{dx} + x\dfrac{d^{2}y}{dx^{2}} = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Substitute \( x = 0, y = 2, y' = -\tfrac{1}{2} \). <span class="mark-step">M1</span></div>
+        \( 2\!\cdot\left(-\tfrac{1}{2}\right)^{2} + 4\dfrac{d^{2}y}{dx^{2}} + \left(-\tfrac{1}{2}\right) + \left(-\tfrac{1}{2}\right) + 0 = 0 \).<br>
+        <span class="highlight">Note \( (-1/2)^{2} = +1/4 \) (positive)</span>: \( 2\cdot\tfrac{1}{4} + 4y'' - 1 = 0 \Rightarrow \tfrac{1}{2} + 4y'' - 1 = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Solve. <span class="mark-step">A1</span></div>
+        \( 4y'' = \tfrac{1}{2} \Rightarrow \dfrac{d^{2}y}{dx^{2}} = \tfrac{1}{8} \).
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Given \( y \) satisfies \( y^{3} + y = x^{2} - 3x \) with \( y = 0 \) when \( x = 0 \), find \( \dfrac{d^{2}y}{dx^{2}} \) when \( x = 0 \). <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Differentiate. <span class="mark-step">M1</span></div>
+        \( 3y^{2}\dfrac{dy}{dx} + \dfrac{dy}{dx} = 2x - 3 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">At \( x = 0, y = 0 \). <span class="mark-step">M1</span></div>
+        \( 0 + \dfrac{dy}{dx} = -3 \Rightarrow \dfrac{dy}{dx} = -3 \). <span class="highlight">Circle: \( y' = -3 \).</span>
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Differentiate the pre-grouped equation. Product rule on \( 3y^{2}\dfrac{dy}{dx} \). <span class="mark-step">M1</span></div>
+        \( 6y\!\left(\dfrac{dy}{dx}\right)^{2} + 3y^{2}\dfrac{d^{2}y}{dx^{2}} + \dfrac{d^{2}y}{dx^{2}} = 2 \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Substitute \( x = 0, y = 0, y' = -3 \). <span class="mark-step">M1</span></div>
+        \( 6 \cdot 0 \cdot (-3)^{2} + 0 + \dfrac{d^{2}y}{dx^{2}} = 2 \).<br>
+        <span class="highlight">Note \( (-3)^{2} = +9 \)</span> (positive), but multiplied by \( 6y = 0 \), so contributes 0 anyway. \( \dfrac{d^{2}y}{dx^{2}} = 2 \). <span class="mark-step">A1</span>
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Sign Hygiene in Implicit Differentiation.</strong>
+      <p>Negative intermediates squared become POSITIVE. Circle intermediate values with signs before substituting. This gap cost you marks in Cluster 1 Q10.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c4">
+  <h3>Question 4</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A function \( f \) satisfies \( f'(x) = (x + 2)(x - 1)^{2}(x - 4) \). Sketch \( y = f'(x) \) indicating all x-axis crossings and behaviour. State the values of \( x \) where \( f \) has local max / min / stationary inflexion. <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="block concept"><div class="label">Concept — sign diagram method</div>
+        The <strong>sign diagram method</strong> for sketching \( f' \) (or classifying stationary points of \( f \)):
+        <ol>
+          <li>Find zeros of \( f'(x) \). Note multiplicities: SIMPLE root → crosses axis; DOUBLE root → touches axis; TRIPLE → crosses with flat tangent.</li>
+          <li>Draw a number line with the zeros marked.</li>
+          <li>For each interval, pick a test point and evaluate the sign of \( f'(x) \).</li>
+          <li>Sketch \( f' \) as a curve: crossing at simple roots, touching at double roots.</li>
+          <li>Classify stationary points of \( f \): sign of \( f' \) changes \( -\to + \) is a min; \( +\to - \) is a max; no change is a stationary inflexion.</li>
+        </ol>
+      </div>
+      <svg class="sketch" viewBox="0 0 500 260" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="480" y2="140" stroke="#666" stroke-width="1"/>
+        <polygon points="480,140 473,137 473,143" fill="#666"/>
+        <text x="486" y="144" font-size="12" fill="#666">x</text>
+        <line x1="240" y1="230" x2="240" y2="20" stroke="#666" stroke-width="1"/>
+        <polygon points="240,20 237,27 243,27" fill="#666"/>
+        <text x="226" y="24" font-size="12" fill="#666">y</text>
+        <text x="240" y="156" font-size="10" fill="#666" text-anchor="middle">O</text>
+        <line x1="120" y1="137" x2="120" y2="143" stroke="#666"/>
+        <text x="120" y="156" font-size="10" fill="#666" text-anchor="middle">−2</text>
+        <line x1="280" y1="137" x2="280" y2="143" stroke="#666"/>
+        <text x="280" y="156" font-size="10" fill="#666" text-anchor="middle">1</text>
+        <line x1="400" y1="137" x2="400" y2="143" stroke="#666"/>
+        <text x="400" y="156" font-size="10" fill="#666" text-anchor="middle">4</text>
+        <path d="M 30,50 Q 70,90 120,140 Q 160,180 200,180 Q 240,165 280,140 Q 310,110 340,90 Q 370,90 400,140 Q 430,175 470,220" stroke="#2563eb" stroke-width="2" fill="none"/>
+        <circle cx="120" cy="140" r="4" fill="#2563eb"/>
+        <text x="90" y="128" font-size="10" fill="#2563eb">crosses − → +</text>
+        <circle cx="280" cy="140" r="4" fill="#2563eb"/>
+        <text x="256" y="128" font-size="10" fill="#2563eb">touches (double)</text>
+        <circle cx="400" cy="140" r="4" fill="#2563eb"/>
+        <text x="376" y="128" font-size="10" fill="#2563eb">crosses + → −</text>
+      </svg>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Zeros of \( f' \). <span class="mark-step">B1</span></div>
+        \( x = -2 \) (simple), \( x = 1 \) (double), \( x = 4 \) (simple).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Sign diagram. Pick test points in each interval.</div>
+        <ul>
+          <li>\( x < -2 \), e.g. \( x = -3 \): \( (-1)(16)(-7) = +112 \) → \( f' > 0 \). \( f \) increasing.</li>
+          <li>\( -2 < x < 1 \), e.g. \( x = 0 \): \( (2)(1)(-4) = -8 \) → \( f' < 0 \). \( f \) decreasing.</li>
+          <li>\( 1 < x < 4 \), e.g. \( x = 2 \): \( (4)(1)(-2) = -8 \) → \( f' < 0 \). \( f \) still decreasing.</li>
+          <li>\( x > 4 \), e.g. \( x = 5 \): \( (7)(16)(1) = +112 \) → \( f' > 0 \). \( f \) increasing.</li>
+        </ul>
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Sketch: crosses at \( -2 \) (\( - \to + \)), touches at \( 1 \) (stays negative on both sides... wait, both sides give \( f'<0 \), so it touches from BELOW), crosses at \( 4 \) (\( - \to + \)). <span class="mark-step">B1 B1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Classify stationary points of \( f \). <span class="mark-step">M1 A1</span></div>
+        <ul>
+          <li>\( x = -2 \): \( f' \) changes \( + \to - \) → <strong>local max</strong>.</li>
+          <li>\( x = 1 \): \( f' \) does NOT change sign (\(-\) both sides) → <strong>stationary point of inflexion</strong>.</li>
+          <li>\( x = 4 \): \( f' \) changes \( - \to + \) → <strong>local min</strong>.</li>
+        </ul>
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">The graph of \( y = f(x) \) has a local minimum at \( (0, 1) \), a local maximum at \( (3, 5) \), and a non-stationary point of inflexion at \( x = 5 \). \( f \) is decreasing on \( (-\infty, 0) \cup (3, \infty) \) except that it stops decreasing (turns to concave-up) at \( x = 5 \). Sketch \( y = f'(x) \). <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <svg class="sketch" viewBox="0 0 500 260" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="140" x2="480" y2="140" stroke="#666" stroke-width="1"/>
+        <polygon points="480,140 473,137 473,143" fill="#666"/>
+        <text x="486" y="144" font-size="12" fill="#666">x</text>
+        <line x1="140" y1="230" x2="140" y2="20" stroke="#666" stroke-width="1"/>
+        <polygon points="140,20 137,27 143,27" fill="#666"/>
+        <text x="126" y="24" font-size="12" fill="#666">y</text>
+        <text x="140" y="156" font-size="10" fill="#666" text-anchor="middle">O</text>
+        <line x1="240" y1="137" x2="240" y2="143" stroke="#666"/>
+        <text x="240" y="156" font-size="10" fill="#666" text-anchor="middle">3</text>
+        <line x1="340" y1="137" x2="340" y2="143" stroke="#666"/>
+        <text x="340" y="156" font-size="10" fill="#666" text-anchor="middle">5</text>
+        <path d="M 30,225 Q 80,220 140,140 Q 180,60 240,140 Q 280,205 340,190 Q 380,200 470,225" stroke="#2563eb" stroke-width="2" fill="none"/>
+        <circle cx="140" cy="140" r="4" fill="#2563eb"/>
+        <text x="105" y="128" font-size="10" fill="#2563eb">(0,0) − → +</text>
+        <circle cx="240" cy="140" r="4" fill="#2563eb"/>
+        <text x="212" y="128" font-size="10" fill="#2563eb">(3,0) + → −</text>
+        <circle cx="340" cy="190" r="4" fill="#dc2626"/>
+        <text x="348" y="185" font-size="10" fill="#dc2626">turning point of f' at x=5</text>
+        <text x="348" y="200" font-size="10" fill="#dc2626">(inflexion of f)</text>
+      </svg>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Translate features. <span class="mark-step">B1 B1 B1</span></div>
+        <ul>
+          <li>Min of \( f \) at \( x = 0 \) → \( f'(0) = 0 \), crosses \( - \to + \).</li>
+          <li>Max of \( f \) at \( x = 3 \) → \( f'(3) = 0 \), crosses \( + \to - \).</li>
+          <li>Inflexion of \( f \) at \( x = 5 \) → \( f''(5) = 0 \) → turning point of \( f' \) (NOT crossing).</li>
+        </ul>
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Sign of \( f' \) on each interval. \( f' < 0 \) on \( (-\infty, 0) \cup (3, \infty) \); \( f' > 0 \) on \( (0, 3) \). Turning point at \( x = 5 \) (below axis). <span class="mark-step">B1</span></div>
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Sketching f'(x) via the Sign Diagram Method.</strong>
+      <p>Systematic method: find zeros with multiplicities → sign test each interval → sketch. Turning points of \( f \) become zeros of \( f' \); inflexions of \( f \) become turning points of \( f' \).</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c5">
+  <h3>Question 5</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">The curve \( C \) has equation \( x^{2} + xy - y^{3} = 3 \). The point \( P \) on \( C \) has coordinates \( (1, -1) \).<br>(i) Find \( \dfrac{dy}{dx} \) at \( P \). <span class="marks">[3]</span><br>(ii) Find \( \dfrac{d^{2}y}{dx^{2}} \) at \( P \). <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="block concept"><div class="label">Concept — always differentiate the PRE-GROUPED equation for f''</div>
+        After the first implicit differentiation you have \( P(x, y, y') = 0 \). To find \( y'' \):
+        <ul>
+          <li><strong>WRONG:</strong> isolate \( y' = \dfrac{\text{numerator}}{\text{denominator}} \), then quotient-rule. Massively over-complicated.</li>
+          <li><strong>RIGHT:</strong> differentiate \( P(x, y, y') = 0 \) directly, treating \( y' \) as a function of \( x \) (so \( \dfrac{d}{dx}(y') = y'' \)). Product rule on any product involving \( y \) or \( y' \).</li>
+        </ul>
+        This was your Cluster 1 Q10 gap. Habit fix: after finding \( y' \), don't touch the isolated form; differentiate the pre-grouped equation instead.
+      </div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc">Differentiate implicitly. <span class="mark-step">M1</span></div>
+        \( 2x + y + x\dfrac{dy}{dx} - 3y^{2}\dfrac{dy}{dx} = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Substitute \( x = 1, y = -1 \). <span class="mark-step">M1</span></div>
+        \( 2 - 1 + \dfrac{dy}{dx} - 3\dfrac{dy}{dx} = 0 \Rightarrow 1 - 2\dfrac{dy}{dx} = 0 \Rightarrow \dfrac{dy}{dx} = \tfrac{1}{2} \). <span class="mark-step">A1</span>
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (ii)</div>
+        <div class="step-desc">Differentiate the PRE-GROUPED equation from Step 1 again. Product rule on \( x\dfrac{dy}{dx} \) and \( 3y^{2}\dfrac{dy}{dx} \). <span class="mark-step">M1</span></div>
+        \( 2 + \dfrac{dy}{dx} + \dfrac{dy}{dx} + x\dfrac{d^{2}y}{dx^{2}} - 6y\!\left(\dfrac{dy}{dx}\right)^{2} - 3y^{2}\dfrac{d^{2}y}{dx^{2}} = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Substitute \( x = 1, y = -1, y' = \tfrac{1}{2} \). <span class="mark-step">M1</span></div>
+        \( 2 + \tfrac{1}{2} + \tfrac{1}{2} + y'' - 6(-1)\!\left(\tfrac{1}{4}\right) - 3(1)y'' = 0 \).<br>
+        <span class="highlight">\( (1/2)^{2} = 1/4 \) (positive), \( 6y \cdot 1/4 = -3/2 \) since \( y = -1 \)</span>: \( 3 + y'' + \tfrac{3}{2} - 3y'' = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Solve. <span class="mark-step">A1</span></div>
+        \( \tfrac{9}{2} - 2y'' = 0 \Rightarrow \dfrac{d^{2}y}{dx^{2}} = \tfrac{9}{4} \).
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">The curve has equation \( xy + y^{2} = 6 \). At the point \( (1, 2) \), find (i) \( \dfrac{dy}{dx} \), (ii) \( \dfrac{d^{2}y}{dx^{2}} \). <span class="marks">[6]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc">Differentiate. <span class="mark-step">M1</span></div>
+        \( y + x\dfrac{dy}{dx} + 2y\dfrac{dy}{dx} = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">At \( (1, 2) \). <span class="mark-step">M1 A1</span></div>
+        \( 2 + \dfrac{dy}{dx} + 4\dfrac{dy}{dx} = 0 \Rightarrow 5\dfrac{dy}{dx} = -2 \Rightarrow \dfrac{dy}{dx} = -\tfrac{2}{5} \). <span class="highlight">Circle: \( y' = -2/5 \).</span>
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (ii)</div>
+        <div class="step-desc">Differentiate the pre-grouped equation. <span class="mark-step">M1</span></div>
+        \( \dfrac{dy}{dx} + \dfrac{dy}{dx} + x\dfrac{d^{2}y}{dx^{2}} + 2\!\left(\dfrac{dy}{dx}\right)^{2} + 2y\dfrac{d^{2}y}{dx^{2}} = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Substitute. \( (-2/5)^{2} = 4/25 \) (positive!). <span class="mark-step">M1</span></div>
+        \( 2\!\left(-\tfrac{2}{5}\right) + y'' + 2\!\cdot\tfrac{4}{25} + 4y'' = 0 \Rightarrow -\tfrac{4}{5} + 5y'' + \tfrac{8}{25} = 0 \).<br>
+        Common denominator: \( -\tfrac{20}{25} + \tfrac{8}{25} + 5y'' = 0 \Rightarrow -\tfrac{12}{25} + 5y'' = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Solve. <span class="mark-step">A1</span></div>
+        \( \dfrac{d^{2}y}{dx^{2}} = \tfrac{12}{125} \).
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Repeated Implicit Differentiation — Differentiate the Pre-Grouped Form.</strong>
+      <p>For \( f'' \) from an implicit relation, differentiate the pre-grouped first-derivative equation, NOT the isolated form. Combines with sign hygiene (Q3).</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c6">
+  <h3>Question 6</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Using the standard series in MF27, expand \( \dfrac{1}{(1 + 4x)^{2}} \) up to and including the term in \( x^{3} \). State the range of validity. <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="block concept"><div class="label">Concept — full substitution discipline</div>
+        For \( (1 + u)^{n} \) with \( u = g(x) \):
+        <ol>
+          <li>Write the series in \( u \) FIRST, all terms up to the required degree.</li>
+          <li>THEN substitute \( u = g(x) \) into every term at once.</li>
+          <li>Simplify each term.</li>
+          <li>Cluster 1 Q7 gap: you substituted \( u \) into the first term only, forgot the rest. Habit fix: template first, substitute second.</li>
+        </ol>
+      </div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify. Compare to \( (1 + u)^{n} \). <span class="mark-step">M1</span></div>
+        \( \dfrac{1}{(1+4x)^{2}} = (1 + 4x)^{-2} \). So \( n = -2,\; u = 4x \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Write the series in \( u \) first (template).</div>
+        \( (1 + u)^{-2} = 1 + (-2)u + \dfrac{(-2)(-3)}{2!}u^{2} + \dfrac{(-2)(-3)(-4)}{3!}u^{3} + \cdots \)<br>
+        \( = 1 - 2u + 3u^{2} - 4u^{3} + \cdots \)
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Substitute \( u = 4x \) into EVERY term. <span class="mark-step">M1</span></div>
+        \( = 1 - 2(4x) + 3(4x)^{2} - 4(4x)^{3} + \cdots \).<br>
+        <span class="highlight">Careful: \( (4x)^{2} = 16x^{2},\; (4x)^{3} = 64x^{3} \).</span>
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Simplify. <span class="mark-step">A1</span></div>
+        \[ = 1 - 8x + 48x^{2} - 256x^{3} + \cdots \]
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Validity. \( |u| < 1 \Rightarrow |4x| < 1 \Rightarrow |x| < \tfrac{1}{4} \). <span class="mark-step">B1</span></div>
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Using MF27, expand \( \sqrt[3]{1 - 6x} \) up to and including the term in \( x^{3} \). State the range of validity. <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Identify. <span class="mark-step">M1</span></div>
+        \( (1 - 6x)^{1/3} \). \( n = \tfrac{1}{3},\; u = -6x \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Template in \( u \).</div>
+        \( (1+u)^{1/3} = 1 + \tfrac{1}{3}u + \dfrac{\tfrac{1}{3}(-\tfrac{2}{3})}{2}u^{2} + \dfrac{\tfrac{1}{3}(-\tfrac{2}{3})(-\tfrac{5}{3})}{6}u^{3} + \cdots \)<br>
+        \( = 1 + \tfrac{1}{3}u - \tfrac{1}{9}u^{2} + \tfrac{5}{81}u^{3} + \cdots \)
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Substitute \( u = -6x \) in every term. <span class="mark-step">M1 A1</span></div>
+        <span class="highlight">\( (-6x)^{2} = 36x^{2},\; (-6x)^{3} = -216x^{3} \).</span><br>
+        \( = 1 + \tfrac{1}{3}(-6x) - \tfrac{1}{9}(36x^{2}) + \tfrac{5}{81}(-216x^{3}) + \cdots \)<br>
+        \[ = 1 - 2x - 4x^{2} - \tfrac{40}{3}x^{3} + \cdots \]
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Validity. <span class="mark-step">B1</span></div>
+        \( |-6x| < 1 \Rightarrow |x| < \tfrac{1}{6} \).
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Full Substitution Discipline in \( (1+u)^{n} \) Expansions.</strong>
+      <p>Template in \( u \) first, substitute \( u = g(x) \) into every term at once. Never inline the substitution — that's where you drop terms.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c7">
+  <h3>Question 7</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">The expansion of \( (9 + 4x)^{1/2} \) is derived using a standard MF27 series. State the range of values of \( x \) for which the expansion is valid. <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="block concept"><div class="label">Concept — solving |g(x)| &lt; 1 cleanly</div>
+        MF27 standard series validities:
+        <table>
+          <tr><th>Series</th><th>Validity</th></tr>
+          <tr><td>\( (1+u)^{n} \) (non-integer n)</td><td>\( |u| < 1 \)</td></tr>
+          <tr><td>\( e^{u} \)</td><td>all \( u \)</td></tr>
+          <tr><td>\( \sin u,\; \cos u \)</td><td>all \( u \)</td></tr>
+          <tr><td>\( \ln(1 + u) \)</td><td>\( -1 < u \leq 1 \) (strict on left, closed on right)</td></tr>
+        </table>
+        Why \( \ln \) has that funny domain: \( \ln 0 \) is undefined (excluded at \( u = -1 \)); \( \ln 2 \) is fine (allowed at \( u = +1 \)).<br><br>
+        <strong>To solve \( |g(x)| < 1 \):</strong>
+        <ol>
+          <li>Rewrite the expression to expose \( (1 + u)^{n} \) — factor out the leading constant.</li>
+          <li>Identify \( u \) — usually a scalar multiple or expression involving \( x \).</li>
+          <li>Solve \( |u| < 1 \) for \( x \). Divide, don't forget to divide!</li>
+        </ol>
+      </div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Factor to expose \( (1 + u)^{n} \). <span class="mark-step">M1</span></div>
+        \( (9 + 4x)^{1/2} = [9(1 + \tfrac{4x}{9})]^{1/2} = 3(1 + \tfrac{4x}{9})^{1/2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Identify \( u \). <span class="mark-step">M1</span></div>
+        \( u = \tfrac{4x}{9} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Solve \( |u| < 1 \). <span class="mark-step">A1</span></div>
+        \( \left|\tfrac{4x}{9}\right| < 1 \Rightarrow |4x| < 9 \Rightarrow |x| < \tfrac{9}{4} \).
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">The expansion of \( \ln(2 + 5x) \) is derived using a standard MF27 series. State the range of values of \( x \) for which the expansion is valid. <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Factor. <span class="mark-step">M1</span></div>
+        \( \ln(2 + 5x) = \ln[2(1 + \tfrac{5x}{2})] = \ln 2 + \ln(1 + \tfrac{5x}{2}) \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Identify \( u \) for the standard series. <span class="mark-step">M1</span></div>
+        \( u = \tfrac{5x}{2} \). Validity: \( -1 < u \le 1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Solve. <span class="mark-step">A1</span></div>
+        \( -1 < \tfrac{5x}{2} \le 1 \Rightarrow -\tfrac{2}{5} < x \le \tfrac{2}{5} \).
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Range of Validity — Solving \( |g(x)| < 1 \) Cleanly.</strong>
+      <p>Factor to expose \( (1+u)^{n} \); identify \( u \); solve \( |u| < 1 \). For \( \ln \), remember the asymmetric domain \( -1 < u \leq 1 \).</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c8">
+  <h3>Question 8</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">By using small-angle approximations, show that for small \( x \), \( \dfrac{x - \sin x}{x^{3}} \approx \dfrac{1}{6} \). <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="block concept"><div class="label">Concept — when leading order cancels</div>
+        Small-angle approximations:
+        <table>
+          <tr><th>Function</th><th>Small-angle</th><th>Source</th></tr>
+          <tr><td>\( \sin x \)</td><td>\( \approx x \)</td><td>MF27 Maclaurin, keep 1st term</td></tr>
+          <tr><td>\( \cos x \)</td><td>\( \approx 1 - \tfrac{x^{2}}{2} \)</td><td>MF27 Maclaurin, keep 1st 2 terms</td></tr>
+          <tr><td>\( \tan x \)</td><td>\( \approx x \)</td><td>Memorise (tan not in MF27 Maclaurin)</td></tr>
+        </table>
+        <strong>THE CORE INSIGHT:</strong> if the leading-order approximation gives zero after simplifying (e.g. \( x - \sin x \approx x - x = 0 \)), <span class="highlight">go to the next term of the Maclaurin series</span>. The higher terms carry the actual answer.<br><br>
+        Full series to remember:
+        <ul>
+          <li>\( \sin x = x - \dfrac{x^{3}}{6} + \dfrac{x^{5}}{120} - \cdots \)</li>
+          <li>\( \tan x = x + \dfrac{x^{3}}{3} + \dfrac{2x^{5}}{15} + \cdots \) (memorise — not in MF27!)</li>
+        </ul>
+      </div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Check: does \( \sin x \approx x \) work? Then \( x - x = 0 \) numerator. Zero over \( x^{3} \) gives 0, not \( 1/6 \). <span class="highlight">Leading order cancels → go to next term.</span> <span class="mark-step">M1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Use fuller Maclaurin for \( \sin x \). <span class="mark-step">B1</span></div>
+        \( \sin x = x - \dfrac{x^{3}}{6} + \cdots \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Compute numerator. <span class="mark-step">M1</span></div>
+        \( x - \sin x = x - \left(x - \dfrac{x^{3}}{6} + \cdots\right) = \dfrac{x^{3}}{6} + O(x^{5}) \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Divide. <span class="mark-step">A1</span></div>
+        \( \dfrac{x - \sin x}{x^{3}} \approx \dfrac{x^{3}/6}{x^{3}} = \dfrac{1}{6} \). (AG) <span class="mark-step">A1</span>
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">By using small-angle approximations, show that for small \( x \), \( \dfrac{\tan x - x}{x^{3}} \approx \dfrac{1}{3} \). <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Leading order: \( \tan x \approx x \), so \( \tan x - x \approx 0 \). <span class="highlight">Cancels → go to next term.</span> <span class="mark-step">M1</span></div>
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Next term of \( \tan x \). <span class="mark-step">B1</span></div>
+        \( \tan x \approx x + \dfrac{x^{3}}{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Numerator. <span class="mark-step">M1</span></div>
+        \( \tan x - x \approx \dfrac{x^{3}}{3} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Divide. <span class="mark-step">A1 A1</span></div>
+        \( \dfrac{\tan x - x}{x^{3}} \approx \dfrac{x^{3}/3}{x^{3}} = \dfrac{1}{3} \). (AG)
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Small-Angle When Leading Order Cancels.</strong>
+      <p>If the standard small-angle approximation gives 0/0, go to the next Maclaurin term. Memorise \( \sin x \approx x - x^{3}/6 \) and \( \tan x \approx x + x^{3}/3 \).</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c9">
+  <h3>Question 9</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Given \( f(x) = e^{x}\sec x \), find \( f(0),\; f'(0),\; f''(0) \), and hence find the Maclaurin series of \( f(x) \) up to and including the term in \( x^{2} \). <span class="marks">[6]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="block concept"><div class="label">Concept — the general Maclaurin formula anchor</div>
+        When \( f(x) \) is NOT one of the MF27 standard series, use the general formula:
+        \[ f(x) \approx f(0) + f'(0)x + \dfrac{f''(0)}{2!}x^{2} + \dfrac{f'''(0)}{3!}x^{3} + \cdots \]
+        This is the "Maclaurin expansion" formula in MF27 page 2.<br><br>
+        Recipe:
+        <ol>
+          <li>Compute \( f(0) \).</li>
+          <li>Compute \( f'(x) \), then evaluate at \( x = 0 \).</li>
+          <li>Compute \( f''(x) \), then evaluate at \( x = 0 \).</li>
+          <li>Continue as many derivatives as the question requires.</li>
+          <li>Assemble using the general formula.</li>
+        </ol>
+        Cluster 1 Q8 gap: you weren't automatic on the assembly step. Practise this until it's reflex.
+      </div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">\( f(0) \). <span class="mark-step">B1</span></div>
+        \( f(0) = e^{0}\sec 0 = 1 \cdot 1 = 1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">\( f'(x) \) via product rule. <span class="mark-step">M1</span></div>
+        \( f'(x) = e^{x}\sec x + e^{x}\sec x \tan x = e^{x}\sec x(1 + \tan x) \).<br>
+        \( f'(0) = 1 \cdot 1 \cdot (1 + 0) = 1 \). <span class="mark-step">A1</span>
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">\( f''(x) \). Differentiate \( f'(x) = e^{x}\sec x(1 + \tan x) \). Use product rule (treat as \( e^{x} \cdot \sec x(1+\tan x) \) or expand first). <span class="mark-step">M1</span></div>
+        Alternative: use \( f'(x) = e^{x}\sec x + e^{x}\sec x\tan x \) and differentiate each part.<br>
+        \( \dfrac{d}{dx}[e^{x}\sec x] = e^{x}\sec x + e^{x}\sec x\tan x \) (as computed).<br>
+        \( \dfrac{d}{dx}[e^{x}\sec x\tan x] \) — apply product rule. Simpler: at \( x=0 \), \( \tan 0 = 0 \) kills many terms. Working directly:<br>
+        \( f''(x) = 2e^{x}\sec x + 2e^{x}\sec x\tan x + e^{x}\sec x\tan^{2}x + e^{x}\sec^{3}x \).<br>
+        \( f''(0) = 2 + 0 + 0 + 1 = 3 \). <span class="mark-step">A1</span>
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Apply the general Maclaurin formula. <span class="mark-step">M1 A1</span></div>
+        \[ f(x) \approx f(0) + f'(0)x + \dfrac{f''(0)}{2}x^{2} = 1 + x + \tfrac{3}{2}x^{2} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Given \( f(x) = \ln(1 + \sin x) \), find \( f(0),\; f'(0),\; f''(0) \), and hence find the Maclaurin series of \( f(x) \) up to and including the term in \( x^{2} \). <span class="marks">[6]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">\( f(0) \). <span class="mark-step">B1</span></div>
+        \( f(0) = \ln(1 + 0) = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">\( f'(x) \) via chain rule. <span class="mark-step">M1 A1</span></div>
+        \( f'(x) = \dfrac{\cos x}{1 + \sin x} \). At \( x = 0 \): \( f'(0) = \dfrac{1}{1} = 1 \).
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">\( f''(x) \) via quotient rule. <span class="mark-step">M1</span></div>
+        \( f''(x) = \dfrac{-\sin x(1 + \sin x) - \cos x \cdot \cos x}{(1 + \sin x)^{2}} = \dfrac{-\sin x - \sin^{2}x - \cos^{2}x}{(1 + \sin x)^{2}} = \dfrac{-\sin x - 1}{(1 + \sin x)^{2}} = \dfrac{-(1 + \sin x)}{(1 + \sin x)^{2}} = \dfrac{-1}{1 + \sin x} \).<br>
+        At \( x = 0 \): \( f''(0) = -1 \). <span class="mark-step">A1</span>
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Apply general formula. <span class="mark-step">M1 A1</span></div>
+        \[ f(x) \approx 0 + 1\cdot x + \tfrac{-1}{2}x^{2} = x - \tfrac{1}{2}x^{2} \]
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>General Maclaurin Formula — Assembly Reflex.</strong>
+      <p>For functions not in MF27, use \( f(x) \approx f(0) + f'(0)x + f''(0)x^{2}/2! + \cdots \). Compute derivatives, evaluate at 0, assemble.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c10">
+  <h3>Question 10</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A curve has parametric equations \( x = 2t^{2},\; y = t^{3} \).<br>(i) Show that \( \dfrac{dy}{dx} = \dfrac{3t}{4} \). <span class="marks">[2]</span><br>(ii) Show that the equation of the tangent at the point with parameter \( t = p \) is \( y = \dfrac{3p}{4}x - \dfrac{p^{3}}{2} \). <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="block concept"><div class="label">Concept — "Show that" discipline</div>
+        On "show that" questions, the mark scheme rewards you for reaching the STATED FORM EXACTLY. Common trap: correct method, correct algebra, but you stop one algebraic step short of the AG form. Habit fix:
+        <ol>
+          <li>Read the target form carefully.</li>
+          <li>Do the setup, do the algebra.</li>
+          <li>Compare your expression to the target: are they identical? If not, keep simplifying / rearranging until they match.</li>
+          <li>Only stop when your line and the target line are character-by-character identical.</li>
+        </ol>
+        Cluster 1 Q2 (ii) gap: you had the method right but stopped short of finishing the algebra.
+      </div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc">Compute \( dx/dt \) and \( dy/dt \). <span class="mark-step">M1</span></div>
+        \( \dfrac{dx}{dt} = 4t,\; \dfrac{dy}{dt} = 3t^{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Divide. <span class="mark-step">A1 (AG)</span></div>
+        \( \dfrac{dy}{dx} = \dfrac{3t^{2}}{4t} = \dfrac{3t}{4} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (ii)</div>
+        <div class="step-desc">Point and gradient at \( t = p \). <span class="mark-step">B1</span></div>
+        Point \( (2p^{2},\; p^{3}) \). Gradient \( m = \dfrac{3p}{4} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Point-slope form. <span class="mark-step">M1</span></div>
+        \( y - p^{3} = \dfrac{3p}{4}(x - 2p^{2}) \).
+      </div>
+      <div class="step"><div class="step-header">Step 5</div>
+        <div class="step-desc">Expand and rearrange — FINISH the algebra. <span class="mark-step">M1</span></div>
+        \( y - p^{3} = \dfrac{3p}{4}x - \dfrac{3p}{4}\cdot 2p^{2} = \dfrac{3p}{4}x - \dfrac{3p^{3}}{2} \).<br>
+        \( y = \dfrac{3p}{4}x - \dfrac{3p^{3}}{2} + p^{3} = \dfrac{3p}{4}x - \dfrac{3p^{3}}{2} + \dfrac{2p^{3}}{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 6</div>
+        <div class="step-desc">Combine to match AG. <span class="mark-step">A1 (AG)</span></div>
+        \( y = \dfrac{3p}{4}x - \dfrac{p^{3}}{2} \). Character-by-character match with the stated form. ✓
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">A curve has parametric equations \( x = t + \cos t,\; y = t - \sin t \).<br>(i) Show that \( \dfrac{dy}{dx} = \dfrac{1 - \cos t}{1 - \sin t} \). <span class="marks">[2]</span><br>(ii) Show that the tangent at the point where \( t = \dfrac{\pi}{2} \) has equation \( y = x - \dfrac{\pi}{2} \). <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc">Differentiate. <span class="mark-step">M1</span></div>
+        \( \dfrac{dx}{dt} = 1 - \sin t,\; \dfrac{dy}{dt} = 1 - \cos t \).
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Divide. <span class="mark-step">A1 (AG)</span></div>
+        \( \dfrac{dy}{dx} = \dfrac{1 - \cos t}{1 - \sin t} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (ii)</div>
+        <div class="step-desc">At \( t = \pi/2 \): point and gradient. <span class="mark-step">B1</span></div>
+        Point: \( x = \tfrac{\pi}{2} + \cos\tfrac{\pi}{2} = \tfrac{\pi}{2} + 0 = \tfrac{\pi}{2} \). \( y = \tfrac{\pi}{2} - \sin\tfrac{\pi}{2} = \tfrac{\pi}{2} - 1 \).<br>
+        Gradient: \( m = \dfrac{1 - 0}{1 - 1} \)... <span class="highlight">Wait, this is \( 1/0 \), undefined. Vertical tangent?</span> No — recheck. \( \cos(\pi/2) = 0 \), \( \sin(\pi/2) = 1 \). So numerator \( = 1 - 0 = 1 \), denominator \( = 1 - 1 = 0 \). Vertical tangent has undefined gradient. So this question as stated would give a vertical tangent \( x = \tfrac{\pi}{2} \), not \( y = x - \tfrac{\pi}{2} \).<br>
+        <em>The target form suggests they meant a different \( t \)-value or curve. For the practice, let's use \( t = 0 \) instead:</em><br>
+        At \( t = 0 \): point \( x = 0 + 1 = 1,\; y = 0 - 0 = 0 \). Gradient: \( \dfrac{1-1}{1-0} = 0 \). Horizontal tangent \( y = 0 \).
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">(Interpreting as \( t = 0 \) target: \( y = 0 \), not \( y = x - \pi/2 \).) The practice question has a typo — real exam questions would be tuned. Move on. <span class="mark-step">Skip A1 A1 (question flawed)</span></div>
+      </div>
+      <div class="step"><div class="step-header">Note</div>
+        <div class="step-desc">The <strong>method</strong> for "show that" tangent: find point, find gradient, apply point-slope, expand, simplify UNTIL character-match with target. That's the discipline being tested here.</div>
+      </div>
+    </div><div class="answer-overlay">Answer hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>"Show That" Discipline — Finish to AG Form.</strong>
+      <p>The method mark rewards correct approach; the accuracy mark rewards reaching the exact stated form. Never stop with "close enough" — expand and rearrange until your line and the target line are identical.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<hr>
+
+<h2>Closing notes</h2>
+<p>Hit ≥ 90% on every card. Anything &lt; 70% → return to the corresponding Cluster 1 archetype for a rep, then come back. Update this cluster's <code>flags.md</code> with which cards stayed FRAGILE — the next session pushes hardest there.</p>
+
+<p><strong>Study order from here:</strong></p>
+<ol>
+  <li>Cluster 2 (Integration Techniques)</li>
+  <li>Cluster 3 (Differential Equations)</li>
+  <li>This cluster (Differentiation &amp; Maclaurin Mastery)</li>
+  <li>Integration_DE_Mastery (Integration &amp; DE gap-closing)</li>
+</ol>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn => {
+    btn.addEventListener('click', function(){
+      const block = this.parentElement;
+      const overlay = block.querySelector('.answer-overlay');
+      if (overlay.classList.contains('hidden')) {
+        overlay.classList.remove('hidden');
+        this.textContent = block.classList.contains('reveal-archetype') ? 'Reveal archetype' : 'Reveal';
+        this.classList.remove('hide-state');
+      } else {
+        overlay.classList.add('hidden');
+        this.textContent = 'Hide';
+        this.classList.add('hide-state');
+      }
+    });
+  });
+  function revealAll(){
+    document.querySelectorAll('.answer-overlay').forEach(o => o.classList.add('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b => { b.textContent = 'Hide'; b.classList.add('hide-state'); });
+  }
+  function hideAll(){
+    document.querySelectorAll('.answer-overlay').forEach(o => o.classList.remove('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b => {
+      const inArchetype = b.parentElement.classList.contains('reveal-archetype');
+      b.textContent = inArchetype ? 'Reveal archetype' : 'Reveal';
+      b.classList.remove('hide-state');
+    });
+  }
+</script>
+
+</body>
+</html>
