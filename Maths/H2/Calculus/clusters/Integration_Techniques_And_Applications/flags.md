@@ -67,3 +67,65 @@
 - 2026-07-02 | Q6 practice | Missed the double-negative in \( -\int v\,du \) when \( v \) itself is negative. For \( \int x\sin 3x\,dx \) with \( v = -\tfrac{1}{3}\cos 3x \): \( -\int v\,du = -\int -\tfrac{1}{3}\cos 3x\,dx = +\tfrac{1}{3}\int\cos 3x\,dx \). He tracked it as if the first minus was already absorbed. Self-corrected: "shit, it's --, it becomes a +." | sign-tracking gap | ACTIVE
 - **The habit to lock:** write out the formula literally with the negative sign, then substitute \( v \) with its own sign preserved (parentheses around negative v). Two negatives cancel to a plus. This is exactly the "circle-signs-before-substituting" habit from Cluster 1 flags, applied to IBP.
 
+## 2026-07-03 — Cluster 2 continuation, Q7–Q10
+
+### Question 7 — IBP Cyclic (\( e^{x}\sin x \) type)
+- 2026-07-03 | Q7 example (\( \int e^{x}\sin x\,dx \)) | Correctly identified as IBP. First IBP: u = sin x, dv = e^x dx. Got \( e^{x}\sin x - \int e^{x}\cos x\,dx \). Momentary confusion "this is double integration by parts, doesn't make sense?" — hadn't yet seen the cyclic trick. | correct start, confused mid | ACTIVE
+- 2026-07-03 | Q7 | UNLOCK: "Let I = ∫e^x sin x dx" — after prompting, saw the trick. Second IBP on remaining ∫e^x cos x dx brings back I. Set up equation, solved: I = ½(e^x sin x − e^x cos x) + C. "Wah bro, that is smart, bro." | conceptual breakthrough | FRAGILE
+- 2026-07-03 | Q7 | ARTICULATED 6-STEP ALGORITHM: (1) spot exponential × trig integrand, (2) let I = the integral, (3) first IBP, (4) second IBP on remaining piece, (5) recognise I reappears — move to same side, (6) solve algebraically for I. Clean articulation. | procedure locked | CLOSED
+- 2026-07-03 | Q7 practice (\( \int e^{2x}\cos x\,dx \)) | Executed the algorithm. Got 5/4 I on LHS, solved I = (e^{2x}/5)(2cos x + sin x) + C. Small hiccup: didn't state the final boxed answer explicitly; trailed off. | correct method, weak final articulation | FRAGILE
+- 2026-07-03 | Q7 | TRIGGER RECOGNITION locked: "exponential times trig → cyclic IBP with let-I trick." | trigger locked | CLOSED
+
+### Question 8 — Partial Fractions then Integrate
+- 2026-07-03 | Q8 example (i) — decomposition | Set up \( \dfrac{3x+5}{(x+1)(x-2)} = \dfrac{A}{x+1} + \dfrac{B}{x-2} \). Cleared denominators, expanded: 3x+5 = A(x-2) + B(x+1) → Ax + Bx and -2A + B. Compared coefficients: A+B=3, -2A+B=5. Solved A = -2/3, B = 11/3. Clean. | confident + correct | CLOSED
+- 2026-07-03 | Q8 example (ii) — integrate | "Just split them up." Integrated each piece as \( \int \tfrac{A}{x+c}\,dx = A\ln\|x+c\| \). Result: -2/3 ln|x+1| + 11/3 ln|x-2| + C. | correct | CLOSED
+- 2026-07-03 | Q8 | INSIGHT ARTICULATED: "always pull the constant out at the start — allows immediate f'/f pattern." Good habit locked. | habit locked | CLOSED
+- 2026-07-03 | Q8 practice (\( \int \tfrac{4}{x^2-4}\,dx \)) | Factored denominator, decomposed, solved A = -1, B = 1. Integrated to -ln|x+2| + ln|x-2| + C. | correct | CLOSED
+- 2026-07-03 | Q8 | LOG COMBINATION HABIT: "if you have ln A − ln B, combine to ln(A/B)." Applied here: ln|x-2| − ln|x+2| = ln|(x-2)/(x+2)| + C. Locked as habit. | habit locked | CLOSED
+
+### Question 9 — Area Between Two Curves
+- 2026-07-03 | Q9 example (\( y = x^{2},\; y = 2x+3 \)) | METHOD: (1) find intersections via graphing calculator — got x = -1, x = 3. (2) decide upper — line above parabola. (3) integrate (upper − lower). Result 32/3. | correct + confident | CLOSED (with GC crutch)
+- 2026-07-03 | Q9 | MOMENTARY MEMORY GAP: "forgot the formula bro. If it's area, it's pi r squared no?" Circle-area formula intrusion. Corrected quickly. | brief confusion, resolved | FRAGILE
+- 2026-07-03 | Q9 practice (\( y = x^{3},\; y = x \)) | Intersections at x = -1, 0, 1 (curves cross at origin). Region SPLIT into two pieces. Initially set limits at -1 to 1, then caught: "no it's not one and one bro, it's one and zero." Correctly identified need to split at x = 0. Took absolute value of negative-area piece. Got 1/2. | corrected mid-solve | FRAGILE
+- 2026-07-03 | Q9 | X-COORDINATE-ONLY INSIGHT: "we're looking at the x coordinate only, not y" — for definite integral limits when area is w.r.t. dx. Y-values of intersection points are irrelevant to the setup. Locked. | insight locked | CLOSED
+- 2026-07-03 | Q9 | ALGORITHM ARTICULATED: (1) plot on GC to see upper/lower, (2) find intersections (x-coords only), (3) top − bottom, (4) if curves cross → split at intersections and absolute-value negative pieces, (5) integrate, (6) evaluate, units². | procedure locked | CLOSED
+
+### Question 10 — Volume of Revolution
+- 2026-07-03 | Q10 | SELF-FLAGGED WEAKNESS: "I'm pretty sure my understanding of volume of revolution is a bit weak. Once you have harder questions I won't be able to solve it." Critical honesty. | conceptual weakness | ACTIVE
+- 2026-07-03 | Q10 example (\( y = x^{2}+1 \), rotated about x-axis, x ∈ [0,2]) | Correctly identified V = π ∫ y² dx. Wrote out the setup. But work trailed off — didn't compute exact value. | setup correct, execution incomplete | ACTIVE
+- 2026-07-03 | Q10 | CONFUSION about rotation axis: "if it's rotated about the y axis, then we need to have..." — sensed a distinction but didn't clearly articulate rearranging to x = g(y). | conceptual confusion | ACTIVE
+- 2026-07-03 | Q10 practice (\( y = \sqrt{4-x^{2}} \), rotated about x-axis) | Plotted graph, found endpoints at x = ±2. Set up V = π ∫₋₂² (4-x²) dx correctly (√(4-x²) squared gives 4-x²). Said "something wrong" — but nothing was wrong! Didn't complete: this should give 32π/3 (which equals the volume of a sphere of radius 2, since we're rotating a semicircle). Failed to complete the calculation and validate the answer. | correct setup, no completion, no validation | ACTIVE
+- 2026-07-03 | Q10 | MISSED THE SANITY CHECK: y = √(4-x²) is a semicircle; rotating about x-axis gives a full sphere. Sphere of radius 2 has volume 4/3 π (2)³ = 32π/3. This is a beautiful self-check for volume-of-revolution problems. | missed insight | ACTIVE
+
+### Q6 revisit (Cluster 1) — recurring gap
+- 2026-07-03 | Cluster 1 Q6 | THIRD SESSION on this card. Sign-table analysis executed correctly (\( x<1 \) → f' negative, \( 1<x<3 \) → f' positive, \( x>3 \) → f' positive). Correct classification of local min at x=1 and stationary inflexion at x=3. BUT: same sketch confusion recurs: "we're saying that this is decreasing. Isn't this increasing? Isn't this contradictory?" | recurring gap | ACTIVE
+- 2026-07-03 | Cluster 1 Q6 | CORE UNRESOLVED DISTINCTION: he's mixing the graph of f (which describes what f is doing — going up or down) with the graph of f' (which is a function whose height is the value of f'). "f decreasing for x<1" describes f's direction; the sketch of y = f'(x) for x<1 shows f' BELOW the x-axis. Two different things. Needs one clean rep with side-by-side f vs f' visualisation to lock. | conceptual gap | ACTIVE
+
+## Cross-cutting patterns from this session (Q7-Q10 + Q6 revisit)
+
+### CLOSED
+- IBP cyclic trigger recognition + 6-step algorithm
+- Partial fractions + integration workflow
+- Log combination habit (ln A − ln B = ln(A/B))
+- "Pull constants out immediately" habit
+- Area-between-curves algorithm (with GC)
+- "X-coordinate only for definite integral limits" insight
+
+### ACTIVE gaps
+- **Volume of revolution — foundational understanding** (self-flagged as weak)
+- **Rotation about x-axis vs y-axis mechanics**
+- **Completing calculations to the final numerical value** (Q10 trailed off — same pattern as Cluster 1 "describes method, doesn't finish execution")
+- **Sanity checking volume-of-revolution answers** (sphere-from-semicircle check missed)
+- **f vs f' sketch distinction** (third session on Cluster 1 Q6 — must be resolved)
+- **Sign hygiene through IBP steps** (from earlier — still fragile)
+
+### FRAGILE
+- IBP cyclic final answer articulation (correct method, weak articulation)
+- Area between curves that cross (correct after self-correction, one more rep)
+- Momentary formula intrusion under fatigue (circle area = πr² intrusion)
+
+### META-PATTERN
+- **Trigger recognition is strong** across the board — always identifies the right technique
+- **Execution stops short of final answer** — Q10 practice trailed off. Q7 practice didn't state final I explicitly. Q2 (previous session) example missed the completion. This is the persistent "describes method, doesn't finish" pattern from Cluster 1.
+- **Self-flagged weaknesses honestly** — Q10 "my understanding is weak" is very valuable. Critical self-awareness.
+
