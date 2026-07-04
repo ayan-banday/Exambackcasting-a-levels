@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSC/H2/Governance/examiner_guide.md",
+                "file": "system/study_timeline.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "examiner_guide"
+              "title": "study_timeline"
             }
           }
         ]
@@ -183,8 +183,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "f440e14ed2f447fe",
+  "active": "9663cbaae40f1002",
   "lastOpenFiles": [
+    "CLAUDE.md",
+    "SYSTEM_MAP.md",
+    "CSC/H2/Governance/examiner_guide.md",
     "CSC/H2/Governance/clusters/Party_State_System_and_Legitimacy/flags.md",
     "CSC/H2/Governance/clusters/Party_State_System_and_Legitimacy/flags.md.tmp.33280.cdf0baba2f0e",
     "CSC/H2/Governance/clusters/Party_State_System_and_Legitimacy/study_sheet.md",
@@ -199,12 +202,9 @@
     "CSC/H2/CSC 9629 — The Examiner's Guide (Consolidated Final).md",
     "GP/H2/subject_examiner_guide.md",
     "Maths/H2/Maths H2 - Examiner's Guide (9758).md",
-    "CSC/H2/Governance/examiner_guide.md",
     "csc_example_subject_guide.md.md",
     "EXAM_SCOPE.md",
     "README.md",
-    "SYSTEM_MAP.md",
-    "CLAUDE.md",
     "system/prompts/02_topic_session_prompt.md",
     "HOW_TO_PUBLISH.md",
     "HOW_TO_PUBLISH.md.tmp.21956.b436d365e5ee",

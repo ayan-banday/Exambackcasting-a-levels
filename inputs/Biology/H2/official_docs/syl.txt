@@ -1,0 +1,1215 @@
+Singapore­Cambridge General Certificate of Education
+                Advanced Level Higher 2 (2026)
+
+                Biology
+           (Syllabus 9477)
+
+               (First year of examination in 2026)
+
+                   © MOE & Cambridge University Press & Assessment 2024
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS  Page
+                                                                                     3
+CONTENTS                                                                             3
+                                                                                     4
+PREAMBLE                                                                             4
+INTRODUCTION                                                                         6
+AIMS                                                                                 7
+PRACTICES OF SCIENCE                                                                 9
+CURRICULUM FRAMEWORK
+ASSESSMENT OBJECTIVES                                                              10
+SCHEME OF ASSESSMENT                                                               11
+ADDITIONAL INFORMATION                                                             22
+STRUCTURE OF SYLLABUS                                                              25
+PRACTICAL ASSESSMENT                                                               26
+MATHEMATICAL REQUIREMENTS                                                          27
+TEXTBOOKS AND REFERENCES
+GLOSSARY OF TERMS
+
+2
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+PREAMBLE
+
+This preamble sets out the approach, objectives, directions and philosophy of the H2 Biology syllabus.
+In Singapore, Biology education from Primary to A-Level has been organised as a continuum in the following
+manner:
+(a) from Primary 3 to Primary 6, students learn about how life works at the systems level
+(b) from Lower Secondary Science to O-Level Biology, students learn about how life works at the physiological
+
+      level
+(c) at A-Level, students learn about how life works at the cellular and molecular levels while understanding the
+
+      implications of these at the macro level.
+The Biology syllabus is developed as a seamless continuum from O-Level to A-Level, without the need for
+topics to be revisited at A-Level. The O-Level syllabus is foundational and thus should provide the necessary
+background for study at A-Level.
+Many new and important fields of biology have emerged through recent advancements in life sciences. Vast
+amounts of knowledge have been generated, as evident from the sprouting of scientific journals catering to
+niche areas of research. As such, this syllabus refines and updates the content knowledge of the previous
+syllabus (9744) so that students can keep up to date with knowledge that is relevant for their participation in a
+technology-driven economy and as a global citizen cognisant of threats of emerging infectious diseases and the
+impacts of climate change.
+
+INTRODUCTION
+
+Candidates will be assumed to have knowledge and understanding of O-Level Biology, either as a single
+subject or as part of a balanced science course.
+The syllabus has been arranged in the form of Core and Extension content to be studied by all candidates. The
+syllabus places emphasis on the applications of biology and the impact of recent developments on the needs of
+contemporary society.
+Experimental work is an important component and should underpin the teaching and learning of biology.
+The value of learning H2 Biology ultimately hinges on the development of a scientific mind and disposition while
+addressing the broader questions of what life is and how life is sustained. The Science Curriculum Framework
+developed by the Ministry of Education elaborates on the development of the scientific mind and disposition.
+Through the study of the H2 Biology course, students should be prepared for life science-related courses at
+university and, consequently, careers that are related to this field.
+
+                                                                         3
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+AIMS
+
+The Aims of a course based on this syllabus should be to:
+1 provide students with an experience that develops their interest in biology and builds the knowledge, skills
+
+      and attitudes necessary for further studies in related fields
+2 enable students to become scientifically literate citizens who are well prepared for the challenges of the
+
+      21st century
+3 develop in students the understanding, skills, ethics and attitudes relevant to the Practices of Science,
+
+      including the following:
+      3.1 demonstrating ways of thinking and doing
+      3.2 understanding the nature of scientific knowledge
+      3.3 relating science, technology, society and environment
+4 address the broader questions of what life is and how life is sustained, including:
+      4.1 understanding life at the cellular and molecular levels, and making connections to how these
+
+            micro-systems interact at the physiological and organismal levels
+      4.2 recognising the evolving nature of biological knowledge
+      4.3 stimulating interest in and demonstrating care for the local and global environment
+      4.4 develop in students the skills needed for effective scientific communication to different audiences
+
+            through a range of styles, modes and tools.
+
+PRACTICES OF SCIENCE
+
+Science as a discipline is more than the acquisition of a body of knowledge (e.g. scientific facts, concepts, laws
+and theories); it is a way of knowing and doing. It includes an understanding of the nature of scientific
+knowledge and how this knowledge is generated, established and communicated. Scientists rely on a set of
+established procedures and practices associated with scientific inquiry to gather evidence and test their ideas
+on how the natural world works. However, there is no single method and the real process of science is often
+complex and iterative, following many different paths. While science is powerful, generating knowledge that
+forms the basis for many technological feats and innovations, it has limitations.
+The Practices of Science are explicitly articulated in the syllabus to allow teachers to embed them as learning
+objectives in their lessons. Students' understanding of the nature and limitations of science and scientific inquiry
+are developed effectively when the practices are taught in the context of relevant science content. Attitudes
+relevant to science such as inquisitiveness, concern for accuracy and precision, objectivity, integrity and
+perseverance should be emphasised in the teaching of these practices where appropriate. For example,
+students learning science should be introduced to the use of technology as an aid in practical work or as a tool
+for the interpretation of experimental and theoretical results.
+
+                                                                         4
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+The Practices of Science comprise three components:
+1 Demonstrating Ways of Thinking and Doing (WOTD)
+The Ways of Thinking and Doing in Science illustrate a set of established procedures and practices associated
+with scientific inquiry to gather evidence and test ideas on how the natural world works. There are three broad,
+iterative domains of scientific activity: investigating, evaluating and reasoning, and developing explanations and
+solutions.
+
+1.1 Posing questions and defining problems
+1.2 Designing investigations
+1.3 Conducting experiments and testing solutions
+1.4 Analysing and interpreting data
+1.5 Communicating, evaluating and defending ideas with evidence
+1.6 Making informed decisions and taking responsible actions
+1.7 Using and developing models1
+1.8 Constructing explanations and designing solutions
+
+2 Understanding the Nature of Scientific Knowledge (NOS)
+Science is an epistemic endeavour to build a better understanding of reality.
+2.1 Science is an evidence-based, model-building enterprise to understand the real world.
+2.2 Science assumes natural causes, order and consistency in natural systems.
+2.3 Scientific knowledge is generated through established procedures and critical debate.
+2.4 Scientific knowledge is reliable, durable and open to change in light of new evidence.
+
+3 Relating Science-Technology-Society-Environment (STSE)
+Science is not done completely independently of the other spheres of human activity. The relationships and
+connections to these areas are important as students learn science in context.
+3.1 There are risks and benefits associated with the applications of science in society.
+3.2 Applications of science often have ethical, social, economic and environmental implications.
+3.3 Applications of new scientific discoveries often drive technological advancements while advances in
+
+      technology enable scientists to make new or deeper inquiry.
+
+1 A model is a representation of an idea, an object, a process or a system that is used to describe and explain phenomena that cannot
+be experienced directly. Models exist in different forms from the concrete, such as physical, scale models to abstract representations,
+such as diagrams or mathematical expressions. The use of models involves the understanding that all models contain approximations
+and assumptions limiting their validity and predictive power.
+
+                                                                         5
+                                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+CURRICULUM FRAMEWORK
+
+The A-Level Biology Curriculum Framework (Figure 1) guides the design and implementation of the A-level
+Biology curriculum.
+
+Learning Experiences                            Practices of Science
+
+                        Nature of Scientific Knowledge | Waysof Thinking and Doing | Science-Technology-Society-Environment
+
+                                                     The Discipline of Biology:
+                      The study of the natural processes in Life and Living Organisms
+
+                            The Cell and                   Genetics                   Energy                 Biological
+                      Biomolecules of Life            and Inheritance          and Equilibrium*              Evolution
+
+                      · Organelles & Cellular      · The Structure of Nucleic  · Transformation of Energy    · Natural Selection &
+                         Structures                   Acids & Gene Expression     between the Environment &     Adaptation
+                                                                                  Organisms
+                      · Biomolecules of Life &     · Organisation of Genomes*                                · Evolution & Biodiversity,
+                         Cellular Transport        · Control of Gene           · Communication* &               Species & Speciation*
+                                                                                  Equilibrium* in Organisms
+                      · Proteins                      Expression*
+                      · Stem Cells                 · DNA Mutations
+                                                   · The Cell Cycle
+                                                   · Inheritance                     Extension Topics
+
+                                                                               · Infectious Diseases*
+                                                                               · Impact of Climate Change on Animals and Plants
+
+                                                   Values, Ethics, Attitudes
+
+                      * in H2 and H3 Biology only
+
+                                         Figure 1: A-Level Biology Curriculum Framework
+
+The Practices of Science highlight the ways of thinking and doing that are inherent in the scientific approach,
+with the aim of equipping students with the understanding, skills, and attitudes shared by the scientific
+disciplines, including an appropriate approach to ethical issues.
+
+The Values, Ethics, Attitudes undergird the study of science and the use of related knowledge and skills to
+make a positive contribution to humanity.
+
+The Learning Experiences (LEs)2 refer to a range of learning opportunities that enhance students' learning of
+Biology. Real-world contexts can help illustrate the application of Biology concepts and bring the subject to life.
+These LEs would include experimental (practical work) activities and ICT tools that can be used to build
+students' understanding.
+
+The Disciplinary Content of the Biology syllabuses is organised around four Core Ideas of Biology. Besides the
+Core Ideas, the H2 Biology syllabus features two Extension Topics: (A) Infectious Diseases, and (B) Impact of
+Climate Change on Animals and Plants. The two Extension Topics are based on important emerging biological
+issues impacting both the local and global contexts. They require students to demonstrate assimilation of the
+Core Ideas and extend their knowledge and understanding to real-world challenges. Furthermore, Extension
+Topics will equip students with the necessary knowledge and process skills to make informed decisions about
+scientific issues. Both Extension Topics take up about 15% of the total H2 Biology curriculum.
+
+Students are expected to study all four Core Ideas and both the Extension Topics.
+
+2 Learning Experiences can be found in the Teaching and Learning Syllabus.
+
+                                                                         6
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+ASSESSMENT OBJECTIVES
+
+The Assessment Objectives listed below reflect those parts of the Aims and Practices of Science that will be
+assessed.
+A Knowledge with understanding
+Candidates should be able to demonstrate knowledge with understanding in relation to:
+1 scientific phenomena, facts, laws, definitions, concepts and theories
+2 scientific vocabulary, terminology and conventions (including symbols, quantities and units)
+3 scientific instruments and apparatus, including techniques of operation and aspects of safety
+4 scientific quantities and their determination
+5 scientific and technological applications with their social, economic and environmental implications.
+The syllabus content defines the factual knowledge that candidates may be required to recall and explain.
+Questions testing these objectives will often begin with one of the following words: define, state, name,
+describe, explain or outline (see the Glossary of Terms).
+
+B Handling, applying and evaluating information
+Candidates should be able (in words or by using symbolic, graphical and numerical forms of presentation) to:
+1 locate, select, organise, interpret and present information from a variety of sources
+2 handle information, distinguishing the relevant from the extraneous
+3 manipulate numerical and other data and translate information from one form to another
+4 present reasoned explanations for phenomena, patterns, trends and relationships
+5 make comparisons that may include the identification of similarities and differences
+6 analyse and evaluate information to identify patterns, report trends, draw inferences, report conclusions
+
+      and construct arguments
+7 justify decisions, make predictions and propose hypotheses
+8 apply knowledge, including principles, to novel situations
+9 use skills, knowledge and understanding from different areas of Biology to solve problems
+10 organise and present information, ideas and arguments clearly and coherently, using appropriate
+
+      language.
+These Assessment Objectives above cannot be precisely specified in the syllabus content because questions
+testing such skills are often based on information which is unfamiliar to the candidate. In answering such
+questions, candidates are required to use principles and concepts that are within the syllabus and apply them in
+a logical, reasoned or deductive manner to a novel situation. Questions testing these objectives will often begin
+with one of the following words: discuss, predict, suggest, calculate or determine (see the Glossary of Terms).
+
+                                                                         7
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+C Experimental skills and investigations
+Candidates should be able to:
+1 follow a detailed sequence of instructions or apply standard techniques
+2 devise and plan investigations which may include constructing and/or testing a hypothesis and select
+
+      techniques, apparatus and materials
+3 use techniques, apparatus and materials safely and effectively
+4 make and record observations, measurements and estimates
+5 interpret and evaluate observations and experimental data
+6 evaluate methods and techniques, and suggest possible improvements.
+
+                                                                         8
+                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+SCHEME OF ASSESSMENT
+
+All candidates are required to enter for Papers 1, 2, 3 and 4.
+
+Paper              Type of Paper                                Duration Weighting (%) Marks
+
+1 Multiple Choice                                               1h  15  30
+
+2 Structured Questions                                          2h  30  90
+
+3 Long Structured and Free-response Questions                   2h  35  75
+
+4 Practical                                    2 h 30 min           20  50
+
+Paper 1 (1 h, 30 marks)
+
+This paper will consist of 30 compulsory multiple choice questions. All questions will include four options.
+
+Paper 2 (2 h, 90 marks)
+
+This paper will consist of a variable number of structured questions, all compulsory, including data-based or
+comprehension-type questions. These include questions which require candidates to integrate knowledge and
+understanding from different areas of the syllabus.
+
+Paper 3 (2 h, 75 marks)
+
+This paper will consist of a variable number of long structured questions, all compulsory, including data-based
+or comprehension-type questions and one free-response question of 20 marks. These include questions that
+assess the higher-order skills of analysing, making conclusions and evaluating information and require
+candidates to integrate knowledge and understanding from different areas of the syllabus.
+
+Section A (55 marks) will comprise two or more compulsory long structured questions. There will be one or
+more stimulus materials that may be taken or adapted from a source such as a scientific journal or book. This
+material may not necessarily relate directly to the content of the syllabus. Questions may require candidates to
+explain terms used in the passage, analyse data, justify decisions, perform calculations and draw conclusions
+based on information in the stimulus material.
+
+Section B (20 marks) will comprise two free-response questions, from which candidates will choose one. The
+quality of scientific argumentation and written communication will be given a percentage of the marks available.
+
+Paper 4 (2 h 30 min, 50 marks)
+
+This paper will assess appropriate aspects of Assessment Objectives C1 to C6 in the following skill areas:
+
+· Planning (P)
+· Manipulation, measurement and observation (MMO)
+· Presentation of data and observations (PDO)
+· Analysis, conclusions and evaluation (ACE).
+
+The assessment of skill area P will have a weighting of 4%, and the skill areas MMO, PDO and ACE will have a
+weighting of 16%. Candidates will require access to apparatus, as stated in the Confidential Instructions. For
+some questions, candidates may be allocated a specific time for access to the apparatus. Paper 4 may also
+include data handling/interpretation questions that do not require apparatus, in order to test the skill areas of
+PDO and ACE.
+
+Candidates are NOT allowed to refer to notebooks, textbooks or any other information in the Practical
+Examination.
+
+                                  9
+9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+Weighting of Assessment Objectives
+
+Assessment Objective                             Weighting (%) Assessment Components
+
+A Knowledge with understanding                   36  Papers 1, 2, 3
+
+B Handling, applying and evaluating information  44  Papers 1, 2, 3
+
+C Experimental skills and investigations         20  Paper 4
+
+ADDITIONAL INFORMATION
+
+Modern biological sciences draw extensively on concepts from the physical sciences. It is desirable therefore
+that, by the end of the course, students should have knowledge of the following topics, sufficient to aid
+understanding of biological systems. No questions will be set directly on them except where relevant to the
+assessment of a Learning Outcome.
+
+· The electromagnetic spectrum
+· Energy changes (potential energy, activation energy, chemical bond energy)
+· Molecules, atoms, ions, electrons
+· Acids, bases, pH, buffers
+· Isotopes, including radioactive isotopes
+· Oxidation and reduction
+· Hydrolysis, condensation
+
+Nomenclature
+
+Candidates will be expected to be familiar with the nomenclature used in the syllabus. The proposals in `Signs,
+Symbols and Systematics' (The Association for Science Education Companion to 16­19 Science, 2000) and the
+recommendations on terms, units and symbols in `Biological Nomenclature' (2009) published by the Institute of
+Biology, in conjunction with the ASE, will generally be adopted although the traditional names sulfate, sulfite,
+nitrate, nitrite, sulfurous acid and nitrous acid will be used in question papers. Sulfur (and all compounds of
+sulfur) will be spelt with f (not with ph) in question papers. However, candidates can use either spelling in their
+answers.
+
+Disallowed Subject Combinations
+
+Candidates may not simultaneously offer Biology at H1 and H2 levels.
+
+Units and Significant Figures
+
+Candidates should be aware that misuse of units and/or significant figures, e.g. failure to quote units where
+necessary, the inclusion of units in quantities defined as ratios or quoting answers to an inappropriate number of
+significant figures, is liable to be penalised.
+
+                                          10
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+STRUCTURE OF SYLLABUS
+
+The syllabus is divided into two parts: Core Ideas and Extension Topics, to be studied by all candidates.
+I Core Ideas. There are 4 Core Ideas:
+
+      1 The Cell and Biomolecules of Life
+      2 Genetics and Inheritance
+      3 Energy and Equilibrium
+      4 Biological Evolution.
+II Extension Topic. There are 2 Extension Topics:
+      A Infectious Diseases
+      B Impact of Climate Change on Animals and Plants.
+
+                                                                        11
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+I CORE IDEAS
+1 The Cell and Biomolecules of Life
+Content
+· The cell theory
+· Outline functions of membrane systems and organelles in cells
+· The structure of a typical bacterial cell
+· The structures of biomolecules and their functions
+· The fluid mosaic model of membrane structure
+· Mode of action of enzymes
+· Stem cells
+
+Learning Outcomes
+Candidates should be able to:
+(a) outline the cell theory with the understanding that cells are the smallest unit of life, all cells come from
+
+      pre-existing cells and living organisms are composed of cells
+(b) interpret and recognise drawings, photomicrographs and electron micrographs of the cytoplasm (cytosol)
+
+      and cellulose cell wall, and the following membrane systems and organelles: rough and smooth
+      endoplasmic reticulum, Golgi body, mitochondria, ribosomes, lysosomes, chloroplasts, cell surface
+      membrane, nuclear envelope, centrioles, nucleus and nucleolus (for practical assessment, candidates may
+      be required to operate a light microscope, mount slides and use an eyepiece graticule and a stage
+      micrometer)
+(c) outline the functions of the cell structures listed in (b)
+(d) describe the structure of a typical bacterial cell (small and unicellular, peptidoglycan cell wall, circular DNA,
+      70S ribosomes and lack of membrane-bound organelles)
+(e) describe the structural components of viruses, including enveloped viruses and bacteriophages, and
+      interpret drawings and photographs of them
+(f) discuss how viruses challenge the cell theory and concepts of what is considered living
+(g) describe the structure and properties of the following monomers:
+      i -glucose and -glucose (in carbohydrates)
+      ii glycerol and fatty acids (in lipids)
+      iii amino acids (in proteins) (knowledge of chemical formulae of specific R-groups of different amino
+
+            acids is not required)
+(h) describe the formation and breakage of the following bonds:
+
+      i glycosidic bond
+      ii ester bond
+      iii peptide bond
+
+                                                                        12
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+(i) describe the structures and properties of the following biomolecules and explain how these are related to
+      their roles in living organisms:
+      i starch (including amylose and amylopectin)
+
+      ii cellulose
+
+      iii glycogen
+
+      iv triglyceride
+
+      v phospholipid
+
+(j) explain the fluid mosaic model and the roles of the constituent biomolecules (including phospholipids,
+      proteins, glycolipids, glycoproteins and cholesterol) in cell membranes
+
+(k) outline the functions of membranes at the surface of cells and membranes within the cell
+(l) explain how and why different substances move across membranes through simple diffusion, osmosis,
+
+      facilitated diffusion, active transport, endocytosis and exocytosis
+(m) explain primary structure, secondary structure, tertiary structure and quaternary structure of proteins, and
+
+      describe the types of bonds that hold the molecule in shape (hydrogen, ionic and disulfide bonds, and
+      hydrophobic interactions)
+(n) explain the effects of temperature and pH on protein structure
+(o) describe the molecular structure of the following proteins and explain how the structure of each protein
+      relates to the function it plays:
+      i haemoglobin (globular; transport)
+      ii collagen (fibrous; structural)
+      (knowledge of details of the number of amino acids and types of secondary structures present is not
+      required)
+(p) explain the mode of action of enzymes in terms of an active site, enzyme­substrate complex, lowering of
+      activation energy and enzyme specificity using the lock-and-key and induced-fit hypotheses
+(q) investigate and explain the effects of temperature, pH, enzyme concentration and substrate concentration
+      on the rate of an enzyme-catalysed reaction by measuring rates of formation of products (e.g. measuring
+      gas produced using catalase) or rate of disappearance of substrate (e.g. using amylase, starch and iodine)
+(r) describe the structure of competitive and non-competitive inhibitors with reference to the binding sites of
+      the inhibitor
+(s) explain the effects of competitive and non-competitive inhibitors (including allosteric inhibitors) on the rate
+      of enzyme activity
+(t) describe the unique features of stem cells, including zygotic stem cells, embryonic stem cells and blood
+      stem cells (lymphoid and myeloid), correctly using the terms:
+      i totipotency (e.g. zygotic stem cells)
+      ii pluripotency (e.g. embryonic stem cells)
+      iii multipotency (e.g. lymphoid and myeloid stem cells)
+(u) explain the normal functions of stem cells in a living organism, including embryonic stem cells and blood
+      stem cells (lymphoid and myeloid).
+Use the knowledge gained in this section in new situations or to solve related problems.
+
+                                                                        13
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+2 Genetics and Inheritance
+
+Content
+
+· DNA ­ structure and function
+· Central Dogma ­ DNA to RNA, RNA to protein
+· The structure of eukaryotic chromatin
+· The genetics of viruses
+· The genetics of bacteria
+· Genome organisation at the DNA level
+· Control of gene expression
+· DNA analysis and genomics
+· Mutations
+· Replication and division of nuclei and cells
+· Understanding of chromosome number and variation
+· Effect of meiosis on chromosome number and variation
+· The molecular biology of cancer
+· The passage of information from parents to offspring
+· Genotypes and phenotypes
+· Dihybrid crosses
+· Linkage and crossing-over
+· Interaction between loci
+· The effect of genotype and environment on the phenotype
+
+Learning Outcomes
+
+Candidates should be able to:
+
+(a) describe the structure and roles of DNA and RNA (tRNA, rRNA and mRNA) (knowledge of the structure
+      and roles of mitochondrial DNA and chloroplast DNA is not required)
+
+(b) describe the process of DNA replication and how the end replication problem arises
+
+(c) describe how the information on DNA is used to synthesise polypeptides (description of the processes of
+      transcription, formation of mRNA from pre-mRNA in eukaryotes and translation is required)
+
+(d) describe the structure and organisation of viral, prokaryotic and eukaryotic genomes (including DNA/RNA,
+      single-/double-stranded, number of nucleotides, packing of DNA, linearity/circularity and presence/absence
+      of introns)
+
+(e) describe how the genomes of viruses are inherited through outlining the reproductive cycles of:
+
+      i bacteriophages that reproduce via lytic and lysogenic cycles, including lambda phage
+
+      ii enveloped viruses, including influenza
+
+      iii retroviruses, including HIV
+
+(f) describe how variation in viral genomes arises, including antigenic shift and antigenic drift
+
+(g) outline the mechanism of asexual reproduction by binary fission in a typical prokaryote and describe how
+      transformation, transduction and conjugation (including the role of F plasmids but not Hfr) give rise to
+      variation in prokaryotic genomes
+
+(h) describe the structure and function of non-coding DNA in eukaryotes (i.e. portions that do not encode
+      protein or RNA, including introns, centromeres, telomeres, promoters, enhancers and silencers)
+      (knowledge of transposons, satellite DNA, pseudo-genes and duplication of segments is not required)
+
+                                                                        14
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+(i) explain how differential (i.e. spatial and temporal) gene expression in eukaryotes can be regulated at
+      different levels:
+
+      i chromatin level (histone modification and DNA methylation)
+
+      ii transcriptional level (control elements, such as promoters, silencers and enhancers, and proteins,
+            such as transcription factors, including activators and repressors)
+
+      iii post-transcriptional level (processing of pre-mRNA in terms of splicing, polyadenylation and
+            5 capping)
+
+      iv translational level (half-life of RNA and initiation of translation)
+
+      v post-translational level (biochemical modification and protein degradation)
+
+(j) describe the principles and procedures of these molecular techniques:
+
+      i polymerase chain reaction (including its advantages and limitations)
+
+      ii gel electrophoresis
+
+      iii Southern blotting and nucleic acid hybridisation
+
+(k) explain what is meant by the terms gene mutation and chromosomal aberration. For gene mutation,
+      knowledge of how substitution, addition and deletion could change the amino acid sequence (including
+      frameshift) is required. For chromosomal aberration, knowledge of numerical aberration (including
+      aneuploidy, as in the case of trisomy 21, i.e. Down syndrome) and structural aberration (including
+      translocation, duplication, inversion and deletion) is required
+
+(l) explain how gene mutations can result in diseases (including sickle cell anaemia)
+
+(m) discuss the bioethics of genetic maternal screening for mutations, including trisomy-21
+
+(n) describe the events that occur during the mitotic cell cycle and the main stages of mitosis (including the
+      behaviour of chromosomes, nuclear envelope, cell surface membrane and centrioles)
+
+(o) explain the significance of the mitotic cell cycle (including growth, repair and asexual reproduction) and the
+      need to regulate it tightly (knowledge that dysregulation of checkpoints of cell division can result in
+      uncontrolled cell division and cancer is required, but details of the mechanism are not required)
+
+(p) identify the causative factors, including genetic, chemical carcinogens, ionising radiation and loss of
+      immunity, which may increase the chances of cancerous growth
+
+(q) explain how the loss of function mutation of tumour suppressor genes, including p53, and gain in function
+      mutation of proto-oncogenes, including ras, results in uncontrolled cell division
+
+(r) describe the development of cancer as a multi-step process that includes accumulation of mutations,
+      angiogenesis and metastasis
+
+(s) describe the events that occur during the meiotic cell cycle and the main stages of meiosis (including the
+      behaviour of chromosomes, nuclear envelope, cell surface membrane and centrioles) (names of the main
+      stages are expected, but not the sub-divisions of prophase)
+
+(t) explain the significance of the meiotic cell cycle (including how meiosis and random fertilisation can lead to
+      variation)
+
+(u) explain the terms: locus, allele, dominant, recessive, codominant, homozygous, heterozygous, phenotype,
+      genotype and linkage
+
+(v) explain how genes are inherited from one generation to the next via the germ cells or gametes
+
+(w) explain how genotype is linked to phenotype
+
+                                                                        15
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+(x) use genetic diagrams to solve problems in dihybrid crosses, including those involving codominance,
+
+      multiple alleles, sex linkage, autosomal linkage and epistasis
+(y) use genetic diagrams to solve problems involving test crosses
+(z) explain the meaning of the terms linkage and crossing-over and explain the effect of linkage and
+
+      crossing-over on the phenotypic ratios from dihybrid crosses
+(aa) describe the interaction between loci (epistasis) and predict phenotypic ratios in problems involving
+
+      epistasis (knowledge of the expected ratio for various types of epistasis is not required; focus of this
+      section is on problem solving)
+(bb) explain how the environment may affect the phenotype, using examples including the effect of diet on
+      differentiation of honeybees
+(cc) explain the difference between genetic variation that is continuous (many, additive genes control a
+      characteristic) and genetic variation that is discontinuous (one or a few genes control a characteristic)
+(dd) use the chi-squared test to test the significance of differences between observed and expected results.
+Use the knowledge gained in this section in new situations or to solve related problems.
+
+                                                                        16
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+3 Energy and Equilibrium
+
+Content
+
+· The need for energy in living organisms
+· Photosynthesis as an energy-trapping process
+· Respiration as an energy-releasing process
+· Aerobic and anaerobic respiration
+· An overview of cell signalling and communication
+
+      ­ signal reception and the initiation of transduction
+      ­ signal transduction pathways
+      ­ cellular responses to signals
+
+Learning Outcomes
+
+Candidates should be able to:
+
+(a) identify components of chloroplasts and mitochondria in drawings, photomicrographs and
+      electronmicrographs
+
+(b) explain the absorption and action spectra of photosynthetic pigments
+
+(c) With reference to the chloroplast structure, describe and explain how light energy is harnessed and
+      converted into chemical energy during the light-dependent reactions of photosynthesis (names of
+      complexes in the ETC and detailed mechanism of action of ATP synthase are not required)
+
+(d) outline the three phases of the Calvin cycle in the light-independent reactions of photosynthesis in C3
+      plants: (i) CO2 fixation, (ii) PGA reduction, and (iii) ribulose bisphosphate (RuBP) regeneration, indicating
+      the roles of rubisco, ATP and reduced NADP in these processes that ultimately allow synthesis of sugars
+      (knowledge of details of the structure of intermediate compounds and the names of other enzymes is not
+      required)
+
+(e) discuss limiting factors in photosynthesis and carry out investigations on the effect of limiting factors such
+      as temperature, light intensity and carbon dioxide concentration on the rate of photosynthesis
+
+(f) outline the process of glycolysis, highlighting the location, raw materials used and products formed
+      (knowledge of details of the intermediate compounds, names of enzymes and isomerisation is not required)
+
+(g) outline the processes of the link reaction and Krebs cycle, highlighting the location, raw materials used and
+      products formed (in terms of dehydrogenation and decarboxylation)
+
+(h) outline the process of oxidative phosphorylation, including the roles of oxygen and the electron transport
+      chain (ETC) in aerobic respiration (names of complexes in the ETC, detailed mechanism of action of
+      ATP synthase and calculation of total yield of ATP from oxidative phosphorylation are not required)
+
+(i) explain the production of a small yield of ATP from respiration in anaerobic conditions in yeast and in
+      mammalian muscle tissue
+
+(j) explain the significance of the formation of ethanol in yeast and lactate in mammals in the regeneration of
+      NAD
+
+(k) investigate the effect of factors including substrate concentration, oxygen concentration and temperature
+      on the rate of respiration
+
+(l) outline chemiosmosis in photosynthesis and respiration (names of complexes in the ETC are not required)
+
+                                                                        17
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+(m) outline the main stages of cell signalling:
+
+      i ligand­receptor interaction
+      ii signal transduction (phosphorylation cascade and signal amplification)
+      iii cellular response (change in gene expression)
+      (knowledge of intracellular receptors is not required)
+(n) explain the roles and nature of second messengers (including cyclic AMP)
+(o) explain the roles of kinases and phosphatases in signal amplification
+(p) outline how insulin and glucagon regulate the concentration of blood glucose through the respective
+      tyrosine kinase receptor and G-protein linked receptor. (The outline should be limited to describing how the
+      ligand induces a conformational change in a membrane-bound receptor to trigger downstream signalling
+      pathways that elicit physiological changes in blood glucose concentration. Details of different second
+      messengers and specific kinases activated in the pathway are not required.)
+Use the knowledge gained in this section in new situations or to solve related problems.
+
+                                                                        18
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+4 Biological Evolution
+Content
+· The concept of the species
+· The neo-Darwinian revolution
+· Variation, natural selection and evolution
+· Evidence of evolution
+· Classification
+
+Learning Outcomes
+Candidates should be able to:
+(a) explain why variation (as a result of mutation, meiosis and sexual reproduction) is important in natural
+
+      selection
+(b) explain, with examples, how environmental factors act as forces of natural selection
+(c) explain the role of natural selection in evolution
+(d) explain why the population is the smallest unit that can evolve
+(e) explain how genetic variation (including harmful recessive alleles) may be preserved in a natural population
+(f) define biological evolution as descent with modification and explain the link between micro-evolution and
+
+      macro-evolution
+(g) explain how evidence based on homologies identified in biochemical data (molecular homologies) and the
+
+      fossil record (anatomical homologies), together with biogeography (supported by Wallace's findings),
+      corroborate Darwin's theory of evolution
+(h) explain the biological concept of the species and its limitations
+(i) define biological classification as the organisation of species according to shared characteristics and
+      describe how evolutionary relationship is established
+(j) explain how new species are formed with respect to geographical isolation (allopatric speciation) and
+      behavioural or physiological isolation within the same geographical location (sympatric speciation)
+(k) define phylogeny as the organisation of species to show their evolutionary relationships
+(l) explain the importance of the use of genome sequences in reconstructing phylogenetic relationships and
+      state the advantages of molecular methods, including multiple sequence alignment (nucleotide and amino
+      acid), in classifying organisms
+(m) explain the Hardy­Weinberg model and the conditions/assumptions it operates in
+(n) calculate the frequencies of alleles, genotypes and phenotypes in a population for a gene with two alleles,
+      using the Hardy­Weinberg equation.
+Use the knowledge gained in this section in new situations or to solve related problems.
+
+                                                                        19
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+II EXTENSION TOPIC
+A Infectious Diseases
+Content
+· The immune system ­ adaptive and innate
+· Genetic recombination
+· Modes of viral and bacterial infections
+· Vaccination and modes of action of antibiotics
+
+Learning Outcomes
+Candidates should be able to:
+(a) describe the specific (adaptive) immune system, including active, passive, naturally acquired and artificially
+
+      acquired immunity, and the non-specific (innate) immune system
+(b) outline the roles of B lymphocytes, T lymphocytes, antigen-presenting cells and memory cells in specific
+
+      primary and secondary immune responses
+(c) explain the relationship of the molecular structure of antibodies to their functions, using immunoglobulin G,
+
+      IgG, as an example
+(d) explain how somatic recombination, hyper-mutation and class switching result in millions of different
+
+      antibody molecules
+(e) discuss how vaccination can control disease (including the eradication of smallpox), limited to vaccination
+
+      stimulates immunity without causing the disease and vaccination of a high enough proportion of the
+      population can break the disease transmission cycle
+(f) discuss the benefits and risks of vaccination
+(g) explain how viruses, including influenza virus and HIV, cause diseases in humans through the disruption of
+      host tissue and functions (including HIV and helper T cells, influenza virus and epithelial cells of the
+      respiratory tract)
+(h) explain the modes of transmission and infection of bacterial pathogens, using Mycobacterium tuberculosis
+      as an example
+(i) describe the modes of action of antibiotics, including penicillin, on bacteria
+(j) explain the meaning of the basic reproduction number, R0, as an indicator of the transmissibility
+      (contagiousness) of infectious agents, and how R0 can be used to predict the progress of a disease
+      outbreak
+(k) outline the terms (i) outbreak, (ii) epidemic, and (iii) pandemic, that are used to describe the spread of an
+      infectious disease such as influenza.
+Use the knowledge gained in this section in new situations or to solve related problems.
+
+                                                                        20
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+B Impact of Climate Change on Animals and Plants
+Content
+· Human activities that contribute to climate change
+· Effects of climate change on the environment, plants and animals
+· Impact on biodiversity, biomedicines and the global food supply
+· Viral dengue disease in humans and how global warming affects its spread
+
+Learning Outcomes
+Candidates should be able to:
+(a) identify and explain the human activities over the last few centuries that have contributed to climate change
+
+      through accumulation of greenhouse gases (limited to CO2 and methane), including burning of fossil fuels
+      linked to increasing energy usage, clearing of forests and food choices (increasing consumption of meat)
+(b) explain the effects of climate change as a result of greenhouse gas emissions, including melting of polar
+      ice caps, rising sea levels, increase in frequency of extreme weather events, stress on fresh water
+      supplies, migration of fishes and insects, stress to coral reef, seagrass and mangrove ecosystems, and
+      release of greenhouse gases from frozen organic matter
+(c) explain how mangrove ecosystems help to mitigate the impacts of climate change
+(d) explain the relative differences between the carbon footprints of a range of anthropogenic activities,
+      including deforestation, energy production (including fossil fuels, hydroelectric power, nuclear power,solar
+      power, wind power and bioethanol) and food production (animal- and plant-based)
+(e) discuss the consequences to the sustainable food supply of increased environmental stress resulting from
+      climate change, including the effects on plants and animals of increased temperature and more extreme
+      weather events
+(f) discuss the effects of increased environmental stress (including increased temperatures and more extreme
+      weather events) as a result of global climate change, on habitats, organisms, food chains and niche
+      occupation
+(g) discuss how climate change affects the rich biodiversity of the tropics, including the potential loss of this
+      rich reservoir for biomedicines and genetic diversity for food
+(h) explain how temperature changes impact insects as a result of increased temperature leading to increased
+      metabolism and the narrow temperature tolerance of insects, including how temperature affects the
+      life cycle of Aedes aegypti as an example of a typical mosquito disease vector
+(i) explain how global warming affects the spread of mosquito-borne infectious diseases, including malaria
+      and dengue, beyond the tropics.
+Use the knowledge gained in this section in new situations or to solve related problems.
+
+                                                                        21
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+PRACTICAL ASSESSMENT
+
+Scientific subjects are, by their nature, experimental. It is therefore important that, wherever possible, the
+candidates carry out appropriate practical work to support the learning of this subject and to develop the
+expected practical skills.
+
+Paper 4 Practical
+
+This paper is designed to assess candidates' competence in those practical skills which can realistically be
+assessed within the context of a formal practical assessment.
+
+Candidates will be assessed in the following skill areas:
+
+(a) Planning (P)
+
+      Candidates should be able to:
+      · define the question/problem using appropriate knowledge and understanding
+      · give a clear, logical account of the experimental procedure to be followed
+      · describe how the data should be used in order to reach a conclusion
+      · assess the risks of the experiment and describe precautions that should be taken to keep risks to a
+
+            minimum.
+
+(b) Manipulation, measurement and observation (MMO)
+
+      Candidates should be able to:
+      · demonstrate a high level of manipulative skills in all aspects of practical activity
+      · make and record accurate observations with good details and measurements to an appropriate
+
+            degree of precision
+      · make appropriate decisions about measurements or observations
+      · recognise anomalous observations and/or measurements (where appropriate) with reasons indicated.
+
+(c) Presentation of data and observations (PDO)
+
+      Candidates should be able to:
+      · present all information in an appropriate form
+      · manipulate measurements effectively in order to identify trends/patterns
+      · present all quantitative data to an appropriate number of decimal places/significant figures.
+
+(d) Analysis, conclusions and evaluation (ACE)
+
+      Candidates should be able to:
+      · analyse and interpret data or observations appropriately in relation to the task
+      · draw conclusion(s) from the interpretation of experimental data or observations and underlying
+
+            principles
+      · make predictions based on their data and conclusions
+      · identify significant sources of errors, limitations of measurements and/or experimental procedures
+
+            used, and explain how they affect the final result(s)
+      · state and explain how significant errors/limitations may be overcome/reduced, as appropriate,
+
+            including how experimental procedures may be improved.
+
+One or more of the questions may incorporate some assessment of skill P, set in the context of the syllabus
+content, requiring candidates to apply and integrate knowledge and understanding from different sections of the
+syllabus. These questions may also require the treatment of given experimental data to draw a relevant
+conclusion and analyse the proposed plan.
+
+The assessment of skills MMO, PDO and ACE will also be set mainly in the context of the syllabus content and
+will require access to apparatus, as stated in the Confidential Instructions. For some questions, candidates may
+be allocated a specific time for access to the apparatus. The assessment of PDO and ACE may also include
+questions on data analysis which do not require practical equipment and apparatus.
+
+                                                                        22
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+Within the Scheme of Assessment, Paper 4 is weighted to 20 per cent of the Higher 2 assessment. It is
+therefore recommended that the schemes of work include learning opportunities that apportion a commensurate
+amount of time for the development and acquisition of practical skills. The guidance for practical work, which is
+published separately, will provide examples of practical activities.
+
+Candidates are NOT allowed to refer to notebooks, textbooks or any other information in the Practical
+examination.
+
+Apparatus List
+This list given below has been drawn up in order to give guidance to centres concerning the apparatus that is
+expected to be generally available for examination purposes. The list is not intended to be exhaustive and
+practical examinations may require additional apparatus and materials that will be specified in the Confidential
+Instructions, e.g. enzymes, indicators, plastic straws, etc. Furthermore, general laboratory glassware and items
+that are commonly regarded as standard equipment in a Biology laboratory (e.g. Bunsen burners, tripods and
+gauze, thermostatically controlled water-baths, safety goggles, disposable gloves, paper towels, etc.) are not
+included in this list.
+
+Unless otherwise stated, the rate of allocation is "per candidate".
+
+light microscope, with low-power (×4), medium-power (×10) and high-power (×40) objective lenses and fitted
+      eyepiece graticule (2 candidates to 1)
+
+stage micrometer
+microscope slides and coverslips
+mounted needles
+hand lens (not less than ×6)
+half-metre rule or metre rule
+ruler in mm
+syringes (e.g. 1cm3, 5cm3, 10cm3)
+droppers or Pasteur pipettes
+measuring cylinders
+beakers
+Petri dishes
+test-tubes (some of which should be heat resistant)
+test-tube rack and holder
+boiling tubes
+boiling tube rack
+small containers
+glass rod
+corks or rubber bungs to fit test-tubes and boiling tubes
+knife or scalpel
+forceps
+cork borer (2 candidates to 1)
+capillary tubes
+vaseline/petroleum jelly (or similar)
+specimen tubes
+Visking tubing
+silicone tubing
+thermometer: ­10°C to +110°C
+stopwatch
+white tile
+filter paper and funnel
+mortar and pestle (2 candidates to 1)
+spatulas
+glass marker pen
+cotton wool
+black paper
+aluminium foil
+balance to 0.01g (to be made accessible to candidates)
+retort stand and clamp
+bench lamp
+distilled or deionised water
+microfuge tubes and rack
+
+                                                                        23
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+micropipettes (e.g. 20µl, 1000µl, etc.) (2 candidates to 1) and disposable tips
+inoculating loops
+agarose gel electrophoresis cell (including tank, lid, cables, gel tray, comb) and power supply (to be made
+
+      accessible to candidates)
+TAE/TBE buffer
+agarose powder
+nutrient medium
+The apparatus and material requirements for Paper 4 will vary year on year. Centres will be notified in advance
+of the details of the apparatus and materials required for each practical examination.
+Reagents
+This list given below has been drawn up in order to give guidance to centres concerning the standard reagents
+that are expected to be generally available for examination purposes. The list is not intended to be exhaustive,
+and centres will be notified in advance of the full list of all the reagents required for each practical examination.
+iodine in potassium iodide solution
+Benedict's solution
+biuret reagent
+sucrose (use AR for non-reducing sugar test)
+glucose
+starch
+potassium hydroxide
+sodium chloride
+dilute hydrochloric acid
+hydrogencarbonate indicator (bicarbonate indicator)
+sodium hydrogencarbonate (sodium bicarbonate)
+limewater
+Universal Indicator paper and chart litmus paper
+methylene blue
+DCPIP (2,6-dichlorophenolindophenol)
+
+                                                                        24
+                         9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+MATHEMATICAL REQUIREMENTS
+
+Questions set in the examination may involve the basic processes of mathematics for the calculation and use of
+decimals, means, ratios and percentages.
+
+Candidates may be required to (i) construct graphs or present data in other suitable graphical forms, and
+(ii) calculate rates of processes.
+
+Candidates should be aware of the problems of drawing conclusions from limited data and should appreciate
+levels of significance, standard deviation and probability, and the use of Ro value, Hardy­Weinberg equation
+(p2 + 2pq + q2 = 1), t- and chi-squared tests.
+
+Notes on the Use of Statistics in Biology
+
+Candidates should know how to apply a t-test and a chi-squared test. t-tests are of value in much of Biology,
+while the chi-squared test allows the evaluation of the results of breeding experiments and ecological sampling.
+Each of these tests is dealt with fully in many books on statistics for Biology.
+
+Candidates are not expected to remember the following equations or what the symbols stand for. They are
+expected to be able to use the equations to calculate standard deviations, to test for significant differences
+between the means of two small unpaired samples and to perform a chi-squared test on suitable data from
+genetics or ecology. Candidates will be given access to the equations, the meaning of the symbols, a t-table
+and a chi-squared table.
+
+standard deviation       s = (x - x)2
+                                   n -1
+
+t-test                   t = x12 - x22    v = n1 + n2 - 2
+                           s12     s22
+                           n1   +  n2   
+                                        
+
+2 test                     2 =  (O - E)2  v = c -1
+                                    E
+
+Key to symbols
+
+s* = standard deviation                    = `sum of'            x = mean
+
+n = sample size (number of observations) x = observation
+
+v = degrees of freedom                    O = observed `value'
+
+E = expected `value'                      c = number of classes
+
+* Candidates should note that on some calculators the symbol  may appear instead of the symbol s.
+
+Candidates are not expected to be familiar with the term standard error, nor to appreciate the difference
+between sn (n) and sn­1 (n­1). 2 tests will only be expected on one row of data. Candidates should have a brief
+
+understanding of what is meant by the term normal distribution and appreciate levels of significance. (Tables will
+be provided.) Questions involving the use of a t-test or 2 test may be set on Papers 1, 2 and 3. Questions
+
+involving an understanding of the use of the tests may be set on Paper 4, but detailed computation will not be
+
+required.
+
+Calculators
+
+Any calculator used must be on the Singapore Examinations and Assessment Board list of approved
+calculators.
+
+                                          25
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+TEXTBOOKS AND REFERENCES
+
+Alberts, B, Hopkin, K, Johnson, A, Morgan, D, Roberts, K, Walter, P and Heald, R (2023) Essential Cell Biology
+(Sixth Edition) (Norton) ISBN 9781324033486
+Alberts, B, Heald, R, Johnson, A, Morgan, D, Raff, M, Roberts, K, Walter, P, Wilson, J and Hunt, T (2022)
+Molecular Biology of the Cell (Seventh Edition) (Norton) ISBN 9780393427080
+Boohan, R and Needham, R (2016) The Language of Mathematics in Science: A Guide for Teachers of 11­16
+Science (Association for Science Education) ISBN 9780863574559
+www.ase.org.uk/mathsinscience
+Campbell, N, Urry, L, Cain, M, Wasserman, S A, Minorsky, P, and Reece, J (2018) Biology: A Global Approach
+(Eleventh Edition) ISBN 9781292170435
+Jones, M, Fosbery, R, Gregory, J and Taylor, D (2020) Cambridge International AS and A Level Biology
+Coursebook with Digital Access (Fifth Edition) (Cambridge University Press) ISBN 9781108859028
+Krebs, J E, Kilpatrick, S T and Goldstein, E S (2013) Lewin's Genes XI (Eleventh Revised Edition) (Jones and
+Bartlett) ISBN 1449659853
+Lodish, H, Berk, A, Kaiser, C A, Krieger, M, Bretscher, A, Ploegh, H, Amon, A and Scott, M P (2012) Molecular
+Cell Biology (Seventh Edition) (W H Freeman and Co) ISBN 142923413X
+Plopper, G, Sikorski, E and Sharp, D (2014) Lewin's Cells (Revised Third Edition) (Jones and Bartlett) ISBN
+1284029395
+Pomerville, J C (2013) Fundamentals of Microbiology (Tenth Edition) (Jones and Bartlett) ISBN 1284039684
+Raven, P H, Johnson, G B, Mason, K A, Losos, J and Duncan, T (2022) Biology (Thirteenth Edition)
+(McGraw-Hill) ISBN 1264097859
+Russell, P J, Hertz, P and McMillan, B (2013) Biology: The Dynamic Science (International Edition of Third
+Revised Edition) (Brooks/Cole) ISBN 1133592058
+Taylor, M R, Simon, E J, Dickey, J L and Hogan, K A (2021) Campbell Biology: Concepts and Connections
+(Tenth Edition) (Pearson) ISBN 11292401346
+Urry, L A, Cain, M L, Wasserman, S A, Minorsky, P V and Orr, R B (2020) Campbell Biology
+(Twelfth Edition) (Pearson Higher Education) ISBN 0135188741
+
+Evolution
+Dobzhansky, T (March 1973) Nothing in Biology Makes Sense Except in the Light of Evolution, American
+Biology Teacher 35(3):125­129
+
+Climate Change
+Alley, R B (2000) The Two-mile Time Machine (First Edition) (Princeton Science Library) ISBN 9780691160832
+Bickford, D, Howard, S D, Ng, D J J and Sheridan, J A (2010) Impacts of climate change on the amphibians and
+reptiles of Southeast Asia. Biodiversity and Conservation 19(4):1043­1062
+Hannah, L (2014) Climate Change Biology (Second Edition) (Academic Press) ISBN 9780124202184
+Sheridan, J A and Bickford, D P (2011) Shrinking body size as an ecological response to climate change.
+Nature Climate Change 1(8):401­406
+
+                                                                        26
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+GLOSSARY OF TERMS
+
+It is hoped that the glossary (which is relevant only to science subjects) will prove helpful to candidates as a
+guide; it is neither exhaustive nor definitive. The glossary has been deliberately kept brief not only with respect
+to the number of terms included but also to the descriptions of their meanings. Candidates should appreciate
+that the meaning of a term must depend in part on its context.
+
+1 Analyse is a context-specific term involving the identification of the constituent parts of a complex situation
+      or result, an assessment of their individual implications and a consideration of how these relate to one
+      another and to scientific knowledge and understanding. Analysis may require further processing of
+      mathematical data to reveal underlying trends and patterns.
+
+2 Calculate is used when a numerical answer is required. In general, working should be shown, especially
+      where two or more steps are involved.
+
+3 Classify requires candidates to group things based on common characteristics.
+
+4 Comment is intended as an open-ended instruction, inviting candidates to recall or infer points of interest
+      relevant to the context of the question, taking account of the number of marks available.
+
+5 Compare requires candidates to provide both the similarities and differences between things or concepts.
+
+6 Deduce is used in a similar way as predict except that some supporting statement is required, e.g.
+      reference to a law/principle, or the necessary reasoning is to be included in the answer.
+
+7 Define (the term(s) ...) is intended literally. Only a formal statement or equivalent paraphrase is required.
+
+8 Describe requires candidates to state in words (using diagrams where appropriate) the main points of the
+      topic. It is often used with reference either to particular phenomena or to particular experiments. In the
+      former instance, the term usually implies that the answer should include reference to (visual) observations
+      associated with the phenomena.
+
+      In other contexts, describe and give an account of should be interpreted more generally, i.e. the candidate
+      has greater discretion about the nature and the organisation of the material to be included in the answer.
+      Describe and explain may be coupled in a similar way to state and explain.
+
+9 Determine often implies that the quantity concerned cannot be measured directly but is obtained by
+      calculation, substituting measured or known values of other quantities into a standard formula, e.g. relative
+      molecular mass.
+
+10 Discuss requires candidates to give a critical account of the points involved in the topic.
+
+11 Draw is often used in the context of drawing biological specimens. This is an instruction to make a
+      freehand diagram to show the structures observed, as accurately as possible with respect to shape and
+      proportion. Lines delimiting distinct regions should be continuous.
+
+      In other contexts, this will require an accurate representation of the required subject according to the
+      applicable conventions and criteria, e.g. draw the structure of a molecule of glucose
+
+12 Estimate implies a reasoned order of magnitude statement or calculation of the quantity concerned, making
+      such simplifying assumptions as may be necessary about points of principle and about the values of
+      quantities not otherwise included in the question.
+
+13 Evaluate is a context-specific term requiring a critical use of information to make a judgement or
+      determination of a particular value or quality (e.g. accuracy). Evaluation of the validity of an experimental
+      procedure, a set of results or a conclusion involves an assessment of the extent to which the procedures,
+      results or conclusions are likely to obtain or represent a `true' outcome. This will require consideration of
+      the advantages and disadvantages, strengths and weaknesses, and limitations of the underlying approach,
+      as well as other relevant criteria as applicable, and their relative importance.
+
+14 Explain may imply reasoning or some reference to theory, depending on the context.
+
+                                                                        27
+                                   9477 BIOLOGY GCE ADVANCED LEVEL H2 SYLLABUS
+
+15 Find is a general term that may variously be interpreted as calculate, measure, determine, etc.
+16 Justify requires candidates to give reasoning in support of an answer (for example, a decision, conclusion,
+
+      explanation or claim), based on a consideration of available evidence, including experimental data,
+      together with relevant scientific knowledge and understanding.
+17 Label requires candidates to use an appropriate label (and labelling line, where necessary) to accurately
+      show the position of a structure, region or point within a diagram or graph, according to the requirements of
+      the assessment.
+18 List requires a number of points, generally each of one word, with no elaboration. Where a given number of
+      points is specified, this should not be exceeded.
+19 Measure implies that the quantity concerned can be directly obtained from a suitable measuring
+      instrument, e.g. length, using a rule, or angle, using a protractor.
+20 Outline implies brevity, i.e. restricting the answer to giving essentials.
+21 Predict implies that the candidate is not expected to produce the required answer by recall but by making a
+      logical connection between other pieces of information. Such information may be wholly given in the
+      question or may depend on answers extracted in an early part of the question.
+22 Recognise is often used to identify facts, characteristics or concepts that are critical (relevant/appropriate)
+      to the understanding of a situation, event, process or phenomenon.
+23 Sketch, when applied to graph work, implies that the shape and/or position of the curve need only be
+      qualitatively correct, but candidates should be aware that, depending on the context, some quantitative
+      aspects may be looked for, e.g. passing through the origin, having an intercept, asymptote or discontinuity
+      at a particular value.
+      In diagrams, sketch implies that a simple, freehand drawing is acceptable; nevertheless, care should be
+      taken over proportions and the clear exposition of important details.
+24 State implies a concise answer with little or no supporting argument, e.g. a numerical answer that can be
+      obtained `by inspection'.
+25 Suggest is used in two main contexts, i.e. either to imply that there is no unique answer (e.g. in chemistry,
+      two or more substances may satisfy the given conditions describing an `unknown'), or to imply that
+      candidates are expected to apply their general knowledge to a `novel' situation, one that may be formally
+      `not in the syllabus'.
+26 What is meant by (the term(s) ...) normally implies that a definition should be given, together with some
+      relevant comment on the significance or context of the term(s) concerned, especially where two or more
+      terms are included in the question. The amount of supplementary comment intended should be interpreted
+      in the light of the indicated mark value.
+
+                                                                        28
+

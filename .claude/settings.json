@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(Get-ChildItem -Path \"d:\\\\Examb\\\\Maths\\\\H2\\\\\" -Recurse | Select-Object FullName | Head -20)"
+      "Bash(Get-ChildItem -Path \"d:\\\\Examb\\\\Maths\\\\H2\\\\\" -Recurse | Select-Object FullName | Head -20)",
+      "Bash(Get-ChildItem \"d:\\\\Examb\\\\inputs\" -Directory)",
+      "Bash(Select-Object Name)",
+      "PowerShell($subjects = @\\(\"Biology\", \"Chemistry\", \"CSC\", \"GP\", \"Maths\"\\); foreach \\($s in $subjects\\) { Write-Host \"$\\($s\\):\"; Get-ChildItem \"d:\\\\Examb\\\\inputs\\\\$s\" -Directory | Select-Object Name })",
+      "PowerShell(Write-Host \"=== BIOLOGY H2 ===\"; \\(Get-ChildItem \"d:\\\\Examb\\\\inputs\\\\Biology\\\\H2\" -Directory\\).Name; Write-Host \"`n=== CHEMISTRY H2 ===\"; \\(Get-ChildItem \"d:\\\\Examb\\\\inputs\\\\Chemistry\\\\H2\" -Directory\\).Name; Write-Host \"`n=== CSC H2 ===\"; \\(Get-ChildItem \"d:\\\\Examb\\\\inputs\\\\CSC\\\\H2\" -Directory\\).Name; Write-Host \"`n=== GP H1 ===\"; \\(Get-ChildItem \"d:\\\\Examb\\\\inputs\\\\GP\\\\H1\" -Directory\\).Name; Write-Host \"`n=== MATHS H2 ===\"; \\(Get-ChildItem \"d:\\\\Examb\\\\inputs\\\\Maths\\\\H2\" -Directory\\).Name)"
     ]
   }
 }
