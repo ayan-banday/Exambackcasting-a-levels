@@ -61,7 +61,7 @@ The playbook combines all existing feedback rules Ethan has locked in:
 
 **Location:** `[Subject]/[Level]/[Topic]/tests/model_test_[N].html` (updated 2026-07-05 — HTML format per Ethan's rule).
 
-**Format rule (locked 2026-07-05):** All model tests generated as **HTML files** styled like actual Cambridge/SEAB exam papers. Self-contained HTML with embedded CSS: white background, clean serif font (e.g., Georgia or Times New Roman), black text, official-style header (subject + code + paper + duration + marks), page-break-ready layout for print. Do NOT auto-open in Chrome — Ethan opens when ready to attempt. Matches Study Agent CLAUDE.md "HTML OUTPUT RULE" for exam papers.
+**Format rule (locked 2026-07-05, updated 2026-07-06):** All model tests generated as **HTML files** styled like actual Cambridge/SEAB exam papers. Self-contained HTML with embedded CSS: white background, clean serif font (e.g., Georgia or Times New Roman), black text, official-style header (subject + code + paper + duration + marks), page-break-ready layout for print. **ALWAYS auto-open the HTML file in the default browser after generation** (`open [path]` on macOS) so Ethan sees it immediately. Matches Study Agent CLAUDE.md "HTML OUTPUT RULE" for exam papers.
 
 Exception: `model_test_1.md` (Governance, 2026-07-05) stays as markdown since Ethan explicitly opted out for this one.
 

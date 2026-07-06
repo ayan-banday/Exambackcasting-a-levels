@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>H2 CSC 9629 — Model Test 1 (Governance)</title>
+<style>
+  @page {
+    size: A4;
+    margin: 20mm 25mm;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Georgia", "Times New Roman", "SimSun", "宋体", serif;
+    color: #000;
+    background: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 50px;
+    line-height: 1.7;
+    font-size: 12pt;
+  }
+  .exam-header {
+    text-align: center;
+    border-bottom: 3px double #000;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  .board-name {
+    font-size: 10pt;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 0 0 4px 0;
+    color: #333;
+  }
+  .subject-title {
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 10px 0 4px 0;
+    letter-spacing: 1px;
+  }
+  .subject-title-cn {
+    font-size: 14pt;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+    letter-spacing: 3px;
+  }
+  .subject-code {
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 8px 0;
+  }
+  .paper-info {
+    font-size: 12pt;
+    margin: 6px 0;
+  }
+  .paper-info span {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  .exam-metadata {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    margin: 20px 0;
+    font-size: 11pt;
+  }
+  .exam-metadata div {
+    text-align: center;
+    flex: 1;
+  }
+  .exam-metadata .label {
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #555;
+  }
+  .exam-metadata .value {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 2px;
+  }
+  h2 {
+    font-size: 13pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 6px;
+    margin: 30px 0 15px 0;
+  }
+  h3 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+  }
+  .instructions {
+    background: #f9f9f9;
+    border-left: 3px solid #000;
+    padding: 15px 20px;
+    margin: 15px 0 30px 0;
+    font-size: 11pt;
+  }
+  .instructions ol {
+    margin: 8px 0 0 0;
+    padding-left: 25px;
+  }
+  .instructions li {
+    margin: 6px 0;
+  }
+  .question-block {
+    margin: 40px 0;
+    padding: 25px 30px;
+    border: 2px solid #000;
+    background: #fdfdfd;
+    page-break-inside: avoid;
+  }
+  .question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #666;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+  }
+  .question-number {
+    font-size: 16pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  .question-marks {
+    font-size: 11pt;
+    font-style: italic;
+    color: #444;
+  }
+  .question-type-badge {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 3px 12px;
+    font-size: 10pt;
+    letter-spacing: 2px;
+    margin: 4px 0 12px 0;
+  }
+  .question-stem {
+    font-size: 14pt;
+    line-height: 1.9;
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 15px 20px;
+    background: #fff;
+    border-left: 4px solid #000;
+  }
+  .question-directive {
+    font-size: 12pt;
+    font-style: italic;
+    margin-top: 15px;
+    color: #333;
+  }
+  .rubric-note {
+    font-size: 10pt;
+    color: #666;
+    font-style: italic;
+    margin-top: 20px;
+    padding-top: 12px;
+    border-top: 1px dashed #999;
+  }
+  .divider {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 40px 0;
+  }
+  .footer {
+    text-align: center;
+    font-size: 10pt;
+    color: #666;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+  }
+  .end-of-paper {
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin: 50px 0 20px 0;
+    padding: 15px 0;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+  .checklist-box {
+    background: #fdfdfd;
+    border: 1px solid #999;
+    padding: 20px 25px;
+    margin: 30px 0;
+    font-size: 10.5pt;
+  }
+  .checklist-box h3 {
+    margin-top: 0;
+    font-size: 11pt;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #666;
+    padding-bottom: 6px;
+  }
+  .checklist-box ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0;
+  }
+  .checklist-box li {
+    padding: 4px 0 4px 25px;
+    position: relative;
+  }
+  .checklist-box li:before {
+    content: "☐";
+    position: absolute;
+    left: 0;
+    font-size: 12pt;
+  }
+  @media print {
+    body {
+      padding: 0;
+    }
+    .question-block {
+      page-break-inside: avoid;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="exam-header">
+  <p class="board-name">Singapore–Cambridge General Certificate of Education</p>
+  <p class="board-name">Advanced Level (Higher 2)</p>
+  <p class="subject-title">China Studies in Chinese</p>
+  <p class="subject-title-cn">中 国 通 识</p>
+  <p class="subject-code">9629 / 02</p>
+  <p class="paper-info"><span>Paper 2 — Essay</span> <span>Model Test 1</span></p>
+</div>
+
+<div class="exam-metadata">
+  <div>
+    <div class="label">Duration</div>
+    <div class="value">2 h 30 min</div>
+  </div>
+  <div>
+    <div class="label">Total Marks</div>
+    <div class="value">90</div>
+  </div>
+  <div>
+    <div class="label">Questions</div>
+    <div class="value">Answer ALL 3</div>
+  </div>
+  <div>
+    <div class="label">Topic</div>
+    <div class="value">中国的治理</div>
+  </div>
+</div>
+
+<h2>Instructions to Candidates / 考生指示</h2>
+
+<div class="instructions">
+  <p><strong>Read these instructions first / 请先阅读以下指示:</strong></p>
+  <ol>
+    <li>用中文作答. 每题作答时间建议约 <strong>45 分钟</strong> (含规划). 总时长 2 h 30 min (含 5 分钟阅读时间).</li>
+    <li>本套模拟卷 涵盖 治理 topic 全部内容 — Cluster 1 (Foundation & Power Structure) + Cluster 2 (Constraining Unchecked Power) + Cluster 3 (Managing Society, Voice and Identity) + Master Synthesis.</li>
+    <li>每题 30 分, 共 3 题 总分 90 分.</li>
+    <li>作答前 请先阅读所有 3 题 (5 min), 再决定作答顺序.</li>
+    <li>参考 <em>_tixing_methodology.md §§12-18</em> 的 段落蓝图 与 <em>Governance_Master_Synthesis.md §11</em> 的 quick recall.</li>
+    <li>语音输入 (Wispr Flow) 可接受 — 提交时附 Loom transcript.</li>
+    <li>每篇 essay 结尾附 self-audit (8 elements) 与 self-rating (C 或 U).</li>
+  </ol>
+</div>
+
+<hr class="divider">
+
+<h2>Coverage Map / 覆盖图</h2>
+
+<table style="width:100%; border-collapse:collapse; font-size:11pt; margin: 15px 0;">
+  <thead>
+    <tr style="background:#eee;">
+      <th style="border:1px solid #000; padding:8px; text-align:center;">Q</th>
+      <th style="border:1px solid #000; padding:8px; text-align:left;">题型</th>
+      <th style="border:1px solid #000; padding:8px; text-align:left;">主要 Cluster</th>
+      <th style="border:1px solid #000; padding:8px; text-align:left;">核心 concepts required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #000; padding:8px; text-align:center;"><strong>1</strong></td>
+      <td style="border:1px solid #000; padding:8px;">最字题</td>
+      <td style="border:1px solid #000; padding:8px;">Cluster 1 root + 全 topic 综合</td>
+      <td style="border:1px solid #000; padding:8px;">阿克顿 + 5 ceilings + 党国体制 6 特征 + REFRAME move + 苏东巨变</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #000; padding:8px; text-align:center;"><strong>2</strong></td>
+      <td style="border:1px solid #000; padding:8px;">是非题</td>
+      <td style="border:1px solid #000; padding:8px;">Cluster 2 + Cluster 1 连接</td>
+      <td style="border:1px solid #000; padding:8px;">5 institutional mechanisms + 18届4中 + 民法典 + 国监委 + 老虎案例 + 一把手 + 灯下黑</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #000; padding:8px; text-align:center;"><strong>3</strong></td>
+      <td style="border:1px solid #000; padding:8px;">是非题</td>
+      <td style="border:1px solid #000; padding:8px;">Cluster 3 + 政绩合法性 root</td>
+      <td style="border:1px solid #000; padding:8px;">亨廷顿 + 中产 4→42.3% + Mode 1/2 + 12345 三率 + 4E + 全过程人民民主 + 白纸 2022</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="divider">
+
+<div class="question-block">
+  <div class="question-header">
+    <span class="question-number">Question 1</span>
+    <span class="question-marks">[30 marks]</span>
+  </div>
+  <span class="question-type-badge">最 字 题</span>
+  <div class="question-stem">
+    「权力不受制约 是 当代中国治理面临的 最根本挑战.」
+  </div>
+  <p class="question-directive">试评价此观点. / 请以此题为讨论对象作答.</p>
+  <div class="rubric-note">
+    <strong>Structural expectations (per 题型 methodology §13):</strong><br>
+    — 立场分析: 阐述题目因素 (权力不受制约) 的核心作用 + 引入 2 其他因素 (e.g. 央地失衡 + 政绩困局)<br>
+    — 平衡分析: 客观呈现其他因素 之作用力<br>
+    — 比较分析: 系统对比 题目因素 vs 其他因素 (逐个)<br>
+    — 结论: 明确界定 是否 最根本
+  </div>
+</div>
+
+<div class="question-block">
+  <div class="question-header">
+    <span class="question-number">Question 2</span>
+    <span class="question-marks">[30 marks]</span>
+  </div>
+  <span class="question-type-badge">是 非 题</span>
+  <div class="question-stem">
+    「十八届四中全会 (2014) 以来的 法治体系建设 与 制度反腐 已 系统性化解 了 党国体制 的结构性弊端.」
+  </div>
+  <p class="question-directive">试加以评论.</p>
+  <div class="rubric-note">
+    <strong>Structural expectations (per 题型 methodology §12):</strong><br>
+    — 立场分析: 3 分论点 支持你的立场 (each: 机制 + 数据 + 案例 + 小结)<br>
+    — 平衡分析: 真实呈现对立面 (1 完整段, 不是象征一句)<br>
+    — 比较分析: 逐个驳倒 对立方 分论点 (3 rebuttals, 250-300 字)<br>
+    — 结论: 重申立场 + 跨课题 一句
+  </div>
+</div>
+
+<div class="question-block">
+  <div class="question-header">
+    <span class="question-number">Question 3</span>
+    <span class="question-marks">[30 marks]</span>
+  </div>
+  <span class="question-type-badge">是 非 题</span>
+  <div class="question-stem">
+    「中国的 服务型政府建设 与「全过程人民民主」 已 充分 回应 了 中产阶级 新型诉求.」
+  </div>
+  <p class="question-directive">试加以评论.</p>
+  <div class="rubric-note">
+    <strong>Structural expectations (per 题型 methodology §12):</strong><br>
+    — 立场分析: 3 分论点 (亨廷顿 政绩困局 + Mode 1 vs Mode 2 + 全过程人民民主 局限)<br>
+    — 平衡分析: 承认 Mode 1 组合 真实成就 (4E + 12345 + 接诉即办 + 一网通办 + 千万工程)<br>
+    — 比较分析: 系统对比 短期 vs 长期; 服务 vs 政治问责<br>
+    — 结论: 明确 verdict + 结构性 paradox
+  </div>
+</div>
+
+<div class="checklist-box">
+  <h3>Self-Audit Checklist / 提交前自审清单</h3>
+  <p style="font-size:10.5pt; margin-bottom:12px;">每篇 essay 结尾附上此 checklist. Mark <strong>C</strong> ONLY if all 8 present; otherwise <strong>U</strong>.</p>
+  <ul>
+    <li><strong>立场 upfront</strong> — 第一段 第一句 明确 verdict</li>
+    <li><strong>3+ 立场分论点</strong> — 每段 含 机制 + 数据 + 案例</li>
+    <li><strong>≥3 数据锚</strong> — 具体数字 + 年份 (中产 4→42.3% / 维稳费 1.4 万亿 / 12345 三率 90%+ / 民法典 1,260 条 等)</li>
+    <li><strong>≥2 命名案例</strong> — 名字 + 年 + 结果 (周永康 2014 无期 / 白纸 2022 / 教培中心 100 万+ 等)</li>
+    <li><strong>平衡分析 段</strong> — 完整段 (150-180 字), 非象征一句</li>
+    <li><strong>比较分析 段</strong> — 逐个驳倒, 3 rebuttals, 250-300 字 (THE Tier 4/5 unlocker)</li>
+    <li><strong>跨课题 一句</strong> — governance → 经济 (default) / 外交 (民族) / 社会稳定 (参与)</li>
+    <li><strong>结论 重申立场</strong> — 与 ¶1 一致 + 升华</li>
+  </ul>
+</div>
+
+<div class="end-of-paper">— END OF PAPER —</div>
+
+<div class="footer">
+  <p>H2 China Studies in Chinese · 9629 · Model Test 1 · Generated 2026-07-06</p>
+  <p>Source: Governance topic clusters (Foundation + Constraining + Society + Master Synthesis)</p>
+</div>
+
+</body>
+</html>
