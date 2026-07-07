@@ -44,3 +44,23 @@ Source: `/Applications/Claude Code Workspace/Study Agent/CSC/2025 高二问答�
 - Q20: 完善公共服务 推动国家治理 重要支撑 (是非) — 缺位/越位/错位 typology
 
 Awaiting Ethan's 5-day study + rewrite attempt or next mock exam.
+
+---
+
+## 2026-07-08 — Added §8 Causal "WHY" Chains (understanding gap patch)
+
+Ethan explicitly flagged 4 understanding gaps not covered by verbatim memorization:
+
+1. **Why 少数民族 might be 最根本 挑战? Why or why not?** — Answer: NOT root; it's DERIVED symptom of 使命型政党 + 苏东教训 三重锁. Full 5-layer causal chain unpacked.
+
+2. **Why 上有政策下有对策 happens? What CAUSES 央地 problems?** — Answer: 5-layer chain (单一制大国 + 财权事权倒挂 + GDP晋升锦标赛 + 地方双重身份 + 无央地基本法). Deep root = 党主法治 是因, 央地博弈 是果 (TNT Q14).
+
+3. **What IS 单点故障?** — Full mechanism: 决策集中 + 无独立纠错机制 → 错误持续+放大. Zero-COVID case fully unpacked (Shanghai 2600万 + 23 cities + 1.93亿 + Guizhou 27 dead + 白纸 forcing reversal).
+
+4. **Why is 党国体制 bad? What causes it? What are results?** — 6 parts (Definition, Historical origins, 5 弊端, Results, Why reform impossible via 苏东+使命型+阿克顿 三锁, Deployment sentence).
+
+New §8 addresses UNDERSTANDING gaps, not memorization gaps. Ethan can memorize 亨廷顿 政绩困局 term without understanding the causal chain. §8 unpacks the mechanism behind key concepts.
+
+Renumbered old §8→§9, §9→§10, §10→§11, §11→§12, §12→§13, §13→§14, §14→§15.
+
+**Now 15 total sections.** §8 is the "why" layer between memorization (§§1-7) and specific-essay maps (§§9-11).
