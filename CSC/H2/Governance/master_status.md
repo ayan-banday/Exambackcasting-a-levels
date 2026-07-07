@@ -30,6 +30,39 @@ Last updated: 2026-06-14 | Session 1 (Cluster 1 study + questions issued, awaiti
 - ✅ Tactical_Essay_Deployment (built 2026-06-24 from Cluster 2 patterns) — DEPLOYMENT-focused cluster fixing the Tier 三 ceiling pattern (立场 upfront discipline, 5-element checklist enforcement, transition phrase library, mandatory deploy set, concepts-you-keep-missing drill list, pre-submission audit, time budget)
 - ✅ Cluster 3: Managing_Society_Voice_and_Identity (built 2026-06-24; 4 pillars: 公共服务+回应 / 民族 / 网络 / 政治参与; 12 sections covering structural ceiling, Mode 1 vs Mode 2 framework, default 立场 cheat sheet for 15 stem patterns, data canon, case bank by use case) — 5-Q test COMPLETE 2026-07-03
 - ✅ **Governance_Master_Synthesis** (built 2026-07-03 from Cluster 3 test knowledge-gap analysis + Cluster 1-2 forgotten content review) — THE synthesis cluster. Contains: 8 scholars with attribution + 6 core frameworks + 25 data anchors + 30 named cases + 5 governance ceilings + 3 cross-topic chains + verdict templates by 6 stem types + 5 universal sentences (verbatim) + universal 6-paragraph structure + 10 common deployment failures + quick recall + 3 extended synthesis questions (§12). Read before ANY governance essay + day before exam.
+- ✅ **Essay_Craft_Mastery** (built 2026-07-07 from Model Test 1 Loom transcript analysis) — THE craft layer cluster. 9 sections targeting: 比较分析 5-step formula + 3 worked examples; 平衡 段 5-step formula + worked example; 党国体制 6 弊端 unpacked; 腐败 5-cause chain; 30-sec pre-writing scan + 8 救命句 + 20-Q self-quiz; 3 立场 分论点 template menu by stem type; mid-exam recovery moves. Read alongside Master Synthesis before rewriting Q1-Q3 or next mock.
+
+### 2026-07-07 Model Test 1 COMPLETE — session summary
+
+**3 essays graded (severity applied):**
+- Q1 (最字题, 权力不受制约 最根本): **18/30** (Tier 三 upper) — length 48% + only 1 立场 分论点 + 4 factual errors (14届4→十八届四中; 朱镕基 1984→1994 分税制; 周黎会→周黎安; 使命型政府→政党)
+- Q2 (是非题, 十八届四中 以来 法治+反腐 已系统化解 党国体制): **20/30** (Tier 4 lower) — NAMING breakthrough (4 scholars deployed); length 65%; 2 factual errors (阿克顿 verbatim; 709 律师 misframed as 反对党 organizers)
+- Q3 (是非题, 服务型政府 + 全过程人民民主 已充分回应 中产诉求): **20/30** (Tier 4 lower) — plateau; 3 factual errors (2027年→2024; 12346→12345; 民主监督即民主管理→+ 民主管理); 平衡 段 drifts to 民族 topic (off-stem)
+
+**Session total: 58/90 (64%)** — Tier 4 lower band average.
+
+**5 gaps Ethan explicitly flagged in Loom:**
+1. 比较分析 methodology — biggest gap, mentioned multiple times ("I have no idea how to do it")
+2. 党国体制 结构性弊端 — only recalled 2 of 6 (不受制约权力 + 单点故障)
+3. Corruption 根源 — "how do you explain why does corruption happen?"
+4. 平衡 段 development — completely lost mid-段
+5. Pre-writing structure — no 30-sec scan
+
+### 3 recurring habits LOCKED (across Q1-Q3)
+- 立场 upfront ✓ (3/3)
+- Historical comparison (韩国/西班牙/苏东) ✓ (3/3)
+- REFRAME instinct ✓ (3/3)
+- 亨廷顿 政绩困局 mechanism ✓ (2/3, dropped in Q1)
+
+### 3 recurring gaps STILL ACTIVE (across Q1-Q3)
+- Only 2 立场 分论点 (0/3 hit 3)
+- 比较 段 lacks 首先/其次 rebuttal-by-rebuttal structure (0/3 clean)
+- Length 2,000+ 字 (0/3 hit target — best was Q3 at 68%)
+
+### Next-step options
+1. Rewrite Q1-Q3 with Essay_Craft_Mastery + Master Synthesis to hit Tier 5 (26+/30)
+2. Attempt Model Test 2 on different governance stems
+3. Move to CSC 经济/社会/外交 clusters (governance topic content-complete)
 
 ### 2026-07-03 Cluster 3 test COMPLETE — pattern summary
 
