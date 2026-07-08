@@ -12,7 +12,12 @@ sheet for the big picture. Templates: `templates/cluster_study_sheet.template.md
 ## Cluster breakdown (do this first, once)
 
 1. From the topic `examiner_guide.md` content node map, design **named clusters** — real content
-   names (`Dimensional_Analysis`, `Homogeneity_Of_Equations`), **never** `Cluster_1`.
+   names (`Dimensional_Analysis`, `Homogeneity_Of_Equations`), **never** `Cluster_1`. The folder
+   name **prefixes the content name with the study-order number** — `01_Dimensional_Analysis/`,
+   `02_Homogeneity_Of_Equations/` — so a "cluster 3" ask is directly resolvable. Zero-pad to two
+   digits. Parallel gap-closers at the same slot use a letter suffix (`04b_...`). Off-sequence
+   clusters (synthesis, gap, mastery, discipline layers with no fixed slot) use a `gap_` or
+   `synthesis_` prefix instead of a number.
 2. Count by breadth: **narrow → 3–4**, medium → 4–6, **wide → 5–7**.
 3. Clusters must be **collectively exhaustive** — together they cover every node in the guide, so
    that once all are studied, every testable thing is accounted for. **Cross-check the breakdown
@@ -39,9 +44,10 @@ and tag anything not traceable to a source `[INFERRED]` (`spec.md` §13). Copy t
 - **Examiner's angle** — how this cluster is *typically tested*, pulled from the examiner's guide.
 - **Common misconceptions** — the traps from the trap model that apply here.
 
-Write to `[Topic]/clusters/[Cluster_Name]/study_sheet.md`. May be regenerated later (e.g. when flags
-show it's weak) but **never deleted.** Also create an empty `flags.md` in the cluster folder if one
-doesn't exist (it's appended to during sessions).
+Write to `[Topic]/clusters/[NN_Cluster_Name]/cluster_NN_study_sheet.md` (or `cluster_gap_...` /
+`cluster_synthesis_...` for off-sequence clusters). May be regenerated later (e.g. when flags show
+it's weak) but **never deleted.** Also create an empty `cluster_NN_flags.md` in the cluster folder
+if one doesn't exist (it's appended to during sessions).
 
 ---
 

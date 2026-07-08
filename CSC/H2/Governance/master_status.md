@@ -4,7 +4,7 @@ Last updated: 2026-06-14 | Session 1 (Cluster 1 study + questions issued, awaiti
 ---
 
 ## 2026-06-14 update
-- Cluster 1 (Foundation_and_Power_Structure) study sheet built at `clusters/Foundation_and_Power_Structure/study_sheet.md`
+- Cluster 1 (Foundation_and_Power_Structure) study sheet built at `clusters/01_Foundation_and_Power_Structure/cluster_01_study_sheet.md`
 - 10 adversarial questions issued (efficient coverage: 因素是非题 ×3, 是非题 ×3, 最字题 ×1, 程度题 ×1, 条件题 ×1, 比较题 ×1)
 - Old `Party_State_System_and_Legitimacy/` cluster Ayan pre-built is now superseded by Foundation_and_Power_Structure (covers the same node + more)
 
@@ -126,7 +126,7 @@ Re-attempts + new question set graded:
 - Forgetting key mechanisms by name (接诉即办, Level 2 of hierarchy, 网格化)
 
 ### Cluster built this session
-**Tier_Four_Discipline_and_Precision** at `clusters/Tier_Four_Discipline_and_Precision/study_sheet.md` — targets ALL recurring pattern errors. 11 sections covering: two axes (党政 vs 央地), 4-phase 党政关系 evolution, trap concept family, 公共服务 definition, complete responsiveness map, 6-level demand hierarchy, case bank by use case, data canon by use case, 5-element checklist, uncertain-term discipline, default 立场 cheat sheet.
+**Tier_Four_Discipline_and_Precision** at `clusters/gap_Tier_Four_Discipline_and_Precision/cluster_gap_study_sheet.md` — targets ALL recurring pattern errors. 11 sections covering: two axes (党政 vs 央地), 4-phase 党政关系 evolution, trap concept family, 公共服务 definition, complete responsiveness map, 6-level demand hierarchy, case bank by use case, data canon by use case, 5-element checklist, uncertain-term discipline, default 立场 cheat sheet.
 
 ### Cluster coverage status
 - ✅ Cluster 1: Foundation_and_Power_Structure (built 2026-06-14)

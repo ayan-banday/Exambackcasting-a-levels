@@ -79,9 +79,9 @@ Before submitting each essay, check ALL 8: / 提交每篇 essay 前, 全部 8 �
 
 **Open before start (30 min prep review) / 开始前打开 (30 分钟准备复习):**
 
-1. `../clusters/Governance_Master_Synthesis/study_sheet.md` — §11 quick recall (1 page)
+1. `../clusters/synthesis_Governance_Master/cluster_synthesis_study_sheet.md` — §11 quick recall (1 page)
 2. `../_memorization_reference.md` — §1 recurring errors + §5 default 立场 cheat sheet
-3. `../clusters/Governance_Master_Synthesis/study_sheet.md` — §7 verdict templates by stem pattern
+3. `../clusters/synthesis_Governance_Master/cluster_synthesis_study_sheet.md` — §7 verdict templates by stem pattern
 
 **Do NOT open during timed writing.** Reference is for prep only.
 

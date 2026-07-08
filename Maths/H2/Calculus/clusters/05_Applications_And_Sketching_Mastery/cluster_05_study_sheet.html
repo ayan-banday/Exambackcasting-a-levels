@@ -647,7 +647,7 @@
 <div class="card" id="c8">
   <h3>Question 8</h3>
   <div class="block example"><div class="label">Example</div>
-    <div class="stem">A container is modelled by rotating the region bounded by \( y = 2 + \ln(1 + x) \), the y-axis, and the line \( y = 2 + \ln 3 \), about the y-axis (dimensions in cm).<br>(i) Sketch the region and identify the solid formed. <span class="marks">[2]</span><br>(ii) Show that the volume of the container is \( \pi(3\ln 3 - 2) \) cm³. <span class="marks">[6]</span><br>(iii) The container is filled with liquid from empty at a constant rate of 4 cm³/s. Find the rate at which the depth is increasing when the depth is \( 2 + \ln 2 \) cm. <span class="marks">[5]</span></div>
+    <div class="stem">A container is modelled by rotating the region bounded by \( y = 2 + \ln(1 + x) \), the y-axis, and the line \( y = 2 + \ln 3 \), about the y-axis (dimensions in cm).<br>(i) Sketch the region and identify the solid formed. <span class="marks">[2]</span><br>(ii) Show that the volume of the container is \( \pi\ln 3 \) cm³. <span class="marks">[6]</span><br>(iii) The container is filled with liquid from empty at a constant rate of 4 cm³/s. Find the rate at which the depth is increasing when the depth is \( 2 + \ln 2 \) cm. <span class="marks">[5]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Solution with mark scheme</div>
@@ -676,7 +676,7 @@
       <div class="step"><div class="step-header">Step 6 — Multiply by π</div>
         <div class="step-desc"><span class="mark-step">A1</span></div>
         \( V = \pi\ln 3 \).<br>
-        <em>Discrepancy check with the stated answer \( \pi(3\ln 3 - 2) \) — this appears to be for a different region setup (e.g. rotation about x-axis, or bounded differently). For our setup, \( V = \pi\ln 3 \) cm³.</em>
+Matches the target. ✓
       </div>
       <div class="step"><div class="step-header">Step 7 — (iii) Connected rates</div>
         <div class="step-desc">\( \dfrac{dV}{dh} \) via \( V(h) = \pi\int_{2}^{h}(e^{y-2} - 1)^{2}\,dy \). By FTC: \( \dfrac{dV}{dh} = \pi(e^{h-2} - 1)^{2} \). <span class="mark-step">M1 M1</span></div>
@@ -689,14 +689,14 @@
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
   <div class="block practice"><div class="label">Practice</div>
-    <div class="stem">A drinking cup is modelled by rotating the region bounded by \( y = 3\sqrt{x} \), the y-axis, and the line \( y = 6 \), about the y-axis (dimensions cm).<br>(i) Show that the volume of the cup is \( \dfrac{16\pi}{5} \) cm³. Wait: verify against actual computation. <span class="marks">[5]</span><br>(ii) The cup is being filled at 2 cm³/s. Find the rate at which the depth is increasing when the depth is 3 cm. <span class="marks">[5]</span></div>
+    <div class="stem">A drinking cup is modelled by rotating the region bounded by \( y = 3\sqrt{x} \), the y-axis, and the line \( y = 6 \), about the y-axis (dimensions cm).<br>(i) Show that the volume of the cup is \( \dfrac{96\pi}{5} \) cm³. <span class="marks">[5]</span><br>(ii) The cup is being filled at 2 cm³/s. Find the rate at which the depth is increasing when the depth is 3 cm. <span class="marks">[5]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Answer with mark scheme</div>
       <div class="step"><div class="step-header">Step 1 — (i)</div>
         <div class="step-desc">Rearrange: \( y = 3\sqrt{x} \Rightarrow x = y^{2}/9 \Rightarrow x^{2} = y^{4}/81 \). <span class="mark-step">M1</span></div>
         \( V = \pi\int_{0}^{6}\dfrac{y^{4}}{81}\,dy = \dfrac{\pi}{81}\cdot\dfrac{y^{5}}{5}\Big|_{0}^{6} = \dfrac{\pi \cdot 7776}{405} = \dfrac{7776\pi}{405} \).<br>
-        Simplify: \( 7776/405 = 19.2 = 96/5 \). So \( V = \dfrac{96\pi}{5} \) cm³. <em>Not the stated \( 16\pi/5 \) — always sanity-check.</em>
+        Simplify: \( 7776/405 = 96/5 \). So \( V = \dfrac{96\pi}{5} \) cm³. Matches. ✓
       </div>
       <div class="step"><div class="step-header">Step 2 — (ii)</div>
         <div class="step-desc">FTC. <span class="mark-step">M1 M1</span></div>
@@ -757,7 +757,7 @@
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
   <div class="block practice"><div class="label">Practice</div>
-    <div class="stem">Find \( \displaystyle\int x^{2}e^{x}\sin x\,dx \). (Hint: this is TRIPLE product. First use IBP on \( x^{2} \) vs \( e^{x}\sin x \), then apply the standard cyclic IBP result to the remaining integral.) <span class="marks">[10]</span></div>
+    <div class="stem">Find \( \displaystyle\int x^{2}e^{x}\sin x\,dx \). <span class="marks">[10]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Answer with mark scheme</div>

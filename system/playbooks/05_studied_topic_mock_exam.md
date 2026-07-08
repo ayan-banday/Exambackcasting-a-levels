@@ -14,7 +14,7 @@ Reading this playbook confirms the workflow. When Ethan says "confirm you unders
 
 **The 6-step pipeline:**
 
-1. **Topic scoping** — Ethan lists topics. You read each topic's `examiner_guide.md` + latest `master_status.md` + `Governance_Master_Synthesis/study_sheet.md` (or equivalent synthesis cluster). Identify covered clusters + covered nodes + P1 gap history.
+1. **Topic scoping** — Ethan lists topics. You read each topic's `examiner_guide.md` + latest `master_status.md` + `synthesis_Governance_Master/cluster_synthesis_study_sheet.md` (or equivalent synthesis cluster — off-sequence clusters use the `synthesis_` / `gap_` prefix). Identify covered clusters + covered nodes + P1 gap history.
 
 2. **Exam design** — Build 3-question mock (default) at 30 marks each. Distribute question types per subject's real paper archetype (e.g., CSC 9629: 因素是非题 + 是非题 + 程度题 + 最字题 + 比较题 + 条件题 mix). Ensure ONE question per major cluster + ONE synthesis/comparative question. NO hints in stems.
 
@@ -32,9 +32,9 @@ Reading this playbook confirms the workflow. When Ethan says "confirm you unders
 
 6. **File updates (mandatory after every mock exam)**:
    - `[Topic]/master_status.md` — APPEND mock exam results block: date + 3 scores + patterns
-   - `clusters/[relevant_cluster]/flags.md` — APPEND per-question P1 flags with state (ACTIVE / FRAGILE / CLOSED)
+   - `clusters/[NN_relevant_cluster]/cluster_NN_flags.md` — APPEND per-question P1 flags with state (ACTIVE / FRAGILE / CLOSED)
    - `[Topic]/_memorization_reference.md` — UPDATE §1 recurring errors if new patterns emerged; add §X entries if new concepts surfaced
-   - `Governance_Master_Synthesis/flags.md` (or equivalent) — APPEND cross-cluster pattern findings
+   - `synthesis_Governance_Master/cluster_synthesis_flags.md` (or equivalent synthesis/gap cluster) — APPEND cross-cluster pattern findings
 
 **Never overwrite. Always append.** Playbooks 03/04 remain in effect for file protocols.
 

@@ -146,13 +146,18 @@ gaps/          [Subject]/[H2|H1]/[Topic]_gaps.md                                
     subject_examiner_guide.md
     [Topic_Name]/
         examiner_guide.md · pre_study_sheet.md · master_status.md
-        clusters/[Cluster_Name]/{study_sheet.md, flags.md}
+        clusters/[NN_Cluster_Name]/{cluster_NN_study_sheet.md, cluster_NN_flags.md}
         tests/{model_test_[N].md, official_[year].md}
 ```
 
-**Naming:** underscores, no spaces. Topic and cluster names are **real content names**
-(`Dimensional_Analysis`, never `Cluster_1`). Tests named by type and year (`model_test_1.md`,
-`official_2023.md`).
+**Naming:** underscores, no spaces. Topic names are real content names (`Dimensional_Analysis`).
+Cluster folders keep the content name but are **prefixed by study-order number**:
+`03_Differential_Equations/`, not `Differential_Equations/` and not `Cluster_3/`. Zero-pad to two
+digits. Parallel gap-closers at the same slot use a letter suffix (`04b_...`). Off-sequence
+clusters (synthesis, gap, mastery, discipline layers with no fixed slot) use a `gap_` or
+`synthesis_` prefix instead of a number. Inner files mirror the prefix:
+`cluster_03_study_sheet.md`, `cluster_03_flags.md`, or `cluster_gap_...` / `cluster_synthesis_...`.
+Tests named by type and year (`model_test_1.md`, `official_2023.md`). Full rationale in `spec.md` §12.
 
 ---
 

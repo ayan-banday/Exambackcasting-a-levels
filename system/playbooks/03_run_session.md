@@ -13,8 +13,8 @@ confidence, update gap state, and build the next set. This merges the old "gener
 ## Part 1 — Generate the question set
 
 **Mandatory context, every time:** the topic `examiner_guide.md` (its archetype distribution + trap
-model drive the set), the cluster `study_sheet.md`, and the topic `master_status.md` (which gaps must
-reappear).
+model drive the set), the cluster `cluster_NN_study_sheet.md`, and the topic `master_status.md`
+(which gaps must reappear).
 
 **Build rules (apply in order):**
 1. **Mirror the archetype distribution exactly** — do not invent a new mix.
@@ -79,7 +79,7 @@ Priority 1.** **When in doubt, flag hesitant.** Transcripts are session-only —
    **Quick Recall** section. Quantitative gaps add **3–5 variants** (gap can't reach FRAGILE until
    variants are solved with zero hesitation); applied gaps add a **full worked example + new
    same-type question** under realistic conditions.
-4. **Append `flags.md`** (per affected cluster). **Append, never overwrite.** Name the
+4. **Append `cluster_NN_flags.md`** (per affected cluster). **Append, never overwrite.** Name the
    **misconception**, the exact scenario to test next, the rule, the state at flag time.
 5. **Append `master_status.md`** (topic-level). **Append, never overwrite.** Add this session's
    per-gap lines; recompute the **Summary** (ACTIVE count, FRAGILE count, suggested next size).

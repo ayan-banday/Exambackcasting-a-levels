@@ -361,18 +361,24 @@ inputs/[Subject]/[H2|H1]/[Topic]/        ← assistant loads raw materials
         examiner_guide.md                ← topic guide, built once per topic
         pre_study_sheet.md
         master_status.md                 ← APPEND-ONLY
-        clusters/[Cluster_Name]/
-            study_sheet.md               ← may be regenerated, never deleted
-            flags.md                     ← APPEND-ONLY
+        clusters/[NN_Cluster_Name]/            ← NN = zero-padded study-order number; off-sequence clusters use `gap_` or `synthesis_` prefix instead
+            cluster_[NN]_study_sheet.md        ← may be regenerated, never deleted
+            cluster_[NN]_flags.md              ← APPEND-ONLY
         tests/
             model_test_[N].md   official_[year].md
 
 gaps/[Subject]/[H2|H1]/[Topic_Name]_gaps.md   ← regenerated roll-up (history lives in master_status)
 ```
 
-**Naming:** underscores, no spaces. Topic and cluster names are **real content names**
-(`Dimensional_Analysis`, never `Cluster_1`). Tests named by type and year (`model_test_1.md`,
-`official_2023.md`).
+**Naming:** underscores, no spaces. Topic names are real content names (`Dimensional_Analysis`).
+Cluster folders keep the content name but must be **prefixed by their study-order number** so a
+"cluster 3" ask is directly resolvable: `03_Differential_Equations/`, not `Differential_Equations/`
+and not `Cluster_3/`. Zero-pad to two digits. Parallel gap-closers at the same slot use a letter
+suffix (`04b_...`). Off-sequence clusters (synthesis, gap, mastery, tactical, discipline layers
+with no fixed study-order position) use a `gap_` or `synthesis_` prefix instead of a number
+(`gap_TNT_Verbatim/`, `synthesis_Governance_Master/`). Inner files mirror the prefix:
+`cluster_03_study_sheet.md`, `cluster_03_flags.md`, or `cluster_gap_...` / `cluster_synthesis_...`
+for off-sequence. Tests named by type and year (`model_test_1.md`, `official_2023.md`).
 
 **Append-only files** — never overwritten, to preserve history:
 - `master_status.md` — session results appended at the bottom; summary recomputed each session.

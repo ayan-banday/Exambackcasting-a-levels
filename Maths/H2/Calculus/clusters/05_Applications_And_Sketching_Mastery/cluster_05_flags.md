@@ -93,5 +93,77 @@
 - User is enjoying the process: "Studying is so fun, I love studying." Positive signal — cluster is engaging without being overwhelming.
 - User is articulating step-by-step algorithms explicitly after each card. This is the ideal encoding behaviour — extracting the pattern, not just solving individual problems.
 
+## 2026-07-08 — Cluster 5 completion, Q6–Q10
+
+### Q6 — parametric-implicit hybrid (continued)
+- 2026-07-08 | Q6 example (iii) show tangent at t=2 is (something involving 11x, 22x-27 as stated) | User caught that the stated target `11y = 22x - 27` didn't match actual computation. Computed correctly: at t=2, point (4, 6), gradient 11/4, tangent → 4y = 11x - 20. | correct execution, target mismatch flagged | CLOSED
+- 2026-07-08 | Q6 example (iv) other intersection Q | Substituted parametric into tangent: 4t³ - 11t² - 4t + 20 = 0. Knew t=2 is a root (tangent touches at t=2 with multiplicity 2). Factored as (t-2)²(4t+5) = 0. Found t_Q = -5/4. | correct | CLOSED
+- 2026-07-08 | Q6 | **BIG NEW CONCEPT: multiplicity of roots for tangent/normal intersection.**
+  - Tangent → multiplicity 2 (touches curve at parameter, doesn't cross) → (t - t₀)² is a factor of the substituted equation
+  - Normal → multiplicity 1 (crosses at parameter) → (t - t₀) is a single factor
+  - User's own articulation: "multiplicity 1 = crosses like a normal cut; multiplicity 2 = touches and bounces off like a tangent; multiplicity 3 = touches and flattens (inflexion)."
+  - This is a beautiful mental model. Locked. | conceptual insight locked | CLOSED
+- 2026-07-08 | Q6 practice (parametric normal, find other intersection) | Applied algorithm: parametric diff → normal equation → substitute → factor with known root t=1 (multiplicity 1) → long division. Made long-division computational error mid-way, retried. Got quadratic t² - t - 5 = 0 → t = (1 ± √21)/2. | correct after slip | FRAGILE
+
+### Q7 — Volume of revolution with trig curves
+- 2026-07-07/08 | Q7 example ((sin x + cos x)² over [0, π/2]) | UNLOCK: recognized (sin x + cos x)² = sin²x + 2sinxcosx + cos²x = 1 + sin(2x) via identities. "Two trigonometric identity — sin²+cos²=1, and 2sinxcosx = sin(2x)." Executed cleanly. Result V = π²/2 + π. | confident + correct | CLOSED
+- 2026-07-08 | Q7 practice ((1 + tan x)² over [0, π/4]) | Recognized needed tan² = sec² - 1. Expanded (1 + tan x)² = 1 + 2tan x + tan²x = 2tan x + sec²x. Integrated to 2ln|sec x| + tan x. Evaluated cleanly: V = π(ln 2 + 1). | confident + correct | CLOSED
+- 2026-07-08 | Q7 | KEY LOCKED HABIT: "always just expand and see if there's any identities inside. Typically there is very obvious ones." | habit locked | CLOSED
+
+### Q8 — Applied volume + connected rates (MULTIPLE ERRORS IN CARD)
+- 2026-07-08 | Q8 example | ERROR IN CARD: stated target π(3ln3 - 2), correct answer is π ln 3. Card papered over this with "discrepancy check" language. **FIXED** on 2026-07-08. | card error | FIXED
+- 2026-07-08 | Q8 practice | ERROR IN CARD: stated target 16π/5, correct answer is 96π/5. **FIXED** on 2026-07-08. | card error | FIXED
+- 2026-07-08 | Q8 | HUGE CONCEPTUAL UNLOCK (user's own words): "The one that is being spun around is the one that is made the subject of." — for volume of revolution about y-axis, rearrange to x = g(y), then integrate x² dy. For x-axis rotation, keep y = f(x), integrate y² dx. THE ROTATED-ABOUT AXIS DICTATES WHICH IS THE SUBJECT. | conceptual insight locked | CLOSED
+- 2026-07-08 | Q8 | INITIAL CONFUSION: user tried to "merge both together" (combine two curves) when only one curve was being rotated. Then caught himself. | corrected mid-solve | FRAGILE
+- 2026-07-08 | Q8 practice (iii) connected rates | Applied: V(h) = πh⁵/405 → dV/dh = πh⁴/81. At h=3: dV/dh = π. Chain rule: 2 = π · dh/dt → dh/dt = 2/π. | correct | CLOSED
+- 2026-07-08 | Q8 | REMINDER TO SELF: user requested "make sure you're covering everything" — also mentioned "solid disk or ring and washer" — these are outside 9758 syllabus (they're US calc concepts). But volume via cylinder minus curve (for annular regions) IS in scope. Confirm covered.
+
+### Q9 — Cyclic IBP with harder integrand (HINT REMOVED)
+- 2026-07-08 | Q9 example (∫ e^(2x) cos 3x dx) | Applied cyclic IBP algorithm from Cluster 2 Q7. First IBP: u=cos 3x, dv=e^(2x)dx. Second IBP: u=sin 3x, dv=e^(2x)dx. Substituted back, solved: I = (e^(2x)/13)(2cos 3x + 3sin 3x) + C. | correct | CLOSED
+- 2026-07-08 | Q9 example (ii) definite integral | At π/6: cos(π/2)=0, sin(π/2)=1. Value: (3e^(π/3))/13. At 0: 2/13. Difference: (3e^(π/3) - 2)/13. | correct | CLOSED
+- 2026-07-08 | Q9 practice (∫ x²eˣ sin x dx) | HAD A HINT in stem — **REMOVED** on 2026-07-08. User quote: "yeah I completely don't know how to do question nine. The practice. Why is this like that? What's cyclic? What's a cyclic IBP? Exponential time trig. Oh, if we see cyclic IBP, just apply the i rule."
+- 2026-07-08 | Q9 practice | UNLOCK: for triple product (polynomial × exp × trig), do IBP with u = polynomial, dv = exp × trig (using the cyclic IBP result as v). Reduce polynomial power each round. | conceptual insight locked | FRAGILE (needs one more clean rep)
+
+### Q10 — Multi-technique synthesis
+- 2026-07-08 | Q10 (i) tangent to y = xe^(-x²/2) at P(1, e^(-1/2)) | Product rule with chain: dy/dx = e^(-x²/2)(1 - x²). At x=1: gradient = 0. Tangent horizontal at y = e^(-1/2). | correct | CLOSED
+- 2026-07-08 | Q10 (ii) stationary points | dy/dx = 0 → x = ±1. Classified via d²y/dx²: local max at (1, e^(-1/2)), local min at (-1, -e^(-1/2)). | correct | CLOSED
+- 2026-07-08 | Q10 (iii) area | Reverse chain rule: u = -x²/2, du = -x dx. Result: 1 - e^(-1/2). Note user checked: "there's no pi in front because it's area, not volume." Correct. | correct | CLOSED
+- 2026-07-08 | Q10 (iv) volume | UNLOCK: "can I just square the area?" NO. For volume: π ∫ y² dx which requires actually computing ∫ x² e^(-x²) dx (different integrand than the area integral of ∫ x e^(-x²/2) dx). User quote: "Bro, okay, I'm cheeks at this, bro. Let me redo this." | conceptual insight locked | FRAGILE
+- 2026-07-08 | Q10 practice — ln x = -1 | GAP: user momentarily thought "ln x doesn't ever go to -1." Actually ln is negative for x ∈ (0, 1). ln x = -1 → x = 1/e ≈ 0.37. | knowledge slip | ACTIVE
+- 2026-07-08 | Q10 practice area via IBP | Applied IBP: u = ln x, dv = x dx. Result (e² + 1)/4. | correct | CLOSED
+
+### Cross-cutting patterns from Q6-Q10 session
+
+#### CLOSED
+- Multiplicity model for tangent/normal intersection (multiplicity 1/2/3 = crosses/touches/flat)
+- (sin+cos)² = 1 + sin(2x) identity
+- (1+tan)² = 2tan + sec² via tan²=sec²-1
+- Volume rotation subject rule: "what's rotated is made the subject of"
+- Cyclic IBP for exponential × trig
+- Area (no π) vs Volume (π and y²) distinction
+
+#### ACTIVE
+- ln x can be negative! ln x = -1 at x = 1/e. Basic property forgotten.
+- Long division accuracy (Q6 practice)
+
+#### FRAGILE
+- Triple-product IBP (polynomial × cyclic-IBP result) — one rep only
+- Volume-after-area recognition (must redo integral, can't square area)
+
+### ⚠️ USER FEEDBACK ON CARD QUALITY (2026-07-08)
+User explicitly flagged errors and rule violations in Cluster 5:
+
+1. **"some of ur answers do not match the question please always run double check after creating a cluster make sure it's all correct"**
+   - Q8 example: target π(3ln3 - 2) but correct answer πln3. FIXED.
+   - Q8 practice: target 16π/5 but correct answer 96π/5. FIXED.
+
+2. **"dont give any hints as well why are you giving hints"**
+   - Q9 practice had "(Hint: this is TRIPLE product…)" — FIXED, removed.
+
+3. **"when we sketch graph i want you to always sketch the actual graph and make it accurate"**
+   - SVG sketches were rough Bezier approximations. Must be accurate to the function shape.
+
+Rules added to memory `feedback_math_sheet_formats.md` under three CRITICAL headings.
+
 ## Format reminder
 `YYYY-MM-DD | card # | what went wrong | confidence | gap state`
