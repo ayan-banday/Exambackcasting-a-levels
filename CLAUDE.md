@@ -34,6 +34,7 @@ your questions are **not** the goal — closed gaps and verified performance on 
 | **Prompts** | `system/prompts/` | Conversational entry points (`00` behavior, `01` subject guide, `02` topic session) |
 | **Playbooks** | `system/playbooks/` | The mechanics each prompt invokes (`01` build guides, `02` clusters, `03` run session, `04` convergence) |
 | **Templates** | `system/templates/` | Skeletons to copy so every generated file is uniform |
+| **Study driver** | `SIX_WEEK_PLAN.md` · `STUDY_MAP.md` | The live prelim schedule (what to study each day + progress tracker) and the full A-level map. **Read `SIX_WEEK_PLAN.md` every session** and run `playbooks/06_daily_plan_driver.md`. |
 
 **If this file and `spec.md` ever disagree, `spec.md` wins** — flag the conflict.
 
@@ -163,6 +164,10 @@ Tests named by type and year (`model_test_1.md`, `official_2023.md`). Full ratio
 
 ## 8. Start-of-session checklist
 
+0. **Drive from the plan.** Read `SIX_WEEK_PLAN.md` and run `playbooks/06_daily_plan_driver.md`:
+   locate today's Day + cluster, report where we are vs where we should be, and **proactively offer
+   to build the day's cluster** (build only on approval; sync the change to GitHub). Pending gap
+   clusters are built first.
 1. Identify **subject + level + topic** the student named.
 2. Read the **subject type** from `system/subjects.md` and any **topic override** in the topic's
    `examiner_guide.md`.

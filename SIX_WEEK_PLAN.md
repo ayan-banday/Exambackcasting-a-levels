@@ -7,6 +7,19 @@
 
 ---
 
+## 📍 CURRENT POSITION — *Claude updates this at the start & end of every session*
+
+> **Today:** _(set at session start)_ · **On the calendar:** Day 1 — Maths: Vectors — Basics, Products & Ratio Theorem
+> **Progress:** 0 / 25 clusters built · **Status vs plan:** ⬜ Not started
+> **Last built:** — · **Next to build:** Day 1 — Vectors: Basics, Products & Ratio Theorem
+> **Pending gap clusters:** none _(gap clusters are always built **before** the next scheduled content)_
+
+**Status legend:** ⬜ pending · 🔄 in progress · ✅ built · ⏭️ skipped (coverage-only) · 🩹 gap cluster inserted
+
+*Claude: at every session start, run `system/playbooks/06_daily_plan_driver.md` — locate today, report where we are vs where we should be, and offer to build the day's cluster.*
+
+---
+
 ## ⏱️ THE STANDARD CLUSTER CYCLE (your default 4-hour day)
 
 This is the unit the whole plan is built from. One cluster, one day:

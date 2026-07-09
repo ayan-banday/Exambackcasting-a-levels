@@ -13,5 +13,6 @@ and **`spec.md`** holds the definitions. Playbooks **reference** `spec.md` rathe
 | `02_cluster_and_study.md` | Proposing the cluster breakdown, generating clusters one at a time, writing study + pre-study sheets | `prompts/02` Steps 3–5 |
 | `03_run_session.md` | The full session loop: generate adversarial questions → detect confidence → grade → the 7-step gap-tracking sequence → next set | `prompts/02` Step 6 |
 | `04_convergence.md` | Checking the three convergence conditions; final model test + official paper | `prompts/02` Step 7 |
+| `06_daily_plan_driver.md` | **Every session start.** Drives the session from `SIX_WEEK_PLAN.md`: locate today, compare progress, proactively offer to build the day's cluster, update the tracker, sync to GitHub | `CLAUDE.md` §8 step 0 |
 
 Each playbook names the **template** it copies from `system/templates/`.
