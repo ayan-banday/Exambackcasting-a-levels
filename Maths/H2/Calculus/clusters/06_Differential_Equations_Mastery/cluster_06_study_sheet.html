@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cluster 6 — Differential Equations Mastery</title>
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true, tags: 'none' },
+    svg: { fontCache: 'global' },
+    options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --amber-soft:#fffbeb;
+    --green:#059669; --green-soft:#ecfdf5; --cover:#f3f4f6;
+    --purple:#7c3aed; --purple-soft:#f5f3ff; --red:#dc2626; --red-soft:#fef2f2;
+    --teal:#0d9488; --teal-soft:#f0fdfa; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:40px 24px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h2,h3,.label,.controls,button,.step-header{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  h1{font-size:2em;margin:0 0 8px;color:#111;border-bottom:3px solid #111;padding-bottom:12px}
+  h2{font-size:1.5em;margin-top:56px;margin-bottom:16px;color:#111;border-bottom:1px solid #999;padding-bottom:6px}
+  h3{font-size:1.15em;margin:0 0 14px;color:#1f2937}
+  h4{font-size:1em;margin:14px 0 6px;color:#111}
+  p{margin:8px 0}
+  .meta{color:var(--muted);font-size:.9em;margin:4px 0 24px}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--red);padding:16px 20px;border-radius:6px;margin:16px 0 32px}
+  .intro ul{margin:8px 0 0 0;padding-left:22px}
+  .intro li{margin:4px 0}
+  .rules{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--teal);padding:20px 24px;border-radius:6px;margin:16px 0 32px}
+  .rules h3{color:var(--teal);margin-top:0}
+  .rules h4{color:#0f766e;margin-top:18px}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;color:var(--text);font-weight:500}
+  .controls button:hover{background:#f3f4f6}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:32px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:6px;color:#111}
+  .toc a{color:var(--blue);text-decoration:none;margin-right:16px}
+  .toc a:hover{text-decoration:underline}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .block{margin:14px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border)}
+  .block.concept{background:var(--teal-soft);border-left-color:var(--teal)}
+  .block.trap{background:var(--red-soft);border-left-color:var(--red)}
+  .block.example{background:#f9fafb;border-left-color:#6b7280}
+  .block.practice{background:var(--amber-soft);border-left-color:var(--amber)}
+  .block.answer{background:var(--green-soft);border-left-color:var(--green);position:relative;min-height:60px}
+  .block.reveal-archetype{background:var(--purple-soft);border-left-color:var(--purple);position:relative;min-height:60px;margin-top:24px}
+  .label{display:block;text-transform:uppercase;font-size:.75em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--muted)}
+  .block.concept .label{color:var(--teal)}
+  .block.trap .label{color:var(--red)}
+  .block.example .label{color:#4b5563}
+  .block.practice .label{color:var(--amber)}
+  .block.answer .label{color:var(--green)}
+  .block.reveal-archetype .label{color:var(--purple)}
+  .stem{background:#1e293b;color:#f1f5f9;padding:12px 16px;border-radius:6px;margin:10px 0;font-family:'Charter','Georgia',serif}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px;font-family:-apple-system,sans-serif}
+  .mark-step{display:inline-block;font-size:.75em;background:#ddd6fe;color:#5b21b6;padding:1px 7px;border-radius:8px;font-weight:700;margin:0 4px;font-family:-apple-system,sans-serif}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.5);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.8em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .step-desc{font-style:italic;color:#374151;margin-bottom:6px;font-size:.95em}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3;box-shadow:0 1px 2px rgba(0,0,0,.1)}
+  .reveal-btn:hover{background:#047857}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .reveal-btn.hide-state:hover{background:#4b5563}
+  .block.reveal-archetype .reveal-btn{background:var(--purple)}
+  .block.reveal-archetype .reveal-btn:hover{background:#6d28d9}
+  .answer-content{transition:filter .2s,opacity .2s}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;font-family:-apple-system,sans-serif;border-left:4px solid var(--muted);margin-left:-16px;padding-left:16px;z-index:2;transition:opacity .2s}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content,.block.reveal-archetype .answer-content{padding-right:60px}
+  ul,ol{padding-left:24px}
+  li{margin:4px 0}
+  .mjx-container{font-size:1.05em!important}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  table{border-collapse:collapse;margin:12px 0;font-size:.95em}
+  th,td{border:1px solid #ddd;padding:6px 12px;text-align:left;vertical-align:top}
+  th{background:#f3f4f6;font-weight:600;font-family:-apple-system,sans-serif}
+  svg.sketch{display:block;margin:12px auto;max-width:400px;background:#fff;border:1px solid #e5e7eb;border-radius:4px}
+  svg.sketch-wide{display:block;margin:12px auto;max-width:600px;background:#fff;border:1px solid #e5e7eb;border-radius:4px}
+  .highlight{background:#fef3c7;padding:1px 4px;border-radius:3px;font-weight:600}
+  .difficulty{display:inline-block;background:var(--red);color:#fff;padding:2px 10px;border-radius:12px;font-size:.75em;font-weight:700;margin-left:8px;font-family:-apple-system,sans-serif;letter-spacing:.05em}
+  @media print{
+    body{background:#fff;padding:20px;max-width:100%}
+    .controls,.reveal-btn{display:none!important}
+    .answer-overlay{display:none!important}
+    .card{box-shadow:none;page-break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<h1>Cluster 6 — Differential Equations Mastery <span class="difficulty">MASTERY</span></h1>
+<p class="meta">Built 2026-07-09 · 10 cards · Gap-closer targeting the meta-rules missing from Cluster 3 and the pre-study sheet.</p>
+
+<div class="intro">
+<strong>What this cluster fixes:</strong> The pre-study sheet and Cluster 3 taught you the three DE patterns but skipped the meta-rules that actually decide whether you get the marks:
+<ul>
+  <li>What the integration constant \( A \) means in each pattern (it is NOT always the starting value)</li>
+  <li>Why you must NOT expand the bracket in Pattern 2 — and how the chain-rule minus sign appears</li>
+  <li>The partial-fractions template for Pattern 3, factored so the two logs combine cleanly</li>
+  <li>How to derive a compartment / tank DE from "rate in − rate out"</li>
+  <li>How constant-source + proportional-sink problems collapse into Pattern 2</li>
+</ul>
+Every worked solution mirrors the school tutorial presentation. Every "show that" target has been verified by direct computation before being placed in the stem.
+</div>
+
+<div class="rules">
+<h3>Meta-rules — read before every card</h3>
+
+<h4>Rule 1: Three patterns and their triggers</h4>
+<table>
+  <tr><th>Pattern</th><th>DE form</th><th>Trigger words</th></tr>
+  <tr><td>1</td><td>\( \dfrac{dN}{dt} = \pm kN \)</td><td>"proportional to the amount / mass / population itself"; only one quantity in play; no ceiling mentioned</td></tr>
+  <tr><td>2</td><td>\( \dfrac{dN}{dt} = -k(N - K) \)</td><td>"proportional to the difference / gap / deficit"; two temperatures / two values named; system tending toward a target</td></tr>
+  <tr><td>3</td><td>\( \dfrac{dN}{dt} = kN(K - N) \)</td><td>"proportional to the product of \(x\) and \(y\)"; both current and remaining-capacity present</td></tr>
+</table>
+<p>Sign of \( k \): always state \( k > 0 \). The physical direction (growth/decay) is set by the sign in front of the RHS, not by \( k \) itself.</p>
+
+<h4>Rule 2: What is \( A \)? (this is the biggest omission in most notes)</h4>
+<table>
+  <tr><th>Pattern</th><th>General solution form</th><th>\( A \) equals</th></tr>
+  <tr><td>1</td><td>\( N = A\,e^{\pm kt} \)</td><td>initial value \( N_0 \)</td></tr>
+  <tr><td>2</td><td>\( N = K + A\,e^{-kt} \)</td><td>\( N_0 - K \) — the initial gap. Can be negative if starting below the target.</td></tr>
+  <tr><td>3</td><td>\( \dfrac{N}{K - N} = A\,e^{Kkt} \)</td><td>\( \dfrac{N_0}{K - N_0} \) — a ratio, not a value.</td></tr>
+</table>
+
+<h4>Rule 3: Method for Pattern 2 — DO NOT EXPAND</h4>
+<p>Keep the bracket \( (N - K) \) or \( (K - N) \) intact. Then:</p>
+<ul>
+  <li>\( \displaystyle \int \dfrac{1}{N - K}\,dN = \ln|N - K| \)</li>
+  <li>\( \displaystyle \int \dfrac{1}{K - N}\,dN = -\ln|K - N| \) &nbsp;— chain rule: derivative of \( (K - N) \) is \( -1 \), so a minus falls out</li>
+</ul>
+<p>If you expand into a linear expression like \( 25 - T \) and integrate the two pieces separately, you cannot combine cleanly, you lose track of the constant, and the exponentiation fails.</p>
+
+<h4>Rule 4: Method for Pattern 3 — partial fractions</h4>
+<p>The template:</p>
+\[ \dfrac{1}{N(K - N)} = \dfrac{1}{K}\left[\dfrac{1}{N} + \dfrac{1}{K - N}\right] \]
+<p>Then integrate each piece (watching the chain-rule sign on the second one), group the two logs with \( \ln a - \ln b = \ln(a/b) \), and multiply through by \( K \) to clear the leading \( 1/K \). The exponent coefficient in the final answer is always \( Kk \), never just \( k \).</p>
+
+<h4>Rule 5: Setup for tank / mixing / compartment problems</h4>
+<p>Always start with the physical accounting:</p>
+\[ \dfrac{dS}{dt} = (\text{rate in}) - (\text{rate out}) \]
+<ul>
+  <li><strong>Rate in</strong> = (source concentration) × (inflow rate). A constant.</li>
+  <li><strong>Rate out</strong> = (current tank concentration) × (outflow rate) = \( \left(\dfrac{S}{V}\right) \cdot F_{\text{out}} \)</li>
+</ul>
+<p>If inflow = outflow, volume \( V \) stays constant, so rate out is linear in \( S \). The result is always of the form \( \dfrac{dS}{dt} = C - rS \), which factorises to \( -r\!\left(S - \dfrac{C}{r}\right) \) — Pattern 2 with target \( K = C/r \).</p>
+
+<h4>Rule 6: The universal seven-step recipe</h4>
+<ol>
+  <li>Identify the pattern from the keywords.</li>
+  <li>Set the sign of \( k \) (growth: \(+\); decay/cooling: \(-\)). Always state \( k > 0 \).</li>
+  <li>Separate variables — every \( N \) on the left, every \( t \) on the right.</li>
+  <li>Integrate both sides. Pattern 2: don't expand. Pattern 3: partial fractions.</li>
+  <li>Isolate the \( \ln \), add \( +C \), then exponentiate. Merge \( \pm e^C \) into a single constant \( A \).</li>
+  <li>Substitute the initial condition into the exponentiated form (not the log form) to find \( A \).</li>
+  <li>Present the explicit function, then answer whatever the question actually asks (long-term / find \( t \) / find \( k \) / describe behaviour).</li>
+</ol>
+
+<h4>Rule 7: What questions typically ask (per pattern)</h4>
+<ul>
+  <li><strong>Pattern 1</strong>: long-term behaviour (\( N \to 0 \) or \( N \to \infty \)); comment on model suitability (population can't grow indefinitely).</li>
+  <li><strong>Pattern 2</strong>: limiting value \( K \); time to reach a given \( N \); state that fastest change happens at \( t = 0 \) when the gap \( |N_0 - K| \) is largest.</li>
+  <li><strong>Pattern 3</strong>: carrying capacity \( K \); equilibrium values (\( N = 0 \) and \( N = K \)); value at fastest growth (\( N = K/2 \)); long-term (\( N \to K \)).</li>
+</ul>
+</div>
+
+<div class="controls">
+  <button onclick="revealAll()">Reveal all</button>
+  <button onclick="hideAll()">Hide all</button>
+</div>
+
+<div class="toc">
+<strong>Questions</strong>
+<a href="#c1">1</a><a href="#c2">2</a><a href="#c3">3</a><a href="#c4">4</a><a href="#c5">5</a><a href="#c6">6</a><a href="#c7">7</a><a href="#c8">8</a><a href="#c9">9</a><a href="#c10">10</a>
+</div>
+
+<div class="card" id="c1">
+  <h3>Question 1</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">For each scenario, identify which pattern applies, write down the differential equation with a positive constant \( k \), and state the initial condition.<br><br>
+    (a) A radioactive substance of mass \( M \) g decays such that the rate of decrease of \( M \) is proportional to the mass remaining. Initially \( M = 200 \). <span class="marks">[2]</span><br>
+    (b) A cup of coffee at \( 90^{\circ}\text{C} \) is placed in a room at \( 20^{\circ}\text{C} \). The rate of cooling of the coffee is proportional to the temperature difference between the coffee and the room. <span class="marks">[2]</span><br>
+    (c) In an office of \( 5000 \) people, a rumour spreads such that the rate of increase of the number \( R \) who have heard the rumour is proportional to the product of \( R \) and the number who have not heard it. Initially \( R = 50 \). <span class="marks">[2]</span><br>
+    (d) A colony of bacteria doubles in size every three hours. Its rate of growth is proportional to the current population \( P \). Initially \( P = 1000 \). <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) Pattern 1 (decay)</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        Only mass \( M \) is in play, no ceiling, decreasing. Pattern 1 with a minus sign.
+        \[ \dfrac{dM}{dt} = -kM, \quad k > 0, \quad M(0) = 200 \]
+      </div>
+      <div class="step"><div class="step-header">(b) Pattern 2 (cooling)</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        Two temperatures named. "Temperature difference" between coffee and room = \( T - 20 \). Coffee is losing heat, so minus.
+        \[ \dfrac{dT}{dt} = -k(T - 20), \quad k > 0, \quad T(0) = 90 \]
+      </div>
+      <div class="step"><div class="step-header">(c) Pattern 3 (logistic)</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        "Product of \( R \) and \( 5000 - R \)". Rate is positive since \( R \) is spreading.
+        \[ \dfrac{dR}{dt} = kR(5000 - R), \quad k > 0, \quad R(0) = 50 \]
+      </div>
+      <div class="step"><div class="step-header">(d) Pattern 1 (growth)</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        Only \( P \) in play, no ceiling. Growing, so plus.
+        \[ \dfrac{dP}{dt} = kP, \quad k > 0, \quad P(0) = 1000 \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">For each scenario, identify which pattern applies, write down the differential equation with a positive constant \( k \), and state the initial condition.<br><br>
+    (a) A cup of tea at \( 85^{\circ}\text{C} \) is placed in a room at \( 25^{\circ}\text{C} \). The rate of cooling is proportional to the temperature difference. <span class="marks">[2]</span><br>
+    (b) A savings account balance \( B \) earns interest continuously at a rate proportional to the current balance. Initially \( B = 5000 \). <span class="marks">[2]</span><br>
+    (c) A pond has volume \( 500 \) L. Pollutant enters at a constant rate of \( 2 \) g / hour. The pond degrades pollutant at a rate proportional to the amount \( P \) present, with constant \( 0.1 \). Initially \( P = 0 \). <span class="marks">[3]</span><br>
+    (d) In a class of \( 30 \) students, a rumour spreads such that the rate of increase in the number \( N \) who have heard it is proportional to the product of those who have heard it and those who have not. Initially \( N = 2 \). <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) Pattern 2</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        \[ \dfrac{dT}{dt} = -k(T - 25), \quad k > 0, \quad T(0) = 85 \]
+      </div>
+      <div class="step"><div class="step-header">(b) Pattern 1</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        \[ \dfrac{dB}{dt} = kB, \quad k > 0, \quad B(0) = 5000 \]
+      </div>
+      <div class="step"><div class="step-header">(c) Hybrid — reduces to Pattern 2</div>
+        <div class="step-desc"><span class="mark-step">B1 B1 B1</span></div>
+        Rate in = \( 2 \) g/hr constant. Rate out = \( 0.1 P \) g/hr. So:
+        \[ \dfrac{dP}{dt} = 2 - 0.1 P, \quad P(0) = 0 \]
+        This factorises as \( -0.1(P - 20) \), which is Pattern 2 with target \( K = 2/0.1 = 20 \).
+      </div>
+      <div class="step"><div class="step-header">(d) Pattern 3</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        \[ \dfrac{dN}{dt} = kN(30 - N), \quad k > 0, \quad N(0) = 2 \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Pattern classification from wording.</strong>
+      <p>Setup marks are the easiest 2 marks per DE question. Miss-classify the pattern and every subsequent step is wrong. The trickiest case is (c): "constant source + proportional sink" looks like two patterns fused, but it collapses to Pattern 2 with target \( K = \text{source} / \text{sink rate} \).</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c2">
+  <h3>Question 2</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A radioactive substance of mass \( M \) g decays at a rate proportional to the mass remaining, with positive constant \( k \). Initially the mass is \( 200 \) g. After \( 5 \) years, the mass is \( 150 \) g.<br><br>
+    (i) Write down the differential equation and initial condition. <span class="marks">[2]</span><br>
+    (ii) Solve the differential equation, giving \( M \) in terms of \( t \) and \( k \). <span class="marks">[4]</span><br>
+    (iii) Find the value of \( k \) correct to 4 decimal places. <span class="marks">[2]</span><br>
+    (iv) Find the half-life of the substance. <span class="marks">[3]</span><br>
+    (v) Describe the long-term behaviour of \( M \). <span class="marks">[1]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) DE and IC</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        \[ \dfrac{dM}{dt} = -kM, \quad k > 0, \quad M(0) = 200 \]
+      </div>
+      <div class="step"><div class="step-header">(ii) Solve</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 M1 A1</span></div>
+        Separate:
+        \[ \int \dfrac{1}{M}\,dM = \int -k\,dt \]
+        \[ \ln|M| = -kt + C \]
+        Exponentiate:
+        \[ |M| = e^{-kt + C} = e^C \, e^{-kt} \]
+        Since \( M > 0 \), write \( M = A e^{-kt} \) with \( A = e^C > 0 \).
+        Apply IC \( M(0) = 200 \):
+        \[ 200 = A e^0 = A \implies A = 200 \]
+        \[ \boxed{M = 200\,e^{-kt}} \]
+      </div>
+      <div class="step"><div class="step-header">(iii) Find \(k\)</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        Given \( M(5) = 150 \):
+        \[ 150 = 200\,e^{-5k} \]
+        \[ e^{-5k} = \dfrac{3}{4} \]
+        \[ -5k = \ln\dfrac{3}{4} \]
+        \[ k = \dfrac{1}{5}\ln\dfrac{4}{3} = 0.0575 \; (\text{4 dp}) \]
+      </div>
+      <div class="step"><div class="step-header">(iv) Half-life</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        Half-life is the time \( t_h \) such that \( M(t_h) = 100 \).
+        \[ 100 = 200\,e^{-k t_h} \implies e^{-k t_h} = \dfrac{1}{2} \]
+        \[ t_h = \dfrac{\ln 2}{k} = \dfrac{5 \ln 2}{\ln(4/3)} \approx 12.05 \; \text{years} \]
+      </div>
+      <div class="step"><div class="step-header">(v) Long-term</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        As \( t \to \infty \), \( e^{-kt} \to 0 \), so \( M \to 0 \). The substance decays away completely.
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">A radioactive isotope of mass \( N \) g satisfies \( \dfrac{dN}{dt} = -0.0231\,N \), where \( t \) is measured in years. Initially \( N = 500 \).<br><br>
+    (i) Solve the differential equation, giving \( N \) in terms of \( t \). <span class="marks">[3]</span><br>
+    (ii) Find the half-life of the isotope, correct to 1 decimal place. <span class="marks">[2]</span><br>
+    (iii) State what happens to \( N \) in the long term. <span class="marks">[1]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) Solve</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        \[ \int \dfrac{1}{N}\,dN = \int -0.0231\,dt \]
+        \[ \ln|N| = -0.0231\,t + C \]
+        \[ N = A\,e^{-0.0231\,t} \]
+        \( N(0) = 500 \) gives \( A = 500 \).
+        \[ \boxed{N = 500\,e^{-0.0231\,t}} \]
+      </div>
+      <div class="step"><div class="step-header">(ii) Half-life</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ 250 = 500\,e^{-0.0231\,t_h} \implies e^{-0.0231\,t_h} = \dfrac{1}{2} \]
+        \[ t_h = \dfrac{\ln 2}{0.0231} \approx 30.0 \; \text{years} \]
+      </div>
+      <div class="step"><div class="step-header">(iii) Long-term</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        As \( t \to \infty \), \( N \to 0 \). The isotope decays away completely.
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Pattern 1 — decay with second data point and half-life.</strong>
+      <p>The half-life question is guaranteed. Method for half-life: set \( M = M_0 / 2 \), solve for \( t \). Formula \( t_h = \ln 2 / k \). This should be memorised.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c3">
+  <h3>Question 3</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A cup of coffee at \( 90^{\circ}\text{C} \) is placed in a room at \( 20^{\circ}\text{C} \). The rate of cooling is proportional to the temperature difference between the coffee and the room, with positive constant \( k \). After \( 10 \) minutes, the temperature is \( 60^{\circ}\text{C} \).<br><br>
+    (i) Write down the differential equation and initial condition. <span class="marks">[2]</span><br>
+    (ii) Show that \( T = 20 + 70\,e^{-kt} \). <span class="marks">[4]</span><br>
+    (iii) Find \( k \) correct to 4 decimal places. <span class="marks">[2]</span><br>
+    (iv) Find the time taken for the coffee to reach \( 25^{\circ}\text{C} \). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="block trap"><div class="label">Trap</div>
+        Do not expand the bracket \( (T - 20) \). Keep it intact and use \( \int \dfrac{1}{T - 20}\,dT = \ln|T - 20| \) directly. Expanding wrecks the integration.
+      </div>
+      <div class="step"><div class="step-header">(i) DE and IC</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        \[ \dfrac{dT}{dt} = -k(T - 20), \quad k > 0, \quad T(0) = 90 \]
+      </div>
+      <div class="step"><div class="step-header">(ii) Solve — DO NOT EXPAND</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 M1 A1</span></div>
+        Separate:
+        \[ \int \dfrac{1}{T - 20}\,dT = \int -k\,dt \]
+        \[ \ln|T - 20| = -kt + C \]
+        Exponentiate:
+        \[ T - 20 = A\,e^{-kt}, \quad A = \pm e^C \]
+        Apply IC \( T(0) = 90 \):
+        \[ 90 - 20 = A \implies A = 70 \]
+        \[ \boxed{T = 20 + 70\,e^{-kt}} \text{ (shown)} \]
+      </div>
+      <div class="step"><div class="step-header">(iii) Find \(k\)</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ 60 = 20 + 70\,e^{-10k} \implies e^{-10k} = \dfrac{40}{70} = \dfrac{4}{7} \]
+        \[ k = \dfrac{1}{10}\ln\dfrac{7}{4} = 0.0560 \; (\text{4 dp}) \]
+      </div>
+      <div class="step"><div class="step-header">(iv) Time to \(25^{\circ}\text{C}\)</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        \[ 25 = 20 + 70\,e^{-kt} \implies e^{-kt} = \dfrac{5}{70} = \dfrac{1}{14} \]
+        \[ t = \dfrac{\ln 14}{k} = \dfrac{10 \ln 14}{\ln(7/4)} \approx 47.16 \; \text{minutes} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">A metal object at \( 100^{\circ}\text{C} \) is left to cool in a room at \( 15^{\circ}\text{C} \). The rate of cooling is proportional to the temperature difference between the object and the room, with positive constant \( k \). After \( 20 \) minutes, the object is at \( 60^{\circ}\text{C} \).<br><br>
+    (i) Write down the differential equation and initial condition. <span class="marks">[2]</span><br>
+    (ii) Show that \( T = 15 + 85\,e^{-kt} \). <span class="marks">[4]</span><br>
+    (iii) Find \( k \) correct to 4 decimal places. <span class="marks">[2]</span><br>
+    (iv) Find the time taken for the object to reach \( 30^{\circ}\text{C} \). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) DE and IC</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        \[ \dfrac{dT}{dt} = -k(T - 15), \quad k > 0, \quad T(0) = 100 \]
+      </div>
+      <div class="step"><div class="step-header">(ii) Solve</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 M1 A1</span></div>
+        \[ \int \dfrac{1}{T - 15}\,dT = \int -k\,dt \]
+        \[ \ln|T - 15| = -kt + C \implies T - 15 = A\,e^{-kt} \]
+        \( T(0) = 100 \Rightarrow A = 85 \).
+        \[ \boxed{T = 15 + 85\,e^{-kt}} \text{ (shown)} \]
+      </div>
+      <div class="step"><div class="step-header">(iii) Find \(k\)</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ 60 = 15 + 85\,e^{-20k} \implies e^{-20k} = \dfrac{45}{85} = \dfrac{9}{17} \]
+        \[ k = \dfrac{1}{20}\ln\dfrac{17}{9} = 0.0318 \; (\text{4 dp}) \]
+      </div>
+      <div class="step"><div class="step-header">(iv) Time to \(30^{\circ}\text{C}\)</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        \[ 30 = 15 + 85\,e^{-kt} \implies e^{-kt} = \dfrac{15}{85} = \dfrac{3}{17} \]
+        \[ t = \dfrac{\ln(17/3)}{k} = \dfrac{20 \ln(17/3)}{\ln(17/9)} \approx 54.55 \; \text{minutes} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Pattern 2 — cooling (start above target). Don't-expand method.</strong>
+      <p>Starting temperature is above the target (\( T_0 > K \)), so \( A = T_0 - K > 0 \) and the exponential decays from positive down to zero — temperature approaches \( K \) from above. The must-do step: keep the bracket, integrate \( 1/(T - K) \) directly.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c4">
+  <h3>Question 4</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A cold drink at \( 5^{\circ}\text{C} \) is placed in a room at \( 25^{\circ}\text{C} \). The rate of warming is proportional to the temperature difference between the drink and the room, with positive constant \( k \). After \( 6 \) minutes, the drink is at \( 12^{\circ}\text{C} \).<br><br>
+    (i) Write down the differential equation and initial condition. <span class="marks">[2]</span><br>
+    (ii) Show that \( T = 25 - 20\,e^{-kt} \). <span class="marks">[4]</span><br>
+    (iii) Find \( k \) correct to 4 decimal places. <span class="marks">[2]</span><br>
+    (iv) Find the time taken for the drink to reach \( 20^{\circ}\text{C} \). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="block trap"><div class="label">Trap</div>
+        The drink is BELOW room temperature, so it warms UP. In the DE, the "temperature difference" is now \( (25 - T) \), which is positive. Sign of the RHS is \( +k(25 - T) = -k(T - 25) \). The gap \( A = T_0 - K = 5 - 25 = -20 \) is <strong>negative</strong>. Do not force \( A \) to be positive.
+      </div>
+      <div class="step"><div class="step-header">(i) DE and IC</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        \[ \dfrac{dT}{dt} = k(25 - T), \quad k > 0, \quad T(0) = 5 \]
+        Equivalent: \( \dfrac{dT}{dt} = -k(T - 25) \).
+      </div>
+      <div class="step"><div class="step-header">(ii) Solve</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 M1 A1</span></div>
+        Keep the bracket \( (T - 25) \):
+        \[ \int \dfrac{1}{T - 25}\,dT = \int -k\,dt \]
+        \[ \ln|T - 25| = -kt + C \implies T - 25 = A\,e^{-kt} \]
+        Apply IC \( T(0) = 5 \):
+        \[ 5 - 25 = A \implies A = -20 \]
+        \[ T = 25 - 20\,e^{-kt} \text{ (shown)} \]
+      </div>
+      <div class="step"><div class="step-header">(iii) Find \(k\)</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ 12 = 25 - 20\,e^{-6k} \implies 20\,e^{-6k} = 13 \implies e^{-6k} = \dfrac{13}{20} \]
+        \[ k = \dfrac{1}{6}\ln\dfrac{20}{13} = 0.0718 \; (\text{4 dp}) \]
+      </div>
+      <div class="step"><div class="step-header">(iv) Time to \(20^{\circ}\text{C}\)</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        \[ 20 = 25 - 20\,e^{-kt} \implies 20\,e^{-kt} = 5 \implies e^{-kt} = \dfrac{1}{4} \]
+        \[ t = \dfrac{\ln 4}{k} = \dfrac{6 \ln 4}{\ln(20/13)} \approx 19.31 \; \text{minutes} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">An iron ingot at \( 100^{\circ}\text{C} \) is placed in a furnace at \( 800^{\circ}\text{C} \). The rate of heating of the ingot is proportional to the temperature difference between the furnace and the ingot, with positive constant \( k \). After \( 5 \) minutes, the ingot is at \( 300^{\circ}\text{C} \).<br><br>
+    (i) Write down the differential equation and initial condition. <span class="marks">[2]</span><br>
+    (ii) Show that \( T = 800 - 700\,e^{-kt} \). <span class="marks">[4]</span><br>
+    (iii) Find \( k \) correct to 4 decimal places. <span class="marks">[2]</span><br>
+    (iv) Find the time taken for the ingot to reach \( 500^{\circ}\text{C} \). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) DE and IC</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        \[ \dfrac{dT}{dt} = k(800 - T), \quad k > 0, \quad T(0) = 100 \]
+      </div>
+      <div class="step"><div class="step-header">(ii) Solve</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 M1 A1</span></div>
+        \[ \dfrac{dT}{dt} = -k(T - 800) \implies \int\dfrac{1}{T - 800}\,dT = \int -k\,dt \]
+        \[ \ln|T - 800| = -kt + C \implies T - 800 = A\,e^{-kt} \]
+        \( T(0) = 100 \Rightarrow A = 100 - 800 = -700 \).
+        \[ T = 800 - 700\,e^{-kt} \text{ (shown)} \]
+      </div>
+      <div class="step"><div class="step-header">(iii) Find \(k\)</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ 300 = 800 - 700\,e^{-5k} \implies e^{-5k} = \dfrac{500}{700} = \dfrac{5}{7} \]
+        \[ k = \dfrac{1}{5}\ln\dfrac{7}{5} = 0.0673 \; (\text{4 dp}) \]
+      </div>
+      <div class="step"><div class="step-header">(iv) Time to \(500^{\circ}\text{C}\)</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        \[ 500 = 800 - 700\,e^{-kt} \implies e^{-kt} = \dfrac{300}{700} = \dfrac{3}{7} \]
+        \[ t = \dfrac{\ln(7/3)}{k} = \dfrac{5 \ln(7/3)}{\ln(7/5)} \approx 12.59 \; \text{minutes} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Pattern 2 — warming (start below target). \(A\) is negative.</strong>
+      <p>Companion to Q3. Same DE structure, opposite sign of \( A \). The general form \( T = K + A\,e^{-kt} \) works for both; \( A = T_0 - K \) just changes sign. If you memorised \( A \) as "always the starting value" you will get this wrong every time — that's why Rule 2 above is the single most important meta-rule.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c5">
+  <h3>Question 5</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A drug is administered to a patient by continuous intravenous injection at a constant rate of \( 4 \) mg per hour. The body simultaneously removes the drug at a rate proportional to the amount \( D \) mg present in the bloodstream, with positive constant \( 0.5 \). Initially there is no drug in the body.<br><br>
+    (i) By considering the rate at which the drug enters and leaves the body, show that \( \dfrac{dD}{dt} = 4 - 0.5\,D \). <span class="marks">[2]</span><br>
+    (ii) Show that \( D = 8\!\left(1 - e^{-t/2}\right) \). <span class="marks">[5]</span><br>
+    (iii) State the long-term amount of drug in the body. <span class="marks">[1]</span><br>
+    (iv) Find the time taken for \( D \) to reach \( 6 \) mg. <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="block trap"><div class="label">Trap</div>
+        This is not straight Pattern 2 — the DE looks unfamiliar. Do not try to solve it directly. Factorise \( 4 - 0.5D = -0.5(D - 8) \) first: this reveals it as Pattern 2 with target \( K = 4 / 0.5 = 8 \). The steady state (long-term value) is always \( K = \text{rate in} / \text{sink rate} \).
+      </div>
+      <div class="step"><div class="step-header">(i) Rate in – rate out</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        Rate in = \( 4 \) mg/hr (constant).<br>
+        Rate out = \( 0.5\,D \) mg/hr (proportional to \( D \)).<br>
+        By the accumulation principle:
+        \[ \dfrac{dD}{dt} = 4 - 0.5\,D \text{ (shown)} \]
+      </div>
+      <div class="step"><div class="step-header">(ii) Solve</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 M1 M1 A1</span></div>
+        Factorise:
+        \[ \dfrac{dD}{dt} = -0.5(D - 8) \]
+        Separate:
+        \[ \int \dfrac{1}{D - 8}\,dD = \int -0.5\,dt \]
+        \[ \ln|D - 8| = -0.5\,t + C \implies D - 8 = A\,e^{-t/2} \]
+        Apply IC \( D(0) = 0 \):
+        \[ 0 - 8 = A \implies A = -8 \]
+        \[ D = 8 - 8\,e^{-t/2} = 8\!\left(1 - e^{-t/2}\right) \text{ (shown)} \]
+      </div>
+      <div class="step"><div class="step-header">(iii) Long-term</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        As \( t \to \infty \), \( e^{-t/2} \to 0 \), so \( D \to 8 \) mg.
+      </div>
+      <div class="step"><div class="step-header">(iv) Time to 6 mg</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ 6 = 8\!\left(1 - e^{-t/2}\right) \implies e^{-t/2} = \dfrac{1}{4} \]
+        \[ t = 2\ln 4 = 4\ln 2 \approx 2.77 \; \text{hours} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">A pond initially contains no pollutant. Pollutant enters the pond at a constant rate of \( 5 \) g per hour. The pond removes the pollutant at a rate proportional to the amount \( P \) g present, with positive constant \( 0.25 \).<br><br>
+    (i) By considering the rate at which pollutant enters and leaves the pond, show that \( \dfrac{dP}{dt} = 5 - 0.25\,P \). <span class="marks">[2]</span><br>
+    (ii) Show that \( P = 20\!\left(1 - e^{-t/4}\right) \). <span class="marks">[5]</span><br>
+    (iii) State the long-term amount of pollutant in the pond. <span class="marks">[1]</span><br>
+    (iv) Find the time taken for \( P \) to reach \( 15 \) g. <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) Rate in – rate out</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        Rate in = \( 5 \) g/hr. Rate out = \( 0.25\,P \) g/hr.
+        \[ \dfrac{dP}{dt} = 5 - 0.25\,P \text{ (shown)} \]
+      </div>
+      <div class="step"><div class="step-header">(ii) Solve</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 M1 M1 A1</span></div>
+        \[ \dfrac{dP}{dt} = -0.25(P - 20) \]
+        \[ \int\dfrac{1}{P - 20}\,dP = \int -0.25\,dt \implies \ln|P - 20| = -0.25\,t + C \]
+        \[ P - 20 = A\,e^{-t/4} \]
+        \( P(0) = 0 \Rightarrow A = -20 \).
+        \[ P = 20 - 20\,e^{-t/4} = 20\!\left(1 - e^{-t/4}\right) \text{ (shown)} \]
+      </div>
+      <div class="step"><div class="step-header">(iii) Long-term</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        As \( t \to \infty \), \( P \to 20 \) g.
+      </div>
+      <div class="step"><div class="step-header">(iv) Time to 15 g</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ 15 = 20\!\left(1 - e^{-t/4}\right) \implies e^{-t/4} = \dfrac{1}{4} \]
+        \[ t = 4 \ln 4 = 8 \ln 2 \approx 5.55 \; \text{hours} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Constant source + proportional sink → Pattern 2 in disguise.</strong>
+      <p>Any accumulation model of the form \( \dfrac{dS}{dt} = C - rS \) is Pattern 2 with target \( K = C/r \). The steady state IS the target. Always factorise first to reveal the pattern, never try to integrate \( C - rS \) as a linear expression piece by piece.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c6">
+  <h3>Question 6</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">In a town of \( 10\,000 \) people, a disease spreads such that the rate of increase of the number \( I \) of infected people is proportional to the product of the number of infected and the number not yet infected. The constant of proportionality is \( 2 \times 10^{-4} \). Initially \( 100 \) people are infected.<br><br>
+    (i) Write down the differential equation and initial condition. <span class="marks">[2]</span><br>
+    (ii) Show that \( \dfrac{I}{10\,000 - I} = \dfrac{1}{99}\,e^{2t} \). <span class="marks">[6]</span><br>
+    (iii) Find the number of infected people after \( 3 \) time units, to the nearest whole number. <span class="marks">[2]</span><br>
+    (iv) Find the time at which half of the town is infected. <span class="marks">[2]</span><br>
+    (v) State what happens to \( I \) in the long term. <span class="marks">[1]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="block trap"><div class="label">Trap</div>
+        The exponent in the final answer is \( Kk\,t \), not \( kt \). Here \( K = 10\,000 \) and \( k = 2 \times 10^{-4} \), so \( Kk = 2 \). Missing this factor is the most common Pattern 3 error.
+      </div>
+      <div class="step"><div class="step-header">(i) DE and IC</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        \[ \dfrac{dI}{dt} = 2 \times 10^{-4}\,I(10\,000 - I), \quad I(0) = 100 \]
+      </div>
+      <div class="step"><div class="step-header">(ii) Solve via partial fractions</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 M1 M1 M1 A1</span></div>
+        Separate:
+        \[ \int \dfrac{1}{I(10\,000 - I)}\,dI = \int 2 \times 10^{-4}\,dt \]
+        Partial fractions:
+        \[ \dfrac{1}{I(10\,000 - I)} = \dfrac{1}{10\,000}\!\left[\dfrac{1}{I} + \dfrac{1}{10\,000 - I}\right] \]
+        Integrate (note the chain-rule sign on the second term):
+        \[ \dfrac{1}{10\,000}\!\left[\ln|I| - \ln|10\,000 - I|\right] = 2 \times 10^{-4}\,t + C \]
+        Group the logs:
+        \[ \dfrac{1}{10\,000}\ln\!\left|\dfrac{I}{10\,000 - I}\right| = 2 \times 10^{-4}\,t + C \]
+        Multiply by \( 10\,000 \):
+        \[ \ln\!\left|\dfrac{I}{10\,000 - I}\right| = 2t + C' \]
+        Exponentiate:
+        \[ \dfrac{I}{10\,000 - I} = A\,e^{2t}, \quad A = \pm e^{C'} \]
+        Apply IC \( I(0) = 100 \):
+        \[ A = \dfrac{100}{10\,000 - 100} = \dfrac{100}{9900} = \dfrac{1}{99} \]
+        \[ \boxed{\dfrac{I}{10\,000 - I} = \dfrac{1}{99}\,e^{2t}} \text{ (shown)} \]
+      </div>
+      <div class="step"><div class="step-header">(iii) \(I\) at \(t = 3\)</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ \dfrac{I}{10\,000 - I} = \dfrac{e^{6}}{99} \approx 4.0750 \]
+        Rearranging: \( I(1 + 4.0750) = 4.0750 \times 10\,000 \).
+        \[ I \approx 8030 \text{ people} \]
+      </div>
+      <div class="step"><div class="step-header">(iv) Time when \(I = 5000\)</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ \dfrac{5000}{5000} = 1 = \dfrac{1}{99}\,e^{2t} \implies e^{2t} = 99 \]
+        \[ t = \dfrac{\ln 99}{2} \approx 2.298 \text{ time units} \]
+      </div>
+      <div class="step"><div class="step-header">(v) Long-term</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        As \( t \to \infty \), \( e^{2t} \to \infty \), so \( \dfrac{I}{10\,000 - I} \to \infty \), meaning \( I \to 10\,000 \). The entire population becomes infected.
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">In an office of \( 5000 \) people, a rumour spreads such that the rate of increase of the number \( R \) who have heard it is proportional to the product of the number who have heard it and the number who have not, with constant of proportionality \( 0.004 \). Initially \( 50 \) people have heard the rumour.<br><br>
+    (i) Write down the differential equation and initial condition. <span class="marks">[2]</span><br>
+    (ii) Show that \( \dfrac{R}{5000 - R} = \dfrac{1}{99}\,e^{20t} \). <span class="marks">[6]</span><br>
+    (iii) Find the time at which half the office has heard the rumour. <span class="marks">[2]</span><br>
+    (iv) State the long-term behaviour of \( R \). <span class="marks">[1]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) DE and IC</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        \[ \dfrac{dR}{dt} = 0.004\,R(5000 - R), \quad R(0) = 50 \]
+      </div>
+      <div class="step"><div class="step-header">(ii) Solve</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 M1 M1 M1 A1</span></div>
+        \[ \int \dfrac{1}{R(5000 - R)}\,dR = \int 0.004\,dt \]
+        \[ \dfrac{1}{5000}\!\left[\dfrac{1}{R} + \dfrac{1}{5000 - R}\right] dR = 0.004\,dt \]
+        \[ \dfrac{1}{5000}\!\left[\ln|R| - \ln|5000 - R|\right] = 0.004\,t + C \]
+        \[ \ln\!\left|\dfrac{R}{5000 - R}\right| = 20\,t + C' \]
+        \[ \dfrac{R}{5000 - R} = A\,e^{20t} \]
+        \( R(0) = 50 \Rightarrow A = \dfrac{50}{4950} = \dfrac{1}{99} \).
+        \[ \boxed{\dfrac{R}{5000 - R} = \dfrac{1}{99}\,e^{20t}} \text{ (shown)} \]
+      </div>
+      <div class="step"><div class="step-header">(iii) Time when \(R = 2500\)</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ 1 = \dfrac{1}{99}\,e^{20t} \implies e^{20t} = 99 \implies t = \dfrac{\ln 99}{20} \approx 0.230 \text{ (time units)} \]
+      </div>
+      <div class="step"><div class="step-header">(iv) Long-term</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        As \( t \to \infty \), \( R \to 5000 \). Everyone hears the rumour.
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Pattern 3 (logistic) — full partial-fractions solve.</strong>
+      <p>Key facts to memorise: exponent coefficient is \( Kk \) (not \( k \)); \( A = N_0/(K - N_0) \) is a ratio, not a value; long-term \( N \to K \). If the initial fraction \( N_0/(K - N_0) \) is small (as it usually is at the start of an outbreak), \( A \) is a small number; the exponential drives everything.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c7">
+  <h3>Question 7</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A fish population \( P \) in a lake satisfies \( \dfrac{dP}{dt} = 0.001\,P(5000 - P) \), where \( t \) is in years. Initially \( P = 100 \).<br><br>
+    (i) State the carrying capacity of the lake. <span class="marks">[1]</span><br>
+    (ii) Find the equilibrium values of \( P \). <span class="marks">[2]</span><br>
+    (iii) State the value of \( P \) at which the population is growing fastest, and justify your answer briefly. <span class="marks">[2]</span><br>
+    (iv) Describe the long-term behaviour of \( P \). <span class="marks">[1]</span><br>
+    (v) Show that \( \dfrac{P}{5000 - P} = \dfrac{1}{49}\,e^{5t} \). <span class="marks">[5]</span><br>
+    (vi) Find the time at which the population is growing fastest. <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) Carrying capacity</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        Carrying capacity \( = 5000 \) fish. (The value of \( K \) in the bracket.)
+      </div>
+      <div class="step"><div class="step-header">(ii) Equilibrium values</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        Set RHS to zero: \( 0.001\,P(5000 - P) = 0 \Rightarrow P = 0 \) or \( P = 5000 \).
+      </div>
+      <div class="step"><div class="step-header">(iii) Fastest growth</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        The growth rate \( 0.001\,P(5000 - P) \) is a downward parabola in \( P \), maximised at \( P = K/2 = 2500 \).<br>
+        \[ P = 2500 \; (\text{halfway to carrying capacity}) \]
+      </div>
+      <div class="step"><div class="step-header">(iv) Long-term</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        \( P \to 5000 \) as \( t \to \infty \). The population approaches the carrying capacity from below.
+      </div>
+      <div class="step"><div class="step-header">(v) Solve</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 M1 M1 A1</span></div>
+        Partial fractions:
+        \[ \dfrac{1}{P(5000 - P)} = \dfrac{1}{5000}\!\left[\dfrac{1}{P} + \dfrac{1}{5000 - P}\right] \]
+        Integrate:
+        \[ \dfrac{1}{5000}\ln\!\left|\dfrac{P}{5000 - P}\right| = 0.001\,t + C \]
+        \[ \ln\!\left|\dfrac{P}{5000 - P}\right| = 5t + C' \implies \dfrac{P}{5000 - P} = A\,e^{5t} \]
+        \( P(0) = 100 \Rightarrow A = \dfrac{100}{4900} = \dfrac{1}{49} \).
+        \[ \dfrac{P}{5000 - P} = \dfrac{1}{49}\,e^{5t} \text{ (shown)} \]
+      </div>
+      <div class="step"><div class="step-header">(vi) Time at fastest growth</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        Fastest growth when \( P = 2500 \):
+        \[ \dfrac{2500}{2500} = 1 = \dfrac{1}{49}\,e^{5t} \implies e^{5t} = 49 \]
+        \[ t = \dfrac{\ln 49}{5} = \dfrac{2 \ln 7}{5} \approx 0.778 \; \text{years} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">A bacterial colony \( N \) in a dish satisfies \( \dfrac{dN}{dt} = 0.002\,N(1000 - N) \). Initially \( N = 20 \).<br><br>
+    (i) State the carrying capacity. <span class="marks">[1]</span><br>
+    (ii) Find the equilibrium values of \( N \). <span class="marks">[2]</span><br>
+    (iii) State the value of \( N \) at which growth is fastest. <span class="marks">[1]</span><br>
+    (iv) Show that \( \dfrac{N}{1000 - N} = \dfrac{1}{49}\,e^{2t} \). <span class="marks">[5]</span><br>
+    (v) Find the time at which growth is fastest. <span class="marks">[2]</span><br>
+    (vi) Describe the long-term behaviour of \( N \). <span class="marks">[1]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) Carrying capacity</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        \( K = 1000 \).
+      </div>
+      <div class="step"><div class="step-header">(ii) Equilibria</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \( N = 0 \) or \( N = 1000 \).
+      </div>
+      <div class="step"><div class="step-header">(iii) Fastest at</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        \( N = 500 \).
+      </div>
+      <div class="step"><div class="step-header">(iv) Solve</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 M1 M1 A1</span></div>
+        Exponent coefficient = \( Kk = 1000 \times 0.002 = 2 \).<br>
+        \( A = \dfrac{20}{980} = \dfrac{1}{49} \).
+        \[ \dfrac{N}{1000 - N} = \dfrac{1}{49}\,e^{2t} \text{ (shown)} \]
+      </div>
+      <div class="step"><div class="step-header">(v) Time at fastest growth</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ 1 = \dfrac{1}{49}\,e^{2t} \implies e^{2t} = 49 \implies t = \dfrac{\ln 49}{2} = \ln 7 \approx 1.946 \text{ time units} \]
+      </div>
+      <div class="step"><div class="step-header">(vi) Long-term</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        \( N \to 1000 \) as \( t \to \infty \).
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Pattern 3 — full question with carrying-capacity / equilibrium / fastest / long-term parts.</strong>
+      <p>These qualitative parts (i)–(iv) are all guaranteed marks if you remember: capacity = the \( K \) in the bracket; equilibria are the roots of the RHS; fastest growth for logistic is always at \( K/2 \); long-term always \( \to K \). All four together are typically 5–6 marks before you have to solve anything.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c8">
+  <h3>Question 8</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">By using the substitution \( y = ux \), find the general solution of \( x\dfrac{dy}{dx} = y + 2x^{2}\cos x \). <span class="marks">[6]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="block trap"><div class="label">Trap</div>
+        With substitution \( y = ux \), you must substitute in TWO places: (1) replace \( \dfrac{dy}{dx} \) using the product rule \( \dfrac{dy}{dx} = u + x\dfrac{du}{dx} \), (2) replace \( y \) itself with \( ux \). Missing either substitution leaves you with a mixed equation you can't solve.
+      </div>
+      <div class="step"><div class="step-header">Step 1 — Differentiate the substitution</div>
+        <div class="step-desc"><span class="mark-step">M1</span></div>
+        \( y = ux \implies \dfrac{dy}{dx} = u + x\dfrac{du}{dx} \) (product rule).
+      </div>
+      <div class="step"><div class="step-header">Step 2 — Substitute into the DE</div>
+        <div class="step-desc"><span class="mark-step">M1</span></div>
+        LHS: \( x\!\left(u + x\dfrac{du}{dx}\right) = xu + x^{2}\dfrac{du}{dx} \).<br>
+        RHS: \( ux + 2x^{2}\cos x \).<br>
+        Equate:
+        \[ xu + x^{2}\dfrac{du}{dx} = xu + 2x^{2}\cos x \]
+      </div>
+      <div class="step"><div class="step-header">Step 3 — Simplify and separate</div>
+        <div class="step-desc"><span class="mark-step">M1</span></div>
+        \[ x^{2}\dfrac{du}{dx} = 2x^{2}\cos x \implies \dfrac{du}{dx} = 2\cos x \]
+      </div>
+      <div class="step"><div class="step-header">Step 4 — Integrate</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ u = 2\sin x + C \]
+      </div>
+      <div class="step"><div class="step-header">Step 5 — Return to y</div>
+        <div class="step-desc"><span class="mark-step">A1</span></div>
+        \[ \boxed{y = ux = x(2\sin x + C)} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">By using the substitution \( y = ux \), find the general solution of \( x\dfrac{dy}{dx} - y = x^{2} e^{x} \). <span class="marks">[6]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — Differentiate the substitution</div>
+        <div class="step-desc"><span class="mark-step">M1</span></div>
+        \( \dfrac{dy}{dx} = u + x\dfrac{du}{dx} \).
+      </div>
+      <div class="step"><div class="step-header">Step 2 — Substitute</div>
+        <div class="step-desc"><span class="mark-step">M1</span></div>
+        LHS: \( x\!\left(u + x\dfrac{du}{dx}\right) - ux = xu + x^{2}\dfrac{du}{dx} - ux = x^{2}\dfrac{du}{dx} \).<br>
+        Equate to RHS:
+        \[ x^{2}\dfrac{du}{dx} = x^{2} e^{x} \]
+      </div>
+      <div class="step"><div class="step-header">Step 3 — Simplify and integrate</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        \[ \dfrac{du}{dx} = e^{x} \implies u = e^{x} + C \]
+      </div>
+      <div class="step"><div class="step-header">Step 4 — Return to y</div>
+        <div class="step-desc"><span class="mark-step">A1</span></div>
+        \[ \boxed{y = ux = x(e^{x} + C) = x e^{x} + Cx} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Substitution \( y = ux \) — the "sub in two places" trick.</strong>
+      <p>Whenever the substitution given is in the form \( y = ux \) (or equivalently \( u = y/x \)), make \( y \) the subject and substitute it in two places: (1) for \( y \) itself, (2) into the derivative via the product rule \( \dfrac{dy}{dx} = u + x\dfrac{du}{dx} \). This is the mechanic that isn't taught explicitly in most notes.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c9">
+  <h3>Question 9</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">For each of the following, identify which pattern applies, write down the general solution in the appropriate form, and find the value of the constant \( A \).<br><br>
+    (a) \( \dfrac{dm}{dt} = -0.1\,m \), &nbsp; \( m(0) = 500 \) &nbsp;— write in the form \( m = A e^{-0.1 t} \). <span class="marks">[2]</span><br>
+    (b) \( \dfrac{dT}{dt} = -0.05(T - 20) \), &nbsp; \( T(0) = 90 \) &nbsp;— write in the form \( T = 20 + A e^{-0.05 t} \). <span class="marks">[3]</span><br>
+    (c) \( \dfrac{dI}{dt} = 0.001\,I(1000 - I) \), &nbsp; \( I(0) = 100 \) &nbsp;— write in the form \( \dfrac{I}{1000 - I} = A e^{t} \). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) Pattern 1</div>
+        <div class="step-desc"><span class="mark-step">B1 A1</span></div>
+        For Pattern 1, \( A = m(0) = 500 \).
+        \[ m = 500\,e^{-0.1 t} \]
+      </div>
+      <div class="step"><div class="step-header">(b) Pattern 2</div>
+        <div class="step-desc"><span class="mark-step">B1 M1 A1</span></div>
+        For Pattern 2, \( A = T(0) - K = 90 - 20 = 70 \).
+        \[ T = 20 + 70\,e^{-0.05 t} \]
+      </div>
+      <div class="step"><div class="step-header">(c) Pattern 3</div>
+        <div class="step-desc"><span class="mark-step">B1 M1 A1</span></div>
+        For Pattern 3, \( A = \dfrac{I(0)}{K - I(0)} = \dfrac{100}{900} = \dfrac{1}{9} \).<br>
+        Note: exponent coefficient here is \( Kk = 1000 \times 0.001 = 1 \), matching the stated form.
+        \[ \dfrac{I}{1000 - I} = \dfrac{1}{9}\,e^{t} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">For each of the following, identify which pattern applies, write down the general solution in the appropriate form, and find the value of the constant \( A \).<br><br>
+    (a) \( \dfrac{dv}{dt} = 5v \), &nbsp; \( v(0) = 20 \) &nbsp;— write in the form \( v = A e^{5 t} \). <span class="marks">[2]</span><br>
+    (b) \( \dfrac{dS}{dt} = 3(50 - S) \), &nbsp; \( S(0) = 10 \) &nbsp;— write in the form \( S = 50 + A e^{-3 t} \). <span class="marks">[3]</span><br>
+    (c) \( \dfrac{dP}{dt} = 0.5\,P(200 - P) \), &nbsp; \( P(0) = 50 \) &nbsp;— write in the form \( \dfrac{P}{200 - P} = A e^{100 t} \). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) Pattern 1</div>
+        <div class="step-desc"><span class="mark-step">B1 A1</span></div>
+        \( A = v(0) = 20 \).
+        \[ v = 20\,e^{5 t} \]
+      </div>
+      <div class="step"><div class="step-header">(b) Pattern 2</div>
+        <div class="step-desc"><span class="mark-step">B1 M1 A1</span></div>
+        Rewrite: \( \dfrac{dS}{dt} = -3(S - 50) \), so \( K = 50 \).<br>
+        \( A = S(0) - K = 10 - 50 = -40 \) &nbsp; (negative — starting below the target).
+        \[ S = 50 - 40\,e^{-3 t} \]
+      </div>
+      <div class="step"><div class="step-header">(c) Pattern 3</div>
+        <div class="step-desc"><span class="mark-step">B1 M1 A1</span></div>
+        \( K = 200 \), \( k = 0.5 \), so exponent coefficient \( Kk = 100 \) ✓.<br>
+        \( A = \dfrac{50}{200 - 50} = \dfrac{50}{150} = \dfrac{1}{3} \).
+        \[ \dfrac{P}{200 - P} = \dfrac{1}{3}\,e^{100 t} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>"What is A?" — the meta-rule made concrete.</strong>
+      <p>Three formulas, one for each pattern. Memorise them or reconstruct from the general solution form. The single easiest way to lose exam marks on DE questions is to plug the wrong thing in for \( A \) — especially for Pattern 2 warming (negative \( A \)) and Pattern 3 (ratio, not a value).</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<div class="card" id="c10">
+  <h3>Question 10</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A tank contains \( 100 \) L of water in which \( 10 \) kg of salt is dissolved. Fresh water enters the tank at \( 5 \) L/min, and the well-mixed brine leaves at the same rate. Let \( S(t) \) denote the mass of salt in the tank at time \( t \) minutes.<br><br>
+    (i) By considering rate in and rate out, show that \( \dfrac{dS}{dt} = -\dfrac{S}{20} \). <span class="marks">[2]</span><br>
+    (ii) Solve the differential equation, giving \( S \) in terms of \( t \). <span class="marks">[3]</span><br>
+    (iii) Find the time taken for the salt in the tank to halve. <span class="marks">[2]</span><br>
+    (iv) At time \( t = 0 \), the fresh water source is replaced with brine of concentration \( 0.5 \) kg/L, flowing in at \( 5 \) L/min (with mixed brine still leaving at \( 5 \) L/min). Show that \( \dfrac{dS}{dt} = 2.5 - \dfrac{S}{20} \), and find \( S \) in terms of \( t \). <span class="marks">[5]</span><br>
+    (v) State the long-term amount of salt in the tank under the new inflow. <span class="marks">[1]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="block trap"><div class="label">Trap</div>
+        Part (i) is Pattern 1 (fresh water in → rate in = 0). Part (iv) is Pattern 2 (constant source + proportional sink → collapses via factorisation to Pattern 2 with target \( K = 2.5 / (1/20) = 50 \)). Same tank, different regime — this is the classic synthesis exam question.
+      </div>
+      <div class="step"><div class="step-header">(i) Rate-in – rate-out (fresh water regime)</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        Rate in = \( 0 \) kg/L \( \times \) \( 5 \) L/min = \( 0 \).<br>
+        Rate out = concentration in tank \( \times \) outflow = \( \dfrac{S}{100} \times 5 = \dfrac{S}{20} \) kg/min.
+        \[ \dfrac{dS}{dt} = 0 - \dfrac{S}{20} = -\dfrac{S}{20} \text{ (shown)} \]
+      </div>
+      <div class="step"><div class="step-header">(ii) Solve (Pattern 1)</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        \[ \int \dfrac{1}{S}\,dS = \int -\dfrac{1}{20}\,dt \implies \ln|S| = -\dfrac{t}{20} + C \]
+        \[ S = A\,e^{-t/20}, \quad S(0) = 10 \Rightarrow A = 10 \]
+        \[ \boxed{S = 10\,e^{-t/20}} \]
+      </div>
+      <div class="step"><div class="step-header">(iii) Half-life of salt</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ 5 = 10\,e^{-t/20} \implies e^{-t/20} = \dfrac{1}{2} \implies t = 20 \ln 2 \approx 13.86 \; \text{minutes} \]
+      </div>
+      <div class="step"><div class="step-header">(iv) New regime — rate-in – rate-out, then solve</div>
+        <div class="step-desc"><span class="mark-step">B1 B1 M1 M1 A1</span></div>
+        Rate in = \( 0.5 \times 5 = 2.5 \) kg/min. Rate out = \( \dfrac{S}{20} \) kg/min (unchanged).
+        \[ \dfrac{dS}{dt} = 2.5 - \dfrac{S}{20} \text{ (shown)} \]
+        Factorise:
+        \[ \dfrac{dS}{dt} = -\dfrac{1}{20}(S - 50) \]
+        \[ \ln|S - 50| = -\dfrac{t}{20} + C \implies S - 50 = A\,e^{-t/20} \]
+        At the moment of switching, \( S = 10 \) (from part ii evaluated at \( t = 0 \) of the new regime):
+        \[ A = 10 - 50 = -40 \]
+        \[ \boxed{S = 50 - 40\,e^{-t/20}} \]
+      </div>
+      <div class="step"><div class="step-header">(v) Long-term</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        As \( t \to \infty \), \( S \to 50 \) kg.
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">A swimming pool contains \( 1000 \) L of chlorinated water with \( 50 \) kg of chlorine dissolved. Fresh water enters the pool at \( 20 \) L/min, and chlorinated water leaves at the same rate. Let \( C(t) \) denote the mass of chlorine in kg at time \( t \) minutes.<br><br>
+    (i) By considering rate in and rate out, show that \( \dfrac{dC}{dt} = -\dfrac{C}{50} \). <span class="marks">[2]</span><br>
+    (ii) Solve the differential equation. <span class="marks">[3]</span><br>
+    (iii) Find the time taken for the chlorine to fall to \( 10 \) kg. <span class="marks">[2]</span><br>
+    (iv) At time \( t = 0 \), the source is replaced with water containing \( 0.05 \) kg/L chlorine (\( 20 \) L/min in and out), and at this moment the chlorine amount is \( 20 \) kg. Show \( \dfrac{dC}{dt} = 1 - \dfrac{C}{50} \), solve, and state the long-term chlorine amount. <span class="marks">[6]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) Rate-in – rate-out</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        Rate in = \( 0 \). Rate out = \( \dfrac{C}{1000} \times 20 = \dfrac{C}{50} \) kg/min.
+        \[ \dfrac{dC}{dt} = -\dfrac{C}{50} \text{ (shown)} \]
+      </div>
+      <div class="step"><div class="step-header">(ii) Solve</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        \[ C = A\,e^{-t/50}, \quad C(0) = 50 \Rightarrow A = 50 \]
+        \[ \boxed{C = 50\,e^{-t/50}} \]
+      </div>
+      <div class="step"><div class="step-header">(iii) Time to \(C = 10\)</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ 10 = 50\,e^{-t/50} \implies e^{-t/50} = \dfrac{1}{5} \implies t = 50 \ln 5 \approx 80.5 \; \text{minutes} \]
+      </div>
+      <div class="step"><div class="step-header">(iv) New regime</div>
+        <div class="step-desc"><span class="mark-step">B1 B1 M1 M1 A1 B1</span></div>
+        Rate in = \( 0.05 \times 20 = 1 \) kg/min. Rate out = \( \dfrac{C}{50} \) kg/min.
+        \[ \dfrac{dC}{dt} = 1 - \dfrac{C}{50} = -\dfrac{1}{50}(C - 50) \text{ (shown)} \]
+        \[ C - 50 = A\,e^{-t/50}, \quad C(0) = 20 \Rightarrow A = -30 \]
+        \[ C = 50 - 30\,e^{-t/50} \]
+        Long-term: \( C \to 50 \) kg.
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Full synthesis — tank problem with regime change.</strong>
+      <p>Everything from this cluster in one question: rate in – rate out setup, Pattern 1 solve, half-life, then regime change to Pattern 2 with constant source. The regime-change trick: use the value of \( S \) at the moment of switching as the new initial condition. Long-term is always the new target \( K = \text{rate in} / \text{sink rate} \).</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<hr>
+
+<h2>Closing notes</h2>
+<p>All 10 cards target gaps surfaced in the Cluster 3 walkthrough. Score \(\geq 85\%\) here before moving on. Cards where you scored \(< 60\%\) — go back and re-read the meta-rules section, then do the practice again from scratch.</p>
+<p>The four rules that will save you the most exam marks:</p>
+<ol>
+  <li><strong>\(A\) is not always the starting value</strong> — Rule 2.</li>
+  <li><strong>Never expand the bracket in Pattern 2</strong> — Rule 3.</li>
+  <li><strong>Partial fractions template with the \(1/K\) factored out</strong> — Rule 4.</li>
+  <li><strong>Rate in − rate out setup for tank/compartment</strong> — Rule 5.</li>
+</ol>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn => {
+    btn.addEventListener('click', function(){
+      const block = this.parentElement;
+      const overlay = block.querySelector('.answer-overlay');
+      if (overlay.classList.contains('hidden')) {
+        overlay.classList.remove('hidden');
+        this.textContent = block.classList.contains('reveal-archetype') ? 'Reveal archetype' : 'Reveal';
+        this.classList.remove('hide-state');
+      } else {
+        overlay.classList.add('hidden');
+        this.textContent = 'Hide';
+        this.classList.add('hide-state');
+      }
+    });
+  });
+  function revealAll(){
+    document.querySelectorAll('.answer-overlay').forEach(o => o.classList.add('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b => { b.textContent = 'Hide'; b.classList.add('hide-state'); });
+  }
+  function hideAll(){
+    document.querySelectorAll('.answer-overlay').forEach(o => o.classList.remove('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b => {
+      const inArchetype = b.parentElement.classList.contains('reveal-archetype');
+      b.textContent = inArchetype ? 'Reveal archetype' : 'Reveal';
+      b.classList.remove('hide-state');
+    });
+  }
+</script>
+
+</body>
+</html>
