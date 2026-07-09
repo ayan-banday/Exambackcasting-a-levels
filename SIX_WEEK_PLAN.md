@@ -1,209 +1,152 @@
-# SIX-WEEK PLAN — A-Level H2 (8 Jul → 18 Aug 2026)
+# SIX-WEEK STUDY PLAN — Prelim Run (10 Jul → 20 Aug 2026)
 
-> **Capacity assumed:** moderate, ~3–4 hrs/day (~18–24 hrs/week), 6 days/week. **Structure:** interleaved — every week touches all 5 subjects in priority-weighted proportions, so nothing goes cold before the exam.
-> **Companion doc:** `STUDY_MAP.md` holds every concept node per sub-cluster. This doc is the *schedule*. Tick boxes as you go.
-> **Grade target:** A, safe with B. At moderate pace you will **drill the 🎯 priority set to mastery and coverage-pass (👁) the rest** — that coverage-not-closure tier on lower-yield topics *is* the deliberate B-safety margin, chosen on purpose.
-
-### How to read the hierarchy
-```
-BIG TOPIC (what the exam tests)
-  └─ Subtopic (syllabus section)
-       └─ Sub-cluster (one study sheet + its test = one study unit)
-```
-### Legend
-- **🎯 DRILL** — build study sheet + take the adversarial test + close gaps (the real work)
-- **👁 COVERAGE** — read + understand once + a light self-check; drill later only if a test exposes it
-- **✅ BUILT** — already done · **⚑** — flagged weak spot / highest-yield
+> **Target:** prelim-realistic — a solid pass (C/B), where *every cluster we drill is also a permanent A-level foundation.* Not chasing A's on everything.
+> **Pace:** ~4 hrs/day · **6 days/week** (1 rest day) · ~24 hrs/week.
+> **Reality:** one cluster ≈ one day (study sheet → test → gap cluster → re-test). So this plan drills **~25 load-bearing clusters** and coverage-skims the rest. That's the design, not a shortfall.
+> **How to use:** each day tells you the subject, the exact cluster, and how to spend the 4 hours. Run the **Standard Cluster Cycle** (below) unless the day says otherwise. Tick as you go.
 
 ---
 
-# PART A — THE RESTRUCTURED MAP (big topic ▸ subtopic ▸ sub-clusters)
+## ⏱️ THE STANDARD CLUSTER CYCLE (your default 4-hour day)
 
-## 1. MATHS H2 (9758) · ~34 sub-clusters · *finish first — most bankable A*
+This is the unit the whole plan is built from. One cluster, one day:
 
-### ▍PURE MATHEMATICS (70% of the paper)
-- **Calculus** ✅ BUILT
-  - Differentiation & Maclaurin · Integration Techniques & Applications · Differential Equations
-- **Vectors** ⚑ 🎯 *your weak spot + every-paper 12–14m closer = highest value*
-  - Vector Basics, Products & Ratio Theorem
-  - Lines & Planes
-  - Foot of Perpendicular, Distances & Angles
-- **Functions & Graphs** 🎯
-  - Functions, Inverses & Composites
-  - Graphs & Transformations
-  - Equations & Inequalities
-- **Sequences & Series** 🎯
-  - AP / GP & Real-World Applications
-  - Sigma, Method of Differences & Recurrence
-- **Complex Numbers** 🎯
-  - Cartesian Operations & Roots
-  - Argand Diagram & Geometric Effects
+| Time | Block | What you do |
+|---|---|---|
+| **0:00–0:40** (40m) | **Study ①** | Read the cluster study sheet, first half. Copy every worked example by hand. |
+| **0:40–1:40** (60m) | **Study ②** | Read the second half. Then close the sheet and re-derive the key examples from memory. |
+| **1:40–2:25** (45m) | **🧪 Test** | Do the cluster's adversarial questions under timing, no notes. |
+| **2:25–3:00** (35m) | **Grade** | Self-mark against the scheme. Log every missed node → mark it ACTIVE. Note *confident-but-wrong* separately (Priority 1). |
+| **3:00–4:00** (60m) | **🔁 Close the gap** | **If you missed anything → ask me to generate a gap cluster** on those nodes → study it → redo the missed question type. **If clean →** do the extended/harder questions, or start tomorrow's Study ①. |
 
-### ▍PROBABILITY & STATISTICS (30% of the paper)
-- **Probability & Distributions** 🎯
-  - Permutations, Combinations & Probability
-  - Discrete RV & Binomial
-  - Normal Distribution
-- **Statistical Inference & Regression** 🎯
-  - Sampling & CLT
-  - Hypothesis Testing
-  - Correlation & Regression
+**The gap sub-loop (this is the part that actually makes you better):**
+> miss a node → I build a gap cluster → you study + re-test *just that* → if confident+correct it goes FRAGILE, second clean pass → CLOSED. A cluster isn't "done" when you've read it — it's done when its gaps are closed.
 
-## 2. CHEMISTRY H2 (9476) · ~86 sub-clusters · *high volume, templates repeat*
-
-### ▍PHYSICAL CHEMISTRY
-- **Atomic Structure** 🎯 — Subatomic/Isotopes · Orbitals & Config · Ionisation-Energy (Z_eff) reasoning
-- **Stoichiometry & Redox** 🎯 — Mole Toolkit · Reacting Masses/Gas/Solution · Redox & Titrimetric
-- **Chemical Bonding** 🎯 — Bond Types & Dot-and-Cross · VSEPR & Polarity · Intermolecular & H-Bond · Lattices & Structure→Property
-- **Gaseous State** 👁 — Ideal Gas & pV=nRT · Real Gases & Partial Pressures
-- **Energetics & Thermodynamics** 🎯 — Enthalpy & Calorimetry · Hess & Born-Haber · Entropy, Gibbs & Feasibility
-- **Reaction Kinetics** 🎯 — Rate Equations & Orders · Mechanisms & Order · Boltzmann, Temp & Catalysis
-- **Chemical Equilibria** 🎯 — Dynamic Equilibrium & Le Chatelier · Kc/Kp & ICE · Industrial (Haber)
-- **Aqueous Equilibria** ⚑ 🎯 *"biggest calculation topic in the A-level"* — Acid-Base Theories & pH · Buffers & Titration Curves · Solubility Product & Precipitation
-- **Electrochemistry** 🎯 — Electrode Potentials & Feasibility · Gibbs–E° Link · Electrolysis & Faraday
-
-### ▍INORGANIC CHEMISTRY
-- **Periodicity** 🎯 — Period-3 Physical Trends · Oxides & Chlorides · Group 2 & 17 · Deduce-the-Unknown
-- **Transition Elements** 🎯 — Definition/Configs/Physical · Variable Oxidation & Redox Systems · Ligands, Colour & Catalysis
-
-### ▍ORGANIC CHEMISTRY
-- **Foundations & Mechanisms** 🎯 — Nomenclature/Hybridisation/Shapes · Isomerism & Chirality · Reactivity Terms & the 5 Named Mechanisms
-- **Hydrocarbons** 🎯 — Alkanes (FRS/environment) · Alkenes (addition/oxidation) · Arenes (substitution/side-chain)
-- **Halogen Derivatives** 🎯 — Substitution vs Elimination · SN1/SN2 Stereochemistry · Uses & Environment
-- **Hydroxy Compounds** 🎯 — Alcohols (oxidation/substitution) · Iodoform & Classification · Phenol Acidity & Ring
-- **Carbonyl Compounds** 🎯 — Nucleophilic Addition & Reduction · Distinguishing Tests
-- **Carboxylic Acids & Derivatives** 🎯 — Formation & Acidity · Salts/Esters/Acyl Chlorides · Hydrolysis
-- **Nitrogen Compounds** 🎯 — Amines (formation/basicity) · Amides & Amino Acids
-- **Polymers** 👁 — Addition vs Condensation · Proteins, Biodegradability & Recycling
-- **Organic Reaction Map** ⚑ 🎯 *where P3 synthesis marks live* — Interconversion Map · Multi-Step Synthesis · Elucidation & Distinguishing Trees
-
-## 3. CSC H2 中国通识 (9629) · ~30 sub-clusters · *protect the lead, secure the compulsory*
-- **治理 Governance** ✅ BUILT (7 clusters)
-- **经济 Economy** ⚑ 🎯 *likely P2 compulsory → deepest*
-  - Growth Engine & Transition · Structural Challenges (SOE/Debt/Regional) · Energy, Environment & Green Pivot · Rebalancing Strategies
-- **社会 Society** 🎯
-  - Demographic Transition & Ageing · Urbanisation, Migration & Stratification · Family, Values & Belief · Civil Society & Social Governance
-- **外交 Foreign Affairs** 👁 *partial-sacrifice — cover for P1 case paper, fewer full essays*
-  - Drivers of Foreign Policy · Great-Power Relations (US/Japan) · Regional Diplomacy (ASEAN) · Global Governance & Soft Power
-- **跨课题 Cross-Topic Bridge** ⚑ 🎯 *highest-leverage single unit for an A (the 18→19 wall)*
-  - Cross-Topic Bridge & Deployment (the reusable causal chains)
-
-## 4. BIOLOGY H2 (9477) · ~85 sub-clusters · *triage hard — risk is precision, not breadth*
-
-### ▍CELLS & BIOMOLECULES
-- **Cell & Viral Ultrastructure** 🎯 · **Biomolecules & Bonding** 🎯 · **Membranes & Transport** 🎯 · **Enzymes** 🎯 · **Stem Cells** 👁
-### ▍GENETICS
-- **DNA, Replication & Central Dogma** 🎯 · **Genome, Viral & Bacterial Genetics** 🎯 · **Gene Expression & Molecular Techniques** 🎯 · **Mutations & Cancer** 🎯 · **Cell Cycle, Mitosis & Meiosis** 🎯
-- **Inheritance & Genetic Crosses** ⚑ 🎯 *genetic diagram + chi-squared every P2 — fast-closing quantitative*
-  - Terminology & Monohybrid · Dihybrid/Codominance/Sex-Linkage · Linkage, Crossing-Over & Epistasis · Chi-Squared Test · Variation
-### ▍ENERGY & METABOLISM
-- **Photosynthesis** 🎯 · **Respiration** 🎯 · **Cell Signalling** 🎯
-### ▍APPLICATIONS & DISEASE (Extension)
-- **Infectious Diseases & Immunity** 🎯
-### ▍ECOLOGY & EVOLUTION
-- **Evolution, Speciation & Phylogeny** ⚑ 🎯 *highest essay-frequency theme (P3 Sec B)* · **Climate Change Impact** 🎯
-### ▍DATA-HANDLING
-- **Biostatistics Toolkit** ⚑ 🎯 *underpins crosses, Hardy-Weinberg, R₀ — quantitative, drill to mechanical*
-
-*(Practical P4 deferred to October — not in this 6-week plan.)*
-
-## 5. GENERAL PAPER H1 (8881) · ~14 sub-clusters · *depth over breadth — you write 1 of 8 essays*
-- **PAPER 1 — Essay** 🎯 — Argumentation & Balance · Relevance & Command-Word · Conceptual Evaluation · Evidence Banks by Theme · Architecture & Language · Intros & Conclusions
-  - *Prep 4 themes to A-depth: Science & Tech · Politics · Environment · Singapore lens. + 2 to B-depth: Society & Culture · Arts. Economics = lens only 👁*
-- **PAPER 2 — Comprehension & AQ** 🎯 — Paraphrase Discipline · Close-Reading (Inference/Vocab/Language) · Summary Technique · Cross-Passage Synthesis · **Application Question** ⚑ · Exam-Craft
-- **CROSS-PAPER** 🎯 — Synthesis & Exam-Craft · Timed Practice Paper (the convergence gate)
+⚠️ **Tell me your real timings.** I built these blocks from the system's convergence loop. You said your actual process runs in ~2–4 hr "phases" — give me your real per-phase times and I'll re-box every day to match exactly how *you* work.
 
 ---
 
-# PART B — THE 6-WEEK CALENDAR (interleaved)
+## 📚 THE ~25 CLUSTERS WE'RE DRILLING (the load-bearing set)
 
-**Phase 1 — Coverage + priority drilling (Weeks 1–4, → end July):** first-pass understanding of every subject, drilling the 🎯 set. Goal: no untouched topics + priority clusters into FRAGILE/CLOSED.
-**Phase 2 — Convergence (Weeks 5–6, Aug):** official past papers timed + close whatever's still ACTIVE. Where a B becomes an A.
+Chosen because each is high-frequency **and** a foundation the A-level reuses. Everything not on this list is **coverage-skim only** for the prelim (see drop order at the end).
 
----
+**Maths (6)** — most bankable, closes to mechanical
+1. Vectors — Basics, Products & Ratio Theorem ⚑
+2. Vectors — Lines & Planes
+3. Vectors — Foot of Perpendicular, Distances & Angles
+4. Normal Distribution
+5. Hypothesis Testing
+6. Discrete RV & Binomial
 
-## ▶ WEEK 1 · Jul 8–14 — *Launch: Maths Vectors + Chem backbone + baselines*
-- **Maths** 🎯 Vectors → `Vector Basics, Products & Ratio Theorem` · `Lines & Planes`
-  - [ ] Vector Basics sheet + test
-  - [ ] Lines & Planes sheet + test
-- **Chemistry** 🎯 the calculation backbone (everything else depends on it)
-  - [ ] Atomic Structure → Orbitals & Config + Z_eff reasoning
-  - [ ] Stoichiometry & Redox → Mole Toolkit + Redox/Titrimetric
-- **CSC** 👁→🎯 Economy start
-  - [ ] Read Economy content nodes (coverage) · [ ] `Growth Engine & Transition` sheet
-- **Biology** 🎯 fast quantitative wins
-  - [ ] Inheritance → Terminology & Monohybrid · [ ] Dihybrid/Codominance/Sex-Linkage
-- **GP** baseline
-  - [ ] One timed P1 essay (diagnostic) · [ ] One P2 comprehension (diagnostic)
-- **Admin:** [ ] read `STUDY_MAP.md` once end-to-end so the whole terrain is in your head.
+**Chemistry (7)** — foundations + reasoning templates reused everywhere
+7. Stoichiometry & Redox
+8. Bonding — VSEPR, Polarity & Intermolecular Forces
+9. Energetics — Hess & Born-Haber
+10. Equilibria — Kc/Kp & Le Chatelier
+11. Aqueous Equilibria — Acid-Base & pH ⚑
+12. Organic — Foundations & the 5 Mechanisms
+13. Organic — Reaction Map & Synthesis ⚑
 
-## ▶ WEEK 2 · Jul 15–21 — *Finish Vectors + Chem bonding/periodicity + Economy drill*
-- **Maths** 🎯
-  - [ ] Vectors → `Foot of Perpendicular, Distances & Angles` (Vectors DONE)
-  - [ ] Complex Numbers → `Cartesian Operations & Roots` · `Argand & Geometric Effects`
-- **Chemistry** 🎯
-  - [ ] Bonding → VSEPR & Polarity · Intermolecular & H-Bond · Lattices
-  - [ ] Periodicity → Period-3 Trends (start)
-- **CSC** 🎯 Economy core
-  - [ ] `Structural Challenges (SOE/Debt/Regional)` · [ ] `Energy, Environment & Green Pivot`
-- **Biology** 🎯 close the quantitative slice
-  - [ ] Inheritance → Chi-Squared Test · [ ] Biostatistics → SD & t-test / Chi-Squared
-- **GP** 🎯
-  - [ ] Skill: Relevance & Command-Word contract · [ ] Evidence bank: Science & Tech
+**CSC (4)** — Governance already built; secure the compulsory + the A-lever
+14. Economy — Growth Engine & Transition
+15. Economy — Structural Challenges (SOE/Debt/Regional)
+16. Cross-Topic Bridge & Deployment ⚑
+17. Society — Urbanisation, Migration & Stratification
 
-## ▶ WEEK 3 · Jul 22–28 — *Maths pure remainder + Chem energetics block + Bio genetics spine*
-- **Maths** 🎯
-  - [ ] Functions & Graphs (all 3 sub-clusters) · [ ] Sequences & Series (both)
-- **Chemistry** 🎯
-  - [ ] Energetics → Hess & Born-Haber + Gibbs · [ ] Kinetics → Rate Equations + Boltzmann/Catalysis · [ ] Equilibria → Kc/Kp & Le Chatelier
-- **CSC**
-  - [ ] Economy → `Rebalancing Strategies` + Economy synthesis + model test 🎯 · [ ] Society (coverage read) 👁
-- **Biology** 🎯 the P3 synthesis spine
-  - [ ] DNA/Replication · [ ] Gene Expression (5-level) · [ ] Mutations & Cancer
-- **GP** 🎯
-  - [ ] Skill: Application Question (start) · [ ] Evidence bank: Politics & Governance
+**Biology (5)** — fast-closing quantitative + highest-frequency
+18. Inheritance — Dihybrid, Codominance & Sex-Linkage
+19. Inheritance — Chi-Squared Test
+20. Biostatistics Toolkit
+21. Evolution — Variation, Natural Selection & Hardy-Weinberg
+22. Mutations & Cancer
 
-## ▶ WEEK 4 · Jul 29–Aug 4 — *Finish Maths syllabus + Chem aqueous/organic-start + Bio energy/evolution* → **✅ END-JULY COVERAGE GATE**
-- **Maths** 🎯 (Maths syllabus complete after this week)
-  - [ ] Probability & Distributions (P&C, Discrete RV, Normal) · [ ] Statistical Inference & Regression (Sampling/CLT, Hypothesis Testing, Regression)
-- **Chemistry** 🎯
-  - [ ] Aqueous Equilibria (Acid-Base, Buffers, Solubility) — the big one · [ ] Electrochemistry · [ ] Transition Elements · [ ] Organic Foundations & Mechanisms
-- **CSC** 🎯
-  - [ ] `Cross-Topic Bridge & Deployment` (the A-grade lever) · [ ] Society clusters · [ ] Foreign Affairs (coverage read) 👁
-- **Biology** 🎯
-  - [ ] Evolution + Hardy-Weinberg · [ ] Photosynthesis · [ ] Respiration · [ ] Infectious Diseases + Climate Change (coverage) 👁
-- **GP** 🎯
-  - [ ] Evidence banks: Environment + Singapore lens · [ ] Skill: Summary technique
-- **🏁 CHECKPOINT:** every subject has had a coverage pass. If anything here slipped, use the sacrifice list (STUDY_MAP §1) to decide what to leave at coverage-only.
+**GP (3)** — skills that transfer across every essay/paper
+23. Application Question Mastery ⚑
+24. Relevance & Command-Word Contract
+25. Argumentation, Thesis & Balance
 
-## ▶ WEEK 5 · Aug 5–11 — *Organic completion + Bio remainder + first timed papers*
-- **Maths** — [ ] **First official past paper (P1 + P2) under timed conditions** → mark → write gap-list
-- **Chemistry** 🎯
-  - [ ] Organic Reaction Map (interconversions + synthesis routes) · [ ] Hydrocarbons → Nitrogen functional groups · [ ] Polymers (coverage) 👁
-- **CSC**
-  - [ ] Foreign Affairs essay drill (light) · [ ] Governance & Economy synthesis refresh
-- **Biology** 🎯
-  - [ ] Cells & Biomolecules (Ultrastructure, Biomolecules, Membranes, Enzymes) · [ ] Genome/Viral · [ ] Cell Cycle · [ ] Cell Signalling
-- **GP** 🎯 — [ ] Full timed paper (P1 + P2) · [ ] Evidence banks: Society & Arts (B-depth)
-
-## ▶ WEEK 6 · Aug 12–18 — **CONVERGENCE: official past papers, timed, every subject**
-> The real readiness gate. Scores on study clusters don't count — timed official papers do.
-- **All subjects** — [ ] one official past paper each, timed, self-marked against the trap model
-  - [ ] Maths P1+P2 · [ ] Chemistry P1+P2+P3 · [ ] CSC P1+P2 · [ ] Biology P1+P2+P3 · [ ] GP P1+P2
-- [ ] Close every gap the papers expose (still-ACTIVE clusters get one focused drill)
-- [ ] Re-read synthesis/master clusters (CSC Cross-Topic + Governance/Economy synthesis; Bio Evolution + Genetics)
-- [ ] Final pass over trap models + excluded-scope lists (don't over-answer)
-- [ ] Personal recall check: can you name the sub-clusters cold per big topic?
+*(Gap clusters get generated live as you test — they're not in this list because they depend on what you miss.)*
 
 ---
 
-## Falling behind? The drop order (protects the A, accepts a safe B)
-1. Chemistry **Gaseous State** + **Polymers** → coverage-only, don't drill.
-2. CSC **Foreign Affairs** → P1-case content only; skip full-essay drilling.
-3. Biology **Stem Cells**, fine **Cell Cycle** detail, **insulin/glucagon** specifics → learn the named traps only.
-4. GP **Economics** theme → keep as a lens, don't build a full evidence bank.
-5. Everything marked 👁 stays coverage-only until a timed paper proves you need it.
-**Never drop:** Maths Vectors/Stats · Chem Aqueous Equilibria + Organic Map · CSC Economy + Cross-Topic Bridge · Bio Inheritance/Evolution/Biostatistics · GP Application Question. These carry the A.
+## 🗓️ THE DAY-BY-DAY SCHEDULE
 
-## Pace reality (moderate, ~3–4 hrs/day)
-At this capacity you will **not** drill all ~247 clusters — you'll drill the ~🎯 priority set (~60–80 clusters) to mastery and coverage-pass the rest. That is the plan working as designed, not falling short. The convergence gate in Week 6 (official papers) tells you the truth about readiness — adjust the final weeks based on what those papers expose, not on how the clusters felt.
+*Rest day = Sunday. Shift dates if your prelim lands differently — the sequence matters more than the exact dates.*
+
+### ▶ Week 1 · Jul 10–12 — *Launch: Vectors + Chem backbone*
+- **Day 1 · Thu 10 Jul — Maths: Vectors — Basics, Products & Ratio Theorem** 🎯 ⚑
+  Standard Cycle. Focus: magnitude, unit vectors, collinearity, dot & cross product, angle, ratio theorem.
+- **Day 2 · Fri 11 Jul — Maths: Vectors — Lines & Planes** 🎯
+  Standard Cycle. Focus: vector/cartesian equations of lines & planes, intersections, three-plane relationships.
+- **Day 3 · Sat 12 Jul — Chemistry: Stoichiometry & Redox** 🎯
+  Standard Cycle. Focus: mole toolkit, reacting masses/gas/solution, oxidation numbers, half-equations, titration calcs. *(This is the calculation backbone — everything else leans on it.)*
+- *Sun 13 — rest.*
+
+### ▶ Week 2 · Jul 14–19 — *Finish Vectors + Economy + Genetics quant*
+- **Day 4 · Mon 14 Jul — Maths: Vectors — Foot of Perpendicular, Distances & Angles** 🎯 → **Vectors DONE**
+- **Day 5 · Tue 15 Jul — CSC: Economy — Growth Engine & Transition** 🎯
+  Focus: 计划→市场 transition, 经济改革, 贸易与投资 drivers. *(Read Economy content nodes first if unfamiliar.)*
+- **Day 6 · Wed 16 Jul — Biology: Inheritance — Dihybrid, Codominance & Sex-Linkage** 🎯
+  Focus: genetic-diagram notation rigour (X-superscripts, bracketed linkage).
+- **Day 7 · Thu 17 Jul — Chemistry: Bonding — VSEPR, Polarity & Intermolecular Forces** 🎯
+- **Day 8 · Fri 18 Jul — Biology: Inheritance — Chi-Squared Test** 🎯
+  Focus: v = c−1 (not n−1), calculated vs critical, biological conclusion. *(Quantitative — closes fast.)*
+- **Day 9 · Sat 19 Jul — 🔧 BUFFER DAY** — clear any gap clusters spawned this week + do a GP diagnostic essay (timed, so I can baseline you).
+- *Sun 20 — rest.*
+
+### ▶ Week 3 · Jul 21–26 — *Maths stats + Chem energetics/equilibria + Bio stats*
+- **Day 10 · Mon 21 Jul — Maths: Normal Distribution** 🎯 (P2 Sec B banker)
+- **Day 11 · Tue 22 Jul — Chemistry: Energetics — Hess & Born-Haber** 🎯
+- **Day 12 · Wed 23 Jul — CSC: Economy — Structural Challenges (SOE/Debt/Regional)** 🎯
+- **Day 13 · Thu 24 Jul — Biology: Biostatistics Toolkit** 🎯 (SD, t-test, chi-squared, rates, sig figs — underpins genetics & evolution)
+- **Day 14 · Fri 25 Jul — Chemistry: Equilibria — Kc/Kp & Le Chatelier** 🎯
+- **Day 15 · Sat 26 Jul — 🔧 BUFFER DAY** — gap clusters + start GP: Application Question Mastery (skill, not a content cluster).
+- *Sun 27 — rest.*
+
+### ▶ Week 4 · Jul 28–Aug 2 — *The big Chem topic + Evolution + the CSC A-lever*
+- **Day 16 · Mon 28 Jul — Maths: Hypothesis Testing** 🎯 (often the ≥12m Sec B application Q)
+- **Day 17 · Tue 29 Jul — Chemistry: Aqueous Equilibria — Acid-Base & pH** 🎯 ⚑ *(biggest calculation topic — give it a full clean day)*
+- **Day 18 · Wed 30 Jul — Biology: Evolution — Variation, Natural Selection & Hardy-Weinberg** 🎯 ⚑ (highest essay-frequency + quantitative HW)
+- **Day 19 · Thu 31 Jul — CSC: Cross-Topic Bridge & Deployment** 🎯 ⚑ *(the single highest-leverage unit — the 18→19 wall)*
+- **Day 20 · Fri 1 Aug — Chemistry: Organic — Foundations & the 5 Mechanisms** 🎯
+- **Day 21 · Sat 2 Aug — 🔧 BUFFER DAY** — gap clusters + GP: Relevance & Command-Word Contract (skill).
+- *Sun 3 — rest.* **🏁 END-JULY CHECKPOINT:** the load-bearing spine of every subject is now drilled.
+
+### ▶ Week 5 · Aug 4–9 — *Organic map + remaining foundations + finish content*
+- **Day 22 · Mon 4 Aug — Maths: Discrete RV & Binomial** 🎯
+- **Day 23 · Tue 5 Aug — Chemistry: Organic — Reaction Map & Synthesis** 🎯 ⚑ (where P3 synthesis marks live)
+- **Day 24 · Wed 6 Aug — Biology: Mutations & Cancer** 🎯 (P3 synthesis anchor)
+- **Day 25 · Thu 7 Aug — CSC: Society — Urbanisation, Migration & Stratification** 🎯
+- **Day 26 · Fri 8 Aug — GP: Argumentation, Thesis & Balance** 🎯 + build evidence banks (Sci/Tech, Politics, Environment, Singapore).
+- **Day 27 · Sat 9 Aug — 🔧 BUFFER DAY** — clear ALL remaining gap clusters. Content phase ends here.
+- *Sun 10 — rest.*
+
+### ▶ Week 6 · Aug 11–16 — *CONVERGENCE: past papers under timed conditions*
+> Content is done. Now the real readiness gate — official/prelim past papers, timed, self-marked against the trap models. Scores on study clusters don't tell you you're ready; timed papers do.
+- **Day 28 · Mon 11 Aug — Maths past paper** (P1+P2), timed → mark → gap-list.
+- **Day 29 · Tue 12 Aug — Chemistry past paper** (P1+P2), timed → mark → gap-list.
+- **Day 30 · Wed 13 Aug — Biology past paper** (P1+P2), timed → mark → gap-list.
+- **Day 31 · Thu 14 Aug — CSC past paper** (P1+P2), timed → mark → gap-list.
+- **Day 32 · Fri 15 Aug — GP timed paper** (P1+P2) → mark.
+- **Day 33 · Sat 16 Aug — Close the gaps** the papers exposed (most urgent ACTIVE clusters get one focused drill).
+- *Sun 17 — rest.*
+
+### ▶ Week 7 · Aug 18–20 — *Final review before prelim*
+- **Day 34 · Mon 18 Aug — Final review:** trap models + excluded-scope lists (don't over-answer) across all subjects.
+- **Day 35 · Tue 19 Aug — Second timed paper on your weakest subject** (from Week 6 results) + re-read synthesis clusters (CSC Cross-Topic, Bio Evolution/Genetics).
+- **Day 36 · Wed 20 Aug — Light consolidation:** recall check (name each big topic's sub-clusters cold), then rest before the prelim.
+
+---
+
+## 🪂 Falling behind? Drop in this order (protects the pass, buys time)
+1. Chemistry **Discrete RV/Binomial** (Maths) or an organic sub-topic → coverage-skim.
+2. CSC **Society** cluster → coverage-read only.
+3. GP **Argumentation** → fold into the AQ skill day.
+4. Any **buffer day** content → gap clusters always take priority over new material.
+
+**Never drop (these carry the pass):** Maths Vectors + one stats banker · Chem Stoichiometry + Aqueous Equilibria + Organic Foundations · CSC Economy + Cross-Topic Bridge · Bio Inheritance + Chi-Squared + Biostatistics · GP Application Question.
+
+## 📌 Notes
+- **Dates assume your prelim is ~Aug 21+.** If it's earlier, tell me and I'll compress (cut buffer days first, then the lowest-priority clusters).
+- **Gap clusters aren't scheduled** — they're generated live when a test exposes a weakness. Budget for them in the 3:00–4:00 block and the weekly buffer days.
+- **This is prelim scope.** After prelims, we widen to the full ~247-cluster map for the actual A-levels (see `STUDY_MAP.md`).
