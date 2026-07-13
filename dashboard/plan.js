@@ -2269,6 +2269,14 @@ window.PLAN = {
    "paper": "Paper 1",
    "time": "14:00",
    "dur": "1h"
+  },
+  {
+   "date": "2026-09-22",
+   "weekday": "Tue",
+   "subject": "bio",
+   "paper": "Paper 1 · MCQ",
+   "time": "14:00",
+   "dur": "1h"
   }
  ]
 };
