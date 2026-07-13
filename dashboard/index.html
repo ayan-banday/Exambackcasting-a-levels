@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Six-Week Study Plan — Prelim Run</title>
-<meta name="description" content="12 Jul → 16 Aug 2026. 36 study days, no rest days, ~25 load-bearing clusters, two subjects a day (2h each, SIR) + weekly cumulative tests.">
+<meta name="description" content="15 Jul → 23 Aug 2026, prelim from 24 Aug. 40 study days, no rest days, two subjects a day (2h each, SIR) + scaling Sunday cumulative tests. Includes the full prelim paper timetable.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -190,6 +190,13 @@ footer a{color:var(--dim)}
 .logi.done .lw{color:var(--dim2);text-decoration:line-through;text-decoration-color:var(--dim2)}
 .lognote{margin-top:9px;padding-top:9px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);line-height:1.55}
 .logempty{font-size:13px;color:var(--dim2);font-style:italic;padding:4px 0}
+.exams{display:flex;flex-direction:column;gap:6px}
+.exam{display:flex;align-items:center;gap:13px;background:var(--card);border:1px solid var(--line);border-radius:9px;padding:9px 15px;flex-wrap:wrap}
+.exam.prac{border-left:2px solid var(--bad)}
+.exam .exd{font-family:var(--mono);font-size:12px;color:var(--fg);width:96px;flex-shrink:0}
+.exam .extag{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:.06em;padding:2px 8px;border-radius:5px;flex-shrink:0;min-width:50px;text-align:center}
+.exam .exp{font-size:13.5px;font-weight:500}
+.exam .ext{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--dim2);flex-shrink:0}
 </style>
 </head>
 <body>
@@ -216,6 +223,10 @@ footer a{color:var(--dim)}
     </div>
   </div>
   <div class="status" id="status"><div class="dot"></div><div id="stxt"></div><div class="tail" id="stail"></div></div>
+
+  <h2>🎯 Your prelim papers<span class="rule"></span></h2>
+  <div class="h2sub">The backcasting target — every paper you sit, in order. GP opens it (24 Aug); Chemistry P1 closes it (21 Sept). The two <span style="color:var(--bad)">practical</span> papers (Chem 25 Aug, Bio 31 Aug) come early — and per the plan haven't been prepped yet.</div>
+  <div class="exams" id="exams"></div>
 
   <h2>⏱ The daily cycle — 2 subjects × 2h (SIR)<span class="rule"></span></h2>
   <div class="h2sub">Two subjects a day, 2 hours each: ~60 min study/encode, then the test part + close the gaps. Every Sunday is a cumulative test across all subjects covered so far. Run this unless the day says otherwise.</div>
@@ -352,7 +363,7 @@ footer a{color:var(--dim)}
   const CKPT={16:'<b>🏁 Checkpoint.</b> All 25 load-bearing clusters now covered once — the rest is cumulative testing, ⚑ 2nd passes, and timed papers.',
               28:'<b>Content + all five papers done.</b> Week 5 is pure convergence — close what the papers exposed, retest your weakest subject.'};
   const byWeek={}; P.days.forEach(d=>(byWeek[d.week]||=[]).push(d));
-  const MO=['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug'];
+  const MO=['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   let html='';
   P.bounds.forEach(([w,a,b])=>{
     const ds=byWeek[w]||[];
@@ -427,6 +438,22 @@ footer a{color:var(--dim)}
     }).join('');
   } else {
     logEl.innerHTML='<div class="logempty">No entries yet — your first logged day will appear here.</div>';
+  }
+
+  // ---- prelim exam dates ----
+  const exEl=document.getElementById('exams');
+  if(exEl && P.exams && P.exams.length){
+    exEl.innerHTML=P.exams.map(x=>{
+      const s=S[x.subject]||{name:x.subject,colour:'#8c909b'};
+      const [,mo,dy]=x.date.split('-');
+      const prac=/Practical/i.test(x.paper);
+      return `<div class="exam ${prac?'prac':''}">
+        <span class="exd">${x.weekday} ${+dy} ${MO[+mo]}</span>
+        <span class="extag" style="background:${s.colour}1f;color:${s.colour}">${s.name}</span>
+        <span class="exp">${x.paper}</span>
+        <span class="ext">${x.time}${x.dur?' · '+x.dur:''}</span>
+      </div>`;
+    }).join('');
   }
 })();
 </script>
