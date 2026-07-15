@@ -120,12 +120,14 @@ Every worked solution mirrors the school tutorial presentation. Every "show that
 <p>Sign of \( k \): always state \( k > 0 \). The physical direction (growth/decay) is set by the sign in front of the RHS, not by \( k \) itself.</p>
 
 <h4>Rule 2: What is \( A \)? (this is the biggest omission in most notes)</h4>
+<p><strong>\( A \) is what you get by setting \( t = 0 \) and substituting the initial value into the exponentiated equation.</strong> That's the same operation for all three patterns — you do not memorise three different formulas. Whatever the exponentiated form looks like, plug in \( t = 0 \) and \( N = N_0 \), then solve for \( A \).</p>
 <table>
-  <tr><th>Pattern</th><th>General solution form</th><th>\( A \) equals</th></tr>
-  <tr><td>1</td><td>\( N = A\,e^{\pm kt} \)</td><td>initial value \( N_0 \)</td></tr>
-  <tr><td>2</td><td>\( N = K + A\,e^{-kt} \)</td><td>\( N_0 - K \) — the initial gap. Can be negative if starting below the target.</td></tr>
-  <tr><td>3</td><td>\( \dfrac{N}{K - N} = A\,e^{Kkt} \)</td><td>\( \dfrac{N_0}{K - N_0} \) — a ratio, not a value.</td></tr>
+  <tr><th>Pattern</th><th>Exponentiated form</th><th>Setting \( t = 0 \) gives</th></tr>
+  <tr><td>1</td><td>\( N = A\,e^{\pm kt} \)</td><td>\( N_0 = A \cdot 1 \implies A = N_0 \)</td></tr>
+  <tr><td>2</td><td>\( N = K + A\,e^{-kt} \)</td><td>\( N_0 = K + A \implies A = N_0 - K \) &nbsp;(can be negative)</td></tr>
+  <tr><td>3</td><td>\( \dfrac{N}{K - N} = A\,e^{Kkt} \)</td><td>\( \dfrac{N_0}{K - N_0} = A \) &nbsp;(a ratio)</td></tr>
 </table>
+<p>The three right-column results look different only because the left-hand side is different. The <em>method</em> is identical: \( t = 0 \), sub initial in, solve. This is the one meta-rule that dissolves the "A is the starting value" trap for good.</p>
 
 <h4>Rule 3: Method for Pattern 2 — DO NOT EXPAND</h4>
 <p>Keep the bracket \( (N - K) \) or \( (K - N) \) intact. Then:</p>
@@ -892,7 +894,7 @@ Every worked solution mirrors the school tutorial presentation. Every "show that
   <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
     <div class="answer-content"><div class="label">Archetype revealed</div>
       <strong>"What is A?" — the meta-rule made concrete.</strong>
-      <p>Three formulas, one for each pattern. Memorise them or reconstruct from the general solution form. The single easiest way to lose exam marks on DE questions is to plug the wrong thing in for \( A \) — especially for Pattern 2 warming (negative \( A \)) and Pattern 3 (ratio, not a value).</p>
+      <p>One method, three patterns: \( t = 0 \), substitute the initial value into the exponentiated equation, solve for \( A \). The right-column results look different only because the equation on the left is different — the operation is identical. The single easiest way to lose exam marks on DE questions is to plug the wrong thing in for \( A \); this method makes that impossible.</p>
     </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
   </div>
 </div>
