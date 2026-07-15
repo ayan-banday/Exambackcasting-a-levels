@@ -218,19 +218,19 @@ window.PLAN = {
   {
    "n": 23,
    "subject": "gp",
-   "name": "Application Question Mastery",
+   "name": "Essay — slotting, expansion & body paragraphs",
    "flag": "⚑"
   },
   {
    "n": 24,
    "subject": "gp",
-   "name": "Relevance & Command-Word Contract",
+   "name": "Essay — intros, conclusions & timed writing",
    "flag": ""
   },
   {
    "n": 25,
    "subject": "gp",
-   "name": "Argumentation, Thesis & Balance",
+   "name": "Paper 2 — comprehension, summary & AQ",
    "flag": ""
   }
  ],
@@ -758,12 +758,13 @@ window.PLAN = {
        "b": "DRILL",
        "f": "",
        "subs": [
-        "Argumentation & Balance",
-        "Relevance & Command-Word",
-        "Conceptual Evaluation",
-        "Evidence Banks by Theme",
-        "Architecture & Language",
-        "Intros & Conclusions"
+        "Brainstorm — evidence & stance ✓ done",
+        "Paragraph slotting (50m ×2)",
+        "Line-by-line expansion (2–4h)",
+        "Supporting-view paragraph (2–4h)",
+        "Opposing-view paragraph (2–4h)",
+        "Intros & conclusions (2–4h)",
+        "Speed writing, timed conditions"
        ]
       }
      ]
@@ -776,12 +777,12 @@ window.PLAN = {
        "b": "DRILL",
        "f": "",
        "subs": [
-        "Paraphrase Discipline",
-        "Close-Reading (Inference/Vocab/Language)",
-        "Summary Technique",
-        "Cross-Passage Synthesis",
+        "Paraphrase discipline",
+        "Close-reading (inference / vocab / language)",
+        "Summary technique ⚑",
+        "Cross-passage synthesis",
         "Application Question ⚑",
-        "Exam-Craft"
+        "Timed practice papers (×3–4)"
        ]
       }
      ]
@@ -1109,7 +1110,7 @@ window.PLAN = {
    "type": "standard",
    "subject": "chem",
    "label": "Chemistry + GP",
-   "focus": "2×2h SIR. Equilibria; Application Question Mastery ⚑.",
+   "focus": "2×2h SIR. Equilibria; GP essay — slotting + line-by-line expansion ⚑.",
    "flag": "⚑",
    "mins": 240,
    "blocks": [
@@ -1125,11 +1126,11 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "gp",
-     "name": "GP — Application Question Mastery (SIR)",
+     "name": "GP — Essay: paragraph slotting + line-by-line expansion (SIR)",
      "desc": "SIR — Study/encode the cluster (~60 min), then the test part: adversarial self-test at Application level + close the gaps it exposes.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Application Question Mastery"
+     "clusterRef": "Essay — slotting, expansion & body paragraphs"
     }
    ]
   },
@@ -1304,7 +1305,7 @@ window.PLAN = {
    "type": "standard",
    "subject": "chem",
    "label": "Chemistry + GP",
-   "focus": "2×2h SIR. Organic ⚑; Relevance & Command-Word Contract.",
+   "focus": "2×2h SIR. Organic ⚑; GP essay — supporting + opposing view paragraphs.",
    "flag": "⚑",
    "mins": 240,
    "blocks": [
@@ -1320,11 +1321,11 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "gp",
-     "name": "GP — Relevance & Command-Word Contract (SIR)",
+     "name": "GP — Essay: supporting + opposing view paragraphs (SIR)",
      "desc": "SIR — Study/encode the cluster (~60 min), then the test part: adversarial self-test at Application level + close the gaps it exposes.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Relevance & Command-Word Contract"
+     "clusterRef": "Essay — slotting, expansion & body paragraphs"
     }
    ]
   },
@@ -1336,18 +1337,18 @@ window.PLAN = {
    "type": "standard",
    "subject": "gp",
    "label": "GP + Chemistry (2nd)",
-   "focus": "Last new cluster (GP Argumentation) + deepen the biggest calc topic (Aqueous Equilibria ⚑).",
+   "focus": "GP essay — intros, conclusions + speed writing + deepen the biggest calc topic (Aqueous Equilibria ⚑).",
    "flag": "⚑",
    "mins": 240,
    "blocks": [
     {
      "mins": 120,
      "subject": "gp",
-     "name": "GP — Argumentation, Thesis & Balance (SIR)",
+     "name": "GP — Essay: intros, conclusions + speed writing (SIR)",
      "desc": "SIR — Study/encode the cluster (~60 min), then the test part: adversarial self-test at Application level + close the gaps it exposes.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Argumentation, Thesis & Balance"
+     "clusterRef": "Essay — intros, conclusions & timed writing"
     },
     {
      "mins": 120,
@@ -1491,7 +1492,7 @@ window.PLAN = {
    "type": "standard",
    "subject": "bio",
    "label": "Biology (2nd) + GP (2nd)",
-   "focus": "2nd pass: Evolution/Hardy-Weinberg ⚑; GP Application Question ⚑.",
+   "focus": "2nd pass: Evolution/Hardy-Weinberg ⚑; GP Paper 2 — summary + Application Question ⚑.",
    "flag": "⚑",
    "mins": 240,
    "blocks": [
@@ -1507,11 +1508,11 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "gp",
-     "name": "GP — Application Question Mastery · 2nd pass",
+     "name": "GP — Paper 2: summary technique + AQ + timed comprehension",
      "desc": "Deepen this ⚑ high-value cluster. Re-test at a NEW angle; anything shaky becomes a gap cluster. FRAGILE→CLOSED only on a confident pass.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Application Question Mastery"
+     "clusterRef": "Paper 2 — comprehension, summary & AQ"
     }
    ]
   },
