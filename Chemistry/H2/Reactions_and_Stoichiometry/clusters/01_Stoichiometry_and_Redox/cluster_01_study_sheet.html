@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cluster 1 — Stoichiometry &amp; Redox</title>
+<script>
+  window.MathJax = {
+    loader: { load: ['[tex]/mhchem'] },
+    tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true, packages: {'[+]': ['mhchem']}, tags: 'none' },
+    svg: { fontCache: 'global' },
+    options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --amber-soft:#fffbeb;
+    --green:#059669; --green-soft:#ecfdf5; --cover:#f3f4f6;
+    --purple:#7c3aed; --purple-soft:#f5f3ff; --red:#dc2626; --red-soft:#fef2f2; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:40px 24px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h2,h3,.label,.controls,button,.step-header{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  h1{font-size:2em;margin:0 0 8px;color:#111;border-bottom:3px solid #111;padding-bottom:12px}
+  h2{font-size:1.5em;margin-top:56px;margin-bottom:16px;color:#111;border-bottom:1px solid #999;padding-bottom:6px}
+  h3{font-size:1.15em;margin:0 0 14px;color:#1f2937}
+  p{margin:8px 0}
+  .meta{color:var(--muted);font-size:.9em;margin:4px 0 24px}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--purple);padding:16px 20px;border-radius:6px;margin:16px 0 24px}
+  .intro ul{margin:8px 0 0 0;padding-left:22px}
+  .intro li{margin:4px 0}
+  .toolkit{background:var(--blue-soft);border:1px solid #bfdbfe;border-left:4px solid var(--blue);padding:14px 20px;border-radius:6px;margin:0 0 32px;font-size:.95em}
+  .toolkit strong{color:#1e3a8a}
+  .toolkit table{border-collapse:collapse;margin:10px 0 4px;width:100%}
+  .toolkit td{padding:4px 10px 4px 0;vertical-align:top}
+  .toolkit td:first-child{white-space:nowrap;color:#1e3a8a;font-weight:600}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;color:var(--text);font-weight:500}
+  .controls button:hover{background:#f3f4f6}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:32px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:6px;color:#111}
+  .toc a{color:var(--blue);text-decoration:none;margin-right:14px;line-height:2}
+  .toc a:hover{text-decoration:underline}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .tag{display:inline-block;font-size:.72em;background:#e0e7ff;color:#3730a3;padding:2px 9px;border-radius:10px;font-weight:600;margin-left:8px;font-family:-apple-system,sans-serif;vertical-align:middle}
+  .block{margin:14px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border)}
+  .block.example{background:#f9fafb;border-left-color:#6b7280}
+  .block.practice{background:var(--amber-soft);border-left-color:var(--amber)}
+  .block.answer{background:var(--green-soft);border-left-color:var(--green);position:relative;min-height:60px}
+  .block.reveal-archetype{background:var(--purple-soft);border-left-color:var(--purple);position:relative;min-height:60px;margin-top:24px}
+  .label{display:block;text-transform:uppercase;font-size:.75em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--muted)}
+  .block.example .label{color:#4b5563}
+  .block.practice .label{color:var(--amber)}
+  .block.answer .label{color:var(--green)}
+  .block.reveal-archetype .label{color:var(--purple)}
+  .stem{background:#1e293b;color:#f1f5f9;padding:12px 16px;border-radius:6px;margin:10px 0;font-family:'Charter','Georgia',serif}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px;font-family:-apple-system,sans-serif}
+  .mark-step{display:inline-block;font-size:.75em;background:#ddd6fe;color:#5b21b6;padding:1px 7px;border-radius:8px;font-weight:700;margin:0 4px;font-family:-apple-system,sans-serif}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.5);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.8em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .step-desc{font-style:italic;color:#374151;margin-bottom:6px;font-size:.95em}
+  .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:6px 12px;border-radius:4px;margin:8px 0 0;font-size:.9em}
+  .trap b{color:var(--red)}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3;box-shadow:0 1px 2px rgba(0,0,0,.1)}
+  .reveal-btn:hover{background:#047857}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .reveal-btn.hide-state:hover{background:#4b5563}
+  .block.reveal-archetype .reveal-btn{background:var(--purple)}
+  .block.reveal-archetype .reveal-btn:hover{background:#6d28d9}
+  .answer-content{transition:filter .2s,opacity .2s}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;font-family:-apple-system,sans-serif;border-left:4px solid var(--muted);margin-left:-16px;padding-left:16px;z-index:2;transition:opacity .2s}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content,.block.reveal-archetype .answer-content{padding-right:60px}
+  ul,ol{padding-left:24px}
+  li{margin:4px 0}
+  .mjx-container{font-size:1.05em!important}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  @media print{
+    body{background:#fff;padding:20px;max-width:100%}
+    .controls,.reveal-btn{display:none!important}
+    .answer-overlay{display:none!important}
+    .card{box-shadow:none;page-break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<h1>Cluster 1 — Stoichiometry &amp; Redox</h1>
+<p class="meta">Chemistry H2 9476 · Topic 4: Reactions &amp; Stoichiometry (+ redox O.N. &amp; half-equations) · the calculation backbone · Built 2026-07-15</p>
+
+<div class="intro">
+<strong>Format:</strong> exam-recognition drill. Attempt each <b>Example</b> cold — no hint about the method. Reveal to check against the mark scheme (<span class="mark-step">M1</span> = method mark, <span class="mark-step">A1</span> = answer mark, <span class="mark-step">B1</span> = standalone). Then do the <b>Practice</b>. The archetype + the trap that eats marks is revealed at the BOTTOM of each card.
+<ul>
+  <li>Score ≥ 90% per card. Under 70% on a card → re-read its method before moving on.</li>
+  <li>Redox O.N. and half-equations are taught in this topic but examined under Electrochemistry too — nail them here.</li>
+</ul>
+</div>
+
+<div class="toolkit">
+<strong>The mole toolkit — memorise cold (Data Booklet values)</strong>
+<table>
+<tr><td>\( n = \dfrac{m}{M_r} \)</td><td>mass ÷ molar mass (g, g mol⁻¹)</td></tr>
+<tr><td>\( n = c\,V \)</td><td>concentration × volume — <b>V in dm³</b> (÷1000 from cm³)</td></tr>
+<tr><td>\( n = \dfrac{V}{V_m} \)</td><td>gases: \( V_m = \mathbf{22.7}\ \text{dm}^3\,\text{mol}^{-1} \) at <b>s.t.p.</b> (273 K, 10⁵ Pa), \( 24.0 \) at r.t.p.</td></tr>
+<tr><td>\( n = \dfrac{N}{L} \)</td><td>particles ÷ Avogadro constant \( L = 6.02\times10^{23} \)</td></tr>
+<tr><td>% yield</td><td>\( \dfrac{\text{actual}}{\text{theoretical}}\times100 \) &nbsp;·&nbsp; % by mass \( \dfrac{n\times A_r}{M_r}\times100 \)</td></tr>
+</table>
+<b>Two habits that are worth real marks:</b> carry <b>≥ 5 s.f.</b> through every intermediate value and round only at the end; always write <b>units and the right sig figs</b> — both are discrete marks.
+</div>
+
+<div class="controls">
+  <button onclick="revealAll()">Reveal all</button>
+  <button onclick="hideAll()">Hide all</button>
+</div>
+
+<div class="toc">
+<strong>Questions</strong>
+<a href="#c1">1 · mole toolkit</a><a href="#c2">2 · % composition</a><a href="#c3">3 · EF → MF</a><a href="#c4">4 · limiting reagent + % yield</a><a href="#c5">5 · gas volumes</a><a href="#c6">6 · concentration + dilution</a><a href="#c7">7 · titration</a><a href="#c8">8 · back-titration</a><a href="#c9">9 · oxidation numbers</a><a href="#c10">10 · half-equations (acidic)</a><a href="#c11">11 · half-equations (alkaline)</a><a href="#c12">12 · redox titration chain</a>
+</div>
+
+<!-- Q1 -->
+<div class="card" id="c1">
+  <h3>Question 1 <span class="tag">mole toolkit</span></h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">
+      (i) Calculate the amount, in mol, of \(\ce{NaOH}\) in a \( 4.00\ \text{g} \) sample. <span class="marks">[1]</span><br>
+      (ii) State the number of formula units present. <span class="marks">[1]</span><br>
+      (iii) Calculate the volume, at s.t.p., occupied by \( 4.00\ \text{g} \) of \(\ce{CO2}\) gas. <span class="marks">[2]</span>
+    </div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc">\( M_r(\ce{NaOH}) = 23.0 + 16.0 + 1.0 = 40.0 \). Then \( n = m/M_r \). <span class="mark-step">A1</span></div>
+        \( n = \dfrac{4.00}{40.0} = 0.100\ \text{mol} \)
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii)</div>
+        <div class="step-desc">\( N = n \times L \). <span class="mark-step">A1</span></div>
+        \( N = 0.100 \times 6.02\times10^{23} = 6.02\times10^{22} \)
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (iii)</div>
+        <div class="step-desc">\( M_r(\ce{CO2}) = 44.0 \Rightarrow n = 4.00/44.0 = 0.09091\ \text{mol} \). <span class="mark-step">M1</span></div>
+        \( V = n \times V_m = 0.09091 \times 22.7 = 2.06\ \text{dm}^3 \) &nbsp;<span class="mark-step">A1</span>
+      </div>
+      <div class="trap"><b>Trap:</b> at s.t.p. \( V_m = 22.7 \), not 22.4. The old 22.4 value is pre-2022 and is a marked error now.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">\( 0.240\ \text{g} \) of magnesium reacts completely with excess dilute \(\ce{HCl}\). Calculate the volume of hydrogen produced, measured at r.t.p. <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Equation + moles of Mg. <span class="mark-step">M1</span></div>
+        \(\ce{Mg + 2HCl -> MgCl2 + H2}\); \( n(\ce{Mg}) = 0.240/24.3 = 0.009877\ \text{mol} \)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Mole ratio \(\ce{Mg}:\ce{H2} = 1:1\). <span class="mark-step">M1</span></div>
+        \( n(\ce{H2}) = 0.009877\ \text{mol} \)
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">r.t.p. \(\Rightarrow V_m = 24.0\). <span class="mark-step">A1</span></div>
+        \( V = 0.009877 \times 24.0 = 0.237\ \text{dm}^3\ (237\ \text{cm}^3) \)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype &amp; trap</div>
+      <b>Archetype:</b> "convert between mass / moles / particles / gas volume." Every quantitative question opens here. <b>Read which \(V_m\) applies</b> — s.t.p. (22.7) vs r.t.p. (24.0) is set by the words "s.t.p." / "room temperature and pressure." Mixing them is a guaranteed lost A1.
+    </div><div class="answer-overlay">Hidden — click Reveal</div>
+  </div>
+</div>
+
+<!-- Q2 -->
+<div class="card" id="c2">
+  <h3>Question 2 <span class="tag">% composition</span></h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A compound contains, by mass, \( 32.4\% \) sodium, \( 22.6\% \) sulfur and \( 45.0\% \) oxygen. Determine its empirical formula. <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Divide each % by its \( A_r \) (mass of 100 g basis ÷ Ar). <span class="mark-step">M1</span></div>
+        \(\ce{Na}: 32.4/23.0 = 1.409\) &nbsp; \(\ce{S}: 22.6/32.1 = 0.7040\) &nbsp; \(\ce{O}: 45.0/16.0 = 2.813\)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Divide all by the smallest (0.7040), round to whole numbers. <span class="mark-step">A1</span></div>
+        \(\ce{Na}: 2.00,\ \ce{S}: 1.00,\ \ce{O}: 3.99 \approx 4 \Rightarrow \mathbf{\ce{Na2SO4}}\)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">An oxide of iron contains \( 69.9\% \) iron by mass. Determine its empirical formula. <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">The rest must be oxygen: \( \%\ce{O} = 100 - 69.9 = 30.1 \). <span class="mark-step">M1</span></div>
+        \(\ce{Fe}: 69.9/55.8 = 1.253\) &nbsp; \(\ce{O}: 30.1/16.0 = 1.881\)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Ratio ÷ 1.253 → \(1 : 1.501\), ×2 to clear the half. <span class="mark-step">A1</span></div>
+        \(\ce{Fe}:\ce{O} = 2:3 \Rightarrow \mathbf{\ce{Fe2O3}}\)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype &amp; trap</div>
+      <b>Archetype:</b> "% by mass → empirical formula." <b>Trap (your own note):</b> only use \(100 - \%\) for the last element when you are <i>certain</i> which elements are present. If a hydrogen or a second non-metal is hiding, \(100 - \%\text{Na}\) is wrong — account for <b>every</b> element the compound actually contains. And a ratio ending in \(.5\) is real (×2), not a rounding error.
+    </div><div class="answer-overlay">Hidden — click Reveal</div>
+  </div>
+</div>
+
+<!-- Q3 -->
+<div class="card" id="c3">
+  <h3>Question 3 <span class="tag">empirical → molecular</span></h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">\( 0.300\ \text{g} \) of a gaseous hydrocarbon is completely burned, giving \( 0.880\ \text{g} \) of \(\ce{CO2}\) and \( 0.540\ \text{g} \) of \(\ce{H2O}\). The relative molecular mass of the hydrocarbon is \( 30.0 \). Determine its molecular formula. <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">All C ends up in \(\ce{CO2}\), all H in \(\ce{H2O}\). <span class="mark-step">M1</span></div>
+        \( n(\ce{C}) = n(\ce{CO2}) = 0.880/44.0 = 0.02000 \)<br>
+        \( n(\ce{H}) = 2 \times n(\ce{H2O}) = 2 \times 0.540/18.0 = 0.06000 \)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Ratio → empirical formula. <span class="mark-step">M1</span></div>
+        \( \ce{C}:\ce{H} = 0.02000 : 0.06000 = 1 : 3 \Rightarrow \text{EF} = \ce{CH3}\ (M_r = 15.0) \)
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Scale EF by \( M_r / \text{EF mass} \). <span class="mark-step">A1</span></div>
+        \( 30.0/15.0 = 2 \Rightarrow \mathbf{\ce{C2H6}} \)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">A compound of relative molecular mass \( 180.0 \) contains \( 40.0\% \) C, \( 6.7\% \) H and the remainder oxygen by mass. Determine its molecular formula. <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">\( \%\ce{O} = 100 - 40.0 - 6.7 = 53.3 \); divide each by \(A_r\). <span class="mark-step">M1</span></div>
+        \(\ce{C}: 40.0/12.0 = 3.33\) &nbsp; \(\ce{H}: 6.7/1.0 = 6.7\) &nbsp; \(\ce{O}: 53.3/16.0 = 3.33\)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">÷ 3.33 → EF. <span class="mark-step">M1</span></div>
+        \( \ce{C}:\ce{H}:\ce{O} = 1:2:1 \Rightarrow \ce{CH2O}\ (M_r = 30.0) \)
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Scale. <span class="mark-step">A1</span></div>
+        \( 180.0/30.0 = 6 \Rightarrow \mathbf{\ce{C6H12O6}} \)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype &amp; trap</div>
+      <b>Archetype:</b> "combustion / composition → EF, then \(M_r\) → MF." <b>Trap (your own note):</b> read whether the question wants the <b>empirical</b> or the <b>molecular</b> formula — they are different marks and stopping at EF when MF is asked drops the A1. \(M_r\) is always given or derivable when MF is required.
+    </div><div class="answer-overlay">Hidden — click Reveal</div>
+  </div>
+</div>
+
+<!-- Q4 -->
+<div class="card" id="c4">
+  <h3>Question 4 <span class="tag">limiting reagent + % yield</span></h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">\( 8.00\ \text{g} \) of \(\ce{Fe2O3}\) is heated with \( 3.00\ \text{g} \) of carbon: \(\ce{2Fe2O3 + 3C -> 4Fe + 3CO2}\).<br>
+      (i) Show that \(\ce{Fe2O3}\) is the limiting reagent. <span class="marks">[2]</span><br>
+      (ii) Calculate the maximum mass of iron obtainable. <span class="marks">[1]</span><br>
+      (iii) If \( 4.50\ \text{g} \) of iron is actually obtained, calculate the percentage yield. <span class="marks">[1]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc">Moles of each reactant. <span class="mark-step">M1</span></div>
+        \( n(\ce{Fe2O3}) = 8.00/159.6 = 0.05013 \); \( n(\ce{C}) = 3.00/12.0 = 0.2500 \)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Carbon needed to react with all the \(\ce{Fe2O3}\) (ratio \(2:3\)). <span class="mark-step">A1</span></div>
+        Need \( n(\ce{C}) = 0.05013 \times \tfrac{3}{2} = 0.07520 \); have \( 0.2500 \) → C in excess, so <b>\(\ce{Fe2O3}\) is limiting</b>.
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (ii)</div>
+        <div class="step-desc">\(\ce{2Fe2O3 -> 4Fe}\), ratio \(1:2\). <span class="mark-step">A1</span></div>
+        \( n(\ce{Fe}) = 0.05013 \times 2 = 0.1003 \Rightarrow m = 0.1003 \times 55.8 = 5.59\ \text{g} \)
+      </div>
+      <div class="step"><div class="step-header">Step 4 — (iii)</div>
+        <div class="step-desc">% yield vs theoretical. <span class="mark-step">A1</span></div>
+        \( \dfrac{4.50}{5.59}\times100 = 80.5\% \)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">\( 5.00\ \text{g} \) of nitrogen reacts with \( 2.00\ \text{g} \) of hydrogen: \(\ce{N2 + 3H2 -> 2NH3}\). Identify the limiting reagent and calculate the maximum mass of ammonia produced. <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Moles of each. <span class="mark-step">M1</span></div>
+        \( n(\ce{N2}) = 5.00/28.0 = 0.1786 \); \( n(\ce{H2}) = 2.00/2.0 = 1.000 \)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">\(\ce{H2}\) needed for all \(\ce{N2}\) (ratio \(1:3\)) \(= 0.536\); have \(1.000\). <span class="mark-step">M1</span></div>
+        \(\ce{H2}\) in excess → <b>\(\ce{N2}\) limiting</b>
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">\(\ce{N2 -> 2NH3}\). <span class="mark-step">A1</span></div>
+        \( n(\ce{NH3}) = 0.1786 \times 2 = 0.3571 \Rightarrow m = 0.3571 \times 17.0 = 6.07\ \text{g} \)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype &amp; trap</div>
+      <b>Archetype:</b> "two masses given → find limiting reagent, then product mass / % yield." <b>Trap:</b> you must compare using the <b>equation ratio</b>, not raw moles — the reagent with fewer moles is not always limiting. Always base the product amount on the <b>limiting</b> reagent, and carry 5 s.f. into the % yield.
+    </div><div class="answer-overlay">Hidden — click Reveal</div>
+  </div>
+</div>
+
+<!-- Q5 -->
+<div class="card" id="c5">
+  <h3>Question 5 <span class="tag">gas volumes (Avogadro)</span></h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">\( 25.0\ \text{cm}^3 \) of a gaseous hydrocarbon \(\ce{C}_x\ce{H}_y\) is burned in excess oxygen. All volumes are measured at the same temperature and pressure. The reaction produces \( 75.0\ \text{cm}^3 \) of \(\ce{CO2}\) and \( 100.0\ \text{cm}^3 \) of water vapour. Deduce the formula of the hydrocarbon. <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Avogadro's law: at the same T and P, volume ratio = mole ratio. Scale to 1 volume of hydrocarbon. <span class="mark-step">M1</span></div>
+        \( \ce{C}_x\ce{H}_y : \ce{CO2} : \ce{H2O} = 25.0 : 75.0 : 100.0 = 1 : 3 : 4 \)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">1 hydrocarbon → 3 \(\ce{CO2}\) means \(x = 3\); → 4 \(\ce{H2O}\) means \(y/2 = 4\). <span class="mark-step">M1</span></div>
+        \( x = 3,\quad y = 8 \)
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">State formula. <span class="mark-step">A1</span></div>
+        \( \mathbf{\ce{C3H8}} \) (propane)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">\( 10.0\ \text{cm}^3 \) of a gaseous hydrocarbon requires \( 65.0\ \text{cm}^3 \) of oxygen for complete combustion and produces \( 40.0\ \text{cm}^3 \) of carbon dioxide, all volumes at the same T and P. Deduce the molecular formula. <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Ratios to 1 volume hydrocarbon. <span class="mark-step">M1</span></div>
+        \( \ce{C}_x\ce{H}_y : \ce{O2} : \ce{CO2} = 1 : 6.5 : 4 \Rightarrow x = 4 \)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">\( \ce{O2} = x + \dfrac{y}{4} \). <span class="mark-step">M1</span></div>
+        \( 6.5 = 4 + \dfrac{y}{4} \Rightarrow \dfrac{y}{4} = 2.5 \Rightarrow y = 10 \)
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Formula. <span class="mark-step">A1</span></div>
+        \( \mathbf{\ce{C4H10}} \)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype &amp; trap</div>
+      <b>Archetype:</b> "gaseous combustion, volumes at same T,P → formula (Avogadro's law)." <b>Trap:</b> volume ratio = mole ratio <b>only for gases</b> at the same conditions — water counts only if it is stated as vapour/gas. If liquid water, drop it from the gas ratio. The oxygen balance \(\ce{O2} = x + y/4\) is the usual second mark.
+    </div><div class="answer-overlay">Hidden — click Reveal</div>
+  </div>
+</div>
+
+<!-- Q6 -->
+<div class="card" id="c6">
+  <h3>Question 6 <span class="tag">concentration + dilution</span></h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">(i) Calculate the mass of \(\ce{NaCl}\) needed to prepare \( 250\ \text{cm}^3 \) of a \( 0.200\ \text{mol dm}^{-3} \) solution. <span class="marks">[2]</span><br>
+      (ii) \( 25.0\ \text{cm}^3 \) of this solution is diluted with water to \( 100\ \text{cm}^3 \). Calculate the new concentration. <span class="marks">[1]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc">\( n = cV \), V in dm³. <span class="mark-step">M1</span></div>
+        \( n = 0.200 \times 0.250 = 0.0500\ \text{mol} \)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">\( m = n \times M_r \), \( M_r(\ce{NaCl}) = 58.5 \). <span class="mark-step">A1</span></div>
+        \( m = 0.0500 \times 58.5 = 2.93\ \text{g} \)
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (ii)</div>
+        <div class="step-desc">Dilution: \( c_1V_1 = c_2V_2 \) (moles conserved). <span class="mark-step">A1</span></div>
+        \( 0.200 \times 25.0 = c_2 \times 100 \Rightarrow c_2 = 0.0500\ \text{mol dm}^{-3} \)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">What volume of \( 2.00\ \text{mol dm}^{-3} \) hydrochloric acid is required to prepare \( 500\ \text{cm}^3 \) of \( 0.150\ \text{mol dm}^{-3} \) acid? <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">\( c_1V_1 = c_2V_2 \). <span class="mark-step">M1</span></div>
+        \( 2.00 \times V_1 = 0.150 \times 500 \)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Solve for \(V_1\). <span class="mark-step">A1</span></div>
+        \( V_1 = 75.0/2.00 = 37.5\ \text{cm}^3 \)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype &amp; trap</div>
+      <b>Archetype:</b> "make-up / dilute a solution." <b>Trap:</b> \(c_1V_1 = c_2V_2\) works with V in <b>any consistent unit</b> (cm³ both sides is fine) because it is a ratio — but \(n = cV\) needs V in <b>dm³</b>. Keep the two rules separate.
+    </div><div class="answer-overlay">Hidden — click Reveal</div>
+  </div>
+</div>
+
+<!-- Q7 -->
+<div class="card" id="c7">
+  <h3>Question 7 <span class="tag">acid–base titration</span></h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">\( 25.0\ \text{cm}^3 \) of sodium hydroxide solution is exactly neutralised by \( 22.40\ \text{cm}^3 \) of \( 0.100\ \text{mol dm}^{-3} \) sulfuric acid. Calculate the concentration of the sodium hydroxide. <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Balanced equation → mole ratio. <span class="mark-step">M1</span></div>
+        \(\ce{H2SO4 + 2NaOH -> Na2SO4 + 2H2O}\) &nbsp;(\(1:2\))
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Moles of the known (acid). <span class="mark-step">M1</span></div>
+        \( n(\ce{H2SO4}) = 0.100 \times 0.02240 = 2.240\times10^{-3} \)
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Scale to base, then \( c = n/V \). <span class="mark-step">A1</span></div>
+        \( n(\ce{NaOH}) = 2 \times 2.240\times10^{-3} = 4.480\times10^{-3} \)<br>
+        \( c = 4.480\times10^{-3}/0.02500 = 0.179\ \text{mol dm}^{-3} \)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Calculate the volume of \( 0.100\ \text{mol dm}^{-3} \) hydrochloric acid required to react completely with \( 20.0\ \text{cm}^3 \) of \( 0.0500\ \text{mol dm}^{-3} \) sodium carbonate. \(\ce{Na2CO3 + 2HCl -> 2NaCl + H2O + CO2}\) <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Moles of carbonate. <span class="mark-step">M1</span></div>
+        \( n(\ce{Na2CO3}) = 0.0500 \times 0.0200 = 1.000\times10^{-3} \)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Ratio \(1:2\). <span class="mark-step">M1</span></div>
+        \( n(\ce{HCl}) = 2 \times 1.000\times10^{-3} = 2.000\times10^{-3} \)
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">\( V = n/c \). <span class="mark-step">A1</span></div>
+        \( V = 2.000\times10^{-3}/0.100 = 0.0200\ \text{dm}^3 = 20.0\ \text{cm}^3 \)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype &amp; trap</div>
+      <b>Archetype:</b> "titration: known conc + two volumes → unknown conc." <b>Trap:</b> the mole ratio is almost never \(1:1\) — \(\ce{H2SO4}\) is diprotic (\(1:2\)), \(\ce{Na2CO3}\) takes \(2\ \ce{HCl}\). Get the balanced equation first, every time.
+    </div><div class="answer-overlay">Hidden — click Reveal</div>
+  </div>
+</div>
+
+<!-- Q8 -->
+<div class="card" id="c8">
+  <h3>Question 8 <span class="tag">back-titration</span></h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">\( 1.00\ \text{g} \) of impure calcium carbonate is added to \( 40.0\ \text{cm}^3 \) of \( 0.500\ \text{mol dm}^{-3} \) hydrochloric acid (in excess). The unreacted acid requires \( 12.0\ \text{cm}^3 \) of \( 0.400\ \text{mol dm}^{-3} \) sodium hydroxide to neutralise. Calculate the percentage purity of the calcium carbonate. <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Total acid added. <span class="mark-step">M1</span></div>
+        \( n(\ce{HCl})_\text{total} = 0.500 \times 0.0400 = 0.02000 \)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Excess acid = acid that reacted with NaOH (\(1:1\)). <span class="mark-step">M1</span></div>
+        \( n(\ce{HCl})_\text{excess} = n(\ce{NaOH}) = 0.400 \times 0.0120 = 4.800\times10^{-3} \)
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">Acid that reacted with the carbonate; \(\ce{CaCO3 + 2HCl -> CaCl2 + H2O + CO2}\). <span class="mark-step">M1</span></div>
+        \( n(\ce{HCl})_\text{reacted} = 0.02000 - 4.800\times10^{-3} = 0.01520 \)<br>
+        \( n(\ce{CaCO3}) = 0.01520/2 = 7.600\times10^{-3} \)
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Mass then % purity, \( M_r(\ce{CaCO3}) = 100.1 \). <span class="mark-step">A1</span></div>
+        \( m = 7.600\times10^{-3} \times 100.1 = 0.7608\ \text{g} \Rightarrow \dfrac{0.7608}{1.00}\times100 = 76.1\% \)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">\( 0.500\ \text{g} \) of impure magnesium oxide is dissolved in \( 50.0\ \text{cm}^3 \) of \( 0.500\ \text{mol dm}^{-3} \) hydrochloric acid. The excess acid is titrated with \( 20.0\ \text{cm}^3 \) of \( 0.250\ \text{mol dm}^{-3} \) sodium hydroxide. Calculate the percentage of \(\ce{MgO}\) in the sample. \(\ce{MgO + 2HCl -> MgCl2 + H2O}\) <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Total and excess acid. <span class="mark-step">M1 M1</span></div>
+        \( n(\ce{HCl})_\text{total} = 0.500 \times 0.0500 = 0.02500 \)<br>
+        \( n(\ce{HCl})_\text{excess} = 0.250 \times 0.0200 = 5.000\times10^{-3} \)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Reacted with MgO (\(1:2\)). <span class="mark-step">M1</span></div>
+        \( n(\ce{HCl})_\text{reacted} = 0.02000 \Rightarrow n(\ce{MgO}) = 0.01000 \)
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">\( M_r(\ce{MgO}) = 40.3 \). <span class="mark-step">A1</span></div>
+        \( m = 0.01000 \times 40.3 = 0.403\ \text{g} \Rightarrow \dfrac{0.403}{0.500}\times100 = 80.6\% \)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype &amp; trap</div>
+      <b>Archetype:</b> "solid reacts with a measured excess of acid; titrate the leftover." The chain is always <b>total − excess = reacted</b>. <b>Trap:</b> the titration gives the <b>excess</b>, not the reacted amount — subtract. Then apply the solid's own ratio (\(\ce{CaCO3}, \ce{MgO}\) both take 2 HCl).
+    </div><div class="answer-overlay">Hidden — click Reveal</div>
+  </div>
+</div>
+
+<!-- Q9 -->
+<div class="card" id="c9">
+  <h3>Question 9 <span class="tag">oxidation numbers</span></h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">State the oxidation number of the named element in each species:<br>
+      (i) Mn in \(\ce{MnO4-}\) &nbsp; (ii) Cr in \(\ce{Cr2O7^2-}\) &nbsp; (iii) S in \(\ce{S2O3^2-}\) &nbsp; (iv) O in \(\ce{H2O2}\). <span class="marks">[4]</span><br>
+      (v) In \(\ce{Cl2 + 2Br- -> 2Cl- + Br2}\), identify the species oxidised, the species reduced, the oxidising agent and the reducing agent. <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — (i)–(iv)</div>
+        <div class="step-desc">Sum of O.N. = overall charge; O is normally \(-2\) (\(-1\) in peroxides), H is \(+1\). <span class="mark-step">A1 ×4</span></div>
+        (i) \(\text{Mn} + 4(-2) = -1 \Rightarrow \mathbf{+7}\)<br>
+        (ii) \(2\text{Cr} + 7(-2) = -2 \Rightarrow \text{Cr} = \mathbf{+6}\)<br>
+        (iii) \(2\text{S} + 3(-2) = -2 \Rightarrow \text{S} = \mathbf{+2}\) (average)<br>
+        (iv) peroxide: \(2(+1) + 2\text{O} = 0 \Rightarrow \text{O} = \mathbf{-1}\)
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (v)</div>
+        <div class="step-desc">Track the O.N. change. <span class="mark-step">A1 A1</span></div>
+        Cl: \(0 \to -1\) (reduced) → \(\ce{Cl2}\) is the <b>oxidising agent</b>.<br>
+        Br: \(-1 \to 0\) (oxidised) → \(\ce{Br-}\) is the <b>reducing agent</b>.
+      </div>
+      <div class="trap"><b>Trap:</b> the oxidising agent is the species <i>reduced</i> (it takes electrons). Name the <b>whole species</b> (\(\ce{Cl2}\), \(\ce{Br-}\)), not just the element.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Chlorine reacts with cold aqueous sodium hydroxide: \(\ce{Cl2 + 2NaOH -> NaCl + NaClO + H2O}\). Using oxidation numbers, show that this is a disproportionation reaction. <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">O.N. of Cl in each species. <span class="mark-step">M1</span></div>
+        \(\ce{Cl2}: 0\); &nbsp; \(\ce{NaCl}: -1\); &nbsp; \(\ce{NaClO}: \text{Cl} = +1\) (Na \(+1\), O \(-2\))
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Same element goes both up and down. <span class="mark-step">A1 A1</span></div>
+        Cl \(0 \to -1\) (reduced) <b>and</b> \(0 \to +1\) (oxidised) — one element simultaneously oxidised and reduced = <b>disproportionation</b>.
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype &amp; trap</div>
+      <b>Archetype:</b> "assign O.N. → classify oxidised / reduced / agents / disproportionation." <b>Trap:</b> \(\ce{S2O3^2-}\) gives a <b>fractional/average</b> O.N. of \(+2\) — that is allowed. Peroxide O is \(-1\), and in \(\ce{OF2}\) oxygen is \(+2\); do not blindly write O = \(-2\).
+    </div><div class="answer-overlay">Hidden — click Reveal</div>
+  </div>
+</div>
+
+<!-- Q10 -->
+<div class="card" id="c10">
+  <h3>Question 10 <span class="tag">half-equations (acidic)</span></h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Acidified potassium manganate(VII) oxidises iron(II) ions. Construct the two half-equations and combine them into the overall ionic equation. State the colour change. <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — reduction</div>
+        <div class="step-desc">Balance O with \(\ce{H2O}\), H with \(\ce{H+}\), charge with \(\ce{e-}\). <span class="mark-step">M1</span></div>
+        \(\ce{MnO4- + 8H+ + 5e- -> Mn^2+ + 4H2O}\)
+      </div>
+      <div class="step"><div class="step-header">Step 2 — oxidation</div>
+        <div class="step-desc">Iron(II) → iron(III). <span class="mark-step">B1</span></div>
+        \(\ce{Fe^2+ -> Fe^3+ + e-}\)
+      </div>
+      <div class="step"><div class="step-header">Step 3 — combine</div>
+        <div class="step-desc">Multiply the Fe half-equation by 5 so electrons cancel. <span class="mark-step">M1</span></div>
+        \(\ce{MnO4- + 8H+ + 5Fe^2+ -> Mn^2+ + 4H2O + 5Fe^3+}\)
+      </div>
+      <div class="step"><div class="step-header">Step 4 — colour</div>
+        <div class="step-desc">Self-indicating. <span class="mark-step">A1</span></div>
+        Purple \(\ce{MnO4-}\) → colourless \(\ce{Mn^2+}\) (end point = first permanent pink).
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">Acidified potassium dichromate(VI) oxidises iodide ions to iodine. Construct both half-equations and the overall ionic equation, and state the colour change. <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — reduction</div>
+        <div class="step-desc">Dichromate → chromium(III); note the \(2\ \ce{Cr}\) and \(6\ \ce{e-}\). <span class="mark-step">M1</span></div>
+        \(\ce{Cr2O7^2- + 14H+ + 6e- -> 2Cr^3+ + 7H2O}\)
+      </div>
+      <div class="step"><div class="step-header">Step 2 — oxidation</div>
+        <div class="step-desc">Iodide → iodine. <span class="mark-step">B1</span></div>
+        \(\ce{2I- -> I2 + 2e-}\)
+      </div>
+      <div class="step"><div class="step-header">Step 3 — combine</div>
+        <div class="step-desc">×3 the iodide half so \(6\ \ce{e-}\) cancel. <span class="mark-step">M1</span></div>
+        \(\ce{Cr2O7^2- + 14H+ + 6I- -> 2Cr^3+ + 7H2O + 3I2}\)
+      </div>
+      <div class="step"><div class="step-header">Step 4 — colour</div>
+        <div class="step-desc"><span class="mark-step">A1</span></div>
+        Orange \(\ce{Cr2O7^2-}\) → green \(\ce{Cr^3+}\).
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype &amp; trap</div>
+      <b>Archetype:</b> "construct + combine half-equations in acid." The three you must know cold: \(\ce{MnO4- + 8H+ + 5e-}\), \(\ce{Cr2O7^2- + 14H+ + 6e-}\), \(\ce{Fe^3+ + e-}\). <b>Trap:</b> multiply so the electrons <b>cancel exactly</b> before adding — leftover electrons in a final equation is an automatic zero for that mark. <b>Your own note:</b> use the O.N. change to get the electron count, don't re-derive from scratch.
+    </div><div class="answer-overlay">Hidden — click Reveal</div>
+  </div>
+</div>
+
+<!-- Q11 -->
+<div class="card" id="c11">
+  <h3>Question 11 <span class="tag">half-equations (alkaline)</span></h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">Construct the half-equation for the reduction of chlorate(I) ions, \(\ce{ClO-}\), to chloride ions, \(\ce{Cl-}\), in <b>alkaline</b> solution. <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Balance in acid first (O with \(\ce{H2O}\), H with \(\ce{H+}\), charge with \(\ce{e-}\)). <span class="mark-step">M1</span></div>
+        \(\ce{ClO- + 2H+ + 2e- -> Cl- + H2O}\)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Convert to alkaline: add \(\ce{OH-}\) to <b>both</b> sides to cancel every \(\ce{H+}\) (\(\ce{H+ + OH- -> H2O}\)). <span class="mark-step">A1</span></div>
+        Add \(2\ \ce{OH-}\): \(\ce{ClO- + 2H2O + 2e- -> Cl- + H2O + 2OH-}\), cancel one \(\ce{H2O}\):<br>
+        \(\ce{ClO- + H2O + 2e- -> Cl- + 2OH-}\)
+      </div>
+      <div class="trap"><b>Trap (your own note):</b> "OH⁻ present" means water and hydroxide, not \(\ce{H+}\). Balance O and H by putting \(\ce{H2O}\) on the side that needs O and \(\ce{OH-}\) on the other — check O and H both balance at the end.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">In neutral/alkaline conditions, \(\ce{MnO4-}\) is reduced to \(\ce{MnO2}\). Construct the half-equation. <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Mn: \(+7 \to +4\), so \(3\ \ce{e-}\). Balance in acid. <span class="mark-step">M1</span></div>
+        \(\ce{MnO4- + 4H+ + 3e- -> MnO2 + 2H2O}\)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">Add \(4\ \ce{OH-}\) to both sides, cancel \(2\ \ce{H2O}\). <span class="mark-step">A1</span></div>
+        \(\ce{MnO4- + 2H2O + 3e- -> MnO2 + 4OH-}\)
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype &amp; trap</div>
+      <b>Archetype:</b> "balance a half-equation in alkaline solution." Method: balance in acid, then neutralise each \(\ce{H+}\) with an \(\ce{OH-}\) on both sides. <b>Trap:</b> forgetting to cancel duplicate \(\ce{H2O}\) at the end, or leaving \(\ce{H+}\) in an "alkaline" answer. Final check: atoms <b>and</b> charge balance.
+    </div><div class="answer-overlay">Hidden — click Reveal</div>
+  </div>
+</div>
+
+<!-- Q12 -->
+<div class="card" id="c12">
+  <h3>Question 12 <span class="tag">redox titration chain ⚑</span></h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">A \( 25.0\ \text{cm}^3 \) sample of hydrogen peroxide solution is acidified and titrated against \( 0.0200\ \text{mol dm}^{-3} \) potassium manganate(VII); \( 24.60\ \text{cm}^3 \) is required.<br>
+      \(\ce{2MnO4- + 5H2O2 + 6H+ -> 2Mn^2+ + 5O2 + 8H2O}\)<br>
+      (i) Amount of \(\ce{MnO4-}\). (ii) Amount of \(\ce{H2O2}\). (iii) \([\ce{H2O2}]\) in mol dm⁻³. (iv) Concentration in g dm⁻³. (v) Volume of \(\ce{O2}\) (s.t.p.) evolved when \( 1.00\ \text{dm}^3 \) of this solution fully decomposes. <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc">\( n = cV \). <span class="mark-step">M1</span></div>
+        \( n(\ce{MnO4-}) = 0.0200 \times 0.02460 = 4.920\times10^{-4} \)
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii)</div>
+        <div class="step-desc">Ratio \(\ce{MnO4-}:\ce{H2O2} = 2:5\). <span class="mark-step">M1</span></div>
+        \( n(\ce{H2O2}) = 4.920\times10^{-4} \times \tfrac{5}{2} = 1.230\times10^{-3} \)
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (iii)</div>
+        <div class="step-desc">\( c = n/V \). <span class="mark-step">A1</span></div>
+        \( [\ce{H2O2}] = 1.230\times10^{-3}/0.02500 = 0.0492\ \text{mol dm}^{-3} \)
+      </div>
+      <div class="step"><div class="step-header">Step 4 — (iv)</div>
+        <div class="step-desc">\( \times M_r(\ce{H2O2}) = 34.0 \). <span class="mark-step">A1</span></div>
+        \( 0.0492 \times 34.0 = 1.67\ \text{g dm}^{-3} \)
+      </div>
+      <div class="step"><div class="step-header">Step 5 — (v)</div>
+        <div class="step-desc">Decomposition \(\ce{2H2O2 -> 2H2O + O2}\), so \(\ce{H2O2}:\ce{O2} = 2:1\); 1.00 dm³ holds \(0.0492\) mol. <span class="mark-step">A1</span></div>
+        \( n(\ce{O2}) = 0.0492/2 = 0.02460 \Rightarrow V = 0.02460 \times 22.7 = 0.558\ \text{dm}^3 \)
+      </div>
+      <div class="trap"><b>Trap (your own note):</b> keep 5 s.f. all the way (\(4.920\times10^{-4}\), \(1.230\times10^{-3}\)) and round only the printed answer — premature rounding shifts the last figure and loses the A1. Use \(V_m = 22.7\) for s.t.p.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">A solution containing \(\ce{Cu^2+}\) is treated with excess potassium iodide: \(\ce{2Cu^2+ + 4I- -> 2CuI + I2}\). The liberated iodine is titrated with \( 0.100\ \text{mol dm}^{-3} \) sodium thiosulfate; \( 18.50\ \text{cm}^3 \) is required. \(\ce{I2 + 2S2O3^2- -> 2I- + S4O6^2-}\)<br>
+      Calculate the amount, in mol, of \(\ce{Cu^2+}\) in the sample, and name the indicator and its colour change at the end point. <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div>
+        <div class="step-desc">Moles of thiosulfate. <span class="mark-step">M1</span></div>
+        \( n(\ce{S2O3^2-}) = 0.100 \times 0.01850 = 1.850\times10^{-3} \)
+      </div>
+      <div class="step"><div class="step-header">Step 2</div>
+        <div class="step-desc">\(\ce{I2}:\ce{S2O3^2-} = 1:2\). <span class="mark-step">M1</span></div>
+        \( n(\ce{I2}) = 1.850\times10^{-3}/2 = 9.250\times10^{-4} \)
+      </div>
+      <div class="step"><div class="step-header">Step 3</div>
+        <div class="step-desc">\(\ce{Cu^2+}:\ce{I2} = 2:1\). <span class="mark-step">A1</span></div>
+        \( n(\ce{Cu^2+}) = 2 \times 9.250\times10^{-4} = 1.85\times10^{-3} \)
+      </div>
+      <div class="step"><div class="step-header">Step 4</div>
+        <div class="step-desc">Indicator. <span class="mark-step">A1</span></div>
+        Starch, added near the end point: blue-black → colourless.
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype &amp; trap</div>
+      <b>Archetype:</b> the ~30% "multi-step quantitative chain" — one scenario hung off several parts (\(n \to\) ratio \(\to\) conc \(\to\) g dm⁻³ \(\to\) gas volume). <b>Traps:</b> carry the earlier answers forward (don't restart from theory — your own note); watch each ratio (\(2:5\), \(1:2\), \(2:1\)); iodometry uses <b>starch</b> added late (blue-black → colourless), manganate(VII) is <b>self-indicating</b>.
+    </div><div class="answer-overlay">Hidden — click Reveal</div>
+  </div>
+</div>
+
+<hr>
+<p class="meta">After a full pass: any card under 70% becomes a gap cluster. Tell Claude which question numbers you missed and it logs them to <code>cluster_01_flags.md</code> and re-tests at a new angle.</p>
+
+<script>
+  function toggleBlock(btn){
+    const block = btn.closest('.block');
+    const overlay = block.querySelector('.answer-overlay');
+    const shown = overlay.classList.toggle('hidden');
+    btn.classList.toggle('hide-state', shown);
+    const isArche = block.classList.contains('reveal-archetype');
+    btn.textContent = shown ? (isArche ? 'Hide archetype' : 'Hide') : (isArche ? 'Reveal archetype' : 'Reveal');
+  }
+  document.querySelectorAll('.reveal-btn').forEach(b => b.addEventListener('click', () => toggleBlock(b)));
+  function revealAll(){
+    document.querySelectorAll('.answer-overlay').forEach(o => o.classList.add('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b => { b.classList.add('hide-state');
+      b.textContent = b.closest('.block').classList.contains('reveal-archetype') ? 'Hide archetype' : 'Hide'; });
+  }
+  function hideAll(){
+    document.querySelectorAll('.answer-overlay').forEach(o => o.classList.remove('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b => { b.classList.remove('hide-state');
+      b.textContent = b.closest('.block').classList.contains('reveal-archetype') ? 'Reveal archetype' : 'Reveal'; });
+  }
+</script>
+
+</body>
+</html>
