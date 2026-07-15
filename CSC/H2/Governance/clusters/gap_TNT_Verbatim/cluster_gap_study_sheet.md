@@ -1203,3 +1203,105 @@ For your NEXT essay attempt (rewrite Q1, Q2, Q3, or fresh test):
 ---
 
 > **This is the gap-closing cluster.** Content = Master Synthesis + this file. Structure = 题型 methodology (§§1-11 of _tixing_methodology.md). Deployment = §14 above.
+
+---
+
+## §16 Ethan's Own Synthesis + Pending Test Questions / 自己综合 + 待测题
+
+**Added 2026-07-09 from Ethan's live thought-dump on 央地博弈.** This section preserves his own synthesizing voice + queues 弊 question for next test.
+
+---
+
+### §16.1 PENDING TEST QUESTION (queue for next drill)
+
+> **问:** 央地博弈的 弊 在于 哪里? 它 对于 中国政治 带来 什么挑战?
+
+**Test context:** This is the natural counter-side to GAP 1 (央地博弈 利). Ethan has synthesized the 利 side (below §16.2). The 弊 side needs testing to ensure BOTH sides mastered — critical for 平衡分析 段 in any 央地博弈 essay.
+
+**Expected coverage in answer (for scoring reference — do NOT show Ethan before he attempts):**
+- 上有政策下有对策 → 中央政策 落地走样 → 行政效率削弱
+- 阳奉阴违 (2017 唐山钢厂 关 19 座 + 建更大新钢厂)
+- 报喜不报忧 + 数字政绩 → 中央 无法 掌握真实信息 → 决策脱离实际
+- 央地财政失衡 (68/32 vs 32/60) → 土地财政 + LGFV → 系统性金融风险 (灰犀牛)
+- 地方 90% 社保支出 + 只 40% 中央转移支付 → 小马拉大车 → 公共服务不均
+- 一放就乱, 一收就死 恶性循环
+- 环保督察 2015-2024 追责问责 9699 人 (体现 央地博弈 治理成本)
+
+---
+
+### §16.2 Ethan's synthesis — 央地博弈 5 利 (his own thinking, polished)
+
+**利 1: 政策反馈机制 → 亨廷顿 制度适应性 → 长治久安**
+
+中文 chain:
+中央 + 地方 讨价还价 → 全国一致性 与 地方差异性 取得平衡 → 亨廷顿 制度适应性 (良好政治秩序 = 在任何环境下 不断适应 + 修正) → 长治久安
+
+Example / 例:
+中央 定 全国政策 (环保 双碳目标 2030/2060) → 地方 反馈 (工业省份 就业压力) → 中央 分阶段调整 → 政策 从 "拍脑袋" 变 "落地可行"
+
+简单说 / Simple: Central-local bargaining creates the feedback loop that makes policies realistic. This IS what Huntington's "institutional adaptability" means — good political systems constantly adapt + correct.
+
+---
+
+**利 2: 两个积极性 (中央 谋全局 + 地方 谋发展)**
+
+中文 chain:
+中央 谋全局 (国家战略) + 地方 谋发展 (GDP + 就业 + 招商) → 双重积极性齐发 → 动力 系统
+
+Example:
+中央 定 西部大开发战略 (2000) → 广东/江苏 招商引资 → 1995-2005 广东 GDP 年均 10.1%, 江苏 11.1%
+
+简单说 / Simple: Both center and locals motivated. Center provides big picture, locals fight for their own development. Not "one big brain deciding everything".
+
+---
+
+**利 3: 政治集权 + 经济分权 (Xi 模式 秘诀)**
+
+中文 chain:
+政治统一 (党管干部 + 党管媒体) → 保证 国家稳定 + 谋全局不乱 → 经济分权 (地方 GDP 自主) → 给予 地方 积极性 + 减少 latency + 加大 发展活力 → 两全其美
+
+Example:
+Xi 时代 — 党的领导 全面强化 (政治 集权), 但 深圳 保留 招商 + 产业政策 自主 (经济 分权) → 华为/腾讯/大疆 崛起 + 中央 政治稳固
+
+简单说 / Simple: Xi's genius model = tight political control + loose economic control. Best of both.
+
+---
+
+**利 4: 差异化探索 + 先行先试**
+
+中文 chain:
+中央 不敢 全国 直接试新政策 (风险太大) → 让 地方 先行先试 → 成功 → 全国推广 → 加大 经济发展
+
+Example:
+1980 深圳 经济特区 落实 → 1988 海南 + 厦门 → 2013 上海自贸区 → 全国 自贸区 网络 (北京/广东/福建 等) → 中国 加入 WTO 加速
+
+如果 我 没试之前 直接落实 → 第一, 无 反馈让 政策 因地制宜 (每省 都有差异); 第二, 单点故障 风险 (2022 白纸运动 pattern)
+
+简单说 / Simple: Locals = testing ground. Reduces national policy risk. Without试点, one wrong national policy causes nationwide failure.
+
+---
+
+**利 5: 缺乏多元意见 → 一言堂 → 单点故障 (避免机制)**
+
+中文 chain:
+无 央地博弈 → 缺乏 多元意见 (外部制约 + 内部制约 均无) → 形成 一言堂 → 错误决策 难以及时被发现 → 单点故障 风险 加大
+
+Example:
+Zero-COVID 2020-22 — 高层 一言堂 决定 "动态清零 是最正确", 无 地方 有效 反馈机制 阻止 → 上海封城 2600 万人 (2022.4) + 全国 23 城市 + 1.93 亿人 影响 + GDP 22% 损失 + 贵州 侧翻 27 人死 + 上海 四月哀声
+
+简单说 / Simple: Central-local bargaining IS the safety valve against 一言堂 disasters. Remove it → Zero-COVID-scale failures become more likely.
+
+---
+
+### §16.3 Key linking insight (Ethan's own synthesis breakthrough)
+
+**Ethan's key realization:** 央地博弈 5 利 tie back to **亨廷顿 制度适应性** — 良好政治秩序 = 在任何环境下 不断 适应 + 修正 = 长治久安.
+
+这就是 为什么 央地博弈 不只是 tolerable, 而是 STRUCTURALLY 好的 — 它 是 中国 政治体系 的 institutional adaptability 表现.
+
+Deploy in essay:
+> "亨廷顿 制度适应性 论 指出 良好政治秩序 requires 政治体系 在 环境变化 (经济转型 + 社会多元化 + 技术革命) 时 能 自我调整 + 修正 + 创新. 央地博弈 恰恰是 中国 单一制大国 中 institutional adaptability 的 结构性表现 — 通过 政策反馈机制 + 两个积极性 + 差异化探索 + 多元制约, 避免 一言堂 决策 陷入 单点故障 (Zero-COVID 2022 pattern). 因此 央地博弈 虽 带来 挑战 (上有政策下有对策 等), 但 结构性 是 长治久安 的 必要机制."
+
+---
+
+**Next test:** Answer §16.1 question (央地博弈 弊). Same style — 中文 chain + example + 简单说.
