@@ -2,17 +2,17 @@ window.PLAN = {
  "meta": {
   "student": "Ethan Lim",
   "title": "Six-Week Study Plan — Prelim Run",
-  "start": "2026-07-15",
+  "start": "2026-07-16",
   "end": "2026-08-23",
   "prelim": "2026-08-24",
   "prelimLabel": "Prelim begins (GP P1)",
-  "studyDays": 40,
+  "studyDays": 39,
   "restDay": "none",
-  "totalMins": 9720,
+  "totalMins": 9480,
   "perWeekHrs": 28.4,
-  "target": "Prelim-realistic — a solid pass (C/B), where every cluster we drill is also a permanent A-level foundation. Not chasing A's on everything.",
+  "target": "Meet B — roughly 65 average across every subject (a C/B). Every cluster drilled is also a permanent A-level foundation, not just a prelim patch.",
   "reality": "Two subjects a day, 2 hours each — the SIR method: ~60 min study, then the test part. Interleaving two subjects beats 4 hours on one. Every Sunday is a cumulative test across all subjects covered so far, scaling from ~3h in July to a full 6h mock across all 5 subjects in August — that, plus the Week-4+ timed papers, is the real readiness check, not cluster scores. Started 15 Jul with GP on 24 Aug: a tight 40-day runway, no slack, so the first Sunday test (19 Jul) is short — only a few days of content are in.",
-  "lastUpdated": "2026-07-13",
+  "lastUpdated": "2026-07-15",
   "repo": "https://github.com/ayan-banday/Exambackcasting-a-levels"
  },
  "subjects": {
@@ -821,70 +821,46 @@ window.PLAN = {
  "days": [
   {
    "n": 1,
-   "date": "2026-07-15",
-   "weekday": "Wed",
+   "date": "2026-07-16",
+   "weekday": "Thu",
    "week": 1,
    "type": "standard",
-   "subject": "maths",
-   "label": "Maths + Chemistry",
-   "focus": "Launch. 2×2h SIR — Vectors Basics ⚑; Stoichiometry & Redox (the calc backbone). Cumulative tests start next Sunday.",
+   "subject": "chem",
+   "label": "Chem (new) · finish Governance · GP slotting",
+   "focus": "Day 1. Start Chemistry (Stoichiometry & Redox — the calc backbone), close the last CSC Governance gaps, and lock GP Phase 2 (paragraph slotting) while it is fresh.",
    "flag": "⚑",
    "mins": 240,
    "blocks": [
     {
      "mins": 120,
-     "subject": "maths",
-     "name": "Maths — Vectors — Basics, Products & Ratio Theorem (SIR)",
-     "desc": "SIR — Study/encode the cluster (~60 min), then the test part: adversarial self-test at Application level + close the gaps it exposes.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Vectors — Basics, Products & Ratio Theorem"
-    },
-    {
-     "mins": 120,
      "subject": "chem",
-     "name": "Chemistry — Stoichiometry & Redox (SIR)",
-     "desc": "SIR — Study/encode the cluster (~60 min), then the test part: adversarial self-test at Application level + close the gaps it exposes.",
+     "name": "Chemistry — Stoichiometry & Redox (new cluster, built at session start)",
+     "desc": "Method → worked example → practice Q+A: mole / limiting-reagent / %-yield calcs, redox half-equations, oxidation numbers, titration. Then drilled.",
      "done": false,
      "doneDate": null,
      "clusterRef": "Stoichiometry & Redox"
+    },
+    {
+     "mins": 60,
+     "subject": "csc",
+     "name": "CSC — finish Governance gap clusters",
+     "desc": "Close the remaining Governance gaps so it is fully test-ready for Sunday.",
+     "done": false,
+     "doneDate": null
+    },
+    {
+     "mins": 60,
+     "subject": "gp",
+     "name": "GP — Phase 2: paragraph slotting",
+     "desc": "Finish Phase 2 (50m ×2) in one focused block while it is fresh.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "Essay — slotting, expansion & body paragraphs"
     }
    ]
   },
   {
    "n": 2,
-   "date": "2026-07-16",
-   "weekday": "Thu",
-   "week": 1,
-   "type": "standard",
-   "subject": "maths",
-   "label": "Maths + Biology",
-   "focus": "2×2h SIR. Vectors; Inheritance.",
-   "flag": "",
-   "mins": 240,
-   "blocks": [
-    {
-     "mins": 120,
-     "subject": "maths",
-     "name": "Maths — Vectors — Lines & Planes (SIR)",
-     "desc": "SIR — Study/encode the cluster (~60 min), then the test part: adversarial self-test at Application level + close the gaps it exposes.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Vectors — Lines & Planes"
-    },
-    {
-     "mins": 120,
-     "subject": "bio",
-     "name": "Biology — Inheritance — Dihybrid, Codominance & Sex-Linkage (SIR)",
-     "desc": "SIR — Study/encode the cluster (~60 min), then the test part: adversarial self-test at Application level + close the gaps it exposes.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Inheritance — Dihybrid, Codominance & Sex-Linkage"
-    }
-   ]
-  },
-  {
-   "n": 3,
    "date": "2026-07-17",
    "weekday": "Fri",
    "week": 1,
@@ -916,7 +892,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 4,
+   "n": 3,
    "date": "2026-07-18",
    "weekday": "Sat",
    "week": 1,
@@ -948,7 +924,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 5,
+   "n": 4,
    "date": "2026-07-19",
    "weekday": "Sun",
    "week": 1,
@@ -983,7 +959,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 6,
+   "n": 5,
    "date": "2026-07-20",
    "weekday": "Mon",
    "week": 2,
@@ -1015,7 +991,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 7,
+   "n": 6,
    "date": "2026-07-21",
    "weekday": "Tue",
    "week": 2,
@@ -1047,7 +1023,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 8,
+   "n": 7,
    "date": "2026-07-22",
    "weekday": "Wed",
    "week": 2,
@@ -1097,13 +1073,13 @@ window.PLAN = {
      "doneDate": null
     }
    ],
-   "n": 9,
+   "n": 8,
    "date": "2026-07-23",
    "weekday": "Thu",
    "week": 2
   },
   {
-   "n": 10,
+   "n": 9,
    "date": "2026-07-24",
    "weekday": "Fri",
    "week": 2,
@@ -1135,7 +1111,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 11,
+   "n": 10,
    "date": "2026-07-25",
    "weekday": "Sat",
    "week": 2,
@@ -1167,7 +1143,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 12,
+   "n": 11,
    "date": "2026-07-26",
    "weekday": "Sun",
    "week": 2,
@@ -1202,7 +1178,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 13,
+   "n": 12,
    "date": "2026-07-27",
    "weekday": "Mon",
    "week": 3,
@@ -1234,7 +1210,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 14,
+   "n": 13,
    "date": "2026-07-28",
    "weekday": "Tue",
    "week": 3,
@@ -1266,7 +1242,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 15,
+   "n": 14,
    "date": "2026-07-29",
    "weekday": "Wed",
    "week": 3,
@@ -1298,7 +1274,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 16,
+   "n": 15,
    "date": "2026-07-30",
    "weekday": "Thu",
    "week": 3,
@@ -1330,7 +1306,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 17,
+   "n": 16,
    "date": "2026-07-31",
    "weekday": "Fri",
    "week": 3,
@@ -1362,7 +1338,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 18,
+   "n": 17,
    "date": "2026-08-01",
    "weekday": "Sat",
    "week": 3,
@@ -1390,7 +1366,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 19,
+   "n": 18,
    "date": "2026-08-02",
    "weekday": "Sun",
    "week": 3,
@@ -1425,7 +1401,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 20,
+   "n": 19,
    "date": "2026-08-03",
    "weekday": "Mon",
    "week": 4,
@@ -1457,7 +1433,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 21,
+   "n": 20,
    "date": "2026-08-04",
    "weekday": "Tue",
    "week": 4,
@@ -1485,7 +1461,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 22,
+   "n": 21,
    "date": "2026-08-05",
    "weekday": "Wed",
    "week": 4,
@@ -1517,7 +1493,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 23,
+   "n": 22,
    "date": "2026-08-06",
    "weekday": "Thu",
    "week": 4,
@@ -1545,7 +1521,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 24,
+   "n": 23,
    "date": "2026-08-07",
    "weekday": "Fri",
    "week": 4,
@@ -1580,7 +1556,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 25,
+   "n": 24,
    "date": "2026-08-08",
    "weekday": "Sat",
    "week": 4,
@@ -1615,7 +1591,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 26,
+   "n": 25,
    "date": "2026-08-09",
    "weekday": "Sun",
    "week": 4,
@@ -1672,13 +1648,13 @@ window.PLAN = {
      "doneDate": null
     }
    ],
-   "n": 27,
+   "n": 26,
    "date": "2026-08-10",
    "weekday": "Mon",
    "week": 5
   },
   {
-   "n": 28,
+   "n": 27,
    "date": "2026-08-11",
    "weekday": "Tue",
    "week": 5,
@@ -1713,7 +1689,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 29,
+   "n": 28,
    "date": "2026-08-12",
    "weekday": "Wed",
    "week": 5,
@@ -1741,7 +1717,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 30,
+   "n": 29,
    "date": "2026-08-13",
    "weekday": "Thu",
    "week": 5,
@@ -1776,7 +1752,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 31,
+   "n": 30,
    "date": "2026-08-14",
    "weekday": "Fri",
    "week": 5,
@@ -1811,7 +1787,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 32,
+   "n": 31,
    "date": "2026-08-15",
    "weekday": "Sat",
    "week": 5,
@@ -1868,13 +1844,13 @@ window.PLAN = {
      "doneDate": null
     }
    ],
-   "n": 33,
+   "n": 32,
    "date": "2026-08-16",
    "weekday": "Sun",
    "week": 5
   },
   {
-   "n": 34,
+   "n": 33,
    "date": "2026-08-17",
    "weekday": "Mon",
    "week": 6,
@@ -1902,7 +1878,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 35,
+   "n": 34,
    "date": "2026-08-18",
    "weekday": "Tue",
    "week": 6,
@@ -1937,7 +1913,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 36,
+   "n": 35,
    "date": "2026-08-19",
    "weekday": "Wed",
    "week": 6,
@@ -1965,7 +1941,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 37,
+   "n": 36,
    "date": "2026-08-20",
    "weekday": "Thu",
    "week": 6,
@@ -2000,7 +1976,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 38,
+   "n": 37,
    "date": "2026-08-21",
    "weekday": "Fri",
    "week": 6,
@@ -2028,7 +2004,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 39,
+   "n": 38,
    "date": "2026-08-22",
    "weekday": "Sat",
    "week": 6,
@@ -2092,7 +2068,7 @@ window.PLAN = {
      "doneDate": null
     }
    ],
-   "n": 40,
+   "n": 39,
    "date": "2026-08-23",
    "weekday": "Sun",
    "week": 6
@@ -2111,59 +2087,53 @@ window.PLAN = {
   [
    1,
    1,
-   5
+   4
   ],
   [
    2,
-   6,
-   12
+   5,
+   11
   ],
   [
    3,
-   13,
-   19
+   12,
+   18
   ],
   [
    4,
-   20,
-   26
+   19,
+   25
   ],
   [
    5,
-   27,
-   33
+   26,
+   32
   ],
   [
    6,
-   34,
-   40
+   33,
+   39
   ]
  ],
  "log": [
   {
-   "date": "2026-07-12",
-   "weekday": "Sun",
+   "date": "2026-07-15",
+   "weekday": "Wed",
    "items": [
-    {
-     "subject": "gp",
-     "mins": 50,
-     "what": "2-paragraph slotting practice",
-     "done": false
-    },
     {
      "subject": "maths",
      "mins": 120,
-     "what": "Finish Cluster 6 — Discrete RV & Binomial",
-     "done": false
+     "what": "Calculus — Cluster 6 (Differential Equations mastery) ✓ entire Calculus topic complete",
+     "done": true
     },
     {
      "subject": "csc",
      "mins": 60,
-     "what": "Braindump knowledge gaps → save → next cluster",
+     "what": "Governance gap clusters (in progress, ~1h left)",
      "done": false
     }
    ],
-   "note": ""
+   "note": "Pre-plan catch-up before Day 1. Calculus fully done; the last Governance gaps carry into tomorrow."
   }
  ],
  "exams": [
@@ -2278,6 +2248,32 @@ window.PLAN = {
    "paper": "Paper 1 · MCQ",
    "time": "14:00",
    "dur": "1h"
+  }
+ ],
+ "testTopics": [
+  {
+   "subject": "maths",
+   "topic": "Calculus",
+   "status": "done",
+   "date": "done ≤15 Jul",
+   "subs": [
+    "Differentiation & Maclaurin",
+    "Integration techniques & applications",
+    "Differential equations",
+    "Applications & sketching"
+   ]
+  },
+  {
+   "subject": "csc",
+   "topic": "Governance",
+   "status": "closing gaps",
+   "date": "15 Jul",
+   "subs": [
+    "Foundation & power structure",
+    "Constraining unchecked power",
+    "Managing society, voice & identity",
+    "Gap clusters + synthesis (in progress)"
+   ]
   }
  ]
 };
