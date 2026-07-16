@@ -865,29 +865,29 @@ window.PLAN = {
    "weekday": "Fri",
    "week": 1,
    "type": "standard",
-   "subject": "gp",
-   "label": "GP + Maths (Vectors — new)",
-   "focus": "Day 2. GP: finish the paragraph slotting you missed + start line-by-line expansion. Then start Maths Vectors — your biggest remaining Maths chunk now Calculus is done. Quantitative Vectors interleaves with qualitative GP.",
+   "subject": "maths",
+   "label": "Maths (Vectors — new) + GP slotting",
+   "focus": "Day 2. Start Maths Vectors — your biggest remaining Maths chunk now Calculus is done (2h study + 1h drill). Then a light 1h GP: one Phase-2 paragraph-slotting session. GP stays a ~1h drip every ~3 days from here.",
    "flag": "",
    "mins": 240,
    "blocks": [
     {
-     "mins": 120,
-     "subject": "gp",
-     "name": "GP — Phase 2 (finish slotting) + Phase 3 (start line-by-line expansion)",
-     "desc": "Catch up the slotting missed on 16 Jul, then begin expanding a paragraph line by line.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Essay — slotting, expansion & body paragraphs"
-    },
-    {
-     "mins": 120,
+     "mins": 180,
      "subject": "maths",
-     "name": "Maths — Vectors Cluster 1 (new, built at session start)",
+     "name": "Maths — Vectors Cluster 1 (new): study (2h) + drill (1h)",
      "desc": "Basics, products & ratio theorem. Built the morning you study it.",
      "done": false,
      "doneDate": null,
      "clusterRef": "Vectors — Basics, Products & Ratio Theorem"
+    },
+    {
+     "mins": 60,
+     "subject": "gp",
+     "name": "GP — Phase 2 paragraph slotting (session 1 of 2, ~50 min)",
+     "desc": "Just lock one slotting session. Next GP session is ~3 days out.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "Essay — slotting, expansion & body paragraphs"
     }
    ]
   },
