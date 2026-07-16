@@ -1305,3 +1305,71 @@ Deploy in essay:
 ---
 
 **Next test:** Answer §16.1 question (央地博弈 弊). Same style — 中文 chain + example + 简单说.
+
+---
+
+## §17 GOVERNANCE COMPLETE — Ethan's closing synthesis (2026-07-16)
+
+**Status:** Governance topic OFFICIALLY DONE. This section captures Ethan's final consolidated understanding — proof of mastery.
+
+### §17.1 CLOSED: 央地博弈 弊 (from §16.1 pending question)
+
+Ethan's answer (paraphrased from live dump, TNT-style):
+
+中文 chain:
+中央 全国统一 vs 地方 保护地方利益 → 利益不同 → 央地博弈 → 3 种执行偏差 (选择性执行 + 替换性执行 + 象征性执行) → 有令不行, 有禁不止 → 政策碎片化 → 削弱中央权威 → 中央 收得更紧 → 一放就乱, 一收就死 恶性循环 → 治理能力 长期下降
+
+**3 种执行偏差 (JC 必背):**
+
+| 类型 | 意思 | 案例 |
+|---|---|---|
+| **选择性执行** | 只执行 对自己有利 部分, 资源有限 | 中央要求全面改革, 地方只做容易的部分 |
+| **替换性执行** | 换 逆转方式 完成指标 | 中央 令 关厂, 地方 换成 "限产" 应付 |
+| **象征性执行** | 做样子 走过场 | **唐山钢厂 2017** — 关 19 座高炉 + 同时 建更大新钢厂 |
+
+简单说 / Simple: Local interests ≠ central goals → 3 forms of policy distortion → central authority weakened → central tightens → 一放就乱一收就死 cycle. This IS the challenge — bargaining creates policy fragmentation.
+
+**Status: CLOSED** ✅ (Ethan articulated 3 execution types + 唐山 case + 一放就乱一收就死 idiom)
+
+---
+
+### §17.2 CLOSED: 为什么 不能腐/不想腐 是 理想 (更多是理想 not reality)
+
+中文 chain:
+不敢腐 (fear-based): 高压反腐 + 打老虎拍苍蝇 + 巡视组 → **6 百万 党员干部 受处分 (截至 2025)** → ✅ 有效 但 治标不治本
+
+不能腐 (institutional): 国监委 + 监察法 (2018) → 但 institutions 依然 在 党的领导 下 → **派系反腐** (习家班 完整保留) → ⚠️ selective
+
+不想腐 (cultural — 理想): 需要 **社会监督机制** (独立媒体 + 独立社会组织) + **价值观 + 廉洁文化** (从小灌输 + 长期制度建设 + 社会文化共同作用) → **CCP 因 党国体制 结构性 不能授予这些** → ❌ 永远 是 aspiration, 不是 achievable
+
+Example / 例:
+- **打老虎 拍苍蝇** 效果: 6 百万 受处分 高效 (Xi era)
+- **周永康 (江派) + 令计划 (团派)** 落马, **习家班 完整** — 反腐 selective
+- **不想腐 需要:** 自由新闻媒体 + 独立社会组织 + civic culture — CCP 无法允许
+
+简单说 / Simple: 不敢腐 works via fear (6M+ disciplined). 不能腐 partial via institutions but selective (party controls the institutions). 不想腐 requires independent media + civic culture which CCP structurally cannot allow. That's why it's an IDEAL, not a REALITY.
+
+**Status: CLOSED** ✅ (Ethan articulated why 不想腐 requires what CCP cannot授予)
+
+---
+
+### §17.3 CLOSED: Full Master Chain deployment (Ethan's own synthesis)
+
+Ethan chained fluently in live dump:
+
+阿克顿 定律 (权力使人腐败, 绝对权力绝对腐败) → 党国体制 5 弊端 (不利于 科学/民主/依法执政 + 无纠错 + 结构性腐败) → 亨廷顿 政绩困局 (中产 4% → 42.3%) → Mode 1 (12345) 无法满足 → 需 Mode 2 → 郑永年 使命型政党 (CCP 以中华民族复兴使命为核心) → 授予 Mode 2 会 颠覆使命 → 苏东巨变 教训 (1985 Gorbachev → 1991 苏共崩溃) 锁定 → **CCP 选择 结构性不完整 作为 党国体制 存续代价** → 维稳费 增加 → 塔西佗陷阱 累积 → 临界爆发 (白纸 2022.11) → 迫使 政策逆转 → 政治合法性 长期侵蚀
+
+**Status: MASTERED** ✅ (Full chain fluent, uses TNT-style causal arrows)
+
+---
+
+### §17.4 Governance topic status
+
+**All clusters closed. Ethan can:**
+- Chain阿克顿 → 5 弊端 → 亨廷顿 → 使命型政党 → 苏东教训 fluently
+- Deploy 央地博弈 both 利 (5) and 弊 (3 执行 + 一放就乱一收就死)
+- Explain 不敢腐/不能腐/不想腐 3-stage with structural analysis
+- Use TNT-style idioms (拍脑袋 → 落地可行, 讨价还价, 集中力量办大事→办错事, 象征性执行, 一放就乱一收就死, 大成就接着大错误)
+- Deploy Xi tried + failed pattern for every 弊端
+
+**Recommended next:** Move to next CSC topic (经济 / 社会 / 外交). Governance = content-complete.
