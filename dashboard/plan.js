@@ -12,7 +12,7 @@ window.PLAN = {
   "perWeekHrs": 28.4,
   "target": "Meet B — roughly 65 average across every subject (a C/B). Every cluster drilled is also a permanent A-level foundation, not just a prelim patch.",
   "reality": "Two subjects a day, 2 hours each — the SIR method: ~60 min study, then the test part. Interleaving two subjects beats 4 hours on one. Every Sunday is a cumulative test across all subjects covered so far, scaling from ~3h in July to a full 6h mock across all 5 subjects in August — that, plus the Week-4+ timed papers, is the real readiness check, not cluster scores. Started 15 Jul with GP on 24 Aug: a tight 40-day runway, no slack, so the first Sunday test (19 Jul) is short — only a few days of content are in.",
-  "lastUpdated": "2026-07-15",
+  "lastUpdated": "2026-07-16",
   "repo": "https://github.com/ayan-banday/Exambackcasting-a-levels"
  },
  "subjects": {
@@ -2116,6 +2116,19 @@ window.PLAN = {
   ]
  ],
  "log": [
+  {
+   "date": "2026-07-16",
+   "weekday": "Thu",
+   "items": [
+    {
+     "subject": "chem",
+     "mins": 110,
+     "what": "Cluster 1 Stoich & Redox — worked Q1–Q10 (mole toolkit → titrations → oxidation numbers & disproportionation)",
+     "done": true
+    }
+   ],
+   "note": "1h50m, strong reasoning (self-corrected N2 Mr and formula-units). Flagged: worked solutions must match the school answer-key table layout — cluster since rebuilt with tables; gas-volume contraction-table + practice Q still to add. Governance + GP deferred to tomorrow."
+  },
   {
    "date": "2026-07-15",
    "weekday": "Wed",
