@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Six-Week Study Plan — Prelim Run</title>
-<meta name="description" content="15 Jul → 23 Aug 2026, prelim from 24 Aug. 40 study days, no rest days, two subjects a day (2h each, SIR) + scaling Sunday cumulative tests. Includes the full prelim paper timetable.">
+<meta name="description" content="16 Jul → 22 Aug 2026, prelim from 24 Aug. Two subjects a day (2h each, SIR), Saturday cumulative test, Sunday rest. Includes the full prelim paper timetable.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -240,7 +240,7 @@ footer a{color:var(--dim)}
   <div class="exams" id="exams"></div>
 
   <h2>⏱ The daily cycle — 2 subjects × 2h (SIR)<span class="rule"></span></h2>
-  <div class="h2sub">Two subjects a day, 2 hours each: ~60 min study/encode, then the test part + close the gaps. Every Sunday is a cumulative test across all subjects covered so far. Run this unless the day says otherwise.</div>
+  <div class="h2sub">Two subjects a day, 2 hours each: ~60 min study/encode, then the test part + close the gaps. Saturday is the weekly cumulative test across all subjects covered so far; Sunday is a rest day. Run this unless the day says otherwise.</div>
   <div class="cyc" id="cyc"></div>
 
   <h2>📚 The ~25 clusters we're drilling<span class="rule"></span></h2>
@@ -253,7 +253,7 @@ footer a{color:var(--dim)}
   <div id="map"></div>
 
   <h2>🗓 The day-by-day schedule<span class="rule"></span></h2>
-  <div class="h2sub">No rest days — study every day. Click any day to open its blocks. The sequence matters more than the exact dates.</div>
+  <div class="h2sub">Saturday = weekly cumulative test. Sunday = rest day. Click any day to open its blocks. The sequence matters more than the exact dates.</div>
   <div id="sched"></div>
 
   <h2>Falling behind? The drop order<span class="rule"></span></h2>
@@ -419,7 +419,7 @@ footer a{color:var(--dim)}
     });
     html+='</div>';
   });
-  html+=`<div class="exam"><span class="n">21 AUG +</span><span class="t">${M.prelimLabel}</span>
+  html+=`<div class="exam"><span class="n">24 AUG</span><span class="t">${M.prelimLabel}</span>
     <span class="s">If your prelim lands earlier, cut buffer days first, then the lowest-priority clusters.</span></div>`;
   document.getElementById('sched').innerHTML=html;
 

@@ -3,15 +3,15 @@ window.PLAN = {
   "student": "Ethan Lim",
   "title": "Six-Week Study Plan — Prelim Run",
   "start": "2026-07-16",
-  "end": "2026-08-23",
+  "end": "2026-08-22",
   "prelim": "2026-08-24",
   "prelimLabel": "Prelim begins (GP P1)",
-  "studyDays": 39,
-  "restDay": "none",
-  "totalMins": 9480,
-  "perWeekHrs": 28.4,
+  "studyDays": 33,
+  "restDay": "Sunday",
+  "totalMins": 7980,
+  "perWeekHrs": 24.5,
   "target": "Meet B — roughly 65 average across every subject (a C/B). Every cluster drilled is also a permanent A-level foundation, not just a prelim patch.",
-  "reality": "Two subjects a day, 2 hours each — the SIR method: ~60 min study, then the test part. Interleaving two subjects beats 4 hours on one. Every Sunday is a cumulative test across all subjects covered so far, scaling from ~3h in July to a full 6h mock across all 5 subjects in August — that, plus the Week-4+ timed papers, is the real readiness check, not cluster scores. Started 15 Jul with GP on 24 Aug: a tight 40-day runway, no slack, so the first Sunday test (19 Jul) is short — only a few days of content are in.",
+  "reality": "Two subjects a day, 2 hours each — the SIR method: ~60 min study, then the test part. Interleaving two subjects beats 4 hours on one. Saturday is the weekly cumulative test (timed, every topic covered so far); Sunday is a rest day. The Saturday test + the Week-4+ timed papers are the real readiness check, not cluster scores. Started 15 Jul; GP opens the prelim on 24 Aug.",
   "lastUpdated": "2026-07-16",
   "repo": "https://github.com/ayan-banday/Exambackcasting-a-levels"
  },
@@ -78,8 +78,8 @@ window.PLAN = {
   },
   {
    "mins": 240,
-   "name": "Sundays — cumulative test",
-   "desc": "Every Sunday: a timed cumulative test across ALL subjects covered so far. Self-mark, hand the gap-list to Claude. The real check, not cluster scores."
+   "name": "Saturdays — cumulative test",
+   "desc": "Every Saturday: a timed cumulative test across ALL subjects covered so far. Self-mark, hand the gap-list to Claude. Sunday is a rest day."
   }
  ],
  "clusters": [
@@ -836,8 +836,8 @@ window.PLAN = {
      "subject": "chem",
      "name": "Chemistry — Stoichiometry & Redox (new cluster, built at session start)",
      "desc": "Method → worked example → practice Q+A: mole / limiting-reagent / %-yield calcs, redox half-equations, oxidation numbers, titration. Then drilled.",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "16 Jul",
      "clusterRef": "Stoichiometry & Redox"
     },
     {
@@ -845,8 +845,8 @@ window.PLAN = {
      "subject": "csc",
      "name": "CSC — finish Governance gap clusters",
      "desc": "Close the remaining Governance gaps so it is fully test-ready for Sunday.",
-     "done": false,
-     "doneDate": null
+     "done": true,
+     "doneDate": "16 Jul"
     },
     {
      "mins": 60,
@@ -865,29 +865,29 @@ window.PLAN = {
    "weekday": "Fri",
    "week": 1,
    "type": "standard",
-   "subject": "chem",
-   "label": "Chemistry + CSC",
-   "focus": "2×2h SIR. Bonding; 经济 Economy.",
+   "subject": "gp",
+   "label": "GP + Maths (Vectors — new)",
+   "focus": "Day 2. GP: finish the paragraph slotting you missed + start line-by-line expansion. Then start Maths Vectors — your biggest remaining Maths chunk now Calculus is done. Quantitative Vectors interleaves with qualitative GP.",
    "flag": "",
    "mins": 240,
    "blocks": [
     {
      "mins": 120,
-     "subject": "chem",
-     "name": "Chemistry — Bonding — VSEPR, Polarity & Intermolecular Forces (SIR)",
-     "desc": "SIR — Study/encode the cluster (~60 min), then the test part: adversarial self-test at Application level + close the gaps it exposes.",
+     "subject": "gp",
+     "name": "GP — Phase 2 (finish slotting) + Phase 3 (start line-by-line expansion)",
+     "desc": "Catch up the slotting missed on 16 Jul, then begin expanding a paragraph line by line.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Bonding — VSEPR, Polarity & Intermolecular Forces"
+     "clusterRef": "Essay — slotting, expansion & body paragraphs"
     },
     {
      "mins": 120,
-     "subject": "csc",
-     "name": "CSC — 经济 Economy — Growth Engine & Transition (SIR)",
-     "desc": "SIR — Study/encode the cluster (~60 min), then the test part: adversarial self-test at Application level + close the gaps it exposes.",
+     "subject": "maths",
+     "name": "Maths — Vectors Cluster 1 (new, built at session start)",
+     "desc": "Basics, products & ratio theorem. Built the morning you study it.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "经济 Economy — Growth Engine & Transition"
+     "clusterRef": "Vectors — Basics, Products & Ratio Theorem"
     }
    ]
   },
@@ -896,70 +896,33 @@ window.PLAN = {
    "date": "2026-07-18",
    "weekday": "Sat",
    "week": 1,
-   "type": "standard",
-   "subject": "maths",
-   "label": "Maths + Biology",
-   "focus": "2×2h SIR. Vectors; Inheritance.",
-   "flag": "",
+   "type": "test",
+   "subject": "conv",
+   "label": "Saturday test — Maths (Calculus) + CSC (Governance)",
+   "focus": "First Saturday test. Timed, everything consolidated so far. Self-mark, hand the gap-list to Claude.",
+   "flag": "⚑",
    "mins": 240,
    "blocks": [
     {
      "mins": 120,
      "subject": "maths",
-     "name": "Maths — Vectors — Foot of Perpendicular, Distances & Angles (SIR)",
-     "desc": "SIR — Study/encode the cluster (~60 min), then the test part: adversarial self-test at Application level + close the gaps it exposes.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Vectors — Foot of Perpendicular, Distances & Angles"
-    },
-    {
-     "mins": 120,
-     "subject": "bio",
-     "name": "Biology — Inheritance — Chi-Squared Test (SIR)",
-     "desc": "SIR — Study/encode the cluster (~60 min), then the test part: adversarial self-test at Application level + close the gaps it exposes.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Inheritance — Chi-Squared Test"
-    }
-   ]
-  },
-  {
-   "n": 4,
-   "date": "2026-07-19",
-   "weekday": "Sun",
-   "week": 1,
-   "type": "test",
-   "subject": "conv",
-   "label": "Cumulative test #1 — all subjects so far",
-   "focus": "The weekly readiness check (Sundays). Everything covered up to today, mixed and timed — this, not cluster scores, tells you where you really are.",
-   "flag": "",
-   "mins": 180,
-   "blocks": [
-    {
-     "mins": 120,
-     "name": "Cumulative test #1 — all subjects so far",
-     "desc": "Timed, mixed across every subject covered so far — no notes.",
+     "name": "Maths — Calculus timed paper (2h)",
+     "desc": "Differentiation & Maclaurin, integration, differential equations, applications & sketching.",
      "done": false,
      "doneDate": null
     },
     {
-     "mins": 40,
-     "name": "Self-mark vs schemes + trap models",
-     "desc": "",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 20,
-     "name": "Gap-list → Claude",
-     "desc": "",
+     "mins": 120,
+     "subject": "csc",
+     "name": "CSC — Governance essay/case (2h)",
+     "desc": "Full timed Governance question(s), self-marked against the TNT standard.",
      "done": false,
      "doneDate": null
     }
    ]
   },
   {
-   "n": 5,
+   "n": 4,
    "date": "2026-07-20",
    "weekday": "Mon",
    "week": 2,
@@ -991,7 +954,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 6,
+   "n": 5,
    "date": "2026-07-21",
    "weekday": "Tue",
    "week": 2,
@@ -1023,7 +986,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 7,
+   "n": 6,
    "date": "2026-07-22",
    "weekday": "Wed",
    "week": 2,
@@ -1073,13 +1036,13 @@ window.PLAN = {
      "doneDate": null
     }
    ],
-   "n": 8,
+   "n": 7,
    "date": "2026-07-23",
    "weekday": "Thu",
    "week": 2
   },
   {
-   "n": 9,
+   "n": 8,
    "date": "2026-07-24",
    "weekday": "Fri",
    "week": 2,
@@ -1111,59 +1074,28 @@ window.PLAN = {
    ]
   },
   {
-   "n": 10,
+   "n": 9,
    "date": "2026-07-25",
    "weekday": "Sat",
    "week": 2,
-   "type": "standard",
-   "subject": "maths",
-   "label": "Maths + CSC",
-   "focus": "2×2h SIR. Hypothesis Testing; 跨课题 Cross-Topic Bridge & Deployment ⚑.",
-   "flag": "⚑",
-   "mins": 240,
-   "blocks": [
-    {
-     "mins": 120,
-     "subject": "maths",
-     "name": "Maths — Hypothesis Testing (SIR)",
-     "desc": "SIR — Study/encode the cluster (~60 min), then the test part: adversarial self-test at Application level + close the gaps it exposes.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Hypothesis Testing"
-    },
-    {
-     "mins": 120,
-     "subject": "csc",
-     "name": "CSC — 跨课题 Cross-Topic Bridge & Deployment (SIR)",
-     "desc": "SIR — Study/encode the cluster (~60 min), then the test part: adversarial self-test at Application level + close the gaps it exposes.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "跨课题 Cross-Topic Bridge & Deployment"
-    }
-   ]
-  },
-  {
-   "n": 11,
-   "date": "2026-07-26",
-   "weekday": "Sun",
-   "week": 2,
    "type": "test",
    "subject": "conv",
-   "label": "Cumulative test #2 — all subjects so far",
-   "focus": "The weekly readiness check (Sundays). Everything covered up to today, mixed and timed — this, not cluster scores, tells you where you really are.",
+   "label": "Saturday test — all topics covered so far",
+   "focus": "Weekly cumulative test: everything covered up to today, timed and mixed. Self-mark, hand the gap-list to Claude.",
    "flag": "",
    "mins": 240,
    "blocks": [
     {
      "mins": 150,
-     "name": "Cumulative test #2 — all subjects so far",
-     "desc": "Timed, mixed across every subject covered so far — no notes.",
+     "subject": "conv",
+     "name": "Cumulative test — all topics to date",
+     "desc": "",
      "done": false,
      "doneDate": null
     },
     {
      "mins": 50,
-     "name": "Self-mark vs schemes + trap models",
+     "name": "Self-mark vs schemes",
      "desc": "",
      "done": false,
      "doneDate": null
@@ -1178,7 +1110,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 12,
+   "n": 10,
    "date": "2026-07-27",
    "weekday": "Mon",
    "week": 3,
@@ -1210,7 +1142,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 13,
+   "n": 11,
    "date": "2026-07-28",
    "weekday": "Tue",
    "week": 3,
@@ -1242,7 +1174,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 14,
+   "n": 12,
    "date": "2026-07-29",
    "weekday": "Wed",
    "week": 3,
@@ -1274,7 +1206,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 15,
+   "n": 13,
    "date": "2026-07-30",
    "weekday": "Thu",
    "week": 3,
@@ -1306,7 +1238,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 16,
+   "n": 14,
    "date": "2026-07-31",
    "weekday": "Fri",
    "week": 3,
@@ -1338,55 +1270,28 @@ window.PLAN = {
    ]
   },
   {
-   "n": 17,
+   "n": 15,
    "date": "2026-08-01",
    "weekday": "Sat",
    "week": 3,
-   "type": "buffer",
+   "type": "test",
    "subject": "conv",
-   "label": "Buffer — Priority-1 gaps from Cumulative Test #2",
-   "focus": "Confident + wrong first, then FRAGILE re-tests.",
+   "label": "Saturday test — all topics covered so far",
+   "focus": "Weekly cumulative test: everything covered up to today, timed and mixed. Self-mark, hand the gap-list to Claude.",
    "flag": "",
    "mins": 240,
    "blocks": [
     {
-     "mins": 120,
-     "name": "Clear gap clusters",
-     "desc": "Every gap cluster this week's tests spawned. Priority-1 (confident + wrong) first.",
+     "mins": 150,
+     "subject": "conv",
+     "name": "Cumulative test — all topics to date",
+     "desc": "",
      "done": false,
      "doneDate": null
     },
     {
-     "mins": 120,
-     "name": "Re-test at a new angle",
-     "desc": "FRAGILE → CLOSED only on a second confident pass. What's still shaky stays ACTIVE.",
-     "done": false,
-     "doneDate": null
-    }
-   ]
-  },
-  {
-   "n": 18,
-   "date": "2026-08-02",
-   "weekday": "Sun",
-   "week": 3,
-   "type": "test",
-   "subject": "conv",
-   "label": "Cumulative test #3 — all subjects so far",
-   "focus": "The weekly readiness check (Sundays). Everything covered up to today, mixed and timed — this, not cluster scores, tells you where you really are.",
-   "flag": "",
-   "mins": 300,
-   "blocks": [
-    {
-     "mins": 200,
-     "name": "Cumulative test #3 — all subjects so far",
-     "desc": "Timed, mixed across every subject covered so far — no notes.",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 60,
-     "name": "Self-mark vs schemes + trap models",
+     "mins": 50,
+     "name": "Self-mark vs schemes",
      "desc": "",
      "done": false,
      "doneDate": null
@@ -1401,7 +1306,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 19,
+   "n": 16,
    "date": "2026-08-03",
    "weekday": "Mon",
    "week": 4,
@@ -1433,7 +1338,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 20,
+   "n": 17,
    "date": "2026-08-04",
    "weekday": "Tue",
    "week": 4,
@@ -1461,7 +1366,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 21,
+   "n": 18,
    "date": "2026-08-05",
    "weekday": "Wed",
    "week": 4,
@@ -1493,7 +1398,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 22,
+   "n": 19,
    "date": "2026-08-06",
    "weekday": "Thu",
    "week": 4,
@@ -1521,7 +1426,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 23,
+   "n": 20,
    "date": "2026-08-07",
    "weekday": "Fri",
    "week": 4,
@@ -1556,68 +1461,34 @@ window.PLAN = {
    ]
   },
   {
-   "n": 24,
+   "n": 21,
    "date": "2026-08-08",
    "weekday": "Sat",
    "week": 4,
-   "type": "paper",
-   "subject": "chem",
-   "label": "Chemistry past paper (P1 + P2)",
-   "focus": "",
+   "type": "test",
+   "subject": "conv",
+   "label": "Saturday test — Chemistry past paper (P1 + P2)",
+   "focus": "This week the Saturday test is a full Chemistry past paper.",
    "flag": "",
    "mins": 240,
    "blocks": [
     {
      "mins": 150,
+     "subject": "chem",
      "name": "Timed paper (P1 + P2)",
-     "desc": "Full conditions. No notes, no pausing.",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 50,
-     "name": "Self-mark",
-     "desc": "Against the mark scheme + the trap model.",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 40,
-     "name": "Write gap-list → Claude",
-     "desc": "This drives the next drill.",
-     "done": false,
-     "doneDate": null
-    }
-   ]
-  },
-  {
-   "n": 25,
-   "date": "2026-08-09",
-   "weekday": "Sun",
-   "week": 4,
-   "type": "test",
-   "subject": "conv",
-   "label": "Cumulative test #4 — all subjects so far",
-   "focus": "The weekly readiness check (Sundays). Everything covered up to today, mixed and timed — this, not cluster scores, tells you where you really are.",
-   "flag": "",
-   "mins": 360,
-   "blocks": [
-    {
-     "mins": 240,
-     "name": "Cumulative test #4 — all subjects so far",
-     "desc": "Timed, mixed across every subject covered so far — no notes.",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 70,
-     "name": "Self-mark vs schemes + trap models",
      "desc": "",
      "done": false,
      "doneDate": null
     },
     {
      "mins": 50,
+     "name": "Self-mark",
+     "desc": "",
+     "done": false,
+     "doneDate": null
+    },
+    {
+     "mins": 40,
      "name": "Gap-list → Claude",
      "desc": "",
      "done": false,
@@ -1648,13 +1519,13 @@ window.PLAN = {
      "doneDate": null
     }
    ],
-   "n": 26,
+   "n": 22,
    "date": "2026-08-10",
    "weekday": "Mon",
    "week": 5
   },
   {
-   "n": 27,
+   "n": 23,
    "date": "2026-08-11",
    "weekday": "Tue",
    "week": 5,
@@ -1689,7 +1560,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 28,
+   "n": 24,
    "date": "2026-08-12",
    "weekday": "Wed",
    "week": 5,
@@ -1717,7 +1588,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 29,
+   "n": 25,
    "date": "2026-08-13",
    "weekday": "Thu",
    "week": 5,
@@ -1752,7 +1623,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 30,
+   "n": 26,
    "date": "2026-08-14",
    "weekday": "Fri",
    "week": 5,
@@ -1787,70 +1658,43 @@ window.PLAN = {
    ]
   },
   {
-   "n": 31,
+   "n": 27,
    "date": "2026-08-15",
    "weekday": "Sat",
    "week": 5,
-   "type": "buffer",
+   "type": "test",
    "subject": "conv",
-   "label": "Buffer — Priority-1 drills from the papers",
-   "focus": "Confident + wrong from the Week-4 papers, first.",
+   "label": "Saturday test — all topics covered so far",
+   "focus": "Weekly cumulative test: everything covered up to today, timed and mixed. Self-mark, hand the gap-list to Claude.",
    "flag": "",
    "mins": 240,
    "blocks": [
     {
-     "mins": 120,
-     "name": "Clear gap clusters",
-     "desc": "Every gap cluster this week's tests spawned. Priority-1 (confident + wrong) first.",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 120,
-     "name": "Re-test at a new angle",
-     "desc": "FRAGILE → CLOSED only on a second confident pass. What's still shaky stays ACTIVE.",
-     "done": false,
-     "doneDate": null
-    }
-   ]
-  },
-  {
-   "type": "test",
-   "subject": "conv",
-   "label": "Cumulative test #5 — full timed mock",
-   "focus": "The weekly readiness check (Sundays). Full timed mock across every subject covered — the closest thing to the real prelim. This, not cluster scores, tells you where you are.",
-   "flag": "⚑",
-   "mins": 360,
-   "blocks": [
-    {
-     "mins": 240,
-     "name": "Cumulative test #5 — full timed mock",
-     "desc": "Timed, mixed across every subject covered so far — no notes.",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 70,
-     "name": "Self-mark vs schemes + trap models",
+     "mins": 150,
+     "subject": "conv",
+     "name": "Cumulative test — all topics to date",
      "desc": "",
      "done": false,
      "doneDate": null
     },
     {
      "mins": 50,
+     "name": "Self-mark vs schemes",
+     "desc": "",
+     "done": false,
+     "doneDate": null
+    },
+    {
+     "mins": 40,
      "name": "Gap-list → Claude",
      "desc": "",
      "done": false,
      "doneDate": null
     }
-   ],
-   "n": 32,
-   "date": "2026-08-16",
-   "weekday": "Sun",
-   "week": 5
+   ]
   },
   {
-   "n": 33,
+   "n": 28,
    "date": "2026-08-17",
    "weekday": "Mon",
    "week": 6,
@@ -1878,7 +1722,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 34,
+   "n": 29,
    "date": "2026-08-18",
    "weekday": "Tue",
    "week": 6,
@@ -1913,7 +1757,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 35,
+   "n": 30,
    "date": "2026-08-19",
    "weekday": "Wed",
    "week": 6,
@@ -1941,7 +1785,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 36,
+   "n": 31,
    "date": "2026-08-20",
    "weekday": "Thu",
    "week": 6,
@@ -1976,7 +1820,7 @@ window.PLAN = {
    ]
   },
   {
-   "n": 37,
+   "n": 32,
    "date": "2026-08-21",
    "weekday": "Fri",
    "week": 6,
@@ -2004,77 +1848,43 @@ window.PLAN = {
    ]
   },
   {
-   "n": 38,
+   "n": 33,
    "date": "2026-08-22",
    "weekday": "Sat",
    "week": 6,
-   "type": "review",
+   "type": "test",
    "subject": "conv",
-   "label": "Light consolidation + rest",
-   "focus": "Name each big topic's sub-clusters cold, then rest before the prelim (21 Aug).",
-   "flag": "",
-   "mins": 180,
+   "label": "Saturday test — final full mock (all subjects)",
+   "focus": "Final timed mock across everything before the prelim (GP P1 is Mon 24 Aug). Rest tomorrow.",
+   "flag": "⚑",
+   "mins": 300,
    "blocks": [
     {
-     "mins": 60,
-     "name": "Recall check",
+     "mins": 240,
+     "subject": "conv",
+     "name": "Final mock — all subjects covered",
      "desc": "",
      "done": false,
      "doneDate": null
     },
     {
      "mins": 60,
-     "name": "Skim synthesis clusters",
+     "name": "Trap-model + logistics review",
      "desc": "",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 60,
-     "name": "Logistics + rest",
-     "desc": "Prelim starts 21 Aug.",
      "done": false,
      "doneDate": null
     }
    ]
-  },
-  {
-   "type": "review",
-   "subject": "conv",
-   "label": "Final review + logistics — prelim tomorrow",
-   "focus": "GP Paper 1 is tomorrow (Mon 24 Aug, 08:15). Light recall, trap models for the first-week subjects, logistics, then rest.",
-   "flag": "",
-   "mins": 180,
-   "blocks": [
-    {
-     "mins": 60,
-     "name": "Recall check — name it all cold",
-     "desc": "",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 60,
-     "name": "GP + first-week subjects — trap models",
-     "desc": "GP, Chem practical, Bio P2, Maths P1 come first.",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 60,
-     "name": "Logistics + rest",
-     "desc": "GP P1 Mon 24 Aug 08:15. Sleep.",
-     "done": false,
-     "doneDate": null
-    }
-   ],
-   "n": 39,
-   "date": "2026-08-23",
-   "weekday": "Sun",
-   "week": 6
   }
  ],
- "rest": [],
+ "rest": [
+  "2026-07-19",
+  "2026-07-26",
+  "2026-08-02",
+  "2026-08-09",
+  "2026-08-16",
+  "2026-08-23"
+ ],
  "weekTitles": {
   "1": "Launch — interleaved content, 2 subjects/day (short first week)",
   "2": "Content + weekly cumulative tests running",
@@ -2087,32 +1897,32 @@ window.PLAN = {
   [
    1,
    1,
-   4
+   3
   ],
   [
    2,
-   5,
-   11
+   4,
+   9
   ],
   [
    3,
-   12,
-   18
+   10,
+   15
   ],
   [
    4,
-   19,
-   25
+   16,
+   21
   ],
   [
    5,
-   26,
-   32
+   22,
+   27
   ],
   [
    6,
-   33,
-   39
+   28,
+   33
   ]
  ],
  "log": [
@@ -2121,13 +1931,25 @@ window.PLAN = {
    "weekday": "Thu",
    "items": [
     {
-     "subject": "chem",
-     "mins": 110,
-     "what": "Cluster 1 Stoich & Redox — worked Q1–Q10 (mole toolkit → titrations → oxidation numbers & disproportionation)",
+     "subject": "csc",
+     "mins": 60,
+     "what": "Finished CSC Governance — all gap clusters closed",
      "done": true
+    },
+    {
+     "subject": "chem",
+     "mins": 150,
+     "what": "Finished Cluster 1 — Stoichiometry & Redox (full cluster)",
+     "done": true
+    },
+    {
+     "subject": "gp",
+     "mins": 0,
+     "what": "GP Phase-2 slotting — NOT done (ran out of Claude credits)",
+     "done": false
     }
    ],
-   "note": "1h50m, strong reasoning (self-corrected N2 Mr and formula-units). Flagged: worked solutions must match the school answer-key table layout — cluster since rebuilt with tables; gas-volume contraction-table + practice Q still to add. Governance + GP deferred to tomorrow."
+   "note": "3h30 done. GP deferred to 17 Jul. Governance + Stoichiometry & Redox now enter the Saturday test pool."
   },
   {
    "date": "2026-07-15",
@@ -2279,13 +2101,26 @@ window.PLAN = {
   {
    "subject": "csc",
    "topic": "Governance",
-   "status": "closing gaps",
+   "status": "done",
    "date": "15 Jul",
    "subs": [
     "Foundation & power structure",
     "Constraining unchecked power",
     "Managing society, voice & identity",
     "Gap clusters + synthesis (in progress)"
+   ]
+  },
+  {
+   "subject": "chem",
+   "topic": "Stoichiometry & Redox",
+   "status": "done",
+   "date": "16 Jul",
+   "subs": [
+    "Mole toolkit & gas volumes",
+    "Empirical → molecular formula",
+    "Limiting reagent & % yield",
+    "Titration & back-titration",
+    "Oxidation numbers & redox half-equations"
    ]
   }
  ]
