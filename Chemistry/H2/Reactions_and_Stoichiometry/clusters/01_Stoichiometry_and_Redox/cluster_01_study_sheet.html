@@ -42,7 +42,6 @@
   .toc a{color:var(--blue);text-decoration:none;margin-right:14px;line-height:2}
   .toc a:hover{text-decoration:underline}
   .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
-  .tag{display:inline-block;font-size:.72em;background:#e0e7ff;color:#3730a3;padding:2px 9px;border-radius:10px;font-weight:600;margin-left:8px;font-family:-apple-system,sans-serif;vertical-align:middle}
   .block{margin:14px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border)}
   .block.example{background:#f9fafb;border-left-color:#6b7280}
   .block.practice{background:var(--amber-soft);border-left-color:var(--amber)}
@@ -61,6 +60,10 @@
   .step-desc{font-style:italic;color:#374151;margin-bottom:6px;font-size:.95em}
   .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:6px 12px;border-radius:4px;margin:8px 0 0;font-size:.9em}
   .trap b{color:var(--red)}
+  .working-table{border-collapse:collapse;margin:10px 0;width:100%;font-size:.9em;background:#fafafa}
+  .working-table th{background:#f3f4f6;border:1px solid #e5e7eb;padding:6px 10px;text-align:left;font-weight:600;color:#374151}
+  .working-table td{border:1px solid #e5e7eb;padding:6px 10px;text-align:right;font-family:'Monaco','Courier New',monospace;font-size:.9em}
+  .working-table td:first-child{text-align:left;font-weight:500;color:#1f2937}
   .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3;box-shadow:0 1px 2px rgba(0,0,0,.1)}
   .reveal-btn:hover{background:#047857}
   .reveal-btn.hide-state{background:var(--muted)}
@@ -86,12 +89,13 @@
 <body>
 
 <h1>Cluster 1 — Stoichiometry &amp; Redox</h1>
-<p class="meta">Chemistry H2 9476 · Topic 4: Reactions &amp; Stoichiometry (+ redox O.N. &amp; half-equations) · the calculation backbone · Built 2026-07-15</p>
+<p class="meta">Chemistry H2 9476 · Topic 4: Reactions &amp; Stoichiometry (+ redox O.N. &amp; half-equations) · the calculation backbone · Built 2026-07-16 (revised: tables, direct method, type leaks removed)</p>
 
 <div class="intro">
-<strong>Format:</strong> exam-recognition drill. Attempt each <b>Example</b> cold — no hint about the method. Reveal to check against the mark scheme (<span class="mark-step">M1</span> = method mark, <span class="mark-step">A1</span> = answer mark, <span class="mark-step">B1</span> = standalone). Then do the <b>Practice</b>. The archetype + the trap that eats marks is revealed at the BOTTOM of each card.
+<strong>Format:</strong> exam-recognition drill. Attempt each <b>Example</b> cold — no hint about what type of question it is. Reveal to check against the mark scheme (<span class="mark-step">M1</span> = method mark, <span class="mark-step">A1</span> = answer mark, <span class="mark-step">B1</span> = standalone). Then do the <b>Practice</b>. The archetype + the trap is revealed at the BOTTOM of each card — only then do you learn what type of question it was.
 <ul>
   <li>Score ≥ 90% per card. Under 70% on a card → re-read its method before moving on.</li>
+  <li>Carry <b>≥5 significant figures</b> through every intermediate calculation; round only the final answer. This is a marked habit, not optional.</li>
   <li>Redox O.N. and half-equations are taught in this topic but examined under Electrochemistry too — nail them here.</li>
 </ul>
 </div>
@@ -115,12 +119,12 @@
 
 <div class="toc">
 <strong>Questions</strong>
-<a href="#c1">1 · mole toolkit</a><a href="#c2">2 · % composition</a><a href="#c3">3 · EF → MF</a><a href="#c4">4 · limiting reagent + % yield</a><a href="#c5">5 · gas volumes</a><a href="#c6">6 · concentration + dilution</a><a href="#c7">7 · titration</a><a href="#c8">8 · back-titration</a><a href="#c9">9 · oxidation numbers</a><a href="#c10">10 · half-equations (acidic)</a><a href="#c11">11 · half-equations (alkaline)</a><a href="#c12">12 · redox titration chain</a>
+<a href="#c1">Question 1</a><a href="#c2">Question 2</a><a href="#c3">Question 3</a><a href="#c4">Question 4</a><a href="#c5">Question 5</a><a href="#c6">Question 6</a><a href="#c7">Question 7</a><a href="#c8">Question 8</a><a href="#c9">Question 9</a><a href="#c10">Question 10</a><a href="#c11">Question 11</a><a href="#c12">Question 12</a>
 </div>
 
 <!-- Q1 -->
 <div class="card" id="c1">
-  <h3>Question 1 <span class="tag">mole toolkit</span></h3>
+  <h3>Question 1</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">
       (i) Calculate the amount, in mol, of \(\ce{NaOH}\) in a \( 4.00\ \text{g} \) sample. <span class="marks">[1]</span><br>
@@ -173,19 +177,26 @@
 
 <!-- Q2 -->
 <div class="card" id="c2">
-  <h3>Question 2 <span class="tag">% composition</span></h3>
+  <h3>Question 2</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">A compound contains, by mass, \( 32.4\% \) sodium, \( 22.6\% \) sulfur and \( 45.0\% \) oxygen. Determine its empirical formula. <span class="marks">[2]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Solution with mark scheme</div>
+      <p><b>Working table:</b> assume 100 g sample, so mass = percentage value.</p>
+      <table class="working-table">
+        <tr><th>Element</th><th>% by mass</th><th>÷ Ar</th><th>Moles</th><th>÷ smallest</th><th>Ratio</th></tr>
+        <tr><td>Na</td><td>32.4</td><td>÷23.0</td><td>1.409</td><td>÷0.7040</td><td>2.00</td></tr>
+        <tr><td>S</td><td>22.6</td><td>÷32.1</td><td>0.7040</td><td>÷0.7040</td><td>1.00</td></tr>
+        <tr><td>O</td><td>45.0</td><td>÷16.0</td><td>2.813</td><td>÷0.7040</td><td>3.99 ≈ 4</td></tr>
+      </table>
       <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">Divide each % by its \( A_r \) (mass of 100 g basis ÷ Ar). <span class="mark-step">M1</span></div>
-        \(\ce{Na}: 32.4/23.0 = 1.409\) &nbsp; \(\ce{S}: 22.6/32.1 = 0.7040\) &nbsp; \(\ce{O}: 45.0/16.0 = 2.813\)
+        <div class="step-desc">Divide each % by its \( A_r \) (moles in a 100 g basis). <span class="mark-step">M1</span></div>
+        (Working shown in table above.)
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Divide all by the smallest (0.7040), round to whole numbers. <span class="mark-step">A1</span></div>
-        \(\ce{Na}: 2.00,\ \ce{S}: 1.00,\ \ce{O}: 3.99 \approx 4 \Rightarrow \mathbf{\ce{Na2SO4}}\)
+        <div class="step-desc">Divide all by the smallest, round to whole numbers. <span class="mark-step">A1</span></div>
+        Smallest is 0.7040 (S). Dividing: Na 2.00, S 1.00, O 3.99 → round to \(\mathbf{\ce{Na2SO4}}\)
       </div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
@@ -194,44 +205,62 @@
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Solution</div>
+      <p><b>Working table:</b></p>
+      <table class="working-table">
+        <tr><th>Element</th><th>% by mass</th><th>÷ Ar</th><th>Moles</th><th>÷ smallest</th><th>Ratio</th></tr>
+        <tr><td>Fe</td><td>69.9</td><td>÷55.8</td><td>1.253</td><td>÷1.253</td><td>1.00</td></tr>
+        <tr><td>O</td><td>30.1</td><td>÷16.0</td><td>1.881</td><td>÷1.253</td><td>1.501 → ×2</td></tr>
+      </table>
       <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">The rest must be oxygen: \( \%\ce{O} = 100 - 69.9 = 30.1 \). <span class="mark-step">M1</span></div>
-        \(\ce{Fe}: 69.9/55.8 = 1.253\) &nbsp; \(\ce{O}: 30.1/16.0 = 1.881\)
+        <div class="step-desc">The rest is oxygen: \( \%\ce{O} = 100 - 69.9 = 30.1 \). <span class="mark-step">M1</span></div>
+        (Working shown in table above.)
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Ratio ÷ 1.253 → \(1 : 1.501\), ×2 to clear the half. <span class="mark-step">A1</span></div>
+        <div class="step-desc">Ratio gives 1 : 1.501; multiply by 2 to clear the decimal. <span class="mark-step">A1</span></div>
         \(\ce{Fe}:\ce{O} = 2:3 \Rightarrow \mathbf{\ce{Fe2O3}}\)
       </div>
+      <div class="trap"><b>Your own note:</b> the ratio 1.501 is NOT a rounding error — it's real. Multiply by 2. Don't round 1.5 to 1 and then wonder where the missing oxygen went.</div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
   <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
     <div class="answer-content"><div class="label">Archetype &amp; trap</div>
-      <b>Archetype:</b> "% by mass → empirical formula." <b>Trap (your own note):</b> only use \(100 - \%\) for the last element when you are <i>certain</i> which elements are present. If a hydrogen or a second non-metal is hiding, \(100 - \%\text{Na}\) is wrong — account for <b>every</b> element the compound actually contains. And a ratio ending in \(.5\) is real (×2), not a rounding error.
+      <b>Archetype:</b> "% by mass → empirical formula." <b>Trap (your own logged error):</b> when only two elements given (e.g. "69.9% Fe"), you can use \(100 - \%\text{Fe}\) for oxygen only because there are exactly two elements. If a hydrogen or a third element is hiding, this shortcut is wrong — always check: account for <b>every</b> element the compound actually contains.
     </div><div class="answer-overlay">Hidden — click Reveal</div>
   </div>
 </div>
 
 <!-- Q3 -->
 <div class="card" id="c3">
-  <h3>Question 3 <span class="tag">empirical → molecular</span></h3>
+  <h3>Question 3</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">\( 0.300\ \text{g} \) of a gaseous hydrocarbon is completely burned, giving \( 0.880\ \text{g} \) of \(\ce{CO2}\) and \( 0.540\ \text{g} \) of \(\ce{H2O}\). The relative molecular mass of the hydrocarbon is \( 30.0 \). Determine its molecular formula. <span class="marks">[3]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Solution with mark scheme</div>
-      <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">All C ends up in \(\ce{CO2}\), all H in \(\ce{H2O}\). <span class="mark-step">M1</span></div>
-        \( n(\ce{C}) = n(\ce{CO2}) = 0.880/44.0 = 0.02000 \)<br>
-        \( n(\ce{H}) = 2 \times n(\ce{H2O}) = 2 \times 0.540/18.0 = 0.06000 \)
+      <p><b>Note:</b> The school method sets the hydrocarbon as <span style="text-decoration:underline;"><b>CₓHᵧ</b></span> from the start, finds moles of compound, then divides element moles by compound moles to get x and y. This is faster than empirical-then-scale.</p>
+      <p><b>Working table:</b></p>
+      <table class="working-table">
+        <tr><th>Species</th><th>Mass (g)</th><th>÷ Ar/Mr</th><th>Moles</th><th>÷ n(compound)</th><th>x or y</th></tr>
+        <tr><td>Hydrocarbon CₓHᵧ</td><td>0.300</td><td>÷30.0</td><td>0.01000</td><td>—</td><td>—</td></tr>
+        <tr><td>C (from CO₂)</td><td>—</td><td>0.880÷44.0</td><td>0.02000</td><td>÷0.01000</td><td>x = 2</td></tr>
+        <tr><td>H (from H₂O)</td><td>—</td><td>0.540÷18.0 ×2</td><td>0.06000</td><td>÷0.01000</td><td>y = 6</td></tr>
+      </table>
+      <div class="step"><div class="step-header">Step 1 — Set up the formula</div>
+        <div class="step-desc">The compound is CₓHᵧ. Find its molar amount first. <span class="mark-step">M1</span></div>
+        \( n(\ce{C}_x\ce{H}_y) = \dfrac{0.300}{30.0} = 0.01000\ \text{mol} \)
       </div>
-      <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Ratio → empirical formula. <span class="mark-step">M1</span></div>
-        \( \ce{C}:\ce{H} = 0.02000 : 0.06000 = 1 : 3 \Rightarrow \text{EF} = \ce{CH3}\ (M_r = 15.0) \)
+      <div class="step"><div class="step-header">Step 2 — Find moles of C and H</div>
+        <div class="step-desc">All C ends up in CO₂; all H ends up in H₂O. <span class="mark-step">M1</span></div>
+        \( n(\ce{C}) = n(\ce{CO2}) = 0.880/44.0 = 0.02000\ \text{mol} \)<br>
+        \( n(\ce{H}) = 2 \times n(\ce{H2O}) = 2 \times 0.540/18.0 = 0.06000\ \text{mol} \)
       </div>
-      <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">Scale EF by \( M_r / \text{EF mass} \). <span class="mark-step">A1</span></div>
-        \( 30.0/15.0 = 2 \Rightarrow \mathbf{\ce{C2H6}} \)
+      <div class="step"><div class="step-header">Step 3 — Divide by moles of compound to get x and y</div>
+        <div class="step-desc">This gives the number of each element per molecule. <span class="mark-step">A1</span></div>
+        \( x = \dfrac{n(\ce{C})}{n(\ce{C}_x\ce{H}_y)} = \dfrac{0.02000}{0.01000} = 2 \)<br>
+        \( y = \dfrac{n(\ce{H})}{n(\ce{C}_x\ce{H}_y)} = \dfrac{0.06000}{0.01000} = 6 \)<br>
+        \( \mathbf{\ce{C2H6}} \)
       </div>
+      <div class="trap"><b>Your own note:</b> carry 5 s.f. (0.01000, 0.02000, 0.06000) through to the divide step — premature rounding shifts the last figure and loses the A1. Also: this method does NOT compute empirical formula first; it goes straight to molecular formula using Mr. Much faster.</div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
   <div class="block practice"><div class="label">Practice</div>
@@ -239,30 +268,37 @@
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Solution</div>
+      <p><b>Working table (this one uses the % composition method because Mr is given but combustion products are not):</b></p>
+      <table class="working-table">
+        <tr><th>Element</th><th>% by mass</th><th>÷ Ar</th><th>Moles</th><th>÷ smallest</th><th>EF ratio</th><th>×(Mr/EF mass)</th><th>MF</th></tr>
+        <tr><td>C</td><td>40.0</td><td>÷12.0</td><td>3.33</td><td>÷3.33</td><td>1</td><td>×6</td><td>6</td></tr>
+        <tr><td>H</td><td>6.7</td><td>÷1.0</td><td>6.7</td><td>÷3.33</td><td>2</td><td>×6</td><td>12</td></tr>
+        <tr><td>O</td><td>53.3</td><td>÷16.0</td><td>3.33</td><td>÷3.33</td><td>1</td><td>×6</td><td>6</td></tr>
+      </table>
       <div class="step"><div class="step-header">Step 1</div>
         <div class="step-desc">\( \%\ce{O} = 100 - 40.0 - 6.7 = 53.3 \); divide each by \(A_r\). <span class="mark-step">M1</span></div>
-        \(\ce{C}: 40.0/12.0 = 3.33\) &nbsp; \(\ce{H}: 6.7/1.0 = 6.7\) &nbsp; \(\ce{O}: 53.3/16.0 = 3.33\)
+        (Working shown in table.)
       </div>
       <div class="step"><div class="step-header">Step 2</div>
         <div class="step-desc">÷ 3.33 → EF. <span class="mark-step">M1</span></div>
         \( \ce{C}:\ce{H}:\ce{O} = 1:2:1 \Rightarrow \ce{CH2O}\ (M_r = 30.0) \)
       </div>
       <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">Scale. <span class="mark-step">A1</span></div>
-        \( 180.0/30.0 = 6 \Rightarrow \mathbf{\ce{C6H12O6}} \)
+        <div class="step-desc">Scale: \(n = M_r / \text{EF mass} = 180.0 / 30.0 = 6\). <span class="mark-step">A1</span></div>
+        \( \mathbf{\ce{C6H12O6}} \)
       </div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
   <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
     <div class="answer-content"><div class="label">Archetype &amp; trap</div>
-      <b>Archetype:</b> "combustion / composition → EF, then \(M_r\) → MF." <b>Trap (your own note):</b> read whether the question wants the <b>empirical</b> or the <b>molecular</b> formula — they are different marks and stopping at EF when MF is asked drops the A1. \(M_r\) is always given or derivable when MF is required.
+      <b>Archetype:</b> "combustion / composition + Mr → molecular formula." <b>Traps (your logged errors):</b> (1) <b>EF vs MF</b> — read whether the question asks for empirical or molecular. Stopping at EF when MF is asked loses the A1. (2) <b>Use intermediate 5 s.f.</b> — don't round 0.02000 to 0.020 mid-calculation. (3) <b>Don't assume you need empirical first</b> — the school method (combustion → CₓHᵧ directly) is faster than EF-then-scale when Mr is given.
     </div><div class="answer-overlay">Hidden — click Reveal</div>
   </div>
 </div>
 
 <!-- Q4 -->
 <div class="card" id="c4">
-  <h3>Question 4 <span class="tag">limiting reagent + % yield</span></h3>
+  <h3>Question 4</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">\( 8.00\ \text{g} \) of \(\ce{Fe2O3}\) is heated with \( 3.00\ \text{g} \) of carbon: \(\ce{2Fe2O3 + 3C -> 4Fe + 3CO2}\).<br>
       (i) Show that \(\ce{Fe2O3}\) is the limiting reagent. <span class="marks">[2]</span><br>
@@ -271,20 +307,22 @@
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Solution with mark scheme</div>
-      <div class="step"><div class="step-header">Step 1 — (i)</div>
-        <div class="step-desc">Moles of each reactant. <span class="mark-step">M1</span></div>
-        \( n(\ce{Fe2O3}) = 8.00/159.6 = 0.05013 \); \( n(\ce{C}) = 3.00/12.0 = 0.2500 \)
+      <div class="step"><div class="step-header">Step 1 — (i) Find moles of each reactant</div>
+        <div class="step-desc"><span class="mark-step">M1</span></div>
+        \( n(\ce{Fe2O3}) = 8.00/159.6 = 0.05013\ \text{mol} \)<br>
+        \( n(\ce{C}) = 3.00/12.0 = 0.2500\ \text{mol} \)
       </div>
-      <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">Carbon needed to react with all the \(\ce{Fe2O3}\) (ratio \(2:3\)). <span class="mark-step">A1</span></div>
-        Need \( n(\ce{C}) = 0.05013 \times \tfrac{3}{2} = 0.07520 \); have \( 0.2500 \) → C in excess, so <b>\(\ce{Fe2O3}\) is limiting</b>.
+      <div class="step"><div class="step-header">Step 2 — Calculate C needed to react with all the Fe₂O₃</div>
+        <div class="step-desc">From the equation, \(\ce{Fe2O3}:\ce{C} = 2:3\). <span class="mark-step">A1</span></div>
+        \( n(\ce{C})_\text{needed} = 0.05013 \times \tfrac{3}{2} = 0.07520\ \text{mol} \)<br>
+        We have 0.2500 mol, which is more than 0.07520 mol. C is in <b>excess</b>, so \(\ce{Fe2O3}\) is limiting.
       </div>
-      <div class="step"><div class="step-header">Step 3 — (ii)</div>
+      <div class="step"><div class="step-header">Step 3 — (ii) Maximum Fe from limiting reagent</div>
         <div class="step-desc">\(\ce{2Fe2O3 -> 4Fe}\), ratio \(1:2\). <span class="mark-step">A1</span></div>
-        \( n(\ce{Fe}) = 0.05013 \times 2 = 0.1003 \Rightarrow m = 0.1003 \times 55.8 = 5.59\ \text{g} \)
+        \( n(\ce{Fe}) = 0.05013 \times 2 = 0.1003\ \text{mol} \Rightarrow m = 0.1003 \times 55.8 = 5.59\ \text{g} \)
       </div>
-      <div class="step"><div class="step-header">Step 4 — (iii)</div>
-        <div class="step-desc">% yield vs theoretical. <span class="mark-step">A1</span></div>
+      <div class="step"><div class="step-header">Step 4 — (iii) % yield</div>
+        <div class="step-desc">Percentage = (actual ÷ theoretical) × 100%. <span class="mark-step">A1</span></div>
         \( \dfrac{4.50}{5.59}\times100 = 80.5\% \)
       </div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
@@ -296,43 +334,43 @@
     <div class="answer-content"><div class="label">Solution</div>
       <div class="step"><div class="step-header">Step 1</div>
         <div class="step-desc">Moles of each. <span class="mark-step">M1</span></div>
-        \( n(\ce{N2}) = 5.00/28.0 = 0.1786 \); \( n(\ce{H2}) = 2.00/2.0 = 1.000 \)
+        \( n(\ce{N2}) = 5.00/28.0 = 0.1786\ \text{mol} \); \( n(\ce{H2}) = 2.00/2.0 = 1.000\ \text{mol} \)
       </div>
       <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">\(\ce{H2}\) needed for all \(\ce{N2}\) (ratio \(1:3\)) \(= 0.536\); have \(1.000\). <span class="mark-step">M1</span></div>
+        <div class="step-desc">\(\ce{H2}\) needed for all \(\ce{N2}\) (ratio \(1:3\)) = 0.1786 × 3 = 0.536; we have 1.000. <span class="mark-step">M1</span></div>
         \(\ce{H2}\) in excess → <b>\(\ce{N2}\) limiting</b>
       </div>
       <div class="step"><div class="step-header">Step 3</div>
         <div class="step-desc">\(\ce{N2 -> 2NH3}\). <span class="mark-step">A1</span></div>
-        \( n(\ce{NH3}) = 0.1786 \times 2 = 0.3571 \Rightarrow m = 0.3571 \times 17.0 = 6.07\ \text{g} \)
+        \( n(\ce{NH3}) = 0.1786 \times 2 = 0.3571\ \text{mol} \Rightarrow m = 0.3571 \times 17.0 = 6.07\ \text{g} \)
       </div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
   <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
     <div class="answer-content"><div class="label">Archetype &amp; trap</div>
-      <b>Archetype:</b> "two masses given → find limiting reagent, then product mass / % yield." <b>Trap:</b> you must compare using the <b>equation ratio</b>, not raw moles — the reagent with fewer moles is not always limiting. Always base the product amount on the <b>limiting</b> reagent, and carry 5 s.f. into the % yield.
+      <b>Archetype:</b> "two masses given → find limiting reagent, then product mass / % yield." <b>Trap:</b> you must compare using the <b>equation ratio</b>, not raw moles — the reagent with fewer moles is not always limiting. Always base the product amount on the <b>limiting</b> reagent, and carry 5 s.f. into the % yield to avoid rounding loss.
     </div><div class="answer-overlay">Hidden — click Reveal</div>
   </div>
 </div>
 
 <!-- Q5 -->
 <div class="card" id="c5">
-  <h3>Question 5 <span class="tag">gas volumes (Avogadro)</span></h3>
+  <h3>Question 5</h3>
   <div class="block example"><div class="label">Example</div>
-    <div class="stem">\( 25.0\ \text{cm}^3 \) of a gaseous hydrocarbon \(\ce{C}_x\ce{H}_y\) is burned in excess oxygen. All volumes are measured at the same temperature and pressure. The reaction produces \( 75.0\ \text{cm}^3 \) of \(\ce{CO2}\) and \( 100.0\ \text{cm}^3 \) of water vapour. Deduce the formula of the hydrocarbon. <span class="marks">[3]</span></div>
+    <div class="stem">\( 25.0\ \text{cm}^3 \) of a gaseous hydrocarbon is burned in excess oxygen. All volumes are measured at the same temperature and pressure. The reaction produces \( 75.0\ \text{cm}^3 \) of \(\ce{CO2}\) and \( 100.0\ \text{cm}^3 \) of water vapour. Deduce the formula of the hydrocarbon. <span class="marks">[3]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Solution with mark scheme</div>
-      <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">Avogadro's law: at the same T and P, volume ratio = mole ratio. Scale to 1 volume of hydrocarbon. <span class="mark-step">M1</span></div>
+      <div class="step"><div class="step-header">Step 1 — Avogadro's law</div>
+        <div class="step-desc">At the same T and P, volume ratio = mole ratio. Scale to 1 volume of hydrocarbon. <span class="mark-step">M1</span></div>
         \( \ce{C}_x\ce{H}_y : \ce{CO2} : \ce{H2O} = 25.0 : 75.0 : 100.0 = 1 : 3 : 4 \)
       </div>
-      <div class="step"><div class="step-header">Step 2</div>
+      <div class="step"><div class="step-header">Step 2 — Deduce x and y</div>
         <div class="step-desc">1 hydrocarbon → 3 \(\ce{CO2}\) means \(x = 3\); → 4 \(\ce{H2O}\) means \(y/2 = 4\). <span class="mark-step">M1</span></div>
         \( x = 3,\quad y = 8 \)
       </div>
-      <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">State formula. <span class="mark-step">A1</span></div>
+      <div class="step"><div class="step-header">Step 3 — State formula</div>
+        <div class="step-desc"><span class="mark-step">A1</span></div>
         \( \mathbf{\ce{C3H8}} \) (propane)
       </div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
@@ -342,16 +380,16 @@
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
     <div class="answer-content"><div class="label">Solution</div>
-      <div class="step"><div class="step-header">Step 1</div>
-        <div class="step-desc">Ratios to 1 volume hydrocarbon. <span class="mark-step">M1</span></div>
+      <div class="step"><div class="step-header">Step 1 — Scale ratios to 1 volume hydrocarbon</div>
+        <div class="step-desc"><span class="mark-step">M1</span></div>
         \( \ce{C}_x\ce{H}_y : \ce{O2} : \ce{CO2} = 1 : 6.5 : 4 \Rightarrow x = 4 \)
       </div>
-      <div class="step"><div class="step-header">Step 2</div>
-        <div class="step-desc">\( \ce{O2} = x + \dfrac{y}{4} \). <span class="mark-step">M1</span></div>
+      <div class="step"><div class="step-header">Step 2 — Use the combustion ratio</div>
+        <div class="step-desc">For a hydrocarbon, \( \ce{O2} = x + \dfrac{y}{4} \). <span class="mark-step">M1</span></div>
         \( 6.5 = 4 + \dfrac{y}{4} \Rightarrow \dfrac{y}{4} = 2.5 \Rightarrow y = 10 \)
       </div>
       <div class="step"><div class="step-header">Step 3</div>
-        <div class="step-desc">Formula. <span class="mark-step">A1</span></div>
+        <div class="step-desc"><span class="mark-step">A1</span></div>
         \( \mathbf{\ce{C4H10}} \)
       </div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
@@ -365,7 +403,7 @@
 
 <!-- Q6 -->
 <div class="card" id="c6">
-  <h3>Question 6 <span class="tag">concentration + dilution</span></h3>
+  <h3>Question 6</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">(i) Calculate the mass of \(\ce{NaCl}\) needed to prepare \( 250\ \text{cm}^3 \) of a \( 0.200\ \text{mol dm}^{-3} \) solution. <span class="marks">[2]</span><br>
       (ii) \( 25.0\ \text{cm}^3 \) of this solution is diluted with water to \( 100\ \text{cm}^3 \). Calculate the new concentration. <span class="marks">[1]</span></div>
@@ -381,7 +419,7 @@
         \( m = 0.0500 \times 58.5 = 2.93\ \text{g} \)
       </div>
       <div class="step"><div class="step-header">Step 3 — (ii)</div>
-        <div class="step-desc">Dilution: \( c_1V_1 = c_2V_2 \) (moles conserved). <span class="mark-step">A1</span></div>
+        <div class="step-desc">Dilution: \( c_1V_1 = c_2V_2 \) (moles of solute unchanged). <span class="mark-step">A1</span></div>
         \( 0.200 \times 25.0 = c_2 \times 100 \Rightarrow c_2 = 0.0500\ \text{mol dm}^{-3} \)
       </div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
@@ -410,7 +448,7 @@
 
 <!-- Q7 -->
 <div class="card" id="c7">
-  <h3>Question 7 <span class="tag">acid–base titration</span></h3>
+  <h3>Question 7</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">\( 25.0\ \text{cm}^3 \) of sodium hydroxide solution is exactly neutralised by \( 22.40\ \text{cm}^3 \) of \( 0.100\ \text{mol dm}^{-3} \) sulfuric acid. Calculate the concentration of the sodium hydroxide. <span class="marks">[3]</span></div>
   </div>
@@ -459,7 +497,7 @@
 
 <!-- Q8 -->
 <div class="card" id="c8">
-  <h3>Question 8 <span class="tag">back-titration</span></h3>
+  <h3>Question 8</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">\( 1.00\ \text{g} \) of impure calcium carbonate is added to \( 40.0\ \text{cm}^3 \) of \( 0.500\ \text{mol dm}^{-3} \) hydrochloric acid (in excess). The unreacted acid requires \( 12.0\ \text{cm}^3 \) of \( 0.400\ \text{mol dm}^{-3} \) sodium hydroxide to neutralise. Calculate the percentage purity of the calcium carbonate. <span class="marks">[4]</span></div>
   </div>
@@ -513,7 +551,7 @@
 
 <!-- Q9 -->
 <div class="card" id="c9">
-  <h3>Question 9 <span class="tag">oxidation numbers</span></h3>
+  <h3>Question 9</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">State the oxidation number of the named element in each species:<br>
       (i) Mn in \(\ce{MnO4-}\) &nbsp; (ii) Cr in \(\ce{Cr2O7^2-}\) &nbsp; (iii) S in \(\ce{S2O3^2-}\) &nbsp; (iv) O in \(\ce{H2O2}\). <span class="marks">[4]</span><br>
@@ -560,7 +598,7 @@
 
 <!-- Q10 -->
 <div class="card" id="c10">
-  <h3>Question 10 <span class="tag">half-equations (acidic)</span></h3>
+  <h3>Question 10</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">Acidified potassium manganate(VII) oxidises iron(II) ions. Construct the two half-equations and combine them into the overall ionic equation. State the colour change. <span class="marks">[4]</span></div>
   </div>
@@ -616,7 +654,7 @@
 
 <!-- Q11 -->
 <div class="card" id="c11">
-  <h3>Question 11 <span class="tag">half-equations (alkaline)</span></h3>
+  <h3>Question 11</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">Construct the half-equation for the reduction of chlorate(I) ions, \(\ce{ClO-}\), to chloride ions, \(\ce{Cl-}\), in <b>alkaline</b> solution. <span class="marks">[2]</span></div>
   </div>
@@ -658,7 +696,7 @@
 
 <!-- Q12 -->
 <div class="card" id="c12">
-  <h3>Question 12 <span class="tag">redox titration chain ⚑</span></h3>
+  <h3>Question 12</h3>
   <div class="block example"><div class="label">Example</div>
     <div class="stem">A \( 25.0\ \text{cm}^3 \) sample of hydrogen peroxide solution is acidified and titrated against \( 0.0200\ \text{mol dm}^{-3} \) potassium manganate(VII); \( 24.60\ \text{cm}^3 \) is required.<br>
       \(\ce{2MnO4- + 5H2O2 + 6H+ -> 2Mn^2+ + 5O2 + 8H2O}\)<br>
@@ -671,7 +709,7 @@
         \( n(\ce{MnO4-}) = 0.0200 \times 0.02460 = 4.920\times10^{-4} \)
       </div>
       <div class="step"><div class="step-header">Step 2 — (ii)</div>
-        <div class="step-desc">Ratio \(\ce{MnO4-}:\ce{H2O2} = 2:5\). <span class="mark-step">M1</span></div>
+        <div class="step-desc">Ratio \(\ce{MnO4-}:\ce{H2O2} = 2:5\). Carry this 5 s.f. forward. <span class="mark-step">M1</span></div>
         \( n(\ce{H2O2}) = 4.920\times10^{-4} \times \tfrac{5}{2} = 1.230\times10^{-3} \)
       </div>
       <div class="step"><div class="step-header">Step 3 — (iii)</div>
@@ -686,7 +724,7 @@
         <div class="step-desc">Decomposition \(\ce{2H2O2 -> 2H2O + O2}\), so \(\ce{H2O2}:\ce{O2} = 2:1\); 1.00 dm³ holds \(0.0492\) mol. <span class="mark-step">A1</span></div>
         \( n(\ce{O2}) = 0.0492/2 = 0.02460 \Rightarrow V = 0.02460 \times 22.7 = 0.558\ \text{dm}^3 \)
       </div>
-      <div class="trap"><b>Trap (your own note):</b> keep 5 s.f. all the way (\(4.920\times10^{-4}\), \(1.230\times10^{-3}\)) and round only the printed answer — premature rounding shifts the last figure and loses the A1. Use \(V_m = 22.7\) for s.t.p.</div>
+      <div class="trap"><b>Trap (your own note):</b> carry 5 s.f. all the way (\(4.920\times10^{-4}\), \(1.230\times10^{-3}\)) and round only the printed answer — premature rounding shifts the last figure and loses the A1. Also: <b>carry earlier answers forward</b> into later parts; don't restart from theory. Use \(V_m = 22.7\) for s.t.p.</div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
   <div class="block practice"><div class="label">Practice</div>
@@ -715,7 +753,7 @@
   </div>
   <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
     <div class="answer-content"><div class="label">Archetype &amp; trap</div>
-      <b>Archetype:</b> the ~30% "multi-step quantitative chain" — one scenario hung off several parts (\(n \to\) ratio \(\to\) conc \(\to\) g dm⁻³ \(\to\) gas volume). <b>Traps:</b> carry the earlier answers forward (don't restart from theory — your own note); watch each ratio (\(2:5\), \(1:2\), \(2:1\)); iodometry uses <b>starch</b> added late (blue-black → colourless), manganate(VII) is <b>self-indicating</b>.
+      <b>Archetype:</b> the ~30% "multi-step quantitative chain" — one scenario hung off several parts (\(n \to\) ratio \(\to\) conc \(\to\) g dm⁻³ \(\to\) gas volume). <b>Traps (your logged errors):</b> carry the earlier answers forward (don't restart from theory; don't immediately jump to electron-transfer theory when you already have the answer); watch each ratio (\(2:5\), \(1:2\), \(2:1\)); iodometry uses <b>starch</b> added late (blue-black → colourless), manganate(VII) is <b>self-indicating</b>.
     </div><div class="answer-overlay">Hidden — click Reveal</div>
   </div>
 </div>
