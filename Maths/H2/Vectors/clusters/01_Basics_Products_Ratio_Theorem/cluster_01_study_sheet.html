@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vectors — Cluster 1</title>
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true, tags: 'none' },
+    svg: { fontCache: 'global' },
+    options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --amber-soft:#fffbeb;
+    --green:#059669; --green-soft:#ecfdf5; --cover:#f3f4f6;
+    --purple:#7c3aed; --purple-soft:#f5f3ff; --red:#dc2626; --red-soft:#fef2f2;
+    --teal:#0d9488; --teal-soft:#f0fdfa; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:40px 24px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h2,h3,.label,.controls,button,.step-header{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  h1{font-size:2em;margin:0 0 8px;color:#111;border-bottom:3px solid #111;padding-bottom:12px}
+  h2{font-size:1.5em;margin-top:56px;margin-bottom:16px;color:#111;border-bottom:1px solid #999;padding-bottom:6px}
+  h3{font-size:1.15em;margin:0 0 14px;color:#1f2937}
+  h4{font-size:1em;margin:14px 0 6px;color:#111}
+  p{margin:8px 0}
+  .meta{color:var(--muted);font-size:.9em;margin:4px 0 24px}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--red);padding:16px 20px;border-radius:6px;margin:16px 0 24px}
+  .intro ul{margin:8px 0 0 0;padding-left:22px}
+  .intro li{margin:4px 0}
+  .toolkit{background:var(--blue-soft);border:1px solid #bfdbfe;border-left:4px solid var(--blue);padding:14px 20px;border-radius:6px;margin:0 0 32px;font-size:.95em}
+  .toolkit strong{color:#1e3a8a}
+  .toolkit table{border-collapse:collapse;margin:10px 0 4px;width:100%}
+  .toolkit td{padding:6px 10px 6px 0;vertical-align:top;border-bottom:1px solid #dbeafe}
+  .toolkit td:first-child{white-space:nowrap;color:#1e3a8a;font-weight:600;width:35%}
+  .toolkit tr:last-child td{border-bottom:none}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;color:var(--text);font-weight:500}
+  .controls button:hover{background:#f3f4f6}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:32px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:6px;color:#111}
+  .toc a{color:var(--blue);text-decoration:none;margin-right:14px;line-height:2}
+  .toc a:hover{text-decoration:underline}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .block{margin:14px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border)}
+  .block.example{background:#f9fafb;border-left-color:#6b7280}
+  .block.practice{background:var(--amber-soft);border-left-color:var(--amber)}
+  .block.answer{background:var(--green-soft);border-left-color:var(--green);position:relative;min-height:60px}
+  .block.reveal-archetype{background:var(--purple-soft);border-left-color:var(--purple);position:relative;min-height:60px;margin-top:24px}
+  .label{display:block;text-transform:uppercase;font-size:.75em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--muted)}
+  .block.example .label{color:#4b5563}
+  .block.practice .label{color:var(--amber)}
+  .block.answer .label{color:var(--green)}
+  .block.reveal-archetype .label{color:var(--purple)}
+  .stem{background:#1e293b;color:#f1f5f9;padding:12px 16px;border-radius:6px;margin:10px 0;font-family:'Charter','Georgia',serif}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px;font-family:-apple-system,sans-serif}
+  .mark-step{display:inline-block;font-size:.75em;background:#ddd6fe;color:#5b21b6;padding:1px 7px;border-radius:8px;font-weight:700;margin:0 4px;font-family:-apple-system,sans-serif}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.5);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.8em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .step-desc{font-style:italic;color:#374151;margin-bottom:6px;font-size:.95em}
+  .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:6px 12px;border-radius:4px;margin:8px 0 0;font-size:.9em}
+  .trap b{color:var(--red)}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3;box-shadow:0 1px 2px rgba(0,0,0,.1)}
+  .reveal-btn:hover{background:#047857}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .reveal-btn.hide-state:hover{background:#4b5563}
+  .block.reveal-archetype .reveal-btn{background:var(--purple)}
+  .block.reveal-archetype .reveal-btn:hover{background:#6d28d9}
+  .answer-content{transition:filter .2s,opacity .2s}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;font-family:-apple-system,sans-serif;border-left:4px solid var(--muted);margin-left:-16px;padding-left:16px;z-index:2;transition:opacity .2s}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content,.block.reveal-archetype .answer-content{padding-right:60px}
+  ul,ol{padding-left:24px}
+  li{margin:4px 0}
+  .mjx-container{font-size:1.05em!important}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  @media print{
+    body{background:#fff;padding:20px;max-width:100%}
+    .controls,.reveal-btn{display:none!important}
+    .answer-overlay{display:none!important}
+    .card{box-shadow:none;page-break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<h1>Vectors — Cluster 1</h1>
+<p class="meta">Maths H2 9758 · Topic 3.1 &amp; 3.2 — Basics, Products &amp; Ratio Theorem · Built 2026-07-16 for study on 2026-07-17</p>
+
+<div class="intro">
+<strong>Format:</strong> attempt each question cold — the archetype is hidden until the reveal at the bottom of each card. Cards 1–3 have Example → Practice; cards 4–7 are single-attempt; cards 8–10 are full multi-part exam-style. Solutions mirror the HCI Tutorial 7A / supplementary answer-key presentation exactly: column vectors, ∴ for conclusions, "By ratio theorem, …" as the opening line for any ratio application.
+<ul>
+  <li>Every answer uses <b>column vectors</b> \( \begin{pmatrix} x \\ y \\ z \end{pmatrix} \) — never mix with \( x\mathbf{i} + y\mathbf{j} + z\mathbf{k} \) form on the same line.</li>
+  <li>Always <b>draw a diagram</b> for questions involving collinearity, ratios, or intersecting lines. HCI Tutorial 7A explicitly flags this on Q3.</li>
+  <li>Score \(\geq 85\%\) per card. Any card under 60% → re-read the Toolkit, redo the Example cold.</li>
+</ul>
+</div>
+
+<div class="toolkit">
+<strong>The vectors toolkit — memorise cold (NOT in MF27 unless flagged)</strong>
+<table>
+<tr><td>Magnitude \( |\mathbf{v}| \)</td><td>\( \sqrt{x^{2}+y^{2}+z^{2}} \) — Pythagoras extended to 3-D</td></tr>
+<tr><td>Unit vector \( \hat{\mathbf{v}} \)</td><td>\( \dfrac{\mathbf{v}}{|\mathbf{v}|} \) — same direction, magnitude 1</td></tr>
+<tr><td>Displacement \( \overrightarrow{AB} \)</td><td>\( \overrightarrow{OB} - \overrightarrow{OA} = \mathbf{b} - \mathbf{a} \)</td></tr>
+<tr><td>Distance between points</td><td>\( |\overrightarrow{AB}| = |\mathbf{b} - \mathbf{a}| \)</td></tr>
+<tr><td>Collinearity of \(A, B, C\)</td><td>Show \( \overrightarrow{AB} = k\,\overrightarrow{AC} \) for some scalar \(k\) (parallel + shared point). Equivalent: \( \overrightarrow{AB} \times \overrightarrow{AC} = \mathbf{0} \).</td></tr>
+<tr><td><b>Ratio theorem</b> — \(P\) divides \(AB\) in ratio \(\lambda:\mu\)</td><td>\( \overrightarrow{OP} = \dfrac{\mu\mathbf{a} + \lambda\mathbf{b}}{\lambda + \mu} \) &nbsp; — <b>the weight goes with the OPPOSITE endpoint</b>. Midpoint: \( \overrightarrow{OM} = \dfrac{\mathbf{a}+\mathbf{b}}{2} \).</td></tr>
+<tr><td>Scalar (dot) product</td><td>\( \mathbf{a}\cdot\mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos\theta = a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3} \). Perpendicular iff \( \mathbf{a}\cdot\mathbf{b}=0 \). Note \( \mathbf{a}\cdot\mathbf{a}=|\mathbf{a}|^{2} \).</td></tr>
+<tr><td>Vector (cross) product</td><td>\( |\mathbf{a}\times\mathbf{b}| = |\mathbf{a}||\mathbf{b}|\sin\theta \). Direction: perpendicular to both, right-hand rule. Parallel iff \( \mathbf{a}\times\mathbf{b}=\mathbf{0} \). Anti-commutative: \( \mathbf{a}\times\mathbf{b} = -\mathbf{b}\times\mathbf{a} \). And \( \mathbf{a}\times\mathbf{a}=\mathbf{0} \).</td></tr>
+<tr><td>Angle between vectors</td><td>\( \cos\theta = \dfrac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}||\mathbf{b}|} \)</td></tr>
+<tr><td>Scalar projection of \(\mathbf{a}\) on \(\hat{\mathbf{n}}\)</td><td>\( \mathbf{a}\cdot\hat{\mathbf{n}} \) &nbsp; — a signed <b>length</b>. Vector projection \( = (\mathbf{a}\cdot\hat{\mathbf{n}})\hat{\mathbf{n}} \). Perpendicular-component magnitude \( = |\mathbf{a}\times\hat{\mathbf{n}}| \).</td></tr>
+<tr><td>Area of triangle</td><td>\( \tfrac{1}{2}|\overrightarrow{AB}\times\overrightarrow{AC}| \)</td></tr>
+<tr><td>Area of parallelogram</td><td>\( |\overrightarrow{AB}\times\overrightarrow{AD}| \) &nbsp; (adjacent sides)</td></tr>
+</table>
+<b>Excluded in 9758:</b> triple products \( \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) \) and \( \mathbf{a}\times(\mathbf{b}\times\mathbf{c}) \). Never use them.
+</div>
+
+<div class="controls">
+  <button onclick="revealAll()">Reveal all</button>
+  <button onclick="hideAll()">Hide all</button>
+</div>
+
+<div class="toc">
+<strong>Questions</strong>
+<a href="#c1">Question 1</a><a href="#c2">Question 2</a><a href="#c3">Question 3</a><a href="#c4">Question 4</a><a href="#c5">Question 5</a><a href="#c6">Question 6</a><a href="#c7">Question 7</a><a href="#c8">Question 8</a><a href="#c9">Question 9</a><a href="#c10">Question 10</a>
+</div>
+
+<!-- ============================================================ Q1 -->
+<div class="card" id="c1">
+  <h3>Question 1</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">
+      The points \( A \) and \( B \) have position vectors \( \overrightarrow{OA} = \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix} \) and \( \overrightarrow{OB} = \begin{pmatrix} 4 \\ 0 \\ -2 \end{pmatrix} \) referred to the origin \( O \).<br><br>
+      (i) Find \( \overrightarrow{AB} \) and state its magnitude in exact form. <span class="marks">[2]</span><br>
+      (ii) Find the unit vector in the direction of \( \overrightarrow{AB} \). <span class="marks">[1]</span><br>
+      (iii) The point \( C \) has position vector \( \overrightarrow{OC} = \begin{pmatrix} 1 \\ 2 \\ k \end{pmatrix} \). Find the possible values of \( k \) for which \( |\overrightarrow{OA}| = |\overrightarrow{OC}| \). <span class="marks">[2]</span>
+    </div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — (i) Displacement and magnitude</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ \overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA} = \begin{pmatrix} 4 \\ 0 \\ -2 \end{pmatrix} - \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix} = \begin{pmatrix} 2 \\ 1 \\ -5 \end{pmatrix} \]
+        \[ |\overrightarrow{AB}| = \sqrt{2^{2} + 1^{2} + (-5)^{2}} = \sqrt{30} \text{ units} \]
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii) Unit vector</div>
+        <div class="step-desc"><span class="mark-step">A1</span></div>
+        \[ \hat{\mathbf{u}} = \dfrac{\overrightarrow{AB}}{|\overrightarrow{AB}|} = \dfrac{1}{\sqrt{30}}\begin{pmatrix} 2 \\ 1 \\ -5 \end{pmatrix} \]
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (iii) Equal magnitude condition</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \( |\overrightarrow{OA}|^{2} = 4 + 1 + 9 = 14 \). &nbsp; \( |\overrightarrow{OC}|^{2} = 1 + 4 + k^{2} = 5 + k^{2} \).<br>
+        \[ 5 + k^{2} = 14 \;\Longrightarrow\; k^{2} = 9 \;\Longrightarrow\; k = \pm 3 \]
+        \[ \therefore k = 3 \text{ or } k = -3 \]
+      </div>
+      <div class="trap"><b>Trap:</b> squaring gives \(k = \pm 3\) — <b>both roots</b> must be reported. A single "\(k = 3\)" answer loses the A mark.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">
+      The points \( P \) and \( Q \) have position vectors \( \overrightarrow{OP} = \begin{pmatrix} -1 \\ 3 \\ 2 \end{pmatrix} \) and \( \overrightarrow{OQ} = \begin{pmatrix} 3 \\ -1 \\ 4 \end{pmatrix} \).<br><br>
+      (i) Find \( \overrightarrow{PQ} \) and state its exact magnitude. <span class="marks">[2]</span><br>
+      (ii) Find the unit vector in the direction of \( \overrightarrow{QP} \). <span class="marks">[1]</span><br>
+      (iii) The point \( R \) has position vector \( \overrightarrow{OR} = \begin{pmatrix} t \\ 2 \\ t-1 \end{pmatrix} \). Find the values of \( t \) for which \( |\overrightarrow{OR}| = 3 \). <span class="marks">[3]</span>
+    </div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ \overrightarrow{PQ} = \begin{pmatrix} 3 \\ -1 \\ 4 \end{pmatrix} - \begin{pmatrix} -1 \\ 3 \\ 2 \end{pmatrix} = \begin{pmatrix} 4 \\ -4 \\ 2 \end{pmatrix}, \quad |\overrightarrow{PQ}| = \sqrt{16+16+4} = \sqrt{36} = 6 \text{ units} \]
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii)</div>
+        <div class="step-desc"><span class="mark-step">A1</span></div>
+        \( \overrightarrow{QP} = -\overrightarrow{PQ} = \begin{pmatrix} -4 \\ 4 \\ -2 \end{pmatrix} \), \( |\overrightarrow{QP}| = 6 \).
+        \[ \hat{\mathbf{u}} = \dfrac{1}{6}\begin{pmatrix} -4 \\ 4 \\ -2 \end{pmatrix} = \dfrac{1}{3}\begin{pmatrix} -2 \\ 2 \\ -1 \end{pmatrix} \]
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (iii)</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        \( |\overrightarrow{OR}|^{2} = t^{2} + 4 + (t-1)^{2} = 9 \)<br>
+        \( t^{2} + 4 + t^{2} - 2t + 1 = 9 \) &nbsp;\(\Longrightarrow\)&nbsp; \( 2t^{2} - 2t - 4 = 0 \) &nbsp;\(\Longrightarrow\)&nbsp; \( t^{2} - t - 2 = 0 \)
+        \[ (t-2)(t+1) = 0 \;\Longrightarrow\; \therefore t = 2 \text{ or } t = -1 \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Basics — displacement, magnitude, unit vector, magnitude equation.</strong>
+      <p>The bread-and-butter opener for any vectors question. Trap: forgetting the second root when solving \(k^{2} = c\); also, giving the unit vector as \( \overrightarrow{AB} \) itself (must divide by magnitude). Simplify the unit vector by pulling out common factors where possible.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<!-- ============================================================ Q2 -->
+<div class="card" id="c2">
+  <h3>Question 2</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">
+      The points \( A \), \( B \), \( C \) have position vectors \( \overrightarrow{OA} = \begin{pmatrix} 1 \\ -2 \\ 3 \end{pmatrix} \), \( \overrightarrow{OB} = \begin{pmatrix} 3 \\ 0 \\ -1 \end{pmatrix} \), \( \overrightarrow{OC} = \begin{pmatrix} x \\ 4 \\ y \end{pmatrix} \).<br><br>
+      Given that \( A \), \( B \) and \( C \) are collinear, find the values of \( x \) and \( y \). <span class="marks">[4]</span>
+    </div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — Set up the collinearity condition</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        Since \(A\), \(B\), \(C\) are collinear, \( \overrightarrow{AC} = k\,\overrightarrow{AB} \) for some scalar \(k\).
+      </div>
+      <div class="step"><div class="step-header">Step 2 — Compute both displacement vectors</div>
+        <div class="step-desc"><span class="mark-step">M1</span></div>
+        \[ \overrightarrow{AB} = \begin{pmatrix} 3 \\ 0 \\ -1 \end{pmatrix} - \begin{pmatrix} 1 \\ -2 \\ 3 \end{pmatrix} = \begin{pmatrix} 2 \\ 2 \\ -4 \end{pmatrix}, \quad \overrightarrow{AC} = \begin{pmatrix} x-1 \\ 6 \\ y-3 \end{pmatrix} \]
+      </div>
+      <div class="step"><div class="step-header">Step 3 — Compare components</div>
+        <div class="step-desc"><span class="mark-step">M1</span></div>
+        \[ \begin{pmatrix} x-1 \\ 6 \\ y-3 \end{pmatrix} = k\begin{pmatrix} 2 \\ 2 \\ -4 \end{pmatrix} \]
+        From the \(j\)-component: \(6 = 2k \;\Longrightarrow\; k = 3\).<br>
+        From the \(i\)-component: \(x - 1 = 2(3) = 6 \;\Longrightarrow\; x = 7\).<br>
+        From the \(k\)-component: \(y - 3 = -4(3) = -12 \;\Longrightarrow\; y = -9\).
+      </div>
+      <div class="step"><div class="step-header">Step 4 — Conclude</div>
+        <div class="step-desc"><span class="mark-step">A1</span></div>
+        \[ \therefore x = 7, \; y = -9 \]
+      </div>
+      <div class="trap"><b>Trap:</b> writing "\( |\overrightarrow{AB}| / |\overrightarrow{AC}| = k \)" or reasoning from magnitudes alone. Magnitudes on their own do <b>not</b> establish collinearity — you must show the vectors are <b>parallel</b> (scalar multiple) and share a point.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">
+      Referred to the origin \(O\), points \(P\), \(Q\), \(R\) have position vectors \( \mathbf{p} = \begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix} \), \( \mathbf{q} = \begin{pmatrix} 4 \\ 3 \\ 1 \end{pmatrix} \), \( \mathbf{r} = \begin{pmatrix} a \\ b \\ 5 \end{pmatrix} \).<br><br>
+      (i) Show that \(P\) and \(Q\) are distinct, and determine \(\overrightarrow{PQ}\). <span class="marks">[1]</span><br>
+      (ii) Given that \(P\), \(Q\), \(R\) are collinear, find \(a\) and \(b\). <span class="marks">[3]</span>
+    </div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        \( \overrightarrow{PQ} = \mathbf{q} - \mathbf{p} = \begin{pmatrix} 2 \\ 2 \\ 2 \end{pmatrix} \neq \mathbf{0} \), so \(P \neq Q\).
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii)</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        \( \overrightarrow{PR} = \begin{pmatrix} a-2 \\ b-1 \\ 6 \end{pmatrix} \). For collinearity, \( \overrightarrow{PR} = k \overrightarrow{PQ} = k\begin{pmatrix} 2 \\ 2 \\ 2 \end{pmatrix} \).<br>
+        \(k\)-component: \(6 = 2k \;\Longrightarrow\; k = 3\).<br>
+        \(i\): \(a - 2 = 6 \;\Longrightarrow\; a = 8\). &nbsp; \(j\): \(b - 1 = 6 \;\Longrightarrow\; b = 7\).
+        \[ \therefore a = 8, \; b = 7 \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Collinearity via parallel displacement vectors.</strong>
+      <p>The template: \( \overrightarrow{AC} = k\,\overrightarrow{AB} \). Solve for \(k\) from the "clean" component (the one without unknowns), then substitute into the others. HCI Tutorial 7A Q2 explicitly warns: cannot use magnitude ratios alone — vectors must be shown parallel.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<!-- ============================================================ Q3 -->
+<div class="card" id="c3">
+  <h3>Question 3</h3>
+  <div class="block example"><div class="label">Example</div>
+    <div class="stem">
+      Points \(A\) and \(B\) have position vectors \(\mathbf{a}\) and \(\mathbf{b}\) referred to the origin \(O\).<br><br>
+      (i) Point \(M\) is the midpoint of \(AB\). Write down \(\overrightarrow{OM}\) in terms of \(\mathbf{a}\) and \(\mathbf{b}\). <span class="marks">[1]</span><br>
+      (ii) Point \(P\) lies on \(AB\) such that \(AP : PB = 2 : 3\). Find \(\overrightarrow{OP}\) in terms of \(\mathbf{a}\) and \(\mathbf{b}\). <span class="marks">[2]</span><br>
+      (iii) Point \(Q\) lies on \(AB\) extended (beyond \(B\)) such that \(B\) is the midpoint of \(AQ\). Find \(\overrightarrow{OQ}\) in terms of \(\mathbf{a}\) and \(\mathbf{b}\). <span class="marks">[2]</span>
+    </div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — (i) Midpoint</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        \[ \overrightarrow{OM} = \dfrac{\mathbf{a} + \mathbf{b}}{2} \]
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii) Ratio theorem, internal division</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        By ratio theorem, with \(\lambda : \mu = 2 : 3\):
+        \[ \overrightarrow{OP} = \dfrac{\mu\mathbf{a} + \lambda\mathbf{b}}{\lambda + \mu} = \dfrac{3\mathbf{a} + 2\mathbf{b}}{5} \]
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (iii) External point</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \(B\) is the midpoint of \(AQ\), so \( \mathbf{b} = \dfrac{\mathbf{a} + \overrightarrow{OQ}}{2} \).
+        \[ \therefore \overrightarrow{OQ} = 2\mathbf{b} - \mathbf{a} \]
+      </div>
+      <div class="trap"><b>Trap (T4):</b> in \( (\mu\mathbf{a} + \lambda\mathbf{b})/(\lambda + \mu) \), <b>the weight goes with the</b> opposite <b>endpoint</b>. Ratio \(AP:PB = 2:3\) puts <em>3</em> next to \(\mathbf{a}\) and <em>2</em> next to \(\mathbf{b}\). Writing \( (2\mathbf{a} + 3\mathbf{b})/5 \) is a straight sign/weight error.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block practice"><div class="label">Practice</div>
+    <div class="stem">
+      In triangle \(OAB\), \(\overrightarrow{OA} = \mathbf{a}\) and \(\overrightarrow{OB} = \mathbf{b}\). Point \(P\) lies on \(AB\) such that \(AP : PB = 3 : 2\). Point \(Q\) lies on \(OA\) such that \(OQ : QA = 2 : 5\). Point \(R\) is the midpoint of \(BQ\).<br><br>
+      (i) Find \(\overrightarrow{OP}\) in terms of \(\mathbf{a}\) and \(\mathbf{b}\). <span class="marks">[2]</span><br>
+      (ii) Find \(\overrightarrow{OR}\) in terms of \(\mathbf{a}\) and \(\mathbf{b}\). <span class="marks">[3]</span>
+    </div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        By ratio theorem, with \(AP : PB = 3 : 2\):
+        \[ \overrightarrow{OP} = \dfrac{2\mathbf{a} + 3\mathbf{b}}{5} \]
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii)</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        \(Q\) divides \(OA\) with \(OQ : QA = 2 : 5\), so \(\overrightarrow{OQ} = \tfrac{2}{7}\mathbf{a}\).<br>
+        \(R\) is midpoint of \(BQ\):
+        \[ \overrightarrow{OR} = \dfrac{\overrightarrow{OB} + \overrightarrow{OQ}}{2} = \dfrac{1}{2}\left(\mathbf{b} + \tfrac{2}{7}\mathbf{a}\right) = \dfrac{1}{7}\mathbf{a} + \dfrac{1}{2}\mathbf{b} \]
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Ratio theorem — the foundational tool for position-vector geometry.</strong>
+      <p>Every subsequent vectors question builds on this. The weight-opposite-endpoint rule is the single most-tested facet. External division and "midpoint of the extension" phrasings collapse into a simple linear rearrangement — no need for a special formula.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<!-- ============================================================ Q4 (single) -->
+<div class="card" id="c4">
+  <h3>Question 4</h3>
+  <div class="block practice"><div class="label">Attempt</div>
+    <div class="stem">
+      In triangle \(OAB\), \(\overrightarrow{OA} = \mathbf{a}\) and \(\overrightarrow{OB} = \mathbf{b}\). Point \(X\) lies on \(OA\) such that \(OX : XA = 1 : 2\), and point \(Y\) lies on \(OB\) such that \(OY : YB = 1 : 3\). Lines \(AY\) and \(BX\) intersect at \(P\).<br><br>
+      By expressing \(\overrightarrow{OP}\) in two different ways, find \(\overrightarrow{OP}\) in terms of \(\mathbf{a}\) and \(\mathbf{b}\). <span class="marks">[6]</span>
+    </div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — Set up two expressions for \(\overrightarrow{OP}\)</div>
+        <div class="step-desc"><span class="mark-step">M1 M1</span></div>
+        \(\overrightarrow{OX} = \tfrac{1}{3}\mathbf{a}\), \(\overrightarrow{OY} = \tfrac{1}{4}\mathbf{b}\).<br>
+        Since \(P\) lies on \(AY\), \( \overrightarrow{OP} = \overrightarrow{OA} + t\,\overrightarrow{AY} = \mathbf{a} + t\!\left(\tfrac{1}{4}\mathbf{b} - \mathbf{a}\right) = (1-t)\mathbf{a} + \tfrac{t}{4}\mathbf{b} \) &nbsp; …(1)<br>
+        Since \(P\) lies on \(BX\), \( \overrightarrow{OP} = \overrightarrow{OB} + s\,\overrightarrow{BX} = \mathbf{b} + s\!\left(\tfrac{1}{3}\mathbf{a} - \mathbf{b}\right) = \tfrac{s}{3}\mathbf{a} + (1-s)\mathbf{b} \) &nbsp; …(2)
+      </div>
+      <div class="step"><div class="step-header">Step 2 — Equate coefficients of \(\mathbf{a}\) and \(\mathbf{b}\)</div>
+        <div class="step-desc"><span class="mark-step">M1</span></div>
+        Since \(\mathbf{a}\) and \(\mathbf{b}\) are not parallel, by comparison:
+        \[ 1 - t = \tfrac{s}{3} \quad \text{…(3)}, \qquad \tfrac{t}{4} = 1 - s \quad \text{…(4)} \]
+      </div>
+      <div class="step"><div class="step-header">Step 3 — Solve the simultaneous system</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        From (4): \(s = 1 - \tfrac{t}{4}\). Substitute into (3):
+        \( 1 - t = \tfrac{1}{3}\!\left(1 - \tfrac{t}{4}\right) = \tfrac{1}{3} - \tfrac{t}{12} \).<br>
+        Multiply through by 12: \(12 - 12t = 4 - t \;\Longrightarrow\; 11t = 8 \;\Longrightarrow\; t = \tfrac{8}{11} \).<br>
+        Then \( s = 1 - \tfrac{2}{11} = \tfrac{9}{11} \).
+      </div>
+      <div class="step"><div class="step-header">Step 4 — Substitute back</div>
+        <div class="step-desc"><span class="mark-step">A1</span></div>
+        Using (1): \( \overrightarrow{OP} = \left(1 - \tfrac{8}{11}\right)\mathbf{a} + \tfrac{8}{44}\mathbf{b} = \tfrac{3}{11}\mathbf{a} + \tfrac{2}{11}\mathbf{b} \).
+        \[ \therefore \overrightarrow{OP} = \tfrac{1}{11}(3\mathbf{a} + 2\mathbf{b}) \]
+      </div>
+      <div class="trap"><b>Trap:</b> comparing coefficients only works because \(\mathbf{a}\) and \(\mathbf{b}\) are <b>not parallel</b> — you must state this. If they were parallel, one equation would collapse.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Intersection of two lines via "two different expressions" — the standard cevians-in-a-triangle trick.</strong>
+      <p>The technique HCI Tutorial 7A Q3 formalises: write the unknown position vector in two ways (one along each line through it), equate, then compare coefficients. This is the go-to method for any intersection question in position-vector form.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<!-- ============================================================ Q5 -->
+<div class="card" id="c5">
+  <h3>Question 5</h3>
+  <div class="block practice"><div class="label">Attempt</div>
+    <div class="stem">
+      Vectors \( \mathbf{a} = \begin{pmatrix} 3 \\ 2 \\ -1 \end{pmatrix} \) and \( \mathbf{b} = \begin{pmatrix} 1 \\ -1 \\ 4 \end{pmatrix} \).<br><br>
+      (i) Find \( \mathbf{a}\cdot\mathbf{b} \). <span class="marks">[1]</span><br>
+      (ii) Find \(|\mathbf{a}|\) and \(|\mathbf{b}|\), giving your answers in exact form. <span class="marks">[2]</span><br>
+      (iii) Find the exact value of \(\cos\theta\), where \(\theta\) is the angle between \(\mathbf{a}\) and \(\mathbf{b}\). <span class="marks">[2]</span><br>
+      (iv) Hence state whether \(\theta\) is acute, obtuse, or a right angle, giving a reason. <span class="marks">[1]</span>
+    </div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc"><span class="mark-step">A1</span></div>
+        \[ \mathbf{a}\cdot\mathbf{b} = (3)(1) + (2)(-1) + (-1)(4) = 3 - 2 - 4 = -3 \]
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii)</div>
+        <div class="step-desc"><span class="mark-step">A1 A1</span></div>
+        \( |\mathbf{a}| = \sqrt{9 + 4 + 1} = \sqrt{14} \), &nbsp; \( |\mathbf{b}| = \sqrt{1 + 1 + 16} = \sqrt{18} = 3\sqrt{2} \).
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (iii)</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ \cos\theta = \dfrac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}||\mathbf{b}|} = \dfrac{-3}{\sqrt{14}\cdot 3\sqrt{2}} = \dfrac{-1}{\sqrt{28}} = -\dfrac{1}{2\sqrt{7}} \]
+      </div>
+      <div class="step"><div class="step-header">Step 4 — (iv)</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        \( \cos\theta < 0 \), so \( \theta \) is <b>obtuse</b>.
+      </div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Scalar (dot) product — angle between two vectors.</strong>
+      <p>Sign of \(\mathbf{a}\cdot\mathbf{b}\) instantly tells you the type of angle: positive = acute, zero = perpendicular, negative = obtuse. Keep the answer in exact form when asked. Rationalising the denominator is a good habit but not required by the syllabus.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<!-- ============================================================ Q6 -->
+<div class="card" id="c6">
+  <h3>Question 6</h3>
+  <div class="block practice"><div class="label">Attempt</div>
+    <div class="stem">
+      Given \( \mathbf{u} = \begin{pmatrix} 2 \\ p \\ 3 \end{pmatrix} \) is perpendicular to \( \mathbf{v} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} \).<br><br>
+      (i) Find the value of \(p\). <span class="marks">[2]</span><br>
+      (ii) Using the value of \(p\) from part (i), find the scalar projection of \( \mathbf{u} \) onto \( \mathbf{w} = \begin{pmatrix} 2 \\ 1 \\ 2 \end{pmatrix} \), giving your answer in exact form. <span class="marks">[3]</span><br>
+      (iii) Hence, find the vector projection of \( \mathbf{u} \) onto \( \mathbf{w} \). <span class="marks">[2]</span>
+    </div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — (i) Perpendicularity</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \( \mathbf{u} \perp \mathbf{v} \;\Longleftrightarrow\; \mathbf{u}\cdot\mathbf{v} = 0 \):
+        \[ (2)(1) + (p)(2) + (3)(-1) = 0 \;\Longrightarrow\; 2p - 1 = 0 \;\Longrightarrow\; p = \tfrac{1}{2} \]
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii) Scalar projection</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        With \(p = \tfrac{1}{2}\), \( \mathbf{u} = \begin{pmatrix} 2 \\ 1/2 \\ 3 \end{pmatrix} \). And \( |\mathbf{w}| = \sqrt{4+1+4} = 3 \).<br>
+        Scalar projection \( = \mathbf{u}\cdot\hat{\mathbf{w}} = \dfrac{\mathbf{u}\cdot\mathbf{w}}{|\mathbf{w}|} \):
+        \[ \mathbf{u}\cdot\mathbf{w} = (2)(2) + \tfrac{1}{2}(1) + (3)(2) = 4 + \tfrac{1}{2} + 6 = \tfrac{21}{2} \]
+        \[ \therefore \mathbf{u}\cdot\hat{\mathbf{w}} = \dfrac{21/2}{3} = \dfrac{7}{2} \]
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (iii) Vector projection</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        Vector projection \( = (\mathbf{u}\cdot\hat{\mathbf{w}})\,\hat{\mathbf{w}} = \tfrac{7}{2}\cdot\dfrac{1}{3}\begin{pmatrix} 2 \\ 1 \\ 2 \end{pmatrix} = \dfrac{7}{6}\begin{pmatrix} 2 \\ 1 \\ 2 \end{pmatrix} \).
+      </div>
+      <div class="trap"><b>Trap (T1):</b> scalar projection \(\mathbf{u}\cdot\hat{\mathbf{w}}\) is a signed <b>number</b> (a length). Vector projection \((\mathbf{u}\cdot\hat{\mathbf{w}})\hat{\mathbf{w}}\) is a <b>vector</b>. Do not conflate them — the question wording pins down which one is required.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Perpendicularity constraint + scalar/vector projection.</strong>
+      <p>Two facets of the dot product in one question: (a) \(\mathbf{a}\cdot\mathbf{b} = 0\) locks a perpendicularity condition to find an unknown component; (b) projections. The scalar vs vector projection distinction is a syllabus-flagged trap.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<!-- ============================================================ Q7 -->
+<div class="card" id="c7">
+  <h3>Question 7</h3>
+  <div class="block practice"><div class="label">Attempt</div>
+    <div class="stem">
+      The points \(A\), \(B\), \(C\) have position vectors \( \overrightarrow{OA} = \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix} \), \( \overrightarrow{OB} = \begin{pmatrix} 4 \\ -1 \\ 2 \end{pmatrix} \), \( \overrightarrow{OC} = \begin{pmatrix} 2 \\ 3 \\ 5 \end{pmatrix} \).<br><br>
+      (i) Find \( \overrightarrow{AB} \) and \( \overrightarrow{AC} \). <span class="marks">[1]</span><br>
+      (ii) Compute \( \overrightarrow{AB} \times \overrightarrow{AC} \). <span class="marks">[2]</span><br>
+      (iii) State the exact area of triangle \(ABC\). <span class="marks">[2]</span><br>
+      (iv) Deduce a unit vector perpendicular to the plane containing \(A\), \(B\) and \(C\). <span class="marks">[2]</span>
+    </div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        \[ \overrightarrow{AB} = \begin{pmatrix} 3 \\ -3 \\ -1 \end{pmatrix}, \qquad \overrightarrow{AC} = \begin{pmatrix} 1 \\ 1 \\ 2 \end{pmatrix} \]
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii) Cross product</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ \overrightarrow{AB} \times \overrightarrow{AC} = \begin{pmatrix} (-3)(2) - (-1)(1) \\ (-1)(1) - (3)(2) \\ (3)(1) - (-3)(1) \end{pmatrix} = \begin{pmatrix} -5 \\ -7 \\ 6 \end{pmatrix} \]
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (iii) Area of triangle</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \[ \text{Area} = \tfrac{1}{2}\left|\overrightarrow{AB}\times\overrightarrow{AC}\right| = \tfrac{1}{2}\sqrt{25 + 49 + 36} = \tfrac{1}{2}\sqrt{110} \text{ units}^{2} \]
+      </div>
+      <div class="step"><div class="step-header">Step 4 — (iv) Unit normal</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        The cross product is perpendicular to both \( \overrightarrow{AB} \) and \( \overrightarrow{AC} \), hence perpendicular to the plane through \(A\), \(B\), \(C\).
+        \[ \hat{\mathbf{n}} = \dfrac{1}{\sqrt{110}}\begin{pmatrix} -5 \\ -7 \\ 6 \end{pmatrix} \]
+      </div>
+      <div class="trap"><b>Trap:</b> when computing \(\mathbf{a}\times\mathbf{b}\) by expansion, the middle component is \((a_{3}b_{1} - a_{1}b_{3})\), <b>not</b> \((a_{1}b_{3} - a_{3}b_{1})\). Get the sign wrong here and both the area and the normal direction flip.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Vector (cross) product — area of triangle + perpendicular direction.</strong>
+      <p>Two applications of \(\mathbf{a}\times\mathbf{b}\) in one card: magnitude gives area (\(\tfrac{1}{2}\) for triangle, no \(\tfrac{1}{2}\) for parallelogram); direction gives a normal to the plane. The unit normal is used constantly in Cluster 3 (planes).</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<!-- ============================================================ Q8 -->
+<div class="card" id="c8">
+  <h3>Question 8</h3>
+  <div class="block practice"><div class="label">Attempt</div>
+    <div class="stem">
+      Referred to the origin \(O\), let \(P\), \(Q\), \(R\) be distinct points with position vectors \(\mathbf{p}\), \(\mathbf{q}\), \(\mathbf{r}\) respectively.<br><br>
+      (a) Show that \( (\mathbf{q} - \mathbf{p}) \times (\mathbf{r} - \mathbf{p}) = \mathbf{p}\times\mathbf{q} + \mathbf{q}\times\mathbf{r} + \mathbf{r}\times\mathbf{p} \). <span class="marks">[3]</span><br>
+      (b) Explain, with reference to part (a), why \( \tfrac{1}{2}|\mathbf{p}\times\mathbf{q} + \mathbf{q}\times\mathbf{r} + \mathbf{r}\times\mathbf{p}| \) is the area of triangle \(PQR\). <span class="marks">[2]</span><br>
+      (c) Given that \( \mathbf{p}\times\mathbf{q} + \mathbf{q}\times\mathbf{r} + \mathbf{r}\times\mathbf{p} = \mathbf{0} \), and that \(P\), \(Q\), \(R\) are distinct, deduce that \(P\), \(Q\), \(R\) are collinear. <span class="marks">[3]</span>
+    </div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — (a) Expand using distributivity</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        \[ (\mathbf{q}-\mathbf{p}) \times (\mathbf{r}-\mathbf{p}) = \mathbf{q}\times\mathbf{r} - \mathbf{q}\times\mathbf{p} - \mathbf{p}\times\mathbf{r} + \mathbf{p}\times\mathbf{p} \]
+        Using \( \mathbf{p}\times\mathbf{p} = \mathbf{0} \) and \( \mathbf{a}\times\mathbf{b} = -\mathbf{b}\times\mathbf{a} \):
+        \[ = \mathbf{q}\times\mathbf{r} + \mathbf{p}\times\mathbf{q} + \mathbf{r}\times\mathbf{p} = \mathbf{p}\times\mathbf{q} + \mathbf{q}\times\mathbf{r} + \mathbf{r}\times\mathbf{p} \text{ (shown)} \]
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (b) Geometrical meaning</div>
+        <div class="step-desc"><span class="mark-step">B1 B1</span></div>
+        From (a): \( \mathbf{p}\times\mathbf{q} + \mathbf{q}\times\mathbf{r} + \mathbf{r}\times\mathbf{p} = \overrightarrow{PQ}\times\overrightarrow{PR} \). Hence
+        \[ \tfrac{1}{2}\left|\mathbf{p}\times\mathbf{q} + \mathbf{q}\times\mathbf{r} + \mathbf{r}\times\mathbf{p}\right| = \tfrac{1}{2}\left|\overrightarrow{PQ}\times\overrightarrow{PR}\right| = \text{area of }\triangle PQR. \]
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (c) Collinearity</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        Given the sum is \(\mathbf{0}\), by part (a), \( \overrightarrow{PQ} \times \overrightarrow{PR} = \mathbf{0} \).<br>
+        Since \(P\), \(Q\), \(R\) are distinct, \( \overrightarrow{PQ} \neq \mathbf{0} \) and \( \overrightarrow{PR} \neq \mathbf{0} \). A non-zero cross product is zero <b>only when</b> the two vectors are parallel.
+        \[ \therefore \overrightarrow{PQ} \parallel \overrightarrow{PR}, \text{ and since they share the point } P, \; P, Q, R \text{ are collinear.} \]
+      </div>
+      <div class="trap"><b>Trap:</b> in the expansion, order matters — \( \mathbf{q}\times\mathbf{p} = -\mathbf{p}\times\mathbf{q} \). A student who assumes commutativity for the cross product will produce \(-\mathbf{p}\times\mathbf{q}\) as \(\mathbf{p}\times\mathbf{q}\) and the identity will fail to close.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Cross-product algebraic identity + geometrical interpretation + collinearity deduction.</strong>
+      <p>Three cross-product properties tested in one 8-mark question: distributivity, anti-commutativity, and the "cross product is zero ⇒ parallel" fact. This is the shape of a 2023-era prelim question (EJC/ACJC pattern in the loaded supplementary corpus). The "distinct points" clause is what lets you rule out the trivial case.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<!-- ============================================================ Q9 -->
+<div class="card" id="c9">
+  <h3>Question 9</h3>
+  <div class="block practice"><div class="label">Attempt</div>
+    <div class="stem">
+      Referred to the origin \(O\), points \(A\), \(B\), \(C\) have non-zero, non-parallel position vectors \(\mathbf{a}\), \(\mathbf{b}\), \(\mathbf{c}\) respectively. Point \(P\) divides \(AB\) internally in the ratio \(1 : 3\), and point \(Q\) divides \(AC\) internally in the ratio \(2 : 1\).<br><br>
+      (i) Find \(\overrightarrow{OP}\) and \(\overrightarrow{OQ}\) in terms of \(\mathbf{a}\), \(\mathbf{b}\), \(\mathbf{c}\). <span class="marks">[2]</span><br>
+      (ii) Show that \( \overrightarrow{PQ} = -\tfrac{5}{12}\mathbf{a} - \tfrac{1}{4}\mathbf{b} + \tfrac{2}{3}\mathbf{c} \). <span class="marks">[3]</span><br>
+      (iii) The lines \(BQ\) and \(CP\) intersect at \(R\). By expressing \(\overrightarrow{OR}\) in two different ways, find \(\overrightarrow{OR}\) in terms of \(\mathbf{a}\), \(\mathbf{b}\), \(\mathbf{c}\). <span class="marks">[5]</span>
+    </div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc"><span class="mark-step">A1 A1</span></div>
+        By ratio theorem, with \(AP : PB = 1 : 3\):
+        \[ \overrightarrow{OP} = \dfrac{3\mathbf{a} + \mathbf{b}}{4} \]
+        With \(AQ : QC = 2 : 1\):
+        \[ \overrightarrow{OQ} = \dfrac{\mathbf{a} + 2\mathbf{c}}{3} \]
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii)</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        \[ \overrightarrow{PQ} = \overrightarrow{OQ} - \overrightarrow{OP} = \dfrac{\mathbf{a} + 2\mathbf{c}}{3} - \dfrac{3\mathbf{a} + \mathbf{b}}{4} \]
+        Common denominator 12:
+        \[ = \dfrac{4\mathbf{a} + 8\mathbf{c}}{12} - \dfrac{9\mathbf{a} + 3\mathbf{b}}{12} = \dfrac{-5\mathbf{a} - 3\mathbf{b} + 8\mathbf{c}}{12} \]
+        \[ \therefore \overrightarrow{PQ} = -\tfrac{5}{12}\mathbf{a} - \tfrac{1}{4}\mathbf{b} + \tfrac{2}{3}\mathbf{c} \text{ (shown)} \]
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (iii) \(\overrightarrow{OR}\) two ways</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 M1 M1 A1</span></div>
+        Since \(R\) lies on \(BQ\): \( \overrightarrow{OR} = \mathbf{b} + t(\overrightarrow{OQ} - \mathbf{b}) = (1-t)\mathbf{b} + t\!\left(\tfrac{\mathbf{a} + 2\mathbf{c}}{3}\right) = \tfrac{t}{3}\mathbf{a} + (1-t)\mathbf{b} + \tfrac{2t}{3}\mathbf{c} \) …(1)<br>
+        Since \(R\) lies on \(CP\): \( \overrightarrow{OR} = \mathbf{c} + s(\overrightarrow{OP} - \mathbf{c}) = (1-s)\mathbf{c} + s\!\left(\tfrac{3\mathbf{a} + \mathbf{b}}{4}\right) = \tfrac{3s}{4}\mathbf{a} + \tfrac{s}{4}\mathbf{b} + (1-s)\mathbf{c} \) …(2)<br>
+        Since \(\mathbf{a}, \mathbf{b}, \mathbf{c}\) are non-zero and non-parallel, by comparison:
+        \[ \tfrac{t}{3} = \tfrac{3s}{4} \quad (3), \qquad 1 - t = \tfrac{s}{4} \quad (4), \qquad \tfrac{2t}{3} = 1 - s \quad (5) \]
+        From (3): \(t = \tfrac{9s}{4}\). Substitute into (4): \(1 - \tfrac{9s}{4} = \tfrac{s}{4} \;\Longrightarrow\; 1 = \tfrac{10s}{4} \;\Longrightarrow\; s = \tfrac{2}{5}\).<br>
+        Then \(t = \tfrac{9}{4}\cdot\tfrac{2}{5} = \tfrac{9}{10}\).<br>
+        Consistency check with (5): \(\tfrac{2t}{3} = \tfrac{18}{30} = \tfrac{3}{5}\), and \(1 - s = 1 - \tfrac{2}{5} = \tfrac{3}{5}\). ✓<br>
+        Substituting \(s = \tfrac{2}{5}\) into (2):
+        \[ \overrightarrow{OR} = \tfrac{3}{4}\cdot\tfrac{2}{5}\mathbf{a} + \tfrac{1}{4}\cdot\tfrac{2}{5}\mathbf{b} + \tfrac{3}{5}\mathbf{c} = \tfrac{3}{10}\mathbf{a} + \tfrac{1}{10}\mathbf{b} + \tfrac{3}{5}\mathbf{c} \]
+        \[ \therefore \overrightarrow{OR} = \tfrac{1}{10}(3\mathbf{a} + \mathbf{b} + 6\mathbf{c}) \]
+      </div>
+      <div class="trap"><b>Trap:</b> the check via the third equation is not optional — with three unknowns and three equations, if consistency fails, one of the algebraic steps is wrong. HCI Tutorial 7A Q3 formalises this as "substitute answers into remaining unused equations to check for consistency."</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Cevian intersection in a 3-point configuration — ratio + parallel + intersection.</strong>
+      <p>A single question that stacks every Cluster 1 tool: ratio theorem for \(\overrightarrow{OP}\) and \(\overrightarrow{OQ}\); displacement vector for \(\overrightarrow{PQ}\); the two-different-expressions method for the intersection; and a consistency check on the third equation. This is the shape of a P1 or P2A ratio-theorem closer.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<!-- ============================================================ Q10 -->
+<div class="card" id="c10">
+  <h3>Question 10</h3>
+  <div class="block practice"><div class="label">Attempt</div>
+    <div class="stem">
+      Referred to the origin \(O\), the points \(A\) and \(B\) have position vectors \(\mathbf{a}\) and \(\mathbf{b}\), where \(\mathbf{a}\) and \(\mathbf{b}\) are non-parallel unit vectors. Point \(N\) is the foot of the perpendicular from \(B\) to the line through \(O\) and \(A\).<br><br>
+      (i) Show that \(\overrightarrow{ON} = (\mathbf{a}\cdot\mathbf{b})\mathbf{a}\). <span class="marks">[3]</span><br>
+      (ii) Deduce that the exact length of the projection of \(\overrightarrow{OB}\) onto the direction of \(\mathbf{a}\) is \(|\mathbf{a}\cdot\mathbf{b}|\). <span class="marks">[1]</span><br>
+      (iii) Hence, find the exact perpendicular distance from \(B\) to the line \(OA\) in terms of \(\mathbf{a}\cdot\mathbf{b}\). <span class="marks">[3]</span><br>
+      (iv) Given further that the angle between \(\mathbf{a}\) and \(\mathbf{b}\) is \(60^{\circ}\), find the exact perpendicular distance from part (iii). <span class="marks">[2]</span>
+    </div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        \(N\) lies on the line through \(O\) and \(A\), so \(\overrightarrow{ON} = \lambda \mathbf{a}\) for some \(\lambda \in \mathbb{R}\).<br>
+        \(BN \perp OA\), so \(\overrightarrow{NB} \cdot \mathbf{a} = 0\):
+        \[ (\mathbf{b} - \lambda\mathbf{a}) \cdot \mathbf{a} = 0 \;\Longrightarrow\; \mathbf{a}\cdot\mathbf{b} - \lambda(\mathbf{a}\cdot\mathbf{a}) = 0 \;\Longrightarrow\; \lambda = \dfrac{\mathbf{a}\cdot\mathbf{b}}{|\mathbf{a}|^{2}} = \mathbf{a}\cdot\mathbf{b} \]
+        (Since \(\mathbf{a}\) is a unit vector, \(|\mathbf{a}|^{2} = 1\).)
+        \[ \therefore \overrightarrow{ON} = (\mathbf{a}\cdot\mathbf{b})\mathbf{a} \text{ (shown)} \]
+      </div>
+      <div class="step"><div class="step-header">Step 2 — (ii)</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        The projection length \( = |\overrightarrow{ON}| = |(\mathbf{a}\cdot\mathbf{b})\mathbf{a}| = |\mathbf{a}\cdot\mathbf{b}| \cdot |\mathbf{a}| = |\mathbf{a}\cdot\mathbf{b}| \).
+      </div>
+      <div class="step"><div class="step-header">Step 3 — (iii) Perpendicular distance</div>
+        <div class="step-desc"><span class="mark-step">M1 M1 A1</span></div>
+        The perpendicular distance is \(|\overrightarrow{NB}|\). Since \(ONB\) is right-angled at \(N\):
+        \[ |\overrightarrow{OB}|^{2} = |\overrightarrow{ON}|^{2} + |\overrightarrow{NB}|^{2} \]
+        \[ |\overrightarrow{NB}|^{2} = |\mathbf{b}|^{2} - (\mathbf{a}\cdot\mathbf{b})^{2} = 1 - (\mathbf{a}\cdot\mathbf{b})^{2} \]
+        \[ \therefore |\overrightarrow{NB}| = \sqrt{1 - (\mathbf{a}\cdot\mathbf{b})^{2}} \]
+      </div>
+      <div class="step"><div class="step-header">Step 4 — (iv)</div>
+        <div class="step-desc"><span class="mark-step">M1 A1</span></div>
+        \( \mathbf{a}\cdot\mathbf{b} = (1)(1)\cos 60^{\circ} = \tfrac{1}{2} \).
+        \[ |\overrightarrow{NB}| = \sqrt{1 - \tfrac{1}{4}} = \sqrt{\tfrac{3}{4}} = \dfrac{\sqrt{3}}{2} \text{ units} \]
+      </div>
+      <div class="trap"><b>Trap (T1):</b> \(\overrightarrow{ON}\) is the <b>vector</b> projection of \(\mathbf{b}\) onto \(\mathbf{a}\) — its magnitude is the scalar projection \(|\mathbf{a}\cdot\mathbf{b}|\). Writing \(\overrightarrow{ON} = \mathbf{a}\cdot\mathbf{b}\) alone is a category error (scalar ≠ vector).</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Foot-of-perpendicular from a point to a line through the origin — the projection identity + Pythagoras.</strong>
+      <p>The clean-form question that trains the projection identity \(\overrightarrow{ON} = (\mathbf{b}\cdot\hat{\mathbf{a}})\hat{\mathbf{a}}\) (here simplified because \(\mathbf{a}\) is already a unit vector). Cluster 2 (lines) generalises this to any line \(\mathbf{r} = \mathbf{p} + \lambda\mathbf{d}\), but the mechanic is identical. Notice how \(|\overrightarrow{OB}|^{2} = |\overrightarrow{ON}|^{2} + |\overrightarrow{NB}|^{2}\) is the natural way to get the perpendicular distance from the projection — no cross product needed here.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<hr>
+
+<h2>Closing notes</h2>
+<p>The four highest-EV rules from this cluster, in mark-loss order:</p>
+<ol>
+  <li><strong>Ratio-theorem weight rule</strong> — the weight goes with the OPPOSITE endpoint. Rewrite the formula in the working every time until it's automatic.</li>
+  <li><strong>Collinearity is proved by parallel displacement vectors</strong>, not by magnitude ratios. \(\overrightarrow{AB} = k \overrightarrow{AC}\).</li>
+  <li><strong>Scalar projection vs vector projection vs perpendicular-component</strong> — three distinct quantities. Read the question wording carefully.</li>
+  <li><strong>Two-different-expressions method</strong> for intersections. Always state "since \(\mathbf{a}\) and \(\mathbf{b}\) are non-parallel, by comparison…" before equating coefficients.</li>
+</ol>
+<p>Score \(\geq 85\%\) here before starting Cluster 2 (Lines). Any card under 60% → re-read the Toolkit and redo the Example cold.</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn => {
+    btn.addEventListener('click', function(){
+      const block = this.parentElement;
+      const overlay = block.querySelector('.answer-overlay');
+      if (overlay.classList.contains('hidden')) {
+        overlay.classList.remove('hidden');
+        this.textContent = block.classList.contains('reveal-archetype') ? 'Reveal archetype' : 'Reveal';
+        this.classList.remove('hide-state');
+      } else {
+        overlay.classList.add('hidden');
+        this.textContent = 'Hide';
+        this.classList.add('hide-state');
+      }
+    });
+  });
+  function revealAll(){
+    document.querySelectorAll('.answer-overlay').forEach(o => o.classList.add('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b => { b.textContent = 'Hide'; b.classList.add('hide-state'); });
+  }
+  function hideAll(){
+    document.querySelectorAll('.answer-overlay').forEach(o => o.classList.remove('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b => {
+      const inArchetype = b.parentElement.classList.contains('reveal-archetype');
+      b.textContent = inArchetype ? 'Reveal archetype' : 'Reveal';
+      b.classList.remove('hide-state');
+    });
+  }
+</script>
+
+</body>
+</html>
