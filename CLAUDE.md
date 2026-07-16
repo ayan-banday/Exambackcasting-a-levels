@@ -164,9 +164,12 @@ Tests named by type and year (`model_test_1.md`, `official_2023.md`). Full ratio
 
 ## 8. Start-of-session checklist
 
-0. **Drive from the plan.** Read `SIX_WEEK_PLAN.md` and run `playbooks/06_daily_plan_driver.md`:
-   locate today's Day + cluster, report where we are vs where we should be, and **proactively offer
-   to build the day's cluster** (build only on approval; sync the change to GitHub). Pending gap
+0. **Drive from the plan.** The LIVE plan is **`dashboard/plan.js`** (the study dashboard);
+   `SIX_WEEK_PLAN.md` is deprecated. Locate today's Day + cluster, report where we are vs where we
+   should be, and **proactively offer to build the day's cluster** (build only on approval; sync to
+   GitHub). **To build a cluster, follow `system/prompts/03_build_cluster.md`** — its non-negotiable
+   first step is to read the topic's `inputs/` and **verify + auto-fix the subject-level and
+   topic-level examiner guides against that source material before building anything.** Pending gap
    clusters are built first.
 1. Identify **subject + level + topic** the student named.
 2. Read the **subject type** from `system/subjects.md` and any **topic override** in the topic's
