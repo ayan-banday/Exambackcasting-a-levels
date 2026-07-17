@@ -12,7 +12,7 @@ window.PLAN = {
   "perWeekHrs": 24.5,
   "target": "Meet B — roughly 65 average across every subject (a C/B). Every cluster drilled is also a permanent A-level foundation, not just a prelim patch.",
   "reality": "Two subjects a day, 2 hours each — the SIR method: ~60 min study, then the test part. Interleaving two subjects beats 4 hours on one. Saturday is the weekly cumulative test (timed, every topic covered so far); Sunday is a rest day. The Saturday test + the Week-4+ timed papers are the real readiness check, not cluster scores. Started 15 Jul; GP opens the prelim on 24 Aug.",
-  "lastUpdated": "2026-07-16",
+  "lastUpdated": "2026-07-17",
   "repo": "https://github.com/ayan-banday/Exambackcasting-a-levels"
  },
  "subjects": {
@@ -876,8 +876,8 @@ window.PLAN = {
      "subject": "maths",
      "name": "Maths — Vectors Cluster 1 (new): study (2h) + drill (1h)",
      "desc": "Basics, products & ratio theorem. Built the morning you study it.",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "17 Jul",
      "clusterRef": "Vectors — Basics, Products & Ratio Theorem"
     },
     {
@@ -885,8 +885,8 @@ window.PLAN = {
      "subject": "gp",
      "name": "GP — Phase 2 paragraph slotting (session 1 of 2, ~50 min)",
      "desc": "Just lock one slotting session. Next GP session is ~3 days out.",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "17 Jul",
      "clusterRef": "Essay — slotting, expansion & body paragraphs"
     }
    ]
@@ -898,16 +898,16 @@ window.PLAN = {
    "week": 1,
    "type": "test",
    "subject": "conv",
-   "label": "Saturday test — Maths (Calculus) + CSC (Governance)",
-   "focus": "First Saturday test. Timed, everything consolidated so far. Self-mark, hand the gap-list to Claude.",
+   "label": "Saturday test — Maths (Calculus + Vectors) + CSC (Governance)",
+   "focus": "First Saturday test. Timed, everything consolidated so far. Click the links to open each paper; self-mark against the hidden key, then hand the gap-list to Claude.",
    "flag": "⚑",
    "mins": 240,
    "blocks": [
     {
      "mins": 120,
      "subject": "maths",
-     "name": "Maths — Calculus timed paper (2h)",
-     "desc": "Differentiation & Maclaurin, integration, differential equations, applications & sketching.",
+     "name": "Maths — Calculus + Vectors timed paper (2h)",
+     "desc": "Calculus (all) + Vectors basics. <a href=\"tests/2026-07-18-maths.html\" target=\"_blank\" style=\"color:#6ea8fe;font-weight:600\">▶ Open the Maths test ↗</a>",
      "done": false,
      "doneDate": null
     },
@@ -915,7 +915,7 @@ window.PLAN = {
      "mins": 120,
      "subject": "csc",
      "name": "CSC — Governance essay/case (2h)",
-     "desc": "Full timed Governance question(s), self-marked against the TNT standard.",
+     "desc": "Two Governance essays, self-marked against the TNT standard. <a href=\"tests/2026-07-18-csc-governance.html\" target=\"_blank\" style=\"color:#e8845f;font-weight:600\">▶ Open the CSC test ↗</a>",
      "done": false,
      "doneDate": null
     }
@@ -1926,6 +1926,25 @@ window.PLAN = {
   ]
  ],
  "log": [
+  {
+   "date": "2026-07-17",
+   "weekday": "Fri",
+   "items": [
+    {
+     "subject": "maths",
+     "mins": 165,
+     "what": "Vectors Cluster 1 — basics, products & ratio theorem (2h45)",
+     "done": true
+    },
+    {
+     "subject": "gp",
+     "mins": 60,
+     "what": "Finished GP Phase-2 paragraph slotting; asked Ms Tammy for results",
+     "done": true
+    }
+   ],
+   "note": "3h45. Vectors basics done; awaiting Ms Tammy feedback on GP. Math gap cluster + Chem gap deferred to Monday."
+  },
   {
    "date": "2026-07-16",
    "weekday": "Thu",
