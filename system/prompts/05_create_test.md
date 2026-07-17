@@ -52,6 +52,18 @@ guessing, and *why* — this is what makes the gap-flagging accurate).
    **knowledge-gap cluster** (`04_knowledge_gap_cluster.md`) that drills exactly what he missed.
 4. **Git add + commit + push** ("git upload after that").
 
+## CSC exception — TNT questions only (overrides "original stems")
+For **CSC**, do **NOT** invent questions. Only use **actual questions from the TNT** —
+`/Applications/Claude Code Workspace/Study Agent/CSC/2025 高二问答题集锦.pdf` (the 42-question
+model-essay collection): 课题一 经济 Q1–11 · 课题二 政治/治理 Q12–20 · 课题三 社会 Q21–31 · 课题四 外交 Q32–42.
+- `pdftotext -layout` the PDF, pick the question(s) that **most cleanly fit the studied topics**, and
+  quote them **verbatim** with their TNT number + 题型 tag.
+- Reference the TNT Q-number so Ethan compares his answer to the **real model answer in his own PDF**.
+  Do **NOT** reproduce the full model essay — he has it. Give a **self-mark checklist** instead (the
+  essay-type method + the other factors the model covers), not the model prose.
+- Reason: CSC's TNT is the exam output standard, and Ethan wants to see the official model answer, not
+  a Claude-invented one. This is why CSC overrides the general "original stems / no-source-reuse" rule.
+
 ## Notes
 - GP is excluded — no GP clusters/tests of this kind; GP is skill-driven (gp-essay/plan/critique/questions).
 - The Saturday cumulative test is a scheduled instance of this same SOP (auto-compiles every topic
