@@ -58,6 +58,11 @@ build a cluster on a guide that doesn't match the source material.
 > **6. Validate** (card count, mhchem present, `<div>` balance, HTML parses) → `git add` the new
 > cluster **and** any guide you updated → `git commit` → `git push origin main`. Do **not** open it in
 > a browser unless asked.
+>
+> **7. Closing message — say this verbatim** (every subject except GP): *"Once you are done, paste me
+> the transcript of you solving questions, and I'll generate the knowledge gap cluster."* This replaces
+> the old "want me to generate the test?" line. When Ethan pastes that transcript back, follow
+> `system/prompts/04_knowledge_gap_cluster.md`.
 
 ---
 
