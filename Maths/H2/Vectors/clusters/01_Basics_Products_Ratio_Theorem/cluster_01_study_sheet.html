@@ -90,11 +90,11 @@
 <p class="meta">Maths H2 9758 · Topic 3.1 &amp; 3.2 — Basics, Products &amp; Ratio Theorem · Built 2026-07-16 for study on 2026-07-17</p>
 
 <div class="intro">
-<strong>Format:</strong> attempt each question cold — the archetype is hidden until the reveal at the bottom of each card. Cards 1–3 have Example → Practice; cards 4–7 are single-attempt; cards 8–10 are full multi-part exam-style. Solutions mirror the HCI Tutorial 7A / supplementary answer-key presentation exactly: column vectors, ∴ for conclusions, "By ratio theorem, …" as the opening line for any ratio application.
+<strong>Format:</strong> exam-paper style — 13 questions, no worked examples. Attempt each cold; reveal the solution only after committing to an answer. The archetype is hidden behind a second reveal at the bottom of each card. Solutions mirror the HCI Tutorial 7A / supplementary answer-key presentation exactly: column vectors, ∴ for conclusions, "By ratio theorem, …" as the opening line for any ratio application.
 <ul>
   <li>Every answer uses <b>column vectors</b> \( \begin{pmatrix} x \\ y \\ z \end{pmatrix} \) — never mix with \( x\mathbf{i} + y\mathbf{j} + z\mathbf{k} \) form on the same line.</li>
   <li>Always <b>draw a diagram</b> for questions involving collinearity, ratios, or intersecting lines. HCI Tutorial 7A explicitly flags this on Q3.</li>
-  <li>Score \(\geq 85\%\) per card. Any card under 60% → re-read the Toolkit, redo the Example cold.</li>
+  <li>Score \(\geq 85\%\) across the sheet. Any card under 60% → re-read the Toolkit, redo that question cold.</li>
 </ul>
 </div>
 
@@ -124,13 +124,13 @@
 
 <div class="toc">
 <strong>Questions</strong>
-<a href="#c1">Question 1</a><a href="#c2">Question 2</a><a href="#c3">Question 3</a><a href="#c4">Question 4</a><a href="#c5">Question 5</a><a href="#c6">Question 6</a><a href="#c7">Question 7</a><a href="#c8">Question 8</a><a href="#c9">Question 9</a><a href="#c10">Question 10</a>
+<a href="#c1">Question 1</a><a href="#c2">Question 2</a><a href="#c3">Question 3</a><a href="#c4">Question 4</a><a href="#c5">Question 5</a><a href="#c6">Question 6</a><a href="#c7">Question 7</a><a href="#c8">Question 8</a><a href="#c9">Question 9</a><a href="#c10">Question 10</a><a href="#c11">Question 11</a><a href="#c12">Question 12</a><a href="#c13">Question 13</a>
 </div>
 
 <!-- ============================================================ Q1 -->
 <div class="card" id="c1">
   <h3>Question 1</h3>
-  <div class="block example"><div class="label">Example</div>
+  <div class="block practice"><div class="label">Question</div>
     <div class="stem">
       The points \( A \) and \( B \) have position vectors \( \overrightarrow{OA} = \begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix} \) and \( \overrightarrow{OB} = \begin{pmatrix} 4 \\ 0 \\ -2 \end{pmatrix} \) referred to the origin \( O \).<br><br>
       (i) Find \( \overrightarrow{AB} \) and state its magnitude in exact form. <span class="marks">[2]</span><br>
@@ -158,7 +158,18 @@
       <div class="trap"><b>Trap:</b> squaring gives \(k = \pm 3\) — <b>both roots</b> must be reported. A single "\(k = 3\)" answer loses the A mark.</div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
-  <div class="block practice"><div class="label">Practice</div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Basics — displacement, magnitude, unit vector, magnitude equation.</strong>
+      <p>The bread-and-butter opener for any vectors question. Trap: forgetting the second root when solving \(k^{2} = c\); also, giving the unit vector as \( \overrightarrow{AB} \) itself (must divide by magnitude).</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<!-- ============================================================ Q2 -->
+<div class="card" id="c2">
+  <h3>Question 2</h3>
+  <div class="block practice"><div class="label">Question</div>
     <div class="stem">
       The points \( P \) and \( Q \) have position vectors \( \overrightarrow{OP} = \begin{pmatrix} -1 \\ 3 \\ 2 \end{pmatrix} \) and \( \overrightarrow{OQ} = \begin{pmatrix} 3 \\ -1 \\ 4 \end{pmatrix} \).<br><br>
       (i) Find \( \overrightarrow{PQ} \) and state its exact magnitude. <span class="marks">[2]</span><br>
@@ -183,20 +194,21 @@
         \( t^{2} + 4 + t^{2} - 2t + 1 = 9 \) &nbsp;\(\Longrightarrow\)&nbsp; \( 2t^{2} - 2t - 4 = 0 \) &nbsp;\(\Longrightarrow\)&nbsp; \( t^{2} - t - 2 = 0 \)
         \[ (t-2)(t+1) = 0 \;\Longrightarrow\; \therefore t = 2 \text{ or } t = -1 \]
       </div>
+      <div class="trap"><b>Trap:</b> quadratic in \(t\) — two roots. Also, \(\overrightarrow{QP}\) is asked for, not \(\overrightarrow{PQ}\) — reverse the sign before unitising.</div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
   <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
     <div class="answer-content"><div class="label">Archetype revealed</div>
-      <strong>Basics — displacement, magnitude, unit vector, magnitude equation.</strong>
-      <p>The bread-and-butter opener for any vectors question. Trap: forgetting the second root when solving \(k^{2} = c\); also, giving the unit vector as \( \overrightarrow{AB} \) itself (must divide by magnitude). Simplify the unit vector by pulling out common factors where possible.</p>
+      <strong>Basics again — same mechanic on a different stem, plus the "which direction was asked?" trap.</strong>
+      <p>The quadratic in (iii) is where reps count: \(|\mathbf{r}|^{2} = c\) always produces at least two roots when the components involve \(t\). Simplify unit vectors by pulling out common factors.</p>
     </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
   </div>
 </div>
 
-<!-- ============================================================ Q2 -->
-<div class="card" id="c2">
-  <h3>Question 2</h3>
-  <div class="block example"><div class="label">Example</div>
+<!-- ============================================================ Q3 -->
+<div class="card" id="c3">
+  <h3>Question 3</h3>
+  <div class="block practice"><div class="label">Question</div>
     <div class="stem">
       The points \( A \), \( B \), \( C \) have position vectors \( \overrightarrow{OA} = \begin{pmatrix} 1 \\ -2 \\ 3 \end{pmatrix} \), \( \overrightarrow{OB} = \begin{pmatrix} 3 \\ 0 \\ -1 \end{pmatrix} \), \( \overrightarrow{OC} = \begin{pmatrix} x \\ 4 \\ y \end{pmatrix} \).<br><br>
       Given that \( A \), \( B \) and \( C \) are collinear, find the values of \( x \) and \( y \). <span class="marks">[4]</span>
@@ -226,7 +238,18 @@
       <div class="trap"><b>Trap:</b> writing "\( |\overrightarrow{AB}| / |\overrightarrow{AC}| = k \)" or reasoning from magnitudes alone. Magnitudes on their own do <b>not</b> establish collinearity — you must show the vectors are <b>parallel</b> (scalar multiple) and share a point.</div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
-  <div class="block practice"><div class="label">Practice</div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Collinearity via parallel displacement vectors.</strong>
+      <p>The template: \( \overrightarrow{AC} = k\,\overrightarrow{AB} \). Solve for \(k\) from the "clean" component (the one without unknowns), then substitute into the others. HCI Tutorial 7A Q2 explicitly warns: cannot use magnitude ratios alone — vectors must be shown parallel.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<!-- ============================================================ Q4 -->
+<div class="card" id="c4">
+  <h3>Question 4</h3>
+  <div class="block practice"><div class="label">Question</div>
     <div class="stem">
       Referred to the origin \(O\), points \(P\), \(Q\), \(R\) have position vectors \( \mathbf{p} = \begin{pmatrix} 2 \\ 1 \\ -1 \end{pmatrix} \), \( \mathbf{q} = \begin{pmatrix} 4 \\ 3 \\ 1 \end{pmatrix} \), \( \mathbf{r} = \begin{pmatrix} a \\ b \\ 5 \end{pmatrix} \).<br><br>
       (i) Show that \(P\) and \(Q\) are distinct, and determine \(\overrightarrow{PQ}\). <span class="marks">[1]</span><br>
@@ -250,16 +273,16 @@
   </div>
   <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
     <div class="answer-content"><div class="label">Archetype revealed</div>
-      <strong>Collinearity via parallel displacement vectors.</strong>
-      <p>The template: \( \overrightarrow{AC} = k\,\overrightarrow{AB} \). Solve for \(k\) from the "clean" component (the one without unknowns), then substitute into the others. HCI Tutorial 7A Q2 explicitly warns: cannot use magnitude ratios alone — vectors must be shown parallel.</p>
+      <strong>Collinearity again — this time the unknowns are the components of one point.</strong>
+      <p>The "clean" component here is the \(k\)-component (no unknowns) — always work it first. Same technique as Q3, different unknowns.</p>
     </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
   </div>
 </div>
 
-<!-- ============================================================ Q3 -->
-<div class="card" id="c3">
-  <h3>Question 3</h3>
-  <div class="block example"><div class="label">Example</div>
+<!-- ============================================================ Q5 -->
+<div class="card" id="c5">
+  <h3>Question 5</h3>
+  <div class="block practice"><div class="label">Question</div>
     <div class="stem">
       Points \(A\) and \(B\) have position vectors \(\mathbf{a}\) and \(\mathbf{b}\) referred to the origin \(O\).<br><br>
       (i) Point \(M\) is the midpoint of \(AB\). Write down \(\overrightarrow{OM}\) in terms of \(\mathbf{a}\) and \(\mathbf{b}\). <span class="marks">[1]</span><br>
@@ -286,7 +309,18 @@
       <div class="trap"><b>Trap (T4):</b> in \( (\mu\mathbf{a} + \lambda\mathbf{b})/(\lambda + \mu) \), <b>the weight goes with the</b> opposite <b>endpoint</b>. Ratio \(AP:PB = 2:3\) puts <em>3</em> next to \(\mathbf{a}\) and <em>2</em> next to \(\mathbf{b}\). Writing \( (2\mathbf{a} + 3\mathbf{b})/5 \) is a straight sign/weight error.</div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
-  <div class="block practice"><div class="label">Practice</div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype revealed</div>
+      <strong>Ratio theorem — midpoint, internal division, and external point.</strong>
+      <p>The weight-opposite-endpoint rule is the single most-tested facet. External division phrases ("midpoint of the extension", "B produced to Q with…") collapse into a simple linear rearrangement — no need for a special formula.</p>
+    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+  </div>
+</div>
+
+<!-- ============================================================ Q6 -->
+<div class="card" id="c6">
+  <h3>Question 6</h3>
+  <div class="block practice"><div class="label">Question</div>
     <div class="stem">
       In triangle \(OAB\), \(\overrightarrow{OA} = \mathbf{a}\) and \(\overrightarrow{OB} = \mathbf{b}\). Point \(P\) lies on \(AB\) such that \(AP : PB = 3 : 2\). Point \(Q\) lies on \(OA\) such that \(OQ : QA = 2 : 5\). Point \(R\) is the midpoint of \(BQ\).<br><br>
       (i) Find \(\overrightarrow{OP}\) in terms of \(\mathbf{a}\) and \(\mathbf{b}\). <span class="marks">[2]</span><br>
@@ -310,16 +344,16 @@
   </div>
   <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
     <div class="answer-content"><div class="label">Archetype revealed</div>
-      <strong>Ratio theorem — the foundational tool for position-vector geometry.</strong>
-      <p>Every subsequent vectors question builds on this. The weight-opposite-endpoint rule is the single most-tested facet. External division and "midpoint of the extension" phrasings collapse into a simple linear rearrangement — no need for a special formula.</p>
+      <strong>Ratio theorem stacked — two ratios on different sides of a triangle plus a midpoint of a derived segment.</strong>
+      <p>The chained ratios exercise: (ii) makes you apply the ratio theorem TWICE — once to find \(\overrightarrow{OQ}\), then once more (midpoint) to combine \(\overrightarrow{OQ}\) with \(\overrightarrow{OB}\). Every multi-part vectors question inside a triangle looks like this.</p>
     </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
   </div>
 </div>
 
-<!-- ============================================================ Q4 (single) -->
-<div class="card" id="c4">
-  <h3>Question 4</h3>
-  <div class="block practice"><div class="label">Attempt</div>
+<!-- ============================================================ Q7 -->
+<div class="card" id="c7">
+  <h3>Question 7</h3>
+  <div class="block practice"><div class="label">Question</div>
     <div class="stem">
       In triangle \(OAB\), \(\overrightarrow{OA} = \mathbf{a}\) and \(\overrightarrow{OB} = \mathbf{b}\). Point \(X\) lies on \(OA\) such that \(OX : XA = 1 : 2\), and point \(Y\) lies on \(OB\) such that \(OY : YB = 1 : 3\). Lines \(AY\) and \(BX\) intersect at \(P\).<br><br>
       By expressing \(\overrightarrow{OP}\) in two different ways, find \(\overrightarrow{OP}\) in terms of \(\mathbf{a}\) and \(\mathbf{b}\). <span class="marks">[6]</span>
@@ -361,10 +395,10 @@
   </div>
 </div>
 
-<!-- ============================================================ Q5 -->
-<div class="card" id="c5">
-  <h3>Question 5</h3>
-  <div class="block practice"><div class="label">Attempt</div>
+<!-- ============================================================ Q8 -->
+<div class="card" id="c8">
+  <h3>Question 8</h3>
+  <div class="block practice"><div class="label">Question</div>
     <div class="stem">
       Vectors \( \mathbf{a} = \begin{pmatrix} 3 \\ 2 \\ -1 \end{pmatrix} \) and \( \mathbf{b} = \begin{pmatrix} 1 \\ -1 \\ 4 \end{pmatrix} \).<br><br>
       (i) Find \( \mathbf{a}\cdot\mathbf{b} \). <span class="marks">[1]</span><br>
@@ -401,10 +435,10 @@
   </div>
 </div>
 
-<!-- ============================================================ Q6 -->
-<div class="card" id="c6">
-  <h3>Question 6</h3>
-  <div class="block practice"><div class="label">Attempt</div>
+<!-- ============================================================ Q9 -->
+<div class="card" id="c9">
+  <h3>Question 9</h3>
+  <div class="block practice"><div class="label">Question</div>
     <div class="stem">
       Given \( \mathbf{u} = \begin{pmatrix} 2 \\ p \\ 3 \end{pmatrix} \) is perpendicular to \( \mathbf{v} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} \).<br><br>
       (i) Find the value of \(p\). <span class="marks">[2]</span><br>
@@ -441,10 +475,10 @@
   </div>
 </div>
 
-<!-- ============================================================ Q7 -->
-<div class="card" id="c7">
-  <h3>Question 7</h3>
-  <div class="block practice"><div class="label">Attempt</div>
+<!-- ============================================================ Q10 -->
+<div class="card" id="c10">
+  <h3>Question 10</h3>
+  <div class="block practice"><div class="label">Question</div>
     <div class="stem">
       The points \(A\), \(B\), \(C\) have position vectors \( \overrightarrow{OA} = \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix} \), \( \overrightarrow{OB} = \begin{pmatrix} 4 \\ -1 \\ 2 \end{pmatrix} \), \( \overrightarrow{OC} = \begin{pmatrix} 2 \\ 3 \\ 5 \end{pmatrix} \).<br><br>
       (i) Find \( \overrightarrow{AB} \) and \( \overrightarrow{AC} \). <span class="marks">[1]</span><br>
@@ -483,10 +517,10 @@
   </div>
 </div>
 
-<!-- ============================================================ Q8 -->
-<div class="card" id="c8">
-  <h3>Question 8</h3>
-  <div class="block practice"><div class="label">Attempt</div>
+<!-- ============================================================ Q11 -->
+<div class="card" id="c11">
+  <h3>Question 11</h3>
+  <div class="block practice"><div class="label">Question</div>
     <div class="stem">
       Referred to the origin \(O\), let \(P\), \(Q\), \(R\) be distinct points with position vectors \(\mathbf{p}\), \(\mathbf{q}\), \(\mathbf{r}\) respectively.<br><br>
       (a) Show that \( (\mathbf{q} - \mathbf{p}) \times (\mathbf{r} - \mathbf{p}) = \mathbf{p}\times\mathbf{q} + \mathbf{q}\times\mathbf{r} + \mathbf{r}\times\mathbf{p} \). <span class="marks">[3]</span><br>
@@ -524,10 +558,10 @@
   </div>
 </div>
 
-<!-- ============================================================ Q9 -->
-<div class="card" id="c9">
-  <h3>Question 9</h3>
-  <div class="block practice"><div class="label">Attempt</div>
+<!-- ============================================================ Q12 -->
+<div class="card" id="c12">
+  <h3>Question 12</h3>
+  <div class="block practice"><div class="label">Question</div>
     <div class="stem">
       Referred to the origin \(O\), points \(A\), \(B\), \(C\) have non-zero, non-parallel position vectors \(\mathbf{a}\), \(\mathbf{b}\), \(\mathbf{c}\) respectively. Point \(P\) divides \(AB\) internally in the ratio \(1 : 3\), and point \(Q\) divides \(AC\) internally in the ratio \(2 : 1\).<br><br>
       (i) Find \(\overrightarrow{OP}\) and \(\overrightarrow{OQ}\) in terms of \(\mathbf{a}\), \(\mathbf{b}\), \(\mathbf{c}\). <span class="marks">[2]</span><br>
@@ -575,10 +609,10 @@
   </div>
 </div>
 
-<!-- ============================================================ Q10 -->
-<div class="card" id="c10">
-  <h3>Question 10</h3>
-  <div class="block practice"><div class="label">Attempt</div>
+<!-- ============================================================ Q13 -->
+<div class="card" id="c13">
+  <h3>Question 13</h3>
+  <div class="block practice"><div class="label">Question</div>
     <div class="stem">
       Referred to the origin \(O\), the points \(A\) and \(B\) have position vectors \(\mathbf{a}\) and \(\mathbf{b}\), where \(\mathbf{a}\) and \(\mathbf{b}\) are non-parallel unit vectors. Point \(N\) is the foot of the perpendicular from \(B\) to the line through \(O\) and \(A\).<br><br>
       (i) Show that \(\overrightarrow{ON} = (\mathbf{a}\cdot\mathbf{b})\mathbf{a}\). <span class="marks">[3]</span><br>
