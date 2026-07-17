@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gap Cluster — Stoichiometry &amp; Redox weak spots</title>
+<script>
+  window.MathJax = {
+    loader: { load: ['[tex]/mhchem'] },
+    tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true, packages: {'[+]': ['mhchem']}, tags: 'none' },
+    svg: { fontCache: 'global' },
+    options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --amber-soft:#fffbeb;
+    --green:#059669; --green-soft:#ecfdf5; --cover:#f3f4f6;
+    --purple:#7c3aed; --purple-soft:#f5f3ff; --red:#dc2626; --red-soft:#fef2f2; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:40px 24px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h2,h3,.label,.controls,button,.step-header{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  h1{font-size:2em;margin:0 0 8px;color:#111;border-bottom:3px solid #111;padding-bottom:12px}
+  h3{font-size:1.15em;margin:0 0 14px;color:#1f2937}
+  p{margin:8px 0}
+  .meta{color:var(--muted);font-size:.9em;margin:4px 0 24px}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--purple);padding:16px 20px;border-radius:6px;margin:16px 0 24px}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;color:var(--text);font-weight:500}
+  .controls button:hover{background:#f3f4f6}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:32px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:6px;color:#111}
+  .toc a{color:var(--blue);text-decoration:none;margin-right:16px}
+  .toc a:hover{text-decoration:underline}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .block{margin:14px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border)}
+  .block.answer{background:var(--green-soft);border-left-color:var(--green);position:relative;min-height:60px}
+  .block.reveal-archetype{background:var(--purple-soft);border-left-color:var(--purple);position:relative;min-height:60px;margin-top:20px}
+  .label{display:block;text-transform:uppercase;font-size:.75em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--muted)}
+  .block.answer .label{color:var(--green)}
+  .block.reveal-archetype .label{color:var(--purple)}
+  .stem{background:#1e293b;color:#f1f5f9;padding:12px 16px;border-radius:6px;margin:10px 0;font-family:'Charter','Georgia',serif}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px;font-family:-apple-system,sans-serif}
+  .mark-step{display:inline-block;font-size:.75em;background:#ddd6fe;color:#5b21b6;padding:1px 7px;border-radius:8px;font-weight:700;margin:0 4px;font-family:-apple-system,sans-serif}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.5);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.8em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .step-desc{font-style:italic;color:#374151;margin-bottom:6px;font-size:.95em}
+  table.work{border-collapse:collapse;margin:10px 0;font-family:-apple-system,sans-serif;font-size:.9em;background:#fff}
+  table.work th,table.work td{border:1px solid #cbd5e1;padding:5px 12px;text-align:center}
+  table.work th{background:#f1f5f9;font-weight:700}
+  table.work td:first-child{text-align:left;font-weight:600;background:#f8fafc}
+  .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:6px 12px;border-radius:4px;margin:8px 0 0;font-size:.9em}
+  .trap b{color:var(--red)}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3;box-shadow:0 1px 2px rgba(0,0,0,.1)}
+  .reveal-btn:hover{background:#047857}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .block.reveal-archetype .reveal-btn{background:var(--purple)}
+  .block.reveal-archetype .reveal-btn:hover{background:#6d28d9}
+  .answer-content{transition:filter .2s,opacity .2s}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;font-family:-apple-system,sans-serif;border-left:4px solid var(--muted);margin-left:-16px;padding-left:16px;z-index:2;transition:opacity .2s}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content,.block.reveal-archetype .answer-content{padding-right:60px}
+  ul,ol{padding-left:24px} li{margin:4px 0}
+  .mjx-container{font-size:1.05em!important}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  @media print{ body{background:#fff;padding:20px;max-width:100%} .controls,.reveal-btn{display:none!important} .answer-overlay{display:none!important} .card{box-shadow:none;page-break-inside:avoid} }
+</style>
+</head>
+<body>
+
+<h1>Gap Cluster — Stoichiometry &amp; Redox weak spots</h1>
+<p class="meta">Chemistry H2 9476 · built from your 16 Jul drill transcript · pure exam questions — no worked examples</p>
+
+<div class="intro">
+<strong>How to use:</strong> every card is a full exam-style question — <b>no worked example, attempt it cold</b>. Reveal the solution only to check (mark steps <span class="mark-step">M1</span>/<span class="mark-step">A1</span>). The last block on each card tells you which weak spot it was drilling — read it <em>after</em> you attempt. These aren't the same questions you did; they're built to force the exact things that slowed you down. Aim for full marks on the lot.
+<br><br>Data booklet: \(L = 6.02\times10^{23}\); \(V_m = 22.7\ \text{dm}^3\,\text{mol}^{-1}\) at s.t.p.; carry ≥5 s.f. through, round only the final answer.
+</div>
+
+<div class="controls">
+  <button onclick="revealAll()">Reveal all</button>
+  <button onclick="hideAll()">Hide all</button>
+</div>
+
+<div class="toc"><strong>Questions</strong>
+<a href="#c1">1</a><a href="#c2">2</a><a href="#c3">3</a><a href="#c4">4</a><a href="#c5">5</a><a href="#c6">6</a><a href="#c7">7</a>
+</div>
+
+<!-- Q1 -->
+<div class="card" id="c1">
+  <h3>Question 1</h3>
+  <div class="stem">Calculate the total number of ions present in \( 2.50\ \text{g} \) of anhydrous sodium carbonate, \(\ce{Na2CO3}\). <span class="marks">[3]</span></div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div><div class="step-desc">Moles of \(\ce{Na2CO3}\); \(M_r = 2(23.0)+12.0+3(16.0)=106.0\). <span class="mark-step">M1</span></div>\( n = 2.50/106.0 = 0.023585\ \text{mol} \)</div>
+      <div class="step"><div class="step-header">Step 2</div><div class="step-desc">Ions <b>per formula unit</b> = 2 \(\ce{Na+}\) + 1 \(\ce{CO3^2-}\) = <b>3 ions</b> (the \(\ce{CO3^2-}\) is ONE ion, not 4). <span class="mark-step">M1</span></div>\( n(\text{ions}) = 0.023585 \times 3 = 0.070755\ \text{mol} \)</div>
+      <div class="step"><div class="step-header">Step 3</div><div class="step-desc">\( \times L \). <span class="mark-step">A1</span></div>\( 0.070755 \times 6.02\times10^{23} = 4.26\times10^{22} \)</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal target</button>
+    <div class="answer-content"><div class="label">What this drilled</div>
+      <b>Formula units → ions.</b> Yesterday you circled this — "do I multiply by the coefficient?" Here's the rule cold: count the ions the formula dissociates into (\(\ce{Na2CO3}\to 2\ce{Na+}+\ce{CO3^2-}\) = 3), a <b>polyatomic ion counts as one</b>, then \(\times n \times L\). "Formula units" = \(n \times L\); "ions" = that \(\times\) ions-per-unit.
+    </div><div class="answer-overlay">Hidden — attempt first</div>
+  </div>
+</div>
+
+<!-- Q2 -->
+<div class="card" id="c2">
+  <h3>Question 2</h3>
+  <div class="stem">\( 25.0\ \text{cm}^3 \) of a gaseous hydrocarbon \(\ce{C}_x\ce{H}_y\) is mixed with \( 200\ \text{cm}^3 \) of oxygen (an excess) and sparked. After cooling to the original room temperature and pressure, the residual gas has a volume of \( 150.0\ \text{cm}^3 \). On shaking with aqueous KOH the volume falls to \( 75.0\ \text{cm}^3 \). Deduce the molecular formula. <span class="marks">[4]</span></div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — read the two clues</div><div class="step-desc">On cooling, water is <b>liquid</b> (drop it from the gas volumes). KOH absorbs \(\ce{CO2}\), so \(\ce{CO2} = 150.0-75.0 = 75.0\); the \(75.0\) left is unused \(\ce{O2}\). <span class="mark-step">M1</span></div></div>
+      <div class="step"><div class="step-header">Step 2 — contraction table</div><div class="step-desc">Track volumes (all cm³, same T,P). <span class="mark-step">M1</span>
+        <table class="work"><tr><th></th><th>\(\ce{C}_x\ce{H}_y\)</th><th>\(\ce{O2}\)</th><th>\(\ce{CO2}\)</th><th>\(\ce{H2O}(l)\)</th></tr>
+        <tr><td>initial</td><td>25.0</td><td>200</td><td>0</td><td>0</td></tr>
+        <tr><td>final</td><td>0</td><td>75.0</td><td>75.0</td><td>—</td></tr>
+        <tr><td>reacted</td><td>−25.0</td><td>−125</td><td>+75.0</td><td>—</td></tr></table>
+      </div></div>
+      <div class="step"><div class="step-header">Step 3 — find x</div><div class="step-desc">\(\ce{C}_x\ce{H}_y:\ce{CO2}=25.0:75.0=1:3\). <span class="mark-step">M1</span></div>\( x = 3 \)</div>
+      <div class="step"><div class="step-header">Step 4 — find y from the O₂ used</div><div class="step-desc">\(\ce{O2}\) used \(=125\), ratio to hydrocarbon \(=125/25=5 = x + \dfrac{y}{4}\). <span class="mark-step">A1</span></div>\( 5 = 3 + \dfrac{y}{4} \Rightarrow y = 8 \Rightarrow \mathbf{\ce{C3H8}} \)</div>
+      <div class="trap"><b>Trap:</b> after cooling, water is liquid → it does NOT count in the residual gas. If the question said "measured at 120 °C" the water is a gas and stays in the table.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal target</button>
+    <div class="answer-content"><div class="label">What this drilled</div>
+      <b>The gas-volume contraction table.</b> This is the method you couldn't remember ("they draw a certain table"). Initial / final / reacted rows per gas, water dropped when it's liquid, \(\ce{CO2}\) from the KOH step, \(\ce{O2}\)-used gives \(x+y/4\). Direct ratios alone won't crack an explosion-and-absorb question — the table will, every time.
+    </div><div class="answer-overlay">Hidden — attempt first</div>
+  </div>
+</div>
+
+<!-- Q3 -->
+<div class="card" id="c3">
+  <h3>Question 3</h3>
+  <div class="stem">\( 0.440\ \text{g} \) of a hydrocarbon burns completely to give \( 1.320\ \text{g} \) of \(\ce{CO2}\) and \( 0.720\ \text{g} \) of \(\ce{H2O}\). Its relative molecular mass is \( 44.0 \).<br>(i) Determine its molecular formula. <span class="marks">[3]</span><br>(ii) Hence calculate the volume of oxygen, at s.t.p., needed to burn \( 0.440\ \text{g} \) of it completely. <span class="marks">[2]</span></div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — (i) moles of C and H</div><div class="step-desc">All C → \(\ce{CO2}\), all H → \(\ce{H2O}\). Note \(\ce{H2O}\) has <b>2</b> H. <span class="mark-step">M1</span></div>\( n(\ce{C}) = 1.320/44.0 = 0.03000 \); \( n(\ce{H}) = 2 \times 0.720/18.0 = 0.08000 \)</div>
+      <div class="step"><div class="step-header">Step 2 — ratio → EF → MF</div><div class="step-desc">\(\ce{C}:\ce{H}=0.03000:0.08000=3:8\); EF \(=\ce{C3H8}\ (M_r 44.0)\), and \(44.0/44.0=1\). <span class="mark-step">M1 A1</span></div>\( \mathbf{\ce{C3H8}} \)</div>
+      <div class="step"><div class="step-header">Step 3 — (ii) carry the MF forward</div><div class="step-desc">\(\ce{C3H8 + 5O2 -> 3CO2 + 4H2O}\); \( n(\ce{C3H8}) = 0.440/44.0 = 0.01000 \). <span class="mark-step">M1</span></div>\( n(\ce{O2}) = 5 \times 0.01000 = 0.05000 \)</div>
+      <div class="step"><div class="step-header">Step 4</div><div class="step-desc"><span class="mark-step">A1</span></div>\( V = 0.05000 \times 22.7 = 1.14\ \text{dm}^3 \)</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal target</button>
+    <div class="answer-content"><div class="label">What this drilled</div>
+      <b>Carry the earlier answer forward + the ×2 for H.</b> You said this is where you struggle — restarting from scratch instead of reusing part (i). Part (ii) is impossible without the MF from (i). And \(n(\ce{H}) = 2\times n(\ce{H2O})\) because water holds two H — the ×2 you flagged.
+    </div><div class="answer-overlay">Hidden — attempt first</div>
+  </div>
+</div>
+
+<!-- Q4 -->
+<div class="card" id="c4">
+  <h3>Question 4</h3>
+  <div class="stem">A \( 0.500\ \text{g} \) sample of impure sodium hydrogencarbonate is dissolved and reacted with \( 40.0\ \text{cm}^3 \) of \( 0.200\ \text{mol dm}^{-3} \) hydrochloric acid (an excess). \(\ce{NaHCO3 + HCl -> NaCl + H2O + CO2}\). The unreacted acid requires \( 18.0\ \text{cm}^3 \) of \( 0.150\ \text{mol dm}^{-3} \) sodium hydroxide to neutralise. Calculate the percentage purity of the sodium hydrogencarbonate. <span class="marks">[4]</span></div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div><div class="step-desc">Total acid, then excess (= acid that met the NaOH, 1:1). <span class="mark-step">M1 M1</span></div>\( n(\ce{HCl})_\text{total}=0.200\times0.0400=8.000\times10^{-3} \)<br>\( n(\ce{HCl})_\text{excess}=n(\ce{NaOH})=0.150\times0.0180=2.700\times10^{-3} \)</div>
+      <div class="step"><div class="step-header">Step 2</div><div class="step-desc">Acid that reacted with the solid; \(\ce{NaHCO3}:\ce{HCl}=1:1\). <span class="mark-step">M1</span></div>\( n(\ce{HCl})_\text{reacted}=8.000\times10^{-3}-2.700\times10^{-3}=5.300\times10^{-3} \Rightarrow n(\ce{NaHCO3})=5.300\times10^{-3} \)</div>
+      <div class="step"><div class="step-header">Step 3 — finish the job</div><div class="step-desc">Mass then %, \(M_r(\ce{NaHCO3})=84.0\). <span class="mark-step">A1</span></div>\( m = 5.300\times10^{-3}\times84.0=0.4452\ \text{g} \Rightarrow \dfrac{0.4452}{0.500}\times100 = 89.0\% \)</div>
+      <div class="trap"><b>Trap (your own):</b> don't stop at moles or mass — the answer is a <b>percentage</b>. Yesterday you did the hard middle right on the back-titration and dropped the last step. Total − excess = reacted → moles → mass → %.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal target</button>
+    <div class="answer-content"><div class="label">What this drilled</div>
+      <b>Finishing a back-titration.</b> The chain is always total − excess = reacted, then all the way through to the % the question asks for. The examiner puts the last mark on the final conversion — that's the one you left on the table.
+    </div><div class="answer-overlay">Hidden — attempt first</div>
+  </div>
+</div>
+
+<!-- Q5 -->
+<div class="card" id="c5">
+  <h3>Question 5</h3>
+  <div class="stem">A \( 500\ \text{cm}^3 \) flask is filled with nitrogen gas at s.t.p.<br>(i) Calculate the mass of nitrogen present. <span class="marks">[2]</span><br>(ii) Calculate the number of molecules present. <span class="marks">[1]</span></div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1 — (i)</div><div class="step-desc">\( n = V/V_m \), V in dm³. <span class="mark-step">M1</span></div>\( n = 0.500/22.7 = 0.022026\ \text{mol} \)</div>
+      <div class="step"><div class="step-header">Step 2</div><div class="step-desc">Nitrogen gas is \(\ce{N2}\): \(M_r = 2\times14.0 = 28.0\), NOT 14. <span class="mark-step">A1</span></div>\( m = 0.022026\times28.0 = 0.617\ \text{g} \)</div>
+      <div class="step"><div class="step-header">Step 3 — (ii)</div><div class="step-desc"><span class="mark-step">A1</span></div>\( N = 0.022026\times6.02\times10^{23} = 1.33\times10^{22}\ \text{molecules} \)</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal target</button>
+    <div class="answer-content"><div class="label">What this drilled</div>
+      <b>Diatomic molar mass.</b> Straight at yesterday's \(\ce{N2}=14\) slip. The seven diatomics (\(\ce{H2, N2, O2, F2, Cl2, Br2, I2}\)) are always ×2 — \(\ce{N2}=28\), \(\ce{O2}=32\), \(\ce{Cl2}=71\). "Molecules" here (not "atoms"), so no further ×2.
+    </div><div class="answer-overlay">Hidden — attempt first</div>
+  </div>
+</div>
+
+<!-- Q6 -->
+<div class="card" id="c6">
+  <h3>Question 6</h3>
+  <div class="stem">Calculate the number of ions present in \( 4.30\ \text{g} \) of hydrated sodium sulfate, \(\ce{Na2SO4.10H2O}\). <span class="marks">[3]</span></div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div><div class="step-desc">Include the water of crystallisation in \(M_r\): \(M_r = 142.1 + 10(18.0) = 322.1\). <span class="mark-step">M1</span></div>\( n = 4.30/322.1 = 0.013350\ \text{mol} \)</div>
+      <div class="step"><div class="step-header">Step 2</div><div class="step-desc">Ions per formula unit = 2 \(\ce{Na+}\) + 1 \(\ce{SO4^2-}\) = <b>3</b>. The \(\ce{10H2O}\) is <b>not ionic</b> — it does not count. <span class="mark-step">M1</span></div>\( n(\text{ions}) = 0.013350\times3 = 0.040050 \)</div>
+      <div class="step"><div class="step-header">Step 3</div><div class="step-desc"><span class="mark-step">A1</span></div>\( 0.040050\times6.02\times10^{23} = 2.41\times10^{22} \)</div>
+      <div class="trap"><b>Trap:</b> the \(\ce{10H2O}\) must be in the \(M_r\) (it's part of the mass) but must NOT be counted as ions (water is covalent, stays as molecules).</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal target</button>
+    <div class="answer-content"><div class="label">What this drilled</div>
+      <b>Formula units, harder.</b> Same idea as Q1 but the hydrate splits the two roles of the water: it adds to the mass (so it's in \(M_r\)) yet contributes zero ions. Get both right and formula units are dead to you.
+    </div><div class="answer-overlay">Hidden — attempt first</div>
+  </div>
+</div>
+
+<!-- Q7 -->
+<div class="card" id="c7">
+  <h3>Question 7</h3>
+  <div class="stem">An iron tablet of mass \( 1.00\ \text{g} \) is dissolved in excess dilute sulfuric acid and the solution made up to \( 100\ \text{cm}^3 \). A \( 25.0\ \text{cm}^3 \) portion is titrated with \( 0.0200\ \text{mol dm}^{-3} \) acidified \(\ce{KMnO4}\); \( 21.50\ \text{cm}^3 \) is required.<br>\(\ce{MnO4- + 5Fe^2+ + 8H+ -> Mn^2+ + 5Fe^3+ + 4H2O}\)<br>Calculate the percentage by mass of iron in the tablet. <span class="marks">[4]</span></div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Step 1</div><div class="step-desc">Moles \(\ce{MnO4-}\). <span class="mark-step">M1</span></div>\( n(\ce{MnO4-}) = 0.0200\times0.02150 = 4.300\times10^{-4} \)</div>
+      <div class="step"><div class="step-header">Step 2</div><div class="step-desc">Ratio \(\ce{MnO4-}:\ce{Fe^2+}=1:5\), in the \(25.0\ \text{cm}^3\) portion. <span class="mark-step">M1</span></div>\( n(\ce{Fe^2+})_{25} = 5\times4.300\times10^{-4} = 2.150\times10^{-3} \)</div>
+      <div class="step"><div class="step-header">Step 3 — scale to the whole tablet</div><div class="step-desc">\( 25.0\ \text{cm}^3 \) is \(\tfrac14\) of \( 100\ \text{cm}^3 \), so \(\times 4\). <span class="mark-step">M1</span></div>\( n(\ce{Fe})_\text{tablet} = 4\times2.150\times10^{-3} = 8.600\times10^{-3} \)</div>
+      <div class="step"><div class="step-header">Step 4 — finish</div><div class="step-desc">Mass then %; \(A_r(\ce{Fe})=55.8\). <span class="mark-step">A1</span></div>\( m = 8.600\times10^{-3}\times55.8 = 0.4799\ \text{g} \Rightarrow \dfrac{0.4799}{1.00}\times100 = 48.0\% \)</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal target</button>
+    <div class="answer-content"><div class="label">What this drilled</div>
+      <b>"One question solves many" — the carry-forward chain.</b> Four linked steps off one titre: titre → \(\ce{MnO4-}\) → \(\ce{Fe^2+}\) (×5) → whole tablet (×4 for the aliquot) → mass → %. Miss the \(\times 4\) aliquot scaling or stop before the % and you lose it. This is exactly the multi-step threading you flagged.
+    </div><div class="answer-overlay">Hidden — attempt first</div>
+  </div>
+</div>
+
+<hr>
+<p class="meta">Score these cold. Any you fumble a second time is a genuine ACTIVE gap — tell me the numbers and I'll re-drill just those at a new angle before Saturday's cumulative test.</p>
+
+<script>
+  function toggleBlock(btn){
+    const block = btn.closest('.block');
+    const overlay = block.querySelector('.answer-overlay');
+    const shown = overlay.classList.toggle('hidden');
+    btn.classList.toggle('hide-state', shown);
+    const arche = block.classList.contains('reveal-archetype');
+    btn.textContent = shown ? (arche?'Hide target':'Hide') : (arche?'Reveal target':'Reveal');
+  }
+  document.querySelectorAll('.reveal-btn').forEach(b => b.addEventListener('click', () => toggleBlock(b)));
+  function revealAll(){ document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.add('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b=>{b.classList.add('hide-state');
+      b.textContent=b.closest('.block').classList.contains('reveal-archetype')?'Hide target':'Hide';}); }
+  function hideAll(){ document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.remove('hidden'));
+    document.querySelectorAll('.reveal-btn').forEach(b=>{b.classList.remove('hide-state');
+      b.textContent=b.closest('.block').classList.contains('reveal-archetype')?'Reveal target':'Reveal';}); }
+</script>
+</body>
+</html>
