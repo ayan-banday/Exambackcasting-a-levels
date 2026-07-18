@@ -288,7 +288,7 @@ footer a{color:var(--dim)}
       const tagCol=d.type==='test'?'var(--bad)':s.colour;
       html+=`<details class="${cls}" ${d.date===today?'open':''}>
         <summary class="dh">
-          <span class="dn">DAY ${d.n}</span>
+          <span class="dn">${d.donePast?'DONE':'DAY '+d.n}</span>
           <span class="dd">${d.weekday} ${+dy} ${MO[+mo]}</span>
           <span class="tag" style="background:${tagCol}1f;color:${tagCol}">${tagTxt}</span>
           <span class="lb">${d.label}${d.flag?`<span style="color:var(--bad);font-size:11px;margin-left:5px">${d.flag}</span>`:''}</span>
