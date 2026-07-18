@@ -11,7 +11,7 @@ window.PLAN = {
   "totalMins": 7980,
   "perWeekHrs": 24.5,
   "target": "Prelim: a mid-B / C is fine — cover the priority topics, sacrifice the low-value ones. A-levels (2–27 Nov 2026): everything drilled to mastery, multiple passes.",
-  "reality": "4 hours a day, 5 days a week. More than 2 topics a day is fine — a cluster is ~2.5h (main + its gap cluster is extra). Test day = 4–6h depending on how many papers. GP is a 15-min touch every 2–3 days, not a cluster. Every topic = main cluster + gap cluster. The full map of everything to drill is at the very bottom.",
+  "reality": "NOT rigid 2×2h. 4 hours a day, 5 days a week, as flexible blocks — e.g. 120 min Chem (Energetics + Born-Haber) + 50 min another subject + 50 min GP. A cluster + closing its gaps ≈ 150 min on average, so it often spills — the next day continues closing gaps. GP = one phase per 50-min session, every 2–3 days (never 120). Every topic = main cluster + gap coverage; both show in Test Topics when done. Test day = 4–6h. Full map of everything to drill is at the bottom.",
   "lastUpdated": "2026-07-18",
   "repo": "https://github.com/ayan-banday/Exambackcasting-a-levels",
   "alevel": "2026-11-02"
@@ -635,7 +635,7 @@ window.PLAN = {
   },
   "gp": {
    "units": "skill-driven",
-   "tag": "15 min every 2–3 days. NO clusters. Paper 1 essay (phases) + Paper 2 comprehension.",
+   "tag": "One phase per 50-min session, every 2–3 days. NEVER 120 min. Skill-driven, no clusters.",
    "sections": [
     {
      "name": "PAPER 1 — ESSAY (phases)",
@@ -2010,38 +2010,51 @@ window.PLAN = {
   {
    "subject": "maths",
    "topic": "Calculus",
-   "status": "done",
-   "date": "done ≤15 Jul",
+   "status": "done · main + gap ✓",
+   "date": "done",
    "subs": [
     "Differentiation & Maclaurin",
-    "Integration techniques & applications",
+    "Integration",
     "Differential equations",
     "Applications & sketching"
+   ]
+  },
+  {
+   "subject": "maths",
+   "topic": "Vectors — Basics, Products & Ratio Theorem",
+   "status": "done · main + gap ✓",
+   "date": "18 Jul",
+   "subs": [
+    "Unit vectors & magnitude",
+    "Scalar & vector products",
+    "Ratio theorem",
+    "Collinearity via displacement",
+    "Foot of perpendicular"
+   ]
+  },
+  {
+   "subject": "chem",
+   "topic": "Stoichiometry & Redox",
+   "status": "done · main + gap ✓",
+   "date": "18 Jul",
+   "subs": [
+    "Mole toolkit & gas volumes",
+    "Empirical→molecular",
+    "Limiting reagent & % yield",
+    "Titration & back-titration",
+    "Oxidation numbers & half-equations"
    ]
   },
   {
    "subject": "csc",
    "topic": "Governance",
    "status": "done",
-   "date": "15 Jul",
-   "subs": [
-    "Foundation & power structure",
-    "Constraining unchecked power",
-    "Managing society, voice & identity",
-    "Gap clusters + synthesis (in progress)"
-   ]
-  },
-  {
-   "subject": "chem",
-   "topic": "Stoichiometry & Redox",
-   "status": "done",
    "date": "16 Jul",
    "subs": [
-    "Mole toolkit & gas volumes",
-    "Empirical → molecular formula",
-    "Limiting reagent & % yield",
-    "Titration & back-titration",
-    "Oxidation numbers & redox half-equations"
+    "Foundation & power structure",
+    "Constraining power",
+    "Managing society",
+    "Gap clusters + synthesis"
    ]
   }
  ]
