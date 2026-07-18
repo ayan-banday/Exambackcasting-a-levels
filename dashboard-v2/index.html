@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Six-Week Study Plan — Prelim Run</title>
-<meta name="description" content="16 Jul → 22 Aug 2026, prelim from 24 Aug. Two subjects a day (2h each, SIR), Saturday cumulative test, Sunday rest. Includes the full prelim paper timetable.">
+<title>Prelim Study Plan — Ethan Lim</title>
+<meta name="description" content="Day-by-day prelim study plan to 24 Aug 2026. Every day laid out clearly: which clusters, which blocks, which test. Foldable schedule, full topic map at the bottom.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -46,37 +46,18 @@ h1{font-size:23px;font-weight:600;letter-spacing:-.02em}
 .stat .v{font-family:var(--mono);font-size:21px;font-weight:500;letter-spacing:-.01em}
 .stat .v small{font-size:12px;color:var(--dim2);font-weight:400}
 
-.status{display:flex;align-items:center;gap:11px;border:1px solid var(--line);border-radius:12px;
-  padding:15px 20px;margin-bottom:16px;background:var(--card);font-size:14px}
-.status .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-.status .tail{margin-left:auto;color:var(--dim2);font-size:12px;font-family:var(--mono)}
-
 h2{font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--dim2);font-weight:500;
   margin:40px 0 6px;display:flex;align-items:center;gap:12px}
 h2 .rule{flex:1;height:1px;background:var(--line)}
 .h2sub{font-size:13px;color:var(--dim);margin-bottom:16px;line-height:1.6}
+.h2sub b{color:var(--fg);font-weight:500}
 
-/* cycle */
-.cyc{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
-.cyc .row{display:grid;grid-template-columns:96px 1fr;gap:18px;padding:14px 20px;border-bottom:1px solid var(--line)}
-.cyc .row:last-child{border-bottom:0}
-.cyc .t{font-family:var(--mono);font-size:12px;color:var(--warn);padding-top:1px}
-.cyc .nm{font-weight:500;font-size:14px}
-.cyc .ds{font-size:12.5px;color:var(--dim);margin-top:3px;line-height:1.5}
-
-/* clusters */
-.cl{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:8px}
-.cl .hd{display:flex;align-items:baseline;gap:10px;margin-bottom:11px}
-.cl .nm{font-weight:600;font-size:14.5px}
-.cl .cd{font-family:var(--mono);font-size:11px;color:var(--dim2)}
-.cl .ct{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--dim2)}
-.cl .nt{font-size:12.5px;color:var(--dim);margin-bottom:11px}
-.cl ol{list-style:none;counter-reset:c}
-.cl li{counter-increment:c;font-size:13.5px;padding:5px 0 5px 30px;position:relative;color:var(--fg)}
-.cl li::before{content:counter(c);position:absolute;left:0;font-family:var(--mono);font-size:11px;
-  color:var(--dim2);top:7px}
-.cl li.done{color:var(--dim2);text-decoration:line-through;text-decoration-color:var(--dim2)}
-.flag{color:var(--bad);font-size:11px;margin-left:5px}
+/* fold button */
+.foldbar{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.foldbtn{font-family:var(--mono);font-size:11.5px;color:var(--fg);background:var(--card);
+  border:1px solid var(--line2);border-radius:8px;padding:9px 16px;cursor:pointer;letter-spacing:.03em}
+.foldbtn:hover{border-color:var(--warn);color:var(--warn)}
+.foldbar .hint{font-size:12px;color:var(--dim2)}
 
 /* map */
 .mp{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:9px;overflow:hidden}
@@ -97,6 +78,7 @@ h2 .rule{flex:1;height:1px;background:var(--line)}
 .tp .tn{font-weight:600;font-size:14.5px}
 .badge{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;padding:2.5px 7px;border-radius:5px;font-weight:500}
 .b-DRILL{background:rgba(232,112,95,.15);color:#e8705f}
+.b-LATER{background:rgba(140,144,155,.15);color:var(--dim)}
 .b-COVERAGE{background:rgba(140,144,155,.15);color:var(--dim)}
 .b-BUILT{background:rgba(95,211,168,.15);color:var(--ok)}
 .tp .tf{font-size:12px;color:var(--dim);font-style:italic}
@@ -116,10 +98,9 @@ h2 .rule{flex:1;height:1px;background:var(--line)}
 .wkh .pc{font-family:var(--mono);font-size:11.5px;color:var(--dim2)}
 .day{background:var(--card);border:1px solid var(--line);border-radius:11px;margin-bottom:7px;overflow:hidden}
 .day.today{border-color:var(--warn);background:var(--card2)}
-.day.past{opacity:.6}
+.day.past{opacity:.55}
 .day.alldone{border-left:2px solid var(--ok)}
-.day.buffer{background:linear-gradient(90deg,rgba(232,198,95,.05),transparent)}
-.day.paper{background:linear-gradient(90deg,rgba(232,112,95,.06),transparent)}
+.day.test{background:linear-gradient(90deg,rgba(232,112,95,.06),transparent)}
 .dh{display:flex;align-items:center;gap:13px;padding:13px 17px;cursor:pointer;flex-wrap:wrap}
 .dh .dn{font-family:var(--mono);font-size:11px;color:var(--dim2);width:44px;flex-shrink:0}
 .dh .dd{font-family:var(--mono);font-size:12px;color:var(--fg);width:78px;flex-shrink:0}
@@ -144,24 +125,11 @@ h2 .rule{flex:1;height:1px;background:var(--line)}
 .rest{display:flex;align-items:center;gap:12px;padding:9px 17px;margin-bottom:7px;
   font-family:var(--mono);font-size:11.5px;color:var(--dim2);
   border:1px dashed var(--line);border-radius:11px}
-.ckpt{background:linear-gradient(90deg,rgba(95,211,168,.1),transparent);border:1px solid #22392f;
-  border-radius:11px;padding:13px 17px;margin-bottom:7px;font-size:13px}
-.ckpt b{color:var(--ok)}
 .exam{background:linear-gradient(90deg,rgba(232,112,95,.14),transparent);border:1px solid #3a2724;
   border-radius:11px;padding:17px 20px;display:flex;align-items:center;gap:15px;margin-top:16px;flex-wrap:wrap}
 .exam .n{font-family:var(--mono);font-size:12px;color:var(--bad);font-weight:500}
 .exam .t{font-size:14px;font-weight:600}
 .exam .s{font-size:12.5px;color:var(--dim);margin-left:auto}
-
-.drop{background:var(--card);border:1px solid var(--line);border-left:2px solid var(--warn);
-  border-radius:10px;padding:18px 22px}
-.drop ol{list-style:none;counter-reset:d;font-size:13.5px;color:var(--dim);line-height:1.6}
-.drop li{counter-increment:d;padding:5px 0 5px 26px;position:relative}
-.drop li::before{content:counter(d) '.';position:absolute;left:0;font-family:var(--mono);
-  font-size:11px;color:var(--dim2);top:7px}
-.never{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:13px;color:var(--dim)}
-.never b{color:var(--bad);font-weight:600}
-.never span{color:var(--fg)}
 
 footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:12px;color:var(--dim2);line-height:1.75}
 footer code{font-family:var(--mono);background:var(--card2);padding:1.5px 5px;border-radius:4px;color:var(--dim)}
@@ -173,7 +141,6 @@ footer a{color:var(--dim)}
   header{flex-direction:column}.countdown{text-align:left}
   .dh .dn{display:none}.dh .lb{flex-basis:100%;order:5}
   .mp .body{padding-left:20px}
-  .cyc .row{grid-template-columns:1fr;gap:3px}
 }
 .logday{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:13px 17px;margin-bottom:8px}
 .logday.planned{border-left:2px solid var(--warn)}
@@ -191,12 +158,12 @@ footer a{color:var(--dim)}
 .lognote{margin-top:9px;padding-top:9px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);line-height:1.55}
 .logempty{font-size:13px;color:var(--dim2);font-style:italic;padding:4px 0}
 .exams{display:flex;flex-direction:column;gap:6px}
-.exam{display:flex;align-items:center;gap:13px;background:var(--card);border:1px solid var(--line);border-radius:9px;padding:9px 15px;flex-wrap:wrap}
-.exam.prac{border-left:2px solid var(--bad)}
-.exam .exd{font-family:var(--mono);font-size:12px;color:var(--fg);width:96px;flex-shrink:0}
-.exam .extag{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:.06em;padding:2px 8px;border-radius:5px;flex-shrink:0;min-width:50px;text-align:center}
-.exam .exp{font-size:13.5px;font-weight:500}
-.exam .ext{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--dim2);flex-shrink:0}
+.exrow{display:flex;align-items:center;gap:13px;background:var(--card);border:1px solid var(--line);border-radius:9px;padding:9px 15px;flex-wrap:wrap}
+.exrow.prac{border-left:2px solid var(--bad)}
+.exrow .exd{font-family:var(--mono);font-size:12px;color:var(--fg);width:96px;flex-shrink:0}
+.exrow .extag{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:.06em;padding:2px 8px;border-radius:5px;flex-shrink:0;min-width:50px;text-align:center}
+.exrow .exp{font-size:13.5px;font-weight:500}
+.exrow .ext{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--dim2);flex-shrink:0}
 .tt{display:flex;flex-direction:column;gap:8px}
 .ttrow{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:12px 16px}
 .ttrow.done{border-left:2px solid var(--ok)}
@@ -214,58 +181,51 @@ footer a{color:var(--dim)}
 <div class="wrap">
   <header>
     <div>
-      <h1>Six-Week Study Plan — Prelim Run</h1>
+      <h1>Prelim Study Plan</h1>
       <div class="sub" id="hsub"></div>
     </div>
     <div class="countdown"><div class="n" id="cd">—</div><div class="l" id="cdl">days to prelim</div></div>
   </header>
 
   <div class="callout"><div class="k">Target</div><p id="mTarget"></p></div>
-  <div class="callout"><div class="k">Reality</div><p id="mReality"></p></div>
 
   <div class="stats">
-    <div class="ring" id="ring"><div class="v"><div class="p" id="pct">0%</div><div class="c">complete</div></div></div>
+    <div class="ring" id="ring"><div class="v"><div class="p" id="pct">0%</div><div class="c">clusters done</div></div></div>
     <div class="grid">
-      <div class="stat"><div class="k">Hours done</div><div class="v"><span id="hd">0</span><small id="hdT"></small></div></div>
-      <div class="stat"><div class="k">Expected by now</div><div class="v" id="he">0</div></div>
-      <div class="stat"><div class="k">Delta</div><div class="v" id="dl">—</div></div>
-      <div class="stat"><div class="k">Days left</div><div class="v" id="dleft">—</div></div>
-      <div class="stat"><div class="k">Clusters drilled</div><div class="v"><span id="cdone">0</span><small id="cT"></small></div></div>
+      <div class="stat"><div class="k">Days to prelim</div><div class="v" id="s_prelim">—</div></div>
+      <div class="stat"><div class="k">Study days left</div><div class="v" id="s_studyleft">—</div></div>
+      <div class="stat"><div class="k">Clusters done</div><div class="v"><span id="s_done">0</span><small id="s_doneT"></small></div></div>
+      <div class="stat"><div class="k">Topics left to drill</div><div class="v" id="s_left">—</div></div>
     </div>
   </div>
-  <div class="status" id="status"><div class="dot"></div><div id="stxt"></div><div class="tail" id="stail"></div></div>
 
-  <h2>🎯 Your prelim papers<span class="rule"></span></h2>
-  <div class="h2sub">The backcasting target — every paper you sit, in order. GP opens it (24 Aug); Biology P1 closes it (22 Sept). The two <span style="color:var(--bad)">practical</span> papers (Chem 25 Aug, Bio 31 Aug) come early — and per the plan haven't been prepped yet.</div>
-  <div class="exams" id="exams"></div>
-
-  <h2>⏱ The daily rhythm — 4h/day, 5 days a week<span class="rule"></span></h2>
-  <div class="h2sub">4 hours a day, 5 study days a week — as <b>flexible blocks</b>, e.g. 120 min chem + 50 min another subject + 50 min GP, not rigid 2×2h. A cluster is <b>~2.5h</b> (main) + its <b>gap cluster</b> on top. GP is <b>one phase per 50-min session</b>, every 2–3 days — never 120 min. Saturday = cumulative test (4–6h); Sunday = rest.</div>
-  <div class="cyc" id="cyc"></div>
-
-  <h2>📚 Prelim-priority clusters<span class="rule"></span></h2>
-  <div class="h2sub">The topics being drilled first, before the prelim. The full list of everything to drill (prelim + A-levels) is the hierarchy map at the very bottom.</div>
-  <div id="clusters"></div>
-
-  <h2>🗓 The day-by-day schedule<span class="rule"></span></h2>
-  <div class="h2sub">Saturday = weekly cumulative test. Sunday = rest day. Click any day to open its blocks. The sequence matters more than the exact dates.</div>
+  <h2>🗓 Your day-by-day plan<span class="rule"></span></h2>
+  <div class="h2sub">Every study day, spelled out. Click a day to open its blocks — or use the button to open or close all of them at once. Most days are <b>two clusters (2h + 2h)</b>; a cluster's gap-drill adds ~30 min and can spill into the next day. <b>GP</b> is one 50-min phase every 2–3 days. <b>Saturday</b> = cumulative test (4–6h); <b>Sunday</b> = rest.</div>
+  <div class="foldbar">
+    <button class="foldbtn" id="foldBtn">⊞ Expand all days</button>
+    <span class="hint">show every block on every day, or collapse back to the date rows</span>
+  </div>
   <div id="sched"></div>
 
+  <h2>🎯 Your prelim papers<span class="rule"></span></h2>
+  <div class="h2sub">The finish line — every paper you sit, in order. GP opens it (24 Aug); Biology closes it. The two <span style="color:var(--bad)">practical</span> papers come early and still need dedicated prep in October.</div>
+  <div class="exams" id="exams"></div>
+
   <h2>📓 Progress log<span class="rule"></span></h2>
-  <div class="h2sub">What you actually studied, day by day, newest first. The schedule above is the plan; this is the record of what really happened.</div>
+  <div class="h2sub">What you actually studied, newest first. The plan above is the target; this is the record of what really happened.</div>
   <div id="log"></div>
 
-  <h2>🧪 Test topics — the Sunday test pool<span class="rule"></span></h2>
-  <div class="h2sub">Every topic you finish lands here, mirrored from the Exambackcasting repo. Each Sunday's cumulative test is built from this list. Chemistry, Biology and GP haven't started yet — nothing to test there.</div>
+  <h2>🧪 Test topics — the cumulative test pool<span class="rule"></span></h2>
+  <div class="h2sub">Every topic you finish lands here. Each Saturday's cumulative test is built from this list.</div>
   <div class="tt" id="tt"></div>
 
-  <h2>🗺 The full hierarchy — everything to drill<span class="rule"></span></h2>
-  <div class="h2sub">Every topic across all five subjects, with its tutorial number. <b>DRILL</b> = prelim priority · <b>LATER</b> = A-levels only · <b>BUILT</b> = done. By the A-levels (2–27 Nov 2026) everything here should be nailed, multiple times.</div>
+  <h2>🗺 The full map — everything to drill<span class="rule"></span></h2>
+  <div class="h2sub">Every topic across all five subjects, with its tutorial number. <b>DRILL</b> = prelim priority · <b>LATER</b> = pushed to A-levels · <b>BUILT</b> = done. By the A-levels (2–27 Nov 2026) everything here should be nailed, multiple times.</div>
   <div id="map"></div>
 
   <footer>
-    Progress is <b>minutes-weighted</b>, not day-counted. <em>Expected</em> = minutes scheduled on every study day up to and including today.<br>
-    Ethan reports what he completed; boxes and completion dates are written into <code>plan.js</code> and pushed. Anyone can fork and open a PR.
+    This dashboard tracks <b>clusters done</b>, not guessed hours — the numbers up top are real counts, not estimates. Days-to-prelim and study-days-left update live.<br>
+    You report what you finished; it's written into <code>plan.js</code> and pushed.
     <span id="lu"></span>
   </footer>
 </div>
@@ -275,123 +235,63 @@ footer a{color:var(--dim)}
 (function(){
   const P=window.PLAN, S=P.subjects, M=P.meta;
   const today=new Date().toISOString().slice(0,10);
+  const PRELIM='2026-08-24';
   const h=m=>(m/60);
   const fmt=m=>{const x=h(m); return (Math.round(x*10)/10).toString();};
+  const MO=['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const lbl=(s)=>{const[,mo,dy]=s.split('-');return +dy+' '+MO[+mo];};
 
-  // ---- numbers (minutes-weighted) ----
-  let doneM=0, expM=0, totM=0;
-  P.days.forEach(d=>d.blocks.forEach(b=>{
-    totM+=b.mins; if(b.done)doneM+=b.mins; if(d.date<=today)expM+=b.mins;
-  }));
-  const pct=totM?doneM/totM:0, deltaH=Math.round((doneM-expM)/60*10)/10;
-  const daysLeft=P.days.filter(d=>d.date>=today).length;
-  const cdDays=Math.max(0,Math.round((new Date(M.prelim)-new Date(today))/864e5));
-  // a cluster is drilled when its standard day is fully done, or (GP skills) its buffer block is done
-  const doneClusters=new Set();
-  P.days.forEach(d=>{
-    if(d.clusterRef && d.blocks.every(b=>b.done)) doneClusters.add(d.clusterRef);
-    d.blocks.forEach(b=>{ if(b.clusterRef && b.done) doneClusters.add(b.clusterRef); });
-  });
-  const clustersDone=doneClusters.size, clustersTot=P.clusters.length;
+  // ---- accurate counters (no guessed hours, no delta, no "slipping") ----
+  const cdDays=Math.max(0,Math.round((new Date(PRELIM)-new Date(today))/864e5));
+  const studyLeft=P.days.filter(d=>d.type==='standard'&&d.date>=today).length;
+  // clusters done = finished-before-this-grid baseline + any grid cluster now ticked off
+  const seen=new Set();
+  P.days.forEach(d=>d.blocks.forEach(b=>{ if(b.clusterRef&&b.done&&!seen.has(b.clusterRef)){seen.add(b.clusterRef);} }));
+  const clustersDone=(M.clustersDone||0)+seen.size;
+  const clustersTot=M.clustersTotal||clustersDone||1;
+  const topicsLeft=Math.max(0,clustersTot-clustersDone);
+  const pct=clustersDone/clustersTot;
 
   document.getElementById('hsub').innerHTML=
-    `${M.student} · ${M.studyDays} study days · 2 subjects/day · 2h each · ~${M.perWeekHrs} hrs/week
-     <span class="mono">${M.start} → ${M.end}</span>`;
+    `${M.subtitle||('Ethan Lim · '+M.studyDays+' study days')} <span class="mono">${lbl(M.start)} → prelim ${lbl(PRELIM)}</span>`;
   document.getElementById('cd').textContent=cdDays;
   document.getElementById('cdl').textContent=cdDays===0?'prelim today':'days to prelim';
   document.getElementById('mTarget').innerHTML=M.target;
-  document.getElementById('mReality').innerHTML=M.reality;
   document.getElementById('lu').textContent='Last updated '+M.lastUpdated+'.';
 
-  const col = deltaH>=-1 ? 'var(--ok)' : (deltaH<-8 ? 'var(--bad)' : 'var(--warn)');
-  document.getElementById('ring').style.background=`conic-gradient(${col} ${Math.round(pct*360)}deg, #1c1e25 0)`;
+  document.getElementById('ring').style.background=`conic-gradient(var(--ok) ${Math.round(pct*360)}deg, #1c1e25 0)`;
   document.getElementById('pct').textContent=Math.round(pct*100)+'%';
-  document.getElementById('hd').textContent=fmt(doneM);
-  document.getElementById('hdT').textContent='/'+fmt(totM)+'h';
-  document.getElementById('he').textContent=fmt(expM)+'h';
-  document.getElementById('dleft').textContent=daysLeft;
-  document.getElementById('cdone').textContent=clustersDone;
-  document.getElementById('cT').textContent='/'+clustersTot;
-  const dEl=document.getElementById('dl');
-  dEl.textContent=(deltaH>0?'+':'')+deltaH+'h';
-  dEl.style.color=col;
+  document.getElementById('s_prelim').textContent=cdDays;
+  document.getElementById('s_studyleft').textContent=studyLeft;
+  document.getElementById('s_done').textContent=clustersDone;
+  document.getElementById('s_doneT').textContent='/'+clustersTot;
+  document.getElementById('s_left').textContent=topicsLeft;
 
-  let txt,dot;
-  if(doneM===0&&expM===0){txt='<b>Not started.</b> Day 1 is '+P.days[0].label+'.';dot='var(--dim2)';}
-  else if(deltaH>=1){txt='<b>Ahead.</b> '+deltaH+' hours in front of schedule.';dot='var(--ok)';}
-  else if(deltaH>=-1){txt='<b>On track.</b> Within an hour of schedule.';dot='var(--ok)';}
-  else if(deltaH>=-8){txt='<b>Slipping.</b> '+Math.abs(deltaH)+' hours behind — one buffer day recovers this.';dot='var(--warn)';}
-  else{txt='<b>Behind.</b> '+Math.abs(deltaH)+' hours down — that is '+(Math.abs(deltaH)/3.83).toFixed(1)+
-       ' full days. Use the drop order.';dot='var(--bad)';}
-  document.getElementById('stxt').innerHTML=txt;
-  const st=document.getElementById('status');
-  st.querySelector('.dot').style.background=dot;
-  st.style.borderColor=(dot==='var(--dim2)')?'var(--line)':dot;
-  document.getElementById('stail').textContent=daysLeft+' days · '+fmt(totM-doneM)+'h remaining';
-
-  // ---- cycle ----
-  document.getElementById('cyc').innerHTML=P.cycle.map(c=>
-    `<div class="row"><div class="t">${c.mins} min</div>
-     <div><div class="nm">${c.name}</div><div class="ds">${c.desc}</div></div></div>`).join('');
-
-  // ---- clusters (grouped) ----
   const order=['maths','chem','csc','bio','gp'];
-  document.getElementById('clusters').innerHTML=order.map(k=>{
-    const s=S[k], list=P.clusters.filter(c=>c.subject===k);
-    const nd=list.filter(c=>doneClusters.has(c.name)).length;
-    return `<div class="cl" style="border-left:2px solid ${s.colour}">
-      <div class="hd"><span class="nm">${s.full}</span><span class="cd">${s.code}</span>
-        <span class="ct">${nd}/${list.length} drilled</span></div>
-      <div class="nt">${s.note}</div>
-      <ol>${list.map(c=>`<li class="${doneClusters.has(c.name)?'done':''}">${c.name}${c.flag?`<span class="flag">${c.flag}</span>`:''}</li>`).join('')}</ol>
-    </div>`;}).join('');
 
-  // ---- map ----
-  document.getElementById('map').innerHTML=order.map((k,i)=>{
-    const s=S[k], m=P.map[k];
-    return `<details class="mp" ${i===0?'open':''}>
-      <summary><span class="arw">▶</span><span class="snm" style="color:${s.colour}">${s.full}</span>
-        <span class="scd">${s.code.split(' ')[0]}</span><span class="stag">· ${m.tag}</span>
-        <span class="sun">${m.units}</span></summary>
-      <div class="body">
-        ${m.sections.map(sec=>`
-          <div class="sec">${sec.name}</div>
-          ${sec.topics.map(t=>`<div class="tp">
-            <div class="th"><span class="tn">${t.n}</span>
-              <span class="badge b-${t.b}">${t.b==='BUILT'?'✓ BUILT':t.b==='DRILL'?'◎ DRILL':'👁 COVER'}</span>
-              ${t.f?`<span class="tf">⚑ ${t.f}</span>`:''}</div>
-            ${t.subs.length? (t.subs.length>3
-                ? `<ul>${t.subs.map(x=>`<li>${x}</li>`).join('')}</ul>`
-                : `<div class="inline">${t.subs.join(' · ')}</div>`) : ''}
-          </div>`).join('')}`).join('')}
-        ${m.note?`<div class="mnote">${m.note}</div>`:''}
-      </div></details>`;}).join('');
-
-  // ---- schedule ----
-  const CKPT={16:'<b>🏁 Checkpoint.</b> All 25 load-bearing clusters now covered once — the rest is cumulative testing, ⚑ 2nd passes, and timed papers.',
-              28:'<b>Content + all five papers done.</b> Week 5 is pure convergence — close what the papers exposed, retest your weakest subject.'};
+  // ---- schedule (the star) ----
   const byWeek={}; P.days.forEach(d=>(byWeek[d.week]||=[]).push(d));
-  const MO=['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   let html='';
   P.bounds.forEach(([w,a,b])=>{
     const ds=byWeek[w]||[];
     const wm=ds.reduce((x,d)=>x+d.mins,0), wd=ds.reduce((x,d)=>x+d.blocks.reduce((y,z)=>y+(z.done?z.mins:0),0),0);
     const r0=ds[0].date, r1=ds[ds.length-1].date;
-    const lbl=(s)=>{const[,mo,dy]=s.split('-');return +dy+' '+MO[+mo];};
     html+=`<div class="wk"><div class="wkh"><span class="t">▶ WEEK ${w} · ${lbl(r0)}–${lbl(r1)}</span>
-      <span class="d">${P.weekTitles[w]}</span><span class="rule"></span>
+      <span class="d">${P.weekTitles[w]||''}</span><span class="rule"></span>
       <span class="pc">${fmt(wd)}/${fmt(wm)}h</span></div>`;
     ds.forEach(d=>{
-      const s=S[d.subject], all=d.blocks.every(x=>x.done), any=d.blocks.some(x=>x.done);
+      const s=S[d.subject]||{name:d.type,colour:'#8c909b'}, all=d.blocks.every(x=>x.done), any=d.blocks.some(x=>x.done);
       const [,mo,dy]=d.date.split('-');
       const cls=['day',d.type,d.date===today?'today':'',d.date<today?'past':'',all?'alldone':''].filter(Boolean).join(' ');
       const nDone=d.blocks.filter(x=>x.done).length;
+      const tagTxt=d.type==='test'?'TEST':(s.name||'');
+      const tagCol=d.type==='test'?'var(--bad)':s.colour;
       html+=`<details class="${cls}" ${d.date===today?'open':''}>
         <summary class="dh">
           <span class="dn">DAY ${d.n}</span>
           <span class="dd">${d.weekday} ${+dy} ${MO[+mo]}</span>
-          <span class="tag" style="background:${s.colour}1f;color:${s.colour}">${d.type==='standard'?s.name:d.type}</span>
-          <span class="lb">${d.label}${d.flag?`<span class="flag">${d.flag}</span>`:''}</span>
+          <span class="tag" style="background:${tagCol}1f;color:${tagCol}">${tagTxt}</span>
+          <span class="lb">${d.label}${d.flag?`<span style="color:var(--bad);font-size:11px;margin-left:5px">${d.flag}</span>`:''}</span>
           ${all?'<span class="ck">✓ done</span>':(any?`<span class="ck">${nDone}/${d.blocks.length}</span>`:'')}
           <span class="mn">${fmt(d.mins)}h</span>
         </summary>
@@ -404,7 +304,6 @@ footer a{color:var(--dim)}
             ${b.doneDate?`<span class="bdd">${b.doneDate}</span>`:''}
           </div>`).join('')}
         </div></details>`;
-      if(CKPT[d.n]) html+=`<div class="ckpt">${CKPT[d.n]}</div>`;
       const nxt=new Date(d.date+'T00:00:00Z'); nxt.setUTCDate(nxt.getUTCDate()+1);
       const ns=nxt.toISOString().slice(0,10);
       if(P.rest.includes(ns)){const[,m2,d2]=ns.split('-');
@@ -412,12 +311,34 @@ footer a{color:var(--dim)}
     });
     html+='</div>';
   });
-  html+=`<div class="exam"><span class="n">24 AUG</span><span class="t">${M.prelimLabel}</span>
-    <span class="s">If your prelim lands earlier, cut buffer days first, then the lowest-priority clusters.</span></div>`;
+  html+=`<div class="exam"><span class="n">24 AUG</span><span class="t">${M.prelimLabel||'Prelim exams begin — GP Paper 1'}</span>
+    <span class="s">Everything above should be drilled at least once by here.</span></div>`;
   document.getElementById('sched').innerHTML=html;
 
-  const _dl=document.getElementById('droplist'); if(_dl)_dl.innerHTML=P.drop.map(x=>`<li>${x}</li>`).join('');
-  const _nl=document.getElementById('neverlist'); if(_nl)_nl.textContent=P.never.join(' · ')+'.';
+  // ---- expand / collapse all days ----
+  let expanded=false;
+  const foldBtn=document.getElementById('foldBtn');
+  foldBtn.onclick=function(){
+    expanded=!expanded;
+    document.querySelectorAll('#sched details.day').forEach(el=>{el.open=expanded;});
+    foldBtn.textContent=expanded?'⊟ Collapse all days':'⊞ Expand all days';
+  };
+
+  // ---- prelim exam dates ----
+  const exEl=document.getElementById('exams');
+  if(exEl && P.exams && P.exams.length){
+    exEl.innerHTML=P.exams.map(x=>{
+      const s=S[x.subject]||{name:x.subject,colour:'#8c909b'};
+      const [,mo,dy]=x.date.split('-');
+      const prac=/Practical/i.test(x.paper);
+      return `<div class="exrow ${prac?'prac':''}">
+        <span class="exd">${x.weekday} ${+dy} ${MO[+mo]}</span>
+        <span class="extag" style="background:${s.colour}1f;color:${s.colour}">${s.name}</span>
+        <span class="exp">${x.paper}</span>
+        <span class="ext">${x.time}${x.dur?' · '+x.dur:''}</span>
+      </div>`;
+    }).join('');
+  }
 
   // ---- progress log ----
   const logEl=document.getElementById('log');
@@ -448,28 +369,12 @@ footer a{color:var(--dim)}
     logEl.innerHTML='<div class="logempty">No entries yet — your first logged day will appear here.</div>';
   }
 
-  // ---- prelim exam dates ----
-  const exEl=document.getElementById('exams');
-  if(exEl && P.exams && P.exams.length){
-    exEl.innerHTML=P.exams.map(x=>{
-      const s=S[x.subject]||{name:x.subject,colour:'#8c909b'};
-      const [,mo,dy]=x.date.split('-');
-      const prac=/Practical/i.test(x.paper);
-      return `<div class="exam ${prac?'prac':''}">
-        <span class="exd">${x.weekday} ${+dy} ${MO[+mo]}</span>
-        <span class="extag" style="background:${s.colour}1f;color:${s.colour}">${s.name}</span>
-        <span class="exp">${x.paper}</span>
-        <span class="ext">${x.time}${x.dur?' · '+x.dur:''}</span>
-      </div>`;
-    }).join('');
-  }
-
-  // ---- test topics (Sunday test pool) ----
+  // ---- test topics ----
   const ttEl=document.getElementById('tt');
   if(ttEl && P.testTopics && P.testTopics.length){
     ttEl.innerHTML=P.testTopics.map(t=>{
       const s=S[t.subject]||{name:t.subject,colour:'#8c909b'};
-      const done=t.status==='done';
+      const done=t.status==='done'||/done/.test(t.status||'');
       const stc=done?'var(--ok)':'var(--warn)', stbg=done?'rgba(95,211,168,.15)':'rgba(232,198,95,.15)';
       return `<div class="ttrow ${done?'done':'gaps'}">
         <div class="tth">
@@ -482,6 +387,27 @@ footer a{color:var(--dim)}
       </div>`;
     }).join('');
   } else if(ttEl){ ttEl.innerHTML='<div class="logempty">No finished topics yet.</div>'; }
+
+  // ---- map ----
+  document.getElementById('map').innerHTML=order.map((k,i)=>{
+    const s=S[k], m=P.map[k]; if(!m) return '';
+    return `<details class="mp" ${i===0?'open':''}>
+      <summary><span class="arw">▶</span><span class="snm" style="color:${s.colour}">${s.full}</span>
+        <span class="scd">${s.code.split(' ')[0]}</span><span class="stag">· ${m.tag}</span>
+        <span class="sun">${m.units||''}</span></summary>
+      <div class="body">
+        ${m.sections.map(sec=>`
+          <div class="sec">${sec.name}</div>
+          ${sec.topics.map(t=>`<div class="tp">
+            <div class="th"><span class="tn">${t.n}</span>
+              <span class="badge b-${t.b}">${t.b==='BUILT'?'✓ BUILT':t.b==='DRILL'?'◎ DRILL':t.b==='LATER'?'· LATER':'👁 COVER'}</span>
+              ${t.f?`<span class="tf">⚑ ${t.f}</span>`:''}</div>
+            ${t.subs&&t.subs.length? (t.subs.length>3
+                ? `<ul>${t.subs.map(x=>`<li>${x}</li>`).join('')}</ul>`
+                : `<div class="inline">${t.subs.join(' · ')}</div>`) : ''}
+          </div>`).join('')}`).join('')}
+        ${m.note?`<div class="mnote">${m.note}</div>`:''}
+      </div></details>`;}).join('');
 })();
 </script>
 </body>
