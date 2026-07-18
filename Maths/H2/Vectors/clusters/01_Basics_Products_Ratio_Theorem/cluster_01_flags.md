@@ -123,3 +123,14 @@ Context: full mixed Maths paper, scored ~90%, self-reviewed as "too easy" (diffi
 
 No new drill cluster from this paper (gaps already covered by `gap_Basics_Products_Ratio_Theorem/`). Logged for tracking per the always-log rule.
 
+
+## 2026-07-18 — gap-cluster drill (Loom)
+Drilled `gap_Basics_Products_Ratio_Theorem`. Content is SOLID — he solved nearly everything, most of it trivially. **Cluster was TOO EASY** (his words: "they'd never ask this", "make the gap clusters hard", "same level as the exam papers"). Real gaps surfaced only on the hard items:
+- **Collinearity** — reached for position vectors; correct method is DISPLACEMENT vectors (PQ, QR) parallel via common k. [was ACTIVE → learned]
+- **Intersecting cevians** (OP expressed two ways → compare A/B coefficients → simultaneous) — got tangled in the algebra. [ACTIVE — hardest]
+- **Foot of perpendicular + exact ⊥ distance** (ON on L, NP·dir=0, d=√(|OP|²−|ON|²)) — worked it, slow/uncertain. [FRAGILE]
+- **Point on ray, given magnitude** = |OB|×unit(A) — didn't know the shortcut, did it long-hand. [FRAGILE]
+- **AP as scalar multiple via ratio** (step 1) — was stuck. [FRAGILE]
+- **(a+b)·(a−b) / a×b expansion + angle** — "why can't I sub a+b as a" → must expand distributively. [FRAGILE]
+- **Scalar projection in words** (shadow, 3 points) — struggled to articulate. [FRAGILE, memorise]
+ACTION: rebuild the Vectors gap cluster at REAL exam difficulty (Q9/Q10 level) — collinearity-by-displacement, intersecting cevians, foot-of-perpendicular, integrated multi-part.

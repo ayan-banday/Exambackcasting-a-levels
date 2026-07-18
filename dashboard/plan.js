@@ -1947,6 +1947,12 @@ window.PLAN = {
      "mins": 0,
      "what": "Gap cluster (Stoich & Redox weakspots) drilled ✓ — topic fully consolidated",
      "done": true
+    },
+    {
+     "subject": "maths",
+     "mins": 0,
+     "what": "Vectors gap cluster drilled ✓ — content solid; flagged real gaps (collinearity, cevians, perpendicular). Rebuilding harder.",
+     "done": true
     }
    ],
    "note": "Did the Maths paper, not the CSC one. Next: finish the Chemistry cluster (drilling) + the CSC Governance paper. Math + Chem gap clusters still outstanding."
