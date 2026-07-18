@@ -855,7 +855,8 @@ window.PLAN = {
      "desc": "Build the sheet, solve questions out loud (why each step matters + its trigger), then gap-drill.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Chemical Bonding — VSEPR, polarity, IMF"
+     "clusterRef": "Chemical Bonding — VSEPR, polarity, IMF",
+     "clusterHref": "clusters/chem_01_bonding.html"
     }
    ]
   },

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chemistry — Chemical Bonding (Gateway to Organic) · Cluster 1</title>
+<script>
+MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],packages:{'[+]':['mhchem']}},loader:{load:['[tex]/mhchem']}};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+:root{--bg:#fbfbf9;--ink:#1a1a1a;--dim:#6b6b6b;--line:#e2e2dc;--card:#fff;--accent:#7a1f1f;--ok:#1f6b4a;--warn:#8a5a1f;--code:#f3f3ee}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 Georgia,'Times New Roman',serif;padding:40px 20px 120px}
+.wrap{max-width:860px;margin:0 auto}
+.hd{border-bottom:2.5px solid var(--ink);padding-bottom:16px;margin-bottom:8px}
+.hd .row{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
+.hd h1{font-size:22px;font-weight:700;letter-spacing:-.01em}
+.hd .code{font-family:ui-monospace,Menlo,monospace;font-size:13px;color:var(--dim)}
+.hd .sub{font-size:14px;color:var(--dim);margin-top:6px;font-style:italic}
+.how{background:#f5f2ec;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:6px;padding:14px 18px;margin:22px 0;font-size:14.5px}
+.how b{color:var(--accent)}
+.how ul{margin:8px 0 0 20px}.how li{margin:3px 0}
+.sec{font-family:ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:34px 0 14px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.toolkit{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 22px 18px;margin-bottom:10px}
+.toolkit .t{font-weight:700;font-size:15px;margin:16px 0 4px}
+.toolkit p{font-size:14.5px;margin:4px 0;color:#2a2a2a}
+.toolkit .k{color:var(--accent);font-weight:700}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px 22px;margin-bottom:16px}
+.card .qn{display:flex;align-items:baseline;gap:10px;margin-bottom:10px}
+.card .qn .num{font-family:ui-monospace,Menlo,monospace;font-weight:700;font-size:14px;color:var(--accent)}
+.card .qn .marks{margin-left:auto;font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:var(--dim)}
+.card .q{font-size:15.5px}
+.card .q ol{margin:8px 0 0 22px}.card .q li{margin:5px 0}
+.card .q .part{margin-top:8px}
+details{margin-top:14px;border-top:1px dashed var(--line);padding-top:12px}
+details.arch{border-top:1px dashed var(--line)}
+summary{cursor:pointer;font-family:ui-monospace,Menlo,monospace;font-size:12.5px;letter-spacing:.04em;color:var(--accent);list-style:none;user-select:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:'▸ ';font-size:11px}
+details[open] summary::before{content:'▾ '}
+.soln{font-size:14.5px;margin-top:12px;color:#222}
+.soln p{margin:8px 0}
+.soln .step{margin:8px 0;padding-left:14px;border-left:2px solid var(--line)}
+.soln .m{color:var(--ok);font-family:ui-monospace,Menlo,monospace;font-size:12px;font-weight:700}
+.soln table{border-collapse:collapse;margin:12px 0;font-size:13.5px;width:100%}
+.soln th,.soln td{border:1px solid var(--line);padding:6px 10px;text-align:left}
+.soln th{background:var(--code);font-family:ui-monospace,Menlo,monospace;font-weight:700;font-size:12px}
+.arch .soln{color:#333}
+.arch b{color:var(--warn)}
+.gate{background:#eef4f0;border:1px solid #cfe3d7;border-radius:5px;padding:4px 10px;font-size:13px;color:var(--ok);display:inline-block;margin-top:8px}
+.foot{margin-top:40px;border-top:1px solid var(--line);padding-top:16px;font-size:13.5px;color:var(--dim)}
+.foot b{color:var(--accent)}
+@media print{body{padding:0}details{display:block}details>summary{display:none}details:not([open])>*{display:block!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hd">
+    <div class="row"><h1>Chemical Bonding — the Gateway to Organic</h1><span class="code">H2 Chemistry 9729 · Cluster 1</span></div>
+    <div class="sub">Procedural cluster. Attempt each question cold; say your reasoning out loud on Wispr Flow; then reveal. These are set at real exam difficulty — you should feel the load.</div>
+  </div>
+
+  <div class="how">
+    <b>How to run this cluster</b>
+    <ul>
+      <li>Pre-study the toolkit, then work each question <b>before</b> revealing anything.</li>
+      <li>While solving, say out loud: <i>why is this step needed, and what happens if I skip it?</i> When stuck, ask: <i>what concept is here that I'm missing that I'm supposed to know?</i></li>
+      <li>After solving, extract the <b>procedure</b> (steps 1→n) and the <b>trigger</b> (what in the question tells me to run those steps). The archetype block at the end of each card names both.</li>
+      <li>If a question feels easy, it's not doing work — tell me and I'll harden it. Report your gaps at the end and I'll build the gap cluster.</li>
+    </ul>
+  </div>
+
+  <div class="sec">Toolkit — the bonding rules organic sits on</div>
+  <div class="toolkit">
+    <div class="t">1 · Shapes (VSEPR)</div>
+    <p>Count <span class="k">bonding pairs + lone pairs</span> on the central atom → electron geometry → molecular shape. Repulsion order: <span class="k">lp–lp &gt; lp–bp &gt; bp–bp</span>; each lone pair squeezes bond angles ~2–2.5°. Base shapes: 2→linear 180°, 3→trigonal planar 120°, 4→tetrahedral 109.5°, 5→trigonal bipyramidal, 6→octahedral 90°. Lone pairs on 4 domains: 1 lp → pyramidal (\(\ce{NH3}\), 107°), 2 lp → bent (\(\ce{H2O}\), 104.5°).</p>
+    <div class="t">2 · Electronegativity &amp; polarity</div>
+    <p>Electronegativity = pull on bonding electrons; ↑ across a period, ↓ down a group. A difference makes a bond polar (\(\delta+ / \delta-\)). A molecule with polar bonds can still be <span class="k">non-polar if symmetric</span> (dipoles cancel: \(\ce{CO2}\), \(\ce{CCl4}\), \(\ce{BF3}\)).</p>
+    <div class="t">3 · σ and π bonds</div>
+    <p><span class="k">σ</span> = head-on overlap (every single bond; allows free rotation). <span class="k">π</span> = sideways p-orbital overlap, present in multiple bonds and <b>locks rotation</b> → cis-trans isomerism. \(\ce{C=C}\) = 1σ+1π; \(\ce{C#C}\) = 1σ+2π; \(\ce{C=O}\) = 1σ+1π.</p>
+    <div class="t">4 · Dative (coordinate) bond</div>
+    <p>A covalent bond where <span class="k">both electrons come from one atom</span> (a lone pair donated into an empty orbital): \(\ce{NH4+}\), \(\ce{H3O+}\), \(\ce{Al2Cl6}\).</p>
+    <div class="t">5 · Intermolecular forces (weakest → strongest)</div>
+    <p><span class="k">id–id</span> (dispersion; grows with number of electrons / \(M_r\) / contact area) &lt; <span class="k">pd–pd</span> (permanent dipoles) &lt; <span class="k">hydrogen bonding</span> (H bonded to N/O/F, attracted to a lone pair on N/O/F). IMF set boiling/melting point, solubility, viscosity — <b>not</b> covalent bond strength.</p>
+    <div class="t">6 · Gateway to organic</div>
+    <p>Bond polarity sets reactivity: a <span class="k">\(\delta+\) carbon</span> (in \(\ce{C-X}\), \(\ce{C=O}\), \(\ce{C-OH}\)) is attacked by <b>nucleophiles</b>; <span class="k">π electron density</span> (\(\ce{C=C}\), benzene) is attacked by <b>electrophiles</b>. Shapes (109.5° sp³, 120° sp², 180° sp) and restricted rotation about \(\ce{C=C}\) come straight from this bonding.</p>
+  </div>
+
+  <div class="sec">Questions — attempt cold</div>
+
+  <!-- Q1 -->
+  <div class="card">
+    <div class="qn"><span class="num">Question 1</span><span class="marks">[7]</span></div>
+    <div class="q">
+      <div class="part">(a) By reference to electron-pair repulsion, explain why the bond angle decreases in the order \(\ce{CH4} &gt; \ce{NH3} &gt; \ce{H2O}\), quoting an approximate value for each. <span style="color:#999">[4]</span></div>
+      <div class="part">(b) Predict and explain the shape of, and bond angle in, the \(\ce{ClF3}\) molecule. <span style="color:#999">[3]</span></div>
+    </div>
+    <details><summary>Reveal worked solution</summary>
+      <div class="soln">
+        <p><b>(a)</b> All three have four electron domains around the central atom, so the base geometry is tetrahedral.</p>
+        <table>
+          <tr><th>Molecule</th><th>bp / lp</th><th>Angle</th><th>Reason</th></tr>
+          <tr><td>\(\ce{CH4}\)</td><td>4 bp, 0 lp</td><td>109.5°</td><td>only bp–bp repulsion</td></tr>
+          <tr><td>\(\ce{NH3}\)</td><td>3 bp, 1 lp</td><td>≈107°</td><td>1 lp; lp–bp &gt; bp–bp squeezes the angle</td></tr>
+          <tr><td>\(\ce{H2O}\)</td><td>2 bp, 2 lp</td><td>≈104.5°</td><td>2 lp; even greater lp–lp / lp–bp repulsion</td></tr>
+        </table>
+        <p class="step">The key idea markers reward: a <b>lone pair repels more strongly than a bonding pair</b> (it sits closer to the central atom, not shared), so each added lone pair pushes the bonding pairs closer together. <span class="m">A1</span> for the ordering + reason, <span class="m">A1</span> per correct angle set.</p>
+        <p><b>(b)</b> \(\ce{ClF3}\): Cl has 7 valence e⁻; 3 are used bonding to F, leaving <b>3 bonding pairs + 2 lone pairs = 5 domains</b> → trigonal bipyramidal electron geometry.</p>
+        <p class="step">The 2 lone pairs occupy equatorial positions (least repulsion). Molecular shape = <b>T-shaped</b>, with F–Cl–F angles slightly less than 90° (≈87.5°) because the equatorial lone pairs repel the axial bonding pairs. <span class="m">A1</span> shape, <span class="m">A1</span> angle, <span class="m">A1</span> reason (lp in equatorial).</p>
+      </div>
+    </details>
+    <details class="arch"><summary>Archetype &amp; trap</summary>
+      <div class="soln">
+        <p><b>Archetype:</b> VSEPR shape from a lone-pair count, plus the lp&gt;bp repulsion argument for angle differences.</p>
+        <p><b>Trigger:</b> asked for shape/angle of a species that <i>has lone pairs</i>, or to compare angles across a series → always count bp + lp first, then apply the repulsion order.</p>
+        <p><b>Trap:</b> quoting angles without the <i>reason</i> (no marks), forgetting the 5-domain expanded octet on Cl (many write "trigonal planar"), and placing lone pairs axially instead of equatorially.</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- Q2 -->
+  <div class="card">
+    <div class="qn"><span class="num">Question 2</span><span class="marks">[5]</span></div>
+    <div class="q">
+      <div class="part">In the vapour phase aluminium chloride exists as the dimer \(\ce{Al2Cl6}\).</div>
+      <div class="part">(a) Describe the bonding in \(\ce{Al2Cl6}\), stating which bonds are dative and explaining why they form. <span style="color:#999">[3]</span></div>
+      <div class="part">(b) State and explain the shape around each aluminium atom in the dimer. <span style="color:#999">[2]</span></div>
+    </div>
+    <details><summary>Reveal worked solution</summary>
+      <div class="soln">
+        <p><b>(a)</b> In \(\ce{AlCl3}\), Al has only 6 electrons in its valence shell — it is <b>electron-deficient</b> with an empty orbital. Two \(\ce{AlCl3}\) units join: a <b>lone pair on a Cl of one unit is donated into the empty orbital of the Al on the other unit</b>. This forms two bridging <b>dative (coordinate) bonds</b>, one in each direction. <span class="m">A1</span> electron deficiency, <span class="m">A1</span> lone pair donated to empty orbital, <span class="m">A1</span> two bridging dative bonds.</p>
+        <p><b>(b)</b> Each Al now has 4 bonding pairs (2 terminal Cl + 2 bridging Cl), 0 lone pairs → <b>tetrahedral</b>, ≈109.5°. <span class="m">A1</span> tetrahedral, <span class="m">A1</span> "4 bonding pairs, no lone pairs."</p>
+      </div>
+    </details>
+    <details class="arch"><summary>Archetype &amp; trap</summary>
+      <div class="soln">
+        <p><b>Archetype:</b> dative bonding driven by electron deficiency (empty orbital) + lone-pair donor.</p>
+        <p><b>Trigger:</b> a species with an atom short of an octet (Al, B) or a positive ion that gained a bond (\(\ce{NH4+}\), \(\ce{H3O+}\)) → look for the empty orbital and the lone-pair donor.</p>
+        <p><b>Trap:</b> saying "Al shares electrons with Cl" without naming <i>where both electrons come from</i>; forgetting that the shape around Al changes from trigonal planar (monomer) to tetrahedral (dimer).</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- Q3 -->
+  <div class="card">
+    <div class="qn"><span class="num">Question 3</span><span class="marks">[5]</span></div>
+    <div class="q">
+      <div class="part">(a) \(\ce{CO2}\) and \(\ce{SO2}\) both contain polar bonds, yet \(\ce{CO2}\) has no overall dipole moment while \(\ce{SO2}\) does. Explain. <span style="color:#999">[3]</span></div>
+      <div class="part">(b) State, with reasoning, which of \(\ce{CHCl3}\) and \(\ce{CCl4}\) has the larger dipole moment. <span style="color:#999">[2]</span></div>
+    </div>
+    <details><summary>Reveal worked solution</summary>
+      <div class="soln">
+        <p><b>(a)</b> \(\ce{CO2}\) is <b>linear</b> (2 domains on C, no lone pairs): the two \(\ce{C=O}\) bond dipoles are equal and point in exactly opposite directions, so they <b>cancel</b> → no net dipole. \(\ce{SO2}\) is <b>bent</b> (S has a lone pair, 3 domains): the two bond dipoles do <b>not</b> cancel and there is a net dipole. <span class="m">A1</span> \(\ce{CO2}\) linear/symmetric → cancel, <span class="m">A1</span> \(\ce{SO2}\) bent (lone pair), <span class="m">A1</span> dipoles don't cancel.</p>
+        <p><b>(b)</b> \(\ce{CCl4}\) is tetrahedral and symmetric → the four C–Cl dipoles cancel → non-polar. \(\ce{CHCl3}\) is not symmetric (one C–H, three C–Cl) → dipoles don't cancel. Therefore <b>\(\ce{CHCl3}\) has the larger dipole moment</b>. <span class="m">A1</span> answer, <span class="m">A1</span> symmetry/cancellation reason.</p>
+      </div>
+    </details>
+    <details class="arch"><summary>Archetype &amp; trap</summary>
+      <div class="soln">
+        <p><b>Archetype:</b> molecular polarity = vector sum of bond dipoles → decided by <i>shape/symmetry</i>, not by whether bonds are polar.</p>
+        <p><b>Trigger:</b> "explain why X is polar/non-polar" or "which has the larger dipole" → draw the shape, mark bond dipoles, check if they cancel.</p>
+        <p><b>Trap:</b> answering from electronegativity difference alone ("both have polar bonds so both are polar") — the mark is in the <i>symmetry</i>. This is the same logic that later tells you where an organic molecule is δ+.</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- Q4 -->
+  <div class="card">
+    <div class="qn"><span class="num">Question 4</span><span class="marks">[6]</span></div>
+    <div class="q">
+      <div class="part">(a) For propene, \(\ce{CH3CH=CH2}\), state the total number of σ and π bonds, and give the shape and bond angle around each of the three carbon atoms. <span style="color:#999">[3]</span></div>
+      <div class="part">(b) Explain, in terms of bonding, why but-2-ene exhibits cis-trans isomerism but but-1-ene does not. <span style="color:#999">[3]</span></div>
+    </div>
+    <details><summary>Reveal worked solution</summary>
+      <div class="soln">
+        <p><b>(a)</b> Propene \(\ce{CH3-CH=CH2}\): count every single bond as 1σ; the double bond is 1σ+1π.</p>
+        <p class="step">σ bonds: 3 (C–H on \(\ce{CH3}\)) + 1 (C–C) + 1 (C–H on middle C) + 2 (C–H on \(\ce{=CH2}\)) + 1 (the σ of \(\ce{C=C}\)) = <b>8 σ</b>. π bonds: <b>1 π</b> (in \(\ce{C=C}\)).</p>
+        <p class="step">Shapes: the \(\ce{CH3}\) carbon has 4 σ (4 domains) → <b>tetrahedral, 109.5°</b>. The two \(\ce{C=C}\) carbons each have 3 σ + part of 1 π (3 domains) → <b>trigonal planar, ≈120°</b>. <span class="m">A1</span> σ/π counts, <span class="m">A1</span> sp³ carbon, <span class="m">A1</span> sp² carbons.</p>
+        <p><b>(b)</b> The π bond in \(\ce{C=C}\) <b>prevents rotation</b> about the double bond, so the groups on each doubly-bonded carbon are locked in position. Cis-trans isomerism needs <b>two different groups on each of the two \(\ce{C=C}\) carbons</b>.</p>
+        <p class="step">In but-2-ene \(\ce{CH3CH=CHCH3}\), each \(\ce{C=C}\) carbon carries an H and a \(\ce{CH3}\) (two different groups) → cis and trans exist. In but-1-ene \(\ce{CH2=CHCH2CH3}\), the terminal \(\ce{=CH2}\) carbon carries <b>two identical H atoms</b> → no isomerism. <span class="m">A1</span> π locks rotation, <span class="m">A1</span> need 2 different groups per C, <span class="m">A1</span> applied to both molecules.</p>
+      </div>
+    </details>
+    <details class="arch"><summary>Archetype &amp; trap</summary>
+      <div class="soln">
+        <p><b>Archetype:</b> σ/π counting + the restricted-rotation origin of geometric isomerism.</p>
+        <p><b>Trigger:</b> any molecule with a multiple bond → count σ (all single bonds + one per multiple bond) and π (extras); "does it show cis-trans" → test for a π bond AND two different groups on each end.</p>
+        <p><b>Trap:</b> miscounting the σ inside the double bond (a \(\ce{C=C}\) still has 1σ), and asserting cis-trans without checking each carbon has two <i>different</i> groups. This is the exact reasoning alkene questions demand.</p>
+        <div class="gate">Gateway: the π bond you count here is the electron-rich site electrophiles attack in Alkenes.</div>
+      </div>
+    </details>
+  </div>
+
+  <!-- Q5 -->
+  <div class="card">
+    <div class="qn"><span class="num">Question 5</span><span class="marks">[5]</span></div>
+    <div class="q">
+      <div class="part">The boiling points of the Group 16 hydrides are: \(\ce{H2O}\) 100 °C, \(\ce{H2S}\) −60 °C, \(\ce{H2Se}\) −41 °C, \(\ce{H2Te}\) −2 °C.</div>
+      <div class="part">(a) Explain the general increase from \(\ce{H2S}\) to \(\ce{H2Te}\). <span style="color:#999">[2]</span></div>
+      <div class="part">(b) Account for the anomalously high boiling point of \(\ce{H2O}\). <span style="color:#999">[3]</span></div>
+    </div>
+    <details><summary>Reveal worked solution</summary>
+      <div class="soln">
+        <p><b>(a)</b> From \(\ce{H2S}\)→\(\ce{H2Te}\) the number of electrons increases, so the strength of <b>id–id (dispersion) forces</b> increases. More energy is needed to overcome them → boiling point rises. <span class="m">A1</span> more electrons/larger \(M_r\), <span class="m">A1</span> stronger id–id.</p>
+        <p><b>(b)</b> \(\ce{H2O}\) can form <b>hydrogen bonds</b> (H bonded to highly electronegative O; O also has lone pairs to accept H-bonds). Each water molecule H-bonds extensively. Hydrogen bonds are much stronger than the id–id / pd–pd forces in the others, so far more energy is needed to separate the molecules → anomalously high bp. <span class="m">A1</span> H-bonding named with the H–O + lone-pair condition, <span class="m">A1</span> stronger than id–id/pd–pd, <span class="m">A1</span> more energy to overcome.</p>
+      </div>
+    </details>
+    <details class="arch"><summary>Archetype &amp; trap</summary>
+      <div class="soln">
+        <p><b>Archetype:</b> boiling-point trend = identify the dominant IMF, then explain the change in that IMF.</p>
+        <p><b>Trigger:</b> a bp/mp trend down a group or across a series → id–id grows with electrons; a spike at the N/O/F hydride → hydrogen bonding.</p>
+        <p><b>Trap:</b> saying "the covalent bonds get weaker/stronger" — boiling breaks <i>intermolecular</i> forces, never covalent bonds. State the H-bond condition properly (H on N/O/F + lone pair acceptor).</p>
+        <div class="gate">Gateway: this H-bonding logic returns for alcohol, carboxylic-acid and amine boiling points/solubility.</div>
+      </div>
+    </details>
+  </div>
+
+  <!-- Q6 -->
+  <div class="card">
+    <div class="qn"><span class="num">Question 6</span><span class="marks">[4]</span></div>
+    <div class="q">
+      <div class="part">Ethanoic acid (\(M_r\) 60) boils at 118 °C — higher than propan-1-ol (\(M_r\) 60, 97 °C). Explain this difference, including the structure ethanoic acid adopts in the liquid and vapour phases. <span style="color:#999">[4]</span></div>
+    </div>
+    <details><summary>Reveal worked solution</summary>
+      <div class="soln">
+        <p>Both molecules hydrogen-bond through their O–H groups, but ethanoic acid H-bonds <b>more effectively</b>. Two ethanoic acid molecules form a <b>cyclic dimer</b> held by <b>two</b> hydrogen bonds (each \(\ce{O-H}\) to the \(\ce{C=O}\) oxygen of the other molecule).</p>
+        <p class="step">The carbonyl \(\ce{C=O}\) also withdraws electron density, making the O–H more polar (stronger H-bond donor) than the O–H of an alcohol. So the total H-bonding to be overcome on boiling is greater → higher bp. <span class="m">A1</span> both H-bond, <span class="m">A1</span> dimer with two H-bonds, <span class="m">A1</span> \(\ce{C=O}\) makes O–H more polar, <span class="m">A1</span> more energy → higher bp.</p>
+      </div>
+    </details>
+    <details class="arch"><summary>Archetype &amp; trap</summary>
+      <div class="soln">
+        <p><b>Archetype:</b> comparing H-bonding <i>strength/number</i> between two H-bonders of equal \(M_r\).</p>
+        <p><b>Trigger:</b> "why does X boil higher than its isomer/near-neighbour" where both H-bond → count/qualify the H-bonds (dimer, extra donor sites, effect of adjacent \(\ce{C=O}\)).</p>
+        <p><b>Trap:</b> stopping at "both H-bond" (no discriminating mark). The marks are in the <b>dimer</b> and the <b>carbonyl-enhanced O–H polarity</b>.</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- Q7 -->
+  <div class="card">
+    <div class="qn"><span class="num">Question 7</span><span class="marks">[5]</span></div>
+    <div class="q">
+      <div class="part">(a) Using bond polarity, identify and explain which carbon atom in 1-chloropropane, \(\ce{CH3CH2CH2Cl}\), is susceptible to attack by a nucleophile such as \(\ce{OH-}\). <span style="color:#999">[3]</span></div>
+      <div class="part">(b) Explain why, by contrast, the double bond in propene is attacked by electrophiles. <span style="color:#999">[2]</span></div>
+    </div>
+    <details><summary>Reveal worked solution</summary>
+      <div class="soln">
+        <p><b>(a)</b> Cl is more electronegative than C, so the \(\ce{C-Cl}\) bond is polar: the carbon bonded to Cl carries a partial positive charge, \(\ce{C^{δ+}-Cl^{δ-}}\). A nucleophile is an electron-pair donor and is attracted to electron-poor centres, so \(\ce{OH-}\) attacks the <b>\(\delta+\) carbon bearing the Cl</b> (C-1). <span class="m">A1</span> C–Cl polar, <span class="m">A1</span> that C is δ+, <span class="m">A1</span> nucleophile = e⁻-pair donor attracted to δ+.</p>
+        <p><b>(b)</b> In propene the \(\ce{C=C}\) has a π bond — a region of <b>high electron density</b> above and below the plane. An electrophile is an electron-pair acceptor, so it is attracted to and attacks this electron-rich π system. <span class="m">A1</span> π = high e⁻ density, <span class="m">A1</span> electrophile = e⁻-pair acceptor attracted to it.</p>
+      </div>
+    </details>
+    <details class="arch"><summary>Archetype &amp; trap</summary>
+      <div class="soln">
+        <p><b>Archetype:</b> translate bonding (polarity vs π density) directly into the site and type of organic attack.</p>
+        <p><b>Trigger:</b> "which atom is attacked / why does it react with a nucleophile/electrophile" → map electronegativity → δ+/δ− → nucleophile hits δ+ C; π/lone-pair density → electrophile hits it.</p>
+        <p><b>Trap:</b> mixing up nucleophile (donor, seeks δ+) and electrophile (acceptor, seeks e⁻-rich). Define both by what they donate/accept, not by charge alone.</p>
+        <div class="gate">Gateway: this IS the opening move of every Halogen Derivatives (nucleophilic substitution) and Alkene (electrophilic addition) mechanism.</div>
+      </div>
+    </details>
+  </div>
+
+  <!-- Q8 -->
+  <div class="card">
+    <div class="qn"><span class="num">Question 8</span><span class="marks">[4]</span></div>
+    <div class="q">
+      <div class="part">Give the shape and bond angle around the carbon atom in each of the following, relating each to the number of σ-bonding electron domains:</div>
+      <div class="q"><ol>
+        <li>the carbon in methane, \(\ce{CH4}\);</li>
+        <li>the carbonyl carbon (\(\ce{C=O}\)) in propanone, \(\ce{(CH3)2CO}\);</li>
+        <li>each carbon in ethyne, \(\ce{C2H2}\).</li>
+      </ol></div>
+    </div>
+    <details><summary>Reveal worked solution</summary>
+      <div class="soln">
+        <table>
+          <tr><th>Carbon</th><th>σ domains</th><th>Shape</th><th>Angle</th></tr>
+          <tr><td>\(\ce{CH4}\)</td><td>4</td><td>tetrahedral (sp³)</td><td>109.5°</td></tr>
+          <tr><td>carbonyl C in propanone</td><td>3 (two \(\ce{C-CH3}\) + one σ of \(\ce{C=O}\))</td><td>trigonal planar (sp²)</td><td>≈120°</td></tr>
+          <tr><td>each C in ethyne</td><td>2 (one \(\ce{C-H}\) + one σ of \(\ce{C#C}\))</td><td>linear (sp)</td><td>180°</td></tr>
+        </table>
+        <p class="step">Rule the examiner wants shown: shape is set by the number of <b>σ (electron) domains</b>, and π bonds do <b>not</b> count as extra domains — they sit within an existing σ framework. <span class="m">A1</span> each row (shape + angle).</p>
+      </div>
+    </details>
+    <details class="arch"><summary>Archetype &amp; trap</summary>
+      <div class="soln">
+        <p><b>Archetype:</b> shape from σ-domain count across sp³/sp²/sp carbons.</p>
+        <p><b>Trigger:</b> "shape/angle around this carbon" in an organic molecule → count σ bonds only (2→linear, 3→trigonal planar, 4→tetrahedral).</p>
+        <p><b>Trap:</b> counting the π bond of \(\ce{C=O}\) or \(\ce{C#C}\) as a separate domain and getting the wrong shape. π never adds a domain.</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- Q9 -->
+  <div class="card">
+    <div class="qn"><span class="num">Question 9</span><span class="marks">[4]</span></div>
+    <div class="q">
+      <div class="part">The \(\ce{C-C}\) bond length is 0.154 nm and \(\ce{C=C}\) is 0.134 nm.</div>
+      <div class="part">(a) Explain why \(\ce{C=C}\) is shorter than \(\ce{C-C}\). <span style="color:#999">[2]</span></div>
+      <div class="part">(b) The \(\ce{C=C}\) bond is stronger overall, yet alkenes are <i>more</i> reactive than alkanes. Explain this apparent contradiction. <span style="color:#999">[2]</span></div>
+    </div>
+    <details><summary>Reveal worked solution</summary>
+      <div class="soln">
+        <p><b>(a)</b> A double bond has <b>two shared pairs</b> (1σ + 1π) between the nuclei rather than one. The greater shared electron density pulls the two carbon nuclei closer together, so \(\ce{C=C}\) is shorter. <span class="m">A1</span> more bonding electrons/pairs, <span class="m">A1</span> stronger attraction pulls nuclei closer.</p>
+        <p><b>(b)</b> Reactivity is not about total bond strength but about accessibility of electrons. The <b>π component is exposed above/below the axis and is the weaker part</b> of the double bond, giving a region of high electron density that is readily attacked by electrophiles. Alkanes have only strong, non-polar σ bonds with no such site. <span class="m">A1</span> π is exposed/electron-rich, <span class="m">A1</span> attacked by electrophiles / alkanes have no such site.</p>
+      </div>
+    </details>
+    <details class="arch"><summary>Archetype &amp; trap</summary>
+      <div class="soln">
+        <p><b>Archetype:</b> bond order → length/strength, and the split between "total strength" and "site of reactivity."</p>
+        <p><b>Trigger:</b> a length/strength comparison, or "why is the alkene more reactive" → separate the σ (strong, buried) from the π (weaker, exposed).</p>
+        <p><b>Trap:</b> claiming the stronger bond must be less reactive full-stop. The reactivity mark is specifically the <b>exposed π electron density</b>.</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- Q10 -->
+  <div class="card">
+    <div class="qn"><span class="num">Question 10</span><span class="marks">[7]</span></div>
+    <div class="q">
+      <div class="part">Ethanol, \(\ce{CH3CH2OH}\).</div>
+      <div class="part">(a) State the shape and bond angle around the oxygen atom. <span style="color:#999">[2]</span></div>
+      <div class="part">(b) Explain, in terms of intermolecular forces, why ethanol is completely miscible with water whereas ethane is not. <span style="color:#999">[3]</span></div>
+      <div class="part">(c) Predict, with reasoning, how the boiling point of ethanol compares with that of its structural isomer methoxymethane, \(\ce{CH3OCH3}\). <span style="color:#999">[2]</span></div>
+    </div>
+    <details><summary>Reveal worked solution</summary>
+      <div class="soln">
+        <p><b>(a)</b> The O has 2 bonding pairs (to C and to H) + 2 lone pairs = 4 domains → <b>bent/V-shaped, ≈104.5°</b> (two lone pairs squeeze the angle below 109.5°). <span class="m">A1</span> bent, <span class="m">A1</span> ≈104.5° with lone-pair reason.</p>
+        <p><b>(b)</b> Ethanol's \(\ce{O-H}\) lets it form <b>hydrogen bonds with water</b> (its O–H to water's O, and water's O–H to ethanol's O lone pair). These H-bonds to water release enough energy to make mixing favourable → miscible. Ethane has only \(\ce{C-H}\) bonds (non-polar), can form only weak id–id forces with water and cannot H-bond, so it cannot disrupt water's hydrogen-bonded network → immiscible. <span class="m">A1</span> ethanol H-bonds to water, <span class="m">A1</span> mechanism/both directions, <span class="m">A1</span> ethane only id–id, no H-bond.</p>
+        <p><b>(c)</b> Ethanol has an \(\ce{O-H}\) group so its molecules hydrogen-bond to <b>each other</b>; methoxymethane has <b>no O–H</b> (O sits between two carbons), so its molecules cannot H-bond with each other — only weaker pd–pd/id–id. Therefore <b>ethanol boils higher</b> than methoxymethane. <span class="m">A1</span> ethanol H-bonds / methoxymethane cannot, <span class="m">A1</span> ethanol higher bp.</p>
+      </div>
+    </details>
+    <details class="arch"><summary>Archetype &amp; trap</summary>
+      <div class="soln">
+        <p><b>Archetype:</b> full-molecule synthesis — VSEPR at O + H-bonding to a solvent + isomer bp comparison, all from bonding.</p>
+        <p><b>Trigger:</b> a real organic molecule with an O–H/N–H and a "solubility / miscibility / isomer bp" ask → check for H-bond donor <i>and</i> acceptor, and whether an isomer loses the O–H.</p>
+        <p><b>Trap:</b> for (c), forgetting that an <i>ether</i> has no O–H so cannot self-H-bond even though it contains oxygen; for (b), not describing H-bonding in <i>both</i> directions with water.</p>
+        <div class="gate">Gateway: parts (b)–(c) are exactly how Hydroxy Compounds questions test alcohol solubility and boiling point.</div>
+      </div>
+    </details>
+  </div>
+
+  <div class="foot">
+    <p><b>When you're done:</b> report your gaps out loud (which archetype felt shaky, where you got the shape/polarity/IMF logic wrong, any question that felt too easy). Paste me the transcript and I'll flag the patterns and build the <b>knowledge-gap cluster</b> targeting only your weak spots — then it goes into the dashboard for the next day.</p>
+  </div>
+</div>
+</body>
+</html>
