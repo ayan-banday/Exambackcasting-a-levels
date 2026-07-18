@@ -129,3 +129,17 @@
 - **Execution stops short of final answer** — Q10 practice trailed off. Q7 practice didn't state final I explicitly. Q2 (previous session) example missed the completion. This is the persistent "describes method, doesn't finish" pattern from Cluster 1.
 - **Self-flagged weaknesses honestly** — Q10 "my understanding is weak" is very valuable. Critical self-awareness.
 
+
+---
+
+## 2026-07-18 — Mixed exam-paper transcript (Calculus items only)
+
+Context: full mixed Maths paper, scored ~90%, self-reviewed as "too easy" (difficulty-calibration feedback in memory: `feedback_math_exam_paper_difficulty`). Calculus-scoped gaps:
+
+- **Q5 area of region — misread the boundaries.** Region bounded by the curve, the **x-axis AND y-axis**; he only registered the y-axis, so integrated over the full curve span (−2 to 2) instead of the first-quadrant slice (0 to 2). Self-caught on review: *"I only read that it's bounded by the y-axis. If it's bounded by the x-axis and the y-axis, then you'll just be one of the corners, but you're just 2 and 0."* This is a **reading-discipline** gap, not a method gap — the integration itself was fine. State: **ACTIVE** (reading traps recur across topics — see Vectors Q13 "please read the question"). Target: a couple of area/volume questions where the bounding lines must be parsed carefully before setting limits.
+- Efficiency note he raised himself: for `y = (x²+3x)/(x−1)`-type curves, differentiate the **split form** `x + something + c/(x−1)` rather than quotient-rule the whole thing. Good instinct — worth baking into a curve-sketching drill.
+- Implicit differentiation, Maclaurin (1+3x), IBP (x²ln x), partial fractions (5x−4 over (x−2)(x−1)), volume of revolution, separable DE, Newton-cooling temperature: all landed **confidently and correctly**. Consistent with prior CLOSED states. Confirmed strong.
+
+**Cross-topic pattern (log once, applies everywhere):** the recurring non-content error is **misreading the question** (Q5 boundaries here; the "unit vector" clause in Vectors Q13). Content mastery is high; the marks that leak are comprehension/discipline, not technique. Worth a periodic "read-the-stem-twice" drill or a discipline layer.
+
+No new drill cluster from this paper. Logged per the always-log rule.

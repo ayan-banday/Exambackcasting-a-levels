@@ -111,3 +111,15 @@
 
 Companion cluster `gap_Basics_Products_Ratio_Theorem/` — 10 exam-style questions each targeting one of the above.
 
+---
+
+## 2026-07-18 — Mixed exam-paper transcript (Vectors items only)
+
+Context: full mixed Maths paper, scored ~90%, self-reviewed as "too easy" (difficulty-calibration feedback logged separately in memory). Vectors-scoped gaps surfaced:
+
+- **Cross-product area — forgot the magnitude step.** On the area-of-triangle-via-cross-product item, he computed `a × b` to the vector `(1, 5, -2)` then initially stopped. Self-caught on review: *"after we crossed the product, we get factor. And then we need to find the magnitude of that factor itself."* Area = ½|a × b|, not ½(a × b). Reinforces the Q10-walkthrough pattern that foundational cross-product mechanics are FRAGILE. State: **FRAGILE**.
+- **Dot-product sign → angle type, momentary wobble.** *"I thought it said if I dot something and it's a minus, then it's a good angle… why is this helpful?"* Resolved himself: *"Negative is obtuse."* Not a true gap, but the acute/obtuse mapping is not yet reflexive. State: FRAGILE.
+- Ratio theorem, projection length, angle between vectors: all landed correctly and confidently on this paper — consistent with CLOSED/FRAGILE from the 07-17 walkthrough. Confirmed improving.
+
+No new drill cluster from this paper (gaps already covered by `gap_Basics_Products_Ratio_Theorem/`). Logged for tracking per the always-log rule.
+
