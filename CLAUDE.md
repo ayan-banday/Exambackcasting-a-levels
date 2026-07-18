@@ -162,6 +162,13 @@ Tests named by type and year (`model_test_1.md`, `official_2023.md`). Full ratio
 
 ---
 
+## 7.5 Standing rules — shared across ALL of Ethan's chats
+
+Ethan runs several chats at once (Math, Chem, CSC, GP subject chats + a main Study-Agent chat). The single shared, human-readable rule set lives at **`../rules/`** (`Study Agent/rules/README.md`) — read it at session start. Two always-on behaviours every chat must follow:
+
+1. **On every progress report** — any "I finished X", "I did Y today", "the cluster/paper is done": by default and without being asked, (a) update the dashboard `dashboard/plan.js`, (b) deploy `vercel --prod --yes` + push, (c) re-open it in Arc `open -a Arc "https://dashboard-sandy-five-85.vercel.app"`, and (d) play a bell `afplay /System/Library/Sounds/Glass.aiff`. (Exception: if he says "just work"/"don't open" that session.)
+2. **When Ethan gives ANY new standing rule** — immediately save it to `../rules/` (matching category file + the README index) AND to memory, so all chats stay in sync.
+
 ## 8. Start-of-session checklist
 
 0. **Drive from the plan.** The LIVE plan is **`dashboard/plan.js`** (the study dashboard);

@@ -1941,6 +1941,12 @@ window.PLAN = {
      "mins": 0,
      "what": "CSC Governance paper — NOT done yet (pending)",
      "done": false
+    },
+    {
+     "subject": "chem",
+     "mins": 0,
+     "what": "Gap cluster (Stoich & Redox weakspots) drilled ✓ — topic fully consolidated",
+     "done": true
     }
    ],
    "note": "Did the Maths paper, not the CSC one. Next: finish the Chemistry cluster (drilling) + the CSC Governance paper. Math + Chem gap clusters still outstanding."
