@@ -12,7 +12,7 @@ window.PLAN = {
   "perWeekHrs": 24.5,
   "target": "Meet B — roughly 65 average across every subject (a C/B). Every cluster drilled is also a permanent A-level foundation, not just a prelim patch.",
   "reality": "Two subjects a day, 2 hours each — the SIR method: ~60 min study, then the test part. Interleaving two subjects beats 4 hours on one. Saturday is the weekly cumulative test (timed, every topic covered so far); Sunday is a rest day. The Saturday test + the Week-4+ timed papers are the real readiness check, not cluster scores. Started 15 Jul; GP opens the prelim on 24 Aug.",
-  "lastUpdated": "2026-07-17",
+  "lastUpdated": "2026-07-18",
   "repo": "https://github.com/ayan-banday/Exambackcasting-a-levels"
  },
  "subjects": {
@@ -908,8 +908,8 @@ window.PLAN = {
      "subject": "maths",
      "name": "Maths — Calculus + Vectors timed paper (2h)",
      "desc": "Calculus (all) + Vectors basics. <a href=\"tests/2026-07-18-maths.html\" target=\"_blank\" style=\"color:#6ea8fe;font-weight:600\">▶ Open the Maths test ↗</a>",
-     "done": false,
-     "doneDate": null
+     "done": true,
+     "doneDate": "18 Jul"
     },
     {
      "mins": 120,
@@ -1926,6 +1926,25 @@ window.PLAN = {
   ]
  ],
  "log": [
+  {
+   "date": "2026-07-18",
+   "weekday": "Sat",
+   "items": [
+    {
+     "subject": "maths",
+     "mins": 120,
+     "what": "Saturday timed paper — Calculus + Vectors ✓ (awaiting results)",
+     "done": true
+    },
+    {
+     "subject": "csc",
+     "mins": 0,
+     "what": "CSC Governance paper — NOT done yet (pending)",
+     "done": false
+    }
+   ],
+   "note": "Did the Maths paper, not the CSC one. Next: finish the Chemistry cluster (drilling) + the CSC Governance paper. Math + Chem gap clusters still outstanding."
+  },
   {
    "date": "2026-07-17",
    "weekday": "Fri",
