@@ -19,7 +19,7 @@ window.PLAN = {
   "prelimStart": "2026-08-24",
   "alevelStart": "2026-11-02",
   "clustersRemaining": 27,
-  "clustersDone": 4,
+  "clustersDone": 5,
   "clustersTotal": 34
  },
  "subjects": {
@@ -836,27 +836,34 @@ window.PLAN = {
    "subject": "csc",
    "flag": "",
    "mins": 240,
-   "label": "Governance (Step 3 loop) + Chem Bonding",
-   "focus": "Day 1. Governance (Step 3 loop) + Chem Bonding. A full 4h.",
+   "label": "Finish Chem Bonding gap + CSC Governance (Step 3)",
+   "focus": "Bonding cluster is done (19 Jul) — just close its hard gap questions, then the day is CSC governance. Drill only the 3–4 widest-coverage TNT questions, not all 6 (the pacing fix). Chem Organic Foundations starts tomorrow.",
    "blocks": [
     {
-     "mins": 120,
-     "subject": "csc",
-     "name": "CSC — 政治 Governance (resume at Step 3) · Layer-2 cluster + TNT Q13/Q17 + 3–6 more loop",
-     "desc": "Pre-study→Layer 1, one Layer-2 cluster, pull 5–10 TNT Q13/Q17 + 3–6 more questions, Wispr Flow attempts, hypercorrect vs the model answers, encode to 80–90%.",
+     "mins": 30,
+     "subject": "chem",
+     "name": "Finish Chemical Bonding — the last hard gap questions + answers",
+     "desc": "~15 min of drill left; close it out while it is fresh.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "政治 Governance (resume at Step 3)"
+     "clusterHref": "clusters/chem_01_bonding.html"
     },
     {
      "mins": 120,
-     "subject": "chem",
-     "name": "Chemistry — Chemical Bonding — VSEPR, polarity, IMF (ch 2) · cluster · gateway to organic",
-     "desc": "Build the sheet, solve questions out loud (why each step matters + its trigger), then gap-drill.",
-     "done": true,
-     "doneDate": "19 Jul",
-     "clusterRef": "Chemical Bonding — VSEPR, polarity, IMF",
-     "clusterHref": "clusters/chem_01_bonding.html"
+     "subject": "csc",
+     "name": "CSC Governance — Step 3: drill the 2 widest-coverage TNT questions (Wispr Flow + hypercorrect)",
+     "desc": "Ask the CSC chat for only the fewest questions covering the widest span — no two testing the same concept.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "政治 Governance"
+    },
+    {
+     "mins": 90,
+     "subject": "csc",
+     "name": "CSC Governance — continue Step 3, encode each to 80–90% confidence",
+     "desc": "",
+     "done": false,
+     "doneDate": null
     }
    ]
   },
