@@ -11,9 +11,22 @@
 
 ---
 
-## PART A — Concept fixes (learn these first, exact wording)
+## PART A — Fixes
 
-**1. Ice is less dense than water.**
+Two kinds of gap here, handled differently:
+- **Concepts** (the logic — why metallic < ionic, why dipoles cancel, how graphite conducts): understand the reasoning **once**.
+- **Memorisation** (verbatim definitions + fixed set-piece explanations): these stay **OPEN — reproduce them cold every session, don't just re-read them.** The wording below is only for self-check *after* you've tried to say it from memory.
+
+**🔁 Keep-open recall prompts — say these cold, every session, until automatic:**
+1. *Define lattice energy.* (word-for-word)
+2. *Explain why ice is less dense than liquid water.*
+3. *State the shape and bond angle of XeF₂ and XeF₄, and where the lone pairs sit.*
+
+Attempt each from memory first. The exact wording is below and in the mark scheme for self-check only.
+
+---
+
+**1. Ice is less dense than water.** *(memorise — drill prompt 2)*
 In ice, each H₂O molecule is hydrogen-bonded to **four** others in a rigid, **open tetrahedral lattice** with large empty spaces. This holds the molecules **further apart** than in liquid water, where they pack more randomly and closely. A given mass of ice therefore occupies a **larger volume → lower density**, so ice floats.
 
 **2. XeF₂ and XeF₄ — and the polarity rule you're missing.**
@@ -24,7 +37,7 @@ In ice, each H₂O molecule is hydrogen-bonded to **four** others in a rigid, **
 **3. Metallic vs ionic melting point — don't assume.**
 General order: **simple molecular < metallic ≈ ionic < giant covalent.** Metallic vs ionic depends on the actual substances. For **Na vs NaCl → Na (metallic) < NaCl (ionic)**: Na⁺ contributes only one delocalised electron with a +1 charge (relatively weak metallic bonding), whereas NaCl has strong electrostatic forces of attraction between the +1 and −1 ions throughout a giant lattice. Compare the specific bonding strength; don't assume metallic beats ionic.
 
-**4. Lattice energy — the definition you skipped (verbatim).**
+**4. Lattice energy — the definition you skipped (verbatim).** *(memorise — drill prompt 1)*
 Lattice energy is **the energy released when one mole of a solid ionic compound is formed from its constituent gaseous ions.** More exothermic (more negative) = stronger ionic bonding. It is proportional to **(charge of cation × charge of anion) / (sum of the ionic radii).**
 - Radii: **Mg²⁺ < Na⁺** (Mg²⁺ has the higher nuclear charge pulling the same electrons in tighter — both are isoelectronic). **O²⁻ < Cl⁻** (O²⁻ has one fewer electron shell). Higher charges **and** smaller radii → MgO lattice energy ≫ NaCl.
 
