@@ -828,6 +828,46 @@ window.PLAN = {
    "mins": 240
   },
   {
+   "n": "✓",
+   "date": "2026-07-19",
+   "weekday": "Sun",
+   "week": 0,
+   "type": "standard",
+   "donePast": true,
+   "flag": "",
+   "subject": "chem",
+   "label": "Bonding cluster + Governance Q1 (Step 3)",
+   "focus": "Rest day — studied anyway (~4h). Chemical Bonding cluster 1 done; Governance Step 3 started (Q1 of the widest-coverage set).",
+   "blocks": [
+    {
+     "mins": 105,
+     "subject": "chem",
+     "name": "Chemistry — Chemical Bonding cluster 1 + gap drilled (gateway to organic)",
+     "desc": "",
+     "done": true,
+     "doneDate": "19 Jul",
+     "clusterHref": "clusters/chem_01_bonding.html"
+    },
+    {
+     "mins": 105,
+     "subject": "csc",
+     "name": "CSC — Governance Q1 (Step 3): attempt on Wispr Flow + hypercorrect vs TNT model answer",
+     "desc": "",
+     "done": true,
+     "doneDate": "19 Jul"
+    },
+    {
+     "mins": 30,
+     "subject": "conv",
+     "name": "Iterating the study system / Claude setup",
+     "desc": "",
+     "done": true,
+     "doneDate": "19 Jul"
+    }
+   ],
+   "mins": 240
+  },
+  {
    "n": 1,
    "date": "2026-07-20",
    "weekday": "Mon",
@@ -1885,7 +1925,6 @@ window.PLAN = {
   }
  ],
  "rest": [
-  "2026-07-19",
   "2026-07-26",
   "2026-08-02",
   "2026-08-09",
