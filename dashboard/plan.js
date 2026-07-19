@@ -1927,6 +1927,19 @@ window.PLAN = {
  ],
  "log": [
   {
+   "date": "2026-07-19",
+   "weekday": "Sun",
+   "items": [
+    {
+     "subject": "chem",
+     "mins": 120,
+     "what": "Chemical Bonding (VSEPR, Polarity & IMF) — reworked as a declarative topic: bare-bones cluster studied + drilled on Loom. Gap cluster built.",
+     "done": true
+    }
+   ],
+   "note": "Rest-day catch-up. Established declarative-vs-procedural split (Bonding = declarative: bare-bones cluster + hard question drill, not a dashboard drill). Gaps flagged: XeF2 shape (said square planar), ice density (cold), metallic-vs-ionic mp order, lattice-energy definition, graphite conductivity assembly. Gap cluster pending drill."
+  },
+  {
    "date": "2026-07-18",
    "weekday": "Sat",
    "items": [
@@ -2171,6 +2184,19 @@ window.PLAN = {
     "Limiting reagent & % yield",
     "Titration & back-titration",
     "Oxidation numbers & redox half-equations"
+   ]
+  },
+  {
+   "subject": "chem",
+   "topic": "Chemical Bonding",
+   "status": "done",
+   "date": "19 Jul",
+   "subs": [
+    "VSEPR shapes & bond angles",
+    "Polarity from shape",
+    "Intermolecular forces & hydrogen bonding",
+    "Structure → physical properties",
+    "Gap drill: XeF2/polarity, ice density, lattice energy, graphite"
    ]
   }
  ]
