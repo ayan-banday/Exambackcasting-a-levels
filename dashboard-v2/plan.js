@@ -873,37 +873,30 @@ window.PLAN = {
    "weekday": "Mon",
    "week": 1,
    "type": "standard",
-   "subject": "csc",
+   "subject": "chem",
    "flag": "",
    "mins": 240,
-   "label": "Record Bonding gaps + CSC Governance (Step 3)",
-   "focus": "Chemical Bonding cluster 1 is done (its 10 questions were the drill). No gap questions — just tell me your remaining Bonding gaps and I record them for spaced retrieval. Then the day is CSC governance: drill only the 3–4 widest-coverage TNT questions.",
+   "label": "Chem Bonding cluster 2 + CSC Governance (Step 3)",
+   "focus": "Bonding is 3 clusters, not done — today is cluster 2 (bonding types & giant structures). First tell me your cluster-1 gaps so I record them (2 min), then drill cluster 2, then CSC governance: only the 3–4 widest-coverage TNT questions.",
    "blocks": [
     {
-     "mins": 15,
+     "mins": 120,
      "subject": "chem",
-     "name": "Tell me your remaining Chemical Bonding gaps → I record them for spaced retrieval (no new questions)",
-     "desc": "Reopen the sheet if you want to skim it first.",
+     "name": "Chemistry — Chemical Bonding cluster 2: Types & Giant Structures (drill)",
+     "desc": "Ionic/metallic/giant-covalent/simple-molecular + structure→property. 8 hard questions.",
      "done": false,
      "doneDate": null,
-     "clusterHref": "clusters/chem_01_bonding.html"
+     "clusterHref": "clusters/chem_02_bonding_structures.html",
+     "clusterRef": "Chemical Bonding II"
     },
     {
-     "mins": 135,
+     "mins": 120,
      "subject": "csc",
      "name": "CSC Governance — Step 3: drill the 3–4 widest-coverage TNT questions (Wispr Flow + hypercorrect)",
      "desc": "Fewest questions, widest span — no two testing the same concept.",
      "done": false,
      "doneDate": null,
      "clusterRef": "政治 Governance"
-    },
-    {
-     "mins": 90,
-     "subject": "csc",
-     "name": "CSC Governance — continue Step 3, encode each to 80–90% confidence",
-     "desc": "",
-     "done": false,
-     "doneDate": null
     }
    ]
   },
