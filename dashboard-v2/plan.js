@@ -836,23 +836,23 @@ window.PLAN = {
    "subject": "csc",
    "flag": "",
    "mins": 240,
-   "label": "Finish Chem Bonding gap + CSC Governance (Step 3)",
-   "focus": "Bonding cluster is done (19 Jul) — just close its hard gap questions, then the day is CSC governance. Drill only the 3–4 widest-coverage TNT questions, not all 6 (the pacing fix). Chem Organic Foundations starts tomorrow.",
+   "label": "Record Bonding gaps + CSC Governance (Step 3)",
+   "focus": "Chemical Bonding cluster 1 is done (its 10 questions were the drill). No gap questions — just tell me your remaining Bonding gaps and I record them for spaced retrieval. Then the day is CSC governance: drill only the 3–4 widest-coverage TNT questions.",
    "blocks": [
     {
-     "mins": 30,
+     "mins": 15,
      "subject": "chem",
-     "name": "Finish Chemical Bonding — the last hard gap questions + answers",
-     "desc": "~15 min of drill left; close it out while it is fresh.",
+     "name": "Tell me your remaining Chemical Bonding gaps → I record them for spaced retrieval (no new questions)",
+     "desc": "Reopen the sheet if you want to skim it first.",
      "done": false,
      "doneDate": null,
      "clusterHref": "clusters/chem_01_bonding.html"
     },
     {
-     "mins": 120,
+     "mins": 135,
      "subject": "csc",
-     "name": "CSC Governance — Step 3: drill the 2 widest-coverage TNT questions (Wispr Flow + hypercorrect)",
-     "desc": "Ask the CSC chat for only the fewest questions covering the widest span — no two testing the same concept.",
+     "name": "CSC Governance — Step 3: drill the 3–4 widest-coverage TNT questions (Wispr Flow + hypercorrect)",
+     "desc": "Fewest questions, widest span — no two testing the same concept.",
      "done": false,
      "doneDate": null,
      "clusterRef": "政治 Governance"
