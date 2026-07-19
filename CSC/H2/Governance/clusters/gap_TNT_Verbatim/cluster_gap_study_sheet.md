@@ -1373,3 +1373,120 @@ Ethan chained fluently in live dump:
 - Deploy Xi tried + failed pattern for every 弊端
 
 **Recommended next:** Move to next CSC topic (经济 / 社会 / 外交). Governance = content-complete.
+
+---
+
+## §18 Post-close TNT drill gaps (2026-07-19)
+
+Post-governance mastery layer — TNT question drilling session. Ethan resumed at Step 3 of the declarative 5-step method (drilling directly against TNT model answers). This section logs gaps surfaced per attempt.
+
+### §18.1 Q13 drill (2026-07-19) — 「加强中共的绝对领导是中国实现政治稳定的唯一途径。」
+
+**TNT source:** p.58-62, 因素是非题, 立场: 不同意
+
+---
+
+**Structural error (Priority 1):** Didn't answer 唯一途径 framing.
+
+中文 chain:
+因素是非题 要求: 分析 题目因素 (中共绝对领导) + 引入 其他因素 (法治 + 经济 + 社会) + 比较 → 得出 "非唯一"
+
+Example / 你的错:
+你 80% essay 攻击 党国体制 弊端 (单点故障 + 民主花瓶 + 苏东剧变) → 但 这答的是 "党国体制 有问题吗", 不是 "加强中共绝对领导 是 唯一途径 吗?"
+
+简单说 / Simple: 因素是非题 needs you to propose ALTERNATIVE factors, not just critique 题目因素. You never proposed 法治 as competing pathway.
+
+---
+
+**Structural error (Priority 2):** 平衡 段 顺序错.
+
+中文 chain:
+你 开头 "首先, 我 would say why it is effective" → 把 集中力量办大事 放在 自己立场 之前 → 结构混乱
+
+正确顺序: 立场分析 (你不同意 的理由) → "但有些学者认为..." → 平衡分析 (集中力量办大事 + 一张蓝图绘到底)
+
+简单说 / Simple: You put 集中力量办大事 as intro to your own 立场 — it's actually the 平衡方 argument, comes AFTER your 立场.
+
+---
+
+**Missing 平衡 分论点 2:** 一张蓝图绘到底 (政策连续性)
+
+TNT model 平衡 2 topic sentence (verbatim):
+> "也有学者认为，只有加强中共的绝对领导，才能一张蓝图绘到底，维护政府长期执政，为政治稳定建立稳固的基础。"
+
+Case anchor 你 缺: **西部大开发 25 年 三代领袖 (江→胡温→习), 年均 7.3% > 全国 6.31% > 东部 5.61%**; 扶贫 4 阶段 (救济→开发→精准→共同富裕); 西部 GDP 1.6 万亿 → 26.9 万亿 (1999→2023, 年均 12.8%)
+
+---
+
+**Missing verbatim phrasings (记下, 直接背):**
+
+- **BANI 时代** (Brittle/Anxious/Nonlinear/Incomprehensible) — 评价 framework, 你 completely 缺
+- **权由法定** / **法无禁止不可为**
+- **政府 "法无授权即禁止", 市场 "法无禁止即可为"**
+- **依法管住政府看得见的手, 开出市场看不见的手**
+- **制度性可预期性 (institutional predictability)**
+- **一张蓝图绘到底**
+- **政令下发之快直通达**
+- **唯中央马首是瞻**
+- **推诿扯皮**
+- **先党内决策、后政府执行**
+- **强政府, 弱社会**
+- **人民四权被掏空**
+- **NGO 从民众的传感器变成政府的"传话筒"**
+- **政治稳定是一个庞大的政治生态**
+- **不能归因于单一因素, 而是取决于多重因素的平衡**
+- **习近平废除邓小平确立的集体领导制度** (trap example for 政策连续性 反证)
+- **中共十八届六中全会 (2016)** — 政治忠诚 制度化 起点
+
+---
+
+**Missing concrete data anchors:**
+
+- 火神山/雷神山/梁山 医院 **10 天内 落成 收治 5000 多名患者** (COVID case)
+- 西部大开发 **25 年**, 年均 GDP 增长 **7.3%**, vs 全国 **6.31%**, vs 东部 **5.61%**
+- 西部 生产总值: **1999 年 1.6 万亿 → 2023 年 26.9 万亿, 年均 12.8%**
+
+---
+
+**Missing 【跨课题】brackets (TNT 用了 4 个, 你 0 个):**
+
+- 【跨课题：市场经济】 (立场 1 法治→经济 结尾)
+- 【跨课题：社会转型】 (立场 2 风险社会 中段)
+- 【跨课题：公民社会】 (立场 2 NGO 传话筒 结尾)
+- 【跨课题：区域协调发展】 (平衡 2 西部大开发 结尾)
+
+---
+
+**Wrong topic anchoring:**
+
+你 pulled Cluster 3 concepts into a Q13 answer:
+- 中产 4→42% (Cluster 3 政绩合法性)
+- 服务型 三段演进 (Cluster 3 公共服务)
+- 接诉即办 三率 90% (Cluster 3)
+- 均等化 4E (Cluster 3)
+
+**Q13 是 中共绝对领导 vs 政治稳定 唯一途径**. Cluster 3 anchors 用错主题.
+
+**正确 anchoring:** 法治 (Cluster 2 concepts) + 集中力量办大事 火神山 + 一张蓝图绘到底 西部大开发/扶贫 (Cluster 1 政绩合法性).
+
+---
+
+**What you DID hit (keep these):**
+- 单点故障 ✓ (model uses)
+- 集中力量办大事 → 集中力量办错事 ✓
+- 民主花瓶 + 人大 99% ✓
+- 白纸 2022 ✓
+- 三聚氰胺 2008 ✓ (though wrong essay context)
+- 苏东剧变 教训 ✓ (model doesn't emphasize, but valid)
+- 使命型政党 (郑永年) ✓ (model doesn't use, but keep)
+
+---
+
+**Status: Q13 ACTIVE gap — rewrite required to CLOSE.**
+
+Priority drill list before rewrite:
+1. Memorize BANI 时代 concept + how to deploy in 比较分析
+2. Memorize 火神山 10 天 5000 + 西部大开发 25 年 (7.3/6.31/5.61) 数据
+3. Practice 因素是非题 alternative-factor structure (法治 as competing pathway)
+4. Practice 一张蓝图绘到底 argument w/ 江→胡温→习 三代领袖 chain
+5. Practice 习废邓集体领导 as trap-reversal in 比较 段
