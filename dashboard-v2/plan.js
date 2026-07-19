@@ -853,8 +853,8 @@ window.PLAN = {
      "subject": "chem",
      "name": "Chemistry — Chemical Bonding — VSEPR, polarity, IMF (ch 2) · cluster · gateway to organic",
      "desc": "Build the sheet, solve questions out loud (why each step matters + its trigger), then gap-drill.",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "19 Jul",
      "clusterRef": "Chemical Bonding — VSEPR, polarity, IMF",
      "clusterHref": "clusters/chem_01_bonding.html"
     }
@@ -1926,6 +1926,31 @@ window.PLAN = {
   ]
  ],
  "log": [
+  {
+   "date": "2026-07-19",
+   "weekday": "Sun",
+   "items": [
+    {
+     "subject": "csc",
+     "mins": 105,
+     "what": "Governance Q1 (Step 3) — attempted on Wispr Flow + hypercorrected vs TNT model answer",
+     "done": true
+    },
+    {
+     "subject": "chem",
+     "mins": 105,
+     "what": "Chemical Bonding cluster 1 + gap cluster drilled (~15 min of hard gap Qs still to finish)",
+     "done": true
+    },
+    {
+     "subject": "conv",
+     "mins": 30,
+     "what": "Iterating the study system / Claude setup",
+     "done": true
+    }
+   ],
+   "note": "Rest day — studied anyway (~4h). Pacing flag: one governance question took 1h45; six ≈ 9h, not sustainable at 2h/day — CSC may need its own dedicated days. Noted, plan unchanged for now."
+  },
   {
    "date": "2026-07-18",
    "weekday": "Sat",
