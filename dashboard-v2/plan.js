@@ -845,8 +845,7 @@ window.PLAN = {
      "name": "Chemistry — Chemical Bonding cluster 1 + gap drilled (gateway to organic)",
      "desc": "",
      "done": true,
-     "doneDate": "19 Jul",
-     "clusterHref": "clusters/chem_01_bonding.html"
+     "doneDate": "19 Jul"
     },
     {
      "mins": 105,
@@ -886,7 +885,6 @@ window.PLAN = {
      "desc": "Ionic/metallic/giant-covalent/simple-molecular + structure→property. 8 hard questions.",
      "done": false,
      "doneDate": null,
-     "clusterHref": "clusters/chem_02_bonding_structures.html",
      "clusterRef": "Chemical Bonding II"
     },
     {
