@@ -54,19 +54,27 @@ Explain, in terms of atomic structure, why sulfur can form SF₆ but oxygen cann
 
 # MARK SCHEME — do not read until you've attempted Part B
 
-## GQ1 — Bond energy, the F–F anomaly and reactivity
-*(a) Explain why the F–F bond is weaker than Cl–Cl even though fluorine is the smaller atom. (b) Using the bond energies given, explain why nitrogen gas is far less reactive than fluorine gas.)*
+## GQ1
+*(a) Explain why the F–F bond is weaker than Cl–Cl even though fluorine is the smaller atom. [2]*
 
-(a) Fluorine is a very small atom, so the lone pairs on the two bonded fluorine atoms are close together and there is strong **lone pair–lone pair repulsion** between them, which weakens the bond and lowers its bond energy below that of Cl–Cl. [2]
-(b) Nitrogen has a very high bond energy of 945 kJ mol⁻¹ because it has a triple bond, so a very large amount of energy is needed to break the N≡N bond, giving nitrogen a high activation energy and making it unreactive. Fluorine has a very low bond energy of only 158 kJ mol⁻¹, so its bond is broken easily, giving a low activation energy and making fluorine highly reactive. [3]
+*(b) Using the bond energies given, explain why nitrogen gas is far less reactive than fluorine gas. [3]*
 
-## GQ2 — Polarising power, structure and property
-*(MgCl₂ melts at 714 °C, AlCl₃ sublimes at 178 °C. (a) Explain the difference in terms of the polarising power of the cations and the structures that result. (b) Predict whether BeCl₂ resembles MgCl₂ or AlCl₃.)*
+(a) Fluorine is a **very small atom**, so the **lone pairs on the two bonded fluorine atoms are close together** and there is strong **lone pair–lone pair repulsion** between them, which **weakens the bond** and **lowers its bond energy below that of Cl–Cl**. [2]
 
-(a) In magnesium chloride the Mg²⁺ ion has a lower charge and larger radius than Al³⁺, so it has a lower charge density and a weaker polarising power, and the compound stays an **ionic giant lattice** with strong electrostatic forces between the ions, giving a high melting point. In aluminium chloride the Al³⁺ ion has a high charge and small radius, so it has a high charge density and a strong polarising power, which distorts the electron cloud of the chloride ion and gives the bonding significant covalent character, so AlCl₃ is **simple molecular** and only weak dispersion forces are overcome, giving a low sublimation temperature. [4]
-(b) Beryllium chloride is more likely to resemble aluminium chloride, because the Be²⁺ ion is very small and so has a high charge density and strong polarising power, giving the bonding significant covalent character and a simple molecular (covalent) structure. [2]
+(b) Nitrogen has a **very high bond energy of 945 kJ mol⁻¹** because it has a **triple bond**, so a **very large amount of energy is needed to break the N≡N bond**, giving nitrogen a **high activation energy** and making it **unreactive**. Fluorine has a **very low bond energy of only 158 kJ mol⁻¹**, so its **bond is broken easily**, giving a **low activation energy** and making fluorine **highly reactive**. [3]
 
-## GQ3 — The period rule behind the octet
-*(Explain, in terms of atomic structure, why sulfur can form SF₆ but oxygen cannot form OF₆.)*
+## GQ2
+*MgCl₂ melts at 714 °C, AlCl₃ sublimes at 178 °C.*
 
-Sulfur is in **Period 3**, so it has energetically accessible **3d orbitals** into which it can promote electrons, allowing it to expand its octet and form six bonds in SF₆. Oxygen is in **Period 2** and has only 2s and 2p orbitals available; it has no accessible d orbitals, so it cannot expand its octet beyond eight electrons and cannot form OF₆. [3]
+*(a) Explain the difference in terms of the polarising power of the cations and the structures that result. [4]*
+
+*(b) Predict whether BeCl₂ resembles MgCl₂ or AlCl₃. [2]*
+
+(a) In magnesium chloride the **Mg²⁺ ion has a lower charge and larger radius** than Al³⁺, so it has a **lower charge density and weaker polarising power**, and the compound stays a **giant ionic lattice** with **strong electrostatic forces between the ions**, giving a **high melting point**. In aluminium chloride the **Al³⁺ ion has a high charge and small radius**, so it has a **high charge density and strong polarising power**, which **distorts the electron cloud of the chloride ion** and gives the bonding **significant covalent character**, so AlCl₃ is **simple molecular** and **only weak dispersion forces are overcome**, giving a **low sublimation temperature**. [4]
+
+(b) Beryllium chloride is more likely to resemble **aluminium chloride**, because the **Be²⁺ ion is very small and has a high charge density and strong polarising power**, giving the bonding **significant covalent character** and a **simple molecular structure**. [2]
+
+## GQ3
+*Explain, in terms of atomic structure, why sulfur can form SF₆ but oxygen cannot form OF₆. [3]*
+
+Sulfur is in **Period 3**, so it has **energetically accessible 3d orbitals** into which it can promote electrons, allowing it to **expand its octet** and form six bonds in SF₆. Oxygen is in **Period 2** and has **only 2s and 2p orbitals available**, with **no accessible d orbitals**, so it **cannot expand its octet** beyond eight electrons and cannot form OF₆. [3]
