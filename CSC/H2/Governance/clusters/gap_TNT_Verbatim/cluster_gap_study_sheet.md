@@ -1490,3 +1490,143 @@ Priority drill list before rewrite:
 3. Practice 因素是非题 alternative-factor structure (法治 as competing pathway)
 4. Practice 一张蓝图绘到底 argument w/ 江→胡温→习 三代领袖 chain
 5. Practice 习废邓集体领导 as trap-reversal in 比较 段
+
+### §18.2 Q17 drill (2026-07-21) — 「法治是中国实现有效治理的必由之路」
+
+**TNT source:** p.77-81, 必要条件题, 立场: 同意
+
+**Overall verdict:** Strong breadth (~25 concepts deployed correctly), but structural gaps at 立场 3 + 平衡 + 比较. Better than Q13.
+
+---
+
+**Structural error (Priority 1):** 立场 3 (社会领域) completely missing.
+
+中文 chain:
+Model 立场 = 3 domains (**经济 + 政治 + 社会**). 你 只覆盖 经济 + 政治/意识形态, 缺 社会领域.
+
+Model 立场 3 topic sentence (verbatim):
+> "**在社会领域，中国通过法治厘清国家与社会的权力/权利边界，促进公民社会发展，推动社会协同治理，促进善治**"
+
+Case anchor 你 缺: 群体事件 **18 万起/年** (外部学者统计); NGO 双重管理 + 内设党组织 → **民意传声筒** 变 **政府传声筒**; NGO 缺乏自主性 → 传感器 + 解压阀 功能失效.
+
+简单说: You skipped the third domain entirely. Model always split 经济 + 政治 + 社会 for governance-scope essays.
+
+---
+
+**Structural error (Priority 2):** 平衡 段 混乱, no clean 2 arguments.
+
+中文 chain:
+Model 平衡 = 2 clean arguments:
+- 平衡 1: **网络政治参与** (即使无法治 也能有效治理 — 替代方案 存在)
+- 平衡 2: **党主法治** (即使推法治 也未必有效 — 题目条件 无效)
+
+你 mushed 平衡 into 意识形态 + 政绩合法性 + 服务型 → 没 cleanly attack "法治 is NOT necessary".
+
+Missing 案例: **孙小果案** — 强奸罪判死刑但成功出狱, 成为"昆明的黑老大" (党主法治 critique 案例, model 用于 平衡 2)
+
+---
+
+**Structural error (Priority 3):** 比较分析 explicitly skipped (你 asked "how do I do 对比分析?").
+
+**必要条件题 对比 公式 (memorize):**
+
+比较 1 (反驳 平衡 1 "替代方案 存在"):
+承认 平衡方 X 可以 → 但 X 缺少 题目条件 → X 反而 造成 问题 → 题目条件 是 X 的 前提
+
+比较 2 (反驳 平衡 2 "题目条件 有瑕疵"):
+承认 题目条件 有瑕疵 → 但 题目条件 是 底盘 → 即使 不完美 仍 必要
+
+Model 比较 1 verbatim:
+> "没有法治保障的网络政治参与，可能会制造治理困境...**法治是前提**"
+
+Model 比较 2 verbatim:
+> "**尽管党主法治存在诸多瑕疵**...**法治依然是中国实现有效治理的必由之路**...**法治是国家治理的'底盘'，即使不完美，却仍然是制度化约束权力、保障社会稳定和公平、推动治理现代化的不可或缺条件**"
+
+---
+
+**Missing verbatim phrasings (记下, 直接背):**
+
+- **"科学立法、严格执法、公正司法、全民守法"** (依法治国 内涵 4-字)
+- **"法律至上"** / **"良法善法"** / **"良法是善治之前提"**
+- **"没有规矩不成方圆"**
+- **"法治是国家治理的'底盘'"**
+- **4-generation 法治 chain (verbatim):** 邓 "有法可依" → 江 "依法治国" → 胡 "法治政府" → 习 "全面推进依法治国"
+- **"阳光政府"**
+- **"错位、越位"**
+- **"有权必有责、用权受监督、违法要追究"**
+- **"公民四权 (知情权、表达权、参与权、监督权)"**
+- **"要素驱动 转向 创新驱动"**
+- **"三高一低"** 发展模式
+- **"权力自我约束的悖论"**
+- **"党既是规则的制定者，又是规则的解释者和适用者"**
+
+---
+
+**Missing concrete data anchors:**
+
+- **2025 年中国最高法院 判定 杭州市行政审批局 共享电单车 特许经营权 缺乏法律依据** (立场 1 案例)
+- **2020-2024 恶意欠薪 刑事案件 6200 余件** (立场 1 劳工权益 数据)
+- **美国皮尤研究中心: 85% 中国人 vs 35% 美国人 对政府满意** ⚠️ KILLER stat
+- **群体性事件 18 万起/年** (外部学者统计)
+- **孙小果案** (党主法治 critique 案例)
+- **PM10 + 自然之友 NGO** (网络参政 案例)
+
+---
+
+**Missing 15+ 法律 名 (specific 法律 clusters):**
+
+- 市场竞争: 《反垄断法》《公司法》《反不正当竞争法》《价格法》《消费者权益保护法》《民营经济促进法》
+- 产权契约: 《民法典》物权编 + 合同编 + 《土地法》《知识产权法》《专利法》《著作权法》《商标法》
+- 劳工权益: 《劳动法》《劳动合同法》《工会法》《社会保险法》
+
+---
+
+**Missing 3 【跨课题】brackets:**
+
+- 【跨课题：经济发展】 (立场 1 结尾)
+- 【跨课题：社会转型/公民社会】 (立场 3 结尾)
+- 【跨课题：环境问题】 (平衡 1 中段)
+
+---
+
+**Data errors:**
+
+- 中产 你 说 "2001 年 4% → 2019 年 42%" → 应是 **2024 年 42.3%** (year off by 5)
+
+---
+
+**What you DID hit (25+ concepts, keep):**
+
+- ✓ 权由法定 + 法无禁止不可为 (verbatim)
+- ✓ 政府/市场 看得见/看不见的手
+- ✓ 制度可预测性 (institutional predictability)
+- ✓ 党国体制 + 单一制大国 + 单点故障
+- ✓ 白纸 2022 + 塔西佗陷阱
+- ✓ 使命型政党 + 中华民族伟大复兴
+- ✓ 党主法治 + 晚礼服 + 遮羞布
+- ✓ 个人集权 vs 制度集权
+- ✓ 4E 均等化 (内容+覆盖+质量+体验)
+- ✓ 12345 + 接诉即办 三率 90% + 未诉先办
+- ✓ 服务型政府 三段
+- ✓ 西部大开发 三代领袖 7.3%
+- ✓ 网格管理 + 网信办 + 白名单
+- ✓ Xi 18届4中 "党的领导是社会主义法治最根本的保证" verbatim
+- ✓ "党政军民学，东西南北中，党是领导一切的" verbatim
+- ✓ 不敢腐 → 不能腐 transition
+- ✓ "有法不依、执法不严、违法不究" verbatim
+- ✓ "有效治理是一个庞大的政治生态" (verbatim from Q13 model — good cross-transfer)
+- ✓ "多种因素平衡, 不能取决于单一因素" verbatim
+- ✓ "把权力关在制度的笼子里" verbatim
+
+---
+
+**Status: Q17 FRAGILE (breadth strong but structural gaps 立场 3 + 平衡 + 比较 need drilling).**
+
+Priority drill list before rewrite:
+1. **必要条件题 对比 公式** (2 rebuttals structure — 见 §18.2 above)
+2. **立场 3 社会领域** (法治 → 国家/社会 边界 → 公民社会 → NGO → 传感器/解压阀 → 18 万群体事件)
+3. **孙小果案** (党主法治 critique)
+4. **皮尤 85% vs 35%** 数据
+5. **4-generation 法治 chain** (邓→江→胡→习)
+6. 15+ 法律 名 by category (市场 6 + 产权 8 + 劳工 4)
+7. 3 【跨课题】brackets discipline
