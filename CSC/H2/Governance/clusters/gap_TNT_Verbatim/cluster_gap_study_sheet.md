@@ -1376,9 +1376,54 @@ Ethan chained fluently in live dump:
 
 ---
 
-## §18 Post-close TNT drill gaps (2026-07-19)
+## §18 Post-close TNT drill gaps + state machine (2026-07-19+)
 
-Post-governance mastery layer — TNT question drilling session. Ethan resumed at Step 3 of the declarative 5-step method (drilling directly against TNT model answers). This section logs gaps surfaced per attempt.
+Post-governance mastery layer — TNT question drilling session. Ethan resumed at Step 3 of the declarative 5-step method (drilling directly against TNT model answers). This section logs gaps surfaced per attempt + runs the state machine (ACTIVE → FRAGILE → CLOSED) across sessions.
+
+### §18.0 STANDING DRILL LIST — ACTIVE gaps (as of 2026-07-21, post-Q17)
+
+**Deploy at least 3 of these in your NEXT attempt. These are Q13/Q17 gaps not yet CLOSED:**
+
+**Verbatim phrasings still ACTIVE:**
+- **BANI 时代** (Brittle/Anxious/Nonlinear/Incomprehensible) — 0 deployments across Q13+Q17
+- **一张蓝图绘到底** — 0
+- **政令下发之快直通达** — 0
+- **唯中央马首是瞻** — 0
+- **先党内决策、后政府执行** — 0
+- **推诿扯皮** — 0
+- **强政府, 弱社会** (verbatim) — concept touched only
+- **人民四权被掏空** — 0
+- **NGO 从民众传感器变政府传话筒** — 0
+- **4-generation 法治 chain** (邓→江→胡→习) — 0
+- **科学立法、严格执法、公正司法、全民守法** — 0
+- **法治是国家治理的'底盘'** — 0
+- **良法是善治之前提** / **没有规矩不成方圆** — 0
+- **公民四权 (知情+表达+参与+监督)** — 0
+- **要素驱动 转向 创新驱动** — 0
+- **权力自我约束的悖论** — 0
+
+**Data anchors still ACTIVE:**
+- **火神山 10 天 5000 患者** (COVID case) — 0 across Q13+Q17
+- **西部大开发 25 年, 7.3% > 全国 6.31% > 东部 5.61%** (3-way comparison verbatim) — partial hit
+- **西部 GDP 1.6万亿 → 26.9万亿 (1999-2023, 年均 12.8%)** — 0
+- **皮尤: 85% 中国 vs 35% 美国 对政府满意** ⚠️ KILLER stat — 0
+- **群体事件 18 万起/年** (外部统计) — 0
+- **2020-2024 恶意欠薪 6200 件** — 0
+- **2025 杭州行政审批局 共享电单车案** — 0
+- **孙小果案** (党主法治 critique) — 0
+- **中共十八届六中全会 2016** (政治忠诚 起点) — 0
+
+**Trap examples still ACTIVE:**
+- **习近平废除邓小平集体领导** (政策连续性 反证) — 0
+- **扶贫 4 阶段** (救济→开发→精准→共同富裕) — 0
+
+**Structural discipline still ACTIVE:**
+- **【跨课题】brackets** — 0 deployed across Q13+Q17 (target: 3-4/essay)
+- **必要条件题 对比 公式** (2 rebuttals — 承认平衡方 X → 但 X 需 题目条件) — see §18.2
+
+---
+
+### §18.1 Q13 drill (2026-07-19) — 「加强中共的绝对领导是中国实现政治稳定的唯一途径。」
 
 ### §18.1 Q13 drill (2026-07-19) — 「加强中共的绝对领导是中国实现政治稳定的唯一途径。」
 
@@ -1630,3 +1675,38 @@ Priority drill list before rewrite:
 5. **4-generation 法治 chain** (邓→江→胡→习)
 6. 15+ 法律 名 by category (市场 6 + 产权 8 + 劳工 4)
 7. 3 【跨课题】brackets discipline
+
+---
+
+### §18.2.5 State machine — Q13 gaps after Q17 attempt
+
+**Q13 gaps CLOSED (deployed in Q17 correctly + confidently):**
+- ✅ 权由法定 / 法无禁止不可为 (verbatim in Q17)
+- ✅ 政府/市场 看得见/看不见的手 (verbatim in Q17)
+- ✅ 政府法无授权即禁止 / 市场法无禁止即可为 (verbatim in Q17)
+- ✅ 制度性可预期性 (verbatim in Q17)
+- ✅ "有效治理是一个庞大的政治生态" (adapted from Q13's "政治稳定" version — great cross-transfer)
+- ✅ "不能归因于单一因素, 而是取决于多重因素的平衡" (verbatim in Q17)
+- ✅ 把权力关在制度的笼子里 (verbatim in Q17)
+- ✅ 集中力量办大事 → 单点故障 (concept deployed)
+
+**Q13 gaps STILL ACTIVE (not deployed in Q17 — drill forward):**
+- ⚠️ **BANI 时代** — still 0 across 2 attempts
+- ⚠️ **一张蓝图绘到底** — 0
+- ⚠️ **火神山 10 天 5000 患者** — 0
+- ⚠️ **西部大开发 3-way comparison verbatim** (7.3/6.31/5.61) — partial hit only
+- ⚠️ **扶贫 4 阶段** — 0
+- ⚠️ **习废邓集体领导** trap — 0
+- ⚠️ **政令下发之快直通达** — 0
+- ⚠️ **唯中央马首是瞻** — 0
+- ⚠️ **先党内决策, 后政府执行** — 0
+- ⚠️ **推诿扯皮** — 0
+- ⚠️ **强政府, 弱社会** (verbatim) — concept touched, phrasing not
+- ⚠️ **NGO 传感器 → 传话筒** — 0
+- ⚠️ **人民四权被掏空** — 0
+- ⚠️ **【跨课题】brackets** — 0/3 target
+- ⚠️ **因素是非题 alternative-factor structure** — improved but not clean
+
+**Pattern observation:** Ethan CLOSES the 权由法定 / 看得见看不见的手 / 制度可预期性 cluster (economic-legal phrasings) — that group is locked. Still ACTIVE: the CCP-strength side (集中力量办大事 mechanism details + 一张蓝图绘到底 + 火神山/扶贫/西部 case triad). This is the 平衡方 sophistication he needs.
+
+**Next attempt (Q12 上): deploy at least 3 items from §18.0 STANDING DRILL LIST + at least 1 【跨课题】bracket.**
