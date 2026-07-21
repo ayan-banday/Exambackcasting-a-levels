@@ -25,17 +25,17 @@ For melting or boiling point the mark-scheme engine is: name the structure, name
 
 ## Layer 2 — each property, with the reasoning
 
-### Giant ionic
-- **Melting point — high.** There are many strong electrostatic forces of attraction between the oppositely charged ions across the whole lattice, so a large amount of energy is needed to overcome them.
-- **Conductivity — only when molten or aqueous.** In the solid the ions are held in fixed positions and cannot move; when molten or dissolved the ions are free to move and act as mobile charge carriers.
-- **Solubility — usually soluble.** The polar water molecules are attracted to the ions (ion-dipole attraction) and pull them out of the lattice.
-- **Mechanical — hard and rigid but brittle.** Hard because the electrostatic attractions are strong. Brittle because shearing the lattice pushes ions of like charge together, and the repulsion between them shatters the lattice.
+### Giant ionic *(reasoning verbatim from the HCI notes §3.3)*
+- **Melting point — high.** A large amount of energy is needed to overcome the strong electrostatic attractions between the oppositely charged ions. The stronger the ionic bonding, the more energy is needed to overcome it, and the higher the melting and boiling points.
+- **Conductivity — only when molten or aqueous.** In the solid state the ions are in fixed positions and are not free to move, so it does not conduct. In the molten or aqueous state the ions can act as mobile charge carriers, so it conducts. (The conductivity of an aqueous solution rises with concentration, because there are more ions to carry the charge.)
+- **Solubility — usually soluble in water** (e.g. NaCl, KBr, BaCl₂), though some are insoluble (e.g. AgCl). The full explanation belongs to the solubility/energetics section.
+- **Mechanical — hard and rigid but brittle.** The oppositely charged ions are held in fixed positions by strong ionic bonding, and moving them out of position requires large amounts of energy, so the lattice is hard (does not dent or deform easily) and rigid (does not bend easily). If a strong enough force is applied, it forces ions of like charge next to each other, and the repulsion between the like charges causes the lattice to shatter, so it is brittle (cracks without deforming).
 
-### Giant metallic
-- **Melting point — high.** There is a strong electrostatic attraction between the metal cations and the sea of delocalised electrons, so a lot of energy is needed to overcome the metallic bonding.
-- **Conductivity — conducts as a solid and when molten.** The delocalised electrons are free to move and carry charge in both states.
-- **Solubility — insoluble.** The metallic bonding cannot be broken by any interaction with water.
-- **Mechanical — malleable and ductile.** When a force is applied the layers of cations slide over one another; the sea of delocalised electrons prevents the cations from repelling each other, so the metallic bonding stays intact and the metal deforms instead of shattering.
+### Giant metallic *(reasoning verbatim from the HCI notes §2.3)*
+- **Melting point — high.** A large amount of energy is needed to overcome the strong attraction between the metal cations and the delocalised electrons. The stronger the metallic bonding, the more energy is needed to overcome it, and the higher the melting and boiling points. (When a metal melts the cations move further apart but the metallic bonding is not completely broken, so the boiling point is a better indicator of metallic bond strength than the melting point.)
+- **Conductivity — good electrical and thermal conductor.** To conduct, a material must have mobile charge carriers (electrons or ions); metals conduct because the delocalised electrons act as mobile charge carriers. They also conduct heat well: thermal energy makes the electrons move more quickly, and this energy is transferred through the metal by the mobile electrons.
+- **Mechanical — malleable and ductile.** When a large stress (e.g. hammering) is applied, the layers of ions slide over one another into new positions; the metal deforms but does not break apart, because the sea of delocalised electrons prevents repulsion between the cations as they move past one another, and the metallic bonding remains intact.
+- **Hardness.** Hardness depends on how easily the particles can be moved from their fixed positions, which depends on the strength of the metallic bonding. Metals are usually hard, though Group 1 and 2 metals are soft (iron is hard; sodium can be cut with a knife). Metals are insoluble in water.
 
 ### Giant covalent
 - **Melting point — very high.** A very large number of strong covalent bonds extend throughout the lattice and must be broken, which needs a great deal of energy.
