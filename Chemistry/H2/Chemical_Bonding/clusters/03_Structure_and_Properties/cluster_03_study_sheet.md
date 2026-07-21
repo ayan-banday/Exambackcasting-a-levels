@@ -37,17 +37,16 @@ For melting or boiling point the mark-scheme engine is: name the structure, name
 - **Mechanical — malleable and ductile.** When a large stress (e.g. hammering) is applied, the layers of ions slide over one another into new positions; the metal deforms but does not break apart, because the sea of delocalised electrons prevents repulsion between the cations as they move past one another, and the metallic bonding remains intact.
 - **Hardness.** Hardness depends on how easily the particles can be moved from their fixed positions, which depends on the strength of the metallic bonding. Metals are usually hard, though Group 1 and 2 metals are soft (iron is hard; sodium can be cut with a knife). Metals are insoluble in water.
 
-### Giant covalent
-- **Melting point — very high.** A very large number of strong covalent bonds extend throughout the lattice and must be broken, which needs a great deal of energy.
-- **Conductivity — non-conductor, except graphite.** The electrons are held in localised covalent bonds, so there are no mobile charge carriers. Graphite is the exception: each carbon bonds to only three others, leaving one delocalised electron per atom that can move along the layers.
-- **Solubility — insoluble.** No interaction with a solvent is strong enough to break the covalent lattice.
-- **Mechanical — very hard (graphite soft).** Very hard because of the rigid three-dimensional network of strong covalent bonds. Graphite is soft because its layers are held together only by weak forces and slide over each other.
+### Giant covalent *(reasoning verbatim from the HCI notes §10.2)*
+- **Melting point — very high.** A lot of energy is needed to break the strong covalent bonds between the atoms.
+- **Conductivity.** Diamond is unable to conduct electricity as there are no mobile charge carriers — all the valence electrons are held between the atoms and are not free to move. Graphite is a good conductor of electricity (and heat) as the delocalised electrons are free to move along the layers; the delocalised electrons are unable to jump from one layer to the next, so graphite does not conduct in the direction at right angles to the layers. (Each carbon in graphite bonds to three others, and its unused 2p electron overlaps side-on to form a delocalised π bonding system; dispersion forces hold the layers together.)
+- **Solubility — insoluble** in water and organic solvents, because the attractions between the solvent molecules and the atoms are not strong enough to overcome the strong covalent bonds between the atoms.
+- **Mechanical.** Diamond is very hard, strong and non-malleable because of its rigid structure held together by strong covalent bonds. Graphite is soft and slippery because its layers can slide over each other due to the dispersion forces between them.
 
-### Simple molecular
-- **Melting point — low.** Only the weak intermolecular forces between the molecules are overcome, not the covalent bonds inside the molecules, so little energy is needed.
-- **Conductivity — non-conductor.** There are no ions and no delocalised or mobile electrons.
-- **Solubility — soluble only if polar or able to hydrogen-bond.** The solute-solvent attractions formed must be able to replace the attractions broken, so "like dissolves like."
-- **Mechanical — soft.** The weak intermolecular forces are easily overcome.
+### Simple molecular *(reasoning verbatim from the HCI notes §10.1.1)*
+- **Melting point — low.** The physical properties depend on the strength of the intermolecular forces; simple molecular substances have low melting and boiling points as the weak intermolecular forces between molecules require little thermal energy to overcome. (For example, boiling water breaks the weak hydrogen bonding between the molecules; the strong covalent bonds holding the H and O atoms together are not broken, so the H₂O molecules remain intact.)
+- **Conductivity — unable to conduct electricity**, as there are no mobile charge carriers. (However, some simple covalent substances react with water to give aqueous ions, which lets the solution conduct — for example HCl(g) + H₂O(l) → Cl⁻(aq) + H₃O⁺(aq).)
+- **Solubility.** Many simple molecular compounds are soluble in organic solvents (propanone, tetrachloromethane, benzene). Some (e.g. ethanol, ethanoic acid, glucose) are soluble in water due to their ability to form hydrogen bonds with water.
 
 ---
 
