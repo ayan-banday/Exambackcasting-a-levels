@@ -1964,6 +1964,38 @@ window.PLAN = {
  ],
  "log": [
   {
+   "date": "2026-07-20",
+   "weekday": "Mon",
+   "items": [
+    {
+     "subject": "conv",
+     "mins": 0,
+     "what": "Rest day — did not study",
+     "done": false
+    }
+   ],
+   "note": "Rest day. The planned Bonding cluster 2 + CSC shifted to 21 Jul."
+  },
+  {
+   "date": "2026-07-21",
+   "weekday": "Tue",
+   "items": [
+    {
+     "subject": "chem",
+     "mins": 135,
+     "what": "Chemical Bonding clusters 2 & 3 done — Bonding fully cleared (all 3 clusters + gaps)",
+     "done": true
+    },
+    {
+     "subject": "csc",
+     "mins": 110,
+     "what": "Governance Step 3 — questions 2/6 drilled + covered Q1 gaps",
+     "done": true
+    }
+   ],
+   "note": "~4h. Bonding closed. Governance 2 of ~6 questions done (4 more to go)."
+  },
+  {
    "date": "2026-07-19",
    "weekday": "Sun",
    "items": [
