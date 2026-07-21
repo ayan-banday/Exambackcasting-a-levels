@@ -46,33 +46,34 @@ Lattice energies / kJ mol⁻¹: NaF −918, NaCl −780, MgO −3791, CaO −340
 
 > Verbatim wording where it scores.
 
-## Q1
-(a) Ethene: both C **sp²**. Ethyne: both C **sp**. HCN: C **sp** (N is sp). [3]
-(b) Ethene: **5 σ, 1 π** (4 C–H + 1 C–C σ, 1 C=C π). Ethyne: **3 σ, 2 π** (2 C–H + 1 C–C σ, 2 in C≡C). HCN: **2 σ, 2 π** (H–C, C–N σ; 2 π in C≡N). [3]
-(c) Ethene H–C–H = **120°** (sp², trigonal planar C). HCN is **linear** (180°). [2]
+## Q1 — Hybridisation, σ/π and shape of ethene, ethyne and HCN
+(a) In ethene both carbons are **sp²**. In ethyne both carbons are **sp**. In HCN the carbon is **sp** (and the nitrogen is sp). [3]
+(b) Ethene has **5 σ and 1 π** (four C–H sigma bonds, one C–C sigma bond, and one pi bond in the C=C). Ethyne has **3 σ and 2 π** (two C–H sigma bonds, one C–C sigma bond, and two pi bonds in the triple bond). HCN has **2 σ and 2 π** (the H–C and C–N sigma bonds, and two pi bonds in the C≡N triple bond). [3]
+(c) The H–C–H bond angle in ethene is **120°** because each carbon is sp² and trigonal planar. HCN is **linear**, with a bond angle of **180°**. [2]
 
-## Q2
-(a) C≡C has bond order 3 (1σ + 2π) vs 1 for C–C → **more shared electron density between the nuclei → stronger electrostatic attraction to both nuclei → shorter and stronger**. [2]
-(b) F is a very small atom, so the lone pairs on the two bonded F atoms are close together → strong **lone-pair–lone-pair repulsion** weakens the F–F bond, making it anomalously weak. [3]
-(c) N₂ has a very strong N≡N triple bond (very high bond energy), so a large amount of energy is needed to break it → unreactive. [1]
+## Q2 — Bond order and length, the F–F anomaly, and why N₂ is unreactive
+(a) The C≡C bond has a bond order of three (one sigma and two pi bonds) compared with one for C–C. There is **more shared electron density between the two nuclei**, which gives a **stronger electrostatic attraction between the shared electrons and both positively charged nuclei**. This pulls the nuclei closer together, so the bond is **shorter**, and it also means **more energy is required to break it**, so the bond is **stronger**. [2]
+(b) Fluorine is a very small atom, so the lone pairs on the two bonded fluorine atoms are held close together. This causes strong **lone pair–lone pair repulsion**, which weakens the F–F bond and makes it anomalously weak. [3]
+(c) Nitrogen has a very strong **N≡N triple bond with a very high bond energy**, so a large amount of energy is needed to break it, which makes nitrogen **unreactive**. [1]
 
-## Q3
-(a) **BF₃:** B has only **6 electrons** (3 bond pairs) → **electron-deficient** (below the octet). **SF₆:** S has **12 electrons** (6 bond pairs) → **expanded octet**, possible because S is Period 3 and can use energetically accessible **d orbitals**. (Dots/crosses drawn accordingly.) [4]
-(b) The **lone pair on N is donated into the empty orbital on B**, forming a **co-ordinate (dative) bond** (N→B). Both shared electrons come from N; once formed it is identical to a normal covalent bond. [3]
+## Q3 — Octet exceptions and the dative bond in BF₃ and SF₆
+(a) In BF₃, boron has only **six electrons** in its outer shell (three bond pairs), so it is **electron-deficient** (below the octet). In SF₆, sulfur has **twelve electrons** (six bond pairs), so it has an **expanded octet**, which is possible because sulfur is in Period 3 and can use energetically accessible **d orbitals**. [4]
+(b) The **lone pair on the nitrogen atom is donated into the empty orbital on boron**, forming a **co-ordinate (dative) bond**. Both of the shared electrons come from the nitrogen atom, and once formed the bond is identical to a normal covalent bond. [3]
 
-## Q4
-(a) The **ability of an atom to attract the bonding (shared) pair of electrons in a covalent bond towards itself.** [1]
-(b) NaCl is **ionic** (giant ionic lattice) — strong electrostatic forces between Na⁺ and Cl⁻ → high mp. In AlCl₃, **Al³⁺ is small and highly charged (high charge density / polarising power)**, so it strongly **polarises the Cl⁻ electron cloud (Fajans)** → the bonding has significant **covalent character** → AlCl₃ is **simple molecular** → only weak dispersion forces to overcome → low sublimation temperature. [4]
+## Q4 — Why NaCl melts high but AlCl₃ sublimes low
+(a) Electronegativity is the **ability of an atom to attract the bonding (shared) pair of electrons in a covalent bond towards itself.** [1]
+(b) Sodium chloride is **ionic**, with a giant ionic lattice held together by strong electrostatic forces between the Na⁺ and Cl⁻ ions, so it has a high melting point. In aluminium chloride, the **Al³⁺ ion is small and highly charged, giving it a high charge density and strong polarising power**, so it strongly **polarises the electron cloud of the chloride ion (Fajans)**. This gives the bonding significant **covalent character**, so AlCl₃ is **simple molecular**, and only weak dispersion forces need to be overcome, giving a low sublimation temperature. [4]
 
-## Q5
-(a) F⁻ is smaller than Cl⁻ → smaller inter-ionic distance (r⁺+r⁻) → stronger attraction → more exothermic LE. [2]
-(b) Mg²⁺ and O²⁻ have **higher charges (+2/−2 vs +1/−1)** and smaller radii → larger charge product and smaller distance → much more exothermic LE. [2]
-(c) Mg²⁺ is smaller than Ca²⁺ → smaller inter-ionic distance → more exothermic LE. [1]
+## Q5 — Lattice energy comparisons (NaF, NaCl, MgO, CaO)
+Lattice energy depends on the ionic charges and radii through the relationship **lattice energy ∝ (charge of cation × charge of anion) / (sum of the ionic radii, r⁺ + r⁻)**. Each part applies this relationship.
+(a) The charges are the same (+1 and −1), but the fluoride ion is **smaller** than the chloride ion, so the **sum of the ionic radii (r⁺ + r⁻) is smaller**. By the relationship above, a smaller denominator gives a **more exothermic lattice energy**, so NaF is more exothermic than NaCl. [2]
+(b) In MgO the ions have **higher charges (+2 and −2, giving a charge product of 4 compared with 1 for NaF)** and **smaller radii**. By the relationship, both the larger numerator and the smaller denominator make the lattice energy of MgO **much more exothermic** than that of NaF. [2]
+(c) The charges are the same (+2 and −2), but the **Mg²⁺ ion is smaller than the Ca²⁺ ion**, so the sum of the ionic radii is smaller. By the relationship, this makes the lattice energy of MgO **more exothermic** than that of CaO. [1]
 
-## Q6
-(a) Na → Mg → Al each contributes **more delocalised valence electrons (1 → 2 → 3)** and the cation has **higher charge and smaller radius (higher charge density)** → stronger metallic bonding → more energy to overcome → higher mp. [3]
-(b) Mg contributes **2 delocalised electrons per atom** (vs 1 for Na) → more mobile charge carriers → better conductor. [1]
+## Q6 — Why melting point increases from Na to Al
+(a) Going from sodium to magnesium to aluminium, each atom contributes **more delocalised valence electrons (one, then two, then three)** and the cation has a **higher charge and smaller radius, and so a higher charge density**. This gives **stronger metallic bonding**, so more energy is needed to overcome it and the melting point increases. [3]
+(b) Magnesium contributes **two delocalised electrons per atom** compared with one for sodium, so it has more mobile charge carriers and is the better conductor. [1]
 
-## Q7
-(a) **Ionic:** between oppositely charged ions (cations and anions). **Covalent:** between the shared pair of electrons and the two positively charged nuclei. **Metallic:** between the lattice of positive metal ions (cations) and the sea of delocalised electrons. [3]
-(b) When molten, the **ions are free to move → mobile charge carriers → conduct**. A molten simple molecular substance has only **neutral molecules — no ions or delocalised electrons → no mobile charge carriers → does not conduct**. [2]
+## Q7 — The three definitions, applied to conductivity
+(a) In an **ionic bond** the electrostatic attraction is between the oppositely charged ions (cations and anions). In a **covalent bond** it is between the shared pair of electrons and the two positively charged nuclei. In a **metallic bond** it is between the lattice of positive metal ions (cations) and the sea of delocalised electrons. [3]
+(b) When an ionic compound is molten, the **ions are free to move**, so they act as **mobile charge carriers** and it conducts electricity. A molten simple molecular substance is made of **neutral molecules** with no ions and no free electrons, so there are **no mobile charge carriers** and it does not conduct. [2]
