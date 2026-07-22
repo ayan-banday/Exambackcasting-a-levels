@@ -867,6 +867,19 @@ window.PLAN = {
    ]
   },
   {
+   "n": "",
+   "date": "2026-07-20",
+   "weekday": "Mon",
+   "week": 1,
+   "type": "rest",
+   "subject": "conv",
+   "flag": "",
+   "label": "Rest day",
+   "focus": "",
+   "mins": 0,
+   "blocks": []
+  },
+  {
    "n": "✓",
    "date": "2026-07-21",
    "weekday": "Tue",
@@ -896,6 +909,19 @@ window.PLAN = {
      "doneDate": "21 Jul"
     }
    ]
+  },
+  {
+   "n": "",
+   "date": "2026-07-22",
+   "weekday": "Wed",
+   "week": 1,
+   "type": "rest",
+   "subject": "conv",
+   "flag": "",
+   "label": "Rest day",
+   "focus": "",
+   "mins": 0,
+   "blocks": []
   },
   {
    "n": 7,
@@ -1003,6 +1029,19 @@ window.PLAN = {
      "doneDate": null
     }
    ]
+  },
+  {
+   "n": "",
+   "date": "2026-07-26",
+   "weekday": "Sun",
+   "week": 1,
+   "type": "rest",
+   "subject": "conv",
+   "flag": "",
+   "label": "Rest day",
+   "focus": "",
+   "mins": 0,
+   "blocks": []
   },
   {
    "n": 10,
@@ -1213,6 +1252,19 @@ window.PLAN = {
      "doneDate": null
     }
    ]
+  },
+  {
+   "n": "",
+   "date": "2026-08-02",
+   "weekday": "Sun",
+   "week": 2,
+   "type": "rest",
+   "subject": "conv",
+   "flag": "",
+   "label": "Rest day",
+   "focus": "",
+   "mins": 0,
+   "blocks": []
   },
   {
    "n": 16,
@@ -1432,6 +1484,19 @@ window.PLAN = {
    ]
   },
   {
+   "n": "",
+   "date": "2026-08-09",
+   "weekday": "Sun",
+   "week": 3,
+   "type": "rest",
+   "subject": "conv",
+   "flag": "",
+   "label": "Rest day",
+   "focus": "",
+   "mins": 0,
+   "blocks": []
+  },
+  {
    "n": 22,
    "date": "2026-08-10",
    "weekday": "Mon",
@@ -1640,6 +1705,19 @@ window.PLAN = {
      "doneDate": null
     }
    ]
+  },
+  {
+   "n": "",
+   "date": "2026-08-16",
+   "weekday": "Sun",
+   "week": 4,
+   "type": "rest",
+   "subject": "conv",
+   "flag": "",
+   "label": "Rest day",
+   "focus": "",
+   "mins": 0,
+   "blocks": []
   },
   {
    "n": 28,
@@ -1857,6 +1935,19 @@ window.PLAN = {
      "doneDate": null
     }
    ]
+  },
+  {
+   "n": "",
+   "date": "2026-08-23",
+   "weekday": "Sun",
+   "week": 5,
+   "type": "rest",
+   "subject": "conv",
+   "flag": "",
+   "label": "Rest day",
+   "focus": "",
+   "mins": 0,
+   "blocks": []
   }
  ],
  "rest": [
@@ -1884,28 +1975,28 @@ window.PLAN = {
   ],
   [
    1,
-   "✓",
-   9
+   "",
+   ""
   ],
   [
    2,
    10,
-   15
+   ""
   ],
   [
    3,
    16,
-   21
+   ""
   ],
   [
    4,
    22,
-   27
+   ""
   ],
   [
    5,
    28,
-   33
+   ""
   ]
  ],
  "log": [
