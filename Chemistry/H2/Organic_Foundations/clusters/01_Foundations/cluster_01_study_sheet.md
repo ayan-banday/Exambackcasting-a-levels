@@ -76,64 +76,51 @@ Each ring or double bond = one degree. Compare the formula to the saturated Cₙ
 
 ---
 
-## Drill questions — attempt out loud, no looking up
+## Drill questions — evaluative, attempt out loud
 
-> These fuse several concepts at once, the way the exam does. Say your reasoning on Wispr Flow. Reveal only after you've committed to an answer.
+> Three questions only. Each one braids many concepts and ends in a judgement — you'll have to hold several facts at once and reason to a conclusion. That's the point: one question revises a big slice of the topic. Say your reasoning on Wispr Flow; reveal only after you've fully committed.
 
-**Q1.** C₄H₈ has several isomers. Draw them all, name each, and classify every isomerism relationship between them (chain / positional / cis-trans). Explain why but-2-ene shows cis-trans isomerism but 2-methylpropene does not.
+**Q1 — one formula, many molecules.** A hydrocarbon has molecular formula **C₄H₈**.
+(a) Deduce *every* possible structure and organise them by the type of isomerism relating them; identify which show cis-trans isomerism and justify with the exact bonding requirement.
+(b) These isomers differ sharply in reactivity. For the ones that react rapidly with bromine, name the reaction *type* and *mechanism* and explain — from the bonding — **why** they react while the ring isomer behaves like an alkane.
+(c) Predict, with reasoning from intermolecular forces, which isomer has the highest boiling point.
+(d) **Conclude:** how can a single molecular formula give compounds that differ in *both* reactivity *and* physical properties — what one structural feature is doing the work in each case?
 
 <details><summary>Model answer</summary>
 
-Isomers of C₄H₈ (1 degree of unsaturation → one C=C or one ring):
-- but-1-ene (CH₂=CHCH₂CH₃), but-2-ene (CH₃CH=CHCH₃), 2-methylpropene (CH₂=C(CH₃)₂), plus cyclobutane / methylcyclopropane (ring isomers).
-- but-1-ene ↔ but-2-ene = **positional** isomers; but-1-ene ↔ 2-methylpropene = **chain** isomers.
-- **but-2-ene shows cis-trans**: each C=C carbon carries an H and a CH₃ (two *different* groups), and the π bond locks rotation → cis and trans exist.
-- **2-methylpropene does not**: one C=C carbon carries **two identical** CH₃ groups, so swapping them gives the same molecule.
-
-Mark-earning point: cis-trans needs a C=C **and** two different groups on **each** doubly-bonded carbon.
+- (a) 1 degree of unsaturation (C₄H₈ is 2 H short of C₄H₁₀) → one C=C **or** one ring. Structures: but-1-ene, but-2-ene, 2-methylpropene (all alkenes) + cyclobutane / methylcyclopropane (rings). **Positional:** but-1-ene ↔ but-2-ene. **Chain:** but-1-ene ↔ 2-methylpropene. **Functional-group/ring:** alkenes ↔ cycloalkanes. **Cis-trans:** only **but-2-ene** — each C=C carbon carries an H and a CH₃ (two *different* groups) and the π bond locks rotation; 2-methylpropene fails (one carbon has two identical CH₃).
+- (b) The alkenes react with bromine by **electrophilic addition**: the π bond is a region of high electron density that attracts the electrophile (Br₂ is polarised as it approaches). The ring isomer cyclobutane has only σ C–C/C–H bonds, non-polar, no π density → behaves like an alkane (only radical substitution under UV).
+- (c) Boiling points are close (all C₄, non-polar, only id–id), but the **least-branched** straight-chain (but-1-ene/but-2-ene) has the largest surface contact → strongest id–id → highest bp; 2-methylpropene (more spherical) is lowest.
+- (d) **Conclusion:** reactivity is set by the **π bond** (present → electrophilic addition; absent → alkane-like); physical properties are set by **shape/surface area** governing id–id. One formula spans several molecules because the *arrangement* — where the unsaturation sits and how the chain branches — is what actually determines behaviour, not the formula.
 </details>
 
-**Q2.** For the reaction of bromoethane (CH₃CH₂Br) with aqueous sodium hydroxide, name the reaction *type* and *mechanism*, identify the nucleophile, and explain — using bond polarity — which carbon is attacked.
+**Q2 — structure decides the pathway.** Consider three reactions:
+(i) ethene + bromine → 1,2-dibromoethane
+(ii) bromoethane + hydroxide ion → ethanol + bromide ion
+(iii) ethane + chlorine (UV) → chloroethane + HCl
+(a) For each, classify the reaction *type* and *mechanism*, and state whether the attacking species is a **nucleophile, electrophile, or radical** — justifying each choice from the electronic nature of the organic molecule (its δ+/δ− site, its π density, or the lack of either).
+(b) Explain why (i) and (ii) proceed by **heterolytic** (ionic) pathways but (iii) must go **homolytic** (radical) — tie it to bond polarity and the presence or absence of an electron-rich or electron-poor site.
+(c) **Conclude** with the single general principle linking a molecule's *structure* to the *mechanism* it is forced to follow.
 
 <details><summary>Model answer</summary>
 
-- **Type:** substitution. **Mechanism:** nucleophilic substitution.
-- **Nucleophile:** OH⁻ (electron-pair donor, has lone pairs).
-- Br is more electronegative than C, so the C–Br bond is polar: the carbon bonded to Br is **δ+**. OH⁻ is attracted to and attacks that electron-poor carbon; Br leaves as Br⁻.
-
-Mark-earning point: name the nucleophile as an electron-pair donor and tie the attack site to the δ+ carbon.
+- (i) **Addition · electrophilic** — the C=C π density is electron-rich; Br₂ becomes the **electrophile** (induced dipole) and is attacked. (ii) **Substitution · nucleophilic** — C–Br is polar so that C is δ+; OH⁻ is the **nucleophile** (lone-pair donor) attacking the δ+ carbon, Br⁻ leaves. (iii) **Substitution · free-radical** — ethane is non-polar with no δ+ site and no π density, so the attacking species is a **radical** (Cl•).
+- (b) (i)/(ii) have an electron-rich site (π) or a polar bond (δ+ C) for ions to target → heterolytic fission gives ions that react. (iii) has neither, so no ion can attack; the only way in is UV homolysis of Cl₂ to radicals.
+- (c) **Conclusion:** the mechanism is dictated by structure — a π system invites **electrophiles**, a polar σ bond (δ+ C) invites **nucleophiles**, and a non-polar unreactive molecule can only be attacked by **radicals**. Find the electronic feature and the mechanism follows.
 </details>
 
-**Q3.** Write the full mechanism for the monochlorination of methane (CH₄ + Cl₂ → CH₃Cl + HCl), labelling initiation, propagation and termination. State the condition required and explain why it is free-radical, not ionic.
+**Q3 — deduce and judge.** An organic compound **X** has molecular formula **C₃H₆O₃** and is **optically active**.
+(a) Determine the degree of unsaturation and use it to narrow the functional groups X could contain.
+(b) X reacts with sodium carbonate to release a gas. Deduce that functional group and hence the class of X, and account for the remaining oxygen.
+(c) Given X is optically active, deduce its full structure, name it, and explain exactly what makes it chiral.
+(d) **Evaluate:** describe X's enantiomer and explain why the two are genuinely different compounds despite identical connectivity — then give one property that *would* distinguish them and one that *would not*.
 
 <details><summary>Model answer</summary>
 
-- Condition: **UV light** (or high temperature).
-- **Initiation:** Cl₂ → 2Cl• (UV breaks Cl–Cl *homolytically*).
-- **Propagation:** Cl• + CH₄ → •CH₃ + HCl ; •CH₃ + Cl₂ → CH₃Cl + Cl• (regenerates the radical → chain).
-- **Termination:** any two radicals combine, e.g. •CH₃ + Cl• → CH₃Cl (or 2Cl• → Cl₂, 2•CH₃ → C₂H₆).
-- Free-radical because alkanes are non-polar and unreactive — there is no δ+ site for an ion to attack, so the reaction proceeds via homolytic fission and radicals.
-</details>
-
-**Q4.** Molecule X has molecular formula C₃H₆O. Give **two** structural isomers with *different functional groups*, name each, and state the isomerism relationship. Which could show optical isomerism, and why (or why not)?
-
-<details><summary>Model answer</summary>
-
-- C₃H₆O (1 degree of unsaturation): **propanal** (CH₃CH₂CHO, aldehyde) and **propanone** (CH₃COCH₃, ketone) — **functional-group isomers**. (Prop-2-en-1-ol / an epoxide are also valid.)
-- **Neither propanal nor propanone shows optical isomerism** here: neither has a carbon bonded to 4 *different* groups (no chiral centre).
-
-Mark-earning point: optical isomerism needs a **chiral carbon** = 4 different groups on one C.
-</details>
-
-**Q5.** Explain, in terms of degree of unsaturation and functional groups, how you would deduce the possible structures of an unknown organic compound with formula C₄H₈O₂ that is known to react with sodium carbonate to give a gas.
-
-<details><summary>Model answer</summary>
-
-- C₄H₈O₂ vs saturated C₄H₁₀ → 2 H short = **1 degree of unsaturation** (one C=O or ring).
-- Reacts with Na₂CO₃ releasing a gas (CO₂) → it is a **carboxylic acid** (–COOH is the only common organic group acidic enough to displace CO₂ from a carbonate).
-- So it is a C₄ carboxylic acid: **butanoic acid** (CH₃CH₂CH₂COOH) or **2-methylpropanoic acid** ((CH₃)₂CHCOOH) — chain isomers.
-
-Mark-earning point: the Na₂CO₃ + gas test is diagnostic for –COOH; the degree of unsaturation is used up by the C=O of the acid.
+- (a) Degree of unsaturation = (2·3 + 2 − 6)/2 = **1** → one C=O or one ring. With three O atoms, that points to a C=O plus two O–H / C–O environments.
+- (b) Effervescence with Na₂CO₃ (CO₂) is diagnostic for **–COOH** → X is a **carboxylic acid**. The –COOH uses one C and two O; the **third O** must be a separate **–OH** group.
+- (c) So X = a C₃ hydroxy-acid: **2-hydroxypropanoic acid (lactic acid), CH₃CH(OH)COOH** (check: C₃H₆O₃ ✓). The **central carbon is chiral** — it bears four different groups: CH₃, OH, H and COOH.
+- (d) The enantiomer is its **non-superimposable mirror image** (opposite configuration at the chiral carbon). They are genuinely different compounds because a chiral centre has no plane of symmetry, so no rotation makes them coincide. **Distinguishes them:** they rotate plane-polarised light equally but in *opposite* directions (and react at different rates with another chiral molecule). **Does NOT distinguish:** ordinary physical properties (mp, bp, density) and reactions with achiral reagents are identical.
 </details>
 
 ---

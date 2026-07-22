@@ -334,8 +334,8 @@ footer a{color:var(--dim)}
         </div></details>`;
       const nxt=new Date(d.date+'T00:00:00Z'); nxt.setUTCDate(nxt.getUTCDate()+1);
       const ns=nxt.toISOString().slice(0,10);
-      if(P.rest.includes(ns)){const[,m2,d2]=ns.split('-');
-        html+=`<div class="rest">☾ &nbsp;Sun ${+d2} ${MO[+m2]} — rest</div>`;}
+      if(P.rest.includes(ns)){const[,m2,d2]=ns.split('-');const rwd=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][nxt.getUTCDay()];
+        html+=`<div class="rest">☾ &nbsp;${rwd} ${+d2} ${MO[+m2]} — rest</div>`;}
     });
     html+='</div>';
   });
