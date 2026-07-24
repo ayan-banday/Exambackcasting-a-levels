@@ -1737,3 +1737,75 @@ Priority drill list before rewrite:
 **Pattern observation:** Ethan CLOSES the 权由法定 / 看得见看不见的手 / 制度可预期性 cluster (economic-legal phrasings) — that group is locked. Still ACTIVE: the CCP-strength side (集中力量办大事 mechanism details + 一张蓝图绘到底 + 火神山/扶贫/西部 case triad). This is the 平衡方 sophistication he needs.
 
 **Next attempt (Q12 上): deploy at least 3 items from §18.0 STANDING DRILL LIST + at least 1 【跨课题】bracket.**
+
+---
+
+### §18.3 Q12 drill (2026-07-25) — 「党国体制在多大程度上有利于中国的长治久安？」
+
+**TNT source:** p.53-57, 是非题 (with 多大程度 modifier), 立场: 不同意 (在很大程度上不利于)
+
+**Score: 23/30 (Tier 4 lower)** — trajectory Q13 17 → Q17 21 → Q12 23. Major structural jump — first time reaching Tier 4.
+
+---
+
+**BIG WINS (state machine ACTIVE → CLOSED):**
+
+- ✅ **3 clean 立场 分论点** (纠错弊端 + 政绩困局 + 党主法治) — was 1 in Q13, 2 in Q17
+- ✅ **2 clean 平衡 arguments** (集中力量办大事 + 一张蓝图绘到底)
+- ✅ **火神山 10 天 5000 患者** (Q13 gap CLOSED)
+- ✅ **一张蓝图绘到底** (Q13 gap CLOSED)
+- ✅ **唯中央马首是瞻** (Q13 gap CLOSED)
+- ✅ **推诿扯皮** (Q13 gap CLOSED)
+- ✅ **先党内决策, 后政府执行** (Q13 gap CLOSED)
+- ✅ **西部大开发 三代领袖** 江→胡温→习 chain (Q13 partial CLOSED; 3-way % still ACTIVE)
+- ✅ **群体事件 18 万起/年 + 2008 官方停止公布** (Q17 gap CLOSED)
+- ✅ **亨廷顿 制度适应性** as evaluative axis (Q13/Q17 gap CLOSED)
+
+Plus solid: 民主花瓶, 单点故障, 白纸 2022, 政绩困局, 塔西佗陷阱, 维稳费 1.4 万亿, 使命型政党, 苏东剧变, 党主法治, 晚礼服/遮羞布, 有法不依执法不严违法不究, 709 大抓捕, 单一制大国.
+
+---
+
+**Current Q12 model gaps (still ACTIVE):**
+
+- ⚠️ **党领导人大 → 人大架空 → 决策错误无监督** chain (立场 1 model mechanism)
+- ⚠️ **官商勾结 + 广州白云机场** (立场 2 model case)
+- ⚠️ **4.03 万社会团体 + 3.95 万民办非企业单位 建立中共党组织** (立场 3 NGO data)
+- ⚠️ **NGO 传感器 → 传话筒** verbatim (立场 3)
+- ⚠️ **2022 年 4月 上海封控 2600 万人 + 23 城市 + 1.93 亿人 + 全国 GDP 22%** (比较 1 Zero-COVID case)
+- ⚠️ **习近平修宪取消国家主席任期制 vs 邓小平任期制** (比较 2 case) — mentioned briefly, not driven
+- ⚠️ **2013 上海自贸区 + 微软/苹果/特斯拉** (平衡 2 model choice — you used 西部大开发 instead)
+
+---
+
+**Data errors:**
+- ❌ **西部大开发 7% 高于美国 6%** — WRONG. Correct: **西部 7.3% > 全国 6.31% > 东部 5.61%** (all within China)
+- ❌ **中产 2001 4% → 2019 42%** — WRONG. Correct: **2024 42.3%**
+- ❌ **"法律禁止不可为"** — verbatim confusion. Correct: **"法无禁止不可为"**
+
+---
+
+**🔁 PRIOR-Q gaps that ALSO fit Q12 (STILL ACTIVE after 3 attempts):**
+
+- ⚠️ **BANI 时代** — still 0/3 attempts. **CRITICAL.** Would deploy in 比较 1 段: "党国体制无法适应 **BANI 时代**的需求"
+- ⚠️ **强政府, 弱社会** verbatim — 0/3. Fits 立场 3 NGO 段
+- ⚠️ **人民四权 (知情/表达/参与/监督) 被掏空** — 0/3. Fits 立场 3 民主执政不利
+- ⚠️ **NGO 传感器 → 传话筒** verbatim — 0/3. You mentioned NGO but no verbatim
+- ⚠️ **政令下发之快直通达** — 0/3. Fits 平衡 1 火神山 段: "体现出了**政令下发之快直通达**的优势"
+- ⚠️ **皮尤 85% 中国 vs 35% 美国** (Q17 gap) — 0/2
+- ⚠️ **孙小果案** (Q17 gap) — 0/2. Fits 立场 2 as 司法漏洞 case
+- ⚠️ **4-generation 法治 chain** (邓有法可依 → 江依法治国 → 胡法治政府 → 习全面推进依法治国) — 0/2
+- ⚠️ **【跨课题】brackets** — 0/3 attempts! Model Q12 uses 5-7 brackets
+
+---
+
+**Priority drills before Q14 (mock exam next):**
+
+1. **BANI 时代** — force-deploy 3rd chance
+2. **【跨课题】brackets** — minimum 3 in Q14
+3. **强政府弱社会** + **人民四权掏空** + **NGO 传感器→传话筒** verbatim triple
+4. **政令下发之快直通达** phrasing
+5. **皮尤 85% vs 35%** + **孙小果案** carry forward
+6. Data fix: 西部大开发 **7.3% > 全国 6.31% > 东部 5.61%**
+7. Data fix: 中产 **2024 42.3%**
+
+**Status: Q12 FRAGILE (Tier 4 lower — first time reaching Tier 4 threshold).**
