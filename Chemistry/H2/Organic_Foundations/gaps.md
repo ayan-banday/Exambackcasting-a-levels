@@ -28,5 +28,16 @@ Declarative topic: gaps are recorded here and re-tested next session (day+1 / +7
 
 | 13 | **Why electrophilic addition is carried out in the dark** (classic exam Q). | FRAGILE (self-answered correctly) | To prevent UV light causing homolytic fission of the halogen, generating radicals and free-radical substitution as a competing side reaction. Now in the cluster. |
 
+## From the cluster-1 drill (25 Jul, Q8 lactic acid)
+
+| # | Gap | State | Note |
+|---|---|---|---|
+| 14 | **Nucleophilic substitution vs electrophilic addition** — "it seems kind of the same to me." | ACTIVE | Opposite: addition = electron-rich alkene attacked by electrophile, two molecules add, no leaving group. Substitution = δ+ carbon attacked by nucleophile, one group swapped, leaving group departs. Now in cluster. |
+| 15 | **Degree-of-unsaturation arithmetic** — first got 0, then corrected to 1. | FRAGILE | (2×3 + 2 − 6)/2 = 1. Apply the formula slowly. |
+| 16 | **Naming with two groups** — said "3-hydroxypropanoic acid" before fixing to 2-. | ACTIVE | –COOH is the suffix and takes carbon 1; –OH is the "hydroxy-" prefix. Optical activity forces the OH onto C2 (four different groups → chiral). Now in cluster. |
+| 17 | **Building the structure from the formula / H-count** — confused ("why 6 H, I only have 4"). | FRAGILE | CH₃CH(OH)COOH = C₃H₆O₃. |
+| 18 | **"Account for the remaining oxygen"** phrasing — unsure what was being asked. | FRAGILE | –COOH uses 2 O; the third O is a separate –OH. |
+| 19 | **Racemic mixture** — asked what it is / why it matters. | ACTIVE | 50:50 mixture of enantiomers; rotations cancel so it is optically inactive; forms from a planar intermediate. Now in cluster. |
+
 ## Cluster feedback (25 Jul)
 Ethan: the exam-style question was excellent ("this exam paper is great") but the cluster's Layer 1/Layer 2 under-taught — it defined reaction *types* but never taught the *mechanisms* the question demanded (electrophilic addition). **Fix applied:** cluster now teaches electrophilic addition + free-radical substitution step-by-step + the branching/dispersion wording. Lesson: for organic, the cluster must teach the mechanisms, not just the type definitions.

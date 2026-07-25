@@ -67,6 +67,10 @@ Pre-study is built in below (Layer 1 → Layer 2). Read it once, then go straigh
 | Cis-trans (stereo) | groups fixed either side of a C=C | a C=C **and** two *different* groups on **each** doubly-bonded carbon |
 | Enantiomerism / optical (stereo) | mirror-image arrangement | a **chiral carbon** — 4 *different* groups on one carbon |
 
+**Racemic mixture (racemate):** an equimolar (50:50) mixture of the two enantiomers. Because the two enantiomers rotate plane-polarised light by equal amounts in opposite directions, their effects cancel and a racemic mixture is **optically inactive** (no net rotation). A racemate forms whenever a chiral centre is created from a flat, achiral intermediate such as a planar carbocation, because the incoming group can attack either face of it equally.
+
+**Naming a compound with two functional groups:** the group of highest priority (here –COOH) is the suffix and takes the lowest locant, so the acid carbon is carbon 1; a lower-priority group (here –OH) becomes a prefix, "hydroxy-", with its own locant. Optical activity then fixes where that group sits — lactic acid must be **2-hydroxypropanoic acid**, because only with the –OH on carbon 2 is that carbon bonded to four different groups (CH₃, OH, H and COOH) and therefore chiral. If the –OH were on carbon 3 the molecule would not be chiral.
+
 ### Alkanes — the unreactive baseline
 - Saturated, non-polar, so they undergo only **free-radical substitution** (with halogens under ultraviolet light) and **combustion**.
 - Free-radical substitution has three stages. In **initiation**, ultraviolet light breaks the halogen bond homolytically to form two radicals. In **propagation**, a halogen radical removes an H from the alkane to give an alkyl radical and HX, and that alkyl radical then reacts with another halogen molecule to give the halogenoalkane and a new halogen radical, so the chain continues. In **termination**, two radicals combine. The conditions are **ultraviolet light**, not heat.
@@ -84,6 +88,8 @@ Overall the reaction is **addition** (two molecules become one and the double bo
 
 ### Nucleophilic substitution — how a halogenoalkane reacts with hydroxide
 The carbon–halogen bond is polar, so that carbon is δ+. A nucleophile such as the hydroxide ion uses a lone pair to attack the δ+ carbon, and the halogen leaves with both bonding electrons as a halide ion. The product is an alcohol. The halide does not attack back, because the halide ion is a **good leaving group** while the –OH is a **poor leaving group** (a strong C–O bond), so the reaction runs in the direction that expels the halide.
+
+**Electrophilic addition and nucleophilic substitution are opposites, not the same reaction.** In electrophilic addition the substrate is **electron-rich** (the alkene's π bond) and it is attacked by an **electrophile**; two molecules **add** together, the double bond becomes a single bond, and there is **no leaving group**. In nucleophilic substitution the substrate has an **electron-poor δ+ carbon** (from a polar C–halogen bond) and it is attacked by a **nucleophile**; one group is **substituted** for another and a **leaving group departs**. They look similar because both break bonds heterolytically and go through ions, but the attacking species (electrophile versus nucleophile) and the outcome (addition versus substitution) are opposite.
 
 ### Heterolytic or homolytic — how to decide
 A reaction goes **heterolytically** (the bond breaks so both electrons go to one atom, forming ions) when there is a polar bond or an electron-rich site to drive the unequal split: the π cloud of an alkene, or the δ+ carbon of a halogenoalkane. A reaction can only go **homolytically** (each atom keeps one electron, forming radicals) when the molecule is non-polar with no δ+/δ− site and no π cloud, so the only way to break the bond is with the energy of ultraviolet light.
