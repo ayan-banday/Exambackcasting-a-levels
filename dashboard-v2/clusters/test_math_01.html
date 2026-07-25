@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Maths Test 1 — Calculus + Vectors</title>
+<title>Maths Test 1</title>
 <script>MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]}};</script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <style>
 :root{--bg:#fbfbf9;--ink:#1a1a1a;--dim:#6b6b6b;--line:#e2e2dc;--card:#fff;--accent:#1f3a7a;--ok:#1f6b4a}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--ink);font:16px/1.6 Georgia,serif;padding:40px 20px 120px}
+body{background:var(--bg);color:var(--ink);font:16px/1.62 Georgia,serif;padding:40px 20px 120px}
 .wrap{max-width:820px;margin:0 auto}
 .hd{border-bottom:2.5px solid var(--ink);padding-bottom:16px;margin-bottom:8px;text-align:center}
 .hd h1{font-size:22px;font-weight:700}.hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:13px;color:var(--dim);margin-top:6px}
@@ -17,88 +17,86 @@ body{background:var(--bg);color:var(--ink);font:16px/1.6 Georgia,serif;padding:4
 .q{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px 22px;margin-bottom:14px}
 .q .n{font-family:ui-monospace,Menlo,monospace;font-weight:700;color:var(--accent);font-size:14px}
 .q .marks{float:right;font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:var(--dim)}
-.q .body{font-size:15.5px;margin-top:8px}.q .part{margin-top:7px}
+.q .body{font-size:15.5px;margin-top:8px}.q .part{margin-top:8px}
+.fig{display:block;margin:12px auto;background:#fff;border:1px solid var(--line);border-radius:6px}
 details{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}
 summary{cursor:pointer;font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:var(--accent);list-style:none}
 summary::-webkit-details-marker{display:none}summary::before{content:'▸ '}details[open] summary::before{content:'▾ '}
-.soln{font-size:14px;margin-top:10px}.soln p{margin:6px 0}.soln .m{color:var(--ok);font-family:ui-monospace,Menlo,monospace;font-size:11.5px;font-weight:700}
+.soln{font-size:13.8px;margin-top:10px}.soln p{margin:6px 0}.soln .m{color:var(--ok);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700}
 .foot{margin-top:36px;border-top:1px solid var(--line);padding-top:16px;font-size:13.5px;color:var(--dim)}.foot b{color:var(--accent)}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="hd"><h1>Maths Test 1 — Calculus + Vectors</h1><div class="meta">H2 · timed 2 h 00 min · ~55 marks · no calculator reveals until you commit</div></div>
-  <div class="how"><b>Sit it timed and closed-book.</b> Loom your confidence as you go. Self-mark against the reveals, then hand me the per-question gap list and I'll build the gap cluster.</div>
+  <div class="hd"><h1>Mathematics Test 1</h1><div class="meta">H2 9758 · timed 2 h 00 min · 50 marks · calculator where allowed</div></div>
+  <div class="how"><b>Answer all questions.</b> These sit at (and slightly above) real H2 paper level — each fuses several techniques and the method is not signposted. Loom your confidence as you go. Self-mark against the reveals, then hand me the per-question gaps and I'll build the gap cluster.</div>
 
-  <div class="q"><span class="marks">[9]</span><span class="n">Question 1 — Differentiation</span>
-    <div class="body"><div class="part">A curve has equation \(y=\dfrac{x^2}{x-1}\), \(x\neq1\).</div>
-      <div class="part">(a) Find \(\dfrac{dy}{dx}\) and the coordinates and nature of the stationary points. <span style="color:#999">[6]</span></div>
-      <div class="part">(b) Write down the equations of the two asymptotes. <span style="color:#999">[3]</span></div></div>
-    <details><summary>Reveal solution</summary><div class="soln">
-      <p><b>(a)</b> \(\dfrac{dy}{dx}=\dfrac{2x(x-1)-x^2}{(x-1)^2}=\dfrac{x(x-2)}{(x-1)^2}\). \(=0\Rightarrow x=0,2\). \((0,0)\) maximum, \((2,4)\) minimum (second-derivative or sign test). <span class="m">M1A1A1A1A1A1</span>.</p>
-      <p><b>(b)</b> Vertical \(x=1\); oblique: \(y=x+1+\dfrac{1}{x-1}\to y=x+1\). <span class="m">A1A1A1</span>.</p></div></details>
-  </div>
-
-  <div class="q"><span class="marks">[8]</span><span class="n">Question 2 — Integration</span>
+  <div class="q"><span class="marks">[11]</span><span class="n">Question 1</span>
     <div class="body">
-      <div class="part">(a) Find \(\displaystyle\int \dfrac{x^2}{x-1}\,dx\) (write the integrand as \(x+1+\tfrac{1}{x-1}\) first). <span style="color:#999">[3]</span></div>
-      <div class="part">(b) Find \(\displaystyle\int x\ln x\,dx\) by parts. <span style="color:#999">[3]</span></div>
-      <div class="part">(c) Evaluate \(\displaystyle\int_0^{\pi/2}\sin^2 x\,dx\). <span style="color:#999">[2]</span></div>
+      <div class="part">The diagram shows the curve \(C\) with equation \(y = x\sqrt{4-x^2}\) for \(0 \le x \le 2\).</div>
+      <svg class="fig" width="300" height="150" viewBox="0 0 300 150">
+        <line x1="30" y1="130" x2="285" y2="130" stroke="#888"/><line x1="30" y1="130" x2="30" y2="15" stroke="#888"/>
+        <path d="M30,130 Q70,20 150,25 Q210,30 270,130" fill="none" stroke="#1f3a7a" stroke-width="2"/>
+        <text x="272" y="145" font-size="11" font-family="monospace">x=2</text><text x="18" y="30" font-size="11" font-family="monospace">y</text><text x="150" y="145" font-size="10" font-family="monospace">C</text>
+      </svg>
+      <div class="part">(a) Find the exact coordinates of the maximum point of \(C\). <span style="color:#999">[4]</span></div>
+      <div class="part">(b) Find the exact area of the region bounded by \(C\) and the \(x\)-axis. <span style="color:#999">[3]</span></div>
+      <div class="part">(c) This region is rotated through \(2\pi\) radians about the \(x\)-axis. Find the exact volume generated. <span style="color:#999">[4]</span></div>
     </div>
     <details><summary>Reveal solution</summary><div class="soln">
-      <p><b>(a)</b> \(\dfrac{x^2}{2}+x+\ln|x-1|+C\). <span class="m">A1A1A1</span>.</p>
-      <p><b>(b)</b> \(u=\ln x,\ dv=x\,dx\): \(\dfrac{x^2}{2}\ln x-\displaystyle\int\dfrac{x}{2}dx=\dfrac{x^2}{2}\ln x-\dfrac{x^2}{4}+C\). <span class="m">M1A1A1</span>.</p>
-      <p><b>(c)</b> \(\sin^2x=\tfrac12(1-\cos2x)\Rightarrow\big[\tfrac{x}{2}-\tfrac{\sin2x}{4}\big]_0^{\pi/2}=\dfrac{\pi}{4}\). <span class="m">M1A1</span>.</p></div></details>
+      <p><b>(a)</b> \(\dfrac{dy}{dx}=\sqrt{4-x^2}+x\cdot\dfrac{-x}{\sqrt{4-x^2}}=\dfrac{4-2x^2}{\sqrt{4-x^2}}=0\Rightarrow x^2=2,\ x=\sqrt2\). \(y=\sqrt2\cdot\sqrt2=2\). Max \(\left(\sqrt2,\,2\right)\). <span class="m">M1A1A1A1</span>.</p>
+      <p><b>(b)</b> \(A=\displaystyle\int_0^2 x\sqrt{4-x^2}\,dx=\Big[-\tfrac13(4-x^2)^{3/2}\Big]_0^2=0-(-\tfrac13\cdot8)=\dfrac{8}{3}\). <span class="m">M1M1A1</span>.</p>
+      <p><b>(c)</b> \(V=\pi\displaystyle\int_0^2 x^2(4-x^2)\,dx=\pi\Big[\tfrac{4x^3}{3}-\tfrac{x^5}{5}\Big]_0^2=\pi\big(\tfrac{32}{3}-\tfrac{32}{5}\big)=\dfrac{64\pi}{15}\). <span class="m">M1M1M1A1</span>.</p></div></details>
   </div>
 
-  <div class="q"><span class="marks">[8]</span><span class="n">Question 3 — Differential equations</span>
+  <div class="q"><span class="marks">[8]</span><span class="n">Question 2</span>
     <div class="body">
-      <div class="part">A tank drains so that the depth \(h\) of water satisfies \(\dfrac{dh}{dt}=-k\sqrt{h}\), where \(k>0\). Initially \(h=H\).</div>
-      <div class="part">(a) Solve the differential equation, expressing \(h\) in terms of \(t\). <span style="color:#999">[5]</span></div>
-      <div class="part">(b) Show that the tank empties after a finite time and find it in terms of \(H\) and \(k\). <span style="color:#999">[3]</span></div>
+      <div class="part">(a) Find \(\displaystyle\int \frac{(\ln x)^2}{x^2}\,dx\). <span style="color:#999">[5]</span></div>
+      <div class="part">(b) Hence evaluate \(\displaystyle\int_1^{e} \frac{(\ln x)^2}{x^2}\,dx\), giving your answer in terms of \(e\). <span style="color:#999">[3]</span></div>
     </div>
     <details><summary>Reveal solution</summary><div class="soln">
-      <p><b>(a)</b> \(\displaystyle\int h^{-1/2}dh=\int -k\,dt\Rightarrow 2\sqrt h=-kt+c\). \(t=0,h=H\Rightarrow c=2\sqrt H\). \(\sqrt h=\sqrt H-\tfrac{kt}{2}\Rightarrow h=\big(\sqrt H-\tfrac{kt}{2}\big)^2\). <span class="m">M1A1M1A1A1</span>.</p>
-      <p><b>(b)</b> Empty when \(h=0\Rightarrow \sqrt H=\tfrac{kt}{2}\Rightarrow t=\dfrac{2\sqrt H}{k}\) (finite). <span class="m">M1A1A1</span>.</p></div></details>
+      <p><b>(a)</b> By parts \((u=(\ln x)^2,\ dv=x^{-2}dx,\ v=-x^{-1})\): \(-\dfrac{(\ln x)^2}{x}+2\displaystyle\int\dfrac{\ln x}{x^2}dx\). Second integral by parts: \(\displaystyle\int\dfrac{\ln x}{x^2}dx=-\dfrac{\ln x}{x}-\dfrac1x\). So \(=-\dfrac{(\ln x)^2}{x}-\dfrac{2\ln x}{x}-\dfrac{2}{x}+C\). <span class="m">M1M1A1M1A1</span>.</p>
+      <p><b>(b)</b> At \(e\): \(-\tfrac1e-\tfrac2e-\tfrac2e=-\tfrac5e\). At \(1\): \(0-0-2=-2\). Value \(=-\tfrac5e-(-2)=2-\dfrac{5}{e}\). <span class="m">M1M1A1</span>.</p></div></details>
   </div>
 
-  <div class="q"><span class="marks">[6]</span><span class="n">Question 4 — Maclaurin series</span>
+  <div class="q"><span class="marks">[12]</span><span class="n">Question 3</span>
     <div class="body">
-      <div class="part">(a) Find the Maclaurin expansion of \(\ln(1+2x)\) up to and including the term in \(x^3\). <span style="color:#999">[3]</span></div>
-      <div class="part">(b) Hence, or otherwise, find the expansion of \(\dfrac{\ln(1+2x)}{1-x}\) up to the term in \(x^2\). <span style="color:#999">[3]</span></div>
+      <div class="part">In a model of a spreading rumour, the number \(x\) (in thousands) of people who have heard it after \(t\) days satisfies \(\dfrac{dx}{dt}=kx(10-x)\), where \(k>0\). Initially one thousand people have heard it, and after one day two thousand have.</div>
+      <div class="part">(a) Show that \(t = \dfrac{1}{10k}\ln\!\left(\dfrac{9x}{10-x}\right)\). <span style="color:#999">[6]</span></div>
+      <div class="part">(b) Find the exact value of \(k\). <span style="color:#999">[2]</span></div>
+      <div class="part">(c) State the number of people who eventually hear the rumour, and find the time taken for nine thousand to have heard it. <span style="color:#999">[4]</span></div>
     </div>
     <details><summary>Reveal solution</summary><div class="soln">
-      <p><b>(a)</b> \(\ln(1+2x)=2x-\dfrac{(2x)^2}{2}+\dfrac{(2x)^3}{3}-\cdots=2x-2x^2+\dfrac{8}{3}x^3-\cdots\). <span class="m">M1A1A1</span>.</p>
-      <p><b>(b)</b> \((2x-2x^2+\cdots)(1+x+x^2+\cdots)=2x+(2-2)x^2+\cdots=2x+0\cdot x^2+\cdots=2x-0x^2\). Recompute: \(2x(1+x)=2x+2x^2\); \(-2x^2(1)=-2x^2\) → \(2x+0x^2\). So \(\approx 2x\) (the \(x^2\) term is 0). <span class="m">M1A1A1</span>.</p></div></details>
+      <p><b>(a)</b> \(\displaystyle\int\dfrac{dx}{x(10-x)}=\int k\,dt\). Partial fractions \(\dfrac{1}{x(10-x)}=\dfrac{1}{10}\!\left(\dfrac1x+\dfrac1{10-x}\right)\Rightarrow \dfrac{1}{10}\ln\!\dfrac{x}{10-x}=kt+c\). At \(t=0,x=1:\ c=\dfrac1{10}\ln\dfrac19\). So \(kt=\dfrac1{10}\ln\dfrac{x}{10-x}-\dfrac1{10}\ln\dfrac19=\dfrac1{10}\ln\dfrac{9x}{10-x}\Rightarrow t=\dfrac{1}{10k}\ln\dfrac{9x}{10-x}\). <span class="m">M1M1A1M1M1A1</span>.</p>
+      <p><b>(b)</b> \(t=1,x=2:\ 1=\dfrac1{10k}\ln\dfrac{18}{8}=\dfrac1{10k}\ln\dfrac94\Rightarrow k=\dfrac{1}{10}\ln\dfrac94\). <span class="m">M1A1</span>.</p>
+      <p><b>(c)</b> As \(t\to\infty,\ x\to10\Rightarrow\) 10 000 people. For \(x=9:\ t=\dfrac{1}{10k}\ln\dfrac{81}{1}=\dfrac{\ln81}{10k}=\dfrac{\ln81}{\ln(9/4)}\approx5.42\) days. <span class="m">M1A1M1A1</span>.</p></div></details>
   </div>
 
-  <div class="q"><span class="marks">[9]</span><span class="n">Question 5 — Vectors (scalar product)</span>
+  <div class="q"><span class="marks">[9]</span><span class="n">Question 4</span>
     <div class="body">
-      <div class="part">Relative to \(O\), \(\mathbf a=\begin{pmatrix}2\\1\\-1\end{pmatrix}\), \(\mathbf b=\begin{pmatrix}0\\3\\1\end{pmatrix}\), \(\mathbf c=\begin{pmatrix}4\\-1\\k\end{pmatrix}\).</div>
-      <div class="part">(a) Find the acute angle \(AOB\). <span style="color:#999">[3]</span></div>
-      <div class="part">(b) \(P\) divides \(AB\) in ratio \(1:2\). Find \(\vec{OP}\). <span style="color:#999">[2]</span></div>
-      <div class="part">(c) Find \(k\) so that \(A,B,C\) are collinear. <span style="color:#999">[4]</span></div>
+      <div class="part">A curve has equation \(y=\ln(1+\sin x)\).</div>
+      <div class="part">(a) Show that \(\dfrac{d^2y}{dx^2}=-\dfrac{1}{1+\sin x}\), and hence find the Maclaurin series for \(y\) up to and including the term in \(x^3\). <span style="color:#999">[6]</span></div>
+      <div class="part">(b) Hence find \(\displaystyle\lim_{x\to0}\frac{\ln(1+\sin x)-x}{x^2}\). <span style="color:#999">[3]</span></div>
     </div>
     <details><summary>Reveal solution</summary><div class="soln">
-      <p><b>(a)</b> \(\mathbf a\cdot\mathbf b=2\), \(|\mathbf a|=\sqrt6,|\mathbf b|=\sqrt{10}\), \(\cos\theta=\tfrac{2}{\sqrt{60}}\Rightarrow 75.0^\circ\). <span class="m">M1A1A1</span>.</p>
-      <p><b>(b)</b> \(\vec{OP}=\tfrac{2\mathbf a+\mathbf b}{3}=\tfrac13\begin{pmatrix}4\\5\\-1\end{pmatrix}\). <span class="m">M1A1</span>.</p>
-      <p><b>(c)</b> \(\vec{AB}=\begin{pmatrix}-2\\2\\2\end{pmatrix},\vec{AC}=\begin{pmatrix}2\\-2\\k+1\end{pmatrix}\). Parallel: \(\lambda=-1\) from x, y checks, z: \(k+1=-2\Rightarrow k=-3\). <span class="m">M1M1A1A1</span>.</p></div></details>
+      <p><b>(a)</b> \(\dfrac{dy}{dx}=\dfrac{\cos x}{1+\sin x}\). \(\dfrac{d^2y}{dx^2}=\dfrac{-\sin x(1+\sin x)-\cos^2x}{(1+\sin x)^2}=\dfrac{-\sin x-1}{(1+\sin x)^2}=-\dfrac{1}{1+\sin x}\). Values at 0: \(y=0,\ y'=1,\ y''=-1,\ y'''=\dfrac{\cos x}{(1+\sin x)^2}\big|_0=1\). Series: \(y=x-\dfrac{x^2}{2}+\dfrac{x^3}{6}-\cdots\). <span class="m">M1A1M1A1A1A1</span>.</p>
+      <p><b>(b)</b> \(\dfrac{(x-\tfrac{x^2}{2}+\cdots)-x}{x^2}=\dfrac{-\tfrac{x^2}{2}+\cdots}{x^2}\to-\dfrac12\). <span class="m">M1M1A1</span>.</p></div></details>
   </div>
 
-  <div class="q"><span class="marks">[9]</span><span class="n">Question 6 — Vectors (line + perpendicular)</span>
+  <div class="q"><span class="marks">[10]</span><span class="n">Question 5</span>
     <div class="body">
-      <div class="part">Points \(A(1,0,2)\) and \(B(3,2,4)\). Point \(C\) has position vector \(\begin{pmatrix}2\\5\\1\end{pmatrix}\).</div>
-      <div class="part">(a) Find a vector equation of the line \(l\) through \(A\) and \(B\). <span style="color:#999">[2]</span></div>
-      <div class="part">(b) Find the position vector of the foot of perpendicular \(F\) from \(C\) to \(l\), and hence the shortest distance from \(C\) to \(l\). <span style="color:#999">[5]</span></div>
-      <div class="part">(c) Find the area of triangle \(ABC\). <span style="color:#999">[2]</span></div>
+      <div class="part">Line \(l_1\) passes through \(A(1,2,1)\) and \(B(3,1,2)\). Line \(l_2\) has equation \(\mathbf r=\begin{pmatrix}2\\0\\4\end{pmatrix}+\mu\begin{pmatrix}1\\1\\-1\end{pmatrix}\).</div>
+      <div class="part">(a) Show that \(l_1\) and \(l_2\) are skew. <span style="color:#999">[4]</span></div>
+      <div class="part">(b) Find the exact shortest distance between \(l_1\) and \(l_2\). <span style="color:#999">[4]</span></div>
+      <div class="part">(c) Find the acute angle between the two lines, and comment on your answer. <span style="color:#999">[2]</span></div>
     </div>
     <details><summary>Reveal solution</summary><div class="soln">
-      <p><b>(a)</b> \(\vec{AB}=\begin{pmatrix}2\\2\\2\end{pmatrix}\|\begin{pmatrix}1\\1\\1\end{pmatrix}\). \(l:\ \mathbf r=\begin{pmatrix}1\\0\\2\end{pmatrix}+\lambda\begin{pmatrix}1\\1\\1\end{pmatrix}\). <span class="m">M1A1</span>.</p>
-      <p><b>(b)</b> \(F=(1+\lambda,\lambda,2+\lambda)\), \(\vec{CF}=\begin{pmatrix}\lambda-1\\\lambda-5\\\lambda+1\end{pmatrix}\); \(\vec{CF}\cdot\begin{pmatrix}1\\1\\1\end{pmatrix}=0\Rightarrow3\lambda-5=0,\lambda=\tfrac53\). \(F=(\tfrac83,\tfrac53,\tfrac{11}{3})\). Distance \(=|\vec{CF}|\) with \(\lambda=\tfrac53\): \(\vec{CF}=\tfrac13\begin{pmatrix}2\\-10\\8\end{pmatrix}\), \(|\vec{CF}|=\tfrac13\sqrt{4+100+64}=\tfrac13\sqrt{168}=\tfrac{2\sqrt{42}}{3}\). <span class="m">M1M1A1A1A1</span>.</p>
-      <p><b>(c)</b> Area \(=\tfrac12|\vec{AB}\times\vec{AC}|\). \(\vec{AC}=\begin{pmatrix}1\\5\\-1\end{pmatrix}\), \(\vec{AB}\times\vec{AC}=\begin{pmatrix}2\\2\\2\end{pmatrix}\times\begin{pmatrix}1\\5\\-1\end{pmatrix}=\begin{pmatrix}-12\\4\\8\end{pmatrix}\), \(\tfrac12\sqrt{144+16+64}=\tfrac12\sqrt{224}=2\sqrt{14}\). <span class="m">M1A1</span>.</p></div></details>
+      <p><b>(a)</b> \(l_1:\ \mathbf r=\begin{pmatrix}1\\2\\1\end{pmatrix}+\lambda\begin{pmatrix}2\\-1\\1\end{pmatrix}\). Directions not proportional → not parallel. Equating: \(1+2\lambda=2+\mu,\ 2-\lambda=\mu,\ 1+\lambda=4-\mu\). From first two: \(1+2\lambda=2+(2-\lambda)\Rightarrow\lambda=1,\mu=1\); check third: \(1+1=2\neq4-1=3\). Inconsistent → no intersection → skew. <span class="m">M1M1M1A1</span>.</p>
+      <p><b>(b)</b> \(\mathbf d_1\times\mathbf d_2=\begin{pmatrix}2\\-1\\1\end{pmatrix}\times\begin{pmatrix}1\\1\\-1\end{pmatrix}=\begin{pmatrix}0\\3\\3\end{pmatrix}\), \(|\cdot|=3\sqrt2\). \(\vec{CA}=\begin{pmatrix}-1\\2\\-3\end{pmatrix}\) (\(C=(2,0,4)\)). Distance \(=\dfrac{|\vec{CA}\cdot(\mathbf d_1\times\mathbf d_2)|}{|\mathbf d_1\times\mathbf d_2|}=\dfrac{|0+6-9|}{3\sqrt2}=\dfrac{3}{3\sqrt2}=\dfrac{1}{\sqrt2}\). <span class="m">M1A1M1A1</span>.</p>
+      <p><b>(c)</b> \(\mathbf d_1\cdot\mathbf d_2=2-1-1=0\Rightarrow\theta=90^\circ\). The lines are perpendicular as well as skew. <span class="m">M1A1</span>.</p></div></details>
   </div>
 
-  <div class="foot"><p><b>Total /49.</b> Hand me the per-question gaps and your low-confidence flags; I'll build a Maths gap cluster on the weak procedures (each with a fresh drill question).</p></div>
+  <div class="foot"><p><b>Total /50.</b> Hand me the per-question gaps and low-confidence flags; I'll build a Maths gap cluster on the weak procedures, each with a fresh drill question at this level.</p></div>
 </div>
 </body>
 </html>

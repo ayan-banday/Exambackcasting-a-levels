@@ -996,8 +996,8 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "maths",
-     "name": "Maths TEST — Calculus + Vectors (timed 2h · 49 marks)",
-     "desc": "Hard, past-paper level. Questions only, hidden key. Self-mark → gap list.",
+     "name": "Maths TEST · timed 2h · 50 marks",
+     "desc": "Real H2 level, harder. No topic labels, no method hints, fused multi-concept questions with a diagram. Sit it timed, self-mark, hand me the gaps.",
      "done": false,
      "doneDate": null,
      "clusterHref": "clusters/test_math_01.html"
@@ -1005,8 +1005,8 @@ window.PLAN = {
     {
      "mins": 100,
      "subject": "chem",
-     "name": "Chemistry TEST — Stoich, Redox, Bonding, Organic Foundations (timed ~1h40 · 40 marks)",
-     "desc": "Hard, past-paper level. Questions only, hidden key.",
+     "name": "Chemistry TEST · timed 1h40 · 45 marks",
+     "desc": "Real H2 level. Data table + reaction scheme, unlabelled, multi-concept. Sit it timed, self-mark, hand me the gaps.",
      "done": false,
      "doneDate": null,
      "clusterHref": "clusters/test_chem_01.html"
