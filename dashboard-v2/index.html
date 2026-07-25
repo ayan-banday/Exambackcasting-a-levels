@@ -131,6 +131,9 @@ h2 .rule{flex:1;height:1px;background:var(--line)}
 .restrow{opacity:.55}
 .restrow .dh{cursor:default}
 .restpill{background:#2a2a30;color:var(--dim)}
+.missedrow{opacity:.8;border-left:2px solid var(--bad);background:linear-gradient(90deg,rgba(232,112,95,.06),transparent)}
+.missedpill{background:rgba(232,112,95,.18);color:var(--bad)}
+.missedrow .lb{color:var(--bad)}
 .exam{background:linear-gradient(90deg,rgba(232,112,95,.14),transparent);border:1px solid #3a2724;
   border-radius:11px;padding:17px 20px;display:flex;align-items:center;gap:15px;margin-top:16px;flex-wrap:wrap}
 .exam .n{font-family:var(--mono);font-size:12px;color:var(--bad);font-weight:500}
@@ -311,10 +314,10 @@ footer a{color:var(--dim)}
       <span class="d">${P.weekTitles[w]||''}</span><span class="rule"></span>
       <span class="pc">${fmt(wd)}/${fmt(wm)}h</span></div>`;
     ds.forEach(d=>{
-      if(d.type==='rest'){ const[,mo,dy]=d.date.split('-');
-        html+=`<div class="day restrow"><div class="dh">
-          <span class="dn">—</span><span class="dd">${d.weekday} ${+dy} ${MO[+mo]}</span>
-          <span class="tag restpill">REST</span><span class="lb">Rest day</span></div></div>`;
+      if(d.type==='rest'){ const[,mo,dy]=d.date.split('-'); const mis=d.skipped;
+        html+=`<div class="day restrow${mis?' missedrow':''}"><div class="dh">
+          <span class="dn" style="${mis?'color:var(--bad)':''}">${mis?'⚑':'—'}</span><span class="dd">${d.weekday} ${+dy} ${MO[+mo]}</span>
+          <span class="tag ${mis?'missedpill':'restpill'}">${mis?'MISSED':'REST'}</span><span class="lb">${d.label}</span></div></div>`;
         return; }
       const s=S[d.subject]||{name:d.type,colour:'#8c909b'}, all=d.blocks.every(x=>x.done), any=d.blocks.some(x=>x.done);
       const [,mo,dy]=d.date.split('-');

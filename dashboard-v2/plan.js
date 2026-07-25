@@ -12,15 +12,15 @@ window.PLAN = {
   "perWeekHrs": 20,
   "target": "Prelim: a mid-B / C is fine — cover the priority topics, sacrifice the low-value ones. A-levels (2–27 Nov 2026): everything drilled to mastery, multiple passes.",
   "reality": "",
-  "lastUpdated": "2026-07-21",
+  "lastUpdated": "2026-07-25",
   "repo": "https://github.com/ayan-banday/Exambackcasting-a-levels",
   "alevel": "2026-11-02",
-  "subtitle": "Ethan Lim · 22 study days left · Mon–Fri study · Sat test · Sun rest",
+  "subtitle": "Ethan Lim · 21 study days left · rest any day (tell me) · weeks start Monday",
   "prelimStart": "2026-08-24",
   "alevelStart": "2026-11-02",
   "clustersRemaining": 27,
-  "clustersDone": 6,
-  "clustersTotal": 31
+  "clustersDone": 7,
+  "clustersTotal": 30
  },
  "subjects": {
   "maths": {
@@ -699,7 +699,6 @@ window.PLAN = {
    "n": "✓",
    "date": "2026-07-15",
    "weekday": "Wed",
-   "week": 0,
    "type": "standard",
    "donePast": true,
    "flag": "",
@@ -724,13 +723,13 @@ window.PLAN = {
      "done": true,
      "doneDate": "15 Jul"
     }
-   ]
+   ],
+   "week": 0
   },
   {
    "n": "✓",
    "date": "2026-07-16",
    "weekday": "Thu",
-   "week": 0,
    "type": "standard",
    "donePast": true,
    "flag": "",
@@ -755,13 +754,13 @@ window.PLAN = {
      "done": true,
      "doneDate": "16 Jul"
     }
-   ]
+   ],
+   "week": 0
   },
   {
    "n": "✓",
    "date": "2026-07-17",
    "weekday": "Fri",
-   "week": 0,
    "type": "standard",
    "donePast": true,
    "flag": "",
@@ -786,13 +785,13 @@ window.PLAN = {
      "done": true,
      "doneDate": "17 Jul"
     }
-   ]
+   ],
+   "week": 0
   },
   {
    "n": "✓",
    "date": "2026-07-18",
    "weekday": "Sat",
-   "week": 0,
    "type": "test",
    "donePast": true,
    "flag": "",
@@ -825,13 +824,13 @@ window.PLAN = {
      "done": true,
      "doneDate": "18 Jul"
     }
-   ]
+   ],
+   "week": 0
   },
   {
    "n": "✓",
    "date": "2026-07-19",
    "weekday": "Sun",
-   "week": 0,
    "type": "standard",
    "donePast": true,
    "flag": "",
@@ -843,7 +842,7 @@ window.PLAN = {
     {
      "mins": 105,
      "subject": "chem",
-     "name": "Chemistry — Chemical Bonding cluster 1 (shapes, polarity, IMF)",
+     "name": "Chemistry — Chemical Bonding cluster 1",
      "desc": "",
      "done": true,
      "doneDate": "19 Jul"
@@ -864,31 +863,31 @@ window.PLAN = {
      "done": true,
      "doneDate": "19 Jul"
     }
-   ]
+   ],
+   "week": 0
   },
   {
    "n": "",
    "date": "2026-07-20",
    "weekday": "Mon",
-   "week": 1,
    "type": "rest",
    "subject": "conv",
    "flag": "",
    "label": "Rest day",
    "focus": "",
    "mins": 0,
-   "blocks": []
+   "blocks": [],
+   "week": 1
   },
   {
    "n": "✓",
    "date": "2026-07-21",
    "weekday": "Tue",
-   "week": 1,
    "type": "standard",
    "donePast": true,
    "flag": "",
    "subject": "chem",
-   "label": "Bonding cleared (clusters 2 & 3) + Governance 2/6",
+   "label": "Bonding cleared + Governance Q2",
    "focus": "Done.",
    "mins": 245,
    "blocks": [
@@ -903,69 +902,136 @@ window.PLAN = {
     {
      "mins": 110,
      "subject": "csc",
-     "name": "CSC — Governance Step 3: questions 2/6 + Q1 gaps",
+     "name": "CSC — Governance Q2 (Step 3)",
      "desc": "",
      "done": true,
      "doneDate": "21 Jul"
     }
-   ]
+   ],
+   "week": 1
   },
   {
    "n": "",
    "date": "2026-07-22",
    "weekday": "Wed",
-   "week": 1,
    "type": "rest",
    "subject": "conv",
    "flag": "",
    "label": "Rest day",
    "focus": "",
    "mins": 0,
-   "blocks": []
+   "blocks": [],
+   "week": 1
+  },
+  {
+   "n": "",
+   "date": "2026-07-23",
+   "weekday": "Thu",
+   "type": "rest",
+   "skipped": true,
+   "subject": "conv",
+   "flag": "⚑",
+   "label": "Skipped — no study",
+   "focus": "",
+   "mins": 0,
+   "blocks": [],
+   "week": 1
+  },
+  {
+   "n": "",
+   "date": "2026-07-24",
+   "weekday": "Fri",
+   "type": "rest",
+   "skipped": true,
+   "subject": "conv",
+   "flag": "⚑",
+   "label": "Skipped — no study",
+   "focus": "",
+   "mins": 0,
+   "blocks": [],
+   "week": 1
+  },
+  {
+   "n": "✓",
+   "date": "2026-07-25",
+   "weekday": "Sat",
+   "type": "standard",
+   "donePast": true,
+   "flag": "",
+   "subject": "chem",
+   "label": "Organic Foundations done + Governance Q3",
+   "focus": "Done.",
+   "mins": 260,
+   "blocks": [
+    {
+     "mins": 150,
+     "subject": "chem",
+     "name": "Chemistry — Organic Foundations cluster + gap done (declarative)",
+     "desc": "",
+     "done": true,
+     "doneDate": "25 Jul"
+    },
+    {
+     "mins": 110,
+     "subject": "csc",
+     "name": "CSC — Governance Q3 (Step 3) drilled",
+     "desc": "",
+     "done": true,
+     "doneDate": "25 Jul"
+    }
+   ],
+   "week": 1
   },
   {
    "n": 7,
-   "date": "2026-07-23",
-   "weekday": "Thu",
-   "week": 1,
+   "date": "2026-07-26",
+   "weekday": "Sun",
    "type": "standard",
-   "subject": "chem",
+   "subject": "conv",
    "flag": "",
-   "mins": 240,
-   "label": "Chemistry Organic Foundations + CSC Governance",
-   "focus": "Day 7. Chemistry Organic Foundations · CSC Governance. Full 4h.",
+   "mins": 300,
+   "label": "Governance finish + Math & Chem TEST + GP",
+   "focus": "5h reset day. Finish Governance (Q4+Q5), then a cumulative Maths + Chemistry test to see where you actually stand after the break, then GP (overdue). This test is the reset — it surfaces the real gaps.",
    "blocks": [
     {
      "mins": 120,
-     "subject": "chem",
-     "name": "Chemistry — Organic Foundations — intro, isomerism, alkanes (ch 8–10) · cluster · organic",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Organic Foundations — intro, isomerism, alkanes"
-    },
-    {
-     "mins": 120,
      "subject": "csc",
-     "name": "CSC — Governance — Step 3: Q3 (widest coverage) · 1 question = 2h",
-     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only.",
+     "name": "CSC — Governance Q4 + Q5 (Step 3): finish + record gaps",
+     "desc": "The last two governance questions, then Governance is closed.",
      "done": false,
      "doneDate": null,
      "clusterRef": "政治 Governance"
+    },
+    {
+     "mins": 130,
+     "subject": "conv",
+     "name": "Cumulative TEST — Maths (Calculus, Vectors) + Chemistry (Stoich & Redox, Bonding, Organic Foundations)",
+     "desc": "Hard, past-paper level. Questions only, hidden key. Self-mark, then hand me the gap list.",
+     "done": false,
+     "doneDate": null,
+     "clusterHref": "clusters/test_01_math_chem.html"
+    },
+    {
+     "mins": 50,
+     "subject": "gp",
+     "name": "GP — Science & Technology domain · ~3 Qs (Step 3)",
+     "desc": "Overdue — one 50-min phase off the model papers.",
+     "done": false,
+     "doneDate": null
     }
-   ]
+   ],
+   "week": 1
   },
   {
    "n": 8,
-   "date": "2026-07-24",
-   "weekday": "Fri",
-   "week": 1,
+   "date": "2026-07-27",
+   "weekday": "Mon",
    "type": "standard",
    "subject": "maths",
    "flag": "",
    "mins": 240,
-   "label": "Maths Vectors + close Chemistry gap + GP",
-   "focus": "Day 8. Maths Vectors · close Chemistry gap · GP. Full 4h.",
+   "label": "Maths Vectors + CSC Economy",
+   "focus": "Day 8. Maths Vectors · CSC Economy. Full 4h.",
    "blocks": [
     {
      "mins": 120,
@@ -977,83 +1043,27 @@ window.PLAN = {
      "clusterRef": "Vectors — Lines & Planes"
     },
     {
-     "mins": 70,
-     "subject": "conv",
-     "name": "Close gaps: Chemistry Organic Foundations",
-     "desc": "Drill / record the previous session's gaps.",
+     "mins": 120,
+     "subject": "csc",
+     "name": "CSC — Economy — build the 1 bare-bones cluster (Layer 1+2)",
+     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
      "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 50,
-     "subject": "gp",
-     "name": "GP — Science & Technology domain · ~3 Qs (Step 3)",
-     "desc": "Model-paper questions, Wispr Flow, hypercorrect.",
-     "done": false,
-     "doneDate": null
+     "doneDate": null,
+     "clusterRef": "经济 Economy"
     }
-   ]
+   ],
+   "week": 2
   },
   {
    "n": 9,
-   "date": "2026-07-25",
-   "weekday": "Sat",
-   "week": 1,
-   "type": "test",
-   "subject": "conv",
-   "flag": "⚑",
-   "mins": 300,
-   "label": "Saturday cumulative test — everything so far",
-   "focus": "Hard past-paper questions, 80% target. Surfaces exam-relevant gaps.",
-   "blocks": [
-    {
-     "mins": 180,
-     "subject": "conv",
-     "name": "Cumulative test — all topics to date (hard, past-paper level)",
-     "desc": "",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 60,
-     "name": "Self-mark + trap models",
-     "desc": "",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 60,
-     "name": "Gap-list → Claude",
-     "desc": "",
-     "done": false,
-     "doneDate": null
-    }
-   ]
-  },
-  {
-   "n": "",
-   "date": "2026-07-26",
-   "weekday": "Sun",
-   "week": 1,
-   "type": "rest",
-   "subject": "conv",
-   "flag": "",
-   "label": "Rest day",
-   "focus": "",
-   "mins": 0,
-   "blocks": []
-  },
-  {
-   "n": 10,
-   "date": "2026-07-27",
-   "weekday": "Mon",
-   "week": 2,
+   "date": "2026-07-28",
+   "weekday": "Tue",
    "type": "standard",
    "subject": "chem",
    "flag": "",
    "mins": 240,
-   "label": "Chemistry Alkenes + CSC Governance",
-   "focus": "Day 10. Chemistry Alkenes · CSC Governance. Full 4h.",
+   "label": "Chemistry Alkenes + close Maths gap + GP",
+   "focus": "Day 9. Chemistry Alkenes · close Maths gap · GP. Full 4h.",
    "blocks": [
     {
      "mins": 120,
@@ -1063,371 +1073,6 @@ window.PLAN = {
      "done": false,
      "doneDate": null,
      "clusterRef": "Alkenes"
-    },
-    {
-     "mins": 120,
-     "subject": "csc",
-     "name": "CSC — Governance — Step 3: Q4 (widest)",
-     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "政治 Governance"
-    }
-   ]
-  },
-  {
-   "n": 11,
-   "date": "2026-07-28",
-   "weekday": "Tue",
-   "week": 2,
-   "type": "standard",
-   "subject": "bio",
-   "flag": "",
-   "mins": 240,
-   "label": "Biology Evolution + close Chemistry gap + GP",
-   "focus": "Day 11. Biology Evolution · close Chemistry gap · GP. Full 4h.",
-   "blocks": [
-    {
-     "mins": 120,
-     "subject": "bio",
-     "name": "Biology — Evolution (ch 7) · cluster · easiest first · declarative",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Evolution"
-    },
-    {
-     "mins": 70,
-     "subject": "conv",
-     "name": "Close gaps: Chemistry Alkenes",
-     "desc": "Drill / record the previous session's gaps.",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 50,
-     "subject": "gp",
-     "name": "GP — Environment domain · ~3 Qs (Step 3)",
-     "desc": "Model-paper questions, Wispr Flow, hypercorrect.",
-     "done": false,
-     "doneDate": null
-    }
-   ]
-  },
-  {
-   "n": 12,
-   "date": "2026-07-29",
-   "weekday": "Wed",
-   "week": 2,
-   "type": "standard",
-   "subject": "chem",
-   "flag": "",
-   "mins": 240,
-   "label": "Chemistry Arenes + CSC Governance",
-   "focus": "Day 12. Chemistry Arenes · CSC Governance. Full 4h.",
-   "blocks": [
-    {
-     "mins": 120,
-     "subject": "chem",
-     "name": "Chemistry — Arenes (benzene) (ch 12) · cluster · organic",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Arenes (benzene)"
-    },
-    {
-     "mins": 120,
-     "subject": "csc",
-     "name": "CSC — Governance — Step 3: Q5 (widest remaining), finish + record gaps",
-     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "政治 Governance"
-    }
-   ]
-  },
-  {
-   "n": 13,
-   "date": "2026-07-30",
-   "weekday": "Thu",
-   "week": 2,
-   "type": "standard",
-   "subject": "maths",
-   "flag": "",
-   "mins": 240,
-   "label": "Maths Discrete Random Variables + close Chemistry gap + GP",
-   "focus": "Day 13. Maths Discrete Random Variables · close Chemistry gap · GP. Full 4h.",
-   "blocks": [
-    {
-     "mins": 120,
-     "subject": "maths",
-     "name": "Maths — Discrete Random Variables (ch 12) · cluster · stats",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Discrete Random Variables"
-    },
-    {
-     "mins": 70,
-     "subject": "conv",
-     "name": "Close gaps: Chemistry Arenes",
-     "desc": "Drill / record the previous session's gaps.",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 50,
-     "subject": "gp",
-     "name": "GP — Media & Ethics domain · ~3 Qs (Step 3)",
-     "desc": "Model-paper questions, Wispr Flow, hypercorrect.",
-     "done": false,
-     "doneDate": null
-    }
-   ]
-  },
-  {
-   "n": 14,
-   "date": "2026-07-31",
-   "weekday": "Fri",
-   "week": 2,
-   "type": "standard",
-   "subject": "chem",
-   "flag": "",
-   "mins": 240,
-   "label": "Chemistry Halogen Derivatives + CSC Economy",
-   "focus": "Day 14. Chemistry Halogen Derivatives · CSC Economy. Full 4h.",
-   "blocks": [
-    {
-     "mins": 120,
-     "subject": "chem",
-     "name": "Chemistry — Halogen Derivatives (ch 15) · cluster · organic",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Halogen Derivatives"
-    },
-    {
-     "mins": 120,
-     "subject": "csc",
-     "name": "CSC — Economy — build the 1 bare-bones cluster (Layer 1 + 2)",
-     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "经济 Economy"
-    }
-   ]
-  },
-  {
-   "n": 15,
-   "date": "2026-08-01",
-   "weekday": "Sat",
-   "week": 2,
-   "type": "test",
-   "subject": "conv",
-   "flag": "⚑",
-   "mins": 300,
-   "label": "Saturday cumulative test — everything so far",
-   "focus": "Hard past-paper questions, 80% target. Surfaces exam-relevant gaps.",
-   "blocks": [
-    {
-     "mins": 180,
-     "subject": "conv",
-     "name": "Cumulative test — all topics to date (hard, past-paper level)",
-     "desc": "",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 60,
-     "name": "Self-mark + trap models",
-     "desc": "",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 60,
-     "name": "Gap-list → Claude",
-     "desc": "",
-     "done": false,
-     "doneDate": null
-    }
-   ]
-  },
-  {
-   "n": "",
-   "date": "2026-08-02",
-   "weekday": "Sun",
-   "week": 2,
-   "type": "rest",
-   "subject": "conv",
-   "flag": "",
-   "label": "Rest day",
-   "focus": "",
-   "mins": 0,
-   "blocks": []
-  },
-  {
-   "n": 16,
-   "date": "2026-08-03",
-   "weekday": "Mon",
-   "week": 3,
-   "type": "standard",
-   "subject": "bio",
-   "flag": "",
-   "mins": 240,
-   "label": "Biology Inheritance + close Chemistry gap + GP",
-   "focus": "Day 16. Biology Inheritance · close Chemistry gap · GP. Full 4h.",
-   "blocks": [
-    {
-     "mins": 120,
-     "subject": "bio",
-     "name": "Biology — Inheritance (ch 6) · cluster · genetics · has procedural calcs",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Inheritance"
-    },
-    {
-     "mins": 70,
-     "subject": "conv",
-     "name": "Close gaps: Chemistry Halogen Derivatives",
-     "desc": "Drill / record the previous session's gaps.",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 50,
-     "subject": "gp",
-     "name": "GP — Society & Politics domain · ~3 Qs (Step 3)",
-     "desc": "Model-paper questions, Wispr Flow, hypercorrect.",
-     "done": false,
-     "doneDate": null
-    }
-   ]
-  },
-  {
-   "n": 17,
-   "date": "2026-08-04",
-   "weekday": "Tue",
-   "week": 3,
-   "type": "standard",
-   "subject": "chem",
-   "flag": "",
-   "mins": 240,
-   "label": "Chemistry Hydroxy Compounds + Maths Normal Distribution",
-   "focus": "Day 17. Chemistry Hydroxy Compounds · Maths Normal Distribution. Full 4h.",
-   "blocks": [
-    {
-     "mins": 120,
-     "subject": "chem",
-     "name": "Chemistry — Hydroxy Compounds — alcohols & phenols (ch 16) · cluster · organic",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Hydroxy Compounds — alcohols & phenols"
-    },
-    {
-     "mins": 120,
-     "subject": "maths",
-     "name": "Maths — Normal Distribution (ch 13) · cluster · stats",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Normal Distribution"
-    }
-   ]
-  },
-  {
-   "n": 18,
-   "date": "2026-08-05",
-   "weekday": "Wed",
-   "week": 3,
-   "type": "standard",
-   "subject": "chem",
-   "flag": "",
-   "mins": 240,
-   "label": "Chemistry Carbonyl Compounds + close Maths gap + GP",
-   "focus": "Day 18. Chemistry Carbonyl Compounds · close Maths gap · GP. Full 4h.",
-   "blocks": [
-    {
-     "mins": 120,
-     "subject": "chem",
-     "name": "Chemistry — Carbonyl Compounds (ch 17) · cluster · organic",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Carbonyl Compounds"
-    },
-    {
-     "mins": 70,
-     "subject": "conv",
-     "name": "Close gaps: Maths Normal Distribution",
-     "desc": "Drill / record the previous session's gaps.",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 50,
-     "subject": "gp",
-     "name": "GP — Science & Technology domain · ~3 Qs (Step 3)",
-     "desc": "Model-paper questions, Wispr Flow, hypercorrect.",
-     "done": false,
-     "doneDate": null
-    }
-   ]
-  },
-  {
-   "n": 19,
-   "date": "2026-08-06",
-   "weekday": "Thu",
-   "week": 3,
-   "type": "standard",
-   "subject": "maths",
-   "flag": "",
-   "mins": 240,
-   "label": "Maths Vectors + CSC Economy",
-   "focus": "Day 19. Maths Vectors · CSC Economy. Full 4h.",
-   "blocks": [
-    {
-     "mins": 120,
-     "subject": "maths",
-     "name": "Maths — Vectors — Planes & Applications (ch 7) · cluster · C3 of 3",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Vectors — Planes & Applications"
-    },
-    {
-     "mins": 120,
-     "subject": "csc",
-     "name": "CSC — Economy — Step 3: Q1 (widest)",
-     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "经济 Economy"
-    }
-   ]
-  },
-  {
-   "n": 20,
-   "date": "2026-08-07",
-   "weekday": "Fri",
-   "week": 3,
-   "type": "standard",
-   "subject": "chem",
-   "flag": "",
-   "mins": 240,
-   "label": "Chemistry Carboxylic Acids & Derivatives + close Maths gap + GP",
-   "focus": "Day 20. Chemistry Carboxylic Acids & Derivatives · close Maths gap · GP. Full 4h.",
-   "blocks": [
-    {
-     "mins": 120,
-     "subject": "chem",
-     "name": "Chemistry — Carboxylic Acids & Derivatives (ch 18) · cluster · organic",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Carboxylic Acids & Derivatives"
     },
     {
      "mins": 70,
@@ -1440,18 +1085,121 @@ window.PLAN = {
     {
      "mins": 50,
      "subject": "gp",
+     "name": "GP — Science & Technology domain · ~3 Qs (Step 3)",
+     "desc": "Model-paper questions, Wispr Flow, hypercorrect.",
+     "done": false,
+     "doneDate": null
+    }
+   ],
+   "week": 2
+  },
+  {
+   "n": 10,
+   "date": "2026-07-29",
+   "weekday": "Wed",
+   "type": "standard",
+   "subject": "bio",
+   "flag": "",
+   "mins": 240,
+   "label": "Biology Evolution + CSC Economy",
+   "focus": "Day 10. Biology Evolution · CSC Economy. Full 4h.",
+   "blocks": [
+    {
+     "mins": 120,
+     "subject": "bio",
+     "name": "Biology — Evolution (ch 7) · cluster · easiest · declarative",
+     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "Evolution"
+    },
+    {
+     "mins": 120,
+     "subject": "csc",
+     "name": "CSC — Economy — Step 3: Q1 (widest)",
+     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "经济 Economy"
+    }
+   ],
+   "week": 2
+  },
+  {
+   "n": 11,
+   "date": "2026-07-30",
+   "weekday": "Thu",
+   "type": "standard",
+   "subject": "chem",
+   "flag": "",
+   "mins": 240,
+   "label": "Chemistry Arenes + close Biology gap + GP",
+   "focus": "Day 11. Chemistry Arenes · close Biology gap · GP. Full 4h.",
+   "blocks": [
+    {
+     "mins": 120,
+     "subject": "chem",
+     "name": "Chemistry — Arenes (benzene) (ch 12) · cluster · organic",
+     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "Arenes (benzene)"
+    },
+    {
+     "mins": 70,
+     "subject": "conv",
+     "name": "Close gaps: Biology Evolution",
+     "desc": "Drill / record the previous session's gaps.",
+     "done": false,
+     "doneDate": null
+    },
+    {
+     "mins": 50,
+     "subject": "gp",
      "name": "GP — Environment domain · ~3 Qs (Step 3)",
      "desc": "Model-paper questions, Wispr Flow, hypercorrect.",
      "done": false,
      "doneDate": null
     }
-   ]
+   ],
+   "week": 2
   },
   {
-   "n": 21,
-   "date": "2026-08-08",
+   "n": 12,
+   "date": "2026-07-31",
+   "weekday": "Fri",
+   "type": "standard",
+   "subject": "maths",
+   "flag": "",
+   "mins": 240,
+   "label": "Maths Discrete Random Variables + CSC Economy",
+   "focus": "Day 12. Maths Discrete Random Variables · CSC Economy. Full 4h.",
+   "blocks": [
+    {
+     "mins": 120,
+     "subject": "maths",
+     "name": "Maths — Discrete Random Variables (ch 12) · cluster · stats",
+     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "Discrete Random Variables"
+    },
+    {
+     "mins": 120,
+     "subject": "csc",
+     "name": "CSC — Economy — Step 3: Q2 (widest)",
+     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "经济 Economy"
+    }
+   ],
+   "week": 2
+  },
+  {
+   "n": 13,
+   "date": "2026-08-01",
    "weekday": "Sat",
-   "week": 3,
    "type": "test",
    "subject": "conv",
    "flag": "⚑",
@@ -1481,78 +1229,46 @@ window.PLAN = {
      "done": false,
      "doneDate": null
     }
-   ]
+   ],
+   "week": 2
   },
   {
    "n": "",
-   "date": "2026-08-09",
+   "date": "2026-08-02",
    "weekday": "Sun",
-   "week": 3,
    "type": "rest",
    "subject": "conv",
    "flag": "",
    "label": "Rest day",
    "focus": "",
    "mins": 0,
-   "blocks": []
+   "blocks": [],
+   "week": 2
   },
   {
-   "n": 22,
-   "date": "2026-08-10",
+   "n": 14,
+   "date": "2026-08-03",
    "weekday": "Mon",
-   "week": 4,
-   "type": "standard",
-   "subject": "bio",
-   "flag": "",
-   "mins": 240,
-   "label": "Biology Mutations + CSC Economy",
-   "focus": "Day 22. Biology Mutations · CSC Economy. Full 4h.",
-   "blocks": [
-    {
-     "mins": 120,
-     "subject": "bio",
-     "name": "Biology — Mutations (ch 2e) · cluster · declarative",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Mutations"
-    },
-    {
-     "mins": 120,
-     "subject": "csc",
-     "name": "CSC — Economy — Step 3: Q2 (widest)",
-     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "经济 Economy"
-    }
-   ]
-  },
-  {
-   "n": 23,
-   "date": "2026-08-11",
-   "weekday": "Tue",
-   "week": 4,
    "type": "standard",
    "subject": "chem",
    "flag": "",
    "mins": 240,
-   "label": "Chemistry Nitrogen Compounds + close Biology gap + GP",
-   "focus": "Day 23. Chemistry Nitrogen Compounds · close Biology gap · GP. Full 4h.",
+   "label": "Chemistry Halogen Derivatives + close Maths gap + GP",
+   "focus": "Day 14. Chemistry Halogen Derivatives · close Maths gap · GP. Full 4h.",
    "blocks": [
     {
      "mins": 120,
      "subject": "chem",
-     "name": "Chemistry — Nitrogen Compounds — amines, amides, amino acids (ch 19) · cluster · organic",
+     "name": "Chemistry — Halogen Derivatives (ch 15) · cluster · organic",
      "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Nitrogen Compounds — amines, amides, amino acids"
+     "clusterRef": "Halogen Derivatives"
     },
     {
      "mins": 70,
      "subject": "conv",
-     "name": "Close gaps: Biology Mutations",
+     "name": "Close gaps: Maths Discrete Random Variables",
      "desc": "Drill / record the previous session's gaps.",
      "done": false,
      "doneDate": null
@@ -1565,65 +1281,65 @@ window.PLAN = {
      "done": false,
      "doneDate": null
     }
-   ]
+   ],
+   "week": 3
   },
   {
-   "n": 24,
-   "date": "2026-08-12",
-   "weekday": "Wed",
-   "week": 4,
+   "n": 15,
+   "date": "2026-08-04",
+   "weekday": "Tue",
    "type": "standard",
-   "subject": "maths",
+   "subject": "bio",
    "flag": "",
    "mins": 240,
-   "label": "Maths Sampling + CSC Economy",
-   "focus": "Day 24. Maths Sampling · CSC Economy. Full 4h.",
+   "label": "Biology Inheritance + CSC Economy",
+   "focus": "Day 15. Biology Inheritance · CSC Economy. Full 4h.",
    "blocks": [
     {
      "mins": 120,
-     "subject": "maths",
-     "name": "Maths — Sampling (ch 14) · cluster · stats",
+     "subject": "bio",
+     "name": "Biology — Inheritance (ch 6) · cluster · genetics",
      "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Sampling"
+     "clusterRef": "Inheritance"
     },
     {
      "mins": 120,
      "subject": "csc",
      "name": "CSC — Economy — Step 3: Q3 (widest) + record gaps, close",
-     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only.",
+     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
      "done": false,
      "doneDate": null,
      "clusterRef": "经济 Economy"
     }
-   ]
+   ],
+   "week": 3
   },
   {
-   "n": 25,
-   "date": "2026-08-13",
-   "weekday": "Thu",
-   "week": 4,
+   "n": 16,
+   "date": "2026-08-05",
+   "weekday": "Wed",
    "type": "standard",
    "subject": "chem",
    "flag": "",
    "mins": 240,
-   "label": "Chemistry Energetics & Thermodynamics + close Maths gap + GP",
-   "focus": "Day 25. Chemistry Energetics & Thermodynamics · close Maths gap · GP. Full 4h.",
+   "label": "Chemistry Hydroxy Compounds + close Biology gap + GP",
+   "focus": "Day 16. Chemistry Hydroxy Compounds · close Biology gap · GP. Full 4h.",
    "blocks": [
     {
      "mins": 120,
      "subject": "chem",
-     "name": "Chemistry — Energetics & Thermodynamics (ch 5) · cluster · practical",
+     "name": "Chemistry — Hydroxy Compounds — alcohols & phenols (ch 16) · cluster · organic",
      "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Energetics & Thermodynamics"
+     "clusterRef": "Hydroxy Compounds — alcohols & phenols"
     },
     {
      "mins": 70,
      "subject": "conv",
-     "name": "Close gaps: Maths Sampling",
+     "name": "Close gaps: Biology Inheritance",
      "desc": "Drill / record the previous session's gaps.",
      "done": false,
      "doneDate": null
@@ -1636,45 +1352,84 @@ window.PLAN = {
      "done": false,
      "doneDate": null
     }
-   ]
+   ],
+   "week": 3
   },
   {
-   "n": 26,
-   "date": "2026-08-14",
-   "weekday": "Fri",
-   "week": 4,
+   "n": 17,
+   "date": "2026-08-06",
+   "weekday": "Thu",
    "type": "standard",
-   "subject": "bio",
+   "subject": "maths",
    "flag": "",
    "mins": 240,
-   "label": "Biology Cancer + Chemistry Reaction Kinetics",
-   "focus": "Day 26. Biology Cancer · Chemistry Reaction Kinetics. Full 4h.",
+   "label": "Maths Normal Distribution + Chemistry Carbonyl Compounds",
+   "focus": "Day 17. Maths Normal Distribution · Chemistry Carbonyl Compounds. Full 4h.",
    "blocks": [
     {
      "mins": 120,
-     "subject": "bio",
-     "name": "Biology — Cancer (ch 3c) · cluster · declarative",
+     "subject": "maths",
+     "name": "Maths — Normal Distribution (ch 13) · cluster · stats",
      "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Cancer"
+     "clusterRef": "Normal Distribution"
     },
     {
      "mins": 120,
      "subject": "chem",
-     "name": "Chemistry — Reaction Kinetics (ch 6) · cluster · practical",
+     "name": "Chemistry — Carbonyl Compounds (ch 17) · cluster · organic",
      "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Reaction Kinetics"
+     "clusterRef": "Carbonyl Compounds"
     }
-   ]
+   ],
+   "week": 3
   },
   {
-   "n": 27,
-   "date": "2026-08-15",
+   "n": 18,
+   "date": "2026-08-07",
+   "weekday": "Fri",
+   "type": "standard",
+   "subject": "maths",
+   "flag": "",
+   "mins": 240,
+   "label": "Maths Vectors + close Chemistry gap + GP",
+   "focus": "Day 18. Maths Vectors · close Chemistry gap · GP. Full 4h.",
+   "blocks": [
+    {
+     "mins": 120,
+     "subject": "maths",
+     "name": "Maths — Vectors — Planes & Applications (ch 7) · cluster · C3 of 3",
+     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "Vectors — Planes & Applications"
+    },
+    {
+     "mins": 70,
+     "subject": "conv",
+     "name": "Close gaps: Chemistry Carbonyl Compounds",
+     "desc": "Drill / record the previous session's gaps.",
+     "done": false,
+     "doneDate": null
+    },
+    {
+     "mins": 50,
+     "subject": "gp",
+     "name": "GP — Science & Technology domain · ~3 Qs (Step 3)",
+     "desc": "Model-paper questions, Wispr Flow, hypercorrect.",
+     "done": false,
+     "doneDate": null
+    }
+   ],
+   "week": 3
+  },
+  {
+   "n": 19,
+   "date": "2026-08-08",
    "weekday": "Sat",
-   "week": 4,
    "type": "test",
    "subject": "conv",
    "flag": "⚑",
@@ -1704,33 +1459,304 @@ window.PLAN = {
      "done": false,
      "doneDate": null
     }
-   ]
+   ],
+   "week": 3
   },
   {
    "n": "",
-   "date": "2026-08-16",
+   "date": "2026-08-09",
    "weekday": "Sun",
-   "week": 4,
    "type": "rest",
    "subject": "conv",
    "flag": "",
    "label": "Rest day",
    "focus": "",
    "mins": 0,
-   "blocks": []
+   "blocks": [],
+   "week": 3
   },
   {
-   "n": 28,
-   "date": "2026-08-17",
+   "n": 20,
+   "date": "2026-08-10",
    "weekday": "Mon",
-   "week": 5,
+   "type": "standard",
+   "subject": "chem",
+   "flag": "",
+   "mins": 240,
+   "label": "Chemistry Carboxylic Acids & Derivatives + CSC Society",
+   "focus": "Day 20. Chemistry Carboxylic Acids & Derivatives · CSC Society. Full 4h.",
+   "blocks": [
+    {
+     "mins": 120,
+     "subject": "chem",
+     "name": "Chemistry — Carboxylic Acids & Derivatives (ch 18) · cluster · organic",
+     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "Carboxylic Acids & Derivatives"
+    },
+    {
+     "mins": 120,
+     "subject": "csc",
+     "name": "CSC — Society — build the 1 bare-bones cluster",
+     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "社会 Society"
+    }
+   ],
+   "week": 4
+  },
+  {
+   "n": 21,
+   "date": "2026-08-11",
+   "weekday": "Tue",
+   "type": "standard",
+   "subject": "bio",
+   "flag": "",
+   "mins": 240,
+   "label": "Biology Mutations + close Chemistry gap + GP",
+   "focus": "Day 21. Biology Mutations · close Chemistry gap · GP. Full 4h.",
+   "blocks": [
+    {
+     "mins": 120,
+     "subject": "bio",
+     "name": "Biology — Mutations (ch 2e) · cluster · declarative",
+     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "Mutations"
+    },
+    {
+     "mins": 70,
+     "subject": "conv",
+     "name": "Close gaps: Chemistry Carboxylic Acids & Derivatives",
+     "desc": "Drill / record the previous session's gaps.",
+     "done": false,
+     "doneDate": null
+    },
+    {
+     "mins": 50,
+     "subject": "gp",
+     "name": "GP — Environment domain · ~3 Qs (Step 3)",
+     "desc": "Model-paper questions, Wispr Flow, hypercorrect.",
+     "done": false,
+     "doneDate": null
+    }
+   ],
+   "week": 4
+  },
+  {
+   "n": 22,
+   "date": "2026-08-12",
+   "weekday": "Wed",
+   "type": "standard",
+   "subject": "chem",
+   "flag": "",
+   "mins": 240,
+   "label": "Chemistry Nitrogen Compounds + CSC Society",
+   "focus": "Day 22. Chemistry Nitrogen Compounds · CSC Society. Full 4h.",
+   "blocks": [
+    {
+     "mins": 120,
+     "subject": "chem",
+     "name": "Chemistry — Nitrogen Compounds — amines, amides, amino acids (ch 19) · cluster · organic",
+     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "Nitrogen Compounds — amines, amides, amino acids"
+    },
+    {
+     "mins": 120,
+     "subject": "csc",
+     "name": "CSC — Society — Step 3: Q1 (widest)",
+     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "社会 Society"
+    }
+   ],
+   "week": 4
+  },
+  {
+   "n": 23,
+   "date": "2026-08-13",
+   "weekday": "Thu",
    "type": "standard",
    "subject": "maths",
    "flag": "",
    "mins": 240,
-   "label": "Maths Hypothesis Testing + close Chemistry gap + GP",
-   "focus": "Day 28. Maths Hypothesis Testing · close Chemistry gap · GP. Full 4h.",
+   "label": "Maths Sampling + close Chemistry gap + GP",
+   "focus": "Day 23. Maths Sampling · close Chemistry gap · GP. Full 4h.",
    "blocks": [
+    {
+     "mins": 120,
+     "subject": "maths",
+     "name": "Maths — Sampling (ch 14) · cluster · stats",
+     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "Sampling"
+    },
+    {
+     "mins": 70,
+     "subject": "conv",
+     "name": "Close gaps: Chemistry Nitrogen Compounds",
+     "desc": "Drill / record the previous session's gaps.",
+     "done": false,
+     "doneDate": null
+    },
+    {
+     "mins": 50,
+     "subject": "gp",
+     "name": "GP — Media & Ethics domain · ~3 Qs (Step 3)",
+     "desc": "Model-paper questions, Wispr Flow, hypercorrect.",
+     "done": false,
+     "doneDate": null
+    }
+   ],
+   "week": 4
+  },
+  {
+   "n": 24,
+   "date": "2026-08-14",
+   "weekday": "Fri",
+   "type": "standard",
+   "subject": "chem",
+   "flag": "",
+   "mins": 240,
+   "label": "Chemistry Energetics & Thermodynamics + CSC Society",
+   "focus": "Day 24. Chemistry Energetics & Thermodynamics · CSC Society. Full 4h.",
+   "blocks": [
+    {
+     "mins": 120,
+     "subject": "chem",
+     "name": "Chemistry — Energetics & Thermodynamics (ch 5) · cluster · practical",
+     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "Energetics & Thermodynamics"
+    },
+    {
+     "mins": 120,
+     "subject": "csc",
+     "name": "CSC — Society — Step 3: Q2 (widest) + record gaps, close",
+     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "社会 Society"
+    }
+   ],
+   "week": 4
+  },
+  {
+   "n": 25,
+   "date": "2026-08-15",
+   "weekday": "Sat",
+   "type": "test",
+   "subject": "conv",
+   "flag": "⚑",
+   "mins": 300,
+   "label": "Saturday cumulative test — everything so far",
+   "focus": "Hard past-paper questions, 80% target. Surfaces exam-relevant gaps.",
+   "blocks": [
+    {
+     "mins": 180,
+     "subject": "conv",
+     "name": "Cumulative test — all topics to date (hard, past-paper level)",
+     "desc": "",
+     "done": false,
+     "doneDate": null
+    },
+    {
+     "mins": 60,
+     "name": "Self-mark + trap models",
+     "desc": "",
+     "done": false,
+     "doneDate": null
+    },
+    {
+     "mins": 60,
+     "name": "Gap-list → Claude",
+     "desc": "",
+     "done": false,
+     "doneDate": null
+    }
+   ],
+   "week": 4
+  },
+  {
+   "n": "",
+   "date": "2026-08-16",
+   "weekday": "Sun",
+   "type": "rest",
+   "subject": "conv",
+   "flag": "",
+   "label": "Rest day",
+   "focus": "",
+   "mins": 0,
+   "blocks": [],
+   "week": 4
+  },
+  {
+   "n": 26,
+   "date": "2026-08-17",
+   "weekday": "Mon",
+   "type": "standard",
+   "subject": "bio",
+   "flag": "",
+   "mins": 240,
+   "label": "Biology Cancer + close Chemistry gap + GP",
+   "focus": "Day 26. Biology Cancer · close Chemistry gap · GP. Full 4h.",
+   "blocks": [
+    {
+     "mins": 120,
+     "subject": "bio",
+     "name": "Biology — Cancer (ch 3c) · cluster · declarative",
+     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "Cancer"
+    },
+    {
+     "mins": 70,
+     "subject": "conv",
+     "name": "Close gaps: Chemistry Energetics & Thermodynamics",
+     "desc": "Drill / record the previous session's gaps.",
+     "done": false,
+     "doneDate": null
+    },
+    {
+     "mins": 50,
+     "subject": "gp",
+     "name": "GP — Society & Politics domain · ~3 Qs (Step 3)",
+     "desc": "Model-paper questions, Wispr Flow, hypercorrect.",
+     "done": false,
+     "doneDate": null
+    }
+   ],
+   "week": 5
+  },
+  {
+   "n": 27,
+   "date": "2026-08-18",
+   "weekday": "Tue",
+   "type": "standard",
+   "subject": "chem",
+   "flag": "",
+   "mins": 240,
+   "label": "Chemistry Reaction Kinetics + Maths Hypothesis Testing",
+   "focus": "Day 27. Chemistry Reaction Kinetics · Maths Hypothesis Testing. Full 4h.",
+   "blocks": [
+    {
+     "mins": 120,
+     "subject": "chem",
+     "name": "Chemistry — Reaction Kinetics (ch 6) · cluster · practical",
+     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "Reaction Kinetics"
+    },
     {
      "mins": 120,
      "subject": "maths",
@@ -1739,11 +1765,34 @@ window.PLAN = {
      "done": false,
      "doneDate": null,
      "clusterRef": "Hypothesis Testing"
+    }
+   ],
+   "week": 5
+  },
+  {
+   "n": 28,
+   "date": "2026-08-19",
+   "weekday": "Wed",
+   "type": "standard",
+   "subject": "chem",
+   "flag": "",
+   "mins": 240,
+   "label": "Chemistry Chemical Equilibria + close Maths gap + GP",
+   "focus": "Day 28. Chemistry Chemical Equilibria · close Maths gap · GP. Full 4h.",
+   "blocks": [
+    {
+     "mins": 120,
+     "subject": "chem",
+     "name": "Chemistry — Chemical Equilibria (ch 7) · cluster",
+     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "Chemical Equilibria"
     },
     {
      "mins": 70,
      "subject": "conv",
-     "name": "Close gaps: Chemistry Reaction Kinetics",
+     "name": "Close gaps: Maths Hypothesis Testing",
      "desc": "Drill / record the previous session's gaps.",
      "done": false,
      "doneDate": null
@@ -1756,51 +1805,19 @@ window.PLAN = {
      "done": false,
      "doneDate": null
     }
-   ]
+   ],
+   "week": 5
   },
   {
    "n": 29,
-   "date": "2026-08-18",
-   "weekday": "Tue",
-   "week": 5,
-   "type": "standard",
-   "subject": "chem",
-   "flag": "",
-   "mins": 240,
-   "label": "Chemistry Chemical Equilibria + CSC Society",
-   "focus": "Day 29. Chemistry Chemical Equilibria · CSC Society. Full 4h.",
-   "blocks": [
-    {
-     "mins": 120,
-     "subject": "chem",
-     "name": "Chemistry — Chemical Equilibria (ch 7) · cluster",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Chemical Equilibria"
-    },
-    {
-     "mins": 120,
-     "subject": "csc",
-     "name": "CSC — Society — build the 1 bare-bones cluster",
-     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "社会 Society"
-    }
-   ]
-  },
-  {
-   "n": 30,
-   "date": "2026-08-19",
-   "weekday": "Wed",
-   "week": 5,
+   "date": "2026-08-20",
+   "weekday": "Thu",
    "type": "standard",
    "subject": "maths",
    "flag": "",
    "mins": 240,
    "label": "Maths Correlation & Regression + close Chemistry gap + GP",
-   "focus": "Day 30. Maths Correlation & Regression · close Chemistry gap · GP. Full 4h.",
+   "focus": "Day 29. Maths Correlation & Regression · close Chemistry gap · GP. Full 4h.",
    "blocks": [
     {
      "mins": 120,
@@ -1827,19 +1844,19 @@ window.PLAN = {
      "done": false,
      "doneDate": null
     }
-   ]
+   ],
+   "week": 5
   },
   {
-   "n": 31,
-   "date": "2026-08-20",
-   "weekday": "Thu",
-   "week": 5,
+   "n": 30,
+   "date": "2026-08-21",
+   "weekday": "Fri",
    "type": "standard",
    "subject": "chem",
    "flag": "",
    "mins": 240,
-   "label": "Chemistry Acid-Base Equilibria + CSC Society",
-   "focus": "Day 31. Chemistry Acid-Base Equilibria · CSC Society. Full 4h.",
+   "label": "Chemistry Acid-Base Equilibria + close Maths gap + GP",
+   "focus": "Day 30. Chemistry Acid-Base Equilibria · close Maths gap · GP. Full 4h.",
    "blocks": [
     {
      "mins": 120,
@@ -1851,41 +1868,9 @@ window.PLAN = {
      "clusterRef": "Acid-Base Equilibria"
     },
     {
-     "mins": 120,
-     "subject": "csc",
-     "name": "CSC — Society — Step 3: Q1 (widest)",
-     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "社会 Society"
-    }
-   ]
-  },
-  {
-   "n": 32,
-   "date": "2026-08-21",
-   "weekday": "Fri",
-   "week": 5,
-   "type": "standard",
-   "subject": "chem",
-   "flag": "",
-   "mins": 240,
-   "label": "Chemistry Electrochemistry + close Chemistry gap + GP",
-   "focus": "Day 32. Chemistry Electrochemistry · close Chemistry gap · GP. Full 4h.",
-   "blocks": [
-    {
-     "mins": 120,
-     "subject": "chem",
-     "name": "Chemistry — Electrochemistry (ch 21) · cluster · current topic",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
-     "done": false,
-     "doneDate": null,
-     "clusterRef": "Electrochemistry"
-    },
-    {
      "mins": 70,
      "subject": "conv",
-     "name": "Close gaps: Chemistry Acid-Base Equilibria",
+     "name": "Close gaps: Maths Correlation & Regression",
      "desc": "Drill / record the previous session's gaps.",
      "done": false,
      "doneDate": null
@@ -1898,13 +1883,13 @@ window.PLAN = {
      "done": false,
      "doneDate": null
     }
-   ]
+   ],
+   "week": 5
   },
   {
-   "n": 33,
+   "n": 31,
    "date": "2026-08-22",
    "weekday": "Sat",
-   "week": 5,
    "type": "test",
    "subject": "conv",
    "flag": "⚑",
@@ -1934,38 +1919,40 @@ window.PLAN = {
      "done": false,
      "doneDate": null
     }
-   ]
+   ],
+   "week": 5
   },
   {
    "n": "",
    "date": "2026-08-23",
    "weekday": "Sun",
-   "week": 5,
    "type": "rest",
    "subject": "conv",
    "flag": "",
    "label": "Rest day",
    "focus": "",
    "mins": 0,
-   "blocks": []
+   "blocks": [],
+   "week": 5
   }
  ],
  "rest": [
   "2026-07-20",
   "2026-07-22",
-  "2026-07-26",
   "2026-08-02",
   "2026-08-09",
   "2026-08-16",
-  "2026-08-23"
+  "2026-08-23",
+  "2026-07-23",
+  "2026-07-24"
  ],
  "weekTitles": {
-  "0": "Already done — pre-plan + first sessions (incl. Chemical Bonding cleared)",
-  "1": "Organic starts (Foundations→Alkenes→Arenes) + Vectors + Governance finish",
-  "2": "Organic (Halogen→Hydroxy→Carbonyl) + stats + Economy + Bio",
-  "3": "Finish organic (Carboxylic→Nitrogen) + practicals + Society + Bio",
-  "4": "Physical Chem (Equilibria/Acid-Base/Electrochem/Transition) + stats + review",
-  "5": "Run-in: timed papers, weakest-topic deep dives → prelim"
+  "0": "Already done — pre-plan + first sessions",
+  "1": "Bonding + Organic Foundations done · a couple of missed days · reset test",
+  "2": "Organic (Alkenes→Arenes→Halogen) + Vectors + Economy + Bio",
+  "3": "Organic (Hydroxy→Carbonyl→Carboxylic) + stats + Society + Bio",
+  "4": "Finish organic + practicals + physical Chem + stats",
+  "5": "Physical Chem + stats + run-in to prelim"
  },
  "bounds": [
   [
@@ -1976,26 +1963,26 @@ window.PLAN = {
   [
    1,
    "",
-   ""
+   7
   ],
   [
    2,
-   10,
+   8,
    ""
   ],
   [
    3,
-   16,
+   14,
    ""
   ],
   [
    4,
-   22,
+   20,
    ""
   ],
   [
    5,
-   28,
+   26,
    ""
   ]
  ],
