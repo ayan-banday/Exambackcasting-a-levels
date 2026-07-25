@@ -72,7 +72,10 @@ Pre-study is built in below (Layer 1 → Layer 2). Read it once, then go straigh
 - Free-radical mechanism, three stages: **initiation** (UV breaks X–X homolytically → radicals), **propagation** (radical + molecule → product + new radical; chain continues), **termination** (two radicals combine).
 
 ### Degree of unsaturation
-Each ring or double bond = one degree. Compare the formula to the saturated CₙH₂ₙ₊₂: every 2 H missing = 1 degree (a C=C, a ring, etc.).
+**Formula (memorise): degrees of unsaturation = (2C + 2 + N − X − H) / 2**
+where C = carbons, N = nitrogens, X = halogens, H = hydrogens.
+Each ring or C=C double bond = **1** degree; each C≡C triple bond = **2**.
+Example — C₄H₈: (2×4 + 2 + 0 − 0 − 8) / 2 = **1** degree → one C=C **or** one ring.
 
 ---
 

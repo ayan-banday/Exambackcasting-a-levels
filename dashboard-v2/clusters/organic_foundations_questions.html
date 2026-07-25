@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Organic Foundations — Nomenclature + Drill</title>
+<script src="https://cdn.jsdelivr.net/npm/smiles-drawer@2.1.7/dist/smiles-drawer.min.js"></script>
+<style>
+  :root{ --bg:#0e0f13; --card:#171922; --card2:#1e2130; --border:#2a2e3e; --text:#e6e8ef;
+    --muted:#9aa3b8; --green:#4ade80; --amber:#fbbf24; --blue:#60a5fa; --purple:#a78bfa; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6;padding:28px 18px 90px;max-width:920px;margin:0 auto}
+  h1{font-size:1.5rem;margin:0 0 4px}
+  h2{font-size:1.15rem;margin:38px 0 12px;color:var(--blue);border-bottom:1px solid var(--border);padding-bottom:8px}
+  .sub{color:var(--muted);font-size:.92rem;margin:0 0 8px}
+  .formula{background:var(--card2);border:1px solid var(--border);border-left:4px solid var(--amber);border-radius:8px;padding:14px 18px;margin:18px 0 8px}
+  .formula b{color:var(--amber)}
+  .formula .eq{font-size:1.15rem;font-weight:700;letter-spacing:.3px;margin:6px 0}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin:14px 0}
+  .q{font-weight:600;margin:0 0 10px}
+  .q .marks{color:var(--muted);font-weight:400}
+  .part{margin:8px 0;padding-left:2px}
+  .part b{color:var(--text)}
+  .struct{background:#fff0;display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start;margin:8px 0}
+  .mol{background:#0b0c10;border:1px solid var(--border);border-radius:8px;padding:6px;text-align:center}
+  .mol canvas{display:block}
+  .mol .cap{color:var(--muted);font-size:.8rem;margin-top:2px}
+  .prompt-struct{margin:10px 0}
+  button.reveal{background:var(--green);color:#06210f;border:none;border-radius:7px;padding:8px 16px;font-weight:700;cursor:pointer;font-size:.9rem;margin-top:6px}
+  button.reveal:hover{filter:brightness(1.08)}
+  .ans{display:none;margin-top:12px;padding:12px 14px;background:var(--card2);border:1px solid var(--border);border-left:4px solid var(--green);border-radius:8px}
+  .ans.show{display:block}
+  .ans .lbl{color:var(--green);font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
+  .name{font-weight:700;color:var(--green);font-size:1.05rem}
+  .note{color:var(--muted);font-size:.9rem}
+  code{background:#0b0c10;padding:1px 6px;border-radius:4px;color:var(--purple)}
+</style>
+</head>
+<body>
+
+<h1>Organic Foundations — Nomenclature + Drill</h1>
+<p class="sub">Structures are drawn for you. Attempt each out loud, commit fully, then hit reveal.</p>
+
+<div class="formula">
+  <b>Degree of unsaturation</b> (memorise this)
+  <div class="eq">(2C + 2 + N − X − H) / 2</div>
+  <div class="note">C = carbons, N = nitrogens, X = halogens (Cl/Br/I), H = hydrogens. Each ring or C=C = <b>1</b>; each C≡C = <b>2</b>. &nbsp; e.g. C₄H₈ → (8 + 2 − 8)/2 = <b>1</b> → one C=C or one ring.</div>
+</div>
+
+<h2>A · Nomenclature — name the compound</h2>
+<p class="sub">Look at the structure, say the full systematic name, then reveal.</p>
+
+<div class="card">
+  <div class="q">1. Name this compound.</div>
+  <div class="prompt-struct"><span class="mol"><canvas data-smiles="CCCCO" width="200" height="120"></canvas></span></div>
+  <button class="reveal" onclick="rev(this)">Reveal name</button>
+  <div class="ans"><div class="lbl">Answer</div><span class="name">butan-1-ol</span> — 4-carbon chain, –OH on carbon 1.</div>
+</div>
+
+<div class="card">
+  <div class="q">2. Name this compound.</div>
+  <div class="prompt-struct"><span class="mol"><canvas data-smiles="CC(C)C(=O)O" width="220" height="130"></canvas></span></div>
+  <button class="reveal" onclick="rev(this)">Reveal name</button>
+  <div class="ans"><div class="lbl">Answer</div><span class="name">2-methylpropanoic acid</span> — propanoic-acid backbone (–COOH is C1), methyl branch on C2.</div>
+</div>
+
+<div class="card">
+  <div class="q">3. Name this compound.</div>
+  <div class="prompt-struct"><span class="mol"><canvas data-smiles="CCC(=O)CC" width="220" height="130"></canvas></span></div>
+  <button class="reveal" onclick="rev(this)">Reveal name</button>
+  <div class="ans"><div class="lbl">Answer</div><span class="name">pentan-3-one</span> — 5-carbon chain, C=O in the middle (carbon 3), so it's a ketone.</div>
+</div>
+
+<div class="card">
+  <div class="q">4. Name this compound.</div>
+  <div class="prompt-struct"><span class="mol"><canvas data-smiles="CCC(Br)C" width="200" height="120"></canvas></span></div>
+  <button class="reveal" onclick="rev(this)">Reveal name</button>
+  <div class="ans"><div class="lbl">Answer</div><span class="name">2-bromobutane</span> — 4-carbon chain, Br on carbon 2 (numbered to give the lowest locant).</div>
+</div>
+
+<div class="card">
+  <div class="q">5. Name this compound.</div>
+  <div class="prompt-struct"><span class="mol"><canvas data-smiles="CC(=C)C" width="200" height="120"></canvas></span></div>
+  <button class="reveal" onclick="rev(this)">Reveal name</button>
+  <div class="ans"><div class="lbl">Answer</div><span class="name">2-methylprop-1-ene</span> — propene (C=C at 1), methyl branch on C2. (Often just "methylpropene".)</div>
+</div>
+
+<h2>B · Nomenclature — draw the compound</h2>
+<p class="sub">Read the name, draw it on paper, then reveal the structure to check.</p>
+
+<div class="card">
+  <div class="q">6. Draw <b>3-methylbutan-1-ol</b>.</div>
+  <button class="reveal" onclick="rev(this)">Reveal structure</button>
+  <div class="ans"><div class="lbl">Answer</div><span class="mol"><canvas data-smiles="CC(C)CCO" width="220" height="130"></canvas></span><div class="note">Butan-1-ol chain (OH on C1), methyl branch on C3.</div></div>
+</div>
+
+<div class="card">
+  <div class="q">7. Draw <b>2,3-dimethylbut-2-ene</b>.</div>
+  <button class="reveal" onclick="rev(this)">Reveal structure</button>
+  <div class="ans"><div class="lbl">Answer</div><span class="mol"><canvas data-smiles="CC(C)=C(C)C" width="230" height="140"></canvas></span><div class="note">But-2-ene (C=C between C2–C3), a methyl on each of C2 and C3.</div></div>
+</div>
+
+<div class="card">
+  <div class="q">8. Draw <b>1-chloro-2-methylpropane</b>.</div>
+  <button class="reveal" onclick="rev(this)">Reveal structure</button>
+  <div class="ans"><div class="lbl">Answer</div><span class="mol"><canvas data-smiles="CC(C)CCl" width="220" height="130"></canvas></span><div class="note">Propane chain, Cl on C1, methyl on C2.</div></div>
+</div>
+
+<div class="card">
+  <div class="q">9. Draw <b>but-2-yne</b>.</div>
+  <button class="reveal" onclick="rev(this)">Reveal structure</button>
+  <div class="ans"><div class="lbl">Answer</div><span class="mol"><canvas data-smiles="CC#CC" width="200" height="110"></canvas></span><div class="note">4-carbon chain, C≡C triple bond between C2 and C3 (2 degrees of unsaturation).</div></div>
+</div>
+
+<h2>C · Evaluative drill</h2>
+<p class="sub">Each braids many concepts and ends in a judgement. Say your reasoning out loud, commit, then reveal.</p>
+
+<div class="card">
+  <div class="q">Q1 — one formula, many molecules. A hydrocarbon has molecular formula <b>C₄H₈</b>.</div>
+  <div class="part"><b>(a)</b> Deduce every possible structure and organise them by the type of isomerism relating them; identify which show cis-trans isomerism and justify with the exact bonding requirement.</div>
+  <div class="part"><b>(b)</b> For the ones that react rapidly with bromine, name the reaction <i>type</i> and <i>mechanism</i>, and explain from the bonding <b>why</b> they react while the ring isomer behaves like an alkane.</div>
+  <div class="part"><b>(c)</b> Predict, with reasoning from intermolecular forces, which isomer has the highest boiling point.</div>
+  <div class="part"><b>(d)</b> Conclude: how can one molecular formula give compounds differing in <i>both</i> reactivity <i>and</i> physical properties — what one structural feature does the work in each case?</div>
+  <button class="reveal" onclick="rev(this)">Reveal answer</button>
+  <div class="ans"><div class="lbl">Answer</div>
+    <div class="struct">
+      <span class="mol"><canvas data-smiles="C=CCC" width="150" height="110"></canvas><div class="cap">but-1-ene</div></span>
+      <span class="mol"><canvas data-smiles="CC=CC" width="150" height="110"></canvas><div class="cap">but-2-ene (cis-trans)</div></span>
+      <span class="mol"><canvas data-smiles="C=C(C)C" width="150" height="110"></canvas><div class="cap">2-methylpropene</div></span>
+      <span class="mol"><canvas data-smiles="C1CCC1" width="130" height="120"></canvas><div class="cap">cyclobutane</div></span>
+      <span class="mol"><canvas data-smiles="CC1CC1" width="140" height="120"></canvas><div class="cap">methylcyclopropane</div></span>
+    </div>
+    <div class="part"><b>(a)</b> 1 degree of unsaturation → one C=C <b>or</b> one ring. <b>Positional:</b> but-1-ene ↔ but-2-ene. <b>Chain:</b> but-1-ene ↔ 2-methylpropene. <b>Functional-group / ring:</b> alkenes ↔ cycloalkanes. <b>Cis-trans:</b> only <b>but-2-ene</b> — each C=C carbon carries an H and a CH₃ (two different groups) and the π bond locks rotation; 2-methylpropene fails (one carbon has two identical CH₃).</div>
+    <div class="part"><b>(b)</b> The alkenes react with bromine by <b>electrophilic addition</b>: the π bond is a region of high electron density that attracts the electrophile (Br₂ polarised as it approaches). Cyclobutane has only σ bonds, non-polar, no π density, so it behaves like an alkane (radical substitution under UV only).</div>
+    <div class="part"><b>(c)</b> All are C₄, non-polar, only id–id, so bp's are close — but the straight-chain (but-1-ene/but-2-ene) has the largest surface contact → strongest id–id → highest bp; 2-methylpropene (more spherical) is lowest.</div>
+    <div class="part"><b>(d)</b> Reactivity is set by the <b>π bond</b> (present → electrophilic addition; absent → alkane-like); physical properties by <b>shape/surface area</b> governing id–id. One formula spans several molecules because the <i>arrangement</i> — where the unsaturation sits, how the chain branches — is what determines behaviour, not the formula.</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="q">Q2 — structure decides the pathway. Three reactions:</div>
+  <div class="part"><b>(i)</b> ethene + bromine → 1,2-dibromoethane</div>
+  <div class="part"><b>(ii)</b> bromoethane + hydroxide ion → ethanol + bromide ion</div>
+  <div class="part"><b>(iii)</b> ethane + chlorine (UV) → chloroethane + HCl</div>
+  <div class="part"><b>(a)</b> For each, classify the reaction <i>type</i> and <i>mechanism</i>, and state whether the attacking species is a <b>nucleophile, electrophile, or radical</b> — justifying from the electronic nature of the organic molecule.</div>
+  <div class="part"><b>(b)</b> Explain why (i) and (ii) go <b>heterolytic</b> (ionic) but (iii) must go <b>homolytic</b> (radical).</div>
+  <div class="part"><b>(c)</b> Conclude with the single general principle linking a molecule's <i>structure</i> to the <i>mechanism</i> it is forced to follow.</div>
+  <button class="reveal" onclick="rev(this)">Reveal answer</button>
+  <div class="ans"><div class="lbl">Answer</div>
+    <div class="part"><b>(a) (i)</b> Addition · electrophilic — the C=C π density is electron-rich; Br₂ becomes the <b>electrophile</b> (induced dipole) and is attacked. <b>(ii)</b> Substitution · nucleophilic — C–Br is polar so that C is δ+; OH⁻ is the <b>nucleophile</b> (lone-pair donor) attacking the δ+ carbon, Br⁻ leaves. <b>(iii)</b> Substitution · free-radical — ethane is non-polar with no δ+ site and no π density, so the attacker is a <b>radical</b> (Cl•).</div>
+    <div class="part"><b>(b)</b> (i)/(ii) have an electron-rich site (π) or a polar bond (δ+ C) for ions to target → heterolytic fission gives ions that react. (iii) has neither, so no ion can attack; the only way in is UV homolysis of Cl₂ to radicals.</div>
+    <div class="part"><b>(c)</b> The mechanism is dictated by structure — a π system invites <b>electrophiles</b>, a polar σ bond (δ+ C) invites <b>nucleophiles</b>, a non-polar unreactive molecule can only be attacked by <b>radicals</b>. Find the electronic feature and the mechanism follows.</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="q">Q3 — deduce and judge. Compound <b>X</b> has molecular formula <b>C₃H₆O₃</b> and is <b>optically active</b>.</div>
+  <div class="part"><b>(a)</b> Determine the degree of unsaturation and narrow the functional groups X could contain.</div>
+  <div class="part"><b>(b)</b> X reacts with sodium carbonate to release a gas. Deduce that functional group and the class of X, and account for the remaining oxygen.</div>
+  <div class="part"><b>(c)</b> Given X is optically active, deduce its full structure, name it, and explain exactly what makes it chiral.</div>
+  <div class="part"><b>(d)</b> Evaluate: describe X's enantiomer and explain why the two are genuinely different compounds despite identical connectivity — give one property that <i>would</i> distinguish them and one that <i>would not</i>.</div>
+  <button class="reveal" onclick="rev(this)">Reveal answer</button>
+  <div class="ans"><div class="lbl">Answer</div>
+    <div class="struct"><span class="mol"><canvas data-smiles="CC(O)C(=O)O" width="200" height="130"></canvas><div class="cap">2-hydroxypropanoic acid (lactic acid)</div></span></div>
+    <div class="part"><b>(a)</b> Degree of unsaturation = (2×3 + 2 − 6)/2 = <b>1</b> → one C=O or one ring. With three O atoms, that points to a C=O plus two O–H / C–O environments.</div>
+    <div class="part"><b>(b)</b> Effervescence with Na₂CO₃ (CO₂) is diagnostic for <b>–COOH</b> → X is a <b>carboxylic acid</b>. The –COOH uses one C and two O; the <b>third O</b> must be a separate <b>–OH</b> group.</div>
+    <div class="part"><b>(c)</b> X = <b>2-hydroxypropanoic acid (lactic acid), CH₃CH(OH)COOH</b> (C₃H₆O₃ ✓). The <b>central carbon is chiral</b> — it bears four different groups: CH₃, OH, H, COOH.</div>
+    <div class="part"><b>(d)</b> The enantiomer is its <b>non-superimposable mirror image</b> (opposite configuration at the chiral carbon). They're genuinely different because a chiral centre has no plane of symmetry, so no rotation makes them coincide. <b>Distinguishes them:</b> they rotate plane-polarised light equally but in <i>opposite</i> directions (and react at different rates with another chiral molecule). <b>Does NOT distinguish:</b> ordinary physical properties (mp, bp, density) and reactions with achiral reagents are identical.</div>
+  </div>
+</div>
+
+<p class="note" style="margin-top:30px">When you're done, tell me where you're shaky and I'll record the gaps for spaced retrieval. This cluster is finished once its questions are drilled and gaps recorded — no gap-question set.</p>
+
+<script>
+function rev(btn){
+  var a = btn.nextElementSibling;
+  a.classList.toggle('show');
+  btn.textContent = a.classList.contains('show') ? 'Hide answer' : (btn.textContent.indexOf('structure')>-1?'Reveal structure':(btn.textContent.indexOf('name')>-1?'Reveal name':'Reveal answer'));
+}
+window.addEventListener('load', function(){
+  var opts = {width:200, height:120, bondThickness:1.1, padding:14, terminalCarbons:true};
+  document.querySelectorAll('canvas[data-smiles]').forEach(function(cv){
+    var d = new SmilesDrawer.Drawer({width:cv.width, height:cv.height, bondThickness:1.1, padding:16, terminalCarbons:true, atomVisualization:'default'});
+    SmilesDrawer.parse(cv.getAttribute('data-smiles'), function(tree){
+      d.draw(tree, cv, 'dark', false);
+    }, function(err){ cv.parentElement.innerHTML = '<span class="note">'+cv.getAttribute('data-smiles')+'</span>'; });
+  });
+});
+</script>
+</body>
+</html>
