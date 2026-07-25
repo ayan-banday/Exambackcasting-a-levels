@@ -990,32 +990,32 @@ window.PLAN = {
    "subject": "conv",
    "flag": "",
    "mins": 300,
-   "label": "Governance finish + Math & Chem TEST + GP",
-   "focus": "5h reset day. Finish Governance (Q4+Q5), then a cumulative Maths + Chemistry test to see where you actually stand after the break, then GP (overdue). This test is the reset — it surfaces the real gaps.",
+   "label": "Reset day — Maths TEST + Chemistry TEST + GP",
+   "focus": "5h reset after the break. A full Maths test and a Chemistry test to see exactly where you stand and surface the real gaps, then GP (overdue). Governance Q4+Q5 moves to Monday.",
    "blocks": [
     {
      "mins": 120,
-     "subject": "csc",
-     "name": "CSC — Governance Q4 + Q5 (Step 3): finish + record gaps",
-     "desc": "The last two governance questions, then Governance is closed.",
+     "subject": "maths",
+     "name": "Maths TEST — Calculus + Vectors (timed 2h · 49 marks)",
+     "desc": "Hard, past-paper level. Questions only, hidden key. Self-mark → gap list.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "政治 Governance"
+     "clusterHref": "clusters/test_math_01.html"
     },
     {
-     "mins": 130,
-     "subject": "conv",
-     "name": "Cumulative TEST — Maths (Calculus, Vectors) + Chemistry (Stoich & Redox, Bonding, Organic Foundations)",
-     "desc": "Hard, past-paper level. Questions only, hidden key. Self-mark, then hand me the gap list.",
+     "mins": 100,
+     "subject": "chem",
+     "name": "Chemistry TEST — Stoich, Redox, Bonding, Organic Foundations (timed ~1h40 · 40 marks)",
+     "desc": "Hard, past-paper level. Questions only, hidden key.",
      "done": false,
      "doneDate": null,
-     "clusterHref": "clusters/test_01_math_chem.html"
+     "clusterHref": "clusters/test_chem_01.html"
     },
     {
-     "mins": 50,
+     "mins": 80,
      "subject": "gp",
-     "name": "GP — Science & Technology domain · ~3 Qs (Step 3)",
-     "desc": "Overdue — one 50-min phase off the model papers.",
+     "name": "GP — 2 phases (Science & Tech + Environment domains)",
+     "desc": "Overdue — two ~40-min phases off the model papers.",
      "done": false,
      "doneDate": null
     }
@@ -1030,8 +1030,8 @@ window.PLAN = {
    "subject": "maths",
    "flag": "",
    "mins": 240,
-   "label": "Maths Vectors + CSC Economy",
-   "focus": "Day 8. Maths Vectors · CSC Economy. Full 4h.",
+   "label": "Maths Vectors + CSC Governance",
+   "focus": "Day 8. Maths Vectors · CSC Governance. Full 4h.",
    "blocks": [
     {
      "mins": 120,
@@ -1045,11 +1045,11 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "csc",
-     "name": "CSC — Economy — build the 1 bare-bones cluster (Layer 1+2)",
+     "name": "CSC — Governance — Step 3: Q4 (widest)",
      "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "经济 Economy"
+     "clusterRef": "政治 Governance"
     }
    ],
    "week": 2
@@ -1101,8 +1101,8 @@ window.PLAN = {
    "subject": "bio",
    "flag": "",
    "mins": 240,
-   "label": "Biology Evolution + CSC Economy",
-   "focus": "Day 10. Biology Evolution · CSC Economy. Full 4h.",
+   "label": "Biology Evolution + CSC Governance",
+   "focus": "Day 10. Biology Evolution · CSC Governance. Full 4h.",
    "blocks": [
     {
      "mins": 120,
@@ -1116,11 +1116,11 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "csc",
-     "name": "CSC — Economy — Step 3: Q1 (widest)",
+     "name": "CSC — Governance — Step 3: Q5 (widest), finish + record gaps",
      "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "经济 Economy"
+     "clusterRef": "政治 Governance"
     }
    ],
    "week": 2
@@ -1187,7 +1187,7 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "csc",
-     "name": "CSC — Economy — Step 3: Q2 (widest)",
+     "name": "CSC — Economy — build the 1 bare-bones cluster (Layer 1+2)",
      "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
      "done": false,
      "doneDate": null,
@@ -1307,7 +1307,7 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "csc",
-     "name": "CSC — Economy — Step 3: Q3 (widest) + record gaps, close",
+     "name": "CSC — Economy — Step 3: Q1 (widest)",
      "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
      "done": false,
      "doneDate": null,
@@ -1483,8 +1483,8 @@ window.PLAN = {
    "subject": "chem",
    "flag": "",
    "mins": 240,
-   "label": "Chemistry Carboxylic Acids & Derivatives + CSC Society",
-   "focus": "Day 20. Chemistry Carboxylic Acids & Derivatives · CSC Society. Full 4h.",
+   "label": "Chemistry Carboxylic Acids & Derivatives + CSC Economy",
+   "focus": "Day 20. Chemistry Carboxylic Acids & Derivatives · CSC Economy. Full 4h.",
    "blocks": [
     {
      "mins": 120,
@@ -1498,11 +1498,11 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "csc",
-     "name": "CSC — Society — build the 1 bare-bones cluster",
+     "name": "CSC — Economy — Step 3: Q2 (widest)",
      "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "社会 Society"
+     "clusterRef": "经济 Economy"
     }
    ],
    "week": 4
@@ -1554,8 +1554,8 @@ window.PLAN = {
    "subject": "chem",
    "flag": "",
    "mins": 240,
-   "label": "Chemistry Nitrogen Compounds + CSC Society",
-   "focus": "Day 22. Chemistry Nitrogen Compounds · CSC Society. Full 4h.",
+   "label": "Chemistry Nitrogen Compounds + CSC Economy",
+   "focus": "Day 22. Chemistry Nitrogen Compounds · CSC Economy. Full 4h.",
    "blocks": [
     {
      "mins": 120,
@@ -1569,11 +1569,11 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "csc",
-     "name": "CSC — Society — Step 3: Q1 (widest)",
+     "name": "CSC — Economy — Step 3: Q3 (widest) + record gaps, close",
      "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "社会 Society"
+     "clusterRef": "经济 Economy"
     }
    ],
    "week": 4
@@ -1640,7 +1640,7 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "csc",
-     "name": "CSC — Society — Step 3: Q2 (widest) + record gaps, close",
+     "name": "CSC — Society — build the 1 bare-bones cluster",
      "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
      "done": false,
      "doneDate": null,
@@ -1816,8 +1816,8 @@ window.PLAN = {
    "subject": "maths",
    "flag": "",
    "mins": 240,
-   "label": "Maths Correlation & Regression + close Chemistry gap + GP",
-   "focus": "Day 29. Maths Correlation & Regression · close Chemistry gap · GP. Full 4h.",
+   "label": "Maths Correlation & Regression + CSC Society",
+   "focus": "Day 29. Maths Correlation & Regression · CSC Society. Full 4h.",
    "blocks": [
     {
      "mins": 120,
@@ -1829,20 +1829,13 @@ window.PLAN = {
      "clusterRef": "Correlation & Regression"
     },
     {
-     "mins": 70,
-     "subject": "conv",
-     "name": "Close gaps: Chemistry Chemical Equilibria",
-     "desc": "Drill / record the previous session's gaps.",
+     "mins": 120,
+     "subject": "csc",
+     "name": "CSC — Society — Step 3: Q1 (widest)",
+     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
      "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 50,
-     "subject": "gp",
-     "name": "GP — Environment domain · ~3 Qs (Step 3)",
-     "desc": "Model-paper questions, Wispr Flow, hypercorrect.",
-     "done": false,
-     "doneDate": null
+     "doneDate": null,
+     "clusterRef": "社会 Society"
     }
    ],
    "week": 5
@@ -1878,7 +1871,7 @@ window.PLAN = {
     {
      "mins": 50,
      "subject": "gp",
-     "name": "GP — Media & Ethics domain · ~3 Qs (Step 3)",
+     "name": "GP — Environment domain · ~3 Qs (Step 3)",
      "desc": "Model-paper questions, Wispr Flow, hypercorrect.",
      "done": false,
      "doneDate": null
