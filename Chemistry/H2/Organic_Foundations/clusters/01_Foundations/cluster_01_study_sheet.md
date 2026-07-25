@@ -68,8 +68,20 @@ Pre-study is built in below (Layer 1 → Layer 2). Read it once, then go straigh
 | Enantiomerism / optical (stereo) | mirror-image arrangement | a **chiral carbon** — 4 *different* groups on one carbon |
 
 ### Alkanes — the unreactive baseline
-- Saturated, non-polar → only **free-radical substitution** (with halogens + UV) and **combustion**.
-- Free-radical mechanism, three stages: **initiation** (UV breaks X–X homolytically → radicals), **propagation** (radical + molecule → product + new radical; chain continues), **termination** (two radicals combine).
+- Saturated, non-polar, so they undergo only **free-radical substitution** (with halogens under ultraviolet light) and **combustion**.
+- Free-radical substitution has three stages. In **initiation**, ultraviolet light breaks the halogen bond homolytically to form two radicals. In **propagation**, a halogen radical removes an H from the alkane to give an alkyl radical and HX, and that alkyl radical then reacts with another halogen molecule to give the halogenoalkane and a new halogen radical, so the chain continues. In **termination**, two radicals combine. The conditions are **ultraviolet light**, not heat.
+
+### Electrophilic addition — how an alkene reacts with bromine (this mechanism must be learnt)
+The conditions are **bromine at room temperature in the dark**, and the reaction is fast.
+1. **Step 1 is slow and rate-determining.** As the non-polar bromine molecule approaches the C=C, the π electrons are a region of high electron density that repel the electrons in the Br–Br bond, so an induced dipole forms and the nearer bromine becomes δ+. The π electrons then attack this δ+ bromine, which is acting as the electrophile, and the Br–Br bond breaks heterolytically so that the nearer bromine joins a carbon while the other leaves as a bromide ion. This forms a **carbocation intermediate**. The step is slow because it forms the unstable carbocation, so it has a high activation energy and is the rate-determining step.
+2. **Step 2 is fast.** The bromide ion acts as a nucleophile and uses a lone pair to attack the positively charged carbon of the carbocation, forming the second carbon–bromine bond. The product is the 1,2-dibromoalkane.
+
+Overall the reaction is **addition** (two molecules become one and the double bond becomes a single bond) and **electrophilic** (it is started by an electrophile).
+
+**Why an alkene reacts by electrophilic addition and not by free-radical substitution:** the π bond is an exposed region of high electron density, so it readily attracts electrophiles and undergoes electrophilic addition quickly at room temperature. A ring or an alkane has no π bond, so addition is impossible and its only route is free-radical substitution, which needs ultraviolet light.
+
+### Surface area, branching and boiling point (use this exact wording)
+The larger the surface area of contact between adjacent molecules, the more easily induced dipoles are formed, and the stronger the dispersion forces. A **straight-chain** molecule lets neighbouring molecules touch over a large area, so it has stronger dispersion forces and a higher boiling point. A **branched** molecule is more compact and ball-like, so neighbouring molecules touch over a smaller area, giving weaker dispersion forces and a lower boiling point. It is the surface that is **in contact** between molecules that matters, not the surface area in isolation. Always write "instantaneous dipole–**induced** dipole", never "instantaneous–instantaneous".
 
 ### Degree of unsaturation
 **Formula (memorise): degrees of unsaturation = (2C + 2 + N − X − H) / 2**
