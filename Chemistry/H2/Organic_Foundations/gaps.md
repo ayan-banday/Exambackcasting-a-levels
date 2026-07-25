@@ -26,5 +26,7 @@ Declarative topic: gaps are recorded here and re-tested next session (day+1 / +7
 
 (Correct: reaction classifications i/ii/iii, the FRS propagation for ethane+Cl₂, and the general structure→mechanism principle.)
 
+| 13 | **Why electrophilic addition is carried out in the dark** (classic exam Q). | FRAGILE (self-answered correctly) | To prevent UV light causing homolytic fission of the halogen, generating radicals and free-radical substitution as a competing side reaction. Now in the cluster. |
+
 ## Cluster feedback (25 Jul)
 Ethan: the exam-style question was excellent ("this exam paper is great") but the cluster's Layer 1/Layer 2 under-taught — it defined reaction *types* but never taught the *mechanisms* the question demanded (electrophilic addition). **Fix applied:** cluster now teaches electrophilic addition + free-radical substitution step-by-step + the branching/dispersion wording. Lesson: for organic, the cluster must teach the mechanisms, not just the type definitions.
