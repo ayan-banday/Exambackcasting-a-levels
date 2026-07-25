@@ -80,6 +80,14 @@ Overall the reaction is **addition** (two molecules become one and the double bo
 
 **Why an alkene reacts by electrophilic addition and not by free-radical substitution:** the π bond is an exposed region of high electron density, so it readily attracts electrophiles and undergoes electrophilic addition quickly at room temperature. A ring or an alkane has no π bond, so addition is impossible and its only route is free-radical substitution, which needs ultraviolet light.
 
+**Why it is called "electrophilic" even though the π electrons form the first bond:** a mechanism is named after the reagent that attacks the organic molecule. Here that reagent is the electrophile, the δ+ bromine, which is drawn to the electron-rich C=C and adds across it. The first curly arrow runs from the π bond to the bromine, but the reaction is classified by the attacking reagent, which is the electrophile, and not by the direction of the arrow. The electrophile attacks in step 1; the bromide nucleophile only comes in at step 2.
+
+### Nucleophilic substitution — how a halogenoalkane reacts with hydroxide
+The carbon–halogen bond is polar, so that carbon is δ+. A nucleophile such as the hydroxide ion uses a lone pair to attack the δ+ carbon, and the halogen leaves with both bonding electrons as a halide ion. The product is an alcohol. The halide does not attack back, because the halide ion is a **good leaving group** while the –OH is a **poor leaving group** (a strong C–O bond), so the reaction runs in the direction that expels the halide.
+
+### Heterolytic or homolytic — how to decide
+A reaction goes **heterolytically** (the bond breaks so both electrons go to one atom, forming ions) when there is a polar bond or an electron-rich site to drive the unequal split: the π cloud of an alkene, or the δ+ carbon of a halogenoalkane. A reaction can only go **homolytically** (each atom keeps one electron, forming radicals) when the molecule is non-polar with no δ+/δ− site and no π cloud, so the only way to break the bond is with the energy of ultraviolet light.
+
 ### Surface area, branching and boiling point (use this exact wording)
 The larger the surface area of contact between adjacent molecules, the more easily induced dipoles are formed, and the stronger the dispersion forces. A **straight-chain** molecule lets neighbouring molecules touch over a large area, so it has stronger dispersion forces and a higher boiling point. A **branched** molecule is more compact and ball-like, so neighbouring molecules touch over a smaller area, giving weaker dispersion forces and a lower boiling point. It is the surface that is **in contact** between molecules that matters, not the surface area in isolation. Always write "instantaneous dipole–**induced** dipole", never "instantaneous–instantaneous".
 
