@@ -85,15 +85,17 @@ summary::-webkit-details-marker{display:none}summary::before{content:'▸ '}deta
 
   <div class="q"><span class="marks">[10]</span><span class="n">Question 5</span>
     <div class="body">
-      <div class="part">Line \(l_1\) passes through \(A(1,2,1)\) and \(B(3,1,2)\). Line \(l_2\) has equation \(\mathbf r=\begin{pmatrix}2\\0\\4\end{pmatrix}+\mu\begin{pmatrix}1\\1\\-1\end{pmatrix}\).</div>
-      <div class="part">(a) Show that \(l_1\) and \(l_2\) are skew. <span style="color:#999">[4]</span></div>
-      <div class="part">(b) Find the exact shortest distance between \(l_1\) and \(l_2\). <span style="color:#999">[4]</span></div>
-      <div class="part">(c) Find the acute angle between the two lines, and comment on your answer. <span style="color:#999">[2]</span></div>
+      <div class="part">Points \(A\), \(B\), \(C\) have position vectors \(\begin{pmatrix}1\\0\\2\end{pmatrix}\), \(\begin{pmatrix}3\\2\\4\end{pmatrix}\), \(\begin{pmatrix}4\\3\\5\end{pmatrix}\). The vector \(\mathbf d=\begin{pmatrix}1\\-1\\0\end{pmatrix}\).</div>
+      <div class="part">(a) Show that \(A\), \(B\) and \(C\) are collinear, and state the ratio \(AB:BC\). <span style="color:#999">[3]</span></div>
+      <div class="part">(b) Find a unit vector perpendicular to both \(\vec{AB}\) and \(\mathbf d\). <span style="color:#999">[3]</span></div>
+      <div class="part">(c) Find the value of \(t\) for which the vector \(\begin{pmatrix}t\\2\\-1\end{pmatrix}\) is perpendicular to \(\vec{AB}\). <span style="color:#999">[2]</span></div>
+      <div class="part">(d) \(M\) is the midpoint of \(AB\). Find \(|\vec{OM}|\) and determine whether \(\vec{OM}\) is perpendicular to \(\vec{AB}\). <span style="color:#999">[2]</span></div>
     </div>
     <details><summary>Reveal solution</summary><div class="soln">
-      <p><b>(a)</b> \(l_1:\ \mathbf r=\begin{pmatrix}1\\2\\1\end{pmatrix}+\lambda\begin{pmatrix}2\\-1\\1\end{pmatrix}\). Directions not proportional → not parallel. Equating: \(1+2\lambda=2+\mu,\ 2-\lambda=\mu,\ 1+\lambda=4-\mu\). From first two: \(1+2\lambda=2+(2-\lambda)\Rightarrow\lambda=1,\mu=1\); check third: \(1+1=2\neq4-1=3\). Inconsistent → no intersection → skew. <span class="m">M1M1M1A1</span>.</p>
-      <p><b>(b)</b> \(\mathbf d_1\times\mathbf d_2=\begin{pmatrix}2\\-1\\1\end{pmatrix}\times\begin{pmatrix}1\\1\\-1\end{pmatrix}=\begin{pmatrix}0\\3\\3\end{pmatrix}\), \(|\cdot|=3\sqrt2\). \(\vec{CA}=\begin{pmatrix}-1\\2\\-3\end{pmatrix}\) (\(C=(2,0,4)\)). Distance \(=\dfrac{|\vec{CA}\cdot(\mathbf d_1\times\mathbf d_2)|}{|\mathbf d_1\times\mathbf d_2|}=\dfrac{|0+6-9|}{3\sqrt2}=\dfrac{3}{3\sqrt2}=\dfrac{1}{\sqrt2}\). <span class="m">M1A1M1A1</span>.</p>
-      <p><b>(c)</b> \(\mathbf d_1\cdot\mathbf d_2=2-1-1=0\Rightarrow\theta=90^\circ\). The lines are perpendicular as well as skew. <span class="m">M1A1</span>.</p></div></details>
+      <p><b>(a)</b> \(\vec{AB}=\begin{pmatrix}2\\2\\2\end{pmatrix}\), \(\vec{AC}=\begin{pmatrix}3\\3\\3\end{pmatrix}=\tfrac32\vec{AB}\) → parallel and share \(A\) → collinear. \(\vec{BC}=\begin{pmatrix}1\\1\\1\end{pmatrix}\Rightarrow\vec{AB}=2\vec{BC}\), so \(AB:BC=2:1\). <span class="m">M1A1A1</span>.</p>
+      <p><b>(b)</b> \(\vec{AB}\parallel\begin{pmatrix}1\\1\\1\end{pmatrix}\); \(\begin{pmatrix}1\\1\\1\end{pmatrix}\times\begin{pmatrix}1\\-1\\0\end{pmatrix}=\begin{pmatrix}1\\1\\-2\end{pmatrix}\), \(|\cdot|=\sqrt6\). Unit vector \(=\dfrac{1}{\sqrt6}\begin{pmatrix}1\\1\\-2\end{pmatrix}\) (or its negative). <span class="m">M1A1A1</span>.</p>
+      <p><b>(c)</b> \(\begin{pmatrix}t\\2\\-1\end{pmatrix}\cdot\begin{pmatrix}1\\1\\1\end{pmatrix}=t+2-1=0\Rightarrow t=-1\). <span class="m">M1A1</span>.</p>
+      <p><b>(d)</b> \(\vec{OM}=\tfrac12(\mathbf a+\mathbf b)=\begin{pmatrix}2\\1\\3\end{pmatrix}\), \(|\vec{OM}|=\sqrt{4+1+9}=\sqrt{14}\). \(\vec{OM}\cdot\vec{AB}=2+1+3=6\neq0\) → not perpendicular. <span class="m">M1A1</span>.</p></div></details>
   </div>
 
   <div class="q"><span class="marks">[10]</span><span class="n">Question 6</span>
