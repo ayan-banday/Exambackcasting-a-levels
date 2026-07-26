@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maths Gap Cluster — Test 1</title>
+<script>MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]}};</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+:root{--bg:#fbfbf9;--ink:#1a1a1a;--dim:#6b6b6b;--line:#e2e2dc;--card:#fff;--accent:#1f3a7a;--ok:#1f6b4a;--warn:#8a5a1f}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.62 Georgia,serif;padding:40px 20px 120px}
+.wrap{max-width:820px;margin:0 auto}
+.hd{border-bottom:2.5px solid var(--ink);padding-bottom:16px;margin-bottom:8px}
+.hd h1{font-size:21px;font-weight:700}.hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:13px;color:var(--dim);margin-top:6px}
+.how{background:#eef1f7;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:6px;padding:14px 18px;margin:22px 0;font-size:14.5px}.how b{color:var(--accent)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px 22px;margin-bottom:14px}
+.q .n{font-family:ui-monospace,Menlo,monospace;font-weight:700;color:var(--accent);font-size:14px}
+.q .tgt{float:right;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:#b04a3a}
+.q .body{font-size:15.5px;margin-top:8px}.q .part{margin-top:7px}
+details{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}
+summary{cursor:pointer;font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:var(--accent);list-style:none}
+summary::-webkit-details-marker{display:none}summary::before{content:'▸ '}details[open] summary::before{content:'▾ '}
+.soln{font-size:13.8px;margin-top:10px}.soln p{margin:6px 0}.soln .m{color:var(--ok);font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700}
+.rule{background:#fbf6ec;border:1px solid #e6d9bd;border-left:3px solid var(--warn);border-radius:5px;padding:8px 12px;margin-top:8px;font-size:13.3px}.rule b{color:var(--warn)}
+.foot{margin-top:36px;border-top:1px solid var(--line);padding-top:16px;font-size:13.5px;color:var(--dim)}.foot b{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hd"><h1>Maths Gap Cluster — from Test 1</h1><div class="meta">targets only your weak nodes · attempt cold, then reveal for the answer AND the "which-method" rule</div></div>
+  <div class="how"><b>These are the exact things that cost you marks</b>, re-cast as fresh questions. The reveal has the working <i>and</i> a boxed rule — the surefire way to spot the method next time. Loom your confidence.</div>
+
+  <div class="q"><span class="tgt">reverse-chain constant · Priority 1</span><span class="n">Question 1</span>
+    <div class="body">Find each of the following.
+      <div class="part">(a) \(\displaystyle\int x^2\sqrt{x^3+1}\,dx\) <span style="color:#999">[3]</span></div>
+      <div class="part">(b) \(\displaystyle\int \frac{x}{\sqrt{4-x^2}}\,dx\) <span style="color:#999">[3]</span></div>
+      <div class="part">(c) \(\displaystyle\int_0^1 x\,e^{2x^2}\,dx\) <span style="color:#999">[3]</span></div>
+    </div>
+    <details><summary>Reveal</summary><div class="soln">
+      <p><b>(a)</b> \(u=x^3+1,\ du=3x^2dx\Rightarrow x^2dx=\tfrac13du\). \(\int\tfrac13 u^{1/2}du=\tfrac13\cdot\tfrac23u^{3/2}=\dfrac{2}{9}(x^3+1)^{3/2}+C\). <span class="m">M1A1A1</span>.</p>
+      <p><b>(b)</b> \(u=4-x^2,\ du=-2x\,dx\Rightarrow x\,dx=-\tfrac12du\). \(\int-\tfrac12u^{-1/2}du=-u^{1/2}=-\sqrt{4-x^2}+C\).</p>
+      <p><b>(c)</b> \(u=2x^2,\ du=4x\,dx\Rightarrow x\,dx=\tfrac14du\). \(\tfrac14\big[e^{2x^2}\big]_0^1=\dfrac{1}{4}(e^2-1)\).</p>
+      <div class="rule"><b>Rule.</b> For \(\int x\cdot f(x^2)\,dx\) (or \(x^2\cdot f(x^3)\)): set \(u=\) the inside, differentiate to get \(du=(\text{deriv})\,dx\), then <b>rearrange for the exact piece you have</b>. The constant is whatever makes \(x\,dx\) equal — here \(-\tfrac12\), \(\tfrac13\), \(\tfrac14\). You are <b>solving for the constant</b>, never "balancing" a phantom \(-2x\). If you find yourself writing \(-2\) out front, you've multiplied when you should have divided.</div>
+    </div></details>
+  </div>
+
+  <div class="q"><span class="tgt">cyclic vs double IBP</span><span class="n">Question 2</span>
+    <div class="body">
+      <div class="part">(a) Find \(\displaystyle\int (\ln x)^2\,dx\). <span style="color:#999">[4]</span></div>
+      <div class="part">(b) Find \(\displaystyle\int e^{2x}\cos x\,dx\). <span style="color:#999">[4]</span></div>
+    </div>
+    <details><summary>Reveal</summary><div class="soln">
+      <p><b>(a)</b> Repeated IBP. \(u=(\ln x)^2,dv=dx\Rightarrow x(\ln x)^2-\int x\cdot\tfrac{2\ln x}{x}dx=x(\ln x)^2-2\int\ln x\,dx=x(\ln x)^2-2(x\ln x-x)=x(\ln x)^2-2x\ln x+2x+C\). <span class="m">M1M1A1A1</span>.</p>
+      <p><b>(b)</b> Cyclic IBP: \(I=\int e^{2x}\cos x\,dx=\dfrac{e^{2x}(2\cos x+\sin x)}{5}+C\) (parts twice, the integral reappears, solve for \(I\)). <span class="m">M1M1M1A1</span>.</p>
+      <div class="rule"><b>Rule.</b> <b>Cyclic IBP only when a factor <i>regenerates</i></b> — i.e. \(e^{ax}\) with \(\sin bx\)/\(\cos bx\). You differentiate forever and the same shape returns, so you loop twice and solve for \(I\). <b>If a factor <i>decays</i></b> — \((\ln x)^n\) drops a power each time, \(x^n\) drops toward a constant — it's plain <b>repeated IBP</b>: keep going until the awkward factor is gone. Log/polynomial = repeat; exponential×trig = cyclic.</div>
+    </div></details>
+  </div>
+
+  <div class="q"><span class="tgt">partial-fraction DE + limiting value</span><span class="n">Question 3</span>
+    <div class="body">
+      <div class="part">In a reaction the concentration \(x\) (mol dm⁻³) of a product at time \(t\) minutes satisfies \(\dfrac{dx}{dt}=k(4-x)(1-x)\), \(k>0\). When \(t=0,\ x=0\); when \(t=2,\ x=0.5\).</div>
+      <div class="part">(a) Show that \(t=\dfrac{1}{6k}\cdots\) — solve the equation, expressing \(t\) in terms of \(x\). <span style="color:#999">[6]</span></div>
+      <div class="part">(b) Find the exact value of \(k\). <span style="color:#999">[2]</span></div>
+      <div class="part">(c) State the maximum concentration the product can reach, and find the time for \(x\) to reach \(0.9\) mol dm⁻³. <span style="color:#999">[4]</span></div>
+    </div>
+    <details><summary>Reveal</summary><div class="soln">
+      <p><b>(a)</b> \(\dfrac{1}{(4-x)(1-x)}=\dfrac13\!\left(\dfrac{1}{1-x}-\dfrac{1}{4-x}\right)\) (so \(A=-\tfrac13,B=\tfrac13\) — <b>fractions, not whole numbers</b>). Integrate: \(\tfrac13\ln\dfrac{4-x}{1-x}=kt+c\). At \(t=0,x=0:\ c=\tfrac13\ln4\). So \(kt=\tfrac13\ln\dfrac{4-x}{1-x}-\tfrac13\ln4=\tfrac13\ln\dfrac{4-x}{4(1-x)}\Rightarrow t=\dfrac{1}{3k}\ln\dfrac{4-x}{4(1-x)}\). <span class="m">M1M1A1M1M1A1</span>.</p>
+      <p><b>(b)</b> \(t=2,x=0.5:\ 2=\dfrac{1}{3k}\ln\dfrac{3.5}{2}=\dfrac{1}{3k}\ln\tfrac74\Rightarrow k=\dfrac{1}{6}\ln\tfrac74\). <span class="m">M1A1</span>.</p>
+      <p><b>(c)</b> As \(t\to\infty\) the reaction stops when the <b>smaller</b> factor hits zero: \(x\to1\), so max \(=\mathbf{1}\) mol dm⁻³ (NOT 4). For \(x=0.9:\ t=\dfrac{1}{3k}\ln\dfrac{3.1}{0.4}=\dfrac{\ln(7.75)}{3k}\approx7.3\) min. <span class="m">M1A1M1A1</span>.</p>
+      <div class="rule"><b>Two rules.</b> (1) Partial fractions here give \(\pm\tfrac13\) — <b>if you get a whole number for A or B, you slipped a sign</b> (it's \(-Ax+Bx\)). (2) A logistic DE \(\dfrac{dx}{dt}=k(a-x)(b-x)\) <b>saturates at the SMALLER of \(a,b\)</b> (the first factor to reach zero), not at infinity. And read the units — "in thousands" means \(x=1\) at 1000 people.</div>
+    </div></details>
+  </div>
+
+  <div class="q"><span class="tgt">Maclaurin from derivatives + limit</span><span class="n">Question 4</span>
+    <div class="body">
+      <div class="part">A curve has equation \(y=\ln(1+\sin 2x)\).</div>
+      <div class="part">(a) Show that \(\dfrac{d^2y}{dx^2}=-\dfrac{4}{1+\sin 2x}\), and find the Maclaurin series for \(y\) up to the term in \(x^3\). <span style="color:#999">[6]</span></div>
+      <div class="part">(b) Hence find \(\displaystyle\lim_{x\to0}\frac{\ln(1+\sin 2x)-2x}{x^2}\). <span style="color:#999">[3]</span></div>
+    </div>
+    <details><summary>Reveal</summary><div class="soln">
+      <p><b>(a)</b> \(\dfrac{dy}{dx}=\dfrac{2\cos2x}{1+\sin2x}\). \(\dfrac{d^2y}{dx^2}=\dfrac{-4\sin2x(1+\sin2x)-4\cos^2 2x}{(1+\sin2x)^2}=\dfrac{-4\sin2x-4}{(1+\sin2x)^2}=\dfrac{-4(1+\sin2x)}{(1+\sin2x)^2}=-\dfrac{4}{1+\sin2x}\). Values: \(y(0)=0,y'(0)=2,y''(0)=-4,y'''(0)=8\Rightarrow y=2x-2x^2+\tfrac43x^3-\cdots\). <span class="m">M1A1M1A1A1A1</span>.</p>
+      <p><b>(b)</b> \(\dfrac{(2x-2x^2+\cdots)-2x}{x^2}=\dfrac{-2x^2+\cdots}{x^2}\to-2\). <span class="m">M1M1A1</span>.</p>
+      <div class="rule"><b>Rule.</b> The whole point of "show \(\dfrac{d^2y}{dx^2}=\dots\)": after the quotient rule the numerator is \(-\sin(\cdot)-\sin^2(\cdot)-\cos^2(\cdot)=-\sin(\cdot)-1=-(1+\sin(\cdot))\), which <b>cancels one power of the denominator</b>. Always look for that cancellation. Then Maclaurin \(=\sum\dfrac{y^{(n)}(0)}{n!}x^n\); for a "hence" limit, substitute the series and everything above the needed power \(\to0\).</div>
+    </div></details>
+  </div>
+
+  <div class="q"><span class="tgt">projection · area · foot of perpendicular</span><span class="n">Question 5</span>
+    <div class="body">
+      <div class="part">Points \(A\), \(B\) have position vectors \(\mathbf a=\begin{pmatrix}3\\4\\0\end{pmatrix}\), \(\mathbf b=\begin{pmatrix}1\\2\\2\end{pmatrix}\). Point \(C\) has position vector \(\begin{pmatrix}5\\0\\1\end{pmatrix}\).</div>
+      <div class="part">(a) Find the scalar projection and the vector projection of \(\vec{OB}\) onto \(\vec{OA}\). <span style="color:#999">[3]</span></div>
+      <div class="part">(b) Find the exact area of triangle \(OAB\). <span style="color:#999">[3]</span></div>
+      <div class="part">(c) Find the foot of the perpendicular \(F\) from \(C\) to the line \(OA\), and the exact perpendicular distance from \(C\) to \(OA\). <span style="color:#999">[4]</span></div>
+    </div>
+    <details><summary>Reveal</summary><div class="soln">
+      <p><b>(a)</b> \(\mathbf a\cdot\mathbf b=3+8+0=11,\ |\mathbf a|=5\). Scalar projection \(=\dfrac{\mathbf a\cdot\mathbf b}{|\mathbf a|}=\dfrac{11}{5}\). Vector projection \(=\dfrac{\mathbf a\cdot\mathbf b}{|\mathbf a|^2}\mathbf a=\dfrac{11}{25}\begin{pmatrix}3\\4\\0\end{pmatrix}\). <span class="m">M1A1A1</span>.</p>
+      <p><b>(b)</b> \(\mathbf a\times\mathbf b=\begin{pmatrix}8\\-6\\2\end{pmatrix}\), \(|\cdot|=\sqrt{104}=2\sqrt{26}\); area \(=\tfrac12\cdot2\sqrt{26}=\sqrt{26}\). <span class="m">M1M1A1</span>.</p>
+      <p><b>(c)</b> \(F=\left(\dfrac{\vec{OC}\cdot\mathbf a}{|\mathbf a|^2}\right)\mathbf a=\dfrac{15}{25}\begin{pmatrix}3\\4\\0\end{pmatrix}=\begin{pmatrix}1.8\\2.4\\0\end{pmatrix}\). Distance \(=|\vec{OC}-\vec{OF}|=\left|\begin{pmatrix}3.2\\-2.4\\1\end{pmatrix}\right|=\sqrt{17}\). <span class="m">M1A1M1A1</span>.</p>
+      <div class="rule"><b>The four you blanked on.</b> Scalar projection of \(\mathbf b\) on \(\mathbf a=\dfrac{\mathbf a\cdot\mathbf b}{|\mathbf a|}\) (a number). Vector projection \(=\) that \(\times\ \hat{\mathbf a}=\dfrac{\mathbf a\cdot\mathbf b}{|\mathbf a|^2}\mathbf a\). Area of triangle \(=\tfrac12|\mathbf a\times\mathbf b|\) (parallelogram = no \(\tfrac12\)). Foot of perpendicular from a point to a line through \(O\) = the vector projection of the point's position vector onto the line's direction; perpendicular distance = \(|\text{point}-\text{foot}|\) (or \(\tfrac{|\vec{OC}\times\mathbf a|}{|\mathbf a|}\)).</div>
+    </div></details>
+  </div>
+
+  <div class="q"><span class="tgt">related rates · single-variable</span><span class="n">Question 6</span>
+    <div class="body">
+      <div class="part">An inverted right circular cone has base radius \(3\) cm and height \(12\) cm. Water drips in at \(2\ \text{cm}^3\,\text{s}^{-1}\). At the instant the depth is \(8\) cm:</div>
+      <div class="part">(a) find the rate at which the depth is increasing; <span style="color:#999">[5]</span></div>
+      <div class="part">(b) find the rate at which the curved (slant) surface area of the water is increasing. <span style="color:#999">[3]</span></div>
+    </div>
+    <details><summary>Reveal</summary><div class="soln">
+      <p><b>(a)</b> Similar triangles: \(\dfrac{r}{h}=\dfrac{3}{12}\Rightarrow r=\dfrac h4\). \(V=\tfrac13\pi r^2h=\dfrac{\pi h^3}{48}\Rightarrow\dfrac{dV}{dh}=\dfrac{\pi h^2}{16}=4\pi\) at \(h=8\). \(\dfrac{dh}{dt}=\dfrac{dV/dt}{dV/dh}=\dfrac{2}{4\pi}=\dfrac{1}{2\pi}\ \text{cm s}^{-1}\). <span class="m">M1M1M1M1A1</span>.</p>
+      <p><b>(b)</b> \(l=\sqrt{r^2+h^2}=\dfrac{h\sqrt{17}}{4}\); \(A=\pi r l=\dfrac{\pi\sqrt{17}\,h^2}{16}\Rightarrow\dfrac{dA}{dh}=\dfrac{\pi\sqrt{17}\,h}{8}=\pi\sqrt{17}\) at \(h=8\). \(\dfrac{dA}{dt}=\pi\sqrt{17}\cdot\dfrac{1}{2\pi}=\dfrac{\sqrt{17}}{2}\ \text{cm}^2\text{s}^{-1}\). <span class="m">M1A1A1</span>.</p>
+      <div class="rule"><b>Rule.</b> In related rates, get <b>everything into the ONE variable whose rate you know</b> (here \(h\), via \(r=h/4\)). For the slant surface \(A=\pi r l\), do NOT introduce a new \(dl/dt\) — write \(r\) and \(l\) in terms of \(h\) first, then \(\dfrac{dA}{dt}=\dfrac{dA}{dh}\cdot\dfrac{dh}{dt}\). Curved surface of a cone \(=\pi r l\), \(l=\) slant \(=\sqrt{r^2+h^2}\).</div>
+    </div></details>
+  </div>
+
+  <div class="foot"><p><b>Once you've drilled these,</b> tell me which rules stuck and which are still shaky, and I'll re-test only those next session (spaced retrieval). The projection/area/foot-of-perp four are pure memorise-and-drill — those should be automatic within a week.</p></div>
+</div>
+</body>
+</html>
