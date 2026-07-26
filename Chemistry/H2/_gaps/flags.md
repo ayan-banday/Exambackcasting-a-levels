@@ -8,7 +8,7 @@
 ### Knowledge points to confirm (answered in chat)
 - Why NOT use HCl to acidify a KMnO4 titration: MnO4- oxidises Cl- to Cl2, consuming extra KMnO4 -> falsely high titre. Sulfate can't be oxidised further. Use dilute H2SO4.
 - Self-indicating: MnO4- intensely purple, Mn2+ colourless; while Fe2+ remains each drop is decolourised; first excess drop = permanent pale pink.
-- Error chain (why x too LOW): a too-HIGH titre (air-oxidation of some Fe2+, or Cl- from HCl, or lost water of crystallisation) -> more apparent n(Fe2+)/n(salt) -> smaller Mr -> smaller water mass -> smaller x. MAP THE WHOLE CHAIN in the answer.
+- Error chain (why x too LOW): needs a too-HIGH titre -> more apparent n(Fe2+)/n(salt) -> smaller Mr -> smaller water mass -> smaller x. Cause of too-high titre = using HCl (Cl- oxidised, extra KMnO4 used) or overshooting the endpoint. NOTE: air-oxidation of Fe2+ does the OPPOSITE (fewer Fe2+ -> LOWER titre -> higher x); Ethan (and my first test model answer) had this backwards. MAP THE WHOLE CHAIN correctly.
 - Covalent character vs lattice energy: NaCl vs NaI higher mp = smaller anion radius -> greater lattice energy (NOT covalent character). Covalent character, where relevant, INCREASES mp (adds covalent attraction on top of ionic).
 
 ### Conceptual gaps (RECORD, not re-drill)
