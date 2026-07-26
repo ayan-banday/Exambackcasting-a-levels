@@ -998,8 +998,8 @@ window.PLAN = {
      "subject": "maths",
      "name": "Maths TEST · timed 2h · 50 marks",
      "desc": "Real H2 level, harder. No topic labels, no method hints, fused multi-concept questions with a diagram. Sit it timed, self-mark, hand me the gaps.",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "26 Jul",
      "clusterHref": "clusters/test_math_01.html"
     },
     {
@@ -1007,8 +1007,8 @@ window.PLAN = {
      "subject": "chem",
      "name": "Chemistry TEST · timed 2h · 72 marks",
      "desc": "Real H2 level. Data table + reaction scheme, unlabelled, multi-concept. Sit it timed, self-mark, hand me the gaps.",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "26 Jul",
      "clusterHref": "clusters/test_chem_01.html"
     },
     {
@@ -1016,8 +1016,8 @@ window.PLAN = {
      "subject": "gp",
      "name": "GP — Science & Technology domain (1 phase)",
      "desc": "Overdue — two ~40-min phases off the model papers.",
-     "done": false,
-     "doneDate": null
+     "done": true,
+     "doneDate": "26 Jul"
     }
    ],
    "week": 1
@@ -1040,7 +1040,8 @@ window.PLAN = {
      "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Vectors — Lines & Planes"
+     "clusterRef": "Vectors — Lines & Planes",
+     "clusterHref": "clusters/maths_vectors_lines_planes.html"
     },
     {
      "mins": 120,
@@ -1980,6 +1981,31 @@ window.PLAN = {
   ]
  ],
  "log": [
+  {
+   "date": "2026-07-26",
+   "weekday": "Sun",
+   "items": [
+    {
+     "subject": "maths",
+     "mins": 110,
+     "what": "Maths TEST (Calculus + Vectors) — 7 Q in 1h50; gaps flagged, gap cluster built",
+     "done": true
+    },
+    {
+     "subject": "chem",
+     "mins": 100,
+     "what": "Chemistry TEST — sat it, ran out of time on Q6/Q7; redox-titration Priority-1 gap flagged, gap cluster built",
+     "done": true
+    },
+    {
+     "subject": "gp",
+     "mins": 60,
+     "what": "GP — Science & Technology phase",
+     "done": true
+    }
+   ],
+   "note": "Reset day done (~4.5h). Both gap clusters built (gap_math_test1, gap_chem_test1). New evaluative Q6/Q7 approved + stored for next paper. Pacing: 8 Q per 2h test (both subjects)."
+  },
   {
    "date": "2026-07-20",
    "weekday": "Mon",
