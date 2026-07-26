@@ -1005,7 +1005,7 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "chem",
-     "name": "Chemistry TEST · timed 2h · 77 marks",
+     "name": "Chemistry TEST · timed 2h · 72 marks",
      "desc": "Real H2 level. Data table + reaction scheme, unlabelled, multi-concept. Sit it timed, self-mark, hand me the gaps.",
      "done": false,
      "doneDate": null,
