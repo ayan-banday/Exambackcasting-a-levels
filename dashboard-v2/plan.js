@@ -1003,18 +1003,18 @@ window.PLAN = {
      "clusterHref": "clusters/test_math_01.html"
     },
     {
-     "mins": 100,
+     "mins": 120,
      "subject": "chem",
-     "name": "Chemistry TEST · timed 1h40 · 45 marks",
+     "name": "Chemistry TEST · timed 2h · 77 marks",
      "desc": "Real H2 level. Data table + reaction scheme, unlabelled, multi-concept. Sit it timed, self-mark, hand me the gaps.",
      "done": false,
      "doneDate": null,
      "clusterHref": "clusters/test_chem_01.html"
     },
     {
-     "mins": 80,
+     "mins": 60,
      "subject": "gp",
-     "name": "GP — 2 phases (Science & Tech + Environment domains)",
+     "name": "GP — Science & Technology domain (1 phase)",
      "desc": "Overdue — two ~40-min phases off the model papers.",
      "done": false,
      "doneDate": null

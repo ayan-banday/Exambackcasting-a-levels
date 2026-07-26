@@ -23,3 +23,6 @@ Confidence vs correctness (from Loom transcript):
 - Vary DE/question contexts — do NOT reuse "spreading rumour"; he pattern-matches on context.
 - Paper difficulty decent but each question slightly long; the real paper is ~30% harder — push there next time.
 - Q5 was mis-scoped (skew lines = Lines & Planes, not yet learnt) — already swapped to a vectors-basics question.
+
+### Timing (Math Test 1)
+- 7 questions took ~1h 50min. Calibration: a 2h Maths test = **8 questions covering everything** (build a full paper's worth). Log actual time each test. Chem timing TBD (Ethan will report).
