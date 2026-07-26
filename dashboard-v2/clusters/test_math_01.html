@@ -28,7 +28,7 @@ summary::-webkit-details-marker{display:none}summary::before{content:'▸ '}deta
 </head>
 <body>
 <div class="wrap">
-  <div class="hd"><h1>Mathematics Test 1</h1><div class="meta">H2 9758 · timed 2 h 00 min · 50 marks · calculator where allowed</div></div>
+  <div class="hd"><h1>Mathematics Test 1</h1><div class="meta">H2 9758 · timed 2 h 00 min · 68 marks · calculator where allowed</div></div>
   <div class="how"><b>Answer all questions.</b> These sit at (and slightly above) real H2 paper level — each fuses several techniques and the method is not signposted. Loom your confidence as you go. Self-mark against the reveals, then hand me the per-question gaps and I'll build the gap cluster.</div>
 
   <div class="q"><span class="marks">[11]</span><span class="n">Question 1</span>
@@ -96,7 +96,41 @@ summary::-webkit-details-marker{display:none}summary::before{content:'▸ '}deta
       <p><b>(c)</b> \(\mathbf d_1\cdot\mathbf d_2=2-1-1=0\Rightarrow\theta=90^\circ\). The lines are perpendicular as well as skew. <span class="m">M1A1</span>.</p></div></details>
   </div>
 
-  <div class="foot"><p><b>Total /50.</b> Hand me the per-question gaps and low-confidence flags; I'll build a Maths gap cluster on the weak procedures, each with a fresh drill question at this level.</p></div>
+  <div class="q"><span class="marks">[10]</span><span class="n">Question 6</span>
+    <div class="body">
+      <div class="part">Relative to the origin \(O\), points \(A\) and \(B\) have position vectors \(\mathbf a=\begin{pmatrix}1\\2\\2\end{pmatrix}\) and \(\mathbf b=\begin{pmatrix}4\\0\\3\end{pmatrix}\).</div>
+      <div class="part">(a) Find the acute angle \(AOB\). <span style="color:#999">[2]</span></div>
+      <div class="part">(b) The point \(M\) lies on \(AB\) with \(AM:MB = 2:1\). Find the position vector of \(M\). <span style="color:#999">[2]</span></div>
+      <div class="part">(c) Find the exact length of the projection of \(\vec{OB}\) onto \(\vec{OA}\). <span style="color:#999">[2]</span></div>
+      <div class="part">(d) Find the exact area of triangle \(OAB\). <span style="color:#999">[4]</span></div>
+    </div>
+    <details><summary>Reveal solution</summary><div class="soln">
+      <p><b>(a)</b> \(\mathbf a\cdot\mathbf b=4+0+6=10\), \(|\mathbf a|=3,|\mathbf b|=5\), \(\cos\theta=\tfrac{10}{15}=\tfrac23\Rightarrow\theta=48.2^\circ\). <span class="m">M1A1</span>.</p>
+      <p><b>(b)</b> Ratio theorem \(\vec{OM}=\dfrac{1\cdot\mathbf a+2\cdot\mathbf b}{3}=\dfrac{\mathbf a+2\mathbf b}{3}=\begin{pmatrix}3\\\tfrac23\\\tfrac83\end{pmatrix}\). <span class="m">M1A1</span>.</p>
+      <p><b>(c)</b> Scalar projection \(=\dfrac{\mathbf a\cdot\mathbf b}{|\mathbf a|}=\dfrac{10}{3}\). <span class="m">M1A1</span>.</p>
+      <p><b>(d)</b> \(\mathbf a\times\mathbf b=\begin{pmatrix}6\\5\\-8\end{pmatrix}\), \(|\mathbf a\times\mathbf b|=\sqrt{125}=5\sqrt5\); area \(=\tfrac12\cdot5\sqrt5=\dfrac{5\sqrt5}{2}\). <span class="m">M1M1A1A1</span>.</p></div></details>
+  </div>
+
+  <div class="q"><span class="marks">[8]</span><span class="n">Question 7</span>
+    <div class="body">
+      <div class="part">Water is poured into an inverted right circular cone of semi-vertical angle \(30^\circ\) at a constant rate of \(8\ \text{cm}^3\,\text{s}^{-1}\).</div>
+      <svg class="fig" width="150" height="150" viewBox="0 0 150 150">
+        <polygon points="28,18 122,18 75,132" fill="none" stroke="#888"/>
+        <polygon points="52,62 98,62 75,132" fill="#cfe0f5" stroke="#1f3a7a" stroke-width="1.5"/>
+        <line x1="98" y1="62" x2="132" y2="62" stroke="#888" stroke-dasharray="3"/>
+        <text x="106" y="58" font-size="10" font-family="monospace">h</text>
+        <text x="66" y="15" font-size="10" font-family="monospace">30°</text>
+      </svg>
+      <div class="part">At the instant when the depth of water is \(12\ \text{cm}\):</div>
+      <div class="part">(a) find the rate at which the depth of water is increasing; <span style="color:#999">[5]</span></div>
+      <div class="part">(b) find the rate at which the area of the wetted curved (slanted) surface is increasing. <span style="color:#999">[3]</span></div>
+    </div>
+    <details><summary>Reveal solution</summary><div class="soln">
+      <p><b>(a)</b> \(r=h\tan30^\circ=\dfrac{h}{\sqrt3}\). \(V=\tfrac13\pi r^2h=\dfrac{\pi h^3}{9}\Rightarrow\dfrac{dV}{dh}=\dfrac{\pi h^2}{3}\). \(\dfrac{dV}{dt}=\dfrac{dV}{dh}\cdot\dfrac{dh}{dt}\Rightarrow 8=\dfrac{\pi(144)}{3}\dfrac{dh}{dt}=48\pi\dfrac{dh}{dt}\Rightarrow\dfrac{dh}{dt}=\dfrac{1}{6\pi}\ \text{cm s}^{-1}\ (\approx0.0531)\). <span class="m">M1M1M1M1A1</span>.</p>
+      <p><b>(b)</b> Slant \(l=\dfrac{2h}{\sqrt3}\); \(A=\pi r l=\dfrac{2\pi h^2}{3}\Rightarrow\dfrac{dA}{dh}=\dfrac{4\pi h}{3}=16\pi\) at \(h=12\). \(\dfrac{dA}{dt}=16\pi\cdot\dfrac{1}{6\pi}=\dfrac{8}{3}\ \text{cm}^2\text{s}^{-1}\). <span class="m">M1A1A1</span>.</p></div></details>
+  </div>
+
+  <div class="foot"><p><b>Total /68.</b> Hand me the per-question gaps and low-confidence flags; I'll build a Maths gap cluster on the weak procedures, each with a fresh drill question at this level.</p></div>
 </div>
 </body>
 </html>
