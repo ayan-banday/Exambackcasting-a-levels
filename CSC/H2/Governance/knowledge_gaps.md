@@ -1,12 +1,14 @@
 # Governance Knowledge Gaps — CSC 9629 H2
 
-> **Updated 2026-07-25** after Q13 (2026-07-19), Q17 (2026-07-21), Q12 (2026-07-25) attempts.
+> **Updated 2026-07-27** after Q13 (2026-07-19), Q17 (2026-07-21), Q12 (2026-07-25), Q14 (2026-07-27) attempts.
 >
 > **Closure rule:** gap CLOSED only after **3 verified deployments** across TNT attempts. Counters: **0/3, 1/3, 2/3, CLOSED**.
 >
 > **All content VERBATIM from TNT model answers** (`Study Agent/CSC/2025 高二问答题集锦.pdf`). No paraphrasing. No shortening.
 >
 > **How to use:** whenever Ethan says "store this" / "save this" / "save to knowledge gaps" → content goes here directly. Every hypercorrect updates this file after commit + push.
+>
+> **Score trajectory:** Q13 17 → Q17 21 → Q12 23 → Q14 24 (Tier 4 mid).
 
 ---
 
@@ -17,12 +19,13 @@
 **Verbatim from TNT Q12 (p.56):**
 > "**BANI 时代**强调灵活性、透明度与多层次协作，而中共体制下的高度集中化与意识形态导向在一定程度上限制了社会的自主调整空间，造成纠错能力不足，加强中共的绝对领导也会带来'单点故障'的风险"
 
-**Counter:** 0/3 ACTIVE (CRITICAL — 3 attempts without deployment)
+**Counter:** 0/4 ACTIVE (EMERGENCY CRITICAL — 4 attempts without deployment)
 
 **Attempts history:**
 - Q13 (2026-07-19): ❌ not deployed
 - Q17 (2026-07-21): ❌ not deployed
 - Q12 (2026-07-25): ❌ not deployed
+- Q14 (2026-07-27): ❌ not deployed
 
 **How it fits (deployment cue):** In 比较分析 段 as the 上位 evaluative axis showing why 长期看 CCP loses. Pair with 亨廷顿 制度适应性 as its intellectual anchor. Deploy: "党国体制无法适应 BANI 时代的需求".
 
@@ -30,17 +33,20 @@
 
 ### 1.2 强政府, 弱社会
 
-**Verbatim from TNT Q12 (p.55) + Q13 (p.59):**
+**Verbatim from TNT Q12 (p.55) + Q13 (p.59) + Q14 (p.66):**
 > "在'**强政府，弱社会**'的社会格局下，人民的表达机制被忽略，人民四权被掏空，民众也无法进行利益表达"
 
-**Counter:** 0/3 ACTIVE
+Also Q14 uses 6-字 extended form: "**强政府、弱市场、弱社会**"
+
+**Counter:** 0/4 ACTIVE
 
 **Attempts history:**
 - Q13 (2026-07-19): ❌ concept touched, verbatim missing
 - Q17 (2026-07-21): ❌ not deployed
 - Q12 (2026-07-25): ❌ not deployed
+- Q14 (2026-07-27): ❌ not deployed
 
-**How it fits:** 立场分析 NGO/公民社会 段. Bridge between "党凌驾" and "NGO 缺乏自主性". Always pair with 人民四权被掏空.
+**How it fits:** 立场分析 NGO/公民社会 段. Bridge between "党凌驾" and "NGO 缺乏自主性". Always pair with 人民四权被掏空. In 央地/最字 context, deploy 6-字 version.
 
 ---
 
@@ -51,12 +57,13 @@
 
 Also (Q17): "**公民四权（知情权、表达权、参与权、监督权）**"
 
-**Counter:** 0/3 ACTIVE
+**Counter:** 0/4 ACTIVE
 
 **Attempts history:**
 - Q13: ❌ not deployed
 - Q17: ❌ not deployed (missed even in law question)
 - Q12: ❌ not deployed
+- Q14: ❌ not deployed
 
 **How it fits:** 立场分析 民主执政不利 段. Always list all four: 知情 + 表达 + 参与 + 监督. Deploy after establishing 人大 橡皮图章 or 民主党派 花瓶.
 
@@ -69,12 +76,13 @@ Also (Q17): "**公民四权（知情权、表达权、参与权、监督权）**
 
 Alt phrasing (Q12 also uses 传声筒): "**从原本的民意传感器沦为政府的传声筒**"
 
-**Counter:** 0/3 ACTIVE
+**Counter:** 0/4 ACTIVE
 
 **Attempts history:**
 - Q13: ❌ not deployed
 - Q17: ❌ not deployed
 - Q12: ❌ conceptually touched NGO, no verbatim wordplay
+- Q14: ❌ not deployed
 
 **How it fits:** 立场分析 社会协同治理 段. After 双重管理 + 内设党组织 → this is the punchline. Semantic reversal wordplay = examiner reward.
 
@@ -85,12 +93,13 @@ Alt phrasing (Q12 also uses 传声筒): "**从原本的民意传感器沦为政�
 **Verbatim from TNT Q12 (p.55) + Q13 (p.59):**
 > "面对病毒重灾区武汉医疗体系超载的情况，中央集中全党全国的力量，在 10 天内落成了'雷神山'，'火神山'，'梁山'医院收治 5000 多名患者 — 体现出了**政令下发之快直通达**的优势"
 
-**Counter:** 0/3 ACTIVE
+**Counter:** 0/4 ACTIVE (voice-mangled in Q14 as "党下令发支快支通达" — transcription artifact, not clean verbatim)
 
 **Attempts history:**
 - Q13: ❌ not deployed
 - Q17: ❌ not deployed
 - Q12: ❌ used 火神山 case but missed this punchline phrase
+- Q14: ❌ voice-mangled "党下令发支快支通达" — not the exam-usable verbatim
 
 **How it fits:** 平衡分析 集中力量办大事 段. After 火神山 10 天 5000, close with this exact 4-字 punchline.
 
@@ -1248,27 +1257,96 @@ Alt (Q17 p.78): "截至 2024 年，社会组织基层党组织 **18.3 万个**�
 - 中产阶级扩大 (with year error) ✅
 - 维稳费 2019 = 1.4 万亿 ✅
 - Xi 2018 党政军民学 verbatim ✅
-- 集中力量办大事 (concept) ✅
+- 集中力量办大事 (concept) ✅ + wordplay 办错事 ✅ (Q13+Q12+Q14)
 - 亨廷顿 政绩困局 (concept) ✅ Q12 deployed by name
+- Xi 十八届四中 (2014) verbatim ✅ Q17+Q12+Q14 3/3
+- 有法不依/执法不严/违法不究 (approaching close via Q17 partial)
 
 ---
 
-## Priority drill list before Q14 (最字题, 央地博弈)
+## §7 NEW gaps opened from Q14 model (2026-07-27)
 
-Top 10 to force-deploy in Q14:
-1. **BANI 时代** (0/3) — CRITICAL
-2. **【跨课题】brackets** (0/3) — minimum 3
-3. **强政府弱社会 verbatim** (0/3)
-4. **NGO 传感器 → 传声筒/传话筒 verbatim** (0/3)
-5. **政令下发之快直通达** (0/3)
-6. **人民四权掏空** (0/3)
-7. **既是运动员又是裁判员** (0/3)
-8. **杨荣文 大成就接着大错误** (0/3)
-9. **民企 60% GDP + 80% 就业 + <30% 贷款** (0/3)
-10. **唐山钢厂 关 19 座 + 建更大新厂 (2017)** (0/3) — RELEVANT to Q14 央地博弈
+Verbatim phrasings (all 0/1):
+- **换位思考** — 央地博弈 positive-sum framing
+- **两个积极性** — Xi coinage for 央/地 dual motivation
+- **有令不行, 有禁不止** — 4-字 execution failure
+- **象征性/替换性/选择性执行** — 3-typology
+- **散乱污** / **环保督察 回头看** — environmental jargon
+- **中产焦虑** / **消费型社会转型受阻** — macro chain
+- **良性互动** vs **零和博弈** — evaluative dichotomy
+- **共赢** vs **你赢我输** — closing dichotomy
+- **五五分成 / 六四分成 / 转移支付** — 3 央地财政 solutions
+- **二律悖反** — sophisticated logical term
+- **强政府/弱市场/弱社会** (6-字) — political ecology (extended form of 强政府弱社会)
+- **追根溯源** — meta-move
+- **官商勾结 / 劣币驱逐良币** — market corruption phrasing
+- **定盘星** — 法治 metaphor
+- **珠三角/苏南/温州模式** — 3-tuple 经济模式
+- **党主法治是因，央地博弈是果** — CAUSAL CLOSING MOVE ← CRITICAL
+- **一放就乱、一收就死** (from Q15, for future) — 央地治理 dilemma
+- **灰犀牛** (from Q15) — 地方债务 metaphor
 
-**Data fixes:**
+Data anchors (all 0/1):
+- **68/30 vs 32/60 央地财政比例**
+- **2024.4 地方债 41.7 万亿 (417489 亿元)**
+- **IMF 隐性债 66 万亿 (2022) vs 40 万亿 (2019)**
+- **累计 94 万亿 债务**
+- **社保 90% 地方 / 40% 中央转移**
+- **世界经济 18% 占比 + 30% 增长引擎**
+- **双碳目标 (碳达峰 2030 + 碳中和 2060)**
+- **2015-2024 环保督察 追责 9699 人** + 4 案 (甘肃祁连山 / 腾格里 / 缙云山 / 滇池)
+
+Named cases (all 0/1):
+- **张展 2020 疫情 采访 判 4 年** — 社会层面 党主法治 case
+
+Structural discipline (all 0/1):
+- **2-sub-move 比较 structure**: (一) 解决难度 + (二) 影响 — 最字题 signature close
+- **Causal-closer for 最字题**: "X是因，Y是果" pattern
+- **Label precision**: 党主法治 (specific) vs 党国体制 (broader) — pick right label for context
+
+Missing 【跨课题】brackets in Q14 (all 6 model brackets):
+- 【跨课题：经济发展】
+- 【跨课题：社会转型】
+- 【跨课题：经济转型】
+- 【跨课题：环境问题】
+- 【跨课题：地方债务】
+- 【跨课题：社会保障】
+
+---
+
+## Priority drill list before Q19 (网络参政 比较题) and Q20 (公共服务 是非)
+
+Top 10 to force-deploy in Q19:
+1. **BANI 时代** (0/4 — EMERGENCY) — 5th attempt, must force
+2. **【跨课题】brackets** (0/4) — minimum 3 in Q19
+3. **强政府弱社会 verbatim** (0/4) — deploy 6-字 form 强政府/弱市场/弱社会
+4. **NGO 传感器 → 传声筒/传话筒 verbatim** (0/4)
+5. **政令下发之快直通达** (0/4) — clean up voice noise
+6. **人民四权掏空** (0/4)
+7. **既是运动员又是裁判员** (0/4)
+8. **causal-closer "X是因，Y是果"** (0/1 new — CRITICAL for 比较题)
+9. **换位思考 / 两个积极性 / 良性互动** verbatim triple (0/1 each — Q14 model)
+10. **3-layer 政治/经济/社会** structure discipline
+
+**Data fixes carry-forward:**
 - 西部大开发 3-way: **7.3% > 全国 6.31% > 东部 5.61%** (all within China, NOT vs US)
 - 中产 **2024 42.3%** (NOT 2019 42%)
 - 民法典 **1,260 条** (NOT 1,061)
 - **权由法定 / 法无禁止不可为** (NOT 法律禁止不可为)
+- **民企 60% GDP + 80% 就业 + <30% 贷款** — deploy in 经济 context ONLY, not 央地博弈
+
+---
+
+## §8 Compounding pressure watchlist
+
+**Items still 0 across 4+ attempts (compounding pressure — must break):**
+
+- BANI 时代 (0/4) — must force-deploy Q19
+- 【跨课题】brackets (0/4) — 5th essay with 0 = discipline failure
+- 强政府弱社会 verbatim (0/4)
+- 人民四权 verbatim (0/4)
+- NGO 传感器→传话筒 (0/4)
+- 政令下发之快直通达 (0/4)
+- 既是运动员又是裁判员 (0/4)
+
+If any item stays 0/5 after Q19, promote to **STANDALONE FORCE-DEPLOY DRILL** (isolated flashcard cycle, not essay).

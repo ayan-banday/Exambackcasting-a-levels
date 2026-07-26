@@ -1830,3 +1830,124 @@ Plus solid: 民主花瓶, 单点故障, 白纸 2022, 政绩困局, 塔西佗陷�
 7. Data fix: 中产 **2024 42.3%**
 
 **Status: Q12 FRAGILE (Tier 4 lower — first time reaching Tier 4 threshold).**
+
+---
+
+### §18.4 Q14 drill (2026-07-27) — 「中央与地方的博弈是中共治国的最大挑战」【最字题】
+
+**TNT source:** p.63-67, 最字题, 立场: 不同意, comparator = 党主法治
+**Trajectory:** Q13 17 → Q17 21 → Q12 23 → **Q14 24/30 (Tier 4 mid)**. First 最字题 with clean alternative-factor comparison.
+
+---
+
+**BIG WINS (state machine ACTIVE → CLOSED / counter++):**
+
+- ✅ **唐山钢厂 2017 关 19 座 + 建更大新厂** VERBATIM (Q12 → Q14: 1/3 counter++) — best case deployment of the session
+- ✅ **杨荣文 "大成就接着大错误"** quote (0/3 → 1/3)
+- ✅ **Xi 十八届四中 (2014)** VERBATIM (Q17 → Q12 → Q14: 3/3) → **CLOSED**
+- ✅ **单一制大国 结构性产物** as opening framing
+- ✅ **上有政策下有对策** deployed
+- ✅ **民主花瓶 + 人大 99% 通过率** (bonus reinforcement)
+- ✅ **塔西佗陷阱** deployed (bonus reinforcement)
+- ✅ **一步错步步错**: 1/3 → 2/3
+- ✅ **集中力量办大事→集中力量办错事**: 2/3 → **CLOSED** (Q13 + Q12 + Q14)
+- ✅ **白纸 2022** partial deployed
+- ✅ **3-段 立场 structure** (局限 + alternative + expand) — extended-response scaffold locked
+
+Plus 3-段 平衡 (partial) + 综上所述 close — the 是非 hybrid structure of 最字题 is now internalized.
+
+---
+
+**Meta-methodology insight locked (per Ethan's Q14 question):**
+
+For 最字题 否定题目立场, DO:
+- ❶ 局限 argument: show 题目因素 is 双刃剑 / 结构性产物 / manageable (has positive side + is not "the most")
+- ❷ Alternative factor: introduce ONE more-serious factor, argue it MORE important
+- Close with: causal move if possible ("X是因，Y是果" — 党主法治是因, 央地博弈是果)
+
+Ethan's Q14 structure = ✓ correct. His 立场 1 双刃剑 move + 立场 2 党国体制/党主法治 alternative = textbook 最字题 architecture.
+
+---
+
+**Current Q14 model gaps (还 ACTIVE):**
+
+Structure:
+- ⚠️ **"党主法治"** verbatim label (Ethan used 党国体制 broader label) — must switch when 央地-vs-alternative comparison is 法治-adjacent
+- ⚠️ **3-layer 政治/经济/社会** structure in 立场 2 (Ethan hit only 政治 layer)
+- ⚠️ **"党主法治是因，央地博弈是果"** — the CAUSAL closing move (CRITICAL, 0/1 NEW)
+- ⚠️ **2-sub-move 比较** ((一) 解决难度 + (二) 影响) — 0/1 NEW
+
+Verbatim phrasings NEW to backlog:
+- ⚠️ **换位思考** / **两个积极性**
+- ⚠️ **有令不行, 有禁不止**
+- ⚠️ **象征性/替换性/选择性执行** (3-typology)
+- ⚠️ **散乱污** / **环保督察 回头看**
+- ⚠️ **中产焦虑** / **消费型社会转型受阻**
+- ⚠️ **良性互动** vs **零和博弈**
+- ⚠️ **共赢** vs **你赢我输**
+- ⚠️ **五五分成 / 六四分成 / 转移支付** (3 央地财政 solutions)
+- ⚠️ **二律悖反** (sophisticated logical term)
+- ⚠️ **强政府/弱市场/弱社会** (6-字 political ecology)
+- ⚠️ **追根溯源** (meta-move)
+- ⚠️ **有法不依、执法不严、违法不究** — still 1/3 (Q17 hit)
+- ⚠️ **晚礼服 / 遮羞布** — still 1/3 (Q12 hit)
+- ⚠️ **官商勾结 / 劣币驱逐良币** — 0/3
+- ⚠️ **定盘星** (法治 metaphor) — 0/3
+- ⚠️ **珠三角/苏南/温州模式** 3-tuple — 0/1 NEW
+
+Data anchors NEW to backlog:
+- ⚠️ **68/30 vs 32/60 央地财政比例**
+- ⚠️ **2024.4 地方债 41.7 万亿 (417489 亿)**
+- ⚠️ **IMF 隐性债 66 万亿 (2022) vs 40 万亿 (2019)**
+- ⚠️ **累计 94 万亿 债务**
+- ⚠️ **社保 90% 地方 / 40% 中央转移**
+- ⚠️ **世界经济 18% + 30% 增长引擎**
+- ⚠️ **双碳目标 (碳达峰 2030 + 碳中和 2060)**
+- ⚠️ **2015-2024 环保督察 追责 9699 人** + 4 案 (甘肃祁连山 / 腾格里 / 缙云山 / 滇池)
+
+Named cases NEW to backlog:
+- ⚠️ **张展 2020 疫情 采访 判 4 年** (社会层面 党主法治 case)
+
+Missing 【跨课题】brackets (0 deployed, 4th essay in a row, model uses 6):
+- 【跨课题：经济发展】
+- 【跨课题：社会转型】
+- 【跨课题：经济转型】
+- 【跨课题：环境问题】
+- 【跨课题：地方债务】
+- 【跨课题：社会保障】
+
+---
+
+**Data errors flagged in Q14:**
+- ❌ **民企 60%** — wrong context deployed (民企 60% GDP is for 经济topic, not 央地博弈 段)
+- ⚠️ **"党国体制"** used where TNT expects **"党主法治"** (label precision)
+- ⚠️ Voice: **"党下令发支快支通达"** ≠ **"政令下发之快直通达"** (transcription artifact acceptable, but verbatim intent still counted as 0/4)
+
+---
+
+**🔁 PRIOR-Q gaps that ALSO fit Q14 (STILL ACTIVE after 4 attempts):**
+
+- ⚠️ **BANI 时代** — still 0/4. **PROMOTED TO EMERGENCY CRITICAL.** Would deploy 比较 2 upper: "党国体制无法适应 BANI 时代 灵活性/透明度/多层次协作需求"
+- ⚠️ **【跨课题】brackets** — still 0/4 attempts. 6 possible in Q14 model. MASSIVE structural gap.
+- ⚠️ **强政府, 弱社会** verbatim — 0/4 (also appears in Q14 model: "强政府、弱市场、弱社会")
+- ⚠️ **人民四权 verbatim** — 0/4
+- ⚠️ **NGO 传感器 → 传话筒** — 0/4
+- ⚠️ **政令下发之快直通达** — still 0/4 (voice-mangled in Q14)
+- ⚠️ **皮尤 85% vs 35%** — 0/3
+- ⚠️ **孙小果案** — 0/3
+- ⚠️ **4-generation 法治 chain 邓→江→胡→习** — 0/3
+- ⚠️ **民企 60% GDP + 80% 就业 + <30% 贷款** — 0/3 (Ethan wrong-context)
+- ⚠️ **既是运动员又是裁判员** — 0/4
+
+---
+
+**Priority drills before Q19 (网络参政 比较题) and Q20 (公共服务 是非):**
+
+1. **BANI 时代** — 5th attempt, MUST force-deploy or officially declare "concept blocked, do drill exercise"
+2. **【跨课题】brackets** — minimum 3 in Q19 (5 straight essays with 0 is unacceptable)
+3. **强政府弱社会 + 人民四权 + NGO 传感器→传话筒** verbatim triple
+4. **causal-closer for 最字题**: "X是因，Y是果" pattern
+5. **3-layer 政治/经济/社会** in extended-response essays
+6. **换位思考 / 两个积极性 / 良性互动** verbatim triple (Q14 model)
+
+**Status: Q14 SOLID (Tier 4 mid — first 最字题 with clean alternative-factor architecture). Structural discipline improving; 【跨课题】+ BANI 时代 blocks remain.**
