@@ -1,6 +1,6 @@
 # Governance Knowledge Gaps — CSC 9629 H2
 
-> **Updated 2026-07-27** after Q13 (2026-07-19), Q17 (2026-07-21), Q12 (2026-07-25), Q14 (2026-07-27) attempts.
+> **Updated 2026-07-28** after Q13 (2026-07-19), Q17 (2026-07-21), Q12 (2026-07-25), Q14 (2026-07-27), Q19 (2026-07-28) attempts.
 >
 > **Closure rule:** gap CLOSED only after **3 verified deployments** across TNT attempts. Counters: **0/3, 1/3, 2/3, CLOSED**.
 >
@@ -8,7 +8,7 @@
 >
 > **How to use:** whenever Ethan says "store this" / "save this" / "save to knowledge gaps" → content goes here directly. Every hypercorrect updates this file after commit + push.
 >
-> **Score trajectory:** Q13 17 → Q17 21 → Q12 23 → Q14 24 (Tier 4 mid).
+> **Score trajectory:** Q13 17 → Q17 21 → Q12 23 → Q14 24 → Q19 22 (Tier 三 upper — slight regression, opposite-stance essay with underdeveloped 立场).
 
 ---
 
@@ -19,13 +19,14 @@
 **Verbatim from TNT Q12 (p.56):**
 > "**BANI 时代**强调灵活性、透明度与多层次协作，而中共体制下的高度集中化与意识形态导向在一定程度上限制了社会的自主调整空间，造成纠错能力不足，加强中共的绝对领导也会带来'单点故障'的风险"
 
-**Counter:** 0/4 ACTIVE (EMERGENCY CRITICAL — 4 attempts without deployment)
+**Counter:** 0/5 ACTIVE (CODE-RED — 5 attempts without deployment)
 
 **Attempts history:**
 - Q13 (2026-07-19): ❌ not deployed
 - Q17 (2026-07-21): ❌ not deployed
 - Q12 (2026-07-25): ❌ not deployed
 - Q14 (2026-07-27): ❌ not deployed
+- Q19 (2026-07-28): ❌ not deployed
 
 **How it fits (deployment cue):** In 比较分析 段 as the 上位 evaluative axis showing why 长期看 CCP loses. Pair with 亨廷顿 制度适应性 as its intellectual anchor. Deploy: "党国体制无法适应 BANI 时代的需求".
 
