@@ -1037,9 +1037,9 @@ window.PLAN = {
      "mins": 120,
      "subject": "maths",
      "name": "Maths — Vectors — Lines & Planes (ch 7) · cluster · C2 of 3",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
-     "done": false,
-     "doneDate": null,
+     "desc": "Done — worked through all 6 cards (Example → Practice), practices hardened with extra parts. Whole chapter was new; gaps flagged for the C1+C2 gap cluster.",
+     "done": true,
+     "doneDate": "27 Jul",
      "clusterRef": "Vectors — Lines & Planes",
      "clusterHref": "clusters/maths_vectors_lines_planes.html"
     },
@@ -1076,12 +1076,13 @@ window.PLAN = {
      "clusterRef": "Alkenes"
     },
     {
-     "mins": 70,
-     "subject": "conv",
-     "name": "Close gaps: Maths Vectors",
-     "desc": "Drill / record the previous session's gaps.",
+     "mins": 45,
+     "subject": "maths",
+     "name": "Maths — Vectors GAP cluster (C1 + C2 combined)",
+     "desc": "Hard fused questions across basics/products/ratio (C1) + lines/planes (C2), questions-only, no examples. Multi-object, chained parts. Built from your real tutorial/paper questions once uploaded. ~30-45 min.",
      "done": false,
-     "doneDate": null
+     "doneDate": null,
+     "clusterRef": "Vectors gap C1+C2"
     },
     {
      "mins": 50,
@@ -1981,6 +1982,18 @@ window.PLAN = {
   ]
  ],
  "log": [
+  {
+   "date": "2026-07-27",
+   "weekday": "Mon",
+   "items": [
+    {
+     "subject": "maths",
+     "mins": 120,
+     "what": "Maths — Vectors Lines & Planes cluster (C2 of 3), all 6 cards (Example → Practice). Whole chapter new; solid by the end. Gaps flagged: line-of-intersection 'why set z=0', foot-of-perp line vs plane, cross-product order (use AB×AC). Feedback banked: solutions must name each symbol in a formula; practices need parts c+d, multi-object, sourced from real questions.",
+     "done": true
+    }
+   ]
+  },
   {
    "date": "2026-07-26",
    "weekday": "Sun",
