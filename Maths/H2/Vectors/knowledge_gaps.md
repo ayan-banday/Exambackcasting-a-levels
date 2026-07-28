@@ -4,6 +4,22 @@ Gaps surfaced while drilling. The C1+C2 combined gap cluster (built from real up
 
 ---
 
+## 2026-07-28 — C1+C2 gap cluster drill
+
+Meta: Ethan flagged the gap-cluster questions as **too easy / conceptual-level only** — *"way too easy lah… these questions are really simple, just testing conceptual understanding… don't know whether it's too easy compared to the actual math papers."* Next Vectors build (C3 Planes + any re-drill) must be pitched at **real H2-paper difficulty** (multi-step, fused, unfamiliar framing), not single-concept recall. Sources now available (full HCI Ch7 + worked answers in `Math/Vectors/`).
+
+Real gaps that still surfaced despite the easy level (record → target next session):
+
+1. **"Plane perpendicular to AB" → AB IS the normal.** Blanked on Q1b: *"I don't know how to do 1B."* Took a while to recall that a plane perpendicular to a line has that line's direction as its **normal**. RECOGNITION gap — drill the phrase "plane ⊥ to line ⟹ that line's direction = the plane's normal." (ACTIVE)
+
+2. **Simplifying a normal by factoring out a scalar.** \((-3,3,3) = -3(1,-1,-1)\) threw him — *"how do you get inverse 1 −1 −1? what's an inverse? that actually got me good."* He didn't recognise you can factor out a common scalar to simplify the normal. TECHNIQUE gap. (ACTIVE)
+
+3. **Foot of perpendicular — point-to-PLANE vs point-to-LINE method (reinforced from C2).** Kept forgetting which is which (*"I forgot how to do 4A"*, then on the line one *"oh it's the same thing!"*). Eventually recapped both fully himself: plane → \(F=P+t\mathbf n\), sub into plane; line → \(F=\mathbf a+\lambda\mathbf d\), impose \(\overrightarrow{PF}\cdot\mathbf d=0\). Still not automatic — interleave both back-to-back. (ACTIVE)
+
+Recalled well (with some hesitation, self-corrected): why set z=0 ("plane∩plane is infinite"), distance A→plane = AP (foot is P), area via AB×AC, skew proof, line-line angle (cos), line of intersection, line meets y=0.
+
+---
+
 ## 2026-07-27 — Cluster 2 (Lines & Planes) drill
 
 Whole chapter was new to Ethan; he performed well by the end but flagged the chapter as a gap overall. Specific weak spots to drill:

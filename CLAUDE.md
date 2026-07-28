@@ -16,8 +16,8 @@ your questions are **not** the goal — closed gaps and verified performance on 
 
 - **Exam:** Singapore A-Levels (SEAB / Cambridge joint examination).
 - **Subjects:** CSC (China Studies in Chinese 中国通识), Maths, GP (General Paper), Chemistry, Biology.
-- **Levels:** Every subject has both an **H2** and **H1** syllabus. **H2 is the current focus;**
-  H1 comes later. Each level is a separate branch with its own guide, topics, clusters, and gaps.
+- **Levels:** **H2 only** for CSC, Maths, Chemistry, Biology — Ethan sits these at H2, and all
+  H1/H3 material has been stripped from the repo (28 Jul). **GP is H1** (examined only at H1). No H3.
 - **Exam board reality:** When you can cite SEAB/Cambridge mark schemes or examiner reports, tag
   claims `[OFFICIAL]`. When you infer from model answers or marked work, tag `[INFERRED]` and state
   the confidence ceiling. **Never fake confidence.**

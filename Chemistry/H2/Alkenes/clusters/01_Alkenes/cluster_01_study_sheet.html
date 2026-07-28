@@ -51,6 +51,12 @@
   .step-header{font-size:.8em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
   .step-desc{font-style:italic;color:#374151;margin-bottom:6px;font-size:.95em}
   .mk{display:inline-block;font-size:.8em;color:var(--green);font-weight:700;font-family:-apple-system,sans-serif;margin-left:4px}
+  .verb{background:#eef7f1;border:1px dashed #059669;border-radius:5px;padding:8px 12px;margin:8px 0;font-size:.97em}
+  .verb::before{content:'HCI answer — use these exact words';display:block;font-family:-apple-system,sans-serif;font-size:.68em;letter-spacing:.05em;text-transform:uppercase;color:#047857;font-weight:700;margin-bottom:4px}
+  .verb b{color:#065f46}
+  .msbox{background:#eff6ff;border:1px solid #bfdbfe;border-radius:5px;padding:8px 12px;margin:8px 0;font-size:.92em}
+  .msbox .h{font-family:-apple-system,sans-serif;font-size:.7em;letter-spacing:.05em;text-transform:uppercase;color:#1e3a8a;font-weight:700;margin-bottom:4px}
+  .msbox ul{margin:4px 0 4px 0;padding-left:20px}.msbox li{margin:2px 0}
   .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:6px 12px;border-radius:4px;margin:8px 0 0;font-size:.9em}
   .trap b{color:var(--red)}
   .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3}
@@ -60,7 +66,6 @@
   .answer-overlay.hidden{opacity:0;pointer-events:none}
   .block.answer .answer-content,.block.reveal-archetype .answer-content{padding-right:60px}
   .fig{display:block;margin:12px 0;background:#fff;border:1px solid var(--border);border-radius:6px;max-width:100%}
-  .rxn{font-size:1.05em;margin:8px 0}
   b.rg{color:#1e3a8a}
   hr{border:none;border-top:1px solid var(--border);margin:40px 0}
   @media print{body{background:#fff;padding:20px;max-width:100%}.controls,.reveal-btn{display:none!important}.answer-overlay{display:none!important}.card{box-shadow:none;page-break-inside:avoid}}
@@ -69,378 +74,302 @@
 <body>
 
 <h1>Chemistry — Alkenes</h1>
-<p class="meta">H2 9729 · Topic 11 · Organic · one cluster for the chapter. Grounded in the HCI lecture notes. Highest-yield organic mechanism topic — electrophilic addition is examined almost every year.</p>
+<p class="meta">H2 9729 · Topic 11 · Organic · one cluster for the chapter. Questions are the <b>real HCI Tutorial (Section A, Q1–7)</b>; answers are lifted <b>verbatim from the HCI answer key</b> — the green boxes are the exact words to reproduce in the exam. Grounded in the HCI lecture notes + tutorial + MCQ answers.</p>
 
 <div class="intro">
-<strong>Format — teaching cluster:</strong> each card is a worked <b>Example</b> (attempt cold, reveal to check the mechanism / product / mark-scheme wording), then a harder <b>Practice</b> that adds parts (c)/(d). The three things examiners reward on every reaction: <b>(1) all reagents AND conditions stated</b>, <b>(2) the two-step mechanism with correctly-placed curly arrows and the rate-determining step labelled</b>, <b>(3) the "most stable carbocation → major product" reasoning written out</b>, not asserted.
+<strong>Format — teaching cluster:</strong> each card is a real HCI tutorial question as the <b>Example</b> (attempt cold, reveal the verbatim key), then a harder <b>Practice</b>. The green <b>"HCI answer"</b> boxes are the wording that scores — memorise the phrasing, not just the idea. The three examiners reward on every reaction: <b>(1) all reagents AND conditions</b>, <b>(2) the two-step mechanism, curly arrows, slow step labelled</b>, <b>(3) the carbocation-stability reasoning in the school's exact words</b>.
 </div>
 
 <div class="toolkit">
-<strong>The Alkenes toolkit — reagents, conditions, and what each reaction is for</strong>
+<strong>The Alkenes toolkit — reagents, conditions, and the wording that scores</strong>
 <table>
 <tr><td>Why reactive</td><td>Electron-rich \(\ce{C=C}\); the exposed <b>π-electron cloud attracts electrophiles</b>. The weak π bond breaks, two σ bonds form → <b>electrophilic addition</b>.</td></tr>
 <tr><td>+ HX (\(\ce{HCl},\ \ce{HBr},\ \ce{HI}\))</td><td><b class="rg">HX(g), room temp.</b> → halogenoalkane. Markovnikov.</td></tr>
-<tr><td>+ X\(_2\) (\(\ce{Cl2},\ \ce{Br2}\))</td><td><b class="rg">\(\ce{Cl2}\) or \(\ce{Br2}\) in \(\ce{CCl4}\), room temp, in the dark.</b> → 1,2-dihalide. <b>Br\(_2\) decolourised</b> (test).</td></tr>
-<tr><td>+ Bromine water</td><td><b class="rg">\(\ce{Br2(aq)}\), room temp.</b> → <b>bromohydrin</b> (–OH and –Br adjacent), NOT the dibromide. <b>Yellow-orange decolourised</b> (test).</td></tr>
+<tr><td>+ X\(_2\) (\(\ce{Cl2},\ \ce{Br2}\))</td><td><b class="rg">\(\ce{Cl2}\) or \(\ce{Br2}\) in \(\ce{CCl4}\), room temp, absence of UV light.</b> → 1,2-dihalide. Obs: <b>reddish-brown liquid Br\(_2\) decolourised</b>.</td></tr>
+<tr><td>+ Bromine water</td><td><b class="rg">\(\ce{Br2(aq)}\), room temp.</b> → <b>bromohydrin</b> (major product), –OH and –Br adjacent. Obs: <b>yellow-orange aqueous Br\(_2\) decolourised</b>.</td></tr>
 <tr><td>+ Steam (hydration)</td><td><b class="rg">\(\ce{H2O(g)}\), \(\ce{H3PO4}\) catalyst, high T &amp; p.</b> → alcohol. Markovnikov.</td></tr>
-<tr><td>Reduction</td><td><b class="rg">\(\ce{H2}\), Ni catalyst</b> (heterogeneous). → alkane. (Margarine from plant oils.)</td></tr>
-<tr><td>Mild oxidation</td><td><b class="rg">\(\ce{KMnO4}\), dilute NaOH (alkaline), cold.</b> → <b>diol</b>. <b>Purple decolourised + brown \(\ce{MnO2}\) ppt.</b></td></tr>
-<tr><td>Oxidative cleavage</td><td><b class="rg">\(\ce{KMnO4}\), dilute \(\ce{H2SO4}\) (acidified), heat.</b> → cleave \(\ce{C=C}\). <b>Not</b> oxidised by \(\ce{K2Cr2O7}\).</td></tr>
-<tr><td>Cleavage product rule</td><td>=CH\(_2\) (2 H) → <b>\(\ce{CO2}\)</b> (effervescence, terminal test); =CHR (1 H) → <b>carboxylic acid</b>; =CR\(_2\) (0 H) → <b>ketone</b>.</td></tr>
-<tr><td>Carbocation stability</td><td><b>3° &gt; 2° &gt; 1° &gt; methyl.</b> Alkyl groups are electron-donating → disperse the + charge → stabilise.</td></tr>
+<tr><td>Reduction (\(\ce{H2}\)/Ni)</td><td><b class="rg">\(\ce{H2}\), Ni catalyst.</b> → alkane. Obs (closed vessel): <b>pressure gauge needle indicates lowered pressure</b> (less \(\ce{H2}\) gas after reaction).</td></tr>
+<tr><td>Mild oxidation</td><td><b class="rg">\(\ce{KMnO4}\), \(\ce{NaOH(aq)}\) (alkaline), cold.</b> → <b>diol</b>. Obs: <b>purple KMnO\(_4\) decolourised and brown ppt of MnO\(_2\) formed</b>.</td></tr>
+<tr><td>Oxidative cleavage</td><td><b class="rg">\(\ce{KMnO4}\), dilute \(\ce{H2SO4}\) (acidified), heat.</b> → cleave \(\ce{C=C}\). Terminal \(\ce{=CH2}\) obs: <b>effervescence of (colourless and odourless) CO\(_2\)</b>, white ppt of \(\ce{CaCO3}\) in limewater. <b>Not</b> oxidised by \(\ce{K2Cr2O7}\).</td></tr>
+<tr><td>Cleavage product rule</td><td>=CH\(_2\) (2 H) → <b>\(\ce{CO2}\)</b>; =CHR (1 H) → <b>carboxylic acid</b>; =CR\(_2\) (0 H) → <b>ketone</b>.</td></tr>
+<tr><td>Carbocation stability</td><td><b>3° &gt; 2° &gt; 1° &gt; methyl.</b> Verbatim: electron-donating alkyl groups <b>stabilise the carbocation by reducing its positive charge</b>; electron-withdrawing groups <b>destabilise by intensifying its positive charge</b>.</td></tr>
 </table>
 </div>
 
 <div class="controls"><button onclick="revealAll()">Reveal all</button><button onclick="hideAll()">Hide all</button></div>
 
-<div class="toc"><strong>Questions</strong>
+<div class="toc"><strong>Questions (HCI Tutorial 11, Section A)</strong>
 <a href="#c1">Question 1</a><a href="#c2">Question 2</a><a href="#c3">Question 3</a><a href="#c4">Question 4</a><a href="#c5">Question 5</a><a href="#c6">Question 6</a>
 </div>
 
-<!-- ============ Q1 electrophilic addition of HX + Markovnikov ============ -->
+<!-- ============ Q1 — carbocation stability (HCI Q1) ============ -->
 <div class="card" id="c1">
   <h3>Question 1</h3>
-  <div class="block example"><div class="label">Example</div>
-    <div class="stem">Propene reacts with hydrogen bromide.<br>(a) Draw the mechanism, showing curly arrows and the intermediate, and label the rate-determining step. <span class="marks">[4]</span><br>(b) State the major product and explain, in terms of carbocation stability, why it is the major product. <span class="marks">[3]</span></div>
+  <div class="block example"><div class="label">Example — HCI Q1(a)/(b)</div>
+    <div class="stem">Consider the addition of \(\ce{HBr}\) to but-1-ene and to propene. In each case two carbocation intermediates are possible. State which is more stable and explain why, in terms of the alkyl groups present. <span class="marks">[2]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
-    <div class="answer-content"><div class="label">Solution with mark scheme</div>
-      <div class="step"><div class="step-header">Step 1 — (a) Name it, then the slow step</div>
-        <div class="step-desc">This is <b>electrophilic addition</b>. \(\ce{H-Br}\) is polar (\(\ce{H}\) is \(\delta+\)). <span class="mk">M1 mechanism type + first arrows</span></div>
+    <div class="answer-content"><div class="label">Solution — verbatim HCI wording</div>
+      <div class="step"><div class="step-header">More stable carbocation + reason</div>
+        <div class="step-desc">The one with more alkyl groups on the positive carbon. <span class="mk">M1 identify, A1 wording</span></div>
+        <div class="verb">The presence of <b>more electron-donating alkyl groups stabilises the carbocation by reducing its positive charge.</b></div>
       </div>
-      <svg class="fig" width="620" height="150" viewBox="0 0 620 150" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="15">
-        <text x="10" y="60">CH₃</text><text x="45" y="60">–CH</text>
-        <line x1="88" y1="52" x2="120" y2="52" stroke="#111" stroke-width="1.5"/><line x1="88" y1="58" x2="120" y2="58" stroke="#111" stroke-width="1.5"/>
-        <text x="122" y="60">CH₂</text>
-        <path d="M104,44 C110,20 150,20 158,40" fill="none" stroke="#dc2626" stroke-width="1.5" marker-end="url(#ar)"/>
-        <text x="175" y="60">H</text><line x1="192" y1="55" x2="215" y2="55" stroke="#111" stroke-width="1.5"/><text x="218" y="60">Br</text>
-        <path d="M200,44 C205,25 235,25 240,48" fill="none" stroke="#dc2626" stroke-width="1.5" marker-end="url(#ar)"/>
-        <text x="270" y="60" font-size="20">→</text>
-        <text x="300" y="60">CH₃</text><text x="335" y="60">–</text><text x="345" y="52" font-size="17">+</text><text x="348" y="66">CH</text><text x="383" y="60">–CH₃</text>
-        <text x="300" y="95" fill="#6b7280" font-size="13">secondary (2°) carbocation</text>
-        <text x="440" y="60">+ </text><text x="455" y="60">:Br⁻</text>
-        <text x="300" y="128" fill="#1e3a8a" font-size="13">Step 1 (SLOW, rate-determining): π electrons attack δ+ H; H–Br breaks heterolytically.</text>
-        <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#dc2626" stroke-width="1.3"/></marker></defs>
-      </svg>
-      <div class="step"><div class="step-header">Step 2 — (a) Fast step</div>
-        <div class="step-desc">The nucleophile \(\ce{Br-}\) attacks the carbocation. Fast — attraction between oppositely-charged species. Curly arrow from the \(\ce{Br-}\) lone pair to the \(\ce{C+}\). <span class="mk">M1 arrow + carbocation shown, A1 correct product</span></div>
-        \[ \ce{CH3-\overset{+}{C}H-CH3 + Br^- -> CH3-CHBr-CH3} \]
-      </div>
-      <div class="step"><div class="step-header">Step 3 — (b) Major product + reasoning</div>
-        <div class="step-desc">Markovnikov the marks-earning way. <span class="mk">B1 product, M1 carbocation comparison, A1 conclusion</span></div>
-        Major product: <b>2-bromopropane</b> \(\ce{(CH3CHBrCH3)}\). \(\ce{H+}\) adds to the terminal \(\ce{=CH2}\) carbon so the \(+\) charge sits on the <b>middle (2°) carbon</b>. The <b>2° carbocation is more stable than the 1°</b> because the <b>two adjacent alkyl groups are electron-donating and disperse the positive charge</b>. The more stable carbocation forms faster → gives the major product.
-      </div>
-      <div class="trap"><b>Trap:</b> don't just write "H adds to the C with more H's." The mark scheme wants the <b>carbocation-stability</b> chain: electrophile adds to give the <b>most stable (most substituted) carbocation</b> → major product. And label the <b>slow step as rate-determining</b>.</div>
+      <div class="trap"><b>Wording:</b> "reducing its positive charge" (or "dispersing the positive charge" — both appear in the HCI key). NOT your own "disperses/spreads." Alkyl groups are <b>electron-donating</b>.</div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
-  <div class="block practice"><div class="label">Practice</div>
-    <div class="stem">But-1-ene \(\ce{(CH3CH2CH=CH2)}\) reacts with hydrogen bromide.<br>(a) State the major product and explain via carbocation stability. <span class="marks">[3]</span><br>(b) Draw the mechanism for its formation, labelling the rate-determining step. <span class="marks">[3]</span><br>(c) Explain why the product is formed as a racemic mixture. <span class="marks">[2]</span><br>(d) But-2-ene also reacts with HBr. Is Markovnikov's rule needed to predict its product? Explain. <span class="marks">[2]</span></div>
+  <div class="block practice"><div class="label">Practice — HCI Q1(c)/(d), harder</div>
+    <div class="stem">Now the two alkenes carry an electron-withdrawing halogen.<br>(c) A chlorine sits on a carbon adjacent to the positive centre. <span class="marks">[2]</span><br>(d) A fluorine sits <b>one carbon further away</b> from the positive centre. Explain the effect on carbocation stability in each case. <span class="marks">[2]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
-    <div class="answer-content"><div class="label">Answer with mark scheme</div>
-      <div class="step"><div class="step-header">(a) Major product</div>
-        <div class="step-desc"><span class="mk">B1 A1 A1</span></div>
-        <b>2-bromobutane</b> \(\ce{(CH3CH2CHBrCH3)}\). \(\ce{H+}\) adds to the terminal \(\ce{=CH2}\) → the \(+\) sits on C2, a <b>2° carbocation</b>, more stable than the 1° at C1 because the <b>adjacent alkyl groups donate electrons and disperse the charge</b>. More stable cation → major product.
-      </div>
-      <div class="step"><div class="step-header">(b) Mechanism</div>
-        <div class="step-desc"><span class="mk">M1 slow-step arrows (π→H, H–Br→Br) + 2° carbocation, M1 rds labelled, A1 fast-step arrow Br⁻→C⁺</span></div>
-        Same two-step shape as the Example: π electrons attack \(\delta+\) \(\ce{H}\) of \(\ce{H-Br}\) (slow, <b>rds</b>) → \(\ce{CH3CH2\overset{+}{C}HCH3 + Br^-}\); then \(\ce{Br^-}\) attacks the \(\ce{C+}\) (fast) → 2-bromobutane.
-      </div>
-      <div class="step"><div class="step-header">(c) Why racemic</div>
-        <div class="step-desc"><span class="mk">M1 chiral centre, A1 both faces</span></div>
-        In 2-bromobutane, <b>C2 is bonded to four different groups</b> (\(\ce{Br},\ \ce{H},\ \ce{CH3},\ \ce{C2H5}\)) → a <b>chiral centre</b>. The carbocation is <b>planar (sp², trigonal)</b>, so \(\ce{Br^-}\) attacks with <b>equal probability from either face</b> → an equimolar pair of enantiomers → <b>racemic mixture</b>.
-      </div>
-      <div class="step"><div class="step-header">(d) But-2-ene</div>
+    <div class="answer-content"><div class="label">Answer — verbatim HCI wording</div>
+      <div class="step"><div class="step-header">(c) Chlorine</div>
         <div class="step-desc"><span class="mk">M1 A1</span></div>
-        <b>No.</b> But-2-ene \(\ce{(CH3CH=CHCH3)}\) is <b>symmetrical about the \(\ce{C=C}\)</b> — adding \(\ce{H}\) to either carbon gives the <b>same</b> carbocation and the <b>same product, 2-bromobutane</b>. Markovnikov only decides between two <b>different</b> possible carbocations, so it isn't needed here. (It's still formed as a racemic mixture.)
+        <div class="verb">The presence of <b>electron-withdrawing chlorine destabilises the other carbocation by intensifying its positive charge.</b></div>
       </div>
-      <div class="trap"><b>Why harder:</b> (c) tests the planar-cation → racemic logic, and (d) tests that Markovnikov only matters for <b>unsymmetrical</b> alkenes — a symmetrical one needs no rule.</div>
+      <div class="step"><div class="step-header">(d) Fluorine, one carbon away</div>
+        <div class="step-desc"><span class="mk">M1 A1</span></div>
+        <div class="verb">The presence of <b>electron-withdrawing fluorine destabilises the other carbocation even though it is one carbon away.</b></div>
+      </div>
+      <div class="trap"><b>Why harder:</b> (d) tests that the inductive electron-withdrawing effect still reaches through <b>one extra carbon</b> — the destabilisation isn't only for a directly-attached group.</div>
     </div><div class="answer-overlay">Answer hidden — click Reveal</div>
   </div>
   <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
-    <div class="answer-content"><div class="label">Archetype revealed</div>
-      <strong>Electrophilic addition of HX + Markovnikov via carbocation stability.</strong>
-      <p>Examined almost every year. The two-step mechanism (slow rds forming the carbocation, fast nucleophile attack) plus the "most stable carbocation → major product" reasoning. Racemic mixture whenever the new centre is chiral.</p>
-    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+    <div class="answer-content"><div class="label">Archetype</div><strong>Carbocation stability — the reason phrased the HCI way.</strong>
+    <p>Every Markovnikov / major-product question rests on this. "Electron-donating alkyl → reduces/disperses the + charge → stabilises"; "electron-withdrawing halogen → intensifies the + charge → destabilises," even one carbon away.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div>
   </div>
 </div>
 
-<!-- ============ Q2 halogen addition Br2/CCl4 named mechanism ============ -->
+<!-- ============ Q2 — electrophilic addition mechanism + racemic (HCI Q2) ============ -->
 <div class="card" id="c2">
   <h3>Question 2</h3>
-  <div class="block example"><div class="label">Example</div>
-    <div class="stem">Ethene is bubbled into a solution of bromine in tetrachloromethane (\(\ce{CCl4}\)) at room temperature in the dark.<br>(a) State the reagent, conditions, and the observation. <span class="marks">[2]</span><br>(b) Draw the mechanism with curly arrows, name it, and state the two bonds broken in the rate-determining step. <span class="marks">[4]</span></div>
+  <div class="block example"><div class="label">Example — HCI Q2(a)</div>
+    <div class="stem">Hex-3-ene reacts with bromine to form 3,4-dibromohexane.<br>Name the mechanism and draw it fully, showing curly arrows, partial charges, the carbocation intermediate, and labelling the slow and fast steps. <span class="marks">[4]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
-    <div class="answer-content"><div class="label">Solution with mark scheme</div>
-      <div class="step"><div class="step-header">(a) Reagent / conditions / observation</div>
-        <div class="step-desc"><span class="mk">B1 B1</span></div>
-        <b class="rg">\(\ce{Br2}\) dissolved in \(\ce{CCl4}\), room temperature, in the dark.</b> Observation: <b>reddish-brown \(\ce{Br2}\) is decolourised</b>.
-      </div>
-      <div class="step"><div class="step-header">(b) Mechanism — electrophilic addition</div>
-        <div class="step-desc">\(\ce{Br2}\) is non-polar, so the π cloud must polarise it first. <span class="mk">M1 induced dipole + first arrows, M1 rds, A1 carbocation, A1 product</span></div>
-      </div>
-      <svg class="fig" width="620" height="150" viewBox="0 0 620 150" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="15">
-        <text x="20" y="60">CH₂</text>
-        <line x1="60" y1="52" x2="92" y2="52" stroke="#111" stroke-width="1.5"/><line x1="60" y1="58" x2="92" y2="58" stroke="#111" stroke-width="1.5"/>
-        <text x="94" y="60">CH₂</text>
-        <path d="M76,44 C82,20 120,20 128,42" fill="none" stroke="#dc2626" stroke-width="1.5" marker-end="url(#a2)"/>
-        <text x="145" y="60">Br</text><text x="140" y="44" fill="#1e3a8a" font-size="12">δ+</text>
-        <line x1="168" y1="55" x2="190" y2="55" stroke="#111" stroke-width="1.5"/>
-        <text x="193" y="60">Br</text><text x="192" y="44" fill="#1e3a8a" font-size="12">δ−</text>
-        <path d="M178,44 C184,25 210,25 214,48" fill="none" stroke="#dc2626" stroke-width="1.5" marker-end="url(#a2)"/>
-        <text x="250" y="60" font-size="20">→</text>
-        <text x="280" y="60">BrCH₂</text><text x="330" y="60">–</text><text x="340" y="52" font-size="17">+</text><text x="343" y="66">CH₂</text>
-        <text x="400" y="60">+ :Br⁻</text>
-        <text x="20" y="105" fill="#1e3a8a" font-size="13">rds (SLOW): the π bond AND the Br–Br bond break (heterolytic fission of Br₂).</text>
-        <text x="20" y="128" fill="#6b7280" font-size="13">Then fast: Br⁻ attacks the carbocation → 1,2-dibromoethane, BrCH₂CH₂Br.</text>
-        <defs><marker id="a2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#dc2626" stroke-width="1.3"/></marker></defs>
+    <div class="answer-content"><div class="label">Solution — mechanism + the HCI mark-scheme checklist</div>
+      <svg class="fig" width="640" height="140" viewBox="0 0 640 140" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="14">
+        <text x="10" y="60">C₂H₅</text><text x="10" y="78">C</text>
+        <line x1="42" y1="60" x2="72" y2="60" stroke="#111" stroke-width="1.4"/><line x1="42" y1="66" x2="72" y2="66" stroke="#111" stroke-width="1.4"/>
+        <text x="74" y="60">C</text><text x="74" y="78">C₂H₅</text>
+        <path d="M57,52 C63,30 100,30 108,50" fill="none" stroke="#dc2626" stroke-width="1.4" marker-end="url(#a)"/>
+        <text x="122" y="60">Br</text><text x="117" y="45" fill="#1e3a8a" font-size="11">δ+</text>
+        <line x1="145" y1="57" x2="166" y2="57" stroke="#111" stroke-width="1.4"/>
+        <text x="169" y="60">Br</text><text x="167" y="45" fill="#1e3a8a" font-size="11">δ−</text>
+        <path d="M154,46 C160,28 184,28 188,50" fill="none" stroke="#dc2626" stroke-width="1.4" marker-end="url(#a)"/>
+        <text x="220" y="62" font-size="18">slow</text><text x="222" y="46" font-size="11" fill="#dc2626">(rds)</text>
+        <text x="300" y="55">C₂H₅–CHBr–</text><text x="392" y="47" font-size="15">+</text><text x="398" y="60">CH–C₂H₅</text>
+        <text x="470" y="60">+ :Br⁻</text>
+        <text x="10" y="110" fill="#6b7280" font-size="13">Then FAST: lone pair on Br⁻ attacks the carbocation carbon (not the +) → 3,4-dibromohexane.</text>
+        <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#dc2626" stroke-width="1.3"/></marker></defs>
       </svg>
-      <div class="step"><div class="step-header">Name + bonds broken</div>
-        <div class="step-desc"><span class="mk">A1</span></div>
-        Mechanism: <b>electrophilic addition</b>. The π cloud <b>induces a dipole in \(\ce{Br2}\)</b> (polarises it); in the <b>rds the π bond and the \(\ce{Br-Br}\) bond both break</b>. Product: <b>1,2-dibromoethane</b> \(\ce{(BrCH2CH2Br)}\).
+      <div class="step"><div class="step-header">The HCI mark scheme — "Things to take note"</div>
+        <div class="step-desc">This box is the exact checklist the marker uses. <span class="mk">[4]</span></div>
+        <div class="msbox"><div class="h">Describe mechanism for electrophilic addition</div>
+          <ul>
+            <li>Indicate <b>"electrophilic addition"</b> as name of mechanism</li>
+            <li>Correct structures (ambiguous formula <b>NOT</b> acceptable)</li>
+          </ul>
+          <b>Slow step:</b>
+          <ul>
+            <li>Indicate <b>"slow"</b> for first step (formation of carbocation)</li>
+            <li><b>Partial charges</b> on electrophile \(\ce{Br2}\)</li>
+            <li><b>2 arrows</b> for slow step (one from \(\ce{C=C}\) bond to Br, the other from \(\ce{Br-Br}\) bond to Br)</li>
+          </ul>
+          <b>Fast step:</b>
+          <ul>
+            <li><b>Lone pair</b> on nucleophile \(\ce{Br^-}\)</li>
+            <li><b>1 arrow</b> for fast step from lone pair on \(\ce{Br^-}\) to C (<b>not to +</b>)</li>
+          </ul>
+        </div>
       </div>
-      <div class="trap"><b>Trap:</b> \(\ce{Br2}\) is <b>non-polar</b> — you must say the <b>π cloud induces/polarises the dipole</b> before the arrows. And it's <b>in the dark</b>: UV would trigger free-radical substitution of the alkyl H's instead.</div>
+      <div class="trap"><b>Two mark-droppers:</b> the arrow in the fast step goes to the <b>carbon</b>, not to the "+" symbol; and \(\ce{Br2}\) needs the \(\delta+/\delta-\) partial charges even though it starts non-polar (the π cloud induces the dipole).</div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
-  <div class="block practice"><div class="label">Practice</div>
-    <div class="stem">Cyclohexene reacts with bromine in \(\ce{CCl4}\).<br>(a) Draw the structure of the organic product and state the observation. <span class="marks">[2]</span><br>(b) Draw the mechanism, labelling the rate-determining step. <span class="marks">[3]</span><br>(c) Explain why the reaction must be carried out in the absence of UV light. <span class="marks">[2]</span><br>(d) In practice only the <em>trans</em> 1,2-dibromo product forms, not a cis/trans mixture. What does this tell you about the intermediate? <span class="marks">[2]</span></div>
+  <div class="block practice"><div class="label">Practice — HCI Q2(b), the racemic part</div>
+    <div class="stem">3,4-dibromohexane can be formed as a pair of enantiomers.<br>Explain, with reference to the intermediate, why the two enantiomers are formed in equal amounts. <span class="marks">[2]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
-    <div class="answer-content"><div class="label">Answer with mark scheme</div>
-      <div class="step"><div class="step-header">(a) Product + observation</div>
-        <div class="step-desc"><span class="mk">A1 A1</span></div>
-        <b>trans-1,2-dibromocyclohexane</b> — a cyclohexane ring with \(\ce{Br}\) on two adjacent carbons. Observation: <b>reddish-brown \(\ce{Br2}\) decolourised</b>.
+    <div class="answer-content"><div class="label">Answer — verbatim HCI wording</div>
+      <div class="step"><div class="step-header">Why a racemic (1:1) mixture</div>
+        <div class="step-desc"><span class="mk">M1 planar cation, A1 equal chances</span></div>
+        <div class="verb">The carbocation is <b>planar with respect to the electron deficient carbon</b>, and has <b>equal chances of being attacked from the top or bottom by the bromide ion in the second step of the reaction</b>. Therefore, there are <b>equal chances of producing the 2 enantiomers</b>.</div>
       </div>
-      <div class="step"><div class="step-header">(b) Mechanism</div>
-        <div class="step-desc"><span class="mk">M1 induced dipole + π/Br–Br arrows (rds), M1 rds labelled, A1 Br⁻ attacks carbocation</span></div>
-        Same shape as the Example on the ring \(\ce{C=C}\): π cloud polarises \(\ce{Br2}\); π bond + \(\ce{Br-Br}\) break (<b>rds</b>) → cyclic carbocation + \(\ce{Br^-}\); \(\ce{Br^-}\) attacks (fast).
-      </div>
-      <div class="step"><div class="step-header">(c) Why no UV</div>
-        <div class="step-desc"><span class="mk">M1 A1</span></div>
-        UV light would <b>homolytically break \(\ce{Br2}\) into \(\ce{Br}\) radicals</b>, triggering <b>free-radical substitution</b> of the alkyl \(\ce{C-H}\) bonds — a competing reaction giving a mixture of substitution products. The dark keeps it to clean electrophilic <b>addition</b>.
-      </div>
-      <div class="step"><div class="step-header">(d) What trans-only implies</div>
-        <div class="step-desc"><span class="mk">M1 A1</span></div>
-        A single stereochemistry (trans) means the two \(\ce{Br}\) added to <b>opposite faces</b>. This implies the intermediate is a <b>cyclic bromonium ion</b> (not an open planar carbocation), which blocks one face, so \(\ce{Br^-}\) must attack from the <b>opposite side</b> → trans only.
-      </div>
-      <div class="trap"><b>Why harder:</b> (c) forces the addition-vs-substitution distinction (why "in the dark" is a condition, not decoration), and (d) reaches to the bromonium-ion refinement that explains the stereochemistry.</div>
+      <div class="trap"><b>Wording:</b> this is the exact HCI answer — "planar with respect to the electron deficient carbon," "equal chances of being attacked from the top or bottom," "equal chances of producing the 2 enantiomers." Not "equal probability from either face → racemic."</div>
     </div><div class="answer-overlay">Answer hidden — click Reveal</div>
   </div>
   <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
-    <div class="answer-content"><div class="label">Archetype revealed</div>
-      <strong>Halogen addition in \(\ce{CCl4}\) — the LO-named electrophilic addition mechanism.</strong>
-      <p>The one where the electrophile is <b>non-polar</b> and the π cloud must <b>induce the dipole</b> first. Conditions (dark) and the two bonds broken in the rds are the recurring mark-droppers.</p>
-    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+    <div class="answer-content"><div class="label">Archetype</div><strong>Electrophilic addition mechanism + racemic-mixture explanation.</strong>
+    <p>Examined almost every year. The mechanism is marked against the checklist above; the racemic explanation has fixed HCI wording (planar cation, equal chances top/bottom, equal chances of the 2 enantiomers).</p></div><div class="answer-overlay">Archetype hidden — attempt first</div>
   </div>
 </div>
 
-<!-- ============ Q3 bromine water bromohydrin + NaCl trap ============ -->
+<!-- ============ Q3 — addition with a competing nucleophile (HCI Q3, harder) ============ -->
 <div class="card" id="c3">
   <h3>Question 3</h3>
-  <div class="block example"><div class="label">Example</div>
-    <div class="stem">Ethene is shaken with bromine water, \(\ce{Br2(aq)}\).<br>(a) State the observation and what it tests for. <span class="marks">[2]</span><br>(b) Give the structure of the major organic product and explain why it, rather than 1,2-dibromoethane, is the major product. <span class="marks">[3]</span></div>
+  <div class="block example"><div class="label">Example — HCI Q3</div>
+    <div class="stem">But-1-ene is reacted with bromine, \(\ce{Br2}\), <b>dissolved in methanol</b> (\(\ce{CH3OH}\)) as solvent.<br>(a) Give the structures of the major and minor organic products. <span class="marks">[2]</span><br>(b) Explain why the products form from the secondary, not the primary, carbocation, and why the methoxy product is the major one. <span class="marks">[3]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
-    <div class="answer-content"><div class="label">Solution with mark scheme</div>
-      <div class="step"><div class="step-header">(a) Observation</div>
+    <div class="answer-content"><div class="label">Solution — verbatim HCI wording</div>
+      <div class="step"><div class="step-header">(a) Products</div>
         <div class="step-desc"><span class="mk">A1 A1</span></div>
-        <b>Yellow-orange \(\ce{Br2(aq)}\) is decolourised.</b> This is a <b>distinguishing test for a \(\ce{C=C}\) double bond</b> (unsaturation).
+        Major: <b>1-bromo-2-methoxybutane</b> \(\ce{(BrCH2CH(OCH3)CH2CH3)}\). Minor: <b>1,2-dibromobutane</b> \(\ce{(BrCH2CHBrCH2CH3)}\). (Both have \(\ce{Br}\) on C1 — the electrophile \(\ce{Br^{\delta+}}\) added there.)
       </div>
-      <div class="step"><div class="step-header">(b) Major product + why</div>
-        <div class="step-desc">After the carbocation forms, ask which nucleophiles are present. <span class="mk">B1 structure, M1 nucleophiles present, A1 water in excess</span></div>
-        Major product: <b>2-bromoethanol</b> (a bromohydrin), \(\ce{HOCH2CH2Br}\) — <b>–OH and –Br on adjacent carbons</b>. Once the carbocation forms, <b>both \(\ce{H2O}\) and \(\ce{Br^-}\) can attack it</b>, but <b>water is present in large excess</b>, so it attacks preferentially → the bromoalcohol dominates over the dibromide.
+      <div class="step"><div class="step-header">(b) Why secondary carbocation, why methoxy major</div>
+        <div class="step-desc"><span class="mk">M1 stability, M1 both nucleophiles, A1 solvent excess</span></div>
+        <div class="verb">The <b>secondary carbocation is more likely to be formed than the primary carbocation because it is more stable</b> than the primary carbocation <b>due to presence of two electron-donating alkyl groups on positive carbon than one</b> that stabilises the carbocation by <b>dispersing the positive charge</b>.<br><br>
+        Since <b>both nucleophiles \(\ce{CH3OH}\) and \(\ce{Br^-}\) can attack the secondary carbocation intermediate</b>, a mixture of 1-bromo-2-methoxybutane and 1,2-dibromobutane will be obtained.<br><br>
+        1-bromo-2-methoxybutane is the <b>major product because methanol (as a solvent) is present in a much higher concentration compared to the bromide ion and therefore attacks the intermediate preferentially</b> in the second step of the reaction.</div>
       </div>
-      <div class="trap"><b>Trap:</b> bromine water does <b>not</b> give the dibromide as the major product. The step-1 electrophile is still \(\ce{Br2}\); it's step 2 where the abundant water wins.</div>
+      <div class="trap"><b>Why harder:</b> two competing nucleophiles (like bromine water, but with methanol as the solvent). The "2-bromo-1-methoxybutane is <b>not</b> formed" proves the mechanism goes via the secondary — not primary — carbocation.</div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
-  <div class="block practice"><div class="label">Practice</div>
-    <div class="stem">Propene is shaken with bromine water that has been contaminated with sodium chloride solution, \(\ce{NaCl(aq)}\).<br>(a) Draw the structures of the three organic products formed. <span class="marks">[3]</span><br>(b) State which carbon of propene the \(\ce{Br}\) ends up on, and why. <span class="marks">[2]</span><br>(c) A student claims 1,2-dichloropropane is also formed. Explain why it cannot be. <span class="marks">[2]</span><br>(d) State what the colour change of the bromine water tells you. <span class="marks">[1]</span></div>
+  <div class="block practice"><div class="label">Practice — bromine water variant, harder (c)/(d)</div>
+    <div class="stem">Propene is shaken with bromine water contaminated with \(\ce{NaCl(aq)}\).<br>(c) Give the three organic products. <span class="marks">[3]</span><br>(d) Explain why 1,2-dichloropropane can never be one of them. <span class="marks">[2]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
-    <div class="answer-content"><div class="label">Answer with mark scheme</div>
-      <div class="step"><div class="step-header">(a) Three products</div>
-        <div class="step-desc">The carbocation can be attacked by \(\ce{H2O}\), \(\ce{Br^-}\), or \(\ce{Cl^-}\) — all present. <span class="mk">A1 A1 A1</span></div>
-        <b>1-bromopropan-2-ol</b> \(\ce{(CH3CH(OH)CH2Br)}\); <b>1,2-dibromopropane</b> \(\ce{(CH3CHBrCH2Br)}\); <b>1-bromo-2-chloropropane</b> \(\ce{(CH3CHClCH2Br)}\).
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">(c) Three products (Br on C1 each)</div>
+        <div class="step-desc">The carbocation can be attacked by \(\ce{H2O}\), \(\ce{Br^-}\), or \(\ce{Cl^-}\). <span class="mk">A1 A1 A1</span></div>
+        <b>1-bromopropan-2-ol</b>, <b>1,2-dibromopropane</b>, <b>1-bromo-2-chloropropane</b>.
       </div>
-      <div class="step"><div class="step-header">(b) Where the Br goes</div>
+      <div class="step"><div class="step-header">(d) No 1,2-dichloropropane</div>
         <div class="step-desc"><span class="mk">M1 A1</span></div>
-        The \(\ce{Br}\) (as the electrophilic \(\ce{Br^{\delta+}}\)) adds to the <b>terminal \(\ce{=CH2}\)</b> carbon, so the \(+\) sits on the <b>middle (2°) carbon</b> — the more stable carbocation. The nucleophile then joins the middle carbon, so <b>every product carries \(\ce{Br}\) on C1</b>.
+        The <b>only electrophile present is \(\ce{Br2}\)</b> (no \(\ce{Cl2}\) / \(\ce{Cl^+}\) to start the addition); \(\ce{Cl^-}\) is only a nucleophile in step 2. So <b>every product must contain at least one \(\ce{Br}\)</b>.
       </div>
-      <div class="step"><div class="step-header">(c) Why not 1,2-dichloropropane</div>
-        <div class="step-desc"><span class="mk">M1 A1</span></div>
-        The <b>only electrophile present is \(\ce{Br2}\)</b> — there is <b>no \(\ce{Cl2}\) / \(\ce{Cl^+}\)</b> to start the addition. \(\ce{Cl^-}\) is only a <b>nucleophile</b> (step 2). So <b>every product must contain at least one \(\ce{Br}\)</b>; a product with only \(\ce{Cl}\) is impossible.
-      </div>
-      <div class="step"><div class="step-header">(d) Colour change</div>
-        <div class="step-desc"><span class="mk">A1</span></div>
-        Decolourisation of the yellow-orange \(\ce{Br2(aq)}\) shows the compound is <b>unsaturated (contains a \(\ce{C=C}\))</b>.
-      </div>
-      <div class="trap"><b>Why harder:</b> (a)/(c) test that the <b>electrophile sets the starting halogen</b> (must be Br) while <b>any nucleophile present</b> can finish it — the classic "which ions attack the cation" trap.</div>
+      <div class="trap"><b>Why harder:</b> same "which nucleophile attacks the cation" logic as Q3, but the electrophile fixes the first halogen — a product with only Cl is impossible.</div>
     </div><div class="answer-overlay">Answer hidden — click Reveal</div>
   </div>
   <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
-    <div class="answer-content"><div class="label">Archetype revealed</div>
-      <strong>Bromine water → bromohydrin, and the "which nucleophile attacks the cation" trap.</strong>
-      <p>Electrophile (Br₂) fixes the first halogen; the abundant nucleophile (water, or contaminating ions) finishes the job. Decolourising \(\ce{Br2(aq)}\) is the standard test for \(\ce{C=C}\).</p>
-    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+    <div class="answer-content"><div class="label">Archetype</div><strong>Addition where more than one nucleophile competes for the carbocation.</strong>
+    <p>Electrophile (Br₂) fixes the first halogen and the more stable (2°) carbocation; the nucleophile in largest concentration (solvent methanol / excess water) gives the major product.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div>
   </div>
 </div>
 
-<!-- ============ Q4 oxidation diol vs cleavage + structure determination ============ -->
+<!-- ============ Q4 — reactions + observations (HCI Q4) ============ -->
 <div class="card" id="c4">
   <h3>Question 4</h3>
-  <div class="block example"><div class="label">Example</div>
-    <div class="stem">2-methylbut-2-ene, \(\ce{(CH3)2C=CHCH3}\), is treated with potassium manganate(VII).<br>(a) Give the reagents, conditions, observations, and organic product for <b>cold dilute alkaline</b> \(\ce{KMnO4}\). <span class="marks">[3]</span><br>(b) Give the reagents, conditions and organic products for <b>hot acidified</b> \(\ce{KMnO4}\). <span class="marks">[3]</span></div>
+  <div class="block example"><div class="label">Example — HCI Q4 (observations)</div>
+    <div class="stem">A terpene alkene is treated separately with each reagent below. For each, state the <b>observation</b> in full.<br>(a) \(\ce{Br2}\) in \(\ce{CCl4}\) &nbsp; (b) \(\ce{Br2(aq)}\) &nbsp; (c) \(\ce{H2}\)/Ni in a closed vessel &nbsp; (d) cold alkaline \(\ce{KMnO4}\) &nbsp; (e) hot acidified \(\ce{KMnO4}\) on a terminal \(\ce{=CH2}\). <span class="marks">[5]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
-    <div class="answer-content"><div class="label">Solution with mark scheme</div>
-      <div class="step"><div class="step-header">(a) Mild oxidation → diol</div>
-        <div class="step-desc"><span class="mk">B1 conditions, B1 observation, A1 product</span></div>
-        <b class="rg">\(\ce{KMnO4}\), dilute \(\ce{NaOH}\) (alkaline), cold.</b> Observation: <b>purple \(\ce{KMnO4}\) decolourised and a brown precipitate of \(\ce{MnO2}\) forms</b>. Product: the <b>diol</b> — \(\ce{-OH}\) added to each former \(\ce{C=C}\) carbon → <b>2-methylbutane-2,3-diol</b>, \(\ce{(CH3)2C(OH)-CH(OH)CH3}\).
+    <div class="answer-content"><div class="label">Solution — verbatim HCI observations</div>
+      <div class="verb">
+        <b>(a)</b> reddish-brown liquid \(\ce{Br2}\) decolourised.<br>
+        <b>(b)</b> yellow-orange aqueous \(\ce{Br2}\) decolourised (major product is the bromohydrin).<br>
+        <b>(c)</b> pressure gauge needle indicates lowered pressure after a while (because after reaction, there is less hydrogen gas).<br>
+        <b>(d)</b> purple \(\ce{KMnO4}\) decolourised and brown ppt of \(\ce{MnO2}\) formed (mild oxidation; \(\ce{MnO2}\) is formed in alkaline medium).<br>
+        <b>(e)</b> purple \(\ce{KMnO4}\) decolourised, effervescence of (colourless and odourless) \(\ce{CO2}\) gas (which gave a white precipitate of \(\ce{CaCO3}\) when bubbled in limewater \(\ce{Ca(OH)2}\)).
       </div>
-      <div class="step"><div class="step-header">(b) Oxidative cleavage — apply the H-count table</div>
-        <div class="step-desc">Cut at the \(\ce{C=C}\); each half becomes a product set by how many H it carried. <span class="mk">B1 conditions, A1 A1 products</span></div>
-        <b class="rg">\(\ce{KMnO4}\), dilute \(\ce{H2SO4}\) (acidified), heat.</b> Left carbon \(\ce{(CH3)2C=}\) has <b>0 H → ketone</b>: <b>propanone</b> \(\ce{(CH3)2C=O}\). Right carbon \(\ce{=CHCH3}\) has <b>1 H → carboxylic acid</b>: <b>ethanoic acid</b> \(\ce{CH3COOH}\).
-      </div>
-      <div class="trap"><b>Trap:</b> the <b>only</b> thing separating "diol" from "cleavage" is the conditions — <b>cold/alkaline vs hot/acidified</b>. Drop that half of the condition and you get the wrong product. Alkenes are <b>not</b> oxidised by \(\ce{K2Cr2O7}\).</div>
+      <div class="trap"><b>Marks leak here:</b> (a) says "liquid," (b) says "aqueous" — state the colour that matches the medium; (d) needs the <b>brown \(\ce{MnO2}\) ppt</b>, not just decolourisation; (e) needs the full \(\ce{CO2}\)/limewater line for the terminal \(\ce{=CH2}\).</div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
-  <div class="block practice"><div class="label">Practice</div>
-    <div class="stem">An alkene <b>P</b>, \(\ce{C6H12}\), is warmed with acidified \(\ce{KMnO4}\). The only organic products are propanone and propanoic acid.<br>(a) Deduce the structure and name of <b>P</b>. <span class="marks">[3]</span><br>(b) A different alkene <b>Q</b> gives, on the same treatment, a single carbonyl compound plus effervescence of a gas that turns limewater milky. What structural feature must <b>Q</b> have, and what is the gas? <span class="marks">[3]</span><br>(c) Write the balanced equation for the mild oxidation of ethene using [O]. <span class="marks">[2]</span><br>(d) Why would \(\ce{K2Cr2O7}/\ce{H2SO4}\) be the wrong reagent to test <b>P</b> for a \(\ce{C=C}\)? <span class="marks">[1]</span></div>
+  <div class="block practice"><div class="label">Practice — products, harder</div>
+    <div class="stem">2-methylbut-2-ene, \(\ce{(CH3)2C=CHCH3}\), is treated with (a) cold alkaline \(\ce{KMnO4}\), then (b) hot acidified \(\ce{KMnO4}\). Give the organic product(s) of each, with reagents/conditions. <span class="marks">[4]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
-    <div class="answer-content"><div class="label">Answer with mark scheme</div>
-      <div class="step"><div class="step-header">(a) Work backwards from the fragments</div>
-        <div class="step-desc">Propanone \(\ce{(CH3)2C=O}\) came from a \(\ce{=C(CH3)2}\) (0 H) end; propanoic acid \(\ce{CH3CH2COOH}\) came from a \(\ce{=CHCH2CH3}\) (1 H) end. Re-join the two carbons with a \(\ce{C=C}\). <span class="mk">M1 both fragments mapped, A1 structure, A1 name</span></div>
-        <b>P = \(\ce{(CH3)2C=CHCH2CH3}\)</b> = <b>2-methylpent-2-ene</b>. (Check: \(\ce{C6H12}\) ✓.)
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">(a) Mild → diol</div>
+        <div class="step-desc"><b class="rg">\(\ce{KMnO4}\), \(\ce{NaOH(aq)}\), cold.</b> <span class="mk">B1 A1</span></div>
+        <b>2-methylbutane-2,3-diol</b>, \(\ce{(CH3)2C(OH)CH(OH)CH3}\).
       </div>
-      <div class="step"><div class="step-header">(b) Q — the terminal-C=C clue</div>
-        <div class="step-desc"><span class="mk">M1 terminal =CH₂, A1 CO₂, A1 gas test</span></div>
-        <b>Q has a terminal \(\ce{C=C}\)</b> (a \(\ce{=CH2}\) end). A carbon with <b>2 H</b> is oxidised to <b>\(\ce{CO2}\)</b>, which gives the effervescence and turns limewater milky. The other end (with fewer H) gives the single carbonyl.
+      <div class="step"><div class="step-header">(b) Cleavage — apply the H-count</div>
+        <div class="step-desc"><b class="rg">\(\ce{KMnO4}\), dilute \(\ce{H2SO4}\), heat.</b> Left \(\ce{(CH3)2C=}\) has 0 H → ketone; right \(\ce{=CHCH3}\) has 1 H → acid. <span class="mk">B1 A1</span></div>
+        <b>propanone</b> \(\ce{(CH3)2C=O}\) + <b>ethanoic acid</b> \(\ce{CH3COOH}\).
       </div>
-      <div class="step"><div class="step-header">(c) Balanced [O] equation (mild oxidation)</div>
-        <div class="step-desc"><span class="mk">M1 [O] + H₂O, A1 balanced</span></div>
-        \[ \ce{CH2=CH2 + H2O + [O] -> HOCH2CH2OH} \]
-      </div>
-      <div class="step"><div class="step-header">(d) Wrong reagent</div>
-        <div class="step-desc"><span class="mk">A1</span></div>
-        <b>Alkenes are not oxidised by \(\ce{K2Cr2O7}\)</b> — only by manganate(VII) — so there would be <b>no colour change</b> and the test would fail.
-      </div>
-      <div class="trap"><b>Why harder:</b> (a) is reverse structure-determination (join the cleavage fragments back across a \(\ce{C=C}\)); (b) uses the terminal-\(\ce{=CH2}\) → \(\ce{CO2}\) effervescence as a diagnostic. This is exactly how oxidative cleavage is examined.</div>
+      <div class="trap"><b>Why harder:</b> the conditions flip the product entirely — cold/alkaline → diol, hot/acidified → cleavage. Lose the "cold/alkaline" or "hot/acidified" and you lose the mark.</div>
     </div><div class="answer-overlay">Answer hidden — click Reveal</div>
   </div>
   <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
-    <div class="answer-content"><div class="label">Archetype revealed</div>
-      <strong>Oxidation: mild (diol) vs oxidative cleavage, and locating the \(\ce{C=C}\).</strong>
-      <p>Conditions flip the product (cold/alkaline → diol; hot/acidified → cleavage). Cleavage is the tool for structure determination: map each fragment back to its H-count (2H→CO₂, 1H→acid, 0H→ketone).</p>
-    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+    <div class="answer-content"><div class="label">Archetype</div><strong>Reactions of an alkene — observations (verbatim) + products.</strong>
+    <p>The observation wording is fixed by the HCI key; the product depends on reagent AND conditions. Diol vs cleavage is decided only by cold-alkaline vs hot-acidified.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div>
   </div>
 </div>
 
-<!-- ============ Q5 cis-trans + physical properties ============ -->
+<!-- ============ Q5 — structure elucidation (HCI Q7) ============ -->
 <div class="card" id="c5">
   <h3>Question 5</h3>
-  <div class="block example"><div class="label">Example</div>
-    <div class="stem">Consider cis- and trans-1,2-dichloroethene, \(\ce{ClCH=CHCl}\).<br>(a) State which isomer has the higher boiling point, and explain fully in terms of intermolecular forces. <span class="marks">[3]</span><br>(b) State which isomer has the higher melting point, and explain. <span class="marks">[2]</span></div>
+  <div class="block example"><div class="label">Example — HCI Q7 (structural elucidation)</div>
+    <div class="stem">An alkene <b>X</b> has molecular formula \(\ce{C6H10}\). It reacts with liquid bromine in the dark to form \(\ce{C6H10Br4}\). On heating with acidified \(\ce{KMnO4}\), \(\ce{CO2}\) is evolved and the products are \(\ce{CH3CO2H}\), \(\ce{CH3COCO2H}\) and \(\ce{CO2}\). Deduce the structure of <b>X</b>, explaining your reasoning. <span class="marks">[4]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
-    <div class="answer-content"><div class="label">Solution with mark scheme</div>
-      <div class="step"><div class="step-header">(a) Higher boiling point — cis</div>
-        <div class="step-desc"><span class="mk">M1 net dipole in cis, M1 dipoles cancel in trans, A1 conclusion</span></div>
-        <b>cis has the higher bp.</b> In the <b>cis</b> isomer the two polar \(\ce{C-Cl}\) bond dipoles are on the same side and <b>do not cancel → a net permanent dipole</b> → <b>permanent dipole–permanent dipole (pd–pd) attractions on top of dispersion forces</b> → more energy to separate. In <b>trans</b> the dipoles are opposite and <b>cancel → no net dipole → non-polar → dispersion only → lower bp</b>.
+    <div class="answer-content"><div class="label">Solution — verbatim HCI deductions</div>
+      <div class="step"><div class="step-header">Deductions (state the reasoning, not just the answer)</div>
+        <div class="step-desc"><span class="mk">M1 M1 (each deduction), A1 structure</span></div>
+        <div class="verb">
+          • <b>X reacts with liquid bromine in the dark to form \(\ce{C6H10Br4}\) ⟹ X has 2 \(\ce{C=C}\) double bonds and undergoes electrophilic addition reaction with liquid bromine</b> (\(\ce{C6H10 + 2Br2 -> C6H10Br4}\)).<br><br>
+          • <b>Upon heating with acidified \(\ce{KMnO4}\) solution, carbon dioxide gas was formed ⟹ X is a terminal alkene; X undergoes oxidative cleavage</b> (\(\ce{C6H10 + 8[O] -> CH3CO2H + CH3COCO2H + CO2 + H2O}\)).
+        </div>
       </div>
-      <div class="step"><div class="step-header">(b) Higher melting point — trans</div>
-        <div class="step-desc"><span class="mk">M1 packing, A1 conclusion</span></div>
-        <b>trans has the higher mp.</b> The <b>trans isomer is more symmetrical / straighter</b>, so it <b>packs more regularly and closely into the solid lattice</b> → dispersion forces act more effectively → <b>more energy to melt</b>. cis packs poorly.
+      <div class="step"><div class="step-header">Structure of X</div>
+        <div class="step-desc"><span class="mk">A1</span></div>
+        <b>2-methylpenta-1,3-diene</b> or <b>3-methylpenta-1,3-diene</b> (re-join the cleavage fragments across the two \(\ce{C=C}\); check the carbon count is \(\ce{C6}\)).
       </div>
-      <div class="trap"><b>Trap:</b> the two answers point opposite ways — <b>cis = higher bp</b> (polarity), <b>trans = higher mp</b> (packing). Don't swap them.</div>
+      <div class="verb" style="margin-top:10px"><b>Method note (state this):</b> In questions involving structural elucidation, you are required to <b>explain qualitatively how you deduced the structures, by stating the type of reaction</b> (e.g. electrophilic addition, oxidative cleavage) <b>and the type (and number) of functional groups responsible.</b></div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
-  <div class="block practice"><div class="label">Practice</div>
-    <div class="stem">(a) But-2-ene exists as cis and trans isomers. State which has the higher boiling point, with reasoning. <span class="marks">[2]</span><br>(b) The bp of cis- and trans-but-2-ene differ by only about 3 °C, far less than for the dichloroethenes. Explain. <span class="marks">[2]</span><br>(c) State the two conditions a molecule must meet to show cis-trans isomerism. <span class="marks">[2]</span><br>(d) Does 2-methylbut-2-ene, \(\ce{(CH3)2C=CHCH3}\), show cis-trans isomerism? Explain. <span class="marks">[2]</span></div>
+  <div class="block practice"><div class="label">Practice — HCI Q5-style retrosynthesis, harder</div>
+    <div class="stem">An alkene \(\ce{C9H16}\) with two \(\ce{C=C}\) bonds is oxidatively cleaved (hot acidified \(\ce{KMnO4}\)) to give propanone, \(\ce{CH3COCH2CH2CO2H}\) (a keto-acid), and \(\ce{CO2}\). Work backwards to deduce a structure, and say how the \(\ce{CO2}\) tells you about the \(\ce{C=C}\) positions. <span class="marks">[4]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
-    <div class="answer-content"><div class="label">Answer with mark scheme</div>
-      <div class="step"><div class="step-header">(a) Higher bp</div>
-        <div class="step-desc"><span class="mk">M1 A1</span></div>
-        <b>cis-but-2-ene</b> has the higher bp: the two \(\ce{CH3}\) groups on the same side give a <b>small net dipole → weak pd–pd on top of dispersion</b>; trans is symmetrical, dipoles cancel → dispersion only.
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Map each fragment back to its C=C carbon</div>
+        <div class="step-desc">Retrosynthesis — think backwards from products to starting material. <span class="mk">M1 fragments, M1 rejoin</span></div>
+        Propanone \(\ce{(CH3)2C=O}\) came from a \(\ce{=C(CH3)2}\) end (0 H → ketone); the keto-acid's \(\ce{-CO2H}\) came from a \(\ce{=CHR}\) end (1 H → acid); the \(\ce{CO2}\) came from a <b>terminal \(\ce{=CH2}\)</b> (2 H). Re-join to a \(\ce{C9H16}\) diene, e.g. \(\ce{(CH3)2C=CH-CH2CH2-C(=CH2)-CH3}\) (2,6-... skeleton — check 9 C, 2 C=C).
       </div>
-      <div class="step"><div class="step-header">(b) Why the difference is tiny</div>
-        <div class="step-desc"><span class="mk">M1 A1</span></div>
-        The \(\ce{CH3}\) group is <b>only very weakly polar</b> (the \(\ce{C-C}\)/\(\ce{C-H}\) bonds are nearly non-polar), so even the cis isomer has <b>only a very small net dipole</b> → the pd–pd contribution is tiny → the two isomers differ little. With \(\ce{C-Cl}\) bonds (strongly polar) the difference is large.
-      </div>
-      <div class="step"><div class="step-header">(c) Two conditions</div>
+      <div class="step"><div class="step-header">What the CO₂ tells you</div>
         <div class="step-desc"><span class="mk">A1 A1</span></div>
-        (1) <b>Restricted rotation</b> about the \(\ce{C=C}\); (2) <b>each \(\ce{C=C}\) carbon carries two different groups</b>.
+        Effervescence of \(\ce{CO2}\) shows a <b>terminal \(\ce{=CH2}\)</b> was present (a carbon with 2 H is lost as \(\ce{CO2}\)); count carbons before and after cleavage to fix the positions.
       </div>
-      <div class="step"><div class="step-header">(d) 2-methylbut-2-ene?</div>
-        <div class="step-desc"><span class="mk">M1 A1</span></div>
-        <b>No.</b> One \(\ce{C=C}\) carbon carries <b>two identical \(\ce{CH3}\) groups</b>, so the "two different groups on each carbon" criterion fails → <b>no cis-trans isomerism</b>.
-      </div>
-      <div class="trap"><b>Why harder:</b> (b) tests <em>why</em> the polarity effect is small when substituents are barely polar; (d) tests the "two different groups on EACH carbon" criterion on a molecule that fails it.</div>
+      <div class="trap"><b>Why harder:</b> three fragments (ketone + acid + \(\ce{CO2}\)) to re-assemble, and the carbon count must balance — the classic mark-loser is forgetting the carbon lost as \(\ce{CO2}\).</div>
     </div><div class="answer-overlay">Answer hidden — click Reveal</div>
   </div>
   <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
-    <div class="answer-content"><div class="label">Archetype revealed</div>
-      <strong>Cis-trans isomerism + the bp/mp reasoning.</strong>
-      <p>cis = higher bp (net dipole, pd–pd); trans = higher mp (symmetry, packing). The size of the bp gap tracks how polar the substituents are. Cis-trans needs restricted rotation + two different groups on each \(\ce{C=C}\) carbon.</p>
-    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+    <div class="answer-content"><div class="label">Archetype</div><strong>Structural elucidation via oxidative cleavage (retrosynthesis).</strong>
+    <p>Work backwards: each carbonyl/acid/\(\ce{CO2}\) fragment maps to a \(\ce{C=C}\) carbon by its H-count; rejoin across the \(\ce{C=C}\)(s); balance the carbons. Always state the reaction types and functional groups you used.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div>
   </div>
 </div>
 
-<!-- ============ Q6 reduction + distinguishing tests ============ -->
+<!-- ============ Q6 — distinguishing tests (HCI Q6) ============ -->
 <div class="card" id="c6">
   <h3>Question 6</h3>
-  <div class="block example"><div class="label">Example</div>
-    <div class="stem">(a) State the reagents and conditions to convert ethene into ethane, and name the type of catalysis. <span class="marks">[2]</span><br>(b) Describe a simple chemical test, with reagent and observation, to show that a colourless liquid is an alkene rather than an alkane. <span class="marks">[2]</span></div>
+  <div class="block example"><div class="label">Example — HCI Q6(a)</div>
+    <div class="stem">Describe a chemical test to distinguish cyclohexane from cyclohexene. Give reagents, conditions, and the observation for <b>each</b> compound. <span class="marks">[3]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
-    <div class="answer-content"><div class="label">Solution with mark scheme</div>
-      <div class="step"><div class="step-header">(a) Reduction</div>
-        <div class="step-desc"><span class="mk">B1 reagents/conditions, B1 catalysis type</span></div>
-        <b class="rg">\(\ce{H2}\) gas, Ni catalyst</b> (heat; Pt or Pd also work). \(\ce{C=C -> C-C}\), adding one \(\ce{H}\) to each carbon → ethane. This is <b>heterogeneous catalysis</b> (catalyst and reactants in different phases).
+    <div class="answer-content"><div class="label">Solution — verbatim HCI (any one option)</div>
+      <div class="verb">
+        <b>Reagents/conditions:</b> \(\ce{Br2}\) in \(\ce{CCl4}\), absence of UV light (to prevent free radical substitution).<br>
+        • cyclohexane: reddish brown \(\ce{Br2}\) <b>not</b> decolourised.<br>
+        • cyclohexene: reddish brown \(\ce{Br2}\) <b>decolourised</b>.<br><br>
+        <b>OR</b> aqueous \(\ce{Br2}\) → cyclohexane: yellow-orange \(\ce{Br2(aq)}\) not decolourised; cyclohexene: decolourised.<br>
+        <b>OR</b> \(\ce{KMnO4}\), dilute \(\ce{H2SO4}\), heat → cyclohexane: purple \(\ce{KMnO4}\) not decolourised; cyclohexene: decolourised.<br>
+        <b>OR</b> \(\ce{KMnO4}\), \(\ce{NaOH(aq)}\), cold → cyclohexene: decolourised <b>and brown ppt of \(\ce{MnO2}\)</b>.
       </div>
-      <div class="step"><div class="step-header">(b) Distinguishing test</div>
-        <div class="step-desc"><span class="mk">B1 reagent, B1 observation for the alkene (alkane = no change)</span></div>
-        Add <b>\(\ce{Br2(aq)}\) dropwise</b>: the alkene <b>decolourises the yellow-orange bromine water</b>; the alkane gives <b>no change</b>. (Or cold \(\ce{KMnO4}\): alkene decolourises purple + brown \(\ce{MnO2}\); alkane no change.)
-      </div>
-      <div class="trap"><b>Trap:</b> give the observation for <b>both</b> outcomes (change for the alkene, no change for the alkane) — a test answer needs the contrast.</div>
+      <div class="trap"><b>A test answer needs BOTH outcomes</b> — the change for the alkene AND "not decolourised" for the alkane. State reagent + conditions together.</div>
     </div><div class="answer-overlay">Solution hidden — click Reveal</div>
   </div>
-  <div class="block practice"><div class="label">Practice</div>
-    <div class="stem">(a) Describe how you would use oxidative cleavage to distinguish but-1-ene from but-2-ene, giving the key observation. <span class="marks">[3]</span><br>(b) Explain why, in the bromine-water and \(\ce{KMnO4}\) tests, the reagent must be added dropwise. <span class="marks">[2]</span><br>(c) State one large-scale industrial use of catalytic hydrogenation of alkenes. <span class="marks">[1]</span><br>(d) Write the equation for the complete hydrogenation of buta-1,3-diene, \(\ce{CH2=CHCH=CH2}\). <span class="marks">[2]</span></div>
+  <div class="block practice"><div class="label">Practice — HCI Q6(b), harder (terminal vs internal)</div>
+    <div class="stem">Describe how to distinguish but-1-ene from but-2-ene, giving reagents, conditions and the key observation for each. <span class="marks">[3]</span></div>
   </div>
   <div class="block answer"><button class="reveal-btn">Reveal</button>
-    <div class="answer-content"><div class="label">Answer with mark scheme</div>
-      <div class="step"><div class="step-header">(a) Distinguish but-1-ene / but-2-ene</div>
-        <div class="step-desc">Terminal vs internal \(\ce{C=C}\). <span class="mk">M1 method, M1 but-1-ene result, A1 but-2-ene result</span></div>
-        Warm each with <b>acidified \(\ce{KMnO4}\)</b>. <b>But-1-ene</b> has a terminal \(\ce{=CH2}\) (2 H) → gives <b>\(\ce{CO2}\) — effervescence / gas that turns limewater milky</b>. <b>But-2-ene</b> \(\ce{(CH3CH=CHCH3)}\) has no \(\ce{=CH2}\) → <b>no gas</b> (gives two carboxylic-acid/… fragments, here ethanoic acid). The effervescence distinguishes them.
+    <div class="answer-content"><div class="label">Answer — verbatim HCI</div>
+      <div class="verb">
+        <b>Reagents/conditions:</b> \(\ce{KMnO4}\), dilute \(\ce{H2SO4}\), heat.<br>
+        • but-1-ene: purple \(\ce{KMnO4}\) decolourised, <b>effervescence of (colourless and odourless) \(\ce{CO2}\) gas</b> (which gave a white precipitate of \(\ce{CaCO3}\) when bubbled in limewater \(\ce{Ca(OH)2}\)).<br>
+        • but-2-ene: purple \(\ce{KMnO4}\) decolourised <b>but no gas evolved</b>.
       </div>
-      <div class="step"><div class="step-header">(b) Why dropwise</div>
-        <div class="step-desc"><span class="mk">M1 A1</span></div>
-        If the reagent is added in <b>excess</b>, the <b>colour change (decolourisation) cannot be seen</b> — the solution stays purple / yellow-orange. Adding dropwise lets the alkene consume each drop so the decolourisation is <b>observable</b>.
-      </div>
-      <div class="step"><div class="step-header">(c) Industrial use</div>
-        <div class="step-desc"><span class="mk">A1</span></div>
-        <b>Hardening unsaturated vegetable/plant oils into margarine</b> (fats).
-      </div>
-      <div class="step"><div class="step-header">(d) Equation</div>
-        <div class="step-desc">Two \(\ce{C=C}\) → add \(\ce{2 H2}\). <span class="mk">M1 2H₂, A1 butane</span></div>
-        \[ \ce{CH2=CHCH=CH2 + 2H2 ->[\text{Ni}] CH3CH2CH2CH3} \]
-      </div>
-      <div class="trap"><b>Why harder:</b> (a) uses the terminal-\(\ce{=CH2}\) → \(\ce{CO2}\) diagnostic to tell two similar alkenes apart; (d) checks you count <b>one \(\ce{H2}\) per \(\ce{C=C}\)</b> (a diene needs 2).</div>
+      <div class="trap"><b>Why harder:</b> both are alkenes, so a plain decolourisation test can't separate them — you need <b>oxidative cleavage</b> so the <b>terminal \(\ce{=CH2}\)</b> of but-1-ene gives \(\ce{CO2}\) effervescence and but-2-ene doesn't.</div>
     </div><div class="answer-overlay">Answer hidden — click Reveal</div>
   </div>
   <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
-    <div class="answer-content"><div class="label">Archetype revealed</div>
-      <strong>Reduction + distinguishing tests (consolidation).</strong>
-      <p>Hydrogenation (H₂/Ni, heterogeneous); the decolourisation tests and why they're added dropwise; and the terminal-\(\ce{C=C}\) → \(\ce{CO2}\) trick for telling alkenes apart.</p>
-    </div><div class="answer-overlay">Archetype hidden — attempt the question first</div>
+    <div class="answer-content"><div class="label">Archetype</div><strong>Distinguishing tests — alkene vs alkane, and terminal vs internal C=C.</strong>
+    <p>Decolourisation (Br₂ or KMnO₄) separates alkene from alkane; oxidative-cleavage \(\ce{CO2}\) effervescence separates a terminal \(\ce{=CH2}\) from an internal \(\ce{C=C}\). Give both outcomes, verbatim.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div>
   </div>
 </div>
 
 <hr>
-<p class="meta"><b>When done:</b> paste me your transcript (say your confidence as you go) and I'll flag the gaps and build the Alkenes gap cluster. The mechanism-draw (curly arrows, rds) and the "state ALL reagents + conditions" habit are where the marks leak — watch those.</p>
+<p class="meta"><b>Not yet in this cluster (Section B / harder application, from the MCQ key):</b> hydroboration is an <b>anti-Markovnikov</b> electrophilic addition (H adds to the more substituted carbon → but-1-ene gives butan-1-ol); Diels-Alder pattern-recognition (diene + dienophile). Ask me to add a Section-B card once you've done Section A. <br><b>Erratum noted:</b> topic practice Section B Q13(iii) answer is \(\ce{CH3CHICH3}\) (2-iodopropane, Markovnikov product of HI + propene).<br><b>When done:</b> paste your transcript and I'll flag gaps + build the Alkenes gap cluster.</p>
 
 <script>
   document.querySelectorAll('.reveal-btn').forEach(btn => {

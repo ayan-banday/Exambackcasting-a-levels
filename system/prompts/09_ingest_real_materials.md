@@ -1,6 +1,19 @@
-# Prompt 09 — Ingest Real Materials & Reorganise (H2-only)
+# Prompt 09 — Material Intake (topic-by-topic; H2-only)
 
-Fire this once the full set of Chemistry, Biology, and Maths PDFs (school lecture notes, tutorials, supplementary exercises, past papers) has been dropped into the repo. It reorganises the system around the real materials so every future cluster, practice, and mark scheme is grounded in what the school actually tests, in the school's actual wording — not invented content.
+**Enhanced model (28 Jul), not retired.** Ethan uploads materials **topic-by-topic, the day before** — not all at once. The daily behaviour:
+
+1. **When I give tomorrow's plan, I ASK Ethan to upload the materials for tomorrow's Chem/Bio/Math topics** (lecture notes, tutorials, supplementary, past papers, answer keys). *Chem/Bio/Maths only — CSC and GP already have all their materials, never ask for those.*
+2. **On paste, do TWO things only** (no ingest/extract/question-bank ceremony): (a) **file** the material into `inputs/{Subject}/H2/{Topic}/` so it's easy to find; (b) **store/reference** it for the build.
+3. **Build the cluster from the real material** — use the school's ACTUAL questions (or harder), and **lift the ANSWERS VERBATIM from the school answer key** (the #1 rule; my paraphrase ≠ the mark scheme). Surface the verbatim wording in a "use these exact words" box.
+4. **YouTube video** → run `yt-dlp --write-auto-subs --write-subs --skip-download --convert-subs srt` to pull the transcript, then reference it.
+
+The all-at-once reorganise flow below still works if Ethan ever dumps everything at once, but the day-before, per-topic flow above is the default.
+
+---
+
+## (Legacy) all-at-once reorganise
+
+Fire the block below only if Ethan drops the full set of PDFs at once. It reorganises the whole system so every cluster is grounded in the school's real content and wording.
 
 ---
 

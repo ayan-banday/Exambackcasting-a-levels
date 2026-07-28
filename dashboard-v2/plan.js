@@ -1071,15 +1071,15 @@ window.PLAN = {
      "subject": "csc",
      "name": "CSC — Governance — Step 3: Q5",
      "desc": "TNT governance question · Wispr Flow attempt → hypercorrect → encode. 1 Q = 2h. Run in the CSC chat (handoff ready).",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "28 Jul",
      "clusterRef": "政治 Governance"
     },
     {
      "mins": 120,
      "subject": "chem",
      "name": "Chemistry — Alkenes (ch 11) · cluster · organic",
-     "desc": "Built: 6 Example→Practice cards (electrophilic addition + Markovnikov, halogen addition, bromine water, oxidation/cleavage, cis-trans, reduction/tests), drawn mechanisms. Attempt each cold, then drill the mechanism-draw out loud.",
+     "desc": "Reworked verbatim from HCI answer key (Q1-7). Q1-3 done today; Q4-6 + Alkenes gap cluster (~1-1.5h) roll to Wed.",
      "done": false,
      "doneDate": null,
      "clusterRef": "Alkenes",
@@ -1089,9 +1089,9 @@ window.PLAN = {
      "mins": 60,
      "subject": "maths",
      "name": "Maths — Vectors GAP cluster (C1 + C2 combined)",
-     "desc": "Built: 6 hard fused questions, C1 (ratio/products/area) × C2 (lines/planes), questions-only. Targets your flagged gaps: why set z=0, foot line-vs-plane, cross-product order. ~30-45 min. (Rebuilds from real questions once you upload.)",
-     "done": false,
-     "doneDate": null,
+     "desc": "Done — flagged too easy (conceptual-level). Real gaps still surfaced + recorded: plane⊥AB→normal, simplifying a normal (factor scalar), foot-of-perp line-vs-plane. Next vectors drill pitched at real-paper difficulty.",
+     "done": true,
+     "doneDate": "28 Jul",
      "clusterRef": "Vectors gap C1+C2",
      "clusterHref": "clusters/gap_vectors_c1c2.html"
     }
@@ -1106,17 +1106,18 @@ window.PLAN = {
    "subject": "bio",
    "flag": "",
    "mins": 240,
-   "label": "Biology Evolution + CSC Governance",
-   "focus": "Day 10. Biology Evolution · CSC Governance. Full 4h.",
+   "label": "Finish Alkenes + CSC Governance Q6",
+   "focus": "Day 10. Finish Chem Alkenes (Q4-6 + gap) · CSC Governance Q6 (finishes governance). 4h (only 4h available). Biology Evolution → later day.",
    "blocks": [
     {
      "mins": 120,
-     "subject": "bio",
-     "name": "Biology — Evolution (ch 7) · cluster · easiest · declarative",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
+     "subject": "chem",
+     "name": "Chemistry — Alkenes: finish Q4-6 + gap cluster",
+     "desc": "Rolled from Tue. Q4-6 (~1-1.5h), then paste the transcript → I build the Alkenes gap cluster (harder, own concept-linking questions).",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Evolution"
+     "clusterRef": "Alkenes",
+     "clusterHref": "clusters/chem_alkenes.html"
     },
     {
      "mins": 120,
@@ -1985,6 +1986,30 @@ window.PLAN = {
   ]
  ],
  "log": [
+  {
+   "date": "2026-07-28",
+   "weekday": "Tue",
+   "items": [
+    {
+     "subject": "maths",
+     "mins": 60,
+     "what": "Maths — Vectors C1+C2 gap cluster drilled. Flagged too easy (conceptual-level); real gaps surfaced + recorded: plane⊥AB→normal, simplifying a normal, foot-of-perp line-vs-plane. Next vectors drill = real-paper difficulty.",
+     "done": true
+    },
+    {
+     "subject": "csc",
+     "mins": 120,
+     "what": "CSC — Governance Step 3 Q5 drilled in the CSC chat. 1 Q = 2h.",
+     "done": true
+    },
+    {
+     "subject": "chem",
+     "mins": 120,
+     "what": "Chem — Alkenes cluster Q1-3 (reworked verbatim from HCI key). Q4-6 + gap roll to Wed (~1.5h).",
+     "done": true
+    }
+   ]
+  },
   {
    "date": "2026-07-27",
    "weekday": "Mon",

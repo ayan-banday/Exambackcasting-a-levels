@@ -6,7 +6,7 @@ type: quantitative
 status: BUILT
 validation_source: MIXED — [OFFICIAL] scope/exclusions from 2026 SEAB 9758 syllabus §3 (the only official doc loaded); [SCHOOL] archetypes, frequency, traps, presentation style from HCI Ch7 lecture notes + Tutorials 7A/7B/7C solutions + Ch7 supplementary solutions + subject-guide §4.1/§5.3 corpus tally; [INFERRED] mark-band micro-mechanics
 confidence_ceiling: ~87% (scope/exclusions ~97% [OFFICIAL]; archetype shape & frequency ~89% [SCHOOL]; trap model ~85% [SCHOOL]; mark-band micro-mechanics ~80% [INFERRED]). HARD CAP ~90% — no SEAB mark scheme / examiner report exists in inputs, and the loaded HCI tutorial 7B/7C PDFs are TRUNCATED (only Q1–Q3 of 7B and Q1 of 7C are extractable; footers show "of 16" / "of 27").
-last_updated: 2026-07-16
+last_updated: 2026-07-28
 ---
 
 # Topic Examiner's Guide — Maths H2 > Vectors (Syllabus §3)
@@ -184,10 +184,15 @@ If Ethan's cluster session performance is **>70%** but his first official vector
 timed paper) is **<50%**, the archetype model or trap ranking is misaligned — recalibrate.
 
 ### 6.3 Open gaps
-- **Full HCI Tutorial 7B/7C PDFs** — currently truncated to first questions only. Full text would
-  strengthen the archetype samples for Clusters 2 and 3.
-- **SEAB past-paper vector questions** and mark schemes — none loaded. The subject-guide corpus
-  (real Cambridge TYS 2009-2022 + 2012-2025 prelims) covers the aggregate patterns.
+- **RESOLVED (28 Jul):** the **full HCI Chapter 7 material is now uploaded** to `Resources/Maths/Vectors/`
+  (→ `Math/Vectors/`): the complete **121-page student-copy notes** (`2025 Chapter 7 Vectors (Student Copy).pdf`)
+  plus four tutorial/worked-answer PDFs (`download (50)–(53).pdf`, one ~17.5 MB = full worked solutions).
+  This clears the earlier 7B/7C truncation. **Action before building Cluster 2/3:** read the planes
+  tutorial + its verbatim worked answers from these PDFs, re-verify the archetype/trap tables and the
+  presentation conventions (§5) against them, then build Cluster 3 (Planes) with the answers lifted
+  **verbatim** from the key. File the PDFs into `inputs/Maths/H2/Vectors/` as part of that build.
+- **SEAB past-paper vector questions** and mark schemes — still none loaded (the subject-guide corpus
+  of real Cambridge TYS 2009-2022 + 2012-2025 prelims covers the aggregate patterns).
 
 ---
 
