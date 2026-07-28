@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vectors — Gap Cluster (C1 + C2)</title>
+<script>
+  window.MathJax = { tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], processEscapes: true, tags:'none' }, svg:{fontCache:'global'} };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --amber-soft:#fffbeb;
+    --green:#059669; --green-soft:#ecfdf5; --cover:#f3f4f6; --purple:#7c3aed; --purple-soft:#f5f3ff; --red:#dc2626; --red-soft:#fef2f2; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:40px 24px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h3,.label,.controls,button,.step-header{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  h1{font-size:2em;margin:0 0 8px;color:#111;border-bottom:3px solid #111;padding-bottom:12px}
+  h3{font-size:1.15em;margin:0 0 14px;color:#1f2937}
+  p{margin:8px 0}
+  .meta{color:var(--muted);font-size:.9em;margin:4px 0 24px}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--red);padding:16px 20px;border-radius:6px;margin:16px 0 20px}
+  .gaps{background:var(--purple-soft);border:1px solid #ddd6fe;border-left:4px solid var(--purple);padding:14px 20px;border-radius:6px;margin:0 0 30px;font-size:.94em}
+  .gaps b{color:#5b21b6}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;font-weight:500}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:32px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:6px;color:#111}.toc a{color:var(--blue);text-decoration:none;margin-right:14px;line-height:2}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .block{margin:14px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border)}
+  .block.practice{background:var(--amber-soft);border-left-color:var(--amber)}
+  .block.answer{background:var(--green-soft);border-left-color:var(--green);position:relative;min-height:60px}
+  .block.reveal-archetype{background:var(--purple-soft);border-left-color:var(--purple);position:relative;min-height:60px;margin-top:24px}
+  .label{display:block;text-transform:uppercase;font-size:.75em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--muted)}
+  .block.practice .label{color:var(--amber)}.block.answer .label{color:var(--green)}.block.reveal-archetype .label{color:var(--purple)}
+  .stem{background:#1e293b;color:#f1f5f9;padding:12px 16px;border-radius:6px;margin:10px 0}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px;font-family:-apple-system,sans-serif}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.5);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.8em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .step-desc{font-style:italic;color:#374151;margin-bottom:6px;font-size:.95em}
+  .mk{display:inline-block;font-size:.8em;color:var(--green);font-weight:700;font-family:-apple-system,sans-serif;margin-left:4px}
+  .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:6px 12px;border-radius:4px;margin:8px 0 0;font-size:.9em}.trap b{color:var(--red)}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3}
+  .reveal-btn.hide-state{background:var(--muted)}.block.reveal-archetype .reveal-btn{background:var(--purple)}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;font-family:-apple-system,sans-serif;border-left:4px solid var(--muted);margin-left:-16px;padding-left:16px;z-index:2}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content,.block.reveal-archetype .answer-content{padding-right:60px}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  @media print{body{background:#fff;padding:20px;max-width:100%}.controls,.reveal-btn{display:none!important}.answer-overlay{display:none!important}.card{box-shadow:none;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<h1>Vectors — Gap Cluster (Clusters 1 + 2)</h1>
+<p class="meta">Maths H2 9758 · questions only, no examples — sit each cold, Loom your confidence, reveal to mark. Every question fuses Cluster 1 (basics / products / ratio) with Cluster 2 (lines / planes). ~30–45 min.</p>
+
+<div class="intro">
+This is a <b>test-style</b> sheet — no worked example first. Attempt each question cold, then reveal the solution. Solutions name each symbol where a formula is used and label marks inline.
+</div>
+
+<div class="gaps">
+<b>What tripped you up last session — read once before you start:</b>
+<ul>
+  <li><b>"Why can you set z = 0?"</b> A plane∩plane line is <b>infinite</b>. Fixing one coordinate (say \(z=0\)) just picks the <b>single point where the line crosses the \(z=0\) plane</b>. Any consistent choice gives a valid point <em>on the same line</em> — you only need one. (If the line happens to be parallel to \(z=0\), that choice fails and you pick a different variable to fix.)</li>
+  <li><b>Foot of perpendicular — line vs plane are different.</b> To a <b>plane</b>: \(F = P + t\mathbf n\), sub \(F\) into the plane, solve \(t\). To a <b>line</b>: \(F = \mathbf a + \lambda\mathbf d\), impose \(\overrightarrow{PF}\cdot\mathbf d = 0\), solve \(\lambda\).</li>
+  <li><b>Plane normal from 3 points:</b> use two vectors from the <b>same</b> point — \(\mathbf n = \overrightarrow{AB}\times\overrightarrow{AC}\) (not \(\overrightarrow{AB}\times\overrightarrow{BC}\)). Check it by dotting with a plane direction — should be 0.</li>
+</ul>
+</div>
+
+<div class="controls"><button onclick="revealAll()">Reveal all</button><button onclick="hideAll()">Hide all</button></div>
+
+<div class="toc"><strong>Questions</strong>
+<a href="#c1">Question 1</a><a href="#c2">Question 2</a><a href="#c3">Question 3</a><a href="#c4">Question 4</a><a href="#c5">Question 5</a><a href="#c6">Question 6</a>
+</div>
+
+<!-- Q1 -->
+<div class="card" id="c1">
+  <h3>Question 1</h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">The points \(A(2,0,1)\) and \(B(-1,3,4)\) are given.<br>(a) The point \(P\) divides \(AB\) such that \(AP:PB = 1:2\). Find \(\overrightarrow{OP}\). <span class="marks">[2]</span><br>(b) The plane \(p\) passes through \(P\) and is perpendicular to \(AB\). Find its Cartesian equation. <span class="marks">[3]</span><br>(c) Find the exact distance from \(A\) to \(p\), and explain why it equals \(|AP|\). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) Ratio theorem</div>
+        <div class="step-desc">\(AP:PB = \lambda:\mu = 1:2\); the weight goes with the OPPOSITE endpoint, so \(\overrightarrow{OP} = \dfrac{\mu\mathbf a + \lambda\mathbf b}{\lambda+\mu} = \dfrac{2\mathbf a + \mathbf b}{3}\). <span class="mk">M1 A1</span></div>
+        \[ \overrightarrow{OP} = \tfrac{1}{3}\!\left(2\begin{pmatrix}2\\0\\1\end{pmatrix}+\begin{pmatrix}-1\\3\\4\end{pmatrix}\right) = \begin{pmatrix}1\\1\\2\end{pmatrix} \]
+      </div>
+      <div class="step"><div class="step-header">(b) Plane through P, normal = AB</div>
+        <div class="step-desc">Perpendicular to \(AB\) means the plane's normal <b>is</b> \(\overrightarrow{AB} = \mathbf b - \mathbf a = (-3,3,3) \parallel (1,-1,-1)\). Fit \(d = \mathbf n\cdot\overrightarrow{OP}\). <span class="mk">M1 normal, M1 d, A1</span></div>
+        \( d = (1)(1)+(-1)(1)+(-1)(2) = -2 \Rightarrow \) plane \( x - y - z = -2 \).
+      </div>
+      <div class="step"><div class="step-header">(c) Distance A → plane</div>
+        <div class="step-desc">Formula \(\dfrac{|\mathbf a\cdot\mathbf n - d|}{|\mathbf n|}\): \(\mathbf a = A(2,0,1)\); \(\mathbf n=(1,-1,-1)\); \(d=-2\); \(|\mathbf n|=\sqrt3\). <span class="mk">M1 A1</span></div>
+        \( \dfrac{|(2)(1)+(0)(-1)+(1)(-1)-(-2)|}{\sqrt3} = \dfrac{|2-1+2|}{\sqrt3} = \dfrac{3}{\sqrt3} = \sqrt3 \).<br>
+        It equals \(|AP|\) because \(AB \perp p\) and \(P\in p\), so the foot of the perpendicular from \(A\) to \(p\) <b>is</b> \(P\); the distance is just \(|AP| = |\overrightarrow{OP}-\mathbf a| = |(-1,1,1)| = \sqrt3\). <span class="mk">A1</span>
+      </div>
+      <div class="trap"><b>Fused:</b> ratio theorem (C1) → plane from a point + normal (C2) → point-plane distance (C2), tied together by the geometry that a perpendicular plane makes \(P\) the foot.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype</div><strong>Ratio theorem feeding a perpendicular plane and a distance.</strong>
+    <p>When \(AB\perp p\) and \(P\in p\), the foot from \(A\) is \(P\) — the distance is just \(|AP|\). Recognising that saves the full foot-of-perpendicular working.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div>
+  </div>
+</div>
+
+<!-- Q2 -->
+<div class="card" id="c2">
+  <h3>Question 2</h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">The points \(A(1,1,0)\), \(B(3,1,2)\), \(C(2,0,1)\) are given.<br>(a) Find the exact area of triangle \(ABC\). <span class="marks">[3]</span><br>(b) Find a unit vector normal to the plane \(ABC\). <span class="marks">[2]</span><br>(c) Find the Cartesian equation of plane \(ABC\), and hence the point where the line \(\mathbf r = \begin{pmatrix}2\\0\\0\end{pmatrix}+t\begin{pmatrix}0\\1\\1\end{pmatrix}\) meets it. <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) Area via the cross product</div>
+        <div class="step-desc">\(\overrightarrow{AB}=(2,0,2)\), \(\overrightarrow{AC}=(1,-1,1)\); area \(=\tfrac12|\overrightarrow{AB}\times\overrightarrow{AC}|\). <span class="mk">M1 cross, M1, A1</span></div>
+        \( \overrightarrow{AB}\times\overrightarrow{AC} = (2,0,-2) \Rightarrow \text{area} = \tfrac12\sqrt{4+0+4} = \tfrac12\cdot 2\sqrt2 = \sqrt2 \).
+      </div>
+      <div class="step"><div class="step-header">(b) Unit normal</div>
+        <div class="step-desc">The cross product is normal to the plane; divide by its magnitude. <span class="mk">M1 A1</span></div>
+        \( \hat{\mathbf n} = \dfrac{(2,0,-2)}{2\sqrt2} = \dfrac{1}{\sqrt2}(1,0,-1) \).
+      </div>
+      <div class="step"><div class="step-header">(c) Plane, then line ∩ plane</div>
+        <div class="step-desc">Use \(\mathbf n=(1,0,-1)\) through \(A(1,1,0)\): \(d = 1-0 = 1\), so \(x - z = 1\). Sub the line \((2, t, t)\). <span class="mk">M1 plane, M1 sub, A1 t, A1 point</span></div>
+        \( (2) - (t) = 1 \Rightarrow t = 1 \Rightarrow \) point \((2,1,1)\).
+      </div>
+      <div class="trap"><b>Fused:</b> cross-product area + unit normal (C1) → plane equation → line∩plane (C2). The same cross product gives the area AND the plane's normal.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype</div><strong>One cross product, three uses: area, unit normal, plane.</strong>
+    <p>\(\overrightarrow{AB}\times\overrightarrow{AC}\) gives the triangle area (÷2), the plane normal (direction), and — normalised — the unit normal. Then the plane feeds a line∩plane.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div>
+  </div>
+</div>
+
+<!-- Q3 -->
+<div class="card" id="c3">
+  <h3>Question 3</h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">Lines \(l_1:\ \mathbf r = \begin{pmatrix}1\\0\\0\end{pmatrix}+\lambda\begin{pmatrix}1\\1\\0\end{pmatrix}\) and \(l_2:\ \mathbf r = \begin{pmatrix}2\\0\\1\end{pmatrix}+\mu\begin{pmatrix}0\\1\\1\end{pmatrix}\).<br>(a) Show that \(l_1\) and \(l_2\) are skew. <span class="marks">[4]</span><br>(b) Find the acute angle between them. <span class="marks">[2]</span><br>(c) Find the exact shortest distance between them. <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) Not parallel, then no intersection</div>
+        <div class="step-desc">Directions \((1,1,0)\), \((0,1,1)\) not proportional → not parallel. Equate components. <span class="mk">B1, M1, M1, A1</span></div>
+        \(x:\ 1+\lambda = 2 \Rightarrow \lambda = 1\); \(z:\ 0 = 1+\mu \Rightarrow \mu = -1\); \(y:\ \lambda = \mu\) needs \(1 = -1\) — false → inconsistent → no common point → <b>skew</b>.
+      </div>
+      <div class="step"><div class="step-header">(b) Angle between lines (cos, directions)</div>
+        <div class="step-desc">\(\mathbf d_1\cdot\mathbf d_2 = 0+1+0 = 1\); \(|\mathbf d_1| = |\mathbf d_2| = \sqrt2\). <span class="mk">M1 A1</span></div>
+        \( \cos\theta = \dfrac{1}{2} \Rightarrow \theta = 60^\circ \).
+      </div>
+      <div class="step"><div class="step-header">(c) Shortest distance (cross product)</div>
+        <div class="step-desc">\(\mathbf d_1\times\mathbf d_2 = (1,-1,1)\), \(|\cdot|=\sqrt3\); \(\mathbf a_2-\mathbf a_1 = (1,0,1)\). <span class="mk">M1 M1 A1</span></div>
+        \( d = \dfrac{|(1)(1)+(0)(-1)+(1)(1)|}{\sqrt3} = \dfrac{2}{\sqrt3} = \dfrac{2\sqrt3}{3} \). <span class="mk">A1</span>
+      </div>
+      <div class="trap"><b>Watch:</b> the angle uses \(\cos\) with the <b>directions</b>; the shortest distance uses the <b>cross product</b> \(\mathbf d_1\times\mathbf d_2\). Different tools on the same pair of lines.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype</div><strong>Full skew-lines workup: prove skew, angle, distance.</strong>
+    <p>The distance-formula-selection drill — three different formulas on one figure. Prove-skew needs BOTH non-parallel and no-intersection.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div>
+  </div>
+</div>
+
+<!-- Q4 -->
+<div class="card" id="c4">
+  <h3>Question 4</h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">The point \(P(3,2,1)\) and the plane \(p:\ 2x - y + 2z = 4\).<br>(a) Find the foot of the perpendicular \(F\) from \(P\) to \(p\). <span class="marks">[4]</span><br>(b) Find the exact shortest distance from \(P\) to \(p\). <span class="marks">[2]</span><br>(c) Find the reflection of \(P\) in \(p\). <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) Foot — walk from P along the normal</div>
+        <div class="step-desc"><b>Plane method:</b> \(F = P + t\mathbf n\), then sub into the plane. \(\mathbf n = (2,-1,2)\). <span class="mk">M1 M1 M1 A1</span></div>
+        \(F = (3+2t,\,2-t,\,1+2t)\). Sub: \(2(3+2t)-(2-t)+2(1+2t) = 6+9t = 4 \Rightarrow t = -\tfrac29\).<br>
+        \( F = \tfrac19(23,\,20,\,5) \).
+      </div>
+      <div class="step"><div class="step-header">(b) Distance</div>
+        <div class="step-desc">\(|PF| = |t|\,|\mathbf n| = \tfrac29\cdot 3\). <span class="mk">M1 A1</span></div>
+        \( = \tfrac{6}{9} = \tfrac23 \).
+      </div>
+      <div class="step"><div class="step-header">(c) Reflection</div>
+        <div class="step-desc">\(P' = 2F - P\), since \(F\) is the midpoint of \(PP'\). <span class="mk">M1 A1</span></div>
+        \( P' = 2\cdot\tfrac19(23,20,5) - (3,2,1) = \tfrac19(46,40,10) - \tfrac19(27,18,9) = \tfrac19(19,\,22,\,1) \).
+      </div>
+      <div class="trap"><b>This is the PLANE foot method</b> (sub \(F\) into the plane). Contrast with Question 5, which is the LINE foot method (dot with the direction). Keep them straight.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype</div><strong>Foot of perpendicular to a PLANE, distance, reflection.</strong>
+    <p>\(F=P+t\mathbf n\), solve \(t\) from the plane; \(|PF|=|t||\mathbf n|\); \(P'=2F-P\).</p></div><div class="answer-overlay">Archetype hidden — attempt first</div>
+  </div>
+</div>
+
+<!-- Q5 -->
+<div class="card" id="c5">
+  <h3>Question 5</h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">The line \(l:\ \mathbf r = \begin{pmatrix}1\\2\\3\end{pmatrix}+\lambda\begin{pmatrix}2\\-1\\2\end{pmatrix}\) and the point \(P(1,0,1)\).<br>(a) Find the foot of the perpendicular \(F\) from \(P\) to \(l\). <span class="marks">[4]</span><br>(b) Find the exact shortest distance from \(P\) to \(l\). <span class="marks">[2]</span><br>(c) Find the reflection of \(P\) in the line \(l\). <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) Foot — general point on the line</div>
+        <div class="step-desc"><b>Line method:</b> \(F = \mathbf a + \lambda\mathbf d\) on the line, then impose \(\overrightarrow{PF}\cdot\mathbf d = 0\) (NOT sub into anything). <span class="mk">M1 M1 M1 A1</span></div>
+        \(F=(1+2\lambda,\,2-\lambda,\,3+2\lambda)\), \(\overrightarrow{PF}=(2\lambda,\,2-\lambda,\,2+2\lambda)\).<br>
+        \(\overrightarrow{PF}\cdot\mathbf d = 2(2\lambda)-(2-\lambda)+2(2+2\lambda) = 9\lambda+2 = 0 \Rightarrow \lambda = -\tfrac29\).<br>
+        \( F = \tfrac19(5,\,20,\,23) \).
+      </div>
+      <div class="step"><div class="step-header">(b) Distance</div>
+        <div class="step-desc">\(|PF| = |\overrightarrow{PF}|\), with \(\overrightarrow{PF} = \tfrac19(-4,20,14)\). <span class="mk">M1 A1</span></div>
+        \( |PF| = \tfrac19\sqrt{16+400+196} = \tfrac19\sqrt{612} = \tfrac{6\sqrt{17}}{9} = \dfrac{2\sqrt{17}}{3} \).
+      </div>
+      <div class="step"><div class="step-header">(c) Reflection</div>
+        <div class="step-desc">\(P' = 2F - P\), same rule as reflecting in a plane. <span class="mk">M1 A1</span></div>
+        \( P' = 2\cdot\tfrac19(5,20,23) - (1,0,1) = \tfrac19(1,\,40,\,37) \).
+      </div>
+      <div class="trap"><b>Line foot vs plane foot:</b> here you impose \(\overrightarrow{PF}\cdot\mathbf d = 0\) (the point is ON the line, perpendicular to its direction). In Q4 you substituted \(F\) into the plane equation. That is the whole distinction.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype</div><strong>Foot of perpendicular to a LINE, distance, reflection.</strong>
+    <p>\(F=\mathbf a+\lambda\mathbf d\), solve \(\lambda\) from \(\overrightarrow{PF}\cdot\mathbf d=0\); then \(|PF|\) and \(P'=2F-P\). Paired deliberately with Q4 to lock the line-vs-plane choice.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div>
+  </div>
+</div>
+
+<!-- Q6 -->
+<div class="card" id="c6">
+  <h3>Question 6</h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">The planes \(p_1:\ x + 2y - z = 3\) and \(p_2:\ 2x - y + z = 1\).<br>(a) Find a vector equation of their line of intersection \(l\). <span class="marks">[4]</span><br>(b) Find the acute angle between \(p_1\) and \(p_2\). <span class="marks">[3]</span><br>(c) Find the point where \(l\) meets the plane \(y = 0\). <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) Direction, then ONE point</div>
+        <div class="step-desc">Line lies in both planes, so direction \(= \mathbf n_1\times\mathbf n_2\). For a point, <b>fix one coordinate</b> — set \(z=0\) (this picks the point where \(l\) crosses the \(z=0\) plane) and solve the pair. <span class="mk">M1 A1 direction, M1 point, A1</span></div>
+        \( \mathbf n_1\times\mathbf n_2 = (1,2,-1)\times(2,-1,1) = (1,\,-3,\,-5) \).<br>
+        Set \(z=0\): \(x+2y=3,\ 2x-y=1 \Rightarrow x=1,\ y=1\). Point \((1,1,0)\).<br>
+        \( l:\ \mathbf r = \begin{pmatrix}1\\1\\0\end{pmatrix} + t\begin{pmatrix}1\\-3\\-5\end{pmatrix} \).
+      </div>
+      <div class="step"><div class="step-header">(b) Angle between planes (normals, cos)</div>
+        <div class="step-desc">\(\mathbf n_1\cdot\mathbf n_2 = 2-2-1 = -1\); \(|\mathbf n_1| = |\mathbf n_2| = \sqrt6\). <span class="mk">M1 A1</span></div>
+        \( \cos\theta = \dfrac{|-1|}{6} = \dfrac16 \Rightarrow \theta = 80.4^\circ \). <span class="mk">A1</span>
+      </div>
+      <div class="step"><div class="step-header">(c) Where l meets y = 0</div>
+        <div class="step-desc">The \(y\)-coordinate of \(l\) is \(1-3t\); set it to 0. <span class="mk">M1 A1</span></div>
+        \( 1-3t = 0 \Rightarrow t = \tfrac13 \Rightarrow \mathbf r = \left(\tfrac43,\,0,\,-\tfrac53\right) \).
+      </div>
+      <div class="trap"><b>The z=0 point:</b> you're not "assuming z=0 everywhere" — you're choosing the one point of the infinite line that sits on the \(z=0\) plane. Any valid choice gives a point on the same line; you only need one to anchor it.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button>
+    <div class="answer-content"><div class="label">Archetype</div><strong>Line of intersection of two planes, angle, then a follow-on intersection.</strong>
+    <p>Direction \(=\mathbf n_1\times\mathbf n_2\); one point by fixing a coordinate; angle from the normals. Then the line feeds another intersection — exactly how a long exam question chains.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div>
+  </div>
+</div>
+
+<hr>
+<p class="meta"><b>When done:</b> paste the transcript and I'll flag anything still shaky and, if needed, build a declarative fix-note. Then Cluster 3 finishes Vectors.</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn=>{btn.addEventListener('click',function(){const b=this.parentElement,o=b.querySelector('.answer-overlay');if(o.classList.contains('hidden')){o.classList.remove('hidden');this.textContent=b.classList.contains('reveal-archetype')?'Reveal archetype':'Reveal';this.classList.remove('hide-state');}else{o.classList.add('hidden');this.textContent='Hide';this.classList.add('hide-state');}});});
+  function revealAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.add('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Hide';b.classList.add('hide-state');});}
+  function hideAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.remove('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{const a=b.parentElement.classList.contains('reveal-archetype');b.textContent=a?'Reveal archetype':'Reveal';b.classList.remove('hide-state');});}
+</script>
+</body>
+</html>

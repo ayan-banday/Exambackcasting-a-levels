@@ -1030,8 +1030,8 @@ window.PLAN = {
    "subject": "maths",
    "flag": "",
    "mins": 240,
-   "label": "Maths Vectors + CSC Governance",
-   "focus": "Day 8. Maths Vectors · CSC Governance. Full 4h.",
+   "label": "Maths Vectors + CSC Governance Q4",
+   "focus": "Day 8. Maths Vectors C2 + CSC Governance Q4 — both done. Full 4h.",
    "blocks": [
     {
      "mins": 120,
@@ -1047,9 +1047,9 @@ window.PLAN = {
      "mins": 120,
      "subject": "csc",
      "name": "CSC — Governance — Step 3: Q4 (widest)",
-     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
-     "done": false,
-     "doneDate": null,
+     "desc": "TNT governance question drilled in the CSC chat · Wispr Flow → hypercorrect → encode. 1 Q = 2h.",
+     "done": true,
+     "doneDate": "27 Jul",
      "clusterRef": "政治 Governance"
     }
    ],
@@ -1062,35 +1062,38 @@ window.PLAN = {
    "type": "standard",
    "subject": "chem",
    "flag": "",
-   "mins": 240,
-   "label": "Chemistry Alkenes + close Maths gap + GP",
-   "focus": "Day 9. Chemistry Alkenes · close Maths gap · GP. Full 4h.",
+   "mins": 300,
+   "label": "CSC Governance Q5 + Chemistry Alkenes + Maths Vectors gap",
+   "focus": "Day 9. 5h push — CSC Governance Q5 · Chemistry Alkenes · Maths Vectors gap cluster. No GP today (moved to Thu).",
    "blocks": [
+    {
+     "mins": 120,
+     "subject": "csc",
+     "name": "CSC — Governance — Step 3: Q5",
+     "desc": "TNT governance question · Wispr Flow attempt → hypercorrect → encode. 1 Q = 2h. Run in the CSC chat (handoff ready).",
+     "done": false,
+     "doneDate": null,
+     "clusterRef": "政治 Governance"
+    },
     {
      "mins": 120,
      "subject": "chem",
      "name": "Chemistry — Alkenes (ch 11) · cluster · organic",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
+     "desc": "Built: 6 Example→Practice cards (electrophilic addition + Markovnikov, halogen addition, bromine water, oxidation/cleavage, cis-trans, reduction/tests), drawn mechanisms. Attempt each cold, then drill the mechanism-draw out loud.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Alkenes"
+     "clusterRef": "Alkenes",
+     "clusterHref": "clusters/chem_alkenes.html"
     },
     {
-     "mins": 45,
+     "mins": 60,
      "subject": "maths",
      "name": "Maths — Vectors GAP cluster (C1 + C2 combined)",
-     "desc": "Hard fused questions across basics/products/ratio (C1) + lines/planes (C2), questions-only, no examples. Multi-object, chained parts. Built from your real tutorial/paper questions once uploaded. ~30-45 min.",
+     "desc": "Built: 6 hard fused questions, C1 (ratio/products/area) × C2 (lines/planes), questions-only. Targets your flagged gaps: why set z=0, foot line-vs-plane, cross-product order. ~30-45 min. (Rebuilds from real questions once you upload.)",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Vectors gap C1+C2"
-    },
-    {
-     "mins": 50,
-     "subject": "gp",
-     "name": "GP — Science & Technology domain · ~3 Qs (Step 3)",
-     "desc": "Model-paper questions, Wispr Flow, hypercorrect.",
-     "done": false,
-     "doneDate": null
+     "clusterRef": "Vectors gap C1+C2",
+     "clusterHref": "clusters/gap_vectors_c1c2.html"
     }
    ],
    "week": 2
@@ -1118,8 +1121,8 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "csc",
-     "name": "CSC — Governance — Step 3: Q5 (widest), finish + record gaps",
-     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
+     "name": "CSC — Governance — Step 3: Q6 (finish governance)",
+     "desc": "Last governance question · Wispr Flow → hypercorrect → encode · TNT questions only. Governance topic complete after this. 1 Q = 2h.",
      "done": false,
      "doneDate": null,
      "clusterRef": "政治 Governance"
@@ -1132,34 +1135,34 @@ window.PLAN = {
    "date": "2026-07-30",
    "weekday": "Thu",
    "type": "standard",
-   "subject": "chem",
+   "subject": "csc",
    "flag": "",
    "mins": 240,
-   "label": "Chemistry Arenes + close Biology gap + GP",
-   "focus": "Day 11. Chemistry Arenes · close Biology gap · GP. Full 4h.",
+   "label": "CSC TEST (send to teacher) + GP",
+   "focus": "Day 11. CSC timed test — 2 TNT governance essays, 2h, exam conditions → send to your teacher to mark. Then GP (moved from Tue) + close gaps. Chemistry Arenes bumped to Fri.",
    "blocks": [
     {
      "mins": 120,
-     "subject": "chem",
-     "name": "Chemistry — Arenes (benzene) (ch 12) · cluster · organic",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
+     "subject": "csc",
+     "name": "CSC TEST — 2 governance essays · 2h · exam conditions",
+     "desc": "Two TNT governance questions, timed 2h, written under exam conditions so it can be sent to your teacher to mark. Questions only, no notes. I prep the 2 TNT questions before Thu.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Arenes (benzene)"
-    },
-    {
-     "mins": 70,
-     "subject": "conv",
-     "name": "Close gaps: Biology Evolution",
-     "desc": "Drill / record the previous session's gaps.",
-     "done": false,
-     "doneDate": null
+     "clusterRef": "CSC Governance test"
     },
     {
      "mins": 50,
      "subject": "gp",
-     "name": "GP — Environment domain · ~3 Qs (Step 3)",
-     "desc": "Model-paper questions, Wispr Flow, hypercorrect.",
+     "name": "GP — Science & Technology domain · ~3 Qs (Step 3)",
+     "desc": "Moved from Tue. Model-paper questions, Wispr Flow, hypercorrect. Handoff ready.",
+     "done": false,
+     "doneDate": null
+    },
+    {
+     "mins": 70,
+     "subject": "conv",
+     "name": "Close gaps: Alkenes + Vectors",
+     "desc": "Drill / record gaps from Tue's Alkenes cluster + Vectors gap cluster.",
      "done": false,
      "doneDate": null
     }
@@ -1990,6 +1993,12 @@ window.PLAN = {
      "subject": "maths",
      "mins": 120,
      "what": "Maths — Vectors Lines & Planes cluster (C2 of 3), all 6 cards (Example → Practice). Whole chapter new; solid by the end. Gaps flagged: line-of-intersection 'why set z=0', foot-of-perp line vs plane, cross-product order (use AB×AC). Feedback banked: solutions must name each symbol in a formula; practices need parts c+d, multi-object, sourced from real questions.",
+     "done": true
+    },
+    {
+     "subject": "csc",
+     "mins": 120,
+     "what": "CSC — Governance Step 3, Q4 (widest) drilled in the CSC chat. 1 Q = 2h.",
      "done": true
     }
    ]
