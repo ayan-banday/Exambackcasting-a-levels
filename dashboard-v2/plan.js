@@ -1106,8 +1106,8 @@ window.PLAN = {
    "subject": "bio",
    "flag": "",
    "mins": 240,
-   "label": "Finish Alkenes + CSC Governance Q6",
-   "focus": "Day 10. Finish Chem Alkenes (Q4-6 + gap) · CSC Governance Q6 (finishes governance). 4h (only 4h available). Biology Evolution → later day.",
+   "label": "CSC gap memorization + finish Alkenes",
+   "focus": "Day 10. Memorize all CSC governance gaps · finish Chem Alkenes (Q4-6 + gap). 4h. Q6 → Thu; Bio Evolution → later.",
    "blocks": [
     {
      "mins": 120,
@@ -1122,8 +1122,8 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "csc",
-     "name": "CSC — Governance — Step 3: Q6 (finish governance)",
-     "desc": "Last governance question · Wispr Flow → hypercorrect → encode · TNT questions only. Governance topic complete after this. 1 Q = 2h.",
+     "name": "CSC — Governance: memorize ALL accumulated gaps",
+     "desc": "Consolidate + memorize every governance gap from the Q1-Q5 drills (knowledge_gaps + memorization targets). Run in the CSC chat. This is the day's headline — drop the Alkenes block above if you want a pure CSC day.",
      "done": false,
      "doneDate": null,
      "clusterRef": "政治 Governance"
@@ -1137,35 +1137,28 @@ window.PLAN = {
    "weekday": "Thu",
    "type": "standard",
    "subject": "csc",
-   "flag": "",
+   "flag": "⚑",
    "mins": 240,
-   "label": "CSC TEST (send to teacher) + GP",
-   "focus": "Day 11. CSC timed test — 2 TNT governance essays, 2h, exam conditions → send to your teacher to mark. Then GP (moved from Tue) + close gaps. Chemistry Arenes bumped to Fri.",
+   "label": "CSC teacher test + GP protocol start",
+   "focus": "Day 11. Governance CLOSED (Q20 done 29 Jul, 25/30 Tier 4 mid — 6/6 essays complete). Today: (1) 2h CSC — governance teacher test (Q hidden, ready to forward) + memorise Main_Knowledge_Gap_Document.md + I read 经济 lecture PDFs to prep the Fri pre-study sheet + bare-bones cluster. (2) 2h GP — start weekly protocol (Week 1: Politics/Governance/Geopolitics domain): pre-study + 2 planning drills → hypercorrect.",
    "blocks": [
     {
      "mins": 120,
      "subject": "csc",
-     "name": "CSC TEST — 2 governance essays · 2h · exam conditions",
-     "desc": "Two TNT governance questions, timed 2h, written under exam conditions so it can be sent to your teacher to mark. Questions only, no notes. I prep the 2 TNT questions before Thu.",
+     "name": "CSC — Governance teacher test + memorise + Econ prep",
+     "desc": "(1) 45 min governance teacher-test essay under exam conditions (Q hidden in <code>CSC/H2/Governance/teacher_tests/2026-07-30_governance_test.md</code>, ready to forward to teacher). (2) 30 min revising Main_Knowledge_Gap_Document.md (PART A + M + R + S). (3) 45 min: Claude reads <code>CSC/经济/</code> lecture PDFs (梁 series, YCK T2W1, WA2, 复习 packages) to prep Econ pre-study sheet + bare-bones cluster ready for Fri.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "CSC Governance test"
+     "clusterRef": "政治 Governance (close) + 经济 Economy (prep)"
     },
     {
-     "mins": 50,
+     "mins": 120,
      "subject": "gp",
-     "name": "GP — Science & Technology domain · ~3 Qs (Step 3)",
-     "desc": "Moved from Tue. Model-paper questions, Wispr Flow, hypercorrect. Handoff ready.",
+     "name": "GP — Week 1 protocol: Pre-study + 2 planning drills",
+     "desc": "Following <code>GP/gp-study-protocol.md</code>. Week 1 domain: Politics + Governance + Geopolitics. (1) 60 min pre-study — extract from gp-power-bank.md / gp-transferable-considerations.md: 5-8 power examples, 3-4 argument chains, 3-4 nuance moves, signature vocab. Loom retention test on 1 example. (2) 60 min: 2 planning drills (25 min each hand-written) on Politics/Governance stems → paste for hypercorrect critique. Sample Para PDF is the paragraph shape reference.",
      "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 70,
-     "subject": "conv",
-     "name": "Close gaps: Alkenes + Vectors",
-     "desc": "Drill / record gaps from Tue's Alkenes cluster + Vectors gap cluster.",
-     "done": false,
-     "doneDate": null
+     "doneDate": null,
+     "clusterRef": "GP Week 1 — Politics/Governance/Geopolitics"
     }
    ],
    "week": 2
@@ -1407,11 +1400,12 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "maths",
-     "name": "Maths — Vectors — Planes & Applications (ch 7) · cluster · C3 of 3",
-     "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
+     "name": "Maths — Vectors — Planes (ch 7) · cluster · C3 of 3",
+     "desc": "Built early (28 Jul) from real HCI Tutorial 7C + A-Level N2013/II/4 + 2019 P1/Q12. Every question cited, answers verbatim from the key. Finishes Vectors.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Vectors — Planes & Applications"
+     "clusterRef": "Vectors — Planes",
+     "clusterHref": "clusters/maths_vectors_planes.html"
     },
     {
      "mins": 70,
@@ -2005,7 +1999,7 @@ window.PLAN = {
     {
      "subject": "chem",
      "mins": 120,
-     "what": "Chem — Alkenes cluster Q1-3 (reworked verbatim from HCI key). Q4-6 + gap roll to Wed (~1.5h).",
+     "what": "Chem — Alkenes: main cluster (reworked verbatim from HCI key) + the redone multi-concept gap cluster, both drilled. Gaps stored (propan-1-ol vs propan-2-ol route the main one). All 10 Maths topic folders renamed + filed clean.",
      "done": true
     }
    ]

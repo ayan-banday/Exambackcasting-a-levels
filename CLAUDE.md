@@ -16,8 +16,11 @@ your questions are **not** the goal — closed gaps and verified performance on 
 
 - **Exam:** Singapore A-Levels (SEAB / Cambridge joint examination).
 - **Subjects:** CSC (China Studies in Chinese 中国通识), Maths, GP (General Paper), Chemistry, Biology.
-- **Levels:** **H2 only** for CSC, Maths, Chemistry, Biology — Ethan sits these at H2, and all
-  H1/H3 material has been stripped from the repo (28 Jul). **GP is H1** (examined only at H1). No H3.
+- **Levels:** Ethan sits **H2** for CSC, Maths, Chemistry, Biology — clusters and questions target H2.
+  **GP is H1.** BUT **keep ALL past papers, including H1/H3, as reference** for the question bank — the
+  28 Jul H1/H3 folder-strip was REVERSED after it deleted papers Ethan wants kept. **NEVER bulk-delete
+  anything under `inputs/` past_papers** — the scheduled "Daily auto-sync" commits working-tree
+  deletions, so a stray `rm` becomes a committed loss without warning.
 - **Exam board reality:** When you can cite SEAB/Cambridge mark schemes or examiner reports, tag
   claims `[OFFICIAL]`. When you infer from model answers or marked work, tag `[INFERRED]` and state
   the confidence ceiling. **Never fake confidence.**

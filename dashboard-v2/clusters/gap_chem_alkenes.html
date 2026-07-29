@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chemistry — Alkenes GAP Cluster (multi-concept)</title>
+<script>
+  window.MathJax = { loader:{load:['[tex]/mhchem']}, tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true,packages:{'[+]':['mhchem']},tags:'none'}, svg:{fontCache:'global'}, options:{skipHtmlTags:['script','noscript','style','textarea','pre']} };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root{--bg:#fafafa;--card-bg:#fff;--border:#e5e7eb;--text:#1a1a1a;--muted:#6b7280;--blue:#2563eb;--blue-soft:#eff6ff;--amber:#d97706;--amber-soft:#fffbeb;--green:#059669;--green-soft:#ecfdf5;--cover:#f3f4f6;--purple:#7c3aed;--purple-soft:#f5f3ff;--red:#dc2626;--red-soft:#fef2f2}
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:40px 24px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h3,.label,.controls,button,.step-header{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  h1{font-size:2em;margin:0 0 8px;color:#111;border-bottom:3px solid #111;padding-bottom:12px}
+  h3{font-size:1.15em;margin:0 0 14px;color:#1f2937}
+  p{margin:8px 0}.meta{color:var(--muted);font-size:.9em;margin:4px 0 24px}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--red);padding:16px 20px;border-radius:6px;margin:16px 0 24px}
+  .cover{background:var(--blue-soft);border:1px solid #bfdbfe;border-left:4px solid var(--blue);padding:12px 18px;border-radius:6px;margin:0 0 28px;font-size:.9em}.cover b{color:#1e3a8a}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;font-weight:500}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:32px;font-size:.9em}.toc strong{display:block;margin-bottom:6px;color:#111}.toc a{color:var(--blue);text-decoration:none;margin-right:14px;line-height:2}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .block{margin:14px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border)}
+  .block.practice{background:var(--amber-soft);border-left-color:var(--amber)}
+  .block.answer{background:var(--green-soft);border-left-color:var(--green);position:relative;min-height:60px}
+  .block.reveal-archetype{background:var(--purple-soft);border-left-color:var(--purple);position:relative;min-height:60px;margin-top:24px}
+  .label{display:block;text-transform:uppercase;font-size:.75em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--muted)}
+  .block.practice .label{color:var(--amber)}.block.answer .label{color:var(--green)}.block.reveal-archetype .label{color:var(--purple)}
+  .stem{background:#1e293b;color:#f1f5f9;padding:12px 16px;border-radius:6px;margin:10px 0}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px;font-family:-apple-system,sans-serif}
+  .src{font-size:.78em;color:#94a3b8;font-style:italic}.tests{font-size:.78em;color:#7c3aed;font-style:italic;font-weight:600}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.5);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.8em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .step-desc{font-style:italic;color:#374151;margin-bottom:6px;font-size:.95em}.mk{display:inline-block;font-size:.8em;color:var(--green);font-weight:700;font-family:-apple-system,sans-serif;margin-left:4px}
+  .verb{background:#eef7f1;border:1px dashed #059669;border-radius:5px;padding:8px 12px;margin:8px 0;font-size:.97em}.verb::before{content:'HCI answer — verbatim wording';display:block;font-family:-apple-system,sans-serif;font-size:.68em;letter-spacing:.05em;text-transform:uppercase;color:#047857;font-weight:700;margin-bottom:4px}.verb b{color:#065f46}
+  .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:6px 12px;border-radius:4px;margin:8px 0 0;font-size:.9em}.trap b{color:var(--red)}
+  .fig{display:block;margin:12px 0;background:#fff;border:1px solid var(--border);border-radius:6px;max-width:100%}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3}.reveal-btn.hide-state{background:var(--muted)}.block.reveal-archetype .reveal-btn{background:var(--purple)}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;font-family:-apple-system,sans-serif;border-left:4px solid var(--muted);margin-left:-16px;padding-left:16px;z-index:2}.answer-overlay.hidden{opacity:0;pointer-events:none}.block.answer .answer-content,.block.reveal-archetype .answer-content{padding-right:60px}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  @media print{body{background:#fff;padding:20px;max-width:100%}.controls,.reveal-btn{display:none!important}.answer-overlay{display:none!important}.card{box-shadow:none;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<h1>Chemistry — Alkenes · GAP Cluster</h1>
+<p class="meta">H2 9729 · Topic 11 · <b>5 dense, multi-concept questions</b> — each fuses several ideas so answering all five leaves no exam gap. <b>No overlap with the main cluster</b> (which already did carbocation stability, the HX mechanism + racemic, competing nucleophiles, observations, structure determination, distinguishing tests). This one hits what that one didn't.</p>
+
+<div class="cover"><b>Between them, these 5 cover the objectives the main cluster skipped.</b> Which question tests what stays hidden until you've attempted it — the archetype is revealed at the bottom of each card. Minimal set, maximum coverage.</div>
+
+<div class="intro">Sit each cold, Loom your confidence, reveal. Each question is worth several marks and several concepts — if you can do all five cleanly, you've covered the chapter's exam surface. Verbatim HCI wording in the green boxes where the phrasing scores.</div>
+
+<div class="controls"><button onclick="revealAll()">Reveal all</button><button onclick="hideAll()">Hide all</button></div>
+<div class="toc"><strong>Questions</strong>
+<a href="#c1">Question 1</a><a href="#c2">Question 2</a><a href="#c3">Question 3</a><a href="#c4">Question 4</a><a href="#c5">Question 5</a>
+</div>
+
+<!-- Q1 mechanism drawing + bromonium + conditions -->
+<div class="card" id="c1">
+  <h3>Question 1 <span class="src">(Adapted from materials)</span></h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">Cyclohexene reacts with bromine dissolved in tetrachloromethane.<br>(a) State the reagents and conditions, and explain why the condition on light is needed. <span class="marks">[2]</span><br>(b) <b>Draw the full mechanism</b> (curly arrows, partial charges, intermediate, slow/fast steps) and name it. <span class="marks">[4]</span><br>(c) Only <b>trans</b>-1,2-dibromocyclohexane forms, not a cis/trans mixture. Explain what this reveals about the intermediate and the second step. <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) Reagents / conditions / why dark</div>
+        <div class="step-desc"><span class="mk">B1 B1</span></div>
+        <b class="rg">\(\ce{Br2}\) in \(\ce{CCl4}\), room temperature, absence of UV light.</b> UV would homolyse \(\ce{Br2}\) into \(\ce{Br}\) radicals and trigger <b>free-radical substitution</b> of the alkyl \(\ce{C-H}\) bonds — a competing reaction; the dark keeps it to clean electrophilic <b>addition</b>.
+      </div>
+      <div class="step"><div class="step-header">(b) Mechanism = electrophilic addition</div>
+        <div class="step-desc">\(\ce{Br2}\) is non-polar, so the π cloud induces the dipole first. <span class="mk">M1 induced dipole + 2 arrows (π→Br, Br–Br→Br), M1 rds labelled, A1 carbocation shown, A1 fast step arrow Br⁻→C</span></div>
+        <svg class="fig" width="620" height="130" viewBox="0 0 620 130" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="14">
+          <text x="20" y="55">C</text><line x1="34" y1="49" x2="66" y2="49" stroke="#111" stroke-width="1.4"/><line x1="34" y1="55" x2="66" y2="55" stroke="#111" stroke-width="1.4"/><text x="68" y="55">C</text><text x="8" y="72" fill="#6b7280" font-size="11">(ring)</text>
+          <path d="M50,41 C56,20 96,20 104,40" fill="none" stroke="#dc2626" stroke-width="1.4" marker-end="url(#a)"/>
+          <text x="120" y="55">Br</text><text x="116" y="40" fill="#1e3a8a" font-size="11">δ+</text><line x1="143" y1="52" x2="164" y2="52" stroke="#111" stroke-width="1.4"/><text x="167" y="55">Br</text><text x="165" y="40" fill="#1e3a8a" font-size="11">δ−</text>
+          <path d="M152,41 C158,23 182,23 186,45" fill="none" stroke="#dc2626" stroke-width="1.4" marker-end="url(#a)"/>
+          <text x="215" y="57" font-size="17">slow</text><text x="217" y="42" font-size="11" fill="#dc2626">(rds)</text>
+          <text x="290" y="50">cyclic bromonium</text><text x="300" y="68" fill="#6b7280" font-size="12">ion + :Br⁻</text>
+          <text x="20" y="105" fill="#6b7280" font-size="12.5">FAST: Br⁻ attacks the bromonium-ion carbon from the opposite face → trans-1,2-dibromocyclohexane.</text>
+          <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#dc2626" stroke-width="1.3"/></marker></defs>
+        </svg>
+        <b>Electrophilic addition.</b> Slow (rds): the π bond AND the \(\ce{Br-Br}\) bond break. Fast: lone pair on \(\ce{Br^-}\) attacks the carbon (not the +).
+      </div>
+      <div class="step"><div class="step-header">(c) What trans-only implies</div>
+        <div class="step-desc"><span class="mk">M1 A1</span></div>
+        A single stereochemistry means the two \(\ce{Br}\) added to <b>opposite faces</b>. This implies the intermediate is a <b>cyclic bromonium ion</b> (not an open planar carbocation) that blocks one face, so \(\ce{Br^-}\) must attack from the <b>opposite side</b> → trans only.
+      </div>
+      <div class="trap"><b>Mark-droppers (mechanism drawing):</b> partial charges on the non-polar \(\ce{Br2}\); <b>two</b> arrows in the slow step; the fast-step arrow to the <b>carbon</b>, not the "+"; label "slow/rds".</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button><div class="answer-content"><div class="label">Archetype</div><strong>Draw the halogen-addition mechanism + explain the trans stereochemistry.</strong><p>The mechanism-draw the exam wants, plus the bromonium-ion refinement that explains why only the trans product forms.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div></div>
+</div>
+
+<!-- Q2 cis-trans + properties + cleavage -->
+<div class="card" id="c2">
+  <h3>Question 2 <span class="src">(Adapted from materials)</span></h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">But-2-ene exists as cis and trans isomers.<br>(a) State which isomer has the higher boiling point and which the higher melting point, with full reasoning. <span class="marks">[3]</span><br>(b) The boiling points of cis- and trans-but-2-ene differ by only ~3 °C. Explain why the difference is so small. <span class="marks">[2]</span><br>(c) Give the organic product(s) when but-2-ene is heated with acidified \(\ce{KMnO4}\). <span class="marks">[1]</span><br>(d) Does 2-methylbut-2-ene show cis-trans isomerism? Explain. <span class="marks">[2]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) bp and mp</div>
+        <div class="step-desc"><span class="mk">M1 bp, M1 mp, A1</span></div>
+        <b>cis has the higher bp:</b> the two \(\ce{CH3}\) groups on the same side give a small <b>net dipole → weak permanent dipole–permanent dipole (pd–pd) on top of dispersion</b>; trans is symmetrical, dipoles cancel → dispersion only. <b>trans has the higher mp:</b> the trans isomer is <b>more symmetrical / straighter → packs better in the solid lattice → dispersion acts more effectively → more energy to melt.</b>
+      </div>
+      <div class="step"><div class="step-header">(b) Why the bp gap is small</div>
+        <div class="step-desc"><span class="mk">M1 A1</span></div>
+        The \(\ce{CH3}\) group is <b>only very weakly polar</b>, so even the cis isomer has <b>only a very small net dipole</b> → the pd–pd contribution is tiny → the two isomers differ little. (With \(\ce{C-Cl}\) bonds the difference would be large.)
+      </div>
+      <div class="step"><div class="step-header">(c) Oxidative cleavage</div>
+        <div class="step-desc">Each \(\ce{=CHCH3}\) carbon has 1 H → carboxylic acid. <span class="mk">A1</span></div>
+        Two molecules of <b>ethanoic acid</b>, \(\ce{CH3COOH}\).
+      </div>
+      <div class="step"><div class="step-header">(d) 2-methylbut-2-ene?</div>
+        <div class="step-desc"><span class="mk">M1 A1</span></div>
+        <b>No.</b> One \(\ce{C=C}\) carbon carries <b>two identical \(\ce{CH3}\) groups</b>, so the "two different groups on each \(\ce{C=C}\) carbon" criterion fails → no cis-trans isomerism.
+      </div>
+      <div class="trap"><b>The two answers point opposite ways:</b> cis = higher bp (polarity), trans = higher mp (packing). And the size of the bp gap tracks how polar the substituents are.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button><div class="answer-content"><div class="label">Archetype</div><strong>Cis-trans isomerism woven through bp/mp, IMF nuance, cleavage, and the criterion.</strong><p>One alkene pair tests the whole cis-trans objective the main cluster never touched.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div></div>
+</div>
+
+<!-- Q3 hydroboration vs hydration -->
+<div class="card" id="c3">
+  <h3>Question 3 <span class="src">(from HCI MCQ key)</span></h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem"><b>Hydroboration</b> is an anti-Markovnikov electrophilic addition: overall \(\ce{H}\) and \(\ce{OH}\) add across \(\ce{C=C}\) with \(\ce{H}\) going to the <b>more substituted</b> carbon.<br>2-methylbut-1-ene, \(\ce{CH2=C(CH3)CH2CH3}\), is converted to an alcohol by (i) steam + \(\ce{H3PO4}\); (ii) hydroboration.<br>(a) Give the major alcohol from each route and name it. <span class="marks">[2]</span><br>(b) Explain, using carbocation stability, why route (i) gives its product. <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) The two alcohols</div>
+        <div class="step-desc"><span class="mk">A1 A1</span></div>
+        (i) Hydration (Markovnikov) → <b>2-methylbutan-2-ol</b>, \(\ce{CH3CH2C(OH)(CH3)CH3}\) — OH on the more substituted C2. (ii) Hydroboration (anti-Markovnikov) → <b>2-methylbutan-1-ol</b>, \(\ce{CH3CH2CH(CH3)CH2OH}\) — OH on the terminal C1.
+      </div>
+      <div class="step"><div class="step-header">(b) Why hydration gives the 2-ol</div>
+        <div class="step-desc"><span class="mk">M1 M1 A1</span></div>
+        \(\ce{H+}\) adds to the terminal \(\ce{=CH2}\) so the \(+\) sits on C2, giving a <b>3° carbocation</b>.
+        <div class="verb">The presence of <b>more electron-donating alkyl groups stabilises the carbocation by reducing its positive charge</b>, so the 3° carbocation forms in preference to the 1°; the nucleophile (water) then joins C2 → the 2-ol as major product.
+        </div>
+      </div>
+      <div class="trap"><b>Same alkene, opposite regiochemistry:</b> the carbocation route (hydration) puts OH on the more-substituted carbon; hydroboration puts it on the terminal carbon.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button><div class="answer-content"><div class="label">Archetype</div><strong>Markovnikov vs anti-Markovnikov on one alkene.</strong><p>Given-rule application against the familiar carbocation route — the MCQ-key concept made into a structured question.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div></div>
+</div>
+
+<!-- Q4 Diels-Alder -->
+<div class="card" id="c4">
+  <h3>Question 4 <span class="src">(from HCI MCQ key)</span></h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">In a <b>Diels-Alder</b> reaction a conjugated diene and an alkene (dienophile) combine: the two ends of the diene each form a new \(\ce{C-C}\) bond to the two ends of the dienophile, closing a <b>six-membered ring</b> with one \(\ce{C=C}\) remaining.<br>2,3-dimethylbuta-1,3-diene, \(\ce{CH2=C(CH3)-C(CH3)=CH2}\), reacts with ethene.<br>(a) Deduce the molecular formula of the product. <span class="marks">[1]</span><br>(b) Draw the product and mark the remaining \(\ce{C=C}\); name it. <span class="marks">[3]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) Formula</div>
+        <div class="step-desc">Addition — atoms conserved. <span class="mk">A1</span></div>
+        \(\ce{C6H10 + C2H4 -> C8H14}\).
+      </div>
+      <div class="step"><div class="step-header">(b) Product</div>
+        <div class="step-desc">Diene C1 and C4 (the two \(\ce{=CH2}\) ends) bond to ethene's carbons → six-membered ring; the central \(\ce{C2=C3}\) (both bearing \(\ce{CH3}\)) is the surviving \(\ce{C=C}\). <span class="mk">M1 ring, M1 connectivity, A1 name + C=C</span></div>
+        Product = <b>1,2-dimethylcyclohex-1-ene</b> — a cyclohexene ring with a \(\ce{CH3}\) on each of the two double-bond carbons. \(\ce{C8H14}\) ✓.
+      </div>
+      <div class="trap"><b>Pattern recognition:</b> not a taught mechanism — you map the described bond-forming pattern onto new reactants and conserve atoms. The two methyls sit on the carbons that were the diene's middle (which become the ring's \(\ce{C=C}\)).</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button><div class="answer-content"><div class="label">Archetype</div><strong>Apply a given, unfamiliar addition pattern (Diels-Alder).</strong><p>The P3 "here's a new reaction, use it" style — conserve atoms, track which \(\ce{C=C}\) survives.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div></div>
+</div>
+
+<!-- Q5 synthesis / reagent recall -->
+<div class="card" id="c5">
+  <h3>Question 5 <span class="src">(Adapted from materials)</span></h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">Starting from <b>propene</b>, state the reagents and conditions to prepare each of the following. <span class="marks">[6]</span><br>(a) propane-1,2-diol &nbsp; (b) 1,2-dibromopropane &nbsp; (c) propan-2-ol &nbsp; (d) propan-1-ol &nbsp; (e) propane</div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution — reagents + conditions</div>
+      <div class="verb">
+        <b>(a) propane-1,2-diol:</b> \(\ce{KMnO4}\), dilute \(\ce{NaOH}\) (alkaline), cold. (mild oxidation → diol)<br>
+        <b>(b) 1,2-dibromopropane:</b> \(\ce{Br2}\) in \(\ce{CCl4}\), room temperature, absence of UV light.<br>
+        <b>(c) propan-2-ol:</b> steam \(\ce{H2O(g)}\), \(\ce{H3PO4}\) catalyst, high temperature and pressure. (Markovnikov → OH on C2)<br>
+        <b>(d) propan-1-ol:</b> hydroboration (anti-Markovnikov → OH on the terminal C1).<br>
+        <b>(e) propane:</b> \(\ce{H2}\), Ni catalyst.
+      </div>
+      <div class="trap"><b>The pair that catches people:</b> (c) vs (d) — both make an alcohol from propene, but hydration gives the <b>2-ol</b> (Markovnikov, via the more stable carbocation) and hydroboration gives the <b>1-ol</b> (anti-Markovnikov). Conditions must be stated in full — "cold/alkaline" vs "hot/acidified" etc. flip the product elsewhere.</div>
+    </div><div class="answer-overlay">Solution hidden — click Reveal</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button><div class="answer-content"><div class="label">Archetype</div><strong>Synthesis map — one alkene, five products, reagents + conditions.</strong><p>Forces recall of every reaction's exact reagents/conditions in a compact "how would you make…" frame — the most mark-efficient way to lock them.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div></div>
+</div>
+
+<hr>
+<p class="meta"><b>Coverage check:</b> mechanism drawing ✓ · bromonium/stereochemistry ✓ · conditions ✓ · cis-trans + bp/mp ✓ · oxidative cleavage ✓ · hydroboration ✓ · Diels-Alder ✓ · all reagents/conditions ✓ — with no repeat of the main cluster. <b>When done:</b> paste your transcript and I'll flag anything still shaky.</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn=>{btn.addEventListener('click',function(){const b=this.parentElement,o=b.querySelector('.answer-overlay');if(o.classList.contains('hidden')){o.classList.remove('hidden');this.textContent=b.classList.contains('reveal-archetype')?'Reveal archetype':'Reveal';this.classList.remove('hide-state');}else{o.classList.add('hidden');this.textContent='Hide';this.classList.add('hide-state');}});});
+  function revealAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.add('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Hide';b.classList.add('hide-state');});}
+  function hideAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.remove('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{const a=b.parentElement.classList.contains('reveal-archetype');b.textContent=a?'Reveal archetype':'Reveal';b.classList.remove('hide-state');});}
+</script>
+</body>
+</html>
