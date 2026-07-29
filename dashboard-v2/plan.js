@@ -1139,23 +1139,23 @@ window.PLAN = {
    "subject": "csc",
    "flag": "⚑",
    "mins": 240,
-   "label": "CSC teacher test + GP protocol start",
-   "focus": "Day 11. Governance CLOSED (Q20 done 29 Jul, 25/30 Tier 4 mid — 6/6 essays complete). Today: (1) 2h CSC — governance teacher test (Q hidden, ready to forward) + memorise Main_Knowledge_Gap_Document.md + I read 经济 lecture PDFs to prep the Fri pre-study sheet + bare-bones cluster. (2) 2h GP — start weekly protocol (Week 1: Politics/Governance/Geopolitics domain): pre-study + 2 planning drills → hypercorrect.",
+   "label": "CSC memorise + teacher test + GP protocol start",
+   "focus": "Day 11. Governance CLOSED (Q20 done 29 Jul, 25/30 Tier 4 mid — 6/6 essays complete). Econ pre-study sheet + bare-bones cluster already shipped by Claude 29 Jul — linked on Fri 31 Jul block. Today: (1) CSC 2h = 65 min memorise Main_Knowledge_Gap_Document.md → 10 min rest → 45 min timed teacher-test essay. (2) GP 2h = 60 min pre-study Politics/Governance/Geopolitics domain → 60 min 2-3 planning drills → paste for hypercorrect.",
    "blocks": [
     {
      "mins": 120,
      "subject": "csc",
-     "name": "CSC — Governance teacher test + memorise + Econ prep",
-     "desc": "(1) 45 min governance teacher-test essay under exam conditions (Q hidden in <code>CSC/H2/Governance/teacher_tests/2026-07-30_governance_test.md</code>, ready to forward to teacher). (2) 30 min revising Main_Knowledge_Gap_Document.md (PART A + M + R + S). (3) 45 min: Claude reads <code>CSC/经济/</code> lecture PDFs (梁 series, YCK T2W1, WA2, 复习 packages) to prep Econ pre-study sheet + bare-bones cluster ready for Fri.",
+     "name": "CSC — Memorise (65m) + Rest (10m) + Timed teacher test (45m)",
+     "desc": "(1) 65 min: cover-and-recall drill on <code>CSC/H2/Governance/Main_Knowledge_Gap_Document.md</code> (PART A + M + R + S). Focus on CODE-RED items (BANI 时代, 强政府弱社会, 公民四权, NGO 传感器→传话筒, 政令下发之快直通达, 既是运动员又是裁判员, 【跨课题】brackets) + Q14/Q19/Q20 new phrasings. (2) 10 min rest. (3) 45 min: timed teacher-test essay under exam conditions. Question hidden in <code>CSC/H2/Governance/teacher_tests/2026-07-30_governance_test.md</code>, ready to forward to teacher after completion.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "政治 Governance (close) + 经济 Economy (prep)"
+     "clusterRef": "政治 Governance — teacher test"
     },
     {
      "mins": 120,
      "subject": "gp",
-     "name": "GP — Week 1 protocol: Pre-study + 2 planning drills",
-     "desc": "Following <code>GP/gp-study-protocol.md</code>. Week 1 domain: Politics + Governance + Geopolitics. (1) 60 min pre-study — extract from gp-power-bank.md / gp-transferable-considerations.md: 5-8 power examples, 3-4 argument chains, 3-4 nuance moves, signature vocab. Loom retention test on 1 example. (2) 60 min: 2 planning drills (25 min each hand-written) on Politics/Governance stems → paste for hypercorrect critique. Sample Para PDF is the paragraph shape reference.",
+     "name": "GP — Pre-study domain (60m) + 2-3 planning drills + critique (60m)",
+     "desc": "Following <code>GP/gp-study-protocol.md</code>. Week 1 domain: Politics + Governance + Geopolitics. (1) 60 min pre-study — extract from gp-power-bank.md / gp-transferable-considerations.md: 5-8 power examples, 3-4 argument chains, 3-4 nuance moves, signature vocab. Loom retention test on 1 example. (2) 60 min: 2-3 hand-written planning drills on Politics/Governance stems (20-25 min each) → paste for hypercorrect critique. Sample Para PDF (<code>GP/Sample Para Societies that fail to conserve their cultures fail themselves.pdf</code>) = paragraph shape reference.",
      "done": false,
      "doneDate": null,
      "clusterRef": "GP Week 1 — Politics/Governance/Geopolitics"
@@ -1171,8 +1171,8 @@ window.PLAN = {
    "subject": "maths",
    "flag": "",
    "mins": 240,
-   "label": "Maths Discrete Random Variables + CSC Economy",
-   "focus": "Day 12. Maths Discrete Random Variables · CSC Economy. Full 4h.",
+   "label": "Maths Discrete RV + CSC Economy encode",
+   "focus": "Day 12. Maths Discrete Random Variables · CSC Economy — encode the pre-study sheet + bare-bones cluster Claude shipped 29 Jul, then start TNT drilling (Q1-Q11 经济).",
    "blocks": [
     {
      "mins": 120,
@@ -1186,11 +1186,11 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "csc",
-     "name": "CSC — Economy — build the 1 bare-bones cluster (Layer 1+2)",
-     "desc": "1 bare-bones cluster then question drilling · Wispr Flow · TNT questions only. 1 Q = 2h.",
+     "name": "CSC — Economy — encode pre-study sheet + bare-bones cluster (Layer 1+2)",
+     "desc": "Pre-study sheet + bare-bones cluster already shipped by Claude 29 Jul from the 22 <code>CSC/经济/</code> lecture PDFs (梁 series, YCK T2W1, WA2, 复习, 案例分析). Files: <code>CSC/H2/Economy/pre_study_sheet.md</code> + <code>CSC/H2/Economy/clusters/01_barebones/cluster_01_study_sheet.md</code>. Encode Layer 1 (main arguments) + Layer 2 (sub-arguments) — ~30% exam performance target, no detail yet. Then start TNT drilling (Q1-Q11 经济) via Wispr Flow → hypercorrect. 1 Q ≈ 2h; today = 1 Q if time permits after encoding.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "经济 Economy"
+     "clusterRef": "经济 Economy — bare-bones (Layer 1+2)"
     }
    ],
    "week": 2
