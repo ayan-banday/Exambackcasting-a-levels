@@ -1211,29 +1211,29 @@ window.PLAN = {
    "weekday": "Thu",
    "week": 3,
    "type": "standard",
-   "subject": "chem",
-   "label": "Chemistry + GP",
-   "focus": "2×2h SIR. Organic ⚑; GP essay — supporting + opposing view paragraphs.",
+   "subject": "csc",
+   "label": "CSC (Governance close) + GP (protocol start)",
+   "focus": "2h CSC: governance teacher test (Q hidden) + memorise + close governance topic; then start prepping CSC Econ (read 经济 resources → pre-study sheet for day-after). 2h GP: start weekly protocol — pre-study a domain (Politics/Governance/Geopolitics) + 2 planning drills → hypercorrect critique.",
    "flag": "⚑",
    "mins": 240,
    "blocks": [
     {
      "mins": 120,
-     "subject": "chem",
-     "name": "Chemistry — Organic — Reaction Map & Synthesis (SIR)",
-     "desc": "SIR — Study/encode the cluster (~60 min), then the test part: adversarial self-test at Application level + close the gaps it exposes.",
+     "subject": "csc",
+     "name": "CSC — Governance teacher test + memorise + Econ prep",
+     "desc": "(1) Governance essay under exam conditions (45 min, Q hidden in <code>CSC/H2/Governance/teacher_tests/2026-07-30_governance_test.md</code> to forward to teacher). (2) 30 min revising Main_Knowledge_Gap_Document.md (PART A + M + R + S). (3) 45 min: Claude reads <code>CSC/经济/</code> lecture PDFs (梁 series, YCK T2W1, WA2, 复习 packages) to prepare Econ pre-study sheet + bare-bones cluster for day-after-tomorrow.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Organic — Reaction Map & Synthesis"
+     "clusterRef": "Governance (close) + Econ (prep)"
     },
     {
      "mins": 120,
      "subject": "gp",
-     "name": "GP — Essay: supporting + opposing view paragraphs (SIR)",
-     "desc": "SIR — Study/encode the cluster (~60 min), then the test part: adversarial self-test at Application level + close the gaps it exposes.",
+     "name": "GP — Weekly protocol start: Pre-study + 2 planning drills",
+     "desc": "Following <code>GP/gp-study-protocol.md</code>. Week 1 domain: Politics + Governance + Geopolitics. (1) 60 min pre-study — extract from gp-power-bank.md / gp-transferable-considerations.md: 5-8 power examples, 3-4 argument chains, 3-4 nuance moves, signature vocab. Loom retention test on 1 example. (2) 60 min: 2 planning drills (25 min each) — hand-written plans on Politics/Governance stems, then paste for hypercorrect critique.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Essay — slotting, expansion & body paragraphs"
+     "clusterRef": "GP protocol — Week 1 Politics/Governance"
     }
    ]
   },
@@ -1243,29 +1243,29 @@ window.PLAN = {
    "weekday": "Fri",
    "week": 3,
    "type": "standard",
-   "subject": "gp",
-   "label": "GP + Chemistry (2nd)",
-   "focus": "GP essay — intros, conclusions + speed writing + deepen the biggest calc topic (Aqueous Equilibria ⚑).",
+   "subject": "csc",
+   "label": "CSC Econ pre-study + Chemistry (Organic pushed forward)",
+   "focus": "2h CSC: Econ pre-study sheet + bare-bones cluster (built by Claude from 经济 resources — Ethan pre-study reads the sheet, encodes Layer 1 + Layer 2 concept map). 2h Chem: Organic — Reaction Map & Synthesis (pushed from Thu 30 Jul). Aqueous Equilibria + GP essay both shifted to weekend catch-up.",
    "flag": "⚑",
    "mins": 240,
    "blocks": [
     {
      "mins": 120,
-     "subject": "gp",
-     "name": "GP — Essay: intros, conclusions + speed writing (SIR)",
-     "desc": "SIR — Study/encode the cluster (~60 min), then the test part: adversarial self-test at Application level + close the gaps it exposes.",
+     "subject": "csc",
+     "name": "CSC — Econ pre-study sheet + bare-bones cluster (Layer 1+2)",
+     "desc": "Claude ships: (1) <code>CSC/H2/Economy/pre_study_sheet.md</code> — full econ topic overview from 经济 lectures (梁 series, 出口导向→扩大内需, 国企改革, 贸易, 投资, 服务业开放, 科技开放, 绿色发展, 银行债务), and (2) bare-bones cluster (Layer 1 main arguments + Layer 2 sub-arguments, no full detail, no examples yet — the ~30% target). Ethan spends 2h encoding the concept map + prepping first drilling questions from real papers.",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Essay — intros, conclusions & timed writing"
+     "clusterRef": "Economy — pre-study + bare-bones cluster"
     },
     {
      "mins": 120,
      "subject": "chem",
-     "name": "Chemistry — Aqueous Equilibria — Acid-Base & pH · 2nd pass",
-     "desc": "Deepen this ⚑ high-value cluster. Re-test at a NEW angle; anything shaky becomes a gap cluster. FRAGILE→CLOSED only on a confident pass.",
+     "name": "Chemistry — Organic — Reaction Map & Synthesis (SIR)",
+     "desc": "SIR — Study/encode the cluster (~60 min), then the test part: adversarial self-test at Application level + close the gaps it exposes. (Pushed from Thu 30 Jul to accommodate governance close + GP protocol start.)",
      "done": false,
      "doneDate": null,
-     "clusterRef": "Aqueous Equilibria — Acid-Base & pH"
+     "clusterRef": "Organic — Reaction Map & Synthesis"
     }
    ]
   },
