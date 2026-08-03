@@ -1,275 +1,60 @@
 # CSC H2 经济 (Economy) — Pre-Study Sheet
 
-> **Read BEFORE the bare-bones cluster.** This is the topic overview — scope, key terms, canonical data + cases + scholars, TNT question map, argument templates, cross-topic links.
+> **Step 1 — Pre-study. Goal: understand the main arguments.**
 >
-> **Built 2026-07-29** from 22 school lecture PDFs in `CSC/经济/` (梁 series 7 lectures + 3 复习, YCK T2W1 series 5 lectures, 沈 绿色发展, 2025 T2L1-L4, WA2 practice, 复习/测验/案例分析 packages, 25S6H exam sample).
+> This is **Layer 1** — what is this chapter actually about, what are the big points that make it up.
 >
-> **Target after pre-study + cluster:** ~30% exam performance ("could bullshit a rough answer, know the argument spine"). The remaining 60% comes from TNT question drilling.
+> **10-20 min. Don't skim.** You're building the frame you'll hang detail on. All verbatim data, cases, scholars, and templates come LATER (via bare-bones cluster + TNT drilling).
 
 ---
 
-## §1 Topic scope — what 经济 essays test
+## Meta-frame — what the whole 经济 chapter argues
 
-The 经济 topic tests one meta-thesis under 7 macro pillars:
+> **中国经济增长模式从 "要素驱动 / 投资驱动 / 出口驱动" → "创新驱动 / 消费驱动" 的转型。**
+>
+> **目标：跨越"中等收入陷阱"，实现"高质量发展"。**
 
-**Meta-frame:** 中国经济增长模式从"要素驱动 / 投资驱动 / 出口驱动"→"创新驱动 / 消费驱动"的转型。目标是跨越"**中等收入陷阱**"，实现"**高质量发展**"。
-
-Every 经济 essay ultimately positions itself relative to this transformation — either evaluating a specific growth engine (P1-P7) or the transformation's overall progress and constraints.
-
----
-
-## §2 The 7 pillars at a glance (Layer 1 preview)
-
-| Pillar | Focus | Coverage |
-|---|---|---|
-| **P1** | 出口导向型经济 (Export-oriented model) — 已到达局限 | 梁1, 梁2, 2025 T2L1, 25S6H |
-| **P2** | 投资驱动 + 国企/银行/地方债 nexus | 梁3, 梁4, 梁7 |
-| **P3** | 扩大内需 + 消费主导型转型 (双循环) | 梁1, 2025 T2L2, WA2 |
-| **P4** | 供给侧改革 + 国企混改 (三去一降一补) | 梁2, 梁4, 25S6H |
-| **P5** | 科技开放 + 自主创新 (卡脖子) | 梁5, 梁3复习 |
-| **P6** | 服务业开放 + 高质量发展 | 梁4, 梁6, WA2 |
-| **P7** | 绿色发展 / 能源 / 环境 / 双碳 | 沈5, 2025 T2L3-L4, YCK |
+Every 经济 essay positions itself relative to this transformation — evaluating either a specific growth engine or the transformation's overall progress and constraints.
 
 ---
 
-## §3 TNT question map (Q1-Q11 经济)
+## The 7 main arguments (Layer 1 — the frame)
 
-TNT `2025 高二问答题集锦.pdf` Q1-Q11 covers the 经济 topic. Rough mapping to pillars:
+### P1 — 出口导向型经济 (Export-oriented model, 已到达局限)
 
-- **Q1-Q3**: 出口 / 内需 / 转型 (P1 + P3)
-- **Q4-Q5**: 国企改革 (P2 + P4)
-- **Q6-Q7**: 投资 / 银行债务 (P2)
-- **Q8-Q9**: 科技开放 / 服务业开放 (P5 + P6)
-- **Q10-Q11**: 绿色发展 / 可持续 (P7)
+The old growth engine: post-1978 "两头在外" model made China the "world's factory." Now hit structural limits — over-dependence on external demand, 中美贸易战 exposed the vulnerability. The essay-line: this model is running out.
 
-(Exact stem-to-pillar mapping surfaces during TNT drilling.)
+### P2 — 投资驱动 + 国企 / 银行 / 地方债 nexus
 
----
+The second engine: investment (infrastructure + real estate) held up GDP for decades via 分税制 → GDP 晋升锦标赛. But hit diminishing returns: LGFV debt, 僵尸企业, banking non-performing loans. The essay-line: investment-driven model is unsustainable.
 
-## §4 Verbatim key term definitions (memorize)
+### P3 — 扩大内需 + 消费主导型转型 (双循环)
 
-**出口导向型经济:** 根据国际比较利益的原则，通过放宽贸易限制，利用外资，引进技术，大力发展面向国外市场的产业...以出口贸易获得贸易利益、规模经济、技术外溢效应。
+The replacement engine being built: shift 三驾马车 balance from export/investment to consumption. Frame: 双循环 (2020) + 十四五. The essay-line: this is where growth must come from now.
 
-**外向型经济:** "两头在外"的经济运行方式 — 原料进口，产品经过加工后再出口。
+### P4 — 供给侧改革 + 国企混改
 
-**开放型经济:** 以降低关税壁垒和提高资本自由流动程度为主，积极、全方位推动生产要素的国际流动。
+The structural reform argument: 三去一降一补 + 抓大放小 + 现代企业制度 + 混改. Party wants efficient state ownership without losing control ("两个一以贯之"). The essay-line: mixed ownership + supply-side reform is the tension between market and party.
 
-**内需:** 国内的需求，包括国内消费需求和投资需求。
+### P5 — 科技开放 + 自主创新 (卡脖子)
 
-**内需主导型经济:** 主要依靠国内需求特别是国内消费需求的不断扩大来实现经济增长。
+The innovation argument: 引进消化吸收再创新 → 市场换技术 → indigenous innovation → 卡脖子 struggle with US "小院高墙." The essay-line: crossing 中等收入陷阱 requires 全要素生产率 breakthrough via 新质生产力.
 
-**消费型社会:** 以消费为主导的社会，消费在整个社会制度安排中处于优先地位。
+### P6 — 服务业开放 + 高质量发展
 
-**双循环:** 以国内大循环为主体、国内国际双循环相互促进的新发展格局。
+The next-stage-of-opening argument: manufacturing done, services next. 制造业服务化 + 生产性服务业 + 制度型开放 + 自贸区 / 自贸港. The essay-line: services will drive the next stage of growth and opening.
 
-**供给侧结构性改革:** 从供给端发力，通过优化供给结构，提升全要素生产率，实现高质量发展。核心 = **三去一降一补** (去产能、去库存、去杠杆、降成本、补短板)。
+### P7 — 绿色发展 / 能源 / 环境 / 双碳
 
-**一带一路:** 2013 年中国提出 "一带一路" 倡议，推动沿线国家基础设施投资...实现中国投资从 "引进来" 到 "走出去" 的转型。
-
-**国有企业:** 由国有资本出资，所有者权益归国家所有...国务院和地方政府分别代表国家履行出资人职责。
-
-**国企双重性:** 兼具 "企业性" 与 "公益性" 双重属性。
-
-**预算软约束 (Kornai):** 国有企业亏损后仍能获得银行贷款，不用破产...削弱该单位的自我约束。
-
-**中等收入陷阱:** 人均国民收入达到 3000 美元后，许多国家便陷入经济增长停滞期。
-
-**中等技术陷阱:** 已经从低技术制造阶段进入中等工业化阶段，但在向高技术、高附加值产业升级时遇到...低端不再有优势，高端又上不去。
-
-**服务业:** 第三产业，是在第一产业（农业）、第二产业(工业)之后逐步形成的一个主导性产业。
-
-**生产性服务业:** 促进技术进步、提高生产效率、保障工农业生产活动有序进行的服务行业 — 产业升级的 "黏合剂"、价值链攀升的 "助推器"。
-
-**服务业开放三层次:** 市场开放 + 要素开放 + 制度开放。
-
-**制造业服务化 (Servitization):** 制造企业为了获取竞争优势，将价值链由以制造为中心向以服务为中心转变。
-
-**技术溢出效应:** 技术优势企业对同行业内或不同行业间企业所发生非自愿技术扩散。
-
-**可持续发展:** 既满足当代人的需求，又不对后代人满足其需求的能力构成危害的发展。
-
-**绿色经济:** 同时产生环境效益和经济效益的人类活动。
-
-**循环经济 3R:** reduce, reuse, recycle — 资源利用效率↑。
-
-**LGFV / 城投:** 地方政府融资平台大量举债用于基础设施投资...仅城投债的总规模可能已经达到了 65 万亿元。
-
-**全要素生产率 (TFP):** 在各种要素的投入量既定的情况下，通过提高各种要素的使用效率而产生的额外生产效率。
-
-**新质生产力:** 以科技创新为主导、以高质量发展为目标的新型生产力形态，具有高科技、高效能、高质量特征。
-
-**十四五规划 关键词:** 制造强国 + 数字中国 + 双碳目标。
-
-**两新一重:** 新型基础设施建设 + 新型城镇化建设 + 交通/水利等重大工程建设。
-
-**十四五国家能源体系:** 清洁、低碳、安全、高效。
+The sustainability constraint: 三高一低 → 生态文明 → 双碳目标 (2030 峰 / 2060 中和). Green is not optional — it's the binding constraint on future growth. The essay-line: any 经济 essay eventually meets 绿色 as either the goal or the limit.
 
 ---
 
-## §5 Canonical data anchors (must-memorize)
+## How to use this sheet
 
-### GDP / 经济总量
-- 中国 GDP **1978 年 1495 亿美元 → 2025 年 19.63 万亿美元**，占世界从 **1.7% → 20%**
-- 出口占 GDP 比重 从 **>30% 降到 <20%**
-- 外贸依存度 2019: 中国 **31.9%** / 美国 **19.67%** / 日本 **28.06%**
-- 中美货物贸易 1999 **614 亿 → 2018 6335 亿美元**；顺差 **224 亿 → 3233 亿美元**
-- 2013 年中国成为世界第一货物贸易大国；2023 货物贸易 **5.9 万亿美元占世界 12.4%**
+1. **Read this whole document once, ~15 min.** Don't take notes. Just build the frame.
+2. **Then move to the bare-bones cluster** at `clusters/01_barebones/cluster_01_study_sheet.md` — that gives you Layer 2 (the sub-arguments that make up each of P1-P7).
+3. **After both**, you can bullshit a rough answer on any 经济 stem. That's the 10-20% floor.
+4. **The other 80-90%** — verbatim data, named cases (华为/大疆/上海自贸区/etc.), scholar attributions, argument templates — comes from **TNT question drilling** (Q1-Q11 经济). Same protocol as Governance.
 
-### 三驾马车 (2025)
-- 贡献率: **消费 52.0% / 投资 15.3% / 出口 32.7%**
-- 2019 内需消费占比 **中国 65%** vs 美国 94.2% / 欧元区 76.8% / 日本 75.6%
-
-### 民企 vs 国企 (刘鹤 "五六七八九")
-- 民企: **50% 税收 + 60% GDP + 70% 技术创新 + 80% 城镇就业 + 90% 企业数量**
-- 央企 80%+ 资产集中于 国防/能源/通信/冶金/机械
-- 2018 财富 500 强中国占 20%+，央企/国企占八成
-- 央企数量 2003 **196** → 2012 **117**
-
-### 投资 / 债务
-- 中国投资对经济增长贡献率 2010 高点 **47%** (世界 20% 平均)
-- 地方政府债务余额 2023.1 **35.7018 万亿**
-- 城投债规模 **~65 万亿**
-- 2024 "6+4+2" 化债: **6 万亿 + 4 万亿 隐性置换 + 2 万亿 棚改**
-- 2023 银行业不良贷款余额 **3.2 万亿**，不良率 **1.71%**
-
-### 科技
-- 2022 研发经费 **3.09 万亿**，世界第二
-- 高铁总里程 **>4.8 万公里**，占世界 **70%**
-- 全球创新指数 2012 **34 位 → 2022 11 位**
-
-### 服务业
-- 2025 服务业增加值 **>80 万亿**，占 GDP **57.7%**，贡献率 >60%
-- 服务贸易 2019 逆差 **2611 亿美元**，占全球服务贸易逆差 **41%**
-- 中国服务贸易占外贸比重 **14.6%** (世界平均 22.3%)
-- 已设立 **21 个自贸区 + 1 个自贸港**
-
-### 能源 / 环境
-- 2020 能源结构: **煤炭 58% + 石油 17% + 天然气 10% + 非化石 15%**
-- 2021 原油对外依存度 **72%** (超警戒 70%)，天然气 **46%**
-- 环境污染 GDP 损失 **6-9%** (大气污染)
-- 2005 世界污染最严重 30 城中 **20 个中国城市**
-
----
-
-## §6 Canonical named cases
-
-**企业:** 华为 (全球研发 + 国内生产) / 大疆 / 比亚迪 (BYD) / 宁德时代 / 特斯拉 / 上汽 + 一汽大众 (合资) / 复兴号 CR400 / 支付宝 + 微信支付 / TikTok / 上海宝钢 / 恒大 + 碧桂园 (债务违约)
-
-**地区 / 政策:** 深圳/珠海/汕头/厦门经济特区 / 浦东新区 / 雄安新区 / 上海自贸区 (2013) / 海南自由贸易港 (2020) / 北京服务业扩大开放综合示范区 / 粤港澳大湾区 / 长三角一体化 / 京津冀协同发展
-
-**中央政策名 (verbatim):** 一带一路 / 双循环 / 四万亿救市 (2008) / 供给侧结构性改革 (2015) / 十四五规划 / 两新一重 / 两个一以贯之 / 三个有利于 (邓) / 中国制造 2025 / 科教兴国 / 千人计划 / 长江学者 / 985 + 211 / 双碳目标 / 巴黎气候协定
-
-**发达国家模型/对手:** 美国 "再工业化" / 小院高墙 / 芯片四方联盟 / 清洁网络计划 / 印太经济框架 (IPEF) / 日本失去的 30 年 / 亚洲四小龙
-
----
-
-## §7 Canonical scholar attributions
-
-| 学者 | 概念 / 归属 |
-|---|---|
-| 亚当·斯密 | 国富论 / 看不见的手 / 自由贸易 |
-| 凯恩斯 | 有效需求 / 政府干预市场 |
-| 诺斯 (Douglass North) | 制度经济学 / 资源诅咒 |
-| 科斯 (Ronald Coase) | 产权制度与市场经济 |
-| 熊彼特 | 创造性破坏 / 生产要素重新组合 (创新理论) |
-| 李嘉图 | 比较优势论 |
-| 钱纳里 | "两缺口"理论 (储蓄 + 外汇 + 技术约束) |
-| 科尔奈 (János Kornai) | 预算软约束 |
-| 恩格尔 | 恩格尔系数 |
-| Chesbrough | 开放式创新 (2003) |
-| 胡焕庸 | 1935 胡焕庸线 (人口分布分界) |
-| **林毅夫** | 后发优势论 / 政策性负担 / 反对内需替代外需 |
-| **杨小凯** | 后发劣势 (vs 林毅夫) |
-| **刘鹤** | 民营经济 "五六七八九" |
-| **吴敬琏** | 增量改革与存量改革批判 |
-| **张维迎** | 主张国企私有化 (北大) |
-| **周新城** | 国企必须理直气壮做强做优做大 (人大) |
-| **郑永年** | "带血的 GDP" 批判 |
-| **温铁军** | 城市化底层逻辑批判 |
-| David Pearce | 1989《绿色经济蓝皮书》|
-
----
-
-## §8 Argument templates by 题型
-
-### 是非题
-1. 关键词解读 + 申明立场
-2. 立场分析 (2-3 论点，含因果链 + 【跨课题】)
-3. 平衡分析 ("有人认为...其理由如下")
-4. 比较分析 ("但是我还是认为...")
-5. 结论 (总的来说...)
-
-### 最字题 (from WA2)
-- **同意**: 平衡分析引入 2 个外来因素
-- **不同意**: 立场分析先做自身局限，再引入 1 个外来因素
-- **Closing template (verbatim from WA2):** "在推动中国经济可持续发展进程中，只有以 X 为前提，Y 的效能才能落到实处。"
-
-### 必要条件题
-定位改革目标 → 分阶段分析措施 → 评估成效 → 指出制度瓶颈 → 综合判断。
-
-### 比较题 (案例分析 b 题 pattern)
-- (一) 正面分析: 相同点 2 个 (观点/立场/立论方法)
-- (二) 反面分析: 不同点 2 个 (立场/角度/出处)
-- (三) 比较分析: 找对比平衡点，判断不同点大于/小于共同点
-
-### 综上所述 close-out phrases
-"总的来说..." / "对比而言，我仍认为..." / "因此，我不同意/同意题目的观点"
-
----
-
-## §9 Cross-topic linkage map 【跨课题】
-
-| 经济 pillar 相关 → | 跨课题标记 |
-|---|---|
-| 分税制 / GDP 晋升锦标赛 / 地方债 | 【跨课题：央地关系】|
-| 两个一以贯之 / 党对国企的领导 | 【跨课题：党的领导】|
-| 现代产权制度 / 制度型开放 / 负面清单 | 【跨课题：法治】/【跨课题：法治与执政能力】|
-| 人口老龄化 / 中产扩张 / 社保→消费 | 【跨课题：社会：人口老龄化】/【跨课题：社会：中产阶级】|
-| 中美贸易战 / 卡脖子 / 一带一路 | 【跨课题：外交：中美关系】/【跨课题：中美关系】|
-| 双碳 / 三高一低 / 能源结构 | 【跨课题：环境】/【跨课题：绿色发展】|
-| WTO / RCEP / 亚投行 / 一带一路 | 【跨课题：全球治理】|
-| 沿海 → 西部 → 京津冀/长三角/粤港澳 | 【跨课题：区域协调】|
-
-**Deploy pattern (from WA2):** 每个 【跨课题】 出现在因果链的转折点/立场分析结尾。立场论点末尾 1 个；平衡论点末尾 1 个；比较分析末尾 1 个。**Minimum 3 per essay.**
-
----
-
-## §10 Real past questions in this folder (drill from these, not invented)
-
-### WA2 (2025 HCI)
-> "服务业扩大开放是推动中国经济可持续发展的最佳策略。" 试讨论。(30分, 最字题)
-
-### 案例分析一 (2025 J1 T2) — 区域发展不平衡 (4-part structure)
-- (a) 试根据资料 A, 解释中国区域发展不平衡的特征。[6]
-- (b) 试比较资料 B 和 D 关于中国区域发展不平衡问题的观点。[9]
-- (c) 若要解释中国区域发展不平衡已明显改善, 试评价资料 C 的适用度。[8]
-- (d) 资料 B, D, E 在多大程度上说明中国政府在解决地区发展不平衡方面所做出的努力? 试加以分析。[12]
-
-### 测验 (2025 J1 T2) — 人口老龄化
-Same 4-part a/b/c/d structure.
-
-### 复习案例分析一 — 扩大内需
-Same 4-part structure focused on 内需.
-
-### 梁 lecture 思考题 (verbatim, deploy-ready)
-- "中国出口导向型经济增长模式不可持续。" 试加以分析。
-- "国企垄断不利于中国经济的发展。" 试针对这一观点提出你的看法。 [2013 A-Level 选答 3]
-- "国有企业改革是中国经济发展面临的最严峻挑战。" 试评价上述观点。 [2018 A-Level 选答 2]
-- "中国国有企业的前途在于私有化。" [2024 A-Level 选答 2]
-- "扩大内需是确保中国经济可持续发展的关键因素。" [2022 会考选答题]
-- "中国要实现经济可持续发展，就必须加快从出口导向向内需主导的增长方式转变。"
-- "严重的银行不良债务问题是阻碍中国经济可持续发展的最关键因素。" 试加以讨论。
-- "中国要推动经济增长, 依然需要增加投资。" 试讨论。
-- "扩大科技开放在多大程度上有效推动了中国的可持续发展?"
-- "服务业开放不足是阻碍中国可持续发展的关键因素。" 试加以讨论。
-
-**Note:** for CSC formal drills, TNT Q1-Q11 is the primary source (memory rule: `feedback_csc_tnt_questions_only`). These 梁 questions are for extra warm-up + concept-testing between TNT drills.
-
----
-
-## §11 What to do next
-
-1. **Read this pre-study sheet** (encoding time ~30 min).
-2. **Move to the bare-bones cluster:** `clusters/01_barebones/cluster_01_study_sheet.md` — the 7-pillar argument spine (Layer 1 + Layer 2 verbatim). Study each pillar until you can recite Layer 2 sub-arguments without looking. ~60 min encoding.
-3. **Start TNT drilling** — Q1-Q11 经济. Wispr Flow attempt → paste transcript → I run the 7-section hypercorrect. Same protocol as Governance.
-4. **Every 经济 hypercorrect** appends its spine to `_spines_archive.md` (per-topic file). At day+7 / +30 / 1-2 days pre-exam, revise the archive to reload all essay structures.
+Do NOT try to memorize anything on this sheet. That's not what pre-study is for.
