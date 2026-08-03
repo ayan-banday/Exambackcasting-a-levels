@@ -1080,8 +1080,8 @@ window.PLAN = {
      "subject": "chem",
      "name": "Chemistry — Alkenes (ch 11) · cluster · organic",
      "desc": "Reworked verbatim from HCI answer key (Q1-7). Q1-3 done today; Q4-6 + Alkenes gap cluster (~1-1.5h) roll to Wed.",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "28 Jul",
      "clusterRef": "Alkenes",
      "clusterHref": "clusters/chem_alkenes.html"
     },
@@ -1114,8 +1114,8 @@ window.PLAN = {
      "subject": "chem",
      "name": "Chemistry — Alkenes: finish Q4-6 + gap cluster",
      "desc": "Rolled from Tue. Q4-6 (~1-1.5h), then paste the transcript → I build the Alkenes gap cluster (harder, own concept-linking questions).",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "29 Jul",
      "clusterRef": "Alkenes",
      "clusterHref": "clusters/chem_alkenes.html"
     },
@@ -1124,8 +1124,8 @@ window.PLAN = {
      "subject": "csc",
      "name": "CSC — Governance: memorize ALL accumulated gaps",
      "desc": "Consolidate + memorize every governance gap from the Q1-Q5 drills (knowledge_gaps + memorization targets). Run in the CSC chat. This is the day's headline — drop the Alkenes block above if you want a pure CSC day.",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "29 Jul",
      "clusterRef": "政治 Governance"
     }
    ],
@@ -1147,8 +1147,8 @@ window.PLAN = {
      "subject": "csc",
      "name": "CSC — Memorise (65m) + Rest (10m) + Timed teacher test (45m)",
      "desc": "(1) 65 min: cover-and-recall drill on <code>CSC/H2/Governance/Main_Knowledge_Gap_Document.md</code> (PART A + M + R + S). Focus on CODE-RED items (BANI 时代, 强政府弱社会, 公民四权, NGO 传感器→传话筒, 政令下发之快直通达, 既是运动员又是裁判员, 【跨课题】brackets) + Q14/Q19/Q20 new phrasings. (2) 10 min rest. (3) 45 min: timed teacher-test essay under exam conditions. Question hidden in <code>CSC/H2/Governance/teacher_tests/2026-07-30_governance_test.md</code>, ready to forward to teacher after completion.",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "30 Jul",
      "clusterRef": "政治 Governance — teacher test"
     },
     {
@@ -1156,8 +1156,8 @@ window.PLAN = {
      "subject": "gp",
      "name": "GP — Pre-study domain (60m) + 2-3 planning drills + critique (60m)",
      "desc": "Following <code>GP/gp-study-protocol.md</code>. Week 1 domain: Politics + Governance + Geopolitics. (1) 60 min pre-study — extract from gp-power-bank.md / gp-transferable-considerations.md: 5-8 power examples, 3-4 argument chains, 3-4 nuance moves, signature vocab. Loom retention test on 1 example. (2) 60 min: 2-3 hand-written planning drills on Politics/Governance stems (20-25 min each) → paste for hypercorrect critique. Sample Para PDF (<code>GP/Sample Para Societies that fail to conserve their cultures fail themselves.pdf</code>) = paragraph shape reference.",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "30 Jul",
      "clusterRef": "GP Week 1 — Politics/Governance/Geopolitics"
     }
    ],
