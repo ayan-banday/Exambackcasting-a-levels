@@ -1,10 +1,12 @@
-# Main Knowledge Gap Document — CSC Governance
+# CSC Master Knowledge Gaps — from Q13 to now
 
-> **Master memorization dump.** Everything to memorize + every ACTIVE gap not yet 3/3 deployed + every spine.
+> **Everything to memorize + every ACTIVE gap not yet 3/3 deployed + every spine.**
 >
-> **Score trajectory:** Q13 17 → Q17 21 → Q12 23 → Q14 24 → Q19 22
+> **Score trajectory (Governance CLOSED 6/6):** Q13 17 → Q17 21 → Q12 23 → Q14 24 → Q19 22 → Q20 25.
 >
-> **★★★ = CODE-RED (missed 4-5 straight essays).**
+> **★★★ = CODE-RED** (missed 5-6 straight essays). **★★ = Tier 4→5 differentiator.**
+>
+> **Auto-update rule:** after every hypercorrect this file updates — new phrasings/data/cases/spines appended to their PART, counters bumped, CLOSED items moved.
 
 ---
 
@@ -102,17 +104,17 @@ TNT deploys 6-10 per essay. **Memorize the ACTIVE ones (not the CLOSED).**
 
 ## Category A — Party/State critical framing
 
-- **一步错步步错** (2/3)
+- **一步错步步错** — CLOSED (Q12+Q14+Q20 3/3)
 - **大成就接着大错误** (杨荣文 quote, 1/3 Q14)
 - **一言堂** — decision without dissent
-- **既是运动员又是裁判员** ★★★ (0/5) — 党既执法又立法
-- **把权力关进制度的笼子里** (1/3 Q17)
+- **既是运动员又是裁判员** ★★★ (0/6) — 党既立法又执法
+- **把权力关进制度的笼子里** — CLOSED (Q17+Q20+ bonus)
 
 ## Category B — Democratic institutions critical framing
 
 - **橡皮图章** (人大 = rubber stamp)
-- **民意传感器 → 传声筒/传话筒** ★★★ (0/5) — NGO transformation
-- **公民四权 (知情/参与/表达/监督) 被掏空** ★★★ (0/5) — NOT 事权
+- **民意传感器 → 传声筒/传话筒** ★★★ (0/6) — NGO transformation
+- **公民四权 (知情/参与/表达/监督) 被掏空** (1/6 Q20 ✓ — NOT 事权)
 - **选择性吸纳**
 - **民情上达、政情下达** (ideal but blocked)
 
@@ -138,12 +140,12 @@ TNT deploys 6-10 per essay. **Memorize the ACTIVE ones (not the CLOSED).**
 ## Category D — 法治 critical framing
 
 - **党主法治** (Western critical label — NOT Xi's, don't attribute to him)
-- **有法不依、执法不严、违法不究** (1/3 Q17)
-- **法律的晚礼服 / 遮羞布** (1/3 Q12)
+- **有法不依、执法不严、违法不究** (2/3 Q17+Q20)
+- **法律的晚礼服 / 遮羞布** (2/3 Q12+Q20)
 - **治民不治官** (0/3)
 - **五五分成 / 六四分成 / 转移支付** (Q14 new 0/1)
-- **二律悖反** (Q14 new 0/1)
-- **强政府/弱市场/弱社会** ★★★ (0/5) — 6-字 political ecology
+- **二律悖反** (1/1 Q20 ✓)
+- **强政府/弱市场/弱社会** ★★★ (0/6) — 6-字 political ecology
 - **追根溯源** (Q14 new 0/1) — meta-move
 - **党主法治是因，央地博弈是果** ★★ (Q14 new 0/1) — CAUSAL closer, Tier 4→5
 - **官商勾结 / 劣币驱逐良币** (Q14 new 0/1)
@@ -152,16 +154,11 @@ TNT deploys 6-10 per essay. **Memorize the ACTIVE ones (not the CLOSED).**
 ## Category E — 社会/治理 framing
 
 - **政绩合法性 / 绩效合法性**
-- **获得感、幸福感、安全感** (Xi era three-feelings)
+- **获得感、幸福感、安全感** (Xi era three-feelings — Q20 deployed 1/1)
 - **隐形契约** (implicit social contract 官民信任)
+- **不敢腐/不能腐/不想腐** (Xi 3-stage 反腐, Q20 new 1/1)
 
-## Bonus
-
-- **减压阀 + 预警器** (网络舆论 dual function)
-- **一网通办、异地可办、跨省通办** (Q20 digital gov)
-- **百姓少跑腿、数据多跑路** (Q20 service gov)
-
-## Q19 NEW (0/1 each)
+## Q19 NEW (0/1 each unless noted)
 
 - **网络成为意识形态主战场** (Xi coinage)
 - **人人都有麦克风**
@@ -177,47 +174,87 @@ TNT deploys 6-10 per essay. **Memorize the ACTIVE ones (not the CLOSED).**
 - **意识形态安全 vs 政权安全** (twin-security)
 - **表达无效 / 表达有风险**
 - **服务型政府转型 → 网络成为民情渠道**
-- **【跨课题】brackets discipline** ★★★ (0/5 essays)
-
-## Q19 concept gaps
-
-- **BANI 时代** ★★★ (0/5) — 灵活性/透明度/多层次协作
+- **【跨课题】brackets discipline** ★★★ (0/6 essays)
+- **BANI 时代** ★★★ (0/6)
 - **一张蓝图绘到底** (1/3 Q12)
-- **政令下发之快直通达** ★★★ (0/5)
+- **政令下发之快直通达** (1/6 Q20 ✓)
 - **单点故障** — CLOSED (bonus)
+
+## Q20 NEW (0/1 each unless noted)
+
+- **缺位/越位/错位** ★★ — THE Q20 signature 3-typology (公共服务 平衡 pillar)
+- **九龙治水 / 无人负责** (缺位 wordplay)
+- **上热下冷** (越位)
+- **任务下压 / 上推下卸** (错位)
+- **有责无财 / 重发展轻保障** (央地矛盾 language for 公共服务)
+- **一主多元** / 政府主导，社会参与，公办民办并举
+- **多元主体协同共治**
+- **一网通办 / 异地可办 / 跨省通办**
+- **百姓少跑腿、数据多跑路**
+- **一窗受理、一站服务**
+- **信息孤岛** (打破)
+- **精准治理 / 精准施策**
+- **治理韧性**
+- **弥补制度碎片化 / 弥补供给鸿沟**
+- **三种执政 (科学/民主/依法)** (1/3 Q20 ✓)
+- **发展型 → 服务型** 转型 (1/1)
+- **全能型 → 发展型 → 服务型** 3-stage (1/1)
 
 ---
 
 # PART R: ACTIVE GAPS with 0/N counters — THE MAIN THING
 
-## R.1 ★★★ CODE-RED (0/5 attempts — 5 straight misses)
+## R.0 【跨课题】auto-detect trigger dictionary
+
+I detect these — you don't need to say "add a bracket." Every hypercorrect §6 lists which brackets you missed + which sentence they belonged in.
+
+| Your sentence mentions… | Bracket to deploy |
+|---|---|
+| 社保 / 医疗 / 教育 / 养老 / 民生 | 【跨课题：社会保障】|
+| GDP / 民企 / 外贸 / 出口 / 内需 / 消费 | 【跨课题：经济发展】|
+| 看得见的手 / 看不见的手 / 官商勾结 / 市场公平 | 【跨课题：经济转型】|
+| 地方债 / 城投 / LGFV / 土地财政 | 【跨课题：地方债务】|
+| 双碳 / 环保 / 污染 / 生态文明 / 三高一低 | 【跨课题：环境问题】|
+| 网络 / 意识形态 / 媒体 / 舆论 | 【跨课题：媒体管控】|
+| 转型 / 城镇化 / 农民工 / 中产 / 阶层 | 【跨课题：社会转型】|
+| 中美 / 一带一路 / WTO / 外交 / 卡脖子 | 【跨课题：中美关系】/【跨课题：全球治理】|
+| 央地 / 分税制 / 晋升锦标赛 | 【跨课题：央地关系】|
+| 党的领导 / 两个一以贯之 | 【跨课题：党的领导】|
+| 法律 / 法治 / 依法 (in NON-法治 essay) | 【跨课题：法治】|
+| NGO / 公民社会 / 社会组织 (in NON-society essay) | 【跨课题：公民社会】|
+| 区域 / 城乡 / 西部大开发 / 京津冀 / 长三角 / 粤港澳 | 【跨课题：区域协调发展】|
+
+## R.1 ★★★ CODE-RED (0/6 attempts — 6 straight misses)
 
 - **BANI 时代** (灵活性/透明度/多层次协作 → 单点故障 风险)
 - **强政府弱社会 / 强政府/弱市场/弱社会** (4-字 + 6-字 forms)
-- **公民四权 / 人民四权** (知情/参与/表达/监督) 被掏空 — NOT 事权
 - **NGO 传感器 → 传话筒/传声筒**
-- **政令下发之快直通达**
 - **既是运动员又是裁判员**
-- **【跨课题】brackets discipline** (5 essays at 0-1, model uses 5-7 per essay)
+- **【跨课题】brackets discipline** (5-7 per essay in model; you had 0-1)
 
 ## R.2 HIGH (1/3 — 2/3, close via deployment)
 
-- 有法不依/执法不严/违法不究 (1/3 Q17)
-- 晚礼服/遮羞布 (1/3 Q12)
-- 一张蓝图绘到底 (1/3 Q12)
-- 唯中央马首是瞻 / 推诿扯皮 (1/3 each Q12)
-- 先党内决策、后政府执行 (1/3 Q12)
-- 一步错步步错 (2/3)
-- 十八届六中全会 2016 政治忠诚 (1/3)
-- 唐山钢厂 2017 关 19 座 + 建更大新厂 (1/3 Q14)
-- 杨荣文 "大成就接着大错误" (1/3 Q14)
-- 张展 2020 记者 (1/3 Q19)
-- 中产 2024 42.3% (1/3, wrong year previous attempts — fix)
-- 民法典 1,260 条 (1/3, not 1,061)
+- **有法不依/执法不严/违法不究** (**2/3** — Q17+Q20)
+- **晚礼服/遮羞布** (**2/3** — Q12+Q20)
+- **一步错步步错** — **CLOSED** (Q12+Q14+Q20)
+- **一张蓝图绘到底** (1/3 Q12)
+- **唯中央马首是瞻 / 推诿扯皮** (1/3 each Q12)
+- **先党内决策、后政府执行** (1/3 Q12)
+- **十八届六中全会 2016 政治忠诚** (1/3)
+- **唐山钢厂 2017 关 19 座 + 建更大新厂** (1/3 Q14)
+- **杨荣文 "大成就接着大错误"** (1/3 Q14)
+- **张展 2020 记者** (1/3 Q19)
+- **中产 2024 42.3%** (1/3, wrong year 3 attempts — fix)
+- **民法典 1,260 条** (1/3, not 1,061)
+- **三种执政 (科学/民主/依法)** (1/3 Q20 NEW)
+- **民企 60% GDP + 80% 就业 + <30% 贷款** (1/3 Q20 correct context)
+- **PM10 自然之友** (1/3 Q20)
+- **公民四权 verbatim** (1/6 Q20 ✓ — needs 2 more)
+- **政令下发之快直通达** (1/6 Q20 ✓ — needs 2 more)
 
 ## R.3 Q14 new phrasings (0/1 each)
 
-换位思考 / 两个积极性 / 有令不行有禁不止 / 象征性/替换性/选择性执行 (3-typology) / 散乱污 / 环保督察回头看 / 中产焦虑 / 消费型社会转型受阻 / 良性互动 vs 零和博弈 / 共赢 vs 你赢我输 / 五五分成/六四分成/转移支付 / 二律悖反 / 强政府/弱市场/弱社会 (6-字) / 追根溯源 / **党主法治是因，央地博弈是果** (causal closer ★★) / 珠三角/苏南/温州模式 / 一放就乱一收就死 / 灰犀牛 / 官商勾结/劣币驱逐良币 / 定盘星
+换位思考 / 两个积极性 / 有令不行有禁不止 / 象征性/替换性/选择性执行 (3-typology) / 散乱污 / 环保督察回头看 / 中产焦虑 / 消费型社会转型受阻 / 良性互动 vs 零和博弈 / 共赢 vs 你赢我输 / 五五分成/六四分成/转移支付 / 强政府/弱市场/弱社会 (6-字) / 追根溯源 / **党主法治是因，央地博弈是果** (causal closer ★★) / 珠三角/苏南/温州模式 / 一放就乱一收就死 / 灰犀牛 / 官商勾结/劣币驱逐良币 / 定盘星
 
 ## R.4 Q14 new data (0/1 each)
 
@@ -255,16 +292,58 @@ TNT deploys 6-10 per essay. **Memorize the ACTIVE ones (not the CLOSED).**
 - 李文亮 2020 武汉 (医生去世 → 微博/微信 呼声被封禁)
 - 环保 NGO 反 厦门 PX 项目 (微信公众号被删 + 账号被封)
 
-## R.8 Named cases still 0/3
+## R.8 Q20 new phrasings (0/1 each)
+
+- **缺位/越位/错位** 3-typology ★★
+- 九龙治水 / 无人负责 (缺位)
+- 上热下冷 (越位)
+- 任务下压 / 上推下卸 (错位)
+- 有责无财 / 重发展轻保障
+- 一主多元 / 政府主导社会参与公办民办并举
+- 多元主体协同共治
+- 一网通办 / 异地可办 / 跨省通办
+- 百姓少跑腿、数据多跑路
+- 一窗受理、一站服务
+- 信息孤岛 (打破)
+- 精准治理 / 精准施策
+- 治理韧性
+- 弥补制度碎片化 / 弥补供给鸿沟
+
+## R.9 Q20 new data (0/1 each)
+
+- 教育财政 22.4% 年增
+- 卫生 2.3 万乡镇 / 1500 县 / 2400 社区
+- 社保 13.68 亿 96.8% / GDP 13% (2024) vs 15.13% (2021) / 欧盟 20%+
+- 养老金翻倍 / 失业 707→1814 / 工伤 1864→4000
+- 2016 城乡六统一
+- 农村公路 4000 亿 + 253 万公里
+- 2024 转移支付 贵州/甘肃/青海 70%+
+- 全国一体化政务服务平台 10 亿+ / 90.5% 网上受理
+- 电子社保卡 10.34 亿 / 102 项 / 1000+
+- 国家电子政务外网 100% 县级以上
+- 长三角 (140 项/41 城/37 类/89.9%/5 年+异地结算)
+- 联合国电子政务调查 中国 43 (最高)
+- 5000 亿 政府购买 NGO 2023
+- 城/乡 医疗床位 8.02/6.52 + 卫技 10.89/7.07
+- 地方 50%收入 vs 85%支出
+- 300 万 NGO 无法登记
+- 18.3 万党组织 60-70% 党政背景
+
+## R.10 Q20 new cases (0/1 each)
+
+- 深圳 2012 政府购买 NGO 指导意见
+- 贵州省 脱贫攻坚 NGO 培训/教育/产业辅导
+- 长三角 跨省政务数据共享底座
+
+## R.11 Named cases still 0/3 (from prior Qs)
 
 - 孙小果案 (法治 critique / 有法不依)
-- 广州白云机场 官商勾结 (立场 2 党主法治 经济层面)
+- 广州白云机场 官商勾结
 - 2013 上海自贸区 微软/苹果/特斯拉
 - 习修宪 取消国家主席任期制 vs 邓集体领导
-- PM10 + 自然之友 NGO
 - 昆明恐袭 2014.3.1 — CLOSED
 
-## R.9 Official quotes still 0/3
+## R.12 Official quotes still 0/3
 
 - Xi 二十大 "各级党组织必须坚持在宪法和法律范围内活动"
 - Xi "全面依法治国" + "任何人都不能凌驾于国家法律之上"
@@ -274,34 +353,43 @@ TNT deploys 6-10 per essay. **Memorize the ACTIVE ones (not the CLOSED).**
 - 2013 习 全国宣传思想工作会议 "互联网可亡党亡国" (Q19 new 0/1)
 - 习 "网络成为意识形态主战场" (Q19 new 0/1)
 
-## R.10 Structural discipline gaps
+## R.13 Structural discipline gaps
 
-- 引言 段 discipline (0/5 — skipped Q14 + Q19)
-- 立场 side needs 2-3 pillars (Q19 regressed to 1)
-- 3-layer 政治/经济/社会 in 立场 2
-- 综上所述 段 mandatory (skipped Q19)
-- 4-generation 法治 chain 邓→江→胡→习 (0/4)
-- causal-closer "X是因，Y是果" (0/2)
-- 2-sub-move 比较 ((一) 解决难度 (二) 影响) (0/2)
-- 3-stage 政府 evolution (全能型 → 发展型 → 服务型) — Q20 canonical
+- **引言 段 discipline** (1/6 — Q20 present but crude; skipped Q14 + Q19)
+- **立场 side needs 2-3 pillars** (Q19 regressed to 1; Q20 recovered to 3)
+- **3-layer 政治/经济/社会 in 立场 2** (0/3)
+- **综上所述 段 mandatory** (0/6 clean — Q20 unclear close)
+- **4-generation 法治 chain 邓→江→胡→习** (0/4)
+- **causal-closer "X是因，Y是果"** (0/3)
+- **2-sub-move 比较 ((一) 解决难度 (二) 影响)** (0/2)
+- **3-stage 政府 evolution (全能型 → 发展型 → 服务型)** (1/1 Q20 ✓)
+- **3-level 制度/实践/技术 approach** (Q20 model signature, 0/1)
+- **缺位/越位/错位 as 平衡 typology** (0/1 Q20 NEW)
 
 ---
 
-# PART S: SPINES — all 5 attempts
+# PART S: SPINES — all 6 attempts
 
-## S.1 Q12 (2026-07-25) — 「党国体制在多大程度上有利于中国的长治久安」【是非+多大程度】
+## S.1 Q13 (2026-07-19) — 「中共绝对领导是中国有效治理的唯一途径」【唯字】
+
+**Score:** 17/30 (Tier 三 mid). 立场: 不同意 (未必 唯一途径)
+**Placeholder — to back-fill from TNT p.58-62 verbatim.**
+
+## S.2 Q17 (2026-07-21) — 「法治是中国实现有效治理的必由之路」【因素是非】
+
+**Score:** 21/30 (Tier 三 upper). 立场: 同意 (法治 = 必要条件)
+**Placeholder — to back-fill from TNT p.74-82 verbatim.**
+
+Structure: 引言 → 立场 1 政治 → 立场 2 经济 → 立场 3 社会 → 平衡 (党主法治 critique) → 比较 (必要条件对比) → 综上所述
+
+## S.3 Q12 (2026-07-25) — 「党国体制在多大程度上有利于中国的长治久安」【是非+多大程度】
 
 **Score:** 23/30 (Tier 4 lower). 立场: 不同意 (在很大程度上 不利于)
-**Placeholder — to back-fill from TNT p.53-57 verbatim next session.**
+**Placeholder — to back-fill from TNT p.53-57 verbatim.**
 
 Structure: 引言 → 立场 1 (纠错弊端 — 上行负责下行服从 + 单点故障 + 集中力量办大事→办错事) → 立场 2 (政绩困局 — 亨廷顿) → 立场 3 (党主法治 — 党大 vs 法大 制度困境) → 平衡 1 (集中力量办大事 + 火神山) → 平衡 2 (一张蓝图绘到底 + 政策连续性) → 比较 (亨廷顿 制度适应性 axis) → 综上所述
 
-## S.2 Q13 (2026-07-19) — 「中共绝对领导是中国有效治理的唯一途径」【唯字】
-
-**Score:** 17/30 (Tier 三 mid). 立场: 不同意
-**Placeholder — to back-fill from TNT p.58-62 verbatim next session.**
-
-## S.3 Q14 (2026-07-27) — 「中央与地方的博弈是中共治国的最大挑战」【最字】
+## S.4 Q14 (2026-07-27) — 「中央与地方的博弈是中共治国的最大挑战」【最字】
 
 **Score:** 24/30 (Tier 4 mid). 立场: 不同意 (双刃剑 局限 + 党主法治更大)
 
@@ -323,13 +411,6 @@ Structure: 引言 → 立场 1 (纠错弊端 — 上行负责下行服从 + 单�
 
 **综上所述:** 央地博弈 不是 最大挑战
 
-## S.4 Q17 (2026-07-21) — 「法治是中国实现有效治理的必由之路」【因素是非】
-
-**Score:** 21/30 (Tier 三 upper). 立场: 同意 (法治 = 必要条件)
-**Placeholder — to back-fill from TNT p.74-82 verbatim next session.**
-
-Structure: 引言 → 立场 1 政治 → 立场 2 经济 → 立场 3 社会 → 平衡 (党主法治 critique) → 比较 (必要条件对比) → 综上所述
-
 ## S.5 Q19 (2026-07-28) — 「严格管控公民网络政治参与对中共维持政治稳定利大于弊」【比较】
 
 **Score:** 22/30 (Tier 三 upper). Model: 同意 (利大于弊). Ethan: 弊大于利 (opposite)
@@ -349,3 +430,79 @@ Structure: 引言 → 立场 1 政治 → 立场 2 经济 → 立场 3 社会 �
 **比较 2 (境外组织 干预):** 公民社会 + 对外开放 → 大量境外组织入驻 (合作/援助/环保) → 表面公益 → 背后传播 不利意识形态 → 福音派/伊斯兰/藏传佛教 借 NGO 身份 → 极端宗教情绪 + 割裂国家认同 → 民族压迫/资源掠夺 虚假议题 → 意在瓦解 执政合法性 → NED 2004-2020 每月 875 万美元 助 维吾尔组织 → 伪造 再教育营/强迫劳动 证据 → 政府 严管 (防火墙 + 相关法律) → 2020-2023 破获 境外 NGO 煽动案 300 余起 + 关停 1200 网站 + 阻断 5.6 万境外 IP → 《境外非政府组织境内活动管理法》登记备案 → 全能型 → 服务型政府 → 网络成民情渠道 → 只要不挑战意识形态 公民社会 可发展 → 维持政治稳定
 
 **综上所述:** 因鉴于此，我判定 严格管控 对 中共维持政治稳定 利大于弊
+
+## S.6 Q20 (2026-07-29) — 「完善公共服务是中国推动国家治理的重要支撑」【是非】
+
+**Score:** 25/30 (Tier 4 mid — personal best). 立场: 同意 (same as model)
+
+**引言:** 公共服务定义 (政府促发展+维权益+组织提供公共产品) → 完善 = 健全体系+优化法规+加大财政+均等化+可及性 → 国家治理定义 (行政/宪法/司法 对社会管理) → 有效国家治理 = 政权合法性 + 政治社会稳定 → 笔者同意
+
+**立场 1 (制度层面 — 发展型 → 服务型):** 发展型政府 经济优先 → 服务能力滞后 → 民生需求 (教育/医疗/养老/住房/社保) 上升 → 中共 推动 服务型 转型 → 优化法规 (《义务教育法》+ 基本公共服务清单标准) + 加大投入 → 教育 22.4% 年增 + 城乡免费义务教育 + 毛入学率 100% → 卫生 2.3 万乡镇 + 1500 县医院 + 2400 社区 → 社保 13% GDP + 13.68 亿卡 96.8% 普及 + 养老金翻倍 + 失业 707→1814 + 工伤 1864→4000 → 2016 六统一 均等化 【跨课题：社会保障】→ 转移支付: 农村公路 4000 亿 + 253 万公里 + 西部大开发 → 2024 贵州/甘肃/青海 转移 70%+ → 缩小城乡区域差距 → 民众获得感/幸福感/安全感 → 官民矛盾减 → 执政合法性
+
+**立场 2 (实践层面 — 一主多元):** 民众需求多元化 + 高水平 → 政府 单一供给 不能满足 → 一元 → 多元 采购 NGO → 政府主导 + 社会参与 + 公办民办并举 → 深圳 2012 《深圳市政府购买社会组织公共服务指导意见》委托 社区养老/青少年/就业培训 → 贵州省 脱贫攻坚 购买 NGO 培训/教育/产业辅导 → 2023 全国 政府购买 NGO 5000 亿 → 政府 直接提供者 → 监管者/协调者 → 多元主体协同共治 → NGO 自主性培育 → 供给主体多元/供需科学/渠道便利/领域多样 → 官民良性互动 【跨课题：公民社会】
+
+**立场 3 (技术层面 — 公共服务数字化):** 数字技术 (互联网+大数据+AI) → "互联网+政务服务" + "一窗受理、一站服务" → 打破信息孤岛 → 全国一体化政务服务平台 (2022.12) 10 亿+用户 + 90.5% 省级许可 网上受理 → 电子社保卡 10.34 亿 (2024.9) 102 项全国 + 1000+ 属地 → 国家电子政务外网 县级以上 100% 覆盖 → 一网通办/异地可办/跨省通办 → 百姓少跑腿、数据多跑路 → 长三角 跨省数据共享底座 (三省一市 5 年+ 异地就医结算 + 140 项政务 41 城市通办 + 37 类电子证照 + 89.9% 满意) → 大数据精准施策 (居民画像 → 交通/医保/养老) → 2022 联合国电子政务调查 中国 43 (最高) → 信息公开 + 全程留痕 → 减腐败寻租 → 网络问政/在线评价 → 官民良性互动
+
+**平衡 (缺位/越位/错位):**
+- ①缺位: 责任不明 + 央地权责不清 → 九龙治水/无人负责 → 分税制后 地方 有责无财 + GDP 主义 重发展轻保障 → 社保 覆盖不全 → 城/乡 医疗床位 8.02/6.52 + 卫技 10.89/7.07 → 2021 社保 GDP 15.13% < 欧盟 19 国 20%+ → 公共服务体系碎片化 → 公信力削弱 + 消费潜力压 → 阻碍经济可持续
+- ②越位: 政府过度干预 → 双重管理 → 300 万 NGO 无法登记 → 强制 内设党支部 (18.3 万 + 60-70% 有党政背景) → NGO 独立性/自主性 解构 → 主动回避敏感议题 (劳工/环保/弱势) → 上热下冷 → 治理多元化受阻
+- ③错位: 中央高目标 vs 地方 财政/执行 有限 → 任务下压 → 地方财政 50% 收入 承担 85% 支出 → 社保 90% 地方 + 40% 中央转移 → 事责财力失衡 → 部门信息孤岛 → 上推下卸 → 治理缺协调性 → 塔西陷阱风险 ↑
+
+**比较分析:** 完善公共服务 巨大成就足以对冲 缺位/越位/错位 → 顶层设计 (服务型转型) + 实践 (财政投入+一主多元+数字化) → 均等化改革 (义务教育普及 + 农村公路 + 养老金 弱势群体保障) → 弥补供给鸿沟 → 降低相对剥夺感 + 缓和社会矛盾 → 治理韧性增强 → 政权合法性强化
+
+**综上所述:** 完善公共服务 = 推动国家治理 + 长治久安 的 制度根基
+
+---
+
+# PART E: ECONOMY 经济 topic prep (Q1-Q11 drilling starts Fri 31 Jul)
+
+Full detail: `Exambackcasting-a-levels/CSC/H2/Economy/pre_study_sheet.md` + `Exambackcasting-a-levels/CSC/H2/Economy/clusters/01_barebones/cluster_01_study_sheet.md`.
+
+## E.0 Meta-frame
+
+> 中国经济增长模式从 "要素驱动 / 投资驱动 / 出口驱动" → "创新驱动 / 消费驱动" 的转型。目标是跨越 "中等收入陷阱"，实现 "高质量发展"。
+
+## E.1 The 7 pillars (Layer 1)
+
+- **P1** 出口导向型经济 — 已到达局限
+- **P2** 投资驱动 + 国企/银行/地方债 nexus
+- **P3** 扩大内需 + 消费主导型转型 (双循环)
+- **P4** 供给侧改革 + 国企混改 (三去一降一补)
+- **P5** 科技开放 + 自主创新 (卡脖子)
+- **P6** 服务业开放 + 高质量发展
+- **P7** 绿色发展 + 双碳
+
+## E.2 Composition maps (which pillars serve as 立场/平衡/比较)
+
+| Stem type | 立场 (3) | 平衡 (2) | 比较 upper |
+|---|---|---|---|
+| "扩大内需是关键因素" | P3 + P1局限 + P5/P6 | P2 (投资) + P4 (国企) | 高质量发展 |
+| "国企改革最严峻挑战" | P4 + P2 + P6 | P1 + P3 | 转型 |
+| "服务业开放最佳策略" (WA2) | P6 + P5 + P3 | P4 + P7 | 高质量发展 |
+| "银行不良债务最关键" | P2 + P4 + P3 | P1 + P6 | 中等收入陷阱 |
+| "扩大科技开放推动可持续" | P5 + P6 + P3 | P7 | 转型 |
+| "绿色发展 vs 经济增长" | P7 + P2局限 + P4 | P1 + P3 | 高质量发展 |
+
+## E.3 Key scholars
+
+亚当·斯密 / 凯恩斯 / 诺斯 / 科斯 / 熊彼特 / 李嘉图 / 钱纳里 / **科尔奈 (预算软约束)** / 恩格尔 / **林毅夫 (后发优势)** / **杨小凯 (后发劣势)** / **刘鹤 (五六七八九)** / **吴敬琏** / **张维迎** / **周新城** / **郑永年 (带血的 GDP)** / **温铁军**
+
+## E.4 Real past questions (drill from these, not invented)
+
+See pre_study_sheet.md §10. Includes WA2 (服务业开放 最佳策略), 案例分析一 (区域发展不平衡 / 内需 / 人口老龄化 4-part), 梁 思考题 (国企垄断, 国企私有化, 出口不可持续, 扩大内需, 银行不良债务, 增加投资, 科技开放, 服务业开放).
+
+## E.5 CLOSED status
+
+All E.X items are UNTOUCHED (0/0). Drilling starts Q1-Q11 经济 via TNT after Fri 31 Jul cluster encoding. Same protocol as Governance — every hypercorrect appends new items here as R.X (Economy) sections + spine to `_spines_archive.md` (Economy).
+
+---
+
+# PART T: SOCIETY 社会 + FOREIGN AFFAIRS 外交 (future)
+
+Placeholder. Populated when Ethan starts drilling those TNT sections (Q21-Q31 社会 / Q32-Q42 外交).
+
+---
+
+# CLOSED archive (3/3+, recognition-only)
+
+单点故障 / 民主花瓶 / 郑永年 使命型政党 / 苏东巨变 / 塔西佗陷阱 / 白纸 2022 / 三聚氰胺 2008 / 党国体制 / 单一制大国 (960 万 + 14 亿) / 中产阶级扩大 / 维稳费 2019 = 1.4 万亿 / Xi 2018 党政军民学 / 集中力量办大事→办错事 / 亨廷顿 政绩困局 / 亨廷顿 制度适应性 / Xi 十八届四中 (2014) / 群体事件 18 万起/年 / 火神山 10 天 5000 患者 / 昆明恐袭 2014.3.1 / 709 大抓捕 (维权律师) / 权由法定 / 法无禁止不可为 / 政府/市场 看得见/看不见的手 / 政府法无授权即禁止 / 市场法无禁止即可为 / 制度性可预期性 / 有效治理 政治生态 / 把权力关在制度的笼子里 / 一步错步步错 (Q12+Q14+Q20)
