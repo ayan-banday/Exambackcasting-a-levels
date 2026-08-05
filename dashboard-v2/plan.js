@@ -6,7 +6,7 @@ window.PLAN = {
   "end": "2026-09-22",
   "prelim": "2026-08-24",
   "prelimLabel": "Prelim begins (GP)",
-  "studyDays": 60,
+  "studyDays": 59,
   "restDay": "Sunday",
   "totalMins": 7360,
   "perWeekHrs": 20,
@@ -1284,45 +1284,21 @@ window.PLAN = {
    "week": 3
   },
   {
-   "n": 15,
+   "n": "",
    "date": "2026-08-04",
    "weekday": "Tue",
-   "type": "standard",
-   "subject": "gp",
+   "type": "rest",
+   "subject": "conv",
    "flag": "",
-   "mins": 240,
-   "label": "Bio Cell Structure + Economy + GP",
-   "focus": "Bio foundation block starts. GP P1 daily from a cold base.",
-   "blocks": [
-    {
-     "mins": 60,
-     "subject": "gp",
-     "name": "GP P1 — Politics/Governance domain bank",
-     "desc": "Pull 5-8 examples + 3 argument chains for the domain.",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 120,
-     "subject": "bio",
-     "name": "Bio — Cell Structure",
-     "desc": "Ultrastructure, prokaryote vs eukaryote, virus. Encode + drill.",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 60,
-     "subject": "csc",
-     "name": "CSC — Economy memorisation",
-     "desc": "2h-cycle memo, growth engine + transition.",
-     "done": false,
-     "doneDate": null
-    }
-   ],
-   "week": 3
+   "mins": 0,
+   "label": "No time today — Cell Structure moved to 6 Aug",
+   "focus": "",
+   "blocks": [],
+   "week": 3,
+   "skipped": true
   },
   {
-   "n": 16,
+   "n": 15,
    "date": "2026-08-05",
    "weekday": "Wed",
    "type": "test",
@@ -1337,8 +1313,8 @@ window.PLAN = {
      "subject": "chem",
      "name": "Chem — timed test (2h) · from past papers · hard",
      "desc": "Multi-concept, unlabelled stems, hidden mark scheme.",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "5 Aug",
      "clusterHref": "clusters/test_chem_2026-08-05.html"
     },
     {
@@ -1346,23 +1322,23 @@ window.PLAN = {
      "subject": "maths",
      "name": "Maths — timed test (2h) · from past papers · hard",
      "desc": "Fused pure + stats, unlabelled, hidden mark scheme.",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "5 Aug",
      "clusterHref": "clusters/test_maths_2026-08-05.html"
     }
    ],
    "week": 3
   },
   {
-   "n": 17,
+   "n": 16,
    "date": "2026-08-06",
    "weekday": "Thu",
    "type": "standard",
-   "subject": "gp",
+   "subject": "bio",
    "flag": "",
    "mins": 240,
-   "label": "Bio Biomolecules + Economy + GP",
-   "focus": "",
+   "label": "GP + Bio + CSC",
+   "focus": "plan drill  ·  Cell Structure + Biomolecules (foundation double)  ·  Economy memorisation",
    "blocks": [
     {
      "mins": 60,
@@ -1375,8 +1351,8 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "bio",
-     "name": "Bio — Biomolecules",
-     "desc": "Carbs, lipids, proteins, nucleic acids. Structure->function.",
+     "name": "Bio — Cell Structure + Biomolecules (foundation double)",
+     "desc": "Cell Structure (organelles, pro/eukaryote, virus) is quick, then Biomolecules. Compressed since 4 Aug was lost.",
      "done": false,
      "doneDate": null
     },
@@ -1392,15 +1368,15 @@ window.PLAN = {
    "week": 3
   },
   {
-   "n": 18,
+   "n": 17,
    "date": "2026-08-07",
    "weekday": "Fri",
    "type": "standard",
-   "subject": "gp",
+   "subject": "bio",
    "flag": "",
    "mins": 240,
-   "label": "Bio Membranes + Chem Hydroxy + GP",
-   "focus": "",
+   "label": "GP + Bio + Chem",
+   "focus": "plan drill  ·  Membranes & Transport  ·  Hydroxy Compounds (key reactions)",
    "blocks": [
     {
      "mins": 60,
@@ -1430,7 +1406,7 @@ window.PLAN = {
    "week": 3
   },
   {
-   "n": 19,
+   "n": 18,
    "date": "2026-08-08",
    "weekday": "Sat",
    "type": "test",
@@ -1481,15 +1457,15 @@ window.PLAN = {
    "week": 3
   },
   {
-   "n": 20,
+   "n": 19,
    "date": "2026-08-10",
    "weekday": "Mon",
    "type": "standard",
-   "subject": "gp",
+   "subject": "bio",
    "flag": "",
    "mins": 240,
-   "label": "Bio Enzymes + Maths pure + GP",
-   "focus": "",
+   "label": "GP + Bio + Maths",
+   "focus": "Science/Tech domain bank  ·  Enzymes  ·  Integration re-drill (your test gaps)",
    "blocks": [
     {
      "mins": 60,
@@ -1510,24 +1486,25 @@ window.PLAN = {
     {
      "mins": 60,
      "subject": "maths",
-     "name": "Maths — Functions & Graphs (pure touch-up)",
-     "desc": "Drill for P1, mostly recall.",
+     "name": "Maths — Integration re-drill (your test gaps)",
+     "desc": "GC steps: standardise, inverse-normal. Stats for P2 — unstarted.",
      "done": false,
-     "doneDate": null
+     "doneDate": null,
+     "clusterHref": "clusters/redrill_maths_integration.html"
     }
    ],
    "week": 4
   },
   {
-   "n": 21,
+   "n": 20,
    "date": "2026-08-11",
    "weekday": "Tue",
    "type": "standard",
-   "subject": "gp",
+   "subject": "chem",
    "flag": "",
    "mins": 240,
-   "label": "Chem Carbonyl + Economy + GP",
-   "focus": "",
+   "label": "GP + Chem + CSC",
+   "focus": "plan drill  ·  Halogen Derivatives  ·  Economy memorisation",
    "blocks": [
     {
      "mins": 60,
@@ -1540,8 +1517,8 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "chem",
-     "name": "Chem — Carbonyl Compounds",
-     "desc": "",
+     "name": "Chem — Halogen Derivatives",
+     "desc": "Not yet done (was 3 Aug). Nucleophilic substitution SN1/SN2, elimination, hydrolysis + Ag halide test.",
      "done": false,
      "doneDate": null
     },
@@ -1557,15 +1534,15 @@ window.PLAN = {
    "week": 4
   },
   {
-   "n": 22,
+   "n": 21,
    "date": "2026-08-12",
    "weekday": "Wed",
    "type": "standard",
-   "subject": "gp",
+   "subject": "bio",
    "flag": "",
    "mins": 240,
-   "label": "Bio DNA Replication + Economy + GP",
-   "focus": "",
+   "label": "GP + Bio + CSC",
+   "focus": "example bank  ·  DNA Replication  ·  Economy memorisation",
    "blocks": [
     {
      "mins": 60,
@@ -1595,15 +1572,15 @@ window.PLAN = {
    "week": 4
   },
   {
-   "n": 23,
+   "n": 22,
    "date": "2026-08-13",
    "weekday": "Thu",
    "type": "standard",
-   "subject": "gp",
+   "subject": "chem",
    "flag": "",
    "mins": 240,
-   "label": "Chem Carboxylic Acids + Maths pure + GP",
-   "focus": "",
+   "label": "GP + Chem + Maths",
+   "focus": "plan drill  ·  Carbonyl Compounds  ·  Differential Equations re-drill",
    "blocks": [
     {
      "mins": 60,
@@ -1616,7 +1593,7 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "chem",
-     "name": "Chem — Carboxylic Acids & Derivatives",
+     "name": "Chem — Carbonyl Compounds",
      "desc": "",
      "done": false,
      "doneDate": null
@@ -1624,24 +1601,25 @@ window.PLAN = {
     {
      "mins": 60,
      "subject": "maths",
-     "name": "Maths — Sequences & Series (pure touch-up)",
-     "desc": "",
+     "name": "Maths — Differential Equations re-drill",
+     "desc": "Not yet done (was 31 Jul). Distribution table, E(X)/Var(X), binomial.",
      "done": false,
-     "doneDate": null
+     "doneDate": null,
+     "clusterHref": "clusters/redrill_maths_de.html"
     }
    ],
    "week": 4
   },
   {
-   "n": 24,
+   "n": 23,
    "date": "2026-08-14",
    "weekday": "Fri",
    "type": "standard",
-   "subject": "gp",
+   "subject": "bio",
    "flag": "",
    "mins": 240,
-   "label": "Bio Gene Expression + Economy essays + GP",
-   "focus": "",
+   "label": "GP + Bio + CSC",
+   "focus": "plan drill  ·  Gene Expression & Regulation  ·  Economy essay attempt",
    "blocks": [
     {
      "mins": 60,
@@ -1671,7 +1649,7 @@ window.PLAN = {
    "week": 4
   },
   {
-   "n": 25,
+   "n": 24,
    "date": "2026-08-15",
    "weekday": "Sat",
    "type": "test",
@@ -1722,15 +1700,15 @@ window.PLAN = {
    "week": 4
   },
   {
-   "n": 26,
+   "n": 25,
    "date": "2026-08-17",
    "weekday": "Mon",
    "type": "standard",
-   "subject": "gp",
+   "subject": "bio",
    "flag": "",
    "mins": 240,
-   "label": "Bio Mutations + Economy + GP",
-   "focus": "",
+   "label": "GP + Bio + CSC",
+   "focus": "Environment domain bank  ·  Mutations  ·  Economy memorisation",
    "blocks": [
     {
      "mins": 60,
@@ -1760,15 +1738,15 @@ window.PLAN = {
    "week": 5
   },
   {
-   "n": 27,
+   "n": 26,
    "date": "2026-08-18",
    "weekday": "Tue",
    "type": "standard",
-   "subject": "gp",
+   "subject": "chem",
    "flag": "",
    "mins": 240,
-   "label": "Chem Nitrogen + Maths pure timed + GP",
-   "focus": "",
+   "label": "GP + Chem + Maths",
+   "focus": "plan drill  ·  Carboxylic Acids & Derivatives  ·  Maclaurin re-drill",
    "blocks": [
     {
      "mins": 60,
@@ -1781,7 +1759,7 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "chem",
-     "name": "Chem — Nitrogen Compounds",
+     "name": "Chem — Carboxylic Acids & Derivatives",
      "desc": "",
      "done": false,
      "doneDate": null
@@ -1789,24 +1767,25 @@ window.PLAN = {
     {
      "mins": 60,
      "subject": "maths",
-     "name": "Maths — pure timed section (P1 warm-up)",
-     "desc": "",
+     "name": "Maths — Maclaurin re-drill",
+     "desc": "Stats for P2.",
      "done": false,
-     "doneDate": null
+     "doneDate": null,
+     "clusterHref": "clusters/redrill_maths_maclaurin.html"
     }
    ],
    "week": 5
   },
   {
-   "n": 28,
+   "n": 27,
    "date": "2026-08-19",
    "weekday": "Wed",
    "type": "standard",
-   "subject": "gp",
+   "subject": "bio",
    "flag": "",
    "mins": 240,
-   "label": "Bio Inheritance + Economy + GP",
-   "focus": "",
+   "label": "GP + Bio + CSC",
+   "focus": "plan drill  ·  Inheritance  ·  Economy memorisation",
    "blocks": [
     {
      "mins": 60,
@@ -1836,15 +1815,15 @@ window.PLAN = {
    "week": 5
   },
   {
-   "n": 29,
+   "n": 28,
    "date": "2026-08-20",
    "weekday": "Thu",
    "type": "standard",
-   "subject": "gp",
+   "subject": "chem",
    "flag": "",
    "mins": 240,
-   "label": "Chem Arenes + Maths pure timed + GP",
-   "focus": "",
+   "label": "GP + Chem + Maths",
+   "focus": "plan drill  ·  Nitrogen Compounds  ·  Vectors + Formula-Lock sheet",
    "blocks": [
     {
      "mins": 60,
@@ -1857,32 +1836,33 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "chem",
-     "name": "Chem — Arenes",
-     "desc": "Finishes core organic.",
+     "name": "Chem — Nitrogen Compounds",
+     "desc": "",
      "done": false,
      "doneDate": null
     },
     {
      "mins": 60,
      "subject": "maths",
-     "name": "Maths — pure timed section",
-     "desc": "",
+     "name": "Maths — Vectors + Formula-Lock sheet",
+     "desc": "Stats for P2.",
      "done": false,
-     "doneDate": null
+     "doneDate": null,
+     "clusterHref": "clusters/formula_lock_maths.html"
     }
    ],
    "week": 5
   },
   {
-   "n": 30,
+   "n": 29,
    "date": "2026-08-21",
    "weekday": "Fri",
    "type": "standard",
-   "subject": "gp",
+   "subject": "bio",
    "flag": "",
    "mins": 240,
-   "label": "Bio Cancer + GP P1 timed + GP P2 skill",
-   "focus": "GP P2 comprehension skill starts (paper 26 Aug).",
+   "label": "GP + Bio",
+   "focus": "timed full intro+plan  ·  Cancer  ·  comprehension + summary technique",
    "blocks": [
     {
      "mins": 60,
@@ -1912,7 +1892,7 @@ window.PLAN = {
    "week": 5
   },
   {
-   "n": 31,
+   "n": 30,
    "date": "2026-08-22",
    "weekday": "Sat",
    "type": "test",
@@ -1963,7 +1943,7 @@ window.PLAN = {
    "week": 5
   },
   {
-   "n": 32,
+   "n": 31,
    "date": "2026-08-24",
    "weekday": "Mon",
    "type": "exam",
@@ -1993,7 +1973,7 @@ window.PLAN = {
    "week": 6
   },
   {
-   "n": 33,
+   "n": 32,
    "date": "2026-08-25",
    "weekday": "Tue",
    "type": "exam",
@@ -2023,7 +2003,7 @@ window.PLAN = {
    "week": 6
   },
   {
-   "n": 34,
+   "n": 33,
    "date": "2026-08-26",
    "weekday": "Wed",
    "type": "exam",
@@ -2053,7 +2033,7 @@ window.PLAN = {
    "week": 6
   },
   {
-   "n": 35,
+   "n": 34,
    "date": "2026-08-27",
    "weekday": "Thu",
    "type": "exam",
@@ -2083,7 +2063,7 @@ window.PLAN = {
    "week": 6
   },
   {
-   "n": 36,
+   "n": 35,
    "date": "2026-08-28",
    "weekday": "Fri",
    "type": "exam",
@@ -2096,8 +2076,8 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "chem",
-     "name": "Chem — Energetics + Equilibria (P2 content)",
-     "desc": "",
+     "name": "Chem — Arenes + Energetics (P2 content)",
+     "desc": "Arenes finishes organic; start physical.",
      "done": false,
      "doneDate": null
     },
@@ -2113,7 +2093,7 @@ window.PLAN = {
    "week": 6
   },
   {
-   "n": 37,
+   "n": 36,
    "date": "2026-08-29",
    "weekday": "Sat",
    "type": "test",
@@ -2151,15 +2131,15 @@ window.PLAN = {
    "week": 6
   },
   {
-   "n": 38,
+   "n": 37,
    "date": "2026-08-30",
    "weekday": "Sun",
    "type": "standard",
    "subject": "bio",
    "flag": "",
    "mins": 120,
-   "label": "Bio practical prep (2h, day before)",
-   "focus": "Sunday, short 2h only — your day-before Bio practical prep.",
+   "label": "Bio",
+   "focus": "past practical papers (2h)",
    "blocks": [
     {
      "mins": 120,
@@ -2173,7 +2153,7 @@ window.PLAN = {
    "week": 6
   },
   {
-   "n": 39,
+   "n": 38,
    "date": "2026-08-31",
    "weekday": "Mon",
    "type": "exam",
@@ -2203,15 +2183,15 @@ window.PLAN = {
    "week": 7
   },
   {
-   "n": 40,
+   "n": 39,
    "date": "2026-09-01",
    "weekday": "Tue",
    "type": "standard",
    "subject": "chem",
    "flag": "",
    "mins": 240,
-   "label": "Chem P2 review + CSC Society",
-   "focus": "Chem P2 tomorrow.",
+   "label": "Chem + CSC",
+   "focus": "P2 final review (all covered)  ·  Society memorisation",
    "blocks": [
     {
      "mins": 120,
@@ -2233,7 +2213,7 @@ window.PLAN = {
    "week": 7
   },
   {
-   "n": 41,
+   "n": 40,
    "date": "2026-09-02",
    "weekday": "Wed",
    "type": "exam",
@@ -2263,15 +2243,15 @@ window.PLAN = {
    "week": 7
   },
   {
-   "n": 42,
+   "n": 41,
    "date": "2026-09-03",
    "weekday": "Thu",
    "type": "standard",
    "subject": "csc",
    "flag": "",
    "mins": 240,
-   "label": "CSC Society + Bio Respiration",
-   "focus": "",
+   "label": "CSC + Bio",
+   "focus": "Society memorisation + essay  ·  Respiration (finish + drill)",
    "blocks": [
     {
      "mins": 120,
@@ -2293,15 +2273,15 @@ window.PLAN = {
    "week": 7
   },
   {
-   "n": 43,
+   "n": 42,
    "date": "2026-09-04",
    "weekday": "Fri",
    "type": "standard",
    "subject": "bio",
    "flag": "",
    "mins": 240,
-   "label": "Bio Photosynthesis + Maths DRV",
-   "focus": "",
+   "label": "Bio + Maths",
+   "focus": "Photosynthesis (essay-depth topic 2)  ·  Normal Distribution",
    "blocks": [
     {
      "mins": 120,
@@ -2314,8 +2294,8 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "maths",
-     "name": "Maths — Discrete RV & Binomial",
-     "desc": "",
+     "name": "Maths — Normal Distribution",
+     "desc": "Last stats topic for P2.",
      "done": false,
      "doneDate": null
     }
@@ -2323,7 +2303,7 @@ window.PLAN = {
    "week": 7
   },
   {
-   "n": 44,
+   "n": 43,
    "date": "2026-09-05",
    "weekday": "Sat",
    "type": "test",
@@ -2374,15 +2354,15 @@ window.PLAN = {
    "week": 7
   },
   {
-   "n": 45,
+   "n": 44,
    "date": "2026-09-07",
    "weekday": "Mon",
    "type": "standard",
    "subject": "csc",
    "flag": "",
    "mins": 240,
-   "label": "CSC Society/P2 + Bio Immunity",
-   "focus": "",
+   "label": "CSC + Bio",
+   "focus": "Society finish + P2 essay practice  ·  Immunity / Infectious Diseases (essay-depth topic 3)",
    "blocks": [
     {
      "mins": 120,
@@ -2404,15 +2384,15 @@ window.PLAN = {
    "week": 8
   },
   {
-   "n": 46,
+   "n": 45,
    "date": "2026-09-08",
    "weekday": "Tue",
    "type": "standard",
    "subject": "csc",
    "flag": "",
    "mins": 240,
-   "label": "CSC P1 case skill + Maths Sampling",
-   "focus": "",
+   "label": "CSC + Maths",
+   "focus": "Paper 1 case-study skill  ·  DRV + Sampling",
    "blocks": [
     {
      "mins": 120,
@@ -2425,7 +2405,7 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "maths",
-     "name": "Maths — Sampling",
+     "name": "Maths — DRV + Sampling",
      "desc": "",
      "done": false,
      "doneDate": null
@@ -2434,15 +2414,15 @@ window.PLAN = {
    "week": 8
   },
   {
-   "n": 47,
+   "n": 46,
    "date": "2026-09-09",
    "weekday": "Wed",
    "type": "standard",
    "subject": "bio",
    "flag": "",
    "mins": 240,
-   "label": "Bio Cell Signalling + Chem Electrochemistry",
-   "focus": "",
+   "label": "Bio + Chem",
+   "focus": "Cell Signalling  ·  Electrochemistry (P3 content)",
    "blocks": [
     {
      "mins": 120,
@@ -2464,15 +2444,15 @@ window.PLAN = {
    "week": 8
   },
   {
-   "n": 48,
+   "n": 47,
    "date": "2026-09-10",
    "weekday": "Thu",
    "type": "standard",
    "subject": "csc",
    "flag": "",
    "mins": 240,
-   "label": "CSC P2 essays + Bio Evolution",
-   "focus": "",
+   "label": "CSC + Bio",
+   "focus": "Paper 2 essay practice (Econ/Society)  ·  Evolution",
    "blocks": [
     {
      "mins": 120,
@@ -2494,20 +2474,20 @@ window.PLAN = {
    "week": 8
   },
   {
-   "n": 49,
+   "n": 48,
    "date": "2026-09-11",
    "weekday": "Fri",
    "type": "standard",
    "subject": "maths",
    "flag": "",
    "mins": 240,
-   "label": "Maths Hypothesis + Chem Periodicity + CSC Diplomacy light",
-   "focus": "Light touch on Diplomacy only (full coverage after prelims).",
+   "label": "Maths + Chem + CSC",
+   "focus": "Hypothesis + Correlation  ·  Periodicity (P3)  ·  Diplomacy (light touch, P1-case exposure only)",
    "blocks": [
     {
      "mins": 120,
      "subject": "maths",
-     "name": "Maths — Hypothesis Testing",
+     "name": "Maths — Hypothesis + Correlation",
      "desc": "",
      "done": false,
      "doneDate": null
@@ -2532,7 +2512,7 @@ window.PLAN = {
    "week": 8
   },
   {
-   "n": 50,
+   "n": 49,
    "date": "2026-09-12",
    "weekday": "Sat",
    "type": "test",
@@ -2583,7 +2563,7 @@ window.PLAN = {
    "week": 8
   },
   {
-   "n": 51,
+   "n": 50,
    "date": "2026-09-14",
    "weekday": "Mon",
    "type": "exam",
@@ -2613,7 +2593,7 @@ window.PLAN = {
    "week": 9
   },
   {
-   "n": 52,
+   "n": 51,
    "date": "2026-09-15",
    "weekday": "Tue",
    "type": "exam",
@@ -2643,7 +2623,7 @@ window.PLAN = {
    "week": 9
   },
   {
-   "n": 53,
+   "n": 52,
    "date": "2026-09-16",
    "weekday": "Wed",
    "type": "exam",
@@ -2673,7 +2653,7 @@ window.PLAN = {
    "week": 9
   },
   {
-   "n": 54,
+   "n": 53,
    "date": "2026-09-17",
    "weekday": "Thu",
    "type": "exam",
@@ -2703,7 +2683,7 @@ window.PLAN = {
    "week": 9
   },
   {
-   "n": 55,
+   "n": 54,
    "date": "2026-09-18",
    "weekday": "Fri",
    "type": "exam",
@@ -2733,7 +2713,7 @@ window.PLAN = {
    "week": 9
   },
   {
-   "n": 56,
+   "n": 55,
    "date": "2026-09-19",
    "weekday": "Sat",
    "type": "test",
@@ -2771,15 +2751,15 @@ window.PLAN = {
    "week": 9
   },
   {
-   "n": 57,
+   "n": 56,
    "date": "2026-09-20",
    "weekday": "Sun",
    "type": "standard",
    "subject": "chem",
    "flag": "",
    "mins": 120,
-   "label": "MCQ review (2h) — Chem P1 tomorrow",
-   "focus": "Sunday, short 2h — final MCQ patch before the last two papers.",
+   "label": "Chem",
+   "focus": "P1 MCQ final review + Bio MCQ skim",
    "blocks": [
     {
      "mins": 120,
@@ -2793,7 +2773,7 @@ window.PLAN = {
    "week": 9
   },
   {
-   "n": 58,
+   "n": 57,
    "date": "2026-09-21",
    "weekday": "Mon",
    "type": "exam",
@@ -2815,7 +2795,7 @@ window.PLAN = {
    "week": 10
   },
   {
-   "n": 59,
+   "n": 58,
    "date": "2026-09-22",
    "weekday": "Tue",
    "type": "exam",
@@ -2867,42 +2847,42 @@ window.PLAN = {
   [
    3,
    14,
-   19
+   18
   ],
   [
    4,
-   20,
-   25
+   19,
+   24
   ],
   [
    5,
-   26,
-   31
+   25,
+   30
   ],
   [
    6,
-   32,
-   38
+   31,
+   37
   ],
   [
    7,
-   39,
-   44
+   38,
+   43
   ],
   [
    8,
-   45,
-   50
+   44,
+   49
   ],
   [
    9,
-   51,
-   57
+   50,
+   56
   ],
   [
    10,
-   58,
-   59
+   57,
+   58
   ]
  ],
  "log": [

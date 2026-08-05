@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maclaurin Series — Full Re-Teach &amp; Re-Drill</title>
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: true, tags: 'none' },
+    svg: { fontCache: 'global' },
+    options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --amber-soft:#fffbeb;
+    --green:#059669; --green-soft:#ecfdf5; --cover:#f3f4f6;
+    --purple:#7c3aed; --purple-soft:#f5f3ff; --red:#dc2626; --red-soft:#fef2f2; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:40px 24px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h2,h3,.label,.controls,button,.step-header{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  h1{font-size:1.9em;margin:0 0 4px;color:#111;border-bottom:3px solid #111;padding-bottom:12px}
+  .exam-head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:.82em;color:#374151;border-bottom:1px solid #cbd5e1;padding-bottom:10px;margin:0 0 18px}
+  .exam-head span{white-space:nowrap}
+  h2{font-size:1.35em;margin-top:52px;margin-bottom:16px;color:#111;border-bottom:1px solid #999;padding-bottom:6px}
+  h3{font-size:1.15em;margin:0 0 14px;color:#1f2937}
+  p{margin:8px 0}
+  .meta{color:var(--muted);font-size:.9em;margin:4px 0 24px}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--red);padding:16px 20px;border-radius:6px;margin:16px 0 24px}
+  .intro ul{margin:8px 0 0 0;padding-left:22px}
+  .intro li{margin:4px 0}
+  .toolkit{background:var(--blue-soft);border:1px solid #bfdbfe;border-left:4px solid var(--blue);padding:16px 20px;border-radius:6px;margin:0 0 20px;font-size:.95em}
+  .toolkit strong{color:#1e3a8a}
+  .toolkit ol{margin:8px 0 0 0;padding-left:20px}.toolkit ol li{margin:6px 0}
+  .toolkit table{border-collapse:collapse;margin:10px 0 4px;width:100%;font-size:.95em}
+  .toolkit th,.toolkit td{padding:6px 10px;border-bottom:1px solid #dbeafe;text-align:left;vertical-align:top}
+  .toolkit th{color:#1e3a8a;font-family:-apple-system,sans-serif;font-weight:600}
+  .toolkit tr:last-child td{border-bottom:none}
+  .tag{display:inline-block;font-size:.72em;font-family:-apple-system,sans-serif;font-weight:700;padding:2px 9px;border-radius:10px;margin-right:6px}
+  .tag.a{background:#dbeafe;color:#1e40af}.tag.b{background:#ede9fe;color:#5b21b6}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;color:var(--text);font-weight:500}
+  .controls button:hover{background:#f3f4f6}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:32px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:6px;color:#111}
+  .toc a{color:var(--blue);text-decoration:none;margin-right:16px;line-height:2}
+  .toc a:hover{text-decoration:underline}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .block{margin:14px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border)}
+  .block.concept{background:#f0fdfa;border-left-color:#0d9488}
+  .block.example{background:#f9fafb;border-left-color:#6b7280}
+  .block.worked{background:var(--green-soft);border-left-color:var(--green)}
+  .block.practice{background:var(--amber-soft);border-left-color:var(--amber)}
+  .block.answer{background:var(--green-soft);border-left-color:var(--green);position:relative;min-height:60px}
+  .label{display:block;text-transform:uppercase;font-size:.75em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--muted)}
+  .block.concept .label{color:#0f766e}
+  .block.example .label{color:#4b5563}
+  .block.worked .label{color:var(--green)}
+  .block.practice .label{color:var(--amber)}
+  .block.answer .label{color:var(--green)}
+  .stem{background:#1e293b;color:#f1f5f9;padding:12px 16px;border-radius:6px;margin:10px 0;font-family:'Charter','Georgia',serif}
+  .stem b{color:#fde68a}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px;font-family:-apple-system,sans-serif}
+  .mark-step{display:inline-block;font-size:.75em;background:#ddd6fe;color:#5b21b6;padding:1px 7px;border-radius:8px;font-weight:700;margin:0 4px;font-family:-apple-system,sans-serif}
+  .src{font-size:.78em;color:#94a3b8;font-style:italic;font-family:-apple-system,sans-serif}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.55);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.8em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .step-desc{font-style:italic;color:#374151;margin-bottom:6px;font-size:.95em}
+  .final{background:#ecfdf5;border:1px solid #6ee7b7;border-radius:5px;padding:6px 12px;margin-top:8px}
+  .whyharder{background:var(--red-soft);border-left:3px solid var(--red);padding:8px 12px;border-radius:4px;margin:12px 0 0;font-size:.92em}
+  .whyharder b{color:var(--red)}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3;box-shadow:0 1px 2px rgba(0,0,0,.1)}
+  .reveal-btn:hover{background:#047857}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .reveal-btn.hide-state:hover{background:#4b5563}
+  .answer-content{transition:filter .2s,opacity .2s}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;font-family:-apple-system,sans-serif;border-left:4px solid var(--muted);margin-left:-16px;padding-left:16px;z-index:2;transition:opacity .2s}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content{padding-right:60px}
+  ul,ol{padding-left:24px}
+  li{margin:4px 0}
+  .mjx-container{font-size:1.04em!important}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  table{border-collapse:collapse;margin:12px 0;font-size:.95em}
+  th,td{border:1px solid #ddd;padding:6px 12px;text-align:left}
+  th{background:#f3f4f6;font-weight:600;font-family:-apple-system,sans-serif}
+  .highlight{background:#fef3c7;padding:1px 4px;border-radius:3px;font-weight:600}
+  @media print{
+    body{background:#fff;padding:20px;max-width:100%}
+    .controls,.reveal-btn{display:none!important}
+    .answer-overlay{display:none!important}
+    .card{box-shadow:none;page-break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<h1>Maclaurin Series — Full Re-Teach &amp; Re-Drill</h1>
+<div class="exam-head">
+  <span><b>Mathematics</b> &mdash; H2 9758</span>
+  <span>Paper 1 &middot; Pure Mathematics</span>
+  <span>Topic: Maclaurin Series (Calculus)</span>
+  <span>4 cards &middot; teach &rarr; drill</span>
+</div>
+
+<div class="intro">
+<strong>Why this exists:</strong> you scored ~38% and said you'd "completely forgotten the process," and it was taught incompletely last time. So this rebuilds the <b>whole method from scratch</b> and then drills it. Read the method box, then work each card top-to-bottom.
+<ul>
+  <li>Each card = a <b>worked example</b> (study it &mdash; the full method is shown) then a <b>harder practice</b> whose answer is hidden. Attempt the practice cold, <em>then</em> reveal.</li>
+  <li>The four cards are the four things that broke: (1) the "show that" chain, (2) building the series, (3) approximating with a value of \(x\), (4) the standard-series shortcut.</li>
+  <li>One thread runs through cards 1&ndash;3: \( y=e^{\sin^{-1}2x} \) is the worked example every time; \( y=(\sin^{-1}x)^2 \) is your harder practice every time. Same method, twice.</li>
+</ul>
+</div>
+
+<div class="toolkit">
+<strong>THE METHOD &mdash; two routes to a Maclaurin series</strong>
+<p style="margin:8px 0 4px"><span class="tag a">Route A</span> <b>Repeated differentiation</b> &mdash; use when \(y\) is a messy composite (inverse-trig inside an exponential, etc.) with <em>no</em> standard-series shortcut. This is cards 1&ndash;3.</p>
+<ol>
+  <li><b>Form a clean first relation containing \(y\).</b> Take \(\ln\) (or rearrange) to kill the messy part, then differentiate <em>once</em> &mdash; e.g. \( \ln y=\sin^{-1}2x \Rightarrow \sqrt{1-4x^2}\,\dfrac{dy}{dx}=2y \). No exponential left.</li>
+  <li><b>Differentiate that relation again</b> (product rule) to reach the required second-order "show that" form, e.g. \( (1-4x^2)\dfrac{d^2y}{dx^2}-4x\dfrac{dy}{dx}=4y \). Coefficients are now <em>polynomials</em> &mdash; that is the whole point.</li>
+  <li><b>Differentiate repeatedly and put \(x=0\) each time</b> to read off \( y(0),\,y'(0),\,y''(0),\,y'''(0),\dots \) Polynomial coefficients make \(x=0\) trivial.</li>
+  <li><b>Assemble</b> with the MF27 Maclaurin formula: \[ f(x)=f(0)+f'(0)\,x+\frac{f''(0)}{2!}x^2+\frac{f'''(0)}{3!}x^3+\cdots \]</li>
+  <li><b>Approximate</b> by putting a <em>small</em> \(x\) chosen so the series argument hits the value you want (e.g. \(x=0.05\Rightarrow 2x=0.1\)). Small \(x\) keeps the discarded tail negligible.</li>
+</ol>
+<p style="margin:14px 0 4px"><span class="tag b">Route B</span> <b>Standard series (MF27)</b> &mdash; use when \(f\) is built from \(e^x,\ \sin x,\ \cos x,\ \ln(1+x),\ (1+x)^n\). <em>Substitute / multiply</em> the known series instead of differentiating. Card 4.</p>
+<table>
+  <tr><th>Standard series (MF27)</th><th>Valid for</th></tr>
+  <tr><td>\( (1+x)^n = 1+nx+\dfrac{n(n-1)}{2!}x^2+\dfrac{n(n-1)(n-2)}{3!}x^3+\cdots \)</td><td>\( |x|<1 \)</td></tr>
+  <tr><td>\( e^{x} = 1+x+\dfrac{x^2}{2!}+\dfrac{x^3}{3!}+\cdots \)</td><td>all \(x\)</td></tr>
+  <tr><td>\( \sin x = x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}-\cdots \)</td><td>all \(x\)</td></tr>
+  <tr><td>\( \cos x = 1-\dfrac{x^2}{2!}+\dfrac{x^4}{4!}-\cdots \)</td><td>all \(x\)</td></tr>
+  <tr><td>\( \ln(1+x)= x-\dfrac{x^2}{2}+\dfrac{x^3}{3}-\cdots \)</td><td>\( -1<x\le 1 \)</td></tr>
+</table>
+</div>
+
+<div class="controls">
+  <button onclick="revealAll()">Reveal all answers</button>
+  <button onclick="hideAll()">Hide all answers</button>
+</div>
+
+<div class="toc"><strong>Cards</strong>
+  <a href="#c1">1 &middot; the "show that" chain</a>
+  <a href="#c2">2 &middot; building the series</a>
+  <a href="#c3">3 &middot; approximating</a>
+  <a href="#c4">4 &middot; standard-series shortcut</a>
+</div>
+
+<!-- ============ CARD 1 ============ -->
+<div class="card" id="c1">
+  <h3>Card 1 &mdash; the "show that" implicit chain <span class="src">(Route A, steps 1&ndash;2)</span></h3>
+
+  <div class="block concept"><div class="label">Why you differentiate the RELATION, not the explicit form</div>
+    Differentiating \( y=e^{\sin^{-1}2x} \) directly gets <em>uglier every time</em>: the chain rule keeps piling up \( \dfrac{1}{\sqrt{1-4x^2}} \) factors and their derivatives. Instead:
+    <ul>
+      <li><b>Take \(\ln\)</b> to linearise: \( \ln y=\sin^{-1}2x \). Now differentiate once &mdash; the exponential is gone.</li>
+      <li>You get a <b>clean relation</b> \( \sqrt{1-4x^2}\,\dfrac{dy}{dx}=2y \). It still contains \(y\), which is exactly what lets it fold back on itself.</li>
+      <li>Differentiate <b>that</b> (product rule) and you reach a relation among \( y'',\,y',\,y \) with polynomial coefficients. Every later derivative stays polynomial. That is why the "show that" step is worth doing &mdash; it sets up an engine you can crank at \(x=0\).</li>
+    </ul>
+  </div>
+
+  <div class="block example"><div class="label">Worked Example <span class="src">(HCI Tutorial 5A Q5a &mdash; verbatim)</span></div>
+    <div class="stem">Given that \( y=e^{\sin^{-1}2x} \), show that \( \left(1-4x^2\right)\dfrac{d^2y}{dx^2}-4x\dfrac{dy}{dx}=4y \). <span class="marks">[3]</span></div>
+  </div>
+  <div class="block worked"><div class="label">Worked solution &mdash; study this first</div>
+    <div class="step"><div class="step-header">Step 1 &mdash; clean first relation</div>
+      <div class="step-desc">Let \( y=e^{\sin^{-1}2x} \). Take \(\ln\), then differentiate once (chain rule; \( \tfrac{d}{dx}\sin^{-1}u \) from MF27). <span class="mark-step">M1</span></div>
+      \( \ln y=\sin^{-1}2x \ \Rightarrow\ \dfrac{1}{y}\dfrac{dy}{dx}=\dfrac{1}{\sqrt{1-(2x)^2}}\,(2) \ \Rightarrow\ \sqrt{1-4x^2}\,\dfrac{dy}{dx}=2y. \)
+    </div>
+    <div class="step"><div class="step-header">Step 2 &mdash; differentiate the relation (product rule)</div>
+      <div class="step-desc">Differentiate \( \sqrt{1-4x^2}\,\dfrac{dy}{dx}=2y \) w.r.t. \(x\); the left side is a product. <span class="mark-step">M1</span></div>
+      \( \sqrt{1-4x^2}\,\dfrac{d^2y}{dx^2}+\dfrac{-8x}{2\sqrt{1-4x^2}}\,\dfrac{dy}{dx}=2\dfrac{dy}{dx}. \)
+    </div>
+    <div class="step"><div class="step-header">Step 3 &mdash; clear the surd, reach the stated form</div>
+      <div class="step-desc">Multiply through by \( \sqrt{1-4x^2} \), then use \( \sqrt{1-4x^2}\,\dfrac{dy}{dx}=2y \) from Step 1. <span class="mark-step">A1</span></div>
+      \( \left(1-4x^2\right)\dfrac{d^2y}{dx^2}-4x\dfrac{dy}{dx}=2\sqrt{1-4x^2}\,\dfrac{dy}{dx}=2(2y). \)
+      <div class="final">\( \therefore\ \left(1-4x^2\right)\dfrac{d^2y}{dx^2}-4x\dfrac{dy}{dx}=4y \quad(\textbf{shown}). \)</div>
+    </div>
+  </div>
+
+  <div class="block practice"><div class="label">Practice &mdash; attempt cold <span class="src">(A-Level Maclaurin archetype: \((\sin^{-1}x)^2\))</span></div>
+    <div class="stem">Given that \( y=\left(\sin^{-1}x\right)^2 \), show that \( \left(1-x^2\right)\dfrac{d^2y}{dx^2}-x\dfrac{dy}{dx}=2 \). <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1 &mdash; first relation (no \(\ln\) here; differentiate directly)</div>
+        <div class="step-desc">Let \( y=\left(\sin^{-1}x\right)^2 \). Differentiate (chain rule), then multiply by \( \sqrt{1-x^2} \) to clear the surd. <span class="mark-step">M1</span></div>
+        \( \dfrac{dy}{dx}=2\sin^{-1}x\cdot\dfrac{1}{\sqrt{1-x^2}} \ \Rightarrow\ \sqrt{1-x^2}\,\dfrac{dy}{dx}=2\sin^{-1}x. \)
+      </div>
+      <div class="step"><div class="step-header">Step 2 &mdash; differentiate the relation (product rule)</div>
+        <div class="step-desc">Differentiate \( \sqrt{1-x^2}\,\dfrac{dy}{dx}=2\sin^{-1}x \) w.r.t. \(x\). <span class="mark-step">M1</span></div>
+        \( \sqrt{1-x^2}\,\dfrac{d^2y}{dx^2}+\dfrac{-x}{\sqrt{1-x^2}}\,\dfrac{dy}{dx}=\dfrac{2}{\sqrt{1-x^2}}. \)
+      </div>
+      <div class="step"><div class="step-header">Step 3 &mdash; multiply through by \( \sqrt{1-x^2} \)</div>
+        <div class="step-desc">The surd clears on every term. <span class="mark-step">M1</span></div>
+        \( \left(1-x^2\right)\dfrac{d^2y}{dx^2}-x\dfrac{dy}{dx}=2. \)
+      </div>
+      <div class="step"><div class="step-header">Step 4 &mdash; state the result</div>
+        <div class="step-desc"><span class="mark-step">A1</span></div>
+        <div class="final">\( \therefore\ \left(1-x^2\right)\dfrac{d^2y}{dx^2}-x\dfrac{dy}{dx}=2 \quad(\textbf{shown}). \)</div>
+      </div>
+      <div class="whyharder"><b>Why harder:</b> there's no \(\ln\) shortcut &mdash; you introduce \(y\) by <b>squaring the surd relation</b> instead, and the right-hand side collapses to a bare constant \(2\) (not a multiple of \(y\)). Watch the sign: \( \tfrac{d}{dx}\sqrt{1-x^2}=\dfrac{-x}{\sqrt{1-x^2}} \).</div>
+    </div><div class="answer-overlay">Answer hidden &mdash; attempt first, then click Reveal</div>
+  </div>
+</div>
+
+<!-- ============ CARD 2 ============ -->
+<div class="card" id="c2">
+  <h3>Card 2 &mdash; building the Maclaurin series from the relation <span class="src">(Route A, steps 3&ndash;4)</span></h3>
+
+  <div class="block concept"><div class="label">The engine: differentiate, put \(x=0\), assemble</div>
+    You already have the relation. Now crank it:
+    <ul>
+      <li>Read off the low derivatives at \(x=0\) straight from \(y\) and the relation: \( y(0) \) from the original \(y\); \( y'(0) \) from the first relation; \( y''(0) \) from the second relation.</li>
+      <li>For \( y'''(0) \), <b>differentiate the relation once more</b> and put \(x=0\). Each new derivative costs one differentiation.</li>
+      <li>Drop the numbers into \[ f(x)=f(0)+f'(0)x+\frac{f''(0)}{2!}x^2+\frac{f'''(0)}{3!}x^3+\cdots \] Do <b>not</b> forget the factorials in the denominators &mdash; that is the single most common slip.</li>
+    </ul>
+  </div>
+
+  <div class="block example"><div class="label">Worked Example <span class="src">(continues HCI Tut 5A Q5a &mdash; the standard "hence find the series" part)</span></div>
+    <div class="stem">Given \( y=e^{\sin^{-1}2x} \) with \( \left(1-4x^2\right)y''-4xy'=4y \) (Card 1), find the Maclaurin series for \(y\) up to and including the term in \(x^3\). <span class="marks">[5]</span></div>
+  </div>
+  <div class="block worked"><div class="label">Worked solution &mdash; study this first</div>
+    <div class="step"><div class="step-header">Step 1 &mdash; the three low derivatives at \(x=0\)</div>
+      <div class="step-desc">Name each before substituting. Use \( y=e^{\sin^{-1}2x} \), then \( \sqrt{1-4x^2}\,y'=2y \), then \( (1-4x^2)y''-4xy'=4y \), each at \(x=0\). <span class="mark-step">M1</span></div>
+      \( y(0)=e^{\sin^{-1}0}=e^0=1. \)<br>
+      \( \sqrt{1}\,y'(0)=2y(0)=2 \ \Rightarrow\ y'(0)=2. \)<br>
+      \( (1)y''(0)-0=4y(0)=4 \ \Rightarrow\ y''(0)=4. \) <span class="mark-step">A1</span>
+    </div>
+    <div class="step"><div class="step-header">Step 2 &mdash; differentiate the relation once more for \( y'''(0) \)</div>
+      <div class="step-desc">Differentiate \( (1-4x^2)y''-4xy'=4y \) w.r.t. \(x\) (product rule on both left terms). <span class="mark-step">M1</span></div>
+      \( (1-4x^2)y'''-8x\,y''-\big(4y'+4x\,y''\big)=4y' \ \Rightarrow\ (1-4x^2)y'''-12x\,y''=8y'. \)<br>
+      At \(x=0\): \( y'''(0)=8\,y'(0)=8(2)=16. \) <span class="mark-step">A1</span>
+    </div>
+    <div class="step"><div class="step-header">Step 3 &mdash; assemble with the Maclaurin formula</div>
+      <div class="step-desc">\( f(x)=f(0)+f'(0)x+\dfrac{f''(0)}{2!}x^2+\dfrac{f'''(0)}{3!}x^3+\cdots \) with \( 1,\,2,\,4,\,16 \). <span class="mark-step">A1</span></div>
+      \( y=1+2x+\dfrac{4}{2!}x^2+\dfrac{16}{3!}x^3+\cdots \)
+      <div class="final">\( \therefore\ y=1+2x+2x^2+\dfrac{8}{3}x^3+\cdots \)</div>
+    </div>
+  </div>
+
+  <div class="block practice"><div class="label">Practice &mdash; attempt cold <span class="src">(A-Level archetype: \((\sin^{-1}x)^2\) series)</span></div>
+    <div class="stem">Given \( y=\left(\sin^{-1}x\right)^2 \) with \( \left(1-x^2\right)y''-xy'=2 \) (Card 1), find the Maclaurin series for \(y\) up to and including the term in \(x^4\). <span class="marks">[6]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1 &mdash; low derivatives at \(x=0\)</div>
+        <div class="step-desc">From \( y=(\sin^{-1}x)^2 \), then \( \sqrt{1-x^2}\,y'=2\sin^{-1}x \), then \( (1-x^2)y''-xy'=2 \), each at \(x=0\). <span class="mark-step">M1</span></div>
+        \( y(0)=(\sin^{-1}0)^2=0. \)<br>
+        \( \sqrt{1}\,y'(0)=2\sin^{-1}0=0 \ \Rightarrow\ y'(0)=0. \)<br>
+        \( (1)y''(0)-0=2 \ \Rightarrow\ y''(0)=2. \) <span class="mark-step">A1</span>
+      </div>
+      <div class="step"><div class="step-header">Step 2 &mdash; differentiate for \( y'''(0) \)</div>
+        <div class="step-desc">Differentiate \( (1-x^2)y''-xy'=2 \). <span class="mark-step">M1</span></div>
+        \( (1-x^2)y'''-2x\,y''-\big(y'+x\,y''\big)=0 \ \Rightarrow\ (1-x^2)y'''-3x\,y''-y'=0. \)<br>
+        At \(x=0\): \( y'''(0)=y'(0)=0. \)
+      </div>
+      <div class="step"><div class="step-header">Step 3 &mdash; differentiate again for \( y^{(4)}(0) \)</div>
+        <div class="step-desc">Differentiate \( (1-x^2)y'''-3x\,y''-y'=0 \). <span class="mark-step">M1</span></div>
+        \( (1-x^2)y^{(4)}-2x\,y'''-3\big(y''+x\,y'''\big)-y''=0 \ \Rightarrow\ (1-x^2)y^{(4)}-5x\,y'''-4y''=0. \)<br>
+        At \(x=0\): \( y^{(4)}(0)=4\,y''(0)=4(2)=8. \) <span class="mark-step">A1</span>
+      </div>
+      <div class="step"><div class="step-header">Step 4 &mdash; assemble (only even powers survive)</div>
+        <div class="step-desc">\( f(x)=f(0)+f'(0)x+\dfrac{f''(0)}{2!}x^2+\dfrac{f'''(0)}{3!}x^3+\dfrac{f^{(4)}(0)}{4!}x^4+\cdots \) with \( 0,0,2,0,8 \). <span class="mark-step">A1</span></div>
+        \( y=0+0+\dfrac{2}{2!}x^2+0+\dfrac{8}{4!}x^4+\cdots \)
+        <div class="final">\( \therefore\ y=x^2+\dfrac{1}{3}x^4+\cdots \)</div>
+      </div>
+      <div class="whyharder"><b>Why harder:</b> \(y\) is an <b>even</b> function so the odd derivatives vanish (\( y'(0)=y'''(0)=0 \)) &mdash; you have to <b>differentiate twice more</b> and push to \(x^4\) to get two non-zero terms, where the example stopped at \(x^3\). Miss that \(y'(0)=0\) and the whole chain collapses.</div>
+    </div><div class="answer-overlay">Answer hidden &mdash; attempt first, then click Reveal</div>
+  </div>
+</div>
+
+<!-- ============ CARD 3 ============ -->
+<div class="card" id="c3">
+  <h3>Card 3 &mdash; approximating with a suitable value of \(x\) <span class="src">(Route A, step 5)</span></h3>
+
+  <div class="block concept"><div class="label">How to pick \(x\)</div>
+    A Maclaurin series is only an approximation near \(x=0\). To use it:
+    <ul>
+      <li><b>Match the argument.</b> Choose \(x\) so the thing inside the series equals the value you want. If the series is in \(2x\) and you want \(\sin^{-1}0.1\), set \(2x=0.1\), i.e. \(x=0.05\).</li>
+      <li><b>Keep \(x\) small.</b> The terms you threw away are in \(x^4,x^5,\dots\); the smaller \(x\), the more negligible that tail, the more accurate the estimate. A large \(x\) makes the discarded tail matter &mdash; the estimate degrades.</li>
+      <li>Then it's just arithmetic: substitute and add.</li>
+    </ul>
+  </div>
+
+  <div class="block example"><div class="label">Worked Example <span class="src">(standard "hence approximate" part)</span></div>
+    <div class="stem">Using \( y=e^{\sin^{-1}2x}\approx 1+2x+2x^2+\dfrac{8}{3}x^3 \), find an approximation for \( e^{\sin^{-1}0.1} \), giving your answer to 4 decimal places. <span class="marks">[2]</span></div>
+  </div>
+  <div class="block worked"><div class="label">Worked solution &mdash; study this first</div>
+    <div class="step"><div class="step-header">Step 1 &mdash; choose \(x\) so the argument matches</div>
+      <div class="step-desc">We need the exponent \( \sin^{-1}2x \) to equal \( \sin^{-1}0.1 \), i.e. \( 2x=0.1 \). <span class="mark-step">M1</span></div>
+      Take \( x=0.05 \); then \( \sin^{-1}2x=\sin^{-1}0.1 \) so \( y=e^{\sin^{-1}0.1} \). (Small \(x\): the \(x^4\) tail is negligible.)
+    </div>
+    <div class="step"><div class="step-header">Step 2 &mdash; substitute into the series</div>
+      <div class="step-desc">Evaluate \( 1+2x+2x^2+\tfrac{8}{3}x^3 \) at \( x=0.05 \). <span class="mark-step">A1</span></div>
+      \( 1+2(0.05)+2(0.05)^2+\dfrac{8}{3}(0.05)^3 = 1+0.1+0.005+0.000333\ldots = 1.105333\ldots \)
+      <div class="final">\( \therefore\ e^{\sin^{-1}0.1}\approx 1.1053 \) (4 d.p.).</div>
+    </div>
+  </div>
+
+  <div class="block practice"><div class="label">Practice &mdash; attempt cold <span class="src">(A-Level archetype)</span></div>
+    <div class="stem">Using \( \left(\sin^{-1}x\right)^2\approx x^2+\dfrac{1}{3}x^4 \):<br>(a) find an approximation for \( \left(\sin^{-1}0.2\right)^2 \), and hence estimate \( \sin^{-1}0.2 \), to 5 decimal places. <span class="marks">[3]</span><br>(b) Explain why using \( x=0.5 \) would give a less accurate estimate. <span class="marks">[1]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">(a) Step 1 &mdash; substitute \(x=0.2\)</div>
+        <div class="step-desc">Here the series is already in \(x\), and we want \( (\sin^{-1}0.2)^2 \), so take \( x=0.2 \) directly. <span class="mark-step">M1</span></div>
+        \( \left(\sin^{-1}0.2\right)^2\approx (0.2)^2+\dfrac{1}{3}(0.2)^4 = 0.04+\dfrac{0.0016}{3} = 0.04+0.000533\ldots = 0.040533\ldots \)
+        <div class="final">\( \therefore\ \left(\sin^{-1}0.2\right)^2\approx 0.04053 \) (5 d.p.). <span class="mark-step">A1</span></div>
+      </div>
+      <div class="step"><div class="step-header">(a) Step 2 &mdash; hence \( \sin^{-1}0.2 \)</div>
+        <div class="step-desc">Take the positive square root (\( \sin^{-1}0.2>0 \)). <span class="mark-step">A1</span></div>
+        \( \sin^{-1}0.2\approx\sqrt{0.040533\ldots}=0.20133 \) (5 d.p.). \(\;\)(True value \(0.20136\) &mdash; accurate to 4 d.p.)
+      </div>
+      <div class="step"><div class="step-header">(b) Why not \(x=0.5\)</div>
+        <div class="step-desc"><span class="mark-step">B1</span></div>
+        The series is a <b>truncated</b> Maclaurin expansion; the neglected terms (in \(x^6\) and higher) <b>grow as \(x\) grows</b>. At \(x=0.5\) they are no longer negligible, so the truncation error is much larger. A small \(x\) keeps the discarded tail tiny, which is why \(x=0.2\) is preferred.
+      </div>
+      <div class="whyharder"><b>Why harder:</b> two extra demands over the example &mdash; you take a <b>square root</b> to recover \(\sin^{-1}0.2\) from \((\sin^{-1}0.2)^2\), and part (b) tests the <b>concept</b> of why \(x\) must be small (exactly the bit you were shaky on), not just the arithmetic.</div>
+    </div><div class="answer-overlay">Answer hidden &mdash; attempt first, then click Reveal</div>
+  </div>
+</div>
+
+<!-- ============ CARD 4 ============ -->
+<div class="card" id="c4">
+  <h3>Card 4 &mdash; the standard-series shortcut <span class="src">(Route B &mdash; contrast)</span></h3>
+
+  <div class="block concept"><div class="label">When to switch off Route A</div>
+    If \(f\) is <b>built out of the MF27 standard functions</b> (\(e^x,\sin x,\cos x,\ln(1+x),(1+x)^n\)), do <b>not</b> grind repeated differentiation. Instead:
+    <ul>
+      <li><b>Compose:</b> substitute one standard series into another &mdash; e.g. \( \ln(1+\sin x) \) is \( \ln(1+u) \) with \( u=\sin x \).</li>
+      <li><b>Multiply:</b> write each factor's series, then multiply and collect powers &mdash; e.g. \( e^{3x}\cos 2x \).</li>
+      <li>Only keep terms up to the degree asked. When multiplying, watch the <b>cross terms</b> (a low power from one factor times a higher power from the other).</li>
+      <li>Contrast with cards 1&ndash;3: \( e^{\sin^{-1}2x} \) has <em>no</em> standard-series form, so there you were forced onto Route A. Recognising which route to use is half the battle.</li>
+    </ul>
+  </div>
+
+  <div class="block example"><div class="label">Worked Example <span class="src">(MF27 standard-series composition)</span></div>
+    <div class="stem">Using the standard series in MF27, find the Maclaurin series of \( \ln(1+\sin x) \) up to and including the term in \(x^3\). <span class="marks">[4]</span></div>
+  </div>
+  <div class="block worked"><div class="label">Worked solution &mdash; study this first</div>
+    <div class="step"><div class="step-header">Step 1 &mdash; name the substitution</div>
+      <div class="step-desc">MF27: \( \sin x=x-\dfrac{x^3}{6}+\cdots \) and \( \ln(1+u)=u-\dfrac{u^2}{2}+\dfrac{u^3}{3}-\cdots \). Let \( u=\sin x \). <span class="mark-step">M1</span></div>
+      \( u=x-\dfrac{x^3}{6}+\cdots \)
+    </div>
+    <div class="step"><div class="step-header">Step 2 &mdash; powers of \(u\), kept to \(x^3\)</div>
+      <div class="step-desc">Only terms up to \(x^3\) matter. <span class="mark-step">M1</span></div>
+      \( u^2=\left(x-\tfrac{x^3}{6}\right)^2=x^2+\cdots \) (the cross term is \(x^4\)); \( \quad u^3=x^3+\cdots \)
+    </div>
+    <div class="step"><div class="step-header">Step 3 &mdash; substitute and collect</div>
+      <div class="step-desc">\( \ln(1+u)=u-\tfrac{1}{2}u^2+\tfrac{1}{3}u^3 \). <span class="mark-step">A1</span></div>
+      \( =\left(x-\dfrac{x^3}{6}\right)-\dfrac{1}{2}x^2+\dfrac{1}{3}x^3 = x-\dfrac{1}{2}x^2+\left(-\dfrac{1}{6}+\dfrac{1}{3}\right)x^3. \) <span class="mark-step">A1</span>
+      <div class="final">\( \therefore\ \ln(1+\sin x)=x-\dfrac{1}{2}x^2+\dfrac{1}{6}x^3+\cdots \)</div>
+    </div>
+  </div>
+
+  <div class="block practice"><div class="label">Practice &mdash; attempt cold <span class="src">(MF27 standard-series product)</span></div>
+    <div class="stem">Using the standard series in MF27, find the Maclaurin series of \( e^{3x}\cos 2x \) up to and including the term in \(x^3\). <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer</div>
+      <div class="step"><div class="step-header">Step 1 &mdash; the two standard series, to \(x^3\)</div>
+        <div class="step-desc">MF27 \( e^u \) with \(u=3x\), and \( \cos u \) with \(u=2x\). <span class="mark-step">M1</span></div>
+        \( e^{3x}=1+3x+\dfrac{(3x)^2}{2!}+\dfrac{(3x)^3}{3!}+\cdots=1+3x+\dfrac{9}{2}x^2+\dfrac{9}{2}x^3+\cdots \)<br>
+        \( \cos 2x=1-\dfrac{(2x)^2}{2!}+\cdots=1-2x^2+\cdots \) (no \(x^1\) or \(x^3\) term). <span class="mark-step">A1</span>
+      </div>
+      <div class="step"><div class="step-header">Step 2 &mdash; multiply, collecting each power up to \(x^3\)</div>
+        <div class="step-desc">Track cross terms carefully. <span class="mark-step">M1</span></div>
+        <table>
+          <tr><th>power</th><th>contributions</th><th>coefficient</th></tr>
+          <tr><td>\(x^0\)</td><td>\(1\cdot 1\)</td><td>\(1\)</td></tr>
+          <tr><td>\(x^1\)</td><td>\(3x\cdot 1\)</td><td>\(3\)</td></tr>
+          <tr><td>\(x^2\)</td><td>\(\tfrac{9}{2}x^2\cdot 1+1\cdot(-2x^2)\)</td><td>\(\tfrac{9}{2}-2=\tfrac{5}{2}\)</td></tr>
+          <tr><td>\(x^3\)</td><td>\(\tfrac{9}{2}x^3\cdot 1+3x\cdot(-2x^2)\)</td><td>\(\tfrac{9}{2}-6=-\tfrac{3}{2}\)</td></tr>
+        </table>
+        <span class="mark-step">A1</span>
+      </div>
+      <div class="step"><div class="step-header">Step 3 &mdash; write the series</div>
+        <div class="step-desc"><span class="mark-step">A1</span></div>
+        <div class="final">\( \therefore\ e^{3x}\cos 2x=1+3x+\dfrac{5}{2}x^2-\dfrac{3}{2}x^3+\cdots \)</div>
+      </div>
+      <div class="whyharder"><b>Why harder:</b> it's a <b>product of two</b> standard series, not a single composition &mdash; you must expand both far enough and chase the <b>cross term</b> \( 3x\cdot(-2x^2) \) that drags the \(x^3\) coefficient down to \(-\tfrac{3}{2}\). Forget it and you get \(+\tfrac{9}{2}\), the classic error.</div>
+    </div><div class="answer-overlay">Answer hidden &mdash; attempt first, then click Reveal</div>
+  </div>
+</div>
+
+<hr>
+<p class="meta"><b>Sources:</b> the Card 1 "show that" is verbatim HCI Tutorial 5A Q5(a) (<code>Math/_question_bank/Differentiation.md</code>, Higher-Order Derivatives). Cards 2&ndash;3 are the standard "hence find the series / hence approximate" continuation of that same question. The harder practices &mdash; \( (\sin^{-1}x)^2 \), \( \ln(1+\sin x) \), \( e^{3x}\cos 2x \) &mdash; are canonical A-Level Maclaurin archetypes, worked in the HCI mark-scheme house style (each mark inline, symbols named before substitution). Standard series and derivatives cited as MF27, matching your Maclaurin mastery cluster. <b>When you're done:</b> Loom yourself solving all four practices saying your confidence out loud, paste me the transcript, and I'll flag the gaps and build the numbered Maclaurin gap cluster from exactly where you slip.</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn=>{btn.addEventListener('click',function(){const b=this.parentElement,o=b.querySelector('.answer-overlay');if(o.classList.contains('hidden')){o.classList.remove('hidden');this.textContent='Reveal';this.classList.remove('hide-state');}else{o.classList.add('hidden');this.textContent='Hide';this.classList.add('hide-state');}});});
+  function revealAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.add('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Hide';b.classList.add('hide-state');});}
+  function hideAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.remove('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Reveal';b.classList.remove('hide-state');});}
+</script>
+</body>
+</html>

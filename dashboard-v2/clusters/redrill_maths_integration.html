@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Integration — Targeted Re-Drill (9758)</title>
+<script>
+  window.MathJax = { tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], processEscapes: true, tags:'none' }, svg:{fontCache:'global'} };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --amber-soft:#fffbeb;
+    --green:#059669; --green-soft:#ecfdf5; --teal:#0d9488; --teal-soft:#f0fdfa;
+    --cover:#f3f4f6; --purple:#7c3aed; --purple-soft:#f5f3ff; --red:#dc2626; --red-soft:#fef2f2;
+    --accent:#1f3a7a; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:36px 24px 90px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h3,.label,.controls,button,.step-header,.hd .sub,.hd .meta{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  .hd{border-bottom:2.5px solid #111;padding-bottom:16px;margin-bottom:10px;text-align:center}
+  .hd h1{font-size:1.55em;font-weight:800;letter-spacing:.4px;margin:0;border:none;padding:0;color:#111}
+  .hd .sub{font-size:1.02em;margin-top:4px;color:#333}
+  .hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:.8em;color:var(--muted);margin-top:9px}
+  h3{font-size:1.18em;margin:0 0 6px;color:#1f2937}
+  p{margin:8px 0}
+  .meta{color:var(--muted);font-size:.9em;margin:4px 0 22px}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--accent);padding:15px 20px;border-radius:6px;margin:18px 0}
+  .radians{background:#fff7ed;border:2px solid var(--amber);border-radius:8px;padding:13px 18px;margin:18px 0 8px;font-size:.98em;color:#7c2d12}
+  .radians b{color:#b91c1c;text-transform:uppercase;letter-spacing:.03em}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin:22px 0 20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;font-weight:500}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:30px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:8px;color:#111}.toc a{color:var(--blue);text-decoration:none;display:block;line-height:1.95}
+  .toc a b{color:#111}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:24px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .cardhead{font-family:ui-monospace,Menlo,monospace;font-size:.72em;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+  .block{margin:14px 0;padding:12px 16px 14px;border-radius:6px;border-left:4px solid var(--border)}
+  .whatbroke{background:var(--red-soft);border-left:4px solid var(--red);padding:12px 16px;border-radius:6px;margin:12px 0;font-size:.94em}
+  .whatbroke b{color:#b91c1c}
+  .method{background:var(--blue-soft);border-left:4px solid var(--blue);padding:13px 18px;border-radius:6px;margin:14px 0}
+  .method .mlabel{display:block;text-transform:uppercase;font-size:.72em;letter-spacing:.09em;font-weight:700;margin-bottom:8px;color:var(--blue);font-family:-apple-system,sans-serif}
+  .method ol{margin:6px 0 4px;padding-left:22px}.method ol li{margin:5px 0}
+  .method ul{margin:6px 0 4px;padding-left:20px}.method ul li{margin:4px 0}
+  .idbox{background:#fff;border:1px dashed #bcd0f5;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:.92em}
+  .idbox .k{color:var(--blue);font-weight:700}
+  .flow{background:#fff;border:1px solid #e5e7eb;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:.9em;font-style:italic;color:#374151}
+  .block.example{background:var(--teal-soft);border-left-color:var(--teal)}
+  .block.practice{background:var(--amber-soft);border-left-color:var(--amber)}
+  .block.answer{background:var(--green-soft);border-left-color:var(--green);position:relative;min-height:60px}
+  .label{display:block;text-transform:uppercase;font-size:.73em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--muted);font-family:-apple-system,sans-serif}
+  .block.example .label{color:var(--teal)}.block.practice .label{color:var(--amber)}.block.answer .label{color:var(--green)}
+  .stem{background:#1e293b;color:#f1f5f9;padding:12px 16px;border-radius:6px;margin:8px 0}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px;font-family:-apple-system,sans-serif}
+  .src{font-family:ui-monospace,Menlo,monospace;font-size:.72em;color:var(--amber);margin:2px 0 6px}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.6);border-radius:4px;border-left:2px solid var(--teal)}
+  .block.answer .step{border-left-color:var(--green)}
+  .step-header{font-size:.78em;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;font-family:-apple-system,sans-serif}
+  .block.answer .step-header{color:var(--green)}
+  .step-desc{font-style:italic;color:#374151;margin-bottom:6px;font-size:.95em}
+  .mk{display:inline-block;font-size:.8em;color:var(--green);font-weight:700;font-family:-apple-system,sans-serif;margin-left:4px}
+  .name{display:block;font-size:.86em;color:#475569;font-style:italic;margin:6px 0;border-left:2px solid var(--border);padding-left:10px}
+  .whyharder{background:var(--purple-soft);border-left:4px solid var(--purple);padding:11px 16px;border-radius:6px;margin:14px 0 2px;font-size:.92em}
+  .whyharder b{color:#6d28d9}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3;font-family:-apple-system,sans-serif}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;font-family:-apple-system,sans-serif;border-left:4px solid var(--muted);margin-left:-16px;padding-left:16px;z-index:2;text-align:center}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content{padding-right:60px}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  mjx-container{overflow-x:auto;overflow-y:hidden;max-width:100%}
+  @media print{body{background:#fff;padding:20px;max-width:100%}.controls,.reveal-btn{display:none!important}.answer-overlay{display:none!important}.card{box-shadow:none;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<div class="hd">
+  <h1>H2 MATHEMATICS</h1>
+  <div class="sub">Integration — Targeted Re-Drill</div>
+  <div class="meta">9758 · H2 · re-teach + harder practice · 5 cards · method first, then attempt cold</div>
+</div>
+
+<div class="intro">
+You scored about <b>35%</b> on today's Integration diagnostic. This is not generic revision — it re-teaches the <b>five exact places the method broke</b>, one card each. Every card gives you a <b>fully-worked example</b> of the correct method first (the part you were missing), then a <b>harder practice question</b> with the answer hidden. <b>Attempt the practice cold, out loud, before you reveal.</b> Every question is a real HCI tutorial / past-paper question and every revealed answer is the verbatim HCI worked solution, with each mark tagged <span class="mk">(1)</span> where it is earned and every symbol named before it goes into a formula.
+</div>
+
+<div class="radians">
+<b>Set your calculator to radians.</b> &nbsp;Every inverse-trig value on this sheet — \(\sin^{-1}\), \(\tan^{-1}\), and every \(\pi\) — is in radians. You lost a <b>whole question</b> on the diagnostic to a calculator left in degrees. Check the mode indicator before you type any numeric answer.
+</div>
+
+<div class="controls"><button onclick="revealAll()">Reveal all answers</button><button onclick="hideAll()">Hide all answers</button></div>
+
+<div class="toc"><strong>The five break points</strong>
+<a href="#c1"><b>Card 1</b> — Trig substitution: the identity \(1+\tan^2\theta=\sec^2\theta\), and changing the limits as a ritual</a>
+<a href="#c2"><b>Card 2</b> — Odd powers of \(\sec\) (\(\int\sec^3\theta\,\mathrm d\theta\)): cyclic integration by parts, solve for \(I\)</a>
+<a href="#c3"><b>Card 3</b> — Even powers of \(\sec\) (\(\int\sec^4\theta\,\mathrm d\theta\)): split off \(\sec^2\theta\), substitute \(u=\tan\theta\)</a>
+<a href="#c4"><b>Card 4</b> — MF27 standard-form recognition: \(\tfrac{1}{\sqrt{a^2-x^2}}\to\sin^{-1}\), \(\tfrac{1}{a^2+x^2}\to\tan^{-1}\)</a>
+<a href="#c5"><b>Card 5</b> — Area &amp; volume of revolution, including about the \(y\)-axis (make \(x\) the subject) + radians</a>
+</div>
+
+
+<!-- ===================== CARD 1 ===================== -->
+<div class="card" id="c1">
+  <div class="cardhead">Card 1 · Trigonometric substitution</div>
+  <h3>The identity you blanked on, and the change-of-limits ritual</h3>
+
+  <div class="whatbroke">
+    <b>What broke:</b> you set up \(x = a+\tan\theta\) but stalled on two things. You couldn't recall <b>\(1+\tan^2\theta=\sec^2\theta\)</b>, so the surd wouldn't simplify. And after substituting you evaluated the definite integral against the <b>old \(x\)-limits</b> instead of the new \(\theta\)-limits.
+  </div>
+
+  <div class="method">
+    <span class="mlabel">The method, retaught</span>
+    When you see a surd of a quadratic — \(\sqrt{a^2-x^2}\), \(\sqrt{a^2+x^2}\), or \(\sqrt{x^2-a^2}\) — substitute a trig function to <b>kill the surd</b>. Which substitution and which identity is fixed by the sign pattern:
+    <div class="idbox">
+      <span class="k">\(\sqrt{a^2-x^2}\)</span> &nbsp;let \(x=a\sin\theta\) &nbsp;→&nbsp; \(a^2-x^2=a^2\cos^2\theta\) &nbsp;<em>(uses \(1-\sin^2\theta=\cos^2\theta\))</em><br>
+      <span class="k">\(\sqrt{a^2+x^2}\)</span> &nbsp;let \(x=a\tan\theta\) &nbsp;→&nbsp; \(a^2+x^2=a^2\sec^2\theta\) &nbsp;<em>(uses \(1+\tan^2\theta=\sec^2\theta\) — <b>the one you forgot</b>)</em><br>
+      <span class="k">\(\sqrt{x^2-a^2}\)</span> &nbsp;let \(x=a\sec\theta\) &nbsp;→&nbsp; \(x^2-a^2=a^2\tan^2\theta\) &nbsp;<em>(uses \(\sec^2\theta-1=\tan^2\theta\))</em>
+    </div>
+    The four-step ritual — <b>step 2 is non-negotiable for a definite integral</b>:
+    <ol>
+      <li>Substitute \(x=\ldots\); differentiate to get \(\mathrm dx=\ldots\,\mathrm d\theta\).</li>
+      <li><b>CHANGE BOTH LIMITS.</b> Put each \(x\)-limit into the substitution and solve for \(\theta\). Write the new \(\theta\)-limits down immediately, before you integrate.</li>
+      <li>Simplify the surd with the matching identity; fix the sign of the root from the stated \(\theta\)-range (e.g. \(\sqrt{\cos^2\theta}=\cos\theta\) when \(\cos\theta\ge 0\)).</li>
+      <li>Integrate in \(\theta\) and evaluate at the <b>new</b> limits. You never convert back to \(x\) — that is only for <em>indefinite</em> integrals.</li>
+    </ol>
+  </div>
+
+  <div class="block example"><div class="label">Worked example — the correct method</div>
+    <div class="src">HCI Tutorial 6A Q4(c)</div>
+    <p>Find the exact value of \(\displaystyle\int_{1}^{\sqrt3}\frac{x}{\sqrt{4-x^2}}\,\mathrm dx\), using the substitution \(x=2\sin\theta\).</p>
+    <div class="step"><div class="step-header">1 · Substitute &amp; differentiate</div>
+      <span class="name">\(x=2\sin\theta\) is the substitution; differentiate w.r.t. \(\theta\).</span>
+      \[ x=2\sin\theta \;\Rightarrow\; \frac{\mathrm dx}{\mathrm d\theta}=2\cos\theta. \]
+    </div>
+    <div class="step"><div class="step-header">2 · Change both limits (the ritual)</div>
+      <span class="name">Put each old \(x\)-limit into \(x=2\sin\theta\) and solve for \(\theta\).</span>
+      \[ x=1\Rightarrow 2\sin\theta=1\Rightarrow\theta=\tfrac{\pi}{6}; \qquad x=\sqrt3\Rightarrow 2\sin\theta=\sqrt3\Rightarrow\theta=\tfrac{\pi}{3}. \]
+    </div>
+    <div class="step"><div class="step-header">3 · Kill the surd, then integrate</div>
+      <span class="name">\(\sqrt{4-4\sin^2\theta}=\sqrt{4\cos^2\theta}=2\cos\theta\) since \(\cos\theta\ge0\) for \(\tfrac{\pi}{6}\le\theta\le\tfrac{\pi}{3}\).</span>
+      \[ \int_{1}^{\sqrt3}\frac{x}{\sqrt{4-x^2}}\,\mathrm dx=\int_{\pi/6}^{\pi/3}\frac{2\sin\theta}{2\cos\theta}\,(2\cos\theta)\,\mathrm d\theta=2\int_{\pi/6}^{\pi/3}\sin\theta\,\mathrm d\theta \]
+      \[ =2\Big[-\cos\theta\Big]_{\pi/6}^{\pi/3}=2\!\left[-\tfrac12+\tfrac{\sqrt3}{2}\right]=\sqrt3-1. \]
+    </div>
+  </div>
+
+  <div class="block practice"><div class="label">Now you — pitched harder <span class="marks">[3]</span></div>
+    <div class="src">HCI Supplementary (Techniques) Q18(ii) · TJC06/H2 Promo/2</div>
+    <div class="stem">By using the substitution \(x=3\tan\theta\), find the exact value of \(\displaystyle\int_{0}^{3}\sqrt{x^2+9}\,\mathrm dx\).</div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution — verbatim HCI</div>
+      <div class="step"><div class="step-header">Substitute, differentiate, change the limits</div>
+        <span class="name">\(x=3\tan\theta\) is the substitution; \(\dfrac{\mathrm dx}{\mathrm d\theta}=3\sec^2\theta\). New limits from \(x=3\tan\theta\).</span>
+        \[ x=3\tan\theta\Rightarrow\frac{\mathrm dx}{\mathrm d\theta}=3\sec^2\theta;\qquad x=0\Rightarrow\theta=0,\quad x=3\Rightarrow\tan\theta=1\Rightarrow\theta=\tfrac{\pi}{4}. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">Kill the surd with \(1+\tan^2\theta=\sec^2\theta\)</div>
+        <span class="name">\(\sqrt{9\tan^2\theta+9}=3\sqrt{\tan^2\theta+1}=3\sec\theta\) since \(\sec\theta\ge0\) for \(0\le\theta\le\tfrac{\pi}{4}\).</span>
+        \[ \int_{0}^{3}\!\sqrt{x^2+9}\,\mathrm dx=\int_{0}^{\pi/4}\!\sqrt{9\tan^2\theta+9}\,\big(3\sec^2\theta\big)\,\mathrm d\theta=9\int_{0}^{\pi/4}\!\sqrt{\tan^2\theta+1}\,\sec^2\theta\,\mathrm d\theta=9\int_{0}^{\pi/4}\!\sec^3\theta\,\mathrm d\theta. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">Finish with the \(\int\sec^3\theta\) result (Card 2)</div>
+        <span class="name">\(\displaystyle\int_{0}^{\pi/4}\sec^3\theta\,\mathrm d\theta=\tfrac{\sqrt2}{2}+\tfrac12\ln(\sqrt2+1)\) — derived in Card 2.</span>
+        \[ =9\!\left[\frac{\sqrt2}{2}+\frac12\ln(\sqrt2+1)\right]. \] <span class="mk">(1)</span>
+      </div>
+    </div><div class="answer-overlay">Attempt it cold first — then click Reveal</div>
+  </div>
+
+  <div class="whyharder"><b>Why this is harder than the example:</b> the example was \(\sqrt{a^2-x^2}\to\sin\theta\). This is \(\sqrt{a^2+x^2}\to\tan\theta\), so it forces the exact identity you blanked on, \(1+\tan^2\theta=\sec^2\theta\). And it does not collapse to a clean \(\int\sin\theta\) — it reduces to an <b>odd power</b> \(\int\sec^3\theta\), which is the Card 2 method. Two techniques chained inside one integral.</div>
+</div>
+
+
+<!-- ===================== CARD 2 ===================== -->
+<div class="card" id="c2">
+  <div class="cardhead">Card 2 · Odd powers of secant</div>
+  <h3>Cyclic integration by parts — let \(I\) be the integral, then solve for \(I\)</h3>
+
+  <div class="whatbroke">
+    <b>What broke:</b> you reached \(\int\sec^3\theta\,\mathrm d\theta\) and froze. An <b>odd</b> power of \(\sec\) has no spare \(\sec^2\theta\) to become a \(u\)-substitution, so the trick is different: <b>cyclic integration by parts</b> — call the integral \(I\), integrate by parts once, watch the same integral reappear, then solve for \(I\) algebraically.
+  </div>
+
+  <div class="method">
+    <span class="mlabel">The method, retaught</span>
+    <ul>
+      <li><b>Trigger:</b> an odd power of \(\sec\) (\(\sec^3,\sec^5,\dots\)) on its own → cyclic IBP.</li>
+      <li><b>Split</b> \(\sec^3\theta=\sec\theta\cdot\sec^2\theta\), and choose \(v'=\sec^2\theta\;(\Rightarrow v=\tan\theta)\) with \(u=\sec\theta\;(\Rightarrow u'=\sec\theta\tan\theta)\).</li>
+      <li>Use \(\tan^2\theta=\sec^2\theta-1\) to turn the leftover integral back into the <b>original \(I\)</b> plus a lower, known integral.</li>
+      <li><b>Collect:</b> \(I\) now sits on both sides. You get \(2I=[\,uv\text{ term}\,]+\int\sec\theta\,\mathrm d\theta\); divide by 2.</li>
+      <li><b>Bank the base result</b> (MF26): \(\displaystyle\int\sec\theta\,\mathrm d\theta=\ln|\sec\theta+\tan\theta|+C\).</li>
+    </ul>
+  </div>
+
+  <div class="block example"><div class="label">Worked example — the correct method</div>
+    <div class="src">HCI Tutorial 6A Q5(a)</div>
+    <p>By writing \(\sec^3x\) as \(\sec x\cdot\sec^2x\), find \(\displaystyle\int\sec^3x\,\mathrm dx\) using integration by parts.</p>
+    <div class="step"><div class="step-header">By parts, splitting off \(\sec^2x\)</div>
+      <span class="name">\(u=\sec x\Rightarrow u'=\sec x\tan x\); \(\ v'=\sec^2x\Rightarrow v=\tan x\).</span>
+      \[ \int\sec^3x\,\mathrm dx=\int\sec x\,\sec^2x\,\mathrm dx=\sec x\tan x-\int\sec x\tan^2x\,\mathrm dx. \]
+    </div>
+    <div class="step"><div class="step-header">Turn \(\tan^2x\) back into the original integral</div>
+      <span class="name">Use \(\tan^2x=\sec^2x-1\), so \(\int\sec x\tan^2x\,\mathrm dx=\int\sec^3x\,\mathrm dx-\int\sec x\,\mathrm dx\).</span>
+      \[ =\sec x\tan x-\int\big(\sec^3x-\sec x\big)\,\mathrm dx. \]
+    </div>
+    <div class="step"><div class="step-header">Collect the \(I\)'s and solve</div>
+      <span class="name">The integral \(I=\int\sec^3x\,\mathrm dx\) reappears; move it to the left.</span>
+      \[ 2\int\sec^3x\,\mathrm dx=\sec x\tan x+\int\sec x\,\mathrm dx \]
+      \[ \therefore\ \int\sec^3x\,\mathrm dx=\tfrac12\sec x\tan x+\tfrac12\ln|\sec x+\tan x|+C. \]
+    </div>
+  </div>
+
+  <div class="block practice"><div class="label">Now you — pitched harder <span class="marks">[6]</span></div>
+    <div class="src">HCI Supplementary (Techniques) Q27 · HCI/2014/C2/BT2/8 &nbsp;(this is diagnostic Q1(b) at full difficulty)</div>
+    <div class="stem">The substitution \(x=a+\tan\theta\) (with \(a\) a positive constant) gives \(\displaystyle\int\sqrt{1+(x-a)^2}\,\mathrm dx=\int\sec^3\theta\,\mathrm d\theta\).<br>Hence, using integration by parts, find the exact value of \(\displaystyle\int_{a}^{2a}\sqrt{1+(x-a)^2}\,\mathrm dx\), in terms of \(a\).</div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution — verbatim HCI</div>
+      <div class="step"><div class="step-header">Change the limits (Card 1 ritual)</div>
+        <span class="name">From \(x=a+\tan\theta\): put in each \(x\)-limit and solve for \(\theta\).</span>
+        \[ x=a\Rightarrow\tan\theta=0\Rightarrow\theta=0;\qquad x=2a\Rightarrow\tan\theta=a\Rightarrow\theta=\tan^{-1}a. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">Cyclic by parts on \(\sec^3\theta\)</div>
+        <span class="name">\(u=\sec\theta\Rightarrow u'=\sec\theta\tan\theta\); \(\ v'=\sec^2\theta\Rightarrow v=\tan\theta\).</span>
+        \[ \int_{a}^{2a}\!\sqrt{1+(x-a)^2}\,\mathrm dx=\int_{0}^{\tan^{-1}a}\!\sec\theta\,\sec^2\theta\,\mathrm d\theta=\Big[\sec\theta\tan\theta\Big]_{0}^{\tan^{-1}a}-\int_{0}^{\tan^{-1}a}\!\sec\theta\tan^2\theta\,\mathrm d\theta \] <span class="mk">(1)</span>
+        \[ =\Big[\sec\theta\tan\theta\Big]_{0}^{\tan^{-1}a}-\int_{0}^{\tan^{-1}a}\!\sec\theta\big(\sec^2\theta-1\big)\,\mathrm d\theta. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">Collect and solve for the integral</div>
+        \[ 2\int_{0}^{\tan^{-1}a}\!\sec^3\theta\,\mathrm d\theta=\Big[\sec\theta\tan\theta\Big]_{0}^{\tan^{-1}a}+\int_{0}^{\tan^{-1}a}\!\sec\theta\,\mathrm d\theta \] <span class="mk">(1)</span>
+        \[ \int_{0}^{\tan^{-1}a}\!\sec^3\theta\,\mathrm d\theta=\tfrac12\Big[\sec\theta\tan\theta\Big]_{0}^{\tan^{-1}a}+\tfrac12\Big[\ln|\sec\theta+\tan\theta|\Big]_{0}^{\tan^{-1}a}. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">Read \(\sec\theta\) off a right triangle to evaluate</div>
+        <span class="name">At \(\theta=\tan^{-1}a\): \(\tan\theta=a\), so \(\sec\theta=\dfrac{1}{\cos\theta}=\sqrt{1+a^2}\) (right triangle: opposite \(a\), adjacent \(1\), hypotenuse \(\sqrt{1+a^2}\)). At \(\theta=0\): \(\sec\theta\tan\theta=0\), \(\ln|1+0|=0\).</span>
+        \[ =\tfrac12\Big[a\sqrt{1+a^2}+\ln\!\big(a+\sqrt{1+a^2}\big)\Big]. \] <span class="mk">(1)</span>
+      </div>
+    </div><div class="answer-overlay">Attempt it cold first — then click Reveal</div>
+  </div>
+
+  <div class="whyharder"><b>Why this is harder than the example:</b> the example is <em>indefinite</em> with plain \(x\). This is a <b>definite</b> integral with a <b>general</b> upper limit \(\theta=\tan^{-1}a\), so you must change the limits (Card 1) <em>and</em> read \(\sec\theta=\sqrt{1+a^2}\) off a right triangle to evaluate. It is the exact question you dropped on the diagnostic.</div>
+</div>
+
+
+<!-- ===================== CARD 3 ===================== -->
+<div class="card" id="c3">
+  <div class="cardhead">Card 3 · Even powers of secant</div>
+  <h3>Split off one \(\sec^2\theta\), substitute \(u=\tan\theta\) — the method you were never shown</h3>
+
+  <div class="whatbroke">
+    <b>What broke:</b> you had never been taught this one, so \(\int\sec^4\theta\,\mathrm d\theta\) looked like the \(\sec^3\) problem and you reached for parts. It isn't. An <b>even</b> power of \(\sec\) has a spare \(\sec^2\theta\) that is exactly \(\mathrm d(\tan\theta)\) — so it is a clean substitution, no parts at all.
+  </div>
+
+  <div class="method">
+    <span class="mlabel">The method, retaught (learn this cleanly)</span>
+    <ul>
+      <li><b>Trigger:</b> an even power of \(\sec\) (\(\sec^4,\sec^6,\dots\)) → peel off <b>one</b> \(\sec^2\theta\) to be the \(\mathrm du\).</li>
+      <li>Rewrite the rest in \(\tan\theta\): \(\sec^4\theta=\sec^2\theta\cdot\sec^2\theta=(1+\tan^2\theta)\sec^2\theta\).</li>
+      <li>Substitute \(u=\tan\theta\Rightarrow\mathrm du=\sec^2\theta\,\mathrm d\theta\). The integral becomes a <b>polynomial in \(u\)</b>.</li>
+      <li>Integrate the polynomial, then substitute back \(u=\tan\theta\).</li>
+    </ul>
+    <div class="flow">Why even and odd split apart: an odd power (\(\sec^3\)) leaves a lone \(\sec\theta\) that is <b>not</b> \(\mathrm d(\tan\theta)\) — no substitution is available, so odd needs cyclic parts (Card 2). An even power always keeps one \(\sec^2\theta\) spare for \(\mathrm du\).</div>
+  </div>
+
+  <div class="block example"><div class="label">Worked example — the correct method</div>
+    <div class="src">Standard even-power method · <span style="color:#94a3b8">[INFERRED] the bank banks the odd-power \(\sec^3\); the even-power split is the standard technique, taught here per the re-drill brief</span></div>
+    <p>Find \(\displaystyle\int\sec^4\theta\,\mathrm d\theta\).</p>
+    <div class="step"><div class="step-header">Peel off \(\sec^2\theta\) and rewrite the rest</div>
+      <span class="name">\(\sec^4\theta=\sec^2\theta\cdot\sec^2\theta\); rewrite the front \(\sec^2\theta=1+\tan^2\theta\), keep the back \(\sec^2\theta\) for \(\mathrm du\).</span>
+      \[ \int\sec^4\theta\,\mathrm d\theta=\int\big(1+\tan^2\theta\big)\sec^2\theta\,\mathrm d\theta. \]
+    </div>
+    <div class="step"><div class="step-header">Substitute \(u=\tan\theta\)</div>
+      <span class="name">\(u=\tan\theta\Rightarrow\mathrm du=\sec^2\theta\,\mathrm d\theta\), so the \(\sec^2\theta\,\mathrm d\theta\) becomes \(\mathrm du\).</span>
+      \[ =\int\big(1+u^2\big)\,\mathrm du=u+\tfrac13u^3+C. \]
+    </div>
+    <div class="step"><div class="step-header">Substitute back</div>
+      \[ =\tan\theta+\tfrac13\tan^3\theta+C. \]
+    </div>
+  </div>
+
+  <div class="block practice"><div class="label">Now you — pitched harder <span class="marks">[5]</span></div>
+    <div class="src">Same method, one power higher + a definite evaluation</div>
+    <div class="stem">Find \(\displaystyle\int\sec^6\theta\,\mathrm d\theta\), and hence find the exact value of \(\displaystyle\int_{0}^{\pi/4}\sec^6\theta\,\mathrm d\theta\).</div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">Peel off \(\sec^2\theta\), rewrite the rest as a square</div>
+        <span class="name">\(\sec^6\theta=(\sec^2\theta)^2\cdot\sec^2\theta=(1+\tan^2\theta)^2\sec^2\theta\); the back \(\sec^2\theta\) is for \(\mathrm du\).</span>
+        \[ \int\sec^6\theta\,\mathrm d\theta=\int\big(1+\tan^2\theta\big)^2\sec^2\theta\,\mathrm d\theta. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">Substitute \(u=\tan\theta\) and expand</div>
+        <span class="name">\(u=\tan\theta\Rightarrow\mathrm du=\sec^2\theta\,\mathrm d\theta\); expand \((1+u^2)^2=1+2u^2+u^4\).</span>
+        \[ =\int\big(1+u^2\big)^2\,\mathrm du=\int\big(1+2u^2+u^4\big)\,\mathrm du=u+\tfrac23u^3+\tfrac15u^5+C. \] <span class="mk">(1)</span>
+        \[ =\tan\theta+\tfrac23\tan^3\theta+\tfrac15\tan^5\theta+C. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">Evaluate between \(0\) and \(\tfrac{\pi}{4}\)</div>
+        <span class="name">At \(\theta=\tfrac{\pi}{4}\): \(\tan\theta=1\). At \(\theta=0\): \(\tan\theta=0\), so the whole bracket is \(0\).</span>
+        \[ \int_{0}^{\pi/4}\!\sec^6\theta\,\mathrm d\theta=\Big[\tan\theta+\tfrac23\tan^3\theta+\tfrac15\tan^5\theta\Big]_{0}^{\pi/4}=1+\tfrac23+\tfrac15-0. \] <span class="mk">(1)</span>
+        \[ =\frac{15+10+3}{15}=\frac{28}{15}. \] <span class="mk">(1)</span>
+      </div>
+    </div><div class="answer-overlay">Attempt it cold first — then click Reveal</div>
+  </div>
+
+  <div class="whyharder"><b>Why this is harder than the example:</b> same method, one power higher. \(\sec^6\theta\) makes you <b>square</b> \((1+\tan^2\theta)\), so the polynomial in \(u\) has three terms instead of two — one extra binomial-expansion step — and then you evaluate a definite integral on top of it.</div>
+</div>
+
+
+<!-- ===================== CARD 4 ===================== -->
+<div class="card" id="c4">
+  <div class="cardhead">Card 4 · MF27 standard-form recognition</div>
+  <h3>The two booklet forms you walked past: \(\sin^{-1}\) and \(\tan^{-1}\)</h3>
+
+  <div class="whatbroke">
+    <b>What broke:</b> twice you tried to force an integral that was simply a formula-booklet standard form. You didn't recognise \(\dfrac{1}{\sqrt{a^2-x^2}}\to\sin^{-1}\!\dfrac{x}{a}\) or \(\dfrac{1}{a^2+x^2}\to\dfrac1a\tan^{-1}\!\dfrac{x}{a}\).
+  </div>
+
+  <div class="method">
+    <span class="mlabel">The reflex, drilled</span>
+    <div class="flow">Can't integrate directly? → Is it \(\dfrac{f'(x)}{f(x)}\) (log) or \(f'[f]^n\) (power)? → Would parts help? → Still stuck, and it's a bare \(1\) over a quadratic, or a surd of a quadratic? → <b>It's an MF27 standard form. Go to the booklet.</b></div>
+    <div class="idbox">
+      <span class="k">\(\displaystyle\int\frac{1}{\sqrt{a^2-x^2}}\,\mathrm dx=\sin^{-1}\!\frac{x}{a}+C\)</span> &nbsp;<em>— surd of \(a^2-x^2\) on the bottom → arcsin</em><br>
+      <span class="k">\(\displaystyle\int\frac{1}{a^2+x^2}\,\mathrm dx=\frac1a\tan^{-1}\!\frac{x}{a}+C\)</span> &nbsp;<em>— quadratic \(a^2+x^2\) on the bottom, no surd → arctan</em>
+    </div>
+    <b>Setup rule:</b> make the coefficient of \(x^2\) equal to \(1\) first. If you end up with \((kx)^2\), remember to differentiate \(kx\) — so divide by \(k\).
+  </div>
+
+  <div class="block example"><div class="label">Worked example — the correct method</div>
+    <div class="src">HCI Supplementary (Techniques) Q23 · A Level 2008/P1/5(i)</div>
+    <p>Find the exact value of \(\displaystyle\int_{0}^{1/\sqrt3}\frac{1}{1+9x^2}\,\mathrm dx\).</p>
+    <div class="step"><div class="step-header">Recognise the arctan standard form</div>
+      <span class="name">Write \(1+9x^2=1^2+(3x)^2\), matching \(a^2+u^2\) with \(a=1\), \(u=3x\). Because \(u=3x\), differentiating gives a factor \(3\), so divide by \(3\).</span>
+      \[ \int_{0}^{1/\sqrt3}\frac{1}{1+9x^2}\,\mathrm dx=\int_{0}^{1/\sqrt3}\frac{1}{1^2+(3x)^2}\,\mathrm dx=\tfrac13\Big[\tan^{-1}(3x)\Big]_{0}^{1/\sqrt3}. \]
+    </div>
+    <div class="step"><div class="step-header">Evaluate (radians)</div>
+      <span class="name">\(\tan^{-1}\!\big(3\cdot\tfrac{1}{\sqrt3}\big)=\tan^{-1}\sqrt3=\tfrac{\pi}{3}\), in radians.</span>
+      \[ =\tfrac13\Big[\tfrac{\pi}{3}-0\Big]=\frac{\pi}{9}. \]
+    </div>
+  </div>
+
+  <div class="block practice"><div class="label">Now you — pitched harder <span class="marks">[3]</span></div>
+    <div class="src">HCI Supplementary (Techniques) Q17(b) · TJC06/H2 Promo/1</div>
+    <div class="stem">Find \(\displaystyle\int\frac{x-5}{x^2+16}\,\mathrm dx\).</div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution — verbatim HCI</div>
+      <div class="step"><div class="step-header">Split the numerator: a log part + a standard-form part</div>
+        <span class="name">Write \(x-5=\tfrac12(2x)-5\). The \(\tfrac12(2x)\) piece is \(\tfrac12\dfrac{f'(x)}{f(x)}\) with \(f(x)=x^2+16\); the \(-5\) piece is left over the quadratic.</span>
+        \[ \int\frac{x-5}{x^2+16}\,\mathrm dx=\tfrac12\int\frac{2x}{x^2+16}\,\mathrm dx-\int\frac{5}{x^2+16}\,\mathrm dx. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">Log part, then spot the hidden arctan</div>
+        <span class="name">First integral is \(\tfrac12\ln(x^2+16)\). Second: \(x^2+16=4^2+x^2\), MF27 arctan with \(a=4\).</span>
+        \[ =\tfrac12\ln(x^2+16)-5\cdot\tfrac14\tan^{-1}\!\frac{x}{4}+C. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">Final form</div>
+        <span class="name">No modulus on \(\ln(x^2+16)\) since \(x^2+16>0\) for all \(x\).</span>
+        \[ =\tfrac12\ln(x^2+16)-\tfrac54\tan^{-1}\!\frac{x}{4}+C. \] <span class="mk">(1)</span>
+      </div>
+    </div><div class="answer-overlay">Attempt it cold first — then click Reveal</div>
+  </div>
+
+  <div class="whyharder"><b>Why this is harder than the example:</b> the example was a bare standard form. Here the arctan is <b>hidden</b>. You first split \(x-5\) and integrate \(\tfrac12\dfrac{2x}{x^2+16}\) as a <em>log</em> (the \(f'/f\) form), and only <em>then</em> does the leftover \(\dfrac{-5}{x^2+16}\) reveal itself as the arctan standard form. Spotting the standard form <b>after</b> peeling off the log is the reflex you were missing.</div>
+</div>
+
+
+<!-- ===================== CARD 5 ===================== -->
+<div class="card" id="c5">
+  <div class="cardhead">Card 5 · Area &amp; volume of revolution</div>
+  <h3>Applications — chaining it all, rotating about the \(y\)-axis, and the radians trap</h3>
+
+  <div class="whatbroke">
+    <b>What broke:</b> the applications question chained every technique above — and two things collapsed. You rotated about the \(y\)-axis <b>without making \(x\) the subject</b> first, and you left the calculator in <b>degrees</b> for the inverse-trig value.
+  </div>
+
+  <div class="method">
+    <span class="mlabel">The method, retaught</span>
+    <ul>
+      <li><b>Area:</b> \(\displaystyle\int y\,\mathrm dx\) (strips in \(x\)) or \(\displaystyle\int x\,\mathrm dy\) (strips in \(y\)); between two curves, \(\displaystyle\int(\text{top}-\text{bottom})\).</li>
+      <li><b>Volume about the \(x\)-axis:</b> \(V=\pi\displaystyle\int y^2\,\mathrm dx\).</li>
+      <li><b>Volume about the \(y\)-axis:</b> \(V=\pi\displaystyle\int x^2\,\mathrm dy\) — so you <b>must make \(x^2\) the subject first</b> and integrate in \(y\), between the \(y\)-limits.</li>
+      <li><b>Symmetry short-cut:</b> a region symmetric about the axis rotated through \(\pi\) equals one side rotated through \(2\pi\).</li>
+      <li><b>Capped / hollow solids:</b> cylinder \(-\displaystyle\int(\text{curve part})\), with cylinder \(=\pi r^2h\) (\(r=\) largest \(x\), \(h=\) largest \(y\)).</li>
+      <li style="color:#b91c1c"><b>Radians:</b> any \(\sin^{-1}\) or \(\tan^{-1}\) value you type into the GC must be in radian mode. This is where you lost a whole question.</li>
+    </ul>
+  </div>
+
+  <div class="block example"><div class="label">Worked example — the correct method (this was diagnostic Q4)</div>
+    <div class="src">HCI Tutorial 6B Q8 · A Level N95/I/17</div>
+    <p>The curve \(C\) is \(y=\dfrac{1}{\sqrt{4-x^2}}\) for \(-1\le x\le1\); region \(R\) is bounded by \(C\), the \(x\)-axis and \(x=\pm1\). Find (i) the exact area of \(R\); (ii) the exact volume when \(R\) is rotated \(2\pi\) about the \(x\)-axis; (iii) the volume when \(R\) is rotated \(\pi\) about the \(y\)-axis (3 s.f.).</p>
+    <div class="step"><div class="step-header">(i) Area — MF27 arcsin form (Card 4)</div>
+      <span class="name">\(\dfrac{1}{\sqrt{4-x^2}}=\dfrac{1}{\sqrt{2^2-x^2}}\), so \(\int\dfrac{1}{\sqrt{a^2-x^2}}\,\mathrm dx=\sin^{-1}\dfrac{x}{a}\) with \(a=2\). Evaluate in radians.</span>
+      \[ \text{Area}=\int_{-1}^{1}\frac{1}{\sqrt{4-x^2}}\,\mathrm dx=\Big[\sin^{-1}\tfrac{x}{2}\Big]_{-1}^{1}=\tfrac{\pi}{6}-\big(-\tfrac{\pi}{6}\big)=\frac{\pi}{3}\ \text{units}^2. \]
+    </div>
+    <div class="step"><div class="step-header">(ii) Volume about \(x\)-axis — MF27 log form (Card 4)</div>
+      <span class="name">\(V=\pi\int y^2\,\mathrm dx\) with \(y^2=\dfrac{1}{4-x^2}\); \(\int\dfrac{1}{a^2-x^2}\,\mathrm dx=\dfrac{1}{2a}\ln\big|\tfrac{a+x}{a-x}\big|\), \(a=2\).</span>
+      \[ V=\pi\int_{-1}^{1}\frac{1}{4-x^2}\,\mathrm dx=\pi\Big[\tfrac14\ln\big|\tfrac{2+x}{2-x}\big|\Big]_{-1}^{1}=\pi\big[\tfrac14\ln3-\tfrac14\ln\tfrac13\big]=\frac{\pi}{2}\ln3\ \text{units}^3. \]
+    </div>
+    <div class="step"><div class="step-header">(iii) Volume about \(y\)-axis — make \(x^2\) the subject, cylinder − region</div>
+      <span class="name">Rearrange \(y=\dfrac{1}{\sqrt{4-x^2}}\Rightarrow\dfrac{1}{y^2}=4-x^2\Rightarrow x^2=4-\dfrac{1}{y^2}\). Limits in \(y\): \(x=0\Rightarrow y=\tfrac12\), \(x=1\Rightarrow y=\tfrac{1}{\sqrt3}\). Cylinder radius \(=1\) (max \(x\)), height \(=\tfrac{1}{\sqrt3}\) (max \(y\)).</span>
+      \[ V=\pi(1)^2\!\left(\tfrac{1}{\sqrt3}\right)-\pi\int_{1/2}^{1/\sqrt3}\!\left(4-\frac{1}{y^2}\right)\mathrm dy=1.68\ \text{units}^3\ (\text{3 s.f., radians}). \]
+    </div>
+  </div>
+
+  <div class="block practice"><div class="label">Now you — pitched harder <span class="marks">[11]</span></div>
+    <div class="src">HCI Supplementary (Applications) Q8 · SRJC06/H2 Promo/10</div>
+    <div class="stem">The region \(R\) is bounded by \(y=\ln x\) and the lines \(y=1\) and \(x=2\).<br>(i) Find the exact area of \(R\). <span class="marks">[6]</span><br>(ii) Show that the exact volume of the solid formed when \(R\) is rotated \(360^\circ\) about the \(y\)-axis is \(\pi\!\left(\dfrac{e^2}{2}-6+4\ln2\right)\). <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution — verbatim HCI</div>
+      <div class="step"><div class="step-header">(i) Area — rectangle minus the curve (needs \(\int\ln x\), by parts)</div>
+        <span class="name">\(y=\ln x\) meets \(y=1\) at \((e,1)\). Take the rectangle from \(x=2\) to \(x=e\), height \(1\), and subtract the strip under \(y=\ln x\). For \(\int\ln x\,\mathrm dx\): \(u=\ln x\Rightarrow u'=\tfrac1x\); \(v'=1\Rightarrow v=x\).</span>
+        \[ \text{Area}=(e-2)(1)-\int_{2}^{e}\ln x\,\mathrm dx=e-2-\Big[x\ln x\Big]_{2}^{e}+\int_{2}^{e}x\cdot\tfrac1x\,\mathrm dx \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ =e-2-\big(e-2\ln2\big)+(e-2)=e+2\ln2-4\ \text{units}^2. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) Volume about \(y\)-axis — make \(x\) the subject</div>
+        <span class="name">Rotating about the \(y\)-axis: \(V=\pi\int x^2\,\mathrm dy\). Make \(x\) the subject of \(y=\ln x\Rightarrow x=e^{y}\). The outer radius is \(x=e^y\); the inner (hollow) radius is the line \(x=2\), between \(y=\ln2\) (at \(x=2\)) and \(y=1\).</span>
+        \[ V=\pi\int_{\ln2}^{1}\big(e^{y}\big)^2\,\mathrm dy-\pi(2)^2\big(1-\ln2\big) \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ =\pi\Big[\tfrac12e^{2y}\Big]_{\ln2}^{1}-4\pi\big(1-\ln2\big)=\tfrac{\pi}{2}\big(e^2-4\big)-4\pi\big(1-\ln2\big) \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ =\pi\!\left(\frac{e^2}{2}-6+4\ln2\right)\quad(\text{shown}). \] <span class="mk">(1)</span>
+      </div>
+    </div><div class="answer-overlay">Attempt it cold first — then click Reveal</div>
+  </div>
+
+  <div class="whyharder"><b>Why this is harder than the example:</b> the example handed you the curve; here you must first find where \(y=\ln x\) meets \(y=1\), and the area is a <b>rectangle minus a curve</b> that needs integration by parts (\(\int\ln x\,\mathrm dx\)) folded inside an applications question. Part (ii) is a <b>"show that"</b> — it has to land exactly — and the \(y\)-axis rotation forces you to make \(x\) the subject (\(x=e^{y}\)) and subtract the hollow cylinder. Three layers stacked: by parts + exact discipline + \(y\)-axis make-\(x\)-subject.</div>
+</div>
+
+
+<hr>
+<p class="meta"><b>When you're done:</b> attempt all five practice questions cold on Loom, saying your confidence out loud, then reveal and self-mark. Paste me the transcript and I'll flag whatever is still shaky and build the numbered gap cluster on the exact procedures that broke — not the whole topic again, just the residue.</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn=>{btn.addEventListener('click',function(){const b=this.parentElement,o=b.querySelector('.answer-overlay');if(o.classList.contains('hidden')){o.classList.remove('hidden');this.textContent='Hide';this.classList.add('hide-state');}else{o.classList.add('hidden');this.textContent='Reveal';this.classList.remove('hide-state');}});});
+  function revealAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.add('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Hide';b.classList.add('hide-state');});}
+  function hideAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.remove('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Reveal';b.classList.remove('hide-state');});}
+</script>
+</body>
+</html>

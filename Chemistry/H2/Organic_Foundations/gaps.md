@@ -41,3 +41,14 @@ Declarative topic: gaps are recorded here and re-tested next session (day+1 / +7
 
 ## Cluster feedback (25 Jul)
 Ethan: the exam-style question was excellent ("this exam paper is great") but the cluster's Layer 1/Layer 2 under-taught — it defined reaction *types* but never taught the *mechanisms* the question demanded (electrophilic addition). **Fix applied:** cluster now teaches electrophilic addition + free-radical substitution step-by-step + the branching/dispersion wording. Lesson: for organic, the cluster must teach the mechanisms, not just the type definitions.
+
+## From the diagnostic test (5 Aug, Q2 — propadiene/allene + penta-2,3-diene; Q7 — naming)
+
+| # | Gap | State | Correct answer / mark-scheme wording |
+|---|---|---|---|
+| 20 | **Hybridisation in a cumulated diene (allene, propa-1,2-diene).** Needed prompting. | FRAGILE | **Central carbon = sp; terminal carbons = sp².** Propadiene has **6 σ bonds and 2 π bonds** in the whole molecule. |
+| 21 | **Why the two CH₂ groups are held in mutually perpendicular planes** — "what the f***", big struggle. | ACTIVE | The **central sp carbon keeps two unhybridised p-orbitals that are mutually perpendicular to each other**; **each one forms a π (side-on) overlap with a p-orbital on a terminal carbon**; because those two p-orbitals are perpendicular, the two CH₂ planes they lock are **held mutually perpendicular**. |
+| 22 | **Optical isomerism with NO chiral carbon** (penta-2,3-diene) — the true criterion. Nearly answered "it's not optically active because there's no chiral C". | ACTIVE (high-value) | The **true test for enantiomerism/optical activity is a non-superimposable mirror image** — NOT "a carbon bonded to four different groups" (that's only the common cause). The perpendicular geometry makes penta-2,3-diene **non-superimposable on its mirror image**, so it **is optically active**. Must draw the two mirror images to show they don't superimpose. |
+| 23 | **Naming when two functional groups are present** (Q7, the bromo-alcohol). | FRAGILE | The **–ol (alcohol) suffix outranks the halogeno- prefix**; halogen is always a prefix (bromo-/chloro-), so an –OH + –Br compound is named as a bromo…-ol, with the –ol taking the suffix and the lower locant. Suffix priority decides the parent name. |
+
+Cross-links: #22 extends the racemic-mixture concept in #19 — chirality is judged by mirror-image superimposability, and an electrophilic-addition product with a new chiral centre goes on to form a racemic mixture (see Alkenes gaps, 5 Aug).

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Differential Equations — Targeted Re-drill</title>
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true,tags:'none'},svg:{fontCache:'global'}};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root{--bg:#fafafa;--card-bg:#fff;--border:#e5e7eb;--text:#1a1a1a;--muted:#6b7280;--blue:#2563eb;--blue-soft:#eff6ff;--amber:#d97706;--amber-soft:#fffbeb;--green:#059669;--green-soft:#ecfdf5;--cover:#f3f4f6;--purple:#7c3aed;--purple-soft:#f5f3ff;--red:#dc2626;--red-soft:#fef2f2}
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:40px 24px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h3,.label,.controls,button,.step-header,.exam-head{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  h1{font-size:2em;margin:0 0 6px;color:#111;border-bottom:3px solid #111;padding-bottom:12px}
+  h3{font-size:1.15em;margin:0 0 14px;color:#1f2937}
+  p{margin:8px 0}.meta{color:var(--muted);font-size:.9em;margin:4px 0 24px}
+  .exam-head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;font-size:.82em;letter-spacing:.04em;text-transform:uppercase;color:#374151;font-weight:600;border:1px solid var(--border);background:#fff;padding:10px 16px;border-radius:6px;margin:0 0 8px}
+  .exam-head span:last-child{color:var(--muted);font-weight:500}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--red);padding:16px 20px;border-radius:6px;margin:16px 0 24px}
+  .toolkit{background:var(--blue-soft);border:1px solid #bfdbfe;border-left:4px solid var(--blue);padding:14px 20px;border-radius:6px;margin:0 0 32px;font-size:.94em}
+  .toolkit strong{color:#1e3a8a}.toolkit table{border-collapse:collapse;margin:10px 0 4px;width:100%}
+  .toolkit td{padding:7px 10px 7px 0;vertical-align:top;border-bottom:1px solid #dbeafe}.toolkit td:first-child{white-space:nowrap;color:#1e3a8a;font-weight:600;width:30%}.toolkit tr:last-child td{border-bottom:none}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;font-weight:500}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:32px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:6px;color:#111}.toc a{color:var(--blue);text-decoration:none;margin-right:14px;line-height:2}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .method{background:#f0f9ff;border:1px solid #bae6fd;border-left:4px solid var(--blue);padding:12px 16px;border-radius:6px;margin:0 0 16px;font-size:.93em}
+  .method b{color:#1e3a8a}
+  .block{margin:14px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border)}
+  .block.example{background:#f9fafb;border-left-color:#6b7280}.block.practice{background:var(--amber-soft);border-left-color:var(--amber)}
+  .block.answer{background:var(--green-soft);border-left-color:var(--green);position:relative;min-height:60px}
+  .label{display:block;text-transform:uppercase;font-size:.75em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--muted)}
+  .block.example .label{color:#4b5563}.block.practice .label{color:var(--amber)}.block.answer .label{color:var(--green)}
+  .stem{background:#1e293b;color:#f1f5f9;padding:12px 16px;border-radius:6px;margin:10px 0}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px;font-family:-apple-system,sans-serif}
+  .src{font-size:.78em;color:#94a3b8;font-style:italic}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.6);border-radius:4px;border-left:2px solid var(--green)}
+  .block.example .step{border-left-color:#9ca3af}
+  .step-header{font-size:.8em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .block.example .step-header{color:#4b5563}
+  .step-desc{font-style:italic;color:#374151;margin-bottom:6px;font-size:.95em}
+  .mk{display:inline-block;font-size:.8em;color:var(--green);font-weight:700;font-family:-apple-system,sans-serif;margin-left:4px}
+  .enote{font-size:.9em;color:#374151;margin:8px 0 0;font-style:italic}
+  .enote b{font-style:normal;color:#111}
+  .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:6px 12px;border-radius:4px;margin:10px 0 0;font-size:.9em}.trap b{color:var(--red)}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3}.reveal-btn.hide-state{background:var(--muted)}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;font-family:-apple-system,sans-serif;border-left:4px solid var(--muted);margin-left:-16px;padding-left:16px;z-index:2}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}.block.answer .answer-content{padding-right:60px}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  @media print{body{background:#fff;padding:20px;max-width:100%}.controls,.reveal-btn{display:none!important}.answer-overlay{display:none!important}.card{box-shadow:none;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<div class="exam-head"><span>H2 Mathematics · 9758 · Paper 1 (Pure)</span><span>Differential Equations — targeted re-drill</span></div>
+<h1>Differential Equations — Re-drill</h1>
+<p class="meta">Built from today's diagnostic (~32% — your weakest topic). <b>Every question is a real HCI Tutorial 9 / Supplementary / A-Level question</b>; <b>solutions are verbatim from the HCI answer key</b>, each mark tagged inline. The worked example on each card is shown in full (this is a re-teach); the harder practice hides its answer behind a reveal.</p>
+
+<div class="intro">
+You said <em>"my DE is weak, we haven't hammered this."</em> Correct — so this rebuilds the four exact places you fell over on the parachutist question (N2024), one card each. The single habit that fixes most of it: <b>before you integrate, look at the denominator.</b> One linear bracket integrates straight to a log; only a <b>product of two brackets</b> needs partial fractions. You reached for partial fractions when you didn't need them.
+</div>
+
+<div class="toolkit">
+<strong>DE method recipes — the four moves you missed</strong>
+<table>
+<tr><td>Separate &amp; integrate</td><td>Get \(\frac{1}{g(v)}\,dv=f(t)\,dt\). One linear bracket: \(\displaystyle\int\frac{1}{a-bv}\,dv=-\frac1b\ln|a-bv|+C\). <b>No partial fractions.</b></td></tr>
+<tr><td>Partial fractions — only if it factorises</td><td>Two <em>distinct</em> linear brackets, e.g. \(\dfrac{1}{x(N-x)}=\dfrac1N\!\left(\dfrac1x+\dfrac1{N-x}\right)\), then integrate each.</td></tr>
+<tr><td>Form a DE from a model</td><td>Sub \(v=\dfrac{dx}{dt}\Rightarrow\dfrac{dv}{dt}=\dfrac{d^2x}{dt^2}\); then substitute the <b>given rate + value</b> to pin the constant.</td></tr>
+<tr><td>The \(a(1-e^{-bt})\) form</td><td>From \(\dfrac{dv}{dt}=A-Bv\): separate, \(-\ln\!\big|\tfrac{A}{B}-v\big|=Bt+C\), exponentiate, then \(t=0,v=0\Rightarrow v=\dfrac{A}{B}\big(1-e^{-Bt}\big)\). So \(a=\dfrac{A}{B},\ b=B\).</td></tr>
+<tr><td>Link to displacement</td><td>\(x=\displaystyle\int v\,dt\); apply \(x(0)=0\) for the constant; set \(x=\) target and solve for \(t\) (GC if it mixes \(t\) and \(e^{-bt}\)).</td></tr>
+</table>
+</div>
+
+<div class="controls"><button onclick="revealAll()">Reveal all</button><button onclick="hideAll()">Hide all</button></div>
+<div class="toc"><strong>The four failure points</strong>
+<a href="#c1">1 · Linear denominator vs partial fractions</a><a href="#c2">2 · Forming a DE + pinning the constant</a><a href="#c3">3 · The \(a(1-e^{-bt})\) form</a><a href="#c4">4 · Linking to displacement</a>
+</div>
+
+<!-- ============ CARD 1 ============ -->
+<div class="card" id="c1">
+  <h3>Card 1 — Separation: one linear bracket vs partial fractions</h3>
+  <div class="method">
+    <b>The mistake:</b> you tried to split \(\displaystyle\int\frac{1}{9.8-2v}\,dv\) into partial fractions. You can't — there's nothing to split. Partial fractions is <b>only</b> for a denominator that is a <b>product of two (or more) different linear factors</b>. A single linear bracket integrates straight to a log: divide by the coefficient of \(v\) and carry the minus sign. <b>Count the brackets in the denominator</b> — one bracket → straight log; two multiplied → partial fractions.
+  </div>
+
+  <div class="block example"><div class="label">Worked example — shown in full</div>
+    <div class="step"><div class="step-header">Part A — one linear bracket (the one you over-thought)</div>
+      <div class="step-desc">Integrate \(\displaystyle\int\frac{1}{9.8-2v}\,dv\).</div>
+      Let the bracket be \(9.8-2v\); its derivative is \(-2\). Reverse the chain rule — divide by \(-2\):<br>
+      \(\displaystyle\int\frac{1}{9.8-2v}\,dv=-\frac12\ln|9.8-2v|+C\) <span class="mk">(1)</span>. General rule: \(\displaystyle\int\frac{1}{a-bv}\,dv=-\frac1b\ln|a-bv|+C\) <span class="mk">(1)</span>.
+      <p class="enote">Equivalently, factor the 2 out first: \(9.8-2v=2(4.9-v)\), so \(\displaystyle\int\frac{1}{4.9-v}\,dv=-\ln|4.9-v|+C\) — the exact route the parachutist mark scheme takes. Same answer, no partial fractions anywhere.</p>
+    </div>
+    <div class="step"><div class="step-header">Part B — product of two linear factors (this one DOES need it)</div>
+      <div class="step-desc">Integrate \(\displaystyle\int\frac{1}{x(20-x)}\,dx\).</div>
+      Denominator is \(x\) times \((20-x)\): two different linear factors, so split.<br>
+      \(\displaystyle\frac{1}{x(20-x)}=\frac{1}{20}\!\left(\frac1x+\frac1{20-x}\right)\) <span class="mk">(1)</span><br>
+      \(\displaystyle\int\frac{1}{x(20-x)}\,dx=\frac{1}{20}\big(\ln|x|-\ln|20-x|\big)+C=\frac{1}{20}\ln\left|\frac{x}{20-x}\right|+C\) <span class="mk">(1)</span>.
+      <p class="enote"><b>Tell them apart:</b> \(9.8-2v\) is one bracket → log. \(x(20-x)\) is two brackets multiplied → partial fractions.</p>
+    </div>
+  </div>
+
+  <div class="block practice"><div class="label">Practice — harder <span class="src">(HCI Supplementary Q9 · SRJC/2005/C2Prelim/P1/Q14b)</span></div>
+    <div class="stem">The growth of a species of insect is studied. The rate of death is proportional to the number in thousands, \(x\), of insects; the rate of birth is proportional to \(x^2\). When \(x=2\), the number of larvae hatched equals the number that died. Show that \(\dfrac{dx}{dt}=ax(x-2)\), where \(a\) is a constant. Given that \(x=a\) initially, find an equation relating \(x\), \(a\) and \(t\). <span class="marks">[6]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer — verbatim HCI</div>
+      <div class="step"><div class="step-header">Form the DE — two DIFFERENT constants</div>
+        <div class="step-desc">Let birth rate use \(h\) and death rate use \(k\), both positive constants.</div>
+        \(\dfrac{dx}{dt}=hx^2-kx\), where \(h\) and \(k\) are positive constants. <span class="mk">(1)</span><br>
+        When \(x=2\), \(\dfrac{dx}{dt}=0\): \(\ 4h=2k\Rightarrow k=2h\) <span class="mk">(1)</span><br>
+        \(\dfrac{dx}{dt}=hx^2-2hx=hx(x-2)=ax(x-2)\), where \(a=h\)  (shown)
+      </div>
+      <div class="step"><div class="step-header">Separate — two linear factors ⇒ partial fractions</div>
+        <div class="step-desc">Denominator \(x(x-2)\) is a product of two linear factors, so split it.</div>
+        \(\displaystyle\int\frac{1}{x(x-2)}\,dx=a\int dt\ \Rightarrow\ \int\!\left(\frac{1/2}{x-2}-\frac{1/2}{x}\right)dx=a\int dt\) <span class="mk">(1)</span><br>
+        \(\displaystyle\int\!\left(\frac{1}{x-2}-\frac{1}{x}\right)dx=2a\int dt\)
+      </div>
+      <div class="step"><div class="step-header">Integrate and apply \(x=a\) at \(t=0\)</div>
+        \(\ln|x-2|-\ln|x|=2at+C\ \Rightarrow\ \ln\left|\dfrac{x-2}{x}\right|=2at+C\) <span class="mk">(1)</span><br>
+        \(\dfrac{x-2}{x}=Ae^{2at}\), where \(A=\pm e^{C}\) <span class="mk">(1)</span><br>
+        When \(t=0\), \(x=a\): \(\ A=\dfrac{a-2}{a}\). Hence \(\displaystyle\frac{x-2}{x}=\frac{a-2}{a}\,e^{2at}\) <span class="mk">(1)</span>
+      </div>
+      <div class="trap"><b>Why harder:</b> you had to (i) form the DE with <b>two different</b> constants (not one), (ii) recognise \(x(x-2)\) as a product of two linear factors → partial fractions, and (iii) leave the answer implicit (it never asks for \(x\) in terms of \(t\)). The example handed you the integral; here you build it and pick the method.</div>
+    </div><div class="answer-overlay">Answer hidden — attempt first, then Reveal</div>
+  </div>
+</div>
+
+<!-- ============ CARD 2 ============ -->
+<div class="card" id="c2">
+  <h3>Card 2 — Forming a DE from a model + pinning the constant</h3>
+  <div class="method">
+    Two moves. <b>(1)</b> Turn the given model into a first-order DE: substitute \(v=\dfrac{dx}{dt}\) so \(\dfrac{d^2x}{dt^2}=\dfrac{dv}{dt}\). <b>(2)</b> Pin the unknown constant by substituting the <b>given rate and value</b> — don't leave it as a letter. This is the step you fumbled: you had \(\dfrac{dv}{dt}=5\) and \(v=2.4\) sitting there and didn't plug them in.
+  </div>
+
+  <div class="block example"><div class="label">Worked example — shown in full · N2024/P1/Q11(a)</div>
+    <div class="stem">The motion of a parachutist is modelled by \(\dfrac{d^2x}{dt^2}+\alpha\dfrac{dx}{dt}=9.8\), where \(\alpha\) is a constant.<br>(i) Using \(v=\dfrac{dx}{dt}\), write down a differential equation in \(v\) and \(t\). <span class="marks">[1]</span><br>(ii) Given that \(\dfrac{dv}{dt}=5\) when \(v=2.4\), find the value of \(\alpha\). <span class="marks">[1]</span></div>
+    <div class="step"><div class="step-header">(i) Substitute to drop the order</div>
+      \(v=\dfrac{dx}{dt}\ \Rightarrow\ \dfrac{dv}{dt}=\dfrac{d^2x}{dt^2}\). Substituting into the model:<br>
+      \(\dfrac{dv}{dt}+\alpha v=9.8\) <span class="mk">(1)</span>
+    </div>
+    <div class="step"><div class="step-header">(ii) Substitute the given values to pin \(\alpha\)</div>
+      <div class="step-desc">Put \(\dfrac{dv}{dt}=5\) and \(v=2.4\) into the DE.</div>
+      \(5+2.4\alpha=9.8\ \Rightarrow\ 2.4\alpha=4.8\ \Rightarrow\ \alpha=2\) <span class="mk">(1)</span>
+      <p class="enote">That is the whole routine — reduce the order by substitution, then plug the given numbers to find the constant. Nothing more.</p>
+    </div>
+  </div>
+
+  <div class="block practice"><div class="label">Practice — harder <span class="src">(HCI Tutorial 9 Q10 · NYJC/2015/C2BT2/1/7)</span></div>
+    <div class="stem">In a model of an ant colony, the birth rate is inversely proportional to the <b>square</b> of the population and the death rate is proportional to the population. The population (in thousands) is \(n\) at time \(t\) days. When the population was 3000 it stayed constant. Show that \(\dfrac{dn}{dt}=k\!\left(\dfrac{27}{n^2}-n\right)\), \(k\) a positive constant. <span class="marks">[2]</span><br>(i) Show the population decreases if \(n\) exceeds a value to be found. <span class="marks">[1]</span><br>(ii) The population was 4000 at the start and decreasing at \(\tfrac{37}{32}\) thousand/day at that instant. Find \(n\) in terms of \(t\). <span class="marks">[6]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer — verbatim HCI</div>
+      <div class="step"><div class="step-header">Form the DE — the two-constant trap</div>
+        <div class="step-desc">Birth rate and death rate need <b>different</b> constants of proportionality.</div>
+        \(\dfrac{dn}{dt}=\dfrac{a}{n^2}-bn\), where \(a\) and \(b\) are positive constants. <span class="mk">(1)</span><br>
+        When \(n=3\), \(\dfrac{dn}{dt}=0\): \(\ \dfrac{a}{9}-3b=0\Rightarrow a=27b\) <span class="mk">(1)</span><br>
+        \(\dfrac{dn}{dt}=\dfrac{27b}{n^2}-bn=b\!\left(\dfrac{27}{n^2}-n\right)=k\!\left(\dfrac{27}{n^2}-n\right)\), where \(b=k\)  (shown)
+      </div>
+      <div class="step"><div class="step-header">(i) When does it decrease?</div>
+        \(\dfrac{dn}{dt}<0:\ k\!\left(\dfrac{27-n^3}{n^2}\right)<0\). Since \(k>0\) and \(n^2>0\), need \(27-n^3<0\Rightarrow n^3>27\Rightarrow n>3\). The population decreases if \(n>3\). <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) Pin \(k\) from the given rate, then solve</div>
+        <div class="step-desc">Substitute \(n=4\), \(\dfrac{dn}{dt}=-\tfrac{37}{32}\) (note \(n=4\), not 4000 — population is in thousands).</div>
+        \(-\dfrac{37}{32}=k\!\left(\dfrac{27}{16}-4\right)\Rightarrow k=\dfrac12\) <span class="mk">(1)</span><br>
+        \(\displaystyle\int\frac{n^2}{27-n^3}\,dn=\frac12\int dt\) <span class="mk">(1)</span><br>
+        \(-\dfrac13\ln|27-n^3|=\dfrac12 t+C\) <span class="mk">(1)</span><br>
+        \(27-n^3=Ae^{-\frac32 t}\), where \(A=\pm e^{-3C}\) <span class="mk">(1)</span><br>
+        When \(n=4\), \(t=0\): \(\ 64=27-A\Rightarrow A=-37\). Hence \(n=\big(27+37e^{-\frac32 t}\big)^{1/3}\) <span class="mk">(1)</span>
+      </div>
+      <div class="trap"><b>Why harder:</b> the model needs <b>two different</b> constants of proportionality — writing \(\dfrac{dn}{dt}=\dfrac{k}{n^2}-kn\) is the classic error. You pin them from two separate conditions (stationary at \(n=3\), then a given rate at \(n=4\)), and the \(n^2\) fixes the substitution. The example pinned one constant from one condition; this pins two and then solves.</div>
+    </div><div class="answer-overlay">Answer hidden — attempt first, then Reveal</div>
+  </div>
+</div>
+
+<!-- ============ CARD 3 ============ -->
+<div class="card" id="c3">
+  <h3>Card 3 — The \(a(1-e^{-bt})\) solution form</h3>
+  <div class="method">
+    This is the shape that comes out of \(\dfrac{dv}{dt}=A-Bv\), and you fumbled every step. Five moves, always the same: <b>separate</b> → <b>integrate</b> (a \(-\ln\)) → <b>exponentiate</b> (the \(\pm\) becomes one constant) → <b>apply \(t=0,\,v=0\)</b> → <b>rearrange</b> to \(v=\dfrac{A}{B}(1-e^{-Bt})\). Read off \(a=\dfrac{A}{B}\) (the limit) and \(b=B\).
+  </div>
+
+  <div class="block example"><div class="label">Worked example — shown in full · N2024/P1/Q11(b)</div>
+    <div class="stem">With \(\alpha=2\) and initial velocity zero, show that \(v=A(1-e^{Bt})\), where \(A\) and \(B\) are constants to be found. <span class="marks">[5]</span></div>
+    <div class="step"><div class="step-header">Separate</div>
+      \(\dfrac{dv}{dt}+2v=9.8\Rightarrow\dfrac{dv}{dt}=9.8-2v=2(4.9-v)\). One linear bracket → straight to a log:<br>
+      \(\displaystyle\int\frac{1}{4.9-v}\,dv=\int 2\,dt\) <span class="mk">(1)</span>
+    </div>
+    <div class="step"><div class="step-header">Integrate, then exponentiate</div>
+      \(-\ln|4.9-v|=2t+C\) <span class="mk">(1)</span><br>
+      \(4.9-v=\pm e^{-2t-C}=Ae^{-2t}\), where \(A=\pm e^{-C}\) <span class="mk">(1)</span>
+    </div>
+    <div class="step"><div class="step-header">Apply the initial condition, then rearrange</div>
+      <div class="step-desc">When \(t=0\), \(v=0\).</div>
+      \(4.9=A(1)\Rightarrow A=4.9\) <span class="mk">(1)</span><br>
+      \(4.9-v=4.9e^{-2t}\Rightarrow v=4.9\big(1-e^{-2t}\big)\) <span class="mk">(1)</span>, so \(A=4.9,\ B=-2\).
+      <p class="enote"><b>Read-off:</b> the limit \(a=\dfrac{\text{constant}}{\text{coeff of }v}=\dfrac{9.8}{2}=4.9\), and \(b=\) the coefficient of \(v\) = 2. That is why the velocity levels off at 4.9.</p>
+    </div>
+  </div>
+
+  <div class="block practice"><div class="label">Practice — harder <span class="src">(HCI Tutorial 9 Q12 · N2017/I/11 parts ii–iii)</span></div>
+    <div class="stem">For an object falling through the atmosphere the rate of change of velocity is \(\dfrac{dv}{dt}=c-kv\), with \(c=10\) (found earlier) and \(k\) a positive constant. The initial velocity is zero.<br>(ii) Find \(v\) in terms of \(t\) and \(k\). <span class="marks">[5]</span><br>The <b>terminal</b> velocity is the value approached after a long time.<br>(iii) An object has initial velocity zero and terminal velocity \(40\ \text{ms}^{-1}\). Find how long it takes to reach 90% of its terminal velocity. <span class="marks">[4]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer — verbatim HCI</div>
+      <div class="step"><div class="step-header">(ii) Same five-step engine, but \(k\) stays a letter</div>
+        \(\dfrac{dv}{dt}=10-kv\Rightarrow\displaystyle\int\frac{1}{10-kv}\,dv=\int dt\) <span class="mk">(1)</span><br>
+        \(-\dfrac1k\ln|10-kv|=t+A\) <span class="mk">(1)</span><br>
+        \(\ln|10-kv|=-kt-kA\Rightarrow 10-kv=\pm e^{-kt-kA}=Be^{-kt}\), where \(B=e^{-kA}\) <span class="mk">(1)</span><br>
+        When \(t=0\), \(v=0\): \(\ B=10\) <span class="mk">(1)</span><br>
+        \(10-kv=10e^{-kt}\Rightarrow v=\dfrac{10}{k}\big(1-e^{-kt}\big)\) <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) Use terminal velocity to pin \(k\), then solve for the time</div>
+        <div class="step-desc">As \(t\to\infty\), \(e^{-kt}\to0\), so \(v\to\dfrac{10}{k}\).</div>
+        \(\dfrac{10}{k}=40\Rightarrow k=\dfrac14\) <span class="mk">(1)</span>, hence \(v=40\big(1-e^{-t/4}\big)\).<br>
+        90% of terminal: \(v=0.9(40)=36\) <span class="mk">(1)</span><br>
+        \(36=40\big(1-e^{-t/4}\big)\Rightarrow e^{-t/4}=\dfrac{1}{10}\) <span class="mk">(1)</span><br>
+        \(t=4\ln 10=9.21\ \text{s}\) <span class="mk">(1)</span>
+      </div>
+      <div class="trap"><b>Why harder:</b> the constant \(k\) stays a <b>letter</b> the whole way — harder to track than the parachutist's \(\alpha=2\) — and you must use the terminal-velocity idea (the limit as \(t\to\infty\)) to pin \(k\) <em>before</em> you can solve for a time. Same five-step engine, run symbolically.</div>
+    </div><div class="answer-overlay">Answer hidden — attempt first, then Reveal</div>
+  </div>
+</div>
+
+<!-- ============ CARD 4 ============ -->
+<div class="card" id="c4">
+  <h3>Card 4 — Linking to displacement: distance \(=\displaystyle\int v\,dt\)</h3>
+  <div class="method">
+    You didn't know how to get from velocity to distance. Velocity is the rate of change of displacement, \(v=\dfrac{dx}{dt}\), so <b>displacement is the integral of velocity</b>: \(x=\displaystyle\int v\,dt\). Integrate \(v(t)\), use the start position (here \(x=0\) at \(t=0\)) to find the constant, then to find the <b>time to fall a set distance</b>, set \(x\) equal to that distance and solve for \(t\) — by GC when it mixes \(t\) and \(e^{-bt}\).
+  </div>
+
+  <div class="block example"><div class="label">Worked example — shown in full · the integration step of N2024/P1/Q11(c)</div>
+    <div class="stem">Given \(v=4.9\big(1-e^{-2t}\big)\), and the parachutist starts from \(x=0\) at \(t=0\), find \(x\) in terms of \(t\).</div>
+    <div class="step"><div class="step-header">Integrate \(v\) to get \(x\)</div>
+      \(x=\displaystyle\int v\,dt=\int 4.9\big(1-e^{-2t}\big)\,dt\) <span class="mk">(1)</span><br>
+      \(=4.9\!\left(t-\dfrac{1}{-2}e^{-2t}\right)+d=4.9\!\left(t+\dfrac12 e^{-2t}\right)+d\) <span class="mk">(1)</span>
+    </div>
+    <div class="step"><div class="step-header">Apply the starting position</div>
+      <div class="step-desc">When \(t=0\), \(x=0\).</div>
+      \(0=4.9\!\left(0+\dfrac12\right)+d\Rightarrow d=-2.45\) <span class="mk">(1)</span><br>
+      \(x=4.9\!\left(t+\dfrac12 e^{-2t}\right)-2.45\)
+      <p class="enote"><b>The step people drop:</b> integrating \(-e^{-2t}\) gives \(+\dfrac12 e^{-2t}\) — divide by the \(-2\). Get the sign wrong and every later value is off.</p>
+    </div>
+  </div>
+
+  <div class="block practice"><div class="label">Practice — harder <span class="src">(HCI Tutorial 9 Q13 · N2024/P1/Q11(c) — the real [5]-mark part)</span></div>
+    <div class="stem">The helicopter is at a height of 2000 m above the ground. The parachutist falls with velocity \(v=4.9\big(1-e^{-2t}\big)\) from rest. Find the time taken for the parachutist to reach the ground. <span class="marks">[5]</span></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Answer — verbatim HCI</div>
+      <div class="step"><div class="step-header">Form \(x(t)\) from \(v\)</div>
+        \(v=\dfrac{dx}{dt}=4.9\big(1-e^{-2t}\big)\Rightarrow x=\displaystyle\int 4.9\big(1-e^{-2t}\big)\,dt=4.9\!\left(t+\dfrac12 e^{-2t}\right)+d\) <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">Apply \(t=0,\ x=0\)</div>
+        \(0=4.9\!\left(0+\dfrac12\right)+d\Rightarrow d=-2.45\) <span class="mk">(1)</span>, so \(x=4.9\!\left(t+\dfrac12 e^{-2t}\right)-2.45\).
+      </div>
+      <div class="step"><div class="step-header">Reaching the ground ⇒ \(x=2000\); solve by GC</div>
+        \(2000=4.9\!\left(t+\dfrac12 e^{-2t}\right)-2.45\) <span class="mk">(1)</span><br>
+        By GC, \(t=408.66327\ldots\Rightarrow t\approx 409\ \text{s}\) (3 s.f.) <span class="mk">(1)</span>
+      </div>
+      <div class="trap"><b>Why harder:</b> the example handed you \(v\) and asked only for \(x(t)\). Here you must (i) form \(x(t)\) yourself, (ii) realise that "reach the ground" from 2000 m means \(x=2000\), and (iii) solve a transcendental equation on the GC. This is the actual [5]-mark N2024 part you dropped — the pieces from Cards 2–3 all feed into it.</div>
+    </div><div class="answer-overlay">Answer hidden — attempt first, then Reveal</div>
+  </div>
+</div>
+
+<hr>
+<p class="meta"><b>Sources:</b> HCI Tutorial 9 (Q10, Q12, Q13) + Supplementary (Q9, Q12) + A-Level N2024/P1/Q11 &amp; N2017/I/11 — all in <code>Math/_question_bank/Differential_Equations.md</code>; solutions verbatim from the HCI worked-solution PDFs. The parachutist (N2024) runs through Cards 2–4; drill the pieces, then it assembles. <b>When done:</b> paste your Loom transcript (say your confidence per card) and I'll flag the gaps + build the DE gap cluster from your weak spots.</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn=>{btn.addEventListener('click',function(){const b=this.parentElement,o=b.querySelector('.answer-overlay');if(o.classList.contains('hidden')){o.classList.remove('hidden');this.textContent='Reveal';this.classList.remove('hide-state');}else{o.classList.add('hidden');this.textContent='Hide';this.classList.add('hide-state');}});});
+  function revealAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.add('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Hide';b.classList.add('hide-state');});}
+  function hideAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.remove('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Reveal';b.classList.remove('hide-state');});}
+</script>
+</body>
+</html>

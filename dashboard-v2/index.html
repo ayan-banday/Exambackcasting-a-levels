@@ -323,13 +323,13 @@ footer a{color:var(--dim)}
       const [,mo,dy]=d.date.split('-');
       const cls=['day',d.type,d.date===today?'today':'',d.date<today?'past':'',all?'alldone':''].filter(Boolean).join(' ');
       const nDone=d.blocks.filter(x=>x.done).length;
-      const tagTxt=d.type==='test'?'TEST':(s.name||'');
+      const tagTxt=d.type==='test'?'TEST':'';
       const tagCol=d.type==='test'?'var(--bad)':s.colour;
       html+=`<details class="${cls}" ${d.date===today?'open':''}>
         <summary class="dh">
           <span class="dn">${d.donePast?'DONE':'DAY '+d.n}</span>
           <span class="dd">${d.weekday} ${+dy} ${MO[+mo]}</span>
-          <span class="tag" style="background:${tagCol}1f;color:${tagCol}">${tagTxt}</span>
+          ${tagTxt?`<span class="tag" style="background:${tagCol}1f;color:${tagCol}">${tagTxt}</span>`:''}
           <span class="lb">${d.label}${d.flag?`<span style="color:var(--bad);font-size:11px;margin-left:5px">${d.flag}</span>`:''}</span>
           ${all?'<span class="ck">✓ done</span>':(any?`<span class="ck">${nDone}/${d.blocks.length}</span>`:'')}
           <span class="mn">${fmt(d.mins)}h</span>
