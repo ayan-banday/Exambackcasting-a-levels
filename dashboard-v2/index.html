@@ -234,9 +234,36 @@ footer a{color:var(--dim)}
   <div class="h2sub">The finish line — every paper you sit, in order. GP opens it (24 Aug); Biology closes it. The two <span style="color:var(--bad)">practical</span> papers come early and still need dedicated prep in October.</div>
   <div class="exams" id="exams"></div>
 
-  <h2>📓 Progress log<span class="rule"></span></h2>
-  <div class="h2sub">What you actually studied, newest first. The plan above is the target; this is the record of what really happened.</div>
-  <div id="log"></div>
+  <h2>🏁 A-Level papers — the real thing<span class="rule"></span></h2>
+  <div class="h2sub">Official SEAB 2026 timetable (updated 13 Feb 2026). Your five subjects, in order. The two <span style="color:var(--bad)">practicals</span> fall in October; every written paper runs 2–26 Nov 2026. Prelims are the rehearsal — this is the finish line.</div>
+  <div class="exams" id="alevelExams"></div>
+
+  <style>
+  #rdboard .rdb{border:1px solid var(--line,#2a2d34);border-radius:8px;overflow:hidden;margin:10px 0 14px}
+  .rdbrow{display:flex;justify-content:space-between;padding:8px 14px;border-bottom:1px solid var(--line,#2a2d34);font-size:14px}
+  .rdbrow:last-child{border-bottom:none}.rdtot{background:rgba(255,255,255,.03)}.rdbn b{color:#e7e7ea}
+  .rdsub{border:1px solid var(--line,#2a2d34);border-radius:8px;margin:6px 0;overflow:hidden}
+  .rdsub summary{cursor:pointer;padding:9px 14px;display:flex;justify-content:space-between;align-items:center;font-size:14px;list-style:none}
+  .rdsub summary::-webkit-details-marker{display:none}
+  .rdname{font-weight:600}.rdroll{color:var(--mut,#8c909b);font-size:12.5px}
+  .rdrow{display:flex;align-items:center;gap:10px;padding:5px 14px;font-size:13px;border-top:1px solid var(--line,#2a2d34)}
+  .rdrow.sac{opacity:.45}.rdt{flex:0 0 46%;color:#c9ccd3}
+  .sacp{font-size:10px;color:var(--bad,#e8845f);border:1px solid var(--bad,#e8845f);border-radius:3px;padding:0 3px;margin-left:4px}
+  .rdbar{flex:1;height:7px;background:rgba(255,255,255,.06);border-radius:4px;overflow:hidden}
+  .rdbar i{display:block;height:100%;border-radius:4px}
+  .rdpct{flex:0 0 36px;text-align:right;color:var(--mut,#8c909b);font-size:12px}
+  </style>
+  <h2>📊 A-Level readiness<span class="rule"></span></h2>
+  <div class="h2sub">How prepped you are, per topic — updated after every test. <b>Prelim %</b> = distance to a prelim-B · <b>A-lvl %</b> = distance to full mastery. Tap a subject to expand.<span id="rdmeta" style="color:var(--mut)"></span></div>
+  <div id="rdboard"></div>
+  <div id="readiness"></div>
+
+  <style>.collap>summary{list-style:none;cursor:pointer}.collap>summary::-webkit-details-marker{display:none}.collap>summary h2{margin-top:24px}.collap[open]>summary h2 .rule{opacity:.5}</style>
+  <details class="collap">
+    <summary><h2>📓 Progress log <span style="font-size:11px;color:var(--mut);font-weight:400">▸ tap</span><span class="rule"></span></h2></summary>
+    <div class="h2sub">What you actually studied, newest first. The plan above is the target; this is the record of what really happened.</div>
+    <div id="log"></div>
+  </details>
 
   <h2>🧪 Test topics — the cumulative test pool<span class="rule"></span></h2>
   <div class="h2sub">Every topic you finish lands here. Each Saturday's cumulative test is built from this list.</div>
@@ -373,6 +400,47 @@ footer a{color:var(--dim)}
         <span class="ext">${x.time}${x.dur?' · '+x.dur:''}</span>
       </div>`;
     }).join('');
+  }
+
+  // ---- A-level papers ----
+  const alEl=document.getElementById('alevelExams');
+  if(alEl && P.alevelExams && P.alevelExams.length){
+    alEl.innerHTML=P.alevelExams.map(x=>{
+      const s=S[x.subject]||{name:x.subject,colour:'#8c909b'};
+      const [,mo,dy]=x.date.split('-');
+      const prac=/Practical/i.test(x.paper);
+      return `<div class="exrow ${prac?'prac':''}">
+        <span class="exd">${x.weekday} ${+dy} ${MO[+mo]}</span>
+        <span class="extag" style="background:${s.colour}1f;color:${s.colour}">${s.name}</span>
+        <span class="exp">${x.paper}</span>
+        <span class="ext">${x.time}${x.dur?' · '+x.dur:''}</span>
+      </div>`;
+    }).join('');
+  }
+
+  // ---- readiness ----
+  if(P.readiness){
+    const R=P.readiness, mEl=document.getElementById('rdmeta');
+    if(mEl) mEl.textContent=' · last test: '+R.lastTest;
+    const bc=m=> m>=70?'#5fd3a8':m>=40?'#e8c65f':m>=15?'#e8845f':'#4a4d55';
+    const board=[]; let body='';
+    for(const sk of Object.keys(R.subjects)){
+      const sub=S[sk]||{name:sk,colour:'#8c909b',full:sk};
+      const tops=R.subjects[sk].topics, cov=tops.filter(t=>!t.sac);
+      const al=Math.round(tops.reduce((a,t)=>a+t.m,0)/tops.length);
+      const pr=cov.length?Math.min(100,Math.round((cov.reduce((a,t)=>a+t.m,0)/cov.length)/0.68)):0;
+      board.push({name:sub.name,colour:sub.colour,pr,al});
+      let rows='';
+      tops.forEach(t=>{ rows+=`<div class="rdrow${t.sac?' sac':''}"><span class="rdt">${t.t}${t.sac?' <span class="sacp">skip</span>':''}</span><span class="rdbar"><i style="width:${t.m}%;background:${bc(t.m)}"></i></span><span class="rdpct">${t.m}%</span></div>`; });
+      body+=`<details class="rdsub"><summary><span class="rdname" style="color:${sub.colour}">${sub.full||sub.name}</span><span class="rdroll">prelim ${pr}% · A-lvl ${al}%</span></summary>${rows}</details>`;
+    }
+    board.sort((a,b)=>b.pr-a.pr);
+    let bd='<div class="rdb">';
+    board.forEach(b=>{bd+=`<div class="rdbrow"><span style="color:${b.colour};font-weight:600">${b.name}</span><span class="rdbn">prelim <b>${b.pr}%</b> · A-lvl <b>${b.al}%</b></span></div>`;});
+    const op=Math.round(board.reduce((a,b)=>a+b.pr,0)/board.length), oa=Math.round(board.reduce((a,b)=>a+b.al,0)/board.length);
+    bd+=`<div class="rdbrow rdtot"><span style="font-weight:700">Overall</span><span class="rdbn">prelim <b>${op}%</b> · A-lvl <b>${oa}%</b></span></div></div>`;
+    const bEl=document.getElementById('rdboard'); if(bEl) bEl.innerHTML=bd;
+    const rEl=document.getElementById('readiness'); if(rEl) rEl.innerHTML=body;
   }
 
   // ---- progress log ----
