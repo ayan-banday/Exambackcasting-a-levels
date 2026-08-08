@@ -1373,36 +1373,35 @@ window.PLAN = {
    "date": "2026-08-07",
    "weekday": "Fri",
    "type": "standard",
-   "subject": "gp",
+   "subject": "bio",
    "flag": "",
    "mins": 360,
-   "label": "GP + Bio + Maths",
-   "focus": "P1 domain bank (Politics/Gov)  ·  Cell Structure  ·  Integration re-drill",
+   "label": "Bio + CSC",
+   "focus": "Book 1 Cluster 1 + Drill  ·  Book 1 Cluster 2 sheet  ·  CSC Econs + Gov cards",
    "blocks": [
     {
-     "mins": 120,
-     "subject": "gp",
-     "name": "GP — P1 domain bank (Politics/Gov)",
-     "desc": "",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 120,
+     "mins": 180,
      "subject": "bio",
-     "name": "Bio — Cell Structure",
+     "name": "Bio — Book 1 Cluster 1 + Drill",
+     "desc": "Study sheet + cluster + drill",
+     "done": true,
+     "doneDate": "7 Aug"
+    },
+    {
+     "mins": 60,
+     "subject": "bio",
+     "name": "Bio — Book 1 Cluster 2 (study sheet)",
      "desc": "",
-     "done": false,
-     "doneDate": null
+     "done": true,
+     "doneDate": "7 Aug"
     },
     {
      "mins": 120,
-     "subject": "maths",
-     "name": "Maths — Integration re-drill",
-     "desc": "Your test gaps: trig-sub, cyclic IBP, MF27",
-     "done": false,
-     "doneDate": null,
-     "clusterHref": "clusters/redrill_maths_integration.html"
+     "subject": "csc",
+     "name": "CSC — Econs cards + selected Governance cards (Anki)",
+     "desc": "",
+     "done": true,
+     "doneDate": "7 Aug"
     }
    ],
    "week": 3
@@ -3478,8 +3477,8 @@ window.PLAN = {
   }
  ],
  "readiness": {
-  "lastUpdated": "2026-08-06",
-  "lastTest": "Maths diagnostic — 5 Aug (Calculus + Vectors)",
+  "lastUpdated": "2026-08-07",
+  "lastTest": "7 Aug — Bio Book 1 Cluster 1 drill + CSC cards",
   "note": "Measured where tested (Maths). Everything else is an estimate from what's been drilled; Chem is unconfirmed until its diagnostic. Prelim % = distance to a prelim-B (~68% bar, sacrificed topics excluded); A-level % = distance to full mastery, every topic counts.",
   "subjects": {
    "maths": {
@@ -3728,13 +3727,13 @@ window.PLAN = {
     "topics": [
      {
       "t": "Cell Structure",
-      "m": 0,
+      "m": 60,
       "sac": 0,
       "meas": 0
      },
      {
       "t": "Biomolecules",
-      "m": 0,
+      "m": 25,
       "sac": 0,
       "meas": 0
      },
@@ -3846,7 +3845,7 @@ window.PLAN = {
      },
      {
       "t": "Economy 经济",
-      "m": 20,
+      "m": 35,
       "sac": 0,
       "meas": 0
      },
