@@ -5,8 +5,8 @@ default_type: qualitative
 status: BUILT
 validation_source: MIXED  # [OFFICIAL] syllabus 9477 (scope/AOs/paper structure/exclusions) + [OFFICIAL] 9477 specimen papers P1-P4 (question papers only, no published mark scheme) + [SCHOOL] JC-prelim mark schemes 2011-2025 (marking DNA, traps, archetype frequencies) + [INFERRED] frequency estimates; NO official SEAB 9477/9744 mark scheme or examiner report exists
 confidence_ceiling: "~87% MIXED  ([OFFICIAL] ~92% on WHAT is examinable, now corroborated by the 9477 specimen papers; [SCHOOL] ~80% cap on HOW it is marked — unchanged, no official mark scheme exists; [INFERRED] frequencies directional only)"
-last_updated: 2026-08-06
-last_change: "2026-08-06 — added §3.0 school Book 1-9 to Core Idea map; corrected the false 'empty chapter-notes stubs' finding (they are Notion self-logs; the taught notes are the Book PDFs); registered the 9477 specimen papers as OFFICIAL format evidence"
+last_updated: 2026-08-10
+last_change: "2026-08-10 — audit against the 9477 syllabus, the four 9477 specimen papers and the rebuilt 9,067-question bank. Corrected: P2 part census (36 parts, [2]x16) and command-word census; P3 Q1 part count (14, not 19); P3 Section B is a SINGLE undivided 20-mark prompt, the 9744 (a)+(b) split did NOT survive; P4 risk assessment is NOT syllabus-excluded; the 'detailed computation not required on P4' rule applies only to t-test/chi-squared; Hardy-Weinberg and R0 are NOT on the given-equations list; question order follows syllabus LO order, not school Book order; Book 1 covers LOs a-d,g-s (not a-s); §3 node count; P1 stem-type and essay-theme frequencies re-based on the question bank"
 ---
 
 # Subject Examiner's Guide — Biology H2 (Syllabus 9477)
@@ -22,9 +22,9 @@ last_change: "2026-08-06 — added §3.0 school Book 1-9 to Core Idea map; corre
 > **Honesty stamp.** Every claim below is tagged `[OFFICIAL]`, `[SCHOOL]`, `[INFERRED]` or
 > `[RESEARCH]`. SEAB does **not** publish 9477/9744-family mark schemes or examiner reports — so every
 > mark scheme / marked paper in `inputs/` is a **JC prelim** and is tagged `[SCHOOL]`, never
-> `[OFFICIAL]`. Only the syllabus PDF (and any future official specimen) is `[OFFICIAL]`. The honest
-> ceiling is therefore ~85% and **cannot exceed ~92%** until an official past paper is sat under timed
-> conditions. **High scores on this system's questions are not readiness.**
+> `[OFFICIAL]`. Only the syllabus PDF and the four 9477 specimen question papers are `[OFFICIAL]`. The
+> honest ceiling is therefore ~87% and **cannot exceed ~92%** until an official past paper is sat under
+> timed conditions. **High scores on this system's questions are not readiness.**
 
 ---
 
@@ -73,9 +73,12 @@ All four papers are compulsory. `[OFFICIAL]` (syllabus pp.9–10).
 `[OFFICIAL]` all of the above.
 
 **Paper 3 free-response = one 20-mark question** (syllabus: "one free-response question of 20 marks").
-`[OFFICIAL]` Note the corpus shows JCs running a **25-mark Section B essay split into (a)+(b)** under
-9744 — under 9477 the official figure is **20 marks**; expect the part-(a) descriptive + part-(b)
-evaluative structure to survive, but the total drops. `[OFFICIAL] size; [SCHOOL]/[INFERRED] internal shape.`
+`[OFFICIAL]` The corpus shows JCs running a **25-mark Section B essay split into (a)+(b)** under 9744.
+**That split did NOT survive into 9477.** Both Section B options in the 9477 specimen (Q4 roles of
+proteins, Q5 how molecules enter cells) are printed as a **single undivided prompt carrying one `[20]`
+tag** — no (a), no (b), no internal mark split, answered in continuous prose. Plan and drill the essay
+as one 20-mark piece, not as a descriptive half plus an evaluative half. `[OFFICIAL]` (9477 specimen
+P3, both options).
 
 **Practical (P4)** assesses **Planning (P, 4%)**, **Manipulation/Measurement/Observation (MMO)**,
 **Presentation of Data & Observations (PDO)**, **Analysis/Conclusions/Evaluation (ACE)** — last three
@@ -84,9 +87,16 @@ an **agarose gel electrophoresis cell** — so microscopy/magnification and gel 
 contexts. `[OFFICIAL]` (syllabus pp.22–24). *Ethan plans October-only P4 prep — flag practical content
 separately, don't drill it in routine topic sessions.* `[SCHOOL]` (his stated plan in the corpus).
 
-**Mathematical content is examinable on Papers 1–3** (computation) and on **Paper 4 as understanding,
-but "detailed computation will not be required" on P4**. All formulae, symbols, a t-table and a
-chi-squared table are **given** — nothing is memorised. `[OFFICIAL]` (syllabus p.25).
+**The "detailed computation not required on P4" rule is narrower than it looks.** The syllabus says it
+only of the **statistical tests**: "Questions involving the use of a t-test or χ² test may be set on
+Papers 1, 2 and 3. Questions involving an understanding of the use of the tests may be set on Paper 4,
+but detailed computation will not be required." **Ordinary calculation is fully examinable on P4** —
+the 9477 specimen P4 makes candidates measure a field-of-view radius, calculate its area, calculate a
+mean stomatal count and calculate a stomatal density. **What is given:** the standard-deviation, t-test
+and χ² equations, the meaning of their symbols, a t-table and a chi-squared table. **What is NOT given:**
+the **Hardy–Weinberg equation (p²+2pq+q²=1)** and **R₀** — both sit in Mathematical Requirements as
+things candidates "should appreciate" and neither appears on the provided-equations list, so both are
+memorised. **χ² will only ever be set on one row of data.** `[OFFICIAL]` (syllabus p.25; specimen P4 Q2).
 
 ---
 
@@ -153,11 +163,15 @@ breadth is asked, and reward spread. `[SCHOOL]`
 
 ## 3. Content Node Map (the syllabus as testable nodes)
 
-The exhaustive testable scope is the **9477 Learning Outcomes**, organised below as the **19 study
-topics** in this repo (the cross-topic intelligence backbone). Each is the master coverage checklist a
-topic guide draws from. *(Counted and corrected 2026-08-07 — this header said 18; the list below has
-always held 19.)* **Core Idea + LO references are `[OFFICIAL]`** (syllabus pp.12–21); the
-per-topic trap/marking detail is `[SCHOOL]/[INFERRED]` (see §5).
+The exhaustive testable scope is the **9477 Learning Outcomes**, organised below as **20 content nodes**
+(the cross-topic intelligence backbone). Each is the master coverage checklist a topic guide draws from.
+*(Recounted 2026-08-10. Earlier headers claimed 18, then 19; the list below actually holds 20 bullets.
+**Eighteen** of them have a folder of their own under `inputs/Biology/H2/`; the two that do not are the
+cross-folder clusters — viral & bacterial genetics, and cell cycle / mitosis / meiosis — flagged in place
+below and in §7. Separately, the rebuilt question bank at `Study Agent/Bio/_question_bank/` files the
+same LOs under **27** finer topic names cut along the school's Book chapters; that is a different slicing
+of the same scope, not a disagreement.)* **Core Idea + LO references are `[OFFICIAL]`** (syllabus
+pp.12–21); the per-topic trap/marking detail is `[SCHOOL]/[INFERRED]` (see §5).
 
 ### 3.0 School teaching structure ↔ official syllabus (read before any topic session)
 
@@ -170,10 +184,10 @@ Source notes live at `Study Agent/Bio/Book <N> - <name>/` (7–46 pp per chapter
 
 | Book | Chapters | Maps to | LOs |
 |---|---|---|---|
-| **1 — Biomolecules, Enzymes and Cell Structure** | Water & Macromolecules · Lipids · Carbohydrates · Proteins · Enzymes · Eukaryotic Cell Structure & Function · Cell Membrane & Transport | Core Idea 1 | a–s (**all of Core Idea 1 except stem cells**) |
+| **1 — Biomolecules, Enzymes and Cell Structure** | Water & Macromolecules · Lipids · Carbohydrates · Proteins · Enzymes · Eukaryotic Cell Structure & Function · Cell Membrane & Transport | Core Idea 1 | **a–d, g–s** (Core Idea 1 minus viruses and stem cells) |
 | **2 — Genetics and Inheritance (Molecular)** | DNA Structure & Replication · Eukaryotic Gene Expression · Genome Organisation · Control of Gene Expression · Gene & Chromosomal Mutations · Molecular Techniques · Bioethics | Core Idea 2 | a–d, h–m |
-| **3 — Cell Signalling, Division, Cancer, Stem Cells** | Cell Signalling · Cell & Nuclear Division · Molecular Basis of Cancer · Stem Cells | **spans 3 Core Ideas** | CI-3 m–p (signalling); CI-2 n–t (division), p–r (cancer); **CI-1 t–u (stem cells)** |
-| **4 — Genetics of Viruses and Bacteria** | Genetics of Viruses · Genetics of Bacteria | Core Idea 2 | e–g |
+| **3 — Cell Signalling, Division, Cancer, Stem Cells** | Cell Signalling · Cell & Nuclear Division · Molecular Basis of Cancer · Stem Cells | **spans 3 Core Ideas** | CI-3 m–p (signalling); CI-2 **(n),(o),(s),(t)** division and **(p)–(r)** cancer; **CI-1 t–u (stem cells)** |
+| **4 — Genetics of Viruses and Bacteria** | Genetics of Viruses · Genetics of Bacteria | Core Idea 2 (+ CI-1) | CI-2 e–g; **also CI-1 (e),(f)** — 4.1 prints "1(e) describe the structural components of viruses…" and "1(f) discuss how viruses challenge the cell theory" on its own learning-outcomes page |
 | **5 — Energetics** | Photosynthesis · Cellular Respiration | Core Idea 3 | a–l |
 | **6 — Inheritance** | Inheritance I · Inheritance II | Core Idea 2 | u–dd |
 | **7 — Biological Evolution** | Syllabus & Definitions · Theories · Microevolution · Speciation & Macroevolution · Phylogeny | Core Idea 4 | a–n |
@@ -182,16 +196,20 @@ Source notes live at `Study Agent/Bio/Book <N> - <name>/` (7–46 pp per chapter
 
 **Three consequences that change how sessions run:**
 
-1. **Book 1 ≠ Core Idea 1.** Stem cells (LO t–u) sit in Core Idea 1 on the syllabus but are taught in
-   **Book 3**. A Book-1 session that claims Core Idea 1 coverage is over-claiming by two LOs. Virus
-   structure (LO e–f) is examined in Core Idea 1 but taught with **Book 4** material.
+1. **Book 1 ≠ Core Idea 1 — it is short by four LOs.** Stem cells (LO t–u) sit in Core Idea 1 on the
+   syllabus but are taught in **Book 3**; virus structure and the cell-theory challenge (LO e–f) sit in
+   Core Idea 1 but are taught in **Book 4** (chapter 4.1 reprints LOs 1(e) and 1(f) verbatim on its
+   learning-outcomes page). A Book-1 session that claims Core Idea 1 coverage is over-claiming by
+   **e, f, t, u**. What Book 1 *does* carry that is easy to miss: chapter 1.5 prints LO 1(a) cell theory
+   and LO 1(d) the typical bacterial cell, so prokaryotic cell structure is Book 1, not Book 4.
 2. **Book 3 is the synthesis book.** It pulls from three Core Ideas at once, which is exactly the
    shape of the P3 Section A Q1 multi-topic anchor (§4). Treat it as the highest-leverage Book for
    cross-topic questions, not as four unrelated chapters.
 3. **The `inputs/Biology/H2/*/chapter_notes/*.md` files are NOT the taught notes.** They are Notion
-   exports carrying only mastery ratings, session dates and Ethan's own confusion jottings (8–63
-   lines each against 10–46-page source chapters). They must never be used as content ground truth
-   for a guide, cluster or question. The taught material is the Book PDFs above. `[SCHOOL]`
+   exports carrying only mastery ratings, session dates and Ethan's own confusion jottings (26 files,
+   **5–107 lines** each against 10–46-page source chapters; several are nothing but a mastery star and
+   a Drive link). They must never be used as content ground truth for a guide, cluster or question.
+   The taught material is the Book PDFs above. `[SCHOOL]`
 
 ### Core Idea 1 — The Cell and Biomolecules of Life  (LOs a–u) `[OFFICIAL]`
 - [ ] **Cell_Structure** — cell theory (a); organelle/EM/photomicrograph ID + functions (b,c); typical bacterial cell — peptidoglycan, circular DNA, 70S, no membrane-bound organelles (d); virus structure incl. enveloped + bacteriophage (e); **discuss how viruses challenge cell theory** (f, the distinctive H2 AO3 hook); microscopy + graticule/stage-micrometer + magnification.
@@ -239,9 +257,16 @@ actual papers, not estimates from the 9744 corpus. **Where §4.0 and §4 disagre
 confidence about the *shape* of the paper to `[OFFICIAL]`, and changes nothing about *how answers are
 marked*, which stays `[SCHOOL]`.
 
-**One structural fact spans all four papers: questions run in syllabus book order, Book 1 → Book 9.**
-P1 sweeps front to back once; P2's nine questions do the same. That is a planning fact — the position
-of a question predicts its topic.
+**One structural fact spans P1 and P2: questions run in syllabus Learning-Outcome order, not in school
+Book order.** Corrected 2026-08-10 — an earlier version of this line said "Book 1 → Book 9", which the
+specimens do not support. P1 sweeps **Core Idea 1 → 2 → 3 → 4 → Extension Topics** once: Q1–8 Core Idea 1,
+Q9–18 Core Idea 2 *in LO order* (a–c, d, e–f, g, h–i, j, k, q, s, z), Q19–22 Core Idea 3 (photosynthesis →
+respiration → signalling), Q23–25 Core Idea 4, Q26–28 climate, Q29–30 infectious disease. That is
+**not** Book order — Book 4 material (viral and bacterial genetics) sits inside the Core-Idea-2 run at
+Q11–12, and Book 3 material is scattered across Q15–17 and Q22. P2 follows the same Core Idea ramp with
+**one genuine break: Q6 (mitosis, Core Idea 2) sits between Q5 and Q7, both Core Idea 3.** Both papers
+also put **climate before infectious disease**, which reverses the syllabus's own A-then-B ordering of
+the Extension Topics. Position predicts topic, but predict from the LO list, not from the Book spines.
 
 ### Paper 1 — 30 MCQ, 1 h, 30 marks
 
@@ -255,6 +280,12 @@ of a question predicts its topic.
 | Genuine calculation | **1** | standard-form arithmetic |
 | Negative stem ("does NOT") | **1** | |
 
+*Counting note (added 2026-08-10): the row-grid, numbered-statement, calculation and negative-stem counts
+are exact reads of the printed paper and re-verified. Sorting a question into "plain recall" versus
+"unfamiliar-context stimulus" is a judgement applied to official material — those two rows are
+`[INFERRED]` buckets over an `[OFFICIAL]` paper. Q21 (locations of the link reaction and oxidative
+phosphorylation) is recall wearing a row grid, so "plain recall" could defensibly read 5.*
+
 **26 of 30 are applied, not recall.** Four questions carry **long-prose distractors** where each of
 A–D is 2–4 full sentences; one is roughly 200 words of options on its own. **At 2 minutes a question,
 reading load is a real constraint** — that is a timing risk, not a knowledge risk, and it is trainable.
@@ -263,13 +294,23 @@ reading load is a real constraint** — that is a timing risk, not a knowledge r
 
 - **Exactly 9 compulsory questions, no sections.** Marks per question: **9, 8, 12, 11, 7, 11, 12, 13, 7**.
   Range 7–13, mean 10. **There is no short opener and no 20-mark monster** — it is a flat run.
-- **34 answerable parts.** Part sizes: [1]×5, [2]×14, [3]×9, [4]×4, [5]×2. **Two marks is the modal
-  part, and nothing exceeds [5].** Long single-part answers do not appear on this paper.
-- **Every question is stimulus-led.** Eight of nine open on a named Figure or Table.
-- **Command-word census:** ***Explain* ×11 — the house verb**, roughly a third of all parts. Then
-  *State* ×5, *Describe* ×4, *Complete* ×3, *Outline* ×2, *Suggest* ×2, *Calculate* ×1, *Draw* ×1.
-- **Statistics is ~12% of the paper in one block** — a genetic diagram [4], a percentage [1], a
-  chi-squared table completion [3] and a significance conclusion [3], all inside one question.
+- **36 answerable parts** (recounted 2026-08-10; this bullet previously said 34). Part sizes:
+  **[1]×5, [2]×16, [3]×9, [4]×4, [5]×2** — which sums to exactly 90, the arithmetic check the old
+  figures failed. **Two marks is the modal part, and nothing exceeds [5].** Long single-part answers do
+  not appear on this paper.
+- **Every question is stimulus-led** — all nine carry at least one named Figure or Table. But only
+  **five of nine actually open on one** (Q1, Q2, Q3, Q6, Q8). Q4, Q5, Q7 and Q9 open on prose or a
+  bulleted method and bring the figure in later, so do not assume the stimulus is the first thing on the
+  page. *(Corrected 2026-08-10; previously read "eight of nine open on a named Figure or Table".)*
+- **Command-word census (recounted 2026-08-10 off the instruction lines):** ***Explain* ×12 — the house
+  verb**, exactly a third of the 36 parts. Then *State* ×7, *Describe* ×5 (three standalone plus two
+  riding a "With reference to Figure…" lead-in), *Outline* ×2, *Suggest* ×2, *Complete* ×1 (a single
+  instruction covering three [1] sub-parts — the old "×3" counted the sub-parts), *Calculate* ×1,
+  *Draw* ×1, *Identify* ×1.
+- **Statistics is ~12% of the paper in one block** — Q4 is 11 of 90 marks: a genetic diagram [4], a
+  percentage [1], **three separate [1] table-completion parts** (expected numbers, two missing values,
+  the χ² value) and a conclusion-plus-explanation [3]. *(Corrected 2026-08-10 — the completion work is
+  three [1] parts, not one [3], and the conclusion is [3], not [3]+[3].)*
 - **Cross-topic bridging inside a single question is normal**, e.g. gene mutation → chromosome mutation
   → cancer → graph analysis. Expect to be moved between Books mid-question.
 - **The standard 3-mark shape is data-lift-plus-explain:** quote the figures *and* account for them.
@@ -277,35 +318,53 @@ reading load is a real constraint** — that is a timing risk, not a knowledge r
 
 ### Paper 3 — 2 h, 75 marks (Section A 55 + Section B 20)
 
-- **Section A: 3 compulsory questions worth 32, 11 and 12.**
+- **Section A: 3 compulsory questions worth 32, 11 and 12** — the paper prints `[Total: n]` at the foot
+  of each, so these are stated, not derived. Part counts: Q1 = 14, Q2 = 4, Q3 = 7.
 - **The headline finding: Q1 is a single 32-mark question, 43% of the paper**, built on one extended
-  research narrative with **19 separately-marked parts**, walking across genome organisation →
+  research narrative with **14 separately-marked parts** ([1]×6, [2]×3, [3]×2, [4]×2, [6]×1 = 32;
+  recounted 2026-08-10, this previously read 19), walking across genome organisation →
   endosymbiosis → respiration → nature of science → meiosis → PCR → molecular phylogeny → species
   concept → continuous variation. **Every Book in the syllabus is reachable from one stem.** A
   single-topic answer to Q1 is a structural failure, not a knowledge gap.
-- **Real published science is the stimulus**, with named researchers, dates and sample sizes — and
-  **nature of science is directly examinable** ("why do scientists replicate work?").
+- **Real published science is the stimulus**, with named researchers, dates and sample sizes (Cann,
+  Stoneking and Wilson 1987, n = 147; Ingman 2000, n = 53) — and **nature of science is directly
+  examinable**. Verbatim stem: *"State one reason why repeating the work of others is an important part
+  of scientific research."* [1] *(The earlier paraphrase "why do scientists replicate work?" was printed
+  here in quotation marks and was not the paper's wording.)*
 - **The signature Paper 3 move is calculate-then-evaluate:** a multi-step calculation followed
   immediately by a **"comment on…"** part. The calculation exists to be *judged*, not just produced.
 - **"Name precisely…" 1-mark parts** demand exact technical vocabulary (somatic recombination, class
   switching, somatic hypermutation) — three in a row in one question. This is where lexical strictness
   bites hardest.
 - **Section B: choose 1 of 2, 20 marks, continuous prose, "illustrated by large, clearly labelled
-  diagrams".** The specimen's two options were **proteins** and **entry of molecules into cells** —
-  both Book 1. **Essays are breadth-first**: "with reference to a wide range of examples relevant to
-  prokaryotes, eukaryotes and viruses". Marks come from spread across the syllabus plus diagrams.
+  diagrams".** Each option is a **single undivided prompt carrying one `[20]` tag** — no (a)/(b) split,
+  no internal mark allocation. The two options were *"With reference to named examples, describe the
+  different roles of proteins in living organisms"* and *"With reference to a wide range of examples
+  relevant to prokaryotes, eukaryotes and viruses, outline different ways in which molecules can enter
+  cells"* — both anchored in Book 1, though the second explicitly reaches into viral and prokaryotic
+  material. **Essays are breadth-first**: the reward is spread across the syllabus plus diagrams, and
+  the wording of both options makes breadth the load-bearing instruction.
 
 ### Paper 4 — 3 questions, 2 h 30 min, 50 marks
 
 Q1 = 20 (quantitative wet practical), Q2 = 20 (microscopy + measurement), Q3 = 10 (free planning
 question, single unbroken award).
 
-> **This changes the "skip practicals" decision.** Roughly **40% of Paper 4 (20 of 50 marks) needs no
-> apparatus at all** — sketch-and-explain, designing a results table, plotting, limiting-factor
+> **This changes the "skip practicals" decision.** Roughly **40% of Paper 4 (about 20 of 50 marks) needs
+> no apparatus at all** — sketch-and-explain, designing a results table, plotting, limiting-factor
 > reasoning, validity, improvements, choosing a statistical test, interpreting p < 0.05, and the
 > entire 10-mark planning question. Paper 4 is 20% of the grade, so **that apparatus-free portion is
-> about 8% of the total A-level** and is reachable from a desk. The bullet list of plan requirements
-> printed in Q3 *is* the mark-scheme skeleton. Risk assessment is explicitly excluded.
+> about 8% of the total A-level** and is reachable from a desk. `[INFERRED]` — the mark totals are
+> official but deciding which parts truly need the bench is a judgement; a strict count gives ~19 marks
+> (Q3's 10, Q1(a)'s 4, Q1(d)'s 1, Q2(e)'s 4) and a loose one gives ~26. The bullet list of plan
+> requirements printed in Q3 *is* the mark-scheme skeleton. `[INFERRED]`
+>
+> **Risk assessment is NOT excluded from 9477** *(corrected 2026-08-10 — this bullet previously said it
+> was).* The specimen waived it **for that one question**: "You can assume that a risk assessment for
+> this investigation has already been carried out so there is no need to include reference to safety
+> measures." That is a per-question rubric, not a syllabus rule. Syllabus p.22, skill area **P
+> (Planning)**, still lists "assess the risks of the experiment and describe precautions that should be
+> taken to keep risks to a minimum" as an assessable outcome. `[OFFICIAL]` A live paper may require it.
 
 ---
 
@@ -315,19 +374,26 @@ question, single unbroken award).
 > prelim corpus. Retained because the prelim corpus is where the *marking* evidence lives and because
 > it covers per-topic detail the single specimen cannot. Where a number here contradicts a measured
 > count in §4.0, **§4.0 wins**. Format weights are `[OFFICIAL]` from §1.
+>
+> **Re-based 2026-08-10 against the rebuilt question bank** at `Study Agent/Bio/_question_bank/` —
+> 27 topic files, **9,067 records** (2,187 base / 3,953 harder / 2,927 hardest), tagged by source paper:
+> 3,699 from P2, 2,337 from P1, 1,946 from P3, 428 from P4, 675 untagged. That is now the largest
+> frequency evidence available and it beats the old digest estimates wherever the two disagree. It is
+> still **prelim evidence, still `[INFERRED]` for the live 9477 paper** — a bank built from school
+> papers can only tell you what schools set.
 
 **Subject-wide question archetypes (cross-topic):**
 
 | Archetype | Approx. share of marks | Where it appears | Tag |
 |---|---|---|---|
-| **Data/figure interpretation** ("With reference to Fig… describe the trend, then explain") | ~30–35% | P1, P2 (80–90% of sub-parts figure/table-led), P3 Sec A | `[SCHOOL]/[INFERRED]` |
+| **Data/figure interpretation** ("With reference to Fig… describe the trend, then explain") | ~30–35% | P1, P2 (**≥53%** of banked P2 sub-parts name a Figure/Table — floor, not ceiling; the old "80–90%" was a 9744 digest estimate and the bank does not reach it), P3 Sec A | `[SCHOOL]/[INFERRED]` |
 | **Mechanism "Explain" causal chain** (cause→effect, each link a mark) | ~25% | P2, P3 | `[OFFICIAL]` AO-A/B; `[SCHOOL]` shape |
-| **Structure→function** (paired S/F; haemoglobin, glycogen, cellulose, membranes, DNA) | ~10–12% | P2, P3 essay (a) | `[SCHOOL]` |
-| **Compare / distinguish** (both sides, same axis) | ~8% | P1 row-match, P2, P3 essay (b) | `[SCHOOL]` |
+| **Structure→function** (paired S/F; haemoglobin, glycogen, cellulose, membranes, DNA) | ~10–12% | P2, P3 essay | `[SCHOOL]` |
+| **Compare / distinguish** (both sides, same axis) | ~8% | P1 row-match, P2, P3 essay | `[SCHOOL]` |
 | **Apply-to-novel-context "Suggest"** (AO3; appears in *every* paper) | ~12–15% | P1, P2, P3 | `[OFFICIAL]` AO-B; `[SCHOOL]` freq |
 | **Quantitative** — chi-squared dihybrid (every P2), Hardy-Weinberg, SD/t-test, COV, magnification | ~6–8% | P1, P2, P3 (computation); P4 (understanding) | `[OFFICIAL]` toolkit; `[INFERRED]` freq |
 | **Genetic-diagram drawing** (P→F1→F2, gametes circled, ratios; brackets for linkage) | ~3–5% | P2 (≈1 per paper) | `[SCHOOL]` |
-| **Discuss / Evaluate** (balanced both-sides + judgement) | ~5% | P3 essay (b), Extension topics, LO(f) virus-vs-cell-theory, bioethics | `[OFFICIAL]` command; `[SCHOOL]` freq |
+| **Discuss / Evaluate** (balanced both-sides + judgement) | ~5% | P3 essay, Extension topics, LO(f) virus-vs-cell-theory, bioethics | `[OFFICIAL]` command; `[SCHOOL]` freq |
 | **Recall-into-application** (define/state lifted into a use) | ~10% | P1, P2 openers | `[SCHOOL]` |
 | **Multi-topic synthesis** (P3 Section A Q1 integrates **≥3 topics** in one stimulus) | the P3 Q1 anchor (~28–32m under 9744) | P3 Section A | `[SCHOOL]/[INFERRED]` |
 
@@ -337,16 +403,45 @@ of the syllabus"; P3 assesses "analysing, making conclusions and evaluating"). `
 P3 Q1 in recent prelims fuses Cancer+Signalling+Cell Cycle+DNA, or Climate+Evolution+Energy, in a single
 clinical/ecological narrative. **A single-topic answer to a P3 Q1 misses the synthesis marks.**
 
-**P1 MCQ stem types** (`[SCHOOL]`): row-matching tables (~10/30), multi-statement combination (~8/30),
-diagram/EM/graph interpretation (~6/30), data-conclusion (~4/30), reverse-logic "which is NOT" (~2/30,
-high error rate), calculation (~2/30). ~80% application/data-interpretation, ~60% figure-stimulus.
+**P1 MCQ stem types** — *rewritten 2026-08-10. The old line copied the 9744 digest's estimates
+(row-matching ~10/30, multi-statement ~8/30, diagram ~6/30, data-conclusion ~4/30, reverse-logic ~2/30,
+calculation ~2/30). Those sum to 32 of 30, and both the specimen and the bank contradict several of
+them.* Measured against the **2,337 P1 records in the bank**, cross-checked against the specimen's 30:
 
-**P3 Section B essay** (`[OFFICIAL]` 20-mark free-response; `[SCHOOL]` internal shape): part (a)
-descriptive breadth ("Describe/Explain how X enables Y", "with named examples") + part (b) evaluative
-("Discuss whether…", "Compare and contrast…"). Recurring essay themes by frequency `[SCHOOL]`:
-variation/evolution (highest), enzymes/biomolecules structure-function, DNA/gene regulation/mutation,
-photosynthesis/respiration/ATP/chemiosmosis, cell signalling, virus/immunity/vaccines, membranes,
-cancer, climate × biodiversity, mitosis vs meiosis.
+| Stem type | Bank share of P1 records | ≈ per 30-Q paper | Specimen count | Tag |
+|---|---|---|---|---|
+| Multi-statement combination ("1, 2 and 3") | 16.9% | ~5 | **5** | `[INFERRED]` + `[OFFICIAL]` check |
+| Reverse-logic ("which is NOT / EXCEPT") | 2.6% | ~1 | **1** | `[INFERRED]` + `[OFFICIAL]` check |
+| Carries a figure, micrograph, graph or data block | ≥50.9% | ~15 | 9 counted as *interpretation* items | `[INFERRED]` |
+| Row-matching grid | 6.8% *by the literal phrase "Which row"* | ~2 literal | **7** once non-literal grids count (e.g. "Which organelle is found in each of the sediments?") | `[INFERRED]` floor |
+
+The row-matching row is the one to distrust: the bank search only catches the literal phrase, so 6.8%
+is a hard floor and the specimen's 7-in-30 is the better planning number. Multi-statement and
+reverse-logic agree between bank and specimen to within one question, which is the strongest frequency
+signal in this guide. `~80% application/data-interpretation` survives; `~60% figure-stimulus` is
+consistent with the bank's ≥51% floor.
+
+**P3 Section B essay** (`[OFFICIAL]` 20-mark free-response — see §4.0 for the shape). *Corrected
+2026-08-10: the (a)+(b) split described here previously is a **9744 / JC-prelim convention**, not a 9477
+one. The specimen prints each option as one undivided 20-mark prompt.* The part-(a) descriptive-breadth
+and part-(b) evaluative moves are still worth drilling as **two things one 20-mark answer must now do
+inside a single piece of prose** — describe with named examples across a wide range, and reach a
+judgement — rather than as two separately-marked halves.
+
+**Recurring essay themes** `[SCHOOL]`, and the ceiling on them is low. The ranking below comes from a
+**single source**: the cross-corpus digest's sample of "30+ essay options across 2017–2025", all 9744.
+**The rebuilt question bank cannot corroborate it** — it holds only two essay-sized records ([20]×2),
+both of them the 9477 specimen's own options, and zero at [25]. Treat this as one analyst's tally of one
+sample, not a measured distribution. Reordered 2026-08-10 to match that source's actual counts, which
+the old line ranked wrongly (it placed cancer 8th when cancer is last):
+
+variation/genetics/evolution **9/30** · enzymes/biomolecules structure-function **8/30** ·
+photosynthesis/respiration/energy/ATP **8/30** · DNA/gene regulation/mutations **7/30** ·
+cell signalling/hormonal regulation **6/30** · virus/immunity/vaccines **6/30** · membranes/transport
+**6/30** · climate/ecology/biodiversity **5/30** · mitosis vs meiosis **5/30** · cancer **4/30**.
+
+One live data point against that ranking: the 9477 specimen's two options were **proteins** (rank 2) and
+**membranes/transport** (rank 7). Do not treat the tail of this list as safe to skip.
 
 ---
 
@@ -475,7 +570,11 @@ to drill **variants until mechanical** — declare that override in those topic 
 
 ## 7. Confidence & Validation Notes
 
-### Honest ceiling: ~85% (MIXED). It cannot exceed ~92% without an official paper.
+### Honest ceiling: ~87% (MIXED). It cannot exceed ~92% without an official paper.
+*(Aligned 2026-08-10 to the front-matter figure. This heading and the §7 closing paragraph still read
+"~85%" after the specimen papers lifted the front matter to ~87% on 2026-08-06; the three figures now
+agree. The number moves only because paper **format** is now `[OFFICIAL]` — nothing about marking has
+improved.)*
 - **`[OFFICIAL]` ~92% confident on WHAT is examinable.** Scope, AOs, paper structure, command-word
   meanings, mathematical requirements and every **exclusion** are read verbatim from the 9477 syllabus
   (`Biology_H2_syllabus_2026.pdf` / `syl.txt`). This is authoritative.
@@ -484,7 +583,12 @@ to drill **variants until mechanical** — declare that override in those topic 
   no 9477/9744 mark scheme or examiner report. The most authoritative single school source (YIJC 2025
   examiner reports) is still a school document.
 - **`[INFERRED]` — directional only.** Archetype *frequencies* are estimated from the corpus, and the
-  corpus is a different syllabus code (9744). Treat percentages as priors, not measurements.
+  corpus is a different syllabus code (9744). Treat percentages as priors, not measurements. As of
+  2026-08-10 the strongest available prior is the **9,067-record question bank** (§4), which is far
+  larger than the old digest sample but is still school papers — a bigger sample of the wrong exam is
+  still the wrong exam. Where the bank and the specimen agree (multi-statement MCQ share, negative-stem
+  share) confidence is genuinely higher; where the bank alone speaks (essay themes — where it in fact
+  holds only two essay records and cannot speak at all), it is not.
 - **Corrected 2026-08-06 — the taught notes were never missing.** An earlier build recorded several
   chapter-notes folders as "empty Notion stubs". The truth is worse and better at once: **every**
   `inputs/Biology/H2/*/chapter_notes/*.md` file is a Notion export (mastery stars, session dates,
@@ -500,14 +604,14 @@ HCI 2013 P3 cloning/intron application; SAJC 2011 P3 gel/genetics), then checked
 
 | Dimension | Threshold | Result | Note |
 |---|---|---|---|
-| Exam format & structure | ≥95% | **PASS** (~95%) | 9477 figures `[OFFICIAL]`; P3 25→20 Section-B shift is the one live uncertainty |
+| Exam format & structure | ≥95% | **PASS** (~96%) | 9477 figures `[OFFICIAL]`. The P3 Section-B uncertainty is **resolved as of 2026-08-10**: 20 marks, and the 9744 (a)+(b) split is gone — the specimen prints one undivided prompt. Residual uncertainty is now whether the specimen's *number* of P2 questions (9) and P3 Section A questions (3) is fixed; the syllabus says "a variable number" and "two or more", so it is not |
 | Mark scheme (reward/band) | ≥90% | **PASS at the [SCHOOL] ceiling** (~88%) | Point-based, reject-lists, paired S/F, banding all predicted; capped because schemes are school not SEAB |
 | Content nodes | ≥90% | **PASS** (~92%) | Held-out items mapped cleanly to LO-derived nodes |
 | Question type & method | ≥85% | **PASS** (~88%) | Data→describe→explain, genetic-diagram and chi-squared predicted |
 | Trap model | ≥85% | **PASS** (~87%) | Bracket-linkage, COV-fraction, RuBP-depletion, 3′-OH, S/F-pairing all matched |
 
 All five clear their thresholds *for school-grade evidence*; the binding cap is the **absence of any
-official 9477 mark scheme**, which holds the overall ceiling at ~85% and the marking dimension at the
+official 9477 mark scheme**, which holds the overall ceiling at ~87% and the marking dimension at the
 `[SCHOOL]` level. **Not a LOW-confidence guide** (well above the <70% warning line), but **do not declare
 any topic exam-ready on this guide's questions alone** (spec.md §9).
 
@@ -531,8 +635,16 @@ home; this is an organisation note, not a content gap.
    genuinely Cambridge/SEAB assessment artefacts in the whole corpus and they define the live paper's
    shape. **Caveat: the specimen question papers are present without a published mark scheme**, so
    they lift the *format* dimension to `[OFFICIAL]` but leave the *marking* dimension at `[SCHOOL]`.
-   The overall ceiling therefore moves only modestly, and every archetype frequency in §4 should now
-   be re-checked against the specimen rather than against 9744 prelims.
+   The overall ceiling therefore moves only modestly. The follow-on task this item set — re-checking
+   every §4 archetype frequency against the specimen instead of against 9744 prelims — **was completed
+   2026-08-10**, alongside a line-by-line audit of §§0–7 against the syllabus, the four specimen papers
+   and the question bank. Corrections are logged in the front-matter `last_change`.
+   - ~~A question bank large enough to test frequency claims~~ — **DONE 2026-08-10.**
+     `Study Agent/Bio/_question_bank/` now holds **9,067 records across 27 topic files** drawn from
+     prelims 2011–2025 plus the specimens. It settles the P1 stem-type mix and the P2 figure-density
+     question. It does **not** settle essay themes — it contains only two essay-sized records, both from
+     the specimen. Sourcing real Section B essay stems (unsplit 20-mark, or the 25-mark prelim form) is
+     the next highest-value bank gap.
 3. ~~Populating the empty chapter-notes stubs~~ — **superseded.** The stubs were never the notes; see
    the correction above and §3.0. The real work is rebuilding each topic's content nodes against the
    Book PDFs, which happens naturally as each Book's topic session runs.
@@ -541,5 +653,8 @@ home; this is an organisation note, not a content gap.
 
 ### Recalibration trigger
 Per spec.md §9/§12: if Ethan's session/model performance runs **>70%** but an **official past paper
-scores <50%**, the guide is misaligned — find the mispredicting dimension (most likely archetype
-frequency or the P3 Section-B 20-mark shape) and fix only that.
+scores <50%**, the guide is misaligned — find the mispredicting dimension and fix only that. As of
+2026-08-10 the most likely culprits are, in order: **(1) essay themes** (single-source, 9744-only,
+uncorroborated by the bank), **(2) the `[SCHOOL]` marking model in §2** (no SEAB scheme exists to check
+it against), **(3) per-topic archetype frequencies**. The P3 Section-B shape is no longer a candidate —
+the specimen settled it.

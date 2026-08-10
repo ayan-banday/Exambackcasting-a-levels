@@ -1,0 +1,47 @@
+{
+ "title": "Cluster 03 Drill — Cell Structure and Membrane Transport",
+ "subtitle": "H2 Biology 9477 · Book 1 · 9 questions · 138 marks · cumulative over Cluster 1 + 2 + 3",
+ "los_html": "<div class=\"los\"><strong>Learning outcomes this cluster owns (9477 Core Idea 1)</strong>\n<table>\n<tr><td>(a) cell theory</td><td>Q1, Q2</td></tr>\n<tr><td>(b) organelle and micrograph identification, microscopy</td><td>Q3, Q4, Q5, Q6, Q7</td></tr>\n<tr><td>(c) organelle functions</td><td>Q5, Q6</td></tr>\n<tr><td>(d) the typical bacterial cell</td><td>Q3, Q7</td></tr>\n<tr><td>(e) virus structural components</td><td>Q1</td></tr>\n<tr><td>(f) how viruses challenge the cell theory</td><td>Q1, Q2</td></tr>\n<tr><td>(j) fluid mosaic model and its constituents</td><td>Q8</td></tr>\n<tr><td>(k) membrane functions, surface and internal</td><td>Q8, Q12</td></tr>\n<tr><td>(l) the six transport processes</td><td>Q9, Q10, Q11, Q12, Q13</td></tr>\n</table>\n<p style=\"margin-top:10px\">Two traps here have <strong>measured</strong> failure rates from a real\nexaminer report: the centriole membrane status (Q5, only 28% correct) and which of endocytosis and\nexocytosis gains membrane phospholipid (Q12, 45%). Both are set so the letter is worth 1 mark and the\noption-by-option justification is worth 3.</p></div>",
+ "figmap": {
+  "1|a": [
+   "q1c.png",
+   "q1a_t4.png",
+   "q1a_hiv.png"
+  ],
+  "1|b": "q12b.png",
+  "2|a": "q3a.png",
+  "3|a": "q7a.png",
+  "3|b": "q7d.png",
+  "3|c": "q3d.png",
+  "4|a": [
+   "q5d.png",
+   "q5a.png"
+  ],
+  "5|a": "q6.png",
+  "6|b": "q8b.png",
+  "6|c": "q8d.png",
+  "7|a": "q9c.png",
+  "7|c": "q9b.png",
+  "8|c": "q10e.png",
+  "9|a": "q11a.png"
+ },
+ "caption": {
+  "q1c.png": "RI Prelim 2024 P3 Q1, Fig. 1.1",
+  "q12b.png": "VJC Prelim 2023 P2 Q1, Fig. 1.1",
+  "q3a.png": "ACJC Prelim 2025 P2 Q1, Fig. 1.1",
+  "q7a.png": "HCI/School Prelim 2025 P2 Q1, Fig. 1.1",
+  "q7d.png": "HCI/School Prelim 2025 P2 Q1, Fig. 1.2",
+  "q3d.png": "ACJC Prelim 2025 P2 Q1, Fig. 1.2",
+  "q5d.png": "SAJC Prelim 2024 P1 Q1",
+  "q5a.png": "RI Prelim 2023 P2 Q1, Fig. 1.1",
+  "q6.png": "9477 Specimen Paper 2 Q1, Fig. 1.1",
+  "q8b.png": "MJC Prelim 2017 P2 Q1, Fig. 1.1",
+  "q8d.png": "PJC Prelim 2018 P2 Q2, Fig. 2.1",
+  "q9c.png": "HCI/School Prelim 2024 P1 Q5",
+  "q9b.png": "ACJC Prelim 2023 P2 Q1, Fig. 1.2",
+  "q10e.png": "JJC Prelim 2007 P1 Q30–31",
+  "q11a.png": "9477 Specimen Paper 1 Q4",
+  "q1a_t4.png": "T4 bacteriophage (HCI Book 4 notes, Fig. 10)",
+  "q1a_hiv.png": "HIV (HCI Book 4 notes, Fig. 25)"
+ }
+}

@@ -179,11 +179,28 @@ def render(text, qno=None, part=None, figs_used=None):
                 items.append(re.sub(r"^\s*[-*]\s+", "", lines[i])); i += 1
             out.append("<ul>" + "".join(f"<li>{inline(x)}</li>" for x in items) + "</ul>")
             continue
+        # MCQ option block - "A ...", "B ...", "C ...", "D ..." each on its own line
+        if re.match(r"^(?:\*\*)?[A-D](?:\*\*)?[\.\)]?\s+\S", ln):
+            opts = []
+            while i < len(lines) and re.match(r"^(?:\*\*)?[A-D](?:\*\*)?[\.\)]?\s+\S", lines[i]):
+                letter = re.match(r"^(?:\*\*)?([A-D])", lines[i]).group(1)
+                body = re.sub(r"^(?:\*\*)?[A-D](?:\*\*)?[\.\)]?\s+", "", lines[i]); i += 1
+                # an option may wrap onto following indented/continuation lines
+                while (i < len(lines) and lines[i].strip()
+                       and not re.match(r"^(?:\*\*)?[A-D](?:\*\*)?[\.\)]?\s+\S", lines[i])
+                       and not lines[i].startswith(("|", ">", "[FIGURE:", "**"))):
+                    body += " " + lines[i].strip(); i += 1
+                opts.append((letter, body))
+            out.append('<div class="mcq">' + "".join(
+                f'<div class="opt"><span class="optl">{L}</span><span class="optb">{inline(b)}</span></div>'
+                for L, b in opts) + "</div>")
+            continue
         # paragraph
         if ln.strip():
             para = []
             while i < len(lines) and lines[i].strip() and not lines[i].startswith(("|", ">", "[FIGURE:")) \
-                    and not re.match(r"^\s*[-*]\s+", lines[i]):
+                    and not re.match(r"^\s*[-*]\s+", lines[i]) \
+                    and not re.match(r"^(?:\*\*)?[A-D](?:\*\*)?[\.\)]?\s+\S", lines[i]):
                 para.append(lines[i]); i += 1
             out.append(f"<p>{inline(' '.join(para))}</p>")
             continue
@@ -238,30 +255,34 @@ for v in FIGMAP.values():
 missing = sorted(_all - figs_used)
 
 CSS = """
-:root{--bg:#fafafa;--card-bg:#fff;--border:#e5e7eb;--text:#1a1a1a;--muted:#6b7280;--blue:#2563eb;
---blue-soft:#eff6ff;--amber:#d97706;--green:#059669;--green-soft:#ecfdf5;--cover:#f3f4f6;
---purple:#7c3aed;--purple-soft:#f5f3ff;--red:#dc2626;--red-soft:#fef2f2}
+:root{--bg:#14161a;--card-bg:#1c1f26;--border:#2f343d;--text:#e8eaed;--muted:#9aa3b0;--blue:#6ea8fe;
+--blue-soft:#1b2432;--amber:#e0a13a;--green:#4ade80;--green-soft:#16261d;--cover:#262b34;
+--purple:#c4a7fd;--purple-soft:#221c33;--red:#f87171;--red-soft:#2a1a1a}
+.mcq{margin:10px 0 12px;padding:2px 0}
+.opt{display:flex;gap:10px;margin:6px 0;align-items:baseline}
+.optl{flex:0 0 1.6em;font-weight:700;color:var(--amber);font-family:-apple-system,sans-serif}
+.optb{flex:1}
 *{box-sizing:border-box}
 body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:960px;margin:0 auto;
 padding:32px 22px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
 h1,h2,h3,.label,.controls,button{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
-h1{font-size:1.9em;margin:0 0 6px;border-bottom:3px solid #111;padding-bottom:10px}
-h3{font-size:1.15em;margin:0 0 14px;color:#1f2937}
+h1{font-size:1.9em;margin:0 0 6px;border-bottom:3px solid var(--muted);padding-bottom:10px}
+h3{font-size:1.15em;margin:0 0 14px;color:var(--text)}
 .meta{color:var(--muted);font-size:.9em;margin:4px 0 20px}
-.intro{background:#fff;border:1px solid var(--border);border-left:4px solid var(--red);
+.intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--red);
 padding:14px 18px;border-radius:6px;margin:14px 0 20px;font-size:.95em}
-.los{background:var(--blue-soft);border:1px solid #bfdbfe;border-left:4px solid var(--blue);
+.los{background:var(--blue-soft);border:1px solid #2b3648;border-left:4px solid var(--blue);
 padding:14px 18px;border-radius:6px;margin:0 0 26px;font-size:.9em}
 .los table{border-collapse:collapse;width:100%;margin-top:8px}
-.los td{padding:4px 8px 4px 0;border-bottom:1px solid #dbeafe;vertical-align:top}
-.los td:first-child{white-space:nowrap;font-weight:600;color:#1e3a8a;width:42%}
+.los td{padding:4px 8px 4px 0;border-bottom:1px solid #2b3648;vertical-align:top}
+.los td:first-child{white-space:nowrap;font-weight:600;color:var(--blue);width:42%}
 .los tr:last-child td{border-bottom:none}
 .controls{position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:100;
 border-bottom:1px solid var(--border);margin-bottom:18px;display:flex;gap:10px;flex-wrap:wrap}
-.controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;
+.controls button{background:#232830;border:1px solid var(--border);padding:6px 14px;border-radius:5px;
 cursor:pointer;font-size:.85em;font-weight:500}
-.controls button:hover{background:#f3f4f6}
-.toc{background:#fff;border:1px solid var(--border);padding:12px 20px;border-radius:6px;
+.controls button:hover{background:#2f343d}
+.toc{background:var(--card-bg);border:1px solid var(--border);padding:12px 20px;border-radius:6px;
 margin-bottom:26px;font-size:.9em}
 .toc a{color:var(--blue);text-decoration:none;margin-right:12px;line-height:2}
 .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:18px 22px;
@@ -278,23 +299,23 @@ margin-bottom:6px;color:var(--muted)}
 .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:6px;display:flex;
 align-items:center;justify-content:center;cursor:pointer}
 .answer-overlay.hidden{display:none}
-.reveal-btn{background:#fff;border:1px solid var(--border);padding:7px 18px;border-radius:5px;
-cursor:pointer;font-size:.85em;font-weight:600;color:#374151}
-.reveal-btn:hover{background:#f9fafb}
-.marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;
+.reveal-btn{background:#232830;border:1px solid var(--border);padding:7px 18px;border-radius:5px;
+cursor:pointer;font-size:.85em;font-weight:600;color:var(--text)}
+.reveal-btn:hover{background:#2f343d}
+.marks{display:inline-block;font-size:.8em;background:#3d3016;color:#f0c674;padding:2px 8px;
 border-radius:10px;font-weight:700;margin-left:4px;font-family:-apple-system,sans-serif}
-.fig{margin:14px 0;padding:12px;background:#fff;border:1px solid var(--border);border-radius:6px;text-align:center}
+.fig{margin:14px 0;padding:12px;background:#f7f7f7;border:1px solid var(--border);border-radius:6px;text-align:center}
 .fig img{max-width:100%;height:auto;border-radius:3px}
 .fig figcaption{margin-top:8px;font-size:.8em;color:var(--muted);font-family:-apple-system,sans-serif}
-.fig-missing{margin:14px 0;padding:12px 14px;background:var(--red-soft);border:1px solid #fecaca;
+.fig-missing{margin:14px 0;padding:12px 14px;background:var(--red-soft);border:1px solid #4a2020;
 border-left:4px solid var(--red);border-radius:6px;font-size:.9em}
 .tw{overflow-x:auto;margin:12px 0}
-table{border-collapse:collapse;width:100%;font-size:.92em;background:#fff}
-th,td{border:1px solid var(--border);padding:6px 10px;text-align:left;vertical-align:top}
-th{background:#f9fafb;font-weight:600}
-blockquote{margin:12px 0;padding:10px 16px;background:#fffbeb;border-left:4px solid var(--amber);
+table{border-collapse:collapse;width:100%;font-size:.92em;background:var(--card-bg)}
+th,td{border:1px solid var(--border);padding:6px 10px;color:var(--text);text-align:left;vertical-align:top}
+th{background:#232830;font-weight:600}
+blockquote{margin:12px 0;padding:10px 16px;background:#2a2415;border-left:4px solid var(--amber);
 border-radius:4px;font-size:.93em}
-code{background:#f3f4f6;padding:1px 5px;border-radius:3px;font-size:.9em}
+code{background:#262b34;padding:1px 5px;border-radius:3px;font-size:.9em}
 ul{margin:8px 0;padding-left:22px}
 p{margin:8px 0}
 @media print{.controls,.answer-overlay{display:none!important}.card{page-break-inside:avoid}}
