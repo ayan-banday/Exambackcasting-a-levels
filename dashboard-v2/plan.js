@@ -12,14 +12,14 @@ window.PLAN = {
   "perWeekHrs": 36,
   "target": "Prelim: a mid-B / C is fine — cover the priority topics, sacrifice the low-value ones. A-levels (2–27 Nov 2026): everything drilled to mastery, multiple passes.",
   "reality": "6h/day study (business gets the rest). 84h before prelims, front-loaded on GP + Bio + Maths (the papers that land first). CSC = Anki maintenance only until the Sept gap. Prelim target mid-C; real mastery push runs to the A-levels (Oct–Nov).",
-  "lastUpdated": "2026-08-06",
+  "lastUpdated": "2026-08-10",
   "repo": "https://github.com/ayan-banday/Exambackcasting-a-levels",
   "alevel": "2026-11-02",
   "subtitle": "Ethan Lim · 6h/day Mon–Fri · Sat 6h drill · Sun rest · +15min CSC Anki daily · to 22 Sep",
   "prelimStart": "2026-08-24",
   "alevelStart": "2026-11-02",
-  "clustersRemaining": 27,
-  "clustersDone": 7,
+  "clustersRemaining": 19,
+  "clustersDone": 11,
   "clustersTotal": 30,
   "alevelEnd": "2026-11-26"
  },
@@ -35,7 +35,7 @@ window.PLAN = {
   "chem": {
    "name": "Chemistry",
    "full": "Chemistry",
-   "code": "9729 H2",
+   "code": "9476 H2",
    "colour": "#5fd3a8",
    "drills": 7,
    "note": "Procedural. Organic is the whole game — master all, in order, then current topics + practicals."
@@ -51,10 +51,10 @@ window.PLAN = {
   "bio": {
    "name": "Biology",
    "full": "Biology",
-   "code": "9744 H2",
+   "code": "9477 H2",
    "colour": "#e8c65f",
    "drills": 5,
-   "note": "Declarative 5-step. Easiest first: Evolution → Inheritance → Mutations → Cancer."
+   "note": "Concept-heavy. Book-by-book: pre-study sheet -> 3 clusters -> gap cluster. Book 1 done. Drills cross back into earlier Books."
   },
   "gp": {
    "name": "GP",
@@ -194,49 +194,79 @@ window.PLAN = {
    "flag": ""
   },
   {
-   "n": 18,
+   "subject": "bio",
+   "name": "Book 1 — Water, Lipids & Carbohydrates",
+   "flag": "",
+   "n": 18
+  },
+  {
+   "subject": "bio",
+   "name": "Book 1 — Proteins & Enzymes",
+   "flag": "",
+   "n": 19
+  },
+  {
+   "subject": "bio",
+   "name": "Book 1 — Cell Structure & Membrane Transport",
+   "flag": "",
+   "n": 20
+  },
+  {
+   "subject": "bio",
+   "name": "Book 1 — Gap Cluster (all of Book 1)",
+   "flag": "",
+   "n": 21
+  },
+  {
+   "subject": "bio",
+   "name": "Book 2 — Genetics & Inheritance (Molecular)",
+   "flag": "⚑",
+   "n": 22
+  },
+  {
+   "n": 23,
    "subject": "bio",
    "name": "Inheritance — Dihybrid, Codominance & Sex-Linkage",
    "flag": ""
   },
   {
-   "n": 19,
+   "n": 24,
    "subject": "bio",
    "name": "Inheritance — Chi-Squared Test",
    "flag": ""
   },
   {
-   "n": 20,
+   "n": 25,
    "subject": "bio",
    "name": "Biostatistics Toolkit",
    "flag": ""
   },
   {
-   "n": 21,
+   "n": 26,
    "subject": "bio",
    "name": "Evolution — Variation, Natural Selection & Hardy-Weinberg",
    "flag": ""
   },
   {
-   "n": 22,
+   "n": 27,
    "subject": "bio",
    "name": "Mutations & Cancer",
    "flag": ""
   },
   {
-   "n": 23,
+   "n": 28,
    "subject": "gp",
    "name": "Essay — slotting, expansion & body paragraphs",
    "flag": "⚑"
   },
   {
-   "n": 24,
+   "n": 29,
    "subject": "gp",
    "name": "Essay — intros, conclusions & timed writing",
    "flag": ""
   },
   {
-   "n": 25,
+   "n": 30,
    "subject": "gp",
    "name": "Paper 2 — comprehension, summary & AQ",
    "flag": ""
@@ -2950,6 +2980,24 @@ window.PLAN = {
   ]
  ],
  "log": [
+  {
+   "date": "2026-08-10",
+   "weekday": "Mon",
+   "items": [
+    {
+     "subject": "bio",
+     "mins": 240,
+     "done": true,
+     "what": "Bio Book 1 finished end to end — pre-study sheet, 3 clusters + drills, and the Cluster 4 gap drill (8 questions, 114 marks). 42 gaps captured across the four transcripts and written up as a ledger with states. Three gaps failed to close on second exposure and are now Priority 1: methanol disrupts hydrophobic interactions, the differing amino acid sits in the active site, and collagen strength comes from covalent cross-links. New rule banked: gap clusters must also re-test the decay-prone set pieces (storage-molecule justification, fluidity factors, membrane functions), not only past errors."
+    },
+    {
+     "subject": "bio",
+     "mins": 0,
+     "done": true,
+     "what": "Bio folders split into Book 1–9 with 41 chapters filed, exam papers sorted, and the question bank rebuilt to 4,223 questions across 27 topic files. Syllabus code corrected to 9477 (was 9744)."
+    }
+   ]
+  },
   {
    "date": "2026-07-28",
    "weekday": "Tue",
