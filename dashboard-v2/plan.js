@@ -1441,7 +1441,7 @@ window.PLAN = {
    "date": "2026-08-08",
    "weekday": "Sat",
    "type": "test",
-   "subject": "conv",
+   "subject": "bio",
    "flag": "",
    "mins": 360,
    "label": "Saturday TEST — covered so far",
@@ -1449,11 +1449,11 @@ window.PLAN = {
    "blocks": [
     {
      "mins": 360,
-     "subject": "conv",
-     "name": "Timed drill: Bio foundations + Maths re-drill + Chem",
-     "desc": "",
-     "done": false,
-     "doneDate": null
+     "subject": "bio",
+     "name": "Bio — Book 1 (clusters + drills)",
+     "desc": "Finished all 11 Book 1 chapters",
+     "done": true,
+     "doneDate": "08 Aug"
     }
    ],
    "week": 3
@@ -1479,32 +1479,16 @@ window.PLAN = {
    "subject": "bio",
    "flag": "",
    "mins": 360,
-   "label": "Bio + GP + Chem",
-   "focus": "Biomolecules  ·  P1 examples + 1 timed plan  ·  Hydroxy Compounds",
+   "label": "Bio",
+   "focus": "Book 1 — clusters + drills",
    "blocks": [
     {
-     "mins": 120,
+     "mins": 360,
      "subject": "bio",
-     "name": "Bio — Biomolecules",
-     "desc": "",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 120,
-     "subject": "gp",
-     "name": "GP — P1 examples + 1 timed plan",
-     "desc": "",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 120,
-     "subject": "chem",
-     "name": "Chem — Hydroxy Compounds",
-     "desc": "",
-     "done": false,
-     "doneDate": null
+     "name": "Bio — Book 1 (clusters + drills)",
+     "desc": "Finished all 11 Book 1 chapters",
+     "done": true,
+     "doneDate": "10 Aug"
     }
    ],
    "week": 4
@@ -3525,9 +3509,9 @@ window.PLAN = {
   }
  ],
  "readiness": {
-  "lastUpdated": "2026-08-07",
-  "lastTest": "7 Aug — Bio Book 1 Cluster 1 drill + CSC cards",
-  "note": "Measured where tested (Maths). Everything else is an estimate from what's been drilled; Chem is unconfirmed until its diagnostic. Prelim % = distance to a prelim-B (~68% bar, sacrificed topics excluded); A-level % = distance to full mastery, every topic counts.",
+  "lastUpdated": "2026-08-10",
+  "lastTest": "Bio Book 1 of 9 complete (1 drilled pass)",
+  "note": "A GAUGE, not a measurement — only Maths is test-measured; the rest is estimated. Bio = the school's 9 books (syllabus 9477). A-level 100% = mastered (multiple passes, exam-hardened, retained to Nov); one drilled pass ~= 50%. Prelim % = distance to a prelim-B; A-level % = distance to full mastery.",
   "subjects": {
    "maths": {
     "topics": [
@@ -3717,13 +3701,13 @@ window.PLAN = {
      },
      {
       "t": "15 Halogen Derivatives",
-      "m": 10,
+      "m": 0,
       "sac": 0,
       "meas": 0
      },
      {
       "t": "16 Hydroxy Compounds",
-      "m": 10,
+      "m": 0,
       "sac": 0,
       "meas": 0
      },
@@ -3774,112 +3758,40 @@ window.PLAN = {
    "bio": {
     "topics": [
      {
-      "t": "Cell Structure",
-      "m": 60,
-      "sac": 0,
-      "meas": 0
+      "t": "Book 1 — Biomolecules, Enzymes & Cell Structure",
+      "m": 50
      },
      {
-      "t": "Biomolecules",
-      "m": 25,
-      "sac": 0,
-      "meas": 0
+      "t": "Book 2 — Molecular Genetics (DNA, Gene Expr, Mutations)",
+      "m": 0
      },
      {
-      "t": "Cell Membranes",
-      "m": 0,
-      "sac": 0,
-      "meas": 0
+      "t": "Book 3 — Cell Signalling, Division, Cancer, Stem Cells",
+      "m": 0
      },
      {
-      "t": "Enzymes",
-      "m": 0,
-      "sac": 0,
-      "meas": 0
+      "t": "Book 4 — Genetics of Viruses & Bacteria",
+      "m": 0
      },
      {
-      "t": "Stem Cells",
-      "m": 0,
-      "sac": 1,
-      "meas": 0
+      "t": "Book 5 — Energetics (Photosynthesis & Respiration)",
+      "m": 0
      },
      {
-      "t": "DNA Structure & Replication",
-      "m": 0,
-      "sac": 0,
-      "meas": 0
+      "t": "Book 6 — Inheritance",
+      "m": 0
      },
      {
-      "t": "Genome Organisation",
-      "m": 0,
-      "sac": 1,
-      "meas": 0
+      "t": "Book 7 — Biological Evolution",
+      "m": 0
      },
      {
-      "t": "Gene Expression & Control",
-      "m": 0,
-      "sac": 0,
-      "meas": 0
+      "t": "Book 8 — Climate Change [Extension B]",
+      "m": 0
      },
      {
-      "t": "Molecular Techniques",
-      "m": 0,
-      "sac": 1,
-      "meas": 0
-     },
-     {
-      "t": "Inheritance",
-      "m": 0,
-      "sac": 0,
-      "meas": 0
-     },
-     {
-      "t": "Cancer",
-      "m": 0,
-      "sac": 0,
-      "meas": 0
-     },
-     {
-      "t": "Photosynthesis",
-      "m": 0,
-      "sac": 0,
-      "meas": 0
-     },
-     {
-      "t": "Respiration",
-      "m": 0,
-      "sac": 0,
-      "meas": 0
-     },
-     {
-      "t": "Cell Signalling",
-      "m": 0,
-      "sac": 0,
-      "meas": 0
-     },
-     {
-      "t": "Evolution",
-      "m": 0,
-      "sac": 0,
-      "meas": 0
-     },
-     {
-      "t": "Infectious Diseases",
-      "m": 0,
-      "sac": 0,
-      "meas": 0
-     },
-     {
-      "t": "Climate Change",
-      "m": 0,
-      "sac": 1,
-      "meas": 0
-     },
-     {
-      "t": "Biostatistics",
-      "m": 0,
-      "sac": 1,
-      "meas": 0
+      "t": "Book 9 — Infectious Diseases [Extension A]",
+      "m": 0
      }
     ]
    },
