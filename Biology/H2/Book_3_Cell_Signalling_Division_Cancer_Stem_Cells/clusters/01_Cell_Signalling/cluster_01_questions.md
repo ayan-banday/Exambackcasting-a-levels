@@ -616,7 +616,7 @@ R: yes/no comparisons. A scheme rejects the form **GPLR does not have phosphoryl
 
 **3.** The **increase in blood glucose concentration causes the release of insulin from the pancreas**, specifically from the **β cells of the islets of Langerhans**.
 
-**4.** **Insulin causes the blood glucose concentration to return back to the set point**, because it **increases the permeability of target cells to glucose** and **stimulates the conversion of glucose to glycogen, that is, glycogenesis**. Supporting quote: glucose fell from **6.2 mmol dm⁻³ at 08.00 to 4.45 mmol dm⁻³ at 09.00** while insulin fell from **280 pmol dm⁻³ at 08.00 to 120 pmol dm⁻³ at 09.00**.
+**4.** **Insulin causes the blood glucose concentration to return back to the set point**, because it **increases the permeability of target cells to glucose** and **stimulates the conversion of glucose to glycogen, that is, glycogenesis**. Supporting quote: glucose fell from **6.2 mmol dm⁻³ at 08.00 to 4.45 mmol dm⁻³ at 09.00** while insulin fell from **280 pmol dm⁻³ at 08.00 to 120 pmol dm⁻³ at 09.00**. One scope note on that verbatim wording: **set point returns zero hits in the 9477 syllabus**, so write it as **returns to its original concentration** and keep the marks in the mechanism.
 
 **(b)** *Why two peptide hormones use different receptor classes and have opposite effects.* **[10]**
 

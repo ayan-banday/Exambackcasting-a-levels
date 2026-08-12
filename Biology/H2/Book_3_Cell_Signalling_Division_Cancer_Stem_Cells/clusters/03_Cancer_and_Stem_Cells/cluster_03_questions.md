@@ -116,12 +116,14 @@ limitation of the treatment. **[6]**
 
 ### Question 5  [16 marks]
 
-Four people have a raised chance of cancerous growth: a heavy smoker of 30 years, a radiographer
-repeatedly exposed to X-rays, a kidney transplant patient on long-term immunosuppressant drugs, and a
-woman who inherited one faulty allele of a tumour suppressor gene.
+**(a)** Four people have a raised chance of cancerous growth: a heavy smoker of 30 years, a
+radiographer repeatedly exposed to X-rays, a kidney transplant patient on long-term immunosuppressant
+drugs, and a woman who inherited one faulty allele of a tumour suppressor gene.
 
-Explain how each has come to be at risk, and identify the one whose risk arises at a different point in
-the chain from the other three. **[16]**
+Explain how each of the four has come to be at risk. **[12]**
+
+**(b)** Identify the one of the four whose risk arises at a different point in the chain from the other
+three, and give the ending that all four share. **[4]**
 
 ---
 
@@ -193,10 +195,11 @@ and the two examples that show blood cell production is matched to what the body
 
 ### Question 9  [16 marks]
 
-Bone marrow supplies new blood cells for a whole lifetime without its stem cell population running out,
-and yet a single mutation in one of those same cells can produce a leukaemia.
+**(a)** Bone marrow supplies new blood cells for a whole lifetime without its stem cell population
+running out. Account for that. **[8]**
 
-Account for both, and say which property of a stem cell makes each one possible. **[16]**
+**(b)** A single mutation in one of those same cells can produce a leukaemia. Account for that, and say
+which property of a stem cell makes both of these possible. **[8]**
 
 ---
 
@@ -307,13 +310,13 @@ factor**, and transcription factors are one of the five classes of proto-oncogen
 means **a higher rate of transcription** of the genes it controls, and hence **more mitosis**.
 
 **Source:** 9477 Specimen P2 Q3(a) [3] and Q3(d) [2], both figures reproduced from the paper. Both
-carry `[INFERRED — no official key]`, since Cambridge has published no mark scheme for the specimen;
+carry `[INFERRED, no official key]`, since Cambridge has published no mark scheme for the specimen;
 the wording above is the reconstruction filed in the question bank plus the school's own chapter 3.3
 wording for normal and mutant ras. The reject on **GDP phosphorylated to become GTP** is verbatim and
 appears twice in the Cell_Signalling schemes. The instruction to reject an answer that starts at the
 amino acid without the gene is verbatim from a Book 2 scheme. The gel argument in (b) is SAJC Prelim
 2025 P3 Q1d(i), whose key reasons from an unchanged band that the route must be a point mutation and
-not an inserted active promoter. The 14-mark and 8-mark totals are **[INFERRED — extension, no official
+not an inserted active promoter. The 14-mark and 8-mark totals are **[INFERRED, extension, no official
 key]**; the specimen asked 3 and 2.
 **Archetype:** mechanism explain-chain, the largest archetype in chapter 3.3 at 34.0 per cent.
 **Trap:** three at once. Starting the chain at the amino acid instead of the gene. Saying the GDP is
@@ -412,7 +415,7 @@ R: **excessive / uncontrolled cell growth** where division is meant.
 **(b)** *Three generations of cancers, from a mutation that is recessive inside a cell.* **[6]**
 
 **1.** Both statements hold, at **different levels**, and the answer must name the level for each half.
-`[INFERRED — no scheme in the corpus states the bridge, although the school's own chapter asserts both
+`[INFERRED, no scheme in the corpus states the bridge, although the school's own chapter asserts both
 halves without joining them]`
 
 **2.** **At the level of the cell** the loss is **recessive**, because **one working allele still makes
@@ -435,14 +438,14 @@ the cancer itself, that is inherited**. **Further mutations coupled with non-gen
 needed.
 
 **Source:** 9477 Specimen P2 Q3(b) [2], which asks for the differences between gain of function and loss
-of function in the outcome's own words and carries `[INFERRED — no official key]`; SAJC Prelim 2025 P2
+of function in the outcome's own words and carries `[INFERRED, no official key]`; SAJC Prelim 2025 P2
 Q8(a) [2], the cleanest statement in the bank of why tumour suppressor alleles behave as recessives and
 oncogenes as dominants, verbatim; ACJC Prelim 2021 P3 Q5a [15] for both definitions, both copies and the
 dominant-allele line, verbatim; VJC Prelim 2024 P3 Q3(a) and Q3(b)(ii) for the germline evidence and
 loss of heterozygosity in Li-Fraumeni syndrome, verbatim; ASRJC Prelim 2023 P3 Q4a [15] for the p53
 mechanism run forwards, verbatim; SAJC Prelim 2017 P3 Q3ci for the reject on **cell cycle is irregular /
 inappropriate**. The two-level resolution in (b) is **[INFERRED]** and the paired-patient framing is
-**[INFERRED — extension, no official key]**.
+**[INFERRED, extension, no official key]**.
 **Archetype:** compare and distinguish, decided by a judgement.
 **Trap:** treating a tumour suppressor mutation as sufficient on its own, which is the commonest error
 on this outcome, and calling the inherited BRCA-type predisposition either recessive or dominant without
@@ -544,12 +547,12 @@ same lineage becomes **more malignant as more mutations are added**, rather than
 to cancerous in one event.
 
 **Source:** 9477 Specimen P2 Q3(e) [3], figure reproduced from the paper, answer carrying
-`[INFERRED — no official key]` and following the reconstruction filed in the question bank, including
+`[INFERRED, no official key]` and following the reconstruction filed in the question bank, including
 the synergy line; ACJC Prelim 2021 P2 Q9ai [1] for the definition of cancer as **accumulation of
 mutations in a single cell lineage leading to uncontrolled cell division**, verbatim; YIJC Prelim 2023
 P3 Q1ci [2] for why risk rises with age, verbatim; ACJC Prelim 2021 P3 Q5a for the accumulation and
 dominant-clone wording, verbatim; the school's own chapter 3.3 for the three lines of evidence and the
-benign against malignant axes. The 12-mark and 6-mark totals are **[INFERRED — extension, no official
+benign against malignant axes. The 12-mark and 6-mark totals are **[INFERRED, extension, no official
 key]**; the specimen asked 3.
 **Archetype:** data and figure interpretation, the single largest archetype in this Book at 33.5 per
 cent of the corpus.
@@ -673,7 +676,7 @@ angiogenesis and metastasis as the route from tumour to malignancy, verbatim; JP
 for the fixed order in which the events must fall, with the blood supply third of four; MI Prelim 2023
 P3 Q1diii [2] for the tomato-plant case, which is the cleanest statement that a tumour without mobility
 is not a cancer. The metastasis reject is verbatim from a scheme in the Cancer file. The
-receptor-blocking drug in (b) is **[INFERRED — extension, no official key]**.
+receptor-blocking drug in (b) is **[INFERRED, extension, no official key]**.
 **Archetype:** compare and judge, run off a figure.
 **Trap:** stopping the metastasis answer at cells breaking into a vessel, which is invasion and is
 marked as invasion. Second trap: calling the receptor's binding site an active site, which an examiner
@@ -782,7 +785,7 @@ including the carcinogen PAH**; YIJC Prelim 2023 P3 Q1ci [2] for age and mutagen
 NJC Prelim 2024 P1 Q18 and RI Prelim 2024 P1 Q27 for the loss-of-immunity half; SAJC Prelim 2013 P3
 essay key for the environmental-factor list, verbatim; the school's own chapter 3.3 section on
 causative factors for the adduct route, the p53 adduct sites, and the inherited-predisposition wording,
-all verbatim. The four-patient framing is **[INFERRED — extension, no official key]**.
+all verbatim. The four-patient framing is **[INFERRED, extension, no official key]**.
 **Archetype:** mechanism explain-chain, four short chains converging on one ending, in the shape of the
 Section B essay stems the corpus files 11 of for this chapter.
 **Trap:** answering with the agent and the outcome but no mechanism between them, which is the
@@ -902,7 +905,7 @@ verbatim, for the full three-way comparison table including where each exists an
 to; SAJC Prelim 2013 P3 Q5a [5], verbatim, for zygotic against embryonic; NJC Prelim 2023 P2 Q3ci [1]
 and 9477 Specimen P3 Q3a(i) [1] for the one-mark potency identifications; the stem-cell scheme carrying
 **Reject: infinite / divides indefinitely**; the school's own chapter 3.4 for Figure 6.1 and for the
-error flagged in point 9. The four-row table and the cow-embryo framing are **[INFERRED — extension, no
+error flagged in point 9. The four-row table and the cow-embryo framing are **[INFERRED, extension, no
 official key]**, built to the shape of NYJC Prelim 2022 P1 Q7 and RVHS Prelim 2018 P1 Q7.
 **Archetype:** recall and define, raised to compare and judge. Chapter 3.4 carries the highest recall
 share in the Book, and this is the one place a definition can be asked cold.
@@ -1018,7 +1021,7 @@ progenitor is not a haematopoietic stem cell; NJC Prelim 2022 P2 Q8a [3], verbat
 functions of the lymphoid stem cell, including **R: infinite / divides indefinitely**; RVHS Prelim 2023
 P3 Q5a [15], verbatim, for the full myeloid and lymphoid split; NJC Prelim 2024 P1 Q6 and DHS Prelim
 2023 P1 Q20 for the multipotent-not-pluripotent options in part (a); 9477 Specimen P3 Q3, which opens on
-lymphoid stem cells and is why this is live. The blood-count case is **[INFERRED — extension, no official
+lymphoid stem cells and is why this is live. The blood-count case is **[INFERRED, extension, no official
 key]**.
 **Archetype:** data interpretation feeding a deduction, then a judgement on a proposed explanation.
 **Trap:** your chapter's page 11, which says the myeloid progenitor generates all blood cell types. The
@@ -1037,3 +1040,225 @@ commitment cascade; (11) reasoning from what has been spared, not only from what
 (12) numbers regulated according to physiological need.
 
 ---
+
+### Question 8
+
+**(a)** *Why a transferred stem cell never makes the local cell type.* **[12]**
+
+**1.** Start from the premise the stem hands you: every cell carries the same genome, so the explanation
+**cannot be that different stem cells have only the genes required for their particular cell line**.
+That option is offered as a distractor on the specimen paper and it is wrong.
+
+**2.** Differentiation is **differential gene expression**. During differentiation **certain genes become
+activated and other genes become inactivated in an intricately regulated fashion**, so that **a
+differentiated cell develops specific structures and performs certain functions**.
+
+**3.** The mechanism that keeps them inactivated is control of expression, and on the specimen paper the
+credited route is that **genes not required for the differentiation of a particular cell line are
+methylated**. Methylation of the promoter **silences the gene without altering the base sequence**.
+[CROSS-BOOK, Book 2 Cluster 2]
+
+**4.** So the bone marrow stem cell in the dermis **still carries the skin genes** but has them **switched
+off**, and the skin stem cell in the marrow **still carries the blood genes** with the same result.
+
+**5.** Commitment is stable, and this is the sentence the question is really testing. **Once committed,
+cells usually do not switch commitment**, and **in a new environment they will not change the type of
+cells they generate**.
+
+**6.** That is why the new surroundings do not rescue it. The external signals are present: **chemicals
+secreted by other cells**, **physical contact with neighbouring cells**, and **certain molecules in the
+microenvironment**, the microenvironment being **nutrients and growth factors in the surrounding fluid**.
+The cell can receive them and still not respond by changing lineage.
+
+**7.** The signals are received through the machinery of reception and transduction, so a stem cell
+responds to its **niche** only within the range its expression state still allows. Self-renewal and
+differentiation are **tightly regulated by the cells and molecules in their immediate environment, the
+niche that they inhabit**. [CROSS-CLUSTER, Cluster 1]
+
+**8.** There is a second, independent reason in the potency itself. A bone marrow stem cell is
+**multipotent**, so it gives **many cell lines within a specific tissue type**, a **limited number of cell
+types**, and **all the cells of the blood but not other types**. A skin cell is outside its range whatever
+signals arrive.
+
+**9.** It still divides in its new site because **self-renewal and differentiation are separate
+properties**: it retains **long-term self-renewal by mitotic divisions** while **remaining
+unspecialised**, which is exactly what the stem describes it doing.
+
+**10.** The daughters it does produce are **genetically identical to it and to each other**, since
+**mitosis produces two genetically identical nuclei**, so nothing about dividing in a new site changes
+what it is. [CROSS-CLUSTER, Cluster 2]
+
+**11.** State the general principle the two observations share: **a cell's fate is set by which genes are
+expressed and silenced, not by where it is and not by which genes it has.**
+
+**12.** The one qualification your chapter itself makes: commitment is **stable in the body and
+reversible in a laboratory**. Write the version tested here, that in the body **commitment does not
+switch**.
+
+R: **different stem cells have only the genes required for their particular cell line**.
+R: answering that the environment lacks the right signals, when the stem states the cell is in skin.
+
+**(b)** *The normal functions, and the two demand examples.* **[6]**
+
+**1.** The outcome says **normal** functions and **in a living organism**. Both words are deliberate, so
+transplantation and therapy score nothing here however well written.
+
+**2.** Embryonic stem cells: their normal function is **to build the body**. They come from the **inner
+cell mass of the blastocyst**, and **in time the inner cell mass will form the embryo**.
+
+**3.** Being **pluripotent**, they **give rise to all three primary germ layers, mesoderm, endoderm and
+ectoderm, and hence to every tissue**, and they are **capable of developing into all fetal tissues**.
+**Each layer retains stem cells as the organism develops.**
+
+**4.** Blood stem cells: **the primary role of haematopoietic stem cells is to replace blood cells**.
+Blood cells are short-lived, so the population **replaces them continuously** throughout life, dividing
+by **mitosis** and differentiating down the **lymphoid and myeloid** lineages.
+
+**5.** The demand examples, and the outcome expects them scaled: **the numbers of each type are regulated
+according to physiological need**. **Loss of blood results in an increase in red blood cell production.**
+
+**6.** And **infection leads to an increase in lymphocytes and other white blood cells**.
+
+R: stem cell therapy, transplantation or treating leukaemia as an answer to normal functions.
+R: **infinite** or **divides indefinitely** for self-renewal.
+
+**Source:** 9477 Specimen P1 Q8 [1], reproduced in full, whose credited answer is that **genes not
+required for the differentiation of a particular cell line are methylated** and which offers the
+same-genes-only option as a distractor; SAJC Prelim 2021 P3 Q1ci [2], verbatim, for differential gene
+expression leading to different gene products, including its reject; MI Prelim 2015 P3 Q5b [6],
+verbatim, for the unique features and the normal function of embryonic stem cells; IJC Prelim 2013 P3
+Q5a [6] and RI Prelim 2013 P3 Q5a [6], verbatim, for the normal-functions lists; NJC Prelim 2015 P1 Q34
+and RVHS Prelim 2015 P1 Q39, verbatim, both of which turn on distinguishing normal in-vivo functions
+from therapeutic or laboratory applications; JJC Prelim 2017 P2 Q1c [4], verbatim, for the
+haematopoietic replacement function; the school's own chapter 3.4 for the three external signals, the
+commitment sentences, the niche and the two demand-scaling examples, all verbatim. The transferred-cell
+framing of (a) is the specimen's own.
+**Archetype:** mechanism explain-chain reaching back into gene regulation, which is the crossover the
+specimen actually set.
+**Trap:** answering a stem-cell question with stem-cell biology when the answer is gene regulation.
+Specimen P1 Q8 is a stem-cell stem whose correct answer is about methylation. Second trap: answering
+LO 1(u) with therapy, which the outcome's own wording excludes.
+**LOs:** 1(u) explain the normal functions of stem cells in a living organism, including embryonic stem
+cells and blood stem cells. Reach-back to Book 2 LO 2(i) for the control of gene expression and to 2(n)
+for mitosis.
+**Concepts fused:** (1) same genome in every cell, so the explanation must be expression;
+(2) differentiation as differential gene expression; (3) methylation as the silencing route;
+(4) commitment stable in a new environment; (5) the three external signals; (6) the niche and the
+signalling machinery behind it; (7) multipotency as an independent limit on range; (8) self-renewal and
+differentiation as separable properties; (9) mitosis giving genetically identical daughters; (10) normal
+function of embryonic stem cells, the three germ layers and every tissue; (11) normal function of blood
+stem cells, continuous replacement; (12) numbers regulated according to physiological need, with both
+worked examples.
+
+---
+
+### Question 9
+
+*Why the pool lasts a lifetime, and why one mutation in it can give a leukaemia.* **[16]**
+
+*Why the population is not exhausted, max 8:*
+
+**1.** Stem cells divide by **mitosis**, and there are two kinds of division to name. **Symmetric division
+produces two genetically identical cells**, identical to each other and to the parental cell.
+
+**2.** **Asymmetric division produces one stem cell and one progenitor cell** with **limited self-renewal
+potential**. One daughter therefore **remains a stem cell** while the other **goes on to differentiate**.
+
+**3.** Asymmetric division is **preceded by localisation of regulatory molecules** or **differential
+segregation of cell membrane proteins**, so the two daughters **differ from birth and have different
+fates**. The asymmetry is set up before the division, not decided afterwards.
+
+**4.** The significance line, which is the clean two-mark answer to the first half: **mitotic division of
+stem cells preserves a population of undifferentiated cells while steadily producing a stream of
+differentiating cells.** That is why a tissue can supply new cells for a lifetime without exhausting its
+stem cells.
+
+**5.** The property that makes it possible is **long-term self-renewal**: the daughters that stay stem
+cells **continue to be unspecialised, like the parent stem cells**, and the population shows **long-term
+self-renewal by mitotic divisions**. A scheme rejects **infinite** and **divides indefinitely**, because
+the biology is about **remaining unspecialised while dividing**, not about a division count.
+
+**6.** Which of the two divisions happens is decided by the **niche**. Self-renewal and differentiation
+are **tightly regulated by the cells and molecules in their immediate environment, the niche that they
+inhabit**, and in haematopoiesis **the niche is provided by the bone marrow stromal cells**.
+
+**7.** Those stromal cells act through **secreted signal proteins** and **haematopoietic growth factors**,
+which **maintain stem-cell proliferation**. A growth factor is a **ligand** binding a **binding site** on
+a **cell surface receptor**, causing a **conformational change** and a **signal transduction pathway**
+ending in **a change in gene expression**. [CROSS-CLUSTER, Cluster 1]
+
+**8.** So the output is matched to demand rather than fixed: **the numbers of each type are regulated
+according to physiological need**, which is what a lifetime of variable demand requires.
+
+*Why one mutation in the same cell can give a leukaemia, max 8:*
+
+**9.** The same mitosis that preserves the population also copies the fault. **Semi-conservative
+replication in S phase gives identical daughter DNA molecules**, so **daughter cells are genetically
+identical to the parent cell**. Run the genetic-stability chain from Cluster 2 backwards: what
+guarantees fidelity also guarantees that **a mutation is inherited by every descendant**.
+[CROSS-CLUSTER, Cluster 2]
+
+**10.** So the dividing cell **passes on the damaged genes** to its daughters, giving **a clone of altered
+cells** carrying an **unstable genome**, and **accumulation of mutations occurs in a single cell
+lineage**.
+
+**11.** Long life is the second half of the problem. A cell that **self-renews for the life of the
+organism** is present for decades, so it has **far longer to accumulate the several independent
+mutations in cancer-critical genes** that a cancer needs, while a differentiated blood cell dies within
+days or months and takes its mutations with it.
+
+**12.** A cell that already divides continuously is also **already expressing the machinery for
+division**, so **fewer further mutations are needed** before division escapes control.
+
+**13.** What escaping control means, precisely: **mutations in the genes that control cell division**
+produce a **dysregulation of cellular checkpoints**, so the cell divides uncontrollably. That requires at
+least one **gain in function mutation of a proto-oncogene** and **loss of function mutations in both
+copies of tumour suppressor genes**.
+
+**14.** Uncontrolled is a statement about two rates, not about speed. The crucial issue is **the rate of
+cell division against the rate of cell loss**: normal marrow holds them **in balance, so no net
+accumulation** of new cells occurs, while in leukaemia division **far exceeds** loss. Schemes reject
+**excessive or uncontrolled cell growth** where **division** is meant.
+
+**15.** The answer to which property does which. **Long-term self-renewal by mitotic division** is what
+sustains the pool, and it is also **the same property that gives the mutation a lineage to travel down
+and the time to accumulate more**. **Asymmetric division** is what keeps supply and self-renewal in step,
+and losing that balance in favour of self-renewal is what fills the marrow with undifferentiated cells.
+
+**16.** The final judgement worth stating: the two behaviours are **not opposites**. A tissue that can
+renew itself for a lifetime is a tissue that must keep a self-renewing lineage alive for a lifetime, and
+that lineage is the one place a cancer can most easily start.
+
+R: **infinite** or **divides indefinitely** for self-renewal.
+R: **excessive / uncontrolled cell growth** where cell **division** is meant.
+R: describing leukaemia as the stem cells dividing faster.
+
+**Source:** the school's own chapter 3.4 for symmetric and asymmetric division, the significance
+sentence, the niche and the stromal-cell growth factors, all verbatim; ACJC Prelim 2024 P2 Q7(b)(ii)
+[2], verbatim, for the advantage of asymmetrical division; DHS Prelim 2017 P2 Q5bi [1] and CJC Prelim
+2022 P3 Q2a [2], verbatim, for asymmetric division and maintenance of the stem cell line; ASRJC Prelim
+2025 P2 Q1a [3], verbatim, for replacement of worn-out cells and self-renewal of the pool; the school's
+own chapter 3.3 for the clone of altered cells, the unstable genome and the two-rates argument, all
+verbatim, together with the scheme rejects on **excessive / uncontrolled cell growth**; ACJC Prelim 2021
+P3 Q5a for the accumulation-in-a-single-cell-lineage wording and the two mutation classes, verbatim;
+YIJC Prelim 2023 P2 Q3c [1] for the argument that a stem cell **requires fewer mutations to trigger
+uncontrolled cell division**. The paired framing of the whole question is **[INFERRED, extension, no
+official key]**, built to the shape of the bridge-led essay stems this Book favours.
+**Archetype:** evaluate and discuss, holding two things together, which is the shape of almost all 44
+essay-scale Book 3 stems in the corpus.
+**Trap:** treating the two halves as unrelated, when the same property causes both. Second trap: saying
+leukaemic cells divide faster, when the school's own IMPORTANT box says uncontrolled means the rate of
+division exceeds the rate of cell loss.
+**LOs:** 1(t) and 1(u) for self-renewal, the division modes and the normal function of blood stem cells;
+2(q) and 2(r) for what uncontrolled division means and for accumulation in a single cell lineage.
+Reach-back to 2(n) and 2(o) for mitosis and genetic stability and to 3(m) for the niche signalling.
+**Concepts fused:** (1) symmetric division and its product; (2) asymmetric division and the progenitor
+with limited self-renewal; (3) how the asymmetry is set up before division; (4) the significance line,
+population preserved while a stream differentiates; (5) long-term self-renewal as the required phrase;
+(6) the niche and bone marrow stromal cells; (7) haematopoietic growth factors read as ligands on
+receptors, with transduction to a change in gene expression; (8) output scaled to physiological need;
+(9) mitosis and semi-conservative replication guaranteeing that the mutation is inherited; (10) the
+clone of altered cells and the unstable genome; (11) accumulation in a single cell lineage; (12) longevity
+as the reason a stem cell accumulates more; (13) fewer further mutations needed in a cell already
+dividing; (14) the two classes of mutation a cancer requires; (15) uncontrolled defined by two rates,
+not by speed; (16) the judgement that the two behaviours share one cause.
