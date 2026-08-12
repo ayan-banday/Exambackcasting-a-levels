@@ -1,7 +1,7 @@
 # Cluster 03 Drill: The Molecular Basis of Cancer, and Stem Cells
 ### Biology H2 (9477) · Book 3 · attempt on Loom/Wispr Flow, reasoning aloud, BEFORE reading answers
 
-**9 questions, 166 marks, 16 parts. The count comes from the coverage, not from a target.** This cluster
+**9 questions, 166 marks, 18 parts. The count comes from the coverage, not from a target.** This cluster
 owns five learning outcomes, 2(p), 2(q), 2(r), 1(t) and 1(u), and 2(q) splits cleanly in two because
 loss of function and gain in function are different arguments needing separate stems. That is six
 things to carry. On top of them the drill reaches back into Cluster 1 signalling, Cluster 2 division and
@@ -10,7 +10,7 @@ question and a lineage question that the outcomes name by their own examples com
 here exists to reach a number.
 
 **Every stem is one or two sentences and every answer is long.** No stem lists the axes to compare on,
-no stem tells you which option is wrong, and no stem contains its own answer. Six of the sixteen parts
+no stem tells you which option is wrong, and no stem contains its own answer. Six of the eighteen parts
 carry the real figure from the paper or chapter it came from, not a redrawing.
 
 **Two multiple-choice parts only, Q6(a) and Q7(a), and neither is a bare which-row.** Both sit on a
@@ -136,11 +136,8 @@ three, and give the ending that all four share. **[4]**
 Which row correctly gives the level of potency of the three cells named? **[1]**
 
 A one cell of the 2-cell stage is totipotent, one cell of the inner cell mass is totipotent, a blood stem cell in adult bone marrow is multipotent
-
 B one cell of the 2-cell stage is totipotent, one cell of the inner cell mass is pluripotent, a blood stem cell in adult bone marrow is multipotent
-
 C one cell of the 2-cell stage is pluripotent, one cell of the inner cell mass is pluripotent, a blood stem cell in adult bone marrow is multipotent
-
 D one cell of the 2-cell stage is totipotent, one cell of the inner cell mass is pluripotent, a blood stem cell in adult bone marrow is pluripotent
 
 Then justify or reject every row, naming the exact feature that decides each one. **[5]**
@@ -162,11 +159,8 @@ Account for the difference, and state what each cell can and cannot give rise to
 Which statement about the cells in Figure 7.1 is **not** correct? **[1]**
 
 A The common lymphoid progenitor and the common myeloid progenitor are both multipotent.
-
 B The B cell shown in the lymph nodes carries the same genome as the haematopoietic stem cell it came from.
-
 C The haematopoietic stem cell can give rise to cells of all three primary germ layers.
-
 D Every cell shown below the level of the progenitors was produced by mitosis.
 
 Then justify or reject every option, naming the exact feature that decides each one. **[5]**
@@ -305,9 +299,9 @@ same quantity**, so the band appears **at the same height and with the same inte
 Detecting it needs the **base sequence** or the **activity** of the protein, not its amount.
 
 **8.** Why *c-myc* over-production drives division at all: the *c-myc* protein is a **transcription
-factor**, and transcription factors are one of the five classes of proto-oncogene product, alongside
-**growth factors, growth factor receptors, protein kinases and inhibitors of apoptosis**. More of it
-means **a higher rate of transcription** of the genes it controls, and hence **more mitosis**.
+factor**, and transcription factors are one of the classes of proto-oncogene product, alongside
+**growth factors**, **growth factor receptors** and **protein kinases**. More of it means **a higher
+rate of transcription** of the genes it controls, and hence **more mitosis**.
 
 **Source:** 9477 Specimen P2 Q3(a) [3] and Q3(d) [2], both figures reproduced from the paper. Both
 carry `[INFERRED, no official key]`, since Cambridge has published no mark scheme for the specimen;
@@ -698,14 +692,13 @@ complementarity and binding site against active site; (14) blocking transduction
 
 ### Question 5
 
-*How each of the four came to be at risk, and which one is different.* **[16]**
+**(a)** *How each of the four came to be at risk.* **[12]**
 
 **1.** The outcome names exactly four causative factors: **genetic, chemical carcinogens, ionising
 radiation and loss of immunity**. All four are present here, one per person.
 
-**2.** Whatever the agent, the route ends with the same last links: a mutation in a **cancer-critical
-gene**, then **uncontrollable cell division**, then **tumour formation**. Write the agent-specific route
-first and the shared ending second, because that ending is what turns a description into an explanation.
+**2.** Write the agent-specific route first in every case, because the route is what turns a
+description into an explanation. Part (b) asks for the ending they share.
 
 **3.** **Carcinogens** are **substances that cause or promote the development of cancer**, and **most
 cancers develop only after repeated contact** with them. Thirty years of smoking is that repeated
@@ -749,8 +742,7 @@ radiographer's hazard is the ionising one.
 cancerous cells** through **absence or inadequate numbers of immune cells**, so **tumours may develop**.
 
 **12.** This factor **acts on cells that are already mutated**. It does not cause the mutation; it
-removes the surveillance that would have cleared the mutated cell. **This is the one that sits at a
-different point in the chain from the other three**, and it is the judgement the question asks for.
+removes the surveillance that would have cleared the mutated cell.
 
 *The woman, genetic:*
 
@@ -761,21 +753,34 @@ accumulating the necessary mutations**.
 mutations coupled with non-genetic factors** are still needed, and inside any one cell the loss remains
 **recessive**, so **the second allele must still be lost**.
 
-*The shared ending:*
-
-**15.** For all four, cancer follows only from **gradual accumulation of several independent mutations
-in cancer-critical genes** in **a single cell lineage**, including at least one **gain in function
-mutation of a proto-oncogene** and **loss of function mutations in both copies of tumour suppressor
-genes**.
-
-**16.** The end state in the outcome's own terms: the cell **bypasses the checkpoints of cell division**
-and **divides uncontrollably**, meaning **the rate of cell division exceeds the rate of cell loss**, and
-a **tumour** forms.
-
 R: **smoking** or **cigarette and tobacco smoke** without naming PAHs.
 R: **nicotine** as the carcinogen.
 R: giving ultraviolet radiation as an example of ionising radiation.
+
+**(b)** *The odd one out, and the ending all four share.* **[4]**
+
+**1.** The odd one out is the **transplant patient, that is, loss of immunity**. The other three,
+chemical carcinogens, ionising radiation and an inherited faulty allele, all act by **putting a mutation
+into a cancer-critical gene**, or by supplying one already.
+
+**2.** Loss of immunity **puts no mutation into any gene**. It acts **later in the chain**, on cells that
+are **already mutated**, by removing the surveillance that **monitors for and eliminates the vast
+majority of incipient tumour cells**, so a cell that would have been destroyed **survives and
+proliferates** instead.
+
+**3.** The shared ending, and this is what turns each description into an explanation. Whatever the
+agent, the route runs to a mutation in a **cancer-critical gene**, then **uncontrollable cell division**,
+then **tumour formation**. For all four, cancer follows only from **gradual accumulation of several
+independent mutations in cancer-critical genes** in **a single cell lineage**, including at least one
+**gain in function mutation of a proto-oncogene** and **loss of function mutations in both copies of
+tumour suppressor genes**.
+
+**4.** The end state in the outcome's own terms: the cell **bypasses the checkpoints of cell division**
+and **divides uncontrollably**, meaning **the rate of cell division exceeds the rate of cell loss**, and
+a **tumour** forms.
+
 R: saying loss of immunity causes the mutation.
+R: giving the four agents again instead of the ending they converge on.
 
 **Source:** ACJC Prelim 2024 P3 Q5(a) [15], which requires the mechanism for every named factor and
 supplies the free-radical, double-strand-break, thymine-dimer and PAH lines verbatim, including
@@ -1154,9 +1159,7 @@ worked examples.
 
 ### Question 9
 
-*Why the pool lasts a lifetime, and why one mutation in it can give a leukaemia.* **[16]**
-
-*Why the population is not exhausted, max 8:*
+**(a)** *Why the stem cell population is not exhausted.* **[8]**
 
 **1.** Stem cells divide by **mitosis**, and there are two kinds of division to name. **Symmetric division
 produces two genetically identical cells**, identical to each other and to the parental cell.
@@ -1190,48 +1193,52 @@ ending in **a change in gene expression**. [CROSS-CLUSTER, Cluster 1]
 **8.** So the output is matched to demand rather than fixed: **the numbers of each type are regulated
 according to physiological need**, which is what a lifetime of variable demand requires.
 
-*Why one mutation in the same cell can give a leukaemia, max 8:*
+R: **infinite** or **divides indefinitely** for self-renewal.
+R: describing asymmetric division as the daughters taking different paths after the division, when the
+asymmetry is set up before it.
 
-**9.** The same mitosis that preserves the population also copies the fault. **Semi-conservative
+**(b)** *Why one mutation in the same cell can give a leukaemia.* **[8]**
+
+**1.** The same mitosis that preserves the population also copies the fault. **Semi-conservative
 replication in S phase gives identical daughter DNA molecules**, so **daughter cells are genetically
 identical to the parent cell**. Run the genetic-stability chain from Cluster 2 backwards: what
 guarantees fidelity also guarantees that **a mutation is inherited by every descendant**.
 [CROSS-CLUSTER, Cluster 2]
 
-**10.** So the dividing cell **passes on the damaged genes** to its daughters, giving **a clone of altered
+**2.** So the dividing cell **passes on the damaged genes** to its daughters, giving **a clone of altered
 cells** carrying an **unstable genome**, and **accumulation of mutations occurs in a single cell
 lineage**.
 
-**11.** Long life is the second half of the problem. A cell that **self-renews for the life of the
+**3.** Long life is the second half of the problem. A cell that **self-renews for the life of the
 organism** is present for decades, so it has **far longer to accumulate the several independent
 mutations in cancer-critical genes** that a cancer needs, while a differentiated blood cell dies within
 days or months and takes its mutations with it.
 
-**12.** A cell that already divides continuously is also **already expressing the machinery for
+**4.** A cell that already divides continuously is also **already expressing the machinery for
 division**, so **fewer further mutations are needed** before division escapes control.
 
-**13.** What escaping control means, precisely: **mutations in the genes that control cell division**
+**5.** What escaping control means, precisely: **mutations in the genes that control cell division**
 produce a **dysregulation of cellular checkpoints**, so the cell divides uncontrollably. That requires at
 least one **gain in function mutation of a proto-oncogene** and **loss of function mutations in both
 copies of tumour suppressor genes**.
 
-**14.** Uncontrolled is a statement about two rates, not about speed. The crucial issue is **the rate of
+**6.** Uncontrolled is a statement about two rates, not about speed. The crucial issue is **the rate of
 cell division against the rate of cell loss**: normal marrow holds them **in balance, so no net
 accumulation** of new cells occurs, while in leukaemia division **far exceeds** loss. Schemes reject
 **excessive or uncontrolled cell growth** where **division** is meant.
 
-**15.** The answer to which property does which. **Long-term self-renewal by mitotic division** is what
+**7.** The answer to which property does which. **Long-term self-renewal by mitotic division** is what
 sustains the pool, and it is also **the same property that gives the mutation a lineage to travel down
 and the time to accumulate more**. **Asymmetric division** is what keeps supply and self-renewal in step,
 and losing that balance in favour of self-renewal is what fills the marrow with undifferentiated cells.
 
-**16.** The final judgement worth stating: the two behaviours are **not opposites**. A tissue that can
+**8.** The final judgement worth stating: the two behaviours are **not opposites**. A tissue that can
 renew itself for a lifetime is a tissue that must keep a self-renewing lineage alive for a lifetime, and
 that lineage is the one place a cancer can most easily start.
 
-R: **infinite** or **divides indefinitely** for self-renewal.
 R: **excessive / uncontrolled cell growth** where cell **division** is meant.
 R: describing leukaemia as the stem cells dividing faster.
+R: treating the two halves as unrelated, when the same property causes both.
 
 **Source:** the school's own chapter 3.4 for symmetric and asymmetric division, the significance
 sentence, the niche and the stromal-cell growth factors, all verbatim; ACJC Prelim 2024 P2 Q7(b)(ii)

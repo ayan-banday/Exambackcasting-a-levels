@@ -131,6 +131,34 @@ def split_parts(body):
     return chunks
 
 
+OPT_RE = re.compile(r"^(?:\*\*)?([A-D])(?:\*\*)?([\.\)]?)\s+\S")
+
+
+def is_mcq_run(lines, i):
+    """True when lines[i] really opens an option block rather than a sentence starting 'A '.
+
+    An unpunctuated bare letter is ambiguous, so demand a run of at least two consecutive
+    lines lettered sequentially from A. Punctuated or bolded letters are unambiguous.
+    """
+    m = OPT_RE.match(lines[i])
+    if not m:
+        return False
+    if m.group(2) or lines[i].startswith("**"):
+        return True                       # "A)", "A.", "**A**" - never a sentence
+    if m.group(1) != "A":
+        return False                      # a run has to start at A
+    letters, j = [], i
+    while j < len(lines):
+        mm = OPT_RE.match(lines[j])
+        if mm:
+            letters.append(mm.group(1)); j += 1
+        elif lines[j].strip() and letters:
+            j += 1                        # a wrapped continuation line
+        else:
+            break
+    return letters[:2] == ["A", "B"]
+
+
 def b64img(fn):
     p = os.path.join(FIGS, fn)
     if not os.path.exists(p):
@@ -208,8 +236,11 @@ def render(text, qno=None, part=None, figs_used=None):
                 items.append(re.sub(r"^\s*[-*]\s+", "", lines[i])); i += 1
             out.append("<ul>" + "".join(f"<li>{inline(x)}</li>" for x in items) + "</ul>")
             continue
-        # MCQ option block - "A ...", "B ...", "C ...", "D ..." each on its own line
-        if re.match(r"^(?:\*\*)?[A-D](?:\*\*)?[\.\)]?\s+\S", ln):
+        # MCQ option block - "A ...", "B ...", "C ...", "D ..." each on its own line.
+        # A bare "A " also starts an ordinary sentence ("A cell divides..."), so require a
+        # real run: at least two consecutive lines lettered sequentially from A. Punctuated
+        # or bolded letters ("A)", "A.", "**A**") are unambiguous and pass on their own.
+        if re.match(r"^(?:\*\*)?[A-D](?:\*\*)?[\.\)]?\s+\S", ln) and is_mcq_run(lines, i):
             opts = []
             while i < len(lines) and re.match(r"^(?:\*\*)?[A-D](?:\*\*)?[\.\)]?\s+\S", lines[i]):
                 letter = re.match(r"^(?:\*\*)?([A-D])", lines[i]).group(1)
@@ -227,10 +258,12 @@ def render(text, qno=None, part=None, figs_used=None):
         # paragraph
         if ln.strip():
             para = []
+            first = True
             while i < len(lines) and lines[i].strip() and not lines[i].startswith(("|", ">", "[FIGURE:")) \
                     and not re.match(r"^\s*[-*]\s+", lines[i]) \
-                    and not re.match(r"^(?:\*\*)?[A-D](?:\*\*)?[\.\)]?\s+\S", lines[i]):
+                    and not (is_mcq_run(lines, i) and not first):
                 para.append(lines[i]); i += 1
+                first = False
             out.append(f"<p>{inline(' '.join(para))}</p>")
             continue
         i += 1
@@ -247,7 +280,9 @@ for qno in sorted(QS, key=int):
     marks = re.search(r"\[(\d+) marks?\]", qhalf.split(f"### Question {qno}")[1][:40])
     total = marks.group(1) if marks else "?"
     qparts = split_parts(qbody)
-    mparts = dict((p, t) for p, t in split_parts(mbody) if p)
+    # A question with no lettered parts yields one chunk keyed None. Dropping it silently
+    # discarded the whole mark scheme, so key it None and render it under the question.
+    mparts = dict(split_parts(mbody))
     # trailing metadata (Source / Concepts fused) lives in the last mark-scheme chunk
     meta = ""
     mm = re.search(r"(\*\*Source:\*\*.*)", mbody, flags=re.S)
@@ -259,12 +294,13 @@ for qno in sorted(QS, key=int):
     blocks = []
     for part, text in qparts:
         blocks.append(f'<div class="qpart">{render(text, qno, part, figs_used)}</div>')
-        if part and part in mparts:
+        if part in mparts and mparts[part].strip():
             ans = render(mparts[part], qno, part)
             if CONFIDENCE:
                 blocks.append(f'<div class="confidence">{CONFIDENCE_TEXT}</div>')
+            label = f"Answer  -  part ({part})" if part else "Answer"
             blocks.append(
-                f'<div class="block answer"><span class="label">Answer  -  part ({part})</span>'
+                f'<div class="block answer"><span class="label">{label}</span>'
                 f'<div class="answer-content">{ans}</div>'
                 f'<div class="answer-overlay"><button class="reveal-btn">Show answer ({part})</button></div></div>'
             )
