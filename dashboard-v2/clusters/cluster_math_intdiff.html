@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Integration + Differentiation — Main Cluster (9758)</title>
+<script>
+  window.MathJax = { tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], processEscapes: true, tags:'none' }, svg:{fontCache:'global'} };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --green:#059669; --green-soft:#ecfdf5;
+    --cover:#f3f4f6; --accent:#1f3a7a; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:36px 24px 90px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h3,.label,.controls,button,.step-header,.hd .sub,.hd .meta,.cardhead,.conf,.src,.marks,.testline{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  .hd{border-bottom:2.5px solid #111;padding-bottom:16px;margin-bottom:10px;text-align:center}
+  .hd h1{font-size:1.55em;font-weight:800;letter-spacing:.4px;margin:0;border:none;padding:0;color:#111}
+  .hd .sub{font-size:1.02em;margin-top:4px;color:#333}
+  .hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:.8em;color:var(--muted);margin-top:9px}
+  h3{font-size:1.18em;margin:0 0 6px;color:#1f2937}
+  p{margin:8px 0}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--accent);padding:15px 20px;border-radius:6px;margin:18px 0}
+  .radians{background:#fff7ed;border:2px solid var(--amber);border-radius:8px;padding:13px 18px;margin:18px 0 8px;font-size:.98em;color:#7c2d12}
+  .radians b{color:#b91c1c;text-transform:uppercase;letter-spacing:.03em}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin:22px 0 20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;font-weight:500}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:30px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:8px;color:#111}
+  .toc a{color:var(--blue);text-decoration:none;display:inline-block;width:100%;line-height:1.95}
+  .toc a b{color:#111}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:24px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .cardhead{font-size:.72em;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+  .src{font-family:ui-monospace,Menlo,monospace;font-size:.72em;color:var(--amber);margin:3px 0 10px}
+  .stem{background:#1e293b;color:#f1f5f9;padding:14px 18px;border-radius:6px;margin:8px 0;line-height:1.7}
+  .stem .sub{display:block;margin-top:7px}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px}
+  .conf{background:#f8fafc;border:1px dashed #cbd5e1;border-radius:6px;padding:8px 14px;margin:12px 0 4px;font-size:.85em;color:#475569}
+  .conf b{color:#0f172a}
+  .block.answer{background:var(--green-soft);border-left:4px solid var(--green);border-radius:6px;position:relative;min-height:60px;padding:12px 16px 14px;margin:14px 0 2px}
+  .label{display:block;text-transform:uppercase;font-size:.73em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--green)}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.6);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.78em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .mk{display:inline-block;font-size:.8em;color:var(--green);font-weight:700;margin-left:4px}
+  .name{display:block;font-size:.86em;color:#475569;font-style:italic;margin:6px 0;border-left:2px solid var(--border);padding-left:10px}
+  .testline{margin-top:12px;padding-top:8px;border-top:1px dashed #a7f3d0;font-size:.8em;color:#047857}
+  .testline b{color:#065f46}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;z-index:2;text-align:center;padding:0 20px}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content{padding-right:60px}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  mjx-container{overflow-x:auto;overflow-y:hidden;max-width:100%}
+  @media print{body{background:#fff;padding:20px;max-width:100%}.controls,.reveal-btn{display:none!important}.answer-overlay{display:none!important}.card{box-shadow:none;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<div class="hd">
+  <h1>H2 MATHEMATICS</h1>
+  <div class="sub">Integration + Differentiation &mdash; Main Cluster &middot; test every learning outcome once</div>
+  <div class="meta">9758 &middot; H2 &middot; Paper 1 (Pure) &middot; 15 questions &middot; <b>~3 hours &middot; 100 marks</b></div>
+</div>
+
+<div class="intro">
+This cluster walks once through <b>every Integration and Differentiation learning outcome</b> examinable in Paper 1 (28 Aug) &mdash; roughly one question per outcome. Every question is a <b>real HCI tutorial / supplementary / A-Level paper question</b>; every revealed solution is the <b>verbatim HCI worked solution</b>, with each mark tagged <span class="mk">(1)</span> where it is earned and every symbol named before it enters a formula. <b>Do the whole thing cold, timed, in one sitting.</b> State your confidence out loud before you reveal each answer &mdash; that line feeds the gap tracker. If you can clear this at ~80%, Integration + Differentiation is where it needs to be for the paper.
+</div>
+
+<div class="radians">
+<b>Set your calculator to radians.</b> &nbsp;Every \(\sin^{-1}\), \(\tan^{-1}\) and every \(\pi\) on this sheet is in radians. Check the mode indicator before you type any numeric answer.
+</div>
+
+<div class="controls"><button onclick="revealAll()">Reveal all</button><button onclick="hideAll()">Hide all</button></div>
+
+<div class="toc"><strong>The 15 questions</strong>
+<a href="#q1"><b>Q1</b> <span class="marks">[10]</span> &nbsp;HCI Tutorial 5A Q1</a>
+<a href="#q2"><b>Q2</b> <span class="marks">[8]</span> &nbsp;HCI Tutorial 5A Q2</a>
+<a href="#q3"><b>Q3</b> <span class="marks">[8]</span> &nbsp;A-Level 2010 P1 Q4</a>
+<a href="#q4"><b>Q4</b> <span class="marks">[7]</span> &nbsp;A-Level N2011 P1 Q3</a>
+<a href="#q5"><b>Q5</b> <span class="marks">[8]</span> &nbsp;A-Level 2019 P1 Q6</a>
+<a href="#q6"><b>Q6</b> <span class="marks">[5]</span> &nbsp;SAJC 2009 Promo Q4</a>
+<a href="#q7"><b>Q7</b> <span class="marks">[7]</span> &nbsp;A-Level 2019 P2 Q3</a>
+<a href="#q8"><b>Q8</b> <span class="marks">[6]</span> &nbsp;HCI Tutorial 5B Q9</a>
+<a href="#q9"><b>Q9</b> <span class="marks">[5]</span> &nbsp;HCI Tut 6A Q1(c) + RJC 2006 Promo Q13</a>
+<a href="#q10"><b>Q10</b> <span class="marks">[9]</span> &nbsp;A-Level 2020 P1 Q6</a>
+<a href="#q11"><b>Q11</b> <span class="marks">[6]</span> &nbsp;A-Level N2003 P2 Q2</a>
+<a href="#q12"><b>Q12</b> <span class="marks">[6]</span> &nbsp;CJC 2006 Promo Q1</a>
+<a href="#q13"><b>Q13</b> <span class="marks">[4]</span> &nbsp;A-Level N2004 P1 Q4</a>
+<a href="#q14"><b>Q14</b> <span class="marks">[5]</span> &nbsp;A-Level 2019 P1 Q2</a>
+<a href="#q15"><b>Q15</b> <span class="marks">[6]</span> &nbsp;A-Level J84 P1 Q7</a>
+</div>
+
+
+<!-- Q1 -->
+<div class="card" id="q1">
+  <div class="cardhead">Question 1 <span class="marks">[10]</span></div>
+  <div class="src">HCI Tutorial 5A Q1</div>
+  <div class="stem">Differentiate each of the following with respect to \(x\), simplifying your answers.
+    <span class="sub">(a) \(\displaystyle \frac{4x^3+2x^2+1}{x}\)</span>
+    <span class="sub">(b) \(\operatorname{cosec}^3\sqrt{x}\)</span>
+    <span class="sub">(c) \(\ln\sqrt{\dfrac{x-a}{x+a}}\,\), where \(0<a<x\) and \(a\) is a constant</span>
+    <span class="sub">(e) \(e^{\sin^2 x}\big(e^{-x^2}+1\big)\)</span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">(a) split the single-term denominator first</div>
+        <span class="name">When the denominator is a single power of \(x\), divide through term by term rather than using the quotient rule.</span>
+        \[ \frac{\mathrm d}{\mathrm dx}\!\left[\frac{4x^3+2x^2+1}{x}\right]=\frac{\mathrm d}{\mathrm dx}\big[4x^2+2x+x^{-1}\big]=8x+2-\frac{1}{x^2}. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b) chain rule through three layers</div>
+        <span class="name">Outer power \((\cdot)^3\), then \(\operatorname{cosec}\sqrt x\) with \(\tfrac{\mathrm d}{\mathrm du}\operatorname{cosec}u=-\operatorname{cosec}u\cot u\), then \(\sqrt x\) with derivative \(\tfrac{1}{2\sqrt x}\).</span>
+        \[ \frac{\mathrm d}{\mathrm dx}\big[(\operatorname{cosec}\sqrt x)^3\big]=3(\operatorname{cosec}^2\sqrt x)\big(-\operatorname{cosec}\sqrt x\cot\sqrt x\big)\!\left(\frac{1}{2\sqrt x}\right)=-\frac{3}{2\sqrt x}\operatorname{cosec}^3\sqrt x\,\cot\sqrt x. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(c) use log laws to break the expression up first</div>
+        <span class="name">\(\ln\sqrt{\tfrac{x-a}{x+a}}=\tfrac12\big(\ln(x-a)-\ln(x+a)\big)\); differentiate each log term separately.</span>
+        \[ \frac{\mathrm d}{\mathrm dx}\!\left(\ln\sqrt{\tfrac{x-a}{x+a}}\right)=\tfrac12\!\left(\frac{1}{x-a}-\frac{1}{x+a}\right)=\tfrac12\cdot\frac{(x+a)-(x-a)}{(x-a)(x+a)}=\frac{a}{x^2-a^2}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(e) product rule, each factor by the chain rule</div>
+        <span class="name">Product of \(u=e^{\sin^2 x}\) (so \(u'=e^{\sin^2 x}\cdot 2\sin x\cos x\)) and \(w=e^{-x^2}+1\) (so \(w'=-2x\,e^{-x^2}\)); then use \(\sin 2x=2\sin x\cos x\).</span>
+        \[ \frac{\mathrm d}{\mathrm dx}\Big[e^{\sin^2 x}\big(e^{-x^2}+1\big)\Big]=e^{\sin^2 x}(2\sin x\cos x)\big(e^{-x^2}+1\big)+e^{\sin^2 x}\big(-2x\,e^{-x^2}\big) \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ =e^{\sin^2 x}\Big[e^{-x^2}(\sin 2x-2x)+\sin 2x\Big]. \] <span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Covers:</b> standard differentiation &mdash; simplify-before-quotient, multi-layer chain rule, laws of logarithms, product + chain.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q2 -->
+<div class="card" id="q2">
+  <div class="cardhead">Question 2 <span class="marks">[8]</span></div>
+  <div class="src">HCI Tutorial 5A Q2</div>
+  <div class="stem">Find and simplify the derivative with respect to \(x\) of each of the following functions.
+    <span class="sub">(a) \(\tan^{-1}\!\dfrac{1}{\sqrt{x}}\)</span>
+    <span class="sub">(b) \(\sin^{-1}\sqrt{1-x^2}\)</span>
+    <span class="sub">(c) \(\cos^{-1}\!\big(e^{-x^2}\big)\)</span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">(a)</div>
+        <span class="name">MF26: \(\tfrac{\mathrm d}{\mathrm du}\tan^{-1}u=\tfrac{1}{1+u^2}\) with \(u=x^{-1/2}\), \(u'=-\tfrac12 x^{-3/2}\); remember to differentiate the inside.</span>
+        \[ \frac{\mathrm d}{\mathrm dx}\tan^{-1}\!\frac{1}{\sqrt x}=\frac{1}{1+\left(\frac{1}{\sqrt x}\right)^2}\times\left(-\tfrac12 x^{-3/2}\right)=\frac{x}{x+1}\times\left(-\frac{1}{2x\sqrt x}\right)=-\frac{1}{2\sqrt x\,(x+1)}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b)</div>
+        <span class="name">MF26: \(\tfrac{\mathrm d}{\mathrm du}\sin^{-1}u=\tfrac{1}{\sqrt{1-u^2}}\) with \(u=\sqrt{1-x^2}\); note \(\sqrt{x^2}=|x|\), not \(x\).</span>
+        \[ \frac{\mathrm d}{\mathrm dx}\sin^{-1}\sqrt{1-x^2}=\frac{1}{\sqrt{1-(1-x^2)}}\times\frac{1}{2\sqrt{1-x^2}}\times(-2x)=-\frac{x}{\sqrt{x^2}\,\sqrt{1-x^2}}=-\frac{x}{|x|\sqrt{1-x^2}}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(c)</div>
+        <span class="name">MF26: \(\tfrac{\mathrm d}{\mathrm du}\cos^{-1}u=-\tfrac{1}{\sqrt{1-u^2}}\) with \(u=e^{-x^2}\), \(u'=-2x\,e^{-x^2}\); then rationalise with \((a^m)^n=a^{mn}\).</span>
+        \[ \frac{\mathrm d}{\mathrm dx}\cos^{-1}\!\big(e^{-x^2}\big)=\frac{-1}{\sqrt{1-\left(e^{-x^2}\right)^2}}\times e^{-x^2}\times(-2x)=\frac{2x\,e^{-x^2}}{\sqrt{1-e^{-2x^2}}}\times\frac{e^{x^2}}{e^{x^2}}=\frac{2x}{\sqrt{e^{2x^2}-1}}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Covers:</b> differentiation of inverse trigonometric functions (MF26 standard forms + chain rule).</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q3 -->
+<div class="card" id="q3">
+  <div class="cardhead">Question 3 <span class="marks">[8]</span></div>
+  <div class="src">A-Level 2010 P1 Q4</div>
+  <div class="stem">A curve has equation \(x^2-y^2+2xy+4=0\).
+    <span class="sub">(i) Find \(\dfrac{\mathrm dy}{\mathrm dx}\) in terms of \(x\) and \(y\). <span class="marks">[4]</span></span>
+    <span class="sub">(ii) Find the coordinates of each point on the curve at which the tangent is parallel to the \(x\)-axis. <span class="marks">[4]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">(i) differentiate every term implicitly w.r.t. \(x\)</div>
+        <span class="name">Treat \(y\) as a function of \(x\): \(\tfrac{\mathrm d}{\mathrm dx}(y^2)=2y\,\tfrac{\mathrm dy}{\mathrm dx}\), and \(2xy\) needs the product rule \(=2\big(y+x\tfrac{\mathrm dy}{\mathrm dx}\big)\).</span>
+        \[ 2x-2y\frac{\mathrm dy}{\mathrm dx}+2x\frac{\mathrm dy}{\mathrm dx}+2y=0 \;\Rightarrow\; \frac{\mathrm dy}{\mathrm dx}=\frac{x+y}{y-x}. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) tangent parallel to \(x\)-axis means \(\dfrac{\mathrm dy}{\mathrm dx}=0\)</div>
+        <span class="name">A zero gradient needs the numerator \(x+y=0\), i.e. \(y=-x\); substitute back into the curve.</span>
+        \[ \frac{\mathrm dy}{\mathrm dx}=0\Rightarrow x+y=0\Rightarrow y=-x;\qquad x^2-x^2-2x^2+4=0\Rightarrow x^2=2\Rightarrow x=\pm\sqrt2. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ \text{Points: }\ \big(\sqrt2,\,-\sqrt2\big)\ \text{and}\ \big(-\sqrt2,\,\sqrt2\big). \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Covers:</b> implicit differentiation; locating points with a horizontal tangent.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q4 -->
+<div class="card" id="q4">
+  <div class="cardhead">Question 4 <span class="marks">[7]</span></div>
+  <div class="src">A-Level N2011 P1 Q3 &middot; HCI Tutorial 5B Q3</div>
+  <div class="stem">The parametric equations of a curve are \(x=t^2\) and \(y=\dfrac{2}{t}\). The point \(P\) on the curve has parameter \(p\), so \(P\) is \(\big(p^2,\tfrac{2}{p}\big)\).
+    <span class="sub">(i) Find the equation of the tangent to the curve at \(P\), simplifying your answer. <span class="marks">[2]</span></span>
+    <span class="sub">(ii) This tangent meets the \(x\)-axis at \(Q\) and the \(y\)-axis at \(R\). Find the coordinates of \(Q\) and of \(R\). <span class="marks">[2]</span></span>
+    <span class="sub">(iii) The point \(F\) is the midpoint of \(QR\). Find a cartesian equation of the curve traced by \(F\) as \(p\) varies. <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">(i) parametric gradient, then point-gradient form</div>
+        <span class="name">\(\dfrac{\mathrm dx}{\mathrm dt}=2t\), \(\dfrac{\mathrm dy}{\mathrm dt}=-\dfrac{2}{t^2}\); \(\dfrac{\mathrm dy}{\mathrm dx}=\dfrac{\mathrm dy/\mathrm dt}{\mathrm dx/\mathrm dt}\). Use \(t=p\) at \(P\).</span>
+        \[ \frac{\mathrm dy}{\mathrm dx}=\frac{-2/t^2}{2t}=-\frac{1}{t^3};\qquad y-\frac{2}{p}=-\frac{1}{p^3}\big(x-p^2\big)\;\Rightarrow\; y=-\frac{x}{p^3}+\frac{3}{p}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) set each variable to zero in turn</div>
+        <span class="name">At \(R\) the tangent meets the \(y\)-axis, so \(x=0\); at \(Q\) it meets the \(x\)-axis, so \(y=0\).</span>
+        \[ x=0\Rightarrow y=\tfrac{3}{p}\Rightarrow R\big(0,\tfrac{3}{p}\big);\qquad y=0\Rightarrow \tfrac{x}{p^3}=\tfrac{3}{p}\Rightarrow x=3p^2\Rightarrow Q\big(3p^2,0\big). \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) midpoint, then eliminate the parameter \(p\)</div>
+        <span class="name">Midpoint \(F=\big(\tfrac{3p^2+0}{2},\tfrac{0+3/p}{2}\big)=\big(\tfrac{3p^2}{2},\tfrac{3}{2p}\big)\); call these \(x\) and \(y\), then eliminate \(p\).</span>
+        \[ x=\frac{3p^2}{2}\ \ (1),\qquad y=\frac{3}{2p}\ \ (2)\Rightarrow p=\frac{3}{2y}\ \ (3). \] <span class="mk">(1)</span>
+        \[ \text{Sub (3) into (1): } x=\frac{3}{2}\left(\frac{3}{2y}\right)^2=\frac{27}{8y^2}\;\Rightarrow\; y^2=\frac{27}{8x}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Covers:</b> parametric differentiation; tangent to a parametric curve; locus by eliminating the parameter.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q5 -->
+<div class="card" id="q5">
+  <div class="cardhead">Question 5 <span class="marks">[8]</span></div>
+  <div class="src">A-Level 2019 P1 Q6</div>
+  <div class="stem">A curve \(C\) has equation \(y=xe^{-x}\).
+    <span class="sub">(i) Find the equations of the tangents to \(C\) at the points where \(x=1\) and where \(x=-1\). <span class="marks">[6]</span></span>
+    <span class="sub">(ii) Find the acute angle between these two tangents. <span class="marks">[2]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">(i) product rule for the gradient function</div>
+        <span class="name">\(y=xe^{-x}\) is a product: \(\dfrac{\mathrm dy}{\mathrm dx}=e^{-x}+x\big(-e^{-x}\big)=(1-x)e^{-x}\). Evaluate the point and the gradient at each \(x\).</span>
+        \[ \frac{\mathrm dy}{\mathrm dx}=(1-x)e^{-x}. \] <span class="mk">(1)</span>
+        \[ x=1:\ y=\tfrac1e,\ \tfrac{\mathrm dy}{\mathrm dx}=0\ \Rightarrow\ \text{tangent } y=\tfrac1e. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ x=-1:\ y=-e,\ \tfrac{\mathrm dy}{\mathrm dx}=2e\ \Rightarrow\ y+e=2e(x+1)\ \Rightarrow\ y=2ex+e. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) angle from the gradient</div>
+        <span class="name">One tangent is horizontal (gradient \(0\)); the other has gradient \(2e\), so the acute angle it makes with the horizontal is \(\tan^{-1}(2e)\).</span>
+        \[ \theta=\tan^{-1}(2e)=79.6^\circ\ \ (\text{1 d.p.}). \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Covers:</b> tangents to an exponential curve; product rule; angle between two lines.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q6 -->
+<div class="card" id="q6">
+  <div class="cardhead">Question 6 <span class="marks">[5]</span></div>
+  <div class="src">SAJC 2009 Promo Q4 &middot; HCI Supplementary Q10</div>
+  <div class="stem">A right circular cone has base radius \(5\) cm and height \(15\) cm, and is initially full of water. Water leaks from the vertex of the cone at a rate of \(10\) cm\(^3\)s\(^{-1}\). Find the exact rate of change of the depth of water at the instant when the depth is \(12\) cm.
+    <span class="sub">[The volume of a cone is \(\tfrac13\times(\text{base area})\times(\text{height})\).]</span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">Name the variables and relate radius to depth</div>
+        <span class="name">Let \(h\) cm be the depth of water and \(R\) cm the radius of the water surface at that depth. By similar triangles the empty cone above the water has height \(15-h\).</span>
+        \[ \frac{15-h}{15}=\frac{R}{5}\;\Rightarrow\;R=\frac{15-h}{3}. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">Volume of water, then differentiate w.r.t. \(h\)</div>
+        <span class="name">\(V=\) (full cone) \(-\) (empty cone above the water), each by \(\tfrac13\pi r^2 h\).</span>
+        \[ V=\tfrac13\pi(5)^2(15)-\tfrac{1}{27}\pi(15-h)^3\;\Rightarrow\;\frac{\mathrm dV}{\mathrm dh}=\frac{\pi(15-h)^2}{9}. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">Chain the rates and substitute \(h=12\)</div>
+        <span class="name">Water is leaking, so \(\dfrac{\mathrm dV}{\mathrm dt}=-10\). Use \(\dfrac{\mathrm dV}{\mathrm dt}=\dfrac{\mathrm dV}{\mathrm dh}\cdot\dfrac{\mathrm dh}{\mathrm dt}\).</span>
+        \[ -10=\frac{\pi(15-h)^2}{9}\,\frac{\mathrm dh}{\mathrm dt};\qquad h=12:\ -10=\pi\frac{\mathrm dh}{\mathrm dt}\;\Rightarrow\;\frac{\mathrm dh}{\mathrm dt}=-\frac{10}{\pi}\ \text{cm s}^{-1}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Covers:</b> connected rates of change; similar triangles; \(\tfrac{\mathrm dV}{\mathrm dt}=\tfrac{\mathrm dV}{\mathrm dh}\tfrac{\mathrm dh}{\mathrm dt}\).</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q7 -->
+<div class="card" id="q7">
+  <div class="cardhead">Question 7 <span class="marks">[7]</span></div>
+  <div class="src">A-Level 2019 P2 Q3</div>
+  <div class="stem">A solid cylinder has radius \(r\) cm, height \(h\) cm, and a fixed total surface area of \(900\) cm\(^2\). Find the exact value of the maximum possible volume of the cylinder, and find also the ratio \(r:h\) that gives this maximum volume.
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">Use the surface-area constraint to make \(V\) a function of \(r\) alone</div>
+        <span class="name">Total surface area \(=2\pi r^2+2\pi rh=900\); solve for \(h\), then substitute into \(V=\pi r^2 h\).</span>
+        \[ r^2+rh=\frac{450}{\pi}\Rightarrow h=\frac{450}{\pi r}-r;\qquad V=\pi r^2 h=450r-\pi r^3. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">Stationary value of \(V\), confirmed a maximum</div>
+        <span class="name">Set \(\dfrac{\mathrm dV}{\mathrm dr}=0\); check the sign of \(\dfrac{\mathrm d^2V}{\mathrm dr^2}\).</span>
+        \[ \frac{\mathrm dV}{\mathrm dr}=450-3\pi r^2=0\Rightarrow r=\sqrt{\tfrac{150}{\pi}};\qquad \frac{\mathrm d^2V}{\mathrm dr^2}=-6\pi r<0\ (\text{maximum}). \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">Maximum volume and the ratio \(r:h\)</div>
+        <span class="name">Substitute \(r=\sqrt{150/\pi}\) back; then \(h=\dfrac{300}{\pi r}\) gives \(\dfrac{r}{h}=\dfrac{\pi r^2}{300}=\dfrac{150}{300}\).</span>
+        \[ V_{\max}=450\sqrt{\tfrac{150}{\pi}}-150\sqrt{\tfrac{150}{\pi}}=300\sqrt{\tfrac{150}{\pi}}\ \text{cm}^3;\qquad r:h=1:2. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Covers:</b> maxima &amp; minima (optimisation); stationary point; second-derivative test.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q8 -->
+<div class="card" id="q8">
+  <div class="cardhead">Question 8 <span class="marks">[6]</span></div>
+  <div class="src">HCI Tutorial 5B Q9</div>
+  <div class="stem">The graph of \(y=f(x)\) has stationary points at \((-2,-1)\) and \((2,1)\), and a single vertical asymptote \(x=-4\).
+    <span class="sub">(a) Sketch the graph of \(y=f'(x)\), showing the axial intercepts and the equations of any asymptotes. <span class="marks">[3]</span></span>
+    <span class="sub">(b) Hence sketch the graph of \(y=f''(x)\), and use it to describe the concavity of \(y=f(x)\). <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">(a) turn the stationary points into \(x\)-intercepts</div>
+        <span class="name">A stationary point of \(f\) (zero gradient) becomes an \(x\)-intercept of \(f'\); a vertical asymptote of \(f\) stays a vertical asymptote of \(f'\); \(f'\to 0\) far out gives a horizontal asymptote.</span>
+        <p>\(y=f'(x)\): \(x\)-intercepts at \((-2,0)\) and \((2,0)\); vertical asymptotes \(x=-4\) and \(x=0\); horizontal asymptote \(y=0\).</p> <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b) differentiate the \(f'\) graph, then read off concavity</div>
+        <span class="name">\(f''\) is the gradient of the \(f'\) graph: it keeps the asymptotes, and its sign tells you concavity (\(f''>0\) concave up, \(f''<0\) concave down; a sign change is a point of inflexion).</span>
+        <p>\(y=f''(x)\): vertical asymptotes \(x=-4\) and \(x=0\); \(x\)-intercept \((2,0)\); horizontal asymptote \(y=0\).</p> <span class="mk">(1)</span>
+        <p>Concavity of \(y=f(x)\): concave <b>up</b> for \(x<-4\); concave <b>down</b> for \(-4<x<0\); concave <b>down</b> for \(0<x<2\); \((2,f(2))\) is a <b>point of inflexion</b>; concave <b>up</b> for \(x>2\).</p> <span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">Note: \(f''(x)=0\) does not by itself imply a point of inflexion &mdash; e.g. \(y=x^4\) has \(\tfrac{\mathrm d^2y}{\mathrm dx^2}=0\) at its minimum \(x=0\).</span>
+      </div>
+      <div class="testline"><b>Covers:</b> graphs of derivatives (\(f\to f'\to f''\)); concavity and points of inflexion.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q9 -->
+<div class="card" id="q9">
+  <div class="cardhead">Question 9 <span class="marks">[5]</span></div>
+  <div class="src">HCI Tutorial 6A Q1(c)(iii) &middot; RJC 2006 Promo Q13</div>
+  <div class="stem">
+    <span class="sub">(a) Find \(\displaystyle\int\frac{1}{\sqrt{9-4x^2}}\,\mathrm dx\). <span class="marks">[2]</span></span>
+    <span class="sub">(b) Show that \(x^2+4x+20\) can be written as \((x+A)^2+B\), where \(A\) and \(B\) are constants. Hence find \(\displaystyle\int\frac{1}{x^2+4x+20}\,\mathrm dx\). <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">(a) MF26 arcsin form &mdash; make the coefficient of \(x^2\) equal to \(1\)</div>
+        <span class="name">\(\displaystyle\int\frac{1}{\sqrt{a^2-x^2}}\,\mathrm dx=\sin^{-1}\frac{x}{a}\); factor the \(4\) out under the root so it reads \(a^2-x^2\) with \(a=\tfrac32\).</span>
+        \[ \int\frac{1}{\sqrt{9-4x^2}}\,\mathrm dx=\tfrac12\int\frac{1}{\sqrt{\tfrac94-x^2}}\,\mathrm dx=\tfrac12\sin^{-1}\!\frac{x}{3/2}+C=\tfrac12\sin^{-1}\!\frac{2x}{3}+C. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b) complete the square, then MF26 arctan form</div>
+        <span class="name">\(x^2+4x+20=(x+2)^2+16\), so \(A=2,\ B=16\). Now it is \((x+2)^2+4^2\), matching \(\displaystyle\int\frac{1}{u^2+a^2}\,\mathrm du=\tfrac1a\tan^{-1}\frac{u}{a}\) with \(u=x+2,\ a=4\).</span>
+        \[ x^2+4x+20=(x+2)^2+16\ \text{(shown)}. \] <span class="mk">(1)</span>
+        \[ \int\frac{1}{x^2+4x+20}\,\mathrm dx=\int\frac{1}{(x+2)^2+4^2}\,\mathrm dx=\tfrac14\tan^{-1}\!\frac{x+2}{4}+C. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Covers:</b> MF26 standard forms (arcsin, arctan); completing the square before integrating.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q10 -->
+<div class="card" id="q10">
+  <div class="cardhead">Question 10 <span class="marks">[9]</span></div>
+  <div class="src">A-Level 2020 P1 Q6 &middot; do not use a calculator</div>
+  <div class="stem">It is given that \(f(x)=2-\sin 4x\).
+    <span class="sub">(i) Find \(\displaystyle\int f(x)\,\mathrm dx\). <span class="marks">[1]</span></span>
+    <span class="sub">(ii) Find the exact value, in terms of \(\pi\), of \(\displaystyle\int_{0}^{\pi/2} x\,f(x)\,\mathrm dx\). <span class="marks">[4]</span></span>
+    <span class="sub">(iii) Find the exact value, in terms of \(\pi\), of \(\displaystyle\int_{0}^{\pi/2}\big(f(x)\big)^2\,\mathrm dx\). <span class="marks">[4]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">(i) integrate directly</div>
+        \[ \int 2-\sin 4x\,\mathrm dx=2x+\tfrac14\cos 4x+C. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) integration by parts</div>
+        <span class="name">Take \(u=x\) (so \(u'=1\)) and \(v'=2-\sin 4x\) (so \(v=2x+\tfrac14\cos 4x\), from part (i)).</span>
+        \[ \int_{0}^{\pi/2}\! x\,f(x)\,\mathrm dx=\Big[x\big(2x+\tfrac14\cos 4x\big)\Big]_{0}^{\pi/2}-\int_{0}^{\pi/2}\!\big(2x+\tfrac14\cos 4x\big)\,\mathrm dx \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ =\frac{\pi}{2}\Big(\pi+\tfrac14\Big)-\Big[x^2+\tfrac{1}{16}\sin 4x\Big]_{0}^{\pi/2}=\frac{\pi^2}{2}+\frac{\pi}{8}-\frac{\pi^2}{4}=\frac{\pi^2}{4}+\frac{\pi}{8}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) expand, then use the double-angle identity on \(\sin^2 4x\)</div>
+        <span class="name">\((2-\sin 4x)^2=4-4\sin 4x+\sin^2 4x\); replace \(\sin^2 4x=\tfrac{1-\cos 8x}{2}\) so it can be integrated.</span>
+        \[ \int_{0}^{\pi/2}\!(2-\sin 4x)^2\,\mathrm dx=\int_{0}^{\pi/2}\!\Big[4-4\sin 4x+\tfrac{1-\cos 8x}{2}\Big]\mathrm dx \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ =\Big[4x+\cos 4x+\tfrac12 x-\tfrac{1}{16}\sin 8x\Big]_{0}^{\pi/2}=2\pi+1+\tfrac{\pi}{4}-1=\frac{9\pi}{4}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Covers:</b> trigonometric integration (double-angle identity); integration by parts; \(\int(f)^2\).</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q11 -->
+<div class="card" id="q11">
+  <div class="cardhead">Question 11 <span class="marks">[6]</span></div>
+  <div class="src">A-Level N2003 P2 Q2 &middot; HCI Supplementary Q9</div>
+  <div class="stem">
+    <span class="sub">(i) Find \(\displaystyle\int x^3\ln x\,\mathrm dx\). <span class="marks">[3]</span></span>
+    <span class="sub">(ii) Find \(\displaystyle\int x^3(\ln x)^2\,\mathrm dx\). <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">(i) by parts (LIATE: log is \(u\))</div>
+        <span class="name">Take \(u=\ln x\) (so \(u'=\tfrac1x\)) and \(v'=x^3\) (so \(v=\tfrac{x^4}{4}\)).</span>
+        \[ \int x^3\ln x\,\mathrm dx=\frac{x^4}{4}\ln x-\int\frac{x^4}{4}\cdot\frac1x\,\mathrm dx=\frac{x^4}{4}\ln x-\frac14\int x^3\,\mathrm dx=\frac{x^4}{4}\ln x-\frac{x^4}{16}+C. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) by parts again, reusing the result of (i)</div>
+        <span class="name">Take \(u=(\ln x)^2\) (so \(u'=\tfrac{2\ln x}{x}\)) and \(v'=x^3\) (so \(v=\tfrac{x^4}{4}\)); the leftover integral is \(\tfrac12\int x^3\ln x\,\mathrm dx\), already found.</span>
+        \[ \int x^3(\ln x)^2\,\mathrm dx=\frac{x^4}{4}(\ln x)^2-\int\frac{x^4}{4}\cdot\frac{2\ln x}{x}\,\mathrm dx=\frac{x^4}{4}(\ln x)^2-\frac12\int x^3\ln x\,\mathrm dx \] <span class="mk">(1)</span>
+        \[ =\frac{x^4}{4}(\ln x)^2-\frac12\!\left(\frac{x^4}{4}\ln x-\frac{x^4}{16}\right)+D=\frac{x^4}{4}(\ln x)^2-\frac{x^4}{8}\ln x+\frac{x^4}{32}+D. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Covers:</b> integration by parts; repeated by parts reusing an earlier &ldquo;hence&rdquo; result.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q12 -->
+<div class="card" id="q12">
+  <div class="cardhead">Question 12 <span class="marks">[6]</span></div>
+  <div class="src">CJC 2006 Promo Q1 &middot; HCI Supplementary Q19</div>
+  <div class="stem">Express \(\dfrac{3}{(x-1)(x^2+2)}\) in the form \(\dfrac{A}{x-1}+\dfrac{Bx}{x^2+2}+\dfrac{C}{x^2+2}\), where \(A\), \(B\) and \(C\) are constants. Hence, or otherwise, find \(\displaystyle\int\frac{3}{(x-1)(x^2+2)}\,\mathrm dx\).
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">Clear denominators, then substitute convenient \(x\)-values</div>
+        <span class="name">Multiply through: \(A(x^2+2)+Bx(x-1)+C(x-1)=3\). Choose \(x=1\), then \(x=0\), then \(x=2\).</span>
+        \[ x=1:\ A=1;\qquad x=0:\ C=-1;\qquad x=2:\ B=-1. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">Integrate term by term</div>
+        <span class="name">The \(x\)-over-quadratic term is the log form \(\tfrac{f'(x)}{f(x)}\) with \(f(x)=x^2+2\); the constant-over-quadratic term is the MF26 arctan form with \(a=\sqrt2\).</span>
+        \[ \int\frac{3}{(x-1)(x^2+2)}\,\mathrm dx=\int\frac{1}{x-1}\,\mathrm dx-\int\frac{x}{x^2+2}\,\mathrm dx-\int\frac{1}{x^2+2}\,\mathrm dx \] <span class="mk">(1)</span>
+        \[ =\ln|x-1|-\tfrac12\ln(x^2+2)-\tfrac{1}{\sqrt2}\tan^{-1}\!\frac{x}{\sqrt2}+C. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Covers:</b> partial fractions with an irreducible quadratic factor; integrating to log + arctan.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q13 -->
+<div class="card" id="q13">
+  <div class="cardhead">Question 13 <span class="marks">[4]</span></div>
+  <div class="src">A-Level N2004 P1 Q4 &middot; HCI Supplementary Q10</div>
+  <div class="stem">Use the substitution \(t=\sqrt{x+1}\) to find the exact value of \(\displaystyle\int_{0}^{3} x\sqrt{x+1}\,\mathrm dx\).
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">Set up the substitution and change the limits</div>
+        <span class="name">\(t=\sqrt{x+1}\Rightarrow t^2=x+1\), so \(x=t^2-1\) and \(\dfrac{\mathrm dt}{\mathrm dx}=\dfrac{1}{2\sqrt{x+1}}=\dfrac{1}{2t}\) (i.e. \(\mathrm dx=2t\,\mathrm dt\)). Limits: \(x=0\Rightarrow t=1\); \(x=3\Rightarrow t=2\).</span>
+        \[ \int_{0}^{3} x\sqrt{x+1}\,\mathrm dx=\int_{1}^{2}(t^2-1)\,t\,(2t)\,\mathrm dt=2\int_{1}^{2}(t^4-t^2)\,\mathrm dt. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">Integrate in \(t\) and evaluate at the new limits</div>
+        \[ =2\Big[\tfrac{t^5}{5}\Big]_{1}^{2}-2\Big[\tfrac{t^3}{3}\Big]_{1}^{2}=\frac{62}{5}-\frac{14}{3}=\frac{116}{15}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Covers:</b> integration by substitution (algebraic); changing the limits for a definite integral.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q14 -->
+<div class="card" id="q14">
+  <div class="cardhead">Question 14 <span class="marks">[5]</span></div>
+  <div class="src">A-Level 2019 P1 Q2</div>
+  <div class="stem">The curve \(C\) has equation \(y=x^3+x-1\).
+    <span class="sub">(i) \(C\) crosses the \(x\)-axis at the point \((a,0)\). Find the value of \(a\) correct to 3 decimal places. <span class="marks">[1]</span></span>
+    <span class="sub">(ii) You are given \(b>a\). The region \(P\) is bounded by \(C\), the \(x\)-axis and the lines \(x=-1\) and \(x=0\). The region \(Q\) is bounded by \(C\), the line \(x=b\), and the part of the \(x\)-axis between \(x=a\) and \(x=b\). Given that the area of \(Q\) is \(2\) times the area of \(P\), find the value of \(b\) correct to 3 decimal places. <span class="marks">[4]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">(i) root from the GC</div>
+        \[ a=0.6823278\ldots=0.682\ (\text{3 d.p.}). \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) area of \(P\) &mdash; the curve is below the axis there, so negate</div>
+        <span class="name">On \(-1\le x\le0\) the curve lies below the \(x\)-axis, so the area is \(-\int\).</span>
+        \[ \text{Area of }P=-\int_{-1}^{0}(x^3+x-1)\,\mathrm dx=1.75. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">Area of \(Q\), then set \(Q=2P\) and solve for \(b\)</div>
+        <span class="name">On \(a\le x\le b\) the curve is above the axis; integrate from \(a=0.6823278\) to \(b\).</span>
+        \[ \text{Area of }Q=\int_{a}^{b}(x^3+x-1)\,\mathrm dx=\Big[\tfrac{x^4}{4}+\tfrac{x^2}{2}-x\Big]_{0.6823278}^{b}=\tfrac{b^4}{4}+\tfrac{b^2}{2}-b+0.395353. \] <span class="mk">(1)</span>
+        \[ Q=2P:\ \tfrac{b^4}{4}+\tfrac{b^2}{2}-b+0.395353=3.5\Rightarrow \tfrac{b^4}{4}+\tfrac{b^2}{2}-b=3.104647. \] <span class="mk">(1)</span>
+        \[ \text{By GC, } b=1.892\ (\text{3 d.p.})\quad(b=-1.353\ \text{rejected since } b>a). \] <span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Covers:</b> area under a curve (regions above and below the axis); solving an area equation numerically.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q15 -->
+<div class="card" id="q15">
+  <div class="cardhead">Question 15 <span class="marks">[6]</span></div>
+  <div class="src">A-Level J84 P1 Q7 &middot; HCI Tutorial 6B Q2</div>
+  <div class="stem">\(R\) is the region enclosed by the curves \(y=x^2\) and \(y=2-x^2\).
+    <span class="sub">(i) Calculate the area of \(R\). <span class="marks">[3]</span></span>
+    <span class="sub">(ii) Calculate the volume of the solid generated when \(R\) is rotated through \(\pi\) radians about the \(y\)-axis. <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">(i) intersection, then top minus bottom</div>
+        <span class="name">Curves meet where \(x^2=2-x^2\Rightarrow x=\pm1\). On \(-1\le x\le1\) the upper curve is \(y=2-x^2\).</span>
+        \[ \text{Area}=\int_{-1}^{1}\big[(2-x^2)-x^2\big]\,\mathrm dx=\Big[2x-\tfrac{2x^3}{3}\Big]_{-1}^{1}=\frac{8}{3}\ \text{units}^2. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) rotate about the \(y\)-axis &mdash; use the symmetry short-cut and make \(x^2\) the subject</div>
+        <span class="name">\(R\) is symmetric about the \(y\)-axis, so rotating it through \(\pi\) equals rotating one side through \(2\pi\): \(V=\pi\int x^2\,\mathrm dy\). Lower curve \(y=x^2\Rightarrow x^2=y\) for \(0\le y\le1\); upper curve \(y=2-x^2\Rightarrow x^2=2-y\) for \(1\le y\le2\).</span>
+        \[ V=\pi\!\left[\int_{0}^{1} y\,\mathrm dy+\int_{1}^{2}(2-y)\,\mathrm dy\right]=\pi\Big[\tfrac{y^2}{2}\Big]_{0}^{1}+\pi\Big[2y-\tfrac{y^2}{2}\Big]_{1}^{2}=\pi\ \text{units}^3. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Covers:</b> area between two curves; volume of revolution about the \(y\)-axis (make \(x^2\) the subject); symmetry short-cut.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<hr>
+<p style="color:var(--muted);font-size:.9em">When you finish, self-mark against the revealed solutions and note which of the 15 outcomes was shakiest (the <b>Covers</b> line at the foot of each answer names them). Attempt them cold on Loom, say your confidence out loud on each, then paste me the transcript &mdash; I'll build the numbered gap cluster on whatever residue is left, not the whole topic again.</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn=>{btn.addEventListener('click',function(){const b=this.parentElement,o=b.querySelector('.answer-overlay');if(o.classList.contains('hidden')){o.classList.remove('hidden');this.textContent='Hide';this.classList.add('hide-state');}else{o.classList.add('hidden');this.textContent='Reveal';this.classList.remove('hide-state');}});});
+  function revealAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.add('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Hide';b.classList.add('hide-state');});}
+  function hideAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.remove('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Reveal';b.classList.remove('hide-state');});}
+</script>
+</body>
+</html>

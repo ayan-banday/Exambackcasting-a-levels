@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chemistry — Halogen Derivatives (Cluster)</title>
+<script>
+  window.MathJax = { loader:{load:['[tex]/mhchem']}, tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true,packages:{'[+]':['mhchem']},tags:'none'}, svg:{fontCache:'global'}, options:{skipHtmlTags:['script','noscript','style','textarea','pre']} };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root{--bg:#fafafa;--card-bg:#fff;--border:#e5e7eb;--text:#1a1a1a;--muted:#6b7280;--blue:#2563eb;--blue-soft:#eff6ff;--amber:#d97706;--amber-soft:#fffbeb;--green:#059669;--green-soft:#ecfdf5;--cover:#f3f4f6;--purple:#7c3aed;--purple-soft:#f5f3ff;--red:#dc2626;--red-soft:#fef2f2}
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:40px 24px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h3,.label,.controls,button,.step-header{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  h1{font-size:2em;margin:0 0 8px;color:#111;border-bottom:3px solid #111;padding-bottom:12px}
+  h3{font-size:1.15em;margin:0 0 14px;color:#1f2937}
+  p{margin:8px 0}.meta{color:var(--muted);font-size:.9em;margin:4px 0 24px}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--red);padding:16px 20px;border-radius:6px;margin:16px 0 24px}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;font-weight:500}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:32px;font-size:.9em}.toc strong{display:block;margin-bottom:6px;color:#111}.toc a{color:var(--blue);text-decoration:none;margin-right:14px;line-height:2}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .block{margin:14px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border)}
+  .block.practice{background:var(--amber-soft);border-left-color:var(--amber)}
+  .block.answer{background:var(--green-soft);border-left-color:var(--green);position:relative;min-height:60px}
+  .block.reveal-archetype{background:var(--purple-soft);border-left-color:var(--purple);position:relative;min-height:60px;margin-top:24px}
+  .label{display:block;text-transform:uppercase;font-size:.75em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--muted)}
+  .block.practice .label{color:var(--amber)}.block.answer .label{color:var(--green)}.block.reveal-archetype .label{color:var(--purple)}
+  .stem{background:#1e293b;color:#f1f5f9;padding:12px 16px;border-radius:6px;margin:10px 0}
+  .stem b{color:#fff}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px;font-family:-apple-system,sans-serif}
+  .conf{font-family:-apple-system,sans-serif;font-size:.82em;color:#6d28d9;font-weight:600;margin:8px 0 2px;padding:7px 12px;background:var(--purple-soft);border:1px solid #ddd6fe;border-left:3px solid var(--purple);border-radius:4px}
+  .src{font-size:.78em;color:#94a3b8;font-style:italic}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.5);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.8em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .step-desc{font-style:italic;color:#374151;margin-bottom:6px;font-size:.95em}
+  .mk{display:inline-block;font-size:.82em;color:var(--green);font-weight:800;font-family:-apple-system,sans-serif;margin:0 2px}
+  .verb{background:#eef7f1;border:1px dashed #059669;border-radius:5px;padding:8px 12px;margin:8px 0;font-size:.97em}.verb::before{content:'HCI answer — reproduce this wording';display:block;font-family:-apple-system,sans-serif;font-size:.68em;letter-spacing:.05em;text-transform:uppercase;color:#047857;font-weight:700;margin-bottom:4px}.verb b{color:#065f46}
+  table.rxn{border-collapse:collapse;width:100%;margin:8px 0;font-size:.9em;font-family:-apple-system,sans-serif}
+  table.rxn th,table.rxn td{border:1px solid #bbf7d0;padding:6px 9px;text-align:left;vertical-align:top}
+  table.rxn th{background:#dcfce7;color:#065f46;font-weight:700}
+  table.rxn td b{color:#1e3a8a}
+  .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:6px 12px;border-radius:4px;margin:8px 0 0;font-size:.9em}.trap b{color:var(--red)}
+  .fig{display:block;margin:12px auto;background:#fff;border:1px solid var(--border);border-radius:6px;max-width:100%}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3}.reveal-btn.hide-state{background:var(--muted)}.block.reveal-archetype .reveal-btn{background:var(--purple)}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;font-family:-apple-system,sans-serif;border-left:4px solid var(--muted);margin-left:-16px;padding-left:16px;z-index:2}.answer-overlay.hidden{opacity:0;pointer-events:none}.block.answer .answer-content,.block.reveal-archetype .answer-content{padding-right:60px}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  @media print{body{background:#fff;padding:20px;max-width:100%}.controls,.reveal-btn{display:none!important}.answer-overlay{display:none!important}.card{box-shadow:none;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<h1>Chemistry — Halogen Derivatives · Cluster</h1>
+<p class="meta">H2 9476 · Topic 15 · <b>~2h · 57 marks</b>. Twelve real questions from <b>HCI Tutorial 15 (Sections A &amp; B), the HCI lecture exercises, and HCI Class Exercises 1–2</b> — covering every learning outcome once. Attempt each <b>cold</b>: no hints. The green boxes are the <b>verbatim HCI answer</b> — the wording that scores; marks are inline <span class="mk">(1)</span>. Study <b>chem_halogen_studysheet.html</b> first.</p>
+
+<div class="intro"><b>How to run this.</b> Sit each question with pen and paper, timed. State your confidence out loud <b>before</b> you reveal — it feeds your gap tracking. Reveal, mark yourself against the exact HCI wording, and note any dropped mark. The archetype (what the question is really testing) stays hidden until the end of each card — attempt first, label it after.</div>
+
+<div class="controls"><button onclick="revealAll()">Reveal all</button><button onclick="hideAll()">Hide all</button></div>
+<div class="toc"><strong>Questions (57 marks)</strong>
+<a href="#c1">1</a><a href="#c2">2</a><a href="#c3">3</a><a href="#c4">4</a><a href="#c5">5</a><a href="#c6">6</a><a href="#c7">7</a><a href="#c8">8</a><a href="#c9">9</a><a href="#c10">10</a><a href="#c11">11</a><a href="#c12">12</a>
+</div>
+
+<!-- ===================== Q1 classification + isomers ===================== -->
+<div class="card" id="c1">
+  <h3>Question 1 <span class="src">(HCI lecture Ex 1.1 + classification LO)</span></h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">The molecular formula \(\ce{C4H9Br}\) corresponds to <b>five</b> isomeric halogenoalkanes.<br>(a) Draw the structure of each of the four <b>constitutional</b> isomers and give the IUPAC name of each. <span class="marks">[4]</span><br>(b) Classify each of the four as primary, secondary or tertiary. <span class="marks">[2]</span><br>(c) One of the four is chiral. Identify it, and explain why it makes the total number of isomers five rather than four. <span class="marks">[2]</span></div>
+    <div class="conf">Before revealing — commit out loud: <b>Confidence: high / medium / guessed</b></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) &amp; (b) The four constitutional isomers</div>
+        <div class="step-desc">Number the chain from the end giving the smallest locant.</div>
+        <div class="verb">
+        • \(\ce{CH3CH2CH2CH2Br}\) — <b>1-bromobutane</b>, <b>primary</b> <span class="mk">(1)</span><br>
+        • \(\ce{CH3CH2CHBrCH3}\) — <b>2-bromobutane</b>, <b>secondary</b> <span class="mk">(1)</span><br>
+        • \(\ce{(CH3)2CHCH2Br}\) — <b>1-bromo-2-methylpropane</b>, <b>primary</b> <span class="mk">(1)</span><br>
+        • \(\ce{(CH3)3CBr}\) — <b>2-bromo-2-methylpropane</b>, <b>tertiary</b> <span class="mk">(1)</span><br>
+        Names all four <span class="mk">(1)</span> · classes all four <span class="mk">(1)</span>.
+        </div>
+      </div>
+      <div class="step"><div class="step-header">(c) The chiral isomer → fifth structure</div>
+        <div class="step-desc">Draw the pair of non-superimposable mirror images.</div>
+        <svg class="fig" width="420" height="150" viewBox="0 0 420 150" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="13">
+          <line x1="70" y1="40" x2="70" y2="70" stroke="#111" stroke-width="1.3"/><text x="64" y="34">Br</text>
+          <text x="64" y="86">C</text>
+          <polygon points="70,74 40,96 46,100" fill="#111"/><text x="14" y="104">H₃C</text>
+          <line x1="76" y1="80" x2="104" y2="96" stroke="#111" stroke-width="1.3"/><text x="106" y="100">C₂H₅</text>
+          <line x1="66" y1="82" x2="52" y2="70" stroke="#111" stroke-width="1.1" stroke-dasharray="2,2"/><text x="40" y="66">H</text>
+          <text x="60" y="130" fill="#6b7280" font-size="11" font-family="-apple-system,sans-serif">enantiomer 1</text>
+          <line x1="220" y1="20" x2="220" y2="130" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,3"/>
+          <line x1="330" y1="40" x2="330" y2="70" stroke="#111" stroke-width="1.3"/><text x="324" y="34">Br</text>
+          <text x="324" y="86">C</text>
+          <polygon points="330,74 360,96 354,100" fill="#111"/><text x="362" y="104">CH₃</text>
+          <line x1="324" y1="80" x2="296" y2="96" stroke="#111" stroke-width="1.3"/><text x="266" y="100">H₅C₂</text>
+          <line x1="334" y1="82" x2="348" y2="70" stroke="#111" stroke-width="1.1" stroke-dasharray="2,2"/><text x="350" y="66">H</text>
+          <text x="322" y="130" fill="#6b7280" font-size="11" font-family="-apple-system,sans-serif">enantiomer 2 (mirror)</text>
+        </svg>
+        <div class="verb"><b>2-bromobutane</b> is chiral: its C2 carries <b>four different groups</b> (H, \(\ce{CH3}\), Br, \(\ce{C2H5}\)) <span class="mk">(1)</span>, so it exists as <b>two non-superimposable mirror-image enantiomers</b> — counted as two structures, giving <b>five</b> in total <span class="mk">(1)</span>.</div>
+      </div>
+    </div><div class="answer-overlay">Solution hidden — attempt first</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button><div class="answer-content"><div class="label">Archetype</div><strong>Nomenclature + 1°/2°/3° classification + spotting the chiral centre.</strong><p>Classify by the carbon bearing the halogen; a carbon with four different groups doubles the isomer count.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div></div>
+</div>
+
+<!-- ===================== Q2 physical properties ===================== -->
+<div class="card" id="c2">
+  <h3>Question 2 <span class="src">(HCI Tutorial 15A Q1)</span></h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">(a) The boiling points of chloroethane, bromoethane and iodoethane increase in that order. Explain this trend in terms of intermolecular forces. <span class="marks">[2]</span><br>(b) Chloroethane and butane have similar relative molecular masses, yet chloroethane has the higher boiling point. Explain why. <span class="marks">[2]</span></div>
+    <div class="conf">Before revealing — commit out loud: <b>Confidence: high / medium / guessed</b></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution — verbatim HCI wording</div>
+      <div class="step"><div class="step-header">(a) The halide trend</div>
+        <div class="verb">The <b>size of the electron cloud (or number of electrons)</b> for the molecule increases in the order \(\ce{C2H5Cl}\) &lt; \(\ce{C2H5Br}\) &lt; \(\ce{C2H5I}\), since there is an increase in size of the halogen atom from Cl, Br, to I. Thus, intermolecular <b>dispersion forces increase in strength in the same order</b> <span class="mk">(1)</span>. <b>Energy needed to overcome</b> intermolecular attractions increases in the same order, thus boiling point increases in the same order <span class="mk">(1)</span>.</div>
+      </div>
+      <div class="step"><div class="step-header">(b) Chloroethane vs butane</div>
+        <div class="verb">Chloroethane is <b>polar</b>; its intermolecular <b>permanent dipole–permanent dipole attractions are stronger than the dispersion forces</b> between non-polar butane molecules <span class="mk">(1)</span>. <b>More energy is needed to overcome</b> the stronger intermolecular forces, so chloroethane has a higher boiling point <span class="mk">(1)</span>.</div>
+      </div>
+      <div class="trap"><b>Two different arguments.</b> Between the halides (a) the discriminator is <b>electron-cloud size → dispersion</b>, NOT polarity. Against a non-polar alkane of similar \(M_r\) (b) it flips to <b>pd–pd</b>. Use the right one for the right comparison.</div>
+    </div><div class="answer-overlay">Solution hidden — attempt first</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button><div class="answer-content"><div class="label">Archetype</div><strong>Boiling-point reasoning: dispersion (same group, different halogen) vs pd–pd (vs alkane).</strong><p>Pick the intermolecular-force argument that matches what is being compared.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div></div>
+</div>
+
+<!-- ===================== Q3 SN2 mechanism ===================== -->
+<div class="card" id="c3">
+  <h3>Question 3 <span class="src">(HCI lecture Ex 3.3)</span></h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">Bromoethane, \(\ce{CH3CH2Br}\), reacts with sodium methoxide, \(\ce{CH3O^{-}Na^{+}}\), to form \(\ce{CH3CH2OCH3}\).<br>Name the mechanism, and draw it fully — showing the curly arrows, the partial charges, the transition state, the overall charge, and the leaving group. <span class="marks">[4]</span></div>
+    <div class="conf">Before revealing — commit out loud: <b>Confidence: high / medium / guessed</b></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="verb" style="margin-bottom:4px">Bromoethane is a <b>primary</b> bromoalkane. Name of mechanism: <b>bimolecular nucleophilic substitution, S<sub>N</sub>2</b> <span class="mk">(1)</span>.</div>
+      <svg class="fig" width="700" height="180" viewBox="0 0 700 180" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="14">
+        <text x="4" y="86">:</text><text x="10" y="86">H₃CO</text><text x="52" y="76" font-size="11">−</text>
+        <path d="M52,82 C74,60 100,60 112,78" fill="none" stroke="#dc2626" stroke-width="1.5" marker-end="url(#ah)"/>
+        <text x="118" y="86">C</text><text x="112" y="66" fill="#1e3a8a" font-size="11">δ+</text>
+        <line x1="124" y1="80" x2="124" y2="58" stroke="#111" stroke-width="1.3"/><text x="119" y="52">H</text>
+        <line x1="118" y1="90" x2="104" y2="106" stroke="#111" stroke-width="1.3"/><text x="84" y="118">H₃C</text>
+        <line x1="124" y1="90" x2="124" y2="112" stroke="#111" stroke-width="1.3"/><text x="120" y="126">H</text>
+        <line x1="130" y1="84" x2="156" y2="84" stroke="#111" stroke-width="1.4"/><text x="158" y="88">Br</text><text x="156" y="66" fill="#1e3a8a" font-size="11">δ−</text>
+        <path d="M144,78 C156,58 182,58 186,78" fill="none" stroke="#dc2626" stroke-width="1.5" marker-end="url(#ah)"/>
+        <line x1="206" y1="84" x2="244" y2="84" stroke="#111" stroke-width="1.4" marker-end="url(#bk)"/>
+        <text x="258" y="90" font-size="26">[</text><text x="272" y="86">H₃CO</text>
+        <line x1="312" y1="84" x2="330" y2="84" stroke="#111" stroke-width="1" stroke-dasharray="3,2"/>
+        <text x="332" y="86">C</text>
+        <line x1="338" y1="60" x2="338" y2="76" stroke="#111" stroke-width="1.2"/><text x="332" y="54">H</text>
+        <line x1="332" y1="92" x2="322" y2="108" stroke="#111" stroke-width="1.2"/><text x="304" y="120" font-size="12">H₃C</text>
+        <line x1="340" y1="92" x2="348" y2="108" stroke="#111" stroke-width="1.2"/><text x="348" y="120" font-size="12">H</text>
+        <line x1="344" y1="84" x2="366" y2="84" stroke="#111" stroke-width="1" stroke-dasharray="3,2"/><text x="368" y="86">Br</text>
+        <text x="392" y="90" font-size="26">]</text><text x="406" y="66" font-size="15">‡</text><text x="406" y="82" font-size="12">−</text>
+        <text x="270" y="150" fill="#6b7280" font-size="11" font-family="-apple-system,sans-serif">transition state: partial C···O forming,</text>
+        <text x="270" y="163" fill="#6b7280" font-size="11" font-family="-apple-system,sans-serif">partial C···Br breaking, overall −1</text>
+        <line x1="424" y1="84" x2="462" y2="84" stroke="#111" stroke-width="1.4" marker-end="url(#bk)"/>
+        <text x="476" y="86">H₃CO</text>
+        <line x1="516" y1="84" x2="532" y2="84" stroke="#111" stroke-width="1.4"/><text x="534" y="86">C</text>
+        <line x1="540" y1="80" x2="540" y2="58" stroke="#111" stroke-width="1.3"/><text x="535" y="52">H</text>
+        <line x1="540" y1="90" x2="556" y2="106" stroke="#111" stroke-width="1.3"/><text x="558" y="118">CH₃</text>
+        <line x1="534" y1="90" x2="524" y2="108" stroke="#111" stroke-width="1.3"/><text x="516" y="120">H</text>
+        <text x="600" y="86">+ :Br</text><text x="640" y="76" font-size="11">−</text>
+        <defs>
+          <marker id="ah" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#dc2626" stroke-width="1.4"/></marker>
+          <marker id="bk" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6" fill="#111"/></marker>
+        </defs>
+      </svg>
+      <div class="step"><div class="step-header">Mark scheme — what earns the other three marks</div>
+        <div class="verb">Lone pair on \(\ce{CH3O-}\) with a curly arrow to the <b>δ+ carbon from the side opposite Br</b> <span class="mk">(1)</span> · a second arrow from the <b>C–Br bond to Br</b>, and the <b>transition state in square brackets</b> containing a <b>partially broken C–Br bond and a partially formed C–O bond</b>, with the <b>‡ and the overall negative charge</b> <span class="mk">(1)</span> · the products \(\ce{CH3CH2OCH3}\) <b>+ :Br⁻</b> shown <span class="mk">(1)</span>.</div>
+      </div>
+      <div class="trap"><b>Most-dropped marks:</b> forgetting to write <b>+ Br⁻</b>; leaving the charge off the transition state; drawing the arrow to the "+" instead of to the carbon.</div>
+    </div><div class="answer-overlay">Solution hidden — attempt first</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button><div class="answer-content"><div class="label">Archetype</div><strong>Draw an S<sub>N</sub>2 on a primary substrate — full checklist.</strong><p>Any anionic nucleophile (OH⁻, CH₃O⁻, CN⁻) on a 1° halide: backside attack, bracketed TS with ‡ and charge, leaving group written.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div></div>
+</div>
+
+<!-- ===================== Q4 SN1 mechanism ===================== -->
+<div class="card" id="c4">
+  <h3>Question 4 <span class="src">(HCI Tutorial 15A Q5a)</span></h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">2-chloro-2-methylpropane, \(\ce{(CH3)3CCl}\), reacts with alcoholic sodium cyanide to form a nitrile.<br>Name the mechanism, and draw it — labelling the slow and fast steps and showing the intermediate. <span class="marks">[4]</span></div>
+    <div class="conf">Before revealing — commit out loud: <b>Confidence: high / medium / guessed</b></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="verb" style="margin-bottom:4px">Name of mechanism: <b>unimolecular nucleophilic substitution, S<sub>N</sub>1</b> <span class="mk">(1)</span>.</div>
+      <svg class="fig" width="700" height="200" viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="14">
+        <text x="20" y="70">H₃C</text>
+        <line x1="56" y1="66" x2="76" y2="78" stroke="#111" stroke-width="1.3"/>
+        <text x="78" y="90">C</text><text x="72" y="106" fill="#1e3a8a" font-size="11">δ+</text>
+        <line x1="72" y1="94" x2="52" y2="108" stroke="#111" stroke-width="1.3"/><text x="20" y="120">H₃C</text>
+        <line x1="84" y1="90" x2="102" y2="80" stroke="#111" stroke-width="1.3"/><text x="104" y="80">CH₃</text>
+        <line x1="84" y1="94" x2="110" y2="102" stroke="#111" stroke-width="1.4"/><text x="112" y="106">Cl</text><text x="110" y="90" fill="#1e3a8a" font-size="11">δ−</text>
+        <path d="M98,96 C112,118 140,116 142,96" fill="none" stroke="#dc2626" stroke-width="1.5" marker-end="url(#ah2)"/>
+        <line x1="158" y1="90" x2="204" y2="90" stroke="#111" stroke-width="1.4" marker-end="url(#bk2)"/>
+        <text x="162" y="82" fill="#dc2626" font-size="12" font-family="-apple-system,sans-serif">slow</text><text x="164" y="106" font-size="10" fill="#6b7280" font-family="-apple-system,sans-serif">STEP 1 · rds</text>
+        <text x="226" y="70">H₃C</text>
+        <line x1="262" y1="66" x2="278" y2="82" stroke="#111" stroke-width="1.3"/>
+        <text x="280" y="90">C</text><text x="290" y="82" font-size="15">+</text>
+        <line x1="276" y1="94" x2="256" y2="108" stroke="#111" stroke-width="1.3"/><text x="226" y="120">H₃C</text>
+        <line x1="288" y1="90" x2="308" y2="90" stroke="#111" stroke-width="1.3"/><text x="310" y="94">CH₃</text>
+        <text x="246" y="150" fill="#6b7280" font-size="11" font-family="-apple-system,sans-serif">3° carbocation (planar)</text>
+        <text x="350" y="86">+ :Cl</text><text x="390" y="76" font-size="11">−</text>
+        <line x1="416" y1="90" x2="462" y2="90" stroke="#111" stroke-width="1.4" marker-end="url(#bk2)"/>
+        <text x="420" y="82" fill="#059669" font-size="12" font-family="-apple-system,sans-serif">fast</text><text x="422" y="106" font-size="10" fill="#6b7280" font-family="-apple-system,sans-serif">STEP 2</text>
+        <text x="414" y="128" fill="#6b7280" font-size="10.5" font-family="-apple-system,sans-serif">:C≡N⁻</text>
+        <text x="486" y="70">H₃C</text>
+        <line x1="522" y1="66" x2="538" y2="82" stroke="#111" stroke-width="1.3"/>
+        <text x="540" y="90">C</text>
+        <line x1="536" y1="94" x2="516" y2="108" stroke="#111" stroke-width="1.3"/><text x="486" y="120">H₃C</text>
+        <line x1="548" y1="90" x2="566" y2="90" stroke="#111" stroke-width="1.3"/><text x="568" y="94">CH₃</text>
+        <line x1="540" y1="78" x2="540" y2="60" stroke="#111" stroke-width="1.3"/><text x="530" y="54">CN</text>
+        <text x="480" y="150" fill="#6b7280" font-size="11" font-family="-apple-system,sans-serif">2,2-dimethylpropanenitrile</text>
+        <defs>
+          <marker id="ah2" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#dc2626" stroke-width="1.4"/></marker>
+          <marker id="bk2" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6" fill="#111"/></marker>
+        </defs>
+      </svg>
+      <div class="step"><div class="step-header">Mark scheme</div>
+        <div class="verb"><b>Step 1 (slow, rds):</b> curly arrow from the <b>C–Cl bond to Cl</b>; <b>heterolytic fission</b> gives the <b>tertiary carbocation \(\ce{(CH3)3C+}\)</b> + \(\ce{Cl-}\), with δ+/δ− shown on C–Cl <span class="mk">(1)</span>. <b>Step 2 (fast):</b> the lone pair on the <b>carbon of \(\ce{:CN-}\)</b> attacks the positively charged carbon <span class="mk">(1)</span> → nitrile product \(\ce{(CH3)3CCN}\) <span class="mk">(1)</span>.</div>
+      </div>
+      <div class="trap"><b>The "1" is the order, not the step count</b> — S<sub>N</sub>1 is a two-step mechanism. Cyanide donates the lone pair on <b>C</b> (not N). Rate = k[RX] only: adding more \(\ce{CN-}\) does not change the rate.</div>
+    </div><div class="answer-overlay">Solution hidden — attempt first</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button><div class="answer-content"><div class="label">Archetype</div><strong>Draw an S<sub>N</sub>1 on a tertiary substrate — two steps via a planar carbocation.</strong><p>Slow C–X heterolysis (rds) → carbocation → fast nucleophile capture; no transition state required in H2.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div></div>
+</div>
+
+<!-- ===================== Q5 why 1/3 ===================== -->
+<div class="card" id="c5">
+  <h3>Question 5 <span class="src">(HCI Tutorial 15A Q5b)</span></h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">Chloroethane reacts predominantly by S<sub>N</sub>2, whereas 2-chloro-2-methylpropane reacts predominantly by S<sub>N</sub>1.<br>Explain this difference, referring to <b>both</b> steric hindrance and carbocation stability. <span class="marks">[4]</span></div>
+    <div class="conf">Before revealing — commit out loud: <b>Confidence: high / medium / guessed</b></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution — verbatim HCI wording</div>
+      <div class="step"><div class="step-header">Chloroethane (primary) → S<sub>N</sub>2</div>
+        <div class="verb">S<sub>N</sub>2 is favoured because chloroethane is a <b>primary halogenoalkane</b>. The nucleophile can <b>easily approach the electron-deficient carbon as there is little steric hindrance from only one alkyl group</b> <span class="mk">(1)</span>. Should the reaction proceed via S<sub>N</sub>1, the <b>primary carbocation \(\ce{CH3CH2+}\) would be relatively unstable</b> since there is only one electron-donating alkyl group attached to C⁺ <span class="mk">(1)</span>.</div>
+      </div>
+      <div class="step"><div class="step-header">2-chloro-2-methylpropane (tertiary) → S<sub>N</sub>1</div>
+        <div class="verb">S<sub>N</sub>1 is favoured because it is a <b>tertiary halogenoalkane</b>. The <b>tertiary carbocation \(\ce{(CH3)3C+}\) is relatively stable</b> since there are <b>three electron-donating alkyl groups</b> attached to C⁺ <span class="mk">(1)</span>. S<sub>N</sub>2 is not favoured because of the <b>steric hindrance from the three alkyl groups that obstruct the approach of the nucleophile</b> towards the electron-deficient carbon <span class="mk">(1)</span>.</div>
+      </div>
+      <div class="trap"><b>You must quote both mechanisms for both substrates.</b> For each, say why its favoured route works <b>and</b> why the other route is shut off — that is what banks all four marks.</div>
+    </div><div class="answer-overlay">Solution hidden — attempt first</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button><div class="answer-content"><div class="label">Archetype</div><strong>Justify the mechanism from the substrate class using the two competing factors.</strong><p>Carbocation stability drives S<sub>N</sub>1 up 1°→3°; steric hindrance drives S<sub>N</sub>2 down 1°→3°.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div></div>
+</div>
+
+<!-- ===================== Q6 nucleophile arsenal ===================== -->
+<div class="card" id="c6">
+  <h3>Question 6 <span class="src">(HCI Tutorial 15A Q4)</span></h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">Nucleophilic substitution works for any nucleophile analogous to \(\ce{NH3}\) or \(\ce{OH-}\). Give the organic product for each reaction below. <span class="marks">[6]</span><br>(a)(i) 1-bromopropane + \(\ce{NH3}\)  &nbsp; (ii) bromoethane + \(\ce{CH3NH2}\)  &nbsp; (iii) 4-bromobutan-1-amine, \(\ce{H2N(CH2)4Br}\), intramolecular.<br>(b)(i) bromoethane + \(\ce{OH-}\)  &nbsp; (ii) bromoethane + \(\ce{CH3CH2CH2OH}\)  &nbsp; (iii) 4-bromobutan-1-ol, \(\ce{HO(CH2)4Br}\), intramolecular.</div>
+    <div class="conf">Before revealing — commit out loud: <b>Confidence: high / medium / guessed</b></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) Nitrogen nucleophiles</div>
+        <div class="verb">(i) \(\ce{CH3CH2CH2NH2}\), propan-1-amine <span class="mk">(1)</span> · (ii) \(\ce{CH3CH2NHCH3}\), N-methylethanamine (a secondary amine) <span class="mk">(1)</span> · (iii) a <b>5-membered N-ring, pyrrolidine</b> <span class="mk">(1)</span>.</div>
+      </div>
+      <div class="step"><div class="step-header">(b) Oxygen nucleophiles</div>
+        <div class="verb">(i) \(\ce{CH3CH2OH}\), ethanol <span class="mk">(1)</span> · (ii) \(\ce{CH3CH2OCH2CH2CH3}\), an ether (ethoxypropane) <span class="mk">(1)</span> · (iii) a <b>5-membered O-ring, oxolane (tetrahydrofuran)</b> <span class="mk">(1)</span>.</div>
+        <svg class="fig" width="330" height="120" viewBox="0 0 330 120" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="13">
+          <polygon points="70,30 100,52 88,86 52,86 40,52" fill="none" stroke="#111" stroke-width="1.4"/>
+          <text x="63" y="28">N</text><text x="63" y="18" font-size="11">H</text>
+          <text x="66" y="108" fill="#6b7280" font-size="11" font-family="-apple-system,sans-serif">pyrrolidine</text>
+          <polygon points="230,30 260,52 248,86 212,86 200,52" fill="none" stroke="#111" stroke-width="1.4"/>
+          <text x="225" y="28">O</text>
+          <text x="212" y="108" fill="#6b7280" font-size="11" font-family="-apple-system,sans-serif">oxolane (THF)</text>
+        </svg>
+      </div>
+      <div class="trap"><b>Intramolecular (iii):</b> the N (or O) lone pair attacks the <b>δ+ carbon attached to Br within the same molecule</b>, closing a 5-membered ring; deprotonation gives the final product. For (b)(ii) the true nucleophile is the alkoxide \(\ce{CH3CH2CH2O-}\) (make it with Na metal first) — a plain alcohol is a weak nucleophile.</div>
+    </div><div class="answer-overlay">Solution hidden — attempt first</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button><div class="answer-content"><div class="label">Archetype</div><strong>Transfer the S<sub>N</sub> pattern to any N- or O-nucleophile, including ring-closing intramolecular attack.</strong><p>Amines and alkoxides substitute exactly like NH₃ and OH⁻; a nucleophile and leaving group in one molecule cyclise.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div></div>
+</div>
+
+<!-- ===================== Q7 synthesis ===================== -->
+<div class="card" id="c7">
+  <h3>Question 7 <span class="src">(HCI Class Exercise 2, Q1)</span></h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">(a) Starting from propene, \(\ce{CH3CH=CH2}\), describe how to synthesise 2-methylpropanoic acid, \(\ce{(CH3)2CHCOOH}\), giving the reagents, conditions and reaction type at each step. <span class="marks">[4]</span><br>(b) Starting from 1-bromopropane, describe how to synthesise 2-aminopropane, \(\ce{(CH3)2CHNH2}\). Explain why the halogen must be relocated to the middle carbon first. <span class="marks">[4]</span></div>
+    <div class="conf">Before revealing — commit out loud: <b>Confidence: high / medium / guessed</b></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) Propene → 2-methylpropanoic acid (a step-up)</div>
+        <div class="step-desc">The target has 4 C; propene has 3 C, so one carbon must be added — introduce it as \(\ce{CN-}\).</div>
+        <table class="rxn">
+          <tr><th>Step</th><th>Reagents &amp; conditions</th><th>Product</th><th>Type</th></tr>
+          <tr><td>1</td><td><b>HBr(g)</b>, room temp</td><td>2-bromopropane</td><td>electrophilic addition (Markovnikov) <span class="mk">(1)</span></td></tr>
+          <tr><td>2</td><td><b>ethanolic KCN, heat</b></td><td>2-methylpropanenitrile, \(\ce{(CH3)2CHCN}\)</td><td>nucleophilic substitution (+1 C) <span class="mk">(1)</span></td></tr>
+          <tr><td>3</td><td><b>dilute \(\ce{H2SO4(aq)}\), heat</b></td><td>2-methylpropanoic acid</td><td>acidic hydrolysis <span class="mk">(1)</span></td></tr>
+        </table>
+        <div class="verb">Route correct end-to-end, all reagents and conditions stated <span class="mk">(1)</span>. (Dilute HCl(aq) is equally acceptable for step 3.)</div>
+      </div>
+      <div class="step"><div class="step-header">(b) 1-bromopropane → 2-aminopropane</div>
+        <table class="rxn">
+          <tr><th>Step</th><th>Reagents &amp; conditions</th><th>Product</th><th>Type</th></tr>
+          <tr><td>1</td><td><b>ethanolic KOH, heat</b></td><td>propene</td><td>elimination <span class="mk">(1)</span></td></tr>
+          <tr><td>2</td><td><b>HBr(g)</b>, room temp</td><td>2-bromopropane</td><td>electrophilic addition (Markovnikov) <span class="mk">(1)</span></td></tr>
+          <tr><td>3</td><td><b>excess ethanolic \(\ce{NH3}\), heat under pressure (sealed tube)</b></td><td>2-aminopropane</td><td>nucleophilic substitution <span class="mk">(1)</span></td></tr>
+        </table>
+        <div class="verb">Reacting 1-bromopropane with \(\ce{NH3}\) directly would keep the \(\ce{-NH2}\) on <b>C1</b>, giving 1-aminopropane (the wrong isomer). Eliminating then re-adding HBr by <b>Markovnikov</b> moves the halogen to <b>C2</b> first <span class="mk">(1)</span>.</div>
+      </div>
+      <div class="trap"><b>Reagent + condition, every arrow.</b> "Ethanolic," "aqueous," "heat," "sealed tube," "excess" are all mark-bearing. Never exceed ~4–5 steps — if you do, the plan is wrong.</div>
+    </div><div class="answer-overlay">Solution hidden — attempt first</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button><div class="answer-content"><div class="label">Archetype</div><strong>Multi-step synthesis by working backwards — chain-extension (KCN) and halogen relocation.</strong><p>Count carbons first; add one via CN⁻; move a substituent to another carbon via eliminate → re-add HBr.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div></div>
+</div>
+
+<!-- ===================== Q8 elimination products ===================== -->
+<div class="card" id="c8">
+  <h3>Question 8 <span class="src">(HCI lecture Ex 3.5)</span></h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">2-bromobutane is heated with hot ethanolic \(\ce{NaOH}\).<br>Draw the structural formulae of the <b>three</b> alkenes formed, and state which is the major product with a reason. <span class="marks">[3]</span></div>
+    <div class="conf">Before revealing — commit out loud: <b>Confidence: high / medium / guessed</b></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <svg class="fig" width="620" height="150" viewBox="0 0 620 150" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="14">
+        <!-- but-1-ene -->
+        <text x="10" y="70">H₂C</text>
+        <line x1="46" y1="62" x2="74" y2="62" stroke="#111" stroke-width="1.4"/><line x1="46" y1="68" x2="74" y2="68" stroke="#111" stroke-width="1.4"/>
+        <text x="76" y="70">CH</text><line x1="104" y1="66" x2="122" y2="66" stroke="#111" stroke-width="1.3"/><text x="124" y="70">CH₂CH₃</text>
+        <text x="24" y="98" fill="#6b7280" font-size="11" font-family="-apple-system,sans-serif">but-1-ene · minor</text>
+        <!-- cis-but-2-ene: both CH₃ on top -->
+        <text x="243" y="52">H₃C</text><line x1="271" y1="54" x2="285" y2="66" stroke="#111" stroke-width="1.3"/>
+        <text x="256" y="100">H</text><line x1="266" y1="92" x2="285" y2="74" stroke="#111" stroke-width="1.3"/>
+        <text x="287" y="72">C</text>
+        <line x1="297" y1="66" x2="315" y2="66" stroke="#111" stroke-width="1.4"/><line x1="297" y1="72" x2="315" y2="72" stroke="#111" stroke-width="1.4"/>
+        <text x="317" y="72">C</text>
+        <text x="343" y="52">CH₃</text><line x1="329" y1="66" x2="343" y2="54" stroke="#111" stroke-width="1.3"/>
+        <text x="347" y="100">H</text><line x1="329" y1="74" x2="345" y2="92" stroke="#111" stroke-width="1.3"/>
+        <text x="248" y="124" fill="#6b7280" font-size="11" font-family="-apple-system,sans-serif">cis-but-2-ene · major</text>
+        <!-- trans-but-2-ene: CH₃ on opposite corners -->
+        <text x="423" y="52">H₃C</text><line x1="451" y1="54" x2="465" y2="66" stroke="#111" stroke-width="1.3"/>
+        <text x="436" y="100">H</text><line x1="446" y1="92" x2="465" y2="74" stroke="#111" stroke-width="1.3"/>
+        <text x="467" y="72">C</text>
+        <line x1="477" y1="66" x2="495" y2="66" stroke="#111" stroke-width="1.4"/><line x1="477" y1="72" x2="495" y2="72" stroke="#111" stroke-width="1.4"/>
+        <text x="497" y="72">C</text>
+        <text x="523" y="52">H</text><line x1="509" y1="66" x2="523" y2="54" stroke="#111" stroke-width="1.3"/>
+        <text x="519" y="100">CH₃</text><line x1="509" y1="74" x2="521" y2="92" stroke="#111" stroke-width="1.3"/>
+        <text x="428" y="124" fill="#6b7280" font-size="11" font-family="-apple-system,sans-serif">trans-but-2-ene · major</text>
+      </svg>
+      <div class="verb">The three alkenes: <b>but-1-ene</b> \(\ce{CH2=CHCH2CH3}\) <span class="mk">(1)</span>; <b>cis-but-2-ene</b> and <b>trans-but-2-ene</b>, \(\ce{CH3CH=CHCH3}\) — the two cis/trans isomers <span class="mk">(1)</span>. The <b>major products are the but-2-enes</b>: the \(\ce{C=C}\) carries <b>more alkyl groups (more substituted → more stable alkene)</b>, by Saytzeff's rule <span class="mk">(1)</span>.</div>
+      <div class="trap"><b>Number of alkenes = number of different types of β-hydrogen.</b> 2-bromobutane has two types → but-1-ene (from the terminal \(\ce{CH3}\)) and but-2-ene, which itself splits into cis and trans. Miss the cis/trans and you drop the second mark.</div>
+    </div><div class="answer-overlay">Solution hidden — attempt first</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button><div class="answer-content"><div class="label">Archetype</div><strong>Enumerate elimination products (unique β-H) and pick the Saytzeff major, including cis/trans.</strong><p>Count distinct β-hydrogens; the more-substituted alkene predominates; internal C=C may show geometric isomerism.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div></div>
+</div>
+
+<!-- ===================== Q9 C-X bond strength ===================== -->
+<div class="card" id="c9">
+  <h3>Question 9 <span class="src">(HCI Tutorial 15A Q6)</span></h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">Fluoroethane, chloroethane, bromoethane and iodoethane are each hydrolysed by \(\ce{NaOH(aq)}\).<br>(a) State the reagents and conditions for the hydrolysis. <span class="marks">[1]</span><br>(b) Arrange the four in order of increasing rate of hydrolysis, and explain the order using bond energies. <span class="marks">[3]</span></div>
+    <div class="conf">Before revealing — commit out loud: <b>Confidence: high / medium / guessed</b></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution — verbatim HCI wording</div>
+      <div class="step"><div class="step-header">(a) Reagents/conditions</div>
+        <div class="verb"><b>\(\ce{NaOH(aq)}\), heat</b> <span class="mk">(1)</span>.</div>
+      </div>
+      <div class="step"><div class="step-header">(b) Increasing rate + reasoning</div>
+        <div class="verb">Increasing rate of hydrolysis: <b>fluoroethane, chloroethane, bromoethane, iodoethane</b> <span class="mk">(1)</span>. As the <b>size of the halogen atom increases</b>, the bond lengths increase C–F &lt; C–Cl &lt; C–Br &lt; C–I, and the <b>bond strengths decrease</b> C–F &gt; C–Cl &gt; C–Br &gt; C–I <span class="mk">(1)</span>. Hence the rate of hydrolysis, which is a <b>nucleophilic substitution requiring the C–X bond to break in the rate-determining step</b>, increases in that order — <b>C–I is weakest so breaks most easily</b>, giving iodoethane the fastest rate <span class="mk">(1)</span>.</div>
+        <table class="rxn"><tr><th>Bond</th><th>C–F</th><th>C–Cl</th><th>C–Br</th><th>C–I</th></tr><tr><td>Energy / kJ mol⁻¹</td><td>485</td><td>340</td><td>280</td><td>240</td></tr></table>
+      </div>
+      <div class="trap"><b>Polarity trap:</b> C–F is the most polar yet fluoroethane is essentially <b>inert</b> — rate follows <b>bond strength</b>, not how δ+ the carbon is. Quote the Data-Booklet bond energies.</div>
+    </div><div class="answer-overlay">Solution hidden — attempt first</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button><div class="answer-content"><div class="label">Archetype</div><strong>Reactivity across the halogens = C–X bond strength (RDS breaks C–X).</strong><p>Weaker/longer C–X → faster substitution; fluoroalkanes inert; cite bond energies not polarity.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div></div>
+</div>
+
+<!-- ===================== Q10 halogenoarene ===================== -->
+<div class="card" id="c10">
+  <h3>Question 10 <span class="src">(HCI Tutorial 15A Q8)</span></h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">Chlorobenzene is far less reactive towards nucleophilic substitution than chloroethane.<br>Give <b>two</b> reasons for this lack of reactivity. <span class="marks">[4]</span></div>
+    <div class="conf">Before revealing — commit out loud: <b>Confidence: high / medium / guessed</b></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution — verbatim HCI wording</div>
+      <div class="step"><div class="step-header">Reason 1 — partial double-bond character</div>
+        <div class="verb">The <b>lone pair of electrons on Cl delocalises over the benzene ring</b> <span class="mk">(1)</span>. This gives the <b>C–Cl bond partial double-bond character, making it very strong and not easily broken</b> <span class="mk">(1)</span>.</div>
+      </div>
+      <div class="step"><div class="step-header">Reason 2 — steric + electronic blocking</div>
+        <div class="verb">The nucleophile would be <b>repelled by the delocalised π-electron cloud of the benzene ring</b> <span class="mk">(1)</span>. The benzene ring itself also causes <b>steric hindrance, "blocking" the nucleophile from approaching the C–Cl carbon</b> <span class="mk">(1)</span>.</div>
+      </div>
+      <div class="trap"><b>Both reasons required.</b> The same delocalisation makes any halogen on an <b>sp² carbon</b> (aryl or vinyl) unreactive; it also can't go S<sub>N</sub>1 because the would-be carbocation's empty p-orbital is orthogonal to the ring π system.</div>
+    </div><div class="answer-overlay">Solution hidden — attempt first</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button><div class="answer-content"><div class="label">Archetype</div><strong>Why an sp²-C–halogen resists nucleophilic substitution — two-reason answer.</strong><p>Delocalisation → partial double-bond character (stronger C–X); ring blocks the rear and repels the nucleophile.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div></div>
+</div>
+
+<!-- ===================== Q11 AgX test ===================== -->
+<div class="card" id="c11">
+  <h3>Question 11 <span class="src">(HCI Tutorial 15A Q9)</span></h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">1-bromopropane, \(\ce{CH3CH2CH2Br}\), and bromobenzene, \(\ce{C6H5Br}\), are two colourless liquids.<br>Describe a chemical test, with reagents, conditions and the observation for <b>each</b> compound, that distinguishes them. <span class="marks">[5]</span></div>
+    <div class="conf">Before revealing — commit out loud: <b>Confidence: high / medium / guessed</b></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution — verbatim HCI wording</div>
+      <div class="step"><div class="step-header">Test procedure</div>
+        <div class="verb"><b>Add \(\ce{NaOH(aq)}\) and heat. Then cool, then add excess dilute \(\ce{HNO3}\). Then add \(\ce{AgNO3(aq)}\).</b> <span class="mk">(1)</span> <span class="mk">(1)</span> (the excess \(\ce{HNO3}\) neutralises unreacted \(\ce{OH-}\), which would otherwise give a brown \(\ce{Ag2O}\) precipitate) <span class="mk">(1)</span>.</div>
+      </div>
+      <div class="step"><div class="step-header">Observations</div>
+        <div class="verb"><b>\(\ce{CH3CH2CH2Br}\) gives a cream precipitate</b> upon addition of \(\ce{AgNO3(aq)}\) <span class="mk">(1)</span>. <b>\(\ce{C6H5Br}\) does not give a precipitate</b> <span class="mk">(1)</span>.</div>
+      </div>
+      <div class="verb" style="margin-top:6px">Why: 1-bromopropane <b>undergoes nucleophilic substitution — the C–Br breaks to release \(\ce{Br-}\)</b>, which reacts with \(\ce{Ag+(aq)}\) to give \(\ce{AgBr(s)}\). Bromobenzene <b>does not undergo nucleophilic substitution</b> (sp² C–Br, partial double-bond character), so no free \(\ce{Br-}\) and no precipitate. (Ethanolic \(\ce{AgNO3}\) with heating is also acceptable.)</div>
+      <div class="trap"><b>A test answer needs both outcomes</b> — the change for one compound AND "no precipitate" for the other. The AgBr colour is <b>cream</b> (AgCl white, AgI yellow); confirm a cream ppt by dissolving it in <b>concentrated</b> ammonia.</div>
+    </div><div class="answer-overlay">Solution hidden — attempt first</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button><div class="answer-content"><div class="label">Archetype</div><strong>Silver-halide distinguishing test: hydrolyse → excess HNO₃ → AgNO₃, halogenoalkane vs halogenoarene.</strong><p>Only an sp³ C–X frees a halide ion to precipitate AgX; the aryl halide gives nothing.</p></div><div class="answer-overlay">Archetype hidden — attempt first</div></div>
+</div>
+
+<!-- ===================== Q12 CFCs / ozone ===================== -->
+<div class="card" id="c12">
+  <h3>Question 12 <span class="src">(HCI Tutorial 15B Q10 &amp; Q14)</span></h3>
+  <div class="block practice"><div class="label">Question</div>
+    <div class="stem">Chlorofluorocarbons (CFCs) such as \(\ce{CCl2F2}\) were once widely used before being linked to ozone depletion.<br>(a) State one use of CFCs. <span class="marks">[1]</span><br>(b) In the upper atmosphere, state which bond in a CFC breaks under UV light, the type of bond fission, and the species formed. <span class="marks">[2]</span><br>(c) Butane is proposed as a replacement propellant. Explain, in terms of bonds, why butane does not deplete ozone. <span class="marks">[2]</span></div>
+    <div class="conf">Before revealing — commit out loud: <b>Confidence: high / medium / guessed</b></div>
+  </div>
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Solution — verbatim HCI wording</div>
+      <div class="step"><div class="step-header">(a) Use</div>
+        <div class="verb"><b>Refrigerants (in air-conditioners, refrigerators), or aerosol propellants.</b> <span class="mk">(1)</span></div>
+      </div>
+      <div class="step"><div class="step-header">(b) Which bond, what fission, what forms</div>
+        <div class="verb">UV light initiates <b>homolytic fission of the C–Cl bond</b> <span class="mk">(1)</span>, forming <b>\(\ce{Cl\bullet}\) (chlorine) free radicals</b> <span class="mk">(1)</span>.</div>
+      </div>
+      <div class="step"><div class="step-header">(c) Why butane is safe</div>
+        <div class="verb">The C–H and C–C bonds in butane <b>contain no C–Cl (or C–Br, C–I) bond</b> <span class="mk">(1)</span>. C–H (410) and C–C bonds are <b>too strong to be broken by UV</b> to give halogen radicals, so no \(\ce{Cl\bullet}\)/\(\ce{Br\bullet}\) is produced to destroy ozone <span class="mk">(1)</span>.</div>
+      </div>
+      <div class="trap"><b>It is the C–Cl bond, not C–F, that does the damage</b> (C–F 485 too strong). The \(\ce{Cl\bullet}\) is <b>regenerated</b> in the chain, so it acts catalytically. C–Br is even weaker than C–Cl, so bromo compounds are worse, not safer.</div>
+    </div><div class="answer-overlay">Solution hidden — attempt first</div>
+  </div>
+  <div class="block reveal-archetype"><button class="reveal-btn">Reveal archetype</button><div class="answer-content"><div class="label">Archetype</div><strong>CFCs &amp; ozone: which bond breaks, why, and what makes a safe substitute.</strong><p>UV homolyses C–Cl → catalytic Cl•; a molecule with no C–Cl/Br/I is safe (though flammability/GWP still matter).</p></div><div class="answer-overlay">Archetype hidden — attempt first</div></div>
+</div>
+
+<hr>
+<p class="meta"><b>Coverage:</b> naming/classification/isomers ✓ · physical properties ✓ · S<sub>N</sub>2 draw ✓ · S<sub>N</sub>1 draw ✓ · S<sub>N</sub>1-vs-S<sub>N</sub>2 factors ✓ · nucleophile arsenal ✓ · multi-step synthesis ✓ · elimination products ✓ · C–X bond strength/rate ✓ · halogenoarene unreactivity ✓ · silver-halide test ✓ · CFCs/ozone ✓. <b>When done:</b> drill <b>gap_chem_halogen.html</b> for the hard fusions, then paste your Loom transcript for gap-flagging.</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn=>{btn.addEventListener('click',function(){const b=this.parentElement,o=b.querySelector('.answer-overlay');if(o.classList.contains('hidden')){o.classList.remove('hidden');this.textContent=b.classList.contains('reveal-archetype')?'Reveal archetype':'Reveal';this.classList.remove('hide-state');}else{o.classList.add('hidden');this.textContent='Hide';this.classList.add('hide-state');}});});
+  function revealAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.add('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Hide';b.classList.add('hide-state');});}
+  function hideAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.remove('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{const a=b.parentElement.classList.contains('reveal-archetype');b.textContent=a?'Reveal archetype':'Reveal';b.classList.remove('hide-state');});}
+</script>
+</body>
+</html>

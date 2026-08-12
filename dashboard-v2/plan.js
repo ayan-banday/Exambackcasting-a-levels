@@ -3509,8 +3509,8 @@ window.PLAN = {
   }
  ],
  "readiness": {
-  "lastUpdated": "2026-08-10",
-  "lastTest": "Bio Book 1 of 9 complete (1 drilled pass)",
+  "lastUpdated": "2026-08-12",
+  "lastTest": "Bio Book 2 done (12 Aug) — 2 of 9 books",
   "note": "A GAUGE, not a measurement — only Maths is test-measured; the rest is estimated. Bio = the school's 9 books (syllabus 9477). A-level 100% = mastered (multiple passes, exam-hardened, retained to Nov); one drilled pass ~= 50%. Prelim % = distance to a prelim-B; A-level % = distance to full mastery.",
   "subjects": {
    "maths": {
@@ -3763,7 +3763,7 @@ window.PLAN = {
      },
      {
       "t": "Book 2 — Molecular Genetics (DNA, Gene Expr, Mutations)",
-      "m": 0
+      "m": 50
      },
      {
       "t": "Book 3 — Cell Signalling, Division, Cancer, Stem Cells",

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chemistry — Halogen Derivatives (Study Sheet)</title>
+<script>
+  window.MathJax = {
+    loader: { load: ['[tex]/mhchem'] },
+    tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], processEscapes: true, packages: {'[+]': ['mhchem']}, tags: 'none' },
+    svg: { fontCache: 'global' },
+    options: { skipHtmlTags: ['script','noscript','style','textarea','pre'] }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --amber-soft:#fffbeb;
+    --green:#059669; --green-soft:#ecfdf5; --cover:#f3f4f6;
+    --purple:#7c3aed; --purple-soft:#f5f3ff; --red:#dc2626; --red-soft:#fef2f2; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:40px 24px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h2,h3,.label,.controls,button,.step-header{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  h1{font-size:2em;margin:0 0 8px;color:#111;border-bottom:3px solid #111;padding-bottom:12px}
+  h2{font-size:1.4em;margin:2px 0 6px;color:#111}
+  h3{font-size:1.15em;margin:0 0 14px;color:#1f2937}
+  p{margin:8px 0}
+  .meta{color:var(--muted);font-size:.9em;margin:4px 0 24px}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--red);padding:16px 20px;border-radius:6px;margin:16px 0 24px}
+  .kwframe{background:#111;color:#f1f5f9;border-radius:8px;padding:16px 22px;margin:0 0 28px;font-size:.98em}
+  .kwframe b{color:#fde68a}
+  .kwframe .k{color:#93c5fd;font-weight:700}
+  .toolkit{background:var(--blue-soft);border:1px solid #bfdbfe;border-left:4px solid var(--blue);padding:14px 20px;border-radius:6px;margin:0 0 20px;font-size:.94em}
+  .toolkit strong{color:#1e3a8a}
+  .toolkit table{border-collapse:collapse;margin:10px 0 4px;width:100%}
+  .toolkit td{padding:6px 10px 6px 0;vertical-align:top;border-bottom:1px solid #dbeafe}
+  .toolkit td:first-child{white-space:nowrap;color:#1e3a8a;font-weight:600;width:32%}
+  .toolkit tr:last-child td{border-bottom:none}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:28px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:6px;color:#111}
+  .toc a{color:var(--blue);text-decoration:none;margin-right:14px;line-height:2}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .card .num{display:inline-block;font-family:-apple-system,sans-serif;font-size:.72em;font-weight:800;letter-spacing:.06em;color:#fff;background:var(--blue);padding:2px 9px;border-radius:10px;vertical-align:middle;margin-right:8px}
+  .block{margin:14px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border)}
+  .l1{background:#0f172a;color:#e2e8f0;border-left-color:#334155;font-size:.95em}
+  .l1 .h{font-family:-apple-system,sans-serif;font-size:.68em;letter-spacing:.06em;text-transform:uppercase;color:#7dd3fc;font-weight:700;margin-bottom:4px}
+  .l1 b{color:#fde68a}
+  .l2{background:#f9fafb;border-left-color:#6b7280;font-size:.96em}
+  .l2 .h{font-family:-apple-system,sans-serif;font-size:.68em;letter-spacing:.06em;text-transform:uppercase;color:#4b5563;font-weight:700;margin-bottom:4px}
+  .defn{background:#eef7f1;border:1px dashed #059669;border-radius:5px;padding:8px 12px;margin:8px 0;font-size:.97em}
+  .defn::before{content:'Definition / verbatim wording — reproduce exactly';display:block;font-family:-apple-system,sans-serif;font-size:.68em;letter-spacing:.05em;text-transform:uppercase;color:#047857;font-weight:700;margin-bottom:4px}
+  .defn b{color:#065f46}
+  .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:6px 12px;border-radius:4px;margin:10px 0 0;font-size:.9em}
+  .trap b{color:var(--red)}
+  table.data{border-collapse:collapse;width:100%;margin:12px 0;font-size:.92em;font-family:-apple-system,sans-serif}
+  table.data th,table.data td{border:1px solid var(--border);padding:7px 10px;text-align:left}
+  table.data th{background:#f3f4f6;color:#111;font-weight:700}
+  table.data td b{color:#1e3a8a}
+  .fig{display:block;margin:14px auto;background:#fff;border:1px solid var(--border);border-radius:6px;max-width:100%}
+  .figcap{font-family:-apple-system,sans-serif;font-size:.8em;color:var(--muted);text-align:center;margin:-6px 0 12px}
+  b.rg{color:#1e3a8a}
+  .pill{display:inline-block;font-family:-apple-system,sans-serif;font-size:.72em;font-weight:700;padding:1px 8px;border-radius:10px;margin-left:4px}
+  .pill.l1p{background:#dbeafe;color:#1e3a8a}.pill.l2p{background:#e5e7eb;color:#374151}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;color:var(--text);font-weight:500}
+  .block.answer{background:var(--green-soft);border-left-color:var(--green);position:relative;min-height:56px}
+  .label{display:block;text-transform:uppercase;font-size:.75em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--muted)}
+  .block.answer .label{color:var(--green)}
+  .stem{background:#1e293b;color:#f1f5f9;padding:11px 15px;border-radius:6px;margin:10px 0}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;font-family:-apple-system,sans-serif;border-left:4px solid var(--muted);margin-left:-16px;padding-left:16px;z-index:2}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content{padding-right:60px}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  @media print{body{background:#fff;padding:20px;max-width:100%}.controls,.reveal-btn{display:none!important}.answer-overlay{display:none!important}.card{box-shadow:none;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<h1>Chemistry — Halogen Derivatives</h1>
+<p class="meta">H2 9476 · Topic 15 · Organic · <b>STUDY SHEET (read this first, then drill)</b>. Built from the HCI lecture notes, HCI Tutorial 15 (Sections A &amp; B), Class Exercises 1 &amp; 2, and the HCI "Organic Reactions by Reagents" reference. Green dashed boxes are <b>verbatim mark-scheme wording</b> — reproduce them word-for-word. Practical 25 Aug · P2 2 Sep.</p>
+
+<div class="kwframe">
+<span class="k">THE SPINE (Layer&nbsp;1) —</span> the entire topic hangs off <b>one polar bond, C–X</b> (carbon is <b>δ+</b>, halogen is <b>δ−</b>), and <b>one mechanism family: nucleophilic substitution</b>. The δ+ carbon is <b>"susceptible to nucleophilic attack"</b>. Halogenoalkanes are the <b>synthetic hub</b> — swap the halogen for \(\ce{-OH}\), \(\ce{-CN}\), \(\ce{-NH2}\), \(\ce{-OR}\), or eliminate it to a \(\ce{C=C}\). Two sub-questions decide everything: <span class="k">(a) which mechanism</span> — SN1 or SN2 (set by the <b>substrate: 1°/2°/3°</b>) — and <span class="k">(b) how fast</span> — set by the <b>C–X bond strength</b> (because the rate-determining step breaks C–X in <b>both</b> mechanisms).
+</div>
+
+<div class="controls"><button onclick="revealAll()">Reveal all</button><button onclick="hideAll()">Hide all</button></div>
+
+<div class="toc"><strong>Contents</strong>
+<a href="#s1">1 · Naming &amp; 1°/2°/3°</a><a href="#s2">2 · Physical properties</a><a href="#s3">3 · SN2 mechanism</a><a href="#s4">4 · SN1 mechanism</a><a href="#s5">5 · SN1 vs SN2 factors</a><a href="#s6">6 · Elimination E1/E2</a><a href="#s7">7 · Reaction arsenal</a><a href="#s8">8 · C–X bond strength</a><a href="#s9">9 · Halogenoarenes</a><a href="#s10">10 · Silver-halide test</a><a href="#s11">11 · CFCs &amp; ozone</a><a href="#s12">12 · Active recall</a>
+</div>
+
+<!-- ========================= 1 ========================= -->
+<div class="card" id="s1">
+  <h2><span class="num">1</span> Nomenclature &amp; classification <span class="pill l1p">Layer 1</span></h2>
+  <div class="defn"><b>Halogenoalkane</b> = an alkane with one or more H atoms replaced by a halogen (<b>F, Cl, Br, I</b>). Named with the prefix <b>fluoro- / chloro- / bromo- / iodo-</b> + locant (bromoethane, 1,2-dibromoethane, 3-chloropentane). <b>Halogenoarene</b> = a halogen bonded <b>directly to a benzene ring</b> (chlorobenzene).</div>
+
+  <div class="block l2"><div class="h">Layer 2 — how to classify 1° / 2° / 3°</div>
+  Look only at the <b>carbon that bears the halogen</b>, then use either test (they agree):
+  <table class="data">
+    <tr><th>Class</th><th>Alkyl (C) groups on that carbon</th><th>H atoms on that carbon</th><th>Example</th></tr>
+    <tr><td><b>Primary (1°)</b></td><td>1</td><td>2</td><td>\(\ce{CH3CH2Br}\), \(\ce{CH3CH2CH2Cl}\)</td></tr>
+    <tr><td><b>Secondary (2°)</b></td><td>2</td><td>1</td><td>2-bromobutane, chlorocyclopentane</td></tr>
+    <tr><td><b>Tertiary (3°)</b></td><td>3</td><td>0</td><td>2-bromo-2-methylpropane</td></tr>
+  </table>
+  </div>
+  <div class="trap"><b>Traps.</b> (1) Write out "<b>primary / secondary / tertiary</b>" (or the superscript 1°/2°/3°) — saying "one degree, two degree" is marked wrong. (2) <b>(chloromethyl)benzene \(\ce{C6H5CH2Cl}\)</b> has its Cl on an <b>sp³ carbon</b>, so it behaves as a <b>primary halogenoalkane</b>, NOT like chlorobenzene — it does react. (3) 3-chloropropene \(\ce{CH2=CHCH2Cl}\) is <b>primary</b> (the C–Cl carbon has only one C neighbour). (4) \(\ce{C4H9Br}\) has <b>5 isomers</b> — 4 constitutional, and 2-bromobutane is a chiral pair of enantiomers, counted twice.</div>
+</div>
+
+<!-- ========================= 2 ========================= -->
+<div class="card" id="s2">
+  <h2><span class="num">2</span> Physical properties</h2>
+  <div class="block l2"><div class="h">Layer 2 — the facts + the reasoning that scores</div>
+  Halogenoalkanes are generally <b>colourless liquids, immiscible with water, and denser than water</b>. Their main intermolecular force is <b>dispersion (instantaneous dipole–induced dipole, id–id)</b>. For the <b>same alkyl group</b> the boiling point rises <b>chloro &lt; bromo &lt; iodo</b>.</div>
+  <div class="defn">The <b>size of the electron cloud (number of electrons) increases</b> \(\ce{C2H5Cl}\) &lt; \(\ce{C2H5Br}\) &lt; \(\ce{C2H5I}\), so <b>intermolecular dispersion forces increase in strength in the same order</b>; more <b>energy is needed to overcome</b> them, so the <b>boiling point increases in the same order</b>.</div>
+  <div class="trap"><b>Counter-intuitive trap.</b> C–Cl is the <b>most polar</b> bond, yet the <b>iodo</b>alkane boils highest. Explain the trend by <b>electron-cloud size → dispersion forces</b>, <b>NOT</b> by polarity. (Permanent dipole–permanent dipole "takes a back seat".) Compared with the alkane: chloroethane boils higher than propane/butane because it is <b>polar</b> — pd–pd on top of dispersion; state pd–pd only when comparing a halogenoalkane against a non-polar alkane of similar \(M_r\).</div>
+</div>
+
+<!-- ========================= 3 ========================= -->
+<div class="card" id="s3">
+  <h2><span class="num">3</span> The core mechanism I — S<sub>N</sub>2 <span class="pill l1p">Layer 1</span></h2>
+  <div class="block l1"><div class="h">Layer 1 keywords</div>
+  <b>S<sub>N</sub>2 = bimolecular nucleophilic substitution</b>. <b>ONE step</b> · nucleophile attacks the <b>δ+ carbon from the side OPPOSITE the leaving group</b> (backside) · Nu–C bond forms as C–X breaks <b>simultaneously</b> · passes through a <b>transition state</b> (not an intermediate) · <b>rate = k[RX][Nu]</b> (2nd order) · <b>inversion of configuration</b> → a single, optically active enantiomer · <b>favoured by 1°</b>. The "2" is the <b>order</b>, not the number of steps.</div>
+
+  <svg class="fig" width="700" height="200" viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="14">
+    <!-- Reactant -->
+    <text x="6" y="86">:</text><text x="12" y="86">HO</text><text x="40" y="76" font-size="11">−</text>
+    <path d="M40,82 C64,60 92,60 106,78" fill="none" stroke="#dc2626" stroke-width="1.5" marker-end="url(#ah)"/>
+    <text x="112" y="86">C</text><text x="106" y="66" fill="#1e3a8a" font-size="11">δ+</text>
+    <line x1="118" y1="80" x2="118" y2="58" stroke="#111" stroke-width="1.3"/><text x="112" y="52">H</text>
+    <line x1="112" y1="90" x2="96" y2="106" stroke="#111" stroke-width="1.3"/><text x="74" y="118">H₃C</text>
+    <line x1="118" y1="90" x2="118" y2="112" stroke="#111" stroke-width="1.3"/><text x="114" y="126">H</text>
+    <line x1="124" y1="84" x2="150" y2="84" stroke="#111" stroke-width="1.4"/><text x="152" y="88">Br</text><text x="150" y="66" fill="#1e3a8a" font-size="11">δ−</text>
+    <path d="M138,78 C150,58 176,58 180,78" fill="none" stroke="#dc2626" stroke-width="1.5" marker-end="url(#ah)"/>
+    <!-- arrow -->
+    <line x1="200" y1="84" x2="238" y2="84" stroke="#111" stroke-width="1.4" marker-end="url(#bk)"/>
+    <!-- Transition state -->
+    <text x="252" y="90" font-size="26">[</text>
+    <text x="266" y="86">HO</text>
+    <line x1="292" y1="84" x2="312" y2="84" stroke="#111" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="314" y="86">C</text>
+    <line x1="320" y1="60" x2="320" y2="76" stroke="#111" stroke-width="1.2"/><text x="314" y="54">H</text>
+    <line x1="314" y1="92" x2="304" y2="108" stroke="#111" stroke-width="1.2"/><text x="286" y="120" font-size="12">H₃C</text>
+    <line x1="322" y1="92" x2="330" y2="108" stroke="#111" stroke-width="1.2"/><text x="330" y="120" font-size="12">H</text>
+    <line x1="326" y1="84" x2="348" y2="84" stroke="#111" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="350" y="86">Br</text>
+    <text x="374" y="90" font-size="26">]</text><text x="388" y="66" font-size="15">‡</text><text x="388" y="82" font-size="12">−</text>
+    <text x="300" y="150" fill="#6b7280" font-size="11.5" font-family="-apple-system,sans-serif" text-anchor="middle">transition state — partial C···O forming,</text>
+    <text x="300" y="164" fill="#6b7280" font-size="11.5" font-family="-apple-system,sans-serif" text-anchor="middle">partial C···Br breaking, overall −1 charge</text>
+    <!-- arrow -->
+    <line x1="408" y1="84" x2="446" y2="84" stroke="#111" stroke-width="1.4" marker-end="url(#bk)"/>
+    <!-- Product (inverted) -->
+    <text x="460" y="86">HO</text>
+    <line x1="486" y1="84" x2="502" y2="84" stroke="#111" stroke-width="1.4"/>
+    <text x="504" y="86">C</text>
+    <line x1="510" y1="80" x2="510" y2="58" stroke="#111" stroke-width="1.3"/><text x="504" y="52">H</text>
+    <line x1="510" y1="90" x2="526" y2="106" stroke="#111" stroke-width="1.3"/><text x="528" y="118">CH₃</text>
+    <line x1="504" y1="90" x2="494" y2="108" stroke="#111" stroke-width="1.3"/><text x="486" y="120">H</text>
+    <text x="576" y="86">+  :Br</text><text x="624" y="76" font-size="11">−</text>
+    <text x="512" y="150" fill="#6b7280" font-size="11.5" font-family="-apple-system,sans-serif" text-anchor="middle">umbrella inverted (CH₃ &amp; H flip through)</text>
+    <defs>
+      <marker id="ah" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#dc2626" stroke-width="1.4"/></marker>
+      <marker id="bk" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6" fill="#111"/></marker>
+    </defs>
+  </svg>
+  <div class="figcap">S<sub>N</sub>2: \(\ce{OH-}\) + bromoethane. One step, backside attack, single transition state, inversion.</div>
+
+  <div class="defn">What the marker checks on an S<sub>N</sub>2 drawing (HCI "things to take note of"): <b>δ+ on C and δ− on the halogen</b> · <b>one arrow from the nucleophile's lone pair to the δ+ carbon</b> · <b>a second arrow from the C–X bond to the halogen</b> · the <b>transition state in square brackets with the ‡ symbol</b>, showing <b>partial C···Nu forming and partial C···X breaking</b> · the <b>overall charge on the transition state</b> (neutral Nu like \(\ce{NH3}\) → neutral TS; anionic Nu like \(\ce{OH-}\) → negative TS) · <b>a lone pair on the expelled \(\ce{X-}\)</b> — and you must <b>write the leaving group</b> in the products (most-forgotten mark).</div>
+</div>
+
+<!-- ========================= 4 ========================= -->
+<div class="card" id="s4">
+  <h2><span class="num">4</span> The core mechanism II — S<sub>N</sub>1 <span class="pill l1p">Layer 1</span></h2>
+  <div class="block l1"><div class="h">Layer 1 keywords</div>
+  <b>S<sub>N</sub>1 = unimolecular nucleophilic substitution</b>. <b>TWO steps</b> · <b>Step 1 (slow, rate-determining): heterolytic fission of C–X → carbocation + \(\ce{X-}\)</b> (nucleophile is NOT in this step) · <b>Step 2 (fast): nucleophile attacks the carbocation</b> · <b>rate = k[RX]</b> (1st order; changing [Nu] does nothing) · carbocation is <b>trigonal planar</b> with a <b>full + charge and only 6 electrons</b> · nucleophile attacks <b>top or bottom face with near-equal probability → racemic mixture</b> (optically inactive) · <b>favoured by 3°</b>.</div>
+
+  <svg class="fig" width="700" height="210" viewBox="0 0 700 210" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="14">
+    <!-- Reactant tert-butyl -->
+    <text x="30" y="70">H₃C</text>
+    <line x1="66" y1="66" x2="86" y2="76" stroke="#111" stroke-width="1.3"/>
+    <text x="88" y="90">C</text><text x="82" y="104" fill="#1e3a8a" font-size="11">δ+</text>
+    <line x1="82" y1="94" x2="62" y2="108" stroke="#111" stroke-width="1.3"/><text x="30" y="120">H₃C</text>
+    <line x1="94" y1="90" x2="112" y2="80" stroke="#111" stroke-width="1.3"/><text x="114" y="80">CH₃</text>
+    <line x1="94" y1="94" x2="120" y2="102" stroke="#111" stroke-width="1.4"/><text x="122" y="106">Br</text><text x="120" y="90" fill="#1e3a8a" font-size="11">δ−</text>
+    <path d="M108,96 C122,118 150,116 152,96" fill="none" stroke="#dc2626" stroke-width="1.5" marker-end="url(#ah2)"/>
+    <!-- slow arrow -->
+    <line x1="168" y1="90" x2="212" y2="90" stroke="#111" stroke-width="1.4" marker-end="url(#bk2)"/>
+    <text x="172" y="82" fill="#dc2626" font-size="12" font-family="-apple-system,sans-serif">slow</text>
+    <text x="176" y="106" font-size="10" fill="#6b7280" font-family="-apple-system,sans-serif">rds</text>
+    <!-- Carbocation -->
+    <text x="236" y="70">H₃C</text>
+    <line x1="272" y1="66" x2="288" y2="82" stroke="#111" stroke-width="1.3"/>
+    <text x="290" y="90">C</text><text x="300" y="82" font-size="15">+</text>
+    <line x1="286" y1="94" x2="266" y2="108" stroke="#111" stroke-width="1.3"/><text x="236" y="120">H₃C</text>
+    <line x1="298" y1="90" x2="318" y2="90" stroke="#111" stroke-width="1.3"/><text x="320" y="94">CH₃</text>
+    <text x="256" y="150" fill="#6b7280" font-size="11.5" font-family="-apple-system,sans-serif">planar, sp², full + charge</text>
+    <text x="360" y="86">+  :Br</text><text x="404" y="76" font-size="11">−</text>
+    <!-- fast arrow -->
+    <line x1="430" y1="90" x2="474" y2="90" stroke="#111" stroke-width="1.4" marker-end="url(#bk2)"/>
+    <text x="436" y="82" fill="#059669" font-size="12" font-family="-apple-system,sans-serif">fast</text>
+    <text x="430" y="118" fill="#6b7280" font-size="10.5" font-family="-apple-system,sans-serif">:CN⁻</text>
+    <!-- Product -->
+    <text x="494" y="70">H₃C</text>
+    <line x1="530" y1="66" x2="546" y2="82" stroke="#111" stroke-width="1.3"/>
+    <text x="548" y="90">C</text>
+    <line x1="544" y1="94" x2="524" y2="108" stroke="#111" stroke-width="1.3"/><text x="494" y="120">H₃C</text>
+    <line x1="556" y1="90" x2="574" y2="90" stroke="#111" stroke-width="1.3"/><text x="576" y="94">CH₃</text>
+    <line x1="548" y1="78" x2="548" y2="60" stroke="#111" stroke-width="1.3"/><text x="540" y="54">CN</text>
+    <text x="486" y="150" fill="#6b7280" font-size="11.5" font-family="-apple-system,sans-serif">2,2-dimethylpropanenitrile</text>
+    <defs>
+      <marker id="ah2" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#dc2626" stroke-width="1.4"/></marker>
+      <marker id="bk2" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6" fill="#111"/></marker>
+    </defs>
+  </svg>
+  <div class="figcap">S<sub>N</sub>1: 2-chloro/bromo-2-methylpropane. Slow C–X heterolysis → planar carbocation, then fast attack.</div>
+
+  <div class="block l2"><div class="h">Layer 2 — why S<sub>N</sub>1 gives a racemate (draw this to score)</div>
+  If the carbocation carbon is chiral in the product, the <b>planar</b> intermediate is <b>attacked from the top and bottom faces with near-equal probability</b>, giving <b>equal amounts of the two enantiomers → a racemic mixture</b> whose rotations cancel → <b>no net effect on plane-polarised light</b>. The examiner wants the <b>planar cation drawn with the nucleophile approaching both faces and both enantiomer products shown</b> — a words-only answer loses marks.</div>
+  <div class="trap"><b>Don't muddle the two.</b> S<sub>N</sub>2 → inversion → <b>single</b> enantiomer → <b>optically active</b>. S<sub>N</sub>1 → planar cation → <b>racemic</b> → <b>optically inactive</b>. For S<sub>N</sub>1 in H2 you draw the curly arrow for C–X fission (often an equilibrium arrow) but you do <b>not</b> need to draw its transition state — though you must <b>recognise</b> it in an MCQ.</div>
+</div>
+
+<!-- ========================= 5 ========================= -->
+<div class="card" id="s5">
+  <h2><span class="num">5</span> Which mechanism? S<sub>N</sub>1 vs S<sub>N</sub>2 rate factors</h2>
+  <table class="data">
+    <tr><th>Substrate</th><th>S<sub>N</sub>1 rate (carbocation stability)</th><th>S<sub>N</sub>2 rate (steric hindrance)</th><th>Predominant</th></tr>
+    <tr><td>Primary 1°</td><td>slowest (unstable 1° cation)</td><td>fastest (rear is open)</td><td><b>S<sub>N</sub>2</b></td></tr>
+    <tr><td>Secondary 2°</td><td>medium</td><td>medium</td><td>either</td></tr>
+    <tr><td>Tertiary 3°</td><td>fastest (stable 3° cation)</td><td>slowest (3 groups block the rear)</td><td><b>S<sub>N</sub>1</b></td></tr>
+  </table>
+  <div class="defn"><b>S<sub>N</sub>1 depends on carbocation stability:</b> electron-donating alkyl groups <b>stabilise the carbocation by dispersing/reducing its positive charge</b>, lowering \(E_a\); stability 1° &lt; 2° &lt; 3°. <b>S<sub>N</sub>2 depends on steric hindrance:</b> the three alkyl groups of a 3° halogenoalkane <b>obstruct the approach of the nucleophile towards the electron-deficient (δ+) carbon</b>. Quote <b>both</b> arguments.</div>
+  <div class="block l2"><div class="h">Layer 2 — the two exceptions (data would be given)</div>
+  <b>1-chloro-2,2-dimethylpropane</b> (neopentyl) is 1° but almost <b>inert to S<sub>N</sub>2</b> — the bulky adjacent quaternary carbon blocks the rear. <b>(Chloromethyl)benzene \(\ce{C6H5CH2Cl}\)</b> and <b>allylic</b> halides \(\ce{CH2=CHCH2Cl}\) are 1° but favour <b>S<sub>N</sub>1</b>, because the carbocation is <b>stabilised by delocalisation</b> into the ring / \(\ce{C=C}\) \(\pi\) system.</div>
+</div>
+
+<!-- ========================= 6 ========================= -->
+<div class="card" id="s6">
+  <h2><span class="num">6</span> Elimination (E1 / E2) → alkene</h2>
+  <div class="block l1"><div class="h">Layer 1 keywords</div>
+  A nucleophile is also a <b>base</b>: instead of attacking the δ+ carbon it can remove a <b>β-hydrogen</b> (on the carbon <b>next to</b> C–X), the C–X leaves, and a <b>\(\ce{C=C}\) forms</b> — this is <b>β-elimination</b>. <b>The solvent decides substitution vs elimination:</b> <b>aqueous</b> \(\ce{NaOH}\), heat → <b>substitution</b> (alcohol); <b>ethanolic</b> \(\ce{NaOH/KOH}\), heat → <b>elimination</b> (alkene).</div>
+  <div class="block l2"><div class="h">Layer 2 — E1 / E2, products, and the H2 boundary</div>
+  Like substitution, elimination has two kinetic flavours — <b>E2</b> (one step, base removes the β-H as C–X leaves, rate = k[RX][base]) and <b>E1</b> (two steps via the carbocation, rate = k[RX]). <b>For H2 you are NOT required to draw the elimination mechanism</b> — know the reagents/conditions and how to work out the products. <b>Number of alkenes = number of different types of β-hydrogen.</b> Elimination is <b>entropy-driven</b> (1 molecule → 2, \(\Delta S \gt 0\)), so <b>higher temperature favours it</b>. <b>Saytzeff/Zaitsev:</b> the <b>more substituted alkene is the more stable → major product</b>. Example: <b>2-bromobutane + hot ethanolic NaOH → 3 alkenes</b> — but-1-ene (minor) + <b>cis</b>- and <b>trans</b>-but-2-ene (major).</div>
+</div>
+
+<!-- ========================= 7 ========================= -->
+<div class="card" id="s7">
+  <h2><span class="num">7</span> The nucleophilic-substitution arsenal <span class="pill l1p">Layer 1</span></h2>
+  <p class="meta" style="margin-top:0">Learn reagents <b>and</b> conditions exactly — the solvent is the discriminator. All are nucleophilic substitution unless stated.</p>
+  <table class="data">
+    <tr><th>Transformation</th><th>Reagents &amp; conditions</th><th>Product</th><th>Note</th></tr>
+    <tr><td>Hydrolysis → alcohol</td><td><b>\(\ce{NaOH(aq)}\), heat</b></td><td>alcohol R–OH</td><td>OH⁻ nucleophile</td></tr>
+    <tr><td>+ cyanide → nitrile</td><td><b>ethanolic KCN, heat</b></td><td>nitrile R–C≡N</td><td><b>step-up: +1 C</b></td></tr>
+    <tr><td>+ ammonia → amine</td><td><b>ethanolic NH₃, heat under pressure (sealed tube)</b></td><td>1° amine R–NH₂</td><td>over-alkylates; use excess NH₃</td></tr>
+    <tr><td>Elimination → alkene</td><td><b>ethanolic NaOH/KOH, heat</b></td><td>alkene</td><td>needs a β-H</td></tr>
+    <tr><td>Nitrile → carboxylic acid</td><td><b>dilute H₂SO₄(aq), heat</b> (or HCl)</td><td>R–CO₂H</td><td>acidic hydrolysis</td></tr>
+    <tr><td>Nitrile → carboxylate salt</td><td><b>NaOH(aq), heat</b></td><td>R–CO₂⁻Na⁺</td><td>alkaline hydrolysis</td></tr>
+    <tr><td>Nitrile → amine</td><td><b>LiAlH₄ in dry ether</b>, or H₂/Ni</td><td>R–CH₂NH₂</td><td><b>+1 C vs direct NH₃ route</b></td></tr>
+  </table>
+  <div class="defn">The <b>KCN route is the step-up</b> — the cyanide carbon adds one carbon to the chain, so the nitrile is a <b>masked carboxylic-acid / amine one carbon longer</b>. <b>Direct \(\ce{NH3}\) keeps the same carbon count.</b> Choose the route from the target's carbon count.</div>
+  <div class="trap"><b>Over-alkylation.</b> The 1° amine is a <b>stronger nucleophile than \(\ce{NH3}\)</b> (electron-donating alkyl), so it keeps reacting: RX → 1° → 2° → 3° amine → <b>quaternary ammonium salt \(\ce{R4N+X-}\)</b> (N with 4 R groups, no lone pair, cannot be deprotonated). <b>Use EXCESS \(\ce{NH3}\)</b> to favour the 1° amine.</div>
+</div>
+
+<!-- ========================= 8 ========================= -->
+<div class="card" id="s8">
+  <h2><span class="num">8</span> C–X bond strength → reactivity <span class="pill l1p">Layer 1</span></h2>
+  <table class="data">
+    <tr><th>Bond</th><th>C–F</th><th>C–Cl</th><th>C–Br</th><th>C–I</th></tr>
+    <tr><td>Energy / kJ mol⁻¹ (Data Booklet)</td><td>485</td><td>340</td><td>280</td><td>240</td></tr>
+    <tr><td>Ease / rate of substitution</td><td>inert</td><td>slow</td><td>faster</td><td><b>fastest</b></td></tr>
+  </table>
+  <div class="defn">The rate-determining step of <b>both</b> S<sub>N</sub>1 and S<sub>N</sub>2 <b>breaks the C–X bond</b>. As the halogen gets bigger the <b>C–X bond lengthens and weakens</b>, so it breaks more readily: <b>rate of hydrolysis iodo &gt; bromo &gt; chloro</b>. <b>C–F is very strong → fluoroalkanes are essentially inert.</b> Cite the Data-Booklet bond energies.</div>
+  <div class="trap"><b>Polarity trap.</b> C–F is the <b>most polar</b> bond (carbon most δ+) yet fluoroalkanes are the <b>least</b> reactive — because rate tracks <b>bond strength, not carbon polarity</b>. (C–F is strong partly because C and F are both Period 2 → good orbital-size match, no mismatch.)</div>
+</div>
+
+<!-- ========================= 9 ========================= -->
+<div class="card" id="s9">
+  <h2><span class="num">9</span> Halogenoarenes — why chlorobenzene is unreactive</h2>
+  <div class="defn">Chlorobenzene is far <b>less reactive towards nucleophilic substitution</b> than a halogenoalkane, for <b>two reasons</b> (state both):
+  <br>1. <b>Partial double-bond character.</b> The <b>lone pair on the halogen is delocalised into the benzene ring</b>, so the C–Cl bond gains <b>partial double-bond character → it is shorter and stronger → very hard to break</b>.
+  <br>2. <b>Steric + electronic blocking.</b> The <b>benzene ring blocks the rear</b> of the C–X bond and its <b>π-electron cloud repels the incoming (electron-rich) nucleophile</b>.</div>
+  <div class="block l2"><div class="h">Layer 2 — the sp² pattern &amp; ring reactivity</div>
+  The same delocalisation makes any <b>halogen on an sp² carbon</b> (aryl or vinyl, e.g. 1-bromocyclohexene) resistant to nucleophilic substitution. It also can't go S<sub>N</sub>1: the carbocation's empty p-orbital would be <b>orthogonal to the \(\ce{C=C}\) π system</b>, so it isn't stabilised. Halogenoarenes still undergo <b>electrophilic substitution on the ring</b>, but <b>less readily than benzene</b> — the halogen is <b>deactivating</b> yet <b>2,4-directing</b> (the Topic-12 exception).</div>
+</div>
+
+<!-- ========================= 10 ========================= -->
+<div class="card" id="s10">
+  <h2><span class="num">10</span> Distinguishing tests — the silver halide <span class="pill l1p">Layer 1</span></h2>
+  <div class="block l2"><div class="h">Layer 2 — identify the halogen (colour + NH₃ solubility)</div>
+  Works only for a halogen on an <b>sp³ carbon</b> (it must release a <b>free halide ion</b>).
+  <br><b>1.</b> Add <b>\(\ce{NaOH(aq)}\), warm</b> → hydrolysis releases \(\ce{X-}\).
+  <br><b>2.</b> Add <b>excess dilute \(\ce{HNO3}\)</b> to neutralise the unreacted \(\ce{OH-}\) (else brown \(\ce{Ag2O}\) forms). <b>Not HCl</b> (adds \(\ce{Cl-}\)); <b>not \(\ce{H2SO4}\)</b> (\(\ce{Ag2SO4}\) sparingly soluble).
+  <br><b>3.</b> Add <b>\(\ce{AgNO3(aq)}\)</b> → note the precipitate colour.
+  <br><b>4.</b> Add \(\ce{NH3(aq)}\) to confirm by solubility (colours are hard to tell apart).</div>
+  <table class="data">
+    <tr><th></th><th>chloroalkane</th><th>bromoalkane</th><th>iodoalkane</th></tr>
+    <tr><td>AgX precipitate</td><td><b>white</b> (AgCl)</td><td><b>cream</b> (AgBr)</td><td><b>yellow</b> (AgI)</td></tr>
+    <tr><td>Solubility in NH₃</td><td>dissolves in <b>dilute</b> NH₃</td><td>dissolves only in <b>concentrated</b> NH₃</td><td><b>insoluble</b> even in conc. NH₃</td></tr>
+  </table>
+  <div class="defn"><b>Rate test (ethanolic \(\ce{AgNO3}\), hot water bath):</b> add ethanolic \(\ce{AgNO3}\) to each halogenoalkane and time the precipitate. <b>Rate of AgX formation: iodo (almost immediate) &gt; bromo &gt; chloro (slowest)</b> — the <b>weaker C–X breaks faster</b> (RDS). This also separates a halogeno<b>alkane</b> (gives a ppt) from a halogeno<b>arene</b> (no ppt — C–X won't break).</div>
+  <div class="trap"><b>Two different tests.</b> If the halogenoalkanes are <b>pre-hydrolysed</b> with NaOH first, they all have the same free-halide concentration → they precipitate at the <b>same time</b>, so you read the <b>colour</b>. If they are <b>not</b> pre-hydrolysed, you read the <b>rate</b> (reflects bond strength). Dissolving forms the colourless \(\ce{[Ag(NH3)2]+}\) complex.</div>
+</div>
+
+<!-- ========================= 11 ========================= -->
+<div class="card" id="s11">
+  <h2><span class="num">11</span> Uses, CFCs &amp; ozone depletion</h2>
+  <div class="block l2"><div class="h">Layer 2 — the exam-testable environmental story</div>
+  <b>Fluoroalkanes / PTFE (Teflon)</b> are used where <b>chemical inertness</b> matters (the C–F bond is very strong). <b>CFCs</b> (C–Cl + C–F only, e.g. \(\ce{CCl2F2}\)) were refrigerants, propellants and fire extinguishers — <b>inert, non-flammable, non-toxic, easily liquefied</b>.</div>
+  <div class="defn"><b>Ozone depletion — it is the C–Cl bond that does the damage, not C–F</b> (mechanism itself not required):
+  <br>1. UV light causes <b>homolytic fission of the weaker C–Cl bond → \(\ce{Cl\bullet}\) radical</b> (C–F 485 too strong to break).
+  <br>2. \(\ce{Cl\bullet + O3 -> ClO\bullet + O2}\)
+  <br>3. \(\ce{ClO\bullet + O -> Cl\bullet + O2}\) — the \(\ce{Cl\bullet}\) is <b>regenerated</b>, so one radical <b>catalytically</b> destroys many ozone molecules.</div>
+  <div class="trap"><b>Substitutes &amp; GWP.</b> A safe substitute has <b>no C–Cl, C–Br or C–I bond</b> (e.g. butane — pure alkane, but flammable). <b>HFCs</b> (C–H + C–F, no Cl) <b>don't deplete ozone but are still greenhouse gases</b>. <b>HCFCs</b> deplete ozone far less than CFCs. Relative GWP: <b>CFC &gt; HFC &gt; HCFC &gt; hydrocarbon</b>. Note C–Br is even weaker than C–Cl, so bromo compounds are worse, not better.</div>
+</div>
+
+<hr>
+
+<!-- ========================= 12 — active recall ========================= -->
+<div class="card" id="s12">
+  <h2><span class="num">12</span> Active recall — cover, answer aloud, then reveal</h2>
+  <p class="meta" style="margin-top:0">Do not read these — generate the answer from memory first, then reveal to mark yourself. If you hesitate on any, that node isn't encoded yet.</p>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q1 · Why does bp rise chloro &lt; bromo &lt; iodo for the same alkyl group? (mark-scheme reasoning)</div>
+    The electron cloud (number of electrons) increases Cl &lt; Br &lt; I, so <b>dispersion forces increase</b>; more energy is needed to overcome them, so bp increases. Explain by <b>electron-cloud size, not polarity</b>.</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q2 · State the rate law and stereochemical outcome for S<sub>N</sub>2 vs S<sub>N</sub>1 on a chiral substrate.</div>
+    <b>S<sub>N</sub>2:</b> rate = k[RX][Nu], one step, backside attack → <b>inversion → single enantiomer → optically active</b>. <b>S<sub>N</sub>1:</b> rate = k[RX], two steps via a planar carbocation → <b>racemic mixture → optically inactive</b>.</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q3 · Using both factors, why do 1° favour S<sub>N</sub>2 and 3° favour S<sub>N</sub>1?</div>
+    <b>Carbocation stability</b> (S<sub>N</sub>1): three electron-donating alkyl groups stabilise the 3° cation by dispersing its + charge → lower \(E_a\). <b>Steric hindrance</b> (S<sub>N</sub>2): those three groups block the nucleophile's rear approach to the δ+ carbon. So 1° → S<sub>N</sub>2, 3° → S<sub>N</sub>1.</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q4 · Reagents/conditions + product for bromoethane with (a) OH⁻ (b) CN⁻ (c) NH₃. Which is the step-up and why?</div>
+    (a) <b>NaOH(aq), heat</b> → ethanol. (b) <b>ethanolic KCN, heat</b> → propanenitrile — the <b>step-up</b> (cyanide carbon adds one C). (c) <b>ethanolic NH₃, heat under pressure</b> → ethylamine (use excess NH₃ to limit over-alkylation).</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q5 · Same halogenoalkane, same OH⁻ — what one change of conditions switches alcohol ↔ alkene?</div>
+    The <b>solvent</b>. <b>Aqueous</b> NaOH, heat → substitution (alcohol). <b>Ethanolic</b> NaOH, heat → elimination (alkene). Always state the solvent.</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q6 · Give two reasons chlorobenzene resists nucleophilic substitution far more than chloroethane.</div>
+    (1) The Cl lone pair <b>delocalises into the ring → partial double-bond character → C–Cl shorter and stronger</b>, hard to break. (2) The ring <b>blocks the rear</b> and its <b>π cloud repels the nucleophile</b>.</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q7 · Full AgX test: all four steps, why excess HNO₃, plus colours &amp; NH₃ solubilities.</div>
+    NaOH(aq)/warm → excess dilute HNO₃ (neutralise OH⁻ or brown Ag₂O forms; not HCl/H₂SO₄) → AgNO₃(aq) → NH₃ to confirm. <b>AgCl white / AgBr cream / AgI yellow</b>; solubility <b>dilute NH₃ / conc. NH₃ / insoluble</b>.</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q8 · How do CFCs deplete ozone (which bond breaks and why), and rank GWP of CFC/HFC/HCFC/hydrocarbon.</div>
+    UV homolyses the weaker <b>C–Cl</b> (not C–F) → \(\ce{Cl\bullet}\), which catalytically destroys \(\ce{O3}\) (\(\ce{Cl\bullet}\) regenerated). GWP: <b>CFC &gt; HFC &gt; HCFC &gt; hydrocarbon</b>; HFCs don't deplete ozone but are still greenhouse gases.</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+</div>
+
+<hr>
+<p class="meta"><b>Next:</b> once this is encoded, drill <b>cluster_chem_halogen.html</b> (covers every LO once, real HCI questions) then <b>gap_chem_halogen.html</b> (the hard multi-concept fusions). Then paste your Loom transcript and I'll flag the weak nodes.</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn => {
+    btn.addEventListener('click', function(){
+      const block=this.parentElement, overlay=block.querySelector('.answer-overlay');
+      if(overlay.classList.contains('hidden')){overlay.classList.remove('hidden');this.textContent='Reveal';this.classList.remove('hide-state');}
+      else{overlay.classList.add('hidden');this.textContent='Hide';this.classList.add('hide-state');}
+    });
+  });
+  function revealAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.add('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Hide';b.classList.add('hide-state');});}
+  function hideAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.remove('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Reveal';b.classList.remove('hide-state');});}
+</script>
+</body>
+</html>
