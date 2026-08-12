@@ -74,6 +74,28 @@ CONFIDENCE_TEXT = CONFIG.get(
 # ----------------------------------------------------------------------------------
 
 src = open(MD, encoding="utf-8").read()
+
+
+def strip_emdash(t):
+    """Em and en dashes are banned in everything Ethan reads. They survive in figure
+    attributions and bracketed tags long after the prose is clean, so normalise them here
+    rather than relying on each build to remember. Set "keep_dashes": true to opt out."""
+    t = re.sub(r"\[(INFERRED|OFFICIAL|SCHOOL|CROSS-CLUSTER|FIGURE|FIG)\s*[—–]\s*", r"[\1: ", t)
+    t = re.sub(r"\s+[—–]\s+", ", ", t)          # mid-sentence separator
+    return t.replace("—", ", ").replace("–", "-")   # anything left over
+
+
+if not CONFIG.get("keep_dashes"):
+    src = strip_emdash(src)
+    # the header strings and figure captions come from the config, not the markdown,
+    # so they bypass the pass above
+    TITLE, SUBTITLE = strip_emdash(TITLE), strip_emdash(SUBTITLE)
+    INTRO, LOS = strip_emdash(INTRO), strip_emdash(LOS)
+    try:
+        CAPTION = {k: strip_emdash(v) for k, v in CAPTION.items()}
+    except NameError:
+        pass
+
 qhalf, mhalf = re.split(r"^# Mark Schemes\s*$", src, maxsplit=1, flags=re.M)
 
 
