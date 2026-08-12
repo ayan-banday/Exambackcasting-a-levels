@@ -64,6 +64,13 @@ TITLE    = CONFIG.get("title", "Cluster Drill")
 SUBTITLE = CONFIG.get("subtitle", "H2 Biology 9477 - Book 1")
 INTRO    = CONFIG.get("intro_html", DEFAULT_INTRO)
 LOS      = CONFIG.get("los_html", "")
+# Ethan, 12 Aug: rate confidence out loud before every reveal. On by default for every drill;
+# set "confidence_prompt": false in a config to switch it off.
+CONFIDENCE = CONFIG.get("confidence_prompt", True)
+CONFIDENCE_TEXT = CONFIG.get(
+    "confidence_text",
+    "Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.",
+)
 # ----------------------------------------------------------------------------------
 
 src = open(MD, encoding="utf-8").read()
@@ -232,6 +239,8 @@ for qno in sorted(QS, key=int):
         blocks.append(f'<div class="qpart">{render(text, qno, part, figs_used)}</div>')
         if part and part in mparts:
             ans = render(mparts[part], qno, part)
+            if CONFIDENCE:
+                blocks.append(f'<div class="confidence">{CONFIDENCE_TEXT}</div>')
             blocks.append(
                 f'<div class="block answer"><span class="label">Answer  -  part ({part})</span>'
                 f'<div class="answer-content">{ans}</div>'
@@ -302,6 +311,10 @@ align-items:center;justify-content:center;cursor:pointer}
 .reveal-btn{background:#232830;border:1px solid var(--border);padding:7px 18px;border-radius:5px;
 cursor:pointer;font-size:.85em;font-weight:600;color:var(--text)}
 .reveal-btn:hover{background:#2f343d}
+.confidence{margin:10px 0 -4px;padding:5px 12px;border:1px dashed #3a4150;border-radius:5px;
+color:var(--muted);font-size:.78em;letter-spacing:.02em;
+font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;background:transparent}
+.confidence b{color:#b9c2d0;font-weight:600}
 .marks{display:inline-block;font-size:.8em;background:#3d3016;color:#f0c674;padding:2px 8px;
 border-radius:10px;font-weight:700;margin-left:4px;font-family:-apple-system,sans-serif}
 .fig{margin:14px 0;padding:12px;background:#f7f7f7;border:1px solid var(--border);border-radius:6px;text-align:center}
