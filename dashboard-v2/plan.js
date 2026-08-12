@@ -12,15 +12,15 @@ window.PLAN = {
   "perWeekHrs": 36,
   "target": "Prelim: a mid-B / C is fine — cover the priority topics, sacrifice the low-value ones. A-levels (2–27 Nov 2026): everything drilled to mastery, multiple passes.",
   "reality": "6h/day study (business gets the rest). 84h before prelims, front-loaded on GP + Bio + Maths (the papers that land first). CSC = Anki maintenance only until the Sept gap. Prelim target mid-C; real mastery push runs to the A-levels (Oct–Nov).",
-  "lastUpdated": "2026-08-10",
+  "lastUpdated": "2026-08-12",
   "repo": "https://github.com/ayan-banday/Exambackcasting-a-levels",
   "alevel": "2026-11-02",
   "subtitle": "Ethan Lim · 6h/day Mon–Fri · Sat 6h drill · Sun rest · +15min CSC Anki daily · to 22 Sep",
   "prelimStart": "2026-08-24",
   "alevelStart": "2026-11-02",
-  "clustersRemaining": 19,
-  "clustersDone": 11,
-  "clustersTotal": 30,
+  "clustersRemaining": 18,
+  "clustersDone": 15,
+  "clustersTotal": 33,
   "alevelEnd": "2026-11-26"
  },
  "subjects": {
@@ -224,49 +224,67 @@ window.PLAN = {
    "n": 22
   },
   {
-   "n": 23,
+   "subject": "bio",
+   "name": "Book 3 — Cell Signalling",
+   "flag": "",
+   "n": 23
+  },
+  {
+   "subject": "bio",
+   "name": "Book 3 — Cell & Nuclear Division",
+   "flag": "",
+   "n": 24
+  },
+  {
+   "subject": "bio",
+   "name": "Book 3 — Cancer & Stem Cells",
+   "flag": "⚑",
+   "n": 25
+  },
+  {
+   "n": 26,
    "subject": "bio",
    "name": "Inheritance — Dihybrid, Codominance & Sex-Linkage",
    "flag": ""
   },
   {
-   "n": 24,
+   "n": 27,
    "subject": "bio",
    "name": "Inheritance — Chi-Squared Test",
    "flag": ""
   },
   {
-   "n": 25,
+   "n": 28,
    "subject": "bio",
    "name": "Biostatistics Toolkit",
    "flag": ""
   },
   {
-   "n": 26,
+   "n": 29,
    "subject": "bio",
    "name": "Evolution — Variation, Natural Selection & Hardy-Weinberg",
    "flag": ""
   },
   {
-   "n": 27,
+   "n": 30,
    "subject": "bio",
    "name": "Mutations & Cancer",
    "flag": ""
   },
   {
-   "n": 28,
+   "n": 31,
    "subject": "gp",
    "name": "Essay — slotting, expansion & body paragraphs",
    "flag": "⚑"
   },
   {
-   "n": 29,
+   "n": 32,
    "subject": "gp",
    "name": "Essay — intros, conclusions & timed writing",
    "flag": ""
   },
   {
-   "n": 30,
+   "n": 33,
    "subject": "gp",
    "name": "Paper 2 — comprehension, summary & AQ",
    "flag": ""
@@ -1575,36 +1593,56 @@ window.PLAN = {
    "date": "2026-08-13",
    "weekday": "Thu",
    "type": "standard",
-   "subject": "bio",
+   "subject": "maths",
    "flag": "",
-   "mins": 360,
-   "label": "Bio + Maths + GP",
-   "focus": "DNA Structure & Replication  ·  Maclaurin re-drill  ·  P1 domain bank (Science/Env)",
+   "mins": 480,
+   "label": "Maths + Chem",
+   "focus": "Int+Diff cluster + gap  ·  Halogen study sheet + drill + gap",
    "blocks": [
     {
-     "mins": 120,
-     "subject": "bio",
-     "name": "Bio — DNA Structure & Replication",
-     "desc": "",
-     "done": false,
-     "doneDate": null
-    },
-    {
-     "mins": 120,
+     "mins": 180,
      "subject": "maths",
-     "name": "Maths — Maclaurin re-drill",
-     "desc": "",
+     "name": "Maths — Integration + Differentiation cluster (test everything)",
+     "desc": "Every Int + Diff LO once. Real questions, no hints, hidden answers. Aim ~80%.",
      "done": false,
      "doneDate": null,
-     "clusterHref": "clusters/redrill_maths_maclaurin.html"
+     "clusterHref": "clusters/cluster_math_intdiff.html"
     },
     {
-     "mins": 120,
-     "subject": "gp",
-     "name": "GP — P1 domain bank (Science/Env)",
-     "desc": "",
+     "mins": 150,
+     "subject": "maths",
+     "name": "Maths — Int+Diff GAP cluster (15Q, harder)",
+     "desc": "Fused Int×Diff, 127 marks, ~3h — give yourself extra time.",
      "done": false,
-     "doneDate": null
+     "doneDate": null,
+     "clusterHref": "clusters/gap_math_intdiff.html"
+    },
+    {
+     "mins": 30,
+     "subject": "chem",
+     "name": "Chem — Halogen Derivatives STUDY SHEET (read first)",
+     "desc": "Full teach: SN1/SN2 + elimination + tests + CFCs.",
+     "done": false,
+     "doneDate": null,
+     "clusterHref": "clusters/chem_halogen_studysheet.html"
+    },
+    {
+     "mins": 75,
+     "subject": "chem",
+     "name": "Chem — Halogen cluster drill (12Q)",
+     "desc": "Covers every LO once.",
+     "done": false,
+     "doneDate": null,
+     "clusterHref": "clusters/cluster_chem_halogen.html"
+    },
+    {
+     "mins": 45,
+     "subject": "chem",
+     "name": "Chem — Halogen GAP cluster (5Q, hard)",
+     "desc": "SN1/SN2 + stereochem + tests + synthesis fusions.",
+     "done": false,
+     "doneDate": null,
+     "clusterHref": "clusters/gap_chem_halogen.html"
     }
    ],
    "week": 4
@@ -2964,6 +3002,24 @@ window.PLAN = {
   ]
  ],
  "log": [
+  {
+   "date": "2026-08-12",
+   "weekday": "Wed",
+   "items": [
+    {
+     "subject": "bio",
+     "mins": 300,
+     "done": true,
+     "what": "Bio Book 2 finished end to end. Drilled C1 (9 Q/126), C2 (9 Q/118), C3 (9 Q/148) and the gap cluster (9 Q/150). 65 gaps banked across four transcripts; 11 verified closed including gel electrophoresis, his largest. Three gaps still open, one of them (collagen covalent cross-links) has now survived THREE exposures and needs an encoding pass rather than another question. Bioethics dropped from all Bio drills on his call."
+    },
+    {
+     "subject": "bio",
+     "mins": 0,
+     "done": true,
+     "what": "Bio Book 3 built: chapter digest, examiner guide with scope audit, pre-study sheet (1814 w, 42 Layer-1 claims) and all three cluster study sheets + drills (8/8/9 questions, 392 marks, 19 real figures). Scope audit cut apoptosis, cyclin, CDK, telomerase, karyotype and iPSC as zero-hit; kept p53 and ras, which LO 2(q) names. Book 3 measured at 13-16% of the whole A-level."
+    }
+   ]
+  },
   {
    "date": "2026-08-10",
    "weekday": "Mon",
