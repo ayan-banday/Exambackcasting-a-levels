@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Integration + Differentiation — Main Cluster (9758)</title>
+<title>Integration × Differentiation — Gap Cluster (9758)</title>
 <script>
   window.MathJax = { tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], processEscapes: true, tags:'none' }, svg:{fontCache:'global'} };
 </script>
@@ -11,7 +11,7 @@
 <style>
   :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
     --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --green:#059669; --green-soft:#ecfdf5;
-    --cover:#f3f4f6; --accent:#1f3a7a; }
+    --cover:#f3f4f6; --accent:#6d28d9; --purple:#7c3aed; }
   *{box-sizing:border-box}
   body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:36px 24px 90px;line-height:1.65;color:var(--text);background:var(--bg)}
   h1,h3,.label,.controls,button,.step-header,.hd .sub,.hd .meta,.cardhead,.conf,.src,.marks,.testline{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
@@ -60,70 +60,64 @@
 
 <div class="hd">
   <h1>H2 MATHEMATICS</h1>
-  <div class="sub">Integration + Differentiation &mdash; Main Cluster &middot; test every learning outcome once</div>
-  <div class="meta">9758 &middot; H2 &middot; Paper 1 (Pure) &middot; 15 questions &middot; <b>~3 hours &middot; 100 marks</b></div>
+  <div class="sub">Integration &times; Differentiation &mdash; Gap Cluster &middot; the hard fusions</div>
+  <div class="meta">9758 &middot; H2 &middot; Paper 1 &amp; 2 (Pure) &middot; 19 questions &middot; <b>~4h &mdash; give yourself extra time &middot; 163 marks</b></div>
 </div>
 
 <div class="intro">
-This cluster walks once through <b>every Integration and Differentiation learning outcome</b> examinable in Paper 1 (28 Aug) &mdash; roughly one question per outcome. Every question is a <b>real HCI tutorial / supplementary / A-Level paper question</b>; every revealed solution is the <b>verbatim HCI worked solution</b>, with each mark tagged <span class="mk">(1)</span> where it is earned and every symbol named before it enters a formula. <b>Do the whole thing cold, timed, in one sitting.</b> State your confidence out loud before you reveal each answer &mdash; that line feeds the gap tracker. If you can clear this at ~80%, Integration + Differentiation is where it needs to be for the paper.
+Most questions here <b>fuse Integration and Differentiation inside one problem</b> &mdash; differentiate to get a result then integrate with it, find a turning point then the bounded area, prove a volume by integration then feed it into a connected-rate, or turn a parametric gradient into an area or arc length. The last four were added so the set now <b>tests every Integration and Differentiation learning outcome at least once</b> &mdash; the MF26 standard forms, partial fractions, a Maclaurin series built by integrating its own expansion, an area between two curves, and an area under a parametric curve. This is the harder tier from the HCI supplementaries and the A-Level papers. <b>Every question is a real past-paper / supplementary question; every revealed solution reproduces the verbatim HCI worked solution</b>, each mark tagged <span class="mk">(1)</span> where earned and every symbol named before it enters a formula. These run slower than exam pace &mdash; 163 marks of synthesis work is comfortably around 4 hours attempted cold. Don't rush; state your confidence before each reveal.
 </div>
 
 <div class="radians">
-<b>Set your calculator to radians.</b> &nbsp;Every \(\sin^{-1}\), \(\tan^{-1}\) and every \(\pi\) on this sheet is in radians. Check the mode indicator before you type any numeric answer.
+<b>Set your calculator to radians.</b> &nbsp;Every \(\sin^{-1}\), \(\tan^{-1}\), \(\cot\), and every \(\pi\) on this sheet is in radians. Check the mode indicator before you type any numeric answer.
 </div>
 
 <div class="controls"><button onclick="revealAll()">Reveal all</button><button onclick="hideAll()">Hide all</button></div>
 
-<div class="toc"><strong>The 15 questions</strong>
-<a href="#q1"><b>Q1</b> <span class="marks">[10]</span> &nbsp;HCI Tutorial 5A Q1</a>
-<a href="#q2"><b>Q2</b> <span class="marks">[8]</span> &nbsp;HCI Tutorial 5A Q2</a>
-<a href="#q3"><b>Q3</b> <span class="marks">[8]</span> &nbsp;A-Level 2010 P1 Q4</a>
-<a href="#q4"><b>Q4</b> <span class="marks">[7]</span> &nbsp;A-Level N2011 P1 Q3</a>
-<a href="#q5"><b>Q5</b> <span class="marks">[8]</span> &nbsp;A-Level 2019 P1 Q6</a>
-<a href="#q6"><b>Q6</b> <span class="marks">[5]</span> &nbsp;SAJC 2009 Promo Q4</a>
-<a href="#q7"><b>Q7</b> <span class="marks">[7]</span> &nbsp;A-Level 2019 P2 Q3</a>
-<a href="#q8"><b>Q8</b> <span class="marks">[6]</span> &nbsp;HCI Tutorial 5B Q9</a>
-<a href="#q9"><b>Q9</b> <span class="marks">[5]</span> &nbsp;HCI Tut 6A Q1(c) + RJC 2006 Promo Q13</a>
-<a href="#q10"><b>Q10</b> <span class="marks">[9]</span> &nbsp;A-Level 2020 P1 Q6</a>
-<a href="#q11"><b>Q11</b> <span class="marks">[6]</span> &nbsp;A-Level N2003 P2 Q2</a>
-<a href="#q12"><b>Q12</b> <span class="marks">[6]</span> &nbsp;CJC 2006 Promo Q1</a>
-<a href="#q13"><b>Q13</b> <span class="marks">[4]</span> &nbsp;A-Level N2004 P1 Q4</a>
-<a href="#q14"><b>Q14</b> <span class="marks">[5]</span> &nbsp;A-Level 2019 P1 Q2</a>
-<a href="#q15"><b>Q15</b> <span class="marks">[6]</span> &nbsp;A-Level J84 P1 Q7</a>
+<div class="toc"><strong>The 19 questions &middot; full LO coverage</strong>
+<a href="#q1"><b>Q1</b> <span class="marks">[6]</span> &nbsp;A-Level 2018 P1 Q1</a>
+<a href="#q2"><b>Q2</b> <span class="marks">[6]</span> &nbsp;A-Level 2014 P1 Q5</a>
+<a href="#q3"><b>Q3</b> <span class="marks">[6]</span> &nbsp;HCI 2006 Promo Q7</a>
+<a href="#q4"><b>Q4</b> <span class="marks">[7]</span> &nbsp;A-Level 2022 P1 Q4</a>
+<a href="#q5"><b>Q5</b> <span class="marks">[6]</span> &nbsp;A-Level N2002 P1 Q6</a>
+<a href="#q6"><b>Q6</b> <span class="marks">[4]</span> &nbsp;SRJC 2006 Promo Q10</a>
+<a href="#q7"><b>Q7</b> <span class="marks">[9]</span> &nbsp;A-Level 2008 P2 Q2</a>
+<a href="#q8"><b>Q8</b> <span class="marks">[13]</span> &nbsp;A-Level 2021 P1 Q8</a>
+<a href="#q9"><b>Q9</b> <span class="marks">[12]</span> &nbsp;A-Level 2009 P1 Q11</a>
+<a href="#q10"><b>Q10</b> <span class="marks">[10]</span> &nbsp;A-Level 2013 P1 Q10</a>
+<a href="#q11"><b>Q11</b> <span class="marks">[13]</span> &nbsp;A-Level 2018 P1 Q9</a>
+<a href="#q12"><b>Q12</b> <span class="marks">[7]</span> &nbsp;HCI 2006 Promo Q9</a>
+<a href="#q13"><b>Q13</b> <span class="marks">[12]</span> &nbsp;A-Level 2011 P2 Q4</a>
+<a href="#q14"><b>Q14</b> <span class="marks">[10]</span> &nbsp;A-Level 2016 P2 Q4</a>
+<a href="#q15"><b>Q15</b> <span class="marks">[6]</span> &nbsp;A-Level 2019 P2 Q1</a>
+<a href="#q16"><b>Q16</b> <span class="marks">[9]</span> &nbsp;A-Level 2014 P1 Q9</a>
+<a href="#q17"><b>Q17</b> <span class="marks">[9]</span> &nbsp;A-Level 2014 P2 Q2</a>
+<a href="#q18"><b>Q18</b> <span class="marks">[13]</span> &nbsp;A-Level 2012 P1 Q10</a>
+<a href="#q19"><b>Q19</b> <span class="marks">[5]</span> &nbsp;A-Level 2020 P1 Q8</a>
 </div>
 
 
 <!-- Q1 -->
 <div class="card" id="q1">
-  <div class="cardhead">Question 1 <span class="marks">[10]</span></div>
-  <div class="src">HCI Tutorial 5A Q1</div>
-  <div class="stem">Differentiate each of the following with respect to \(x\), simplifying your answers.
-    <span class="sub">(a) \(\displaystyle \frac{4x^3+2x^2+1}{x}\)</span>
-    <span class="sub">(b) \(\operatorname{cosec}^3\sqrt{x}\)</span>
-    <span class="sub">(c) \(\ln\sqrt{\dfrac{x-a}{x+a}}\,\), where \(0<a<x\) and \(a\) is a constant</span>
-    <span class="sub">(e) \(e^{\sin^2 x}\big(e^{-x^2}+1\big)\)</span>
+  <div class="cardhead">Question 1 <span class="marks">[6]</span></div>
+  <div class="src">A-Level 2018 P1 Q1</div>
+  <div class="stem">
+    <span class="sub">(i) Given that \(y=\dfrac{\ln x}{x}\), find \(\dfrac{\mathrm dy}{\mathrm dx}\) in terms of \(x\). <span class="marks">[2]</span></span>
+    <span class="sub">(ii) Hence, or otherwise, find the exact value of \(\displaystyle\int_{1}^{e}\frac{\ln x}{x^2}\,\mathrm dx\), showing your working. <span class="marks">[4]</span></span>
   </div>
   <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
   <div class="block answer"><button class="reveal-btn">Reveal solution</button>
     <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
-      <div class="step"><div class="step-header">(a) split the single-term denominator first</div>
-        <span class="name">When the denominator is a single power of \(x\), divide through term by term rather than using the quotient rule.</span>
-        \[ \frac{\mathrm d}{\mathrm dx}\!\left[\frac{4x^3+2x^2+1}{x}\right]=\frac{\mathrm d}{\mathrm dx}\big[4x^2+2x+x^{-1}\big]=8x+2-\frac{1}{x^2}. \] <span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(i) quotient rule</div>
+        <span class="name">\(y=\dfrac{\ln x}{x}\): numerator \(\ln x\) (derivative \(\tfrac1x\)), denominator \(x\) (derivative \(1\)).</span>
+        \[ \frac{\mathrm dy}{\mathrm dx}=\frac{x\cdot\frac1x-\ln x}{x^2}=\frac{1-\ln x}{x^2}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">(b) chain rule through three layers</div>
-        <span class="name">Outer power \((\cdot)^3\), then \(\operatorname{cosec}\sqrt x\) with \(\tfrac{\mathrm d}{\mathrm du}\operatorname{cosec}u=-\operatorname{cosec}u\cot u\), then \(\sqrt x\) with derivative \(\tfrac{1}{2\sqrt x}\).</span>
-        \[ \frac{\mathrm d}{\mathrm dx}\big[(\operatorname{cosec}\sqrt x)^3\big]=3(\operatorname{cosec}^2\sqrt x)\big(-\operatorname{cosec}\sqrt x\cot\sqrt x\big)\!\left(\frac{1}{2\sqrt x}\right)=-\frac{3}{2\sqrt x}\operatorname{cosec}^3\sqrt x\,\cot\sqrt x. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(ii) read the antiderivative off part (i), then split the integrand</div>
+        <span class="name">From (i), \(\displaystyle\int\frac{1-\ln x}{x^2}\,\mathrm dx=\frac{\ln x}{x}+C\). Write \(\dfrac{\ln x}{x^2}=\dfrac{1}{x^2}-\dfrac{1-\ln x}{x^2}\) so the second piece integrates by (i).</span>
+        \[ \int_{1}^{e}\frac{\ln x}{x^2}\,\mathrm dx=\int_{1}^{e}\left[\frac{1}{x^2}-\frac{1-\ln x}{x^2}\right]\mathrm dx=\Big[-\tfrac1x-\tfrac{\ln x}{x}\Big]_{1}^{e}. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ =\Big(-\tfrac1e-\tfrac1e\Big)-\big(-1-0\big)=1-\frac{2}{e}. \] <span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">(c) use log laws to break the expression up first</div>
-        <span class="name">\(\ln\sqrt{\tfrac{x-a}{x+a}}=\tfrac12\big(\ln(x-a)-\ln(x+a)\big)\); differentiate each log term separately.</span>
-        \[ \frac{\mathrm d}{\mathrm dx}\!\left(\ln\sqrt{\tfrac{x-a}{x+a}}\right)=\tfrac12\!\left(\frac{1}{x-a}-\frac{1}{x+a}\right)=\tfrac12\cdot\frac{(x+a)-(x-a)}{(x-a)(x+a)}=\frac{a}{x^2-a^2}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
-      </div>
-      <div class="step"><div class="step-header">(e) product rule, each factor by the chain rule</div>
-        <span class="name">Product of \(u=e^{\sin^2 x}\) (so \(u'=e^{\sin^2 x}\cdot 2\sin x\cos x\)) and \(w=e^{-x^2}+1\) (so \(w'=-2x\,e^{-x^2}\)); then use \(\sin 2x=2\sin x\cos x\).</span>
-        \[ \frac{\mathrm d}{\mathrm dx}\Big[e^{\sin^2 x}\big(e^{-x^2}+1\big)\Big]=e^{\sin^2 x}(2\sin x\cos x)\big(e^{-x^2}+1\big)+e^{\sin^2 x}\big(-2x\,e^{-x^2}\big) \] <span class="mk">(1)</span><span class="mk">(1)</span>
-        \[ =e^{\sin^2 x}\Big[e^{-x^2}(\sin 2x-2x)+\sin 2x\Big]. \] <span class="mk">(1)</span>
-      </div>
-      <div class="testline"><b>Covers:</b> standard differentiation &mdash; simplify-before-quotient, multi-layer chain rule, laws of logarithms, product + chain.</div>
+      <div class="testline"><b>Fuses:</b> quotient-rule differentiation &rarr; reverse it as a &ldquo;hence&rdquo; antiderivative to evaluate a definite integral.</div>
     </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
   </div>
 </div>
@@ -131,29 +125,25 @@ This cluster walks once through <b>every Integration and Differentiation learnin
 
 <!-- Q2 -->
 <div class="card" id="q2">
-  <div class="cardhead">Question 2 <span class="marks">[8]</span></div>
-  <div class="src">HCI Tutorial 5A Q2</div>
-  <div class="stem">Find and simplify the derivative with respect to \(x\) of each of the following functions.
-    <span class="sub">(a) \(\tan^{-1}\!\dfrac{1}{\sqrt{x}}\)</span>
-    <span class="sub">(b) \(\sin^{-1}\sqrt{1-x^2}\)</span>
-    <span class="sub">(c) \(\cos^{-1}\!\big(e^{-x^2}\big)\)</span>
+  <div class="cardhead">Question 2 <span class="marks">[6]</span></div>
+  <div class="src">A-Level 2014 P1 Q5 &middot; DHS 2016 C1 BT Q2</div>
+  <div class="stem">
+    <span class="sub">(a) Find \(\displaystyle\int x\big[(1-3x^2)^5+e^{x^2+1}\big]\,\mathrm dx\). <span class="marks">[3]</span></span>
+    <span class="sub">(b) Find \(\dfrac{\mathrm d}{\mathrm dx}\cos^{-1}(x^2)\). Hence, or otherwise, find the exact value of \(\displaystyle\int_{0}^{1/\sqrt2}\frac{x}{\sqrt{1-x^4}}\,\mathrm dx\). <span class="marks">[3]</span></span>
   </div>
   <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
   <div class="block answer"><button class="reveal-btn">Reveal solution</button>
     <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
-      <div class="step"><div class="step-header">(a)</div>
-        <span class="name">MF26: \(\tfrac{\mathrm d}{\mathrm du}\tan^{-1}u=\tfrac{1}{1+u^2}\) with \(u=x^{-1/2}\), \(u'=-\tfrac12 x^{-3/2}\); remember to differentiate the inside.</span>
-        \[ \frac{\mathrm d}{\mathrm dx}\tan^{-1}\!\frac{1}{\sqrt x}=\frac{1}{1+\left(\frac{1}{\sqrt x}\right)^2}\times\left(-\tfrac12 x^{-3/2}\right)=\frac{x}{x+1}\times\left(-\frac{1}{2x\sqrt x}\right)=-\frac{1}{2\sqrt x\,(x+1)}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(a) both terms are of the form \(f'(x)[f(x)]^n\) / \(f'(x)e^{f(x)}\)</div>
+        <span class="name">\(\int x(1-3x^2)^5\,\mathrm dx\): the inside \(1-3x^2\) differentiates to \(-6x\), so pull out \(-\tfrac16\). \(\int xe^{x^2+1}\,\mathrm dx\): the inside \(x^2+1\) differentiates to \(2x\), so pull out \(\tfrac12\).</span>
+        \[ \int x\big[(1-3x^2)^5+e^{x^2+1}\big]\,\mathrm dx=-\frac{(1-3x^2)^6}{36}+\tfrac12 e^{x^2+1}+C. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">(b)</div>
-        <span class="name">MF26: \(\tfrac{\mathrm d}{\mathrm du}\sin^{-1}u=\tfrac{1}{\sqrt{1-u^2}}\) with \(u=\sqrt{1-x^2}\); note \(\sqrt{x^2}=|x|\), not \(x\).</span>
-        \[ \frac{\mathrm d}{\mathrm dx}\sin^{-1}\sqrt{1-x^2}=\frac{1}{\sqrt{1-(1-x^2)}}\times\frac{1}{2\sqrt{1-x^2}}\times(-2x)=-\frac{x}{\sqrt{x^2}\,\sqrt{1-x^2}}=-\frac{x}{|x|\sqrt{1-x^2}}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(b) differentiate the inverse-trig, then use it in reverse</div>
+        <span class="name">MF26: \(\tfrac{\mathrm d}{\mathrm du}\cos^{-1}u=-\tfrac{1}{\sqrt{1-u^2}}\) with \(u=x^2\), \(u'=2x\). The integrand is then \(-\tfrac12\) of that derivative.</span>
+        \[ \frac{\mathrm d}{\mathrm dx}\cos^{-1}(x^2)=-\frac{2x}{\sqrt{1-x^4}}. \] <span class="mk">(1)</span>
+        \[ \int_{0}^{1/\sqrt2}\frac{x}{\sqrt{1-x^4}}\,\mathrm dx=-\tfrac12\Big[\cos^{-1}(x^2)\Big]_{0}^{1/\sqrt2}=-\tfrac12\Big(\tfrac{\pi}{3}-\tfrac{\pi}{2}\Big)=\frac{\pi}{12}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">(c)</div>
-        <span class="name">MF26: \(\tfrac{\mathrm d}{\mathrm du}\cos^{-1}u=-\tfrac{1}{\sqrt{1-u^2}}\) with \(u=e^{-x^2}\), \(u'=-2x\,e^{-x^2}\); then rationalise with \((a^m)^n=a^{mn}\).</span>
-        \[ \frac{\mathrm d}{\mathrm dx}\cos^{-1}\!\big(e^{-x^2}\big)=\frac{-1}{\sqrt{1-\left(e^{-x^2}\right)^2}}\times e^{-x^2}\times(-2x)=\frac{2x\,e^{-x^2}}{\sqrt{1-e^{-2x^2}}}\times\frac{e^{x^2}}{e^{x^2}}=\frac{2x}{\sqrt{e^{2x^2}-1}}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
-      </div>
-      <div class="testline"><b>Covers:</b> differentiation of inverse trigonometric functions (MF26 standard forms + chain rule).</div>
+      <div class="testline"><b>Fuses:</b> standard-form integration + differentiate an inverse-trig function &rarr; run it backwards to hit an exact integral.</div>
     </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
   </div>
 </div>
@@ -161,25 +151,25 @@ This cluster walks once through <b>every Integration and Differentiation learnin
 
 <!-- Q3 -->
 <div class="card" id="q3">
-  <div class="cardhead">Question 3 <span class="marks">[8]</span></div>
-  <div class="src">A-Level 2010 P1 Q4</div>
-  <div class="stem">A curve has equation \(x^2-y^2+2xy+4=0\).
-    <span class="sub">(i) Find \(\dfrac{\mathrm dy}{\mathrm dx}\) in terms of \(x\) and \(y\). <span class="marks">[4]</span></span>
-    <span class="sub">(ii) Find the coordinates of each point on the curve at which the tangent is parallel to the \(x\)-axis. <span class="marks">[4]</span></span>
+  <div class="cardhead">Question 3 <span class="marks">[6]</span></div>
+  <div class="src">HCI 2006 Promo Q7 &middot; HCI Supplementary Q13</div>
+  <div class="stem">
+    <span class="sub">(i) Show that \(\dfrac{\mathrm d}{\mathrm dx}\tan^{-1}\!\left(\dfrac{1+x}{1-x}\right)=\dfrac{1}{1+x^2}\). <span class="marks">[3]</span></span>
+    <span class="sub">(ii) Hence find \(\displaystyle\int\tan^{-1}\!\left(\frac{1+x}{1-x}\right)\mathrm dx\). <span class="marks">[3]</span></span>
   </div>
   <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
   <div class="block answer"><button class="reveal-btn">Reveal solution</button>
     <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
-      <div class="step"><div class="step-header">(i) differentiate every term implicitly w.r.t. \(x\)</div>
-        <span class="name">Treat \(y\) as a function of \(x\): \(\tfrac{\mathrm d}{\mathrm dx}(y^2)=2y\,\tfrac{\mathrm dy}{\mathrm dx}\), and \(2xy\) needs the product rule \(=2\big(y+x\tfrac{\mathrm dy}{\mathrm dx}\big)\).</span>
-        \[ 2x-2y\frac{\mathrm dy}{\mathrm dx}+2x\frac{\mathrm dy}{\mathrm dx}+2y=0 \;\Rightarrow\; \frac{\mathrm dy}{\mathrm dx}=\frac{x+y}{y-x}. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(i) chain rule on the inverse-trig, quotient rule on the inside</div>
+        <span class="name">Let \(y=\tan^{-1}\!\big(\tfrac{1+x}{1-x}\big)\). MF26: \(\tfrac{\mathrm d}{\mathrm du}\tan^{-1}u=\tfrac{1}{1+u^2}\); the inside \(u=\tfrac{1+x}{1-x}\) differentiates by the quotient rule to \(\tfrac{2}{(1-x)^2}\).</span>
+        \[ \frac{\mathrm dy}{\mathrm dx}=\frac{1}{1+\left(\frac{1+x}{1-x}\right)^2}\cdot\frac{(1-x)-(1+x)(-1)}{(1-x)^2}=\frac{(1-x)^2}{(1-x)^2+(1+x)^2}\cdot\frac{2}{(1-x)^2} \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ =\frac{2}{(1-2x+x^2)+(1+2x+x^2)}=\frac{2}{2+2x^2}=\frac{1}{1+x^2}\quad(\text{shown}). \] <span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">(ii) tangent parallel to \(x\)-axis means \(\dfrac{\mathrm dy}{\mathrm dx}=0\)</div>
-        <span class="name">A zero gradient needs the numerator \(x+y=0\), i.e. \(y=-x\); substitute back into the curve.</span>
-        \[ \frac{\mathrm dy}{\mathrm dx}=0\Rightarrow x+y=0\Rightarrow y=-x;\qquad x^2-x^2-2x^2+4=0\Rightarrow x^2=2\Rightarrow x=\pm\sqrt2. \] <span class="mk">(1)</span><span class="mk">(1)</span>
-        \[ \text{Points: }\ \big(\sqrt2,\,-\sqrt2\big)\ \text{and}\ \big(-\sqrt2,\,\sqrt2\big). \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(ii) integrate by parts using the derivative from (i)</div>
+        <span class="name">Take \(u=\tan^{-1}\!\big(\tfrac{1+x}{1-x}\big)\) (so \(u'=\tfrac{1}{1+x^2}\) from part (i)) and \(v'=1\) (so \(v=x\)).</span>
+        \[ \int\tan^{-1}\!\Big(\tfrac{1+x}{1-x}\Big)\,\mathrm dx=x\tan^{-1}\!\Big(\tfrac{1+x}{1-x}\Big)-\int\frac{x}{1+x^2}\,\mathrm dx=x\tan^{-1}\!\Big(\tfrac{1+x}{1-x}\Big)-\tfrac12\ln(1+x^2)+C. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="testline"><b>Covers:</b> implicit differentiation; locating points with a horizontal tangent.</div>
+      <div class="testline"><b>Fuses:</b> hard quotient + chain + inverse-trig differentiation &rarr; the result becomes \(u'\) inside an integration by parts.</div>
     </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
   </div>
 </div>
@@ -188,29 +178,28 @@ This cluster walks once through <b>every Integration and Differentiation learnin
 <!-- Q4 -->
 <div class="card" id="q4">
   <div class="cardhead">Question 4 <span class="marks">[7]</span></div>
-  <div class="src">A-Level N2011 P1 Q3 &middot; HCI Tutorial 5B Q3</div>
-  <div class="stem">The parametric equations of a curve are \(x=t^2\) and \(y=\dfrac{2}{t}\). The point \(P\) on the curve has parameter \(p\), so \(P\) is \(\big(p^2,\tfrac{2}{p}\big)\).
-    <span class="sub">(i) Find the equation of the tangent to the curve at \(P\), simplifying your answer. <span class="marks">[2]</span></span>
-    <span class="sub">(ii) This tangent meets the \(x\)-axis at \(Q\) and the \(y\)-axis at \(R\). Find the coordinates of \(Q\) and of \(R\). <span class="marks">[2]</span></span>
-    <span class="sub">(iii) The point \(F\) is the midpoint of \(QR\). Find a cartesian equation of the curve traced by \(F\) as \(p\) varies. <span class="marks">[3]</span></span>
+  <div class="src">A-Level 2022 P1 Q4</div>
+  <div class="stem">
+    <span class="sub">(a) Show that \(\dfrac{\mathrm d}{\mathrm dx}(\cot x)=-\operatorname{cosec}^2 x\). <span class="marks">[2]</span></span>
+    <span class="sub">(b) Show that \(\sin 2x\,\tan x=2\sin^2 x\). <span class="marks">[1]</span></span>
+    <span class="sub">(c) Hence find the exact value of \(\displaystyle\int_{\pi/18}^{\pi/9}\operatorname{cosec} 6x\,\cot 3x\,\mathrm dx\). <span class="marks">[4]</span></span>
   </div>
   <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
   <div class="block answer"><button class="reveal-btn">Reveal solution</button>
     <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
-      <div class="step"><div class="step-header">(i) parametric gradient, then point-gradient form</div>
-        <span class="name">\(\dfrac{\mathrm dx}{\mathrm dt}=2t\), \(\dfrac{\mathrm dy}{\mathrm dt}=-\dfrac{2}{t^2}\); \(\dfrac{\mathrm dy}{\mathrm dx}=\dfrac{\mathrm dy/\mathrm dt}{\mathrm dx/\mathrm dt}\). Use \(t=p\) at \(P\).</span>
-        \[ \frac{\mathrm dy}{\mathrm dx}=\frac{-2/t^2}{2t}=-\frac{1}{t^3};\qquad y-\frac{2}{p}=-\frac{1}{p^3}\big(x-p^2\big)\;\Rightarrow\; y=-\frac{x}{p^3}+\frac{3}{p}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(a) quotient rule on \(\cot x=\dfrac{\cos x}{\sin x}\)</div>
+        \[ \frac{\mathrm d}{\mathrm dx}\!\left(\frac{\cos x}{\sin x}\right)=\frac{-\sin^2 x-\cos^2 x}{\sin^2 x}=\frac{-1}{\sin^2 x}=-\operatorname{cosec}^2 x. \] <span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">(ii) set each variable to zero in turn</div>
-        <span class="name">At \(R\) the tangent meets the \(y\)-axis, so \(x=0\); at \(Q\) it meets the \(x\)-axis, so \(y=0\).</span>
-        \[ x=0\Rightarrow y=\tfrac{3}{p}\Rightarrow R\big(0,\tfrac{3}{p}\big);\qquad y=0\Rightarrow \tfrac{x}{p^3}=\tfrac{3}{p}\Rightarrow x=3p^2\Rightarrow Q\big(3p^2,0\big). \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(b) double-angle identity</div>
+        <span class="name">\(\sin 2x=2\sin x\cos x\) and \(\tan x=\tfrac{\sin x}{\cos x}\).</span>
+        \[ \sin 2x\,\tan x=2\sin x\cos x\cdot\frac{\sin x}{\cos x}=2\sin^2 x\quad(\text{shown}). \] <span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">(iii) midpoint, then eliminate the parameter \(p\)</div>
-        <span class="name">Midpoint \(F=\big(\tfrac{3p^2+0}{2},\tfrac{0+3/p}{2}\big)=\big(\tfrac{3p^2}{2},\tfrac{3}{2p}\big)\); call these \(x\) and \(y\), then eliminate \(p\).</span>
-        \[ x=\frac{3p^2}{2}\ \ (1),\qquad y=\frac{3}{2p}\ \ (2)\Rightarrow p=\frac{3}{2y}\ \ (3). \] <span class="mk">(1)</span>
-        \[ \text{Sub (3) into (1): } x=\frac{3}{2}\left(\frac{3}{2y}\right)^2=\frac{27}{8y^2}\;\Rightarrow\; y^2=\frac{27}{8x}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(c) use (b) with \(x\to 3x\) to simplify, then integrate with (a)</div>
+        <span class="name">By (b), \(\sin 6x\,\tan 3x=2\sin^2 3x\), so \(\operatorname{cosec}6x\,\cot 3x=\dfrac{1}{\sin 6x\,\tan 3x}=\dfrac{1}{2\sin^2 3x}=\tfrac12\operatorname{cosec}^2 3x\); antiderivative from (a): \(\int\operatorname{cosec}^2 3x\,\mathrm dx=-\tfrac13\cot 3x\).</span>
+        \[ \int\operatorname{cosec}6x\,\cot 3x\,\mathrm dx=\int\frac{1}{2\sin^2 3x}\,\mathrm dx=-\tfrac16\int -3\operatorname{cosec}^2 3x\,\mathrm dx=-\tfrac16\Big[\cot 3x\Big]_{\pi/18}^{\pi/9} \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ =-\tfrac16\Big[\cot\tfrac{\pi}{3}-\cot\tfrac{\pi}{6}\Big]=-\tfrac16\Big[\tfrac{1}{\sqrt3}-\sqrt3\Big]=\frac{1}{3\sqrt3}=\frac{\sqrt3}{9}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="testline"><b>Covers:</b> parametric differentiation; tangent to a parametric curve; locus by eliminating the parameter.</div>
+      <div class="testline"><b>Fuses:</b> differentiate \(\cot\) + a trig identity &rarr; both feed a &ldquo;hence&rdquo; definite trig integral.</div>
     </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
   </div>
 </div>
@@ -218,26 +207,26 @@ This cluster walks once through <b>every Integration and Differentiation learnin
 
 <!-- Q5 -->
 <div class="card" id="q5">
-  <div class="cardhead">Question 5 <span class="marks">[8]</span></div>
-  <div class="src">A-Level 2019 P1 Q6</div>
-  <div class="stem">A curve \(C\) has equation \(y=xe^{-x}\).
-    <span class="sub">(i) Find the equations of the tangents to \(C\) at the points where \(x=1\) and where \(x=-1\). <span class="marks">[6]</span></span>
-    <span class="sub">(ii) Find the acute angle between these two tangents. <span class="marks">[2]</span></span>
+  <div class="cardhead">Question 5 <span class="marks">[6]</span></div>
+  <div class="src">A-Level N2002 P1 Q6</div>
+  <div class="stem">
+    <span class="sub">(i)(a) Write down \(\dfrac{\mathrm d}{\mathrm dx}\big(e^{x^2}\big)\). <span class="marks">[1]</span></span>
+    <span class="sub">(i)(b) Find \(\displaystyle\int x\,e^{x^2}\,\mathrm dx\). <span class="marks">[1]</span></span>
+    <span class="sub">(ii) Find \(\displaystyle\int_{0}^{1} x^3 e^{x^2}\,\mathrm dx\). <span class="marks">[4]</span></span>
   </div>
   <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
   <div class="block answer"><button class="reveal-btn">Reveal solution</button>
     <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
-      <div class="step"><div class="step-header">(i) product rule for the gradient function</div>
-        <span class="name">\(y=xe^{-x}\) is a product: \(\dfrac{\mathrm dy}{\mathrm dx}=e^{-x}+x\big(-e^{-x}\big)=(1-x)e^{-x}\). Evaluate the point and the gradient at each \(x\).</span>
-        \[ \frac{\mathrm dy}{\mathrm dx}=(1-x)e^{-x}. \] <span class="mk">(1)</span>
-        \[ x=1:\ y=\tfrac1e,\ \tfrac{\mathrm dy}{\mathrm dx}=0\ \Rightarrow\ \text{tangent } y=\tfrac1e. \] <span class="mk">(1)</span><span class="mk">(1)</span>
-        \[ x=-1:\ y=-e,\ \tfrac{\mathrm dy}{\mathrm dx}=2e\ \Rightarrow\ y+e=2e(x+1)\ \Rightarrow\ y=2ex+e. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(i) differentiate, then read the integral straight back</div>
+        <span class="name">\(e^{x^2}\) by the chain rule; the antiderivative of \(x\,e^{x^2}\) is then immediate.</span>
+        \[ \frac{\mathrm d}{\mathrm dx}\big(e^{x^2}\big)=2x\,e^{x^2};\qquad \int x\,e^{x^2}\,\mathrm dx=\tfrac12\int 2x\,e^{x^2}\,\mathrm dx=\tfrac12 e^{x^2}+C. \] <span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">(ii) angle from the gradient</div>
-        <span class="name">One tangent is horizontal (gradient \(0\)); the other has gradient \(2e\), so the acute angle it makes with the horizontal is \(\tan^{-1}(2e)\).</span>
-        \[ \theta=\tan^{-1}(2e)=79.6^\circ\ \ (\text{1 d.p.}). \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(ii) split off \(x^2\), then integrate by parts using (i)(b)</div>
+        <span class="name">Write \(x^3 e^{x^2}=x^2\big(x\,e^{x^2}\big)\). Take \(u=x^2\) (so \(u'=2x\)) and \(v'=x\,e^{x^2}\) (so \(v=\tfrac12 e^{x^2}\), from part (i)(b)).</span>
+        \[ \int_{0}^{1} x^3 e^{x^2}\,\mathrm dx=\Big[\tfrac12 x^2 e^{x^2}\Big]_{0}^{1}-\int_{0}^{1} x\,e^{x^2}\,\mathrm dx=\tfrac12 e-\Big[\tfrac12 e^{x^2}\Big]_{0}^{1} \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ =\tfrac12 e-\Big[\tfrac12 e-\tfrac12\Big]=\tfrac12. \] <span class="mk">(1)</span>
       </div>
-      <div class="testline"><b>Covers:</b> tangents to an exponential curve; product rule; angle between two lines.</div>
+      <div class="testline"><b>Fuses:</b> chain-rule derivative &rarr; the reverse gives \(\int x e^{x^2}\), which is then the \(v'\) in an integration by parts.</div>
     </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
   </div>
 </div>
@@ -245,27 +234,22 @@ This cluster walks once through <b>every Integration and Differentiation learnin
 
 <!-- Q6 -->
 <div class="card" id="q6">
-  <div class="cardhead">Question 6 <span class="marks">[5]</span></div>
-  <div class="src">SAJC 2009 Promo Q4 &middot; HCI Supplementary Q10</div>
-  <div class="stem">A right circular cone has base radius \(5\) cm and height \(15\) cm, and is initially full of water. Water leaks from the vertex of the cone at a rate of \(10\) cm\(^3\)s\(^{-1}\). Find the exact rate of change of the depth of water at the instant when the depth is \(12\) cm.
-    <span class="sub">[The volume of a cone is \(\tfrac13\times(\text{base area})\times(\text{height})\).]</span>
-  </div>
+  <div class="cardhead">Question 6 <span class="marks">[4]</span></div>
+  <div class="src">SRJC 2006 Promo Q10 &middot; HCI Supplementary (Applications) Q8(a)</div>
+  <div class="stem">Differentiate \(\tan^{-1}(x^3)\) with respect to \(x\), and hence, or otherwise, find \(\displaystyle\int x^2\tan^{-1}(x^3)\,\mathrm dx\).</div>
   <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
   <div class="block answer"><button class="reveal-btn">Reveal solution</button>
     <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
-      <div class="step"><div class="step-header">Name the variables and relate radius to depth</div>
-        <span class="name">Let \(h\) cm be the depth of water and \(R\) cm the radius of the water surface at that depth. By similar triangles the empty cone above the water has height \(15-h\).</span>
-        \[ \frac{15-h}{15}=\frac{R}{5}\;\Rightarrow\;R=\frac{15-h}{3}. \] <span class="mk">(1)</span>
+      <div class="step"><div class="step-header">Differentiate the inverse-trig function</div>
+        <span class="name">MF26: \(\tfrac{\mathrm d}{\mathrm du}\tan^{-1}u=\tfrac{1}{1+u^2}\) with \(u=x^3\), \(u'=3x^2\).</span>
+        \[ \frac{\mathrm d}{\mathrm dx}\tan^{-1}(x^3)=\frac{3x^2}{1+x^6}. \] <span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">Volume of water, then differentiate w.r.t. \(h\)</div>
-        <span class="name">\(V=\) (full cone) \(-\) (empty cone above the water), each by \(\tfrac13\pi r^2 h\).</span>
-        \[ V=\tfrac13\pi(5)^2(15)-\tfrac{1}{27}\pi(15-h)^3\;\Rightarrow\;\frac{\mathrm dV}{\mathrm dh}=\frac{\pi(15-h)^2}{9}. \] <span class="mk">(1)</span>
+      <div class="step"><div class="step-header">Integrate by parts, using that derivative as \(u'\)</div>
+        <span class="name">Take \(u=\tan^{-1}(x^3)\) (so \(u'=\tfrac{3x^2}{1+x^6}\)) and \(v'=x^2\) (so \(v=\tfrac{x^3}{3}\)); the leftover integral is a log form \(\tfrac{f'}{f}\) with \(f=1+x^6\).</span>
+        \[ \int x^2\tan^{-1}(x^3)\,\mathrm dx=\frac{x^3}{3}\tan^{-1}(x^3)-\int\frac{x^3}{3}\cdot\frac{3x^2}{1+x^6}\,\mathrm dx=\frac{x^3}{3}\tan^{-1}(x^3)-\int\frac{x^5}{1+x^6}\,\mathrm dx \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ =\frac{x^3}{3}\tan^{-1}(x^3)-\frac16\ln(1+x^6)+C. \] <span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">Chain the rates and substitute \(h=12\)</div>
-        <span class="name">Water is leaking, so \(\dfrac{\mathrm dV}{\mathrm dt}=-10\). Use \(\dfrac{\mathrm dV}{\mathrm dt}=\dfrac{\mathrm dV}{\mathrm dh}\cdot\dfrac{\mathrm dh}{\mathrm dt}\).</span>
-        \[ -10=\frac{\pi(15-h)^2}{9}\,\frac{\mathrm dh}{\mathrm dt};\qquad h=12:\ -10=\pi\frac{\mathrm dh}{\mathrm dt}\;\Rightarrow\;\frac{\mathrm dh}{\mathrm dt}=-\frac{10}{\pi}\ \text{cm s}^{-1}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
-      </div>
-      <div class="testline"><b>Covers:</b> connected rates of change; similar triangles; \(\tfrac{\mathrm dV}{\mathrm dt}=\tfrac{\mathrm dV}{\mathrm dh}\tfrac{\mathrm dh}{\mathrm dt}\).</div>
+      <div class="testline"><b>Fuses:</b> differentiate an inverse-trig &rarr; use it as \(u'\) in by parts &rarr; finish with a log-form integral.</div>
     </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
   </div>
 </div>
@@ -273,26 +257,29 @@ This cluster walks once through <b>every Integration and Differentiation learnin
 
 <!-- Q7 -->
 <div class="card" id="q7">
-  <div class="cardhead">Question 7 <span class="marks">[7]</span></div>
-  <div class="src">A-Level 2019 P2 Q3</div>
-  <div class="stem">A solid cylinder has radius \(r\) cm, height \(h\) cm, and a fixed total surface area of \(900\) cm\(^2\). Find the exact value of the maximum possible volume of the cylinder, and find also the ratio \(r:h\) that gives this maximum volume.
+  <div class="cardhead">Question 7 <span class="marks">[9]</span></div>
+  <div class="src">A-Level 2008 P2 Q2</div>
+  <div class="stem">The curve \(C\) has equation \(y^2=x\sqrt{1-x}\). The region enclosed by \(C\) is denoted by \(R\).
+    <span class="sub">(i) Write down an integral that gives the area of \(R\), and evaluate this integral numerically. <span class="marks">[3]</span></span>
+    <span class="sub">(ii) The part of \(R\) above the \(x\)-axis is rotated through \(2\pi\) radians about the \(x\)-axis. By using the substitution \(u=1-x\), or otherwise, find the exact value of the volume obtained. <span class="marks">[3]</span></span>
+    <span class="sub">(iii) Find the exact \(x\)-coordinate of the maximum point of \(C\). <span class="marks">[3]</span></span>
   </div>
   <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
   <div class="block answer"><button class="reveal-btn">Reveal solution</button>
     <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
-      <div class="step"><div class="step-header">Use the surface-area constraint to make \(V\) a function of \(r\) alone</div>
-        <span class="name">Total surface area \(=2\pi r^2+2\pi rh=900\); solve for \(h\), then substitute into \(V=\pi r^2 h\).</span>
-        \[ r^2+rh=\frac{450}{\pi}\Rightarrow h=\frac{450}{\pi r}-r;\qquad V=\pi r^2 h=450r-\pi r^3. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(i) area &mdash; the curve is symmetric about the \(x\)-axis</div>
+        <span class="name">\(y=\pm x^{1/2}(1-x)^{1/4}\); the region runs \(0\le x\le1\), so the total area is twice the top half.</span>
+        \[ \text{Area of }R=2\int_{0}^{1} x^{1/2}(1-x)^{1/4}\,\mathrm dx=0.999\ \text{units}^2\ (\text{3 s.f.}). \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">Stationary value of \(V\), confirmed a maximum</div>
-        <span class="name">Set \(\dfrac{\mathrm dV}{\mathrm dr}=0\); check the sign of \(\dfrac{\mathrm d^2V}{\mathrm dr^2}\).</span>
-        \[ \frac{\mathrm dV}{\mathrm dr}=450-3\pi r^2=0\Rightarrow r=\sqrt{\tfrac{150}{\pi}};\qquad \frac{\mathrm d^2V}{\mathrm dr^2}=-6\pi r<0\ (\text{maximum}). \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(ii) volume about the \(x\)-axis, then substitute \(u=1-x\)</div>
+        <span class="name">\(V=\pi\int y^2\,\mathrm dx\) with \(y^2=x(1-x)^{1/2}\). Let \(u=1-x\Rightarrow x=1-u,\ \mathrm dx=-\mathrm du\); limits \(x:0\to1\) give \(u:1\to0\).</span>
+        \[ V=\pi\int_{0}^{1} x(1-x)^{1/2}\,\mathrm dx=\pi\int_{0}^{1}\big(u^{1/2}-u^{3/2}\big)\,\mathrm du=\pi\Big[\tfrac23 u^{3/2}-\tfrac25 u^{5/2}\Big]_{0}^{1}=\frac{4\pi}{15}\ \text{units}^3. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">Maximum volume and the ratio \(r:h\)</div>
-        <span class="name">Substitute \(r=\sqrt{150/\pi}\) back; then \(h=\dfrac{300}{\pi r}\) gives \(\dfrac{r}{h}=\dfrac{\pi r^2}{300}=\dfrac{150}{300}\).</span>
-        \[ V_{\max}=450\sqrt{\tfrac{150}{\pi}}-150\sqrt{\tfrac{150}{\pi}}=300\sqrt{\tfrac{150}{\pi}}\ \text{cm}^3;\qquad r:h=1:2. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(iii) maximum point by implicit differentiation</div>
+        <span class="name">Differentiate \(y^2=x(1-x)^{1/2}\) implicitly; the maximum has \(\tfrac{\mathrm dy}{\mathrm dx}=0\), i.e. the numerator vanishes.</span>
+        \[ 2y\frac{\mathrm dy}{\mathrm dx}=\tfrac12(1-x)^{-1/2}(2-3x)\Rightarrow\frac{\mathrm dy}{\mathrm dx}=\frac{2-3x}{4y\sqrt{1-x}}=0\Rightarrow x=\tfrac23. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="testline"><b>Covers:</b> maxima &amp; minima (optimisation); stationary point; second-derivative test.</div>
+      <div class="testline"><b>Fuses:</b> area + volume-of-revolution by substitution (integration) with a maximum point found by implicit differentiation, all on one curve.</div>
     </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
   </div>
 </div>
@@ -300,26 +287,33 @@ This cluster walks once through <b>every Integration and Differentiation learnin
 
 <!-- Q8 -->
 <div class="card" id="q8">
-  <div class="cardhead">Question 8 <span class="marks">[6]</span></div>
-  <div class="src">HCI Tutorial 5B Q9</div>
-  <div class="stem">The graph of \(y=f(x)\) has stationary points at \((-2,-1)\) and \((2,1)\), and a single vertical asymptote \(x=-4\).
-    <span class="sub">(a) Sketch the graph of \(y=f'(x)\), showing the axial intercepts and the equations of any asymptotes. <span class="marks">[3]</span></span>
-    <span class="sub">(b) Hence sketch the graph of \(y=f''(x)\), and use it to describe the concavity of \(y=f(x)\). <span class="marks">[3]</span></span>
+  <div class="cardhead">Question 8 <span class="marks">[13]</span></div>
+  <div class="src">A-Level 2021 P1 Q8</div>
+  <div class="stem">A function \(f\) is defined by \(f(x)=e^x\cos x\), for \(0\le x\le\tfrac12\pi\).
+    <span class="sub">(a) Using calculus, find the stationary point of \(f(x)\) and determine its nature. <span class="marks">[5]</span></span>
+    <span class="sub">(b) Integrate by parts twice to show that \(\displaystyle\int e^{2x}\cos 2x\,\mathrm dx=\tfrac14 e^{2x}(\sin 2x+\cos 2x)+c\). <span class="marks">[4]</span></span>
+    <span class="sub">(c) The graph of \(y=f(x)\) is rotated completely about the \(x\)-axis. Find the exact volume generated. <span class="marks">[4]</span></span>
   </div>
   <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
   <div class="block answer"><button class="reveal-btn">Reveal solution</button>
     <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
-      <div class="step"><div class="step-header">(a) turn the stationary points into \(x\)-intercepts</div>
-        <span class="name">A stationary point of \(f\) (zero gradient) becomes an \(x\)-intercept of \(f'\); a vertical asymptote of \(f\) stays a vertical asymptote of \(f'\); \(f'\to 0\) far out gives a horizontal asymptote.</span>
-        <p>\(y=f'(x)\): \(x\)-intercepts at \((-2,0)\) and \((2,0)\); vertical asymptotes \(x=-4\) and \(x=0\); horizontal asymptote \(y=0\).</p> <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(a) product rule, solve \(f'=0\), test the nature</div>
+        <span class="name">\(f(x)=e^x\cos x\) is a product; since \(e^x>0\), the stationary condition reduces to \(\cos x-\sin x=0\).</span>
+        \[ f'(x)=e^x\cos x-e^x\sin x=e^x(\cos x-\sin x)=0\Rightarrow\tan x=1\Rightarrow x=\tfrac{\pi}{4}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ f''\!\left(\tfrac{\pi}{4}\right)=-\sqrt2\,e^{\pi/4}<0\ \Rightarrow\ \text{maximum at }\left(\tfrac{\pi}{4},\,\tfrac{e^{\pi/4}}{\sqrt2}\right). \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">(b) differentiate the \(f'\) graph, then read off concavity</div>
-        <span class="name">\(f''\) is the gradient of the \(f'\) graph: it keeps the asymptotes, and its sign tells you concavity (\(f''>0\) concave up, \(f''<0\) concave down; a sign change is a point of inflexion).</span>
-        <p>\(y=f''(x)\): vertical asymptotes \(x=-4\) and \(x=0\); \(x\)-intercept \((2,0)\); horizontal asymptote \(y=0\).</p> <span class="mk">(1)</span>
-        <p>Concavity of \(y=f(x)\): concave <b>up</b> for \(x<-4\); concave <b>down</b> for \(-4<x<0\); concave <b>down</b> for \(0<x<2\); \((2,f(2))\) is a <b>point of inflexion</b>; concave <b>up</b> for \(x>2\).</p> <span class="mk">(1)</span><span class="mk">(1)</span>
-        <span class="name">Note: \(f''(x)=0\) does not by itself imply a point of inflexion &mdash; e.g. \(y=x^4\) has \(\tfrac{\mathrm d^2y}{\mathrm dx^2}=0\) at its minimum \(x=0\).</span>
+      <div class="step"><div class="step-header">(b) cyclic integration by parts</div>
+        <span class="name">Take \(u=e^{2x}\), \(v'=\cos 2x\); apply parts, then apply it again to the new integral with \(u=e^{2x}\), \(v'=\sin 2x\). The original integral reappears.</span>
+        \[ \int e^{2x}\cos 2x\,\mathrm dx=\tfrac12 e^{2x}\sin 2x-\int e^{2x}\sin 2x\,\mathrm dx \] <span class="mk">(1)</span>
+        \[ =\tfrac12 e^{2x}\sin 2x-\Big[-\tfrac12 e^{2x}\cos 2x+\int e^{2x}\cos 2x\,\mathrm dx\Big]. \] <span class="mk">(1)</span>
+        \[ 2\int e^{2x}\cos 2x\,\mathrm dx=\tfrac12 e^{2x}\sin 2x+\tfrac12 e^{2x}\cos 2x+C'\Rightarrow\int e^{2x}\cos 2x\,\mathrm dx=\tfrac14 e^{2x}(\sin 2x+\cos 2x)+c. \] <span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="testline"><b>Covers:</b> graphs of derivatives (\(f\to f'\to f''\)); concavity and points of inflexion.</div>
+      <div class="step"><div class="step-header">(c) volume, using the double-angle identity and the result of (b)</div>
+        <span class="name">\(V=\pi\int_0^{\pi/2}(e^x\cos x)^2\,\mathrm dx\); replace \(\cos^2 x=\tfrac{1+\cos 2x}{2}\), then use part (b) on the \(e^{2x}\cos 2x\) piece.</span>
+        \[ V=\pi\int_{0}^{\pi/2} e^{2x}\cos^2 x\,\mathrm dx=\tfrac{\pi}{2}\int_{0}^{\pi/2} e^{2x}(1+\cos 2x)\,\mathrm dx \] <span class="mk">(1)</span>
+        \[ =\tfrac{\pi}{2}\Big[\tfrac14 e^{2x}(\sin 2x+\cos 2x)\Big]_{0}^{\pi/2}+\tfrac{\pi}{2}\Big[\tfrac12 e^{2x}\Big]_{0}^{\pi/2}=\frac{\pi}{8}\big(e^{\pi}-3\big)\ \text{units}^3. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Fuses:</b> stationary point + nature (differentiation) &rarr; cyclic by-parts integral &rarr; volume of revolution using that integral.</div>
     </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
   </div>
 </div>
@@ -327,25 +321,35 @@ This cluster walks once through <b>every Integration and Differentiation learnin
 
 <!-- Q9 -->
 <div class="card" id="q9">
-  <div class="cardhead">Question 9 <span class="marks">[5]</span></div>
-  <div class="src">HCI Tutorial 6A Q1(c)(iii) &middot; RJC 2006 Promo Q13</div>
-  <div class="stem">
-    <span class="sub">(a) Find \(\displaystyle\int\frac{1}{\sqrt{9-4x^2}}\,\mathrm dx\). <span class="marks">[2]</span></span>
-    <span class="sub">(b) Show that \(x^2+4x+20\) can be written as \((x+A)^2+B\), where \(A\) and \(B\) are constants. Hence find \(\displaystyle\int\frac{1}{x^2+4x+20}\,\mathrm dx\). <span class="marks">[3]</span></span>
+  <div class="cardhead">Question 9 <span class="marks">[12]</span></div>
+  <div class="src">A-Level 2009 P1 Q11</div>
+  <div class="stem">The curve \(C\) has equation \(y=f(x)\), where \(f(x)=x\,e^{-x^2}\).
+    <span class="sub">(i) Sketch the curve \(C\). <span class="marks">[2]</span></span>
+    <span class="sub">(ii) Find the exact coordinates of the turning points on the curve. <span class="marks">[4]</span></span>
+    <span class="sub">(iii) Use the substitution \(u=x^2\) to find \(\displaystyle\int_{0}^{n} f(x)\,\mathrm dx\), for \(n\ge0\). Hence find the area of the region between the curve and the positive \(x\)-axis. <span class="marks">[4]</span></span>
+    <span class="sub">(iv) Find the volume of revolution when the region bounded by the curve, the lines \(x=0\), \(x=1\) and the \(x\)-axis is rotated completely about the \(x\)-axis. Give your answer correct to 3 significant figures. <span class="marks">[2]</span></span>
   </div>
   <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
   <div class="block answer"><button class="reveal-btn">Reveal solution</button>
     <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
-      <div class="step"><div class="step-header">(a) MF26 arcsin form &mdash; make the coefficient of \(x^2\) equal to \(1\)</div>
-        <span class="name">\(\displaystyle\int\frac{1}{\sqrt{a^2-x^2}}\,\mathrm dx=\sin^{-1}\frac{x}{a}\); factor the \(4\) out under the root so it reads \(a^2-x^2\) with \(a=\tfrac32\).</span>
-        \[ \int\frac{1}{\sqrt{9-4x^2}}\,\mathrm dx=\tfrac12\int\frac{1}{\sqrt{\tfrac94-x^2}}\,\mathrm dx=\tfrac12\sin^{-1}\!\frac{x}{3/2}+C=\tfrac12\sin^{-1}\!\frac{2x}{3}+C. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(i) shape</div>
+        <span class="name">\(f\) is an odd function through the origin, with horizontal asymptote \(y=0\) and the turning points found in (ii).</span>
+        <p>Odd-symmetric curve through \(O\), \(y\to0\) as \(x\to\pm\infty\), one maximum for \(x>0\) and one minimum for \(x<0\).</p> <span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">(b) complete the square, then MF26 arctan form</div>
-        <span class="name">\(x^2+4x+20=(x+2)^2+16\), so \(A=2,\ B=16\). Now it is \((x+2)^2+4^2\), matching \(\displaystyle\int\frac{1}{u^2+a^2}\,\mathrm du=\tfrac1a\tan^{-1}\frac{u}{a}\) with \(u=x+2,\ a=4\).</span>
-        \[ x^2+4x+20=(x+2)^2+16\ \text{(shown)}. \] <span class="mk">(1)</span>
-        \[ \int\frac{1}{x^2+4x+20}\,\mathrm dx=\int\frac{1}{(x+2)^2+4^2}\,\mathrm dx=\tfrac14\tan^{-1}\!\frac{x+2}{4}+C. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(ii) turning points &mdash; product rule</div>
+        <span class="name">\(y=x\,e^{-x^2}\): differentiate as a product, then set \(\tfrac{\mathrm dy}{\mathrm dx}=0\) (with \(e^{-x^2}>0\)).</span>
+        \[ \frac{\mathrm dy}{\mathrm dx}=e^{-x^2}+x\,e^{-x^2}(-2x)=e^{-x^2}(1-2x^2)=0\Rightarrow x^2=\tfrac12\Rightarrow x=\pm\tfrac{1}{\sqrt2}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ y=\pm\tfrac{1}{\sqrt2}e^{-1/2}=\pm\tfrac{1}{\sqrt{2e}};\quad\text{turning points }\Big(\tfrac{1}{\sqrt2},\tfrac{1}{\sqrt{2e}}\Big),\ \Big(-\tfrac{1}{\sqrt2},-\tfrac{1}{\sqrt{2e}}\Big). \] <span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="testline"><b>Covers:</b> MF26 standard forms (arcsin, arctan); completing the square before integrating.</div>
+      <div class="step"><div class="step-header">(iii) integrate by substitution, then let \(n\to\infty\)</div>
+        <span class="name">\(u=x^2\Rightarrow\mathrm du=2x\,\mathrm dx\); limits \(x:0\to n\) give \(u:0\to n^2\).</span>
+        \[ \int_{0}^{n} x\,e^{-x^2}\,\mathrm dx=\int_{0}^{n^2}\tfrac12 e^{-u}\,\mathrm du=\tfrac12\big[1-e^{-n^2}\big];\qquad n\to\infty\Rightarrow\text{area}=\tfrac12. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iv) volume about the \(x\)-axis</div>
+        <span class="name">\(V=\pi\int_0^1 y^2\,\mathrm dx=\pi\int_0^1 x^2 e^{-2x^2}\,\mathrm dx\), evaluated on the GC.</span>
+        \[ V=\pi\int_{0}^{1} x^2 e^{-2x^2}\,\mathrm dx=0.363\ \text{units}^3\ (\text{3 s.f.}). \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Fuses:</b> turning points (differentiation) with area by substitution and volume of revolution (integration) &mdash; one curve, both toolkits.</div>
     </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
   </div>
 </div>
@@ -353,30 +357,29 @@ This cluster walks once through <b>every Integration and Differentiation learnin
 
 <!-- Q10 -->
 <div class="card" id="q10">
-  <div class="cardhead">Question 10 <span class="marks">[9]</span></div>
-  <div class="src">A-Level 2020 P1 Q6 &middot; do not use a calculator</div>
-  <div class="stem">It is given that \(f(x)=2-\sin 4x\).
-    <span class="sub">(i) Find \(\displaystyle\int f(x)\,\mathrm dx\). <span class="marks">[1]</span></span>
-    <span class="sub">(ii) Find the exact value, in terms of \(\pi\), of \(\displaystyle\int_{0}^{\pi/2} x\,f(x)\,\mathrm dx\). <span class="marks">[4]</span></span>
-    <span class="sub">(iii) Find the exact value, in terms of \(\pi\), of \(\displaystyle\int_{0}^{\pi/2}\big(f(x)\big)^2\,\mathrm dx\). <span class="marks">[4]</span></span>
+  <div class="cardhead">Question 10 <span class="marks">[10]</span></div>
+  <div class="src">A-Level 2013 P1 Q10</div>
+  <div class="stem">A hemispherical bowl of fixed radius \(r\) cm is modelled by rotating the lower half of the circle \(x^2+(y-r)^2=r^2\) about the \(y\)-axis. The bowl is filled with water, which drains from a hole at the bottom at a constant rate.
+    <span class="sub">(i) Show that when the depth of water is \(h\) cm (where \(h\le r\)), the volume of water in the bowl is \(V=\dfrac{\pi h^2}{3}(3r-h)\). <span class="marks">[4]</span></span>
+    <span class="sub">(ii) Given that a full bowl of water would become empty in \(24\) s, find the rate of decrease, in terms of \(r\) and \(h\), of the depth of water at the instant when the depth is \(h\) cm. <span class="marks">[4]</span></span>
+    <span class="sub">(iii) Without any differentiation, determine, in terms of \(r\), the slowest rate at which the depth of water is decreasing. <span class="marks">[2]</span></span>
   </div>
   <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
   <div class="block answer"><button class="reveal-btn">Reveal solution</button>
     <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
-      <div class="step"><div class="step-header">(i) integrate directly</div>
-        \[ \int 2-\sin 4x\,\mathrm dx=2x+\tfrac14\cos 4x+C. \] <span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(i) volume of revolution about the \(y\)-axis</div>
+        <span class="name">\(V=\pi\int_0^h x^2\,\mathrm dy\); from the circle, \(x^2=r^2-(y-r)^2\), integrated from \(y=0\) to \(y=h\).</span>
+        \[ V=\pi\int_{0}^{h}\big[r^2-(y-r)^2\big]\,\mathrm dy=\pi\Big[r^2 y-\tfrac{(y-r)^3}{3}\Big]_{0}^{h}=\pi\Big(h^2 r-\tfrac{h^3}{3}\Big)=\frac{\pi h^2}{3}(3r-h). \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">(ii) integration by parts</div>
-        <span class="name">Take \(u=x\) (so \(u'=1\)) and \(v'=2-\sin 4x\) (so \(v=2x+\tfrac14\cos 4x\), from part (i)).</span>
-        \[ \int_{0}^{\pi/2}\! x\,f(x)\,\mathrm dx=\Big[x\big(2x+\tfrac14\cos 4x\big)\Big]_{0}^{\pi/2}-\int_{0}^{\pi/2}\!\big(2x+\tfrac14\cos 4x\big)\,\mathrm dx \] <span class="mk">(1)</span><span class="mk">(1)</span>
-        \[ =\frac{\pi}{2}\Big(\pi+\tfrac14\Big)-\Big[x^2+\tfrac{1}{16}\sin 4x\Big]_{0}^{\pi/2}=\frac{\pi^2}{2}+\frac{\pi}{8}-\frac{\pi^2}{4}=\frac{\pi^2}{4}+\frac{\pi}{8}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(ii) find the drain rate, then chain to \(\tfrac{\mathrm dh}{\mathrm dt}\)</div>
+        <span class="name">A full bowl (\(h=r\)) holds \(\tfrac23\pi r^3\) and empties in \(24\) s, so \(\dfrac{\mathrm dV}{\mathrm dt}=-\dfrac{\pi r^3}{36}\). Differentiate \(V\): \(\dfrac{\mathrm dV}{\mathrm dh}=\pi(2rh-h^2)\), then \(\dfrac{\mathrm dh}{\mathrm dt}=\dfrac{\mathrm dV/\mathrm dt}{\mathrm dV/\mathrm dh}\).</span>
+        \[ \frac{\mathrm dV}{\mathrm dt}=-\frac{\pi r^3}{36},\qquad \frac{\mathrm dV}{\mathrm dh}=\pi(2rh-h^2)\Rightarrow\text{rate of decrease}=\frac{r^3}{36(2rh-h^2)}\ \text{cm s}^{-1}. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">(iii) expand, then use the double-angle identity on \(\sin^2 4x\)</div>
-        <span class="name">\((2-\sin 4x)^2=4-4\sin 4x+\sin^2 4x\); replace \(\sin^2 4x=\tfrac{1-\cos 8x}{2}\) so it can be integrated.</span>
-        \[ \int_{0}^{\pi/2}\!(2-\sin 4x)^2\,\mathrm dx=\int_{0}^{\pi/2}\!\Big[4-4\sin 4x+\tfrac{1-\cos 8x}{2}\Big]\mathrm dx \] <span class="mk">(1)</span><span class="mk">(1)</span>
-        \[ =\Big[4x+\cos 4x+\tfrac12 x-\tfrac{1}{16}\sin 8x\Big]_{0}^{\pi/2}=2\pi+1+\tfrac{\pi}{4}-1=\frac{9\pi}{4}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(iii) slowest rate &mdash; maximise the denominator by inspection</div>
+        <span class="name">The rate is smallest when \(2rh-h^2\) is largest; for \(0<h\le r\) this maximum is at \(h=r\).</span>
+        \[ 2rh-h^2\ \text{greatest at }h=r\Rightarrow\text{slowest rate}=\frac{r^3}{36 r^2}=\frac{r}{36}\ \text{cm s}^{-1}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="testline"><b>Covers:</b> trigonometric integration (double-angle identity); integration by parts; \(\int(f)^2\).</div>
+      <div class="testline"><b>Fuses:</b> prove a volume by integration &rarr; feed it into a connected rate of change &rarr; extremum by inspection.</div>
     </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
   </div>
 </div>
@@ -384,25 +387,31 @@ This cluster walks once through <b>every Integration and Differentiation learnin
 
 <!-- Q11 -->
 <div class="card" id="q11">
-  <div class="cardhead">Question 11 <span class="marks">[6]</span></div>
-  <div class="src">A-Level N2003 P2 Q2 &middot; HCI Supplementary Q9</div>
-  <div class="stem">
-    <span class="sub">(i) Find \(\displaystyle\int x^3\ln x\,\mathrm dx\). <span class="marks">[3]</span></span>
-    <span class="sub">(ii) Find \(\displaystyle\int x^3(\ln x)^2\,\mathrm dx\). <span class="marks">[3]</span></span>
+  <div class="cardhead">Question 11 <span class="marks">[13]</span></div>
+  <div class="src">A-Level 2018 P1 Q9</div>
+  <div class="stem">A curve \(C\) has parametric equations \(x=2\theta-\sin 2\theta\), \(y=2\sin^2\theta\), for \(0\le\theta\le\pi\).
+    <span class="sub">(i) Show that \(\dfrac{\mathrm dy}{\mathrm dx}=\cot\theta\). <span class="marks">[4]</span></span>
+    <span class="sub">(ii) The normal to the curve at the point where \(\theta=\alpha\) meets the \(x\)-axis at the point \(A\). Show that the \(x\)-coordinate of \(A\) is \(k\alpha\), where \(k\) is a constant to be found. <span class="marks">[4]</span></span>
+    <span class="sub">(iii) Do not use a calculator in this part. The arc length between the two points on \(C\) where \(\theta=\beta\) and \(\theta=\gamma\) is given by \(\displaystyle\int_{\beta}^{\gamma}\sqrt{\left(\tfrac{\mathrm dx}{\mathrm d\theta}\right)^2+\left(\tfrac{\mathrm dy}{\mathrm d\theta}\right)^2}\,\mathrm d\theta\). Find the total length of \(C\). <span class="marks">[5]</span></span>
   </div>
   <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
   <div class="block answer"><button class="reveal-btn">Reveal solution</button>
     <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
-      <div class="step"><div class="step-header">(i) by parts (LIATE: log is \(u\))</div>
-        <span class="name">Take \(u=\ln x\) (so \(u'=\tfrac1x\)) and \(v'=x^3\) (so \(v=\tfrac{x^4}{4}\)).</span>
-        \[ \int x^3\ln x\,\mathrm dx=\frac{x^4}{4}\ln x-\int\frac{x^4}{4}\cdot\frac1x\,\mathrm dx=\frac{x^4}{4}\ln x-\frac14\int x^3\,\mathrm dx=\frac{x^4}{4}\ln x-\frac{x^4}{16}+C. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(i) parametric gradient</div>
+        <span class="name">\(\dfrac{\mathrm dx}{\mathrm d\theta}=2-2\cos 2\theta\) and \(\dfrac{\mathrm dy}{\mathrm d\theta}=4\sin\theta\cos\theta\); use \(2-2\cos 2\theta=4\sin^2\theta\).</span>
+        \[ \frac{\mathrm dy}{\mathrm dx}=\frac{4\sin\theta\cos\theta}{2-2\cos 2\theta}=\frac{4\sin\theta\cos\theta}{4\sin^2\theta}=\cot\theta\quad(\text{shown}). \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">(ii) by parts again, reusing the result of (i)</div>
-        <span class="name">Take \(u=(\ln x)^2\) (so \(u'=\tfrac{2\ln x}{x}\)) and \(v'=x^3\) (so \(v=\tfrac{x^4}{4}\)); the leftover integral is \(\tfrac12\int x^3\ln x\,\mathrm dx\), already found.</span>
-        \[ \int x^3(\ln x)^2\,\mathrm dx=\frac{x^4}{4}(\ln x)^2-\int\frac{x^4}{4}\cdot\frac{2\ln x}{x}\,\mathrm dx=\frac{x^4}{4}(\ln x)^2-\frac12\int x^3\ln x\,\mathrm dx \] <span class="mk">(1)</span>
-        \[ =\frac{x^4}{4}(\ln x)^2-\frac12\!\left(\frac{x^4}{4}\ln x-\frac{x^4}{16}\right)+D=\frac{x^4}{4}(\ln x)^2-\frac{x^4}{8}\ln x+\frac{x^4}{32}+D. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(ii) equation of the normal, then set \(y=0\)</div>
+        <span class="name">Tangent gradient is \(\cot\alpha\), so the normal gradient is \(-\tan\alpha\). The point is \(\big(2\alpha-\sin 2\alpha,\ 2\sin^2\alpha\big)\).</span>
+        \[ y-2\sin^2\alpha=-\tan\alpha\big[x-(2\alpha-\sin 2\alpha)\big]. \] <span class="mk">(1)</span>
+        \[ y=0:\ x-(2\alpha-\sin 2\alpha)=\frac{2\sin^2\alpha}{\tan\alpha}=2\sin\alpha\cos\alpha=\sin 2\alpha\Rightarrow x=2\alpha\ \Rightarrow\ k=2. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="testline"><b>Covers:</b> integration by parts; repeated by parts reusing an earlier &ldquo;hence&rdquo; result.</div>
+      <div class="step"><div class="step-header">(iii) arc-length integral, simplified with a double-angle identity</div>
+        <span class="name">Substitute \(\tfrac{\mathrm dx}{\mathrm d\theta}=2-2\cos 2\theta\) and \(\tfrac{\mathrm dy}{\mathrm d\theta}=2\sin 2\theta\); simplify under the root using \(1-\cos 2\theta=2\sin^2\theta\).</span>
+        \[ \text{Length}=\int_{0}^{\pi}\sqrt{(2-2\cos 2\theta)^2+(2\sin 2\theta)^2}\,\mathrm d\theta=\int_{0}^{\pi}\sqrt{8(1-\cos 2\theta)}\,\mathrm d\theta=\int_{0}^{\pi}\sqrt{16\sin^2\theta}\,\mathrm d\theta \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ =\int_{0}^{\pi}4\sin\theta\,\mathrm d\theta=\Big[-4\cos\theta\Big]_{0}^{\pi}=8\ \text{units}. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Fuses:</b> parametric differentiation + normal (differentiation) &rarr; the same \(\tfrac{\mathrm dx}{\mathrm d\theta},\tfrac{\mathrm dy}{\mathrm d\theta}\) drive an arc-length integral.</div>
     </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
   </div>
 </div>
@@ -410,23 +419,28 @@ This cluster walks once through <b>every Integration and Differentiation learnin
 
 <!-- Q12 -->
 <div class="card" id="q12">
-  <div class="cardhead">Question 12 <span class="marks">[6]</span></div>
-  <div class="src">CJC 2006 Promo Q1 &middot; HCI Supplementary Q19</div>
-  <div class="stem">Express \(\dfrac{3}{(x-1)(x^2+2)}\) in the form \(\dfrac{A}{x-1}+\dfrac{Bx}{x^2+2}+\dfrac{C}{x^2+2}\), where \(A\), \(B\) and \(C\) are constants. Hence, or otherwise, find \(\displaystyle\int\frac{3}{(x-1)(x^2+2)}\,\mathrm dx\).
+  <div class="cardhead">Question 12 <span class="marks">[7]</span></div>
+  <div class="src">HCI 2006 Promo Q9 &middot; HCI Supplementary Q28</div>
+  <div class="stem">
+    <span class="sub">(i) Show that \(\dfrac{\mathrm d}{\mathrm dx}\Big[\ln\!\big(x+\sqrt{1+x^2}\,\big)\Big]=\dfrac{1}{\sqrt{1+x^2}}\). <span class="marks">[2]</span></span>
+    <span class="sub">(ii) Hence find \(\displaystyle\int_{0}^{1}\frac{1}{\sqrt{1+x^2}}\,\mathrm dx\). <span class="marks">[2]</span></span>
+    <span class="sub">(iii) Verify the result in part (ii) using the substitution \(x=\tan\theta\). <span class="marks">[3]</span></span>
   </div>
   <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
   <div class="block answer"><button class="reveal-btn">Reveal solution</button>
     <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
-      <div class="step"><div class="step-header">Clear denominators, then substitute convenient \(x\)-values</div>
-        <span class="name">Multiply through: \(A(x^2+2)+Bx(x-1)+C(x-1)=3\). Choose \(x=1\), then \(x=0\), then \(x=2\).</span>
-        \[ x=1:\ A=1;\qquad x=0:\ C=-1;\qquad x=2:\ B=-1. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(i) chain rule on the log</div>
+        <span class="name">\(\tfrac{\mathrm d}{\mathrm dx}\ln g=\tfrac{g'}{g}\) with \(g=x+\sqrt{1+x^2}\), so \(g'=1+\tfrac{2x}{2\sqrt{1+x^2}}=\tfrac{\sqrt{1+x^2}+x}{\sqrt{1+x^2}}\).</span>
+        \[ \frac{\mathrm d}{\mathrm dx}\ln\!\big(x+\sqrt{1+x^2}\big)=\frac{1+\frac{x}{\sqrt{1+x^2}}}{x+\sqrt{1+x^2}}=\frac{\frac{x+\sqrt{1+x^2}}{\sqrt{1+x^2}}}{x+\sqrt{1+x^2}}=\frac{1}{\sqrt{1+x^2}}\quad(\text{shown}). \] <span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">Integrate term by term</div>
-        <span class="name">The \(x\)-over-quadratic term is the log form \(\tfrac{f'(x)}{f(x)}\) with \(f(x)=x^2+2\); the constant-over-quadratic term is the MF26 arctan form with \(a=\sqrt2\).</span>
-        \[ \int\frac{3}{(x-1)(x^2+2)}\,\mathrm dx=\int\frac{1}{x-1}\,\mathrm dx-\int\frac{x}{x^2+2}\,\mathrm dx-\int\frac{1}{x^2+2}\,\mathrm dx \] <span class="mk">(1)</span>
-        \[ =\ln|x-1|-\tfrac12\ln(x^2+2)-\tfrac{1}{\sqrt2}\tan^{-1}\!\frac{x}{\sqrt2}+C. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(ii) reverse part (i)</div>
+        \[ \int_{0}^{1}\frac{1}{\sqrt{1+x^2}}\,\mathrm dx=\Big[\ln\!\big(x+\sqrt{1+x^2}\big)\Big]_{0}^{1}=\ln(1+\sqrt2)-\ln 1=\ln(1+\sqrt2). \] <span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="testline"><b>Covers:</b> partial fractions with an irreducible quadratic factor; integrating to log + arctan.</div>
+      <div class="step"><div class="step-header">(iii) verify by trig substitution</div>
+        <span class="name">\(x=\tan\theta\Rightarrow\dfrac{\mathrm dx}{\mathrm d\theta}=\sec^2\theta\); limits \(x=0\Rightarrow\theta=0\), \(x=1\Rightarrow\theta=\tfrac{\pi}{4}\); and \(\sqrt{1+\tan^2\theta}=\sec\theta\).</span>
+        \[ \int_{0}^{1}\frac{1}{\sqrt{1+x^2}}\,\mathrm dx=\int_{0}^{\pi/4}\frac{\sec^2\theta}{\sqrt{1+\tan^2\theta}}\,\mathrm d\theta=\int_{0}^{\pi/4}\sec\theta\,\mathrm d\theta=\Big[\ln|\sec\theta+\tan\theta|\Big]_{0}^{\pi/4}=\ln(1+\sqrt2). \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Fuses:</b> differentiate a log to expose an integrand &rarr; evaluate it &rarr; re-derive the same value by trig substitution.</div>
     </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
   </div>
 </div>
@@ -434,21 +448,31 @@ This cluster walks once through <b>every Integration and Differentiation learnin
 
 <!-- Q13 -->
 <div class="card" id="q13">
-  <div class="cardhead">Question 13 <span class="marks">[4]</span></div>
-  <div class="src">A-Level N2004 P1 Q4 &middot; HCI Supplementary Q10</div>
-  <div class="stem">Use the substitution \(t=\sqrt{x+1}\) to find the exact value of \(\displaystyle\int_{0}^{3} x\sqrt{x+1}\,\mathrm dx\).
+  <div class="cardhead">Question 13 <span class="marks">[12]</span></div>
+  <div class="src">A-Level 2011 P2 Q4</div>
+  <div class="stem">
+    <span class="sub">(a)(i) Obtain a formula for \(\displaystyle\int_{0}^{n} x^2 e^{-2x}\,\mathrm dx\) in terms of \(n\), where \(n>0\). <span class="marks">[5]</span></span>
+    <span class="sub">(a)(ii) Hence evaluate \(\displaystyle\int_{0}^{\infty} x^2 e^{-2x}\,\mathrm dx\). You may assume that \(ne^{-2n}\to0\) and \(n^2 e^{-2n}\to0\) as \(n\to\infty\). <span class="marks">[1]</span></span>
+    <span class="sub">(b) The region bounded by the curve \(y=\dfrac{4x}{x^2+1}\), the \(x\)-axis and the lines \(x=0\) and \(x=1\) is rotated through \(2\pi\) radians about the \(x\)-axis. Use the substitution \(x=\tan\theta\) to show that the volume of the solid obtained is \(\displaystyle 16\pi\int_{0}^{\pi/4}\sin^2\theta\,\mathrm d\theta\), and evaluate this integral exactly. <span class="marks">[6]</span></span>
   </div>
   <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
   <div class="block answer"><button class="reveal-btn">Reveal solution</button>
     <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
-      <div class="step"><div class="step-header">Set up the substitution and change the limits</div>
-        <span class="name">\(t=\sqrt{x+1}\Rightarrow t^2=x+1\), so \(x=t^2-1\) and \(\dfrac{\mathrm dt}{\mathrm dx}=\dfrac{1}{2\sqrt{x+1}}=\dfrac{1}{2t}\) (i.e. \(\mathrm dx=2t\,\mathrm dt\)). Limits: \(x=0\Rightarrow t=1\); \(x=3\Rightarrow t=2\).</span>
-        \[ \int_{0}^{3} x\sqrt{x+1}\,\mathrm dx=\int_{1}^{2}(t^2-1)\,t\,(2t)\,\mathrm dt=2\int_{1}^{2}(t^4-t^2)\,\mathrm dt. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(a)(i) integration by parts twice</div>
+        <span class="name">Take \(u=x^2\) (\(u'=2x\)), \(v'=e^{-2x}\) (\(v=-\tfrac12 e^{-2x}\)); the new integral needs parts again with \(u=x\) (\(u'=1\)), \(v'=e^{-2x}\) (\(v=-\tfrac12 e^{-2x}\)).</span>
+        \[ \int_{0}^{n} x^2 e^{-2x}\,\mathrm dx=\Big[-\tfrac12 x^2 e^{-2x}\Big]_{0}^{n}+\int_{0}^{n} x\,e^{-2x}\,\mathrm dx=-\tfrac{n^2}{2}e^{-2n}+\Big[-\tfrac12 x e^{-2x}\Big]_{0}^{n}+\tfrac12\int_{0}^{n} e^{-2x}\,\mathrm dx \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ =-\tfrac{n^2}{2}e^{-2n}-\tfrac{n}{2}e^{-2n}-\Big[\tfrac14 e^{-2x}\Big]_{0}^{n}=\tfrac14-\frac{e^{-2n}}{4}\big(2n^2+2n+1\big). \] <span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">Integrate in \(t\) and evaluate at the new limits</div>
-        \[ =2\Big[\tfrac{t^5}{5}\Big]_{1}^{2}-2\Big[\tfrac{t^3}{3}\Big]_{1}^{2}=\frac{62}{5}-\frac{14}{3}=\frac{116}{15}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(a)(ii) take the limit</div>
+        <span class="name">As \(n\to\infty\), \(n^2 e^{-2n}\), \(n e^{-2n}\) and \(e^{-2n}\) all \(\to0\).</span>
+        \[ \int_{0}^{\infty} x^2 e^{-2x}\,\mathrm dx=\tfrac14. \] <span class="mk">(1)</span>
       </div>
-      <div class="testline"><b>Covers:</b> integration by substitution (algebraic); changing the limits for a definite integral.</div>
+      <div class="step"><div class="step-header">(b) volume, then \(x=\tan\theta\) to reduce to \(\sin^2\theta\)</div>
+        <span class="name">\(V=\pi\int_0^1\big(\tfrac{4x}{x^2+1}\big)^2\mathrm dx=\pi\int_0^1\tfrac{16x^2}{(x^2+1)^2}\mathrm dx\). With \(x=\tan\theta\): \(\mathrm dx=\sec^2\theta\,\mathrm d\theta\), \(x^2+1=\sec^2\theta\), limits \(0\to\tfrac{\pi}{4}\).</span>
+        \[ V=\pi\int_{0}^{\pi/4}\frac{16\tan^2\theta}{\sec^4\theta}\sec^2\theta\,\mathrm d\theta=16\pi\int_{0}^{\pi/4}\sin^2\theta\,\mathrm d\theta\quad(\text{shown}). \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ =8\pi\int_{0}^{\pi/4}(1-\cos 2\theta)\,\mathrm d\theta=8\pi\Big[\theta-\tfrac12\sin 2\theta\Big]_{0}^{\pi/4}=8\pi\Big(\tfrac{\pi}{4}-\tfrac12\Big)=2\pi^2-4\pi\ \text{units}^3. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Fuses:</b> repeated by parts to build a reduction-style formula, then a volume of revolution via trig substitution.</div>
     </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
   </div>
 </div>
@@ -456,29 +480,30 @@ This cluster walks once through <b>every Integration and Differentiation learnin
 
 <!-- Q14 -->
 <div class="card" id="q14">
-  <div class="cardhead">Question 14 <span class="marks">[5]</span></div>
-  <div class="src">A-Level 2019 P1 Q2</div>
-  <div class="stem">The curve \(C\) has equation \(y=x^3+x-1\).
-    <span class="sub">(i) \(C\) crosses the \(x\)-axis at the point \((a,0)\). Find the value of \(a\) correct to 3 decimal places. <span class="marks">[1]</span></span>
-    <span class="sub">(ii) You are given \(b>a\). The region \(P\) is bounded by \(C\), the \(x\)-axis and the lines \(x=-1\) and \(x=0\). The region \(Q\) is bounded by \(C\), the line \(x=b\), and the part of the \(x\)-axis between \(x=a\) and \(x=b\). Given that the area of \(Q\) is \(2\) times the area of \(P\), find the value of \(b\) correct to 3 decimal places. <span class="marks">[4]</span></span>
+  <div class="cardhead">Question 14 <span class="marks">[10]</span></div>
+  <div class="src">A-Level 2016 P2 Q4</div>
+  <div class="stem">
+    <span class="sub">(a)(i) Find \(\displaystyle\int x^2\cos nx\,\mathrm dx\), where \(n\) is a positive integer. <span class="marks">[3]</span></span>
+    <span class="sub">(a)(ii) Hence find \(\displaystyle\int_{\pi}^{2\pi} x^2\cos nx\,\mathrm dx\), giving your answer in the form \(\dfrac{a\pi}{n^2}\), where the possible values of \(a\) are to be determined. <span class="marks">[2]</span></span>
+    <span class="sub">(b) The region bounded by \(y=\dfrac{x\sqrt{x}}{9-x^2}\), the \(x\)-axis and the lines \(x=0\) and \(x=2\) is rotated through \(2\pi\) about the \(x\)-axis. Use the substitution \(u=9-x^2\) to find the exact volume, simplifying your answer. <span class="marks">[5]</span></span>
   </div>
   <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
   <div class="block answer"><button class="reveal-btn">Reveal solution</button>
     <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
-      <div class="step"><div class="step-header">(i) root from the GC</div>
-        \[ a=0.6823278\ldots=0.682\ (\text{3 d.p.}). \] <span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(a)(i) integration by parts twice</div>
+        <span class="name">Take \(u=x^2\), \(v'=\cos nx\) (\(v=\tfrac{\sin nx}{n}\)); the leftover \(\int x\sin nx\,\mathrm dx\) needs parts again with \(u=x\), \(v'=\sin nx\).</span>
+        \[ \int x^2\cos nx\,\mathrm dx=\frac{x^2\sin nx}{n}+\frac{2x\cos nx}{n^2}-\frac{2\sin nx}{n^3}+C. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">(ii) area of \(P\) &mdash; the curve is below the axis there, so negate</div>
-        <span class="name">On \(-1\le x\le0\) the curve lies below the \(x\)-axis, so the area is \(-\int\).</span>
-        \[ \text{Area of }P=-\int_{-1}^{0}(x^3+x-1)\,\mathrm dx=1.75. \] <span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(a)(ii) evaluate at \(\pi\) and \(2\pi\) (integer \(n\))</div>
+        <span class="name">\(\sin(n\pi)=\sin(2n\pi)=0\); \(\cos(2n\pi)=1\) and \(\cos(n\pi)=(-1)^n\).</span>
+        \[ \int_{\pi}^{2\pi} x^2\cos nx\,\mathrm dx=\frac{4\pi}{n^2}-\frac{2\pi\cos n\pi}{n^2}=\frac{2\pi}{n^2}\ (n\text{ even})\ \text{or}\ \frac{6\pi}{n^2}\ (n\text{ odd});\quad a=2,\,6. \] <span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">Area of \(Q\), then set \(Q=2P\) and solve for \(b\)</div>
-        <span class="name">On \(a\le x\le b\) the curve is above the axis; integrate from \(a=0.6823278\) to \(b\).</span>
-        \[ \text{Area of }Q=\int_{a}^{b}(x^3+x-1)\,\mathrm dx=\Big[\tfrac{x^4}{4}+\tfrac{x^2}{2}-x\Big]_{0.6823278}^{b}=\tfrac{b^4}{4}+\tfrac{b^2}{2}-b+0.395353. \] <span class="mk">(1)</span>
-        \[ Q=2P:\ \tfrac{b^4}{4}+\tfrac{b^2}{2}-b+0.395353=3.5\Rightarrow \tfrac{b^4}{4}+\tfrac{b^2}{2}-b=3.104647. \] <span class="mk">(1)</span>
-        \[ \text{By GC, } b=1.892\ (\text{3 d.p.})\quad(b=-1.353\ \text{rejected since } b>a). \] <span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(b) volume, then substitute \(u=9-x^2\)</div>
+        <span class="name">\(V=\pi\int_0^2\big(\tfrac{x\sqrt x}{9-x^2}\big)^2\mathrm dx=\pi\int_0^2\tfrac{x^3}{(9-x^2)^2}\mathrm dx\). With \(u=9-x^2\): \(\mathrm du=-2x\,\mathrm dx\), \(x^2=9-u\), limits \(x:0\to2\) give \(u:9\to5\).</span>
+        \[ V=\pi\int_{0}^{2}\frac{x^3}{(9-x^2)^2}\,\mathrm dx=-\frac{\pi}{2}\int_{9}^{5}\big(9u^{-2}-u^{-1}\big)\,\mathrm du=\frac{\pi}{2}\Big[\frac{9}{u}+\ln u\Big]_{9}^{5} \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ =\frac{\pi}{2}\Big(\tfrac45+\ln\tfrac59\Big)=\frac{2\pi}{5}+\frac{\pi}{2}\ln\frac59\ \text{units}^3. \] <span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="testline"><b>Covers:</b> area under a curve (regions above and below the axis); solving an area equation numerically.</div>
+      <div class="testline"><b>Fuses:</b> by-parts-twice antiderivative feeding a definite integral, then a volume of revolution by substitution.</div>
     </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
   </div>
 </div>
@@ -487,30 +512,152 @@ This cluster walks once through <b>every Integration and Differentiation learnin
 <!-- Q15 -->
 <div class="card" id="q15">
   <div class="cardhead">Question 15 <span class="marks">[6]</span></div>
-  <div class="src">A-Level J84 P1 Q7 &middot; HCI Tutorial 6B Q2</div>
-  <div class="stem">\(R\) is the region enclosed by the curves \(y=x^2\) and \(y=2-x^2\).
-    <span class="sub">(i) Calculate the area of \(R\). <span class="marks">[3]</span></span>
-    <span class="sub">(ii) Calculate the volume of the solid generated when \(R\) is rotated through \(\pi\) radians about the \(y\)-axis. <span class="marks">[3]</span></span>
+  <div class="src">A-Level 2019 P2 Q1</div>
+  <div class="stem">You are given \(I=\displaystyle\int x(1-x)^{1/2}\,\mathrm dx\).
+    <span class="sub">(i) Use integration by parts to find an expression for \(I\). <span class="marks">[2]</span></span>
+    <span class="sub">(ii) Use the substitution \(u^2=1-x\) to find another expression for \(I\). <span class="marks">[2]</span></span>
+    <span class="sub">(iii) Show algebraically that your answers to parts (i) and (ii) differ by a constant. <span class="marks">[2]</span></span>
   </div>
   <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
   <div class="block answer"><button class="reveal-btn">Reveal solution</button>
     <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
-      <div class="step"><div class="step-header">(i) intersection, then top minus bottom</div>
-        <span class="name">Curves meet where \(x^2=2-x^2\Rightarrow x=\pm1\). On \(-1\le x\le1\) the upper curve is \(y=2-x^2\).</span>
-        \[ \text{Area}=\int_{-1}^{1}\big[(2-x^2)-x^2\big]\,\mathrm dx=\Big[2x-\tfrac{2x^3}{3}\Big]_{-1}^{1}=\frac{8}{3}\ \text{units}^2. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(i) by parts</div>
+        <span class="name">Take \(u=x\) (\(u'=1\)) and \(v'=(1-x)^{1/2}\) (so \(v=-\tfrac23(1-x)^{3/2}\)).</span>
+        \[ I=-\tfrac23 x(1-x)^{3/2}+\tfrac23\int(1-x)^{3/2}\,\mathrm dx=-\tfrac23 x(1-x)^{3/2}-\tfrac{4}{15}(1-x)^{5/2}+C_1. \] <span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="step"><div class="step-header">(ii) rotate about the \(y\)-axis &mdash; use the symmetry short-cut and make \(x^2\) the subject</div>
-        <span class="name">\(R\) is symmetric about the \(y\)-axis, so rotating it through \(\pi\) equals rotating one side through \(2\pi\): \(V=\pi\int x^2\,\mathrm dy\). Lower curve \(y=x^2\Rightarrow x^2=y\) for \(0\le y\le1\); upper curve \(y=2-x^2\Rightarrow x^2=2-y\) for \(1\le y\le2\).</span>
-        \[ V=\pi\!\left[\int_{0}^{1} y\,\mathrm dy+\int_{1}^{2}(2-y)\,\mathrm dy\right]=\pi\Big[\tfrac{y^2}{2}\Big]_{0}^{1}+\pi\Big[2y-\tfrac{y^2}{2}\Big]_{1}^{2}=\pi\ \text{units}^3. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      <div class="step"><div class="step-header">(ii) by substitution</div>
+        <span class="name">\(u^2=1-x\Rightarrow 2u\dfrac{\mathrm du}{\mathrm dx}=-1\), and \(x=1-u^2\), \((1-x)^{1/2}=u\).</span>
+        \[ I=\int(1-u^2)\,u\,(-2u)\,\mathrm du=-2\int(u^2-u^4)\,\mathrm du=-\tfrac23(1-x)^{3/2}+\tfrac25(1-x)^{5/2}+C_2. \] <span class="mk">(1)</span><span class="mk">(1)</span>
       </div>
-      <div class="testline"><b>Covers:</b> area between two curves; volume of revolution about the \(y\)-axis (make \(x^2\) the subject); symmetry short-cut.</div>
+      <div class="step"><div class="step-header">(iii) subtract the two expressions</div>
+        <span class="name">Group the \((1-x)^{5/2}\) terms and rewrite \(-\tfrac23 x(1-x)^{3/2}+\tfrac23(1-x)^{3/2}=\tfrac23(1-x)^{5/2}\).</span>
+        <p>The \((1-x)^{5/2}\) terms combine to \(-\tfrac23(1-x)^{5/2}\), and \(-\tfrac23 x(1-x)^{3/2}+\tfrac23(1-x)^{3/2}=\tfrac23(1-x)^{5/2}\); these cancel, leaving \(C_1-C_2=\) an arbitrary constant.</p> <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Fuses:</b> two integration methods (by parts vs. substitution) reconciled algebraically &mdash; the same antiderivative up to a constant.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q16 -->
+<div class="card" id="q16">
+  <div class="cardhead">Question 16 <span class="marks">[9]</span></div>
+  <div class="src">A-Level 2014 P1 Q9</div>
+  <div class="stem">It is given that \(f(x)=\dfrac{1}{\sqrt{9-x^2}}\), where \(-3<x<3\).
+    <span class="sub">(i) Write down \(\displaystyle\int f(x)\,\mathrm dx\). <span class="marks">[1]</span></span>
+    <span class="sub">(ii) Find the binomial expansion of \(f(x)\) up to and including the term in \(x^6\), giving the coefficients as exact fractions in their simplest form. <span class="marks">[4]</span></span>
+    <span class="sub">(iii) Hence, or otherwise, find the first four non-zero terms of the Maclaurin series for \(\sin^{-1}\!\big(\tfrac{x}{3}\big)\), giving the coefficients as exact fractions. <span class="marks">[4]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">(i) MF26 standard form \(\int\frac{1}{\sqrt{a^2-x^2}}\,\mathrm dx=\sin^{-1}\frac{x}{a}\)</div>
+        <span class="name">Here \(a=3\); the integrand is exactly the arcsine standard form listed in MF26.</span>
+        \[ \int\frac{1}{\sqrt{9-x^2}}\,\mathrm dx=\sin^{-1}\!\Big(\tfrac{x}{3}\Big)+C. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) factor out, then apply the binomial series \((1+u)^{-1/2}\)</div>
+        <span class="name">\(f(x)=\tfrac13\big(1-\tfrac{x^2}{9}\big)^{-1/2}\); use \((1+u)^{-1/2}=1-\tfrac12 u+\tfrac{3}{8}u^2-\tfrac{5}{16}u^3+\cdots\) with \(u=-\tfrac{x^2}{9}\).</span>
+        \[ f(x)=\tfrac13\Big[1+\tfrac{x^2}{18}+\tfrac{x^4}{216}+\tfrac{5x^6}{11664}+\cdots\Big] \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ =\frac13+\frac{x^2}{54}+\frac{x^4}{648}+\frac{5x^6}{34992}+\cdots. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) integrate the part-(ii) series term-by-term (since \(f=\tfrac{\mathrm d}{\mathrm dx}\sin^{-1}\tfrac{x}{3}\))</div>
+        <span class="name">From (i), \(\sin^{-1}\tfrac{x}{3}=\int f(x)\,\mathrm dx\); integrate the series termwise, with constant \(0\) because \(\sin^{-1}0=0\).</span>
+        \[ \sin^{-1}\!\Big(\tfrac{x}{3}\Big)=\frac{x}{3}+\frac{x^3}{162}+\frac{x^5}{3240}+\frac{5x^7}{244944}+\cdots. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Fuses:</b> an exact arcsine integral (MF26 standard form) &rarr; the same \(f\) expanded as a binomial/Maclaurin series &rarr; that series integrated term-by-term to build the Maclaurin series for \(\sin^{-1}(x/3)\).</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q17 -->
+<div class="card" id="q17">
+  <div class="cardhead">Question 17 <span class="marks">[9]</span></div>
+  <div class="src">A-Level 2014 P2 Q2</div>
+  <div class="stem">Using partial fractions, find the exact value of \(\displaystyle\int_{0}^{2}\frac{9x^2+x-13}{(2x-5)(x^2+9)}\,\mathrm dx\), giving your answer in the form \(a\ln b+c\tan^{-1}d\), where \(a,\,b,\,c,\,d\) are rational numbers to be determined.</div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">decompose &mdash; a linear factor plus an irreducible quadratic</div>
+        <span class="name">\(\dfrac{9x^2+x-13}{(2x-5)(x^2+9)}=\dfrac{A}{2x-5}+\dfrac{Bx+C}{x^2+9}\); clearing denominators and comparing coefficients gives \(A=3,\ B=3,\ C=8\).</span>
+        \[ \frac{9x^2+x-13}{(2x-5)(x^2+9)}=\frac{3}{2x-5}+\frac{3x+8}{x^2+9}. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">integrate each piece &mdash; two logs and an arctan (MF26)</div>
+        <span class="name">\(\int\frac{3}{2x-5}\,\mathrm dx=\frac32\ln|2x-5|\); split \(\frac{3x+8}{x^2+9}=\frac32\cdot\frac{2x}{x^2+9}+\frac{8}{x^2+9}\), giving \(\frac32\ln(x^2+9)\) and \(\frac{8}{3}\tan^{-1}\frac{x}{3}\) (MF26: \(\int\frac{1}{x^2+a^2}\,\mathrm dx=\frac1a\tan^{-1}\frac{x}{a}\), \(a=3\)).</span>
+        \[ \int_{0}^{2}\!\Big[\frac{3}{2x-5}+\frac{3x+8}{x^2+9}\Big]\mathrm dx=\Big[\tfrac32\ln|2x-5|+\tfrac32\ln(x^2+9)+\tfrac83\tan^{-1}\!\tfrac{x}{3}\Big]_{0}^{2}. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">apply the limits and simplify</div>
+        <span class="name">At \(x=2\): \(|2x-5|=1\) so \(\ln1=0\), and \(x^2+9=13\). At \(x=0\): \(|2x-5|=5\) and \(x^2+9=9\).</span>
+        \[ =\Big(0+\tfrac32\ln13+\tfrac83\tan^{-1}\tfrac23\Big)-\Big(\tfrac32\ln5+\tfrac32\ln9+0\Big) \] <span class="mk">(1)</span>
+        \[ =\frac32\ln\frac{13}{45}+\frac83\tan^{-1}\frac23. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Tests:</b> split a proper rational function whose factors are one linear and one irreducible-quadratic &rarr; the pieces land on two different MF26 standard forms at once, the logarithm \(\tfrac{f'}{f}\) and the arctangent \(\tfrac{1}{x^2+a^2}\).</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q18 -->
+<div class="card" id="q18">
+  <div class="cardhead">Question 18 <span class="marks">[13]</span></div>
+  <div class="src">A-Level 2012 P1 Q10 &middot; parts (i), (iii), (iv)</div>
+  <div class="stem">A curve \(C\) has parametric equations \(x=\theta-\sin\theta\), \(y=1-\cos\theta\), for \(0\le\theta\le 2\pi\).
+    <span class="sub">(i) Show that \(\dfrac{\mathrm dy}{\mathrm dx}=\cot\tfrac{\theta}{2}\), find the gradient of \(C\) at the point where \(\theta=\pi\), and state what can be said about the tangents to \(C\) as \(\theta\to0\) and \(\theta\to2\pi\). <span class="marks">[5]</span></span>
+    <span class="sub">(iii) Without using a calculator, find the exact area of the region bounded by \(C\) and the \(x\)-axis. <span class="marks">[5]</span></span>
+    <span class="sub">(iv) A point \(P\) on \(C\) has parameter \(p\), where \(0<p<\pi\). Show that the normal to \(C\) at \(P\) crosses the \(x\)-axis at the point with coordinates \((p,\,0)\). <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">(i) parametric gradient, simplified by the double-angle identities</div>
+        <span class="name">\(\dfrac{\mathrm dx}{\mathrm d\theta}=1-\cos\theta\) and \(\dfrac{\mathrm dy}{\mathrm d\theta}=\sin\theta\); use \(\sin\theta=2\sin\tfrac\theta2\cos\tfrac\theta2\) and \(1-\cos\theta=2\sin^2\tfrac\theta2\).</span>
+        \[ \frac{\mathrm dy}{\mathrm dx}=\frac{\sin\theta}{1-\cos\theta}=\frac{2\sin\frac\theta2\cos\frac\theta2}{2\sin^2\frac\theta2}=\cot\frac\theta2\quad(\text{shown}). \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ \theta=\pi:\ \frac{\mathrm dy}{\mathrm dx}=\cot\tfrac\pi2=0;\qquad \theta\to0,\,2\pi:\ \frac{\mathrm dy}{\mathrm dx}\to\infty\ \Rightarrow\ \text{tangents parallel to the }y\text{-axis}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) area under a parametric curve, \(\int y\,\mathrm dx=\int y\,\tfrac{\mathrm dx}{\mathrm d\theta}\,\mathrm d\theta\)</div>
+        <span class="name">One arch runs \(\theta:0\to2\pi\); \(\mathrm dx=(1-\cos\theta)\,\mathrm d\theta\), so the integrand is \((1-\cos\theta)^2\). Then \(\cos^2\theta=\tfrac{1+\cos2\theta}{2}\).</span>
+        \[ \text{Area}=\int_{0}^{2\pi} y\,\frac{\mathrm dx}{\mathrm d\theta}\,\mathrm d\theta=\int_{0}^{2\pi}(1-\cos\theta)^2\,\mathrm d\theta=\int_{0}^{2\pi}\big(1-2\cos\theta+\cos^2\theta\big)\,\mathrm d\theta \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ =\int_{0}^{2\pi}\Big(\tfrac32-2\cos\theta+\tfrac12\cos2\theta\Big)\mathrm d\theta=\Big[\tfrac32\theta-2\sin\theta+\tfrac14\sin2\theta\Big]_{0}^{2\pi}=3\pi\ \text{units}^2. \] <span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iv) equation of the normal, then set \(y=0\)</div>
+        <span class="name">At \(P\) the tangent gradient is \(\cot\tfrac p2\), so the normal gradient is \(-\tan\tfrac p2\); the point is \(P=\big(p-\sin p,\ 1-\cos p\big)\).</span>
+        \[ y-(1-\cos p)=-\tan\tfrac p2\,\big[x-(p-\sin p)\big]. \] <span class="mk">(1)</span>
+        \[ y=0:\ x-(p-\sin p)=\frac{1-\cos p}{\tan\frac p2}=\frac{2\sin^2\frac p2}{\tan\frac p2}=2\sin\tfrac p2\cos\tfrac p2=\sin p\ \Rightarrow\ x=p. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Fuses:</b> parametric differentiation and the normal line (differentiation) run off the same \(\tfrac{\mathrm dx}{\mathrm d\theta},\tfrac{\mathrm dy}{\mathrm d\theta}\) that drive the area under the parametric curve (integration).</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q19 -->
+<div class="card" id="q19">
+  <div class="cardhead">Question 19 <span class="marks">[5]</span></div>
+  <div class="src">A-Level 2020 P1 Q8</div>
+  <div class="stem">The curves \(C_1\) and \(C_2\) have equations \(y=\dfrac{1}{x^2+1}\) and \(y=\dfrac{2}{3x+4}\) respectively, and they intersect where \(x=-\tfrac12\) and \(x=2\). Find the exact area of the region bounded by \(C_1\) and \(C_2\), simplifying your answer.</div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim HCI</div>
+      <div class="step"><div class="step-header">set up the between-curves integral (\(C_1\) lies above \(C_2\) on the interval)</div>
+        <span class="name">On \(-\tfrac12\le x\le2\), \(C_1\ge C_2\), so Area \(=\displaystyle\int(C_1-C_2)\,\mathrm dx\).</span>
+        \[ \text{Area}=\int_{-1/2}^{2}\Big[\frac{1}{x^2+1}-\frac{2}{3x+4}\Big]\mathrm dx. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">integrate &mdash; arctan (MF26) and a logarithm</div>
+        <span class="name">\(\int\frac{1}{x^2+1}\,\mathrm dx=\tan^{-1}x\); \(\int\frac{2}{3x+4}\,\mathrm dx=\frac23\ln|3x+4|\) (the \(\frac{f'}{f}\) form with \(f=3x+4\)).</span>
+        \[ =\Big[\tan^{-1}x-\tfrac23\ln|3x+4|\Big]_{-1/2}^{2}. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">apply the limits; close with \(\tan^{-1}2+\tan^{-1}\tfrac12=\tfrac\pi2\)</div>
+        \[ =\big(\tan^{-1}2-\tfrac23\ln10\big)-\big(\tan^{-1}(-\tfrac12)-\tfrac23\ln\tfrac52\big)=\big(\tan^{-1}2+\tan^{-1}\tfrac12\big)-\tfrac23\ln\frac{10}{5/2} \] <span class="mk">(1)</span>
+        \[ =\frac{\pi}{2}-\frac23\ln4=\frac{\pi}{2}-\frac43\ln2\ \text{units}^2. \] <span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Tests:</b> area between two curves (integration) that resolves onto the arctangent standard form plus a logarithm, closed by the exact identity \(\tan^{-1}2+\tan^{-1}\tfrac12=\tfrac\pi2\).</div>
     </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
   </div>
 </div>
 
 
 <hr>
-<p style="color:var(--muted);font-size:.9em">When you finish, self-mark against the revealed solutions and note which of the 15 outcomes was shakiest (the <b>Covers</b> line at the foot of each answer names them). Attempt them cold on Loom, say your confidence out loud on each, then paste me the transcript &mdash; I'll build the numbered gap cluster on whatever residue is left, not the whole topic again.</p>
+<p style="color:var(--muted);font-size:.9em">These are the fusions the paper is built on. Attempt them cold on Loom, say your confidence out loud on each (that line feeds the gap tracker), then self-mark against the verbatim solutions. Paste me the transcript and I'll build a numbered gap cluster on whatever specific joins broke &mdash; the &ldquo;differentiate-then-integrate&rdquo; hinge, the parametric-to-arc-length step, or the connected-rate off a proven volume &mdash; not the whole topic again.</p>
 
 <script>
   document.querySelectorAll('.reveal-btn').forEach(btn=>{btn.addEventListener('click',function(){const b=this.parentElement,o=b.querySelector('.answer-overlay');if(o.classList.contains('hidden')){o.classList.remove('hidden');this.textContent='Hide';this.classList.add('hide-state');}else{o.classList.add('hidden');this.textContent='Reveal';this.classList.remove('hide-state');}});});

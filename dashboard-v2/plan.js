@@ -1595,54 +1595,36 @@ window.PLAN = {
    "type": "standard",
    "subject": "maths",
    "flag": "",
-   "mins": 480,
+   "mins": 390,
    "label": "Maths + Chem",
-   "focus": "Int+Diff cluster + gap  ·  Halogen study sheet + drill + gap",
+   "focus": "Int+Diff hard cluster  ·  Halogen study sheet + cluster",
    "blocks": [
     {
-     "mins": 180,
+     "mins": 210,
      "subject": "maths",
-     "name": "Maths — Integration + Differentiation cluster (test everything)",
-     "desc": "Every Int + Diff LO once. Real questions, no hints, hidden answers. Aim ~80%.",
+     "name": "Maths — Integration + Differentiation CLUSTER (hard · 19Q · 163m · full LO coverage)",
+     "desc": "Hard fused Int×Diff, real HCI/A-Level Qs, hidden answers, confidence line per stem. Drill it, then tell me your gaps.",
      "done": false,
      "doneDate": null,
      "clusterHref": "clusters/cluster_math_intdiff.html"
     },
     {
-     "mins": 150,
-     "subject": "maths",
-     "name": "Maths — Int+Diff GAP cluster (15Q, harder)",
-     "desc": "Fused Int×Diff, 127 marks, ~3h — give yourself extra time.",
-     "done": false,
-     "doneDate": null,
-     "clusterHref": "clusters/gap_math_intdiff.html"
-    },
-    {
      "mins": 30,
      "subject": "chem",
      "name": "Chem — Halogen Derivatives STUDY SHEET (read first)",
-     "desc": "Full teach: SN1/SN2 + elimination + tests + CFCs.",
+     "desc": "Full teach: SN1/SN2 + elimination + Ag-halide test + CFCs.",
      "done": false,
      "doneDate": null,
      "clusterHref": "clusters/chem_halogen_studysheet.html"
     },
     {
-     "mins": 75,
+     "mins": 150,
      "subject": "chem",
-     "name": "Chem — Halogen cluster drill (12Q)",
-     "desc": "Covers every LO once.",
+     "name": "Chem — Halogen CLUSTER (17Q · 85m · full LO coverage)",
+     "desc": "Covers every LO. Drill it, then tell me your gaps.",
      "done": false,
      "doneDate": null,
      "clusterHref": "clusters/cluster_chem_halogen.html"
-    },
-    {
-     "mins": 45,
-     "subject": "chem",
-     "name": "Chem — Halogen GAP cluster (5Q, hard)",
-     "desc": "SN1/SN2 + stereochem + tests + synthesis fusions.",
-     "done": false,
-     "doneDate": null,
-     "clusterHref": "clusters/gap_chem_halogen.html"
     }
    ],
    "week": 4
