@@ -1757,9 +1757,9 @@ window.PLAN = {
    "type": "standard",
    "subject": "bio",
    "flag": "",
-   "mins": 360,
+   "mins": 420,
    "label": "Bio + GP + Chem",
-   "focus": "Enzymes + DNA (deepen)  ·  P2 timed practice  ·  Hydroxy/Halogen consolidate",
+   "focus": "Enzymes + DNA (deepen)  ·  P2 timed practice  ·  Hydroxy study sheet + cluster (first drill)",
    "blocks": [
     {
      "mins": 120,
@@ -1778,12 +1778,22 @@ window.PLAN = {
      "doneDate": null
     },
     {
-     "mins": 120,
+     "mins": 30,
      "subject": "chem",
-     "name": "Chem — Hydroxy/Halogen consolidate",
-     "desc": "",
+     "name": "Chem — Hydroxy Compounds STUDY SHEET (read first)",
+     "desc": "Full teach: alcohols + phenols, acidity by conjugate-base stability, oxidation ladder, iodoform, esterification both routes, phenol electrophilic substitution, distinguishing tests.",
      "done": false,
-     "doneDate": null
+     "doneDate": null,
+     "clusterHref": "clusters/chem_hydroxy_studysheet.html"
+    },
+    {
+     "mins": 150,
+     "subject": "chem",
+     "name": "Chem — Hydroxy CLUSTER (14Q · 82m · full LO coverage)",
+     "desc": "Covers every Hydroxy LO. Real HCI Qs, hidden answers, confidence line per stem. Drill it, then tell me your gaps.",
+     "done": false,
+     "doneDate": null,
+     "clusterHref": "clusters/cluster_chem_hydroxy.html"
     }
    ],
    "week": 5

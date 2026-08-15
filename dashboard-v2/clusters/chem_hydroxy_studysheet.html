@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chemistry — Hydroxy Compounds (Study Sheet)</title>
+<script>
+  window.MathJax = {
+    loader: { load: ['[tex]/mhchem'] },
+    tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], processEscapes: true, packages: {'[+]': ['mhchem']}, tags: 'none' },
+    svg: { fontCache: 'global' },
+    options: { skipHtmlTags: ['script','noscript','style','textarea','pre'] }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --amber-soft:#fffbeb;
+    --green:#059669; --green-soft:#ecfdf5; --cover:#f3f4f6;
+    --purple:#7c3aed; --purple-soft:#f5f3ff; --red:#dc2626; --red-soft:#fef2f2; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:40px 24px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h2,h3,.label,.controls,button,.step-header{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  h1{font-size:2em;margin:0 0 8px;color:#111;border-bottom:3px solid #111;padding-bottom:12px}
+  h2{font-size:1.4em;margin:2px 0 6px;color:#111}
+  h3{font-size:1.15em;margin:0 0 14px;color:#1f2937}
+  p{margin:8px 0}
+  .meta{color:var(--muted);font-size:.9em;margin:4px 0 24px}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--red);padding:16px 20px;border-radius:6px;margin:16px 0 24px}
+  .kwframe{background:#111;color:#f1f5f9;border-radius:8px;padding:16px 22px;margin:0 0 28px;font-size:.98em}
+  .kwframe b{color:#fde68a}
+  .kwframe .k{color:#93c5fd;font-weight:700}
+  .toolkit{background:var(--blue-soft);border:1px solid #bfdbfe;border-left:4px solid var(--blue);padding:14px 20px;border-radius:6px;margin:0 0 20px;font-size:.94em}
+  .toolkit strong{color:#1e3a8a}
+  .toolkit table{border-collapse:collapse;margin:10px 0 4px;width:100%}
+  .toolkit td{padding:6px 10px 6px 0;vertical-align:top;border-bottom:1px solid #dbeafe}
+  .toolkit td:first-child{white-space:nowrap;color:#1e3a8a;font-weight:600;width:32%}
+  .toolkit tr:last-child td{border-bottom:none}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:28px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:6px;color:#111}
+  .toc a{color:var(--blue);text-decoration:none;margin-right:14px;line-height:2}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .card .num{display:inline-block;font-family:-apple-system,sans-serif;font-size:.72em;font-weight:800;letter-spacing:.06em;color:#fff;background:var(--blue);padding:2px 9px;border-radius:10px;vertical-align:middle;margin-right:8px}
+  .block{margin:14px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border)}
+  .l1{background:#0f172a;color:#e2e8f0;border-left-color:#334155;font-size:.95em}
+  .l1 .h{font-family:-apple-system,sans-serif;font-size:.68em;letter-spacing:.06em;text-transform:uppercase;color:#7dd3fc;font-weight:700;margin-bottom:4px}
+  .l1 b{color:#fde68a}
+  .l2{background:#f9fafb;border-left-color:#6b7280;font-size:.96em}
+  .l2 .h{font-family:-apple-system,sans-serif;font-size:.68em;letter-spacing:.06em;text-transform:uppercase;color:#4b5563;font-weight:700;margin-bottom:4px}
+  .defn{background:#eef7f1;border:1px dashed #059669;border-radius:5px;padding:8px 12px;margin:8px 0;font-size:.97em}
+  .defn::before{content:'Definition / verbatim wording — reproduce exactly';display:block;font-family:-apple-system,sans-serif;font-size:.68em;letter-spacing:.05em;text-transform:uppercase;color:#047857;font-weight:700;margin-bottom:4px}
+  .defn b{color:#065f46}
+  .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:6px 12px;border-radius:4px;margin:10px 0 0;font-size:.9em}
+  .trap b{color:var(--red)}
+  table.data{border-collapse:collapse;width:100%;margin:12px 0;font-size:.92em;font-family:-apple-system,sans-serif}
+  table.data th,table.data td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+  table.data th{background:#f3f4f6;color:#111;font-weight:700}
+  table.data td b{color:#1e3a8a}
+  .fig{display:block;margin:14px auto;background:#fff;border:1px solid var(--border);border-radius:6px;max-width:100%}
+  .figcap{font-family:-apple-system,sans-serif;font-size:.8em;color:var(--muted);text-align:center;margin:-6px 0 12px}
+  b.rg{color:#1e3a8a}
+  .pill{display:inline-block;font-family:-apple-system,sans-serif;font-size:.72em;font-weight:700;padding:1px 8px;border-radius:10px;margin-left:4px}
+  .pill.l1p{background:#dbeafe;color:#1e3a8a}.pill.l2p{background:#e5e7eb;color:#374151}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin-bottom:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;color:var(--text);font-weight:500}
+  .block.answer{background:var(--green-soft);border-left-color:var(--green);position:relative;min-height:56px}
+  .label{display:block;text-transform:uppercase;font-size:.75em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--muted)}
+  .block.answer .label{color:var(--green)}
+  .stem{background:#1e293b;color:#f1f5f9;padding:11px 15px;border-radius:6px;margin:10px 0}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:0 6px 6px 0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;font-family:-apple-system,sans-serif;border-left:4px solid var(--muted);margin-left:-16px;padding-left:16px;z-index:2}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content{padding-right:60px}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  @media print{body{background:#fff;padding:20px;max-width:100%}.controls,.reveal-btn{display:none!important}.answer-overlay{display:none!important}.card{box-shadow:none;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<h1>Chemistry — Hydroxy Compounds</h1>
+<p class="meta">H2 9476 · Topic 16 · Organic · <b>STUDY SHEET (read this first, then drill)</b>. Alcohols &amp; phenols. Built from the HCI lecture notes, HCI Class Exercises 1 &amp; 2, and the HCI "Organic Reactions by Reagents" reference. Green dashed boxes are <b>verbatim mark-scheme wording</b> — reproduce them word-for-word. <b>Mechanisms are NOT required in this chapter</b> (you may be guided to draw one, but you don't need them cold).</p>
+
+<div class="kwframe">
+<span class="k">THE SPINE (Layer&nbsp;1) —</span> one functional group, <b>\(\ce{-OH}\)</b>, on two very different carbons. On an <b>alkyl carbon → an alcohol</b>; bonded <b>directly to a benzene ring → a phenol</b>. Three ideas run through everything: <span class="k">(1) hydrogen bonding</span> sets the physical properties (bp, solubility); <span class="k">(2) acidity</span> is compared <b>only through conjugate-base stability</b>, giving the ladder <b>alcohol &lt; water &lt; phenol</b>; <span class="k">(3) the reaction map</span> — alcohols are the <b>second great synthesis hub</b> (→ halogenoalkane, alkene, aldehyde/ketone, carboxylic acid, ester), while phenol behaves <b>oppositely</b> (won't dehydrate, won't esterify with a carboxylic acid, resists nucleophilic substitution) yet its <b>ring is strongly activated toward electrophilic substitution</b>. Two diagnostics recur: <b>oxidation is the 1°/2°/3° test</b>, and four colour/ppt tests identify what you hold (<b>orange→green</b> dichromate · <b>yellow ppt</b> iodoform · <b>violet</b> FeCl₃ · <b>white ppt + decolourised</b> bromine water).
+</div>
+
+<div class="controls"><button onclick="revealAll()">Reveal all</button><button onclick="hideAll()">Hide all</button></div>
+
+<div class="toc"><strong>Contents</strong>
+<a href="#s1">1 · Naming &amp; 1°/2°/3°</a><a href="#s2">2 · Physical properties</a><a href="#s3">3 · Acidity (the spine)</a><a href="#s4">4 · Na · NaOH · carbonate</a><a href="#s5">5 · → halogenoalkane</a><a href="#s6">6 · Dehydration → alkene</a><a href="#s7">7 · Esterification</a><a href="#s8">8 · Oxidation (1°/2°/3°)</a><a href="#s9">9 · Iodoform test</a><a href="#s10">10 · Phenol electrophilic sub.</a><a href="#s11">11 · Distinguishing tests</a><a href="#s12">12 · Reagents master table</a><a href="#s13">13 · Active recall</a>
+</div>
+
+<!-- ========================= 1 ========================= -->
+<div class="card" id="s1">
+  <h2><span class="num">1</span> Nomenclature &amp; classification <span class="pill l1p">Layer 1</span></h2>
+  <div class="defn"><b>Alcohol</b> = an \(\ce{-OH}\) group bonded to an <b>alkyl (sp³) carbon</b>, \(\ce{R-OH}\). <b>Phenol</b> = an \(\ce{-OH}\) group bonded <b>directly to a benzene ring</b>, \(\ce{C6H5OH}\). Name an alcohol by replacing the alkane's terminal <b>-e with -ol</b>; the longest chain must contain the \(\ce{-OH}\); number from the end <b>nearer the \(\ce{-OH}\)</b> so it takes the <b>lowest locant</b> (propan-1-ol, propan-2-ol). "Hydroxy" alone is a <b>group, not a functional group</b>.</div>
+
+  <div class="block l2"><div class="h">Layer 2 — how to classify 1° / 2° / 3°</div>
+  Look only at the <b>carbon that bears the \(\ce{-OH}\)</b>, then use either test (they agree):
+  <table class="data">
+    <tr><th>Class</th><th>Alkyl (C) groups on that carbon</th><th>H atoms on that carbon</th><th>Example</th></tr>
+    <tr><td><b>Primary (1°)</b></td><td>1 (or 0)</td><td>2</td><td>ethanol \(\ce{CH3CH2OH}\), propan-1-ol</td></tr>
+    <tr><td><b>Secondary (2°)</b></td><td>2</td><td>1</td><td>propan-2-ol \(\ce{(CH3)2CHOH}\)</td></tr>
+    <tr><td><b>Tertiary (3°)</b></td><td>3</td><td>0</td><td>2-methylpropan-2-ol \(\ce{(CH3)3COH}\)</td></tr>
+  </table>
+  <b>Always state 1°/2°/3° explicitly</b> when you identify an alcohol — it decides the oxidation product. A <b>phenol is generally NOT classed 1°/2°/3°</b> — call it a phenol.</div>
+  <div class="defn">The <b>\(\ce{-OH}\) outranks alkyl and halogen</b> for the lowest locant, but when a <b>higher-priority group</b> (e.g. \(\ce{-COOH}\), \(\ce{C=O}\)) is present the \(\ce{-OH}\) becomes a <b>substituent prefix, "hydroxy-"</b> (e.g. <b>3-hydroxybutanoic acid</b>, not "3-ol butanoic acid"). Cite substituents <b>alphabetically</b>: <b>5-bromo-2-methylphenol</b>, not "2-methyl-5-bromophenol".</div>
+  <div class="trap"><b>Traps.</b> (1) \(\ce{C6H5CH2OH}\) is <b>phenylmethanol — a primary ALCOHOL, not a phenol</b>: the \(\ce{-OH}\) sits on an sp³ \(\ce{CH2}\), not on the ring. (2) "Hydroxy" is a group; a <b>carboxylic acid</b> is a carbonyl group + a hydroxy group together. (3) Modern term is <b>constitutional isomerism</b> (old: "structural"); an <b>ether \(\ce{R-O-R}\) is a constitutional isomer of an alcohol</b> — no protonic H, so <b>no H-bonding → lower bp</b>.</div>
+</div>
+
+<!-- ========================= 2 ========================= -->
+<div class="card" id="s2">
+  <h2><span class="num">2</span> Physical properties — it's all hydrogen bonding</h2>
+  <div class="block l2"><div class="h">Layer 2 — boiling point</div>
+  Compared with the <b>isoelectronic alkane</b>, an alcohol boils <b>much higher</b> (ethane \(-89\,°\mathrm{C}\) vs ethanol \(78\,°\mathrm{C}\)) even though their electron clouds — and so their dispersion forces — are similar.</div>
+  <div class="defn">The alcohol also forms <b>intermolecular hydrogen bonds</b> (through the \(\ce{O-H}\)), which are <b>stronger than dispersion forces</b>, so <b>more energy is needed to overcome the intermolecular attractions</b> and the boiling point is higher. <b>More \(\ce{-OH}\) groups → more extensive and stronger H-bonding → higher bp</b> (ethane &lt; ethanol &lt; ethane-1,2-diol). bp also <b>rises with chain length</b> (bigger electron cloud → stronger dispersion forces; H-bonding stays roughly constant).</div>
+  <div class="block l2"><div class="h">Layer 2 — solubility in water</div>
+  Short-chain alcohols are <b>miscible</b>: the H-bonds formed with water release <b>enough energy to overcome both</b> the alcohol–alcohol H-bonding <b>and</b> the dispersion forces between chains. As the chain lengthens, solubility <b>falls</b> — the dispersion forces between the growing non-polar chains are no longer repaid by the alcohol–water H-bonding, and the long chain <b>disrupts water's own H-bonding</b>. <b>Phenol is only moderately soluble</b> (large non-polar ring; strong ring–ring dispersion) — cloudy in cold water, but <b>dissolves fully when warmed</b>.</div>
+  <div class="trap"><b>Two exam-useful subtleties.</b> (1) A <b>straight chain</b> has a larger surface area than its <b>branched</b> isomer → stronger dispersion → higher bp (hexan-1-ol 158 °C &gt; 3,3-dimethylbutan-2-ol 120 °C). (2) A <b>rigid ring</b> (phenyl) gives stronger, better-defined dispersion forces than a flexible chain of similar \(M_r\) (methylbenzene 111 °C &gt; hexane 69 °C). Never explain the halide/alcohol bp trends by "polarity" — it's <b>electron-cloud size + H-bonding</b>.</div>
+</div>
+
+<!-- ========================= 3 ========================= -->
+<div class="card" id="s3">
+  <h2><span class="num">3</span> Acidity — the conceptual spine <span class="pill l1p">Layer 1</span></h2>
+  <div class="block l1"><div class="h">Layer 1 — the one rule</div>
+  To compare <b>acid strength you compare the stability of the CONJUGATE BASE</b> — the anion left after \(\ce{H+}\) is lost. A <b>more stable conjugate base</b> is <b>less likely to re-accept \(\ce{H+}\) → greater dissociation → stronger acid, larger \(K_a\), lower \(\mathrm{p}K_a\)</b> (\(\mathrm{p}K_a=-\log_{10}K_a\)). Anything that <b>disperses</b> the negative charge <b>stabilises</b> the anion (↑ acidity); anything that <b>intensifies</b> it destabilises (↓ acidity). <b>Never compare the neutral acids directly.</b></div>
+  <div class="defn"><b>The acidity ladder: alcohol &lt; water &lt; phenol.</b><br>• <b>Alcohols are weaker acids than water</b>: the <b>alkyl group is electron-donating → intensifies the negative charge on the alkoxide O → destabilises it</b> → less dissociation. Alcohols are essentially <b>neutral — they do not turn blue litmus red</b>. (Chain length has <b>no</b> significant effect.)<br>• <b>Phenol is a much stronger acid</b> (0.1 mol dm⁻³ phenol has pH ≈ 5.4 → <b>turns blue litmus red</b>): in the <b>phenoxide ion a p orbital on the O overlaps the ring π-cloud, so the negative charge is partially delocalised into the benzene ring</b> → phenoxide is <b>far more stabilised</b> than an alkoxide.</div>
+
+  <svg class="fig" width="640" height="200" viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="14">
+    <!-- ethoxide -->
+    <text x="10" y="70">H₃C</text><line x1="46" y1="66" x2="66" y2="76" stroke="#111" stroke-width="1.3"/>
+    <text x="68" y="86">CH₂</text><line x1="100" y1="82" x2="120" y2="82" stroke="#111" stroke-width="1.3"/>
+    <text x="122" y="86">O</text><text x="136" y="76" font-size="12">−</text>
+    <path d="M40,110 C 60,96 100,96 120,90" fill="none" stroke="#7c3aed" stroke-width="1.3" marker-end="url(#pv)"/>
+    <text x="20" y="126" fill="#7c3aed" font-size="11" font-family="-apple-system,sans-serif">alkyl PUSHES charge onto O</text>
+    <text x="40" y="152" fill="#6b7280" font-size="11.5" font-family="-apple-system,sans-serif" text-anchor="middle">ethoxide: charge intensified</text>
+    <text x="40" y="167" fill="#6b7280" font-size="11.5" font-family="-apple-system,sans-serif" text-anchor="middle">→ less stable → weak acid</text>
+    <!-- divider -->
+    <line x1="300" y1="20" x2="300" y2="180" stroke="#e5e7eb" stroke-width="1"/>
+    <!-- phenoxide -->
+    <polygon points="460,44 494,64 494,104 460,124 426,104 426,64" fill="none" stroke="#111" stroke-width="1.4"/>
+    <circle cx="460" cy="84" r="20" fill="none" stroke="#111" stroke-width="1.1"/>
+    <line x1="460" y1="44" x2="460" y2="26" stroke="#111" stroke-width="1.3"/>
+    <text x="453" y="22">O</text><text x="470" y="16" font-size="12">−</text>
+    <path d="M452,30 C 430,44 428,66 440,74" fill="none" stroke="#059669" stroke-width="1.4" marker-end="url(#gr)"/>
+    <path d="M468,30 C 490,44 492,66 480,74" fill="none" stroke="#059669" stroke-width="1.4" marker-end="url(#gr)"/>
+    <text x="360" y="150" fill="#6b7280" font-size="11.5" font-family="-apple-system,sans-serif">phenoxide: charge PARTIALLY delocalised into ring</text>
+    <text x="360" y="165" fill="#6b7280" font-size="11.5" font-family="-apple-system,sans-serif">→ far more stable → phenol ~10⁶× stronger acid than ethanol</text>
+    <defs>
+      <marker id="pv" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#7c3aed" stroke-width="1.4"/></marker>
+      <marker id="gr" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#059669" stroke-width="1.4"/></marker>
+    </defs>
+  </svg>
+  <div class="figcap">Ethoxide (charge intensified by alkyl → weak acid) vs phenoxide (charge delocalised into the ring → strong acid). The bulk of the charge stays on O.</div>
+
+  <div class="toolkit"><strong>\(\mathrm{p}K_a\) benchmarks to memorise</strong> (anchor any comparison to these):
+  <table>
+    <tr><td>Phenol</td><td>\(\mathrm{p}K_a \approx 10\)</td></tr>
+    <tr><td>Ethanol (alcohol)</td><td>\(\mathrm{p}K_a \approx 16\)</td></tr>
+    <tr><td>Ethanoic acid (carboxylic acid)</td><td>\(\mathrm{p}K_a \approx 4.76 \approx 5\)</td></tr>
+  </table>
+  <b>Ethanoic acid ≫ phenol ≫ ethanol.</b> A carboxylic acid beats phenol because the ethanoate charge is spread <b>equally over two equivalent oxygens</b>, far more effective than phenol's mostly-on-one-O delocalisation.</div>
+
+  <div class="defn"><b>Substituent effects (same rule, both classes).</b> <b>Electron-withdrawing groups</b> (\(\ce{-NO2}\), \(\ce{-Cl/-Br/-I}\), \(\ce{-CF3}\), \(\ce{-CN}\)) <b>disperse/stabilise the negative charge → stronger acid</b>; the <b>nearer the EWG sits to the \(\ce{-O^-}\), the stronger the effect</b> (inductive withdrawal weakens with distance — 1-chloropropan-1-ol &gt; 2-chloropropan-1-ol). <b>Electron-donating groups</b> (\(\ce{-CH3}\), \(\ce{-OCH3}\), \(\ce{-NH2}\)) intensify the charge / reduce delocalisation → <b>weaker acid</b>. So a nitrophenol &gt; phenol &gt; a methylphenol in acidity.</div>
+  <div class="trap"><b>Traps.</b> (1) <b>Alkyl chain length does NOT set acidity</b> — "a longer chain is a stronger donor" is false; a bulkier alkoxide (tert-butoxide) is actually a <b>weaker</b> acid because it H-bonds less with the solvent. (2) Phenoxide's charge is <b>mostly on O</b>, NOT shared 1/7 equally over the ring carbons. (3) Say <b>which species</b> you mean — compare <b>phenoxide with alkoxide</b>, not "phenol with alkoxide". (4) Use <b>"partially" delocalised</b>, never "fully".</div>
+</div>
+
+<!-- ========================= 4 ========================= -->
+<div class="card" id="s4">
+  <h2><span class="num">4</span> Reactions as acids — Na, NaOH, carbonate <span class="pill l1p">Layer 1</span></h2>
+  <div class="block l1"><div class="h">Layer 1 keywords</div>
+  <b>With sodium (redox):</b> both alcohols and phenol react with <b>\(\ce{Na(s)}\), room temperature</b> → <b>alkoxide / phenoxide + \(\ce{1/2 H2}\)</b> (the \(\ce{O-H}\) breaks). <b>With \(\ce{NaOH(aq)}\):</b> <b>phenol reacts</b> (it is acidic enough), <b>alcohols do NOT</b>. <b>With carbonate:</b> <b>neither reacts</b> — a key point that separates phenol from a carboxylic acid.</div>
+  <div class="defn"><b>Na (acid–metal, redox):</b> Na is oxidised \(0\to+1\); H is reduced \(+1\to0\) in \(\ce{H2}\). <b>Observation: effervescence of \(\ce{H2}\)</b> (test with a lit splint → "pop"). Because <b>phenol is a stronger acid than an alcohol</b>, phenol gives <b>rapid</b> effervescence while an alcohol gives <b>slow</b> effervescence.
+  <br>\(\ce{2C2H5OH + 2Na -> 2C2H5O^{-}Na^{+} + H2}\) &nbsp;·&nbsp; \(\ce{2C6H5OH + 2Na -> 2C6H5O^{-}Na^{+} + H2}\)</div>
+  <div class="defn"><b>NaOH (acid–base):</b> <b>phenol + \(\ce{NaOH(aq)}\) → sodium phenoxide + water</b>. A cloudy phenol/water mixture turns into a <b>clear, colourless, homogeneous solution</b> (the ionic phenoxide has strong ion–dipole attraction to water). <b>\(\ce{C6H5OH + NaOH -> C6H5O^{-}Na^{+} + H2O}\).</b> Alcohols are weaker than water, so they do <b>not</b> react with \(\ce{NaOH(aq)}\).</div>
+  <div class="trap"><b>Traps.</b> (1) The Na reaction is a <b>single electron transfer to the protonic H</b> — the <b>alkoxy group itself is neither oxidised nor reduced</b>. (2) <b>NaOH dissolving phenol is NOT the test for phenol</b> — the dedicated test is <b>neutral \(\ce{FeCl3}\)</b> (§10/11). (3) "Alcohols don't react with NaOH" needs the word <b>aqueous</b> — <b>neat ethanol + solid NaOH/KOH pellets</b> can give the ethoxide. (4) <b>Neither phenol nor alcohol reacts with \(\ce{Na2CO3}\)</b> (no \(\ce{CO2}\)) — a <b>carboxylic acid does</b> (effervescence of \(\ce{CO2}\)), so carbonate distinguishes phenol from a carboxylic acid.</div>
+</div>
+
+<!-- ========================= 5 ========================= -->
+<div class="card" id="s5">
+  <h2><span class="num">5</span> Substitution: \(\ce{-OH}\) → halogenoalkane <span class="pill l1p">Layer 1</span></h2>
+  <div class="defn"><b>\(\ce{-OH}\) is a very poor leaving group</b> (it would leave as \(\ce{OH-}\), a strong base/nucleophile), so every reagent below first <b>converts \(\ce{-OH}\) into a better leaving group</b>, then the halide substitutes (breaking the <b>C–O</b> bond; mechanism not required).</div>
+  <table class="data">
+    <tr><th>Reagent</th><th>Product</th><th>Conditions / observation</th></tr>
+    <tr><td><b>\(\ce{PCl5}\)</b> (solid)</td><td>chloroalkane</td><td>room temp; <b>dense white fumes of \(\ce{HCl}\)</b> — good test for \(\ce{-OH}\) (if no \(\ce{-COOH}\))</td></tr>
+    <tr><td><b>conc \(\ce{HCl}\)</b></td><td>chloroalkane</td><td>3° works alone; <b>1°/2° need anhydrous \(\ce{ZnCl2}\)</b> catalyst → solution turns cloudy (<b>Lucas test</b>)</td></tr>
+    <tr><td><b>conc \(\ce{HBr}\)</b>, or <b>\(\ce{NaBr} + </b>conc<b> \(\ce{H2SO4}\)</b> (\(\ce{HBr}\) in situ)</td><td>bromoalkane</td><td>\(\ce{H2SO4(l) + NaBr -> HBr(g) + NaHSO4}\)</td></tr>
+    <tr><td><b>\(\ce{PCl3}\)</b> (liquid); \(\ce{PBr3}\)/\(\ce{PI3}\) in situ (P + \(\ce{Br2}\)/\(\ce{I2}\))</td><td>halogenoalkane</td><td>\(\ce{PBr3}\), \(\ce{PI3}\) unstable → made in situ</td></tr>
+    <tr><td><b>\(\ce{SOCl2}\)</b> (thionyl chloride), warm</td><td>chloroalkane</td><td>two acidic gases <b>\(\ce{HCl} + \ce{SO2}\)</b> escape → easy to push to completion</td></tr>
+  </table>
+  <div class="block l2"><div class="h">Layer 2 — the Lucas test (distinguishes 1°/2°/3°)</div>
+  Reagents <b>conc \(\ce{HCl} + \ce{ZnCl2}\)</b>: <b>3° → cloudy immediately</b>; <b>2° → cloudy within ~5 min</b> at room temp; <b>1° → no cloudiness unless warmed</b>. (Rate tracks carbocation stability: 3° &gt; 2° &gt; 1°.)</div>
+  <div class="trap"><b>Trap.</b> <b>Phenol does NOT undergo this substitution</b> — same reason as halogenoarenes: the O lone pair is <b>delocalised into the ring → the C–O bond has partial double-bond character → strong and hard to break</b>, and the ring π-cloud repels the nucleophile.</div>
+</div>
+
+<!-- ========================= 6 ========================= -->
+<div class="card" id="s6">
+  <h2><span class="num">6</span> Dehydration (elimination) → alkene <span class="pill l1p">Layer 1</span></h2>
+  <div class="block l1"><div class="h">Layer 1 keywords</div>
+  <b>Reagents (know all three): excess conc \(\ce{H2SO4}\), heat</b> · <b>conc \(\ce{H3PO4}\), heat</b> · <b>\(\ce{Al2O3}\), heat</b> (dry). Loses \(\ce{-OH}\) plus an H from the <b>adjacent (β) carbon</b> → <b>alkene + \(\ce{H2O}\)</b>. This is a <b>β-elimination</b>.</div>
+  <div class="defn"><b>\(\ce{H3PO4}\) is often preferred over \(\ce{H2SO4}\)</b> because conc \(\ce{H2SO4}\) can act as an <b>oxidising agent</b> and give side-products. <b>No H on the β-carbon → no dehydration</b> — so <b>phenol cannot be dehydrated</b> (no β-H). A dehydration may give a <b>mixture of alkenes</b>; the <b>more-substituted alkene is the more stable (thermodynamic) major product</b> (Saytzeff).</div>
+  <div class="trap"><b>Traps.</b> (1) You must write <b>"excess"</b> conc \(\ce{H2SO4}\) for dehydration (excess so it acts as the dehydrating agent, not diluted by the water made). (2) <b>cis and trans isomers are distinct organic products — count both.</b> hexan-3-ol → <b>4 products</b> (hex-2-ene cis+trans, hex-3-ene cis+trans). (3) A <b>symmetrical</b> ring alcohol (cyclohexanol) gives <b>one</b> product; a <b>trans</b>-cycloalkene is impossible for a 7-membered ring or smaller (ring strain), so only the <b>cis</b> forms.</div>
+</div>
+
+<!-- ========================= 7 ========================= -->
+<div class="card" id="s7">
+  <h2><span class="num">7</span> Esterification — two routes, and why phenol is different <span class="pill l1p">Layer 1</span></h2>
+  <div class="block l1"><div class="h">Layer 1 keywords</div>
+  A <b>condensation</b> (a small molecule is lost). <b>Route A — carboxylic acid:</b> alcohol + carboxylic acid, <b>a few drops conc \(\ce{H2SO4}\) catalyst, heat → ester + \(\ce{H2O}\)</b> (slow, <b>reversible</b>). <b>Route B — acyl chloride \(\ce{RCOCl}\):</b> <b>room temp, no catalyst, goes to completion → ester + \(\ce{HCl}\)</b> (white fumes). Route B works for <b>both alcohols and phenols</b>.</div>
+
+  <svg class="fig" width="680" height="180" viewBox="0 0 680 180" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="13.5">
+    <!-- Route A -->
+    <text x="8" y="46" font-size="11" fill="#6b7280" font-family="-apple-system,sans-serif">Route A · alcohol + carboxylic acid ⇌ ester + water</text>
+    <text x="10" y="78">CH₃COOH</text><text x="86" y="78">+</text><text x="98" y="78">HOC₂H₅</text>
+    <line x1="176" y1="72" x2="236" y2="72" stroke="#111" stroke-width="1.4" marker-end="url(#ar)"/>
+    <line x1="236" y1="72" x2="176" y2="72" stroke="#111" stroke-width="1.4" marker-end="url(#ar)" transform="translate(0,8)"/>
+    <text x="170" y="60" font-size="10.5" fill="#059669" font-family="-apple-system,sans-serif">few drops conc H₂SO₄, heat</text>
+    <text x="244" y="78">CH₃COOC₂H₅</text><text x="336" y="78">+</text><text x="348" y="78">H₂O</text>
+    <text x="244" y="96" font-size="10.5" fill="#6b7280" font-family="-apple-system,sans-serif">ethyl ethanoate (an ester)</text>
+    <!-- Route B -->
+    <text x="8" y="132" font-size="11" fill="#6b7280" font-family="-apple-system,sans-serif">Route B · phenol + acyl chloride → phenyl ester + HCl (the ONLY way to make a phenyl ester)</text>
+    <polygon points="40,150 58,160 58,180 40,190 22,180 22,160" fill="none" stroke="#111" stroke-width="1.3"/>
+    <circle cx="40" cy="170" r="10" fill="none" stroke="#111" stroke-width="1"/>
+    <text x="60" y="163" font-size="12">O⁻/OH</text>
+    <text x="118" y="174">+</text>
+    <text x="130" y="174">CH₃COCl</text>
+    <line x1="206" y1="168" x2="262" y2="168" stroke="#111" stroke-width="1.4" marker-end="url(#ar)"/>
+    <text x="200" y="158" font-size="10.5" fill="#d97706" font-family="-apple-system,sans-serif">room temp, no catalyst</text>
+    <polygon points="286,150 304,160 304,180 286,190 268,180 268,160" fill="none" stroke="#111" stroke-width="1.3"/>
+    <circle cx="286" cy="170" r="10" fill="none" stroke="#111" stroke-width="1"/>
+    <text x="306" y="167" font-size="12">OOCCH₃</text>
+    <text x="392" y="174">+ HCl (white fumes)</text>
+    <defs>
+      <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6" fill="#111"/></marker>
+    </defs>
+  </svg>
+  <div class="figcap">Alcohols take either route; phenols take only the acyl-chloride route.</div>
+
+  <div class="defn"><b>Role of conc \(\ce{H2SO4}\) in Route A:</b> it <b>protonates the carbonyl oxygen</b>, making the <b>carbonyl carbon more electron-deficient</b> and so <b>more susceptible to nucleophilic attack</b> by the weak nucleophile (the alcohol). Only <b>a few drops</b> — enough to catalyse, not to dehydrate.</div>
+  <div class="trap"><b>The classic trap.</b> <b>Phenol does NOT react with a carboxylic acid</b> — the O lone pair is <b>delocalised into the ring</b>, so phenol is a <b>weak nucleophile</b> and the carboxylic acid is not reactive enough. <b>To make a phenyl ester you must use an acyl chloride</b> (and converting phenol to <b>phenoxide</b> first, a stronger nucleophile, improves the yield). Do not confuse which \(\ce{-OH}\) partner works with which acyl reagent.</div>
+</div>
+
+<!-- ========================= 8 ========================= -->
+<div class="card" id="s8">
+  <h2><span class="num">8</span> Oxidation — the 1°/2°/3° diagnostic (the most important section) <span class="pill l1p">Layer 1</span></h2>
+  <div class="block l1"><div class="h">Layer 1 keywords</div>
+  Two oxidant systems: <b>\(\ce{K2Cr2O7}\) / dil \(\ce{H2SO4}\) / heat</b> (milder) and <b>\(\ce{KMnO4}\) / dil \(\ce{H2SO4}\) / heat</b> (stronger). Oxidation needs an <b>H on the carbon bearing \(\ce{-OH}\)</b> (an α-H), so <b>3° alcohols and phenols are NOT oxidised</b>. <b>1° → aldehyde → carboxylic acid; 2° → ketone; 3° → no reaction.</b></div>
+
+  <svg class="fig" width="700" height="230" viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="13.5">
+    <!-- 1° row -->
+    <text x="6" y="40">1°</text>
+    <text x="30" y="40">H₃C</text><line x1="66" y1="36" x2="82" y2="36" stroke="#111" stroke-width="1.3"/><text x="84" y="40">CH₂OH</text>
+    <line x1="150" y1="32" x2="196" y2="32" stroke="#111" stroke-width="1.4" marker-end="url(#o1)"/>
+    <text x="146" y="22" font-size="9.5" fill="#059669" font-family="-apple-system,sans-serif">K₂Cr₂O₇/H₂SO₄, heat</text>
+    <text x="140" y="48" font-size="9.5" fill="#dc2626" font-family="-apple-system,sans-serif">+ immediate DISTILLATION</text>
+    <!-- aldehyde -->
+    <text x="204" y="40">H₃C</text><text x="238" y="40">CHO</text>
+    <text x="204" y="58" font-size="10" fill="#6b7280" font-family="-apple-system,sans-serif">aldehyde</text>
+    <line x1="286" y1="32" x2="332" y2="32" stroke="#111" stroke-width="1.4" marker-end="url(#o1)"/>
+    <text x="282" y="22" font-size="9.5" fill="#059669" font-family="-apple-system,sans-serif">K₂Cr₂O₇/H₂SO₄</text>
+    <text x="290" y="48" font-size="9.5" fill="#059669" font-family="-apple-system,sans-serif">heat, REFLUX</text>
+    <text x="340" y="40">H₃C</text><text x="374" y="40">COOH</text>
+    <text x="340" y="58" font-size="10" fill="#6b7280" font-family="-apple-system,sans-serif">carboxylic acid</text>
+    <text x="470" y="40" fill="#059669" font-size="11.5" font-family="-apple-system,sans-serif">orange → green (Cr³⁺)</text>
+    <!-- 2° row -->
+    <text x="6" y="120">2°</text>
+    <text x="30" y="120">H₃C</text><line x1="66" y1="116" x2="82" y2="116" stroke="#111" stroke-width="1.3"/><text x="84" y="120">CH(OH)CH₃</text>
+    <line x1="180" y1="112" x2="240" y2="112" stroke="#111" stroke-width="1.4" marker-end="url(#o1)"/>
+    <text x="176" y="102" font-size="9.5" fill="#059669" font-family="-apple-system,sans-serif">K₂Cr₂O₇ or KMnO₄</text>
+    <text x="188" y="128" font-size="9.5" fill="#059669" font-family="-apple-system,sans-serif">/H₂SO₄, heat</text>
+    <text x="248" y="120">H₃C</text><text x="282" y="120">COCH₃</text>
+    <text x="248" y="138" font-size="10" fill="#6b7280" font-family="-apple-system,sans-serif">ketone (resists further oxidation)</text>
+    <text x="470" y="120" fill="#7c3aed" font-size="11.5" font-family="-apple-system,sans-serif">KMnO₄: purple → colourless (Mn²⁺)</text>
+    <!-- 3° row -->
+    <text x="6" y="196">3°</text>
+    <text x="30" y="196">(H₃C)₃C</text><line x1="92" y1="192" x2="108" y2="192" stroke="#111" stroke-width="1.3"/><text x="110" y="196">OH</text>
+    <line x1="150" y1="192" x2="210" y2="192" stroke="#111" stroke-width="1.4" marker-end="url(#o1)"/>
+    <text x="150" y="182" font-size="9.5" fill="#6b7280" font-family="-apple-system,sans-serif">K₂Cr₂O₇/H₂SO₄, heat</text>
+    <text x="218" y="196" fill="#dc2626" font-weight="bold">NO REACTION</text>
+    <text x="218" y="214" font-size="10" fill="#6b7280" font-family="-apple-system,sans-serif">no α-H · dichromate stays orange</text>
+    <defs>
+      <marker id="o1" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6" fill="#111"/></marker>
+    </defs>
+  </svg>
+  <div class="figcap">1° oxidises twice (stop at the aldehyde by distilling it off; go to the acid under reflux); 2° → ketone; 3° → nothing.</div>
+
+  <div class="defn"><b>To stop at the ALDEHYDE:</b> <b>\(\ce{K2Cr2O7}\)/dil \(\ce{H2SO4}\), heat with IMMEDIATE DISTILLATION</b> — the aldehyde has no H-bonding, so it is more volatile and distils off before it oxidises further. <b>To get the CARBOXYLIC ACID:</b> <b>heat under REFLUX</b> with excess oxidant. <b>Only \(\ce{K2Cr2O7}\) is mild enough to stop at the aldehyde</b>; <b>\(\ce{KMnO4}\) always overshoots straight to the acid</b>.</div>
+  <div class="defn"><b>Colour changes:</b> <b>\(\ce{K2Cr2O7}\): orange \(\ce{Cr2O7^2-}\) → green \(\ce{Cr^3+}\)</b>. <b>\(\ce{KMnO4}\): purple \(\ce{MnO4^-}\) → colourless \(\ce{Mn^2+}\)</b>. As a distinguishing test for 1°/2°/3°, reflux with acidified \(\ce{K2Cr2O7}\): <b>3° stays orange</b>; 1° and 2° turn green.</div>
+  <div class="trap"><b>Traps.</b> (1) There is <b>no such thing as "\(\ce{KMnO4}\), heat with immediate distillation"</b> — \(\ce{KMnO4}\) can't stop at the aldehyde. (2) A <b>simple test-tube test must NOT use reflux or distillation</b> (keep it &lt; 1 min; use a water bath if heating). (3) <b>\(\ce{K2Cr2O7}\) does NOT cleave a \(\ce{C=C}\)</b>; hot \(\ce{KMnO4}\) does (oxidative cleavage) — so a molecule with both a 2° alcohol and an alkene gives a ketone with \(\ce{K2Cr2O7}\) but is also cleaved by \(\ce{KMnO4}\).</div>
+</div>
+
+<!-- ========================= 9 ========================= -->
+<div class="card" id="s9">
+  <h2><span class="num">9</span> Tri-iodomethane (iodoform) test <span class="pill l1p">Layer 1</span></h2>
+  <div class="defn"><b>Detects the \(\ce{CH3CH(OH)-}\) group</b> (a "methyl carbinol"), or a <b>methyl ketone \(\ce{CH3CO-}\)</b>. <b>Reagents: \(\ce{I2(aq)} + \ce{NaOH(aq)}\), warm</b> (below 60 °C). <b>Positive result: a yellow precipitate of \(\ce{CHI3}\)</b> (tri-iodomethane), plus a carboxylate \(\ce{RCOO^-}\). It is a <b>step-down</b> reaction (the chain shortens by one carbon).</div>
+
+  <svg class="fig" width="640" height="140" viewBox="0 0 640 140" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="14">
+    <rect x="18" y="40" width="118" height="44" rx="6" fill="#fffbeb" stroke="#d97706" stroke-width="1.3"/>
+    <text x="30" y="68">H₃C</text><line x1="66" y1="64" x2="80" y2="64" stroke="#111" stroke-width="1.3"/><text x="82" y="68">CH(OH)</text>
+    <text x="30" y="102" font-size="10.5" fill="#d97706" font-family="-apple-system,sans-serif">the methyl-carbinol feature</text>
+    <text x="140" y="68">R</text>
+    <line x1="164" y1="62" x2="228" y2="62" stroke="#111" stroke-width="1.4" marker-end="url(#io)"/>
+    <text x="158" y="50" font-size="10.5" fill="#059669" font-family="-apple-system,sans-serif">I₂(aq), NaOH(aq), warm</text>
+    <text x="238" y="68">CHI₃</text>
+    <text x="238" y="90" font-size="10.5" fill="#d97706" font-family="-apple-system,sans-serif">yellow ppt</text>
+    <text x="292" y="68">+</text>
+    <text x="306" y="68">R–COO⁻</text>
+    <text x="392" y="68">+ 5 I⁻ + 5 H₂O</text>
+    <defs>
+      <marker id="io" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6" fill="#111"/></marker>
+    </defs>
+  </svg>
+  <div class="figcap">Only the \(\ce{CH3CH(OH)R}\) / \(\ce{CH3CO-}\) pattern gives the yellow \(\ce{CHI3}\) precipitate.</div>
+
+  <div class="defn"><b>Balanced equation — derive it, don't rote-learn "4 6 5 5":</b>
+  <br>\(\ce{CH3CH(OH)R + 4I2 + 6OH^{-} -> CHI3 + RCOO^{-} + 5I^{-} + 5H2O}\)
+  <br>(the α-C goes \(0\to+3\), losing 3 e⁻; the methyl C goes \(-3\to+2\), losing 5 e⁻; 8 e⁻ total reduce 4 \(\ce{I2}\); 3 of the 8 \(\ce{I^-}\) end up in \(\ce{CHI3}\), 5 remain; balance charge with 6 \(\ce{OH^-}\), then O/H with 5 \(\ce{H2O}\)).</div>
+  <div class="trap"><b>Traps.</b> (1) Among <b>primary</b> alcohols <b>only ethanol</b> gives a positive test (it is the only 1° alcohol carrying \(\ce{CH3CH(OH)-}\) with R = H). Every other iodoform-positive alcohol is <b>secondary</b>. (2) <b>Tertiary</b> alcohols never give it. (3) It's a <b>step-down</b> (−1 C) — contrast the KCN step-<b>up</b> (+1 C).</div>
+</div>
+
+<!-- ========================= 10 ========================= -->
+<div class="card" id="s10">
+  <h2><span class="num">10</span> Phenol — electrophilic substitution on the activated ring <span class="pill l1p">Layer 1</span></h2>
+  <div class="defn"><b>The O lone pair partially delocalises into the ring → greatly raises the ring's electron density</b>, so phenol is <b>far more reactive to electrophiles than benzene</b>. Two consequences: <b>(1) milder conditions — no catalyst, no heat</b>; <b>(2) \(\ce{-OH}\) is strongly activating and 2,4-directing → easily gives 2,4,6-trisubstituted products</b>. (Net effect: the π-donation outweighs the σ-withdrawal, so \(\ce{-OH}\) is overall electron-donating — same logic as \(\ce{-NH2}\).)</div>
+
+  <svg class="fig" width="560" height="170" viewBox="0 0 560 170" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="13.5">
+    <!-- phenol -->
+    <polygon points="70,44 100,62 100,98 70,116 40,98 40,62" fill="none" stroke="#111" stroke-width="1.4"/>
+    <circle cx="70" cy="80" r="18" fill="none" stroke="#111" stroke-width="1.1"/>
+    <line x1="70" y1="44" x2="70" y2="26" stroke="#111" stroke-width="1.3"/><text x="60" y="22">OH</text>
+    <text x="52" y="140" fill="#6b7280" font-size="11" font-family="-apple-system,sans-serif">phenol</text>
+    <text x="112" y="66">+</text><text x="126" y="66">3 Br₂(aq)</text>
+    <line x1="196" y1="80" x2="256" y2="80" stroke="#111" stroke-width="1.4" marker-end="url(#br)"/>
+    <text x="188" y="70" font-size="10.5" fill="#d97706" font-family="-apple-system,sans-serif">no catalyst, r.t.</text>
+    <!-- tribromophenol -->
+    <polygon points="330,44 360,62 360,98 330,116 300,98 300,62" fill="none" stroke="#111" stroke-width="1.4"/>
+    <circle cx="330" cy="80" r="18" fill="none" stroke="#111" stroke-width="1.1"/>
+    <line x1="330" y1="44" x2="330" y2="26" stroke="#111" stroke-width="1.3"/><text x="320" y="22">OH</text>
+    <line x1="360" y1="62" x2="378" y2="52" stroke="#111" stroke-width="1.3"/><text x="380" y="52">Br</text>
+    <line x1="360" y1="98" x2="378" y2="108" stroke="#111" stroke-width="1.3"/><text x="380" y="112">Br</text>
+    <line x1="330" y1="116" x2="330" y2="134" stroke="#111" stroke-width="1.3"/><text x="322" y="148">Br</text>
+    <text x="300" y="18" fill="#6b7280" font-size="10.5" font-family="-apple-system,sans-serif">2,4,6-tribromophenol</text>
+    <text x="404" y="76">+ 3 HBr</text>
+    <text x="300" y="163" fill="#d97706" font-size="11" font-family="-apple-system,sans-serif">white ppt · bromine water decolourised</text>
+    <defs>
+      <marker id="br" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6" fill="#111"/></marker>
+    </defs>
+  </svg>
+  <div class="figcap">Bromination needs no catalyst; the by-product is HBr (the ring H is substituted), not H₂.</div>
+
+  <div class="defn"><b>Bromination:</b> <b>aqueous \(\ce{Br2}\) (bromine water), room temp → white precipitate of 2,4,6-tribromophenol</b>, and the <b>yellow-orange bromine is decolourised — no catalyst needed</b>. For <b>mono-bromination</b>: low temperature + a non-polar solvent (\(\ce{Br2(l)}\) or \(\ce{Br2}\) in \(\ce{CCl4}\)). <b>Nitration:</b> <b>dilute \(\ce{HNO3(aq)}\), room temp → 2-nitrophenol + 4-nitrophenol</b> (pale yellow); <b>concentrated \(\ce{HNO3}\) → 2,4,6-trinitrophenol</b>. (Contrast benzene: bromination needs \(\ce{Br2}\)/\(\ce{AlBr3}\); nitration needs conc \(\ce{HNO3}\) + conc \(\ce{H2SO4}\) at ~50 °C.)</div>
+  <div class="defn"><b>Why phenol nitrates far more easily than methylbenzene:</b> the <b>O lone pair delocalises directly into the ring</b>, so \(\ce{-OH}\) is <b>much more electron-donating than \(\ce{-CH3}\)</b>; the electron-rich ring reacts even with the <b>weak electrophile \(\ce{HNO3}\) itself</b>, no catalyst. Methylbenzene needs <b>conc \(\ce{H2SO4}\) to protonate \(\ce{HNO3}\) and generate the strong electrophile \(\ce{NO2^+}\)</b> (nitronium ion); conc \(\ce{H2SO4}\) acts as <b>both catalyst and dehydrating agent</b>.</div>
+  <div class="trap"><b>Traps.</b> (1) The bromination by-product is <b>HBr</b> (the ring H leaves as \(\ce{H+}\); one Br becomes \(\ce{Br-}\)) — <b>never \(\ce{H2}\)</b>. (2) "White precipitate" is only reliable for <b>2,4,6-tribromophenol</b>; for a substituted phenol the mono-bromo product may be an oil, so quote <b>decolourisation + white fumes of HBr</b> as the safer observations. (3) Don't guess halogen colours — <b>\(\ce{Br2(aq)}\) is orange / yellow-orange</b> (data booklet).</div>
+</div>
+
+<!-- ========================= 11 ========================= -->
+<div class="card" id="s11">
+  <h2><span class="num">11</span> Distinguishing tests — quick reference</h2>
+  <div class="block l2"><div class="h">Layer 2 — pick the test that gives a clear positive</div>
+  <table class="data">
+    <tr><th>To detect / distinguish</th><th>Reagent &amp; conditions</th><th>Positive observation</th></tr>
+    <tr><td>any \(\ce{-OH}\) present (alcohol or phenol)</td><td><b>\(\ce{Na(s)}\)</b>, r.t.</td><td>effervescence of \(\ce{H2}\) (phenol rapid, alcohol slow)</td></tr>
+    <tr><td>an \(\ce{-OH}\) group (if no \(\ce{-COOH}\))</td><td><b>\(\ce{PCl5}\)</b>, r.t.</td><td>dense <b>white fumes of \(\ce{HCl}\)</b></td></tr>
+    <tr><td><b>phenol</b> vs alcohol</td><td><b>neutral \(\ce{FeCl3(aq)}\)</b>, r.t.</td><td><b>violet colouration</b> (alcohol: no change)</td></tr>
+    <tr><td><b>phenol</b> vs alcohol</td><td><b>bromine water</b>, r.t.</td><td>bromine <b>decolourised + white ppt</b> (alcohol: no change)</td></tr>
+    <tr><td><b>phenol</b> vs <b>carboxylic acid</b></td><td><b>\(\ce{Na2CO3(aq)}\)</b></td><td>carboxylic acid gives \(\ce{CO2}\) effervescence; <b>phenol does NOT react</b></td></tr>
+    <tr><td>1°/2° vs <b>3°</b> alcohol</td><td>acidified <b>\(\ce{K2Cr2O7}\)</b>, heat</td><td>1°/2° <b>orange→green</b>; 3° stays orange</td></tr>
+    <tr><td><b>\(\ce{CH3CH(OH)-}\)</b> / methyl ketone</td><td><b>\(\ce{I2(aq)} + \ce{NaOH}\)</b>, warm</td><td><b>yellow ppt</b> of \(\ce{CHI3}\)</td></tr>
+  </table></div>
+  <div class="defn"><b>The FeCl₃ test is THE test for a phenol:</b> add <b>neutral \(\ce{FeCl3(aq)}\)</b> → <b>violet colouration</b> (a phenol–iron(III) complex). It must be <b>neutral</b> \(\ce{FeCl3}\) (\(\ce{Fe^3+}\) is acidic in water). NaOH dissolving a cloudy phenol is <b>not</b> the test.</div>
+  <div class="trap"><b>Test-answer rule.</b> A distinguishing answer needs a result for <b>both</b> substances — the change for one <b>and</b> "no change / no precipitate" for the other. When the question demands <b>≥1 positive test per compound</b>, plan the tests so nothing is identified only by a negative.</div>
+</div>
+
+<!-- ========================= 12 ========================= -->
+<div class="card" id="s12">
+  <h2><span class="num">12</span> Reagents &amp; conditions — master table</h2>
+  <table class="data">
+    <tr><th>Transformation</th><th>Reagents / conditions</th><th>Key observation / note</th></tr>
+    <tr><td>Alcohol/phenol → alkoxide/phenoxide (redox)</td><td><b>\(\ce{Na}\)</b>, r.t.</td><td>effervescence \(\ce{H2}\) (phenol rapid)</td></tr>
+    <tr><td>Phenol → phenoxide (acid–base)</td><td><b>\(\ce{NaOH(aq)}\)</b></td><td>cloudy → clear colourless soln (not a phenol test); alcohols don't react</td></tr>
+    <tr><td>Alcohol → chloroalkane</td><td><b>\(\ce{PCl5}\)</b> / conc \(\ce{HCl}\)(+\(\ce{ZnCl2}\) for 1°,2°) / <b>\(\ce{SOCl2}\)</b>, warm</td><td>\(\ce{PCl5}\): white fumes \(\ce{HCl}\); \(\ce{SOCl2}\): \(\ce{HCl}+\ce{SO2}\); <b>Lucas</b> distinguishes 1/2/3°</td></tr>
+    <tr><td>Alcohol → bromoalkane</td><td>conc \(\ce{HBr}\), or <b>\(\ce{NaBr} + </b>conc<b> \(\ce{H2SO4}\)</b></td><td>\(\ce{HBr}\) generated in situ</td></tr>
+    <tr><td>Alcohol → alkene (dehydration)</td><td><b>excess conc \(\ce{H2SO4}\), heat</b> / conc \(\ce{H3PO4}\) / \(\ce{Al2O3}\), heat</td><td>β-elimination; more-substituted alkene favoured; phenol can't</td></tr>
+    <tr><td>Alcohol + carboxylic acid → ester</td><td><b>few drops conc \(\ce{H2SO4}\)</b> catalyst, heat</td><td>slow, reversible; phenol won't react here</td></tr>
+    <tr><td>Alcohol / <b>phenol</b> + acyl chloride → ester</td><td><b>\(\ce{RCOCl}\)</b>, r.t., no catalyst</td><td>white fumes \(\ce{HCl}\); only route to a phenyl ester</td></tr>
+    <tr><td>1° alcohol → aldehyde</td><td><b>\(\ce{K2Cr2O7}\)/\(\ce{H2SO4}\), heat + immediate distillation</b></td><td>orange→green; <b>never \(\ce{KMnO4}\)</b> for this</td></tr>
+    <tr><td>1° alcohol → carboxylic acid</td><td><b>\(\ce{K2Cr2O7}\) (or \(\ce{KMnO4}\))/\(\ce{H2SO4}\), heat under reflux</b></td><td>orange→green / purple→colourless</td></tr>
+    <tr><td>2° alcohol → ketone</td><td>\(\ce{K2Cr2O7}\) or \(\ce{KMnO4}\)/\(\ce{H2SO4}\), heat</td><td>3° alcohol → no reaction</td></tr>
+    <tr><td>\(\ce{CH3CH(OH)-}\) / methyl ketone → \(\ce{CHI3}\)</td><td><b>\(\ce{I2(aq)} + \ce{NaOH}\)</b>, warm</td><td>yellow ppt; step-down; only 1° that works is ethanol</td></tr>
+    <tr><td>Phenol → 2,4,6-tribromophenol</td><td><b>\(\ce{Br2(aq)}\)</b>, no catalyst</td><td>orange decolourised, white ppt, \(\ce{HBr}\) by-product</td></tr>
+    <tr><td>Phenol → nitrophenol(s)</td><td>dilute \(\ce{HNO3}\) (mono) / conc \(\ce{HNO3}\) (tri)</td><td>pale yellow</td></tr>
+    <tr><td>Test for a phenol</td><td><b>neutral \(\ce{FeCl3}\)</b></td><td><b>violet</b> complex</td></tr>
+  </table>
+</div>
+
+<hr>
+
+<!-- ========================= 13 — active recall ========================= -->
+<div class="card" id="s13">
+  <h2><span class="num">13</span> Active recall — cover, answer aloud, then reveal</h2>
+  <p class="meta" style="margin-top:0">Do not read these — generate the answer from memory first, then reveal to mark yourself. If you hesitate on any, that node isn't encoded yet.</p>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q1 · Classify and name \(\ce{CH3CH(OH)CH2CH3}\) and \(\ce{(CH3)3COH}\). Why must you state 1°/2°/3°?</div>
+    <b>Butan-2-ol (2°)</b> — the C–OH carbon carries two alkyl groups. <b>2-methylpropan-2-ol (3°)</b> — three alkyl groups. You state the class because it <b>decides the oxidation product</b> (2° → ketone; 3° → no reaction).</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q2 · Why does ethanol boil higher than ethane but lower than ethane-1,2-diol? Why does alcohol solubility fall with chain length?</div>
+    Ethanol has <b>H-bonding</b> (stronger than the dispersion in ethane) → more energy to overcome → higher bp; ethane-1,2-diol has <b>two \(\ce{-OH}\) → more extensive/stronger H-bonding</b> → higher still. Solubility falls because the growing non-polar chain's <b>dispersion forces are no longer repaid</b> by alcohol–water H-bonding, and the chain disrupts water's H-bonding.</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q3 · Rank ethanol, water, phenol by acid strength and justify each via conjugate-base stability.</div>
+    <b>ethanol &lt; water &lt; phenol.</b> Ethoxide: alkyl <b>donates → intensifies the charge on O → less stable</b> → weakest acid. Phenoxide: charge <b>partially delocalised into the ring → most stable</b> → strongest. \(\mathrm{p}K_a\): phenol ≈ 10, ethanol ≈ 16.</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q4 · What do alcohols and phenol each do with (a) Na, (b) NaOH(aq), (c) Na₂CO₃? Use it to distinguish phenol from an alcohol AND from a carboxylic acid.</div>
+    <b>(a) Na:</b> both effervesce \(\ce{H2}\) (phenol faster). <b>(b) NaOH(aq):</b> phenol reacts (cloudy→clear); alcohol doesn't → separates phenol from alcohol. <b>(c) Na₂CO₃:</b> neither reacts, but a <b>carboxylic acid gives \(\ce{CO2}\)</b> → separates phenol from a carboxylic acid.</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q5 · Reagents/conditions to oxidise a 1° alcohol to (a) the aldehyde, (b) the carboxylic acid. What apparatus differs and why? What about 2° and 3°?</div>
+    (a) <b>\(\ce{K2Cr2O7}\)/\(\ce{H2SO4}\), heat + immediate distillation</b> (the volatile aldehyde distils off before further oxidation). (b) <b>heat under reflux</b> with excess oxidant. <b>2° → ketone; 3° → no reaction</b> (no α-H). Never \(\ce{KMnO4}\) for the aldehyde — it overshoots to the acid.</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q6 · Give reagents to convert ethanol → chloroethane (two ways), → bromoethane, → ethene. Which catalyst for dehydration, and why not H₂SO₄?</div>
+    Chloroethane: <b>\(\ce{PCl5}\)</b> (r.t.) or conc \(\ce{HCl} + \ce{ZnCl2}\). Bromoethane: conc \(\ce{HBr}\) or \(\ce{NaBr}\) + conc \(\ce{H2SO4}\). Ethene: <b>excess conc \(\ce{H2SO4}\), heat</b> (or conc \(\ce{H3PO4}\) / \(\ce{Al2O3}\)). Prefer <b>\(\ce{H3PO4}\)</b> because \(\ce{H2SO4}\) can oxidise and give side-products.</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q7 · Why can't phenol undergo nucleophilic substitution of \(\ce{-OH}\), nor esterify with a carboxylic acid? How then do you make a phenyl ester?</div>
+    Both fail because the <b>O lone pair is delocalised into the ring</b>: the C–O bond gains partial double-bond character (hard to break) and phenol is a <b>weak nucleophile</b>. Make a phenyl ester with an <b>acyl chloride</b> (convert phenol to phenoxide first for better yield).</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q8 · Which compounds give a positive iodoform test, what are the reagents and observation, and is it a step-up or step-down?</div>
+    Anything with <b>\(\ce{CH3CH(OH)-}\)</b> or a <b>methyl ketone \(\ce{CH3CO-}\)</b>. Reagents <b>\(\ce{I2(aq)} + \ce{NaOH}\), warm</b> → <b>yellow ppt of \(\ce{CHI3}\)</b>. It is a <b>step-down</b> (−1 C). Among 1° alcohols only <b>ethanol</b> works.</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q9 · Compare the bromination and nitration of phenol with benzene (reagents, conditions, products). Why is phenol so much more reactive?</div>
+    Phenol: <b>\(\ce{Br2(aq)}\), no catalyst → 2,4,6-tribromophenol (white ppt)</b>; <b>dilute \(\ce{HNO3}\) → 2-/4-nitrophenol</b>. Benzene needs \(\ce{Br2}\)/\(\ce{AlBr3}\) and conc \(\ce{HNO3}\)+conc \(\ce{H2SO4}\)/50 °C. Phenol's <b>O lone pair delocalises into the ring → higher electron density → activated</b>.</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+
+  <div class="block answer"><button class="reveal-btn">Reveal</button>
+    <div class="answer-content"><div class="label">Q10 · Name three distinguishing tests for a phenol and the positive observation of each.</div>
+    <b>Neutral \(\ce{FeCl3}\) → violet.</b> <b>Bromine water → decolourised + white ppt</b> (of 2,4,6-tribromophenol). <b>\(\ce{NaOH(aq)}\) → cloudy mixture dissolves to a clear solution</b> (weaker evidence). Also: phenol does <b>not</b> effervesce with \(\ce{Na2CO3}\) (unlike a carboxylic acid).</div><div class="answer-overlay">Hidden — answer first</div>
+  </div>
+</div>
+
+<hr>
+<p class="meta"><b>Next:</b> once this is encoded, drill <b>cluster_chem_hydroxy.html</b> (covers every LO once, real HCI questions). Then paste your Loom transcript and I'll flag the weak nodes and build the gap cluster on what you actually miss.</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn => {
+    btn.addEventListener('click', function(){
+      const block=this.parentElement, overlay=block.querySelector('.answer-overlay');
+      if(overlay.classList.contains('hidden')){overlay.classList.remove('hidden');this.textContent='Reveal';this.classList.remove('hide-state');}
+      else{overlay.classList.add('hidden');this.textContent='Hide';this.classList.add('hide-state');}
+    });
+  });
+  function revealAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.add('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Hide';b.classList.add('hide-state');});}
+  function hideAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.remove('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Reveal';b.classList.remove('hide-state');});}
+</script>
+</body>
+</html>
