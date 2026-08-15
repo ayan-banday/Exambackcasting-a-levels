@@ -34,8 +34,20 @@ h1{font-size:23px;font-weight:600;letter-spacing:-.02em}
 .callout p{font-size:13.5px;color:var(--dim);line-height:1.6}
 .callout p b{color:var(--fg);font-weight:500}
 
-.stats{display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:center;
-  background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 28px;margin:22px 0 12px}
+.stats{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;
+  background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:22px 0 12px}
+.rankcard{border:1px solid var(--line);border-radius:11px;overflow:hidden;background:rgba(255,255,255,.015)}
+.rkhd{display:flex;justify-content:space-between;align-items:baseline;padding:9px 14px 8px;font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--dim2);border-bottom:1px solid var(--line)}
+.rkrow{display:flex;align-items:center;gap:11px;padding:8px 14px;border-bottom:1px solid var(--line);font-size:14px}
+.rkrow:last-child{border-bottom:none}
+.rkrow.tot{background:rgba(255,255,255,.04)}
+.rknum{flex:0 0 18px;text-align:center;font-family:var(--mono);font-weight:600;color:var(--dim2);font-size:12px}
+.rkname{flex:0 0 82px;font-weight:600}
+.rkbar{flex:1;min-width:50px;height:8px;background:rgba(255,255,255,.07);border-radius:5px;overflow:hidden}
+.rkbar i{display:block;height:100%;border-radius:5px}
+.rknums{flex:0 0 auto;color:var(--dim2);font-family:var(--mono);font-size:12px;white-space:nowrap}
+.rknums b{color:#e7e7ea;font-weight:600}
+.stats .grid{grid-template-columns:1fr;gap:16px;align-self:center;min-width:118px}
 .ring{width:134px;height:134px;border-radius:50%;display:grid;place-items:center;position:relative;flex-shrink:0}
 .ring::after{content:'';position:absolute;inset:11px;background:var(--card);border-radius:50%}
 .ring .v{position:relative;z-index:1;text-align:center}
@@ -145,8 +157,9 @@ footer code{font-family:var(--mono);background:var(--card2);padding:1.5px 5px;bo
 footer a{color:var(--dim)}
 @media(max-width:680px){
   body{padding:22px 13px 60px}
-  .stats{grid-template-columns:1fr;justify-items:center;text-align:center;gap:22px}
-  .grid{width:100%}
+  .stats{grid-template-columns:1fr;justify-items:stretch;text-align:left;gap:20px}
+  .grid,.rankcard{width:100%}
+  .stats .grid{grid-template-columns:1fr 1fr}
   header{flex-direction:column}.countdown{text-align:left}
   .dh .dn{display:none}.dh .lb{flex-basis:100%;order:5}
   .mp .body{padding-left:20px}
@@ -209,12 +222,10 @@ footer a{color:var(--dim)}
   <div class="callout"><div class="k">Target</div><p id="mTarget"></p></div>
 
   <div class="stats">
-    <div class="ring" id="ring"><div class="v"><div class="p" id="pct">0%</div><div class="c">clusters done</div></div></div>
+    <div class="rankcard" id="rankTable"></div>
     <div class="grid">
       <div class="stat"><div class="k">Days to prelim</div><div class="v" id="s_prelim">—</div></div>
       <div class="stat"><div class="k">Study days left</div><div class="v" id="s_studyleft">—</div></div>
-      <div class="stat"><div class="k">Clusters done</div><div class="v"><span id="s_done">0</span><small id="s_doneT"></small></div></div>
-      <div class="stat"><div class="k">Topics left to drill</div><div class="v" id="s_left">—</div></div>
     </div>
   </div>
 
@@ -274,7 +285,7 @@ footer a{color:var(--dim)}
   <div id="map"></div>
 
   <footer>
-    This dashboard tracks <b>clusters done</b>, not guessed hours — the numbers up top are real counts, not estimates. Days-to-prelim and study-days-left update live.<br>
+    This dashboard tracks your <b>readiness per subject</b>, ranked — not guessed hours. Each subject's % is the mean mastery across its topics; it rises every time you drill something and it survives to November. Days-to-prelim and study-days-left update live.<br>
     You report what you finished; it's written into <code>plan.js</code> and pushed.
     <span id="lu"></span>
   </footer>
@@ -309,13 +320,8 @@ footer a{color:var(--dim)}
   document.getElementById('mTarget').innerHTML=M.target;
   document.getElementById('lu').textContent='Last updated '+M.lastUpdated+'.';
 
-  document.getElementById('ring').style.background=`conic-gradient(var(--ok) ${Math.round(pct*360)}deg, #1c1e25 0)`;
-  document.getElementById('pct').textContent=Math.round(pct*100)+'%';
   document.getElementById('s_prelim').textContent=cdDays;
   document.getElementById('s_studyleft').textContent=studyLeft;
-  document.getElementById('s_done').textContent=clustersDone;
-  document.getElementById('s_doneT').textContent='/'+clustersTot;
-  document.getElementById('s_left').textContent=topicsLeft;
 
   // ---- study methods ----
   const methEl=document.getElementById('methods');
@@ -441,6 +447,16 @@ footer a{color:var(--dim)}
     bd+=`<div class="rdbrow rdtot"><span style="font-weight:700">Overall</span><span class="rdbn">prelim <b>${op}%</b> · A-lvl <b>${oa}%</b></span></div></div>`;
     const bEl=document.getElementById('rdboard'); if(bEl) bEl.innerHTML=bd;
     const rEl=document.getElementById('readiness'); if(rEl) rEl.innerHTML=body;
+
+    // ---- hero rank table (replaces the old ring; board already sorted by prelim desc) ----
+    const rkEl=document.getElementById('rankTable');
+    if(rkEl){
+      const barOf=(v)=>`<span class="rkbar"><i style="width:${Math.max(v,2)}%;background:${bc(v)}"></i></span>`;
+      let rk='<div class="rkhd"><span>Readiness — ranked</span><span>prelim · A&#8209;lvl</span></div>';
+      board.forEach((b,i)=>{ rk+=`<div class="rkrow"><span class="rknum">${i+1}</span><span class="rkname" style="color:${b.colour}">${b.name}</span>${barOf(b.pr)}<span class="rknums"><b>${b.pr}%</b> · ${b.al}%</span></div>`; });
+      rk+=`<div class="rkrow tot"><span class="rknum">Σ</span><span class="rkname">Overall</span>${barOf(op)}<span class="rknums"><b>${op}%</b> · ${oa}%</span></div>`;
+      rkEl.innerHTML=rk;
+    }
   }
 
   // ---- progress log ----
