@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biology — Books 1 &amp; 2 Combined Test (9477 H2)</title>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --amber-soft:#fffbeb;
+    --green:#059669; --green-soft:#ecfdf5; --cover:#f3f4f6;
+    --purple:#7c3aed; --purple-soft:#f5f3ff; --red:#dc2626; --red-soft:#fef2f2; --ink:#111; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:40px 24px 100px;line-height:1.62;color:var(--text);background:var(--bg)}
+  h1,h2,h3,.label,.controls,button,.step-header,.marks,.hd .meta,.qhead,.sechd{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  .hd{border-bottom:3px solid var(--ink);padding-bottom:14px;margin:0 0 6px;text-align:center}
+  .hd h1{font-size:1.7em;margin:0 0 6px;color:var(--ink);letter-spacing:.01em}
+  .hd .meta{color:var(--muted);font-size:.86em;margin:3px 0}
+  .hd .code{font-weight:700;color:#374151;letter-spacing:.04em}
+  .instr{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--red);padding:14px 20px;border-radius:6px;margin:20px 0 10px;font-size:.94em}
+  .instr b{color:#991b1b}
+  .conf{background:var(--amber-soft);border:1px solid #fde68a;border-left:4px solid var(--amber);padding:14px 20px;border-radius:6px;margin:12px 0 10px;font-size:.94em}
+  .conf b{color:#92400e}
+  .databox{background:var(--blue-soft);border:1px solid #bfdbfe;border-left:4px solid var(--blue);padding:10px 18px;border-radius:6px;margin:10px 0 28px;font-size:.9em}
+  .databox b{color:#1e3a8a}
+  .sechd{margin:38px 0 4px;padding:9px 16px;background:var(--ink);color:#fff;border-radius:6px;font-size:1.05em;font-weight:700;letter-spacing:.02em;display:flex;justify-content:space-between;align-items:baseline}
+  .sechd .sub{font-size:.78em;font-weight:600;color:#d1d5db}
+  .qcard{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:18px 24px 20px;margin:18px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .qhead{font-size:1.05em;font-weight:700;color:#1f2937;border-bottom:1px solid var(--border);padding-bottom:8px;margin:0 0 12px;display:flex;justify-content:space-between;align-items:baseline}
+  .qhead .tot{font-size:.82em;color:var(--muted);font-weight:600}
+  .qcard p{margin:9px 0}
+  .part{margin:11px 0 11px 4px}
+  .part .pl{font-weight:700;color:#374151}
+  .stem-lead{margin:2px 0 8px}
+  .marks{display:inline-block;font-size:.78em;background:#fde68a;color:#92400e;padding:1px 8px;border-radius:10px;font-weight:700;margin-left:4px;vertical-align:middle}
+  table.data{border-collapse:collapse;margin:12px 0;font-size:.88em;width:100%}
+  table.data th,table.data td{border:1px solid #d1d5db;padding:6px 10px;text-align:center;vertical-align:middle}
+  table.data th{background:#f3f4f6;font-family:-apple-system,sans-serif;font-size:.8em;letter-spacing:.02em}
+  table.data td.l{text-align:left}
+  .mcq{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:16px 22px 18px;margin:14px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .mcq .n{font-family:-apple-system,sans-serif;font-weight:700;color:#1f2937;margin-right:8px}
+  .opts{margin:10px 0 0;padding:0;list-style:none}
+  .opts li{margin:5px 0;padding-left:26px;text-indent:-26px}
+  .opts .lt{font-weight:700;font-family:-apple-system,sans-serif;display:inline-block;width:22px}
+  .seq{font-family:'SF Mono','Menlo','Consolas',monospace;font-size:.94em;letter-spacing:.06em;background:#f9fafb;border:1px solid var(--border);border-radius:5px;padding:8px 12px;margin:8px 0;overflow-x:auto;white-space:nowrap}
+  figure{margin:14px 0;text-align:center}
+  figure img{max-width:100%;height:auto;background:#fff;border:1px solid var(--border);border-radius:6px;padding:6px}
+  figcaption{font-family:-apple-system,sans-serif;font-size:.8em;color:var(--muted);margin-top:6px;font-weight:600}
+
+  .controls{position:sticky;top:0;background:linear-gradient(var(--bg) 70%,rgba(250,250,250,0));padding:14px 0;z-index:100;margin:34px 0 0;text-align:center}
+  .controls button{background:var(--ink);color:#fff;border:none;padding:11px 26px;border-radius:6px;cursor:pointer;font-size:.95em;font-weight:600;letter-spacing:.02em;box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .controls button:hover{background:#333}
+  .controls .hint{display:block;color:var(--muted);font-size:.8em;margin-top:8px;font-style:italic;font-family:'Charter',serif}
+
+  #scheme{display:none;margin-top:10px;border-top:3px dashed var(--border);padding-top:20px}
+  #scheme.show{display:block}
+  #scheme h2{font-size:1.35em;color:var(--ink);border-bottom:2px solid var(--ink);padding-bottom:8px;margin:10px 0 6px}
+  #scheme .scheme-note{color:var(--muted);font-size:.86em;margin:0 0 20px}
+  .sol{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:16px 22px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .sol h3{font-size:1.05em;margin:0 0 4px;color:#1f2937}
+  .src{font-family:-apple-system,sans-serif;font-size:.76em;color:#6d28d9;background:var(--purple-soft);border:1px solid #ddd6fe;border-radius:5px;padding:4px 10px;display:inline-block;margin:0 0 12px}
+  .step{margin:12px 0;padding:10px 14px;background:#f9fafb;border-radius:5px;border-left:3px solid var(--green)}
+  .step-header{font-size:.78em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;font-family:-apple-system,sans-serif}
+  .mp{margin:0 0 11px}
+  .mp:last-child{margin-bottom:0}
+  .m{display:inline-block;font-size:.82em;color:#fff;background:var(--green);font-weight:700;font-family:-apple-system,sans-serif;padding:0 6px;border-radius:8px;margin:0 2px;vertical-align:baseline}
+  .rej{display:inline-block;font-size:.8em;color:#991b1b;background:var(--red-soft);border:1px solid #fecaca;border-radius:4px;padding:1px 7px;font-family:-apple-system,sans-serif;font-weight:600}
+  .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:8px 13px;border-radius:4px;margin:11px 0 0;font-size:.88em}
+  .trap b{color:var(--red)}
+  .gapflag{background:var(--blue-soft);border-left:3px solid var(--blue);padding:8px 13px;border-radius:4px;margin:11px 0 0;font-size:.88em}
+  .gapflag b{color:#1e3a8a}
+  .optjust{margin:7px 0;padding:7px 12px;background:#f9fafb;border-radius:5px;font-size:.92em}
+  .optjust .lt{font-weight:700;font-family:-apple-system,sans-serif;display:inline-block;width:20px}
+  .ok{color:var(--green);font-weight:700}
+  .no{color:var(--red);font-weight:700}
+  .tag{font-family:-apple-system,sans-serif;font-size:.7em;letter-spacing:.04em;font-weight:700;padding:1px 6px;border-radius:4px;vertical-align:middle}
+  .t-off{background:#dcfce7;color:#166534}
+  .t-sch{background:#e0e7ff;color:#3730a3}
+  .t-inf{background:#fef3c7;color:#92400e}
+  hr{border:none;border-top:1px solid var(--border);margin:20px 0}
+  @media print{body{background:#fff;padding:16px;max-width:100%}.controls{display:none!important}#scheme{display:block!important}.qcard,.sol,.mcq{box-shadow:none;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<div class="hd">
+  <h1>Biology — Books 1 &amp; 2 Combined Test</h1>
+  <div class="meta code">H2 9477 &nbsp;·&nbsp; Core Idea 1 (a)–(s) + Core Idea 2 (a)–(d), (h)–(l)</div>
+  <div class="meta">Time allowed: <b>2 hours</b> &nbsp;·&nbsp; Total: <b>110 marks</b></div>
+  <div class="meta"><b>Section A</b> 12 multiple-choice, 12 marks, spend <b>20 minutes</b> &nbsp;·&nbsp; <b>Section B</b> 7 structured questions, 98 marks, spend <b>100 minutes</b></div>
+  <div class="meta">Sitting date: 2026-08-16 &nbsp;·&nbsp; JC2 · cumulative Books 1 + 2</div>
+</div>
+
+<div class="instr">
+  <b>Answer ALL questions in both sections.</b> Section B runs at about one minute per mark, which is real paper pace, so watch the clock on the long parts. Several questions cross both Books deliberately: they cannot be answered from one Book alone. Where a command word is given, obey it exactly — <i>describe</i> wants the ordered features, <i>explain</i> wants the causal chain with each link separate, <i>suggest</i> means there is no recall answer and you reason from what you are given. Bioethics is not tested anywhere in this paper.
+</div>
+
+<div class="conf">
+  <b>Say your confidence out loud on every single question as you go.</b> Before you move on, state one of <b>high</b> / <b>medium</b> / <b>guessed</b>, and then say <b>why</b> in one sentence — which specific step you were sure of, or which word you could not retrieve. On the MCQs, say out loud why each of the other three options is wrong; an unjustified right answer counts as a guess. Confident-and-wrong is the most valuable thing this paper can find, and it is invisible unless you narrate it.
+</div>
+
+<div class="databox">
+  <b>Instruction for Section A.</b> Each question has four suggested answers, <b>A</b>, <b>B</b>, <b>C</b> and <b>D</b>. Choose the one you consider correct. One mark each, no negative marking.
+</div>
+
+<!-- ==================== SECTION A ==================== -->
+<div class="sechd"><span>Section A — Multiple Choice</span><span class="sub">12 questions · 12 marks · 20 minutes</span></div>
+
+<div class="mcq">
+  <p><span class="n">1</span> A virus particle consists of a nucleic acid genome enclosed in a protein coat. It has no cytoplasm, no ribosomes and no membrane-bound organelles, and it carries out no metabolic reactions of its own. Four observations about viruses are listed.</p>
+  <ol class="opts" style="list-style:none">
+    <li><span class="lt">1</span>A virus particle has no plasma membrane enclosing cytoplasm.</li>
+    <li><span class="lt">2</span>New virus particles are assembled only inside a host cell, using host ribosomes.</li>
+    <li><span class="lt">3</span>The viral genome is built from nucleotides joined by phosphodiester bonds.</li>
+    <li><span class="lt">4</span>Purified virus particles can be stored indefinitely as a crystalline solid.</li>
+  </ol>
+  <p>Which observations are evidence that viruses fall outside the cell theory?</p>
+  <ul class="opts">
+    <li><span class="lt">A</span>1, 2 and 3</li>
+    <li><span class="lt">B</span>1, 2 and 4</li>
+    <li><span class="lt">C</span>2, 3 and 4</li>
+    <li><span class="lt">D</span>1 and 4 only</li>
+  </ul>
+</div>
+
+<div class="mcq">
+  <p><span class="n">2</span> Four structures in a eukaryotic cell are described by what is visible in an electron micrograph.</p>
+  <ol class="opts" style="list-style:none">
+    <li><span class="lt">1</span>a hollow cylinder built from nine triplets of microtubules, with no membrane around it</li>
+    <li><span class="lt">2</span>a stack of separate flattened sacs, each bounded by a single membrane</li>
+    <li><span class="lt">3</span>a dense granular region inside the nucleus, with no membrane of its own</li>
+    <li><span class="lt">4</span>a spherical sac bounded by a single membrane, holding hydrolytic enzymes at pH 5</li>
+  </ol>
+  <p>Which row gives a correct function for each structure?</p>
+  <table class="data">
+    <tr><th></th><th>1</th><th>2</th><th>3</th><th>4</th></tr>
+    <tr><td><b>A</b></td><td>synthesises spindle microtubules</td><td>modifies and packages proteins</td><td>assembles ribosomal subunits</td><td>digests material taken in by endocytosis</td></tr>
+    <tr><td><b>B</b></td><td>organises spindle microtubules</td><td>synthesises lipids</td><td>transcribes mRNA for export</td><td>digests material taken in by endocytosis</td></tr>
+    <tr><td><b>C</b></td><td>organises spindle microtubules</td><td>modifies and packages proteins</td><td>assembles ribosomal subunits</td><td>digests material taken in by endocytosis</td></tr>
+    <tr><td><b>D</b></td><td>organises spindle microtubules</td><td>modifies and packages proteins</td><td>replicates the nuclear DNA</td><td>stores hydrolytic enzymes but does not digest</td></tr>
+  </table>
+</div>
+
+<div class="mcq">
+  <p><span class="n">3</span> Two membranes are prepared from the same phospholipids. Membrane <b>P</b> is given a higher cholesterol content than membrane <b>Q</b>; membrane <b>R</b> is given a higher proportion of unsaturated fatty acid tails than membrane <b>Q</b>. Which row gives the effect of each change on fluidity?</p>
+  <table class="data">
+    <tr><th></th><th>P compared with Q, at 5&nbsp;°C</th><th>P compared with Q, at 45&nbsp;°C</th><th>R compared with Q, at 5&nbsp;°C</th></tr>
+    <tr><td><b>A</b></td><td>more fluid</td><td>more fluid</td><td>more fluid</td></tr>
+    <tr><td><b>B</b></td><td>more fluid</td><td>less fluid</td><td>more fluid</td></tr>
+    <tr><td><b>C</b></td><td>less fluid</td><td>more fluid</td><td>less fluid</td></tr>
+    <tr><td><b>D</b></td><td>less fluid</td><td>less fluid</td><td>more fluid</td></tr>
+  </table>
+</div>
+
+<div class="mcq">
+  <p><span class="n">4</span> An electron micrograph is printed with a scale bar 25&nbsp;mm long, labelled 0.5&nbsp;µm. A mitochondrion on the same print measures 40&nbsp;mm along its long axis. What is the actual length of the mitochondrion, and the magnification of the print?</p>
+  <ul class="opts">
+    <li><span class="lt">A</span>0.8 µm, &times;20 000</li>
+    <li><span class="lt">B</span>0.8 µm, &times;50 000</li>
+    <li><span class="lt">C</span>1.25 µm, &times;20 000</li>
+    <li><span class="lt">D</span>1.25 µm, &times;50 000</li>
+  </ul>
+</div>
+
+<div class="mcq">
+  <p><span class="n">5</span> A plant cell has a solute potential of &minus;900&nbsp;kPa and a pressure potential of +400&nbsp;kPa. It is placed in a sucrose solution of water potential &minus;700&nbsp;kPa. Which row is correct?</p>
+  <table class="data">
+    <tr><th></th><th>water potential of the cell</th><th>net movement of water</th><th>change in pressure potential of the cell</th></tr>
+    <tr><td><b>A</b></td><td>&minus;500 kPa</td><td>into the cell</td><td>rises</td></tr>
+    <tr><td><b>B</b></td><td>&minus;500 kPa</td><td>out of the cell</td><td>falls</td></tr>
+    <tr><td><b>C</b></td><td>&minus;1300 kPa</td><td>into the cell</td><td>rises</td></tr>
+    <tr><td><b>D</b></td><td>&minus;1300 kPa</td><td>out of the cell</td><td>falls</td></tr>
+  </table>
+</div>
+
+<div class="mcq">
+  <p><span class="n">6</span> Two reversible inhibitors of the same enzyme are compared at a fixed enzyme concentration. Inhibitor <b>J</b> binds to the active site. Inhibitor <b>K</b> binds to a site elsewhere on the enzyme molecule. Which row describes what each inhibitor does to the kinetics of the reaction?</p>
+  <table class="data">
+    <tr><th></th><th>V<sub>max</sub> with J</th><th>K<sub>m</sub> with J</th><th>V<sub>max</sub> with K</th><th>K<sub>m</sub> with K</th></tr>
+    <tr><td><b>A</b></td><td>unchanged</td><td>increased</td><td>reduced</td><td>unchanged</td></tr>
+    <tr><td><b>B</b></td><td>reduced</td><td>increased</td><td>unchanged</td><td>unchanged</td></tr>
+    <tr><td><b>C</b></td><td>unchanged</td><td>reduced</td><td>reduced</td><td>increased</td></tr>
+    <tr><td><b>D</b></td><td>reduced</td><td>unchanged</td><td>unchanged</td><td>increased</td></tr>
+  </table>
+</div>
+
+<div class="mcq">
+  <p><span class="n">7</span> Which row correctly describes both amylose and cellulose?</p>
+  <table class="data">
+    <tr><th></th><th>amylose</th><th>cellulose</th></tr>
+    <tr><td><b>A</b></td><td>&alpha;-glucose, &alpha;(1,4) bonds, all monomers in the same orientation</td><td>&beta;-glucose, &beta;(1,4) bonds, alternate monomers rotated 180&deg;</td></tr>
+    <tr><td><b>B</b></td><td>&beta;-glucose, &beta;(1,4) bonds, all monomers in the same orientation</td><td>&alpha;-glucose, &alpha;(1,4) bonds, alternate monomers rotated 180&deg;</td></tr>
+    <tr><td><b>C</b></td><td>&alpha;-glucose, &alpha;(1,6) bonds, alternate monomers rotated 180&deg;</td><td>&beta;-glucose, &beta;(1,4) bonds, all monomers in the same orientation</td></tr>
+    <tr><td><b>D</b></td><td>&alpha;-glucose, &beta;(1,4) bonds, all monomers in the same orientation</td><td>&beta;-glucose, &alpha;(1,4) bonds, alternate monomers rotated 180&deg;</td></tr>
+  </table>
+</div>
+
+<div class="mcq">
+  <p><span class="n">8</span> <i>Escherichia coli</i> is grown for many generations in a medium in which the only nitrogen source is <sup>15</sup>N. The cells are then transferred to a medium containing only <sup>14</sup>N and allowed to divide three times. Which row gives the proportion of DNA <b>molecules</b> in the population that still contain at least one <sup>15</sup>N strand, and the ratio of <sup>14</sup>N <b>strands</b> to <sup>15</sup>N <b>strands</b> in the population?</p>
+  <table class="data">
+    <tr><th></th><th>proportion of molecules with at least one <sup>15</sup>N strand</th><th><sup>14</sup>N strands : <sup>15</sup>N strands</th></tr>
+    <tr><td><b>A</b></td><td>1/4</td><td>7 : 1</td></tr>
+    <tr><td><b>B</b></td><td>1/2</td><td>7 : 1</td></tr>
+    <tr><td><b>C</b></td><td>1/4</td><td>3 : 1</td></tr>
+    <tr><td><b>D</b></td><td>1/8</td><td>7 : 1</td></tr>
+  </table>
+</div>
+
+<div class="mcq">
+  <p><span class="n">9</span> Part of the template strand of a gene reads:</p>
+  <div class="seq">3&prime; &ndash; T A C &nbsp; G G A &nbsp; C T T &ndash; 5&prime;</div>
+  <p>Which row gives the sequence of the mRNA transcribed from it, and the anticodons of the three tRNA molecules that pair with that mRNA, both written 5&prime; to 3&prime;?</p>
+  <table class="data">
+    <tr><th></th><th>mRNA, 5&prime; &rarr; 3&prime;</th><th>tRNA anticodons, each written 5&prime; &rarr; 3&prime;</th></tr>
+    <tr><td><b>A</b></td><td>A U G &nbsp; C C U &nbsp; G A A</td><td>C A U &nbsp;/&nbsp; A G G &nbsp;/&nbsp; U U C</td></tr>
+    <tr><td><b>B</b></td><td>A U G &nbsp; C C U &nbsp; G A A</td><td>U A C &nbsp;/&nbsp; G G A &nbsp;/&nbsp; C U U</td></tr>
+    <tr><td><b>C</b></td><td>A T G &nbsp; C C T &nbsp; G A A</td><td>C A U &nbsp;/&nbsp; A G G &nbsp;/&nbsp; U U C</td></tr>
+    <tr><td><b>D</b></td><td>U A C &nbsp; G G A &nbsp; C U U</td><td>A U G &nbsp;/&nbsp; C C U &nbsp;/&nbsp; G A A</td></tr>
+  </table>
+</div>
+
+<div class="mcq">
+  <p><span class="n">10</span> A drug is added to a cultured cell line. Six hours later, the quantity of primary transcript made from gene <b>G</b> is unchanged, the quantity of mature <b>G</b> mRNA in the cytoplasm is unchanged, and the rate at which new <b>G</b> protein appears is unchanged. However the average lifetime of a <b>G</b> protein molecule has fallen from 20 hours to 2 hours, and the total quantity of <b>G</b> protein has fallen to about a tenth of its original value. At which level is the drug acting?</p>
+  <ul class="opts">
+    <li><span class="lt">A</span>chromatin level</li>
+    <li><span class="lt">B</span>transcriptional level</li>
+    <li><span class="lt">C</span>translational level</li>
+    <li><span class="lt">D</span>post-translational level</li>
+  </ul>
+</div>
+
+<div class="mcq">
+  <p><span class="n">11</span> The genome of a human liver cell is compared with the genome of a bacterium. Which statement is <b>not</b> a correct difference between them?</p>
+  <ul class="opts">
+    <li><span class="lt">A</span>The human genome is carried on several linear DNA molecules, whereas the bacterial genome is a single circular DNA molecule.</li>
+    <li><span class="lt">B</span>Human genes contain introns, whereas bacterial genes generally do not.</li>
+    <li><span class="lt">C</span>Human DNA is wound around histone octamers, whereas bacterial DNA is not packaged with histones.</li>
+    <li><span class="lt">D</span>The human genome has a single origin of replication, whereas the bacterial genome has many.</li>
+  </ul>
+</div>
+
+<div class="mcq">
+  <p><span class="n">12</span> DNA from four individuals was amplified using one pair of primers flanking a single locus, then separated by agarose gel electrophoresis. Individuals <b>1</b> and <b>4</b> each gave a single band in the same position. Individual <b>2</b> gave two bands. Individual <b>3</b> gave a single band, in a position further from the well than the band given by individual 1. Which conclusion can be drawn from this gel?</p>
+  <ul class="opts">
+    <li><span class="lt">A</span>The allele responsible for the band nearer the well is dominant to the allele responsible for the band further from the well.</li>
+    <li><span class="lt">B</span>Individual 2 is heterozygous at this locus.</li>
+    <li><span class="lt">C</span>The allele in individual 3 differs from the allele in individual 1 by a base substitution.</li>
+    <li><span class="lt">D</span>Individual 1 loaded half as much DNA onto the gel as individual 2.</li>
+  </ul>
+</div>
+
+<!-- ==================== SECTION B ==================== -->
+<div class="sechd"><span>Section B — Structured Questions</span><span class="sub">7 questions · 98 marks · 100 minutes</span></div>
+
+<!-- ==================== Q1 ==================== -->
+<div class="qcard" id="q1">
+  <div class="qhead"><span>Question 1</span><span class="tot">Total: 15</span></div>
+  <p class="stem-lead">Peptic cells in the lining of the mammalian stomach secrete pepsinogen, an inactive precursor of the protein-digesting enzyme pepsin. Isolated peptic cells were placed in a culture medium containing radioactively labelled amino acids. Samples were removed at intervals and examined by electron microscopy. Fig. 1.1 is a drawing made from one such micrograph; the bracketed time beside each label is the time after which radioactivity was first detected in that structure.</p>
+  <figure>
+    <img src="__FIG_PEPTIC__" alt="Electron micrograph drawing of a peptic cell with structures A to E labelled, each with the time at which radioactivity was first detected.">
+    <figcaption>Fig. 1.1</figcaption>
+  </figure>
+  <div class="part"><span class="pl">(a)</span> Name the structures labelled <b>A</b>, <b>C</b> and <b>D</b>, and account for the order in which radioactivity appears in them. <span class="marks">[4]</span></div>
+  <div class="part"><span class="pl">(b)</span> Peptic cells have an unusually large nucleolus. Explain how this contributes to the rate at which the cell can secrete pepsinogen. <span class="marks">[3]</span></div>
+  <div class="part"><span class="pl">(c)</span> Pepsin is a single polypeptide of 327 amino acid residues containing three disulfide bridges. Haemoglobin is built from four polypeptides, each holding a haem group. Compare the levels of organisation present in the two proteins, naming the bond responsible at each level. <span class="marks">[5]</span></div>
+  <div class="part"><span class="pl">(d)</span> Pepsinogen is secreted intact and only becomes catalytically active once it reaches the acidic lumen of the stomach, where 44 residues are cut from one end of the chain. Identify the level of control of gene expression that this represents, and suggest why the cell benefits from making the enzyme this way rather than making pepsin directly. <span class="marks">[3]</span></div>
+</div>
+
+<!-- ==================== Q2 ==================== -->
+<div class="qcard" id="q2">
+  <div class="qhead"><span>Question 2</span><span class="tot">Total: 15</span></div>
+  <p class="stem-lead">Fig. 2.1 shows the results of an investigation into the effect of temperature on a reaction catalysed by a single enzyme. Every tube received the same starting concentration of enzyme and the same starting concentration of substrate. Tubes were held at each temperature for one hour, two hours or five hours, and the quantity of product formed was then measured.</p>
+  <figure>
+    <img src="__FIG_TEMP__" alt="Graph of quantity of product formed against temperature from 0 to 60 degrees Celsius, with three curves labelled one hour, two hours and five hours.">
+    <figcaption>Fig. 2.1</figcaption>
+  </figure>
+  <div class="part"><span class="pl">(a)</span> Explain why the temperature at which the greatest quantity of product is formed becomes lower as the reaction time is increased from one hour to five hours. <span class="marks">[4]</span></div>
+  <div class="part"><span class="pl">(b)</span> A fresh sample of the same enzyme is held at 20&nbsp;°C and mixed with a solvent whose molecules carry a short non-polar hydrocarbon chain at one end and a polar hydroxyl group at the other. Activity falls to zero within minutes, and the enzyme comes out of solution. Identify the interaction between R groups that is disrupted first, explain why that interaction can exist only where water is excluded, and account for the loss of solubility. <span class="marks">[4]</span></div>
+  <div class="part"><span class="pl">(c)</span> Three variants of the same enzyme were isolated. Each differs from the wild type at exactly one amino acid residue, and the variants differ from one another at different positions in the chain. Their kinetics are shown in Table 2.1.</p>
+  <table class="data">
+    <tr><th>enzyme</th><th>position of the substituted residue</th><th>V<sub>max</sub> / arbitrary units</th><th>K<sub>m</sub> / mmol dm<sup>&minus;3</sup></th></tr>
+    <tr><td>wild type</td><td>&mdash;</td><td>100</td><td>0.8</td></tr>
+    <tr><td>variant 1</td><td>19</td><td>99</td><td>0.8</td></tr>
+    <tr><td>variant 2</td><td>102</td><td>98</td><td>9.6</td></tr>
+    <tr><td>variant 3</td><td>241</td><td>36</td><td>0.9</td></tr>
+  </table>
+  <p style="margin-left:4px">Deduce which variant carries its substitution within the active site, and justify your deduction by accounting for all three variants. <span class="marks">[5]</span></p>
+  </div>
+  <div class="part"><span class="pl">(d)</span> A single aminoacyl-tRNA synthetase attaches the same amino acid to several different tRNA molecules whose base sequences are not identical. Explain how one active site can do this. <span class="marks">[2]</span></div>
+</div>
+
+<!-- ==================== Q3 ==================== -->
+<div class="qcard" id="q3">
+  <div class="qhead"><span>Question 3</span><span class="tot">Total: 14</span></div>
+  <p class="stem-lead">Table 3.1 names three fibrous biological materials. For each, the sub-unit that repeats at the <b>highest</b> level of organisation is given. All three resist being pulled apart along the fibre axis.</p>
+  <table class="data">
+    <tr><th>material</th><th>the repeating sub-unit at the highest level of organisation</th></tr>
+    <tr><td class="l">cellulose macrofibril</td><td class="l">a cellulose chain</td></tr>
+    <tr><td class="l">collagen fibril</td><td class="l">a tropocollagen molecule</td></tr>
+    <tr><td class="l">&beta;-keratin fibre</td><td class="l">a &beta;-keratin fibril</td></tr>
+  </table>
+  <div class="part"><span class="pl">(a)</span> For each material, name the bond or interaction that joins one sub-unit to the next, and explain how the shape of the sub-unit and that bond together produce the tensile strength of the whole fibre. <span class="marks">[6]</span></div>
+  <div class="part"><span class="pl">(b)</span> Two solutions are applied to all three materials. Solution <b>X</b> is a reducing agent that breaks only bonds between sulfur atoms. Solution <b>Y</b> breaks only hydrogen bonds. Predict, with a reason in each case, the effect of each solution on each material. <span class="marks">[3]</span></div>
+  <div class="part"><span class="pl">(c)</span> A fourth polymer, glycogen, has no tensile strength at all. Explain, in terms of the interactions between its chains, why it has none, and explain why the very features that deny it tensile strength make it a good storage molecule. <span class="marks">[5]</span></div>
+</div>
+
+<!-- ==================== Q4 ==================== -->
+<div class="qcard" id="q4">
+  <div class="qhead"><span>Question 4</span><span class="tot">Total: 14</span></div>
+  <p class="stem-lead">A liver cell moves material across two different membranes. A potassium ion passes through a channel protein in the cell surface membrane. A mature mRNA molecule passes out through a nuclear pore. A protein hormone leaves the cell inside a vesicle that fuses with the cell surface membrane.</p>
+  <div class="part"><span class="pl">(a)</span> Compare these three movements on three axes: whether metabolic energy is required, the direction of movement relative to any concentration gradient, and what determines which molecules are allowed through. <span class="marks">[5]</span></div>
+  <div class="part"><span class="pl">(b)</span> The same liver cell is treated with a drug that stimulates hydrolysis of its stored glycogen but also blocks every glucose transporter in the cell surface membrane. Predict the effect on the water potential of the cell and on the cell itself, and explain each step of your reasoning. <span class="marks">[4]</span></div>
+  <div class="part"><span class="pl">(c)</span> As the external concentration of a solute is raised, the rate of facilitated diffusion and the rate of active transport of that solute both level off, but the rate of simple diffusion of a small non-polar molecule does not. Explain why. State also the one further circumstance that stops active transport but does not stop facilitated diffusion. <span class="marks">[5]</span></div>
+</div>
+
+<!-- ==================== Q5 ==================== -->
+<div class="qcard" id="q5">
+  <div class="qhead"><span>Question 5</span><span class="tot">Total: 15</span></div>
+  <p class="stem-lead">Table 5.1 describes four regions of a single human chromosome. None of the four is translated into protein.</p>
+  <table class="data">
+    <tr><th>region</th><th>description</th></tr>
+    <tr><td><b>P</b></td><td class="l">about 6 kb at the extreme end of the chromosome, made of the sequence TTAGGG repeated in tandem roughly 1000 times</td></tr>
+    <tr><td><b>Q</b></td><td class="l">several Mb of AT-rich tandem repeats at the primary constriction, where a plate of protein assembles and binds microtubules</td></tr>
+    <tr><td><b>R</b></td><td class="l">about 250 bp lying immediately 5&prime; of a transcription unit, containing a TATA sequence</td></tr>
+    <tr><td><b>S</b></td><td class="l">about 400 bp lying 30 kb away from the same transcription unit; when a particular protein binds it, transcription of that unit rises about 50-fold</td></tr>
+  </table>
+  <div class="part"><span class="pl">(a)</span> Identify each region, and state for each one consequence for a dividing cell if that region alone were lost. <span class="marks">[5]</span></div>
+  <div class="part"><span class="pl">(b)</span> A drug inhibits histone acetyltransferase throughout the cell. Explain the effect this has on the charge carried by the histones, on the compaction of the chromatin and on transcription. <span class="marks">[4]</span></div>
+  <div class="part"><span class="pl">(c)</span> Describe how the 10&nbsp;nm "beads-on-a-string" fibre is packed further to give a condensed metaphase chromosome. <span class="marks">[3]</span></div>
+  <div class="part"><span class="pl">(d)</span> A cell can block production of an unneeded protein at any of the five levels of control of gene expression. Explain why blocking at the level described in <b>(b)</b> wastes the cell less than blocking at the translational level. <span class="marks">[3]</span></div>
+</div>
+
+<!-- ==================== Q6 ==================== -->
+<div class="qcard" id="q6">
+  <div class="qhead"><span>Question 6</span><span class="tot">Total: 14</span></div>
+  <p class="stem-lead">Fig. 6.1 shows part of the <b>template</b> strand of the &beta;-globin gene, covering the codons for the first eight amino acid residues of the mature &beta;-globin polypeptide, together with three mutant alleles of the same region. Table 6.1 gives some mRNA codons and the amino acids they specify.</p>
+  <div class="seq">wild type&nbsp;&nbsp; 3&prime; &ndash; C A C &nbsp; G T G &nbsp; G A C &nbsp; T G A &nbsp; G G A &nbsp; C T C &nbsp; C T C &nbsp; T T C &ndash; 5&prime;</div>
+  <div class="seq">allele 1&nbsp;&nbsp;&nbsp;&nbsp; 3&prime; &ndash; C A C &nbsp; G T G &nbsp; G A C &nbsp; T G G &nbsp; G G A &nbsp; C T C &nbsp; C T C &nbsp; T T C &ndash; 5&prime;</div>
+  <div class="seq">allele 2&nbsp;&nbsp;&nbsp;&nbsp; 3&prime; &ndash; C A C &nbsp; G T G &nbsp; G A C &nbsp; T G A &nbsp; G G A &nbsp; C A C &nbsp; C T C &nbsp; T T C &ndash; 5&prime;</div>
+  <div class="seq">allele 3&nbsp;&nbsp;&nbsp;&nbsp; 3&prime; &ndash; C A C &nbsp; T G G &nbsp; A C T &nbsp; G A G &nbsp; G A C &nbsp; T C C &nbsp; T C T &nbsp; T C &ndash; 5&prime;</div>
+  <p style="font-family:-apple-system,sans-serif;font-size:.82em;color:#6b7280;margin:2px 0 10px">Fig. 6.1</p>
+  <table class="data">
+    <tr><th>codon</th><th>amino acid</th><th>codon</th><th>amino acid</th><th>codon</th><th>amino acid</th></tr>
+    <tr><td>AUG</td><td>methionine (start)</td><td>CCU</td><td>proline</td><td>AGA</td><td>arginine</td></tr>
+    <tr><td>GUG</td><td>valine</td><td>CCC</td><td>proline</td><td>AGG</td><td>arginine</td></tr>
+    <tr><td>GUU</td><td>valine</td><td>GAG</td><td>glutamate</td><td>UAC</td><td>tyrosine</td></tr>
+    <tr><td>CAC</td><td>histidine</td><td>GAA</td><td>glutamate</td><td>UGG</td><td>tryptophan</td></tr>
+    <tr><td>CAU</td><td>histidine</td><td>AAG</td><td>lysine</td><td>UGA</td><td>stop</td></tr>
+    <tr><td>CUG</td><td>leucine</td><td>AAA</td><td>lysine</td><td>UAA</td><td>stop</td></tr>
+    <tr><td>CUC</td><td>leucine</td><td>ACU</td><td>threonine</td><td>UAG</td><td>stop</td></tr>
+    <tr><td>ACC</td><td>threonine</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  </table>
+  <p style="font-family:-apple-system,sans-serif;font-size:.82em;color:#6b7280;margin:2px 0 10px">Table 6.1</p>
+  <div class="part"><span class="pl">(a)</span> Write out the mRNA sequence transcribed from the wild-type strand and give the amino acid sequence it specifies. Then state, for each of the three alleles, how the polypeptide differs from the wild type, and classify the mutation in each. <span class="marks">[5]</span></div>
+  <div class="part"><span class="pl">(b)</span> Allele 2 is the allele responsible for sickle cell anaemia. Explain how it produces the symptoms of that disease. <span class="marks">[5]</span></div>
+  <div class="part"><span class="pl">(c)</span> Distinguish the change carried by allele 2 from a reciprocal translocation and from trisomy 21, naming the event that produces each of the latter two. <span class="marks">[4]</span></div>
+</div>
+
+<!-- ==================== Q7 ==================== -->
+<div class="qcard" id="q7">
+  <div class="qhead"><span>Question 7</span><span class="tot">Total: 11</span></div>
+  <p class="stem-lead">A forensic laboratory recovered a bloodstain roughly 40 years old, from which about 20 intact cells could be isolated. One short locus was amplified from the extracted DNA, and the products were separated on an agarose gel alongside samples from four named individuals. Table 7.1 gives the distance each band travelled from the well.</p>
+  <table class="data">
+    <tr><th>sample</th><th>distance travelled by each band / mm</th><th>relative intensity of each band</th></tr>
+    <tr><td>individual 1</td><td>38</td><td>strong</td></tr>
+    <tr><td>individual 2</td><td>38 and 52</td><td>both moderate</td></tr>
+    <tr><td>individual 3</td><td>52</td><td>strong</td></tr>
+    <tr><td>individual 4</td><td>38 and 52</td><td>both moderate</td></tr>
+    <tr><td>bloodstain</td><td>52</td><td>strong</td></tr>
+  </table>
+  <div class="part"><span class="pl">(a)</span> Every DNA fragment on this gel carries the same quantity of negative charge for a given length. Explain how the gel nevertheless separates the fragments, and why the fragment at 52&nbsp;mm is the shorter of the two. <span class="marks">[4]</span></div>
+  <div class="part"><span class="pl">(b)</span> Deduce the genotype of each of the four individuals at this locus, using both the position and the intensity of the bands, and state which individuals could not have left the bloodstain. <span class="marks">[4]</span></div>
+  <div class="part"><span class="pl">(c)</span> Rank three limitations of PCR by the threat each poses to <b>this particular</b> result, and justify the ranking. <span class="marks">[3]</span></div>
+</div>
+
+<!-- ==================== REVEAL ==================== -->
+<div class="controls">
+  <button id="revealBtn" onclick="toggleScheme()">Reveal answer key</button>
+  <span class="hint">Sit the whole paper under time first. Only then reveal.</span>
+</div>
+__SCHEME__
+
+<script>
+  function toggleScheme(){
+    var s = document.getElementById('scheme');
+    var b = document.getElementById('revealBtn');
+    if(s.classList.contains('show')){
+      s.classList.remove('show');
+      b.textContent = 'Reveal answer key';
+      window.scrollTo({top: b.getBoundingClientRect().top + window.scrollY - 200, behavior:'smooth'});
+    } else {
+      s.classList.add('show');
+      b.textContent = 'Hide answer key';
+    }
+  }
+</script>
+</body>
+</html>
