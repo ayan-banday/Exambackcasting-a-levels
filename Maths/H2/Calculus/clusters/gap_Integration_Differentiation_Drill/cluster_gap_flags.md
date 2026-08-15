@@ -47,3 +47,15 @@ Ethan drilled the whole 19-question main cluster on Loom and streamed the transc
 - Fuse multiple gaps per question; exam-real difficulty; no question-type labels until end-of-card reveal.
 
 **Gap cluster built:** `gap_Integration_Differentiation_Drill/` (11 fused questions) · dashboard: `gap_math_intdiff.html`.
+
+---
+
+## 2026-07-25 (later) — gap cluster Q1–Q3 drilled + Q4–Q11 rebuilt harder
+
+Ethan drilled the first three of the gap cluster, then flagged Q4–Q11 as too easy.
+
+- **Q1 (inverse-trig IBP):** method fully correct (differentiate → IBP with inverse as u, dv=dx → f'/f log). **Careless slip:** forgot to substitute x=½ at the end, first wrote π/4 then caught it. Answer π/8 − ¼ln2. Confidence high. State: **FRAGILE** (the inverse-trig IBP method itself is now landing — big improvement from the redrill where it was ACTIVE; only the arithmetic finish slipped).
+- **Q2 (reverse-chain constant balancing + inverse-trig f'(u)):** "easy, got it already." Balanced −1/10→−1/50 and −1/2 correctly; got π/6. Confidence high. State: **FRAGILE→CLOSED-leaning** — the constant-balancing gap looks closed.
+- **Q3 (2nd-derivative test incl. f''=0 fallback):** got it, including the inflexion-via-first-derivative-test fallback and the max at x=3. "so easy so easy." Confidence high. State: **CLOSED** — the 2nd-derivative-test gap is closed.
+
+**Design correction (logged as a rule):** Ethan flagged the gap cluster as too easy — I had re-skinned the redrill questions with new numbers. Q4–Q11 **rebuilt harder + structurally different** (same gaps, different problem shapes): polynomial parametric, inverse-trig IBP with a polynomial multiplier (division in leftover), cone volume + two related rates, volume-of-revolution forcing x=tanθ then cos² double angle, genuinely cyclic IBP (∫eˣsinx), harder substitution, improper partial fractions (divide first), binomial product of two expansions + validity. Rule saved: gap questions must be harder and different in nature, never re-skins (`feedback_cluster_gap_closer_design` Rule D, `rules/02`).
