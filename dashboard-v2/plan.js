@@ -1611,10 +1611,10 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "maths",
-     "name": "Maths — Int×Diff KNOWLEDGE-GAP CLUSTER (11Q · 78m · from your redrill)",
-     "desc": "Drill on exactly where the 19Q redrill broke: inverse-trig by parts, reverse-chain constant, 2nd-derivative test, parametric normal + area, bowl volume→rate, x=2tanθ sub, repeated IBP formula, IBP-vs-sub, irreducible-quadratic partial fraction, factor-first binomial. Fused, shuffled, hidden answers.",
-     "done": false,
-     "doneDate": null,
+     "name": "Maths — Int×Diff KNOWLEDGE-GAP CLUSTER (11Q · 73m · Q4-11 rebuilt harder)",
+     "desc": "Drilled 25 Jul. Q1-4 clean; parametric area now solid. One gap left: divide-first on improper fractions (Q5/Q10). Re-check cone related-rates (Q6).",
+     "done": true,
+     "doneDate": "2026-07-25",
      "clusterHref": "clusters/gap_math_intdiff.html"
     },
     {
