@@ -59,3 +59,24 @@ Ethan drilled the first three of the gap cluster, then flagged Q4–Q11 as too e
 - **Q3 (2nd-derivative test incl. f''=0 fallback):** got it, including the inflexion-via-first-derivative-test fallback and the max at x=3. "so easy so easy." Confidence high. State: **CLOSED** — the 2nd-derivative-test gap is closed.
 
 **Design correction (logged as a rule):** Ethan flagged the gap cluster as too easy — I had re-skinned the redrill questions with new numbers. Q4–Q11 **rebuilt harder + structurally different** (same gaps, different problem shapes): polynomial parametric, inverse-trig IBP with a polynomial multiplier (division in leftover), cone volume + two related rates, volume-of-revolution forcing x=tanθ then cos² double angle, genuinely cyclic IBP (∫eˣsinx), harder substitution, improper partial fractions (divide first), binomial product of two expansions + validity. Rule saved: gap questions must be harder and different in nature, never re-skins (`feedback_cluster_gap_closer_design` Rule D, `rules/02`).
+
+---
+
+## 2026-07-25 (later still) — rebuilt Q4–Q11 drilled
+
+- **Q1–Q3:** "completely perfectly." CLOSED.
+- **Q4 (polynomial parametric — H/V tangents + area):** "completely perfectly, very easy." Found horizontal tangent (t=1 → (1, ⅔)), rejected t=−√3 (t≥0), used parametric area y·dx/dt over 0→√3. One brief "I didn't get the link" wobble on the area setup but recovered. **Parametric area now landing** — big improvement (was a total blank in the redrill). State: FRAGILE→CLOSED.
+- **Q5 (inverse-trig IBP with a polynomial multiplier):** set up IBP correctly, then **forgot the division step** on the improper leftover x²/(1+x²). Recovered only when the solution reminded him: "I forgot that you can divide the thing… if you didn't have to show me this, I wouldn't have done the long division." State: **ACTIVE** — the divide-first move on an improper fraction is NOT automatic.
+- **Q6 (cone volume + two related rates):** transcript here is heavy Wispr breakdown ("scroll by 5 feet… we got ice!") — **not reliably assessable.** Re-check Q6 next session before assuming closed.
+- **Q7 (volume of rev → x=tanθ → cos² double angle):** got it, but flagged it **repetitive** — "we did it before… I think we are repeating a lot, we can get faster." The x=tanθ + double-angle machinery is now solid enough that re-drilling it bores him.
+- **Q8/Q9 (cyclic IBP; harder substitution):** "I'm pretty sure we know it already." Landed, familiar. Substitution change-everything is solid.
+- **Q10 (improper partial fractions — divide first):** **same gap as Q5** — "I wouldn't have done the long division… you couldn't catch it [on my own]. The minute you see that… so I divide, then split it further." State: **ACTIVE** — reinforces the one real remaining hole.
+- **Q11 (binomial product of two expansions + validity):** "good question bro, that's actually a good question… the question that really got me." Engaged well, landed. Liked it.
+
+### The single real remaining gap
+**Improper algebraic fraction → polynomial-divide FIRST**, before you do anything else (before the IBP leftover in Q5, before partial fractions in Q10). He only did it because the worked solution prompted him; it is not yet a reflex. Target next session: a couple of "spot the improper fraction, divide before you split/integrate" reps.
+
+### Process feedback (mine to act on)
+1. **I over-included already-closed concepts.** Q7 (tanθ + double angle) and the substitution/cyclic-IBP material were solid from the redrill, so re-drilling them read as repetitive. Gap clusters should drill ONLY still-open gaps, not re-test what's CLOSED. He wants fewer, and to "get faster."
+2. He wants **more variation to surface MORE new gaps** — "there should be more variations so you can find more knowledge [gaps]… come up with a new concept for every drill question." Push novelty harder; each question ideally exposes something he hasn't met.
+3. He liked the genuinely-new-shape questions (Q4 vertical-tangent reasoning, Q11 product expansion) — those are the model.
