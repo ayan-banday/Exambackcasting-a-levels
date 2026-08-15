@@ -2,6 +2,14 @@
 
 Gaps surfaced drilling the main Halogen cluster (17Q). Re-test day+1 / +7 / +30 on the ACTIVE ones before new content. The gap cluster `gap_chem_halogen.html` targets these with real exam questions.
 
+## Gap-cluster drill result (15 Aug)
+- ✅ **CLOSED — #8 hydrolysis rate ∝ C–X bond energy** (the confident-wrong one): reasoned C–I longest/weakest bond → fastest, bond energy not electronegativity. Correct + added steric reasoning for the slow one.
+- ✅ **CLOSED — #9 aryl halide unreactivity**: full chain (delocalisation → partial double bond → stronger C–Cl; + steric; + ring e-density; + carbocation can't be resonance-stabilised). (Minor slip: nucleophile isn't NO₃⁻.)
+- 🟡 **IMPROVED but keep FRAGILE — #6 nitrile step-up** (ruled out alcohol+KCN and aryl halide, picked RX+KCN) and **#7 no-β-H → substitution** (right, but "almost a guess").
+- 🟡 **FRAGILE (self-corrected on Q1 re-attempt) — #4 excess vs limited NH₃**: first said "limited" (backwards), then reasoned his way to "excess minimises over-alkylation" but kept flip-flopping. Rule locked for him: **always excess NH₃** — RX is then statistically more likely to hit NH₃ than the amine product → stops at 1° amine; limited NH₃ / excess RX drives over-alkylation (2°→3°→quaternary, or polymeric for the dibromide). Correctly IDs the side product (over-alkylation) and that the amine's N lone pair makes it a nucleophile. Not yet reflexive → keep on re-drill.
+- ⚠️ **STILL ACTIVE — #10 AgNO₃ test**: muddled the NH₃ confirmation. Lock: AgCl dissolves in **dilute** NH₃, AgBr only in **conc** NH₃, AgI **insoluble**.
+- ◻️ **UNASSESSED (not in audio) — #1 SN2 draw, #2 1°/3° choice, #3 kinetics rate-law, #5 naming+cyclisation.** Carry to next re-drill.
+
 ## From the main-cluster drill (15 Aug)
 
 | # | Gap | State | Correct answer / fix |
