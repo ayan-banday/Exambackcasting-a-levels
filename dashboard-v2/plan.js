@@ -1510,8 +1510,8 @@ window.PLAN = {
      "subject": "bio",
      "name": "Bio — Cell Structure + Biomolecules (foundation double)",
      "desc": "Cell Structure (organelles, pro/eukaryote, virus) is quick, then Biomolecules. Compressed since 4 Aug was lost.",
-     "done": false,
-     "doneDate": null
+     "done": true,
+     "doneDate": "2026-08-06"
     },
     {
      "mins": 60,
@@ -1635,8 +1635,8 @@ window.PLAN = {
      "subject": "bio",
      "name": "Bio — Cell Membranes & Transport",
      "desc": "",
-     "done": false,
-     "doneDate": null
+     "done": true,
+     "doneDate": "2026-08-11"
     },
     {
      "mins": 120,
@@ -1674,8 +1674,8 @@ window.PLAN = {
      "subject": "bio",
      "name": "Bio — Enzymes",
      "desc": "",
-     "done": false,
-     "doneDate": null
+     "done": true,
+     "doneDate": "2026-08-12"
     },
     {
      "mins": 120,
@@ -1762,8 +1762,8 @@ window.PLAN = {
      "subject": "bio",
      "name": "Bio — Gene Expression & Control",
      "desc": "",
-     "done": false,
-     "doneDate": null
+     "done": true,
+     "doneDate": "2026-08-14"
     },
     {
      "mins": 120,
