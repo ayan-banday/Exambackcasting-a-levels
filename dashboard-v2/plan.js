@@ -12,14 +12,14 @@ window.PLAN = {
   "perWeekHrs": 36,
   "target": "Prelim: a mid-B / C is fine — cover the priority topics, sacrifice the low-value ones. A-levels (2–27 Nov 2026): everything drilled to mastery, multiple passes.",
   "reality": "6h/day study (business gets the rest). 84h before prelims, front-loaded on GP + Bio + Maths (the papers that land first). CSC = Anki maintenance only until the Sept gap. Prelim target mid-C; real mastery push runs to the A-levels (Oct–Nov).",
-  "lastUpdated": "2026-08-12",
+  "lastUpdated": "2026-08-15",
   "repo": "https://github.com/ayan-banday/Exambackcasting-a-levels",
   "alevel": "2026-11-02",
   "subtitle": "Ethan Lim · 6h/day Mon–Fri · Sat 6h drill · Sun rest · +15min CSC Anki daily · to 22 Sep",
   "prelimStart": "2026-08-24",
   "alevelStart": "2026-11-02",
-  "clustersRemaining": 18,
-  "clustersDone": 15,
+  "clustersRemaining": 17,
+  "clustersDone": 16,
   "clustersTotal": 33,
   "alevelEnd": "2026-11-26"
  },
@@ -1309,8 +1309,8 @@ window.PLAN = {
      "subject": "chem",
      "name": "Chemistry — Halogen Derivatives (ch 15) · cluster · organic",
      "desc": "Pre-study bundled at the top, then drill the questions out loud; gap-close after.",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "2026-08-15",
      "clusterRef": "Halogen Derivatives"
     },
     {
@@ -1574,8 +1574,8 @@ window.PLAN = {
      "subject": "chem",
      "name": "Chem — Halogen Derivatives",
      "desc": "",
-     "done": false,
-     "doneDate": null
+     "done": true,
+     "doneDate": "2026-08-15"
     },
     {
      "mins": 120,
@@ -1596,8 +1596,8 @@ window.PLAN = {
    "subject": "maths",
    "flag": "",
    "mins": 390,
-   "label": "Maths + Chem",
-   "focus": "Int+Diff hard cluster  ·  Halogen study sheet + cluster",
+   "label": "Maths + Chem — Integration + Halogen DONE",
+   "focus": "Int+Diff cluster + gap (drilled clean · 1 gap left)  ·  Halogen study sheet + cluster (drilled · gap cluster pending)",
    "blocks": [
     {
      "mins": 210,
@@ -1605,7 +1605,7 @@ window.PLAN = {
      "name": "Maths — Integration + Differentiation CLUSTER (hard · 19Q · 163m · full LO coverage)",
      "desc": "Hard fused Int×Diff, real HCI/A-Level Qs, hidden answers, confidence line per stem. Drill it, then tell me your gaps.",
      "done": true,
-     "doneDate": "2026-07-25",
+     "doneDate": "2026-08-15",
      "clusterHref": "clusters/cluster_math_intdiff.html"
     },
     {
@@ -1614,7 +1614,7 @@ window.PLAN = {
      "name": "Maths — Int×Diff KNOWLEDGE-GAP CLUSTER (11Q · 73m · Q4-11 rebuilt harder)",
      "desc": "Drilled 25 Jul. Q1-4 clean; parametric area now solid. One gap left: divide-first on improper fractions (Q5/Q10). Re-check cone related-rates (Q6).",
      "done": true,
-     "doneDate": "2026-07-25",
+     "doneDate": "2026-08-15",
      "clusterHref": "clusters/gap_math_intdiff.html"
     },
     {
@@ -1622,8 +1622,8 @@ window.PLAN = {
      "subject": "chem",
      "name": "Chem — Halogen Derivatives STUDY SHEET (read first)",
      "desc": "Full teach: SN1/SN2 + elimination + Ag-halide test + CFCs.",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "2026-08-15",
      "clusterHref": "clusters/chem_halogen_studysheet.html"
     },
     {
@@ -1631,8 +1631,8 @@ window.PLAN = {
      "subject": "chem",
      "name": "Chem — Halogen CLUSTER (17Q · 85m · full LO coverage)",
      "desc": "Covers every LO. Drill it, then tell me your gaps.",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "2026-08-15",
      "clusterHref": "clusters/cluster_chem_halogen.html"
     }
    ],
@@ -3566,8 +3566,8 @@ window.PLAN = {
   }
  ],
  "readiness": {
-  "lastUpdated": "2026-08-12",
-  "lastTest": "Bio Book 2 done (12 Aug) — 2 of 9 books",
+  "lastUpdated": "2026-08-15",
+  "lastTest": "Integration + Halogen Derivatives drilled (15 Aug). Int gap cluster drilled clean (1 gap left); Halogen gap cluster built, awaiting drill.",
   "note": "A GAUGE, not a measurement — only Maths is test-measured; the rest is estimated. Bio = the school's 9 books (syllabus 9477). A-level 100% = mastered (multiple passes, exam-hardened, retained to Nov); one drilled pass ~= 50%. Prelim % = distance to a prelim-B; A-level % = distance to full mastery.",
   "subjects": {
    "maths": {
@@ -3598,13 +3598,13 @@ window.PLAN = {
      },
      {
       "t": "05 Differentiation",
-      "m": 55,
+      "m": 60,
       "sac": 0,
       "meas": 1
      },
      {
       "t": "06 Integration",
-      "m": 35,
+      "m": 65,
       "sac": 0,
       "meas": 1
      },
@@ -3758,7 +3758,7 @@ window.PLAN = {
      },
      {
       "t": "15 Halogen Derivatives",
-      "m": 0,
+      "m": 50,
       "sac": 0,
       "meas": 0
      },
