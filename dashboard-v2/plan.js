@@ -18,9 +18,9 @@ window.PLAN = {
   "subtitle": "Ethan Lim · 6h/day Mon–Fri · Sat 6h drill · Sun rest · +15min CSC Anki daily · to 22 Sep",
   "prelimStart": "2026-08-24",
   "alevelStart": "2026-11-02",
-  "clustersRemaining": 17,
-  "clustersDone": 16,
-  "clustersTotal": 33,
+  "clustersRemaining": 36,
+  "clustersDone": 15,
+  "clustersTotal": 51,
   "alevelEnd": "2026-11-26"
  },
  "subjects": {
@@ -54,7 +54,7 @@ window.PLAN = {
    "code": "9477 H2",
    "colour": "#e8c65f",
    "drills": 5,
-   "note": "Concept-heavy. Book-by-book: pre-study sheet -> 3 clusters -> gap cluster. Book 1 done. Drills cross back into earlier Books."
+   "note": "All 9 Books built: pre-study + 3 cluster sheets each (27 total). Books 1-2 drilled, Book 3 drills ready. P4 is the gap: Book 5 alone was 60% of the specimen practical."
   },
   "gp": {
    "name": "GP",
@@ -242,49 +242,157 @@ window.PLAN = {
    "n": 25
   },
   {
-   "n": 26,
+   "subject": "bio",
+   "name": "Book 4 — Viral Structure & Phage Cycles",
+   "flag": "",
+   "n": 26
+  },
+  {
+   "subject": "bio",
+   "name": "Book 4 — Enveloped Viruses & Antigenic Variation",
+   "flag": "",
+   "n": 27
+  },
+  {
+   "subject": "bio",
+   "name": "Book 4 — Bacterial Genetics",
+   "flag": "",
+   "n": 28
+  },
+  {
+   "subject": "bio",
+   "name": "Book 5 — Photosynthesis",
+   "flag": "",
+   "n": 29
+  },
+  {
+   "subject": "bio",
+   "name": "Book 5 — Cellular Respiration",
+   "flag": "",
+   "n": 30
+  },
+  {
+   "subject": "bio",
+   "name": "Book 5 — Energetics in Practice (P4-heavy)",
+   "flag": "",
+   "n": 31
+  },
+  {
+   "subject": "bio",
+   "name": "Book 6 — Terms, Monohybrid & Sex Linkage",
+   "flag": "",
+   "n": 32
+  },
+  {
+   "subject": "bio",
+   "name": "Book 6 — Dihybrid, Linkage & Epistasis",
+   "flag": "",
+   "n": 33
+  },
+  {
+   "subject": "bio",
+   "name": "Book 6 — Variation & Chi-Squared",
+   "flag": "",
+   "n": 34
+  },
+  {
+   "subject": "bio",
+   "name": "Book 7 — Variation, Selection & Evidence",
+   "flag": "",
+   "n": 35
+  },
+  {
+   "subject": "bio",
+   "name": "Book 7 — Microevolution & Hardy-Weinberg",
+   "flag": "",
+   "n": 36
+  },
+  {
+   "subject": "bio",
+   "name": "Book 7 — Speciation & Phylogeny",
+   "flag": "",
+   "n": 37
+  },
+  {
+   "subject": "bio",
+   "name": "Book 8 — Greenhouse Mechanism & Carbon Footprints",
+   "flag": "",
+   "n": 38
+  },
+  {
+   "subject": "bio",
+   "name": "Book 8 — Effects on Environment & Organisms",
+   "flag": "",
+   "n": 39
+  },
+  {
+   "subject": "bio",
+   "name": "Book 8 — Biodiversity, Food & Disease",
+   "flag": "",
+   "n": 40
+  },
+  {
+   "subject": "bio",
+   "name": "Book 9 — Innate Immunity & Infection",
+   "flag": "",
+   "n": 41
+  },
+  {
+   "subject": "bio",
+   "name": "Book 9 — Adaptive Immunity & Diversity",
+   "flag": "",
+   "n": 42
+  },
+  {
+   "subject": "bio",
+   "name": "Book 9 — Diseases, Antibiotics & Epidemiology",
+   "flag": "",
+   "n": 43
+  },
+  {
+   "n": 44,
    "subject": "bio",
    "name": "Inheritance — Dihybrid, Codominance & Sex-Linkage",
    "flag": ""
   },
   {
-   "n": 27,
+   "n": 45,
    "subject": "bio",
    "name": "Inheritance — Chi-Squared Test",
    "flag": ""
   },
   {
-   "n": 28,
+   "n": 46,
    "subject": "bio",
    "name": "Biostatistics Toolkit",
    "flag": ""
   },
   {
-   "n": 29,
+   "n": 47,
    "subject": "bio",
    "name": "Evolution — Variation, Natural Selection & Hardy-Weinberg",
    "flag": ""
   },
   {
-   "n": 30,
+   "n": 48,
    "subject": "bio",
    "name": "Mutations & Cancer",
    "flag": ""
   },
   {
-   "n": 31,
+   "n": 49,
    "subject": "gp",
    "name": "Essay — slotting, expansion & body paragraphs",
    "flag": "⚑"
   },
   {
-   "n": 32,
+   "n": 50,
    "subject": "gp",
    "name": "Essay — intros, conclusions & timed writing",
    "flag": ""
   },
   {
-   "n": 33,
+   "n": 51,
    "subject": "gp",
    "name": "Paper 2 — comprehension, summary & AQ",
    "flag": ""
@@ -3003,6 +3111,24 @@ window.PLAN = {
   ]
  ],
  "log": [
+  {
+   "date": "2026-08-15",
+   "weekday": "Sat",
+   "items": [
+    {
+     "subject": "bio",
+     "mins": 0,
+     "done": true,
+     "what": "Bio Books 4-9 built end to end: 6 chapter digests, 6 examiner guides, 6 pre-study sheets and 18 cluster study sheets. All 18 passed the gates first time (zero em dashes, zero quote-wrapped verbatim, density 48.6-51.8 against Book 1's 47-51). 27 cluster sheets now exist across all 9 Books."
+    },
+    {
+     "subject": "bio",
+     "mins": 0,
+     "done": true,
+     "what": "Scope audits found: Book 5 is ~23-25% of the A-level with HALF on Paper 4 (60% of the specimen practical, 30/50 marks) which is skipped; Book 6's LO (aa) excludes the epistasis ratio table in its own brackets; Book 9's LO (j) R0 and LO (k) outbreak/epidemic/pandemic are taught NOWHERE in 139 pages; Book 7's Hardy-Weinberg has 5 corpus questions in 1650 so must be built not mined. Audit method hardened twice: en-dash and line-wrap false negatives both caught."
+    }
+   ]
+  },
   {
    "date": "2026-08-12",
    "weekday": "Wed",
