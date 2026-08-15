@@ -1,0 +1,49 @@
+# Flags — Calculus > Integration × Differentiation Gap Drill
+
+> Append-only. Gaps surfaced from the redrill transcript of `cluster_math_intdiff.html` (19-Q main cluster, ~80% mastery reached).
+> Format: `date | Q (main cluster) | what went wrong | confidence | gap state`
+
+## 2026-07-25 — full redrill transcript of the 19-Q intdiff cluster
+
+Ethan drilled the whole 19-question main cluster on Loom and streamed the transcript. Reached ~80% mastery (his call). Below = every gap surfaced, mapped to the actual card. Priority 1 (confident+wrong) listed first.
+
+### PRIORITY 1 — confident-and-wrong / total blanks (ACTIVE)
+
+- 2026-07-25 | Q10 (hemispherical bowl) | **ENTIRELY failed.** Could not prove the bowl volume by rotating the circle about the y-axis, nor set up the connected rate of change for draining. His words: "entire q10 f***ed." The whole "prove a volume by integration → feed into dV/dt = dV/dh·dh/dt" chain is missing. | blank | **ACTIVE — highest priority** |
+- 2026-07-25 | Q7 (y²=x√(1−x)) | **Completely stumped on (i) and (ii); guessed and forgot the ±** when taking the square root of y². Area setup for a `y² = …` curve (need y=±√, symmetry) not there. | guessed/wrong | **ACTIVE** |
+- 2026-07-25 | Q3ii / Q6 / Q1(inverse-trig-IBP family) | **Inverse-trig integration by parts — the #1 recurring blank.** Repeatedly could not see that after differentiating an inverse-trig function you use it as `u` in IBP with `dv = dx`. Also mis-set the numerator: when differentiating cos⁻¹(x²) the top is the derivative of the *inside* (2x), not 1. The f'(u)-numerator insight was a genuine unlock mid-transcript. | wrong then unlocked | **ACTIVE** |
+- 2026-07-25 | Q18 (parametric area) | **Did not know parametric area.** Tried to build a Cartesian equation instead of `∫ y (dx/dθ) dθ`. His words: "I didn't know that parametric means you just need to include the y and then another dx/dt." | blank | **ACTIVE** |
+- 2026-07-25 | Q8a (nature of stationary point) | **2nd derivative test was a complete gap** — had to research how to do it mid-question before he could answer. | blank | **ACTIVE** |
+
+### PRIORITY 2 — right-but-hesitant / careless-but-costly (FRAGILE)
+
+- 2026-07-25 | Q2a / Q5 (reverse chain) | **Constant balancing** — kept trying to put the raw derivative constant *outside* (e.g. "6 outside") instead of the reciprocal (−1/6), then compounding to 1/36. Concept right, execution slips. His words: "one of the main mistakes I made." | recurring slip | FRAGILE |
+- 2026-07-25 | Q11 (parametric normal) | Forgot (i); on (ii) confused the **normal gradient** (should be −1/tangent gradient) and forgot that "point A" means state **both x and y**. Also the trig-identity simplification for the length part failed entirely ("some f***ing trick identity"). | hesitant/partial | FRAGILE |
+- 2026-07-25 | Q12 (differentiate a log) | Differentiating ln(x+√(1+x²)) via f'/f with a compound argument — got tangled on where the √ came from; **mixed up log rules** (ln(ab)=ln a+ln b vs ln(a/b)=ln a−ln b) and tried to split ln(a+b). Recovered to "leave it as something/something." | hesitant | FRAGILE |
+- 2026-07-25 | Q13/Q14 (cyclic/repeated IBP) | Concept solid (recognised IBP-twice / "let I ="), but careless copy errors on VDU. Also the volume-of-revolution tail needed x=tanθ. | correct+careless | FRAGILE |
+- 2026-07-25 | Q13/Q9 (volume + x=tanθ) | The (x²+1)² expansion (not cancelling terms illegally), then tan²θ/sec²θ = sin²θ, then sin²θ via cos2θ=1−2sin²θ. Getting there but needs it reflexive. | hesitant | FRAGILE |
+- 2026-07-25 | Q16 (binomial expansion) | Did not recognise the **(1+u)^n form until he factored out the constant** (1/√(9−x²) → (1/3)(1−x²/9)^(−1/2)); nearly went down the repeated-differentiation path. His words: "great question, should be tested again." | unlocked | FRAGILE |
+- 2026-07-25 | Q18 (1−cosθ identity) | The **1−cosθ = 2sin²(θ/2)** and sinθ=2sin(θ/2)cos(θ/2) identities for showing dy/dx = cot(θ/2) — did not see it until prompted. "be very observant for 1−cosθ, they always test that." | hesitant | FRAGILE |
+- 2026-07-25 | Q17/Q19 (partial fractions) | Splitting (3x+8)/(x²+9) into f'/f (→ln) + constant/(x²+a²) (→tan⁻¹). Two arithmetic mistakes but concept right. | correct+careless | FRAGILE |
+- 2026-07-25 | Q1 (hence integrate directly) | Over-complicated a "given dy/dx, hence integrate" into IBP when he should just reverse the derivative directly. | wrong then saw it | FRAGILE |
+- 2026-07-25 | Q15 (IBP vs substitution) | Cardinal rule for choosing `u` ("u should get simpler when differentiated") + "change EVERYTHING to u, including inside dx" — landed it but wants reinforcement. | correct | FRAGILE |
+
+### CLOSED / confirmed strong this run
+
+- Q4 d/dx(cot x) from first principles; Q4b sin2x·tan x = 2sin²x; Q5 product rule + reverse; Q9 turning points; Q12ii/iii once the derivative was found; Q19 partial-fraction area ("solid").
+
+### Recurring META-PATTERNS (surfaced in the summary to Ethan)
+
+1. **Inverse-trig integration is the single biggest hole** — differentiate the inverse function (chain: derivative of the inside on top), then it's `u` in IBP with `dv = dx`. Appears in ~5 questions; he blanked most.
+2. **Method-selection wobble** — he articulated the hierarchy himself and wants it drilled: reverse a product/chain directly → MF27 standard form / inverse trig → "hence" from an earlier part → IBP as last resort.
+3. **Reverse-chain constant balancing** — the recurring careless mark-loss (wrong reciprocal constant).
+4. **Parametric calculus underbuilt** — normal line (−1/gradient) AND parametric area (∫y dx/dθ) both weak; the second was a true unknown.
+5. **Applied related-rates + volume proof** (bowl) — entirely absent; highest-EV single gap.
+6. **Double-angle / half-angle identities not reflexive** — 1−cosθ=2sin²(θ/2), sin²θ=(1−cos2θ)/2, cos2θ forms.
+
+### Build constraints (Ethan, this session)
+- Gap cluster ≤ 11 questions (~2h), NOT 19. Collapse duplicate-concept questions (Q13≈Q14; Q11≈Q18).
+- **Shuffle positions** so a Q1 miss reappears as Q5/Q7 — no positional memory.
+- Fuse multiple gaps per question; exam-real difficulty; no question-type labels until end-of-card reveal.
+
+**Gap cluster built:** `gap_Integration_Differentiation_Drill/` (11 fused questions) · dashboard: `gap_math_intdiff.html`.

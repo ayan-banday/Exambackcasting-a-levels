@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Integration × Differentiation — Knowledge-Gap Cluster (9758)</title>
+<script>
+  window.MathJax = { tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], processEscapes: true, tags:'none' }, svg:{fontCache:'global'} };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --green:#059669; --green-soft:#ecfdf5;
+    --cover:#f3f4f6; --accent:#6d28d9; --purple:#7c3aed; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:36px 24px 90px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h3,.label,.controls,button,.step-header,.hd .sub,.hd .meta,.cardhead,.conf,.src,.marks,.testline{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  .hd{border-bottom:2.5px solid #111;padding-bottom:16px;margin-bottom:10px;text-align:center}
+  .hd h1{font-size:1.55em;font-weight:800;letter-spacing:.4px;margin:0;border:none;padding:0;color:#111}
+  .hd .sub{font-size:1.02em;margin-top:4px;color:#333}
+  .hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:.8em;color:var(--muted);margin-top:9px}
+  h3{font-size:1.18em;margin:0 0 6px;color:#1f2937}
+  p{margin:8px 0}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--accent);padding:15px 20px;border-radius:6px;margin:18px 0}
+  .radians{background:#fff7ed;border:2px solid var(--amber);border-radius:8px;padding:13px 18px;margin:18px 0 8px;font-size:.98em;color:#7c2d12}
+  .radians b{color:#b91c1c;text-transform:uppercase;letter-spacing:.03em}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin:22px 0 20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;font-weight:500}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:30px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:8px;color:#111}
+  .toc a{color:var(--blue);text-decoration:none;display:inline-block;width:100%;line-height:1.95}
+  .toc a b{color:#111}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:24px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .cardhead{font-size:.72em;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+  .src{font-family:ui-monospace,Menlo,monospace;font-size:.72em;color:var(--amber);margin:3px 0 10px}
+  .stem{background:#1e293b;color:#f1f5f9;padding:14px 18px;border-radius:6px;margin:8px 0;line-height:1.7}
+  .stem .sub{display:block;margin-top:7px}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px}
+  .conf{background:#f8fafc;border:1px dashed #cbd5e1;border-radius:6px;padding:8px 14px;margin:12px 0 4px;font-size:.85em;color:#475569}
+  .conf b{color:#0f172a}
+  .block.answer{background:var(--green-soft);border-left:4px solid var(--green);border-radius:6px;position:relative;min-height:60px;padding:12px 16px 14px;margin:14px 0 2px}
+  .label{display:block;text-transform:uppercase;font-size:.73em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--green)}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.6);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.78em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .mk{display:inline-block;font-size:.8em;color:var(--green);font-weight:700;margin-left:4px}
+  .name{display:block;font-size:.86em;color:#475569;font-style:italic;margin:6px 0;border-left:2px solid var(--border);padding-left:10px}
+  .testline{margin-top:12px;padding-top:8px;border-top:1px dashed #a7f3d0;font-size:.8em;color:#047857}
+  .testline b{color:#065f46}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;z-index:2;text-align:center;padding:0 20px}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content{padding-right:60px}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  mjx-container{overflow-x:auto;overflow-y:hidden;max-width:100%}
+  @media print{body{background:#fff;padding:20px;max-width:100%}.controls,.reveal-btn{display:none!important}.answer-overlay{display:none!important}.card{box-shadow:none;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<div class="hd">
+  <h1>H2 MATHEMATICS</h1>
+  <div class="sub">Integration &times; Differentiation &mdash; Knowledge-Gap Cluster</div>
+  <div class="meta">9758 &middot; H2 &middot; Pure &middot; 11 questions &middot; <b>~2h &middot; 78 marks &middot; built from your 25 Jul redrill</b></div>
+</div>
+
+<div class="intro">
+This is the drill on <b>exactly where the 19-question redrill broke</b> &mdash; nothing else. Every question here is <b>fresh</b> and each one <b>fuses several of your gaps at once</b>, so clearing all eleven closes the whole set. The order is deliberately <b>shuffled</b> so nothing sits where it did in the main cluster. Attempt each cold, say your confidence out loud before you reveal, then self-mark against the worked solution &mdash; each mark tagged <span class="mk">(1)</span> where it is earned, every symbol named before it enters a formula. Don't peek at what a question is testing until the end-of-card line.
+</div>
+
+<div class="radians">
+<b>Set your calculator to radians.</b> &nbsp;Every \(\sin^{-1}\), \(\tan^{-1}\), \(\cot\) and every \(\pi\) here is in radians. Check the mode before you type any numeric answer.
+</div>
+
+<div class="controls"><button onclick="revealAll()">Reveal all</button><button onclick="hideAll()">Hide all</button></div>
+
+<div class="toc"><strong>The 11 questions</strong>
+<a href="#q1"><b>Q1</b> <span class="marks">[6]</span></a>
+<a href="#q2"><b>Q2</b> <span class="marks">[6]</span></a>
+<a href="#q3"><b>Q3</b> <span class="marks">[7]</span></a>
+<a href="#q4"><b>Q4</b> <span class="marks">[8]</span></a>
+<a href="#q5"><b>Q5</b> <span class="marks">[8]</span></a>
+<a href="#q6"><b>Q6</b> <span class="marks">[7]</span></a>
+<a href="#q7"><b>Q7</b> <span class="marks">[7]</span></a>
+<a href="#q8"><b>Q8</b> <span class="marks">[8]</span></a>
+<a href="#q9"><b>Q9</b> <span class="marks">[7]</span></a>
+<a href="#q10"><b>Q10</b> <span class="marks">[7]</span></a>
+<a href="#q11"><b>Q11</b> <span class="marks">[7]</span></a>
+</div>
+
+
+<!-- Q1 -->
+<div class="card" id="q1">
+  <div class="cardhead">Question 1 <span class="marks">[6]</span></div>
+  <div class="src">Gap drill &middot; fresh</div>
+  <div class="stem">
+    <span class="sub">(i) Differentiate \(\tan^{-1}(2x)\) with respect to \(x\). <span class="marks">[1]</span></span>
+    <span class="sub">(ii) Hence, or otherwise, find \(\displaystyle\int \tan^{-1}(2x)\,\mathrm dx\). <span class="marks">[3]</span></span>
+    <span class="sub">(iii) Find the exact value of \(\displaystyle\int_{0}^{1/2} \tan^{-1}(2x)\,\mathrm dx\). <span class="marks">[2]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) inverse-trig derivative, chain rule</div>
+        <span class="name">MF27: \(\frac{\mathrm d}{\mathrm du}\tan^{-1}u=\frac{1}{1+u^2}\), here \(u=2x\) so \(u'=2\).</span>
+        \[ \frac{\mathrm d}{\mathrm dx}\tan^{-1}(2x)=\frac{2}{1+4x^2}. \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) the inverse-trig is \(u\) in by parts; \(\mathrm dv=\mathrm dx\)</div>
+        <span class="name">A lone inverse-trig integrand is always integration by parts with the inverse function as \(u\) (you can only differentiate it, not integrate it) and \(\mathrm dv=\mathrm dx\), so \(v=x\).</span>
+        \[ \int \tan^{-1}(2x)\,\mathrm dx = x\tan^{-1}(2x)-\int x\cdot\frac{2}{1+4x^2}\,\mathrm dx. \]<span class="mk">(1)</span>
+        <span class="name">The remaining integral is \(\frac{f'}{f}\) form: \(\int\frac{2x}{1+4x^2}\,\mathrm dx=\frac14\int\frac{8x}{1+4x^2}\,\mathrm dx=\frac14\ln(1+4x^2)\).</span>
+        \[ = x\tan^{-1}(2x)-\frac14\ln(1+4x^2)+C. \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) apply the limits</div>
+        <span class="name">At \(x=\tfrac12\): \(\tan^{-1}1=\tfrac{\pi}{4}\) and \(1+4(\tfrac14)=2\). At \(x=0\) both terms vanish.</span>
+        \[ \Big[x\tan^{-1}(2x)-\tfrac14\ln(1+4x^2)\Big]_{0}^{1/2}=\Big(\tfrac12\cdot\tfrac{\pi}{4}-\tfrac14\ln 2\Big)-0=\frac{\pi}{8}-\frac{\ln 2}{4}. \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Closes:</b> the #1 gap &mdash; a lone inverse-trig integral is integration by parts with the inverse function as \(u\) and \(\mathrm dv=\mathrm dx\); the leftover resolves as \(\frac{f'}{f}\to\ln\).</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q2 -->
+<div class="card" id="q2">
+  <div class="cardhead">Question 2 <span class="marks">[6]</span></div>
+  <div class="src">Gap drill &middot; fresh</div>
+  <div class="stem">
+    <span class="sub">(a) Find \(\displaystyle\int x\big[(2-5x^2)^4+e^{1-x^2}\big]\,\mathrm dx\). <span class="marks">[3]</span></span>
+    <span class="sub">(b) Find \(\dfrac{\mathrm d}{\mathrm dx}\sin^{-1}(x^3)\). Hence find the exact value of \(\displaystyle\int_{0}^{1}\frac{x^2}{\sqrt{1-x^6}}\,\mathrm dx\). <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) reverse chain rule &mdash; balance with the reciprocal constant</div>
+        <span class="name">\(\int x(2-5x^2)^4\,\mathrm dx\): inside \(2-5x^2\) differentiates to \(-10x\); the integrand has only \(x\), so pull out \(-\tfrac1{10}\), raise the power, divide by 5. \(-\tfrac1{10}\cdot\tfrac15=-\tfrac1{50}\).</span>
+        <span class="name">\(\int xe^{1-x^2}\,\mathrm dx\): inside \(1-x^2\) differentiates to \(-2x\); pull out \(-\tfrac12\).</span>
+        \[ \int x\big[(2-5x^2)^4+e^{1-x^2}\big]\,\mathrm dx=-\frac{(2-5x^2)^5}{50}-\tfrac12 e^{1-x^2}+C. \]<span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b) differentiate the inverse-trig, then run it backwards</div>
+        <span class="name">MF27: \(\frac{\mathrm d}{\mathrm du}\sin^{-1}u=\frac{1}{\sqrt{1-u^2}}\) with \(u=x^3\), \(u'=3x^2\) &mdash; the derivative of the <em>inside</em> sits on top.</span>
+        \[ \frac{\mathrm d}{\mathrm dx}\sin^{-1}(x^3)=\frac{3x^2}{\sqrt{1-x^6}}. \]<span class="mk">(1)</span>
+        <span class="name">The integrand is \(\tfrac13\) of that derivative; \(\sin^{-1}1=\tfrac{\pi}{2}\).</span>
+        \[ \int_{0}^{1}\frac{x^2}{\sqrt{1-x^6}}\,\mathrm dx=\tfrac13\Big[\sin^{-1}(x^3)\Big]_{0}^{1}=\tfrac13\cdot\tfrac{\pi}{2}=\frac{\pi}{6}. \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Closes:</b> reverse-chain <em>constant balancing</em> (the recurring \(-\tfrac1{10}\) / \(-\tfrac1{50}\) slip) and the inverse-trig derivative where the numerator is the derivative of the inside, not \(1\).</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q3 -->
+<div class="card" id="q3">
+  <div class="cardhead">Question 3 <span class="marks">[7]</span></div>
+  <div class="src">Gap drill &middot; fresh</div>
+  <div class="stem">
+    The curve \(C\) has equation \(y=x^3 e^{-x}\).
+    <span class="sub">(i) Find the exact coordinates of the stationary points of \(C\). <span class="marks">[3]</span></span>
+    <span class="sub">(ii) Using the second derivative test, determine the nature of each stationary point. <span class="marks">[4]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) product rule, set \(\frac{\mathrm dy}{\mathrm dx}=0\)</div>
+        <span class="name">\(y=x^3e^{-x}\): product of \(x^3\) (derivative \(3x^2\)) and \(e^{-x}\) (derivative \(-e^{-x}\)).</span>
+        \[ \frac{\mathrm dy}{\mathrm dx}=3x^2e^{-x}-x^3e^{-x}=x^2e^{-x}(3-x). \]<span class="mk">(1)</span>
+        <span class="name">\(e^{-x}\neq0\), so \(x^2(3-x)=0\Rightarrow x=0\) or \(x=3\).</span>
+        \[ (0,0)\quad\text{and}\quad\big(3,\,27e^{-3}\big). \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) second derivative</div>
+        <span class="name">Differentiate \(\frac{\mathrm dy}{\mathrm dx}=e^{-x}(3x^2-x^3)\) by the product rule again.</span>
+        \[ \frac{\mathrm d^2y}{\mathrm dx^2}=-e^{-x}(3x^2-x^3)+e^{-x}(6x-3x^2)=e^{-x}\big(x^3-6x^2+6x\big). \]<span class="mk">(1)</span>
+        <span class="name">At \(x=3\): \(e^{-3}(27-54+18)=-9e^{-3}<0\).</span>
+        \[ \frac{\mathrm d^2y}{\mathrm dx^2}\Big|_{x=3}<0\Rightarrow (3,27e^{-3})\text{ is a maximum.} \]<span class="mk">(1)</span>
+        <span class="name">At \(x=0\): \(\frac{\mathrm d^2y}{\mathrm dx^2}=0\), so the test is inconclusive &mdash; fall back to the first derivative test. Near \(x=0\), \(\frac{\mathrm dy}{\mathrm dx}=x^2e^{-x}(3-x)\): \(x^2\ge0\) and \(3-x>0\), so \(\frac{\mathrm dy}{\mathrm dx}\ge0\) on both sides.</span>
+        \[ (0,0)\text{ is a stationary point of inflexion.} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Closes:</b> the second-derivative test end to end &mdash; including the trap where \(\frac{\mathrm d^2y}{\mathrm dx^2}=0\) forces you back to the first-derivative sign test.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q4 -->
+<div class="card" id="q4">
+  <div class="cardhead">Question 4 <span class="marks">[8]</span></div>
+  <div class="src">Gap drill &middot; fresh</div>
+  <div class="stem">
+    A curve \(C\) has parametric equations \(x=\cos^2\theta\), \(y=\theta+\tfrac12\sin 2\theta\), for \(0\le\theta\le\tfrac12\pi\).
+    <span class="sub">(i) Show that \(\dfrac{\mathrm dy}{\mathrm dx}=-\cot\theta\). <span class="marks">[3]</span></span>
+    <span class="sub">(ii) The normal to \(C\) at the point where \(\theta=\tfrac{\pi}{4}\) meets the \(x\)-axis at the point \(A\). Find the exact coordinates of \(A\). <span class="marks">[5]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) parametric differentiation, then simplify with double-angle identities</div>
+        <span class="name">\(x=\cos^2\theta\Rightarrow\frac{\mathrm dx}{\mathrm d\theta}=2\cos\theta(-\sin\theta)=-\sin 2\theta\). \(y=\theta+\tfrac12\sin 2\theta\Rightarrow\frac{\mathrm dy}{\mathrm d\theta}=1+\cos 2\theta\).</span>
+        \[ \frac{\mathrm dy}{\mathrm dx}=\frac{1+\cos 2\theta}{-\sin 2\theta}. \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">Use \(1+\cos 2\theta=2\cos^2\theta\) and \(\sin 2\theta=2\sin\theta\cos\theta\).</span>
+        \[ =\frac{2\cos^2\theta}{-2\sin\theta\cos\theta}=-\frac{\cos\theta}{\sin\theta}=-\cot\theta. \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) gradient of the normal = \(-1/(\text{gradient of tangent})\)</div>
+        <span class="name">At \(\theta=\tfrac{\pi}{4}\): tangent gradient \(=-\cot\tfrac{\pi}{4}=-1\), so normal gradient \(=-\frac{1}{-1}=1\).</span>
+        \[ m_{\text{normal}}=1. \]<span class="mk">(1)</span>
+        <span class="name">The point on \(C\) &mdash; state <em>both</em> coordinates: \(x=\cos^2\tfrac{\pi}{4}=\tfrac12\); \(y=\tfrac{\pi}{4}+\tfrac12\sin\tfrac{\pi}{2}=\tfrac{\pi}{4}+\tfrac12\).</span>
+        \[ \left(\tfrac12,\ \tfrac{\pi}{4}+\tfrac12\right). \]<span class="mk">(1)</span>
+        <span class="name">Normal: \(y-\big(\tfrac{\pi}{4}+\tfrac12\big)=1\big(x-\tfrac12\big)\). Meets the \(x\)-axis where \(y=0\).</span>
+        \[ 0-\big(\tfrac{\pi}{4}+\tfrac12\big)=x-\tfrac12\ \Rightarrow\ x=\tfrac12-\tfrac{\pi}{4}-\tfrac12=-\frac{\pi}{4}. \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ A=\left(-\frac{\pi}{4},\,0\right). \]<span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Closes:</b> parametric normal &mdash; normal gradient is \(-1/(\text{tangent gradient})\), a point means <em>both</em> \(x\) and \(y\), and the double-angle identities that collapse the gradient.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q5 -->
+<div class="card" id="q5">
+  <div class="cardhead">Question 5 <span class="marks">[8]</span></div>
+  <div class="src">Gap drill &middot; fresh</div>
+  <div class="stem">
+    A curve \(C\) has parametric equations \(x=2(\theta-\sin\theta)\), \(y=2(1-\cos\theta)\), for \(0\le\theta\le 2\pi\).
+    <span class="sub">(i) Show that \(\dfrac{\mathrm dy}{\mathrm dx}=\cot\tfrac{\theta}{2}\). <span class="marks">[3]</span></span>
+    <span class="sub">(ii) Find the exact area of the region bounded by \(C\) and the \(x\)-axis. <span class="marks">[5]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) half-angle identities</div>
+        <span class="name">\(\frac{\mathrm dx}{\mathrm d\theta}=2(1-\cos\theta)\), \(\frac{\mathrm dy}{\mathrm d\theta}=2\sin\theta\).</span>
+        \[ \frac{\mathrm dy}{\mathrm dx}=\frac{2\sin\theta}{2(1-\cos\theta)}=\frac{\sin\theta}{1-\cos\theta}. \]<span class="mk">(1)</span>
+        <span class="name">Use \(\sin\theta=2\sin\tfrac{\theta}{2}\cos\tfrac{\theta}{2}\) and \(1-\cos\theta=2\sin^2\tfrac{\theta}{2}\).</span>
+        \[ =\frac{2\sin\tfrac{\theta}{2}\cos\tfrac{\theta}{2}}{2\sin^2\tfrac{\theta}{2}}=\frac{\cos\tfrac{\theta}{2}}{\sin\tfrac{\theta}{2}}=\cot\tfrac{\theta}{2}. \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) parametric area &mdash; \(\int y\,\frac{\mathrm dx}{\mathrm d\theta}\,\mathrm d\theta\)</div>
+        <span class="name">For a curve given parametrically, area under it \(=\displaystyle\int y\,\frac{\mathrm dx}{\mathrm d\theta}\,\mathrm d\theta\): swap \(\mathrm dx\) for \(\frac{\mathrm dx}{\mathrm d\theta}\,\mathrm d\theta\) so everything is in \(\theta\). Limits \(\theta:0\to2\pi\).</span>
+        \[ \text{Area}=\int_{0}^{2\pi} 2(1-\cos\theta)\cdot 2(1-\cos\theta)\,\mathrm d\theta=4\int_{0}^{2\pi}(1-\cos\theta)^2\,\mathrm d\theta. \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">Expand and drop the square with \(\cos^2\theta=\tfrac12(1+\cos 2\theta)\): \((1-\cos\theta)^2=1-2\cos\theta+\cos^2\theta=\tfrac32-2\cos\theta+\tfrac12\cos 2\theta\).</span>
+        \[ 4\Big[\tfrac32\theta-2\sin\theta+\tfrac14\sin 2\theta\Big]_{0}^{2\pi}=4\big(3\pi\big)=12\pi\ \text{units}^2. \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Closes:</b> the parametric-area gap &mdash; \(\int y\,\frac{\mathrm dx}{\mathrm d\theta}\,\mathrm d\theta\) &mdash; plus \(1-\cos\theta=2\sin^2\tfrac{\theta}{2}\) and the \(\cos^2\) double angle you keep needing.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q6 -->
+<div class="card" id="q6">
+  <div class="cardhead">Question 6 <span class="marks">[7]</span></div>
+  <div class="src">Gap drill &middot; fresh</div>
+  <div class="stem">
+    A hemispherical bowl of radius \(6\) cm is modelled by rotating the lower half of the circle \(x^2+(y-6)^2=36\) about the \(y\)-axis. Water is poured in; the depth measured from the bottom of the bowl is \(h\) cm, where \(0\le h\le 6\).
+    <span class="sub">(i) Show, by integration, that the volume of water is \(V=\pi\!\left(6h^2-\tfrac13 h^3\right)\). <span class="marks">[4]</span></span>
+    <span class="sub">(ii) Water is poured in at a constant rate of \(4\) cm\(^3\)s\(^{-1}\). Find the exact rate at which the depth is increasing at the instant when \(h=3\). <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) volume of revolution about the \(y\)-axis: \(V=\pi\int x^2\,\mathrm dy\)</div>
+        <span class="name">Rotating about the \(y\)-axis makes \(x\) the radius of each disc, so integrate \(\pi x^2\) with respect to \(y\). From the circle, \(x^2=36-(y-6)^2\). Water fills from \(y=0\) up to \(y=h\).</span>
+        \[ V=\pi\int_{0}^{h}\big[36-(y-6)^2\big]\,\mathrm dy=\pi\Big[36y-\tfrac13(y-6)^3\Big]_{0}^{h}. \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">At \(y=0\): \(-\tfrac13(-6)^3=\tfrac{216}{3}=72\). Expand \((h-6)^3=h^3-18h^2+108h-216\).</span>
+        \[ V=\pi\Big[36h-\tfrac13(h-6)^3-72\Big]=\pi\Big[36h-\tfrac13 h^3+6h^2-36h+72-72\Big]=\pi\!\left(6h^2-\tfrac13 h^3\right). \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) connected rates: \(\frac{\mathrm dh}{\mathrm dt}=\frac{\mathrm dV}{\mathrm dt}\div\frac{\mathrm dV}{\mathrm dh}\)</div>
+        <span class="name">\(\frac{\mathrm dV}{\mathrm dt}=4\) (given, poured in); \(\frac{\mathrm dV}{\mathrm dh}=\pi(12h-h^2)\). Chain rule: \(\frac{\mathrm dV}{\mathrm dt}=\frac{\mathrm dV}{\mathrm dh}\cdot\frac{\mathrm dh}{\mathrm dt}\).</span>
+        \[ \frac{\mathrm dV}{\mathrm dh}=\pi\big(12h-h^2\big),\qquad \frac{\mathrm dh}{\mathrm dt}=\frac{4}{\pi(12h-h^2)}. \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">At \(h=3\): \(12(3)-3^2=27\).</span>
+        \[ \frac{\mathrm dh}{\mathrm dt}=\frac{4}{27\pi}\ \text{cm s}^{-1}. \]<span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Closes:</b> the bowl &mdash; prove a volume by rotating a curve about the \(y\)-axis (\(\pi\int x^2\,\mathrm dy\)), then feed \(\frac{\mathrm dV}{\mathrm dh}\) into a connected rate of change.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q7 -->
+<div class="card" id="q7">
+  <div class="cardhead">Question 7 <span class="marks">[7]</span></div>
+  <div class="src">Gap drill &middot; fresh</div>
+  <div class="stem">
+    <span class="sub">(i) Show that \(\dfrac{\mathrm d}{\mathrm dx}\ln\!\big(x+\sqrt{x^2+4}\,\big)=\dfrac{1}{\sqrt{x^2+4}}\). <span class="marks">[2]</span></span>
+    <span class="sub">(ii) The region \(R\) is bounded by the curve \(y=\dfrac{2}{\sqrt{x^2+4}}\), the \(x\)-axis, and the lines \(x=0\) and \(x=2\). Using the substitution \(x=2\tan\theta\), find the exact area of \(R\). <span class="marks">[5]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) differentiate the log to expose the integrand</div>
+        <span class="name">\(\frac{\mathrm d}{\mathrm dx}\ln f=\frac{f'}{f}\) with \(f=x+\sqrt{x^2+4}\), \(f'=1+\frac{x}{\sqrt{x^2+4}}=\frac{\sqrt{x^2+4}+x}{\sqrt{x^2+4}}\).</span>
+        \[ \frac{f'}{f}=\frac{\sqrt{x^2+4}+x}{\sqrt{x^2+4}}\cdot\frac{1}{x+\sqrt{x^2+4}}=\frac{1}{\sqrt{x^2+4}}. \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) the three substitutions: \(\mathrm dx\), the surd, the limits</div>
+        <span class="name">\(x=2\tan\theta\Rightarrow\frac{\mathrm dx}{\mathrm d\theta}=2\sec^2\theta\), so \(\mathrm dx=2\sec^2\theta\,\mathrm d\theta\). Surd: \(x^2+4=4\tan^2\theta+4=4\sec^2\theta\) (using \(1+\tan^2\theta=\sec^2\theta\)), so \(\sqrt{x^2+4}=2\sec\theta\). Limits: \(x=0\Rightarrow\theta=0\); \(x=2\Rightarrow\tan\theta=1\Rightarrow\theta=\tfrac{\pi}{4}\).</span>
+        \[ \text{Area}=\int_{0}^{2}\frac{2}{\sqrt{x^2+4}}\,\mathrm dx=\int_{0}^{\pi/4}\frac{2}{2\sec\theta}\cdot 2\sec^2\theta\,\mathrm d\theta=\int_{0}^{\pi/4}2\sec\theta\,\mathrm d\theta. \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">MF27: \(\int\sec\theta\,\mathrm d\theta=\ln|\sec\theta+\tan\theta|\). At \(\tfrac{\pi}{4}\): \(\sec\tfrac{\pi}{4}=\sqrt2\), \(\tan\tfrac{\pi}{4}=1\).</span>
+        \[ =2\Big[\ln|\sec\theta+\tan\theta|\Big]_{0}^{\pi/4}=2\big(\ln(\sqrt2+1)-\ln 1\big)=2\ln(1+\sqrt2)\ \text{units}^2. \]<span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Closes:</b> the \(x=a\tan\theta\) substitution done in full &mdash; change \(\mathrm dx\), collapse the surd with \(1+\tan^2\theta=\sec^2\theta\), and change the limits; plus differentiating a log to expose \(\frac{1}{\sqrt{x^2+a^2}}\).</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q8 -->
+<div class="card" id="q8">
+  <div class="cardhead">Question 8 <span class="marks">[8]</span></div>
+  <div class="src">Gap drill &middot; fresh</div>
+  <div class="stem">
+    <span class="sub">(a) Find \(\displaystyle\int x^2 e^{-3x}\,\mathrm dx\). <span class="marks">[4]</span></span>
+    <span class="sub">(b) Hence obtain a formula for \(\displaystyle\int_{0}^{n} x^2 e^{-3x}\,\mathrm dx\) in terms of \(n\), where \(n>0\). <span class="marks">[2]</span></span>
+    <span class="sub">(c) Deduce the exact value of \(\displaystyle\int_{0}^{\infty} x^2 e^{-3x}\,\mathrm dx\), given that \(n^k e^{-3n}\to 0\) as \(n\to\infty\). <span class="marks">[2]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) integration by parts twice</div>
+        <span class="name">\(u=x^2\) (simpler when differentiated), \(\mathrm dv=e^{-3x}\mathrm dx\Rightarrow v=-\tfrac13 e^{-3x}\).</span>
+        \[ \int x^2 e^{-3x}\,\mathrm dx=-\tfrac13 x^2 e^{-3x}+\tfrac23\int x e^{-3x}\,\mathrm dx. \]<span class="mk">(1)</span>
+        <span class="name">Again on \(\int x e^{-3x}\mathrm dx\): \(u=x\), \(\mathrm dv=e^{-3x}\mathrm dx\Rightarrow v=-\tfrac13 e^{-3x}\); \(\int xe^{-3x}=-\tfrac13 xe^{-3x}-\tfrac19 e^{-3x}\).</span>
+        \[ =-\tfrac13 x^2 e^{-3x}-\tfrac29 x e^{-3x}-\tfrac{2}{27}e^{-3x}+C=-\frac{e^{-3x}}{27}\big(9x^2+6x+2\big)+C. \]<span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b) apply the limits \(0\) to \(n\)</div>
+        <span class="name">At \(x=0\): \(-\tfrac{1}{27}(2)=-\tfrac{2}{27}\).</span>
+        \[ \int_{0}^{n} x^2 e^{-3x}\,\mathrm dx=\frac{2}{27}-\frac{e^{-3n}}{27}\big(9n^2+6n+2\big). \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(c) let \(n\to\infty\)</div>
+        <span class="name">Each \(n^k e^{-3n}\to0\), so the whole second term vanishes.</span>
+        \[ \int_{0}^{\infty} x^2 e^{-3x}\,\mathrm dx=\frac{2}{27}. \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Closes:</b> repeated by-parts building a formula in \(n\), then reading off the limit as \(n\to\infty\) &mdash; the Q13/Q14 pair collapsed into one.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q9 -->
+<div class="card" id="q9">
+  <div class="cardhead">Question 9 <span class="marks">[7]</span></div>
+  <div class="src">Gap drill &middot; fresh</div>
+  <div class="stem">
+    The integral is \(I=\displaystyle\int x\sqrt{2-x}\,\mathrm dx\).
+    <span class="sub">(i) Find \(I\) using integration by parts. <span class="marks">[3]</span></span>
+    <span class="sub">(ii) Find \(I\) using the substitution \(u^2=2-x\). <span class="marks">[3]</span></span>
+    <span class="sub">(iii) Show that your two answers differ only by a constant. <span class="marks">[1]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) choose \(u\) = the part that gets simpler when differentiated</div>
+        <span class="name">Both factors are algebraic, so the cardinal rule decides: take \(u=x\) (derivative \(1\), simpler) and \(\mathrm dv=(2-x)^{1/2}\mathrm dx\Rightarrow v=-\tfrac23(2-x)^{3/2}\).</span>
+        \[ I=-\tfrac23 x(2-x)^{3/2}+\tfrac23\int(2-x)^{3/2}\,\mathrm dx=-\tfrac23 x(2-x)^{3/2}-\tfrac{4}{15}(2-x)^{5/2}+C. \]<span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) substitution &mdash; change <em>everything</em> to \(u\)</div>
+        <span class="name">\(u^2=2-x\Rightarrow x=2-u^2\), \(\mathrm dx=-2u\,\mathrm du\), \(\sqrt{2-x}=u\). Replace \(x\), the surd <em>and</em> \(\mathrm dx\).</span>
+        \[ I=\int(2-u^2)(u)(-2u)\,\mathrm du=-2\int(2u^2-u^4)\,\mathrm du=-\tfrac43 u^3+\tfrac25 u^5+C. \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">Back-substitute \(u=(2-x)^{1/2}\).</span>
+        \[ I=-\tfrac43(2-x)^{3/2}+\tfrac25(2-x)^{5/2}+C. \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) reconcile</div>
+        <span class="name">Put \(t=(2-x)^{1/2}\), so \(x=2-t^2\), in the (i) answer: \(-\tfrac23(2-t^2)t^3-\tfrac{4}{15}t^5=-\tfrac43 t^3+\tfrac23 t^5-\tfrac{4}{15}t^5=-\tfrac43 t^3+\tfrac25 t^5\).</span>
+        \[ \text{Identical to (ii): the two antiderivatives differ by }0\text{, a constant.} \]<span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Closes:</b> choosing \(u\) by "simpler when differentiated", changing <em>every</em> \(x\) (including inside \(\mathrm dx\)) to \(u\), and reconciling two methods up to a constant.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q10 -->
+<div class="card" id="q10">
+  <div class="cardhead">Question 10 <span class="marks">[7]</span></div>
+  <div class="src">Gap drill &middot; fresh</div>
+  <div class="stem">
+    <span class="sub">(a) Express \(\dfrac{5x^2-5x+6}{(x-2)(x^2+4)}\) in partial fractions. <span class="marks">[3]</span></span>
+    <span class="sub">(b) Hence find \(\displaystyle\int \frac{5x^2-5x+6}{(x-2)(x^2+4)}\,\mathrm dx\). <span class="marks">[4]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) linear factor over an irreducible quadratic factor</div>
+        <span class="name">The quadratic \(x^2+4\) does not factorise, so its numerator is \(Bx+C\): \(\frac{5x^2-5x+6}{(x-2)(x^2+4)}=\frac{A}{x-2}+\frac{Bx+C}{x^2+4}\), i.e. \(5x^2-5x+6=A(x^2+4)+(Bx+C)(x-2)\).</span>
+        <span class="name">\(x=2\): \(20-10+6=16=8A\Rightarrow A=2\). Compare \(x^2\): \(5=A+B\Rightarrow B=3\). Compare constants: \(6=4A-2C\Rightarrow C=1\).</span>
+        \[ \frac{5x^2-5x+6}{(x-2)(x^2+4)}=\frac{2}{x-2}+\frac{3x+1}{x^2+4}. \]<span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b) split the quadratic piece into \(\frac{f'}{f}\) (log) + constant (arctan)</div>
+        <span class="name">\(\int\frac{2}{x-2}\mathrm dx=2\ln|x-2|\). Split \(\frac{3x+1}{x^2+4}=\frac{3x}{x^2+4}+\frac{1}{x^2+4}\): first is \(\frac32\cdot\frac{2x}{x^2+4}\to\frac32\ln(x^2+4)\); second is MF27 \(\int\frac{1}{x^2+a^2}\mathrm dx=\frac1a\tan^{-1}\frac{x}{a}\) with \(a=2\).</span>
+        \[ \int\frac{5x^2-5x+6}{(x-2)(x^2+4)}\,\mathrm dx=2\ln|x-2|+\tfrac32\ln(x^2+4)+\tfrac12\tan^{-1}\!\tfrac{x}{2}+C. \]<span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Closes:</b> partial fractions with an irreducible quadratic, then splitting \(\frac{3x+1}{x^2+4}\) into a \(\frac{f'}{f}\) log and an arctan standard form.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q11 -->
+<div class="card" id="q11">
+  <div class="cardhead">Question 11 <span class="marks">[7]</span></div>
+  <div class="src">Gap drill &middot; fresh</div>
+  <div class="stem">
+    The function \(f\) is given by \(f(x)=\dfrac{1}{\sqrt{4-x^2}}\), for \(-2<x<2\).
+    <span class="sub">(i) Write down \(\displaystyle\int f(x)\,\mathrm dx\). <span class="marks">[1]</span></span>
+    <span class="sub">(ii) Find the binomial expansion of \(f(x)\) up to and including the term in \(x^4\). <span class="marks">[3]</span></span>
+    <span class="sub">(iii) Hence find the Maclaurin series for \(\sin^{-1}\!\tfrac{x}{2}\) up to and including the term in \(x^5\). <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) MF27 standard form</div>
+        <span class="name">\(\int\frac{1}{\sqrt{a^2-x^2}}\mathrm dx=\sin^{-1}\frac{x}{a}\) with \(a=2\).</span>
+        \[ \int f(x)\,\mathrm dx=\sin^{-1}\!\tfrac{x}{2}+C. \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) factor out the constant first, then it is a clean \((1+u)^n\)</div>
+        <span class="name">You cannot expand \((4-x^2)^{-1/2}\) directly &mdash; factor the \(4\) out so the bracket starts with \(1\): \((4-x^2)^{-1/2}=\big[4(1-\tfrac{x^2}{4})\big]^{-1/2}=\tfrac12(1-\tfrac{x^2}{4})^{-1/2}\).</span>
+        <span class="name">Binomial \((1+u)^{-1/2}=1-\tfrac12 u+\tfrac38 u^2+\cdots\) with \(u=-\tfrac{x^2}{4}\): \(=1+\tfrac{x^2}{8}+\tfrac{3x^4}{128}+\cdots\).</span>
+        \[ f(x)=\tfrac12\Big(1+\tfrac{x^2}{8}+\tfrac{3x^4}{128}+\cdots\Big)=\tfrac12+\tfrac{x^2}{16}+\tfrac{3x^4}{256}+\cdots. \]<span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) integrate the series term by term</div>
+        <span class="name">From (i), \(\int f(x)\mathrm dx=\sin^{-1}\tfrac{x}{2}\); integrate the (ii) series and fix \(C=0\) since \(\sin^{-1}0=0\).</span>
+        \[ \sin^{-1}\!\tfrac{x}{2}=\int\Big(\tfrac12+\tfrac{x^2}{16}+\tfrac{3x^4}{256}\Big)\mathrm dx=\frac{x}{2}+\frac{x^3}{48}+\frac{3x^5}{1280}+\cdots. \]<span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Closes:</b> the "great question" &mdash; recognise \((1+u)^n\) only after <em>factoring out the constant</em>, then build a Maclaurin series by integrating a known standard integral term by term.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<hr>
+<p style="color:var(--muted);font-size:.9em">Eleven questions, ~78 marks, roughly two hours cold. Every one is fresh and fuses several of the exact joins that broke in the redrill &mdash; the inverse-trig by-parts hinge, the reverse-chain constant, the second-derivative test, the parametric normal and parametric area, the bowl volume-into-rate, the \(x=a\tan\theta\) substitution, repeated by-parts to a formula, IBP-vs-substitution, the irreducible-quadratic partial fraction, and the factor-first binomial. Attempt them cold on Loom, say your confidence out loud on each, then self-mark. Paste me that transcript and I'll close whatever is still open.</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn=>{btn.addEventListener('click',function(){const b=this.parentElement,o=b.querySelector('.answer-overlay');if(o.classList.contains('hidden')){o.classList.remove('hidden');this.textContent='Reveal solution';this.classList.remove('hide-state');}else{o.classList.add('hidden');this.textContent='Hide';this.classList.add('hide-state');}});});
+  function revealAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.add('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Hide';b.classList.add('hide-state');});}
+  function hideAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.remove('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Reveal solution';b.classList.remove('hide-state');});}
+</script>
+</body>
+</html>

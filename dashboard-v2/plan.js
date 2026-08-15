@@ -1604,9 +1604,18 @@ window.PLAN = {
      "subject": "maths",
      "name": "Maths — Integration + Differentiation CLUSTER (hard · 19Q · 163m · full LO coverage)",
      "desc": "Hard fused Int×Diff, real HCI/A-Level Qs, hidden answers, confidence line per stem. Drill it, then tell me your gaps.",
+     "done": true,
+     "doneDate": "2026-07-25",
+     "clusterHref": "clusters/cluster_math_intdiff.html"
+    },
+    {
+     "mins": 120,
+     "subject": "maths",
+     "name": "Maths — Int×Diff KNOWLEDGE-GAP CLUSTER (11Q · 78m · from your redrill)",
+     "desc": "Drill on exactly where the 19Q redrill broke: inverse-trig by parts, reverse-chain constant, 2nd-derivative test, parametric normal + area, bowl volume→rate, x=2tanθ sub, repeated IBP formula, IBP-vs-sub, irreducible-quadratic partial fraction, factor-first binomial. Fused, shuffled, hidden answers.",
      "done": false,
      "doneDate": null,
-     "clusterHref": "clusters/cluster_math_intdiff.html"
+     "clusterHref": "clusters/gap_math_intdiff.html"
     },
     {
      "mins": 30,
