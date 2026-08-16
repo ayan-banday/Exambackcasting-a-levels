@@ -1823,8 +1823,8 @@ window.PLAN = {
      "subject": "maths",
      "name": "Maths — Vectors C1–C3 FULL-COVERAGE DRILL (15Q · 139m · all LOs)",
      "desc": "Real A-Level / HCI tutorial / prelim / promo questions only, verbatim school answers. Interleaved (not grouped by cluster) so method selection is part of the test — point-to-line vs point-to-plane, which distance formula, which product. Targets the logged C1–C2 gaps: plane⊥line→normal, simplifying a normal, foot-of-perp line-vs-plane, line-of-intersection, normal from 3 points.",
-     "done": false,
-     "doneDate": null,
+     "done": true,
+     "doneDate": "2026-08-16",
      "clusterHref": "clusters/drill_vectors_C1_C3.html"
     },
     {
@@ -1841,9 +1841,18 @@ window.PLAN = {
      "subject": "maths",
      "name": "Maths — Vectors C3 GAP CLUSTER (7Q · 27m · plane equations)",
      "desc": "From the 16 Aug Cluster-3 transcript. Closes three interlocking gaps: what the vector equation of a plane IS (r·n=d), parametric vs scalar-product vs Cartesian, and — Priority 1, third appearance — 'perpendicular to plane Π' means Π's normal is a DIRECTION in your plane, not your normal. Real A-Level/prelim questions, same recognition in four different shapes.",
+     "done": true,
+     "doneDate": "2026-08-16",
+     "clusterHref": "clusters/gap_vectors_c3.html"
+    },
+    {
+     "mins": 100,
+     "subject": "maths",
+     "name": "Maths — Vectors C1–C3 DRILL GAP CLUSTER (8Q · 66m)",
+     "desc": "From the 16 Aug 15-question drill. Priority 1: cross=0 → parallel vs dot=0 → perpendicular, and line ⊥ plane means direction ∥ normal (you tried to dot them). Also: parallel ⇒ scalar multiple, projection formulas, triangle-area vertex choice, discriminant argument, Cartesian sign traps. Sourced from supplementary + applied + 2016/2020 papers.",
      "done": false,
      "doneDate": null,
-     "clusterHref": "clusters/gap_vectors_c3.html"
+     "clusterHref": "clusters/gap_vectors_c1c3_drill.html"
     }
    ],
    "week": 4

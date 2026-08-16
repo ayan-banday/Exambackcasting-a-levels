@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vectors — C1–C3 Drill Gap Cluster (9758)</title>
+<script>
+  window.MathJax = { tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], processEscapes: true, tags:'none' }, svg:{fontCache:'global'} };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --amber:#d97706; --green:#059669; --green-soft:#ecfdf5;
+    --cover:#f3f4f6; --accent:#6d28d9; --red:#dc2626; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:36px 24px 90px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h3,.label,.controls,button,.step-header,.hd .sub,.hd .meta,.cardhead,.conf,.src,.marks,.testline{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  .hd{border-bottom:2.5px solid #111;padding-bottom:16px;margin-bottom:10px;text-align:center}
+  .hd h1{font-size:1.55em;font-weight:800;letter-spacing:.4px;margin:0;color:#111}
+  .hd .sub{font-size:1.02em;margin-top:4px;color:#333}
+  .hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:.8em;color:var(--muted);margin-top:9px}
+  p{margin:8px 0}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--accent);padding:15px 20px;border-radius:6px;margin:18px 0}
+  .conv{background:#fff7ed;border:2px solid var(--amber);border-radius:8px;padding:13px 18px;margin:18px 0 8px;font-size:.95em;color:#7c2d12}
+  .conv b{color:#b91c1c}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin:22px 0 20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;font-weight:500}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:30px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:8px;color:#111}
+  .toc a{color:var(--blue);text-decoration:none;display:inline-block;width:31%;min-width:120px;line-height:2}
+  .toc a b{color:#111}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:24px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .cardhead{font-size:.72em;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+  .src{font-family:ui-monospace,Menlo,monospace;font-size:.72em;color:var(--amber);margin:3px 0 10px}
+  .stem{background:#1e293b;color:#f1f5f9;padding:14px 18px;border-radius:6px;margin:8px 0;line-height:1.75}
+  .stem .sub{display:block;margin-top:8px}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px}
+  .conf{background:#f8fafc;border:1px dashed #cbd5e1;border-radius:6px;padding:8px 14px;margin:12px 0 4px;font-size:.85em;color:#475569}
+  .conf b{color:#0f172a}
+  .block.answer{background:var(--green-soft);border-left:4px solid var(--green);border-radius:6px;position:relative;min-height:60px;padding:12px 16px 14px;margin:14px 0 2px}
+  .label{display:block;text-transform:uppercase;font-size:.73em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--green)}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.6);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.78em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .mk{display:inline-block;font-size:.8em;color:var(--green);font-weight:700;margin-left:4px}
+  .name{display:block;font-size:.86em;color:#475569;font-style:italic;margin:6px 0;border-left:2px solid var(--border);padding-left:10px}
+  .keynote{background:#fef2f2;border-left:3px solid var(--red);padding:7px 12px;border-radius:4px;margin:9px 0 0;font-size:.87em;color:#7f1d1d}
+  .keynote b{color:var(--red)}
+  .testline{margin-top:12px;padding-top:8px;border-top:1px dashed #a7f3d0;font-size:.8em;color:#047857}
+  .testline b{color:#065f46}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;z-index:2;text-align:center;padding:0 20px}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content{padding-right:60px}
+  table{border-collapse:collapse;margin:11px 0;font-size:.88em;width:100%}
+  th,td{border:1px solid #e5e7eb;padding:5px 9px;text-align:left;vertical-align:top}
+  th{background:#f3f4f6;font-weight:600;font-family:-apple-system,sans-serif}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  mjx-container{overflow-x:auto;overflow-y:hidden;max-width:100%}
+  @media print{body{background:#fff;padding:20px;max-width:100%}.controls,.reveal-btn{display:none!important}.answer-overlay{display:none!important}.card{box-shadow:none;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<div class="hd">
+  <h1>H2 MATHEMATICS</h1>
+  <div class="sub">Vectors &mdash; Gap Cluster from the C1&ndash;C3 Full-Coverage Drill</div>
+  <div class="meta">9758 &middot; 8 questions &middot; <b>66 marks &middot; ~1h40 &middot; built from your 16 Aug 15-question drill</b></div>
+</div>
+
+<div class="intro">
+Built entirely from what broke in the 15-question drill. Per your instruction, every stem here comes from the <b>supplementary exercises and applied/prelim questions</b> rather than the plain tutorial set, and the two headline questions are from <b>2016 and 2020 papers</b> &mdash; the harder recent style you asked to prioritise. Each question fuses two or three of your gaps, and no question repeats a stem you have already seen. Attempt cold, say your confidence out loud, then self-mark.
+</div>
+
+<div class="conv">
+<b>The one thing this cluster exists for.</b> Twice in the drill you reached for the wrong product to test a relationship: on \( \mathbf a\times\mathbf b=\mathbf 0 \) you first said <em>"A and B are perpendicular"</em>, and on "show \(l\) is perpendicular to \(p\)" you tried to <b>dot</b> the direction with the normal (<em>"That's not working. Wait, I'm confused."</em>). Same root cause both times. Q1, Q2 and Q6 attack it from three directions.
+</div>
+
+<div class="controls"><button onclick="revealAll()">Reveal all</button><button onclick="hideAll()">Hide all</button></div>
+
+<div class="toc"><strong>The 8 questions &middot; 66 marks</strong>
+<a href="#q1"><b>Q1</b> <span class="marks">[9]</span></a><a href="#q2"><b>Q2</b> <span class="marks">[6]</span></a><a href="#q3"><b>Q3</b> <span class="marks">[6]</span></a>
+<a href="#q4"><b>Q4</b> <span class="marks">[10]</span></a><a href="#q5"><b>Q5</b> <span class="marks">[10]</span></a><a href="#q6"><b>Q6</b> <span class="marks">[8]</span></a>
+<a href="#q7"><b>Q7</b> <span class="marks">[9]</span></a><a href="#q8"><b>Q8</b> <span class="marks">[8]</span></a>
+</div>
+
+
+<!-- Q1 -->
+<div class="card" id="q1">
+  <div class="cardhead">Question 1 <span class="marks">[9]</span></div>
+  <div class="src">A-Level N2020 P1 Q5</div>
+  <div class="stem">
+    <span class="sub">(a) Given that \( \mathbf a \) and \( \mathbf b \) are non-zero vectors such that \( \mathbf a\times\mathbf b=\mathbf b\times\mathbf a \), find the relationship between \( \mathbf a \) and \( \mathbf b \). <span class="marks">[2]</span></span>
+    <span class="sub">(b) The points \(P\), \(Q\) and \(R\) have position vectors \( \mathbf p \), \( \mathbf q \) and \( \mathbf r \) respectively. The points \(P\) and \(Q\) are fixed and \(R\) varies.</span>
+    <span class="sub">&nbsp;&nbsp;(i) Given that \( \mathbf q \) is non-zero and \( (\mathbf r-\mathbf p)\times\mathbf q=\mathbf 0 \), describe geometrically the set of all possible positions of the point \(R\). <span class="marks">[3]</span></span>
+    <span class="sub">&nbsp;&nbsp;(ii) Given instead that \( \mathbf r=\begin{pmatrix}x\\y\\z\end{pmatrix} \), \( \mathbf p=\begin{pmatrix}-1\\2\\4\end{pmatrix} \), \( \mathbf q=\begin{pmatrix}3\\-5\\2\end{pmatrix} \) and that \( (\mathbf r-\mathbf p)\cdot\mathbf q=0 \), find the relationship between \(x\), \(y\) and \(z\). Describe the set of all possible positions of \(R\) in this case. <span class="marks">[4]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) use anti-commutativity to collapse it</div>
+        <span class="name">\( \mathbf b\times\mathbf a=-(\mathbf a\times\mathbf b) \), so the given equation says \( \mathbf a\times\mathbf b=-(\mathbf a\times\mathbf b) \).</span>
+        \[ 2(\mathbf a\times\mathbf b)=\mathbf 0\ \Rightarrow\ \mathbf a\times\mathbf b=\mathbf 0 \]<span class="mk">(1)</span>
+        <span class="name">Both are non-zero, so the only remaining possibility is that they are parallel.</span>
+        \[ \mathbf a\ \text{is parallel to}\ \mathbf b,\ \text{i.e.}\ \mathbf a=\lambda\mathbf b\ \text{for some }\lambda\in\mathbb R \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b)(i) CROSS product zero \( \Rightarrow \) parallel \( \Rightarrow \) a LINE</div>
+        <span class="name">\( (\mathbf r-\mathbf p)\times\mathbf q=\mathbf 0 \) means \( \overrightarrow{PR} \) is parallel to \( \mathbf q \). Make \( \mathbf r \) the subject, since a geometrical description is wanted.</span>
+        \[ \mathbf r-\mathbf p=\lambda\mathbf q\ \Rightarrow\ \mathbf r=\mathbf p+\lambda\mathbf q,\quad\lambda\in\mathbb R \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ R\ \text{traces the \textbf{line} through }P\text{ parallel to }\mathbf q. \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b)(ii) DOT product zero \( \Rightarrow \) perpendicular \( \Rightarrow \) a PLANE</div>
+        <span class="name">Note this zero is the <b>scalar</b> \(0\), not the zero vector — a dot product returns a number.</span>
+        \[ \begin{pmatrix}x+1\\y-2\\z-4\end{pmatrix}\cdot\begin{pmatrix}3\\-5\\2\end{pmatrix}=0\ \Rightarrow\ 3x+3-5y+10+2z-8=0 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ 3x-5y+2z=-5 \]<span class="mk">(1)</span>
+        \[ R\ \text{traces the \textbf{plane} through }P(-1,2,4)\ \text{with normal}\ \begin{pmatrix}3\\-5\\2\end{pmatrix}. \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>This is the question your whole drill needed.</b> Same equation shape, one symbol different, two completely different objects:<br>
+      \( (\mathbf r-\mathbf p)\boldsymbol\times\mathbf q=\mathbf 0 \) &nbsp;⟹&nbsp; \( \overrightarrow{PR}\ \boldsymbol\parallel\ \mathbf q \) &nbsp;⟹&nbsp; a <b>LINE</b>.<br>
+      \( (\mathbf r-\mathbf p)\boldsymbol\cdot\mathbf q=0 \) &nbsp;⟹&nbsp; \( \overrightarrow{PR}\ \boldsymbol\perp\ \mathbf q \) &nbsp;⟹&nbsp; a <b>PLANE</b>.<br>
+      <b>Cross zero = parallel. Dot zero = perpendicular.</b> Also note \( \mathbf r\cdot\mathbf n=d \) written out <em>is</em> the Cartesian equation of a plane — that is why (ii) lands on \(3x-5y+2z=-5\).</div>
+      <div class="testline"><b>Tests:</b> anti-commutativity of the vector product; and the contrast between a zero vector product (parallel, a line) and a zero scalar product (perpendicular, a plane), stated as geometrical descriptions.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q2 -->
+<div class="card" id="q2">
+  <div class="cardhead">Question 2 <span class="marks">[6]</span></div>
+  <div class="src">MJC 2010 Prelim P2 Q2 &middot; HCI Supplementary Q22</div>
+  <div class="stem">
+    Three non-zero and non-parallel vectors \( \mathbf p \), \( \mathbf q \) and \( \mathbf r \) are such that \( \mathbf p\times\mathbf q=3\,\mathbf p\times\mathbf r \).
+    <span class="sub">(i) Show that \( \mathbf q-3\mathbf r=\lambda\mathbf p \), where \( \lambda \) is a scalar. <span class="marks">[2]</span></span>
+    <span class="sub">(ii) It is also given that \( \mathbf p \) is a unit vector, \( |\mathbf q|=5 \), \( |\mathbf r|=2 \), and the angle between \( \mathbf q \) and \( \mathbf r \) is \( \cos^{-1}\!\left(\tfrac56\right) \). By considering \( (\mathbf q-3\mathbf r)\cdot(\mathbf q-3\mathbf r) \), find the exact values of \( \lambda \). <span class="marks">[4]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) collect on one side and factor out \( \mathbf p \)</div>
+        \[ \mathbf p\times\mathbf q-3\,\mathbf p\times\mathbf r=\mathbf 0\ \Rightarrow\ \mathbf p\times(\mathbf q-3\mathbf r)=\mathbf 0 \]<span class="mk">(1)</span>
+        <span class="name">A zero vector product means a magnitude is zero or the vectors are parallel. \( \mathbf p\neq\mathbf 0 \), so either \( \mathbf q-3\mathbf r=\mathbf 0 \) or \( \mathbf p\parallel(\mathbf q-3\mathbf r) \) — both are covered by writing it as a scalar multiple.</span>
+        \[ \therefore\ \mathbf q-3\mathbf r=\lambda\mathbf p,\quad\lambda\in\mathbb R\ \text{(shown)} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) dot the relation with ITSELF to turn vectors into magnitudes</div>
+        <span class="name">\( \mathbf q\cdot\mathbf r=|\mathbf q||\mathbf r|\cos\theta=(5)(2)\left(\tfrac56\right)=\tfrac{25}{3} \).</span>
+        \[ (\mathbf q-3\mathbf r)\cdot(\mathbf q-3\mathbf r)=|\mathbf q|^2-6\,\mathbf q\cdot\mathbf r+9|\mathbf r|^2 \]<span class="mk">(1)</span>
+        \[ =25-6\left(\tfrac{25}{3}\right)+9(4)=25-50+36=11 \]<span class="mk">(1)</span>
+        <span class="name">The left side also equals \( (\lambda\mathbf p)\cdot(\lambda\mathbf p)=\lambda^2|\mathbf p|^2=\lambda^2 \), since \( \mathbf p \) is a unit vector.</span>
+        \[ \lambda^2=11\ \Rightarrow\ \lambda=\pm\sqrt{11} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>The move you reached for the wrong way round.</b> In the drill you tried to prove "parallel" by <em>crossing</em> the two sides. The productive direction is the reverse: <b>"parallel" is your licence to write one as a scalar multiple of the other</b> — and once you have \( \mathbf q-3\mathbf r=\lambda\mathbf p \), <b>dotting with itself</b> converts an unusable vector equation into a scalar one. Remember \( \mathbf v\cdot\mathbf v=|\mathbf v|^2 \).</div>
+      <div class="testline"><b>Tests:</b> zero vector product implies parallel implies scalar multiple; expanding a self scalar product; extracting an unknown scalar from magnitudes and an angle.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q3 -->
+<div class="card" id="q3">
+  <div class="cardhead">Question 3 <span class="marks">[6]</span></div>
+  <div class="src">NJC 2009 Prelim P1 Q3 &middot; HCI Supplementary Q4</div>
+  <div class="stem">
+    The points \(A\), \(B\) and \(C\) have position vectors \( 3\mathbf i-\mathbf j \), \( 5\mathbf i+2\mathbf j+\mathbf k \) and \( 7\mathbf i+2\mathbf j-\mathbf k \) respectively.
+    <span class="sub">(i) Calculate the exact area of the triangle \(ABC\). <span class="marks">[2]</span></span>
+    <span class="sub">The point \(N\) is on \(CB\) produced such that \( BN:BC=\lambda:1 \).</span>
+    <span class="sub">(ii) Find \( \overrightarrow{AN} \) and determine the value of \( \lambda \) such that \( AN \) is perpendicular to \( BC \). <span class="marks">[4]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) both vectors must start at the SAME vertex of THAT triangle</div>
+        <span class="name">For triangle \(ABC\), use \( \overrightarrow{AB} \) and \( \overrightarrow{AC} \) — both from \(A\).</span>
+        \[ \overrightarrow{AB}=\begin{pmatrix}2\\3\\1\end{pmatrix},\qquad \overrightarrow{AC}=\begin{pmatrix}4\\3\\-1\end{pmatrix} \]
+        \[ \overrightarrow{AB}\times\overrightarrow{AC}=\begin{pmatrix}-6\\6\\-6\end{pmatrix}=-6\begin{pmatrix}1\\-1\\1\end{pmatrix} \]<span class="mk">(1)</span>
+        \[ \text{Area}=\tfrac12\left|\overrightarrow{AB}\times\overrightarrow{AC}\right|=\tfrac12(6\sqrt3)=3\sqrt3\ \text{units}^2 \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) "on \(CB\) produced" fixes the direction of travel</div>
+        <span class="name">\(N\) lies beyond \(B\) on the ray from \(C\) through \(B\), so step from \(B\) in the direction \( \overrightarrow{CB} \): \( \overrightarrow{BN}=\lambda\,\overrightarrow{CB}=\lambda(-2,0,2) \).</span>
+        \[ \overrightarrow{ON}=\begin{pmatrix}5\\2\\1\end{pmatrix}+\lambda\begin{pmatrix}-2\\0\\2\end{pmatrix};\qquad \overrightarrow{AN}=\begin{pmatrix}2-2\lambda\\3\\1+2\lambda\end{pmatrix} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">Perpendicular means the <b>dot</b> product with \( \overrightarrow{BC}=(2,0,-2) \) is zero.</span>
+        \[ 2(2-2\lambda)+0-2(1+2\lambda)=0\ \Rightarrow\ 2-8\lambda=0 \]<span class="mk">(1)</span>
+        \[ \lambda=\tfrac14 \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Your Q1 slip, fixed.</b> In the drill you started the area of triangle \(OAC\) using a vector involving \(B\) — <em>"there ain't no B there, that's my first mistake."</em> Rule: for triangle \(XYZ\) use \( \overrightarrow{XY} \) and \( \overrightarrow{XZ} \) — <b>only vertices of that triangle, both from the same one</b>. And note the two products doing different jobs in one question: <b>cross</b> for the area, <b>dot</b> for the perpendicularity.</div>
+      <div class="testline"><b>Tests:</b> exact area of a triangle from the correct pair of vectors; "produced" direction convention; perpendicularity by scalar product to find a parameter.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q4 -->
+<div class="card" id="q4">
+  <div class="cardhead">Question 4 <span class="marks">[10]</span></div>
+  <div class="src">AJC 2010 Prelim P1 Q13 &middot; HCI Supplementary Q21</div>
+  <div class="stem">
+    The plane \( \pi_1 \) and the line \(l\) are given by \( \pi_1:\ \mathbf r\cdot\begin{pmatrix}2\\1\\-2\end{pmatrix}=6 \) and \( l:\ \dfrac{x-1}{3}=\dfrac{y+4}{2}=z-5 \). The point \(A\) has position vector \( 3\mathbf i-\mathbf j+4\mathbf k \).
+    <span class="sub">(i) Find the distance between the point \(A\) and the plane \( \pi_1 \). <span class="marks">[2]</span></span>
+    <span class="sub">(ii) \(B\) is another point such that \( \overrightarrow{AB}=-5\mathbf j-2\mathbf k \). Find the length of projection of \( \overrightarrow{AB} \) onto the plane \( \pi_1 \). <span class="marks">[2]</span></span>
+    <span class="sub">(iii) Using your answers to (i) and (ii), find the area of triangle \(ABC\), where \(C\) is the reflection of \(A\) in the plane \( \pi_1 \). <span class="marks">[2]</span></span>
+    <span class="sub">(iv) Find the equation of the plane \( \pi_2 \) which contains the line \(l\) and the origin. Hence find the line of intersection of the planes \( \pi_1 \) and \( \pi_2 \). <span class="marks">[4]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) point to plane &mdash; DOT with the unit normal</div>
+        <span class="name">\( \mathbf n=(2,1,-2) \), \( |\mathbf n|=3 \), plane constant \(d=6\).</span>
+        \[ \text{distance}=\frac{\left|\mathbf a\cdot\mathbf n-d\right|}{|\mathbf n|}=\frac{|6-1-8-6|}{3}=\frac{9}{3}=3\ \text{units} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) length of projection onto a PLANE &mdash; CROSS with the unit normal</div>
+        <span class="name">Projecting <em>onto the plane</em> keeps the component perpendicular to \( \mathbf n \), which is exactly \( \left|\overrightarrow{AB}\times\hat{\mathbf n}\right| \).</span>
+        \[ \overrightarrow{AB}\times\mathbf n=\begin{pmatrix}0\\-5\\-2\end{pmatrix}\times\begin{pmatrix}2\\1\\-2\end{pmatrix}=\begin{pmatrix}12\\-4\\10\end{pmatrix} \]<span class="mk">(1)</span>
+        \[ \text{length}=\frac{\left|(12,-4,10)\right|}{3}=\frac{\sqrt{260}}{3}=\frac{2\sqrt{65}}{3}\ \text{units} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) put the two answers together</div>
+        <span class="name">\(C\) is the mirror image of \(A\), so \( AC=2\times3=6 \) and \( \overrightarrow{AC} \) is along \( \mathbf n \). Taking \(AC\) as the base, the height is the part of \( \overrightarrow{AB} \) perpendicular to \( \mathbf n \) — which is the answer to (ii).</span>
+        \[ \text{Area}=\tfrac12\times AC\times\left(\text{projection of }\overrightarrow{AB}\text{ on }\pi_1\right)=\tfrac12(6)\left(\tfrac{2\sqrt{65}}{3}\right)=2\sqrt{65}\ \text{units}^2 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iv) plane through a line and the origin; then the two planes meet</div>
+        <span class="name">\(l\) has point \( (1,-4,5) \) and direction \( (3,2,1) \). The plane also contains \(O\), so \( (1,-4,5) \) itself is a second in-plane direction.</span>
+        \[ \mathbf n_2=\begin{pmatrix}3\\2\\1\end{pmatrix}\times\begin{pmatrix}1\\-4\\5\end{pmatrix}=\begin{pmatrix}14\\-14\\-14\end{pmatrix}=14\begin{pmatrix}1\\-1\\-1\end{pmatrix} \]<span class="mk">(1)</span>
+        \[ \pi_2:\ \mathbf r\cdot\begin{pmatrix}1\\-1\\-1\end{pmatrix}=0\quad\text{(through the origin, so }d=0) \]<span class="mk">(1)</span>
+        <span class="name">Line of intersection: direction \( =\mathbf n_1\times\mathbf n_2 \); a point satisfying both, by inspection, is \( (2,2,0) \).</span>
+        \[ \mathbf n_1\times\mathbf n_2=\begin{pmatrix}2\\1\\-2\end{pmatrix}\times\begin{pmatrix}1\\-1\\-1\end{pmatrix}=\begin{pmatrix}-3\\0\\-3\end{pmatrix}=-3\begin{pmatrix}1\\0\\1\end{pmatrix} \]<span class="mk">(1)</span>
+        \[ \mathbf r=\begin{pmatrix}2\\2\\0\end{pmatrix}+\lambda\begin{pmatrix}1\\0\\1\end{pmatrix},\quad\lambda\in\mathbb R \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Projection onto a LINE vs onto a PLANE.</b> Onto a line (or a normal) you <b>dot</b>: \( \left|\overrightarrow{AB}\cdot\hat{\mathbf d}\right| \). Onto a <b>plane</b> you <b>cross with the normal</b>: \( \left|\overrightarrow{AB}\times\hat{\mathbf n}\right| \) — because you want what survives after removing the normal component. You said in the drill <em>"I forgot the projection factor"</em>; this is the harder half of it.</div>
+      <div class="testline"><b>Tests:</b> point-to-plane distance; length of projection onto a plane; combining both into an area via reflection; and building a plane from a line and the origin, then intersecting two planes.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q5 -->
+<div class="card" id="q5">
+  <div class="cardhead">Question 5 <span class="marks">[10]</span></div>
+  <div class="src">ACJC 2009 Prelim P1 Q12 &middot; HCI Supplementary Q13</div>
+  <div class="stem">
+    The coordinates of the points \(A\) and \(B\) are \( (-1,2,4) \) and \( (0,-2,5) \) respectively. The equations of two planes \(p_1\) and \(p_2\) are \( x+y+z=7 \) and \( x-y+az=1 \) respectively, where \(a\) is a constant.
+    <span class="sub">(i) Find the position vector of the foot of perpendicular from the point \(A\) to the plane \(p_1\). <span class="marks">[4]</span></span>
+    <span class="sub">(ii) The two planes \(p_1\) and \(p_2\) intersect at the line \(l\). Verify that the point with coordinates \( (4,3,0) \) is a common point on the planes \(p_1\) and \(p_2\), and hence find the equation of the line \(l\). <span class="marks">[3]</span></span>
+    <span class="sub">(iii) If the length of projection of the line segment \(AB\) on the line \(l\) is \( \dfrac{1}{\sqrt6} \) units, find the values of \(a\). <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) foot of perpendicular to a PLANE &mdash; travel from \(A\) along the normal</div>
+        <span class="name">\( \mathbf n=(1,1,1) \). Write the foot as \( \overrightarrow{OF}=\overrightarrow{OA}+t\mathbf n \), then <b>substitute into the plane</b>.</span>
+        \[ \overrightarrow{OF}=\begin{pmatrix}-1+t\\2+t\\4+t\end{pmatrix};\qquad (-1+t)+(2+t)+(4+t)=7 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ 5+3t=7\ \Rightarrow\ t=\tfrac23 \]<span class="mk">(1)</span>
+        \[ \overrightarrow{OF}=\tfrac13\begin{pmatrix}-1\\8\\14\end{pmatrix} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) verify, then direction by cross product</div>
+        <span class="name">\( (4,3,0) \): \( 4+3+0=7 \) ✓ and \( 4-3+0=1 \) ✓ (true for every \(a\)), so it lies on both.</span><span class="mk">(1)</span>
+        \[ \mathbf d=\begin{pmatrix}1\\1\\1\end{pmatrix}\times\begin{pmatrix}1\\-1\\a\end{pmatrix}=\begin{pmatrix}a+1\\1-a\\-2\end{pmatrix} \]<span class="mk">(1)</span>
+        \[ l:\ \mathbf r=\begin{pmatrix}4\\3\\0\end{pmatrix}+\lambda\begin{pmatrix}1+a\\1-a\\-2\end{pmatrix},\quad\lambda\in\mathbb R \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) length of projection onto a LINE &mdash; DOT with the unit direction</div>
+        <span class="name">\( \overrightarrow{AB}=(1,-4,1) \). Length of projection \( =\left|\overrightarrow{AB}\cdot\hat{\mathbf d}\right| \).</span>
+        \[ \frac{\left|(1,-4,1)\cdot(1+a,\,1-a,\,-2)\right|}{\sqrt{(1+a)^2+(1-a)^2+4}}=\frac{|5a-5|}{\sqrt{2a^2+6}}=\frac{1}{\sqrt6} \]<span class="mk">(1)</span>
+        <span class="name">Square both sides and clear: \( 6\cdot 25(a-1)^2=2a^2+6 \Rightarrow 148a^2-300a+144=0 \Rightarrow 37a^2-75a+36=0 \).</span><span class="mk">(1)</span>
+        \[ a=\frac{75\pm\sqrt{297}}{74}=\frac{75\pm 3\sqrt{33}}{74} \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Both projections, one question.</b> Q4(ii) projected onto a <b>plane</b> (cross with \( \hat{\mathbf n} \)); here you project onto a <b>line</b> (dot with \( \hat{\mathbf d} \)). Also note (i) is the plane procedure — <b>substitute into the equation</b>, nothing to dot — whereas a foot of perpendicular to a <em>line</em> would need \( \overrightarrow{AF}\cdot\mathbf d=0 \).</div>
+      <div class="testline"><b>Tests:</b> foot of perpendicular to a plane; line of intersection of two planes with a parameter; length of projection onto a line, producing a quadratic in the unknown.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q6 -->
+<div class="card" id="q6">
+  <div class="cardhead">Question 6 <span class="marks">[8]</span></div>
+  <div class="src">A-Level 2016 P1 Q10</div>
+  <div class="stem">
+    The plane \(p\) has equation \( \mathbf r=\begin{pmatrix}1\\-3\\2\end{pmatrix}+\lambda\begin{pmatrix}1\\2\\0\end{pmatrix}+\mu\begin{pmatrix}a\\4\\-2\end{pmatrix} \), and the line \(l\) has equation \( \mathbf r=\begin{pmatrix}a-1\\a\\a+1\end{pmatrix}+t\begin{pmatrix}-2\\1\\2\end{pmatrix} \), where \(a\) is a constant and \( \lambda,\mu,t \) are parameters.
+    <span class="sub">(i) In the case \(a=0\), show that \(l\) is perpendicular to \(p\), and find the values of \( \lambda \), \( \mu \) and \(t\) giving the point where \(l\) and \(p\) intersect. <span class="marks">[5]</span></span>
+    <span class="sub">(ii) Find the value of \(a\) such that \(l\) and \(p\) do <b>not</b> meet in a unique point. <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) line ⊥ plane means direction is PARALLEL to the normal</div>
+        <span class="name">With \(a=0\), the plane's two directions are \( (1,2,0) \) and \( (0,4,-2) \).</span>
+        \[ \mathbf n=\begin{pmatrix}1\\2\\0\end{pmatrix}\times\begin{pmatrix}0\\4\\-2\end{pmatrix}=\begin{pmatrix}-4\\2\\4\end{pmatrix}=2\begin{pmatrix}-2\\1\\2\end{pmatrix} \]<span class="mk">(1)</span>
+        <span class="name">The line's direction is \( (-2,1,2) \), which is a <b>scalar multiple</b> of \( \mathbf n \).</span>
+        \[ \mathbf d=\tfrac12\mathbf n\ \Rightarrow\ \mathbf d\parallel\mathbf n\ \Rightarrow\ l\perp p\ \text{(shown)} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">then find the intersection</div>
+        <span class="name">\( p:\ \mathbf r\cdot(-2,1,2)=(1,-3,2)\cdot(-2,1,2)=-1 \), i.e. \( 2x-y-2z=1 \). With \(a=0\), \( l:\ \mathbf r=(-1,0,1)+t(-2,1,2) \).</span>
+        \[ 2(-1-2t)-(t)-2(1+2t)=1\ \Rightarrow\ -4-9t=1\ \Rightarrow\ t=-\tfrac59 \]<span class="mk">(1)</span>
+        \[ \text{Point}=\left(\tfrac19,\,-\tfrac59,\,-\tfrac19\right) \]<span class="mk">(1)</span>
+        <span class="name">Matching against the plane's parametric form: \(x\): \(1+\lambda=\tfrac19\Rightarrow\lambda=-\tfrac89\); \(z\): \(2-2\mu=-\tfrac19\Rightarrow\mu=\tfrac{19}{18}\).</span>
+        \[ \lambda=-\tfrac89,\quad \mu=\tfrac{19}{18},\quad t=-\tfrac59 \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) "no unique point" means the line is PARALLEL to the plane</div>
+        <span class="name">Parallel to the plane means the direction is <b>perpendicular to the normal</b> — the opposite test to (i).</span>
+        \[ \mathbf n(a)=\begin{pmatrix}1\\2\\0\end{pmatrix}\times\begin{pmatrix}a\\4\\-2\end{pmatrix}=\begin{pmatrix}-4\\2\\4-2a\end{pmatrix} \]<span class="mk">(1)</span>
+        \[ \begin{pmatrix}-2\\1\\2\end{pmatrix}\cdot\begin{pmatrix}-4\\2\\4-2a\end{pmatrix}=8+2+8-4a=18-4a=0 \]<span class="mk">(1)</span>
+        \[ a=\tfrac92 \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>The exact confusion from your drill, both halves in one question.</b><br>
+      Line <b>PERPENDICULAR</b> to a plane &nbsp;⟹&nbsp; \( \mathbf d \) is a <b>scalar multiple of \( \mathbf n \)</b>. &nbsp;(You tried to dot these — <em>"That's not working."</em>)<br>
+      Line <b>PARALLEL</b> to a plane &nbsp;⟹&nbsp; \( \mathbf d\cdot\mathbf n=0 \).<br>
+      They feel backwards because the normal sticks <em>out</em> of the plane. Picture the normal, not the plane, and it resolves.</div>
+      <div class="testline"><b>Tests:</b> line perpendicular to a plane (direction parallel to normal) versus line parallel to a plane (direction perpendicular to normal), plus a line-plane intersection recovered in all three parameters.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q7 -->
+<div class="card" id="q7">
+  <div class="cardhead">Question 7 <span class="marks">[9]</span></div>
+  <div class="src">HCI Supplementary Q11</div>
+  <div class="stem">
+    A line \(l\) has equation \( \mathbf r=7\mathbf i+4\mathbf j-3\mathbf k+t(\mathbf i+\mathbf j+\mathbf k) \), where \( t\in\mathbb R \).
+    <span class="sub">(i) Find the coordinates of \(N\), the foot of the perpendicular from the point \( B(6,4,4) \) to \(l\). Hence find the shortest distance from \(B\) to \(l\). <span class="marks">[4]</span></span>
+    <span class="sub">(ii) Find the coordinates of the points on \(l\) which are at a distance of \( \sqrt{48} \) units from \(N\). <span class="marks">[2]</span></span>
+    <span class="sub">(iii) Find the point \(P\) on the line passing through \(N\) and \(B\) which is \( \sqrt{342} \) units from \(l\) and is on the same side of \(l\) as \(B\). <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) foot of perpendicular to a LINE &mdash; dot with the direction</div>
+        <span class="name">\( \overrightarrow{ON}=(7+t,\,4+t,\,-3+t) \), so \( \overrightarrow{BN}=(1+t,\,t,\,-7+t) \). Impose \( \overrightarrow{BN}\cdot\mathbf d=0 \) with \( \mathbf d=(1,1,1) \).</span>
+        \[ (1+t)+t+(-7+t)=0\ \Rightarrow\ 3t-6=0\ \Rightarrow\ t=2 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ N=(9,\,6,\,-1) \]<span class="mk">(1)</span>
+        \[ \text{shortest distance}=\left|\overrightarrow{BN}\right|=\left|(3,2,-5)\right|=\sqrt{38}\ \text{units} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) travel a set distance along the UNIT direction, both ways</div>
+        <span class="name">\( \hat{\mathbf d}=\tfrac1{\sqrt3}(1,1,1) \), and \( \dfrac{\sqrt{48}}{\sqrt3}=\sqrt{16}=4 \), so step \( \pm4(1,1,1) \) from \(N\).</span>
+        \[ (9,6,-1)\pm 4(1,1,1)\ \Rightarrow\ (13,\,10,\,3)\quad\text{and}\quad(5,\,2,\,-5) \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) same idea, now along \( \overrightarrow{NB} \)</div>
+        <span class="name">\( \overrightarrow{NB}=(-3,-2,5) \) with \( \left|\overrightarrow{NB}\right|=\sqrt{38} \). Distance from \(l\) is measured along \( \overrightarrow{NB} \), so scale it: \( \dfrac{\sqrt{342}}{\sqrt{38}}=\sqrt9=3 \).</span>
+        \[ \overrightarrow{OP}=\overrightarrow{ON}+3\,\overrightarrow{NB}=(9,6,-1)+3(-3,-2,5) \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ P=(0,\,0,\,14) \]<span class="mk">(1)</span>
+        <span class="name">The \(+3\) (not \(-3\)) puts \(P\) on the same side as \(B\).</span>
+      </div>
+      <div class="keynote"><b>One move, three uses.</b> "Go a distance \(k\) from a known point in a known direction" is always \( \text{point}+k\,\hat{\mathbf v} \). Divide the required distance by \( |\mathbf v| \) to get the multiplier — that is why \( \sqrt{48}/\sqrt3=4 \) and \( \sqrt{342}/\sqrt{38}=3 \). Parts (ii) and (iii) look different but are the same step along different directions.</div>
+      <div class="testline"><b>Tests:</b> foot of perpendicular to a line and shortest distance; locating points at a prescribed distance along a line; and travelling a prescribed distance along a unit vector, with a side condition.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q8 -->
+<div class="card" id="q8">
+  <div class="cardhead">Question 8 <span class="marks">[8]</span></div>
+  <div class="src">TJC 2009 Prelim P1 Q6 &middot; HCI Supplementary Q5</div>
+  <div class="stem">
+    Referred to the origin \(O\), the position vectors of \(A\) and \(B\) are \( \mathbf i+3\mathbf j+2\mathbf k \) and \( 3\mathbf i+2\mathbf j-\mathbf k \) respectively.
+    <span class="sub">(i) Find the position vector of \(M\), where \(M\) is the mid-point of \(A\) and \(B\). <span class="marks">[2]</span></span>
+    <span class="sub">(ii) Find the cosine of angle \(AOB\). <span class="marks">[2]</span></span>
+    <span class="sub">(iii) \(OM\) is extended such that \( \overrightarrow{OX}=2\,\overrightarrow{OM} \). Using the result in (ii), find the exact area of \(OAXB\). What is the geometrical shape of \(OAXB\)? <span class="marks">[4]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) midpoint</div>
+        \[ \overrightarrow{OM}=\frac{\overrightarrow{OA}+\overrightarrow{OB}}{2}=\frac12\begin{pmatrix}4\\5\\1\end{pmatrix}=\begin{pmatrix}2\\2.5\\0.5\end{pmatrix} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) angle between two vectors &mdash; no modulus</div>
+        <span class="name">\( \left|\overrightarrow{OA}\right|=\sqrt{1+9+4}=\sqrt{14} \) and \( \left|\overrightarrow{OB}\right|=\sqrt{9+4+1}=\sqrt{14} \).</span>
+        \[ \cos A\hat OB=\frac{(1,3,2)\cdot(3,2,-1)}{\sqrt{14}\sqrt{14}}=\frac{3+6-2}{14}=\frac{7}{14}=\frac12 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) recognise the shape first, then use the right area formula</div>
+        <span class="name">\( \overrightarrow{OX}=2\overrightarrow{OM}=\overrightarrow{OA}+\overrightarrow{OB} \) — the diagonal rule — so \(OAXB\) is a <b>parallelogram</b>.</span>
+        \[ \text{Area}=\left|\overrightarrow{OA}\times\overrightarrow{OB}\right|=\left|(-7,7,-7)\right|=7\sqrt3\ \text{units}^2 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">Alternatively from (ii): \( \sin\theta=\sqrt{1-\tfrac14}=\tfrac{\sqrt3}{2} \), so area \( =|\overrightarrow{OA}||\overrightarrow{OB}|\sin\theta=14\cdot\tfrac{\sqrt3}{2}=7\sqrt3 \).</span><span class="mk">(1)</span>
+        <span class="name">Since \( \left|\overrightarrow{OA}\right|=\left|\overrightarrow{OB}\right|=\sqrt{14} \), all four sides are equal.</span>
+        \[ OAXB\ \text{is a \textbf{rhombus}.} \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Why "using the result in (ii)" is a hint, not decoration.</b> You noted in the drill: <em>"if you can't find anything, look in the question — there's always something you've solved previously."</em> Here (ii) gives \( \cos\theta \), and \( \sin\theta=\sqrt{1-\cos^2\theta} \) feeds \( |\mathbf a||\mathbf b|\sin\theta \) directly. Also: \( \overrightarrow{OX}=\overrightarrow{OA}+\overrightarrow{OB} \) <b>is</b> the parallelogram signature — and equal side lengths upgrade it to a rhombus.</div>
+      <div class="testline"><b>Tests:</b> midpoint; cosine of an angle between two vectors; recognising a parallelogram from the diagonal rule; exact area two ways; and naming the shape from the side lengths.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<hr>
+
+<h3 style="font-family:-apple-system,sans-serif;font-size:1.05em">What each question was closing</h3>
+<p style="color:var(--muted);font-size:.9em">Read this only <em>after</em> you have attempted the sheet.</p>
+<table>
+<tr><th>Gap from the 16 Aug drill</th><th>Drilled in</th></tr>
+<tr><td><b>Priority 1 —</b> which product tests which relationship. Called \( \mathbf a\times\mathbf b=\mathbf 0 \) "perpendicular"; then tried to <b>dot</b> a direction with a normal to show a line was ⊥ to a plane</td><td>Q1, Q2, Q6</td></tr>
+<tr><td>"Parallel" means <b>scalar multiple</b> → compare coefficients (you reached for a cross product)</td><td>Q2, Q6</td></tr>
+<tr><td><b>Projection vector / length of projection — formula forgotten entirely</b></td><td>Q4(ii), Q5(iii)</td></tr>
+<tr><td>Area of a triangle: both vectors from the <b>same vertex of that triangle</b> (you used a vector involving \(B\) for triangle \(OAC\))</td><td>Q3(i), Q8(iii)</td></tr>
+<tr><td>Foot of perpendicular — plane (substitute) vs line (dot with direction)</td><td>Q5(i), Q7(i)</td></tr>
+<tr><td>Points at a prescribed distance; travelling along a unit vector</td><td>Q7(ii)(iii)</td></tr>
+<tr><td>Cross-product algebra: distributivity, \( \mathbf a\times\mathbf a=\mathbf 0 \), anti-commutativity</td><td>Q1(a), Q2(i)</td></tr>
+<tr><td>Reading the question for a result you already have ("using the result in (ii)")</td><td>Q8(iii)</td></tr>
+</table>
+
+<p style="color:var(--muted);font-size:.9em;margin-top:20px">Eight questions, 66 marks, roughly an hour and forty minutes. If Q1, Q2 and Q6 all land clean and confident, the priority-1 gap closes. Paste me the transcript and I will update the tracker.</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn=>{btn.addEventListener('click',function(){const b=this.parentElement,o=b.querySelector('.answer-overlay');if(o.classList.contains('hidden')){o.classList.remove('hidden');this.textContent='Reveal solution';this.classList.remove('hide-state');}else{o.classList.add('hidden');this.textContent='Hide';this.classList.add('hide-state');}});});
+  function revealAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.add('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Hide';b.classList.add('hide-state');});}
+  function hideAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.remove('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Reveal solution';b.classList.remove('hide-state');});}
+</script>
+</body>
+</html>
