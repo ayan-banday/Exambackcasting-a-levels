@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vectors — Complete Formula Sheet (9758)</title>
+<script>
+  window.MathJax = { tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], processEscapes: true, tags:'none' }, svg:{fontCache:'global'} };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --amber-soft:#fffbeb;
+    --green:#059669; --green-soft:#ecfdf5; --red:#dc2626; --red-soft:#fef2f2;
+    --purple:#6d28d9; --purple-soft:#f5f3ff; --teal:#0d9488; --teal-soft:#f0fdfa; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:960px;margin:0 auto;padding:34px 22px 90px;line-height:1.6;color:var(--text);background:var(--bg)}
+  h1,h2,h3,.tag,.hd .sub,.hd .meta,.nav,.lbl{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  .hd{border-bottom:2.5px solid #111;padding-bottom:14px;margin-bottom:8px;text-align:center}
+  .hd h1{font-size:1.5em;font-weight:800;letter-spacing:.4px;margin:0;color:#111}
+  .hd .sub{font-size:1em;margin-top:4px;color:#333}
+  .hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:.78em;color:var(--muted);margin-top:8px}
+  h2{font-size:1.12em;margin:34px 0 12px;padding:7px 12px;background:#111;color:#fff;border-radius:5px;font-weight:700;letter-spacing:.02em}
+  h3{font-size:.98em;margin:18px 0 6px;color:#111;font-weight:700}
+  .nav{background:var(--card);border:1px solid var(--border);padding:13px 18px;border-radius:6px;margin:16px 0 26px;font-size:.85em}
+  .nav a{color:var(--blue);text-decoration:none;display:inline-block;margin:0 14px 5px 0}
+  .nav a:hover{text-decoration:underline}
+  .f{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--blue);border-radius:6px;padding:12px 16px;margin:12px 0}
+  .f .lbl{font-size:.72em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--blue);margin-bottom:3px}
+  .sym{background:#f8fafc;border-left:2px solid var(--border);padding:6px 11px;margin:8px 0 0;font-size:.87em;color:#475569}
+  .sym b{color:#0f172a}
+  .eg{background:var(--green-soft);border-left:3px solid var(--green);padding:7px 12px;margin:9px 0 0;font-size:.88em;border-radius:0 4px 4px 0}
+  .eg .lbl{color:var(--green);font-size:.7em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:2px}
+  .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:7px 12px;margin:9px 0 0;font-size:.87em;border-radius:0 4px 4px 0;color:#7f1d1d}
+  .trap b{color:var(--red)}
+  .note{background:var(--amber-soft);border:1px solid #fcd34d;border-left:4px solid var(--amber);padding:11px 15px;border-radius:6px;margin:14px 0;font-size:.9em;color:#7c2d12}
+  .note b{color:#b91c1c}
+  .key{background:var(--purple-soft);border:1px solid #ddd6fe;border-left:4px solid var(--purple);padding:11px 15px;border-radius:6px;margin:14px 0;font-size:.9em}
+  .key b{color:var(--purple)}
+  table{border-collapse:collapse;margin:11px 0;font-size:.87em;width:100%;background:#fff}
+  th,td{border:1px solid #e5e7eb;padding:6px 9px;text-align:left;vertical-align:top}
+  th{background:#f3f4f6;font-weight:600;font-family:-apple-system,sans-serif}
+  td.c{text-align:center}
+  .yes{color:var(--green);font-weight:700}
+  .no{color:var(--red);font-weight:700}
+  mjx-container{overflow-x:auto;overflow-y:hidden;max-width:100%}
+  hr{border:none;border-top:1px solid var(--border);margin:30px 0}
+  @media print{body{background:#fff;padding:12px;max-width:100%;font-size:9.5pt}h2{background:#222;-webkit-print-color-adjust:exact;print-color-adjust:exact}.f,.eg,.trap,.note,.key,table{page-break-inside:avoid}.nav{display:none}}
+</style>
+</head>
+<body>
+
+<div class="hd">
+  <h1>VECTORS — COMPLETE FORMULA SHEET</h1>
+  <div class="sub">H2 Mathematics 9758 &middot; syllabus §3.1&ndash;3.3 &middot; every formula, method and decision rule</div>
+  <div class="meta">Clusters 1&ndash;3 &middot; basics · products · ratio theorem · lines · planes &middot; built 16 Aug 2026</div>
+</div>
+
+<div class="nav">
+  <a href="#s1">1 Basics</a><a href="#s2">2 Ratio &amp; collinear</a><a href="#s3">3 Dot</a><a href="#s4">4 Cross</a><a href="#s5">5 Projections</a><a href="#s6">6 Areas</a><a href="#s7">7 Lines</a><a href="#s8">8 Two lines</a><a href="#s9">9 Planes</a><a href="#s10">10 Angles</a><a href="#s11">11 Distances</a><a href="#s12">12 Foot of perp</a><a href="#s13">13 Reflections</a><a href="#s14">14 Intersections</a><a href="#s15">15 Method selection</a><a href="#s16">16 MF27 vs memorise</a><a href="#s17">17 Excluded</a><a href="#s18">18 Mark-losers</a>
+</div>
+
+<div class="note">
+<b>Exam conventions</b> &mdash; these are marked, so bake them in.
+<ul style="margin:6px 0 0;padding-left:20px">
+  <li><b>Angles in degrees to 1 d.p.</b> unless told otherwise. Set the calculator to degrees for vectors.</li>
+  <li><b>Coordinates</b> when a <em>point</em> is asked for: \( (2,3,4) \). <b>Column vector</b> when a <em>position vector</em> is asked for.</li>
+  <li>Write a vector in handwriting as \( \underset{\sim}{a} \) (tilde <em>under</em> the letter) or \( \overrightarrow{AB} \); bold is print-only.</li>
+  <li>Exact form (surds, fractions) when asked; otherwise 3 s.f.</li>
+  <li>Always state \( \lambda\in\mathbb R \) (or \(\mu\), \(t\)&hellip;) at the end of a line or plane equation.</li>
+</ul>
+</div>
+
+
+<h2 id="s1">1 &nbsp;Basics — magnitude, unit vectors, position &amp; displacement</h2>
+
+<div class="f"><div class="lbl">Position vs displacement vector</div>
+\[ \overrightarrow{OA}=\mathbf a \quad\text{(position, always from the origin)};\qquad \overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}=\mathbf b-\mathbf a \]
+<div class="sym"><b>Position vector</b> pins a point relative to \(O\). <b>Displacement vector</b> has magnitude and direction but <b>no fixed location</b> — it is "how to get from \(A\) to \(B\)". Nearly every question starts by converting given position vectors into displacement vectors.</div>
+<div class="trap"><b>Order matters:</b> \( \overrightarrow{AB}=\mathbf b-\mathbf a \) is "<em>end minus start</em>", and \( \overrightarrow{BA}=-\overrightarrow{AB} \). Getting this backwards flips every sign downstream.</div>
+</div>
+
+<div class="f"><div class="lbl">Magnitude</div>
+\[ |\mathbf v|=\left|\begin{pmatrix}x\\y\\z\end{pmatrix}\right|=\sqrt{x^2+y^2+z^2} \]
+<div class="eg"><div class="lbl">Example</div>\( \mathbf v=(2,1,-5) \Rightarrow |\mathbf v|=\sqrt{4+1+25}=\sqrt{30} \).</div>
+</div>
+
+<div class="f"><div class="lbl">Unit vector</div>
+\[ \hat{\mathbf v}=\frac{\mathbf v}{|\mathbf v|},\qquad |\hat{\mathbf v}|=1 \]
+<div class="sym">Strips the length and keeps <b>pure direction</b>. Needed for every projection and distance formula.</div>
+<div class="eg"><div class="lbl">Example</div>\( \mathbf v=(2,1,-5),\ |\mathbf v|=\sqrt{30}\Rightarrow \hat{\mathbf v}=\tfrac1{\sqrt{30}}(2,1,-5) \).</div>
+<div class="trap"><b>"Find <em>a</em> unit vector" has two answers:</b> \( \pm\hat{\mathbf v} \). Simplify first — \( \tfrac16(2,4,-4)=\tfrac13(1,2,-2) \).</div>
+</div>
+
+<div class="f"><div class="lbl">Distance between two points</div>
+\[ AB=\left|\overrightarrow{AB}\right|=\left|\mathbf b-\mathbf a\right| \]
+</div>
+
+<div class="f"><div class="lbl">Angle between a vector and a coordinate axis</div>
+\[ \cos\theta=\frac{\left|\mathbf v\cdot\mathbf e\right|}{|\mathbf v|}\qquad\text{where }\mathbf e=\mathbf i,\ \mathbf j\ \text{or}\ \mathbf k \]
+<div class="sym"><b>\(\mathbf e\)</b> is the unit vector along the axis: \(x\)-axis \(=(1,0,0)\), \(y\)-axis \(=(0,1,0)\), \(z\)-axis \(=(0,0,1)\). Its magnitude is \(1\), so it disappears from the denominator.</div>
+<div class="eg"><div class="lbl">Example</div>Acute angle between \( (1,2,-2) \) and the \(z\)-axis: \( \cos\theta=\dfrac{|(1,2,-2)\cdot(0,0,1)|}{3}=\dfrac23 \).</div>
+</div>
+
+
+<h2 id="s2">2 &nbsp;Ratio theorem &amp; collinearity</h2>
+
+<div class="f"><div class="lbl">Ratio theorem (internal division)</div>
+\[ \text{If }AP:PB=\lambda:\mu,\qquad \overrightarrow{OP}=\frac{\mu\,\mathbf a+\lambda\,\mathbf b}{\lambda+\mu} \]
+<div class="sym"><b>The weight goes with the OPPOSITE endpoint.</b> The \( \lambda \) that sits next to \(A\) in the ratio ends up multiplying \( \mathbf b \). Read it as: the further \(P\) is from a point, the more that point is weighted.</div>
+<div class="eg"><div class="lbl">Example</div>\( AP:PB=2:3\Rightarrow \overrightarrow{OP}=\dfrac{3\mathbf a+2\mathbf b}{5} \). &nbsp; Midpoint (\(1:1\)): \( \overrightarrow{OM}=\dfrac{\mathbf a+\mathbf b}{2} \).</div>
+<div class="trap"><b>The classic error</b> is writing \( \dfrac{2\mathbf a+3\mathbf b}{5} \) for \(AP:PB=2:3\). Write the formula out in full every time until it is automatic.</div>
+</div>
+
+<div class="f"><div class="lbl">External points / "produced"</div>
+<div class="sym">No special formula needed. "\(B\) is the midpoint of \(AQ\)" just means \( \mathbf b=\dfrac{\mathbf a+\overrightarrow{OQ}}{2} \Rightarrow \overrightarrow{OQ}=2\mathbf b-\mathbf a \). Set up the relation and rearrange.</div>
+</div>
+
+<div class="f"><div class="lbl">Collinearity of \(A\), \(B\), \(C\)</div>
+\[ \overrightarrow{AB}=k\,\overrightarrow{AC}\ \text{ for some scalar }k \qquad\Longleftrightarrow\qquad \overrightarrow{AB}\times\overrightarrow{AC}=\mathbf 0 \]
+<div class="sym">Two conditions in one: the vectors are <b>parallel</b> AND they <b>share the point \(A\)</b>. Sharing a point is what upgrades "parallel" to "collinear".</div>
+<div class="trap"><b>School key's explicit warning:</b> you may <b>not</b> compute \( |\overrightarrow{CP}|=2\sqrt6 \), \( |\overrightarrow{PD}|=3\sqrt6 \) and conclude \(CP:PD=2:3\) — that does not show the points are collinear. You must show \( \overrightarrow{CP}=\tfrac23\overrightarrow{PD} \). And <b>never write \( \dfrac{\overrightarrow{CP}}{\overrightarrow{PD}} \)</b> — there is no division of vectors.</div>
+</div>
+
+
+<h2 id="s3">3 &nbsp;Scalar (dot) product</h2>
+
+<div class="f"><div class="lbl">Definition — two equivalent forms</div>
+\[ \mathbf a\cdot\mathbf b=|\mathbf a||\mathbf b|\cos\theta \qquad\text{and}\qquad \mathbf a\cdot\mathbf b=a_1b_1+a_2b_2+a_3b_3 \]
+<div class="sym">The output is a <b>scalar</b> (a plain number), not a vector. Use the component form to compute, the \( \cos\theta \) form to interpret.</div>
+</div>
+
+<div class="f"><div class="lbl">Properties</div>
+\[ \mathbf a\cdot\mathbf b=\mathbf b\cdot\mathbf a,\qquad \mathbf a\cdot(\mathbf b+\mathbf c)=\mathbf a\cdot\mathbf b+\mathbf a\cdot\mathbf c,\qquad \mathbf a\cdot\mathbf a=|\mathbf a|^2 \]
+<div class="sym">\( \mathbf a\cdot\mathbf a=|\mathbf a|^2 \) is the workhorse for "find \( \lambda \)" questions: dot an expression with <b>itself</b> to turn vectors into magnitudes.</div>
+<div class="eg"><div class="lbl">Example</div>Given \(3\mathbf b-2\mathbf c=\lambda\mathbf a\) with \(|\mathbf a|=|\mathbf c|=1\), \(|\mathbf b|=4\), \(\mathbf b\cdot\mathbf c=2\): dot each side with itself — \( 9|\mathbf b|^2-12\,\mathbf b\cdot\mathbf c+4|\mathbf c|^2=\lambda^2|\mathbf a|^2 \Rightarrow 144-24+4=\lambda^2\Rightarrow\lambda=\pm2\sqrt{31} \).</div>
+</div>
+
+<div class="f"><div class="lbl">What the sign tells you</div>
+<table>
+<tr><th>Value</th><th>Angle between the vectors</th></tr>
+<tr><td class="c">\( \mathbf a\cdot\mathbf b>0 \)</td><td>acute</td></tr>
+<tr><td class="c">\( \mathbf a\cdot\mathbf b=0 \)</td><td><b>perpendicular</b> (for non-zero vectors)</td></tr>
+<tr><td class="c">\( \mathbf a\cdot\mathbf b<0 \)</td><td>obtuse</td></tr>
+</table>
+<div class="sym">\( \mathbf a\cdot\mathbf b=0 \) is the single most-used condition in the whole topic: it drives perpendicularity, foot-of-perpendicular, "line lies in plane", and "vector parallel to plane".</div>
+</div>
+
+<div class="f"><div class="lbl">Angle between two VECTORS</div>
+\[ \cos\theta=\frac{\mathbf a\cdot\mathbf b}{|\mathbf a||\mathbf b|}\qquad\text{(NO modulus)} \]
+<div class="trap"><b>No modulus here</b> — the angle between two vectors can be obtuse, and the school key says explicitly: "DO NOT put absolute sign here as angle between two vectors can be obtuse." The modulus belongs to the <em>acute</em> angle between lines or planes (§10).</div>
+<div class="trap"><b>Both vectors must diverge from the same point.</b> For \( \angle ABO \) use \( \overrightarrow{BA} \) and \( \overrightarrow{BO} \) — both starting at \(B\). Using \( \overrightarrow{AB} \) instead flips the sign and gives the supplement.</div>
+</div>
+
+
+<h2 id="s4">4 &nbsp;Vector (cross) product</h2>
+
+<div class="f"><div class="lbl">Definition &amp; component formula</div>
+\[ \mathbf a\times\mathbf b=\begin{pmatrix}a_2b_3-a_3b_2\\a_3b_1-a_1b_3\\a_1b_2-a_2b_1\end{pmatrix},\qquad |\mathbf a\times\mathbf b|=|\mathbf a||\mathbf b|\sin\theta \]
+<div class="sym">The output is a <b>vector</b>, perpendicular to both \( \mathbf a \) and \( \mathbf b \) (right-hand rule). That is why it produces normals to planes.</div>
+<div class="eg"><div class="lbl">Cover-up method</div>To get each component, cover that row and cross-multiply the other two: top-left×bottom-right − top-right×bottom-left. <b>The middle component is \( a_3b_1-a_1b_3 \)</b> — note the reversed order.</div>
+<div class="trap"><b>Check your cross product</b> by dotting the result with each original vector: both must give \(0\). The school key recommends this every time; it costs seconds and catches sign slips.</div>
+</div>
+
+<div class="f"><div class="lbl">Properties</div>
+\[ \mathbf a\times\mathbf b=-(\mathbf b\times\mathbf a),\qquad \mathbf a\times\mathbf a=\mathbf 0,\qquad \mathbf a\times(\mathbf b+\mathbf c)=\mathbf a\times\mathbf b+\mathbf a\times\mathbf c \]
+<div class="sym"><b>Anti-commutative</b> — swapping the order flips the sign. This is the main thing that breaks algebraic expansions.</div>
+</div>
+
+<div class="f"><div class="lbl">What \( \mathbf a\times\mathbf b=\mathbf 0 \) means</div>
+\[ |\mathbf a|=0\quad\text{or}\quad|\mathbf b|=0\quad\text{or}\quad\mathbf a\parallel\mathbf b \]
+<div class="trap">A complete answer must include the <b>degenerate cases</b>. "They are parallel" alone is an incomplete deduction and drops a mark.</div>
+</div>
+
+<div class="key"><b>Dot vs cross — the one-line summary.</b> The <b>dot</b> product returns a <b>number</b> and answers <em>"how are these two oriented?"</em> — zero means perpendicular. The <b>cross</b> product returns a <b>vector</b> and answers <em>"what is perpendicular to both?"</em> — zero means parallel. Dot for angles and perpendicularity; cross for normals and areas.</div>
+
+
+<h2 id="s5">5 &nbsp;Projections</h2>
+
+<div class="key"><b>The shadow picture.</b> Shine a light straight down onto the line of \( \mathbf b \). The <b>length of the shadow</b> of \( \mathbf a \) is the <em>scalar</em> projection; the <b>shadow itself</b> (an arrow along \( \mathbf b \)) is the <em>projection vector</em>; the <b>height above the shadow</b> is the perpendicular component.</div>
+
+<div class="f"><div class="lbl">Scalar projection — the LENGTH of the shadow</div>
+\[ \text{length of projection of }\mathbf a\text{ onto }\mathbf b=\left|\mathbf a\cdot\hat{\mathbf b}\right|=\frac{|\mathbf a\cdot\mathbf b|}{|\mathbf b|} \]
+<div class="sym">Why it works: \( \mathbf a\cdot\mathbf b=|\mathbf a||\mathbf b|\cos\theta \), and the shadow length is \( |\mathbf a|\cos\theta \) — so divide by \( |\mathbf b| \) to cancel the unwanted factor. That is exactly what \( \hat{\mathbf b} \) does.</div>
+<div class="sym"><b>Has a modulus</b> — a length is never negative.</div>
+</div>
+
+<div class="f"><div class="lbl">Projection vector — the shadow ITSELF</div>
+\[ \text{projection vector of }\mathbf a\text{ onto }\mathbf b=\left(\mathbf a\cdot\hat{\mathbf b}\right)\hat{\mathbf b}=\frac{\mathbf a\cdot\mathbf b}{|\mathbf b|^2}\,\mathbf b \]
+<div class="trap"><b>No modulus here.</b> The school key states it explicitly: "There is no modulus sign for projection vector as we need to retain the sign to give the <b>direction</b> of the projection vector." A negative coefficient means the shadow points backwards along \( \mathbf b \).</div>
+<div class="eg"><div class="lbl">Reverse use</div>If you are <em>told</em> the projection vector of \( \mathbf b \) onto \( \mathbf a \) is \( \tfrac34\mathbf a \) and \( \mathbf a\cdot\mathbf b=4 \), then \( \dfrac{4}{|\mathbf a|^2}=\dfrac34\Rightarrow|\mathbf a|^2=\dfrac{16}{3}\Rightarrow|\mathbf a|=\dfrac{4\sqrt3}{3} \).</div>
+</div>
+
+<div class="f"><div class="lbl">Perpendicular component (the "height")</div>
+\[ \left|\mathbf a\times\hat{\mathbf b}\right|=|\mathbf a|\sin\theta \qquad\text{or by Pythagoras}\qquad \sqrt{|\mathbf a|^2-\left(\mathbf a\cdot\hat{\mathbf b}\right)^2} \]
+<div class="sym">This <b>is</b> the point-to-line distance formula (§11) — same quantity, different name.</div>
+</div>
+
+<div class="f"><div class="lbl">Geometrical meanings you may be asked to state</div>
+<table>
+<tr><th>Expression</th><th>What to write</th></tr>
+<tr><td>\( \left|\mathbf a\cdot\hat{\mathbf n}\right| \)</td><td>the length of projection of \( \mathbf a \) onto \( \mathbf n \)</td></tr>
+<tr><td>\( \left|\mathbf a\times\hat{\mathbf n}\right| \)</td><td>the perpendicular distance from the tip of \( \mathbf a \) to the line along \( \mathbf n \)</td></tr>
+<tr><td>\( \left|\mathbf a\times\mathbf b\right| \)</td><td>the area of the parallelogram with sides \( \mathbf a \) and \( \mathbf b \)</td></tr>
+<tr><td>\( \tfrac12\left|\mathbf a\times\mathbf b\right| \)</td><td>the area of the triangle with sides \( \mathbf a \) and \( \mathbf b \)</td></tr>
+</table>
+</div>
+
+
+<h2 id="s6">6 &nbsp;Areas</h2>
+
+<div class="f"><div class="lbl">Triangle and parallelogram</div>
+\[ \text{Area of }\triangle ABC=\tfrac12\left|\overrightarrow{AB}\times\overrightarrow{AC}\right| \qquad\qquad \text{Area of parallelogram}=\left|\overrightarrow{AB}\times\overrightarrow{AD}\right| \]
+<div class="sym">Both vectors must come from the <b>same vertex</b> — that is where the enclosed angle lives. Any two sides work: \( \overrightarrow{BA} \) and \( \overrightarrow{BC} \) give the same triangle area.</div>
+<div class="trap"><b>Take the magnitude.</b> The cross product is a <em>vector</em>; the area is its <em>length</em>. Stopping at \( (1,5,-2) \) instead of \( \sqrt{30} \) throws away the answer mark. And the \( \tfrac12 \) belongs to the <b>triangle only</b> — a parallelogram has no half.</div>
+<div class="eg"><div class="lbl">Alternative route</div>If you already know a base and the perpendicular height (e.g. from a projection), \( \text{Area}=\tfrac12\times\text{base}\times\text{height} \) is often faster.</div>
+</div>
+
+
+<h2 id="s7">7 &nbsp;Equations of a LINE</h2>
+
+<div class="f"><div class="lbl">Vector form</div>
+\[ l:\ \mathbf r=\mathbf a+\lambda\mathbf d,\qquad \lambda\in\mathbb R \]
+<div class="sym"><b>\( \mathbf a \)</b> = position vector of any <em>known point</em> on the line. <b>\( \mathbf d \)</b> = any <em>direction</em> vector parallel to the line. Neither is unique — any point on the line and any scalar multiple of \( \mathbf d \) give the same line.</div>
+<div class="eg"><div class="lbl">Through two points</div>\( \mathbf d=\overrightarrow{AB}=\mathbf b-\mathbf a \), then \( \mathbf r=\mathbf a+\lambda(\mathbf b-\mathbf a) \). <b>Simplify \( \mathbf d \)</b>: \( (-8,-16,-8)\to(1,2,1) \).</div>
+</div>
+
+<div class="f"><div class="lbl">Cartesian form &amp; conversion</div>
+\[ \frac{x-a_1}{d_1}=\frac{y-a_2}{d_2}=\frac{z-a_3}{d_3}\qquad\Longleftrightarrow\qquad \mathbf r=\begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix}+\lambda\begin{pmatrix}d_1\\d_2\\d_3\end{pmatrix} \]
+<div class="sym">Read the <b>point</b> off the numerators and the <b>direction</b> off the denominators. To convert the other way, set each fraction equal to \( \lambda \) and solve for \(x\), \(y\), \(z\).</div>
+<div class="trap"><b>Sign traps in the numerator.</b> \( \dfrac{10-x}{3}=\dfrac{x-10}{-3} \), so the direction component is \(-3\), not \(3\). Likewise \( -z-1=\dfrac{z+1}{-1} \). <b>Always rewrite as \( \dfrac{x-a}{d} \) first.</b></div>
+<div class="trap"><b>Zero direction component.</b> If \( d_2=0 \) you cannot divide — write it as a separate condition, e.g. \( \dfrac{x}{3}=\dfrac{z}{5},\ y=4 \).</div>
+</div>
+
+<div class="f"><div class="lbl">Is a point on the line?</div>
+<div class="sym">Substitute the point and solve for \( \lambda \) from one component; it must give the <b>same</b> \( \lambda \) in all three. One mismatch means the point is not on the line.</div>
+</div>
+
+<div class="f"><div class="lbl">Point on a line at a given distance</div>
+<div class="sym">Write the general point \( \mathbf a+\lambda\mathbf d \), set \( |\,\cdot\,|^2=k^2 \), and solve the <b>quadratic in \( \lambda \)</b> — normally <b>two</b> answers.</div>
+</div>
+
+
+<h2 id="s8">8 &nbsp;Relationship between TWO LINES</h2>
+
+<div class="f"><div class="lbl">The decision procedure</div>
+<table>
+<tr><th>Step</th><th>Test</th><th>Conclusion</th></tr>
+<tr><td>1</td><td>Is \( \mathbf d_1=k\,\mathbf d_2 \)?</td><td><b>Yes</b> → parallel (identical if a point of one lies on the other)</td></tr>
+<tr><td>2</td><td>Not parallel: solve two of the three component equations, then <b>check in the third</b></td><td>Third equation <b>consistent</b> → they <b>intersect</b></td></tr>
+<tr><td>3</td><td>Third equation <b>inconsistent</b></td><td>non-parallel and non-intersecting → <b>SKEW</b></td></tr>
+</table>
+<div class="trap"><b>"No solution" alone does not prove skew</b> — parallel lines also fail to intersect. You must state <b>both</b>: non-parallel AND non-intersecting. And you must <b>check in the third equation</b>; solving two proves nothing on its own.</div>
+</div>
+
+<div class="f"><div class="lbl">Point of intersection</div>
+<div class="sym">Equate the two general points, solve for the parameters, then substitute back into <b>either</b> line. (A GC will solve the system, but write the set-up.)</div>
+</div>
+
+
+<h2 id="s9">9 &nbsp;Equations of a PLANE</h2>
+
+<div class="f"><div class="lbl">Three forms</div>
+\[ \text{Parametric: }\ \mathbf r=\mathbf a+\lambda\mathbf d_1+\mu\mathbf d_2,\quad\lambda,\mu\in\mathbb R \]
+\[ \text{Scalar product: }\ \mathbf r\cdot\mathbf n=\mathbf a\cdot\mathbf n=d \qquad\qquad \text{Cartesian: }\ n_1x+n_2y+n_3z=d \]
+<div class="sym"><b>\( \mathbf d_1,\mathbf d_2 \)</b> = two <b>non-parallel</b> directions lying in the plane. <b>\( \mathbf n \)</b> = a normal, obtained as \( \mathbf n=\mathbf d_1\times\mathbf d_2 \). <b>\( d \)</b> = the constant \( \mathbf a\cdot\mathbf n \).</div>
+<div class="eg"><div class="lbl">Route</div>Almost always: find two in-plane directions → cross them for \( \mathbf n \) → <b>simplify \( \mathbf n \)</b> → use \( \mathbf r\cdot\mathbf n=\mathbf a\cdot\mathbf n \) → read off the Cartesian form. <b>Scalar-product form first, Cartesian second</b> — it is easier that way.</div>
+<div class="trap"><b>Parametric form is not unique</b>, and the two directions <b>must be non-parallel</b>.</div>
+</div>
+
+<div class="f"><div class="lbl">Getting the two in-plane directions — by situation</div>
+<table>
+<tr><th>Given</th><th>Directions to use</th></tr>
+<tr><td>Three points \(A\), \(B\), \(C\)</td><td>\( \overrightarrow{AB} \) and \( \overrightarrow{AC} \) — <b>both from the same point</b></td></tr>
+<tr><td>A line, plus a point off it</td><td>the line's \( \mathbf d \), and \( \overrightarrow{AB} \) from a point of the line to the given point</td></tr>
+<tr><td>The origin, plus a line</td><td>the line's \( \mathbf d \), and the position vector of a point on the line (then \(d=0\))</td></tr>
+<tr><td>Two intersecting lines</td><td>the two direction vectors; use the common point as \( \mathbf a \)</td></tr>
+<tr><td>A point and a normal \( \mathbf n \)</td><td>find any two non-parallel \( \mathbf v \) with \( \mathbf v\cdot\mathbf n=0 \), <b>by inspection</b></td></tr>
+<tr><td>A line, and <b>perpendicular</b> to plane \( \Pi \)</td><td>the line's \( \mathbf d \), and \( \Pi \)'s <b>normal</b> (it lies <em>inside</em> your plane)</td></tr>
+</table>
+</div>
+
+<div class="key"><b>Read what "perpendicular" attaches to.</b><br>
+&bull; Plane <b>perpendicular to a LINE</b> \(AB\) &nbsp;⟹&nbsp; \( \overrightarrow{AB} \) <b>IS the normal</b> \( \mathbf n \).<br>
+&bull; Plane <b>perpendicular to a PLANE</b> \( \Pi \) &nbsp;⟹&nbsp; \( \Pi \)'s normal is a <b>direction inside</b> your plane (so cross it with your other direction to get your normal).<br>
+These are opposite roles for the same word. Deciding which one applies is the whole first mark.</div>
+
+<div class="f"><div class="lbl">Always simplify the normal</div>
+\[ (-8,0,16)=-8(1,0,-2)\ \longrightarrow\ \text{use }(1,0,-2);\qquad (-3,3,3)=3(-1,1,1)\ \longrightarrow\ \text{use }(-1,1,1) \]
+<div class="sym">Any scalar multiple of a normal is an equally valid normal. Factor the common scalar out <b>before</b> computing \( d \) — it keeps every later distance and angle calculation clean.</div>
+</div>
+
+<div class="f"><div class="lbl">Checks worth doing</div>
+<div class="sym">Dot your normal with <b>each</b> in-plane direction: both must be \(0\). Then verify a known point satisfies your final equation.</div>
+</div>
+
+
+<h2 id="s10">10 &nbsp;Angles — the cos / sin table</h2>
+
+<div class="f"><div class="lbl">Which formula, and why</div>
+<table>
+<tr><th>Angle between</th><th>Formula</th><th>Why</th></tr>
+<tr><td>two <b>vectors</b></td><td>\( \cos\theta=\dfrac{\mathbf a\cdot\mathbf b}{|\mathbf a||\mathbf b|} \) &nbsp;<span class="no">no modulus</span></td><td>may be obtuse</td></tr>
+<tr><td>two <b>lines</b></td><td>\( \cos\theta=\dfrac{\left|\mathbf d_1\cdot\mathbf d_2\right|}{|\mathbf d_1||\mathbf d_2|} \)</td><td>modulus forces the acute angle</td></tr>
+<tr><td>two <b>planes</b></td><td>\( \cos\theta=\dfrac{\left|\mathbf n_1\cdot\mathbf n_2\right|}{|\mathbf n_1||\mathbf n_2|} \)</td><td>angle between planes = angle between normals</td></tr>
+<tr><td><b>line and plane</b></td><td>\( \sin\theta=\dfrac{\left|\mathbf d\cdot\mathbf n\right|}{|\mathbf d||\mathbf n|} \) &nbsp;<span class="yes">SIN</span></td><td>the dot gives the angle to the <b>normal</b>; the angle to the <b>plane</b> is its complement</td></tr>
+<tr><td>line and a <b>coordinate axis</b></td><td>\( \cos\theta=\dfrac{\left|\mathbf d\cdot\mathbf e\right|}{|\mathbf d|} \)</td><td>an axis is just another line, \( |\mathbf e|=1 \)</td></tr>
+</table>
+<div class="key"><b>The one rule to remember:</b> <b>line-and-plane uses \( \sin \); everything else uses \( \cos \).</b> Equivalently, \( \theta_{\text{line,plane}}=90^\circ-\theta_{\text{line,normal}} \) — so if you compute with \( \cos \) against the normal, subtract from \(90^\circ\).</div>
+</div>
+
+
+<h2 id="s11">11 &nbsp;Distances</h2>
+
+<div class="f"><div class="lbl">Point to a PLANE</div>
+\[ \text{distance}=\left|\overrightarrow{BA}\cdot\hat{\mathbf n}\right|=\frac{\left|\mathbf a\cdot\mathbf n-d\right|}{|\mathbf n|} \]
+<div class="sym"><b>\(A\)</b> = the point you are measuring from. <b>\(B\)</b> = <em>any</em> known point on the plane. <b>\( \mathbf n \)</b> = the plane's normal, read straight off \( \mathbf r\cdot\mathbf n=d \). <b>\(d\)</b> = the plane's constant.</div>
+<div class="eg"><div class="lbl">Example</div>\(A(1,2,3)\), plane \( \mathbf r\cdot(-1,2,2)=2 \), \(B(2,1,1)\) on it. \( \overrightarrow{BA}=(-1,1,2) \), \( |\mathbf n|=3 \). Distance \( =\tfrac13|1+2+4|=\tfrac73 \).</div>
+</div>
+
+<div class="f"><div class="lbl">Point to a LINE</div>
+\[ \text{distance}=\left|\overrightarrow{BA}\times\hat{\mathbf d}\right| \qquad\text{or}\qquad \sqrt{\left|\overrightarrow{BA}\right|^2-\left(\overrightarrow{BA}\cdot\hat{\mathbf d}\right)^2} \]
+<div class="sym"><b>\(B\)</b> = any known point on the line, <b>\( \mathbf d \)</b> = the line's direction. The second form is Pythagoras: (hypotenuse)² − (projection)².</div>
+<div class="eg"><div class="lbl">Example</div>\(A(1,2,3)\), line through \(B(2,1,1)\) with \( \mathbf d=(0,-1,1) \). \( \overrightarrow{BA}=(-1,1,2) \); \( \overrightarrow{BA}\times\mathbf d=(3,1,1) \); distance \( =\dfrac{\sqrt{11}}{\sqrt2}=\sqrt{\tfrac{11}{2}} \).</div>
+</div>
+
+<div class="f"><div class="lbl">Two parallel planes / a line parallel to a plane</div>
+\[ \text{distance}=\left|\overrightarrow{AB}\cdot\hat{\mathbf n}\right|\quad\text{with }A\text{ on one, }B\text{ on the other}\qquad\text{or}\qquad \frac{|d_1-d_2|}{|\mathbf n|} \]
+<div class="trap">For the \( \dfrac{|d_1-d_2|}{|\mathbf n|} \) form the <b>two normals must be written identically</b> (same scalar multiple) before you compare the constants.</div>
+</div>
+
+<div class="key"><b>Only TWO distance formulas to choose between.</b> Point→plane uses the <b>dot</b> with \( \hat{\mathbf n} \); point→line uses the <b>cross</b> with \( \hat{\mathbf d} \). Nothing else. <b>Dot for planes, cross for lines.</b><br><br>
+And note: the distance from \(A\) to a line lying in a plane is <b>not</b> generally the distance from \(A\) to the plane — they are equal only if the line passes through the foot of the perpendicular.</div>
+
+
+<h2 id="s12">12 &nbsp;Foot of perpendicular — the two procedures</h2>
+
+<div class="f"><div class="lbl">Side by side</div>
+<table>
+<tr><th></th><th>To a LINE \( \mathbf r=\mathbf a+\lambda\mathbf d \)</th><th>To a PLANE \( \mathbf r\cdot\mathbf n=d \)</th></tr>
+<tr><td><b>1. Write the foot</b></td><td>\( \overrightarrow{OF}=\mathbf a+\lambda\mathbf d \) &nbsp;(general point <em>on the line</em>)</td><td>\( \overrightarrow{OF}=\overrightarrow{OP}+\lambda\mathbf n \) &nbsp;(travel from \(P\) <em>along the normal</em>)</td></tr>
+<tr><td><b>2. Impose</b></td><td>\( \overrightarrow{PF}\cdot\mathbf d=0 \) &nbsp;(perpendicular to the direction)</td><td>substitute \( \overrightarrow{OF} \) <em>into the plane equation</em></td></tr>
+<tr><td><b>3. Solve</b></td><td>for \( \lambda \), then substitute back</td><td>for \( \lambda \), then substitute back</td></tr>
+</table>
+<div class="key"><b>The distinction that keeps catching you.</b> To a <b>line</b> there is nothing to substitute into — you impose a <b>dot-product-zero</b> condition instead. To a <b>plane</b> there is no perpendicularity to impose — the normal direction is already known, so you <b>substitute into the plane</b>. Line → dot with direction. Plane → sub into equation.</div>
+<div class="eg"><div class="lbl">Alternative (projection route)</div>Foot on a line: \( \overrightarrow{OF}=\mathbf a+\left(\overrightarrow{AP}\cdot\hat{\mathbf d}\right)\hat{\mathbf d} \). Foot on a plane: \( \overrightarrow{OF}=\overrightarrow{OP}-\left(\overrightarrow{QP}\cdot\hat{\mathbf n}\right)\hat{\mathbf n} \) for any \(Q\) on the plane.</div>
+</div>
+
+
+<h2 id="s13">13 &nbsp;Reflections</h2>
+
+<div class="f"><div class="lbl">The master relation</div>
+\[ \overrightarrow{OP'}=2\,\overrightarrow{OF}-\overrightarrow{OP} \]
+<div class="sym"><b>\(P\)</b> = the original point, <b>\(P'\)</b> = its image, <b>\(F\)</b> = the foot of the perpendicular from \(P\). It follows from \(F\) being the <b>midpoint</b> of \(PP'\).</div>
+<div class="key"><b>One formula covers reflection in a line and in a plane</b> — only the way you find \(F\) changes (§12).</div>
+</div>
+
+<div class="f"><div class="lbl">Reflecting a LINE</div>
+<div class="sym">Reflect a <b>point</b> of it, then join. If the line meets the mirror at \(A\), that \(A\) is fixed — so the image line is \(A\) joined to \(P'\): \( \mathbf r=\mathbf a+\mu\,\overrightarrow{AP'} \).</div>
+</div>
+
+
+<h2 id="s14">14 &nbsp;Intersections</h2>
+
+<div class="f"><div class="lbl">Line ∩ plane</div>
+<div class="sym">Substitute the line's general point into \( \mathbf r\cdot\mathbf n=d \), solve for \( \lambda \), substitute back. Three outcomes:</div>
+<table>
+<tr><th>Algebra</th><th>Geometry</th></tr>
+<tr><td>a unique \( \lambda \)</td><td>the line <b>cuts</b> the plane at one point</td></tr>
+<tr><td>identity, true for all \( \lambda \)</td><td>the line <b>lies in</b> the plane</td></tr>
+<tr><td>contradiction, no \( \lambda \)</td><td>the line is <b>parallel to</b> and outside the plane</td></tr>
+</table>
+<div class="eg"><div class="lbl">To show a line LIES IN a plane</div>Either substitute and get an identity in \( \lambda \); or show <b>both</b> \( \mathbf d\cdot\mathbf n=0 \) (parallel) <b>and</b> one point of the line satisfies the plane.</div>
+</div>
+
+<div class="f"><div class="lbl">Plane ∩ plane — the line of intersection</div>
+\[ \mathbf d=\mathbf n_1\times\mathbf n_2 \]
+<div class="sym">The line lies in both planes, so it is perpendicular to both normals — which is exactly what the cross product gives. Then find <b>one point</b> on both planes.</div>
+<div class="key"><b>Why you may set a coordinate to zero.</b> The line of intersection is <b>infinite</b>. Fixing \(z=0\) just picks out the single point where the line crosses the \(xy\)-plane. Any consistent choice lands on the <b>same line</b> — only the "starting point" \( \mathbf a \) changes, and \( \mathbf a \) was never unique anyway. (If \(z=0\) gives no solution, the line is parallel to that plane — try \(x=0\) or \(y=0\) instead.)</div>
+<div class="eg"><div class="lbl">Fastest in practice</div>Find a common point <b>by inspection</b> — try small integers in both equations. Or solve the 2×3 system on the GC and read off its general solution.</div>
+</div>
+
+<div class="f"><div class="lbl">The pencil of planes through a line</div>
+\[ (n_1x+n_2y+n_3z-d_1)+k(m_1x+m_2y+m_3z-d_2)=0 \]
+<div class="sym">Every point of the line of intersection makes <b>both</b> brackets zero, so it satisfies this for <b>any</b> \(k\). Choose \(k\) to force one extra condition — e.g. to pass through a given point.</div>
+</div>
+
+<div class="f"><div class="lbl">Three planes</div>
+<div class="sym">Solve the 3×3 system on the GC. <b>Unique solution</b> → one common point. <b>No solution</b> → no common point (parallel, or forming a triangular prism). <b>Infinitely many</b> → they share a common line.</div>
+</div>
+
+
+<h2 id="s15">15 &nbsp;Method selection — the decision trees</h2>
+
+<div class="f"><div class="lbl">Which product?</div>
+<table>
+<tr><th>You want…</th><th>Use</th></tr>
+<tr><td>an angle, or to test perpendicularity</td><td><b>dot</b></td></tr>
+<tr><td>a vector perpendicular to two others (a normal)</td><td><b>cross</b></td></tr>
+<tr><td>an area</td><td><b>cross</b>, then take the magnitude</td></tr>
+<tr><td>to test parallel / collinear</td><td><b>cross</b> \(=\mathbf 0\) &nbsp;(or "is it a scalar multiple?")</td></tr>
+<tr><td>a length of projection</td><td><b>dot</b> with the unit vector</td></tr>
+<tr><td>a perpendicular distance to a line</td><td><b>cross</b> with the unit direction</td></tr>
+</table>
+</div>
+
+<div class="f"><div class="lbl">Which distance formula?</div>
+<table>
+<tr><th>From a point to…</th><th>Formula</th></tr>
+<tr><td>a <b>plane</b></td><td>\( \left|\overrightarrow{BA}\cdot\hat{\mathbf n}\right| \) &nbsp;— dot</td></tr>
+<tr><td>a <b>line</b></td><td>\( \left|\overrightarrow{BA}\times\hat{\mathbf d}\right| \) &nbsp;— cross</td></tr>
+</table>
+<div class="sym">There is no third case. If a stem looks like "distance between two skew lines", the real ask is <b>point-to-line minimisation</b> (§17).</div>
+</div>
+
+<div class="f"><div class="lbl">Recognising the phrase</div>
+<table>
+<tr><th>Phrase in the question</th><th>What it means</th></tr>
+<tr><td>"perpendicular distance", "shortest distance"</td><td>same thing — §11</td></tr>
+<tr><td>"foot of perpendicular from \(P\)"</td><td>§12 — pick line or plane procedure</td></tr>
+<tr><td>"mirror image", "reflection of \(P\)"</td><td>find the foot, then \( 2\overrightarrow{OF}-\overrightarrow{OP} \)</td></tr>
+<tr><td>"the point on \(l\) nearest to \(A\)"</td><td>foot of perpendicular from \(A\) to \(l\)</td></tr>
+<tr><td>"make \(|PR|\) as small as possible"</td><td>same — point-to-line minimisation</td></tr>
+<tr><td>"plane perpendicular to line \(AB\)"</td><td>\( \overrightarrow{AB} \) is the <b>normal</b></td></tr>
+<tr><td>"plane perpendicular to plane \( \Pi \)"</td><td>\( \Pi \)'s normal is a <b>direction in</b> your plane</td></tr>
+<tr><td>"line lies in the plane"</td><td>\( \mathbf d\cdot\mathbf n=0 \) <b>and</b> a point of the line satisfies the plane</td></tr>
+<tr><td>"\(A\) is equidistant from \(p_1\) and \(p_2\)"</td><td>set the two point-to-plane distances equal, then square</td></tr>
+<tr><td>"express \( \overrightarrow{OR} \) in two different ways"</td><td>write it along each of two lines, equate, compare coefficients</td></tr>
+</table>
+</div>
+
+<div class="f"><div class="lbl">Comparing coefficients — when it is legal</div>
+<div class="sym">If \( \alpha\mathbf a+\beta\mathbf b=\gamma\mathbf a+\delta\mathbf b \) and \( \mathbf a \), \( \mathbf b \) are <b>non-parallel</b>, then \( \alpha=\gamma \) and \( \beta=\delta \). <b>State the non-parallel condition</b> — it is a marked step, and the deduction is false without it.</div>
+</div>
+
+
+<h2 id="s16">16 &nbsp;What is given vs what you must memorise</h2>
+
+<div class="note"><b>Verify this against your own MF27 copy</b> — I do not have the booklet on file, so treat the split below as a working assumption rather than a checked fact. What is <em>not</em> in doubt: the overwhelming majority of the vector toolkit is <b>not</b> provided, so assume you must know everything on this sheet.</div>
+
+<table>
+<tr><th>Item</th><th>Provided?</th></tr>
+<tr><td>Cross-product component formula</td><td class="c"><span class="yes">given in MF27</span></td></tr>
+<tr><td>Ratio theorem</td><td class="c"><span class="no">memorise</span></td></tr>
+<tr><td>\( \mathbf a\cdot\mathbf b=|\mathbf a||\mathbf b|\cos\theta \), \( |\mathbf a\times\mathbf b|=|\mathbf a||\mathbf b|\sin\theta \)</td><td class="c"><span class="no">memorise</span></td></tr>
+<tr><td>Scalar projection, projection vector</td><td class="c"><span class="no">memorise</span></td></tr>
+<tr><td>Area of triangle / parallelogram</td><td class="c"><span class="no">memorise</span></td></tr>
+<tr><td>Line and plane equations, all forms</td><td class="c"><span class="no">memorise</span></td></tr>
+<tr><td>All angle formulas (incl. \( \sin \) for line-plane)</td><td class="c"><span class="no">memorise</span></td></tr>
+<tr><td>Both distance formulas</td><td class="c"><span class="no">memorise</span></td></tr>
+<tr><td>Foot of perpendicular procedures, reflection relation</td><td class="c"><span class="no">memorise</span></td></tr>
+</table>
+
+
+<h2 id="s17">17 &nbsp;Excluded from 9758 — do not use</h2>
+
+<div class="note">
+<b>These are out of syllabus.</b> Reaching for one wastes time and signals a method the examiner is not asking for.
+<ul style="margin:6px 0 0;padding-left:20px">
+  <li><b>Triple products</b> \( \mathbf a\cdot(\mathbf b\times\mathbf c) \) and \( \mathbf a\times(\mathbf b\times\mathbf c) \).</li>
+  <li><b>Shortest distance between two skew lines</b>, and the <b>common perpendicular</b> to two skew lines. <em>(The formula \( \frac{|(\mathbf a_2-\mathbf a_1)\cdot(\mathbf d_1\times\mathbf d_2)|}{|\mathbf d_1\times\mathbf d_2|} \) is excluded twice over — it is also a triple product.)</em></li>
+</ul>
+If a stem looks like skew-line distance, the real ask is <b>point-to-line minimisation</b>. Note that a question may still <em>scaffold</em> you through a common-perpendicular construction step by step — that is fine, because each step is in syllabus; what is excluded is quoting the closed formula.
+</div>
+
+
+<h2 id="s18">18 &nbsp;Mark-losers checklist</h2>
+
+<div class="f"><div class="lbl">Run this before you hand anything in</div>
+<table>
+<tr><th>#</th><th>Check</th></tr>
+<tr><td>1</td><td>Area: did I take the <b>magnitude</b> of the cross product? Is the \( \tfrac12 \) right (triangle yes, parallelogram no)?</td></tr>
+<tr><td>2</td><td>Ratio theorem: is the weight on the <b>opposite</b> endpoint?</td></tr>
+<tr><td>3</td><td>Angle between <b>vectors</b> — did I wrongly insert a modulus? (It may be obtuse.)</td></tr>
+<tr><td>4</td><td>Line and plane — did I use <b>\( \sin \)</b>, not \( \cos \)?</td></tr>
+<tr><td>5</td><td>Did I <b>simplify the normal</b> / direction before using it?</td></tr>
+<tr><td>6</td><td>Cartesian line: did I rewrite \( \dfrac{10-x}{3} \) as \( \dfrac{x-10}{-3} \) before reading the direction?</td></tr>
+<tr><td>7</td><td>Skew: did I state <b>both</b> non-parallel and non-intersecting, and check the third equation?</td></tr>
+<tr><td>8</td><td>Foot of perpendicular: line → dot with direction; plane → substitute into the plane. Right one?</td></tr>
+<tr><td>9</td><td>Collinearity: did I show a <b>vector</b> relation, not a ratio of magnitudes?</td></tr>
+<tr><td>10</td><td>Comparing coefficients: did I <b>state</b> that the two vectors are non-parallel?</td></tr>
+<tr><td>11</td><td>Did I give <b>coordinates</b> where the question asked for a point?</td></tr>
+<tr><td>12</td><td>Quadratic in \( \lambda \) (point at a given distance, \( |\mathbf v|^2=k \)) — did I keep <b>both</b> roots?</td></tr>
+<tr><td>13</td><td>Unit vector — did I include \( \pm \) when the question says "a unit vector"?</td></tr>
+<tr><td>14</td><td>\( \lambda\in\mathbb R \) written at the end of every line/plane equation?</td></tr>
+<tr><td>15</td><td>Angles to <b>1 d.p. in degrees</b>; exact form where demanded; calculator in <b>degrees</b>?</td></tr>
+</table>
+</div>
+
+<hr>
+<p style="color:var(--muted);font-size:.88em">Covers syllabus §3.1–3.3 in full. Companion drill: <b>Vectors C1–C3 full-coverage drill</b> (15 real exam questions, 139 marks) — every formula here is exercised there at least once.</p>
+
+</body>
+</html>

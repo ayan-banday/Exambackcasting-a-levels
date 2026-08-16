@@ -1826,6 +1826,15 @@ window.PLAN = {
      "done": false,
      "doneDate": null,
      "clusterHref": "clusters/drill_vectors_C1_C3.html"
+    },
+    {
+     "mins": 0,
+     "subject": "maths",
+     "name": "Maths — Vectors FORMULA SHEET (reference · all of C1–C3)",
+     "desc": "Every Vectors formula, method and decision rule in one place: basics, ratio theorem, dot/cross, projections, areas, lines, planes, angles (the cos/sin table), both distance formulas, foot-of-perp line-vs-plane side by side, reflections, intersections, method-selection trees, what's excluded in 9758, and a 15-point mark-loser checklist. Open it alongside the drill.",
+     "done": false,
+     "doneDate": null,
+     "clusterHref": "clusters/formula_sheet_vectors.html"
     }
    ],
    "week": 4
