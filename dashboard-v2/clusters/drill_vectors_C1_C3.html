@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vectors C1–C3 — Full-Coverage Drill (9758)</title>
+<script>
+  window.MathJax = { tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], processEscapes: true, tags:'none' }, svg:{fontCache:'global'} };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --amber:#d97706; --green:#059669; --green-soft:#ecfdf5;
+    --cover:#f3f4f6; --accent:#6d28d9; --red:#dc2626; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:36px 24px 90px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h3,.label,.controls,button,.step-header,.hd .sub,.hd .meta,.cardhead,.conf,.src,.marks,.testline,.tag{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  .hd{border-bottom:2.5px solid #111;padding-bottom:16px;margin-bottom:10px;text-align:center}
+  .hd h1{font-size:1.55em;font-weight:800;letter-spacing:.4px;margin:0;border:none;padding:0;color:#111}
+  .hd .sub{font-size:1.02em;margin-top:4px;color:#333}
+  .hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:.8em;color:var(--muted);margin-top:9px}
+  p{margin:8px 0}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--accent);padding:15px 20px;border-radius:6px;margin:18px 0}
+  .conv{background:#fff7ed;border:2px solid var(--amber);border-radius:8px;padding:13px 18px;margin:18px 0 8px;font-size:.95em;color:#7c2d12}
+  .conv b{color:#b91c1c}
+  .conv ul{margin:8px 0 0;padding-left:20px}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin:22px 0 20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;font-weight:500}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:30px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:8px;color:#111}
+  .toc a{color:var(--blue);text-decoration:none;display:inline-block;width:31%;min-width:130px;line-height:2}
+  .toc a b{color:#111}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:24px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .cardhead{font-size:.72em;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+  .src{font-family:ui-monospace,Menlo,monospace;font-size:.72em;color:var(--amber);margin:3px 0 10px}
+  .stem{background:#1e293b;color:#f1f5f9;padding:14px 18px;border-radius:6px;margin:8px 0;line-height:1.75}
+  .stem .sub{display:block;margin-top:8px}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px}
+  .conf{background:#f8fafc;border:1px dashed #cbd5e1;border-radius:6px;padding:8px 14px;margin:12px 0 4px;font-size:.85em;color:#475569}
+  .conf b{color:#0f172a}
+  .block.answer{background:var(--green-soft);border-left:4px solid var(--green);border-radius:6px;position:relative;min-height:60px;padding:12px 16px 14px;margin:14px 0 2px}
+  .label{display:block;text-transform:uppercase;font-size:.73em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--green)}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.6);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.78em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .mk{display:inline-block;font-size:.8em;color:var(--green);font-weight:700;margin-left:4px}
+  .name{display:block;font-size:.86em;color:#475569;font-style:italic;margin:6px 0;border-left:2px solid var(--border);padding-left:10px}
+  .keynote{background:#fef2f2;border-left:3px solid var(--red);padding:7px 12px;border-radius:4px;margin:9px 0 0;font-size:.87em;color:#7f1d1d}
+  .keynote b{color:var(--red)}
+  .testline{margin-top:12px;padding-top:8px;border-top:1px dashed #a7f3d0;font-size:.8em;color:#047857}
+  .testline b{color:#065f46}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;z-index:2;text-align:center;padding:0 20px}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content{padding-right:60px}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  table{border-collapse:collapse;margin:12px 0;font-size:.88em;width:100%}
+  th,td{border:1px solid #e5e7eb;padding:5px 9px;text-align:left;vertical-align:top}
+  th{background:#f3f4f6;font-weight:600;font-family:-apple-system,sans-serif}
+  mjx-container{overflow-x:auto;overflow-y:hidden;max-width:100%}
+  @media print{body{background:#fff;padding:20px;max-width:100%}.controls,.reveal-btn{display:none!important}.answer-overlay{display:none!important}.card{box-shadow:none;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<div class="hd">
+  <h1>H2 MATHEMATICS</h1>
+  <div class="sub">Vectors &mdash; Full-Coverage Drill (Clusters 1&ndash;3)</div>
+  <div class="meta">9758 &middot; H2 &middot; Paper 1 &amp; 2 (Pure) &middot; 15 questions &middot; <b>139 marks &middot; ~2h45 &middot; every learning outcome tested</b></div>
+</div>
+
+<div class="intro">
+Every question is a <b>real Cambridge A-Level, HCI tutorial, prelim or promo question</b>, and every revealed solution reproduces the <b>school answer key's own working</b> &mdash; each mark tagged <span class="mk">(1)</span> where it is earned, every symbol named before it enters a formula. Between them the fifteen questions test <b>all 22 learning outcomes</b> across basics, products, ratio theorem, lines and planes (coverage table at the bottom).
+<br><br>
+The questions are deliberately <b>interleaved, not grouped</b> &mdash; a plane question sits next to a ratio-theorem one, so <b>choosing the right method is part of the test</b>. That is the point: your logged weak spot is method selection (point-to-line vs point-to-plane, which distance formula, which product), and grouping by topic would hand you the answer for free. Attempt each cold, say your confidence out loud before you reveal, then self-mark.
+</div>
+
+<div class="conv">
+<b>Exam conventions for vectors</b> &mdash; these are marked, so follow them:
+<ul>
+  <li><b>Angles in degrees to 1 decimal place</b> unless the question says otherwise. Set your calculator to <b>degrees</b> for this sheet.</li>
+  <li>Use \( \cos\theta = \dfrac{|\mathbf a\cdot\mathbf b|}{|\mathbf a||\mathbf b|} \) with the modulus for the <b>acute</b> angle between lines/planes &mdash; but <b>no modulus</b> for the angle between two <em>vectors</em>, which may be obtuse.</li>
+  <li>Give <b>coordinates</b> when asked for a point, and a <b>column vector</b> when asked for a position vector.</li>
+  <li><b>Exact form</b> (surds, fractions) when asked; otherwise 3 significant figures.</li>
+  <li>Out of syllabus in 9758, so never reach for them: <b>triple products</b> \( \mathbf a\cdot(\mathbf b\times\mathbf c) \), and the <b>shortest distance between two skew lines</b>.</li>
+</ul>
+</div>
+
+<div class="controls"><button onclick="revealAll()">Reveal all</button><button onclick="hideAll()">Hide all</button></div>
+
+<div class="toc"><strong>The 15 questions &middot; 139 marks</strong>
+<a href="#q1"><b>Q1</b> <span class="marks">[9]</span></a><a href="#q2"><b>Q2</b> <span class="marks">[4]</span></a><a href="#q3"><b>Q3</b> <span class="marks">[12]</span></a>
+<a href="#q4"><b>Q4</b> <span class="marks">[5]</span></a><a href="#q5"><b>Q5</b> <span class="marks">[18]</span></a><a href="#q6"><b>Q6</b> <span class="marks">[9]</span></a>
+<a href="#q7"><b>Q7</b> <span class="marks">[3]</span></a><a href="#q8"><b>Q8</b> <span class="marks">[12]</span></a><a href="#q9"><b>Q9</b> <span class="marks">[9]</span></a>
+<a href="#q10"><b>Q10</b> <span class="marks">[6]</span></a><a href="#q11"><b>Q11</b> <span class="marks">[12]</span></a><a href="#q12"><b>Q12</b> <span class="marks">[6]</span></a>
+<a href="#q13"><b>Q13</b> <span class="marks">[15]</span></a><a href="#q14"><b>Q14</b> <span class="marks">[13]</span></a><a href="#q15"><b>Q15</b> <span class="marks">[6]</span></a>
+</div>
+
+
+<!-- Q1 -->
+<div class="card" id="q1">
+  <div class="cardhead">Question 1 <span class="marks">[9]</span></div>
+  <div class="src">A-Level 2007 P1 Q6</div>
+  <div class="stem">
+    Referred to the origin \(O\), the position vectors of the points \(A\) and \(B\) are \( \mathbf i-\mathbf j+2\mathbf k \) and \( 2\mathbf i+4\mathbf j+\mathbf k \) respectively.
+    <span class="sub">(i) Show that \(OA\) is perpendicular to \(OB\). <span class="marks">[2]</span></span>
+    <span class="sub">(ii) Find the position vector of the point \(M\) on the line segment \(AB\) such that \(AM:MB=1:2\). <span class="marks">[3]</span></span>
+    <span class="sub">(iii) The point \(C\) has position vector \( -4\mathbf i+2\mathbf j+2\mathbf k \). Use a vector product to find the exact area of triangle \(OAC\). <span class="marks">[4]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) perpendicular \(\Leftrightarrow\) scalar product zero</div>
+        \[ \overrightarrow{OA}\cdot\overrightarrow{OB}=(1)(2)+(-1)(4)+(2)(1)=2-4+2=0 \]<span class="mk">(1)</span>
+        <span class="name">Since \( \overrightarrow{OA}\cdot\overrightarrow{OB}=0 \) and neither vector is zero, \(OA\) is perpendicular to \(OB\).</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) ratio theorem</div>
+        <span class="name">\(M\) divides \(AB\) with \(AM:MB=\lambda:\mu=1:2\). In \( \overrightarrow{OM}=\dfrac{\mu\,\mathbf a+\lambda\,\mathbf b}{\lambda+\mu} \) the weight sits with the <b>opposite</b> endpoint, so \(\mathbf a\) carries the \(2\).</span>
+        \[ \overrightarrow{OM}=\frac{2\,\overrightarrow{OA}+\overrightarrow{OB}}{3}=\frac13\begin{pmatrix}2+2\\-2+4\\4+1\end{pmatrix}=\frac13\begin{pmatrix}4\\2\\5\end{pmatrix} \]<span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) area of a triangle from a vector product</div>
+        <span class="name">Two sides from the same corner \(O\): \( \overrightarrow{OA}=(1,-1,2) \) and \( \overrightarrow{OC}=(-4,2,2) \).</span>
+        \[ \overrightarrow{OA}\times\overrightarrow{OC}=\begin{pmatrix}(-1)(2)-(2)(2)\\(2)(-4)-(1)(2)\\(1)(2)-(-1)(-4)\end{pmatrix}=\begin{pmatrix}-6\\-10\\-2\end{pmatrix} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ \text{Area}=\tfrac12\left|\overrightarrow{OA}\times\overrightarrow{OC}\right|=\tfrac12\sqrt{36+100+4}=\tfrac12\sqrt{140}=\sqrt{35}\ \text{units}^2 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Mark-loser:</b> the area is \( \tfrac12\big|\mathbf a\times\mathbf c\big| \) &mdash; you must take the <b>magnitude</b> of the cross product. Stopping at the vector \((-6,-10,-2)\) scores the method mark and loses the answer mark.</div>
+      <div class="testline"><b>Tests:</b> perpendicularity by scalar product; ratio theorem (weight on the opposite endpoint); area of a triangle as half the magnitude of a vector product.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q2 -->
+<div class="card" id="q2">
+  <div class="cardhead">Question 2 <span class="marks">[4]</span></div>
+  <div class="src">A-Level 2021 P1 Q7(a)</div>
+  <div class="stem">
+    The line \(l_1\) has equation \( \mathbf r=\begin{pmatrix}3\\2\\0\end{pmatrix}+\lambda\begin{pmatrix}2\\-3\\1\end{pmatrix} \), where \(\lambda\) is a parameter.
+    <span class="sub">Find a Cartesian equation of the plane containing \(l_1\) and the point \( (1,-3,-1) \). <span class="marks">[4]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">two directions in the plane, then a normal</div>
+        <span class="name">The plane contains \(l_1\), so its direction \( \mathbf d=(2,-3,1) \) lies in the plane. A second direction: join a known point of \(l_1\), \(A(3,2,0)\), to the given point \(B(1,-3,-1)\).</span>
+        \[ \overrightarrow{AB}=\begin{pmatrix}1\\-3\\-1\end{pmatrix}-\begin{pmatrix}3\\2\\0\end{pmatrix}=\begin{pmatrix}-2\\-5\\-1\end{pmatrix} \]<span class="mk">(1)</span>
+        \[ \mathbf n=\overrightarrow{AB}\times\mathbf d=\begin{pmatrix}-2\\-5\\-1\end{pmatrix}\times\begin{pmatrix}2\\-3\\1\end{pmatrix}=\begin{pmatrix}-8\\0\\16\end{pmatrix}=-8\begin{pmatrix}1\\0\\-2\end{pmatrix} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">use \( \mathbf r\cdot\mathbf n=\mathbf a\cdot\mathbf n \), then read off the Cartesian form</div>
+        <span class="name">Take the simplified normal \( \mathbf n=(1,0,-2) \) and the known point \( \mathbf a=(3,2,0) \) on the plane.</span>
+        \[ \mathbf r\cdot\begin{pmatrix}1\\0\\-2\end{pmatrix}=\begin{pmatrix}3\\2\\0\end{pmatrix}\cdot\begin{pmatrix}1\\0\\-2\end{pmatrix}=3 \]<span class="mk">(1)</span>
+        \[ \therefore\ x-2z=3 \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>The move worth drilling:</b> \((-8,0,16)=-8(1,0,-2)\). <b>Always factor the common scalar out of a normal</b> before using it &mdash; any scalar multiple is an equally valid normal, and the small one keeps the arithmetic clean. The same simplification is why \(3(-1,1,1)\) becomes \((-1,1,1)\).</div>
+      <div class="testline"><b>Tests:</b> building a plane from a line plus an external point &mdash; two in-plane directions, normal by vector product, simplify the normal, then \( \mathbf r\cdot\mathbf n=\mathbf a\cdot\mathbf n \) converted to Cartesian form.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q3 -->
+<div class="card" id="q3">
+  <div class="cardhead">Question 3 <span class="marks">[12]</span></div>
+  <div class="src">A-Level J93 P1 Q14 &middot; HCI Tutorial 7B Q10</div>
+  <div class="stem">
+    The equation of a straight line \(l\) is \( \mathbf r=\begin{pmatrix}1\\2\\3\end{pmatrix}+t\begin{pmatrix}-1\\1\\1\end{pmatrix} \), \(t\in\mathbb R\). The point \(A\) on \(l\) is given by \(t=0\), and \(O\) is the origin of position vectors.
+    <span class="sub">(i) Calculate the acute angle between \(OA\) and \(l\), giving your answer correct to the nearest degree. <span class="marks">[2]</span></span>
+    <span class="sub">(ii) Find the position vector of the point \(P\) on \(l\) such that \(OP\) is perpendicular to \(l\). <span class="marks">[3]</span></span>
+    <span class="sub">(iii) A point \(Q\) on \(l\) is such that the length of \(OQ\) is \(5\) units. Find the two possible position vectors of \(Q\). <span class="marks">[4]</span></span>
+    <span class="sub">(iv) The points \(R\) and \(S\) on \(l\) are given by \(t=\lambda\) and \(t=2\lambda\) respectively. Show that there is no value of \(\lambda\) for which \(OR\) and \(OS\) are perpendicular. <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) acute angle between a vector and a line</div>
+        <span class="name">\(t=0\) gives \( \overrightarrow{OA}=(1,2,3) \); the line's direction is \( \mathbf d=(-1,1,1) \). Modulus because an <em>acute</em> angle is required.</span>
+        \[ \cos\theta=\frac{\left|(1,2,3)\cdot(-1,1,1)\right|}{\sqrt{14}\,\sqrt{3}}=\frac{4}{\sqrt{42}} \]<span class="mk">(1)</span>
+        \[ \theta=52^\circ\ \text{(nearest degree)} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) foot of perpendicular from a point to a LINE</div>
+        <span class="name">\(P\) lies on \(l\), so write the general point and impose that \( \overrightarrow{OP} \) is perpendicular to the <b>direction</b> of \(l\).</span>
+        \[ \overrightarrow{OP}=\begin{pmatrix}1-k\\2+k\\3+k\end{pmatrix}\quad\text{for some }k\in\mathbb R \]<span class="mk">(1)</span>
+        \[ \overrightarrow{OP}\cdot\mathbf d=0:\ -(1-k)+(2+k)+(3+k)=0\ \Rightarrow\ 3k+4=0\ \Rightarrow\ k=-\tfrac43 \]<span class="mk">(1)</span>
+        \[ \overrightarrow{OP}=\tfrac13\begin{pmatrix}7\\2\\5\end{pmatrix} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) point on a line at a given distance &mdash; quadratic in the parameter</div>
+        \[ \left|\overrightarrow{OQ}\right|^2=(1-t)^2+(2+t)^2+(3+t)^2=25 \]<span class="mk">(1)</span>
+        \[ 3t^2+8t-11=0\ \Rightarrow\ (3t+11)(t-1)=0\ \Rightarrow\ t=-\tfrac{11}{3}\ \text{or}\ t=1 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ \overrightarrow{OQ}=\tfrac13\begin{pmatrix}14\\-5\\-2\end{pmatrix}\quad\text{or}\quad\overrightarrow{OQ}=\begin{pmatrix}0\\3\\4\end{pmatrix} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iv) discriminant argument</div>
+        <span class="name">\( \overrightarrow{OR}=(1-\lambda,\,2+\lambda,\,3+\lambda) \) and \( \overrightarrow{OS}=(1-2\lambda,\,2+2\lambda,\,3+2\lambda) \). Suppose they were perpendicular.</span>
+        \[ \overrightarrow{OR}\cdot\overrightarrow{OS}=6\lambda^2+12\lambda+14=0\ \Rightarrow\ 3\lambda^2+6\lambda+7=0 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">Discriminant \( =6^2-4(3)(7)=-48<0 \), so this quadratic has no real roots.</span>
+        \[ \therefore\ \text{there is no value of }\lambda\text{ for which }OR\perp OS. \]<span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Tests:</b> angle between a vector and a line; foot of perpendicular to a line by the dot-with-direction method; locating points on a line at a fixed distance; a discriminant argument to prove a configuration is impossible.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q4 -->
+<div class="card" id="q4">
+  <div class="cardhead">Question 4 <span class="marks">[5]</span></div>
+  <div class="src">A-Level 2014 P1 Q3</div>
+  <div class="stem">
+    <span class="sub">(i) Given that \( \mathbf a\times\mathbf b=\mathbf 0 \), what can be deduced about the vectors \( \mathbf a \) and \( \mathbf b \)? <span class="marks">[2]</span></span>
+    <span class="sub">(ii) Find a unit vector \( \mathbf n \) such that \( \mathbf n\times(\mathbf i+2\mathbf j-2\mathbf k)=\mathbf 0 \). <span class="marks">[2]</span></span>
+    <span class="sub">(iii) Find the cosine of the acute angle between \( \mathbf i+2\mathbf j-2\mathbf k \) and the \(z\)-axis. <span class="marks">[1]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) what a zero vector product means</div>
+        <span class="name">\( |\mathbf a\times\mathbf b|=|\mathbf a||\mathbf b|\sin\theta \), so the product vanishes when a magnitude is zero or when \( \sin\theta=0 \).</span>
+        \[ |\mathbf a|=0\ \text{ or }\ |\mathbf b|=0\ \text{ or }\ \mathbf a\text{ is parallel to }\mathbf b. \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) parallel, and of unit length</div>
+        <span class="name">By (i), \( \mathbf n \) must be parallel to \( (1,2,-2) \), whose magnitude is \( \sqrt{1+4+4}=3 \).</span>
+        \[ \mathbf n=\pm\tfrac13\big(\mathbf i+2\mathbf j-2\mathbf k\big) \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) angle with a coordinate axis</div>
+        <span class="name">The \(z\)-axis has direction \( \mathbf k=(0,0,1) \); modulus for the acute angle.</span>
+        \[ \cos\theta=\frac{\left|(1,2,-2)\cdot(0,0,1)\right|}{3\times 1}=\frac{2}{3} \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Don't lose the \(\pm\):</b> "a unit vector" parallel to a given direction has <b>two</b> answers. And note (i) must include the degenerate cases \( |\mathbf a|=0 \) or \( |\mathbf b|=0 \) &mdash; "parallel" alone is an incomplete deduction.</div>
+      <div class="testline"><b>Tests:</b> the geometric meaning of a zero vector product; unit vectors; the angle between a vector and a coordinate axis.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q5 -->
+<div class="card" id="q5">
+  <div class="cardhead">Question 5 <span class="marks">[18]</span></div>
+  <div class="src">HCI Tutorial 7C Q4</div>
+  <div class="stem">
+    The point \(A\) has position vector \( \mathbf i+2\mathbf j+3\mathbf k \); the line \(l_1\) has equation \( \mathbf r=\begin{pmatrix}2\\1\\1\end{pmatrix}+t\begin{pmatrix}0\\-1\\1\end{pmatrix} \), \(t\in\mathbb R\); the line \(l_2\) has equation \( \mathbf r=\begin{pmatrix}3\\4\\2\end{pmatrix}+s\begin{pmatrix}1\\1\\-2\end{pmatrix} \), \(s\in\mathbb R\); and the plane \( \Pi \) has equation \( \mathbf r\cdot\begin{pmatrix}-1\\2\\2\end{pmatrix}=2 \).
+    <span class="sub">(a) Show that \(l_1\) lies on \( \Pi \). <span class="marks">[3]</span></span>
+    <span class="sub">(b) Find the perpendicular distance from \(A\) to \( \Pi \). <span class="marks">[3]</span></span>
+    <span class="sub">(c) Find the perpendicular distance from \(A\) to \(l_1\). <span class="marks">[3]</span></span>
+    <span class="sub">(d) Find the coordinates of the point of intersection between \(l_2\) and \( \Pi \). <span class="marks">[3]</span></span>
+    <span class="sub">(e) Find the position vector of the foot of perpendicular from \(A\) to \(l_2\). <span class="marks">[3]</span></span>
+    <span class="sub">(f) Find the position vector of the foot of perpendicular from \(A\) to \( \Pi \). <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) a line lies in a plane &mdash; two things to show</div>
+        <span class="name">Substitute the general point of \(l_1\) into the plane equation. \( \mathbf n=(-1,2,2) \) is the plane's normal.</span>
+        \[ (2,\,1-t,\,1+t)\cdot(-1,2,2)=-2+2-2t+2+2t=2 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">This holds for <b>every</b> \(t\), so every point of \(l_1\) satisfies \( \Pi \).</span>
+        \[ \therefore\ l_1\ \text{lies on}\ \Pi. \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b) distance from a point to a PLANE &mdash; project onto the unit normal</div>
+        <span class="name">Take \(B(2,1,1)\), a known point on \( \Pi \). \( \hat{\mathbf n}=\tfrac13(-1,2,2) \) since \( |\mathbf n|=3 \).</span>
+        \[ \overrightarrow{BA}=(1,2,3)-(2,1,1)=(-1,1,2) \]
+        \[ \text{distance}=\left|\overrightarrow{BA}\cdot\hat{\mathbf n}\right|=\tfrac13\left|1+2+4\right|=\frac73\ \text{units} \]<span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(c) distance from a point to a LINE &mdash; cross with the unit direction</div>
+        <span class="name">Same \(B\) on \(l_1\); \( \hat{\mathbf d}=\tfrac1{\sqrt2}(0,-1,1) \).</span>
+        \[ \text{distance}=\left|\overrightarrow{BA}\times\hat{\mathbf d}\right|=\tfrac1{\sqrt2}\left|(-1,1,2)\times(0,-1,1)\right|=\tfrac1{\sqrt2}\left|(3,1,1)\right|=\sqrt{\tfrac{11}{2}}\ \text{units} \]<span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(d) line meets plane &mdash; substitute the general point</div>
+        \[ (3+s,\,4+s,\,2-2s)\cdot(-1,2,2)=2\ \Rightarrow\ -3-s+8+2s+4-4s=2\ \Rightarrow\ s=\tfrac73 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ \text{Coordinates }\left(\tfrac{16}{3},\ \tfrac{19}{3},\ -\tfrac83\right) \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(e) foot of perpendicular to a LINE &mdash; dot with the direction</div>
+        <span class="name">\(P\) on \(l_2\): \( \overrightarrow{OP}=(3+s,4+s,2-2s) \); impose \( \overrightarrow{AP}\perp\mathbf d_2 \).</span>
+        \[ (2+s,\,2+s,\,-1-2s)\cdot(1,1,-2)=0\ \Rightarrow\ 6s+6=0\ \Rightarrow\ s=-1 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ \overrightarrow{OP}=\begin{pmatrix}2\\3\\4\end{pmatrix} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(f) foot of perpendicular to a PLANE &mdash; travel from \(A\) along the normal</div>
+        <span class="name">The foot \(N_1\) lies on the line through \(A\) in the direction of \( \mathbf n \); substitute that line into \( \Pi \).</span>
+        \[ \mathbf r=(1-\lambda,\,2+2\lambda,\,3+2\lambda);\quad (1-\lambda,2+2\lambda,3+2\lambda)\cdot(-1,2,2)=2\ \Rightarrow\ 9\lambda+9=2\ \Rightarrow\ \lambda=-\tfrac79 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ \overrightarrow{ON_1}=\tfrac19\begin{pmatrix}16\\4\\13\end{pmatrix} \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>This is the whole method-selection test in one question.</b> Line versus plane are <em>different procedures</em>:<br>
+      &bull; <b>To a PLANE</b> &mdash; distance \( =|\overrightarrow{BA}\cdot\hat{\mathbf n}| \); foot \( =A+\lambda\mathbf n \), then substitute into the plane.<br>
+      &bull; <b>To a LINE</b> &mdash; distance \( =|\overrightarrow{BA}\times\hat{\mathbf d}| \); foot \( =\mathbf a+\lambda\mathbf d \), then impose \( \overrightarrow{AF}\cdot\mathbf d=0 \).<br>
+      Key note from the school key: the distance from \(A\) to \(l_1\) is <b>not</b> generally the same as the distance from \(A\) to \( \Pi \), even when \(l_1\) lies in \( \Pi \) &mdash; here \( \tfrac73 \) versus \( \sqrt{11/2} \). They coincide only if the line passes through the foot of the perpendicular.</div>
+      <div class="testline"><b>Tests:</b> showing a line lies in a plane; point-to-plane and point-to-line distance; line-plane intersection; and both feet of perpendicular &mdash; all six interleaved so you must pick the method each time.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q6 -->
+<div class="card" id="q6">
+  <div class="cardhead">Question 6 <span class="marks">[9]</span></div>
+  <div class="src">ACJC 2023 Promo Q6 &middot; HCI Supplementary Q1</div>
+  <div class="stem">
+    Referred to the origin \(O\), the points \(P\) and \(Q\) have position vectors \( \mathbf p \) and \( \mathbf q \) respectively, where \( \mathbf p \) and \( \mathbf q \) are not parallel. Point \(A\) lies between \(P\) and \(Q\), such that \( PA:AQ=\lambda:(1-\lambda) \), where \( 0<\lambda<1 \).
+    <span class="sub">(i) Express \( \overrightarrow{OA} \) in terms of \( \mathbf p \), \( \mathbf q \) and \( \lambda \). <span class="marks">[1]</span></span>
+    <span class="sub">(ii) The point \(B\) lies between \(O\) and \(Q\), such that \( OB:OQ=1:3 \). Given that \(AB\) is parallel to \( (\mathbf q-4\mathbf p) \), find the value of \( \lambda \). <span class="marks">[4]</span></span>
+    <span class="sub">(iii) It is now given that \( \mathbf p \) is a unit vector which is perpendicular to \( \mathbf q \), and \( |\mathbf q|=2 \). Find the area of triangle \(OAQ\), in terms of \( \lambda \). <span class="marks">[4]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) ratio theorem with a parameter</div>
+        <span class="name">\(PA:AQ=\lambda:(1-\lambda)\), and the two parts sum to \(1\), so the denominator is \(1\).</span>
+        \[ \overrightarrow{OA}=\frac{(1-\lambda)\mathbf p+\lambda\mathbf q}{\lambda+(1-\lambda)}=(1-\lambda)\mathbf p+\lambda\mathbf q \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) parallel means "a scalar multiple of"</div>
+        <span class="name">\( \overrightarrow{OB}=\tfrac13\mathbf q \). Then \( \overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA} \).</span>
+        \[ \overrightarrow{AB}=\tfrac13\mathbf q-(1-\lambda)\mathbf p-\lambda\mathbf q=-(1-\lambda)\mathbf p+\left(\tfrac13-\lambda\right)\mathbf q \]<span class="mk">(1)</span>
+        <span class="name">\( AB \parallel (\mathbf q-4\mathbf p) \) means \( \overrightarrow{AB}=m(\mathbf q-4\mathbf p) \) for some scalar \(m\). Since \( \mathbf p \) and \( \mathbf q \) are <b>not parallel</b>, their coefficients may be compared.</span>
+        \[ \mathbf p:\ -(1-\lambda)=-4m \qquad \mathbf q:\ \tfrac13-\lambda=m \]<span class="mk">(1)</span>
+        \[ 1-\lambda=4\left(\tfrac13-\lambda\right)\ \Rightarrow\ 1-\lambda=\tfrac43-4\lambda\ \Rightarrow\ 3\lambda=\tfrac13\ \Rightarrow\ \lambda=\tfrac19 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) area via a vector product, using the given magnitudes</div>
+        <span class="name">\( \text{Area}=\tfrac12\left|\overrightarrow{OA}\times\overrightarrow{OQ}\right| \) with \( \overrightarrow{OQ}=\mathbf q \).</span>
+        \[ \overrightarrow{OA}\times\mathbf q=\big[(1-\lambda)\mathbf p+\lambda\mathbf q\big]\times\mathbf q=(1-\lambda)(\mathbf p\times\mathbf q)+\lambda(\mathbf q\times\mathbf q) \]<span class="mk">(1)</span>
+        <span class="name">\( \mathbf q\times\mathbf q=\mathbf 0 \). And \( |\mathbf p\times\mathbf q|=|\mathbf p||\mathbf q|\sin 90^\circ=(1)(2)(1)=2 \) since \( \mathbf p\perp\mathbf q \) and \( |\mathbf p|=1 \).</span>
+        \[ \text{Area}=\tfrac12\left|(1-\lambda)\right|\left|\mathbf p\times\mathbf q\right|=\tfrac12(1-\lambda)(2)=1-\lambda\ \text{units}^2 \]<span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">(\(1-\lambda>0\) because \(0<\lambda<1\), so the modulus can be dropped.)</span>
+      </div>
+      <div class="testline"><b>Tests:</b> ratio theorem in parametric form; using "parallel" to compare coefficients of two non-parallel vectors; expanding a vector product with \( \mathbf q\times\mathbf q=\mathbf 0 \) and evaluating \( |\mathbf p\times\mathbf q| \) from magnitudes and the angle.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q7 -->
+<div class="card" id="q7">
+  <div class="cardhead">Question 7 <span class="marks">[3]</span></div>
+  <div class="src">A-Level N2000 P1 Q3 &middot; HCI Tutorial 7B Q3(a)</div>
+  <div class="stem">
+    Equations of two lines are given below:
+    <span class="sub">\( l_1:\ \mathbf r=-2\mathbf i+\mathbf j+9\mathbf k+\lambda(2\mathbf i+5\mathbf j+4\mathbf k) \), \( \lambda\in\mathbb R \);</span>
+    <span class="sub">\( l_2:\ \mathbf r=11\mathbf i+8\mathbf j+3\mathbf k+\mu(3\mathbf i-\mathbf j+5\mathbf k) \), \( \mu\in\mathbb R \).</span>
+    <span class="sub">Determine if the lines are parallel, intersecting or skew, giving a reason for your answer. <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">step 1 &mdash; test parallel first</div>
+        <span class="name">\( (2,5,4)\neq k(3,-1,5) \) for any scalar \(k\).</span>
+        \[ \therefore\ \text{the two lines are not parallel.} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">step 2 &mdash; assume they intersect and look for a contradiction</div>
+        \[ -2+2\lambda=11+3\mu\ \cdots(1);\qquad 1+5\lambda=8-\mu\ \cdots(2);\qquad 9+4\lambda=3+5\mu\ \cdots(3) \]
+        <span class="name">Solve any two, then test in the third. From (1) and (2): \( \lambda=2,\ \mu=-3 \).</span>
+        \[ \text{In (3): LHS}=9+8=17,\quad \text{RHS}=3-15=-12,\quad 17\neq-12 \]<span class="mk">(1)</span>
+        \[ \therefore\ \text{the two lines do not intersect.} \]
+      </div>
+      <div class="step"><div class="step-header">step 3 &mdash; conclude</div>
+        \[ \text{Non-parallel and non-intersecting}\ \Rightarrow\ \text{the lines are \textbf{skew}.} \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Both halves are needed.</b> "No solution" on its own does <b>not</b> prove skew &mdash; parallel lines also fail to intersect. You must state non-parallel <em>and</em> non-intersecting. Always solve two equations and <b>check in the third</b>.</div>
+      <div class="testline"><b>Tests:</b> classifying two lines as parallel, intersecting or skew &mdash; the two-part argument and the consistency check in the unused equation.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q8 -->
+<div class="card" id="q8">
+  <div class="cardhead">Question 8 <span class="marks">[12]</span></div>
+  <div class="src">A-Level 2009 P1 Q10</div>
+  <div class="stem">
+    The planes \(p_1\) and \(p_2\) have equations \( \mathbf r\cdot(2\mathbf i+\mathbf j+3\mathbf k)=1 \) and \( \mathbf r\cdot(-\mathbf i+2\mathbf j+\mathbf k)=2 \) respectively, and meet in a line \(l\).
+    <span class="sub">(i) Find the acute angle between \(p_1\) and \(p_2\). <span class="marks">[3]</span></span>
+    <span class="sub">(ii) Find a vector equation of \(l\). <span class="marks">[4]</span></span>
+    <span class="sub">(iii) The plane \(p_3\) has equation \( 2x+y+3z-1+k(-x+2y+z-2)=0 \). Explain why \(l\) lies in \(p_3\) for any constant \(k\). Hence, or otherwise, find a Cartesian equation of the plane in which both \(l\) and the point \( (2,3,4) \) lie. <span class="marks">[5]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) angle between two planes = angle between their normals</div>
+        <span class="name">\( \mathbf n_1=(2,1,3) \), \( \mathbf n_2=(-1,2,1) \); modulus for the acute angle.</span>
+        \[ \cos\theta=\frac{\left|(2,1,3)\cdot(-1,2,1)\right|}{\sqrt{14}\,\sqrt6}=\frac{3}{\sqrt{84}} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ \theta=70.9^\circ\ \text{(1 d.p.)} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) line of intersection &mdash; direction by cross product, point by inspection</div>
+        <span class="name">The line lies in both planes, so it is perpendicular to both normals; that is exactly what \( \mathbf n_1\times\mathbf n_2 \) gives.</span>
+        \[ \mathbf n_1\times\mathbf n_2=(2,1,3)\times(-1,2,1)=(-5,-5,5)=-5(1,1,-1) \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">A point on both: try \( (0,1,0) \) &mdash; \( (0,1,0)\cdot(2,1,3)=1 \) ✓ and \( (0,1,0)\cdot(-1,2,1)=2 \) ✓.</span>
+        \[ l:\ \mathbf r=\begin{pmatrix}0\\1\\0\end{pmatrix}+\lambda\begin{pmatrix}-1\\-1\\1\end{pmatrix},\quad\lambda\in\mathbb R \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) the pencil of planes through \(l\)</div>
+        <span class="name">Every point of \(l\) lies in both planes, so it satisfies \( 2x+y+3z-1=0 \) and \( -x+2y+z-2=0 \) simultaneously.</span>
+        \[ \text{Then}\quad 0+k(0)=0\quad\text{for any }k, \]
+        <span class="name">so every point of \(l\) satisfies the equation of \(p_3\) whatever \(k\) is.</span>
+        \[ \therefore\ l\ \text{lies in}\ p_3\ \text{for all }k. \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">Now choose \(k\) so that \( (2,3,4) \) also satisfies it.</span>
+        \[ (4+3+12-1)+k(-2+6+4-2)=0\ \Rightarrow\ 18+6k=0\ \Rightarrow\ k=-3 \]<span class="mk">(1)</span>
+        \[ 2x+y+3z-1-3(-x+2y+z-2)=0\ \Rightarrow\ 5x-5y+5=0 \]<span class="mk">(1)</span>
+        \[ \therefore\ x-y+1=0 \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Why you may fix a coordinate to find a point on \(l\):</b> the line of intersection is infinite, so setting one coordinate to a convenient value just picks out the single point where the line meets that coordinate plane. Any consistent choice lands on the <em>same</em> line &mdash; only the "starting point" \( \mathbf a \) in \( \mathbf r=\mathbf a+\lambda\mathbf d \) changes, and that is not unique anyway.</div>
+      <div class="testline"><b>Tests:</b> angle between two planes; line of intersection of two planes (cross-product direction plus a point); and the pencil-of-planes trick for the plane through a given line and a given point.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q9 -->
+<div class="card" id="q9">
+  <div class="cardhead">Question 9 <span class="marks">[9]</span></div>
+  <div class="src">MJC 2009 Prelim P1 Q5 &middot; HCI Supplementary Q12</div>
+  <div class="stem">
+    With respect to an origin \(O\), the points \(A\) and \(B\) have position vectors \( \mathbf a \) and \( \mathbf b \) respectively, where \( \mathbf a \) and \( \mathbf b \) are not parallel.
+    <span class="sub">(i) It is given that \(B\) lies on the line segment \(AC\), such that \( \overrightarrow{BC}=2\mathbf b-k\mathbf a \). State the value of the constant \(k\). Hence find \( \overrightarrow{OC} \) in terms of \( \mathbf a \) and \( \mathbf b \). <span class="marks">[2]</span></span>
+    <span class="sub">(ii) \( \overrightarrow{ON} \) is the projection vector of \( \overrightarrow{OB} \) onto \( \overrightarrow{OA} \), where \( \overrightarrow{ON}=\tfrac34\mathbf a \) and \( \mathbf a\cdot\mathbf b=4 \). Show that the length of \(OA\) is \( \dfrac{4\sqrt3}{3} \). <span class="marks">[2]</span></span>
+    <span class="sub">(iii) Given that \( \mathbf b=2\mathbf i-2\mathbf j+2\mathbf k \), find the angle between \(OA\) and \(OB\). <span class="marks">[2]</span></span>
+    <span class="sub">(iv) Given that \(OADC\) is a parallelogram and \(E\) lies on the line segment \(AC\) such that \( AE:AC=2:3 \), find \( \overrightarrow{DE} \). <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) \(A\), \(B\), \(C\) collinear</div>
+        <span class="name">\( \overrightarrow{AB}=\mathbf b-\mathbf a \). Since \(B\) lies on \(AC\), \( \overrightarrow{BC} \) must be parallel to \( \overrightarrow{AB} \); \( 2\mathbf b-k\mathbf a=2(\mathbf b-\mathbf a) \) requires \(k=2\).</span>
+        \[ k=2 \]<span class="mk">(1)</span>
+        \[ \overrightarrow{OC}=\overrightarrow{OB}+\overrightarrow{BC}=\mathbf b+2\mathbf b-2\mathbf a=3\mathbf b-2\mathbf a \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) projection VECTOR &mdash; and what its coefficient tells you</div>
+        <span class="name">The projection vector of \( \mathbf b \) onto \( \mathbf a \) is \( \left(\mathbf b\cdot\hat{\mathbf a}\right)\hat{\mathbf a}=\dfrac{\mathbf a\cdot\mathbf b}{|\mathbf a|^2}\,\mathbf a \).</span>
+        \[ \frac{\mathbf a\cdot\mathbf b}{|\mathbf a|^2}\,\mathbf a=\tfrac34\mathbf a\ \Rightarrow\ \frac{4}{|\mathbf a|^2}=\frac34\ \Rightarrow\ |\mathbf a|^2=\frac{16}{3} \]<span class="mk">(1)</span>
+        \[ |\mathbf a|=\frac{4}{\sqrt3}=\frac{4\sqrt3}{3}\ \text{(shown)} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) angle between two vectors</div>
+        <span class="name">\( |\mathbf b|=\sqrt{4+4+4}=2\sqrt3 \), and \( \mathbf a\cdot\mathbf b=4 \), \( |\mathbf a|=\tfrac{4}{\sqrt3} \).</span>
+        \[ \cos\theta=\frac{\mathbf a\cdot\mathbf b}{|\mathbf a||\mathbf b|}=\frac{4}{\left(\tfrac{4}{\sqrt3}\right)\left(2\sqrt3\right)}=\frac48=\frac12 \]<span class="mk">(1)</span>
+        \[ \theta=60^\circ \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iv) work round the parallelogram</div>
+        <span class="name">In parallelogram \(OADC\) the vertices are in order, so \( \overrightarrow{OD}=\overrightarrow{OA}+\overrightarrow{OC}=\mathbf a+(3\mathbf b-2\mathbf a)=3\mathbf b-\mathbf a \).</span>
+        <span class="name">\( \overrightarrow{AC}=\overrightarrow{OC}-\overrightarrow{OA}=3\mathbf b-3\mathbf a \), and \( \overrightarrow{AE}=\tfrac23\overrightarrow{AC}=2\mathbf b-2\mathbf a \), so \( \overrightarrow{OE}=\mathbf a+2\mathbf b-2\mathbf a=2\mathbf b-\mathbf a \).</span><span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ \overrightarrow{DE}=\overrightarrow{OE}-\overrightarrow{OD}=(2\mathbf b-\mathbf a)-(3\mathbf b-\mathbf a)=-\mathbf b=\begin{pmatrix}-2\\2\\-2\end{pmatrix} \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Scalar vs vector projection:</b> the projection <b>vector</b> is \( (\mathbf b\cdot\hat{\mathbf a})\hat{\mathbf a} \) &mdash; a vector, and it keeps its sign so it carries direction. The <b>length</b> of projection is \( |\mathbf b\cdot\hat{\mathbf a}| \) &mdash; a number, with a modulus. Part (ii) only works because you compare the <em>vector</em> form coefficient with \( \tfrac34 \).</div>
+      <div class="testline"><b>Tests:</b> collinearity to pin a constant; the projection vector formula used in reverse to find a magnitude; angle between two vectors; and closing a parallelogram with the ratio theorem.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q10 -->
+<div class="card" id="q10">
+  <div class="cardhead">Question 10 <span class="marks">[6]</span></div>
+  <div class="src">HCI Tutorial 7C Q1(b),(e),(f)</div>
+  <div class="stem">
+    Find a vector equation of the plane, <b>in parametric form and in scalar product form</b>, where the plane contains
+    <span class="sub">(a) the origin and the line with equation \( \mathbf r=\begin{pmatrix}2\\0\\-1\end{pmatrix}+\lambda\begin{pmatrix}3\\4\\-1\end{pmatrix} \), \( \lambda\in\mathbb R \); <span class="marks">[2]</span></span>
+    <span class="sub">(b) the point \( (2,-1,-1) \) and has normal vector \( \mathbf i-\mathbf j+\mathbf k \); <span class="marks">[2]</span></span>
+    <span class="sub">(c) the line with equation \( \mathbf r=\begin{pmatrix}1\\1\\1\end{pmatrix}+\lambda\begin{pmatrix}-1\\2\\-1\end{pmatrix} \), \( \lambda\in\mathbb R \), and is perpendicular to the plane \( 2x+3y+4z=5 \). <span class="marks">[2]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) plane through the origin containing a line</div>
+        <span class="name">Both \(O\) and the point \( (2,0,-1) \) lie in the plane, so \( (2,0,-1) \) is a direction in the plane; the line's own direction \( (3,4,-1) \) is the second.</span>
+        \[ \text{Parametric: }\ \mathbf r=\lambda\begin{pmatrix}2\\0\\-1\end{pmatrix}+\mu\begin{pmatrix}3\\4\\-1\end{pmatrix},\quad\lambda,\mu\in\mathbb R \]<span class="mk">(1)</span>
+        \[ \mathbf n=\begin{pmatrix}2\\0\\-1\end{pmatrix}\times\begin{pmatrix}3\\4\\-1\end{pmatrix}=\begin{pmatrix}4\\-1\\8\end{pmatrix};\qquad \text{Scalar product: }\ \mathbf r\cdot\begin{pmatrix}4\\-1\\8\end{pmatrix}=0 \]<span class="mk">(1)</span>
+        <span class="name">The right-hand side is \(0\) because the plane passes through the origin.</span>
+      </div>
+      <div class="step"><div class="step-header">(b) point and normal &mdash; then run it backwards</div>
+        \[ \text{Scalar product: }\ \mathbf r\cdot\begin{pmatrix}1\\-1\\1\end{pmatrix}=\begin{pmatrix}2\\-1\\-1\end{pmatrix}\cdot\begin{pmatrix}1\\-1\\1\end{pmatrix}=2+1-1=2 \]<span class="mk">(1)</span>
+        <span class="name">For the parametric form you need two non-parallel vectors <b>perpendicular to the normal</b>, i.e. any \( \mathbf v \) with \( \mathbf v\cdot(1,-1,1)=0 \). By inspection \( (1,1,0) \) and \( (0,1,1) \) both work.</span>
+        \[ \text{Parametric: }\ \mathbf r=\begin{pmatrix}2\\-1\\-1\end{pmatrix}+\lambda\begin{pmatrix}1\\1\\0\end{pmatrix}+\mu\begin{pmatrix}0\\1\\1\end{pmatrix},\quad\lambda,\mu\in\mathbb R \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(c) contains a line and is perpendicular to a given plane</div>
+        <span class="name">The given plane \( 2x+3y+4z=5 \) has normal \( (2,3,4) \). If our plane is <b>perpendicular</b> to it, then that normal <b>lies inside</b> our plane &mdash; so it serves as a direction vector. The second direction is the line's own \( (-1,2,-1) \).</span>
+        \[ \text{Parametric: }\ \mathbf r=\begin{pmatrix}1\\1\\1\end{pmatrix}+\lambda\begin{pmatrix}-1\\2\\-1\end{pmatrix}+\mu\begin{pmatrix}2\\3\\4\end{pmatrix},\quad\lambda,\mu\in\mathbb R \]<span class="mk">(1)</span>
+        \[ \mathbf n=\begin{pmatrix}-1\\2\\-1\end{pmatrix}\times\begin{pmatrix}2\\3\\4\end{pmatrix}=\begin{pmatrix}11\\2\\-7\end{pmatrix};\quad \mathbf r\cdot\begin{pmatrix}11\\2\\-7\end{pmatrix}=\begin{pmatrix}1\\1\\1\end{pmatrix}\cdot\begin{pmatrix}11\\2\\-7\end{pmatrix}=6 \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>The recognition to lock:</b> "plane <b>perpendicular to</b> plane \( \Pi \)" \( \Rightarrow \) \( \Pi \)'s normal is a <b>direction inside</b> your plane. The mirror-image fact: "plane <b>perpendicular to</b> a line \(AB\)" \( \Rightarrow \) \( \overrightarrow{AB} \) <b>is</b> your plane's normal. Read which object the word "perpendicular" attaches to.</div>
+      <div class="testline"><b>Tests:</b> building plane equations three ways &mdash; from a line plus the origin, from a point plus a normal (including reconstructing the parametric form by inspection), and from a line plus a perpendicularity condition on another plane.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q11 -->
+<div class="card" id="q11">
+  <div class="cardhead">Question 11 <span class="marks">[12]</span></div>
+  <div class="src">A-Level 2012 P1 Q8</div>
+  <div class="stem">
+    <span class="sub">(i) Find a vector equation of the line through the points \(A\) and \(B\) with position vectors \( 7\mathbf i+8\mathbf j+9\mathbf k \) and \( -\mathbf i-8\mathbf j+\mathbf k \) respectively. <span class="marks">[3]</span></span>
+    <span class="sub">(ii) The perpendicular to this line from the point \(C\) with position vector \( \mathbf i+8\mathbf j+3\mathbf k \) meets the line at the point \(N\). Find the position vector of \(N\) and the ratio \(AN:NB\). <span class="marks">[5]</span></span>
+    <span class="sub">(iii) Find a Cartesian equation of the line which is a reflection of the line \(AC\) in the line \(AB\). <span class="marks">[4]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) direction from two points, then simplify it</div>
+        \[ \overrightarrow{AB}=\begin{pmatrix}-1\\-8\\1\end{pmatrix}-\begin{pmatrix}7\\8\\9\end{pmatrix}=\begin{pmatrix}-8\\-16\\-8\end{pmatrix}=-8\begin{pmatrix}1\\2\\1\end{pmatrix} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ l:\ \mathbf r=\begin{pmatrix}7\\8\\9\end{pmatrix}+\lambda\begin{pmatrix}1\\2\\1\end{pmatrix},\quad\lambda\in\mathbb R \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) foot of perpendicular, then compare along the line</div>
+        <span class="name">\(N\) on \(l\): \( \overrightarrow{ON}=(7+\lambda,\,8+2\lambda,\,9+\lambda) \). Then \( \overrightarrow{CN}=\overrightarrow{ON}-\overrightarrow{OC}=(6+\lambda,\,2\lambda,\,6+\lambda) \).</span>
+        \[ \overrightarrow{CN}\cdot\begin{pmatrix}1\\2\\1\end{pmatrix}=0:\ (6+\lambda)+4\lambda+(6+\lambda)=0\ \Rightarrow\ 6\lambda+12=0\ \Rightarrow\ \lambda=-2 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ \overrightarrow{ON}=\begin{pmatrix}5\\4\\7\end{pmatrix} \]<span class="mk">(1)</span>
+        <span class="name">\( \overrightarrow{AN}=-2(1,2,1) \) while \( \overrightarrow{AB}=-8(1,2,1) \), so \( \overrightarrow{AN}=\tfrac14\overrightarrow{AB} \). Hence \(N\) is a quarter of the way along.</span>
+        \[ AN:NB=1:3 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) reflect the point \(C\), then join</div>
+        <span class="name">\(N\) is the foot of the perpendicular from \(C\) to \(AB\), so \(N\) is the <b>midpoint</b> of \(C\) and its image \(C'\).</span>
+        \[ \overrightarrow{OC'}=2\overrightarrow{ON}-\overrightarrow{OC}=2\begin{pmatrix}5\\4\\7\end{pmatrix}-\begin{pmatrix}1\\8\\3\end{pmatrix}=\begin{pmatrix}9\\0\\11\end{pmatrix} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">The reflected line passes through \(A\) (which is on the mirror line) and \(C'\).</span>
+        \[ \overrightarrow{AC'}=\begin{pmatrix}9\\0\\11\end{pmatrix}-\begin{pmatrix}7\\8\\9\end{pmatrix}=\begin{pmatrix}2\\-8\\2\end{pmatrix}=2\begin{pmatrix}1\\-4\\1\end{pmatrix} \]<span class="mk">(1)</span>
+        \[ \therefore\ \frac{x-7}{1}=\frac{y-8}{-4}=\frac{z-9}{1} \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Reflection template:</b> find the foot \(N\) of the perpendicular, then use \( \overrightarrow{OC'}=2\overrightarrow{ON}-\overrightarrow{OC} \) &mdash; the foot is always the midpoint of a point and its mirror image. That one line works for reflecting in a <b>line</b> and in a <b>plane</b>; only the way you find \(N\) changes.</div>
+      <div class="testline"><b>Tests:</b> vector equation of a line through two points; foot of perpendicular from a point to a line; ratio along a line; and reflection of a line in a line via the midpoint relation.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q12 -->
+<div class="card" id="q12">
+  <div class="cardhead">Question 12 <span class="marks">[6]</span></div>
+  <div class="src">A-Level 2008 P1 Q3</div>
+  <div class="stem">
+    Points \(O\), \(A\), \(B\) are such that \( \overrightarrow{OA}=\mathbf i+4\mathbf j-3\mathbf k \) and \( \overrightarrow{OB}=5\mathbf i-\mathbf j \), and the point \(P\) is such that \(OAPB\) is a parallelogram.
+    <span class="sub">(i) Find \( \overrightarrow{OP} \). <span class="marks">[1]</span></span>
+    <span class="sub">(ii) Find the size of angle \(AOB\). <span class="marks">[3]</span></span>
+    <span class="sub">(iii) Find the exact area of the parallelogram \(OAPB\). <span class="marks">[2]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) diagonal of a parallelogram</div>
+        <span class="name">In parallelogram \(OAPB\) the vertices are in order, so \( \overrightarrow{OP} \) is the diagonal from \(O\).</span>
+        \[ \overrightarrow{OP}=\overrightarrow{OA}+\overrightarrow{OB}=\begin{pmatrix}1+5\\4-1\\-3+0\end{pmatrix}=\begin{pmatrix}6\\3\\-3\end{pmatrix} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) angle between two vectors &mdash; no modulus</div>
+        <span class="name">\( |\overrightarrow{OA}|=\sqrt{1+16+9}=\sqrt{26} \) and \( |\overrightarrow{OB}|=\sqrt{25+1}=\sqrt{26} \).</span>
+        \[ \cos A\hat OB=\frac{\overrightarrow{OA}\cdot\overrightarrow{OB}}{|\overrightarrow{OA}||\overrightarrow{OB}|}=\frac{5-4+0}{\sqrt{26}\sqrt{26}}=\frac{1}{26} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ A\hat OB=87.8^\circ\ \text{(1 d.p.)} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) area of a parallelogram &mdash; no factor of a half</div>
+        \[ \overrightarrow{OA}\times\overrightarrow{OB}=\begin{pmatrix}1\\4\\-3\end{pmatrix}\times\begin{pmatrix}5\\-1\\0\end{pmatrix}=\begin{pmatrix}-3\\-15\\-21\end{pmatrix} \]<span class="mk">(1)</span>
+        \[ \text{Area}=\left|\overrightarrow{OA}\times\overrightarrow{OB}\right|=\sqrt{9+225+441}=\sqrt{675}=15\sqrt3\ \text{units}^2 \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Two traps here.</b> (1) For the angle <b>between two vectors</b> there is <b>no modulus</b> &mdash; it may be obtuse; the modulus is only for the acute angle between lines or planes. (2) Parallelogram area is \( |\mathbf a\times\mathbf b| \); the \( \tfrac12 \) belongs to a <b>triangle</b>.</div>
+      <div class="testline"><b>Tests:</b> parallelogram addition; angle between two vectors by scalar product; exact area of a parallelogram by vector product.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q13 -->
+<div class="card" id="q13">
+  <div class="cardhead">Question 13 <span class="marks">[15]</span></div>
+  <div class="src">A-Level 2011 P1 Q11</div>
+  <div class="stem">
+    The plane \(p\) passes through the points with coordinates \( (4,-1,-3) \), \( (-2,-5,2) \) and \( (4,-3,-2) \).
+    <span class="sub">(i) Find a Cartesian equation of \(p\). <span class="marks">[4]</span></span>
+    <span class="sub">The line \(l_1\) has equation \( \dfrac{x-1}{2}=\dfrac{y-2}{-4}=\dfrac{z+3}{1} \) and the line \(l_2\) has equation \( \dfrac{x+2}{1}=\dfrac{y-1}{5}=\dfrac{z-3}{k} \), where \(k\) is a constant. It is given that \(l_1\) and \(l_2\) intersect.</span>
+    <span class="sub">(ii) Find the value of \(k\). <span class="marks">[4]</span></span>
+    <span class="sub">(iii) Show that \(l_1\) lies in \(p\) and find the coordinates of the point at which \(l_2\) intersects \(p\). <span class="marks">[4]</span></span>
+    <span class="sub">(iv) Find the acute angle between \(l_2\) and \(p\). <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) plane through three points &mdash; two vectors from the SAME point</div>
+        <span class="name">Call the points \(A(4,-1,-3)\), \(B(-2,-5,2)\), \(C(4,-3,-2)\). Use \( \overrightarrow{AB} \) and \( \overrightarrow{AC} \) &mdash; both starting at \(A\).</span>
+        \[ \overrightarrow{AB}=\begin{pmatrix}-6\\-4\\5\end{pmatrix},\qquad \overrightarrow{AC}=\begin{pmatrix}0\\-2\\1\end{pmatrix} \]<span class="mk">(1)</span>
+        \[ \mathbf n=\overrightarrow{AB}\times\overrightarrow{AC}=\begin{pmatrix}6\\6\\12\end{pmatrix}=6\begin{pmatrix}1\\1\\2\end{pmatrix} \]<span class="mk">(1)</span>
+        \[ \mathbf r\cdot\begin{pmatrix}1\\1\\2\end{pmatrix}=\begin{pmatrix}4\\-1\\-3\end{pmatrix}\cdot\begin{pmatrix}1\\1\\2\end{pmatrix}=4-1-6=-3 \]<span class="mk">(1)</span>
+        \[ \therefore\ x+y+2z=-3 \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) two lines intersect &mdash; equate and solve</div>
+        <span class="name">\( l_1:\ \mathbf r=(1,2,-3)+\lambda(2,-4,1) \); \( l_2:\ \mathbf r=(-2,1,3)+\mu(1,5,k) \).</span>
+        \[ x:\ 1+2\lambda=-2+\mu;\qquad y:\ 2-4\lambda=1+5\mu \]<span class="mk">(1)</span>
+        <span class="name">Solving these two: \( \mu=1 \), \( \lambda=-1 \).</span><span class="mk">(1)</span>
+        \[ z:\ -3+\lambda=3+\mu k\ \Rightarrow\ -4=3+k\ \Rightarrow\ k=-7 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) line in plane; then the other line meets it</div>
+        <span class="name">Substitute the general point of \(l_1\) into the plane.</span>
+        \[ (1+2\lambda,\,2-4\lambda,\,-3+\lambda)\cdot(1,1,2)=1+2\lambda+2-4\lambda-6+2\lambda=-3 \]<span class="mk">(1)</span>
+        <span class="name">True for all \( \lambda \), so \(l_1\) lies in \(p\).</span><span class="mk">(1)</span>
+        \[ l_2:\ (-2+\mu,\,1+5\mu,\,3-7\mu)\cdot(1,1,2)=-3\ \Rightarrow\ -2+\mu+1+5\mu+6-14\mu=-3\ \Rightarrow\ \mu=1 \]<span class="mk">(1)</span>
+        \[ \text{Point of intersection }(-1,\,6,\,-4) \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iv) angle between a LINE and a PLANE &mdash; use sine</div>
+        <span class="name">The angle between the line's direction and the plane's <b>normal</b> is the complement of the angle you want, so use \( \sin\theta \).</span>
+        \[ \sin\theta=\frac{\left|(1,5,-7)\cdot(1,1,2)\right|}{\sqrt{75}\,\sqrt6}=\frac{8}{\sqrt{450}} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ \theta=22.2^\circ\ \text{(1 d.p.)} \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Two habits this question rewards.</b> (1) Take both vectors from the <b>same</b> vertex &mdash; \( \overrightarrow{AB} \) and \( \overrightarrow{AC} \), not \( \overrightarrow{AB} \) and \( \overrightarrow{BC} \); then <b>check</b> your normal by dotting it with an in-plane direction (should be \(0\)). (2) Line-and-plane uses \( \sin \); line-and-line and plane-and-plane use \( \cos \).</div>
+      <div class="testline"><b>Tests:</b> Cartesian equation of a plane from three points; finding an unknown so two lines intersect; showing a line lies in a plane; line-plane intersection; and the angle between a line and a plane.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q14 -->
+<div class="card" id="q14">
+  <div class="cardhead">Question 14 <span class="marks">[13]</span></div>
+  <div class="src">A-Level 2010 P1 Q10</div>
+  <div class="stem">
+    The line \(l\) has equation \( \dfrac{10-x}{3}=\dfrac{y+1}{6}=\dfrac{z+3}{9} \), and the plane \(p\) has equation \( x-2y-3z=0 \).
+    <span class="sub">(i) Show that \(l\) is perpendicular to \(p\). <span class="marks">[2]</span></span>
+    <span class="sub">(ii) Find the coordinates of the point of intersection of \(l\) and \(p\). <span class="marks">[4]</span></span>
+    <span class="sub">(iii) Show that the point \(A\) with coordinates \( (-2,23,33) \) lies on \(l\). Find the coordinates of the point \(B\) which is the mirror image of \(A\) in \(p\). <span class="marks">[4]</span></span>
+    <span class="sub">(iv) Find the area of triangle \(OAB\), where \(O\) is the origin, giving your answer to the nearest whole number. <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) careful with the \( 10-x \)</div>
+        <span class="name">Write \( \dfrac{10-x}{3}=\dfrac{x-10}{-3} \), so the line is \( \mathbf r=(10,-1,-3)+\beta(-3,6,9) \).</span>
+        \[ \text{direction}=(-3,6,9)=-3(1,-2,-3) \]<span class="mk">(1)</span>
+        <span class="name">The plane's normal is \( (1,-2,-3) \). The direction is a scalar multiple of the normal.</span>
+        \[ \therefore\ l\ \text{is perpendicular to}\ p. \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) substitute the line into the plane</div>
+        <span class="name">General point \( (10-3\beta,\,-1+6\beta,\,-3+9\beta) \) into \( x-2y-3z=0 \):</span>
+        \[ (10-3\beta)-2(-1+6\beta)-3(-3+9\beta)=0\ \Rightarrow\ 21-42\beta=0\ \Rightarrow\ \beta=\tfrac12 \]<span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ \text{Point }\left(\tfrac{17}{2},\,2,\,\tfrac32\right) \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) \(A\) on \(l\), then reflect</div>
+        <span class="name">\( \beta=4 \) gives \( (10-12,\,-1+24,\,-3+36)=(-2,23,33) \) ✓ &mdash; all three components agree, so \(A\) lies on \(l\).</span><span class="mk">(1)</span>
+        <span class="name">Because \(l\perp p\), the intersection point found in (ii) is exactly the foot of the perpendicular from \(A\), hence the midpoint of \(A\) and its mirror image \(B\).</span>
+        \[ \overrightarrow{OB}=2\begin{pmatrix}17/2\\2\\3/2\end{pmatrix}-\begin{pmatrix}-2\\23\\33\end{pmatrix}=\begin{pmatrix}19\\-19\\-30\end{pmatrix} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ B=(19,\,-19,\,-30) \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iv) area from a vector product</div>
+        \[ \overrightarrow{OA}\times\overrightarrow{OB}=\begin{pmatrix}-2\\23\\33\end{pmatrix}\times\begin{pmatrix}19\\-19\\-30\end{pmatrix}=\begin{pmatrix}-63\\567\\-399\end{pmatrix} \]<span class="mk">(1)</span>
+        \[ \text{Area}=\tfrac12\left|\overrightarrow{OA}\times\overrightarrow{OB}\right|=\tfrac12\sqrt{63^2+567^2+399^2}=348\ \text{units}^2\ \text{(nearest whole number)} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Read the fraction direction.</b> \( \dfrac{10-x}{3} \) is <b>not</b> \( \dfrac{x-10}{3} \) &mdash; flipping the sign of the numerator flips the direction component to \(-3\). Getting this wrong makes the perpendicularity in (i) fail. Rewrite as \( \dfrac{x-10}{-3} \) first, every time.</div>
+      <div class="testline"><b>Tests:</b> line perpendicular to a plane; line-plane intersection; verifying a point lies on a line; mirror image of a point in a plane; and the area of a triangle by vector product.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q15 -->
+<div class="card" id="q15">
+  <div class="cardhead">Question 15 <span class="marks">[6]</span></div>
+  <div class="src">HCI Supplementary Q10</div>
+  <div class="stem">
+    <span class="sub">(a) The Cartesian equation of a straight line \(l\) is \( \dfrac{x-2}{3}=\dfrac{y}{2}=-z-1 \). Find the Cartesian equation of the line \(l_2\), passing through the point \( A(1,0,1) \), which is perpendicular to and intersects \(l\). <span class="marks">[4]</span></span>
+    <span class="sub">(b) Calculate the acute angle between \(l_2\) and the \(z\)-axis, giving your answer correct to the nearest \(0.1^\circ\). <span class="marks">[2]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) convert to vector form &mdash; watch the \( -z-1 \)</div>
+        <span class="name">\( -z-1=\dfrac{z+1}{-1} \), so \( l:\ \mathbf r=(2,0,-1)+t(3,2,-1) \), direction \( \mathbf d=(3,2,-1) \).</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">the line through \(A\) perpendicular to and meeting \(l\) is \(A\) joined to the foot of the perpendicular</div>
+        <span class="name">Let \(F\) be the point on \(l\) with parameter \(t\): \( \overrightarrow{OF}=(2+3t,\,2t,\,-1-t) \). Then \( \overrightarrow{AF}=(1+3t,\,2t,\,-2-t) \).</span>
+        \[ \overrightarrow{AF}\cdot\mathbf d=0:\ 3(1+3t)+2(2t)+(-1)(-2-t)=5+14t=0\ \Rightarrow\ t=-\tfrac{5}{14} \]<span class="mk">(1)</span>
+        \[ \overrightarrow{AF}=\left(-\tfrac1{14},\,-\tfrac{10}{14},\,-\tfrac{23}{14}\right)=-\tfrac1{14}\begin{pmatrix}1\\10\\23\end{pmatrix} \]<span class="mk">(1)</span>
+        <span class="name">Direction \( (1,10,23) \) through \( A(1,0,1) \):</span>
+        \[ \therefore\ \frac{x-1}{1}=\frac{y}{10}=\frac{z-1}{23} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b) angle with the \(z\)-axis</div>
+        \[ \cos\theta=\frac{\left|(1,10,23)\cdot(0,0,1)\right|}{\sqrt{1+100+529}\times1}=\frac{23}{\sqrt{630}} \]<span class="mk">(1)</span>
+        \[ \theta=23.6^\circ\ \text{(nearest }0.1^\circ) \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Two sign traps in one stem.</b> \( -z-1 \) means \( \dfrac{z+1}{-1} \), so the \(z\)-component of the direction is \(-1\), not \(1\). And "perpendicular to <b>and intersects</b>" is precisely the foot-of-perpendicular construction &mdash; not just any perpendicular direction, which would give infinitely many lines.</div>
+      <div class="testline"><b>Tests:</b> Cartesian-to-vector conversion with a negative denominator; the foot-of-perpendicular construction to build a line meeting another at right angles; angle between a line and a coordinate axis.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<hr>
+
+<h3 style="font-family:-apple-system,sans-serif;font-size:1.05em">Learning-outcome coverage</h3>
+<p style="color:var(--muted);font-size:.9em">Every syllabus outcome for Vectors (9758 §3.1&ndash;3.3) appears at least once. Check this only <em>after</em> you have attempted the sheet.</p>
+<table>
+<tr><th>Outcome</th><th>Where it is tested</th></tr>
+<tr><td>Addition, subtraction, scalar multiple; geometric meaning</td><td>Q9, Q12</td></tr>
+<tr><td>Vector notation (column, \(\mathbf i\,\mathbf j\,\mathbf k\), \( \overrightarrow{AB} \))</td><td>throughout</td></tr>
+<tr><td>Position vs displacement vectors</td><td>Q1, Q6, Q9</td></tr>
+<tr><td>Magnitude of a vector</td><td>Q3, Q9, Q12</td></tr>
+<tr><td>Unit vectors</td><td>Q4, Q5</td></tr>
+<tr><td>Distance between two points</td><td>Q3(iii), Q14</td></tr>
+<tr><td>Angle between a vector and a coordinate axis</td><td>Q4(iii), Q15(b)</td></tr>
+<tr><td>Collinearity</td><td>Q9(i)</td></tr>
+<tr><td>Ratio theorem</td><td>Q1(ii), Q6, Q9(iv), Q11(ii)</td></tr>
+<tr><td>Scalar (dot) product and its properties</td><td>Q1(i), Q12(ii)</td></tr>
+<tr><td>Vector (cross) product and its properties</td><td>Q4(i), Q6(iii), Q12(iii)</td></tr>
+<tr><td>Angle between two vectors</td><td>Q9(iii), Q12(ii)</td></tr>
+<tr><td>Scalar projection and projection vector</td><td>Q9(ii), Q5(b)</td></tr>
+<tr><td>Area of a triangle and of a parallelogram</td><td>Q1(iii), Q6(iii), Q12(iii), Q14(iv)</td></tr>
+<tr><td>Vector and Cartesian equations of a line</td><td>Q11(i), Q15(a), Q3</td></tr>
+<tr><td>Plane: parametric and scalar-product forms</td><td>Q10, Q2</td></tr>
+<tr><td>Cartesian equation of a plane</td><td>Q2, Q13(i), Q8(iii)</td></tr>
+<tr><td>Foot of perpendicular to a line / to a plane</td><td>Q3(ii), Q5(e)(f), Q11(ii), Q15(a)</td></tr>
+<tr><td>Distance from a point to a line / to a plane</td><td>Q5(b)(c)</td></tr>
+<tr><td>Angle between lines / line and plane / two planes</td><td>Q3(i), Q8(i), Q13(iv)</td></tr>
+<tr><td>Relationships: two lines; line and plane; two planes</td><td>Q7, Q5(a), Q13(iii), Q8, Q14(i)</td></tr>
+<tr><td>Intersections of lines and planes</td><td>Q5(d), Q8(ii), Q13(ii)(iii), Q14(ii)</td></tr>
+</table>
+
+<p style="color:var(--muted);font-size:.9em;margin-top:22px">Fifteen questions, 139 marks, roughly two and three-quarter hours cold. Attempt them on Loom, say your confidence out loud on each stem (that line feeds the gap tracker), then self-mark against the revealed solutions. Paste me that transcript and I will log the gaps and build the drill on whatever actually broke.</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn=>{btn.addEventListener('click',function(){const b=this.parentElement,o=b.querySelector('.answer-overlay');if(o.classList.contains('hidden')){o.classList.remove('hidden');this.textContent='Reveal solution';this.classList.remove('hide-state');}else{o.classList.add('hidden');this.textContent='Hide';this.classList.add('hide-state');}});});
+  function revealAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.add('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Hide';b.classList.add('hide-state');});}
+  function hideAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.remove('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Reveal solution';b.classList.remove('hide-state');});}
+</script>
+</body>
+</html>

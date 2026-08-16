@@ -1811,13 +1811,23 @@ window.PLAN = {
    "n": "",
    "date": "2026-08-16",
    "weekday": "Sun",
-   "type": "rest",
-   "subject": "conv",
+   "type": "standard",
+   "subject": "maths",
    "flag": "",
-   "label": "Rest day",
-   "focus": "",
-   "mins": 0,
-   "blocks": [],
+   "label": "Maths — Vectors full-coverage drill",
+   "focus": "C1–C3 refresh: every Vectors learning outcome, real exam questions only.",
+   "mins": 165,
+   "blocks": [
+    {
+     "mins": 165,
+     "subject": "maths",
+     "name": "Maths — Vectors C1–C3 FULL-COVERAGE DRILL (15Q · 139m · all LOs)",
+     "desc": "Real A-Level / HCI tutorial / prelim / promo questions only, verbatim school answers. Interleaved (not grouped by cluster) so method selection is part of the test — point-to-line vs point-to-plane, which distance formula, which product. Targets the logged C1–C2 gaps: plane⊥line→normal, simplifying a normal, foot-of-perp line-vs-plane, line-of-intersection, normal from 3 points.",
+     "done": false,
+     "doneDate": null,
+     "clusterHref": "clusters/drill_vectors_C1_C3.html"
+    }
+   ],
    "week": 4
   },
   {
