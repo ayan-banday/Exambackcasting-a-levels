@@ -1835,6 +1835,15 @@ window.PLAN = {
      "done": false,
      "doneDate": null,
      "clusterHref": "clusters/formula_sheet_vectors.html"
+    },
+    {
+     "mins": 50,
+     "subject": "maths",
+     "name": "Maths — Vectors C3 GAP CLUSTER (7Q · 27m · plane equations)",
+     "desc": "From the 16 Aug Cluster-3 transcript. Closes three interlocking gaps: what the vector equation of a plane IS (r·n=d), parametric vs scalar-product vs Cartesian, and — Priority 1, third appearance — 'perpendicular to plane Π' means Π's normal is a DIRECTION in your plane, not your normal. Real A-Level/prelim questions, same recognition in four different shapes.",
+     "done": false,
+     "doneDate": null,
+     "clusterHref": "clusters/gap_vectors_c3.html"
     }
    ],
    "week": 4

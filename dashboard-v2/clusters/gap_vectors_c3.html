@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vectors — Cluster 3 Knowledge-Gap Cluster (9758)</title>
+<script>
+  window.MathJax = { tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], processEscapes: true, tags:'none' }, svg:{fontCache:'global'} };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --amber:#d97706; --green:#059669; --green-soft:#ecfdf5;
+    --cover:#f3f4f6; --accent:#6d28d9; --red:#dc2626; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:36px 24px 90px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h3,.label,.controls,button,.step-header,.hd .sub,.hd .meta,.cardhead,.conf,.src,.marks,.testline{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  .hd{border-bottom:2.5px solid #111;padding-bottom:16px;margin-bottom:10px;text-align:center}
+  .hd h1{font-size:1.55em;font-weight:800;letter-spacing:.4px;margin:0;color:#111}
+  .hd .sub{font-size:1.02em;margin-top:4px;color:#333}
+  .hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:.8em;color:var(--muted);margin-top:9px}
+  p{margin:8px 0}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--accent);padding:15px 20px;border-radius:6px;margin:18px 0}
+  .conv{background:#fff7ed;border:2px solid var(--amber);border-radius:8px;padding:13px 18px;margin:18px 0 8px;font-size:.95em;color:#7c2d12}
+  .conv b{color:#b91c1c}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin:22px 0 20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;font-weight:500}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:30px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:8px;color:#111}
+  .toc a{color:var(--blue);text-decoration:none;display:inline-block;width:31%;min-width:120px;line-height:2}
+  .toc a b{color:#111}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:24px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .cardhead{font-size:.72em;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+  .src{font-family:ui-monospace,Menlo,monospace;font-size:.72em;color:var(--amber);margin:3px 0 10px}
+  .stem{background:#1e293b;color:#f1f5f9;padding:14px 18px;border-radius:6px;margin:8px 0;line-height:1.75}
+  .stem .sub{display:block;margin-top:8px}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px}
+  .conf{background:#f8fafc;border:1px dashed #cbd5e1;border-radius:6px;padding:8px 14px;margin:12px 0 4px;font-size:.85em;color:#475569}
+  .conf b{color:#0f172a}
+  .block.answer{background:var(--green-soft);border-left:4px solid var(--green);border-radius:6px;position:relative;min-height:60px;padding:12px 16px 14px;margin:14px 0 2px}
+  .label{display:block;text-transform:uppercase;font-size:.73em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--green)}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.6);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.78em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .mk{display:inline-block;font-size:.8em;color:var(--green);font-weight:700;margin-left:4px}
+  .name{display:block;font-size:.86em;color:#475569;font-style:italic;margin:6px 0;border-left:2px solid var(--border);padding-left:10px}
+  .keynote{background:#fef2f2;border-left:3px solid var(--red);padding:7px 12px;border-radius:4px;margin:9px 0 0;font-size:.87em;color:#7f1d1d}
+  .keynote b{color:var(--red)}
+  .testline{margin-top:12px;padding-top:8px;border-top:1px dashed #a7f3d0;font-size:.8em;color:#047857}
+  .testline b{color:#065f46}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;z-index:2;text-align:center;padding:0 20px}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content{padding-right:60px}
+  table{border-collapse:collapse;margin:11px 0;font-size:.88em;width:100%}
+  th,td{border:1px solid #e5e7eb;padding:5px 9px;text-align:left;vertical-align:top}
+  th{background:#f3f4f6;font-weight:600;font-family:-apple-system,sans-serif}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  mjx-container{overflow-x:auto;overflow-y:hidden;max-width:100%}
+  @media print{body{background:#fff;padding:20px;max-width:100%}.controls,.reveal-btn{display:none!important}.answer-overlay{display:none!important}.card{box-shadow:none;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<div class="hd">
+  <h1>H2 MATHEMATICS</h1>
+  <div class="sub">Vectors &mdash; Cluster 3 Knowledge-Gap Cluster</div>
+  <div class="meta">9758 &middot; 7 questions &middot; <b>27 marks &middot; ~50 min &middot; built from your 16 Aug Cluster-3 transcript</b></div>
+</div>
+
+<div class="intro">
+Narrow and sharp: this drills the <b>three things that actually broke</b> in the Cluster 3 walkthrough, and nothing else. Every question is a real A-Level, HCI tutorial or prelim question, and each attacks the same weak recognition from a <b>different direction</b> &mdash; you will meet "perpendicular planes" three times in three different shapes, never as the same question twice. Attempt cold, say your confidence out loud, then self-mark.
+</div>
+
+<div class="conv">
+<b>What this closes.</b> Your transcript ended still unsure &mdash; <em>"2, 3, 4 is my normal, no? Why is that not my normal?"</em> That is the gap, stated exactly. It is the <b>third</b> appearance of this same recognition (28 Jul logged it as "plane ⊥ AB → AB is the normal"), so it gets drilled until it is automatic.
+</div>
+
+<div class="controls"><button onclick="revealAll()">Reveal all</button><button onclick="hideAll()">Hide all</button></div>
+
+<div class="toc"><strong>The 7 questions &middot; 27 marks</strong>
+<a href="#q1"><b>Q1</b> <span class="marks">[4]</span></a><a href="#q2"><b>Q2</b> <span class="marks">[4]</span></a><a href="#q3"><b>Q3</b> <span class="marks">[3]</span></a>
+<a href="#q4"><b>Q4</b> <span class="marks">[4]</span></a><a href="#q5"><b>Q5</b> <span class="marks">[4]</span></a><a href="#q6"><b>Q6</b> <span class="marks">[5]</span></a>
+<a href="#q7"><b>Q7</b> <span class="marks">[3]</span></a>
+</div>
+
+
+<!-- Q1 -->
+<div class="card" id="q1">
+  <div class="cardhead">Question 1 <span class="marks">[4]</span></div>
+  <div class="src">HCI Tutorial 7C Q2</div>
+  <div class="stem">
+    Find the vector equation of each of the following planes in <b>scalar product form</b> and in <b>Cartesian form</b>.
+    <span class="sub">(a) \( \mathbf r=\begin{pmatrix}2\\0\\-1\end{pmatrix}+\lambda\begin{pmatrix}1\\0\\0\end{pmatrix}+\mu\begin{pmatrix}1\\-2\\-1\end{pmatrix} \), where \( \lambda,\mu\in\mathbb R \). <span class="marks">[2]</span></span>
+    <span class="sub">(b) \( \mathbf r=(1+s-t)\mathbf i+(2-s)\mathbf j+(3-2s+2t)\mathbf k \), where \( s,t\in\mathbb R \). <span class="marks">[2]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(a) the two direction vectors are already there &mdash; cross them</div>
+        <span class="name">In \( \mathbf r=\mathbf a+\lambda\mathbf d_1+\mu\mathbf d_2 \), the normal is \( \mathbf n=\mathbf d_1\times\mathbf d_2 \).</span>
+        \[ \mathbf n=\begin{pmatrix}1\\0\\0\end{pmatrix}\times\begin{pmatrix}1\\-2\\-1\end{pmatrix}=\begin{pmatrix}0\\1\\-2\end{pmatrix} \]<span class="mk">(1)</span>
+        \[ \mathbf r\cdot\begin{pmatrix}0\\1\\-2\end{pmatrix}=\begin{pmatrix}2\\0\\-1\end{pmatrix}\cdot\begin{pmatrix}0\\1\\-2\end{pmatrix}=2\qquad\Longrightarrow\qquad y-2z=2 \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b) split the expression into constant + \(s\)-part + \(t\)-part first</div>
+        <span class="name">Group the components by which parameter they carry &mdash; that recovers \( \mathbf a \), \( \mathbf d_1 \), \( \mathbf d_2 \).</span>
+        \[ \mathbf r=\begin{pmatrix}1\\2\\3\end{pmatrix}+s\begin{pmatrix}1\\-1\\-2\end{pmatrix}+t\begin{pmatrix}-1\\0\\2\end{pmatrix} \]<span class="mk">(1)</span>
+        \[ \mathbf n=\begin{pmatrix}1\\-1\\-2\end{pmatrix}\times\begin{pmatrix}-1\\0\\2\end{pmatrix}=\begin{pmatrix}-2\\0\\-1\end{pmatrix}=-\begin{pmatrix}2\\0\\1\end{pmatrix} \]
+        \[ \mathbf r\cdot\begin{pmatrix}2\\0\\1\end{pmatrix}=\begin{pmatrix}1\\2\\3\end{pmatrix}\cdot\begin{pmatrix}2\\0\\1\end{pmatrix}=5\qquad\Longrightarrow\qquad 2x+z=5 \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>The three forms, once and for all.</b><br>
+      <b>Parametric</b>: \( \mathbf r=\mathbf a+\lambda\mathbf d_1+\mu\mathbf d_2 \) &mdash; a point plus <em>two directions lying in</em> the plane. Two parameters.<br>
+      <b>Scalar product</b>: \( \mathbf r\cdot\mathbf n=d \) &mdash; a <em>normal</em> and a constant. No parameters.<br>
+      <b>Cartesian</b>: \( n_1x+n_2y+n_3z=d \) &mdash; literally the scalar product form written out.<br>
+      Route between them: parametric \( \xrightarrow{\ \mathbf d_1\times\mathbf d_2\ } \) scalar product \( \xrightarrow{\ \text{expand}\ } \) Cartesian. <b>Always go via scalar product</b> — never try to jump straight to Cartesian.</div>
+      <div class="testline"><b>Tests:</b> converting between the three forms of a plane equation, including recovering the directions from a plane written as one expression in \(s\) and \(t\).</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q2 -->
+<div class="card" id="q2">
+  <div class="cardhead">Question 2 <span class="marks">[4]</span></div>
+  <div class="src">A-Level N2014 P1 Q9(i)</div>
+  <div class="stem">
+    Planes \(p\) and \(q\) are perpendicular. Plane \(p\) has equation \( x+2y-3z=12 \). Plane \(q\) contains the line \(l\) with equation \( \dfrac{x-1}{2}=\dfrac{y+1}{-1}=\dfrac{z-3}{4} \). The point \(A\) on \(l\) has coordinates \( (1,-1,3) \).
+    <span class="sub">Find a Cartesian equation of \(q\). <span class="marks">[4]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">read off what you have, and decide what role each object plays</div>
+        <span class="name">\(p\) has normal \( \mathbf n_p=(1,2,-3) \). The line \(l\) has direction \( \mathbf d=(2,-1,4) \) and passes through \( A(1,-1,3) \).</span>
+        <span class="name"><b>\(q\) contains \(l\)</b> \( \Rightarrow \) \( \mathbf d \) is a direction <em>in</em> \(q\). &nbsp; <b>\(q\perp p\)</b> \( \Rightarrow \) \( \mathbf n_p \) is <em>also</em> a direction <b>in</b> \(q\) &mdash; not \(q\)'s normal.</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">cross the two in-plane directions to get \(q\)'s normal</div>
+        \[ \mathbf n_q=\mathbf n_p\times\mathbf d=\begin{pmatrix}1\\2\\-3\end{pmatrix}\times\begin{pmatrix}2\\-1\\4\end{pmatrix}=\begin{pmatrix}5\\-10\\-5\end{pmatrix}=5\begin{pmatrix}1\\-2\\-1\end{pmatrix} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">use \( \mathbf r\cdot\mathbf n=\mathbf a\cdot\mathbf n \) with the point on \(l\)</div>
+        \[ \mathbf r\cdot\begin{pmatrix}1\\-2\\-1\end{pmatrix}=\begin{pmatrix}1\\-1\\3\end{pmatrix}\cdot\begin{pmatrix}1\\-2\\-1\end{pmatrix}=1+2-3=0 \]
+        \[ \therefore\ x-2y-z=0 \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>This is your gap, in a real A-Level stem.</b> Two planes are perpendicular \( \Longleftrightarrow \) their <b>normals are perpendicular</b> \( \Longleftrightarrow \) each plane's normal <b>lies inside</b> the other plane. So \( \mathbf n_p \) is a <em>direction vector</em> of \(q\), and you must still <b>cross it</b> with something to get \( \mathbf n_q \). Compare with: plane perpendicular to a <b>LINE</b> \(AB\) \( \Rightarrow \) \( \overrightarrow{AB} \) <b>IS</b> the normal, no cross product needed.</div>
+      <div class="testline"><b>Tests:</b> plane containing a given line and perpendicular to a given plane &mdash; recognising that the other plane's normal is an in-plane direction, not the normal.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q3 -->
+<div class="card" id="q3">
+  <div class="cardhead">Question 3 <span class="marks">[3]</span></div>
+  <div class="src">NJC 2009 Prelim P1 Q10(i) &middot; HCI Supplementary Q8</div>
+  <div class="stem">
+    The points \(A\) and \(B\) have position vectors \( -\mathbf i+2\mathbf j-2\mathbf k \) and \( 2\mathbf i-\mathbf j+7\mathbf k \) respectively. The plane \( \pi_1 \) is given by \( \mathbf r\cdot(\mathbf i-\mathbf j)=5 \).
+    <span class="sub">The plane \( \pi_2 \) is perpendicular to \( \pi_1 \) and contains the points \(A\) and \(B\). Find the equation of \( \pi_2 \) in the form \( \mathbf r\cdot\mathbf n=d \). <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">find the two directions that lie in \( \pi_2 \)</div>
+        <span class="name">\( \pi_2 \) contains \(A\) and \(B\), so \( \overrightarrow{AB} \) is one in-plane direction. \( \pi_2\perp\pi_1 \), so \( \mathbf n_1=(1,-1,0) \) is the other in-plane direction.</span>
+        \[ \overrightarrow{AB}=\begin{pmatrix}2\\-1\\7\end{pmatrix}-\begin{pmatrix}-1\\2\\-2\end{pmatrix}=\begin{pmatrix}3\\-3\\9\end{pmatrix}=3\begin{pmatrix}1\\-1\\3\end{pmatrix} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">cross them, simplify, then substitute a known point</div>
+        \[ \mathbf n_2=\begin{pmatrix}1\\-1\\0\end{pmatrix}\times\begin{pmatrix}1\\-1\\3\end{pmatrix}=\begin{pmatrix}-3\\-3\\0\end{pmatrix}=-3\begin{pmatrix}1\\1\\0\end{pmatrix} \]<span class="mk">(1)</span>
+        \[ \mathbf r\cdot\begin{pmatrix}1\\1\\0\end{pmatrix}=\begin{pmatrix}-1\\2\\-2\end{pmatrix}\cdot\begin{pmatrix}1\\1\\0\end{pmatrix}=-1+2=1 \]
+        \[ \therefore\ \mathbf r\cdot\begin{pmatrix}1\\1\\0\end{pmatrix}=1 \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Same recognition, third costume.</b> Q2 gave you a line; this gives you two points. Either way the perpendicular plane's normal joins the party as a <b>direction</b>. Notice both simplifications: \( (3,-3,9)\to(1,-1,3) \) and \( (-3,-3,0)\to(1,1,0) \) &mdash; factor out before you substitute.</div>
+      <div class="testline"><b>Tests:</b> plane through two points and perpendicular to a given plane &mdash; the same "normal becomes a direction" recognition, reached from different given data.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q4 -->
+<div class="card" id="q4">
+  <div class="cardhead">Question 4 <span class="marks">[4]</span></div>
+  <div class="src">A-Level 2020 P1 Q1</div>
+  <div class="stem">
+    A plane \( \pi_1 \) contains the two vectors \( \begin{pmatrix}1\\1\\0\end{pmatrix} \) and \( \begin{pmatrix}1\\-5\\-2\end{pmatrix} \).
+    <span class="sub">(i) Find a vector normal to \( \pi_1 \). <span class="marks">[2]</span></span>
+    <span class="sub">A plane \( \pi_2 \) has equation \( 4x+5y-6z=0 \).</span>
+    <span class="sub">(ii) Find the acute angle between \( \pi_1 \) and \( \pi_2 \). <span class="marks">[2]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) "contains the two vectors" means they are in-plane directions</div>
+        \[ \mathbf n_1=\begin{pmatrix}1\\1\\0\end{pmatrix}\times\begin{pmatrix}1\\-5\\-2\end{pmatrix}=\begin{pmatrix}-2\\2\\-6\end{pmatrix}=-2\begin{pmatrix}1\\-1\\3\end{pmatrix} \]<span class="mk">(1)</span>
+        \[ \mathbf n_1=\begin{pmatrix}1\\-1\\3\end{pmatrix}\quad\text{(or any scalar multiple)} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) angle between planes = angle between normals, with a modulus</div>
+        <span class="name">Read \( \mathbf n_2=(4,5,-6) \) straight off the Cartesian equation. \( |\mathbf n_1|=\sqrt{11} \), \( |\mathbf n_2|=\sqrt{77} \).</span>
+        \[ \cos\theta=\frac{\left|(1,-1,3)\cdot(4,5,-6)\right|}{\sqrt{11}\,\sqrt{77}}=\frac{|4-5-18|}{\sqrt{847}}=\frac{19}{\sqrt{847}} \]<span class="mk">(1)</span>
+        \[ \theta=49.2^\circ\ \text{(1 d.p.)} \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Two small things that cost marks.</b> The <b>Cartesian</b> form hands you the normal for free &mdash; the coefficients of \(x\), \(y\), \(z\) <em>are</em> \( \mathbf n \). And the angle between planes carries a <b>modulus</b> (acute angle) and uses \( \cos \) &mdash; only <em>line-and-plane</em> uses \( \sin \).</div>
+      <div class="testline"><b>Tests:</b> normal from two in-plane vectors; reading a normal off a Cartesian equation; angle between two planes.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q5 -->
+<div class="card" id="q5">
+  <div class="cardhead">Question 5 <span class="marks">[4]</span></div>
+  <div class="src">NYJC 2009 Prelim P2 Q4 (modified) &middot; HCI Supplementary Q18</div>
+  <div class="stem">
+    The equations of three planes \( p_1 \), \( p_2 \), \( p_3 \) are
+    \( 5x+3y-z=2 \), \( \;x-2y+3z=3 \), \( \;\mu x-y+2z=\rho \) respectively, where \( \mu \) and \( \rho \) are constants. The planes \( p_1 \) and \( p_2 \) intersect in a line \(l\).
+    <span class="sub">(i) Find a vector equation of \(l\). <span class="marks">[2]</span></span>
+    <span class="sub">(ii) Given that the planes \( p_2 \) and \( p_3 \) intersect at right angles, find \( \mu \). <span class="marks">[2]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) direction by cross product, point by inspection</div>
+        <span class="name">\( \mathbf n_1=(5,3,-1) \), \( \mathbf n_2=(1,-2,3) \). The line lies in both planes, so it is perpendicular to both normals.</span>
+        \[ \mathbf d=\mathbf n_1\times\mathbf n_2=\begin{pmatrix}5\\3\\-1\end{pmatrix}\times\begin{pmatrix}1\\-2\\3\end{pmatrix}=\begin{pmatrix}7\\-16\\-13\end{pmatrix} \]<span class="mk">(1)</span>
+        <span class="name">A point on both: try \( (1,-1,0) \) &mdash; \( 5-3-0=2 \) ✓ and \( 1+2+0=3 \) ✓.</span>
+        \[ l:\ \mathbf r=\begin{pmatrix}1\\-1\\0\end{pmatrix}+\lambda\begin{pmatrix}7\\-16\\-13\end{pmatrix},\quad\lambda\in\mathbb R \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) planes at right angles \( \Leftrightarrow \) normals at right angles</div>
+        <span class="name">\( \mathbf n_2=(1,-2,3) \), \( \mathbf n_3=(\mu,-1,2) \). Perpendicular planes means \( \mathbf n_2\cdot\mathbf n_3=0 \).</span>
+        \[ (1)(\mu)+(-2)(-1)+(3)(2)=0\ \Rightarrow\ \mu+2+6=0 \]<span class="mk">(1)</span>
+        \[ \therefore\ \mu=-8 \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>The same fact, used backwards.</b> Q2 and Q3 used "\( p\perp q \)" to <em>supply a direction</em>. Here it is used as an <em>equation</em>: \( \mathbf n_2\cdot\mathbf n_3=0 \). One idea, two jobs &mdash; recognise which the question wants.<br>
+      And part (i): fixing a coordinate to find a point on \(l\) is legitimate because the line is infinite &mdash; any consistent choice lands on the same line; only the "starting point" changes, and that was never unique.</div>
+      <div class="testline"><b>Tests:</b> line of intersection of two planes; and the perpendicular-planes condition used in reverse to solve for an unknown coefficient.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q6 -->
+<div class="card" id="q6">
+  <div class="cardhead">Question 6 <span class="marks">[5]</span></div>
+  <div class="src">HCI Tutorial 7C Q10</div>
+  <div class="stem">
+    The equations of two planes \( \Pi_1 \) and \( \Pi_2 \) are given by
+    \( \mathbf r\cdot\begin{pmatrix}1\\2\\-1\end{pmatrix}=1 \) and \( \mathbf r=\begin{pmatrix}3\\2\\3\end{pmatrix}+\lambda\begin{pmatrix}0\\1\\2\end{pmatrix}+\mu\begin{pmatrix}1\\0\\1\end{pmatrix} \) respectively, where \( \lambda \) and \( \mu \) are parameters.
+    <span class="sub">(i) Show that the two planes are parallel. <span class="marks">[2]</span></span>
+    <span class="sub">(ii) Verify that the point \( A(2,0,1) \) lies on \( \Pi_1 \). Hence, or otherwise, find the exact distance between the two planes. <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) you cannot compare the two until they are in the SAME form</div>
+        <span class="name">\( \Pi_2 \) is parametric, so extract its normal by crossing its two directions.</span>
+        \[ \mathbf n_2=\begin{pmatrix}0\\1\\2\end{pmatrix}\times\begin{pmatrix}1\\0\\1\end{pmatrix}=\begin{pmatrix}1\\2\\-1\end{pmatrix} \]<span class="mk">(1)</span>
+        <span class="name">This is identical to \( \mathbf n_1=(1,2,-1) \). Parallel planes have parallel normals.</span>
+        \[ \therefore\ \Pi_1\ \text{and}\ \Pi_2\ \text{are parallel.} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) verify, then project the joining vector onto the unit normal</div>
+        <span class="name">\( (2,0,1)\cdot(1,2,-1)=2+0-1=1 \) ✓ so \(A\) lies on \( \Pi_1 \).</span><span class="mk">(1)</span>
+        <span class="name">Take \( B(3,2,3) \), a known point on \( \Pi_2 \). \( |\mathbf n|=\sqrt{1+4+1}=\sqrt6 \).</span>
+        \[ \overrightarrow{AB}=\begin{pmatrix}1\\2\\2\end{pmatrix};\qquad \text{distance}=\left|\overrightarrow{AB}\cdot\hat{\mathbf n}\right|=\frac{|1+4-2|}{\sqrt6}=\frac{3}{\sqrt6}=\frac{\sqrt6}{2} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Why this one is here.</b> The two planes are handed to you in <b>different forms</b> — one scalar product, one parametric — so you must convert before you can compare anything. That is the same three-forms fluency Q1 drilled, now with a consequence attached. If you had tried to compare \( (3,2,3) \) with \( (1,2,-1) \) directly you would have compared a <em>point</em> with a <em>normal</em>.</div>
+      <div class="testline"><b>Tests:</b> extracting a normal from parametric form to compare two planes; the parallel-planes test; distance between two parallel planes by projection onto the unit normal.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q7 -->
+<div class="card" id="q7">
+  <div class="cardhead">Question 7 <span class="marks">[3]</span></div>
+  <div class="src">HCI Mock M1 Q6 (parts)</div>
+  <div class="stem">
+    The plane \( p_1 \) has equation \( x+2z=-3 \) and the plane \( p_2 \) has equation \( 2x+y+3z=10 \). The point \(Q\) has coordinates \( (-12,2,12) \). The line \(m\) passes through \(Q\) but does <b>not</b> intersect either \( p_1 \) or \( p_2 \).
+    <span class="sub">(i) State the angle between \(m\) and \( p_2 \). <span class="marks">[1]</span></span>
+    <span class="sub">(ii) Find the Cartesian equation of \(m\). <span class="marks">[2]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) "does not intersect a plane" means parallel to it</div>
+        <span class="name">A line that never meets a plane must be parallel to it.</span>
+        \[ \text{The angle between }m\text{ and }p_2\text{ is }0^\circ. \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) parallel to both planes \( \Rightarrow \) perpendicular to both normals</div>
+        <span class="name">\( \mathbf n_1=(1,0,2) \) and \( \mathbf n_2=(2,1,3) \). If \(m\) is parallel to each plane then its direction is perpendicular to each normal &mdash; and the vector perpendicular to both is their cross product.</span>
+        \[ \mathbf d=\mathbf n_1\times\mathbf n_2=\begin{pmatrix}1\\0\\2\end{pmatrix}\times\begin{pmatrix}2\\1\\3\end{pmatrix}=\begin{pmatrix}-2\\1\\1\end{pmatrix} \]<span class="mk">(1)</span>
+        <span class="name">Through \( Q(-12,2,12) \), using \( (2,-1,-1) \) (the same direction, sign-flipped for tidier signs):</span>
+        \[ \frac{x+12}{2}=\frac{y-2}{-1}=\frac{z-12}{-1},\qquad\text{i.e.}\qquad \frac{x+12}{2}=2-y=12-z \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>A third role for a normal.</b> Q2/Q3 used a normal as an <b>in-plane direction</b>; Q5 used it in a <b>dot-product equation</b>; here two normals are <b>crossed</b> to produce a direction perpendicular to both. Ask every time: <em>is this normal acting as a normal, as a direction, or as something to be perpendicular to?</em></div>
+      <div class="testline"><b>Tests:</b> a line parallel to two planes &mdash; direction as the cross product of the two normals; and the angle between a line and a plane it is parallel to.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<hr>
+
+<h3 style="font-family:-apple-system,sans-serif;font-size:1.05em">What each question was closing</h3>
+<p style="color:var(--muted);font-size:.9em">Read this only <em>after</em> you have attempted the sheet.</p>
+<table>
+<tr><th>Gap from your 16 Aug transcript</th><th>Drilled in</th></tr>
+<tr><td>Blanked on <em>what the vector equation of a plane even is</em> — recovered \( \mathbf r\cdot\mathbf n=d \) only after a long pause</td><td>Q1, Q4, Q6</td></tr>
+<tr><td>Confused <b>parametric vs scalar product vs Cartesian</b>; had to re-sort them twice in one session</td><td>Q1, Q6</td></tr>
+<tr><td><b>"Perpendicular to plane \( \Pi \)" \( \Rightarrow \) \( \Pi \)'s normal is a DIRECTION in your plane, not your normal.</b> Ended the transcript still asking <em>"2, 3, 4 is my normal, no?"</em></td><td>Q2, Q3 (and inverted in Q5, Q7)</td></tr>
+<tr><td>Simplifying a normal by factoring out the scalar (carried over from 28 Jul)</td><td>Q2, Q3, Q4</td></tr>
+</table>
+
+<p style="color:var(--muted);font-size:.9em;margin-top:20px">Seven questions, 27 marks, roughly fifty minutes. If Q2, Q3 and Q7 all land clean and confident, this gap closes. Paste me the transcript and I will update the tracker.</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn=>{btn.addEventListener('click',function(){const b=this.parentElement,o=b.querySelector('.answer-overlay');if(o.classList.contains('hidden')){o.classList.remove('hidden');this.textContent='Reveal solution';this.classList.remove('hide-state');}else{o.classList.add('hidden');this.textContent='Hide';this.classList.add('hide-state');}});});
+  function revealAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.add('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Hide';b.classList.add('hide-state');});}
+  function hideAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.remove('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Reveal solution';b.classList.remove('hide-state');});}
+</script>
+</body>
+</html>
