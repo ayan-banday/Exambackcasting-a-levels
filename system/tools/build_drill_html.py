@@ -67,6 +67,10 @@ LOS      = CONFIG.get("los_html", "")
 # Ethan, 12 Aug: rate confidence out loud before every reveal. On by default for every drill;
 # set "confidence_prompt": false in a config to switch it off.
 CONFIDENCE = CONFIG.get("confidence_prompt", True)
+# Light background by default; "dark_theme": true restores the old palette.
+DARK_CSS = ':root{--bg:#14161a;--card-bg:#1c1f26;--border:#2f343d;--text:#e8eaed;--muted:#9aa3b0;--blue:#6ea8fe;--blue-soft:#1b2432;--amber:#e0a13a;--green:#4ade80;--green-soft:#16261d;--cover:#262b34;--purple:#c4a7fd;--purple-soft:#221c33;--red:#f87171;--red-soft:#2a1a1a}'
+USE_DARK = CONFIG.get("dark_theme", False)
+
 CONFIDENCE_TEXT = CONFIG.get(
     "confidence_text",
     "Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.",
@@ -322,9 +326,11 @@ for v in FIGMAP.values():
 missing = sorted(_all - figs_used)
 
 CSS = """
-:root{--bg:#14161a;--card-bg:#1c1f26;--border:#2f343d;--text:#e8eaed;--muted:#9aa3b0;--blue:#6ea8fe;
---blue-soft:#1b2432;--amber:#e0a13a;--green:#4ade80;--green-soft:#16261d;--cover:#262b34;
---purple:#c4a7fd;--purple-soft:#221c33;--red:#f87171;--red-soft:#2a1a1a}
+/* Light is the default: Ethan finds a white background easier to read from.
+   Set "dark_theme": true in a config if a dark build is ever wanted again. */
+:root{--bg:#ffffff;--card-bg:#fafafa;--border:#e2e5ea;--text:#16181d;--muted:#5b6472;--blue:#1d4ed8;
+--blue-soft:#eef4ff;--amber:#a35a00;--green:#047857;--green-soft:#ecfdf5;--cover:#f1f3f6;
+--purple:#6d28d9;--purple-soft:#f5f3ff;--red:#b91c1c;--red-soft:#fef2f2}
 .mcq{margin:10px 0 12px;padding:2px 0}
 .opt{display:flex;gap:10px;margin:6px 0;align-items:baseline}
 .optl{flex:0 0 1.6em;font-weight:700;color:var(--amber);font-family:-apple-system,sans-serif}
@@ -332,6 +338,7 @@ CSS = """
 *{box-sizing:border-box}
 body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:960px;margin:0 auto;
 padding:32px 22px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+""" + (DARK_CSS if USE_DARK else "") + """
 h1,h2,h3,.label,.controls,button{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
 h1{font-size:1.9em;margin:0 0 6px;border-bottom:3px solid var(--muted);padding-bottom:10px}
 h3{font-size:1.15em;margin:0 0 14px;color:var(--text)}
