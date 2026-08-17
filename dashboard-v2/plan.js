@@ -1905,8 +1905,8 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "chem",
-     "name": "Chem — CUMULATIVE TEST (12Q · 80 marks · 2h)",
-     "desc": "All topics so far. 80% older topics (Bonding/Stoich/Organic/Isomerism/Alkanes/Alkenes), 20% Halogen+Hydroxy. Timed, mark scheme at the end.",
+     "name": "Chem — CUMULATIVE TEST (10Q · 90 marks · 2h · all structured)",
+     "desc": "Rebuilt harder per your feedback: zero MCQs, multi-concept fusion, real papers cited on every Q. 77% older topics / 23% Halogen+Hydroxy. Answers reveal under each question.",
      "done": false,
      "doneDate": null,
      "clusterHref": "clusters/test_chem_cumulative_2026-08-17.html"
