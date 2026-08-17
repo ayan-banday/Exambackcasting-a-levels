@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Differential Equations &times; Maclaurin Series &mdash; Drill Cluster (9758)</title>
+<script>
+  window.MathJax = { tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], processEscapes: true, tags:'none' }, svg:{fontCache:'global'} };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --green:#059669; --green-soft:#ecfdf5;
+    --cover:#f3f4f6; --accent:#6d28d9; --purple:#7c3aed; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:36px 24px 90px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h3,.label,.controls,button,.step-header,.hd .sub,.hd .meta,.cardhead,.conf,.src,.marks,.testline{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  .hd{border-bottom:2.5px solid #111;padding-bottom:16px;margin-bottom:10px;text-align:center}
+  .hd h1{font-size:1.55em;font-weight:800;letter-spacing:.4px;margin:0;border:none;padding:0;color:#111}
+  .hd .sub{font-size:1.02em;margin-top:4px;color:#333}
+  .hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:.8em;color:var(--muted);margin-top:9px}
+  h3{font-size:1.18em;margin:0 0 6px;color:#1f2937}
+  p{margin:8px 0}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--accent);padding:15px 20px;border-radius:6px;margin:18px 0}
+  .radians{background:#fff7ed;border:2px solid var(--amber);border-radius:8px;padding:13px 18px;margin:18px 0 8px;font-size:.98em;color:#7c2d12}
+  .radians b{color:#b91c1c;text-transform:uppercase;letter-spacing:.03em}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin:22px 0 20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;font-weight:500}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:30px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:8px;color:#111}
+  .toc a{color:var(--blue);text-decoration:none;display:inline-block;width:100%;line-height:1.95}
+  .toc a b{color:#111}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:24px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .cardhead{font-size:.72em;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+  .src{font-family:ui-monospace,Menlo,monospace;font-size:.72em;color:var(--amber);margin:3px 0 10px}
+  .stem{background:#1e293b;color:#f1f5f9;padding:14px 18px;border-radius:6px;margin:8px 0;line-height:1.7}
+  .stem .sub{display:block;margin-top:7px}
+  .stem .lead{display:block;margin-bottom:4px}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px}
+  .conf{background:#f8fafc;border:1px dashed #cbd5e1;border-radius:6px;padding:8px 14px;margin:12px 0 4px;font-size:.85em;color:#475569}
+  .conf b{color:#0f172a}
+  .block.answer{background:var(--green-soft);border-left:4px solid var(--green);border-radius:6px;position:relative;min-height:60px;padding:12px 16px 14px;margin:14px 0 2px}
+  .label{display:block;text-transform:uppercase;font-size:.73em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--green)}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.6);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.78em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .mk{display:inline-block;font-size:.8em;color:var(--green);font-weight:700;margin-left:4px}
+  .name{display:block;font-size:.86em;color:#475569;font-style:italic;margin:6px 0;border-left:2px solid var(--border);padding-left:10px}
+  .testline{margin-top:12px;padding-top:8px;border-top:1px dashed #a7f3d0;font-size:.8em;color:#047857}
+  .testline b{color:#065f46}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;z-index:2;text-align:center;padding:0 20px}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content{padding-right:60px}
+  .fig{background:#fff;border:1px solid var(--border);border-radius:6px;padding:10px;margin:10px 0;text-align:center}
+  .fig svg{max-width:100%;height:auto}
+  .figcap{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif;font-size:.76em;color:var(--muted);margin-top:4px}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  mjx-container{overflow-x:auto;overflow-y:hidden;max-width:100%}
+  @media print{body{background:#fff;padding:20px;max-width:100%}.controls,.reveal-btn{display:none!important}.answer-overlay{display:none!important}.card{box-shadow:none;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<div class="hd">
+  <h1>H2 MATHEMATICS 9758</h1>
+  <div class="sub">Differential Equations + Maclaurin Series &mdash; Drill Cluster</div>
+  <div class="meta">9758 &middot; H2 &middot; Paper 1 &amp; 2 (Pure) &middot; 11 questions &middot; <b>~2h &middot; 98 marks</b></div>
+</div>
+
+<div class="intro">
+Two topics, one sheet, because <b>9758 keeps testing them together</b>. A differential equation is just a relation between \(y\) and its derivatives &mdash; and the way you build a Maclaurin series is by differentiating a relation between \(y\) and its derivatives over and over. Questions 1, 2 and 11 are that exact join: you are handed a DE and asked for a series, not a solution. The rest of the sheet closes every learning outcome across both topics &mdash; direct integration, separables, substitutions, forming a DE from words, families of solution curves, long-run behaviour, the standard MF26 series, binomial expansions with their validity ranges, small-angle work, and using a series to approximate an integral you then check on the GC. <b>Every question is a real past-paper, prelim or tutorial question; every revealed solution reproduces the worked solution verbatim</b>, with each mark tagged <span class="mk">(1)</span> on the line it is earned. Say your confidence out loud before every reveal &mdash; that line feeds the gap tracker.
+</div>
+
+<div class="radians">
+<b>Two things before you start.</b> &nbsp;(1) Set your calculator to <b>radians</b> &mdash; every \(\tan^{-1}\), \(\cot\), \(\pi\) and small-angle \(\theta\) on this sheet is in radians. (2) <b>Every time you meet an algebraic fraction, check the degrees first.</b> If the numerator's degree is greater than or equal to the denominator's, the fraction is improper &mdash; divide it out <em>before</em> you split it, integrate it or expand it. Q3 and Q4 both punish you for skipping that check.
+</div>
+
+<div class="controls"><button onclick="revealAll()">Reveal all</button><button onclick="hideAll()">Hide all</button></div>
+
+<div class="toc"><strong>The 11 questions &middot; 98 marks &middot; full LO coverage across both topics</strong>
+<a href="#q1"><b>Q1</b> <span class="marks">[9]</span> &nbsp;A-Level 2018 P2 Q1 &middot; RI 2019 Prelim P2 Q2</a>
+<a href="#q2"><b>Q2</b> <span class="marks">[11]</span> &nbsp;RI Prelim 9758/2023 P2 Q3</a>
+<a href="#q3"><b>Q3</b> <span class="marks">[9]</span> &nbsp;AJC 2017 C2 BT2 P1 Q10</a>
+<a href="#q4"><b>Q4</b> <span class="marks">[11]</span> &nbsp;HCI Ch8 Supp Q1 &middot; MI 2009 PU1 Q9</a>
+<a href="#q5"><b>Q5</b> <span class="marks">[7]</span> &nbsp;A-Level 2019 P1 Q10(i)</a>
+<a href="#q6"><b>Q6</b> <span class="marks">[12]</span> &nbsp;A-Level N2024 P1 Q11</a>
+<a href="#q7"><b>Q7</b> <span class="marks">[9]</span> &nbsp;A-Level 2013 P1 Q9</a>
+<a href="#q8"><b>Q8</b> <span class="marks">[9]</span> &nbsp;CJC 2017 C2 BT2 P1 Q2</a>
+<a href="#q9"><b>Q9</b> <span class="marks">[7]</span> &nbsp;MJC 2009 C2 Prelim P1 Q4</a>
+<a href="#q10"><b>Q10</b> <span class="marks">[6]</span> &nbsp;NYJC 2019 Prelim P1 Q2</a>
+<a href="#q11"><b>Q11</b> <span class="marks">[8]</span> &nbsp;MI 2015 Prelim P1 Q6</a>
+</div>
+
+
+<!-- Q1 -->
+<div class="card" id="q1">
+  <div class="cardhead">Question 1 <span class="marks">[9]</span></div>
+  <div class="src">A-Level 2018 P2 Q1 &middot; RI 2019 Prelim P2 Q2(a)</div>
+  <div class="stem">
+    <span class="sub">(a) The curve \(y=\mathrm f(x)\) passes through the point \((0,\,69)\) and has gradient given by \(\dfrac{\mathrm dy}{\mathrm dx}=\left(\tfrac13 y-15\right)^{1/3}\). Find \(\mathrm f(x)\). <span class="marks">[4]</span></span>
+    <span class="sub">(b) A different curve \(y=\mathrm g(x)\) passes through the point \((0,\,81)\) and has gradient given by \(\dfrac{\mathrm dy}{\mathrm dx}=\left(\tfrac13 y-15x\right)^{1/3}\).</span>
+    <span class="sub">&nbsp;&nbsp;&nbsp;(i) Find the first three non-zero terms in the Maclaurin series for \(y\). <span class="marks">[4]</span></span>
+    <span class="sub">&nbsp;&nbsp;&nbsp;(ii) Deduce the equation of the tangent to the curve \(y=\mathrm g(x)\) at the point where \(x=0\). <span class="marks">[1]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim worked solution</div>
+      <div class="step"><div class="step-header">(a) the right-hand side is a function of \(y\) alone &mdash; invert and integrate with respect to \(y\)</div>
+        <span class="name">Write \(u=\tfrac13y-15\), so \(\dfrac{\mathrm du}{\mathrm dy}=\tfrac13\) and \(\displaystyle\int u^{-1/3}\,\mathrm dy=3\int u^{-1/3}\,\mathrm du=3\cdot\dfrac{u^{2/3}}{2/3}=\tfrac92u^{2/3}\).</span>
+        \[ \frac{\mathrm dx}{\mathrm dy}=\left(\tfrac13y-15\right)^{-1/3}\ \Longrightarrow\ x=\int\left(\tfrac13y-15\right)^{-1/3}\mathrm dy=\frac92\left(\tfrac13y-15\right)^{2/3}+C. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">The curve passes through \((0,\,69)\), so \(x=0\) when \(y=69\); note \(\tfrac13(69)-15=8\) and \(8^{2/3}=4\).</span>
+        \[ 0=\tfrac92(8)^{2/3}+C=\tfrac92(4)+C=18+C\ \Longrightarrow\ C=-18. \] <span class="mk">(1)</span>
+        \[ x=\tfrac92\left(\tfrac13y-15\right)^{2/3}-18\ \Rightarrow\ \tfrac29(x+18)=\left(\tfrac13y-15\right)^{2/3}\ \Rightarrow\ \tfrac13y-15=\left(\tfrac29x+4\right)^{3/2} \]
+        \[ \mathrm f(x)=3\left(\tfrac29x+4\right)^{3/2}+45. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b)(i) do not solve this one &mdash; differentiate the DE itself, then evaluate at \(x=0\)</div>
+        <span class="name">\(\dfrac{\mathrm dy}{\mathrm dx}=\left(\tfrac13y-15x\right)^{1/3}\). Differentiate the right-hand side by the chain rule, remembering \(y\) is a function of \(x\) so \(\tfrac13y-15x\) differentiates to \(\tfrac13\dfrac{\mathrm dy}{\mathrm dx}-15\).</span>
+        \[ \frac{\mathrm d^2y}{\mathrm dx^2}=\tfrac13\left(\tfrac13y-15x\right)^{-2/3}\left(\tfrac13\frac{\mathrm dy}{\mathrm dx}-15\right). \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">At \(x=0\): \(y=81\), so \(\tfrac13y-15x=\tfrac13(81)-0=27\).</span>
+        \[ \left.\frac{\mathrm dy}{\mathrm dx}\right|_{x=0}=27^{1/3}=3;\qquad \left.\frac{\mathrm d^2y}{\mathrm dx^2}\right|_{x=0}=\tfrac13(27)^{-2/3}\big(\tfrac13(3)-15\big)=\tfrac13\cdot\tfrac19\cdot(-14)=-\tfrac{14}{27}. \] <span class="mk">(1)</span>
+        \[ y=81+3x+\frac{-\tfrac{14}{27}}{2!}x^2+\cdots=81+3x-\frac{7}{27}x^2+\cdots \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b)(ii) the tangent at \(x=0\) is the linear part of the series</div>
+        \[ y=81+3x. \] <span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Fuses:</b> the same-shaped gradient function goes two different ways &mdash; in (a) the right-hand side depends only on \(y\), so you invert to \(\tfrac{\mathrm dx}{\mathrm dy}\) and integrate; in (b) the extra \(-15x\) makes it unsolvable by separation, so you differentiate the DE repeatedly and build a Maclaurin series instead. Reading which of the two a question wants is the whole skill.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q2 -->
+<div class="card" id="q2">
+  <div class="cardhead">Question 2 <span class="marks">[11]</span></div>
+  <div class="src">RI Prelim 9758/2023 P2 Q3</div>
+  <div class="stem">
+    <span class="lead">It is given that \(y=e^{x}\cos 3x\).</span>
+    <span class="sub">(a) Show that \(\dfrac{\mathrm d^2y}{\mathrm dx^2}=2\dfrac{\mathrm dy}{\mathrm dx}-10y\). Hence find the first four non-zero terms of the Maclaurin expansion of \(e^{x}\cos 3x\). <span class="marks">[6]</span></span>
+    <span class="sub">(b) Verify that the same result in part (a) is obtained if the standard series expansions for \(e^{x}\) and \(\cos x\) are used. <span class="marks">[2]</span></span>
+    <span class="sub">(c) Hence show that \(\ln\!\left(1+e^{x}\cos 3x\right)\) can be expressed as \(\ln 2+\tfrac12 x-\tfrac{17}{8}x^2+\cdots\) <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim worked solution</div>
+      <div class="step"><div class="step-header">(a) product rule twice, feeding each result back in terms of \(y\) and \(\tfrac{\mathrm dy}{\mathrm dx}\)</div>
+        <span class="name">The trick is never to leave \(e^{x}\sin 3x\) standing on its own &mdash; replace it using the line above, so the final relation contains only \(y\) and its derivatives.</span>
+        \[ \frac{\mathrm dy}{\mathrm dx}=e^{x}\cos 3x-3e^{x}\sin 3x=y-3e^{x}\sin 3x. \] <span class="mk">(1)</span>
+        \[ \frac{\mathrm d^2y}{\mathrm dx^2}=\frac{\mathrm dy}{\mathrm dx}-3e^{x}\sin 3x-9e^{x}\cos 3x=\frac{\mathrm dy}{\mathrm dx}+\left(\frac{\mathrm dy}{\mathrm dx}-y\right)-9y \] <span class="mk">(1)</span>
+        \[ =2\frac{\mathrm dy}{\mathrm dx}-10y\quad(\text{shown}). \] <span class="mk">(1)</span>
+        <span class="name">Differentiate the shown result once more to reach the third derivative, then evaluate everything at \(x=0\).</span>
+        \[ \frac{\mathrm d^3y}{\mathrm dx^3}=2\frac{\mathrm d^2y}{\mathrm dx^2}-10\frac{\mathrm dy}{\mathrm dx}. \] <span class="mk">(1)</span>
+        \[ x=0:\quad y=1,\quad \frac{\mathrm dy}{\mathrm dx}=1,\quad \frac{\mathrm d^2y}{\mathrm dx^2}=2(1)-10(1)=-8,\quad \frac{\mathrm d^3y}{\mathrm dx^3}=2(-8)-10(1)=-26. \] <span class="mk">(1)</span>
+        \[ y=1+x+\frac{-8}{2!}x^2+\frac{-26}{3!}x^3+\cdots=1+x-4x^2-\frac{13}{3}x^3+\cdots \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b) multiply the two MF26 standard series and collect</div>
+        <span class="name">From MF26: \(e^{x}=1+x+\tfrac{x^2}{2!}+\tfrac{x^3}{3!}+\cdots\) and \(\cos x=1-\tfrac{x^2}{2!}+\cdots\), so \(\cos 3x=1-\tfrac{(3x)^2}{2}+\cdots=1-\tfrac92x^2+\cdots\)</span>
+        \[ e^{x}\cos 3x=\left(1+x+\tfrac12x^2+\tfrac16x^3+\cdots\right)\left(1-\tfrac92x^2+\cdots\right) \] <span class="mk">(1)</span>
+        \[ =1+x+\left(\tfrac12-\tfrac92\right)x^2+\left(\tfrac16-\tfrac92\right)x^3+\cdots=1+x-4x^2-\tfrac{13}{3}x^3+\cdots\quad(\text{verified}). \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(c) substitute the series into the logarithm, then force the bracket into \(\ln(1+u)\) form</div>
+        <span class="name">Only terms up to \(x^2\) are needed. \(1+e^{x}\cos 3x\approx 2+x-4x^2\); factor out the 2 so the standard series \(\ln(1+u)=u-\tfrac{u^2}{2}+\cdots\) applies with \(u=\tfrac x2-2x^2\).</span>
+        \[ \ln\!\left(1+e^{x}\cos 3x\right)\approx\ln\!\left(2+x-4x^2\right)=\ln\!\Big[2\left(1+\tfrac x2-2x^2\right)\Big]=\ln 2+\ln\!\left(1+\left(\tfrac x2-2x^2\right)\right) \] <span class="mk">(1)</span>
+        \[ =\ln 2+\left(\tfrac x2-2x^2\right)-\tfrac12\left(\tfrac x2-2x^2\right)^2+\cdots=\ln 2+\tfrac12x-2x^2-\tfrac12\cdot\tfrac{x^2}{4}+\cdots \] <span class="mk">(1)</span>
+        \[ =\ln 2+\tfrac12x-\tfrac{17}{8}x^2+\cdots\quad(\text{shown}). \] <span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Fuses:</b> a second-order DE relation is manufactured out of a product, differentiated once more to give \(\tfrac{\mathrm d^3y}{\mathrm dx^3}\), then cross-checked against the MF26 standard series &mdash; and the answer is immediately fed as the \(u\) inside \(\ln(1+u)\). Three separate Maclaurin routes on one stem.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q3 -->
+<div class="card" id="q3">
+  <div class="cardhead">Question 3 <span class="marks">[9]</span></div>
+  <div class="src">AJC 2017 C2 BT2 P1 Q10</div>
+  <div class="stem">
+    <span class="lead">[The volume of a circular cone with base radius \(r\) and height \(h\) is \(\tfrac13\pi r^2h\).]</span>
+    <span class="lead">An open-top conical tank has a radius equal to its height. Initially the tank is empty. Water is added at a rate of \(\pi\) cubic metres per hour, and water evaporates from the tank at a rate proportional to the surface area of the water. At time \(t\) hours, the volume of water in the tank is \(V\) cubic metres and its depth is \(h\) metres.</span>
+    <span class="sub">(i) Given that there is no change in the volume of water when the depth of water is 5 metres, express \(\dfrac{\mathrm dV}{\mathrm dt}\) in terms of \(h\). <span class="marks">[2]</span></span>
+    <span class="sub">(ii) Show that \(\dfrac{\mathrm dh}{\mathrm dt}=\dfrac{25-h^2}{25h^2}\). <span class="marks">[2]</span></span>
+    <span class="sub">(iii) By solving the differential equation in part (ii), show that \(\dfrac52\ln\!\left(\dfrac{5+h}{5-h}\right)-h=\dfrac{1}{25}t\). <span class="marks">[4]</span></span>
+    <span class="sub">(iv) What should the height of the conical tank be so that the tank will never be filled up? <span class="marks">[1]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim worked solution</div>
+      <div class="step"><div class="step-header">(i) rate of change of volume = rate in &minus; rate out</div>
+        <span class="name">Let \(r\) be the radius of the water surface. Since the height and radius of the tank are the same, \(r=h\), so the surface area of the water is \(\pi r^2=\pi h^2\).</span>
+        \[ \frac{\mathrm dV}{\mathrm dt}=\pi-k\pi r^2=\pi-k\pi h^2. \] <span class="mk">(1)</span>
+        \[ h=5:\ \frac{\mathrm dV}{\mathrm dt}=\pi-k\pi(5^2)=0\ \Rightarrow\ k=\tfrac{1}{25}\quad\Longrightarrow\quad \frac{\mathrm dV}{\mathrm dt}=\pi-\tfrac{1}{25}\pi h^2=\frac{\pi(25-h^2)}{25}. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) chain the rates through \(\dfrac{\mathrm dV}{\mathrm dh}\)</div>
+        \[ V=\tfrac13\pi r^2h=\tfrac13\pi h^3\ \Longrightarrow\ \frac{\mathrm dV}{\mathrm dh}=\pi h^2. \] <span class="mk">(1)</span>
+        \[ \frac{\mathrm dV}{\mathrm dt}=\frac{\mathrm dV}{\mathrm dh}\times\frac{\mathrm dh}{\mathrm dt}\ \Longrightarrow\ \frac{\mathrm dh}{\mathrm dt}=\frac{\pi(25-h^2)/25}{\pi h^2}=\frac{25-h^2}{25h^2}\quad(\text{shown}). \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) separate &mdash; and divide out the improper fraction before integrating</div>
+        <span class="name"><b>The check that earns the mark:</b> in \(\dfrac{h^2}{25-h^2}\) the numerator has degree 2 and the denominator has degree 2, so it is improper. It cannot be integrated as it stands and it has no partial-fraction split until you divide. Long division gives \(\dfrac{h^2}{25-h^2}=-1+\dfrac{25}{25-h^2}\).</span>
+        \[ \frac{\mathrm dt}{\mathrm dh}=\frac{25h^2}{25-h^2}\ \Longrightarrow\ t=25\int\frac{h^2}{25-h^2}\,\mathrm dh=25\int\left(-1+\frac{25}{25-h^2}\right)\mathrm dh. \] <span class="mk">(1)</span>
+        <span class="name">MF26 standard form: \(\displaystyle\int\frac{1}{a^2-x^2}\,\mathrm dx=\frac{1}{2a}\ln\!\left(\frac{a+x}{a-x}\right)\) with \(a=5\). So \(\displaystyle\int\frac{25}{25-h^2}\,\mathrm dh=\frac{25}{2(5)}\ln\!\left(\frac{5+h}{5-h}\right)=\frac52\ln\!\left(\frac{5+h}{5-h}\right)\).</span>
+        \[ \frac{t}{25}=\int\left(-1+\frac{25}{25-h^2}\right)\mathrm dh=-h+\frac52\ln\!\left(\frac{5+h}{5-h}\right)+C. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">Since the depth increases from 0 to 5 m, \(\dfrac{5+h}{5-h}>0\) and no modulus is needed. When \(t=0\), \(h=0\), so \(0=-0+\tfrac52\ln 1+C\Rightarrow C=0\).</span>
+        \[ \frac52\ln\!\left(\frac{5+h}{5-h}\right)-h=\frac{1}{25}t\quad(\text{shown}). \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iv) read the physical meaning of the depth at which the rates balance</div>
+        <span class="name">Since there is no change in volume when the depth is 5 m, the water level can never rise past 5 m.</span>
+        <p style="margin:6px 0">The height of the conical tank must be <b>at least 5 m</b>. <span class="mk">(1)</span></p>
+      </div>
+      <div class="testline"><b>Tests:</b> forming a DE from a worded rate-in/rate-out model, converting \(\tfrac{\mathrm dV}{\mathrm dt}\) to \(\tfrac{\mathrm dh}{\mathrm dt}\) through a connected rate, and the improper-fraction reflex &mdash; degree of numerator \(\ge\) degree of denominator means <b>divide first</b>. Then a straight MF26 standard form and a worded interpretation.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q4 -->
+<div class="card" id="q4">
+  <div class="cardhead">Question 4 <span class="marks">[11]</span></div>
+  <div class="src">HCI Ch8 Supplementary Q1(b) &middot; MI 2009 PU1 Q9 (modified)</div>
+  <div class="stem">
+    <span class="sub">(a) Expand \(\dfrac{x-4}{x+1}\) in ascending powers of \(x\), up to and including the term in \(x^3\). State the range of values of \(x\) for which the expansion is valid. <span class="marks">[4]</span></span>
+    <span class="sub">(b) Find the series expansion of \(\dfrac{1}{\sqrt{4+3x}}\) in ascending powers of \(x\), up to and including the term in \(x^3\). <span class="marks">[3]</span></span>
+    <span class="sub">(c) Use your expansion from part (b) to find an approximate value for \(\displaystyle\int_{0}^{2}\frac{1}{\sqrt{4+3x}}\,\mathrm dx\), giving your answer to 4 decimal places. Use your calculator to evaluate \(\displaystyle\int_{0}^{2}\frac{1}{\sqrt{4+3x}}\,\mathrm dx\) to 4 decimal places, and justify whether your approximation is appropriate. <span class="marks">[4]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim worked solution</div>
+      <div class="step"><div class="step-header">(a) improper fraction &mdash; divide before you expand</div>
+        <span class="name"><b>The check that earns the mark:</b> numerator \(x-4\) has degree 1, denominator \(x+1\) has degree 1. Degrees are equal, so the fraction is improper. There is no binomial series for it until the polynomial part is stripped off.</span>
+        \[ \frac{x-4}{x+1}=\frac{(x+1)-5}{x+1}=1-\frac{5}{x+1}=1-5(1+x)^{-1}. \] <span class="mk">(1)</span>
+        <span class="name">MF26 binomial series with \(n=-1\): \((1+x)^{-1}=1+(-1)x+\dfrac{(-1)(-2)}{2!}x^2+\dfrac{(-1)(-2)(-3)}{3!}x^3+\cdots\)</span>
+        \[ (1+x)^{-1}=1-x+x^2-x^3+\cdots \] <span class="mk">(1)</span>
+        \[ \frac{x-4}{x+1}=1-5\left(1-x+x^2-x^3+\cdots\right)=-4+5x-5x^2+5x^3+\cdots \] <span class="mk">(1)</span>
+        \[ \text{Valid for }|x|<1,\ \text{i.e. }-1<x<1. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b) factor the constant out of the bracket first: \((a+bx)^n=a^n\left(1+\tfrac{bx}{a}\right)^n\)</div>
+        <span class="name">The MF26 series only applies to \((1+\text{something})^n\), so \(4\) must come out of the bracket before anything else happens. \(4^{-1/2}=\tfrac12\).</span>
+        \[ \frac{1}{\sqrt{4+3x}}=(4+3x)^{-1/2}=4^{-1/2}\left(1+\tfrac{3x}{4}\right)^{-1/2}=\tfrac12\left(1+\tfrac{3x}{4}\right)^{-1/2}. \] <span class="mk">(1)</span>
+        \[ =\tfrac12\left[1+\left(-\tfrac12\right)\!\left(\tfrac{3x}{4}\right)+\frac{\left(-\tfrac12\right)\left(-\tfrac32\right)}{2!}\left(\tfrac{3x}{4}\right)^{2}+\frac{\left(-\tfrac12\right)\left(-\tfrac32\right)\left(-\tfrac52\right)}{3!}\left(\tfrac{3x}{4}\right)^{3}+\cdots\right] \] <span class="mk">(1)</span>
+        \[ =\frac12-\frac{3}{16}x+\frac{27}{256}x^2-\frac{135}{2048}x^3+\cdots \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(c) integrate the series term by term, then check the interval against the validity range</div>
+        \[ \int_{0}^{2}\frac{1}{\sqrt{4+3x}}\,\mathrm dx\approx\int_{0}^{2}\left(\frac12-\frac{3}{16}x+\frac{27}{256}x^2-\frac{135}{2048}x^3\right)\mathrm dx \] <span class="mk">(1)</span>
+        \[ =\left[\frac{x}{2}-\frac{3}{32}x^2+\frac{9}{256}x^3-\frac{135}{8192}x^4\right]_{0}^{2}=1-\frac38+\frac{9}{32}-\frac{135}{512}=0.6426\ (4\text{ d.p.}). \] <span class="mk">(1)</span>
+        \[ \text{By GC, }\int_{0}^{2}\frac{1}{\sqrt{4+3x}}\,\mathrm dx=0.7749\ (4\text{ d.p.}). \] <span class="mk">(1)</span>
+        <span class="name">The two values differ in the first decimal place, and the reason is the validity range, not arithmetic.</span>
+        \[ \text{Valid for }\left|\tfrac{3x}{4}\right|<1\ \Rightarrow\ -\tfrac43<x<\tfrac43. \]
+        <p style="margin:6px 0">The region of integration runs to \(x=2\), which lies outside \(-\tfrac43<x<\tfrac43\), so the answer in (c) is <b>not</b> an appropriate approximation. <span class="mk">(1)</span></p>
+      </div>
+      <div class="testline"><b>Tests:</b> the improper-fraction check on a binomial expansion, the \(a^n\left(1+\tfrac{bx}{a}\right)^n\) rewrite, stating a validity range in both parts, and using a series to approximate an integral then judging it against the exact GC value &mdash; where the whole point is that the interval leaves the range of validity.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q5 -->
+<div class="card" id="q5">
+  <div class="cardhead">Question 5 <span class="marks">[7]</span></div>
+  <div class="src">A-Level 2019 P1 Q10(i)</div>
+  <div class="stem">
+    <span class="lead">Water is heated in a container and then placed in a room kept at a constant temperature of 16&nbsp;&deg;C. The temperature of the water \(t\) minutes after being placed in the room is \(\theta\)&nbsp;&deg;C, and it decreases at a rate proportional to the difference between the temperature of the water and the temperature of the room. The water falls from 80&nbsp;&deg;C to 32&nbsp;&deg;C in the first 30 minutes.</span>
+    <span class="sub">(a) Write down a differential equation for this situation. Solve this differential equation to get \(\theta\) as an exact function of \(t\). <span class="marks">[6]</span></span>
+    <span class="sub">(b) Find the temperature of the water 45 minutes after it is placed in the room. <span class="marks">[1]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim worked solution</div>
+      <div class="step"><div class="step-header">(a) write the DE, then separate</div>
+        <span class="name">"Decreases at a rate proportional to \((\theta-16)\)" gives \(\tfrac{\mathrm d\theta}{\mathrm dt}=k(\theta-16)\) where \(k\) is a <b>negative</b> constant. (Writing \(-k(\theta-16)\) with \(k>0\) is equally acceptable; be consistent afterwards.)</span>
+        \[ \frac{\mathrm d\theta}{\mathrm dt}=k(\theta-16),\qquad k<0. \] <span class="mk">(1)</span>
+        \[ \frac{\mathrm dt}{\mathrm d\theta}=\frac{1}{k(\theta-16)}\ \Longrightarrow\ kt+C=\ln|\theta-16|. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ \theta-16=Ae^{kt}\ \ (A=e^{C})\quad\Longrightarrow\quad \theta=16+Ae^{kt}. \] <span class="mk">(1)</span>
+        <span class="name">Remove the modulus first, then substitute the two conditions &mdash; never the other way round.</span>
+        \[ t=0,\ \theta=80:\ A=64.\qquad t=30,\ \theta=32:\ 16=64e^{30k}\ \Rightarrow\ 30k=\ln\tfrac14\ \Rightarrow\ k=\tfrac{1}{30}\ln\tfrac14. \] <span class="mk">(1)</span>
+        \[ \theta=16+64\left(\tfrac14\right)^{t/30}\qquad\left(\text{equivalently }\theta=16+64e^{-\frac{\ln 2}{15}t}\right). \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b) substitute \(t=45\)</div>
+        \[ \theta=16+64\left(\tfrac14\right)^{45/30}=16+64\left(\tfrac14\right)^{3/2}=16+\frac{64}{8}=24\ ^\circ\text{C}. \] <span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Tests:</b> Newton's law of cooling stated from words, separation, the modulus-then-constant discipline, two conditions used to pin down both \(A\) and \(k\), and an <em>exact</em> function demanded &mdash; \(\left(\tfrac14\right)^{t/30}\), not a decimal.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q6 -->
+<div class="card" id="q6">
+  <div class="cardhead">Question 6 <span class="marks">[12]</span></div>
+  <div class="src">A-Level N2024 P1 Q11</div>
+  <div class="stem">
+    <span class="lead">A helicopter is hovering at a great height above the ground. A parachutist drops from the helicopter and his parachute opens. The parachutist falls vertically. At time \(t\) seconds after leaving the helicopter, he has fallen a distance of \(x\) metres. At this time he has velocity \(v\) m&nbsp;s\(^{-1}\). The motion of the parachutist is modelled by \(\dfrac{\mathrm d^2x}{\mathrm dt^2}+\alpha\dfrac{\mathrm dx}{\mathrm dt}=9.8\), where \(\alpha\) is a constant.</span>
+    <span class="sub">(a)(i) Use the equation \(v=\dfrac{\mathrm dx}{\mathrm dt}\) to write down a differential equation in \(v\) and \(t\). <span class="marks">[1]</span></span>
+    <span class="sub">&nbsp;&nbsp;&nbsp;(ii) Given that \(\dfrac{\mathrm dv}{\mathrm dt}=5\) when \(v=2.4\), find the value of \(\alpha\). <span class="marks">[1]</span></span>
+    <span class="sub">(b) It is given that the initial velocity of the parachutist is zero. Show that \(v=A\left(1-e^{Bt}\right)\), where \(A\) and \(B\) are constants to be found. <span class="marks">[5]</span></span>
+    <span class="sub">(c) The helicopter is at a height of 2000 m above the ground. Find the time taken for the parachutist to reach the ground. <span class="marks">[5]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim worked solution</div>
+      <div class="step"><div class="step-header">(a) the substitution \(v=\tfrac{\mathrm dx}{\mathrm dt}\) drops the order from two to one</div>
+        \[ v=\frac{\mathrm dx}{\mathrm dt}\ \Longrightarrow\ \frac{\mathrm dv}{\mathrm dt}=\frac{\mathrm d^2x}{\mathrm dt^2}\qquad\Longrightarrow\qquad \frac{\mathrm dv}{\mathrm dt}+\alpha v=9.8. \] <span class="mk">(1)</span>
+        \[ 5+2.4\alpha=9.8\ \Longrightarrow\ \alpha=2. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(b) now separate the first-order equation</div>
+        <span class="name">\(\tfrac{\mathrm dv}{\mathrm dt}=9.8-2v=2(4.9-v)\), so divide through by 2 to make the bracket clean.</span>
+        \[ \int\frac{1}{4.9-v}\,\mathrm dv=\int 2\,\mathrm dt\ \Longrightarrow\ -\ln|4.9-v|=2t+C. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ 4.9-v=\pm e^{-2t-C}=Ae^{-2t},\qquad A=\pm e^{-C}. \] <span class="mk">(1)</span>
+        <span class="name">Remove the modulus first, then substitute \(t=0,\ v=0\).</span>
+        \[ t=0,\ v=0:\ 4.9=Ae^{0}\ \Rightarrow\ A=4.9. \] <span class="mk">(1)</span>
+        \[ 4.9-v=4.9e^{-2t}\ \Longrightarrow\ v=4.9\left(1-e^{-2t}\right),\quad\text{so }A=4.9,\ B=-2. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(c) integrate the velocity a second time to recover the distance</div>
+        <span class="name">This is the second integration the original second-order equation demanded: \(v=\tfrac{\mathrm dx}{\mathrm dt}\), so \(x=\int v\,\mathrm dt\), with a <b>new</b> arbitrary constant \(d\).</span>
+        \[ \frac{\mathrm dx}{\mathrm dt}=4.9\left(1-e^{-2t}\right)\ \Longrightarrow\ x=4.9\left(t-\frac{1}{-2}e^{-2t}\right)+d=4.9\left(t+\tfrac12e^{-2t}\right)+d. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ t=0,\ x=0:\ 0=4.9\left(0+\tfrac12e^{0}\right)+d\ \Rightarrow\ d=-2.45. \] <span class="mk">(1)</span>
+        \[ x=4.9\left(t+\tfrac12e^{-2t}\right)-2.45. \]
+        \[ x=2000:\quad 2000=4.9\left(t+\tfrac12e^{-2t}\right)-2.45\ \Longrightarrow\ \text{by GC, }t=408.66327 \] <span class="mk">(1)</span>
+        \[ t\approx 409\ \text{seconds (3 s.f.)}. \] <span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Tests:</b> the full second-order route &mdash; substitute \(v=\tfrac{\mathrm dx}{\mathrm dt}\) to reduce the order, solve the resulting separable equation, then integrate a second time with a fresh constant to get displacement, and finish on the GC. The most recent A-Level application question on this topic.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q7 -->
+<div class="card" id="q7">
+  <div class="cardhead">Question 7 <span class="marks">[9]</span></div>
+  <div class="src">A-Level 2013 P1 Q9 (parts (i), (ii), (iv))</div>
+  <div class="stem">
+    <span class="lead">The variables \(x\), \(y\) and \(z\) are connected by the differential equations</span>
+    <span class="lead">\[\frac{\mathrm dz}{\mathrm dx}=3-2z\quad\text{(A)},\qquad\qquad \frac{\mathrm dy}{\mathrm dx}=z\quad\text{(B)}.\]</span>
+    <span class="sub">(i) Given that \(z>\tfrac32\), solve equation (A) to find \(z\) in terms of \(x\). <span class="marks">[4]</span></span>
+    <span class="sub">(ii) Hence find \(y\) in terms of \(x\). <span class="marks">[2]</span></span>
+    <span class="sub">(iii) The result in part (ii) represents a family of curves. Some members are straight lines. Write down the equations of two of these lines. On a single diagram, sketch one of your lines together with a non-linear member of the family that has your line as an asymptote. <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim worked solution</div>
+      <div class="step"><div class="step-header">(i) separate equation (A)</div>
+        \[ \int\frac{1}{3-2z}\,\mathrm dz=\int 1\,\mathrm dx\ \Longrightarrow\ -\tfrac12\ln|3-2z|=x+C. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ \ln|3-2z|=-2x-2C\ \Longrightarrow\ |3-2z|=e^{-2C}e^{-2x}\ \Longrightarrow\ 3-2z=Be^{-2x}. \] <span class="mk">(1)</span>
+        \[ z=\tfrac32+Ae^{-2x},\qquad A=-\tfrac12 B\ \text{arbitrary}. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) integrate equation (B) &mdash; a second, independent arbitrary constant appears</div>
+        \[ \frac{\mathrm dy}{\mathrm dx}=z=\tfrac32+Ae^{-2x}\ \Longrightarrow\ y=\int\left(\tfrac32+Ae^{-2x}\right)\mathrm dx \] <span class="mk">(1)</span>
+        \[ y=\tfrac32x-\tfrac{A}{2}e^{-2x}+D. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) which constants give straight lines, and which give a curve with that line as asymptote</div>
+        <span class="name">The exponential term is the only non-linear part, so setting \(A=0\) collapses the family to the straight lines \(y=\tfrac32x+D\). Any \(D\) works; two of them:</span>
+        \[ y=\tfrac32x\qquad\text{and}\qquad y=\tfrac32x+1. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">For the non-linear member, keep the <b>same</b> \(D\) as the line you drew (otherwise the line is not the asymptote) and take any \(A\neq0\). With \(A=-2,\ D=0\): \(y=\tfrac32x+e^{-2x}\). As \(x\to\infty\), \(e^{-2x}\to0\), so the curve approaches \(y=\tfrac32x\) from above; as \(x\to-\infty\) the exponential blows up.</span>
+        <div class="fig">
+        <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sketch of the line y = 3x/2 with the curve y = 3x/2 + e^(-2x) approaching it as x increases">
+          <line x1="30" y1="215" x2="400" y2="215" stroke="#94a3b8" stroke-width="1.2"/>
+          <line x1="150" y1="20" x2="150" y2="245" stroke="#94a3b8" stroke-width="1.2"/>
+          <text x="404" y="219" font-family="Georgia,serif" font-size="13" fill="#475569">x</text>
+          <text x="140" y="18" font-family="Georgia,serif" font-size="13" fill="#475569">y</text>
+          <line x1="45" y1="272" x2="400" y2="59" stroke="#2563eb" stroke-width="1.8"/>
+          <path d="M155 25 C 168 96, 182 140, 205 155 C 245 175, 300 118, 400 58" fill="none" stroke="#b91c1c" stroke-width="1.9"/>
+          <text x="330" y="88" font-family="Georgia,serif" font-size="12.5" fill="#2563eb">y = 3x/2</text>
+          <text x="196" y="60" font-family="Georgia,serif" font-size="12.5" fill="#b91c1c">y = 3x/2 + e</text>
+          <text x="272" y="55" font-family="Georgia,serif" font-size="9" fill="#b91c1c">&#8722;2x</text>
+          <circle cx="150" cy="215" r="2.4" fill="#475569"/>
+          <text x="132" y="232" font-family="Georgia,serif" font-size="11" fill="#475569">O</text>
+        </svg>
+        <div class="figcap">The line \(y=\tfrac32x\) (blue) drawn with the non-linear member \(y=\tfrac32x+e^{-2x}\) (red), which has that line as an asymptote as \(x\to\infty\).</div>
+        </div>
+        <span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Tests:</b> a chained pair of DEs solved in order, two independent arbitrary constants, and the family-of-solution-curves outcome &mdash; recognising which constant kills the curvature, and that the line only acts as an asymptote if both members share the same \(D\).</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q8 -->
+<div class="card" id="q8">
+  <div class="cardhead">Question 8 <span class="marks">[9]</span></div>
+  <div class="src">CJC 2017 C2 BT2 P1 Q2</div>
+  <div class="stem">
+    <span class="sub">(i) Show that \(\dfrac{1}{1-\cos 2\theta}=\tfrac12\operatorname{cosec}^2\theta\). <span class="marks">[1]</span></span>
+    <span class="sub">(ii) By means of the substitution \(z=x-y\), find the particular solution of the differential equation \(\dfrac{\mathrm dy}{\mathrm dx}=\cos(x-y)\), given that \(y=-\tfrac{\pi}{2}\) when \(x=0\). <span class="marks">[8]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim worked solution</div>
+      <div class="step"><div class="step-header">(i) double-angle identity \(\cos 2\theta=1-2\sin^2\theta\)</div>
+        \[ \text{LHS}=\frac{1}{1-\cos 2\theta}=\frac{1}{1-\left(1-2\sin^2\theta\right)}=\frac{1}{2\sin^2\theta}=\tfrac12\operatorname{cosec}^2\theta=\text{RHS}\quad(\text{shown}). \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) differentiate the substitution implicitly and eliminate \(y\)</div>
+        \[ z=x-y\ \Longrightarrow\ \frac{\mathrm dz}{\mathrm dx}=1-\frac{\mathrm dy}{\mathrm dx}\ \Longrightarrow\ \frac{\mathrm dy}{\mathrm dx}=1-\frac{\mathrm dz}{\mathrm dx}\quad\cdots(1) \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ \text{Given: }\frac{\mathrm dy}{\mathrm dx}=\cos(x-y)\quad\cdots(2) \]
+        \[ \text{Substitute }(1)\text{ into }(2):\quad 1-\frac{\mathrm dz}{\mathrm dx}=\cos z\ \Longrightarrow\ \frac{\mathrm dz}{\mathrm dx}=1-\cos z. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">invert, use part (i) with \(\theta=\tfrac z2\), then integrate</div>
+        <span class="name">\(1-\cos z=1-\cos\!\left(2\cdot\tfrac z2\right)\), so part (i) applies with \(\theta=\tfrac z2\). Recall \(\dfrac{\mathrm d}{\mathrm dx}\cot\!\big[\mathrm f(x)\big]=-\mathrm f'(x)\operatorname{cosec}^2\!\big[\mathrm f(x)\big]\), so \(\displaystyle\int\tfrac12\operatorname{cosec}^2\!\tfrac z2\,\mathrm dz=-\cot\tfrac z2\).</span>
+        \[ \frac{\mathrm dx}{\mathrm dz}=\frac{1}{1-\cos z}=\tfrac12\operatorname{cosec}^2\!\frac z2 \] <span class="mk">(1)</span>
+        \[ x=\int\tfrac12\operatorname{cosec}^2\!\frac z2\,\mathrm dz=-\cot\frac z2+C=-\cot\!\left(\frac{x-y}{2}\right)+C. \] <span class="mk">(1)</span><span class="mk">(1)</span>
+        <span class="name">When \(x=0,\ y=-\tfrac{\pi}{2}\), so \(z=0-\left(-\tfrac{\pi}{2}\right)=\tfrac{\pi}{2}\) and \(\tfrac z2=\tfrac{\pi}{4}\).</span>
+        \[ 0=-\cot\frac{\pi}{4}+C=-1+C\ \Longrightarrow\ C=1 \]
+        \[ x=-\cot\!\left(\frac{x-y}{2}\right)+1. \] <span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Tests:</b> reduction by a given substitution &mdash; differentiate it implicitly, eliminate the original variable, and notice that the reduced equation is only separable the "wrong way round", so you invert to \(\tfrac{\mathrm dx}{\mathrm dz}\). The earlier identity is not decoration; it is the only way the integral becomes standard. The answer is left implicit, which is fine when the question says "find the particular solution".</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q9 -->
+<div class="card" id="q9">
+  <div class="cardhead">Question 9 <span class="marks">[7]</span></div>
+  <div class="src">MJC 2009 C2 Prelim P1 Q4</div>
+  <div class="stem">
+    <span class="lead">ToTo bear is an endangered species on Too Island. The number of births per unit time is proportional to the population of ToTo bears at any time, and the number of deaths per unit time is proportional to the square of the population of ToTo bears. The population at time \(t\) is \(x\).</span>
+    <span class="sub">Show that \(\dfrac{\mathrm dx}{\mathrm dt}=ax-bx^2\), where \(a\) and \(b\) are positive constants. It is also known that the population of ToTo bears remains constant when \(x=200\). Hence show that \(x=\dfrac{200}{Be^{-kt}+1}\), where \(k\) is a positive constant. Deduce that there is a limit to the size of the population of ToTo bears and explain the significance of this limit. <span class="marks">[7]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim worked solution</div>
+      <div class="step"><div class="step-header">form the DE &mdash; two proportionalities, two <em>different</em> constants</div>
+        <span class="name">Do not use the letters \(a\) and \(b\) for the constants of proportionality: they already appear in the answer you are asked to reach. Use \(m\) and \(n\) first. Let \(B\) and \(D\) be the number of births and deaths respectively.</span>
+        \[ \frac{\mathrm dB}{\mathrm dt}=mx,\qquad \frac{\mathrm dD}{\mathrm dt}=nx^2,\qquad m,n>0. \] <span class="mk">(1)</span>
+        \[ \frac{\mathrm dx}{\mathrm dt}=\frac{\mathrm dB}{\mathrm dt}-\frac{\mathrm dD}{\mathrm dt}=mx-nx^2=ax-bx^2\quad(\text{shown, with }m=a,\ n=b). \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">"remains constant" means the rate is zero &mdash; that fixes one constant in terms of the other</div>
+        \[ \frac{\mathrm dx}{\mathrm dt}=0\ \text{when}\ x=200:\quad 0=200a-(200)^2b\ \Longrightarrow\ a=200b. \] <span class="mk">(1)</span>
+        \[ \frac{\mathrm dx}{\mathrm dt}=(200b)x-bx^2=bx(200-x). \]
+      </div>
+      <div class="step"><div class="step-header">separate, split by partial fractions, then rearrange into the required form</div>
+        <span class="name">\(\dfrac{1}{x(200-x)}=\dfrac{1}{200}\left(\dfrac1x+\dfrac{1}{200-x}\right)\). It is not clear whether \(200-x\) is positive or negative, so a modulus must be inserted.</span>
+        \[ \int\frac{1}{x(200-x)}\,\mathrm dx=\int b\,\mathrm dt\ \Longrightarrow\ \frac{1}{200}\Big[\ln|x|-\ln|200-x|\Big]=bt+c \] <span class="mk">(1)</span>
+        \[ \ln\left|\frac{x}{200-x}\right|=200(bt+c)\ \Longrightarrow\ \frac{x}{200-x}=Ae^{200bt},\qquad A=\pm e^{200c} \]
+        \[ x=200Ae^{200bt}-Axe^{200bt}\ \Longrightarrow\ x\left(1+Ae^{200bt}\right)=200Ae^{200bt} \]
+        \[ x=\frac{200Ae^{200bt}}{1+Ae^{200bt}}=\frac{200}{\tfrac1Ae^{-200bt}+1}=\frac{200}{Be^{-kt}+1},\quad B=\tfrac1A,\ k=200b\quad(\text{shown}). \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">long-run behaviour &mdash; and a worded conclusion, not just an arrow</div>
+        \[ \text{As }t\to\infty,\ e^{-kt}\to0,\ \text{so } x=\frac{200}{Be^{-kt}+1}\to 200. \] <span class="mk">(1)</span>
+        \[ \text{Hence there is a limit to the size of the population: }200\text{ is the maximum number of ToTo bears the environment can support.} \] <span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Tests:</b> the logistic model built from two competing worded proportionalities, the "population remains constant \(\Rightarrow\) rate \(=0\)" trigger, partial fractions inside a separable DE, and a limiting value that must be stated <em>in words about the bears</em>, not just as \(x\to200\).</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q10 -->
+<div class="card" id="q10">
+  <div class="cardhead">Question 10 <span class="marks">[6]</span></div>
+  <div class="src">NYJC 2019 Prelim P1 Q2</div>
+  <div class="stem">
+    <span class="lead">The diagram shows a mechanism for converting rotational motion into linear motion. The point \(P\), on the circumference of a disc of radius \(r\), rotates about a fixed point \(O\). The point \(Q\) moves along the line \(OX\), and \(P\) and \(Q\) are connected by a rod of fixed length \(3r\). As the disc rotates, the point \(Q\) is made to slide backwards and forwards along \(OX\). At time \(t\), angle \(POQ\) is \(\theta\), measured anticlockwise from \(OX\), and the distance \(OQ\) is \(x\).</span>
+    <div class="fig">
+    <svg viewBox="0 0 430 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Circle centre O radius r, point P on the circumference, rod of length 3r from P to Q on the horizontal line OX">
+      <circle cx="90" cy="140" r="55" fill="none" stroke="#94a3b8" stroke-width="1.3"/>
+      <line x1="90" y1="140" x2="415" y2="140" stroke="#475569" stroke-width="1.4"/>
+      <text x="418" y="144" font-family="Georgia,serif" font-size="13" fill="#475569">X</text>
+      <line x1="90" y1="140" x2="132" y2="105" stroke="#2563eb" stroke-width="1.8"/>
+      <line x1="132" y1="105" x2="345" y2="140" stroke="#b91c1c" stroke-width="1.8"/>
+      <path d="M120 140 A 30 30 0 0 0 113 122" fill="none" stroke="#7c3aed" stroke-width="1.3"/>
+      <text x="122" y="130" font-family="Georgia,serif" font-size="12" fill="#7c3aed">&#952;</text>
+      <circle cx="90" cy="140" r="2.8" fill="#111"/><text x="76" y="158" font-family="Georgia,serif" font-size="13" fill="#111">O</text>
+      <circle cx="132" cy="105" r="2.8" fill="#111"/><text x="129" y="97" font-family="Georgia,serif" font-size="13" fill="#111">P</text>
+      <circle cx="345" cy="140" r="2.8" fill="#111"/><text x="341" y="159" font-family="Georgia,serif" font-size="13" fill="#111">Q</text>
+      <text x="96" y="112" font-family="Georgia,serif" font-size="12" fill="#2563eb">r</text>
+      <text x="232" y="115" font-family="Georgia,serif" font-size="12" fill="#b91c1c">3r</text>
+      <path d="M90 172 L345 172" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 3"/>
+      <text x="208" y="187" font-family="Georgia,serif" font-size="12" fill="#475569">x</text>
+    </svg>
+    <div class="figcap">\(OP=r\), \(PQ=3r\), \(\angle POQ=\theta\), \(OQ=x\).</div>
+    </div>
+    <span class="sub">(i) Show that \(x=r\left(\cos\theta+\sqrt{9-\sin^2\theta}\right)\). <span class="marks">[2]</span></span>
+    <span class="sub">(ii) State the maximum value of \(x\). <span class="marks">[1]</span></span>
+    <span class="sub">(iii) Express \(x\) as a polynomial in \(\theta\) if \(\theta\) is sufficiently small for \(\theta^3\) and higher powers of \(\theta\) to be neglected. <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim worked solution</div>
+      <div class="step"><div class="step-header">(i) drop a perpendicular from \(P\) to \(OX\) and split \(OQ\) into two horizontal pieces</div>
+        <span class="name">Let \(F\) be the foot of the perpendicular from \(P\) to \(OX\). Then \(OF=r\cos\theta\) and \(PF=r\sin\theta\). In the right-angled triangle \(PFQ\), the hypotenuse is the rod \(PQ=3r\).</span>
+        \[ FQ=\sqrt{(3r)^2-(r\sin\theta)^2}=\sqrt{9r^2-r^2\sin^2\theta}=r\sqrt{9-\sin^2\theta}. \] <span class="mk">(1)</span>
+        \[ x=OQ=OF+FQ=r\cos\theta+r\sqrt{9-\sin^2\theta}=r\left(\cos\theta+\sqrt{9-\sin^2\theta}\right)\quad(\text{shown}). \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) maximise both terms at once</div>
+        <span class="name">Since \(0\le\sin^2\theta\le1\) and \(-1\le\cos\theta\le1\), both terms are largest at \(\theta=0\), where \(\cos\theta=1\) and \(\sqrt{9-0}=3\).</span>
+        \[ x_{\max}=r(1+3)=4r. \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) small-angle approximations, then factor the 9 out before expanding the surd</div>
+        <span class="name">For small \(\theta\): \(\cos\theta\approx 1-\tfrac{\theta^2}{2}\) and \(\sin\theta\approx\theta\), so \(\sin^2\theta\approx\theta^2\). The surd is then \((9-\theta^2)^{1/2}\), which is only expandable once 9 is taken out: \(9^{1/2}\left(1-\tfrac{\theta^2}{9}\right)^{1/2}=3\left(1-\tfrac{\theta^2}{9}\right)^{1/2}\).</span>
+        \[ x\approx r\left[\left(1-\tfrac{\theta^2}{2}\right)+3\left(1-\tfrac{\theta^2}{9}\right)^{1/2}\right] \] <span class="mk">(1)</span>
+        \[ \left(1-\tfrac{\theta^2}{9}\right)^{1/2}\approx 1+\tfrac12\left(-\tfrac{\theta^2}{9}\right)=1-\tfrac{\theta^2}{18} \] <span class="mk">(1)</span>
+        \[ x\approx r\left[1-\tfrac{\theta^2}{2}+3-\tfrac{\theta^2}{6}\right]=r\left(4-\tfrac23\theta^2\right). \] <span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Tests:</b> small-angle approximations for \(\cos\theta\) and \(\sin\theta\) fed into a surd that must be rewritten as \(a^n\left(1+\tfrac{bx}{a}\right)^n\) before the binomial series applies &mdash; and the \(\theta^2\) coefficients from the two separate pieces must be combined, which is where \(-\tfrac12-\tfrac16=-\tfrac23\) is usually lost.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q11 -->
+<div class="card" id="q11">
+  <div class="cardhead">Question 11 <span class="marks">[8]</span></div>
+  <div class="src">MI 2015 Prelim P1 Q6 (modified)</div>
+  <div class="stem">
+    <span class="lead">It is given that \(y=e^{\tan^{-1}x}\).</span>
+    <span class="sub">(i) Show that \(\left(1+x^2\right)\dfrac{\mathrm dy}{\mathrm dx}=y\). <span class="marks">[2]</span></span>
+    <span class="sub">(ii) Show that the value of \(\dfrac{\mathrm d^3y}{\mathrm dx^3}\) when \(x=0\) is \(-1\). <span class="marks">[2]</span></span>
+    <span class="sub">(iii) Write down the Maclaurin series for \(e^{\tan^{-1}x}\) up to and including the term in \(x^3\). <span class="marks">[2]</span></span>
+    <span class="sub">(iv) With the aid of a diagram, explain why the Maclaurin series for \(e^{\tan^{-1}x}\) up to the term in \(x^3\) may not give a good estimate of the value of \(e^{\tan^{-1}x}\) when \(x=2\). <span class="marks">[2]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution &mdash; verbatim worked solution</div>
+      <div class="step"><div class="step-header">(i) take logarithms first &mdash; it kills the exponential and the inverse trig in one move</div>
+        <span class="name">MF26: \(\dfrac{\mathrm d}{\mathrm dx}\tan^{-1}x=\dfrac{1}{1+x^2}\).</span>
+        \[ \ln y=\tan^{-1}x\ \Longrightarrow\ \frac1y\frac{\mathrm dy}{\mathrm dx}=\frac{1}{1+x^2} \] <span class="mk">(1)</span>
+        \[ \left(1+x^2\right)\frac{\mathrm dy}{\mathrm dx}=y\quad(\text{shown}). \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) differentiate the relation twice more &mdash; product rule each time, never expand \(y\)</div>
+        \[ \left(1+x^2\right)\frac{\mathrm d^2y}{\mathrm dx^2}+2x\frac{\mathrm dy}{\mathrm dx}=\frac{\mathrm dy}{\mathrm dx}\ \Longrightarrow\ \left(1+x^2\right)\frac{\mathrm d^2y}{\mathrm dx^2}+(2x-1)\frac{\mathrm dy}{\mathrm dx}=0 \] <span class="mk">(1)</span>
+        \[ \left(1+x^2\right)\frac{\mathrm d^3y}{\mathrm dx^3}+(4x-1)\frac{\mathrm d^2y}{\mathrm dx^2}+2\frac{\mathrm dy}{\mathrm dx}=0 \]
+        <span class="name">At \(x=0\): \(y=e^{\tan^{-1}0}=e^0=1\); from (i), \(\dfrac{\mathrm dy}{\mathrm dx}=1\); from the second relation, \(\dfrac{\mathrm d^2y}{\mathrm dx^2}-1=0\Rightarrow\dfrac{\mathrm d^2y}{\mathrm dx^2}=1\).</span>
+        \[ x=0:\quad \frac{\mathrm d^3y}{\mathrm dx^3}-(1)(1)+2(1)=0\ \Longrightarrow\ \frac{\mathrm d^3y}{\mathrm dx^3}=-1\quad(\text{shown}). \] <span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) assemble the series from the four values at \(x=0\)</div>
+        \[ y=1+x+\frac{1}{2!}x^2+\frac{-1}{3!}x^3+\cdots=1+x+\tfrac12x^2-\tfrac16x^3+\cdots \] <span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iv) sketch both curves &mdash; the series is only close to the function near \(x=0\)</div>
+        <div class="fig">
+        <svg viewBox="0 0 430 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Graphs of y = e to the arctan x and the cubic Maclaurin approximation, close near the origin and far apart at x = 2">
+          <line x1="30" y1="200" x2="410" y2="200" stroke="#94a3b8" stroke-width="1.2"/>
+          <line x1="120" y1="15" x2="120" y2="222" stroke="#94a3b8" stroke-width="1.2"/>
+          <text x="413" y="204" font-family="Georgia,serif" font-size="13" fill="#475569">x</text>
+          <text x="110" y="14" font-family="Georgia,serif" font-size="13" fill="#475569">y</text>
+          <text x="104" y="216" font-family="Georgia,serif" font-size="11" fill="#475569">O</text>
+          <path d="M40 191 C 75 178, 100 168, 120 160 C 160 143, 220 122, 290 112 C 340 106, 380 104, 405 103" fill="none" stroke="#b91c1c" stroke-width="1.9"/>
+          <path d="M40 168 C 75 168, 100 166, 120 160 C 155 148, 195 122, 235 82 C 268 49, 290 30, 305 20" fill="none" stroke="#2563eb" stroke-width="1.9" stroke-dasharray="6 4"/>
+          <line x1="290" y1="200" x2="290" y2="112" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/>
+          <line x1="290" y1="112" x2="290" y2="46" stroke="#7c3aed" stroke-width="1.6"/>
+          <text x="283" y="216" font-family="Georgia,serif" font-size="12" fill="#475569">2</text>
+          <text x="296" y="84" font-family="Georgia,serif" font-size="11" fill="#7c3aed">large gap</text>
+          <text x="330" y="122" font-family="Georgia,serif" font-size="12" fill="#b91c1c">y = e</text>
+          <text x="362" y="117" font-family="Georgia,serif" font-size="8.5" fill="#b91c1c">arctan x</text>
+          <text x="200" y="60" font-family="Georgia,serif" font-size="12" fill="#2563eb">y = 1 + x + x&#178;/2 &#8722; x&#179;/6</text>
+        </svg>
+        <div class="figcap">The curve and its cubic Maclaurin approximation, sketched together.</div>
+        </div>
+        <span class="name">Sketch \(y=e^{\tan^{-1}x}\) and \(y=1+x+\tfrac12x^2-\tfrac16x^3\) on the same axes.</span>
+        \[ \text{The two graphs are close only near }x=0;\text{ at }x=2\text{ they are far apart.} \] <span class="mk">(1)</span>
+        \[ \text{Hence the cubic Maclaurin series does not give a good estimate of }e^{\tan^{-1}x}\text{ at }x=2. \] <span class="mk">(1)</span>
+      </div>
+      <div class="testline"><b>Fuses:</b> the given relation \(\left(1+x^2\right)\tfrac{\mathrm dy}{\mathrm dx}=y\) <em>is</em> a differential equation &mdash; you never solve it, you differentiate it repeatedly and read the derivatives at \(x=0\) straight off. Then the accuracy outcome: a Maclaurin series is a local approximation, and the justification has to be a picture of the two curves separating, not a sentence about "small \(x\)".</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<hr>
+<p style="color:var(--muted);font-size:.9em">Attempt these cold on Loom, saying your confidence out loud on each stem before you reveal &mdash; that line is what feeds the gap tracker. Then self-mark against the verbatim solutions. Paste me the transcript and I'll build a numbered gap cluster on the specific joins that broke &mdash; the improper-fraction check, the modulus-before-substitution order, differentiating a DE instead of solving it, or the validity range on a binomial &mdash; rather than re-running the whole two topics.</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn=>{btn.addEventListener('click',function(){const b=this.parentElement,o=b.querySelector('.answer-overlay');if(o.classList.contains('hidden')){o.classList.remove('hidden');this.textContent='Hide';this.classList.add('hide-state');}else{o.classList.add('hidden');this.textContent='Reveal';this.classList.remove('hide-state');}});});
+  function revealAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.add('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Hide';b.classList.add('hide-state');});}
+  function hideAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.remove('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Reveal';b.classList.remove('hide-state');});}
+</script>
+</body>
+</html>

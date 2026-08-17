@@ -1864,33 +1864,61 @@ window.PLAN = {
    "type": "standard",
    "subject": "bio",
    "flag": "",
-   "mins": 360,
-   "label": "Bio + GP + Maths",
-   "focus": "Cell Structure + Biomolecules (deepen)  ·  P1 timed plan  ·  Integration (deepen, past-paper)",
+   "mins": 600,
+   "label": "Bio + Chem + Maths",
+   "focus": "Bio Book 3 (pre-study + C1)  ·  Chem cumulative TEST (2h)  ·  DE + Maclaurin cluster (2h)",
    "blocks": [
     {
-     "mins": 120,
+     "mins": 150,
      "subject": "bio",
-     "name": "Bio — Cell Structure + Biomolecules (deepen)",
-     "desc": "",
+     "name": "Bio — Books 1-2 CUMULATIVE TEST (19Q · answers inline)",
+     "desc": "Section A 12 MCQ + Section B 7 structured. Reveal each answer under its own question as you go.",
+     "done": false,
+     "doneDate": null,
+     "clusterHref": "clusters/test_bio_books1-2.html"
+    },
+    {
+     "mins": 30,
+     "subject": "bio",
+     "name": "Bio — Book 3 PRE-STUDY sheet (read first)",
+     "desc": "Cell signalling, division, cancer, stem cells — the frame before the clusters.",
      "done": false,
      "doneDate": null
     },
     {
-     "mins": 120,
-     "subject": "gp",
-     "name": "GP — P1 timed plan",
-     "desc": "",
+     "mins": 90,
+     "subject": "bio",
+     "name": "Bio — Book 3 Study sheet 1 (Cell Signalling)",
+     "desc": "Full teach. Study sheet is .md in the Book 3 _STUDY folder.",
      "done": false,
      "doneDate": null
+    },
+    {
+     "mins": 90,
+     "subject": "bio",
+     "name": "Bio — Book 3 Cluster 1 DRILL (8Q)",
+     "desc": "Cell signalling. Answers revealable per question.",
+     "done": false,
+     "doneDate": null,
+     "clusterHref": "clusters/bio_book3_cluster01_drill.html"
+    },
+    {
+     "mins": 120,
+     "subject": "chem",
+     "name": "Chem — CUMULATIVE TEST (12Q · 80 marks · 2h)",
+     "desc": "All topics so far. 80% older topics (Bonding/Stoich/Organic/Isomerism/Alkanes/Alkenes), 20% Halogen+Hydroxy. Timed, mark scheme at the end.",
+     "done": false,
+     "doneDate": null,
+     "clusterHref": "clusters/test_chem_cumulative_2026-08-17.html"
     },
     {
      "mins": 120,
      "subject": "maths",
-     "name": "Maths — Integration (deepen, past-paper)",
-     "desc": "",
+     "name": "Maths — Differential Equations + Maclaurin CLUSTER (11Q · 98 marks · 2h)",
+     "desc": "Every LO in both topics, incl. 3 DE-to-Maclaurin fusion questions. Real papers only.",
      "done": false,
-     "doneDate": null
+     "doneDate": null,
+     "clusterHref": "clusters/cluster_math_de_maclaurin.html"
     }
    ],
    "week": 5
