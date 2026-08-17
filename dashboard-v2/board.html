@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ethan · Mastery Board</title>
+<style>
+:root{
+  --bg:#0f1115; --card:#161920; --card2:#1b1f28; --line:#272c36; --line2:#333a47;
+  --tx:#e8eaee; --mut:#8b93a3; --dim:#6a7180;
+  --ok:#5fd3a8; --warn:#e8c65f; --bad:#e8845f; --star:#f2c14e; --off:#3a4150;
+  --bio:#e8c65f; --chem:#5fd3a8; --maths:#6ea8fe; --csc:#e8845f; --gp:#c78ae8;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font:15px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Helvetica,Arial,sans-serif;
+  padding:26px 18px 90px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1500px;margin:0 auto}
+h1{font-size:22px;margin:0 0 3px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:13px}
+header{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap;margin-bottom:22px}
+.cds{display:flex;gap:26px}
+.cd{text-align:right}
+.cd .n{font-size:27px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.cd .l{font-size:10px;text-transform:uppercase;letter-spacing:.11em;color:var(--dim)}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.13em;color:var(--mut);
+  margin:34px 0 12px;display:flex;align-items:center;gap:12px;font-weight:600}
+h2::after{content:'';flex:1;height:1px;background:var(--line)}
+.note{color:var(--dim);font-size:12.5px;margin:-6px 0 14px}
+
+/* ---------- 1. progress ---------- */
+.prog{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.prow{display:flex;align-items:center;gap:14px;padding:11px 16px;border-bottom:1px solid var(--line);font-size:14px}
+.prow:last-child{border-bottom:none}
+.prow.tot{background:rgba(255,255,255,.035)}
+.pname{flex:0 0 108px;font-weight:600}
+.pbar{flex:1;height:9px;background:rgba(255,255,255,.07);border-radius:5px;overflow:hidden;min-width:60px}
+.pbar i{display:block;height:100%;border-radius:5px;transition:width .3s}
+.ppct{flex:0 0 46px;text-align:right;font-variant-numeric:tabular-nums;font-weight:600;font-size:13px}
+.pcnt{flex:0 0 118px;text-align:right;color:var(--dim);font-size:12px;font-variant-numeric:tabular-nums}
+
+/* ---------- 2. board ---------- */
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+button{font:inherit;font-size:12.5px;cursor:pointer;border-radius:7px;padding:6px 12px;
+  background:var(--card2);color:var(--tx);border:1px solid var(--line2);transition:.13s}
+button:hover{background:#232833;border-color:#414a5a}
+button.pri{background:#1d3b30;border-color:#2f6b56;color:#8ee9c4}
+button.pri:hover{background:#245045}
+button.dgr{color:#e8845f}
+button.dgr:hover{background:#3a2119;border-color:#7a4030}
+.board{display:flex;gap:14px;overflow-x:auto;padding-bottom:14px;align-items:flex-start}
+.col{flex:0 0 296px;background:var(--card);border:1px solid var(--line);border-radius:12px;
+  display:flex;flex-direction:column;max-height:none}
+.col.dragover{border-color:var(--ok);box-shadow:0 0 0 2px rgba(95,211,168,.18)}
+.chd{display:flex;align-items:center;gap:8px;padding:11px 13px;border-bottom:1px solid var(--line)}
+.cdot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+.cname{font-weight:600;font-size:14px;flex:1;outline:none;border-radius:4px;padding:1px 3px}
+.cname:focus{background:rgba(255,255,255,.07)}
+.ccount{font-size:11px;color:var(--dim);font-variant-numeric:tabular-nums}
+.cmenu{opacity:.5;padding:2px 5px;font-size:13px;line-height:1;border:none;background:none;color:var(--mut)}
+.cmenu:hover{opacity:1;background:rgba(255,255,255,.08)}
+.cards{padding:9px;display:flex;flex-direction:column;gap:7px;min-height:26px}
+.card{background:var(--card2);border:1px solid var(--line);border-radius:9px;padding:9px 10px;cursor:grab}
+.card:active{cursor:grabbing}
+.card.dragging{opacity:.4}
+.card.nd{border-style:dashed;border-color:#39404e}
+.ct{font-size:13.2px;line-height:1.4;outline:none;border-radius:4px;padding:1px 2px;word-break:break-word}
+.ct:focus{background:rgba(255,255,255,.07)}
+.cfoot{display:flex;align-items:center;gap:6px;margin-top:7px}
+.stars{display:flex;gap:2px;font-size:14px;line-height:1;user-select:none}
+.stars b{cursor:pointer;color:var(--off);transition:.1s;font-weight:400}
+.stars b.on{color:var(--star)}
+.stars:hover b{color:#5a6272}
+.stars b:hover,.stars b:hover ~ b{color:var(--off)}
+.stars:hover b:first-child{color:var(--star)}
+.stars b:hover{color:var(--star)!important}
+.stars b:hover ~ b{color:var(--off)!important}
+.ndlab{font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--bad);
+  border:1px solid rgba(232,132,95,.42);border-radius:4px;padding:1.5px 6px;font-weight:600}
+.cdel{margin-left:auto;opacity:0;border:none;background:none;color:var(--dim);font-size:14px;padding:0 3px;line-height:1}
+.card:hover .cdel{opacity:.6}
+.cdel:hover{opacity:1;color:var(--bad);background:none}
+.addc{margin:0 9px 9px;padding:6px;font-size:12.5px;color:var(--dim);background:none;
+  border:1px dashed var(--line2);width:calc(100% - 18px)}
+.addc:hover{color:var(--tx);background:rgba(255,255,255,.04)}
+.newcol{flex:0 0 190px;padding:13px;border:1px dashed var(--line2);border-radius:12px;
+  color:var(--dim);background:none;text-align:left}
+.newcol:hover{color:var(--tx);border-color:#4a5364}
+
+/* ---------- 3. exams ---------- */
+.exgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:900px){.exgrid{grid-template-columns:1fr}}
+.exbox{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.exhd{padding:10px 15px;border-bottom:1px solid var(--line);font-weight:600;font-size:13.5px;
+  display:flex;justify-content:space-between;align-items:baseline}
+.exhd small{color:var(--dim);font-weight:400;font-size:11.5px}
+.ex{display:flex;align-items:center;gap:11px;padding:7px 15px;border-bottom:1px solid var(--line);font-size:13px}
+.ex:last-child{border-bottom:none}
+.ex.past{opacity:.4}
+.ex.next{background:rgba(95,211,168,.07)}
+.exd{flex:0 0 62px;font-variant-numeric:tabular-nums;color:var(--mut);font-size:12px}
+.exs{flex:0 0 78px;font-weight:600}
+.exp{flex:1;color:var(--mut);font-size:12.5px}
+.ext{flex:0 0 92px;text-align:right;color:var(--dim);font-size:11.5px;font-variant-numeric:tabular-nums}
+.prac{color:var(--bad)}
+footer{margin-top:38px;color:var(--dim);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div>
+    <h1>Mastery Board</h1>
+    <div class="sub">Ethan Lim · A-Levels Nov 2026 · <span id="stamp"></span></div>
+  </div>
+  <div class="cds">
+    <div class="cd"><div class="n" id="cdPrelim">—</div><div class="l">days to prelim</div></div>
+    <div class="cd"><div class="n" id="cdAlevel">—</div><div class="l">days to A-levels</div></div>
+  </div>
+</header>
+
+<h2>Progress</h2>
+<div class="note">Computed live from the stars below — edit a card and this updates. <b>%</b> = mean mastery across every topic in that group (5 stars = mastered).</div>
+<div class="prog" id="prog"></div>
+
+<h2>Anki retention — CSC &amp; GP</h2>
+<div class="note">CSC and GP are governed entirely by Anki. The % gives partial credit for work in progress — a card in learning counts 0.25, young 0.6, mature (survived a 21-day-plus interval) 1.0 — so real reviewing shows up immediately instead of reading 0% until cards mature. Synced from Anki at the daily 10pm update; the page can't read Anki live because an HTTPS page is blocked from calling <code>localhost</code>.</div>
+<div class="prog" id="anki"></div>
+
+<h2>Topics &amp; mastery</h2>
+<div class="note"><b>Stars are set by me from inspection</b> — your drills, cluster transcripts and simulated tests — and refreshed at the daily 10pm update. You can still override anything: click a star to set 1–5, click the same star again to clear it to <b>NOT DONE</b>, click a title to rename, drag cards between groups. CSC and GP are not here — they're memorisation-driven and live in the Anki panel above.</div>
+<div class="tools">
+  <button class="pri" onclick="addCol()">+ Add group</button>
+  <button onclick="exportJSON()">Export backup</button>
+  <button onclick="document.getElementById('imp').click()">Import backup</button>
+  <input type="file" id="imp" accept="application/json" style="display:none" onchange="importJSON(this)">
+  <button class="dgr" onclick="resetAll()">Reset to default</button>
+</div>
+<div class="board" id="board"></div>
+
+<h2>Exam dates</h2>
+<div class="exgrid">
+  <div class="exbox">
+    <div class="exhd"><span>Prelims</span><small id="prelimRange"></small></div>
+    <div id="exPrelim"></div>
+  </div>
+  <div class="exbox">
+    <div class="exhd"><span>A-Levels</span><small id="alevelRange"></small></div>
+    <div id="exAlevel"></div>
+  </div>
+</div>
+
+<footer>
+  Stars come from my inspection of what you've actually drilled and how you performed, refreshed daily at 10pm. Override any of them freely — your edit wins until the next sync.
+  Your edits live in this browser (localStorage). Use <b>Export backup</b> before clearing site data or switching machines.
+</footer>
+</div>
+
+<script>
+/* ============ seed data ============ */
+const SEED = {v:4, cols:[
+ {id:'bio', name:'Bio', colour:'#e8c65f', cards:[
+  ['1a. Lipids',3],['1b. Carbohydrates',3],['1c. Proteins',4],['1d. Enzymes',3],
+  ['1e. Eukaryotic Cell Structure and Function',3],['1f. Cell Membrane Transport',3],
+  ['2a. DNA Structure and Replication',2],['2b. Eukaryotic Gene Expression',2],
+  ['2c. Organisation of Eukaryotic Genome',2],['2d. Control of Eukaryotic Gene Expression',2],
+  ['2e. Gene and Chromosomal Mutations',2],['2f. Molecular Techniques',3],
+  ['3a. Cell Signalling',0],['3b. Cell & Nuclear Division',0],['3c. Cancer',0],['3d. Stem Cells',0],
+  ['4a. Genetics of viruses',0],['4b. Genetics of Bacteria',0],
+  ['5a. Photosynthesis',0],['5b. Cellular respiration',0],
+  ['6a. Inheritance I',0],['6b. Inheritance II',0],
+  ['7. Biological Evolution',0],['8. Climate Change',0],['9a. Infectious diseases',0],['Biostats',0]]},
+ {id:'chem', name:'Chem', colour:'#5fd3a8', cards:[
+  ['1. Atomic Structure',0],['2. Chemical Bonding',3],['3. Gaseous State',0],
+  ['4. Reactions and Stoichiometry',3],['5. Chemical Energetics and Thermodynamics',0],
+  ['6. Reaction kinetics',0],['7. Chemical Equilibria',0],['8. Intro to OC',2],
+  ['9. Isomerism (OC)',2],['10. Alkanes (OC)',2],['11. Alkenes (OC)',3],['12. Arenes (OC)',0],
+  ['13. Solubility Equilibria',0],['14. Acid-base Equilibria',0],['15. Halogen Derivatives (OC)',3],
+  ['16. Hydroxy Compounds (OC)',2],['17. Carbonyl Compounds (OC)',0],
+  ['18. Carboxylic Acids & Derivatives (OC)',0],['19. Nitrogen Compounds (OC)',0],
+  ['20. Polymers',0],['21. Electrochemistry',0],['22. Periodicity',0],['23. Transition Elements',0]]},
+ {id:'maths', name:'Math', colour:'#6ea8fe', cards:[
+  ['1. Sequence and Series',0],['2. Graphs and Transformations',0],
+  ['3. Equations and Inequalities',0],['4. Functions',0],['5. Differentiation',3],
+  ['6A. Integration',3],['6B. Integration',3],['7. Vectors',3],['8. Series Expansion',2],
+  ['9. Differential Equations',2],['10. Complex Numbers',0],['11. Probability',0],
+  ['12. Discrete Random Variable',0],['13. Normal Distribution',0],['14. Sampling',0],
+  ['15. Hypothesis Testing',0],['16. Correlation & Regression',0]]}
+]};
+
+const PRELIM=[
+ ['2026-08-24','GP','Paper 1','08:15','1h30'],['2026-08-25','Chem','Paper 4 · Practical','AM/PM','2h30'],
+ ['2026-08-26','GP','Paper 2','08:15','1h30'],['2026-08-27','Bio','Paper 2','08:15','2h'],
+ ['2026-08-28','Math','Paper 1','08:15','3h'],['2026-08-31','Bio','Paper 4 · Practical','AM/PM','2h30'],
+ ['2026-09-02','Chem','Paper 2','08:15','2h'],['2026-09-14','CSC','Paper 1','14:00','2h45'],
+ ['2026-09-15','Bio','Paper 3','08:15','2h'],['2026-09-16','Chem','Paper 3','08:15','2h'],
+ ['2026-09-17','Math','Paper 2','08:15','3h'],['2026-09-18','CSC','Paper 2','14:00','2h30'],
+ ['2026-09-21','Chem','Paper 1','14:00','1h'],['2026-09-22','Bio','Paper 1 · MCQ','14:00','1h']];
+const ALEVEL=[
+ ['2026-10-14','Chem','Paper 4 · Practical','AM/PM','2h30'],['2026-10-22','Bio','Paper 4 · Practical','AM/PM','2h30'],
+ ['2026-11-02','GP','Paper 1','08:00','1h30'],['2026-11-03','Math','Paper 1','08:00','3h'],
+ ['2026-11-04','GP','Paper 2','08:00','1h30'],['2026-11-06','Math','Paper 2','08:00','3h'],
+ ['2026-11-10','Chem','Paper 2','14:00','2h'],['2026-11-12','Chem','Paper 3','08:00','2h'],
+ ['2026-11-13','CSC','Paper 1','14:30','2h45'],['2026-11-18','Bio','Paper 2','08:00','2h'],
+ ['2026-11-20','CSC','Paper 2','08:00','2h30'],['2026-11-20','Bio','Paper 3','14:30','2h'],
+ ['2026-11-23','Chem','Paper 1 · MCQ','14:00','1h'],['2026-11-26','Bio','Paper 1 · MCQ','14:00','1h']];
+
+/* ---- Anki snapshot · synced 17 Aug 2026 · refreshed by the Study Agent, not by this page ---- */
+const ANKI={synced:'2026-08-17', decks:[
+ {name:'CSC', colour:'#e8845f', total:29, mature:0, young:5, learn:2, nw:22, due:7,
+  tags:[['governance',25,0],['economy',4,0],['创新驱动',3,0],['P1.1',1,0]]},
+ {name:'GP', colour:'#c78ae8', total:0, mature:0, young:0, learn:0, nw:0, due:0, tags:[], missing:true}
+]};
+
+const KEY='ethan-mastery-board-v4';
+const PALETTE=['#6ea8fe','#5fd3a8','#e8c65f','#e8845f','#c78ae8','#7fd8e8','#e8a5c0','#a5e88a'];
+let S=load(), dragSrc=null;
+
+function load(){
+  try{const r=localStorage.getItem(KEY); if(r){const p=JSON.parse(r); if(p&&p.cols) return p;}}catch(e){}
+  return norm(SEED);
+}
+function norm(seed){
+  return {v:seed.v, cols:seed.cols.map(c=>({id:c.id, name:c.name, colour:c.colour,
+    cards:c.cards.map((t,i)=>({id:c.id+'-'+i+'-'+Math.floor(Math.random()*1e6), t:t[0], m:t[1]}))}))};
+}
+function save(){ try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){} render(); }
+const uid=()=>'c'+Date.now().toString(36)+Math.floor(Math.random()*1e6).toString(36);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ---------- render ---------- */
+function render(){ renderProgress(); renderBoard(); }
+
+function renderAnki(){
+  let h='';
+  ANKI.decks.forEach(d=>{
+    if(d.missing){
+      h+=`<div class="prow"><span class="pname" style="color:${d.colour}">${d.name}</span>
+        <span class="pbar"><i style="width:1.5%;background:${d.colour}"></i></span>
+        <span class="ppct">—</span><span class="pcnt" style="color:var(--bad)">no deck yet</span></div>`;
+      return;
+    }
+    /* weighted so work-in-progress counts: new 0 · learning .25 · young .6 · mature 1 */
+    const score = d.learn*0.25 + d.young*0.6 + d.mature*1;
+    const pct = d.total ? Math.round(score/d.total*100) : 0;
+    const seen = d.total - d.nw;
+    h+=`<div class="prow"><span class="pname" style="color:${d.colour}">${d.name}</span>
+      <span class="pbar"><i style="width:${Math.max(pct,1.5)}%;background:${d.colour}"></i></span>
+      <span class="ppct">${pct}%</span>
+      <span class="pcnt" style="flex:0 0 auto">${seen}/${d.total} cards started</span></div>`;
+    h+=`<div class="prow" style="padding-top:0;border-bottom:1px solid var(--line)">
+      <span class="pname"></span><span style="flex:1;color:var(--dim);font-size:12px">
+      ${d.mature} mature · ${d.young} young · ${d.learn} learning · ${d.nw} new · ${d.due} due today
+      ${d.tags.length?' &nbsp;|&nbsp; '+d.tags.map(t=>`${t[0]} ${t[1]}`).join(' · '):''}</span></div>`;
+  });
+  const tot=ANKI.decks.reduce((a,d)=>a+d.total,0), mat=ANKI.decks.reduce((a,d)=>a+d.mature,0);
+  h+=`<div class="prow tot"><span class="pname">Total</span>
+    <span style="flex:1;color:var(--dim);font-size:12px">${tot} cards · ${mat} mature · synced ${ANKI.synced}
+    &nbsp;|&nbsp; weighting: new 0 · learning 0.25 · young 0.6 · mature 1.0</span></div>`;
+  document.getElementById('anki').innerHTML=h;
+}
+
+function renderProgress(){
+  const rows=S.cols.map(c=>{
+    const n=c.cards.length, done=c.cards.filter(x=>x.m>0).length;
+    const pct=n? Math.round(c.cards.reduce((a,x)=>a+x.m,0)/(n*5)*100) : 0;
+    return {name:c.name, colour:c.colour, pct, done, n};
+  }).sort((a,b)=>b.pct-a.pct);
+  const allN=S.cols.reduce((a,c)=>a+c.cards.length,0);
+  const allDone=S.cols.reduce((a,c)=>a+c.cards.filter(x=>x.m>0).length,0);
+  const allPct=allN? Math.round(S.cols.reduce((a,c)=>a+c.cards.reduce((b,x)=>b+x.m,0),0)/(allN*5)*100):0;
+  const bar=(p,col)=>`<span class="pbar"><i style="width:${Math.max(p,1.5)}%;background:${col}"></i></span>`;
+  let h='';
+  rows.forEach(r=>{ h+=`<div class="prow"><span class="pname" style="color:${r.colour}">${esc(r.name)}</span>
+    ${bar(r.pct,r.colour)}<span class="ppct">${r.pct}%</span>
+    <span class="pcnt">${r.done}/${r.n} started</span></div>`; });
+  h+=`<div class="prow tot"><span class="pname">Overall</span>${bar(allPct,'#9aa3b2')}
+    <span class="ppct">${allPct}%</span><span class="pcnt">${allDone}/${allN} started</span></div>`;
+  document.getElementById('prog').innerHTML=h;
+}
+
+function renderBoard(){
+  const b=document.getElementById('board'); b.innerHTML='';
+  S.cols.forEach(col=>{
+    const d=document.createElement('div'); d.className='col'; d.dataset.col=col.id;
+    const done=col.cards.filter(x=>x.m>0).length;
+    d.innerHTML=`<div class="chd">
+        <span class="cdot" style="background:${col.colour}"></span>
+        <span class="cname" contenteditable spellcheck="false" data-col="${col.id}">${esc(col.name)}</span>
+        <span class="ccount">${done}/${col.cards.length}</span>
+        <button class="cmenu" title="Change colour" data-act="colour" data-col="${col.id}">◐</button>
+        <button class="cmenu" title="Delete group" data-act="delcol" data-col="${col.id}">×</button>
+      </div>
+      <div class="cards" data-col="${col.id}"></div>
+      <button class="addc" data-act="addcard" data-col="${col.id}">+ Add topic</button>`;
+    const holder=d.querySelector('.cards');
+    col.cards.forEach(card=>holder.appendChild(cardEl(card,col)));
+    b.appendChild(d);
+    holder.addEventListener('dragover',e=>{e.preventDefault(); d.classList.add('dragover');
+      const after=afterEl(holder,e.clientY); const dr=document.querySelector('.dragging');
+      if(!dr) return; if(after==null) holder.appendChild(dr); else holder.insertBefore(dr,after);});
+    holder.addEventListener('dragleave',()=>d.classList.remove('dragover'));
+    holder.addEventListener('drop',e=>{e.preventDefault(); d.classList.remove('dragover'); commitOrder();});
+  });
+  const add=document.createElement('button');
+  add.className='newcol'; add.textContent='+ Add group'; add.onclick=addCol;
+  b.appendChild(add);
+}
+
+function cardEl(card,col){
+  const e=document.createElement('div');
+  e.className='card'+(card.m>0?'':' nd'); e.draggable=true; e.dataset.id=card.id;
+  let stars='<span class="stars" data-id="'+card.id+'">';
+  for(let i=1;i<=5;i++) stars+=`<b data-v="${i}" class="${i<=card.m?'on':''}">★</b>`;
+  stars+='</span>';
+  e.innerHTML=`<div class="ct" contenteditable spellcheck="false" data-id="${card.id}">${esc(card.t)}</div>
+    <div class="cfoot">${stars}${card.m>0?'':'<span class="ndlab">not done</span>'}
+    <button class="cdel" data-act="delcard" data-id="${card.id}" title="Delete">×</button></div>`;
+  e.addEventListener('dragstart',()=>{e.classList.add('dragging');dragSrc=col.id;});
+  e.addEventListener('dragend',()=>{e.classList.remove('dragging');commitOrder();});
+  return e;
+}
+
+function afterEl(holder,y){
+  const els=[...holder.querySelectorAll('.card:not(.dragging)')];
+  return els.reduce((closest,child)=>{
+    const box=child.getBoundingClientRect(), off=y-box.top-box.height/2;
+    return (off<0 && off>closest.off)? {off, el:child} : closest;
+  },{off:-Infinity,el:null}).el;
+}
+
+/* read the DOM back into state after a drag */
+function commitOrder(){
+  const byId={}; S.cols.forEach(c=>c.cards.forEach(k=>byId[k.id]=k));
+  document.querySelectorAll('.cards').forEach(h=>{
+    const col=S.cols.find(c=>c.id===h.dataset.col); if(!col) return;
+    col.cards=[...h.querySelectorAll('.card')].map(el=>byId[el.dataset.id]).filter(Boolean);
+  });
+  save();
+}
+
+/* ---------- events ---------- */
+document.addEventListener('click',e=>{
+  const st=e.target.closest('.stars');
+  if(st && e.target.dataset.v){
+    const card=find(st.dataset.id); const v=+e.target.dataset.v;
+    card.m = (card.m===v)? 0 : v;      // click the same star again to clear
+    save(); return;
+  }
+  const b=e.target.closest('button[data-act]'); if(!b) return;
+  const act=b.dataset.act;
+  if(act==='addcard'){
+    const col=S.cols.find(c=>c.id===b.dataset.col);
+    col.cards.push({id:uid(), t:'New topic', m:0}); save();
+    const els=document.querySelectorAll(`.cards[data-col="${col.id}"] .ct`);
+    const last=els[els.length-1]; if(last){last.focus(); document.execCommand('selectAll',false,null);}
+  }
+  if(act==='delcard'){
+    const col=S.cols.find(c=>c.cards.some(k=>k.id===b.dataset.id));
+    col.cards=col.cards.filter(k=>k.id!==b.dataset.id); save();
+  }
+  if(act==='delcol'){
+    const col=S.cols.find(c=>c.id===b.dataset.col);
+    if(confirm(`Delete the group "${col.name}" and its ${col.cards.length} topics?`)){
+      S.cols=S.cols.filter(c=>c.id!==b.dataset.col); save();}
+  }
+  if(act==='colour'){
+    const col=S.cols.find(c=>c.id===b.dataset.col);
+    col.colour=PALETTE[(PALETTE.indexOf(col.colour)+1)%PALETTE.length]; save();
+  }
+});
+
+/* inline rename — commit on blur / Enter */
+document.addEventListener('blur',e=>{
+  if(e.target.classList && e.target.classList.contains('ct')){
+    const c=find(e.target.dataset.id); const t=e.target.textContent.trim();
+    if(c && t && t!==c.t){c.t=t; save();} else if(c && !t){e.target.textContent=c.t;}
+  }
+  if(e.target.classList && e.target.classList.contains('cname')){
+    const col=S.cols.find(c=>c.id===e.target.dataset.col); const t=e.target.textContent.trim();
+    if(col && t && t!==col.name){col.name=t; save();} else if(col && !t){e.target.textContent=col.name;}
+  }
+},true);
+document.addEventListener('keydown',e=>{
+  if(e.key==='Enter' && e.target.isContentEditable){e.preventDefault(); e.target.blur();}
+});
+
+function find(id){ for(const c of S.cols){const k=c.cards.find(x=>x.id===id); if(k) return k;} return null; }
+function addCol(){
+  const name=prompt('Name of the new group?'); if(!name) return;
+  S.cols.push({id:uid(), name:name.trim(), colour:PALETTE[S.cols.length%PALETTE.length], cards:[]}); save();
+}
+function resetAll(){
+  if(confirm('Reset the whole board back to the default topics and seeded stars? Your edits will be lost.')){
+    S=norm(SEED); save();}
+}
+function exportJSON(){
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([JSON.stringify(S,null,1)],{type:'application/json'}));
+  a.download='mastery-board-backup.json'; a.click();
+}
+function importJSON(inp){
+  const f=inp.files[0]; if(!f) return;
+  const r=new FileReader();
+  r.onload=()=>{ try{const p=JSON.parse(r.result);
+      if(p&&Array.isArray(p.cols)){S=p; save(); alert('Board restored.');} else alert('That file is not a board backup.');
+    }catch(err){alert('Could not read that file.');} inp.value=''; };
+  r.readAsText(f);
+}
+
+/* ---------- exams ---------- */
+function renderExams(){
+  const MO=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const today=new Date().toISOString().slice(0,10);
+  const lbl=d=>{const[,m,dd]=d.split('-');return +dd+' '+MO[+m-1];};
+  const build=(rows,el)=>{
+    let firstFuture=true;
+    document.getElementById(el).innerHTML=rows.map(r=>{
+      const past=r[0]<today; const next=!past&&firstFuture; if(!past) firstFuture=false;
+      const prac=/Practical/.test(r[2])?' prac':'';
+      return `<div class="ex${past?' past':''}${next?' next':''}">
+        <span class="exd">${lbl(r[0])}</span><span class="exs">${r[1]}</span>
+        <span class="exp${prac}">${r[2]}</span><span class="ext">${r[3]} · ${r[4]}</span></div>`;
+    }).join('');
+  };
+  build(PRELIM,'exPrelim'); build(ALEVEL,'exAlevel');
+  document.getElementById('prelimRange').textContent=lbl(PRELIM[0][0])+' – '+lbl(PRELIM[PRELIM.length-1][0]);
+  document.getElementById('alevelRange').textContent=lbl(ALEVEL[0][0])+' – '+lbl(ALEVEL[ALEVEL.length-1][0]);
+  const days=d=>Math.max(0,Math.round((new Date(d)-new Date(today))/864e5));
+  document.getElementById('cdPrelim').textContent=days('2026-08-24');
+  document.getElementById('cdAlevel').textContent=days('2026-11-02');
+  document.getElementById('stamp').textContent='updated '+lbl(today);
+}
+
+render(); renderAnki(); renderExams();
+</script>
+</body>
+</html>
