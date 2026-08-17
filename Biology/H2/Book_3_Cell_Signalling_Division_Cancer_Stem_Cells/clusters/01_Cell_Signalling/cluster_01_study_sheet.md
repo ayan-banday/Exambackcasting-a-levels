@@ -330,7 +330,7 @@ pathway are not required**.
 **What a 3(p) answer must contain, and this is the whole of it:** insulin binds an **RTK** and glucagon
 binds a **GPLR**; each ligand **induces a conformational change** in its membrane-bound receptor; that
 **triggers a downstream signalling pathway**; and the pathway produces a **physiological change in blood
-glucose** — insulin raising uptake and storage, glucagon mobilising glucose into the blood.
+glucose**, insulin raising uptake and storage, glucagon mobilising glucose into the blood.
 
 **[Not in the learning outcomes, for 3(p)]** Everything in I2 and I3 past the conformational change is
 context, not recall: **adenylyl cyclase**, **cAMP**, **protein kinase A**, **glycogen phosphorylase
