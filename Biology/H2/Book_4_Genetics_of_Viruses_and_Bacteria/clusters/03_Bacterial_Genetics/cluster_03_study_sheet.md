@@ -63,9 +63,8 @@ as a description.
 **B3. Packing is named in the outcome even though none of its vocabulary is.** To fit inside the cell
 **the chromosome must be compacted approximately 1000-fold**. That compaction comes in two stages:
 **association of the DNA with positively charged histone-like proteins that aid in compacting the DNA
-into looped domains**, then **further compaction by supercoiling the bacterial DNA**. LO 2(d) says
-**packing of DNA** and stops, so the words histone-like, looped domains and supercoiling all return zero
-syllabus hits while the content behind them is fully examinable.
+into looped domains**, then **further compaction by supercoiling the bacterial DNA**. You will not be handed the words histone-like, looped domains or supercoiling in a question,
+but the compaction itself is fully examinable.
 
 **B4. Prokaryotic genes lack introns, and that has a downstream consequence.** **Prokaryotic genes lack
 introns and thus do not require splicing after transcription, unlike eukaryotic gene expression.**
