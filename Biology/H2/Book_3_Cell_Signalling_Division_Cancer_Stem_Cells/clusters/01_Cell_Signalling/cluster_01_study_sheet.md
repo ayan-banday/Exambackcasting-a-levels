@@ -7,7 +7,13 @@
 > from the extended question drill in `cluster_01_questions.html`.
 >
 > **Wording matters here.** Every bolded phrase is the chapter's or the mark scheme's exact wording.
-> Encode those words, not your own paraphrase.
+> Encode those words, not your own paraphrase. Where a mechanism is a fixed sequence, it appears as
+> **numbered steps in italics, quoted from your chapter's own figure boxes**, because that is the form
+> you have to reproduce.
+>
+> **Anything past an outcome is labelled.** Where context is included so a mechanism makes sense, it
+> carries **[Not in the learning outcomes]** and says which outcome it sits outside. Read those once,
+> do not encode them.
 >
 > Source: HCI Core Idea 3 chapter 3.1, Cell Signalling and Communication, 44 pages.
 > Syllabus: 9477 LOs 3(m), 3(n), 3(o), 3(p).
@@ -133,23 +139,48 @@ facing out, one facing in.
 | Specific amino acids at the **G-protein interaction site** | **specific 3D conformation to bind and activate G-protein** |
 | Ligand binding causes a **conformational change** | receptor can **initiate signal transduction pathways via activation of G-protein** |
 
-**D3. The working principle, in order.** The G protein sits **on the cytoplasmic side of the
-membrane** and **functions as a molecular switch that is either on or off, depending on whether GDP or
-GTP is attached**; **when GDP is bound the G protein is inactive**. The ligand binds the extracellular
-side and **causes a change in receptor conformation, activating the GPLR**. **With an increased
-affinity for the G protein**, the cytoplasmic side **binds an inactive G protein, causing a GTP to
-displace the GDP**. The activated G protein **dissociates from the GPLR and diffuses along the
-membrane**, then **binds a target protein (effector), usually an enzyme, thereby altering target
-protein activity**, which **initiates a cascade of signal transduction events**.
+**D3. The working principle, in order.** Before the steps: the G protein sits **on the cytoplasmic
+side of the membrane** and **functions as a molecular switch that is either on or off, depending on
+whether GDP or GTP is attached**; **when GDP is bound the G protein is inactive**.
+
+These are your chapter's Fig. 13 boxes, word for word. Learn them in this order and in these words.
+
+**1. Signal RECEPTION.** *The signal molecule (ligand) binds to the (extracellular side of the) GPLR
+and causes a change in receptor conformation, activating the GPLR.*
+
+**2. Signal TRANSDUCTION.** *With an increased affinity for the G protein, the cytoplasmic side of the
+GPLR binds an inactive G protein, causing a GTP to displace the GDP bound to the G protein.*
+
+**3.** *The G protein is activated.*
+
+**4.** *The activated G protein dissociates from the GPLR and diffuses along the membrane.*
+
+**5.** *The activated G protein binds to a target protein (effector), usually an enzyme (or sometimes a
+channel protein), thereby altering target protein activity.*
+
+**6.** *Change in target protein (enzyme) activity initiates a cascade of signal transduction events by
+triggering the next step in the transduction pathway inside the cell, including the production of
+cyclic AMP (cAMP), OR the production of inositol trisphosphate (IP₃) and release of calcium (Ca²⁺).
+cAMP, IP₃ and Ca²⁺ serve as second messengers in signal transduction.*
+
+**7. Cellular RESPONSE.** *The last activated molecule in the transduction pathway triggers a cellular
+(cytoplasmic or nuclear) response.*
 
 **GTP displaces GDP, and nothing is phosphorylated at that step.** Two schemes carry an explicit
 reject for saying the GDP is phosphorylated to become GTP, the most repeated error in this chapter's
 question corpus.
 
-**D4. Shut-off is built into the G protein.** **The intrinsic GTPase activity of the G protein soon
-hydrolyses its bound GTP to GDP**, so the G protein is inactive again, the signal molecule
-**dissociates from the GPLR**, and the effector **returns to its original inactive state**, **available
-for reuse**.
+**Where this sequence is examinable, and where it is not.** Steps 1 to 7 answer **LO 3(m)**, which names
+the three stages, and step 6 feeds **LO 3(n)** on second messengers including cyclic AMP. So this is
+required. **It is NOT required as part of an insulin or glucagon answer**, because LO 3(p) limits that
+to the conformational change and the downstream pathway and states that details of second messengers
+and specific kinases are not needed. Same content, examinable under one outcome and excluded under
+another. See section I.
+
+**D4. Shut-off is built into the G protein.** Verbatim: *The intrinsic GTPase activity of the G protein
+soon hydrolyses its bound GTP to GDP, so that the G protein is inactive again. The signal molecule has
+also dissociated from the GPLR.* Then *the inactive G protein leaves the enzyme, which returns to its
+original inactive state. The G protein is now available for reuse.*
 
 ---
 
@@ -193,18 +224,37 @@ substrate protein**. **Before the signal molecule binds, the receptor exists as 
 polypeptide subunits**, each with **an extracellular signal-binding site**, **an α-helix spanning the
 membrane**, and **an intracellular tail containing multiple tyrosines and a tyrosine kinase domain**.
 
-**F2. The working principle, in order.** The ligand **binds to a subunit**, giving **receptor
-aggregation**, where the two subunits **associate closely**, and **dimerisation**, where they **form a
-dimer**. Dimerisation **leads to the activation of the tyrosine kinase activity of the receptor,
-resulting in autophosphorylation**, in which each kinase domain **adds a phosphate from an ATP molecule
-to a tyrosine on the tail of its own or the other polypeptide subunit**. The **fully activated** RTK
-then **binds cytoplasmic relay proteins**, and **each relay protein recognises and binds to a specific
-phosphorylated tyrosine**, **becoming activated by undergoing a conformational change**.
+**F2. The working principle, in order.** Your chapter's Fig. 20 boxes, word for word. Note that all
+four reception steps are labelled **Signal RECEPTION**, which is not obvious and is worth keeping.
 
-**F3. One RTK triggers several pathways at once, and the reason is the tail.** **Multiple transduction
-pathways can be triggered by the activation of one RTK, as each phosphorylated tyrosine is recognised
-by a different relay protein**, so **several different cellular responses are generated** from a
-single ligand-binding event. The chapter puts the figure at **ten or more**.
+**1. Signal RECEPTION.** *The signal molecule (ligand) binds to a subunit of the RTK, resulting in
+receptor aggregation (i.e. the two subunits associate closely / cluster with each other) and
+dimerisation (the two subunits form a dimer).*
+
+**2. Signal RECEPTION.** *Dimerisation leads to the activation of the tyrosine kinase activity of the
+receptor, resulting in autophosphorylation / cross phosphorylation.*
+
+**3. Signal RECEPTION.** *Each tyrosine kinase domain adds a phosphate from an ATP molecule to a
+tyrosine on the tail of its own or the other polypeptide subunit.*
+
+**4. Signal RECEPTION.** *The RTK is fully activated.*
+
+**5. Signal TRANSDUCTION.** *The activated RTK binds cytoplasmic relay proteins, thereby altering their
+activity, localisation or ability to interact with other intracellular signalling proteins. Each relay
+protein recognises and binds to a specific phosphorylated tyrosine. The bound relay protein becomes
+activated, in many cases by undergoing a conformational change.*
+
+**6. Signal TRANSDUCTION.** *Each activated relay protein triggers a transduction pathway, thus
+initiating a cascade of signal transduction events inside the cell.*
+
+**7. Cellular RESPONSE.** *The last activated molecule in each transduction pathway triggers a cellular
+(cytoplasmic or nuclear) response.*
+
+**F3. One RTK triggers several pathways at once, and the reason is the tail.** Verbatim: *Multiple
+transduction pathways can be triggered by the activation of one RTK, as each phosphorylated tyrosine is
+recognised by a different relay protein. Consequently, several different cellular responses are
+generated.* The chapter puts the figure at **ten or more**. This is the single cleanest difference from
+a GPLR and the reason an RTK answer is not just a GPLR answer with different nouns.
 
 ---
 
@@ -271,14 +321,30 @@ glycogen synthase, inhibiting its catalytic activity** and so preventing glycoge
 stimulates **gluconeogenesis, the synthesis of glucose from a non-carbohydrate precursor, in liver
 cells**, and the **glucose formed diffuses into the bloodstream**.
 
-**I4. The outcome stops well before the chapter does.** LO 3(p) limits the outline to **how the ligand
-induces a conformational change in a membrane-bound receptor to trigger downstream signalling
-pathways**, and states that **details of different second messengers and specific kinases activated in
-the pathway are not required**. The eight numbered steps of the glucagon figure, naming **glycogen
-phosphorylase kinase** and **glycogen phosphorylase**, sit past that boundary. The spine it does
-require: **insulin binds an RTK, glucagon binds a GPLR, each ligand causes a conformational change,
-each triggers a downstream pathway, and one raises glucose uptake and storage while the other
-mobilises glucose into the blood.**
+**I4. Draw the boundary before you write, because this outcome is deliberately narrow.** LO 3(p) limits
+the outline to **how the ligand induces a conformational change in a membrane-bound receptor to trigger
+downstream signalling pathways that elicit physiological changes in blood glucose concentration**, and
+states outright that **details of different second messengers and specific kinases activated in the
+pathway are not required**.
+
+**What a 3(p) answer must contain, and this is the whole of it:** insulin binds an **RTK** and glucagon
+binds a **GPLR**; each ligand **induces a conformational change** in its membrane-bound receptor; that
+**triggers a downstream signalling pathway**; and the pathway produces a **physiological change in blood
+glucose** — insulin raising uptake and storage, glucagon mobilising glucose into the blood.
+
+**[Not in the learning outcomes, for 3(p)]** Everything in I2 and I3 past the conformational change is
+context, not recall: **adenylyl cyclase**, **cAMP**, **protein kinase A**, **glycogen phosphorylase
+kinase**, **glycogen phosphorylase**, and the eight numbered steps of the glucagon figure. Read them
+once so the pathway makes sense; do not encode them as the answer to a 3(p) question.
+
+**But do not over-cut, because cAMP is examinable elsewhere.** **LO 3(n) requires the roles and nature
+of second messengers, naming cyclic AMP.** So cAMP is fully examinable in its own right under 3(n),
+and section E is where you learn it. What 3(p) excludes is dragging it into the insulin and glucagon
+answer. Same molecule, required under one outcome and excluded from another.
+
+**One verbatim fact worth holding, because it is a clean discriminator.** Your chapter states:
+*No second messengers are involved in signal transduction in insulin receptor signalling.* That is the
+sharpest single contrast between the two hormones.
 
 ---
 
