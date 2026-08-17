@@ -11,28 +11,12 @@
 > have skipped practicals entirely, so this is your first contact with the highest-value practical
 > content in the syllabus.
 >
-> **Compensation point returns zero hits in the whole syllabus**, and that 10-mark planning question is
-> built entirely on it, with the term defined for you in the stem. This is the Book 5 equivalent of
-> crossing-over in Book 3: the word is gone, the biology is worth double figures.
->
 > **This is still a study sheet, not a lab manual.** What follows is the biology behind each technique,
 > the variables, the controls, and what the data means. No protocols, because the apparatus steps are
 > printed for you in the exam.
 >
 > Source: HCI chapter 5.1 sections 6.1 and 6.7, chapter 5.2 section 8, and the 9477 specimen Paper 4.
->
-> **Length note.** This runs past 3,400 words because four outcomes are quoted verbatim, two organelles
-> have to be mapped onto each other, and this is the only place the practical work is taught at all.
-
-**The four 9477 outcomes this cluster covers, verbatim:**
-
-> **3(a)** identify components of chloroplasts and mitochondria in drawings, photomicrographs and electronmicrographs
->
-> **3(e)** discuss limiting factors in photosynthesis and carry out investigations on the effect of limiting factors such as temperature, light intensity and carbon dioxide concentration on the rate of photosynthesis
->
-> **3(k)** investigate the effect of factors including substrate concentration, oxygen concentration and temperature on the rate of respiration
->
-> **3(l)** outline chemiosmosis in photosynthesis and respiration (names of complexes in the ETC are not required)
+> Syllabus: 9477 LOs 3(a), 3(e), 3(k), 3(l).
 
 ---
 
@@ -315,7 +299,16 @@ The specimen gave five marks for a table built from scratch before any reading w
 
 ---
 
-## J. Open recall prompts (answer cold, then self-check)
+## J. In your notes, but not examinable
+
+**Leaf anatomy, mesophyll, palisade cells and stomata.** No outcome asks you to recite them, so they
+are dead as Paper 2 recall. They stay alive as Paper 4 material, because the specimen's other 20-mark
+practical was stomatal density on a leaf epidermal peel, and sun and shade leaves are described in this
+vocabulary. Learn leaf structure as something you look at down a microscope, not something you recite.
+
+---
+
+## K. Open recall prompts (answer cold, then self-check)
 
 1. Give the paired structures of chloroplast and mitochondrion, and say which compartment accumulates protons in each.
 2. Map chemiosmosis across the two organelles, including both asymmetries.
@@ -335,7 +328,7 @@ The specimen gave five marks for a table built from scratch before any reading w
 
 ---
 
-## K. Errors in your notes, and what is missing from them
+## L. Errors in your notes, do not encode these
 
 **Three errors in the practical sections.**
 
@@ -350,9 +343,3 @@ The specimen gave five marks for a table built from scratch before any reading w
    section, so the cost is zero, but do not learn the sentence.
 3. **The temperature section calls the same organism white potato and Irish potato in consecutive
    sentences.** Trivial, but it sits in the one section LO 3(k) points at.
-
-**One scope note that cuts both ways.** **Leaf anatomy, mesophyll, palisade cells and stomata return
-zero syllabus hits**, so as Paper 2 recall they are dead. As **Paper 4 material they are alive**: the
-specimen's other 20-mark practical question was stomatal density on a leaf epidermal peel, and sun and
-shade leaves are described in this vocabulary. Learn leaf structure as something you look at down a
-microscope, not as something you recite.

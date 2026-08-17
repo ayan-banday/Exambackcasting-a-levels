@@ -10,55 +10,8 @@
 > every difference between them traces back to two events: whether **homologous chromosomes pair up in
 > prophase**, and whether **centromeres divide at the first anaphase**.
 >
-> Source: HCI Core Idea 2, chapter 3.2, 36 pages. Syllabus 9477 LOs 2(n), 2(o), 2(s), 2(t). Bolded
-> wording is the notes' or the syllabus's own.
->
-> This sheet is longer than the Book 1 sheets, and the length is content rather than padding. Four
-> outcomes, not three. **2(n) and 2(s) each demand a stage-by-stage description against four named
-> structures**, which is eight stages described four ways, and 2(s) then needs the comparison against
-> mitosis that **Specimen Paper 2 Q6(c) marks out of four**. The verbatim outcome text and the scope
-> audit below add another page on top.
-
----
-
-## The four outcomes, verbatim from the syllabus (Core Idea 2, p.15)
-
-> **2(n)** describe the events that occur during **the mitotic cell cycle** and **the main stages of
-> mitosis** (including the behaviour of **chromosomes, nuclear envelope, cell surface membrane and
-> centrioles**)
->
-> **2(o)** explain **the significance of the mitotic cell cycle** (including **growth, repair and
-> asexual reproduction**) and **the need to regulate it tightly** (knowledge that **dysregulation of
-> checkpoints** of cell division can result in **uncontrolled cell division and cancer** is required,
-> but **details of the mechanism are not required**)
->
-> **2(s)** describe the events that occur during **the meiotic cell cycle** and **the main stages of
-> meiosis** (including the behaviour of chromosomes, nuclear envelope, cell surface membrane and
-> centrioles) (names of the main stages are expected, but **not the sub-divisions of prophase**)
->
-> **2(t)** explain **the significance of the meiotic cell cycle** (including how **meiosis and random
-> fertilisation** can lead to **variation**)
-
-Two things there set the shape of every answer. Both 2(n) and 2(s) name **four structures**, and the
-**cell surface membrane** is the one revision skips, because it is the cytokinesis content. And 2(t)
-names **random fertilisation** alongside meiosis, so an answer on variation that stops at crossing over
-and independent assortment has dropped a third of the outcome.
-
-## What is cut from your notes, and why
-
-- **Cyclins, CDKs and MPF.** Searched literally across the syllabus, each returns **zero hits**, and
-  2(o) says details of the mechanism are not required. Know that checkpoints exist and what their
-  failure permits, then stop.
-- **The sub-divisions of prophase I.** 2(s) excludes them in its own text, so leptotene through
-  diakinesis are out. Your chapter never taught them, so this costs nothing.
-- **Terms with zero syllabus hits:** apoptosis, karyotype and karyogram, kinetochore, cytokinesis,
-  bivalent, chiasma, and independent assortment as a phrase. None will head a define-this question. Two
-  carry content that survives under another name: cytokinesis is examined through **the cell surface
-  membrane**, and independent assortment through **2(t)**. Learn the events, not the labels.
-- **Not cut: crossing over.** This is where a careless search costs marks. Written
-  **crossing-over** with the hyphen it appears three times in the syllabus; unhyphenated it returns
-  zero. Specimen Paper 3 Q1(b)(i) asked for **four marks** on how meiosis leads to genetic
-  recombination.
+> Source: HCI Core Idea 2, chapter 3.2, 36 pages. Bolded wording is the notes' or the syllabus's own.
+> Syllabus: 9477 LOs 2(n), 2(o), 2(s), 2(t).
 
 ---
 
@@ -358,7 +311,17 @@ distance-against-time graph. Trust the specimen over the corpus. The cues:
 
 ---
 
-## J. Open recall prompts (answer cold, then self-check)
+## J. In your notes, but not examinable
+
+| Do not study | Why |
+|---|---|
+| **Cyclins, CDKs and MPF** | LO 2(o) states that details of the mechanism are not required. Know that checkpoints exist and what their failure permits, then stop |
+| **The sub-divisions of prophase I**, leptotene through diakinesis | LO 2(s) excludes them in its own wording. Your chapter never taught them, so this costs nothing |
+| **The labels apoptosis, karyotype, karyogram, kinetochore, cytokinesis, bivalent and chiasma** | None will head a define-this question. Two carry content that survives under another name: cytokinesis is examined through **the cell surface membrane**, and independent assortment through LO 2(t). Learn the events, not the labels |
+
+---
+
+## K. Open recall prompts (answer cold, then self-check)
 
 1. Name the four structures LO 2(n) and LO 2(s) require you to describe the behaviour of.
 2. Distinguish homologous chromosomes from sister chromatids, structurally and genetically.
@@ -380,7 +343,7 @@ distance-against-time graph. Trust the specimen over the corpus. The cues:
 
 ---
 
-## K. Errors in your notes
+## L. Errors in your notes
 
 1. **Centriole duplication is stated three different ways.** Page 11 says **at the onset of mitosis,
    centriole pairs are duplicated**. Page 14 puts it in **G2**, and page 23 says the pair replicates

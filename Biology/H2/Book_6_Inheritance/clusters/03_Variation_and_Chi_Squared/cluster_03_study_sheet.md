@@ -16,17 +16,8 @@
 > is a genuine collision between two symbol sets rather than carelessness. Read it slowly.
 >
 > Source: HCI Core Idea 2 chapters **6.1 Inheritance I** section 10.2, and **6.2 Inheritance II**
-> sections 3 and 4. Syllabus: **9477 LOs 2(bb), 2(cc), 2(dd)**, quoted below in full.
-
-**(bb)** explain how **the environment may affect the phenotype**, using examples including **the
-effect of diet on differentiation of honeybees**
-
-**(cc)** explain the difference between **genetic variation that is continuous (many, additive genes
-control a characteristic)** and **genetic variation that is discontinuous (one or a few genes control
-a characteristic)**
-
-**(dd)** use the **chi-squared test to test the significance of differences between observed and
-expected results**
+> sections 3 and 4.
+> Syllabus: 9477 LOs 2(bb), 2(cc), 2(dd).
 
 ---
 
@@ -276,7 +267,17 @@ a verdict, and the habit that protects you is to **quote the value from the tabl
 
 ---
 
-## H. Open recall prompts (answer these cold, then self-check)
+## H. In your notes, but not examinable
+
+- **The phenotypic variance equation V_P = V_G + V_E.** No outcome asks for variance.
+- **The Biostatistics material on t-tests, standard deviations, rates and microscopy.** It belongs to
+  the Mathematical Requirements and to Paper 4 rather than to LO 2(dd), so filter it out before you
+  drill. Keep one piece of it, **reading a p value off published data**, which Specimen Paper 4 asked
+  for.
+
+---
+
+## I. Open recall prompts (answer these cold, then self-check)
 
 **Attempt each aloud before looking anything up**, and keep them in rotation until automatic.
 
@@ -298,7 +299,7 @@ a verdict, and the habit that protects you is to **quote the value from the tabl
 
 ---
 
-## I. Errors in your notes, and what this cluster cuts
+## J. Errors in your notes, do not encode these
 
 1. **Chapter 6.2 page 20 over-claims what the three meiotic sources produce.** It says they **account
    for new combination of alleles, which is the basis of continuous variation**, then four lines later
@@ -317,13 +318,3 @@ a verdict, and the habit that protects you is to **quote the value from the tabl
    as **65 and 21** while Table 4.2, the working table you are told to complete, gives **55 and 31**.
    Both routes land below 7.81, so the verdict is unchanged. **Complete the table you are told to
    complete.**
-
-**What this cluster deliberately does not teach, with the reason.** **The phenotypic variance equation
-V_P = V_G + V_E** is cut, because **variance** returns zero syllabus hits and no outcome asks for
-it. Continuous variation and discontinuous variation as phrases also return zero hits, which
-cuts nothing at all: LO 2(cc) splits the phrase across its own clause, so a phrase search finds
-nothing and a single-word search finds the outcome. **Polygenic** and **null hypothesis** are the same
-case, absent as words and fully live as biology. And the school's Biostatistics material on **t-tests,
-standard deviations, rates and microscopy** belongs to the Mathematical Requirements and to Paper 4,
-not to this outcome, so filter it out before you drill. The one piece worth keeping from it is
-**reading a p value off published data**, because Specimen Paper 4 asked exactly that.

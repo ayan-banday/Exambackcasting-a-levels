@@ -35,11 +35,6 @@ distant sites** or it is invasion and not metastasis; and **rate of division aga
 loss**, since a scheme rejects excessive or uncontrolled cell growth where division is meant.
 
 **Out of scope, and absent from this drill.** Cyclins, Cdks, MPF, telomerase, induced pluripotent stem
-cells, therapeutic cloning, somatic cell nuclear transfer and karyotype all return zero hits in the
-9477 syllabus. There is no bioethics anywhere in this drill. Apoptosis appears in one place only,
-inside p53's own mechanism in Q2, because LO 2(q) requires how loss of p53 function gives uncontrolled
-division and that route runs through it. It is never the subject of a question.
-
 **How to run it.** One part at a time, aloud, mark scheme untouched. Say your confidence before every
 reveal. Check (a) before you start (b).
 

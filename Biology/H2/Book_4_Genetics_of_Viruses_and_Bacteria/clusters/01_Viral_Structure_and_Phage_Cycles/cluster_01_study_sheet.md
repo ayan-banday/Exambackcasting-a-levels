@@ -6,26 +6,13 @@
 > *I've studied this, I could rough out an answer*, not *I can answer this well*. The other 70% comes
 > from the extended question drill.
 >
-> **Length note, about 3,950 words.** The cluster carries four learning outcomes across 24 pages of
-> chapter 4.1, and two of them, **1(f)** and **2(e)i**, are multi-part set pieces where cutting means
-> deleting examinable steps. The length is content rather than padding, and bolded density is 50.7%,
-> inside the usual band.
->
 > **Wording matters more in Book 4 than in any Book so far.** The schemes reject near-synonyms at almost
 > every label: **protein coat** where **capsid** is wanted, **protein** where **glycoprotein** is
 > wanted, **phospholipid bilayer** where **viral envelope** is wanted. Every bolded phrase below is the
 > notes' or a scheme's own wording.
 >
 > Source: HCI Core Idea 2, chapter 4.1 The Genetics of Viruses, sections 1 to 4.1.
->
-> **The outcomes this cluster answers, in the syllabus's own words:**
-> **1(e)** describe the structural components of viruses, including enveloped viruses and
-> bacteriophages, and interpret drawings and photographs of them.
-> **1(f)** discuss how viruses challenge the cell theory and concepts of what is considered living.
-> **2(d)** describe the structure and organisation of viral, prokaryotic and eukaryotic genomes
-> (including DNA/RNA, single-/double-stranded, number of nucleotides, packing of DNA,
-> linearity/circularity and presence/absence of introns), viral half only.
-> **2(e)i** bacteriophages that reproduce via lytic and lysogenic cycles, including lambda phage.
+> Syllabus: 9477 LOs **1(e)**, **1(f)**, **2(d)** *(viral half only)*, **2(e)i**.
 
 ---
 

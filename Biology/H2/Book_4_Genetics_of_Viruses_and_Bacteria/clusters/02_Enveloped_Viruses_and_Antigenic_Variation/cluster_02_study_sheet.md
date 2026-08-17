@@ -9,22 +9,12 @@
 > viruses are enveloped, so the host-derived bilayer and the virally encoded glycoproteins are assumed
 > knowledge here.
 >
-> **Length note, about 4,000 words.** It carries three learning outcomes, two of which are five-step
-> reproductive cycles that lose marks when compressed, plus the eleven-row comparison table that answers
-> Specimen Paper 1 Question 11 and the six-axis shift-against-drift table. The length is content rather
-> than padding, and bolded density is 49.9%, inside the usual band.
->
 > **This cluster contains the single most dangerous error in Book 4**, on page 40 of chapter 4.1, and it
 > sits exactly on the distinction LO 2(f) exists to test. It is flagged in place at section G and again
 > in section L.
 >
 > Source: HCI Core Idea 2, chapter 4.1 The Genetics of Viruses, sections 4.2 and 5.
->
-> **The outcomes this cluster answers, in the syllabus's own words:**
-> **2(e)** describe how the genomes of viruses are inherited through outlining the reproductive cycles
-> of: **ii** enveloped viruses, including influenza; **iii** retroviruses, including HIV.
-> **2(f)** describe how variation in viral genomes arises, including antigenic shift and antigenic
-> drift.
+> Syllabus: 9477 LOs **2(e)ii**, **2(e)iii**, **2(f)**.
 
 ---
 

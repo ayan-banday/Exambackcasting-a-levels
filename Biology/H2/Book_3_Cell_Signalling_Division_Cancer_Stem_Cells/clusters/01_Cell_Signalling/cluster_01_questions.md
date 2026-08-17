@@ -27,11 +27,6 @@ gene expression, since the outcome words the cellular response as a change in ge
 or Book 2 gap surfacing here is worth more than a clean Book 3 answer, so say it out loud.
 
 **Scope, so you do not waste an answer.** Homeostasis, negative feedback, set point and diabetes return
-zero hits in the 9477 syllabus, and 22.8% of the cell-signalling question bank tests them or tests
-excluded receptors. Nothing here does. Intracellular receptors are excluded in the wording of LO 3(m),
-so only two receptor types appear: the G-protein linked receptor and the receptor tyrosine kinase.
-Nothing from Book 3 chapters 3.2, 3.3 or 3.4 appears either, because you have not studied them.
-
 **How to run it.** One part at a time, aloud, mark scheme untouched. Rate your confidence out loud
 before every reveal: high, medium or guessed. Check (a) before you start (b). When you hit a blank, say
 the blank in plain words, because the transcript is the gap list.
@@ -615,8 +610,6 @@ R: yes/no comparisons. A scheme rejects the form **GPLR does not have phosphoryl
 **2.** Supporting data quote: at **07.00 the blood glucose concentration was 4.3 mmol dm⁻³ and the blood insulin concentration was 30 pmol dm⁻³**, while at **08.00 the blood glucose concentration was 6.2 mmol dm⁻³ and the blood insulin concentration was 280 pmol dm⁻³**. Data must be quoted, because **relevant supporting data must be quoted** and answers are **rejected without the quote**.
 
 **3.** The **increase in blood glucose concentration causes the release of insulin from the pancreas**, specifically from the **β cells of the islets of Langerhans**.
-
-**4.** **Insulin causes the blood glucose concentration to return back to the set point**, because it **increases the permeability of target cells to glucose** and **stimulates the conversion of glucose to glycogen, that is, glycogenesis**. Supporting quote: glucose fell from **6.2 mmol dm⁻³ at 08.00 to 4.45 mmol dm⁻³ at 09.00** while insulin fell from **280 pmol dm⁻³ at 08.00 to 120 pmol dm⁻³ at 09.00**. One scope note on that verbatim wording: **set point returns zero hits in the 9477 syllabus**, so write it as **returns to its original concentration** and keep the marks in the mechanism.
 
 **(b)** *Why two peptide hormones use different receptor classes and have opposite effects.* **[10]**
 

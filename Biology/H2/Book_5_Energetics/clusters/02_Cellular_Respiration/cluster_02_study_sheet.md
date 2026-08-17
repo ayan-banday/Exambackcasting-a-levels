@@ -8,32 +8,8 @@
 > in the chloroplast and repeated here in the mitochondrion. One outcome covers both organelles, so the
 > second telling should feel like the same argument in a different compartment.
 >
-> **This is the less reliable of the two chapters, and the unreliability is concentrated in the ATP
-> arithmetic.** The syllabus excludes total ATP yield in writing and the school reprints that exclusion
-> itself, in bold, twice. **One numerical error is the real exception: the Overview page says one
-> glucose yields 4 CO2, and it yields 6.** Nothing excludes carbon dioxide output, and LO 3(g) asks for
-> products formed, so that one costs marks. Everywhere else, **give the process and the relationship
-> instead of a number**.
->
 > Source: HCI Core Idea 3 chapter 5.2 Energetics II: Cellular Respiration.
->
-> **Length note.** This runs a little past 3,400 words because five outcomes are reproduced verbatim
-> below and LO 3(g) alone carries three stages. Nothing here is padding.
-
-**The five 9477 outcomes this cluster owns, verbatim:**
-
-> **3(f)** outline the process of glycolysis, highlighting the location, raw materials used and products formed (knowledge of details of the intermediate compounds, names of enzymes and isomerisation is not required)
->
-> **3(g)** outline the processes of the link reaction and Krebs cycle, highlighting the location, raw materials used and products formed (in terms of dehydrogenation and decarboxylation)
->
-> **3(h)** outline the process of oxidative phosphorylation, including the roles of oxygen and the electron transport chain (ETC) in aerobic respiration (names of complexes in the ETC, detailed mechanism of action of ATP synthase and calculation of total yield of ATP from oxidative phosphorylation are not required)
->
-> **3(i)** explain the production of a small yield of ATP from respiration in anaerobic conditions in yeast and in mammalian muscle tissue
->
-> **3(j)** explain the significance of the formation of ethanol in yeast and lactate in mammals in the regeneration of NAD
-
-**3(a)** and **3(l)** are shared with photosynthesis. Their mitochondrial half is taught below; both are
-quoted and mapped across the two organelles in Cluster 3.
+> Syllabus: 9477 LOs 3(f), 3(g), 3(h), 3(i), 3(j), plus the mitochondrial half of 3(a) and 3(l).
 
 ---
 
@@ -126,7 +102,7 @@ alive with no oxygen, and it **feeds pyruvate to the mitochondrion** when oxygen
 
 **D1. Pyruvate crosses by active transport.** **Pyruvate is a charged molecule, so it must enter the
 mitochondrion via active transport, with the help of a transport protein.** Your notes contradict
-themselves here and the table is the wrong one, so see section I.
+themselves here and the table is the wrong one, so see section J.
 
 **D2. One multienzyme complex catalyses three reactions by oxidative decarboxylation.** First, the
 **carboxyl group is removed and liberated as CO2**, a **decarboxylation**. Second, the **remaining
@@ -272,7 +248,20 @@ calculated from an excluded total, so give the reason rather than the ratio.
 
 ---
 
-## H. Open recall prompts (answer cold, then self-check)
+## H. In your notes, but not examinable
+
+The outcomes exclude these in writing, so the chapter teaches more than you need.
+
+- **The ten named glycolysis intermediates and their enzymes**, and **all total ATP yield arithmetic**.
+  LO 3(f) and LO 3(h) rule both out, and together they are the largest saving in Book 5.
+- **The named ETC complexes and carriers**, and the **ATP synthase rotor mechanism**.
+- **Phosphofructokinase and the regulation of glycolysis**, the **shuttle systems**, the **eight named
+  Krebs intermediates** apart from oxaloacetate, and the **obligate and facultative anaerobe
+  vocabulary**.
+
+---
+
+## I. Open recall prompts (answer cold, then self-check)
 
 1. Give the three mitochondrial components and, for each, the function and the stage it hosts.
 2. State the property of the inner membrane that makes chemiosmosis possible, and why.
@@ -293,7 +282,7 @@ calculated from an excluded total, so give the reason rather than the ratio.
 
 ---
 
-## I. Errors in your notes, and what this chapter teaches that is not examined
+## J. Errors in your notes, do not encode these
 
 **Four printed errors. The first is the only one that can cost you marks.**
 
@@ -324,15 +313,3 @@ calculated from an excluded total, so give the reason rather than the ratio.
 cycle stay out of your answers. It says **lactate**, not lactic acid. And the claim on page 36 that
 ethanol's energy is **permanently unavailable** to yeast overstates it: keep the mark-bearing half,
 that **ethanol cannot be reconverted to pyruvate**.
-
-**Cut, and the syllabus says so in writing.** The **ten named glycolysis intermediates and their
-enzymes**, the **named ETC complexes and carriers**, the **ATP synthase rotor mechanism**, and **all
-total ATP yield arithmetic**. On zero hits, also cut **phosphofructokinase and the regulation of
-glycolysis**, the **shuttle systems**, the **eight named Krebs intermediates** apart from oxaloacetate,
-and the **obligate and facultative anaerobe vocabulary**.
-
-**Absent as words, examined anyway. Do not cut these.** **Substrate-level phosphorylation**, **proton
-gradient**, **proton motive force**, **reduced FAD**, **fermentation**, **respiratory poisons and
-uncouplers**, and **oxaloacetate as the regenerated acceptor** return zero or near-zero syllabus hits,
-and every one is carried by a broader clause. You cannot explain the small anaerobic yield without
-substrate-level phosphorylation, or chemiosmosis without the gradient.

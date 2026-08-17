@@ -5,12 +5,6 @@
 > answer templates. **Target after studying this: ~30%.** The other 70% comes from the extended question
 > drill.
 >
-> **Length note, since this sheet is the longest of the three at about 4,500 words.** It carries four
-> learning outcomes, and LO 2(g) alone is a six-step process plus three transfer mechanisms, each with
-> its own ordered steps, its own comparison table and its own set of rejected wordings. Cutting to 3,400
-> would mean deleting examinable steps, so the length is content rather than padding. Bolded density is
-> 49.5%, inside the usual band.
->
 > **Two things in this cluster were worth six marks on the official specimen**, at Paper 3 Question
 > 1(a)(i) to (iii): the prokaryote against eukaryote genome comparison in section C, and the
 > endosymbiosis evidence in section D. Neither is taught as a comparison in your chapter, and the word
@@ -18,18 +12,7 @@
 >
 > Source: HCI Core Idea 2, chapter 4.2 The Genetics of Bacteria. Chapter 4.2 is the cleanest chapter in
 > the corpus so far, with one genuine factual conflict in 27 pages.
->
-> **The outcomes this cluster answers, in the syllabus's own words:**
-> **1(a)** outline the cell theory with the understanding that cells are the smallest unit of life, all
-> cells come from pre-existing cells and living organisms are composed of cells.
-> **1(d)** describe the structure of a typical bacterial cell (small and unicellular, peptidoglycan cell
-> wall, circular DNA, 70S ribosomes and lack of membrane-bound organelles).
-> **2(d)** describe the structure and organisation of viral, prokaryotic and eukaryotic genomes
-> (including DNA/RNA, single-/double-stranded, number of nucleotides, packing of DNA,
-> linearity/circularity and presence/absence of introns), prokaryotic half.
-> **2(g)** outline the mechanism of asexual reproduction by binary fission in a typical prokaryote and
-> describe how transformation, transduction and conjugation (including the role of F plasmids but not
-> Hfr) give rise to variation in prokaryotic genomes.
+> Syllabus: 9477 LOs **1(a)**, **1(d)**, **2(d)** *(prokaryotic half)*, **2(g)**.
 
 ---
 
@@ -351,7 +334,25 @@ the gene in the first place**.
 
 ---
 
-## K. Open recall prompts (answer these cold, then self-check)
+## K. In your notes, but not examinable
+
+| Do not study | Why |
+|---|---|
+| **Gram staining in full**: Gram-positive against Gram-negative wall structure, teichoic acid, lipopolysaccharide, lipid A, endotoxin against exotoxin, the periplasmic space | No outcome behind any of it. LO 1(d) asks only for a **peptidoglycan cell wall** |
+| **The NAG and NAM chemistry** | Same. The word **peptidoglycan** is the whole requirement |
+| **Operons, including the lac and trp systems** | The only regulation outcome, LO 2(i), is restricted to **differential gene expression in eukaryotes** |
+| **Hfr** | LO 2(g) cuts it by name. **Read the F factor as the F plasmid and nothing else** |
+| **Restriction enzymes and cloning, and artificial transformation methods** | No outcome names them |
+| **Morphology vocabulary such as cocci and bacilli, and the capsule** | No outcome names them |
+
+**Do not over-cut.** Nucleoid, supercoiling, histone-like proteins, competent cells, naked DNA,
+homologous recombination, generalised and specialised transduction, sex pilus, mating bridge,
+horizontal gene transfer and the whole of the endosymbiosis evidence are all carried by a broader
+clause and stay in.
+
+---
+
+## L. Open recall prompts (answer these cold, then self-check)
 
 1. State the three statements of the cell theory in the outcome's own words.
 2. List the five features of a typical bacterial cell LO 1(d) names, then two further credited features.
@@ -373,7 +374,7 @@ the gene in the first place**.
 
 ---
 
-## L. Errors and gaps in your notes. Do not encode these.
+## M. Errors and gaps in your notes. Do not encode these.
 
 1. **The F factor is defined in a way that includes the state the syllabus excludes.** Page 25 says the F
    factor exists as a plasmid **or as a segment of DNA integrated into the bacterial chromosome**. A cell
@@ -395,19 +396,8 @@ the gene in the first place**.
    table on page 9 gives **0.2 to 2.0 µm in diameter**. LO 1(d) asks only that the cell is **small and
    unicellular**, so no number is needed.
 6. **The chapter promises sections 3.3 and 3.4 that do not exist**, on gene expression and operon
-   regulation. Nothing you need is missing: **operon** returns zero syllabus hits, and LO 2(i) is
-   restricted to **differential gene expression in eukaryotes**.
+   regulation. Nothing you need is missing: LO 2(i) is restricted to **differential gene expression in
+   eukaryotes**.
 7. **Generalised transduction is taught through a phage the chapter calls out of syllabus.** Page 20
    introduces it with T4 and a note that T4 is not in the syllabus. **Transduction is required by LO
    2(g) without qualification**, and the note is about T4's structure, not about the process.
-
-**Scope, so you know why this sheet skips four pages of your chapter.** Genuinely gone, with no outcome
-behind any of it: **Gram staining** in full, meaning **Gram-positive and Gram-negative wall structure**,
-**teichoic acid**, **lipopolysaccharide**, **lipid A**, **endotoxin against exotoxin** and the
-**periplasmic space**; the **NAG and NAM chemistry**; **operons** including the **lac** and **trp**
-systems; **Hfr**; **restriction enzymes** and cloning; **artificial transformation methods**;
-**morphology vocabulary** such as **cocci** and **bacilli**; and the **capsule**. Kept despite zero
-syllabus hits, because a broader clause carries them: **nucleoid**, **supercoiling**, **histone-like
-proteins**, **competent cells**, **naked DNA**, **homologous recombination**, **generalised and
-specialised transduction**, **sex pilus**, **mating bridge**, **horizontal gene transfer** and the whole
-of the **endosymbiosis** evidence.

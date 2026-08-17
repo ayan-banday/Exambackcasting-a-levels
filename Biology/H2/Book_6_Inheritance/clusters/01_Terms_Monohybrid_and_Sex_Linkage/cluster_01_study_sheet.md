@@ -14,21 +14,9 @@
 > **Wording matters.** Every bolded phrase is the notes' or a mark scheme's exact wording. Book 6
 > schemes reject near-synonyms and police notation, so encode these words.
 >
-> **Length, and why.** This sheet runs long for a Layer 1 and 2 cluster because it carries three whole
-> outcomes, the **seven-step layout every later cluster depends on**, and the two biggest concept
-> headings in the school corpus, **sex linkage and pedigree analysis**, which together are 246 of 1000
-> curated records. Cutting to length would have deleted examined content.
->
 > Source: HCI Core Idea 2 chapters **6.0 Inheritance I Overview** and **6.1 Inheritance I**, sections
-> 1 to 8. Syllabus: **9477 LOs 2(u), 2(v), 2(w)**, quoted below in full.
-
-**(u)** explain the terms: **locus, allele, dominant, recessive, codominant, homozygous,
-heterozygous, phenotype, genotype and linkage**
-
-**(v)** explain how **genes are inherited from one generation to the next via the germ cells or
-gametes**
-
-**(w)** explain how **genotype is linked to phenotype**
+> 1 to 8.
+> Syllabus: 9477 LOs 2(u), 2(v), 2(w).
 
 ---
 
@@ -327,7 +315,7 @@ up** and keep them in rotation until automatic.
 
 ---
 
-## I. Errors in your notes, and what this cluster cuts
+## I. Errors in your notes, do not encode these
 
 **Read the first one before you touch a pedigree question.** It sits on an examined distinction and
 the other three do not.
@@ -350,12 +338,3 @@ the other three do not.
 4. **Chapter 6.0 labels AA × aa a test cross.** A test cross is by definition against an individual of
    **unknown** genotype, so if you already know the parent is AA there is nothing to test. The row
    describes what you would see **if** the tested parent turned out to be homozygous.
-
-**What this cluster deliberately does not teach, with the reason.** **Monohybrid** returns zero
-syllabus hits, and 9477 only ever says **dihybrid crosses**. That is a warning rather than a cut:
-single-gene logic is the machinery of every two-gene problem, but **expect the exam to give you two
-genes**, with codominance or sex linkage combined with a second locus. **Mendel**, **segregation** and
-**independent assortment** all return zero hits, so the laws' content is required and the attribution
-is not. **Lethal**, **hemizygous**, **carrier**, **wild-type**, **true-breeding**, **pure-breeding**,
-**pedigree** and **Punnett square** are all absent from the syllabus as words while the biology behind
-every one is live. The syllabus names the method **genetic diagram**, and the square is one row of it.

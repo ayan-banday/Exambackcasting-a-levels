@@ -9,26 +9,9 @@
 > around, and it says **dihybrid crosses**. Everything Cluster 1 taught with one gene arrives here
 > with two.
 >
-> **The single biggest cut in the Book is made in section E, and you should know it now.** LO 2(aa)
-> states in its own brackets that **knowledge of the expected ratio for various types of epistasis is
-> not required**. Chapter 6.2 pages 15 and 16 give you a two-page table of seven modified ratios to
-> memorise. **Do not learn them.** Learn the three-move procedure in E4 that generates any of them,
-> including ratios that are in no table at all.
->
 > Source: HCI Core Idea 2 chapters **6.1 Inheritance I** sections 6 and 9, and **6.2 Inheritance II**
-> sections 1 and 2. Syllabus: **9477 LOs 2(x), 2(y), 2(z), 2(aa)**, quoted below in full.
-
-**(x)** use **genetic diagrams to solve problems in dihybrid crosses**, including those involving
-**codominance, multiple alleles, sex linkage, autosomal linkage and epistasis**
-
-**(y)** use **genetic diagrams to solve problems involving test crosses**
-
-**(z)** explain the meaning of the terms **linkage and crossing-over** and explain **the effect of
-linkage and crossing-over on the phenotypic ratios from dihybrid crosses**
-
-**(aa)** **describe the interaction between loci (epistasis) and predict phenotypic ratios in problems
-involving epistasis** *(knowledge of the expected ratio for various types of epistasis is not
-required; focus of this section is on problem solving)*
+> sections 1 and 2.
+> Syllabus: 9477 LOs 2(x), 2(y), 2(z), 2(aa).
 
 ---
 
@@ -255,7 +238,19 @@ the two sexes or between reciprocal crosses**, which points to **sex linkage**. 
 
 ---
 
-## G. Open recall prompts (answer these cold, then self-check)
+## G. In your notes, but not examinable
+
+- **The seven modified epistasis ratios** your notes tabulate. LO 2(aa) excludes them in its own
+  brackets, which makes this the strongest cut in the Book. E4's three-move procedure replaces them,
+  and it also handles ratios no table lists.
+- **Chromosome mapping in full**: linkage maps, map units, centimorgans, and deducing gene order.
+  Recognising linkage from data stays; converting it to a distance goes.
+- **Coupling** and **repulsion** lose their names and keep their meaning. **Mendel** is never named by
+  the syllabus, so the laws' content is required and the attribution is not.
+
+---
+
+## H. Open recall prompts (answer these cold, then self-check)
 
 **Attempt each aloud before looking anything up**, and keep them in rotation until automatic.
 
@@ -277,7 +272,7 @@ the two sexes or between reciprocal crosses**, which points to **sex linkage**. 
 
 ---
 
-## H. Errors in your notes, and what this cluster cuts
+## I. Errors in your notes, do not encode these
 
 1. **Chapter 6.2 page 9, the Fig. 6 caption inverts the mouse epistasis.** The caption says **the
    presence of genotype aa prevents any deposition of pigment and the mouse will be white**. The
@@ -299,13 +294,3 @@ the two sexes or between reciprocal crosses**, which points to **sex linkage**. 
 4. **Chapter 6.2 page 12's Fig. 7 caption describes ww as a non-functional inhibitor**, where the
    mechanism the chapter teaches everywhere else is that **ww produces no inhibitor at all**, which is a
    different thing. Page 14 also prints a genotypic class as **9 C\_P** for **9 C\_P\_**.
-
-**What this cluster deliberately does not teach, with the reason.** **The seven modified F2 ratios on
-pages 15 and 16 are cut**, by a stated syllabus exclusion rather than by a hit count, which makes it the
-strongest cut in the Book. Measured, **5.1% of the Book 6 corpus turns on recalling a modified ratio
-rather than deriving one**, and it is the largest avoidable time sink here. **Chromosome mapping in
-full** is cut, five pages and three breeding experiments, on nine zero-hit search terms. **Coupling** and
-**repulsion** lose their names and keep their meaning. **Mendel** is never named by the syllabus, so the
-laws' content is required and the attribution is not. **Recombinant** returns zero hits and the biology
-is fully live, because LO 2(z) requires the effect of crossing-over on ratios, which is exactly the
-parental and recombinant split.

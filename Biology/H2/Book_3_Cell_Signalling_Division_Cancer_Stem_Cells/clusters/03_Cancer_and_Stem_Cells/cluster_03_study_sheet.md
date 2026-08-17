@@ -12,52 +12,8 @@
 > **Do Cluster 2 first**, because cancer is the mitotic cell cycle losing its regulation. **Cluster 1
 > supplies the other half of ras**, which sits immediately downstream of a growth factor receptor.
 >
-> **On length:** this sheet runs long because it carries five learning outcomes across two chapters and
-> 58 pages. Cutting to the usual size would delete examinable wording.
->
 > Source: HCI chapters 3.3 Molecular Basis of Cancer and 3.4 Stem Cells.
-
-**The five outcomes, word for word from the 9477 syllabus.**
-
-2(p) identify the causative factors, including genetic, chemical carcinogens, ionising radiation and
-loss of immunity, which may increase the chances of cancerous growth.
-
-2(q) explain how the loss of function mutation of tumour suppressor genes, including p53, and gain in
-function mutation of proto-oncogenes, including ras, results in uncontrolled cell division.
-
-2(r) describe the development of cancer as a multi-step process that includes accumulation of
-mutations, angiogenesis and metastasis.
-
-1(t) describe the unique features of stem cells, including zygotic stem cells, embryonic stem cells and
-blood stem cells (lymphoid and myeloid), correctly using the terms: i totipotency (e.g. zygotic stem
-cells), ii pluripotency (e.g. embryonic stem cells), iii multipotency (e.g. lymphoid and myeloid stem
-cells).
-
-1(u) explain the normal functions of stem cells in a living organism, including embryonic stem cells
-and blood stem cells (lymphoid and myeloid).
-
----
-
-## What this cluster leaves out
-
-Nine terms your chapters teach return **zero hits** in the 9477 syllabus: **cyclin**, **CDK**, **MPF**,
-**apoptosis**, **telomerase**, **induced pluripotent stem cells**, **therapeutic cloning**, **SCNT**,
-**karyotype**.
-
-The checkpoint machinery dies under LO 2(o), which requires the knowledge that dysregulated checkpoints
-cause uncontrolled division and cancer but then adds that **details of the mechanism are not required**.
-Cyclins, Cdks and MPF are those details, so section 2.3 and figures 7a, 7b and 8 go. Telomerase dies
-separately, because LO 2(r) names only **accumulation of mutations, angiogenesis and metastasis**. Keep
-one line, that cancer cells reactivate telomerase and escape the replicative limit, and drop the rest.
-
-Two of these terms survive in one narrow place. **Apoptosis** and **Cdks** appear below inside p53's own
-mechanism, because LO 2(q) demands how loss of p53 function gives uncontrolled division and that route
-runs through both. Write them there; do not study either as a topic.
-
-**The stem-cell contamination is the one to watch. 34.8% of the curated stem-cell question bank tests
-iPSCs, SCNT, cloning and ethics, with no syllabus backing at all.** Chapter 3.4 section 1.4, pages 24 to
-27, is marked FYI by the school, and all four specimen papers ask nothing from it. Read it once so an
-unfamiliar stem cannot surprise you, then never drill it.
+> Syllabus: 9477 LOs 2(p), 2(q), 2(r), 1(t), 1(u).
 
 ---
 
@@ -438,7 +394,18 @@ pathways than a multipotent stem cell**.
 
 ---
 
-## O. Open recall prompts (answer cold, then self-check)
+## O. In your notes, but not examinable
+
+| Do not study | Why |
+|---|---|
+| **Cyclins, Cdks and MPF as a topic**, chapter 3.3 section 2.3 | LO 2(o) requires only that dysregulated checkpoints cause uncontrolled division and cancer, then states that details of the mechanism are not required. **Cdks and apoptosis still appear inside p53's own mechanism in section C**, because LO 2(q) needs them there. Write them there; do not study either as a topic |
+| **Telomerase**, beyond the one line already in section E | LO 2(r) names **accumulation of mutations, angiogenesis and metastasis** and nothing else |
+| **Karyotype** | No outcome names it |
+| **Induced pluripotent stem cells, therapeutic cloning, SCNT and the ethics debate**, chapter 3.4 section 1.4 | No outcome carries any of it. Read it once so an unfamiliar stem cannot surprise you, then never drill it |
+
+---
+
+## P. Open recall prompts (answer cold, then self-check)
 
 1. State what uncontrolled cell division means, in terms of two rates.
 2. Give the one-line definition of a tumour suppressor gene and of a proto-oncogene.
@@ -463,7 +430,7 @@ pathways than a multipotent stem cell**.
 
 ---
 
-## P. Errors in your notes, and one genuine ambiguity
+## Q. Errors in your notes, and one genuine ambiguity
 
 **Three errors. Learn the corrected version before you encode the printed one.**
 

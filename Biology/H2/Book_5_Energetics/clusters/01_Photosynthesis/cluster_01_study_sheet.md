@@ -9,32 +9,9 @@
 > **Wording matters here.** Every bolded phrase is the chapter's own wording or the school answer key's.
 > Book 5 schemes reject everyday verbs where technical ones belong.
 >
-> **The numbers in this chapter are traps rather than losses.** Chapter 5.1 states one ATP per two
-> protons, chapter 5.2 implies two further values for the same constant, and the syllabus excludes all
-> three in writing. Almost every numerical failure in Book 5 sits inside excluded content, so it costs
-> nothing provided you never quote it. **Give the process and the relationship. Quote a figure only
-> where the outcome asks for one**, which here means the Calvin cycle carbon counts and nothing else.
->
 > Source: HCI Core Idea 3 chapter 5.1 Energetics I: Photosynthesis, plus 5.1a, the school's own Concept
 > Check answer key, which is the closest thing to a mark scheme that exists in Book 5.
->
-> **Length note.** This runs past the usual 3,400 words because six outcomes are reproduced verbatim
-> below, which is 270 words on its own, and because LO 3(c) demands a full mechanism chain rather than a
-> definition. Nothing here is padding.
-
-**The six 9477 outcomes this cluster covers, verbatim:**
-
-> **3(a)** identify components of chloroplasts and mitochondria in drawings, photomicrographs and electronmicrographs
->
-> **3(b)** explain the absorption and action spectra of photosynthetic pigments
->
-> **3(c)** With reference to the chloroplast structure, describe and explain how light energy is harnessed and converted into chemical energy during the light-dependent reactions of photosynthesis (names of complexes in the ETC and detailed mechanism of action of ATP synthase are not required)
->
-> **3(d)** outline the three phases of the Calvin cycle in the light-independent reactions of photosynthesis in C3 plants: (i) CO2 fixation, (ii) PGA reduction, and (iii) ribulose bisphosphate (RuBP) regeneration, indicating the roles of rubisco, ATP and reduced NADP in these processes that ultimately allow synthesis of sugars (knowledge of details of the structure of intermediate compounds and the names of other enzymes is not required)
->
-> **3(e)** discuss limiting factors in photosynthesis and carry out investigations on the effect of limiting factors such as temperature, light intensity and carbon dioxide concentration on the rate of photosynthesis
->
-> **3(l)** outline chemiosmosis in photosynthesis and respiration (names of complexes in the ETC are not required)
+> Syllabus: 9477 LOs 3(a), 3(b), 3(c), 3(d), 3(e), 3(l).
 
 ---
 
@@ -282,7 +259,20 @@ of rubisco active sites**.
 
 ---
 
-## F. Open recall prompts (answer cold, then self-check)
+## F. In your notes, but not examinable
+
+The outcomes exclude these in writing, so the chapter teaches more than you need.
+
+- **Names of the ETC complexes and carriers**, and the **detailed mechanism of ATP synthase**.
+  Recognising ATP synthase on a diagram is still required.
+- **The structures of the Calvin cycle intermediates**, and **every enzyme except rubisco**. The
+  carbon counts survive, because the exclusion names structure.
+- **Leaf anatomy and plant tissue types**, the **structure of ATP** while keeping its roles, and
+  **photorespiration, C4 and CAM**, since LO 3(d) says C3 plants.
+
+---
+
+## G. Open recall prompts (answer cold, then self-check)
 
 1. Give the chloroplast's five structural features and, for each, the function it enables.
 2. State what the thylakoid's compartmentalisation makes possible, and why.
@@ -303,7 +293,7 @@ of rubisco active sites**.
 
 ---
 
-## G. Errors in your notes, and what this chapter teaches that is not examined
+## H. Errors in your notes, do not encode these
 
 **Five printed errors. Learn the corrected version.**
 
@@ -322,16 +312,3 @@ of rubisco active sites**.
 **One imprecision worth fixing.** Page 20 calls **P680 and P700 the two photosystems**; they are the
 **reaction-centre chlorophyll a molecules inside PSII and PSI**, which the same page states correctly
 two bullets earlier.
-
-**Cut, and the syllabus says so in writing.** The **named electron carriers**, the **detailed mechanism
-of ATP synthase**, the **structures of the Calvin cycle intermediates**, and **every enzyme except
-rubisco**. On zero hits, also cut **leaf anatomy and plant tissue types**, the **structure of ATP**
-while keeping its roles, the **electromagnetic spectrum**, **Calvin's lollipop experiment**, and
-**photorespiration, C4 and CAM as named topics**.
-
-**Absent as words, examined anyway. Do not cut these.** **Photolysis**, **photosystem**, **PSI**,
-**PSII**, **P680**, **P700**, **reaction centre**, **photophosphorylation**, **triose phosphate**,
-**proton gradient** and **compensation point** return zero syllabus hits and every one is carried by a
-broader clause in an outcome. Triose phosphate is the clearest case: the outcome demands the PGA
-reduction phase, and a phase has to have a product. The **carbon counts and ratios** survive too,
-because a carbon count is arithmetic and the exclusion names structure.

@@ -10,51 +10,7 @@
 > Encode those words, not your own paraphrase.
 >
 > Source: HCI Core Idea 3 chapter 3.1, Cell Signalling and Communication, 44 pages.
-> Syllabus: 9477 LOs 3(m), 3(n), 3(o), 3(p), reproduced below word for word.
->
-> **Length note: 3,850 words, above the usual 3,400 ceiling.** Four outcomes have to be carried here,
-> two receptor types each need a structure block and a step-by-step working principle, and LO 3(p) then
-> runs both hormones through them. Bolded density sits at 51%, matching Book 1, so the extra length is
-> content rather than padding.
-
-**The four outcomes, verbatim from the syllabus.** Candidates should be able to:
-
-**(m)** outline the main stages of cell signalling: i **ligand–receptor interaction**; ii **signal
-transduction (phosphorylation cascade and signal amplification)**; iii **cellular response (change in
-gene expression)**. (knowledge of intracellular receptors is not required)
-
-**(n)** explain the **roles and nature of second messengers (including cyclic AMP)**
-
-**(o)** explain the **roles of kinases and phosphatases in signal amplification**
-
-**(p)** outline how **insulin and glucagon regulate the concentration of blood glucose** through the
-respective **tyrosine kinase receptor and G-protein linked receptor**. (The outline should be limited
-to describing how the ligand induces a **conformational change in a membrane-bound receptor** to
-trigger downstream signalling pathways that elicit physiological changes in blood glucose
-concentration. Details of different second messengers and specific kinases activated in the pathway
-are not required.)
-
----
-
-## What the syllabus does not ask for
-
-Only about half of this 44-page chapter sits behind an outcome. Literal search of the syllabus returns
-**zero hits** for **homeostasis**, **negative feedback**, **set point** and **diabetes**. The school
-labels those sections BACKGROUND READING and Supplementary itself, so homeostatic control, the
-endocrine-gland tour and the Type 1 against Type 2 comparison are context for a stem, never recall.
-
-**Intracellular receptors are excluded in the wording of LO 3(m).** The chapter flags them, plus
-**ligand-gated ion channel** and **integrin receptors**, as out of syllabus on pages 8 and 10, then
-fills them in as worked rows in Concept Check 1. **Only two receptor types are examinable: the
-G-protein linked receptor and the receptor tyrosine kinase.**
-
-**156 of the 684 questions in the cell-signalling bank, 22.8%, test that excluded material**, so your
-notes and any past-paper pile overshoot badly here.
-
-One term to write out properly. The abbreviation **cAMP** never appears in the syllabus; it says
-**cyclic AMP**, once, in LO 3(n). That outcome names no other second messenger, so **calcium ions and
-IP3** are second examples of the same argument, while the PIP2 machinery and the calcium pump
-inventory are past it.
+> Syllabus: 9477 LOs 3(m), 3(n), 3(o), 3(p).
 
 ---
 
@@ -326,7 +282,18 @@ mobilises glucose into the blood.**
 
 ---
 
-## J. Open recall prompts, answer these cold
+## J. In your notes, but not examinable
+
+| Do not study | Why |
+|---|---|
+| **Homeostasis, negative feedback, set point, and the endocrine-gland tour** | No outcome names them. Context for a stem, never recall |
+| **Diabetes, and the Type 1 against Type 2 comparison** | Same. Read it once, do not encode it |
+| **Intracellular receptors, ligand-gated ion channels, integrin receptors** | LO 3(m) excludes intracellular receptors in its own wording. **Only the G-protein linked receptor and the receptor tyrosine kinase are examinable** |
+| **The PIP2 machinery and the calcium pump inventory** | LO 3(n) names cyclic AMP only. Calcium ions and IP3 are worth keeping as second examples of the same argument; the machinery behind them is not |
+
+---
+
+## K. Open recall prompts, answer these cold
 
 These are memorisation targets, so they stay as prompts. **Attempt each aloud before looking anything
 up**, and keep them in rotation.
@@ -348,7 +315,7 @@ up**, and keep them in rotation.
 
 ---
 
-## K. Errors in your notes, do not encode these
+## L. Errors in your notes, do not encode these
 
 Found by checking chapter 3.1 against the syllabus and against itself.
 
