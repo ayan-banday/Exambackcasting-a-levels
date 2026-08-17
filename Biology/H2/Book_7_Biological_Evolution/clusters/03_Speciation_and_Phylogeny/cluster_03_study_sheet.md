@@ -11,16 +11,7 @@
 > block was a **multiple sequence alignment**: rank six primates by relatedness, then explain the method.
 >
 > Source: HCI Core Idea 4, chapter 7.4 sections 4.1 to 4.4, and chapter 7.5 Phylogeny.
->
-> **Syllabus outcomes this cluster owns, verbatim from 9477 page 19.** Candidates should be able to:
-> **(h)** explain the biological concept of the species and its limitations · **(i)** define biological
-> classification as the organisation of species according to shared characteristics and describe how
-> evolutionary relationship is established · **(j)** explain how new species are formed with respect to
-> geographical isolation (allopatric speciation) and behavioural or physiological isolation within the
-> same geographical location (sympatric speciation) · **(k)** define phylogeny as the organisation of
-> species to show their evolutionary relationships · **(l)** explain the importance of the use of genome
-> sequences in reconstructing phylogenetic relationships and state the advantages of molecular methods,
-> including multiple sequence alignment (nucleotide and amino acid), in classifying organisms.
+> Syllabus: 9477 LOs (h), (i), (j), (k), (l).
 
 ---
 
@@ -164,7 +155,7 @@ relationship between species**. That clause is why LO 4(i) and LO 4(k) are separ
 **F2. Two terms needed to read a question.** **A character is any structural, chromosomal or molecular
 feature that distinguishes one group from another**, and **a taxon is a formal grouping of organisms at
 any given level**. The ranks run **domain, kingdom, phylum, class, order, family, genus, species**, each
-**more inclusive than the one below**. No outcome asks you to reproduce the hierarchy.
+**more inclusive than the one below**. Learn the ranks as vocabulary, not as a list to reproduce.
 
 ---
 
@@ -332,18 +323,3 @@ Attempt each aloud, cold, before checking anything.
 5. **The four-stage model is presented as general but is written entirely for the allopatric case**, with
    a geographical Stage 2 and a Stage 4 naming allopatric speciation. Learning it as the whole of LO 4(j)
    answers half the outcome.
-
-**Scope corrections, so you know why this sheet skips material your notes cover.**
-
-- **Adaptive radiation and mass extinction** return zero syllabus hits despite five pages of notes. LO 4(f)'s macroevolution half is the **link** to microevolution, taught in Cluster 2.
-- **Binomial nomenclature, the taxonomic hierarchy as content, and Linnaeus** all return zero. Learn the
-  ranks once as vocabulary, plus the italics and capitalisation conventions.
-- **The four non-biological species concepts** are marked for information by the school, and LO 4(h) says
-  **the** biological concept, singular. Read them once and move on.
-- **Autopolyploidy against allopolyploidy, colchicine and the bread wheat lineage** are four of the five
-  polyploidy pages, and **polyploid** returns zero syllabus hits. Section E3 is all that survives.
-- **Clade, synapomorphy, plesiomorphy, monophyletic, outgroup and cladistics** all return zero. The
-  biology is required by LO 4(i), so learn it under the plain English names, shared ancestral character
-  and shared derived character.
-- **The distance matrix formalism** is not required. Counting differences is; a symmetric matrix with a
-  zero diagonal is not.

@@ -7,37 +7,19 @@
 > **Do Cluster 1 first.** LO (b)'s own wording is effects of climate change *as a result of greenhouse
 > gas emissions*, so without the absorb-and-re-emit chain there is no cause to attach these to.
 >
-> This is the largest cluster in Book 8, covering chapters **8.3 and 8.4**, both about **65%
-> examinable**, across 49 printed pages. It runs longer than the other two sheets because it carries
-> **three whole outcomes plus half of a fourth**, and because **LO (b) alone is a closed list of eight
-> named effects** that each need their own chain. Cutting it to length would delete examined syllabus
-> content.
->
 > **Three Core Ideas run underneath it.** **Enzymes and temperature (CI 1 LO q)** is the whole mechanism
 > of §G, because LO (h) is the enzyme-optimum outcome in a climate costume. **Natural selection (CI 4
 > LOs a, b)** supplies the word **fitness**, which is how LO (f) defines stress. **Osmosis (CI 1 LO l)**
 > is how salinity and drought actually reach a plant.
 >
-> Two warnings about how this is tested. **52.6% of Book 8 questions are figure-led** and a quarter of
-> structured parts open with *with reference to* or *use the data*. A coral scheme sets the granularity:
-> **each point must include duration, coral coverage % and temperature in °C**, and **no mark is awarded
-> where the wrong graph or axis is read from**. Quote a value, its unit and its interval, then account
-> for it. Second, **LO (c) is nearly absent from the corpus and heavy on the specimen**, which spent a
-> whole Paper 1 stem and an 11-mark Paper 3 question on mangroves and sequestration.
+> **Most of this cluster is tested off a figure.** A coral scheme sets the granularity: **each point
+> must include duration, coral coverage % and temperature in °C**, and **no mark is awarded where the
+> wrong graph or axis is read from**. Quote a value, its unit and its interval, then account for it.
+> **LO (c) is nearly absent from the corpus and heavy on the specimen**, which spent a whole Paper 1
+> stem and an 11-mark Paper 3 question on mangroves and sequestration.
 >
 > Source: HCI Book 8 chapters 8.3 and 8.4. Syllabus: 9477 LOs (b), (c) and (f) in full, plus the first
 > of LO (h)'s two mechanisms. LO (h)'s *Aedes* clause and LO (i) are Cluster 3.
-
-> **(b)** explain the effects of climate change as a result of greenhouse gas emissions, including
-> melting of polar ice caps, rising sea levels, increase in frequency of extreme weather events, stress
-> on fresh water supplies, migration of fishes and insects, stress to coral reef, seagrass and mangrove
-> ecosystems, and release of greenhouse gases from frozen organic matter
->
-> **(c)** explain how mangrove ecosystems help to mitigate the impacts of climate change
->
-> **(f)** discuss the effects of increased environmental stress (including increased temperatures and
-> more extreme weather events) as a result of global climate change, on habitats, organisms, food chains
-> and niche occupation
 
 ---
 
@@ -237,7 +219,7 @@ repeat photography from **1948 to 2001** shows **alder, willow and dwarf birch e
 tundra**. The trailing clause creates the extinction risk, because **a mountaintop species has nowhere
 left to track to**.
 
-This heading is the most figure-led block in the entire Bio corpus, at 61%. Reciting the caribou case is
+This heading is tested off a figure more often than any other in Book 8. Reciting the caribou case is
 not what gets tested; reading a new mismatch off a new graph is.
 
 ---

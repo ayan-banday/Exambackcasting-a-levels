@@ -7,14 +7,6 @@
 > **Do Cluster 2 first.** §D here is the second half of LO (h), and its first half, the enzyme mechanism,
 > is taught there. The tropical-ectotherm argument in §B2 is the coral thermal margin reused.
 >
-> The two chapters here sit at opposite ends of the Book. **Chapter 8.5 is about 50% examinable**, the
-> worst ratio after chapter 8.1, and its problem is not off-syllabus content but that **two discuss
-> outcomes are buried inside general environmental-science exposition**. **Chapter 8.6 has the best
-> ratio in the Book at about 67%**, and it is the only chapter that **marks its own out-of-scope
-> content**. Both labels are correct: the **DENV genome, serotypes and gene counts** are tagged not in
-> the syllabus, and the **host immune response** is tagged **Extension Topic A**. **Epidemic, outbreak,
-> epidemiology and virulence** belong there too. Skip all of it here.
->
 > **Two Core Ideas run underneath.** **Variation, natural selection and genetic diversity (CI 4)** is
 > what makes LO (g) a biology outcome rather than a conservation essay. **Extension Topic A's
 > transmission cycle** meets LO (i) at dengue, and the specimen's P1 Q30 sits on that boundary.
@@ -26,20 +18,6 @@
 >
 > Source: HCI Book 8 chapters 8.5 and 8.6. Syllabus: 9477 LOs (e), (g) and (i) in full, plus the *Aedes
 > aegypti* clause of LO (h).
-
-> **(e)** discuss the consequences to the sustainable food supply of increased environmental stress
-> resulting from climate change, including the effects on plants and animals of increased temperature
-> and more extreme weather events
->
-> **(g)** discuss how climate change affects the rich biodiversity of the tropics, including the
-> potential loss of this rich reservoir for biomedicines and genetic diversity for food
->
-> **(h)** explain how temperature changes impact insects as a result of increased temperature leading to
-> increased metabolism and the narrow temperature tolerance of insects, including how temperature affects
-> the life cycle of *Aedes aegypti* as an example of a typical mosquito disease vector
->
-> **(i)** explain how global warming affects the spread of mosquito-borne infectious diseases, including
-> malaria and dengue, beyond the tropics.
 
 ---
 
@@ -160,8 +138,8 @@ in the tropics**, converting a mechanism into a food-security consequence with a
 **C7. Bluetongue is LO (i)'s argument rehearsed on another vector.** ***Culicoides* midges are sensitive
 to temperature and water**; warming **extended the vector's range northward**; and that brought
 **longer seasonal vector activity**, which **increased winter virus persistence**, so **BTV-8 spread
-across northern and western Europe** in 2006 and 2007. Keep the mechanism; the serotypes, restriction
-zones and reassortment are virology with **zero syllabus hits**.
+across northern and western Europe** in 2006 and 2007. Keep the mechanism, not the virology of
+serotypes, restriction zones and reassortment.
 
 ---
 
@@ -309,10 +287,9 @@ trapping and habitat**. Saying trees are good for the environment has not answer
    built on.
 7. **Chapter 8.1's master outline gives section 5.2.1 the title of section 4.2.1.** Chapter 8.5's own
    heading reads **Impact of Climate Change on Agro-Ecosystems**, and 8.5 is correct.
-8. **The ethics sentence on page 106 has no outcome behind it** and is cut, along with the rest of this
-   Book's ethics and advocacy framing. The next sentence supplies the examinable version: **losing
-   biodiversity is a problem for human society because of the many tangible, pragmatic ways that
-   biodiversity benefits people.** That sentence is LO (g).
+8. **The ethics sentence on page 106 is not the framing LO (g) wants.** The next sentence supplies the
+   version to answer with: **losing biodiversity is a problem for human society because of the many
+   tangible, pragmatic ways that biodiversity benefits people.** That sentence is LO (g).
 
 **And the structural gap.** **Four more named examples in chapter 8.5 are withheld to Google Classroom**
 and are not in the printed notes: characteristics of the tropics, further animal biomedicines, and

@@ -6,35 +6,18 @@
 > *"I've studied this, I could rough out an answer"*, not *"I can answer this well."* The other 70%
 > comes from the extended question drill.
 >
-> Book 8 is an extension topic, and that changes what a question is made of. The syllabus asks for
+> **Book 8 is an extension topic, and that changes what a question is made of.** The syllabus asks for
 > **assimilation of the Core Ideas** extended to real-world challenges, and the specimen took it
-> literally: **8 of the 24 structured Book 8 marks are not climate content at all.** Specimen P2 Q8(a)
-> put **5 of 13 marks into allopatric speciation** and Specimen P3 Q2(a) put **3 marks into Book 1
-> biomolecules**. Every section below names the Core Idea it runs on, because that is where the marks are.
+> literally: **8 of the 24 structured Book 8 marks are not climate content at all.** Every section below
+> names the Core Idea it runs on, because that is where the marks are.
 >
-> Scope, stated plainly. **Only about 70 of Book 8's 133 pages are examinable, roughly 53%.** Chapter
-> 8.1 is the worst of it: **26 printed pages carrying about 3 examinable ones, 12%**. Give it twenty
-> minutes and never go back. What survives is the **greenhouse mechanism on pages 22 to 24**, LO (f)'s
-> four definitions on page 15, and the tropical rainforest bullets on page 16. Chapter 8.2 is the
-> **densest chapter in the Book at about 70% examinable**, and it carries the entire 13-mark specimen
-> Paper 2 question plus the Paper 1 arithmetic question.
->
-> **Do not drill this Book off prelim papers alone.** The three concept headings covering **LOs (c),
-> (d) and (g)** hold **7.2% of the 517-question corpus**, and those same outcomes carried about **67% of
-> the specimen's Book 8 marks**. Prelim setters wrote Book 8 as effects-of-climate-change data
-> questions; Cambridge did the opposite. **Weight (c), (d) and (g) far above what the corpus suggests.**
+> **Do not drill this Book off prelim papers alone.** Prelim setters wrote Book 8 as
+> effects-of-climate-change data questions; Cambridge did the opposite, putting about **67% of the
+> specimen's Book 8 marks** on **LOs (c), (d) and (g)**. Weight those three far above what the corpus
+> suggests.
 >
 > Source: HCI Book 8 chapters 8.1 (pages 22 to 24 only) and 8.2. Syllabus: 9477 Extension Topic B
-> LOs (a) and (d), reproduced word for word here.
-
-> **(a)** identify and explain the human activities over the last few centuries that have contributed to
-> climate change through accumulation of greenhouse gases **(limited to CO2 and methane)**, including
-> burning of fossil fuels linked to increasing energy usage, clearing of forests and food choices
-> (increasing consumption of meat)
->
-> **(d)** explain the **relative differences** between the carbon footprints of a range of anthropogenic
-> activities, including deforestation, energy production (including fossil fuels, hydroelectric power,
-> nuclear power, solar power, wind power and bioethanol) and food production (animal- and plant-based)
+> LOs (a) and (d).
 
 ---
 
@@ -58,12 +41,10 @@ average surface temperature would sit well below freezing. **As greenhouse gas c
 natural effect is enhanced, like a thicker blanket, so surface temperatures rise.** The gases named are
 **carbon dioxide, methane, nitrous oxide and water vapour**.
 
-**A4. Almost nothing else in chapter 8.1 is examinable, and the syllabus proves it.** **Albedo, biome,
-weather, climate system, endemic species, trophic level, food web, El Niño, ENSO and permafrost all
-return zero syllabus hits** in every spelling. Albedo matters only as the driver of a **feedback loop**,
-which Cluster 2 teaches. **Natural causes of climate change carry no outcome at all**, because LO (a)
-is explicitly about **anthropogenic** activities, and page 25 itself says orbital change is **not
-thought to play any significant role on the timescales relevant to modern climate change**.
+**A4. LO (a) is explicitly about anthropogenic activities.** Natural drivers of climate change, meaning
+orbital cycles and El Niño, are not what this outcome asks for: **orbital change is not thought to play
+any significant role on the timescales relevant to modern climate change**. Albedo matters here only as
+the driver of a **feedback loop**, which Cluster 2 teaches.
 
 ---
 
@@ -253,7 +234,15 @@ sink-removal argument in §D2 are two different marks.
 
 ---
 
-## G. Open recall prompts (answer these cold, then self-check)
+## G. In your notes, but not examinable
+
+Roughly half of Book 8's printed pages are context rather than examinable biology, and chapter 8.1 is
+almost all of the excess. What survives from it is the **greenhouse mechanism**, LO (f)'s four
+definitions and the tropical rainforest bullets. Chapter 8.2 is where the marks are.
+
+---
+
+## H. Open recall prompts (answer these cold, then self-check)
 
 1. Give the greenhouse mechanism as a four-step causal chain, starting from incoming solar radiation, and state what the gases do to longwave radiation using a verb that is not *retain*.
 2. Name the three human activities LO (a) lists, and the gas each one ends in.
@@ -272,7 +261,7 @@ sink-removal argument in §D2 are two different marks.
 
 ---
 
-## H. Errors in your notes, and the corrected version to learn
+## I. Errors in your notes, and the corrected version to learn
 
 **One of these sits directly on an examined mechanism.**
 

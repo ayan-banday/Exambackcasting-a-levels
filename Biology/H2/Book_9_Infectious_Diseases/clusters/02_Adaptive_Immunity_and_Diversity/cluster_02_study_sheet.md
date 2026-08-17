@@ -8,30 +8,9 @@
 > contents are assumed here, and one error below is only visible if you know where hydrogen peroxide
 > actually lives.
 >
-> **Length note.** This runs slightly long because it carries **four of the eleven outcomes across 56
-> pages of notes**, including LO (c) and LO (d), which are two separate closed lists that each need a
-> structure statement and a function statement per item. It also carries **three of the six errors in
-> the Book that sit directly on an examined distinction**, and in each case the wrong version is the one
-> printed in the memorable place.
->
 > Source: HCI Book 9 chapters **9.3 Adaptive Immunity** and **9.4 Antigen Recognition, Antibody
-> Structure and Diversity**.
-
-**Syllabus outcomes this sheet owns.** Reproduced word for word from the 9477 syllabus, pp.19 to 20.
-
-**(a)** describe the specific (adaptive) immune system, including active, passive, naturally acquired and
-artificially acquired immunity, and the non-specific (innate) immune system
-
-**(b)** outline the roles of B lymphocytes, T lymphocytes, antigen-presenting cells and memory cells in
-specific primary and secondary immune responses
-
-**(c)** explain the relationship of the molecular structure of antibodies to their functions, using
-immunoglobulin G, IgG, as an example
-
-**(d)** explain how somatic recombination, hyper-mutation and class switching result in millions of
-different antibody molecules
-
-Cluster 1 delivered LO (a)'s innate half. This sheet delivers its adaptive half and its four-way grid.
+> Structure and Diversity**. Syllabus: 9477 LOs (a), (b), (c), (d). Cluster 1 delivered LO (a)'s innate
+> half; this sheet delivers its adaptive half and its four-way grid.
 
 ---
 
@@ -61,7 +40,7 @@ solution, so it can neutralise a virus in the blood but never one already inside
 B lymphocytes mature there**; the **precursor T lymphocytes migrate to the thymus** and mature there.
 Mature cells that have not yet met antigen are **naive cells**, which express receptors for antigens but
 **do not perform the functions required to eliminate antigens**, and which **die by apoptosis if not
-activated**. The lymphatic anatomy tour has no outcome; the bone marrow and thymus line does.
+activated**. **Bone marrow and thymus** are the two sites to know here.
 
 ---
 
@@ -253,8 +232,8 @@ the antibody**, and a scheme records candidates describing it as something the a
 about changed specificity.
 
 **One filing correction.** Book 2's question bank files antibody gene rearrangement under Control of Gene
-Expression. The syllabus does not: it returns **somatic recombination once, hyper-mutation once and class
-switching once**, and **all three hits are in Extension Topic A LO (d)**. **Drill them here.**
+Expression. **Somatic recombination, hyper-mutation and class switching all belong to Extension Topic A
+LO (d)**, so **drill them here.**
 
 ---
 
@@ -362,8 +341,3 @@ is in §C3 above. And the **antibody repertoire is given five different sizes**,
 **Terminology to fix on.** The Book calls one cell **cytotoxic T cell, TC cell, effector CD8+ T cell and
 killer T cell**. **Write cytotoxic T lymphocyte**, because killer T is ambiguous beside **natural killer
 cell**.
-
-**Cut entirely, no outcome reaches any of it.** **RAG-1, RAG-2, TdT, the V(D)J segment counts and the
-junctional arithmetic**; the **pro-B and pre-B stages and the surrogate light chain**; the **kappa and
-lambda distinction**; the **IgG and IgA subclasses**; the **antigen receptor signalling cascade**, which
-is Book 3; and **immunodeficiency and hypersensitivity classification**.

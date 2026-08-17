@@ -5,26 +5,14 @@
 > studying this: ~30%**, meaning *I have studied this, I could rough out an answer*. The other 70% comes
 > from the question drill.
 >
-> **One deliberate exception to the no-examples rule.** LO 4(n) names the **Hardy-Weinberg equation**, so
-> the equations appear in section F. No worked calculation; that belongs in the drill.
->
 > **Do Cluster 1 first.** Natural selection is one of the three processes that change allele frequencies,
 > and this sheet assumes its definition and its two riders.
 >
-> **Your question bank holds 5 Hardy-Weinberg records out of 1650, because it predates 9477.** The
-> syllabus gives the model **two of the fourteen outcomes**, prints the equation in its Mathematical
-> Requirements, and put it on Specimen Paper 1. Learn it from this sheet.
+> **The Hardy-Weinberg equations in section F are the one exception to the no-examples rule**, because
+> LO 4(n) names the equation outright. No worked calculation; that belongs in the drill.
 >
 > Source: HCI Core Idea 4, chapter 7.3 Microevolution (sections 3.1 to 3.5), plus chapter 7.4 section
-> 4.5.3 and chapter 7.1 section 1.
->
-> **Syllabus outcomes this cluster owns, verbatim from 9477 page 19.** Candidates should be able to:
-> **(d)** explain why the population is the smallest unit that can evolve · **(e)** explain how genetic
-> variation (including harmful recessive alleles) may be preserved in a natural population · **(f)**
-> define biological evolution as descent with modification and explain the link between micro-evolution
-> and macro-evolution · **(m)** explain the Hardy-Weinberg model and the conditions/assumptions it
-> operates in · **(n)** calculate the frequencies of alleles, genotypes and phenotypes in a population
-> for a gene with two alleles, using the Hardy-Weinberg equation.
+> 4.5.3 and chapter 7.1 section 1. Syllabus: 9477 LOs (d), (e), (f), (m), (n).
 
 ---
 
@@ -321,12 +309,3 @@ Attempt each aloud, cold, before checking anything.
    every time.
 3. **Chapter 7.5 page 106 drops the label (n)**, running the calculation outcome on as an unlabelled
    continuation of (m). The calculation is an outcome in its own right, not a rider on (m).
-
-**Two scope corrections.**
-
-- **Genetic drift, founder effect, bottleneck effect, gene pool, allele frequency, gene flow,
-  heterozygote advantage, balanced polymorphism and diploidy all return zero hits in the 9477 syllabus.**
-  None is cut, because LO 4(d) and LO 4(e) carry the biology under broader wording. Learn the processes,
-  and do not expect the labels in a stem.
-- **The syllabus prints Hardy-Weinberg with an en dash**, so a hyphen or space search returns nothing.
-  That is a typographic artefact, not a scope finding. Both outcomes are live.

@@ -17,21 +17,8 @@
 > recall answer available**. Learn the causal chains, not a vocabulary list.
 >
 > Source: HCI Book 9 chapters **9.0 Cover Pages and Contents**, **9.1 Definitions and Overview**,
-> **9.2 Innate Immunity**.
-
-**Syllabus outcome this sheet owns.** Reproduced word for word from the 9477 syllabus, pp.19 to 20.
-
-**(a)** describe the specific (adaptive) immune system, including active, passive, naturally acquired
-and artificially acquired immunity, and **the non-specific (innate) immune system**
-
-LO (a) is one outcome covering both systems. **This sheet delivers its innate half.** Cluster 2 delivers
-the adaptive half and the four-way immunity grid.
-
-**A scope note before you start.** Search the 9477 syllabus for **phagocytosis, macrophage, neutrophil,
-inflammation, interferon, complement or natural killer cell** and every one returns **zero hits**. They
-are all carried by five words in LO (a), **the non-specific (innate) immune system**. The biology is
-fully examinable; the label is not guaranteed to be handed to you in the stem. Learn the processes and
-the cell names, because the mark schemes demand them even though the syllabus does not print them.
+> **9.2 Innate Immunity**. Syllabus: 9477 LO (a), whose innate half this sheet delivers. Cluster 2
+> delivers the adaptive half and the four-way immunity grid.
 
 ---
 
@@ -267,7 +254,18 @@ That sentence is usually the mark separating a full comparison from a list.
 
 ---
 
-## I. Open recall prompts (answer these cold, then self-check)
+## I. In your notes, but not examinable
+
+- **Immune pathology**: autoimmunity, allergy, hypersensitivity, the immunodeficiency classification.
+- **Blood counts, normal ranges and the formed-elements table.** Stem material for a data question only.
+- **Lymphatic system anatomy**: adenoids, tonsils, Peyer's patches, the thoracic duct. **Bone marrow and
+  thymus survive**, as the sites where B and T cells mature.
+- **The cancer bridge** opening the three major functions list.
+- **Neutrophil half-life and maturation times.** The two figures printed disagree, and neither is examinable.
+
+---
+
+## J. Open recall prompts (answer these cold, then self-check)
 
 These are memorisation targets, so they stay as prompts. **Attempt each aloud before looking anything
 up**, and keep them in rotation until automatic.
@@ -289,7 +287,7 @@ up**, and keep them in rotation until automatic.
 
 ---
 
-## J. Errors and scope corrections in your notes
+## K. Errors in your notes, and the corrected versions
 
 **Four errors, learn the corrected version.**
 
@@ -316,14 +314,3 @@ headed **LEARNING OUTCOMES FOR SECTION 1 TO SECTION 4**, and its **(a)** and **(
 9744-era wordings**. That (a) reads **active and passive, natural and acquired immunity**, which makes
 natural and acquired look like the opposed pair. They are not. **The current (a) is a two-by-two grid of
 active or passive against naturally or artificially acquired.** **Cross out the Section 1 to 4 block.**
-
-**Cut entirely, because no outcome reaches any of it.**
-
-- **Immune pathology.** Autoimmunity, allergy, hypersensitivity and the immunodeficiency classification.
-  **Type 1 diabetes** appears as the autoimmunity example, and **diabetes returns zero syllabus hits**.
-- **Blood counts, normal ranges and the formed-elements table.** Stem material for a data question only.
-- **Lymphatic system anatomy.** Adenoids, tonsils, Peyer's patches, the thoracic duct. **Bone marrow and
-  thymus survive**, as the sites where B and T cells mature.
-- **The cancer bridge** opening the three major functions list. Read once, build no answer on it.
-- **Neutrophil numbers.** A **half-life of approximately 7 hours** sits beside a caption saying they
-  **require about 2 weeks to mature**. Different quantities, neither examinable.

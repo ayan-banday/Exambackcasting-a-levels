@@ -9,14 +9,7 @@
 > Book 7 mark schemes reject near-synonyms.
 >
 > Source: HCI Core Idea 4, chapter 7.2 Theories of Evolution, and chapter 7.3 sections 3.3 and 3.4.1.
->
-> **Syllabus outcomes this cluster owns, verbatim from 9477 page 19.** Candidates should be able to:
-> **(a)** explain why variation (as a result of mutation, meiosis and sexual reproduction) is important
-> in natural selection · **(b)** explain, with examples, how environmental factors act as forces of
-> natural selection · **(c)** explain the role of natural selection in evolution · **(g)** explain how
-> evidence based on homologies identified in biochemical data (molecular homologies) and the fossil
-> record (anatomical homologies), together with biogeography (supported by Wallace's findings),
-> corroborate Darwin's theory of evolution.
+> Syllabus: 9477 LOs (a), (b), (c), (g).
 
 ---
 
@@ -322,13 +315,3 @@ Attempt each aloud, cold, before checking anything, and keep them in rotation un
 4. **The marsupial and placental passage on page 34 is spliced from a different example** and refers to
    *these two mole lineages* with no antecedent. Learn the **convergent evolution** definition printed
    beneath it and ignore the paragraph above.
-
-**Three scope corrections, so you know why this sheet skips material your notes cover.**
-
-- **Vestigial structures and early embryonic development** are both marked self-directed by the school
-  and neither appears in the 9477 syllabus. LO 4(g) names **biochemical data and the fossil record**
-  only. Read them once and do not drill them.
-- **The fitness coefficient**, giving fitness values between 0 and 1 and the selection coefficient s,
-  has no outcome behind it. The concept of fitness matters; the arithmetic does not.
-- **Coevolution, sexual selection and artificial selection** return zero syllabus hits as named
-  mechanisms. Artificial selection survives only as a stem context under LO 4(b).

@@ -7,43 +7,13 @@
 > **Do Clusters 1 and 2 first.** The tuberculosis answer is the phagocytosis sequence from Cluster 1 with
 > one step blocked, and the HIV answer is the helper T lymphocyte's job from Cluster 2 removed.
 >
-> **Length note, because this sheet is roughly 4,950 words against a normal 3,400.** It carries **seven
-> of the eleven outcomes**, across three chapters and 60 printed pages, and each of LO (h) and LO (i) is
-> a closed plural list, **three transmission modes** and **four antibiotic modes**, that has to be
-> delivered item by item. On top of that, **two of the seven outcomes are taught nowhere in your notes**,
-> so sections G and H are built from the syllabus rather than summarised from a chapter. Cutting to
-> length here would mean deleting examined syllabus wording, which is the wrong trade. **Bolded density
-> is inside the normal band**, so the length is content and not padding.
+> **Note the plurals in (h) and (i).** Your notes print **mode** where the syllabus prints **modes**, both
+> times. There are **three modes of transmission** and **four modes of antibiotic action**.
 >
 > Source: HCI Book 9 chapters **9.5 Viral Infections in Humans**, **9.6 Bacterial Infections and
-> Treatment**, **9.7 Vaccination**, plus the **9477 syllabus** for LOs (j) and (k).
-
-**Syllabus outcomes this sheet owns.** Reproduced word for word from the 9477 syllabus, pp.19 to 20.
-
-**(e)** discuss how vaccination can control disease (including the eradication of smallpox), limited to
-vaccination stimulates immunity without causing the disease and vaccination of a high enough proportion
-of the population can break the disease transmission cycle
-
-**(f)** discuss the benefits and risks of vaccination
-
-**(g)** explain how viruses, including influenza virus and HIV, cause diseases in humans through the
-disruption of host tissue and functions (including HIV and helper T cells, influenza virus and epithelial
-cells of the respiratory tract)
-
-**(h)** explain the modes of transmission and infection of bacterial pathogens, using Mycobacterium
-tuberculosis as an example
-
-**(i)** describe the modes of action of antibiotics, including penicillin, on bacteria
-
-**(j)** explain the meaning of the basic reproduction number, R0, as an indicator of the transmissibility
-(contagiousness) of infectious agents, and how R0 can be used to predict the progress of a disease
-outbreak
-
-**(k)** outline the terms (i) outbreak, (ii) epidemic, and (iii) pandemic, that are used to describe the
-spread of an infectious disease such as influenza.
-
-**Note the plurals in (h) and (i).** Your notes print **mode** where the syllabus prints **modes**, both
-times. There are **three modes of transmission** and **four modes of antibiotic action**.
+> Treatment**, **9.7 Vaccination**, plus the **9477 syllabus** for LOs (j) and (k), which your notes
+> never cover, so sections G and H are built from the syllabus rather than from a chapter.
+> Syllabus: 9477 LOs (e), (f), (g), (h), (i), (j), (k).
 
 ---
 
@@ -290,7 +260,7 @@ because **only humans can be infected**, so there is **no animal reservoir** fro
 | **Inactivated (killed)** | **microbe killed with chemicals, heat or radiation** | **more stable and safer**; no refrigeration needed | **weaker response**, so **booster doses** are required |
 | **Toxoid** | used **when a bacterial toxin is the main cause of illness**; **inactivated with formalin** so it is **no longer toxic but still stimulates a response** | targets the actual cause of damage | protects against the toxin, not colonisation |
 
-**Extract, recombinant and DNA vaccines have no outcome behind them.** Skip them.
+**These three are the types to learn**, and between them they carry the whole of LO (f)'s argument.
 
 **F6. LO (f), benefits and risks, and the command word is discuss.**
 
@@ -310,10 +280,9 @@ judgement caps the answer at one**. Weigh both, then commit.
 
 ## G. R0, the basic reproduction number
 
-**Your notes contain no R0 content at all.** The strings **R0**, **basic reproduction number**,
-**transmissibility** and **contagiousness** return **zero hits across all 139 pages**, even though the
-cover page promises epidemiology. **Specimen Paper 1 Q30 is an R0 question.** Everything below is built
-from the syllabus and standard epidemiology, tagged accordingly.
+**Your notes contain no R0 content at all**, so everything below is built from the syllabus and standard
+epidemiology, tagged `[INFERRED]` accordingly. **Specimen Paper 1 Q30 is an R0 question**, so this
+section is not optional.
 
 **G1. The definition.** `[INFERRED]` **R0 is the mean number of secondary cases produced by one infected
 individual introduced into a wholly susceptible population.** Three parts of that carry the meaning: it is
@@ -402,7 +371,16 @@ generating that new subtype is **antigenic shift and drift**, which is **Book 4*
 
 ---
 
-## I. Open recall prompts (answer cold, then self-check)
+## I. In your notes, but not examinable
+
+- **Antibiotic resistance mechanisms.** Resistance arises and spreads under **Core Idea 2 LO 2(g)**, in
+  Book 4. **β-lactamase stays**, as part of penicillin's mode of action.
+- **Extract, recombinant and DNA vaccines.** **Live attenuated, inactivated and toxoid** carry the whole
+  of LO (f)'s argument.
+
+---
+
+## J. Open recall prompts (answer cold, then self-check)
 
 1. State the rule dividing Book 4 from Book 9 on viruses and bacteria.
 2. Explain how neuraminidase lets influenza defeat the first line of defence.
@@ -429,14 +407,14 @@ generating that new subtype is **antigenic shift and drift**, which is **Book 4*
 
 ---
 
-## J. Errors in your notes, and what to encode instead
+## K. Errors in your notes, and what to encode instead
 
 **Two sit directly on an examined distinction.**
 
 1. **The smallpox and cowpox virus names are swapped on printed page 118**, which calls cowpox **Variola
    minor** and smallpox a type of **Vaccinia virus**. Page 126 is correct: **variola causes smallpox;
    vaccinia is the cowpox and vaccine virus.** LO (e) names smallpox eradication explicitly, so this
-   costs a mark directly. That section is also **marked (FYI) by the school**, so skip it entirely.
+   costs a mark directly.
 2. **The penicillin figure names the wrong enzyme.** Printed page 112 says penicillin blocks the
    **glycoprotein peptidases**; page 111 correctly says **transpeptidases**. There is no enzyme called a
    glycoprotein peptidase. A scheme separately **rejects peptidyl transferase**, a third wrong name which
@@ -464,16 +442,3 @@ generating that new subtype is **antigenic shift and drift**, which is **Book 4*
 **Two naming disciplines the schemes enforce.** Write ***Mycobacterium tuberculosis*** in full and
 correctly, because a scheme states **spelling must be correct** and **rejects the answer bacteria**. And
 write **HIV**, never HIV virus, because the V already stands for virus.
-
-**Cut entirely, no outcome reaches any of it.**
-
-- **Antibiotic resistance mechanisms.** Resistance arises and spreads under **Core Idea 2 LO 2(g)**, in
-  Book 4. **β-lactamase stays**, as part of penicillin's mode of action.
-- **The bacterial growth curve, minimum inhibitory concentration and the disk-diffusion test as recall.**
-  Four pages with **no content outcome**. They survive as **Paper 4 practical method** for October.
-- **The history of immunisation**, marked **(FYI)** by the school, and containing error 1 above.
-- **Extract, recombinant and DNA vaccines.** Three lines each, no advantages, no disadvantages, no outcome.
-- **The WHO eradication programme operationally.** LO (e) is **limited to** two clauses, so the **three
-  eradicability properties survive** and the **1966 to 1980 timeline does not**.
-- **Vaccine ethics, hesitancy and mandate debates.** LO (f) asks for a **scientific and public-health
-  weighing**, and **bioethics is dropped from all Bio material**.
