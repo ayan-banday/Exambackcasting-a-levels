@@ -3,9 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cluster 04 GAP DRILL: all of Book 2</title>
 <style>
-:root{--bg:#14161a;--card-bg:#1c1f26;--border:#2f343d;--text:#e8eaed;--muted:#9aa3b0;--blue:#6ea8fe;
---blue-soft:#1b2432;--amber:#e0a13a;--green:#4ade80;--green-soft:#16261d;--cover:#262b34;
---purple:#c4a7fd;--purple-soft:#221c33;--red:#f87171;--red-soft:#2a1a1a}
+:root{--bg:#ffffff;--card-bg:#fafafa;--border:#e2e5ea;--text:#16181d;--muted:#5b6472;--blue:#1d4ed8;--blue-soft:#eef4ff;--amber:#a35a00;--green:#047857;--green-soft:#ecfdf5;--cover:#f1f3f6;--purple:#6d28d9;--purple-soft:#f5f3ff;--red:#b91c1c;--red-soft:#fef2f2;--btn:#f1f3f6;--btn-hover:#e2e5ea;--chip-bg:#fff3d1;--chip-fg:#8a5a00;--th-bg:#f1f3f6;--quote-bg:#fffbeb;--code-bg:#f1f3f6;--fig-bg:#fafafa;--dash:#c4cad3;--conf-b:#3f4855}
 .mcq{margin:10px 0 12px;padding:2px 0}
 .opt{display:flex;gap:10px;margin:6px 0;align-items:baseline}
 .optl{flex:0 0 1.6em;font-weight:700;color:var(--amber);font-family:-apple-system,sans-serif}
@@ -27,9 +25,9 @@ padding:14px 18px;border-radius:6px;margin:0 0 26px;font-size:.9em}
 .los tr:last-child td{border-bottom:none}
 .controls{position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:100;
 border-bottom:1px solid var(--border);margin-bottom:18px;display:flex;gap:10px;flex-wrap:wrap}
-.controls button{background:#232830;border:1px solid var(--border);padding:6px 14px;border-radius:5px;
+.controls button{background:var(--btn);border:1px solid var(--border);padding:6px 14px;border-radius:5px;
 cursor:pointer;font-size:.85em;font-weight:500}
-.controls button:hover{background:#2f343d}
+.controls button:hover{background:var(--btn-hover)}
 .toc{background:var(--card-bg);border:1px solid var(--border);padding:12px 20px;border-radius:6px;
 margin-bottom:26px;font-size:.9em}
 .toc a{color:var(--blue);text-decoration:none;margin-right:12px;line-height:2}
@@ -47,27 +45,27 @@ margin-bottom:6px;color:var(--muted)}
 .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:6px;display:flex;
 align-items:center;justify-content:center;cursor:pointer}
 .answer-overlay.hidden{display:none}
-.reveal-btn{background:#232830;border:1px solid var(--border);padding:7px 18px;border-radius:5px;
+.reveal-btn{background:var(--btn);border:1px solid var(--border);padding:7px 18px;border-radius:5px;
 cursor:pointer;font-size:.85em;font-weight:600;color:var(--text)}
-.reveal-btn:hover{background:#2f343d}
-.confidence{margin:10px 0 -4px;padding:5px 12px;border:1px dashed #3a4150;border-radius:5px;
+.reveal-btn:hover{background:var(--btn-hover)}
+.confidence{margin:10px 0 -4px;padding:5px 12px;border:1px dashed var(--dash);border-radius:5px;
 color:var(--muted);font-size:.78em;letter-spacing:.02em;
 font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;background:transparent}
-.confidence b{color:#b9c2d0;font-weight:600}
-.marks{display:inline-block;font-size:.8em;background:#3d3016;color:#f0c674;padding:2px 8px;
+.confidence b{color:var(--conf-b);font-weight:600}
+.marks{display:inline-block;font-size:.8em;background:var(--chip-bg);color:var(--chip-fg);padding:2px 8px;
 border-radius:10px;font-weight:700;margin-left:4px;font-family:-apple-system,sans-serif}
 .fig{margin:14px 0;padding:12px;background:#f7f7f7;border:1px solid var(--border);border-radius:6px;text-align:center}
 .fig img{max-width:100%;height:auto;border-radius:3px}
 .fig figcaption{margin-top:8px;font-size:.8em;color:var(--muted);font-family:-apple-system,sans-serif}
-.fig-missing{margin:14px 0;padding:12px 14px;background:var(--red-soft);border:1px solid #4a2020;
+.fig-missing{margin:14px 0;padding:12px 14px;background:var(--red-soft);border:1px solid var(--red);
 border-left:4px solid var(--red);border-radius:6px;font-size:.9em}
 .tw{overflow-x:auto;margin:12px 0}
 table{border-collapse:collapse;width:100%;font-size:.92em;background:var(--card-bg)}
 th,td{border:1px solid var(--border);padding:6px 10px;color:var(--text);text-align:left;vertical-align:top}
-th{background:#232830;font-weight:600}
-blockquote{margin:12px 0;padding:10px 16px;background:#2a2415;border-left:4px solid var(--amber);
+th{background:var(--btn);font-weight:600}
+blockquote{margin:12px 0;padding:10px 16px;background:var(--quote-bg);border-left:4px solid var(--amber);
 border-radius:4px;font-size:.93em}
-code{background:#262b34;padding:1px 5px;border-radius:3px;font-size:.9em}
+code{background:var(--code-bg);padding:1px 5px;border-radius:3px;font-size:.9em}
 ul{margin:8px 0;padding-left:22px}
 p{margin:8px 0}
 @media print{.controls,.answer-overlay{display:none!important}.card{page-break-inside:avoid}}
