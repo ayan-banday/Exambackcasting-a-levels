@@ -1,126 +1,164 @@
 # Cluster 02 Drill: Cell and Nuclear Division
 ### Biology H2 (9477) · Book 3 · attempt on Loom/Wispr Flow, reasoning aloud, BEFORE reading answers
 
-**Seven questions, 90 marks, 20 parts, one mark per minute, so ninety minutes.** Every learning outcome
-this cluster owns is still tested. The cut from 103 marks came from putting checkpoint dysregulation on
-the same flow-cytometry stem that already deduces the arrest, and from folding the roles of the mitotic
-cell cycle into the essay that already argues for accurate distribution. Nothing was dropped.
+**Ten questions, 113 marks, 45 parts, one mark per minute, so a little under two hours.** Every question
+below is an actual exam paper question. The stem is the paper's own wording. Where a stem has been
+edited it is only to let it stand without the parts of the original that came before it, and the edit
+is recorded in the Sources block at the foot of that question.
 
-**Six real figures, four questions figure-led.** Chapter 3.2 is the most graph-driven chapter in Book 3
-at 44.1% figure-led, and data and figure interpretation is 33.5% of Book 3 as a whole. Every figure is
-the real image lifted from the paper the question came from.
+**The set is sized for coverage, not for the clock.** Every learning outcome this cluster owns is
+tested more than once, from a different angle each time, because this is your first pass over the
+material. Questions 1 to 4 are mitosis, the cell cycle and chromosome structure, 49 marks. Questions 5
+to 10 are meiosis, significance and synthesis, 64 marks. Two sittings is the intended way to run it.
 
-**One MCQ only, and it is the specimen's own.** Q5(a) is 9477 Specimen Paper 1 Question 17 reproduced
-word for word, because its two wrong statements are the sharpest precision test in the whole Book. You
-have to judge all four statements, not pick a letter.
+**Six real figures, four questions figure-led.** Every figure is the real image lifted from the paper
+the question came from, not a redrawing.
 
-**Cumulative over Cluster 1 and Books 1 and 2, and that is the point.** Book 2 taught you what meiotic
-error causes; Book 3 teaches the event, so the two only make sense held together. Q1(a) needs the
-three-level packing ladder. Q3(c) needs non-disjunction defined and then applied at both anaphases.
-Q4(c) needs the centromere in Book 2's own words for non-coding DNA. Q5(d) needs unequal crossing over.
-Q7(b) cannot be written without semi-conservative replication, proofreading and gene mutation. Q7(a)
-needs the receptor tyrosine kinase and the phosphorylation cascade said cold from Cluster 1.
+**Two MCQs, both real.** Q5(a) is 9477 Specimen Paper 1 Question 17 word for word and Q5(e) is
+CJC Prelim 2023 Paper 1 Question 11 word for word. In both cases the paper awards one mark for the
+letter, then the drill asks you to explain your answer, which is where the four options get audited.
 
-**What the marks reward.** Name the exact stage at which each event happens, because an examiner report
-in this file names vague-across-stages description as the commonest failure. Write **non-sister
-chromatids of homologous chromosomes** in full. State both sides of every comparison positively, because
-schemes reject yes-or-no comparisons twice over. Keep **the centromere dividing** apart from **the
-kinetochore microtubules shortening**. Say **cell division**, not cell growth, whenever the word
-uncontrolled is in play. Quote figures off any graph you are asked to refer to.
+**Cumulative over Cluster 1 and Books 1 and 2.** Q3(e) needs the growth factor, the receptor and the
+phosphorylation cascade said cold from Cluster 1. Q4(c) needs non-disjunction applied at anaphase I
+and at anaphase II. Q4(d) needs the packing ladder from Book 2. Q5(f) needs unequal crossing over.
+Q8(c) needs polyploidy held apart from aneuploidy. Q9 needs semi-conservative replication in S phase.
+A Book 1 or Book 2 gap surfacing here is worth more than a clean Cluster 2 answer, so say it out loud
+when it happens.
+
+**What the marks reward.** Name the exact stage at which each event happens, because an examiner
+report in this file names vague-across-stages description as the commonest failure. Write **non-sister
+chromatids of homologous chromosomes** in full. State both sides of every comparison positively.
+Keep **the centromere dividing** apart from **the kinetochore microtubules shortening**. Quote figures
+off any graph you are asked to refer to.
 
 **How to run it.** One part at a time, aloud, answers untouched. Rate your confidence out loud before
-every reveal. Questions 1 to 4 are mitosis and the cell cycle read off data, and 5 to 7 are meiosis,
-significance and synthesis, so two sittings is fine.
+every reveal.
 
 ---
 
 ## Questions
 
-### Question 1  [14 marks]
+### Question 1  [12 marks]
 
-**(a)** Fig. 1.1 shows actively dividing onion root tip cells. Identify the phase of nuclear division
-that cell **B** is in, then describe two differences you can actually observe between cell **B** and the
-cell labelled at prophase. Name the three levels of packing that turn the DNA of cell **B** into the
-dark bodies you can see, and the bond holding DNA to protein at the first level, then explain why
-leaving the DNA in the state that permits transcription would wreck the division. **[6]**
+**(a)** Fig. 1.1 is a photomicrograph of actively dividing onion root tip cells, undergoing a type of
+nuclear division that produces genetically identical cells. Identify the phase of nuclear division
+that cell **B** is undergoing. **[1]**
 
 [FIGURE: Fig. 1.1, a photomicrograph of a longitudinal section of onion root tip cells arranged in
-rows. Label A points to a cell with two separate groups of chromosomes being drawn towards opposite
-ends. A cell labelled as being at prophase shows a condensing tangled mass of chromosomes still within a
-rounded nucleus. Label B points to a cell with darkly stained chromosomes gathered in a single band
-across the middle of the cell.]
+rows. Label A points to a cell with two separate groups of V-shaped chromosomes being drawn towards
+opposite ends. A cell labelled "cell at prophase" shows a condensing, tangled mass of chromosomes
+still within a rounded nucleus. Label B points to a cell with darkly stained chromosomes lined up in
+a single row across the middle of the cell.]
 
-**(b)** Fig. 1.2 shows cells from a whitefish embryo, an animal, at various stages of the cell cycle.
-Identify stages **P** and **Q**, and explain how those two stages together guarantee that the daughter
-cells are genetically identical. **[4]**
+**(b)** Describe two observable differences between cell **B** and the cell at prophase. **[2]**
 
-[FIGURE: Fig. 1.2, a photomicrograph at magnification x1200 of whitefish embryo cells with radiating
-microtubule asters labelled. Label P points to a cell with two separated groups of chromosomes moving
-towards opposite poles; label Q points to a cell with chromosomes aligned in a single dark line across
-the middle of the spindle.]
+**(c)** The early development of an animal involves divisions of the zygote and daughter cells by
+mitosis, forming an embryo consisting of genetically identical cells. Fig. 1.2 shows cells from a
+whitefish embryo. Explain how stages **P** and **Q** during the cell cycle will lead to genetically
+identical daughter cells. **[2]**
 
-**(c)** The onion cell in Fig. 1.1 and the whitefish cell in Fig. 1.2 both divide their cytoplasm, but
-not in the same way. Describe both routes and account for the difference, then state what Fig. 1.2
-shows at the spindle poles that Fig. 1.1 could not show, and say whether its absence stops the onion
-cell building a spindle at all. **[4]**
+[FIGURE: Fig. 1.2, a photomicrograph at magnification x1200 of whitefish (Coregonus artedi) embryo
+cells at various stages of the cell cycle, with radiating microtubule asters labelled. Label P points
+to a cell with two separated groups of chromosomes moving towards opposite poles; label Q points to a
+cell with chromosomes aligned in a single dark line across the middle of the spindle.]
+
+**(d)** Describe the events that occur in telophase. **[2]**
+
+**(e)** Immediately after cytokinesis, daughter cells are not identical even though they are
+genetically identical. Suggest a reason why daughter cells are not identical immediately after
+cytokinesis. **[1]**
+
+**(f)** A pair of rod-like structures can be found at each pole of a dividing animal cell. State one
+other feature of these structures and outline their role during mitosis in animal cells. **[2]**
+
+**(g)** Meristematic tissue is found in the growing region of plants, such as root tips. Table 1.1
+shows the numbers of cells in different stages of the cell cycle observed in sections of the
+meristematic regions of root tips of *Allium cepa*. The total length of time taken for meristematic
+cells of *A. cepa* to complete one cell cycle at 25 °C is 12 hours.
+
+| stage of cell cycle | replicate 1 | replicate 2 | replicate 3 | mean |
+|---|---|---|---|---|
+| interphase | 4686 | 4709 | 4808 | 4734 |
+| prophase | 148 | 159 | 155 | 154 |
+| metaphase | 38 | 47 | 40 | 42 |
+| anaphase | 25 | 33 | 28 | 29 |
+| telophase | 38 | 47 | 39 | 41 |
+| total | 5000 | 5000 | 5000 | 5000 |
+
+Using the data in Table 1.1, calculate the percentage of cells in anaphase and the mean length of time
+for anaphase in minutes. Show your working. **[2]**
 
 ---
 
 ### Question 2  [11 marks]
 
-**(a)** Figure 2.1 plots three distances against time in an animal cell during two consecutive stages
-of mitosis, where 0 minutes is the moment the chromosomes line up on the equator. Identify the two
-stages, and quote the data that fixes the boundary between them. **[3]**
+Figure 2.1 shows movements that take place in a cell during two stages of mitosis in an animal cell.
+The three curves show changes in distance between:
+
+**A** the centromeres and the poles of the spindle
+**B** the centromeres of sister chromatids
+**C** the poles of the spindle.
+
+On the time scale, 0 minutes corresponds to the time when chromosomes line up on the equator of the
+cell.
+
+**(a)** With reference to Figure 2.1, identify the **two** stages of mitosis shown. **[2]**
 
 [FIGURE: Figure 2.1, a line graph, y-axis distance in micrometres from 0 to 60, x-axis time in minutes
-from 0 to 30. The three curves show changes in distance between A the centromeres and the poles of the
-spindle, B the centromeres of sister chromatids, and C the poles of the spindle. Curve A starts at about
-25 and declines gently to about 20 at 15 minutes, then falls steeply to about 3 at 30 minutes. Curve B
-sits at 0 from 0 to 15 minutes, then rises steeply to about 50 at 30 minutes. Curve C starts at about
-46, dips to a minimum of about 40 at 15 minutes, then rises to about 50 at 30 minutes.]
+from 0 to 30. Curve A starts at about 25 and declines gently to about 20 at 15 minutes, then falls
+steeply to about 3 at 30 minutes. Curve B sits at 0 from 0 to 15 minutes, then rises steeply to about
+50 at 30 minutes. Curve C starts at about 46, dips to a minimum of about 40 at 15 minutes, then rises
+to about 50 at 30 minutes.]
 
-**(b)** Describe what happens to the sister chromatids after 15 minutes, and say which curve shows the
-separation itself and which shows the movement that follows it. **[4]**
+**(b)** With reference to Figure 2.1, describe what happens to sister chromatids after 15 minutes. **[2]**
 
-**(c)** The same three distances are now recorded through anaphase I of meiosis in the same species.
-Predict which curve changes shape most and explain why, then state what that single change does to the
-chromosome number of each daughter nucleus. **[4]**
+**(c)** Outline the roles of centromeres. **[3]**
+
+**(d)** State **four** ways in which the behaviour of chromosomes in meiosis is different from their
+behaviour in mitosis. **[4]**
 
 ---
 
-### Question 3  [15 marks]
+### Question 3  [14 marks]
 
-**(a)** Fig. 3.1 shows two cell cycle profiles obtained by flow cytometry, where the fluorescence of the
-DNA stain is directly proportional to the DNA content of a cell. Graph **A** is a population of normal,
-actively dividing cells and Graph **B** is the same population after treatment with Compound X. Assign
-the phases of the cell cycle to the features of Graph **A**, and explain why the two peaks differ in
-height. **[4]**
+**(a)** Flow cytometry is used to analyse cell cycle phases by measuring DNA content; the amount of
+fluorescent dye that binds to a cell is directly proportional to its DNA content. Graph **A** in
+Fig. 3.1 shows the profile of a population of normal, actively dividing cells. Label on Graph **A**
+the different phases of the cell cycle. **[1]**
 
 [FIGURE: Fig. 3.1, two FACS profiles side by side, each plotting number of cells against fluorescence
 intensity in arbitrary units with 300 and 600 marked on the x-axis. Graph A has a tall sharp peak at
-300, a shallow trough, and a lower peak at 600, with three empty label boxes drawn on it. Graph B has a
-single narrow peak at 300 and nothing at 600.]
+300, a shallow trough, and a lower peak at 600, with three empty label boxes drawn on it. Graph B has
+a single narrow peak at 300 and nothing at 600.]
 
-**(b)** Deduce where in the cell cycle Compound X acts and evaluate whether it would make a good
-anti-cancer drug. Then describe how dysregulation of that same control point may lead to cancer, and
-explain why a cancer cell that divides no faster than a normal cell is still dividing in an
-uncontrolled way. **[5]**
+**(b)** Based on the information given, explain why there is a difference in cell numbers of the two
+distinct peaks in Graph **A**. **[2]**
 
-**(c)** A human somatic cell entering G1 has 46 chromosomes and a DNA content of x. State the
-chromosome number and the DNA content at the end of S phase, at the end of mitotic anaphase, and at the
-end of anaphase I of meiosis, and account for any point at which the two quantities do not change
-together. Then define non-disjunction, give the chromosome number of every daughter nucleus when it
-strikes at anaphase I and when it strikes instead at anaphase II, say which of the two could produce a
-trisomic zygote, and say how you would tell them apart afterwards. **[6]**
+**(c)** Graph **B** shows the same population after treatment with Compound X. Compound X is being
+investigated as a potential anti-cancer drug. Based on Graph **B**, evaluate the suitability of
+Compound X as an anti-cancer drug. **[3]**
+
+**(d)** A drug, Taxol, is known to stabilise microtubules, preventing them from shortening. Predict how
+a FACS analysis graph of cells treated with Taxol would appear. Justify your prediction by explaining
+its effect on the mitotic process. **[2]**
+
+**(e)** Bone-marrow derived stem cells were removed from the bone marrow and cultured so that they
+divided by mitosis. Describe how the rate of mitosis is controlled. **[4]**
+
+**(f)** Outline the roles of mitosis in a healthy animal. **[2]**
 
 ---
 
 ### Question 4  [12 marks]
 
-**(a)** A fluorescent probe carrying the single-stranded sequence 5' CCCTAA 3', shown in Fig. 4.1, was
-hybridised to the chromosomes of a population of cells all arrested at one stage of the cell cycle. The
-result is Fig. 4.2, in which the fluorescence appears as bright white regions. State the precise stage
-at which the cells are arrested, and justify it from what Fig. 4.2 shows. **[3]**
+**(a)** In a study on chromosomal structures, cells were arrested at a particular stage in the cell
+cycle. A technique known as Fluorescence In-Situ Hybridisation was then employed. It involves the use
+of a fluorescent probe consisting of a short DNA sequence and a fluorescent tag. Fig. 4.1 shows the
+fluorescent probe used. Fig. 4.2 shows the result when chromosomes are mixed with the fluorescent
+probe and viewed under ultraviolet light. The fluorescence appears as bright, white regions at the
+ends of the greyish chromosomes.
+
+State the precise stage in the cell cycle in which the cells are arrested. **[1]**
 
 [FIGURE: Fig. 4.1, a short single-stranded DNA probe drawn 5' to 3' with the bases C, C, C, T, A, A
 marked along it and a hatched circle at the 3' end labelled fluorescent tag.]
@@ -128,18 +166,27 @@ marked along it and a hatched circle at the 3' end labelled fluorescent tag.]
 [FIGURE: Fig. 4.2, a fluorescence image of a spread of grey chromosomes on a black background, each
 chromosome carrying two small bright white spots at each of its two ends.]
 
-**(b)** Suggest why there are two fluorescent regions at each end of every chromosome in Fig. 4.2. **[3]**
+**(b)** With reference to Fig. 4.1 and Fig. 4.2, suggest why there are two fluorescent regions at each
+end of a chromosome. **[3]**
 
-**(c)** A second probe is now designed against the centromeric DNA of the same chromosomes. Describe
-what that DNA is like, in sequence, in higher-order structure and in the proteins it binds, and what it
-does. Then predict how nuclear division would be affected in a cell whose centromeric DNA had been
-deleted, and state precisely where that deletion has to sit for no working copy to remain. **[6]**
+**(c)** Some of the germline cells in a female fruit fly have been discovered to have a mutation at
+the centromere of chromosome 5. Suggest how this could affect the gametes formed from these cells. **[3]**
+
+**(d)** Each human cell contains approximately 2 metres of DNA if stretched end-to-end; yet the nucleus
+of a human cell, which contains the DNA, is only about 6 μm in diameter. Describe how DNA is packaged
+to fit into the nucleus of eukaryotic cells. **[4]**
+
+**(e)** The ends of the chromosomes shorten in the somatic cells of every organism, but at very
+different rates. In the mouse, which has an average lifespan of about 3 years, the ends shorten at
+about 7000 base pairs per year. In humans, whose average lifespan is about 80 years, the rate is close
+to zero on the same scale. Suggest why the rate of shortening of the ends of chromosomes is high in
+mice. **[1]**
 
 ---
 
-### Question 5  [13 marks]
+### Question 5  [14 marks]
 
-**(a)** The four numbered statements below are about meiosis.
+**(a)** The statements are about meiosis.
 
 1  Pairs of homologous chromosomes form bivalents within which crossing-over occurs.
 
@@ -156,42 +203,161 @@ B  1, 2 and 4
 C  1, 3 and 4
 D  2, 3 and 4
 
-Take each of the four statements in turn and say whether it contributes and why, correcting any
-statement that is false. Then say which option follows, and why each of the other three options fails.
-**[5]**
+**[1]**
 
-**(b)** Explain how meiosis leads to genetic recombination in the nuclear DNA of eukaryotes. **[4]**
+**(b)** Explain your answer in **(a)**, taking each of the four statements in turn. **[4]**
 
-**(c)** A human male produces about 2²³ genetically different sperm and a human female about 2²³
-genetically different eggs. State how many genetically different zygotes one such couple could produce,
-and explain what makes the third contributor to variation independent of the two in **(b)**. **[2]**
+**(c)** The features of mtDNA that make it particularly useful for this type of study include:
 
-**(d)** The exchange in **(b)** is normally exactly reciprocal. State what the two chromatids carry away
-from a single exchange that is not, and judge which of those two products does more harm to the
-organism. **[2]**
+- little or no genetic recombination occurs in mtDNA
+- mtDNA has a higher mutation rate than chromosomal DNA
+- mtDNA is passed to offspring only from the mother (maternal inheritance).
+
+Little or no genetic recombination occurs in mtDNA because mtDNA does not take part in meiosis.
+
+Explain how meiosis leads to genetic recombination in the nuclear DNA of eukaryotes. **[4]**
+
+**(d)** The diploid number of chromosomes of an organism is ten. In the absence of crossing over or
+mutation, state the number of genetically unique kinds of gametes that might be formed by one
+individual. **[1]**
+
+**(e)** Which of the following could lead to chromosomal translocation?
+
+1 end to end fusion of chromosomes.
+
+2 meiosis.
+
+3 viral infection.
+
+4 unequal crossing over.
+
+A  1 and 2
+B  3 and 4
+C  1, 2 and 4
+D  All of the above
+
+**[1]**
+
+**(f)** Explain your answer in **(e)**, taking each of the four numbered processes in turn. **[3]**
 
 ---
 
-### Question 6  [10 marks]
+### Question 6  [15 marks]
 
-**(a)** State four ways in which the behaviour of chromosomes in meiosis differs from their behaviour in
-mitosis, giving both sides of each difference. Then give two statements that are true of meiosis but
-would score nothing on this question, and say why they score nothing. **[6]**
+**(a)** Using fluorescent dye, a centromere can be visualised as a single dot. The centromere of a
+chromosome with a pair of chromatids will appear as one dot. The total number of dots corresponds to
+the total number of centromeres within the cell. Table 6.1 shows the number of dots observed per cell
+at various stages of meiosis in an animal cell.
 
-**(b)** Meiosis is called a reduction division. Describe the events that cause the reduction, and
-explain why a sexually reproducing species needs one. **[4]**
+| stage of meiosis | number of dots observed per cell |
+|---|---|
+| prophase I | 16 |
+| prophase II | |
+| anaphase II | |
+| telophase II | 16 |
+
+With reference to Table 6.1, complete Table 6.1 by stating the number of dots, that is centromeres,
+observed in prophase II and anaphase II respectively. **[2]**
+
+**(b)** Explain your answer in (a). **[3]**
+
+**(c)** State three features that identify two chromosomes as a homologous pair. **[3]**
+
+**(d)** Distinguish between the terms haploid and diploid. **[2]**
+
+**(e)** Explain the need for reduction division during meiosis. **[3]**
+
+**(f)** The overlapping ranges of the western grey and eastern grey kangaroos created a narrow hybrid
+zone where a few hybrids were produced via interbreeding. However, this occurrence is very rare and
+generally produces infertile offspring. Using your knowledge of cell division, explain why the hybrid
+offspring are infertile. **[2]**
 
 ---
 
-### Question 7  [15 marks]
+### Question 7  [10 marks]
 
-**(a)** Epidermal growth factor binds to a receptor tyrosine kinase on the surface of a target cell, and
-that cell subsequently divides. Outline how the binding event produces that outcome, naming which of the
-three stages of cell signalling each part of your answer belongs to. **[4]**
+Section B, free response. Answer in continuous prose.
 
-**(b)** Answer in continuous prose. Discuss how a eukaryotic cell copies and distributes its DNA
-accurately enough for the genetic information to be inherited unchanged, what that accuracy is for in a
-living organism, and where the genetic variation between individuals nevertheless comes from. **[11]**
+Discuss how the processes of cell division allow DNA to be stably inherited and yet, capable of
+genetic variation in eukaryotes. **[10]**
+
+---
+
+### Question 8  [10 marks]
+
+**(a)** Describe how the spindle is involved during the process of mitosis. **[3]**
+
+**(b)** Meiosis is described as a reduction division because the number of chromosomes in the daughter
+cells is reduced by half. Table 8.1 describes some of the events that take place during four of the
+different stages of meiosis in an animal cell.
+
+| stage of meiosis | spindle fibres | diagram |
+|---|---|---|
+| metaphase I | attach to centromeres and arrange homologous pairs of chromosomes at the equator of the cell | given |
+| anaphase I | | given |
+| | re-form spindle in daughter cells | given |
+| telophase II | disassemble | |
+
+Complete Table 8.1 by outlining the behaviour of the spindle fibres during anaphase I, identifying the
+stage of meiosis in which spindle fibres re-form the spindle in daughter cells, and drawing a diagram
+to show telophase II. You do not need to add labels to your diagram showing telophase II. **[4]**
+
+**(c)** Colchicine is a chemical that is used to induce polyploidy in plants. Colchicine works by
+interfering with mitosis, preventing the proper assembly of microtubules in the mitotic spindle.
+Colchicine is first applied to diploid (2n = 22 chromosomes) watermelon seedlings to obtain tetraploid
+(4n = 44 chromosomes) plantlets. Explain how application of colchicine to diploid (2n = 22 chromosomes)
+watermelon seedlings resulted in formation of tetraploid (4n = 44 chromosomes) plants. **[3]**
+
+---
+
+### Question 9  [8 marks]
+
+**(a)** The number of chromosomes per cell changes during the meiotic cell cycle of an organism. The
+three stages of interphase are G1, S and G2. Meiosis I and meiosis II are shown as MI and MII
+respectively, and MI and MII each comprise stages A, B, C and D in the order in which they occur, so
+that AI is the first stage of meiosis I and DI is the last. At the start of interphase, the number of
+chromosomes per cell is 4.
+
+Complete Table 9.1 giving, per cell, the number of DNA molecules and the amount of DNA in arbitrary
+units. **[2]**
+
+| phase of cell cycle | number of DNA molecules per cell | amount of DNA / arbitrary units |
+|---|---|---|
+| G1 phase | | 2x |
+| G2 phase | | |
+| AI | | |
+| DI | | |
+| AII | | |
+| DII | | |
+| cytokinesis | | |
+
+**(b)** Account for the changes in the number of chromosomes and the amount of DNA per cell from G1
+till the end of DI. **[3]**
+
+**(c)** The house mouse, *Mus musculus*, has a diploid number of 40 chromosomes. State the number of
+chromosomes that are present in *M. musculus* spermatozoa. **[1]**
+
+**(d)** *Staphylococcus aureus* is a bacterium that divides rapidly by binary fission. Describe two
+differences in DNA behaviour during binary fission in a prokaryotic cell and mitosis in a eukaryotic
+cell. **[2]**
+
+---
+
+### Question 10  [7 marks]
+
+**(a)** *Saccharomyces cerevisiae* is a yeast that can carry out either asexual reproduction by mitosis
+or sexual reproduction by meiosis. Diploid cells reproduce asexually by budding. When there is a lack
+of nutrients, these diploid cells instead undergo meiosis to make spores, which germinate only when
+conditions improve. Suggest and explain how the type of reproduction that makes spores is advantageous
+for *S. cerevisiae* in a changing environment. **[3]**
+
+**(b)** In many multicellular organisms, such as mammals, the time taken for the mitotic cell cycle
+varies considerably between different tissues, but is very carefully controlled in each cell. Suggest
+the importance of this control in mammals. **[2]**
+
+**(c)** In the absence of chromosomal aberration, gene mutation or events during metaphase I, outline
+how events before metaphase I and after meiosis lead to genetic variation between offspring of the
+same parents. **[2]**
 
 ---
 
@@ -199,332 +365,556 @@ living organism, and where the genetic variation between individuals nevertheles
 
 ### Question 1
 
-**(a)** *The phase cell B is in, two observable differences from the prophase cell, and what the condensation you are looking at actually is.* **[6]**
+**(a)** *Fig. 1.1, identify the phase of nuclear division that cell B is undergoing.* **[1]**
 
 **1.** Cell **B** is at **metaphase**.
 
-**2.** Any two differences, each stated for both cells. Cell B shows **absence of nuclear envelope**, while the prophase cell shows **presence of nuclear envelope**; accept that the envelope in the prophase cell is **still disintegrating**. Cell B shows **chromosomes aligned at the metaphase plate**, while the prophase cell shows **chromosomes not aligned at the metaphase plate**; accept that they are **randomly scattered**. **Reject in a single row or line.** Cell B shows **chromosomes being fully condensed**, accept **presence of distinct chromosomes**, while the prophase cell shows **chromosomes not fully condensed yet**. **Reject decondensed chromosomes or chromatin.**
+**(b)** *Describe two observable differences between cell B and the cell at prophase.* **[2]**
 
-**3.** A difference that cannot be seen in the figure earns nothing. The examiner's own worked example of a rejected answer is that **kinetochore microtubules are attached to the chromosomes in cell B but not in prophase**, which is true but not observable here.
+**1.** Any two, each stated for both cells in a point-by-point format. Cell B shows **absence of nuclear envelope**, while the cell at prophase shows **presence of nuclear envelope**; accept that the nuclear envelope is **still disintegrating** in the prophase cell.
 
-*The three levels of packing that made those bodies visible.* [CROSS-BOOK, Book 2 LOs 2(d) and 2(h)]
+**2.** Cell B shows **chromosomes aligned at metaphase plate**, while the cell at prophase shows **chromosomes not aligned at metaphase plate**; accept **chromosomes are randomly scattered**. **Reject "in a single row" or "in a single line".** Ignore sister chromatids.
 
-**4.** **First level.** **Negatively charged DNA is coiled around an octamer of histone proteins, two each of histones H2A, H2B, H3 and H4**, forming a **nucleosome core** with **146 base pairs of DNA bound** to it. The bond is **ionic**, and it is a Book 1 answer: **histones are small proteins with a high concentration of positively-charged residues, e.g. lysine and arginine, which form ionic bonds with the negatively-charged sugar-phosphate backbone of DNA.** [CROSS-BOOK, Book 1: the octamer is a **quaternary structure** of eight polypeptide subunits, and the attraction is an **ionic bond between oppositely charged R groups**.] **Multiple nucleosomes, joined by linker DNA, are packed together to produce the 10-nm chromatin fibre, also known as a nucleosome fibre.**
+**3.** Cell B shows **chromosomes being fully condensed**, accept **presence of distinct chromosomes**, while the cell at prophase shows **chromosomes not fully condensed yet**. **Reject "decondensed chromosomes" and "chromatin".**
 
-**5.** **Second level.** **DNA is further folded or coiled to produce the 30-nm chromatin fibre, known as solenoid**, and **histone H1 and linker DNA are involved in this coiling.** **Third level.** **Non-histone proteins known as scaffold proteins are involved in condensing the 30-nm chromatin fibre to form looped domains** of **300 nm**, and **in mitotic and meiotic chromosomes the looped domains themselves coil and fold, further compacting all the chromatin to produce the characteristic metaphase chromosome**, whose **chromatid width is 700 nm**. Naming a protein at each level is the discriminating move, and **the scheme rejects answers that never leave beads-on-a-string**.
+**4.** Differences that are not observable from the figure are not accepted. The examiner's own worked example of a rejected answer is **kinetochore microtubules attached to chromosomes**, which is true of a metaphase cell but cannot be seen here.
 
-**6.** **Why the transcribable state would wreck the division.** The purpose of the whole ladder is **to organise and pack the giant DNA molecules of eukaryotic chromosomes into structures that will facilitate their segregation into daughter nuclei**, so that **DNA molecules of different chromosomes will not be entangled and as a consequence break during separation at anaphase**. Transcription needs the opposite state: **euchromatin is lightly packed and accessible to the transcription machinery**, whereas **heterochromatin is highly condensed and transcriptionally inactive**. The two states are mutually exclusive, and a cell that stayed accessible would tangle and shear its own DNA at anaphase. The switch between them is a charge switch, and it is the one you ran backwards in Book 2: **acetylation is what neutralises the positive charge on the histone tails. No acetyl groups means the positive charge is intact, so the histones grip the DNA tightly and the chromatin stays condensed.**
+**(c)** *Fig. 1.2, explain how stages P and Q lead to genetically identical daughter cells.* **[2]**
 
-**(b)** *Stages P and Q, and how the pair guarantees genetically identical daughters.* **[4]**
+**1.** Stage **Q, which is metaphase, is where chromosomes align singly on the equator / metaphase plate**, so that the chromosomes can be **equidistant from the opposite poles**.
 
-**1.** Stage **Q is metaphase**, where **chromosomes align singly on the equator or metaphase plate**, so that the chromosomes are **equidistant from the opposite poles**.
+**2.** So that at stage **P, which is anaphase, the centromere divides and the genetically identical sister chromatids can separate and move to opposite poles, so each daughter cell receives a sister / identical chromatid of each chromosome**.
 
-**2.** Stage **P is anaphase**, where **the centromere divides and the genetically identical sister chromatids separate and move to opposite poles**, so that **each daughter cell receives a sister chromatid of each chromosome**.
+**(d)** *Describe the events that occur in telophase.* **[2]**
 
-*The step before both, which the figure cannot show.* [INFERRED: extension, no official key]
+**1.** **Spindle fibres disintegrate.** **Reject naming only kinetochore microtubules or only non-kinetochore microtubules; it must be both. Reject "disappears".**
 
-**3.** The chromatids are identical in the first place because of **semi-conservative DNA replication in S phase**, in which **each parental strand serves as the template for a complementary daughter strand**, giving **two identical DNA molecules** per chromosome.
+**2.** **Chromosomes reach the (opposite) poles and uncoil / decondense to form chromatin fibres.**
 
-**4.** So the chain runs **identical DNA molecules, then equal distribution at anaphase, then no variation in genetic information, then daughter cells genetically identical to the parent cell**. Alignment alone does not make them identical, and separation alone does not either; the guarantee needs replication, alignment and separation together.
+**3.** The **nuclear envelope reforms around each set of chromosomes at each pole.** **Reject reforming around two daughter cells.**
 
-**(c)** *The two routes to cytoplasmic division, why they differ, and what the animal cell shows at its poles.* **[4]**
+**4.** The **nucleolus reappears.** **Reject "reforms".**
 
-**1.** In the whitefish cell, **a cleavage furrow pinches the cell in two**, appearing first as **a shallow groove near the metaphase plate**. On the cytoplasmic side of that groove lies **a contractile ring of microfilaments**, and **as the ring contracts the furrow deepens** until the cell is split in two.
+**(e)** *Suggest why daughter cells are not identical immediately after cytokinesis.* **[1]**
 
-**2.** In the onion cell **no cleavage furrow forms**, because **the cell wall** cannot be drawn inwards. Instead **vesicles from the Golgi apparatus fuse in the middle of the cell, producing a cell plate**, which grows **across the metaphase plate during telophase**.
+**1.** **Unequal sharing out of cytoplasm / organelles / named organelles at cytokinesis.** Any valid point, for example that the **cells are of unequal sizes**.
 
-**3.** Those vesicles supply **a primary cell wall for each daughter cell** and **a middle lamella cementing the adjacent walls**, and the plate grows **until its membrane fuses with the plasma membrane**, after which **cellulose is laid down to form the wall**.
+**2.** **Reject** answers about **plasmids or circular DNA in mitochondria**, because the focus of the question is not on genetic factors.
 
-**4.** Fig. 1.2 shows **astral microtubules radiating from the centrioles at each spindle pole**, which the onion cell cannot show because **centrioles are found only in animal cells**. Their job is to **anchor the spindle poles** so the spindle is correctly positioned. Their absence does not stop the onion cell dividing: **plant cells have no centrioles and still assemble a spindle**, since the microtubule organising activity does not require a centriole. Only the **astral class of microtubule** goes missing; the **kinetochore** and **polar** microtubules still form.
+**(f)** *One other feature of the rod-like structures at each pole, and their role during mitosis.* **[2]**
 
-**Source:** School (HCI) Prelim 2023 P2 Q5(a)(i) and Q5(a)(ii) (a, verbatim stem, figure, key and accept/reject list including the examiner's non-observable example); HCI Prelim 2018 P3 Q4a, IJC Prelim 2016 P2 Q3b, IJC Prelim 2014 P2 Q7a, ASRJC Prelim 2025 P2 Q3b(i), SAJC Prelim 2021 P2 Q7a and JPJC Prelim 2022 P2 Q3a, routed through Book 2 Cluster 1 Q4(a) (a, the three-level packing ladder verbatim from those keys, including the octamer composition, the ionic-attraction mechanism, the 146 bp, the 10-nm and 30-nm fibres, H1 and linker DNA, the scaffold-protein step, the 300 nm looped domains, the 700 nm chromatid and the entanglement-and-breakage purpose; the acetylation direction is verbatim from banked gap B2-58); RI Prelim 2025 P2 Q4(a) (b, verbatim stem, figure and both marking points; the S-phase step is an extension); HCI Book 3 chapter 3.2 §4, Topical 2018 STQ Q6c and RVHS Prelim 2018 P2 Q1c (c, verbatim wording on furrow, contractile ring, cell plate, middle lamella and cellulose; the aster and centriole judgement is an extension).
-**Archetype:** sequence and stage identification off a micrograph, then compare-and-account. Stage identification is only 1.1% of the corpus but 9477 Specimen P2 Q6(a)(i) asked for it directly inside an 11-mark question, so the specimen outranks the corpus here.
-**Trap:** describing a difference that is real but not visible in the figure; calling the metaphase plate a single row or line, which one scheme rejects outright; giving the packing hierarchy without naming a protein at each level, or stopping at the nucleosome, both of which a Book 2 scheme rejects; running the acetylation logic backwards, which is banked gap **B2-58**; assuming a cell without centrioles cannot build a spindle.
-**LOs:** 2(n), all four named structures, with the **cell surface membrane** half carried by part (c); reaches back to Book 2 LOs **2(d)** for the packing hierarchy and **2(h)** for euchromatin against heterochromatin, and to Book 1 for **quaternary structure** and the **ionic bond between oppositely charged R groups**.
-**Concepts fused:** (1) stage identification from chromosome appearance; (2) nuclear envelope behaviour as a stage marker; (3) degree of chromosome condensation as a stage marker; (4) observable against inferable evidence; (5) the histone octamer as a quaternary structure, and the ionic bond between its positively charged R groups and the sugar-phosphate backbone; (6) the 10-nm nucleosome fibre with linker DNA; (7) the 30-nm solenoid with H1; (8) scaffold proteins, looped domains and the metaphase chromatid; (9) segregation without entanglement or breakage as the reason for packing at all; (10) euchromatin against heterochromatin as mutually exclusive states; (11) acetylation as charge neutralisation, in the right direction; (12) metaphase alignment making chromatids equidistant from the poles; (13) centromere division at anaphase; (14) semi-conservative replication as the origin of identity; (15) the genetic stability chain; (16) cleavage furrow and contractile ring of microfilaments; (17) cell plate from Golgi vesicles, middle lamella and cellulose; (18) the cell wall as the reason the two routes differ; (19) centrioles and asters as animal-only; (20) spindle assembly without centrioles.
+**1.** **Feature.** The **centriole pair is positioned at right angles / perpendicular to each other**, or a **transverse section shows 9 triplets of microtubules arranged in a ring**.
+
+**2.** **Role.** The **two pairs of centrioles move to the opposite poles of the cell during prophase and determine the polarity of the cell.**
+
+**3.** **Centrioles act as the microtubule-organising centre (MTOC): the centrioles produce spindle fibres, radiating from the centrioles at the poles towards the equator of the cell.**
+
+**4.** **Centrioles organise the synthesis of spindle fibres which lead to the separation of sister chromatids during mitosis.**
+
+**5.** Marking is **one feature plus any one role**.
+
+**(g)** *Percentage of cells in anaphase and the mean length of time for anaphase.* **[2]**
+
+**1.** **29 / 5000 × 100% = 0.58% (accept 0.6%).**
+
+**2.** **0.58% × 12 hours = 0.0696 hr; 0.0696 × 60 = 4 min (accept 4.2 or 4.18 min).** Error carried forward is allowed.
+
+**Source:** School (HCI) Prelim 2023 P2 Q5(a)(i), stem, figure and key verbatim (a); School (HCI) Prelim 2023 P2 Q5(a)(ii), stem and full accept/reject list verbatim including the examiner's non-observable example (b); RI Prelim 2025 P2 Q4(a), stem, figure and both marking points verbatim (c); ASRJC Prelim 2023 P2 Q2(b), stem and both rejects verbatim (d); SAJC Prelim 2021 P2 Q4(a)(iv), stem and key verbatim (e); JPJC Prelim 2022 P2 Q7(a), key verbatim (f), stem lightly edited from "A pair of rod-like structures can be found in region A" to "at each pole of a dividing animal cell" so it stands without Fig. 7.1; TMJC Prelim 2025 P2 Q4(b), stem, table and key verbatim (g), with Table 4.1 renumbered 1.1 and its own preamble folded into the stem.
+**Archetype:** stage identification off a micrograph, then observation against inference, then a data-to-duration conversion. Stage identification is only 1.1% of the corpus but 9477 Specimen P2 Q6(a)(i) asks for it directly inside an 11-mark question, so the specimen outranks the corpus.
+**Trap:** giving a difference that is real but not visible in the figure; calling the metaphase plate a single row or line, which the scheme rejects outright; naming only one class of microtubule in telophase; saying "reforms" for the nucleolus; blaming genetics for the non-identity of daughter cells at cytokinesis; forgetting to convert hours to minutes in (g).
+**LOs:** 2(n) across all four named structures, chromosomes in (a), (b) and (c), nuclear envelope in (b) and (d), cell surface membrane through cytokinesis in (e), centrioles in (f); the mitotic cell cycle itself in (g).
+**Concepts fused:** (1) stage identification from chromosome appearance; (2) nuclear envelope presence as a stage marker; (3) degree of condensation as a stage marker; (4) observable against inferable evidence; (5) metaphase alignment making chromatids equidistant from the poles; (6) centromere division at anaphase; (7) telophase spindle disassembly; (8) nuclear envelope and nucleolus reformation; (9) cytokinesis as an unequal partition of cytoplasm; (10) centriole structure as 9 triplets; (11) the centriole as microtubule organising centre; (12) proportion of cells in a stage as a proxy for the duration of that stage.
 
 ---
 
 ### Question 2
 
-**(a)** *The two stages, and the data that fixes the boundary.* **[3]** [INFERRED: the specimen papers ship without a mark scheme]
+**(a)** *With reference to Figure 2.1, identify the two stages of mitosis shown.* **[2]** [INFERRED: the specimen papers ship without a mark scheme; cross-checked against ASRJC Prelim 2023 P2 Q2ci and EJC Prelim 2023 P1 Q11, whose keys give the same curve-to-structure mapping]
 
-**1.** From **0 to 15 minutes the cell is at metaphase**, because the stem states that 0 minutes is when **the chromosomes line up on the equator**, and **curve B, the distance between the centromeres of sister chromatids, reads 0 micrometres throughout**, so the chromatids are still joined and nothing has begun moving poleward.
+**1.** **Metaphase**, from 0 to 15 minutes, because the **chromosomes are lined up on the equator and the distance between the centromeres of sister chromatids (B) is zero**, so the chromatids are still joined and no movement to the poles has begun.
 
-**2.** From **15 minutes onward the cell is at anaphase**.
+**2.** **Anaphase**, after 15 minutes, because the **distance between sister chromatid centromeres (B) starts to increase** as the chromatids separate, the **centromere-to-pole distance (A) decreases** as they are pulled to the poles, and the **pole-to-pole distance (C) increases** as the spindle elongates.
 
-**3.** The boundary is fixed at **15 minutes** by three simultaneous changes: **curve B leaves zero and rises to about 50 micrometres by 30 minutes**, **curve A falls from about 20 micrometres to about 3 micrometres**, and **curve C turns from its minimum of about 40 micrometres and rises to about 50 micrometres**. Any one curve alone is weaker evidence than the three together.
+**(b)** *With reference to Figure 2.1, describe what happens to sister chromatids after 15 minutes.* **[2]** [INFERRED: no official key]
 
-**(b)** *What happens to the sister chromatids after 15 minutes, and which curve shows what.* **[4]** [INFERRED: the specimen papers ship without a mark scheme]
+**1.** The **centromere divides so the two sister chromatids separate from each other**, shown by **curve B rising from zero and continuing to increase to about 50 μm**.
 
-**1.** **The centromere divides, so the two sister chromatids separate from each other** and each is now **a daughter chromosome** in its own right. This is the event **curve B** records, since the distance between the two centromeres can only leave zero once the centromere has divided.
+**2.** Each **chromatid is then pulled towards an opposite pole of the spindle** as the **spindle microtubules attached to the kinetochore at the centromere shorten**, shown by **curve A falling from about 20 μm to about 3 μm**. The chromatids move **centromere first**, and each separated chromatid now counts as an individual chromosome.
 
-**2.** Each separated chromatid is then **pulled towards an opposite pole as the kinetochore microtubules attached at its centromere shorten**, moving **centromere first**. This is the event **curve A** records, falling from about 20 to about 3 micrometres.
+**3.** The **poles themselves also move further apart**, shown by **curve C rising**, which increases the separation further.
 
-**3.** **Curve C** records a third, separate movement: **the polar microtubules slide past each other**, pushing the two poles apart and **elongating the cell**, which adds to the total separation.
+**(c)** *Outline the roles of centromeres.* **[3]** [INFERRED: no official key; the wording below is the JPJC Prelim 2022 P2 Q7(b) key, which asks the same thing]
 
-**4.** Separation and movement are two events and a scheme **rejects the phrasing that spindle fibres shorten, separating sister chromatids**. What separates them is **the centromere dividing**; the shortening microtubules only **move the daughter chromosomes** afterwards. A scheme likewise **rejects naming only kinetochore or only polar microtubules** where the answer needs both.
+**1.** The centromere **holds the two sister chromatids together** from the end of DNA replication until anaphase.
 
-**(c)** *Which curve changes shape at anaphase I, and what that does to chromosome number.* **[4]** [INFERRED: extension, no official key]
+**2.** It is the **site at which centromere-associated proteins bind, forming a specialised structure called the kinetochore**, so it is the point at which **spindle fibres from the centrioles attach during nuclear division**.
 
-**1.** **Curve B changes most: it stays at 0 micrometres right through anaphase I.**
+**3.** It is therefore **essential for proper alignment and separation of sister chromatids to opposite poles of the cell during nuclear division**.
 
-**2.** The reason is the defining feature of the first meiotic division. **The centromeres remain intact and the sister chromatids remain attached**, so the two centromeres whose separation curve B measures never come apart.
+**4.** **Centromeres divide to allow separation of sister chromatids during anaphase of mitosis**, so **each daughter cell receives exactly one copy of every chromosome**.
 
-**3.** **Curves A and C would keep their shapes.** What moves to the poles is **one whole homologous chromosome of each pair, each still made of two chromatids**, pulled **centromere first** by shortening kinetochore microtubules, so **curve A still falls**; and **the polar microtubules still slide**, so **curve C still rises**.
+**(d)** *State four ways in which the behaviour of chromosomes in meiosis is different from their behaviour in mitosis.* **[4]** [INFERRED: no official key; cross-checked against HCI Prelim 2022 P3 Q4a and SAJC Prelim 2023 P3 Q4b, whose keys give the same axes]
 
-**4.** That single difference is what makes meiosis I a **reduction division**. Because the homologues separate and the chromatids do not, **each daughter nucleus receives only one homologue of each pair**, so **the chromosome number is halved and the nuclei are haploid**, while **the DNA content is not halved**, since every chromosome still carries two chromatids.
+**1.** In meiosis **homologous chromosomes pair up during prophase I to form bivalents (synapsis)**, whereas in mitosis chromosomes **do not pair up**.
 
-**Source:** 9477 Specimen P2 Q6(a)(i) and Q6(a)(ii) (a and b, verbatim stem and figure; the specimen ships without a scheme, so the marking points are inferred, cross-checked against ASRJC Prelim 2023 P2 Q2ci and EJC Prelim 2023 P1 Q11, whose keys give the same curve-to-structure mapping and the same reject); HCI Book 3 chapter 3.2 §5 and the anaphase reject list (b, verbatim reject wording); ASRJC Prelim 2023 P2 Q2ci (c, verbatim reduction-division marking points; the curve prediction is an extension).
-**Archetype:** data and figure interpretation, 33.5% of the Book and 44.1% of chapter 3.2, feeding a predict-to-a-novel-case part.
-**Trap:** collapsing separation and movement into one event, which is an explicit reject; naming only one class of microtubule, which is a second explicit reject; carrying mitotic anaphase over to anaphase I and dividing the centromeres.
-**LOs:** 2(n) for parts (a) and (b), 2(s) for part (c).
-**Concepts fused:** (1) reading a stage off quantitative data rather than off a picture; (2) quoting figures with units as the evidence; (3) curve B as the centromere-division record; (4) curve A as kinetochore microtubule shortening; (5) curve C as polar microtubule sliding and cell elongation; (6) the three microtubule types kept apart; (7) separation against movement as two marked events; (8) centromeres holding at anaphase I; (9) homologues rather than chromatids moving at anaphase I; (10) chromosome number halving while DNA content does not; (11) reduction division defined.
+**2.** In meiosis **crossing over occurs at chiasmata between non-sister chromatids of homologous chromosomes**, exchanging alleles, whereas in mitosis **no crossing over occurs**.
+
+**3.** In meiosis the **bivalents line up in two rows on the equator at metaphase I** and the **homologous pairs assort independently**, whereas in mitosis the **chromosomes line up singly in one row** on the equator.
+
+**4.** In **anaphase I whole chromosomes, each still made of two chromatids, separate to opposite poles**, whereas in **mitotic anaphase the sister chromatids separate**.
+
+**5.** Meiosis involves **two divisions**, so the **chromosome number is halved** and four genetically different haploid nuclei are produced, whereas mitosis is a **single division** producing two genetically identical nuclei with the same chromosome number as the parent.
+
+**6.** The command word is **state** and the paper allows four lines, so four one-line statements and no development. An examiner comment on a related essay warns against **excessive description beyond the chromosome behaviour**, so do not drift into centrioles, nuclear envelope or kinetochore microtubules here.
+
+**Source:** 9477 Specimen P2 Q6 in full, all four parts verbatim from the question paper, worth **11 marks** on the real paper and kept at 11 here. Figure 2.1 is the specimen's own Figure 6.1. The specimen ships without a mark scheme, so every marking point is inferred and cross-checked against the school keys named above; the centromere key is JPJC Prelim 2022 P2 Q7(b) verbatim.
+**Archetype:** reading a stage off quantitative movement data, then a structural outline, then a four-point contrast. This is the single most exam-representative question in the drill because it is the actual specimen question for this topic.
+**Trap:** naming the stage without quoting the curve that fixes it; saying the spindle fibres separate the chromatids rather than the centromere dividing and the kinetochore microtubules shortening, which one scheme rejects in exactly those words; writing the meiosis-against-mitosis differences as one-sided statements about meiosis only; developing the "state" answers into paragraphs and running out of time.
+**LOs:** 2(n) the main stages of mitosis and the behaviour of chromosomes, 2(s) the main stages of meiosis and the behaviour of chromosomes, plus the centromere as non-coding DNA from Book 2.
+**Concepts fused:** (1) metaphase read off a zero separation between sister chromatid centromeres; (2) anaphase read off three simultaneous curve changes; (3) centromere division as the trigger for separation; (4) kinetochore microtubule shortening as the mover; (5) spindle elongation as a separate contribution; (6) the centromere holding chromatids together; (7) the kinetochore as the attachment site; (8) synapsis; (9) crossing over at chiasmata; (10) two rows against one row at the metaphase plate; (11) homologues against chromatids separating at anaphase; (12) one division against two.
 
 ---
 
 ### Question 3
 
-**(a)** *Assigning phases to Graph A, and why the peaks differ in height.* **[4]**
+**(a)** *Label on Graph A the different phases of the cell cycle.* **[1]**
 
-**1.** The tall peak at **300 arbitrary units is G1**, the trough between the peaks is **S**, and the lower peak at **600 arbitrary units is G2 and mitosis**.
+**1.** **G1** at the tall peak at 300 arbitrary units.
 
-**2.** The assignment follows from the stem: fluorescence is **directly proportional to DNA content**, and **S phase doubles the DNA**, so cells that have not yet replicated sit at 300 and cells that have finished replicating sit at 600, with cells partway through replication spread across the trough.
+**2.** **S** at the trough between the two peaks.
 
-**3.** **A higher peak at G1, with a greater number of cells at 300 arbitrary units, represents the largest population of cells, and a lower peak at G2 and M, with fewer cells at 600 arbitrary units.**
+**3.** **G2 / mitosis** at the lower peak at 600 arbitrary units.
 
-**4.** **Cells at G1 spend the longest time in that phase, so at any given moment a greater proportion of the population is found in this extended period.** Equivalently, **G2 and M are much shorter in duration than G1, so at any single point in time fewer cells are captured there.** The height of a peak is a statement about **duration**, not about how many cells ever pass through.
+**(b)** *Explain why there is a difference in cell numbers of the two distinct peaks in Graph A.* **[2]**
 
-**(b)** *Where Compound X acts, whether it would make a good drug, and what failure of the same control point costs.* **[5]**
+**1.** **A higher peak at G1 with a greater number of cells at 300 arbitrary units represents the largest population of cells, and a lower peak at G2/M with fewer cells at 600 arbitrary units.**
 
-**1.** **All the cells are at 300 arbitrary units, which indicates that Compound X arrests the cell cycle at the G1 checkpoint**, in other words it **prevents entry into S phase and so prevents DNA replication**. The deduction rests on what is missing as much as on what is there: there is **no 600 peak and no population in the trough**, so no cell has replicated its DNA and none is partway through doing so.
+**2.** **At G1, cells at 300 arbitrary units spend the longest time, thus at a given moment a greater proportion of the cell population will be found in this extended period.** Alternatively, **G2 and M phases are relatively much shorter in duration than G1, so that at any single point in time fewer cells will be captured.** The reference must be made to **longer time spent in G1**.
 
-**2.** **Compound X is effective as a chemotherapy drug**, because **it prevents cell proliferation and so prevents uncontrolled cell division**.
+**(c)** *Based on Graph B, evaluate the suitability of Compound X as an anti-cancer drug.* **[3]**
 
-**3.** It is **not suitable** on its own, because **it would interfere in the same way with the division of rapidly dividing normal cells, preventing growth, the replacement of worn out cells and the repair of tissues**. The judgement is that the drug is effective but not selective. **Reject the loose claim that it prevents mitosis**, since the arrest shown is before S phase, not at M.
+**1.** **Compound X is effective as a chemotherapy drug.**
 
-**4.** Run the same control point the other way. **Dysregulation of the G1 checkpoint leads to failure to check for DNA damage or to repair damaged DNA, and allows S phase and DNA replication to proceed.** The same argument works at the others: **dysregulation of the G2 checkpoint allows erroneous or damaged DNA to undergo mitosis**, and **dysregulation of the M checkpoint means spindle fibres may not be formed properly or attached correctly to the kinetochores of the chromosomes, and mitosis is allowed to proceed anyway.** **This leads to the rate of cell division far exceeding the rate of cell death, which is uncontrolled cell division, and that may eventually lead to cancer.**
+**2.** **All cells are at 300 a.u., indicating that X arrests the cell cycle at the G1 checkpoint / prevents entry into S phase / prevents DNA replication.**
 
-**5.** Uncontrolled is a statement about **balance**, not speed. What matters is **the rate of division exceeding the rate of cell loss**, so a cell dividing at an ordinary rate in a tissue that is losing no cells is still dividing in an uncontrolled way. Schemes **reject excessive or uncontrolled cell growth** where cell **division** is meant, and **reject the cell cycle is irregular or inappropriate**. Answer forwards, from the dysregulation to the consequence: two separate examiner comments penalise **answering in the reverse argument** by describing what the normal checkpoint does and stopping.
+**3.** **Thus it prevents cell proliferation and prevents uncontrolled cell division.**
 
-**(c)** *Chromosome number and DNA content at three points, where they part company, and what changes when the separation fails.* **[6]** *Max 3 from the three quantities and the account, max 3 from the non-disjunction half.*
+**4.** **Not suitable, because Compound X may interfere with cell division of rapidly dividing normal cells, thus preventing growth / replacement of worn out cells / repair of tissues.**
 
-**1.** At the **end of S phase: chromosome number 46, DNA content 2x.** Replication has doubled the DNA, but **a replicated chromosome with two sister chromatids is still one chromosome with one centromere**, and chromosomes are counted by counting **centromeres**.
+**5.** Any other valid point, for example that **inducing cell cycle arrest can trigger apoptosis**. **Reject "prevents mitosis".**
 
-**2.** At the **end of mitotic anaphase: chromosome number 92, DNA content 2x.** The **centromeres have divided**, so each former chromatid is now a **daughter chromosome** in its own right and the count doubles at that instant, although no DNA has been made or lost. Cytokinesis then returns each daughter cell to **46 and x**.
+**(d)** *Predict how a FACS graph of Taxol-treated cells would appear, and justify the prediction.* **[2]**
 
-**3.** At the **end of anaphase I of meiosis: chromosome number 23, DNA content 2x.** Only the homologues have been separated, so **each nucleus holds one homologue of each pair**, while **every chromosome still carries two chromatids**, so the DNA content has not fallen. **Anaphase II then halves the DNA to x.** The two quantities part company wherever **an event changes the number of centromeres without changing the amount of DNA, or the reverse**: **S phase changes DNA without changing centromere count; mitotic anaphase and anaphase I change centromere count without changing DNA.** That offset is what lets a DNA-content graph tell you which division you are looking at.
+**1.** **The graph for cells treated with Taxol would show a significant increase in the G2/M phase, that is a higher peak at 600 arbitrary units and the G1 peak, and the S phase population might also be reduced over time.**
 
-*Non-disjunction, defined and then applied at both anaphases.* [CROSS-BOOK, Book 2 LO 2(k)]
+**2.** **Taxol prevents shortening of spindle microtubules, arresting cells in metaphase and thus preventing separation of sister chromatids during anaphase.**
 
-**4.** **Non-disjunction is the failure of chromosomes or chromatids to separate and move to opposite poles during nuclear division.** Say it in those words. You have lost this definition twice already, once as **B2-50** and once as **B2-61**, so it is the single most likely mark on this page to go missing. Mechanically it happens because the **kinetochore fails to capture, or fails to hold, the spindle microtubules**, so **the pair is not pulled apart**, and **the normal distribution of chromosomes into gametes is disrupted**.
+**(e)** *Describe how the rate of mitosis is controlled.* **[4]** [CROSS-CLUSTER: Book 3 Cluster 1, cell signalling]
 
-**5.** **At anaphase I the homologous chromosomes fail to separate.** Both members of the pair travel to the same pole, so the error is carried into **both** secondary cells and **all four daughter nuclei are abnormal: 24, 24, 22, 22**, which in the notation of the key is **n+1, n+1, n−1, n−1**, and the (n+1) nucleus carries **both homologues**, therefore **both of that parent's alleles at the locus**. **At anaphase II the sister chromatids fail to separate.** Meiosis I has already separated the homologues correctly, so **only one of the two secondary cells is affected** and the daughter nuclei are **24, 22, 23, 23**, that is **n+1, n−1, n, n, two abnormal and two normal**, and the (n+1) nucleus carries **two copies of one chromatid**, therefore **the same allele twice**.
+**1.** **External growth factors serve as ligands that bind to receptors of the cell surface membrane.**
 
-**6.** **Which can give a trisomic zygote: both of them, and that is the trap.** Each failure produces an **(n+1) gamete**, and **an (n+1) gamete fusing with a normal (n) gamete gives a zygote of 2n + 1 = 47 chromosomes, with an additional chromosome for that pair**, which is **trisomy**, the **gain of one chromosome** from an otherwise diploid genome. Answering "meiosis I only" because all four of its products are abnormal confuses **how often** it happens with **whether** it can. What differs is the frequency, four abnormal gametes against two. **You tell them apart by the alleles: meiosis I gives you two different alleles from one parent, meiosis II gives you the same allele twice.** A child typed **P1 P2 P3** whose mother is **P1 P2** must have received both maternal homologues, which only anaphase I can deliver; a child typed **P1 P1 P3** received one maternal chromatid twice, which only anaphase II can deliver. Name the general consequence **aneuploidy**, **the general condition in which an organism loses or gains one or more chromosomes, but not a complete set.** Two refusals from examiners' comments: **"polyploidy" is wrong**, since **non-disjunction leads to an unequal distribution of the chromosomes, not the creation of an entire set**, and **"Down syndrome" is refused** unless the stem fixes which aneuploidy.
+**2.** **The fully activated receptor activates a relay protein, which activates a series of protein kinases in the phosphorylation cascade.**
 
-**Source:** RI Prelim 2025 P2 Q4(b)(i), Q4(b)(ii) and Q4(b)(iii) (a and b, verbatim stem, figure, phase labels, the duration argument and the four-point evaluation including the reject); School (HCI) Prelim 2024 P2 Q6(a) (b, verbatim checkpoint-dysregulation marking points and the verbatim examiner comment on reverse framing); HCI Book 3 chapter 3.3 p.11 IMPORTANT box and the corpus reject list (b, uncontrolled as a rate balance); MI Prelim 2021 P2 Q4(b) and Q4(c) (c, verbatim table values and the verbatim account of why chromosome number holds while DNA doubles); ASRJC Prelim 2025 P2 Q4c, TMJC Prelim 2023 P1 Q13 key A, IJC Prelim 2018 P2 Q4b and YIJC Prelim 2025 P2 Q3b(iii), routed through Book 2 Cluster 3 Q7 (c, the non-disjunction definition, the kinetochore-to-spindle mechanism, the n+1 and n−1 gamete sets for both anaphases, the trisomic zygote arithmetic and the naming refusals, all verbatim from those keys); ASRJC Prelim 2022 P1 Q14 and NYJC Prelim 2023 P1 Q15, key A (c, aneuploidy against polyploidy); banked gaps **B2-50**, **B2-61** for the definition and **B2-49** for the discriminator; HCI Book 3 chapter 3.2 §2.
-**Archetype:** data and figure interpretation running into an evaluate-the-drug judgement and a checkpoint-failure account, then the quantitative override on DNA content and ploidy, then a predict-to-a-novel-case on the failure of that same separation.
-**Trap:** reading peak height as how many cells pass through a phase rather than how long they spend in it; saying Compound X prevents mitosis when the arrest is before S phase; equating uncontrolled division with rapid division; framing the cancer answer backwards from the wild type; letting chromosome number track DNA content through S phase; answering "meiosis I only" to the trisomy question, when both failures yield an (n+1) gamete and only the frequency and the allele signature differ; and giving the non-disjunction definition without **move to opposite poles**, which is the half you keep losing.
-**LOs:** 2(n) for the cell cycle and its phases, 2(o) for checkpoint arrest, checkpoint dysregulation and the significance of division, 2(s) for the meiotic half of part (c); reaches back to Book 2 LO **2(k)**, numerical chromosomal aberration, including aneuploidy as in trisomy 21.
-**Concepts fused:** (1) fluorescence proportional to DNA content; (2) G1, S and G2 read off a distribution; (3) peak height as a proxy for phase duration; (4) interphase dominating the cycle; (5) arrest at a named checkpoint deduced from an absence; (6) effective against selective as a drug judgement; (7) growth, repair and replacement as what the drug also blocks; (8) checkpoint dysregulation named and run forwards to cancer; (9) uncontrolled as a rate balance, not a speed; (10) chromosomes counted by centromeres; (11) S phase doubling DNA without changing chromosome number; (12) mitotic anaphase doubling chromosome number without changing DNA; (13) anaphase I halving chromosome number with DNA held, and anaphase II halving DNA; (14) non-disjunction defined in the mark-bearing words; (15) the kinetochore failing to hold the spindle as the mechanism; (16) all four nuclei abnormal at anaphase I against two of four at anaphase II; (17) the (n+1) gamete giving a 2n+1 trisomic zygote from either failure; (18) two different alleles against the same allele twice as the discriminator; (19) aneuploidy named, with polyploidy and Down syndrome refused.
+**3.** **The cellular response is the switching on of genes that code for transcription factors, which will bind to the promoter of genes that promote or slow down the cell cycle.**
+
+**4.** **This increases transcription and translation of proteins that promote or slow down cell division**, that is the **regulatory proteins which control the checkpoints in the cell cycle**. The original key names these proteins as the M, S and G1 cyclins and their CDKs; that naming is **not required for 9477**, so the regulatory-protein wording is enough here.
+
+**5.** The **G1 checkpoint checks that cell size is adequate, that sufficient nutrients are available to support daughter cells, and that growth factors, the extracellular signal proteins that stimulate a cell to grow or divide, are present.**
+
+**6.** The **G2 checkpoint checks that cell size is adequate, that DNA replication is complete and successful, and that there is no DNA damage.**
+
+**7.** The **metaphase (M) checkpoint checks that chromosomes are under bipolar tension, in other words properly attached to kinetochore microtubules originating from the two different poles of the cell, and that chromosomes are aligned at the metaphase plate.**
+
+**8.** **Cell cycle checkpoints prevent premature progression of the cell cycle**, for example they **prevent the segregation of chromosomes before DNA replication is completed**, and they **provide time for cell machinery to be repaired should there be any damage**.
+
+**(f)** *Outline the roles of mitosis in a healthy animal.* **[2]**
+
+**1.** Mitosis results in the **production of genetically identical daughter cells**. This is a **compulsory point**.
+
+**2.** It is involved in **growth**.
+
+**3.** It is involved in the **replacement of old / dead / damaged / worn out cells**, that is **repair of tissues by replacement of cells**.
+
+**4.** **Reject "asexual reproduction"**, because the question specifies a healthy **animal**. **Reject "growth of cells"**, because mitosis increases cell number, not cell size.
+
+**Source:** RI Prelim 2025 P2 Q4(b)(i), stem, figure and key verbatim (a); RI Prelim 2025 P2 Q4(b)(ii), stem and key verbatim including the bracketed instruction about longer time in G1 (b); RI Prelim 2025 P2 Q4(b)(iii), stem and key verbatim including the reject (c); RI Prelim 2025 P2 Q4(c), stem and key verbatim (d); AJC Prelim 2017 P2 Q2(a)(ii), stem and key verbatim (e); JPJC Prelim 2023 P2 Q7(a)(ii), stem and key verbatim including both rejects (f). Fig. 3.1 is RI Prelim 2025 P2 Q4's own Fig. 4.2.
+**Archetype:** data interpretation off a flow cytometry profile, then drug evaluation, then a described control mechanism. Data and figure interpretation is 33.5% of Book 3, and chapter 3.2 is the most figure-led chapter in the book at 44.1%.
+**Trap:** explaining the peak heights without ever saying that G1 lasts longest; writing "prevents mitosis" for Compound X, which the key rejects; predicting the Taxol profile without linking it to the failure of spindle shortening; giving "asexual reproduction" as a role of mitosis in an animal, which the key rejects on context; saying mitosis causes "growth of cells".
+**LOs:** 2(n) the mitotic cell cycle; 2(o) the significance of the mitotic cell cycle and the need to regulate it tightly; reaches back to Cluster 1 LOs 3(m) and 3(o), signal transduction and amplification, in part (e).
+**Concepts fused:** (1) DNA content as a phase marker; (2) peak height as a proxy for phase duration; (3) G1 arrest deduced from a missing 600 a.u. peak; (4) selectivity as the limiting problem of a cytotoxic drug; (5) microtubule stabilisation as a metaphase block; (6) growth factor binding at a cell surface receptor; (7) the phosphorylation cascade; (8) transcription factors switching on cyclin genes; (9) the three checkpoints and what each checks; (10) checkpoints as a delay mechanism, not a stop mechanism; (11) growth and repair as the roles of mitosis; (12) the animal context that rules out asexual reproduction.
 
 ---
 
 ### Question 4
 
-**(a)** *The precise stage of arrest, justified from the image.* **[3]**
+**(a)** *State the precise stage in the cell cycle in which the cells are arrested.* **[1]**
 
-**1.** The cells are arrested at **prophase**.
+**1.** **Prophase.**
 
-*The justification.* [INFERRED: extension, no official key]
+**(b)** *Suggest why there are two fluorescent regions at each end of a chromosome.* **[3]**
 
-**2.** The chromosomes are **condensed into discrete chromosomes visible as separate bodies**, which rules out interphase, where the DNA is **decondensed chromatin**.
+**1.** **The fluorescent probe has a DNA sequence that is complementary to the repetitive DNA sequence found in telomeres.**
 
-**3.** They are **scattered through the cell and not aligned at a metaphase plate**, and they have **not separated into two groups moving to opposite poles**, which rules out metaphase, anaphase and telophase. Condensed but not yet arranged leaves prophase.
+**2.** **The fluorescent probe binds to the single-stranded 3' overhang region of the telomeres, which is found at both ends of a linear DNA molecule.**
 
-**(b)** *Why there are two fluorescent regions at each end of a chromosome.* **[3]**
+**3.** **Each chromosome consists of two DNA molecules / consists of two sister chromatids, each consisting of one DNA molecule, so there are two 3' overhang regions at each end of a chromosome.**
 
-**1.** **The fluorescent probe has a DNA sequence that is complementary to the repetitive DNA sequence found in telomeres**, so it binds by **complementary base pairing** and marks the telomeres and nothing else.
+**(c)** *Suggest how a mutation at the centromere of chromosome 5 could affect the gametes formed.* **[3]** [CROSS-BOOK: Book 2 LO 2(k), numerical chromosomal aberration]
 
-**2.** **The probe binds the single-stranded 3' overhang region of the telomere, which is found at both ends of a linear DNA molecule.**
+**1.** The **mutated centromere has a different 3D conformation, so the kinetochore cannot bind.**
 
-**3.** **Each chromosome consists of two DNA molecules, since it consists of two sister chromatids each of which is one DNA molecule, so there are two 3' overhang regions at each end of the chromosome.** Two spots per end is therefore evidence that **replication has already happened**, which is consistent with the answer to part (a).
+**2.** **Spindle fibres cannot attach.**
 
-**(c)** *What centromeric DNA is and does, what its loss would do to nuclear division, and where that loss has to sit.* **[6]**
+**3.** **Nondisjunction occurs, where homologous chromosomes fail to separate properly during anaphase I, or where sister chromatids fail to separate properly during anaphase II.**
 
-**1.** The centromere is **a constricted region on a chromosome**, and it is **the region where the two sister chromatids are joined in a replicated chromosome during cell division**.
+**4.** This results in **aneuploidy, where the gametes are n+1 and n−1**. **Reject polyploidy**, because non-disjunction gives an unequal distribution of chromosomes rather than a whole extra set, and polyploidy occurs mainly in plants rather than animals.
 
-**2.** **Sequence.** It is **non-coding DNA**: it is **never transcribed into a product**, so it **encodes neither protein nor RNA**. Its sequence is **short, AT-rich tandem repeats with no centromere-specific sequence**, repeated head to tail, and defined by being repetitive rather than by being any particular string. Contrast the telomere in part (b), whose repeat **is** a defined sequence, **5'-TTAGGG-3'**, and is **G-rich**. Centromeric DNA is also often **heavily methylated**.
+**5.** Any three of the four.
 
-**3.** **Higher-order structure and the proteins it binds.** The centromere is **embedded in a very large stretch of heterochromatin**, and it is **associated with centromere-specific histones that form specialised nucleosomes**. On that platform **a number of centromere-associated proteins bind, forming the specialised structure called the kinetochore**, and the two kinetochores of one chromosome **face opposite poles**. Keep the two words apart: **the centromere is the DNA region, the kinetochore is the protein structure built on it.**
+**(d)** *Describe how DNA is packaged to fit into the nucleus of eukaryotic cells.* **[4]** [CROSS-BOOK: Book 2 LO 2(d)]
 
-**4.** Its functions are that **centromeres hold the sister chromatids together until anaphase**, that they **divide to allow separation of the sister chromatids at anaphase**, and that they **provide the site where the spindle microtubules attach**, which is what **ensures proper alignment and segregation of chromosomes to opposite poles**.
+**1.** **Nucleosomes are formed by the winding of negatively charged chromosomal DNA around basic / positively charged histones.**
 
-**5.** Delete the centromeric DNA and **the chromatids are not held together**, **kinetochores cannot form on the chromosome**, and so **spindle fibres cannot attach to the chromosome**. The consequences run downstream in order: **chromosomes cannot align along the metaphase plate during metaphase**, so **mitosis cannot proceed past metaphase and anaphase cannot occur**; if it does, **chromatids move randomly rather than to opposite poles**, so **daughter cells will not have a complete set of chromosomes, will have extra or fewer chromosomes, and will not be genetically identical to the parent cell**. The key notes that **the idea of opposite poles is important** and will not credit an answer without it.
+**2.** **Nucleosomes and linker DNA result in the formation of a 10 nm chromatin fibre, the "beads-on-a-string" structure.**
 
-**6.** **Where the deletion has to sit.** For no working copy to remain, the deletion has to affect **the same locus on both homologous chromosomes**. Say it in exactly those words, because it is banked gap **B2-64** and you lose the phrasing every time, not the biology. **If the deletion affects the same gene loci on both homologous chromosomes, the effect is usually lethal**, since **no functional copy of those loci exists anywhere in the cell**. **If only one of a homologous pair is affected**, the intact homologue still carries a functional centromere at that locus, so **that chromosome is still captured by the spindle and still segregates**, and the cell keeps dividing while losing one chromosome's worth of information.
+**3.** The **10 nm chromatin fibre coils around itself to form a 30 nm chromatin fibre / solenoid**, with **6 nucleosomes in one turn of the helix of the solenoid**.
 
-**Source:** VJC Prelim 2025 P2 Q5(a)(i) and Q5(a)(ii) (a and b, verbatim stem, both figures and all three marking points; the justification in (a) is an extension); JPJC Prelim 2022 P2 Q7b (c, verbatim centromere structure and function marking points, which the key marks as MP1 plus any from MP2 to MP4 plus any from MP5 to MP8); MI Prelim 2017 P2 Q1e (c, verbatim consequence-of-deletion marking points, where the key notes that the idea of opposite poles is important); Book 2 Cluster 1 Q6(a), from the centromere-against-telomere comparison keys (c, verbatim on **short, AT-rich tandem repeats with no centromere-specific sequence**, the **very large stretch of heterochromatin**, and the **centromere-specific histones forming specialised nucleosomes**); ACJC Prelim 2015 P2 Q10b, routed through Book 2 Cluster 3 Q6(a) (c, verbatim on a deletion at the same gene loci on both homologous chromosomes being usually lethal); banked gap **B2-64** for the locus phrasing.
-**Archetype:** figure interpretation feeding a structure-to-function chain, then predict-to-a-novel-case.
-**Trap:** calling the arrest metaphase because the chromosomes are condensed; using centromere and kinetochore interchangeably, when the centromere is the DNA region and the kinetochore is the protein structure built on it; forgetting that two spots per end means two chromatids; describing the centromeric repeat as a defined sequence, which is the telomere's property and not the centromere's; and paraphrasing **the same locus on both homologous chromosomes** instead of saying it.
-**LOs:** 2(n) for stage behaviour and the terminology block; reaches back to Book 2 LO **2(h)**, which names **centromeres** and **telomeres** as non-coding DNA with structure and function, and to **2(k)** for what a deletion at a locus costs.
-**Concepts fused:** (1) deducing a stage from condensation plus arrangement; (2) probe hybridisation by complementary base pairing; (3) telomeres as repetitive non-coding DNA at both ends of a linear molecule; (4) one chromatid equals one DNA molecule, so two spots per end; (5) the spot count as independent evidence of replication; (6) centromeric DNA as short, AT-rich, undefined tandem repeats, set against the telomere's defined G-rich repeat; (7) heterochromatin embedding and centromere-specific nucleosomes; (8) kinetochore assembly on the centromere; (9) the three roles of the centromere; (10) the deletion chain from no kinetochore to no attachment to no alignment; (11) arrest before anaphase; (12) the same locus on both homologues as the condition for no working copy remaining; (13) one affected homologue leaving the pair's other centromere functional.
+**4.** There is **attachment of the 30 nm chromatin fibre to a central protein scaffold / nuclear matrix to form radial loops / the 300 nm chromatin fibre.**
+
+**5.** **Further packing / condensation of the 300 nm chromatin results in the formation of a metaphase chromosome.**
+
+**6.** A parallel key words the first level as **a negatively charged DNA molecule winding around a positively charged histone octamer consisting of two molecules each of H2A, H2B, H3 and H4 to form a nucleosome**, with **individual nucleosomes connected by strands of linker DNA and H1 histones**. **Answers that never leave beads-on-a-string are rejected**, so name a protein at each level.
+
+**(e)** *Suggest why the rate of shortening of the ends of chromosomes is high in mice.* **[1]**
+
+**1.** **Mouse cells divide more frequently.**
+
+**2.** Alternatively, **RNA primers have a longer sequence in mice**, so more is lost from the lagging strand at each round of replication.
+
+**Source:** VJC Prelim 2025 P2 Q5(a)(i), stem, both figures and key verbatim (a); VJC Prelim 2025 P2 Q5(a)(ii), stem and all three marking points verbatim (b); ASRJC Prelim 2025 P2 Q4(c), key verbatim including the reject (c), stem lightly edited from "the parental female fruit fly" to "a female fruit fly" so it stands without the Fig. 4.1 cross described in the original preamble; SAJC Prelim 2021 P2 Q7(a), stem and key verbatim (d), with the JPJC Prelim 2022 P2 Q3(a) key added as the parallel wording in point 6; VJC Prelim 2025 P2 Q5(c), question sentence and key verbatim (e), with the two readings the candidate would have taken off the paper's Fig. 5.4 written into the stem in prose because that figure could not be recovered.
+**Archetype:** deducing a cell cycle stage from a molecular probe result, then structure-to-consequence reasoning. VJC set this as a whole Paper 2 question in 2025.
+**Trap:** answering "metaphase" for the arrest stage because the chromosomes look condensed, when the spread shows separate chromosomes not aligned on any plate; explaining the two dots per end by the two ends of the chromosome rather than by the two chromatids; writing "polyploidy" for the consequence of non-disjunction, which the key rejects and which an examiner report calls out by name; stopping the packing answer at the nucleosome.
+**LOs:** 2(n) chromosome behaviour and structure through the cycle; reaches back to Book 2 LOs 2(h) non-coding DNA at telomeres and centromeres, 2(d) the packing hierarchy, and 2(k) numerical chromosomal aberration.
+**Concepts fused:** (1) telomere repeats as the probe target; (2) complementary base pairing between probe and target; (3) the 3' overhang at both ends of a linear DNA molecule; (4) two chromatids giving two overhangs per end; (5) prophase deduced from separate condensed chromosomes; (6) centromere sequence determining kinetochore binding; (7) kinetochore failure to spindle failure; (8) non-disjunction at anaphase I against anaphase II; (9) aneuploidy against polyploidy; (10) the ionic attraction between histone and DNA; (11) the 10 nm, 30 nm and 300 nm levels with a named protein at each; (12) the metaphase chromosome as the end of the ladder.
 
 ---
 
 ### Question 5
 
-**(a)** *Judging all four statements, and all four options.* MCQ key: **B**. **[5]** [INFERRED: the specimen papers ship without a mark scheme]
+**(a)** *Which features of meiosis can contribute to genetic variation between gametes?* **[1]**
 
-**1.** **Statement 1 contributes.** **Crossing-over at chiasmata between non-sister chromatids of a bivalent produces new combinations of alleles** on a chromatid, so gametes carry allele combinations present in neither parent. This is a **prophase I** event.
+**1.** The key is **B**, that is statements **1, 2 and 4**. [INFERRED: the specimen papers ship without a mark scheme]
 
-**2.** **Statement 4 contributes**, and it is **independent assortment**, which is a **metaphase I** event. **The orientation of the homologues in any one pair is independent of that of any other pair**, so with n pairs the gametes carry **2ⁿ combinations of maternal and paternal chromosomes**, which is **2²³ in humans**. Note where it happens: **metaphase I is where the arrangement is made, and anaphase I only separates what metaphase I has already arranged.** Your notes attribute independent assortment to metaphase II on page 34, contradicting their own table on page 32, and metaphase II has no homologues left to assort.
+**(b)** *Explain your answer in (a), taking each of the four statements in turn.* **[4]** [INFERRED: no official key]
 
-**3.** **Statement 2 contributes, but only because of crossing-over.** **Crossing over in prophase I has already made the two chromatids of a chromosome genetically different**, so their **random segregation at anaphase II adds further variation**. It is a consequence of statement 1, not an independent assortment mechanism of its own, and a candidate who counts it as an independent mechanism has still landed on the right letter for the wrong reason.
+**1.** **Statement 1 contributes.** **Crossing over at chiasmata between non-sister chromatids of a bivalent produces new combinations of alleles** on a chromatid, which is variation **within** a chromosome.
 
-**4.** **Statement 3 is false**, and it is the sharpest distractor in the Book. **Exchange occurs between non-sister chromatids of homologous chromosomes, not between sister chromatids.** Sister chromatids are **identical copies of each other**, so swapping material between them **exchanges identical alleles and generates nothing new**. Write the phrase out in full every time.
+**2.** **Statement 4 contributes.** **Independent assortment of homologous pairs at metaphase and anaphase I** gives **2ⁿ combinations of maternal and paternal chromosomes** in the gametes.
 
-**5.** So the contributing set is **1, 2 and 4**, which is **option B**. **Option A fails** because it includes statement 3 and drops statement 4. **Option C fails** because it includes statement 3, even though its other two are right. **Option D fails** because it includes statement 3 and drops statement 1, the strongest contributor of all.
+**3.** **Statement 2 contributes.** Because crossing over has made the two chromatids of a chromosome **genetically different**, their **random segregation at anaphase II** adds further variation.
 
-**(b)** *How meiosis leads to genetic recombination.* **[4]** [INFERRED: the specimen papers ship without a mark scheme]
+**4.** **Statement 3 is false.** Exchange occurs between **non-sister chromatids of homologous chromosomes**, not between sister chromatids. **Sister chromatids are identical copies**, so exchanging material between them creates nothing new.
 
-**1.** During **prophase I homologous chromosomes pair up along their lengths to form bivalents**, and the pairing is **precise**, bringing the genes on each chromosome into **precise alignment** so that equivalent lengths sit opposite each other.
+**5.** So **A fails** because it contains statement 3, **C fails** because it contains statement 3 and drops statement 2, and **D fails** because it contains statement 3 and drops statement 1. **B is the only option that carries 1, 2 and 4 and excludes 3.**
 
-**2.** **Non-sister chromatids break and rejoin at points called chiasmata, so equivalent lengths of chromatid carrying different alleles of the same genes are exchanged.** This is **crossing-over**, and it produces **chromatids carrying new combinations of alleles that were not present in either parent**, which are **recombinant chromatids**.
+**6.** The two precision points this question is built on are **sister against non-sister chromatids**, and **independent assortment happening at metaphase I rather than at anaphase II**, where statement 2 credits the *segregation of already-different chromatids* rather than independent assortment itself.
 
-**3.** At **metaphase I the bivalents line up on the equator in a random orientation**, so **which member of each homologous pair moves to which pole at anaphase I is independent of every other pair**. This is **independent assortment**, and with n pairs it gives **2ⁿ different combinations of maternal and paternal chromosomes**.
+**(c)** *Explain how meiosis leads to genetic recombination in the nuclear DNA of eukaryotes.* **[4]** [INFERRED: no official key; cross-checked against EJC Prelim 2023 P2 Q5b and NJC Prelim 2024 P3 Q1(b)(iv), whose keys give the same wording]
 
-**4.** **The same random arrangement of chromatids occurs at metaphase II**, adding further combinations, and together these produce **four genetically different haploid nuclei from one parent cell**.
+**1.** During **prophase I homologous chromosomes pair up to form bivalents**.
 
-**(c)** *The number of zygotes, and what makes the third contributor independent.* **[2]**
+**2.** **Non-sister chromatids break and rejoin at points called chiasmata, so equivalent lengths of chromatid carrying different alleles of the same genes are exchanged.** This is **crossing over**, and it produces **chromatids carrying new combinations of alleles that were not present in either parent**.
 
-**1.** The third contributor is **random fertilisation**, which LO 2(t) names in its own words alongside meiosis. **Gametes carrying different combinations of chromosomes fuse at random, adding to the genetic variation of the zygote.** The count is **2²³ × 2²³, which is 2⁴⁶, about seventy trillion** genetically different zygotes from one couple, before crossing-over is even counted.
+**3.** At **metaphase I the bivalents line up on the equator in a random orientation**, so **which member of each homologous pair moves to which pole at anaphase I is independent of every other pair**. This is **independent assortment**, and with n pairs of chromosomes it gives **2ⁿ different combinations of maternal and paternal chromosomes** in the gametes.
 
-**2.** The figures **multiply rather than add** because **which sperm fuses with which egg is decided after both gametes exist and is independent of how either was made**. Crossing-over and independent assortment both act inside meiosis to determine what a single gamete contains; random fertilisation acts between two separate meioses. Leave it out and you have answered two thirds of LO 2(t).
+**4.** The **same random arrangement of chromatids occurs at metaphase II**, adding further new combinations. Together these produce **four genetically different haploid nuclei from one parent cell**.
 
-**(d)** *The two products of one unequal exchange, and which does more harm.* **[2]** [CROSS-BOOK, Book 2 LO 2(k)]
+**5.** An examiner report on a related essay warns that **"different combination of alleles" is rejected for the independent assortment route**, which credits **different combinations of maternal and paternal chromosomes**. Keep the two routes worded apart.
 
-**1.** A single **unequal crossing over between synapsed chromosomes during meiosis** produces, **in the same event, a duplication on one chromatid and a deletion on the other**. One chromatid gains a segment and its partner loses the same segment. That is the whole point of the part: **the mechanism that generates the variation in (b) is the mechanism that generates chromosomal aberration**, and which one you get depends only on whether the exchange was reciprocal.
+**(d)** *State the number of genetically unique kinds of gametes that might be formed.* **[1]**
 
-**2.** **The deletion does more harm.** A **chromosome breaks in one or more places and a portion of it is lost**, and the effects are **usually profound, because the genotype is altered due to the absence of certain gene loci**. The information is gone and **no copy remains on that chromosome**. If the deletion affects **the same locus on both homologous chromosomes, the effect is usually lethal**; if **only one of a homologous pair is affected**, **alleles on the non-deficient homologue will be expressed, even if recessive**, which is **unmasking**. The duplication is the milder half, and you must say why rather than just assert it: **any part of the genetic material, be it a single locus or a large piece of chromosome, is present more than once in the genome**, so **nothing has been lost**, and the effects are **gene redundancy**, **phenotypic variation** and **an important source of genetic variation during evolution**, because a **spare copy is free to accumulate mutations while the original continues to do its job**. The judgement in one line: losing information is worse than holding it twice.
+**1.** The **formula is 2ⁿ, where n represents the number of chromosomes in one haploid set.**
 
-**Source:** 9477 Specimen P1 Q17 (a, verbatim stem, all four statements, all four options and key **B**, converted from a letter-select into a written audit; the specimen ships without a scheme, so the reasoning is inferred); 9477 Specimen P3 Q1(b)(i) (b, verbatim stem, worth **4 marks** on the real paper, kept at four here; the marking points are inferred and cross-checked against EJC Prelim 2023 P2 Q5b and NJC Prelim 2024 P3 Q1(b)(iv), whose keys give the same wording); HCI Book 3 chapter 3.2 §7 and the page 32 against page 34 contradiction (a); School Prelim 2025 P3 Q5a levels descriptor S2c and YIJC Prelim 2023 P2 Q5c (c, verbatim random-fertilisation wording; the arithmetic is an extension); IJC Prelim 2018 P2 Q4ai, ACJC Prelim 2015 P2 Q10b, NYJC Prelim 2025 P3 Q4a and EJC Prelim 2023 P2 Q4ci, routed through Book 2 Cluster 3 Q6(a) (d, verbatim on unequal crossing over naming both products in one answer, on deletion being usually profound with no copy remaining, on the both-homologues lethality and the one-homologue unmasking, and on duplication giving gene redundancy and a spare copy free to mutate); banked gap **B2-45**, which he reasoned out live rather than knew.
-**Archetype:** the corpus files this as an MCQ, but the written audit turns it into a compare-and-distinguish, closing on a predict-to-a-novel-case in (d) that runs the same mechanism backwards into pathology.
-**Trap:** crossing-over placed between **sister** chromatids, which is statement 3 and a deliberate distractor; independent assortment of homologous pairs placed anywhere other than **metaphase I**, which your own notes get wrong on page 34; dropping **random fertilisation**, which is a third of LO 2(t); and in (d), naming only the deletion when the whole point is that **one event makes both products**, or asserting that deletion is worse without the no-copy-remains reason.
-**LOs:** 2(s) and 2(t); part (d) reaches back to Book 2 LO **2(k)**, structural chromosomal aberration.
-**Concepts fused:** (1) crossing-over between non-sister chromatids of homologous chromosomes; (2) chiasmata as the exchange points; (3) recombinant against parental chromatids; (4) synapsis making precise alignment possible; (5) independent assortment located at metaphase I; (6) 2ⁿ and 2²³; (7) anaphase II segregation as a consequence of crossing-over rather than a separate mechanism; (8) why exchange between identical chromatids generates nothing; (9) random fertilisation as the third named source; (10) why the two figures multiply; (11) option-by-option elimination; (12) unequal crossing over yielding a duplication and a deletion in the same event; (13) absence of gene loci as the reason deletion is profound; (14) unmasking of a recessive allele on the non-deficient homologue; (15) duplication as gene redundancy and a source of evolutionary novelty; (16) the ranking judgement between the two products.
+**2.** In this example, **diploid number (2n) = 10, therefore n = 5**, so the **number of genetically unique gametes = 2⁵ = 32**.
+
+**(e)** *Which of the following could lead to chromosomal translocation?* **[1]**
+
+**1.** The key is **C**, that is **1, 2 and 4**.
+
+**(f)** *Explain your answer in (e), taking each of the four numbered processes in turn.* **[3]** [INFERRED: the school key gives the letter only] [CROSS-BOOK: Book 2 LO 2(k), structural chromosomal aberration]
+
+**1.** **Process 1 can.** **End to end fusion of two chromosomes joins a segment of one chromosome to a non-homologous chromosome**, which is what a translocation is.
+
+**2.** **Process 2 can.** **Meiosis brings homologous chromosomes into physical contact at prophase I and breaks and rejoins non-sister chromatids at chiasmata**, so a **misaligned break and rejoin transfers a segment to the wrong chromosome**.
+
+**3.** **Process 4 can.** **Unequal crossing over occurs when the two homologues misalign before the exchange, so the two chromatids do not swap equivalent lengths**. One product carries a **duplication of the segment** and the other carries a **deletion of the same segment**. Name **both products in one answer**, because a key elsewhere in this file marks the duplication and the deletion as alternatives for the same mark.
+
+**4.** **Process 3 cannot, in this scheme.** **Viral infection causes mutation by inserting viral DNA into the host genome or by damaging DNA**, but it is not credited here as a route to translocation, which is why the key is **C** and not **D**.
+
+**5.** The consequence to hold with this: **a deletion is usually more damaging than a duplication**, because a deletion removes genes outright while a duplication leaves a **spare copy free to mutate**, giving **gene redundancy**.
+
+**Source:** 9477 Specimen P1 Q17 verbatim, all four statements, all four options and the paper's own 1 mark (a); the four-statement audit in (b) is added by the drill, its command wording taken from TJC Prelim 2023 P2 Q4(a)(ii) and YIJC Prelim 2025 P2 Q3(a)(ii), which both set "Explain your answer in (a)(i)" as a real follow-on part. 9477 Specimen P3 Q1(b)(i) verbatim including the three mtDNA bullets, worth **4 marks** on the real paper and kept at four here (c). TMJC Prelim 2023 P2 Q3(d), stem and key verbatim (d), with "this organism" replaced by "an organism" so it stands without Fig. 3.1. CJC Prelim 2023 P1 Q11 verbatim, all four processes and all four options, and the paper's own 1 mark (e); the audit in (f) is added by the drill on the same pattern. The unequal crossing over marking points are verbatim from IJC Prelim 2018 P2 Q4(a)(i), ACJC Prelim 2015 P2 Q10b and EJC Prelim 2023 P2 Q4(c)(i), routed through Book 2 Cluster 3 Q6(a).
+**Archetype:** precision audit of near-miss statements, then a described mechanism. Both MCQs here are real papers and both turn on one wrong word rather than on a missing fact.
+**Trap:** accepting statement 3 because it looks like a description of crossing over; putting independent assortment at anaphase II; writing "different combination of alleles" for the independent assortment route, which one key rejects; naming only the duplication or only the deletion as the product of unequal crossing over; using 2ⁿ with n as the diploid number.
+**LOs:** 2(s) the meiotic cell cycle, 2(t) the significance of meiosis and how meiosis leads to variation; reaches back to Book 2 LO 2(k) for structural chromosomal aberration.
+**Concepts fused:** (1) crossing over as variation within a chromosome; (2) independent assortment as variation between chromosomes; (3) segregation of non-identical chromatids at anaphase II; (4) sister against non-sister chromatids; (5) bivalent formation at prophase I; (6) chiasmata as break-and-rejoin points; (7) random bivalent orientation at metaphase I; (8) the 2ⁿ arithmetic and what n stands for; (9) four genetically different haploid nuclei as the output; (10) end-to-end fusion as a translocation route; (11) unequal crossing over giving reciprocal duplication and deletion; (12) deletion against duplication in severity.
 
 ---
 
 ### Question 6
 
-**(a)** *Four differences in chromosome behaviour, both sides given, and two statements that score nothing.* **[6]** [INFERRED: the specimen papers ship without a mark scheme; wording cross-checked against HCI Prelim 2022 P3 Q4a and SAJC Prelim 2023 P3 Q4b]
+**(a)** *Complete Table 6.1 by stating the number of dots observed in prophase II and anaphase II.* **[2]**
 
-**1.** **Prophase.** In mitosis **homologous chromosomes remain separate and do not pair up**, whereas in meiosis **homologous chromosomes pair up to form bivalents during prophase I**.
+**1.** **Prophase II = 8.**
 
-**2.** **Crossing-over.** In mitosis **no crossing over occurs**, whereas in meiosis **crossing over occurs at chiasmata between non-sister chromatids of homologous chromosomes**, exchanging alleles.
+**2.** **Anaphase II = 16.**
 
-**3.** **Metaphase.** In mitosis **chromosomes align singly at the metaphase plate**, whereas in meiosis **the bivalents line up in pairs at the metaphase plate at metaphase I and assort independently**.
+**(b)** *Explain your answer in (a).* **[3]**
 
-**4.** **Anaphase.** In mitosis **the centromeres divide and the sister chromatids separate**, and **the separating chromatids are identical**, whereas at **anaphase I the centromeres do not divide and whole homologous chromosomes separate, each still made of two chromatids**, which **may not be identical, because of crossing over**.
+**1.** **At the start, at prophase I, the cell has a total of 16 chromosomes, giving rise to 16 dots.**
 
-**5.** **Telophase.** In mitosis the daughter nuclei hold **the same chromosome number as the parent, with both homologues of each pair present**, whereas in meiosis they hold **half the chromosome number, with only one homologue of each pair present**.
+**2.** **Each chromosome consists of 2 sister chromatids joined together at the centromere**, so a two-chromatid chromosome still shows only one dot.
 
-*Two true statements that score nothing here.* [INFERRED: extension, no official key]
+**3.** At the **end of meiosis I, homologous chromosomes have separated**, so at **prophase II there is only one set of homologous chromosomes / 8 chromosomes in each cell**.
 
-**6.** **Meiosis produces four daughter cells and mitosis two**, and **meiosis occurs only in the gonads while mitosis occurs in somatic cells**. Both are true and both are examinable elsewhere, but neither is a statement about **the behaviour of chromosomes**, which is what the question restricts itself to. The examiner's report on the parallel essay question names exactly this failure: candidates **excessively described beyond the chromosome behaviour to include centrioles, nuclear envelope and kinetochore microtubules** when the question asked only about chromosomes. Schemes also **reject yes/no comparisons**, so state both sides positively rather than saying that mitosis lacks crossing over.
+**4.** At **anaphase II, centromeres divide as chromatids separate and move to opposite poles of the cell**, and **each chromatid has one centromere**, so the count doubles back to 16 within the one cell.
 
-**(b)** *What causes the reduction, and why a species needs one.* **[4]**
+**(c)** *State three features that identify two chromosomes as a homologous pair.* **[3]**
 
-**1.** **During metaphase I, homologous chromosomes align along the metaphase plate in pairs, with one homologue of each pair facing each pole.**
+**1.** They **have the same genes at the same loci / the same position on a chromosome / the same gene loci**. **Reject "the same alleles". Reject "the same number of genes".**
 
-**2.** **During anaphase I, the kinetochore microtubules shorten, pulling the homologous chromosomes apart towards opposite poles of the cell.** Note that **the centromeres do not divide here**, which is why whole chromosomes and not chromatids are what separate. **At telophase I the nuclear envelope reforms, leading to the haploid number of chromosomes per nucleus.** This point is compulsory in the key.
+**2.** They have the **same position of the centromere**.
 
-**3.** **During anaphase II the centromere divides, the sister chromatids separate, and each becomes a full daughter chromosome** as the kinetochore microtubules shorten and pull them to opposite poles. **Reject the phrasing that spindle fibres shorten, separating sister chromatids.**
+**3.** They are of the **same length**. **Reject "similar" length.**
 
-**4.** The need: **meiosis produces gametes which are haploid, with half the number of chromosomes**, and **two gametes fuse at fertilisation to form a diploid zygote**, which **prevents the doubling of chromosome number in each successive generation** and **allows the chromosome number to remain constant for the species**. **Reject half amount of genetic material** and **reject full set of chromosomes** where chromosome number is meant. Ignore any reference to generating variation, which is a different outcome.
+**4.** Where a banding pattern is shown, **the same banding pattern is the evidence that they have the same genes / gene loci**.
 
-**Source:** 9477 Specimen P2 Q6(c) (a, verbatim stem, worth **4 marks with the command word state**, so four one-line statements and no development; the specimen ships without a scheme, so the differences are inferred and cross-checked against HCI Prelim 2022 P3 Q4a and SAJC Prelim 2023 P3 Q4b, whose keys give the same five axes); School Prelim 2025 P3 Q5a examiner comment (a, verbatim on excessive description beyond chromosome behaviour); ASRJC Prelim 2023 P2 Q2ci and Q2cii (b, verbatim marking points including the compulsory telophase point and both rejects); School (HCI) Prelim 2023 P2 Q5(c)(ii) (b, verbatim need-for-reduction marking points).
-**Archetype:** compare and distinguish, only 2.8% of the corpus but the single most directly reproducible four marks in the Book, since Specimen P2 Q6(c) is the school's own comparison table almost verbatim.
-**Trap:** answering a behaviour question with outcomes, which the specimen's restriction to **behaviour of chromosomes** rules out; yes/no comparisons, rejected in two separate schemes; dividing the centromeres at anaphase I.
-**LOs:** 2(n) and 2(s), with the chromosome-number half of 2(t) in part (b).
-**Concepts fused:** (1) pairing against non-pairing at prophase; (2) crossing-over as a behavioural difference; (3) single file against pairs at the metaphase plate; (4) independent assortment as a metaphase I behaviour; (5) centromeres dividing against holding at anaphase; (6) chromatids identical against possibly non-identical; (7) chromosome number in the daughter nuclei; (8) the behaviour restriction and what it excludes; (9) both sides stated positively; (10) the mechanics of reduction across anaphase I and anaphase II; (11) haploid gametes restoring diploidy at fertilisation; (12) constant chromosome number across generations.
+**(d)** *Distinguish between the terms haploid and diploid.* **[2]**
+
+**1.** **Haploid refers to only one set of chromosomes being present in a cell**, whereas **diploid refers to a cell having 2 sets of chromosomes**.
+
+**2.** Alternatively, the **haploid condition consists of one member of each pair of homologous chromosomes being present**, whereas the **diploid condition consists of 2 sets of chromosomes, one set derived from each parent**.
+
+**(e)** *Explain the need for reduction division during meiosis.* **[3]**
+
+**1.** **Meiosis / reduction division produces gametes which are haploid / are n / have half the normal number of chromosomes.** This is the **compulsory point**. **Reject "half amount of genetic material".**
+
+**2.** **Two gametes fuse / fertilisation occurs, to form a diploid zygote.** **Reject "full set of chromosomes".**
+
+**3.** The **zygote will have maternal and paternal chromosomes.**
+
+**4.** It **prevents doubling of chromosome number / polyploidy / having too many chromosomes**, or it **allows chromosome number to remain constant / the same for each species**.
+
+**5.** Any three of the four. **Ignore reference to 23 chromosomes in human gametes. Ignore reference to generating genetic variation**, which is a different question.
+
+**(f)** *Explain why the kangaroo hybrid offspring are infertile.* **[2]**
+
+**1.** A **different number of chromosomes in the two parent species can prevent proper pairing during prophase I of meiosis**, **thus leading to one or more unpaired chromosomes**.
+
+**2.** Alternatively, **even when chromosome numbers are similar, differences in gene order or structure can prevent proper alignment**, that is **the chromosomes are not homologous**.
+
+**3.** **As a result, meiosis may either fail or produce gametes that are inviable.** Accept **sperms or eggs** for gametes.
+
+**4.** Marking is **the first two points for a maximum of 2, or the second and third points for a maximum of 2.**
+
+**Source:** TJC Prelim 2023 P2 Q4(a)(i), stem, table and key verbatim (a); TJC Prelim 2023 P2 Q4(a)(ii), stem and key verbatim (b), with Table 4.1 renumbered 6.1; TMJC Prelim 2023 P2 Q3(a)(ii), key verbatim including both rejects (c), stem lightly edited from "State three features visible on Fig. 3.1 that identify the chromosomes as a homologous pair" so it stands without the figure, with the banding-pattern point added verbatim from NYJC Prelim 2023 P2 Q3(b)(i); TJC Prelim 2018 P2 Q5(b) and NYJC Prelim 2022 P2 Q6(b), stem and key verbatim (d); ASRJC Prelim 2023 P2 Q2(c)(ii), stem and key verbatim including both rejects and both ignores (e); ACJC Prelim 2025 P2 Q9(b)(ii), stem and key verbatim including the marking instruction (f).
+**Archetype:** a quantitative table completion that only works if the ploidy bookkeeping is right, then definition-level precision, then an applied consequence.
+**Trap:** counting 16 dots at prophase II by forgetting that meiosis I has already halved the chromosome number; saying homologous chromosomes carry the same alleles, which the key rejects; saying they are of "similar" length, which the key rejects; answering the reduction division question with genetic variation, which the key ignores; explaining hybrid infertility by "different species" rather than by failure of synapsis.
+**LOs:** 2(s) the meiotic cell cycle and the main stages of meiosis, 2(t) the significance of meiosis.
+**Concepts fused:** (1) one centromere per chromosome regardless of chromatid number; (2) homologue separation at meiosis I halving the count; (3) centromere division at anaphase II doubling it back; (4) same loci, same centromere position, same length as the test of homology; (5) banding pattern as evidence of shared loci; (6) same loci but not necessarily same alleles; (7) haploid against diploid; (8) reduction as the precondition for fertilisation; (9) restoration of the diploid number at fertilisation; (10) constancy of chromosome number across generations; (11) synapsis requiring true homologues; (12) meiotic failure as the cause of hybrid sterility.
 
 ---
 
 ### Question 7
 
-**(a)** *From ligand binding to cell division, with the three stages named.* **[4]**
+*Discuss how the processes of cell division allow DNA to be stably inherited and yet, capable of genetic variation in eukaryotes.* **[10]**
 
-*Reception.* [CROSS-CLUSTER: Cluster 1]
+**Stable inheritance during mitotic cell division. Maximum five marks.**
 
-**1.** **Reception** is the target cell's **detection of an extracellular signal molecule**. Epidermal growth factor acts as a **ligand** and binds a **specific complementary binding site** on the receptor, forming a **ligand-receptor complex**; the two words a scheme wants for any binding event are **complementary** and **3D conformation**. Call it a **binding site**, never an active site, because **a receptor is not an enzyme**.
+**1.** **Each DNA molecule undergoes semi-conservative DNA replication during S phase of interphase**, producing **two genetically identical daughter DNA molecules**.
 
-**2.** Binding causes **receptor aggregation and dimerisation**, in which the two subunits associate closely, and this **activates the tyrosine kinase activity of the receptor, resulting in autophosphorylation**, where each kinase domain **adds a phosphate from ATP to a tyrosine on the tail of its own or the other subunit**.
+**2.** There is **coiling / condensing / shortening of chromatin into discrete chromosomes during prophase**, **preventing entanglement of chromatin and DNA breakage during the separation of genetic material**.
 
-*Transduction.* [CROSS-CLUSTER: Cluster 1]
+**3.** **Chromosomes align singly at the metaphase plate / equatorial plate during metaphase.**
 
-**3.** **Transduction converts the extracellular signal into an intracellular one.** **Each relay protein recognises and binds a specific phosphorylated tyrosine** and is **activated by undergoing a conformational change**, then relay proteins are **sequentially phosphorylated, forming a phosphorylation cascade that transmits the signal received at the cell surface into the cell**. **The original signal molecule is not physically passed along the pathway**; what travels is the conformational change. The cascade also **amplifies**, because at each catalytic step **one activated kinase phosphorylates many substrate molecules**, so **a small number of extracellular signal molecules is sufficient to elicit a large cellular response**.
+**4.** There is **separation of sister chromatids towards opposite poles of the cell during anaphase**.
 
-*Response.* [CROSS-CLUSTER: Cluster 1, into Cluster 2]
+**5.** **Daughter chromosomes reach the opposite poles of the cell during telophase.**
 
-**4.** The **cellular response** here is the nuclear one that LO 3(m) foregrounds, a **change in gene expression**: the last kinase in the cascade **phosphorylates a protein that brings about the cell's response**, which is **a transcription factor**, and the genes it switches on are those whose products **carry the cell past the G1 checkpoint and into S phase**, so the cell **proceeds through the mitotic cell cycle and divides**. Growth factor concentration therefore sets **how many cells enter the cycle**, which is why signalling and division are one system and not two.
+**6.** **Cytokinesis is the division of the cytoplasm to produce two daughter cells.**
 
-**(b)** *Accurate copying, accurate distribution, what the accuracy is for, and where the variation comes from anyway.* **[11]**
+**7.** **Each daughter cell has the complete diploid set of DNA**, that is **daughter chromosomes are distributed equally to the daughter cells**.
 
-*This stem is deliberately wider than the prelim it came from. The original asked only about the processes of cell division, and its examiner comment warned candidates off mutation. This one asks how the DNA is copied accurately as well as distributed accurately, and what that accuracy buys the organism, so the Book 2 half is compulsory rather than a digression: an answer built out of mitosis and meiosis alone caps in Level 2.*
+**Genetic variation during meiotic cell division. Maximum five marks.**
 
-*Maximum three marks from accuracy of copying.* [CROSS-BOOK, Book 2 LOs 2(a) and 2(b)]
+**8.** **Pairing of homologous chromosomes / formation of bivalents during prophase I of meiosis.**
 
-**1.** **Each DNA molecule undergoes semi-conservative DNA replication during S phase of interphase**, in which **each parental strand serves as the template for a complementary daughter strand**, producing **two genetically identical daughter DNA molecules** each carrying one old strand and one new.
+**9.** **Crossing over between the non-sister chromatids of homologous chromosomes during prophase I of meiosis.**
 
-**2.** The accuracy comes from the base pairing itself. **Complementary base pairing between A and T and between C and G** is **specific**, because the **2 nm diameter leaves room for exactly one purine and one pyrimidine** and because each base carries **defined hydrogen-bonding side groups**, so **the base sequence of one strand determines the base sequence of its complementary strand**, and **DNA polymerase III assembles dNTPs by complementary base pairing** against the template.
+**10.** **New combinations of paternal and maternal alleles in each chromatid.**
 
-**3.** Base pairing on its own is not accurate enough, and this is the mark almost nobody writes. **DNA polymerase III proofreads: on recognising an incorrect base pair it reverses direction by one base pair and excises it using its 3' to 5' exonuclease activity.** There is a repair route as well as a copying route, because **genetic information is redundant, present more than once in the DNA molecule**, so **the intact strand is used as a template for repair if the base sequence in one of the two strands is accidentally altered**.
+**11.** **Independent assortment of homologous chromosomes at the metaphase plate during metaphase I.**
 
-*Maximum three marks from accuracy of distribution, during the mitotic cell cycle.*
+**12.** **Random distribution of paternal and maternal chromosomes in each gamete.**
 
-**4.** There is **coiling, condensing and shortening of chromatin into discrete chromosomes during prophase**, **preventing entanglement of chromatin and DNA breakage during the separation of genetic material**, then **chromosomes align singly at the metaphase plate during metaphase**.
+**Quality of written communication.**
 
-**5.** There is **separation of sister chromatids towards opposite poles of the cell during anaphase**, **daughter chromosomes reach the opposite poles of the cell during telophase**, and **cytokinesis is the division of the cytoplasm to produce two daughter cells**.
+**13.** **A good spread of knowledge communicated without ambiguity, which correctly identifies the type of cellular division, mitosis or meiosis, and shows how meiotic division results in variation, with relevant elaboration.**
 
-**6.** **Each daughter cell has the complete diploid set of DNA, because the daughter chromosomes are distributed equally to the daughter cells**, so **there is no variation in genetic information and the daughter cells are genetically identical to the parent cell**, and **genetic stability is preserved across generations of cells and hence in the organism**.
+**Examiner comment, verbatim.**
 
-*Maximum two marks from what that accuracy is for.*
+**14.** **Students who did not score well were generally unable to link the processes in mitosis or meiosis to the stability of DNA or to how variation arises.** **Common errors include vague descriptions of the various stages without identifying the exact stage at which each event occurs, and the use of vague terms in describing the chromosomes, for example referencing crossing over of chromosomes instead of non-sister chromatids of homologous chromosomes.**
 
-**7.** **Growth.** **One parent cell divides into two daughter cells, so a multicellular organism increases in cell number from embryo to adult**, and identity matters because **new cells must be genetically identical to the existing cells in order to carry out the same functions**. Growing a tissue out of cells that behave differently is not growth. **Reject growth of cells** where growth of the organism is meant.
+**How to run it against the clock.**
 
-**8.** **Repair and replacement**, in which **cells damaged by chemicals, radiation and physical abrasion lose their function and are replaced by exact copies**, restoring the tissue **to its former condition**, with **regeneration** rebuilding **missing parts, such as the lost arm of a starfish**. And **asexual reproduction**, since **many animal and plant species are propagated by asexual reproduction involving mitotic division** and **the offspring is a clone**, whose stated advantage is **preservation of favourable traits**, which is also its weakness, since there is no variation to select on. Where a question restricts itself to a healthy **animal**, a scheme **rejects asexual reproduction**.
+**15.** Ten marks with a five-and-five split means **five stability points and five variation points and no more**, so an eleventh mitosis point earns nothing. Name the stage for every event you write down. Say **non-sister chromatids of homologous chromosomes** in full at least once.
 
-*Maximum three marks from variation generated by the meiotic cell cycle and fertilisation.*
+**Source:** School (HCI) Prelim 2024 P3 Q4(b), verbatim stem, worth **10 marks** on the real paper and kept at 10 here, with the two-sided marking scheme, both maxima, the QWC descriptor and the examiner comment reproduced word for word from the school's own key. This is Ethan's own school paper.
+**Archetype:** Section B free response, the big describe-a-whole-process question. This is the shape he asked for after Cluster 1: an open mechanism question worth eight to twelve marks that makes him produce a whole process from memory rather than answer around it.
+**Trap:** writing everything you know about mitosis and hitting the five-mark cap while leaving the variation half empty; describing stages without naming them, which the examiner comment calls the commonest failure; writing "crossing over of chromosomes" instead of non-sister chromatids of homologous chromosomes, which the same comment names; drifting into mutation or non-disjunction, which this question does not ask for.
+**LOs:** 2(n), 2(o), 2(s) and 2(t) all at once; reaches back to Book 2 LOs 2(a) and 2(b) for semi-conservative replication and complementary base pairing.
+**Concepts fused:** (1) semi-conservative replication as the origin of identity; (2) condensation as protection against entanglement and breakage; (3) single-file alignment at metaphase; (4) sister chromatid separation at anaphase; (5) telophase arrival at the poles; (6) cytokinesis; (7) equal distribution as the guarantee of identity; (8) bivalent formation; (9) crossing over between non-sister chromatids; (10) new allele combinations within a chromatid; (11) independent assortment at metaphase I; (12) random distribution of maternal and paternal chromosomes into gametes.
 
-**9.** There is **pairing of homologous chromosomes, forming bivalents, during prophase I of meiosis**, and **crossing over occurs between the non-sister chromatids of homologous chromosomes during prophase I**, giving **new combinations of paternal and maternal alleles in each chromatid**.
+---
 
-**10.** There is **independent assortment of homologous chromosomes at the metaphase plate during metaphase I**, giving **random distribution of paternal and maternal chromosomes in each gamete**, and then **random fertilisation**, in which **gametes carrying different combinations of chromosomes fuse at random, adding to the genetic variation of the zygote**, while **meiosis also halves the chromosome number so that fertilisation restores a constant diploid number in each generation**.
+### Question 8
 
-**11.** The distinction an examiner drew on a parallel essay is worth a mark on its own: **crossing over is variation within chromosomes, because of its exchange of alleles, while independent assortment and random segregation contribute only to variation in terms of combinations of alleles**. Meiosis reshuffles alleles that already exist. It makes no new ones.
+**(a)** *Describe how the spindle is involved during the process of mitosis.* **[3]**
 
-*Maximum two marks from mutation as the ultimate source of new alleles.* [CROSS-BOOK, Book 2 LOs 2(k) and 2(l)]
+**1.** **In prophase, the spindle attaches to the centromere of each chromosome via the kinetochore proteins.**
 
-**12.** Because meiosis only reshuffles, **the alleles it shuffles have to have come from somewhere, and that somewhere is gene mutation**: a change in the base sequence itself, the only process on this page that creates genetic information rather than rearranging it. **Substitution replaces one nucleotide pair with another** and so **changes at most one codon and at most one amino acid**, which is why three of its four outcomes leave a working protein and only the **missense** and **nonsense** routes damage it. An **insertion or deletion not in multiples of three results in a frameshift mutation**, because **the genetic code is read as a continuous sequence of non-overlapping codons**, and **a frameshift usually results in a non-functional protein**.
+**2.** **In metaphase, microtubules arrange and align chromosomes at the equator / metaphase plate.**
 
-**13.** Whether a mutation reaches the next generation is decided by which cell it happens in. A **germline mutation occurs in germline cells (germ cells and gametes)** and **may be transmitted to the offspring and to successive generations**, because **when a mutated gamete fuses with another gamete the resulting zygote contains the mutation** and **mitosis then transmits it to every cell of the new individual**. A **somatic mutation occurs in somatic cells**, is **not inherited by the progeny**, affects **only the clone of cells descended from the mutated cell**, and is **lost on the death of the organism**. Only the germline route feeds variation into a population.
+**3.** **In anaphase, spindle fibres shorten, separate sister chromatids and pull them to opposite poles of the cell.**
 
-*Levels descriptor, since this is marked as an essay and not as a point list.*
+**4.** **In telophase, non-kinetochore microtubules elongate and push the poles / nuclei apart, so the cell elongates.**
 
-| Level | Marks | Descriptor |
+**5.** Any three. **Accept spindle fibres or microtubules as an alternative to spindle. Maximum 2 if the named stages are incorrect or not named**, so name the stage on every line.
+
+**(b)** *Complete Table 8.1.* **[4]**
+
+**1.** Anaphase I, spindle fibres: they **shorten, pulling homologous chromosomes to opposite poles.** **Reject "contract". Reject "pull pairs of homologous chromosomes"**, because the pair is what is being separated. **Accept "polar microtubules slide past each other".**
+
+**2.** The stage in which spindle fibres re-form the spindle in daughter cells is **prophase II**.
+
+**3.** Telophase II diagram, first mark: **four daughter cells / nuclei forming.**
+
+**4.** Telophase II diagram, second mark: **two single chromosomes inside a re-forming nuclear envelope** in each. **Accept decondensing chromatin. Reject duplicated chromosomes. Reject V-shaped chromosomes.**
+
+**(c)** *Explain how colchicine turns a diploid seedling into a tetraploid plant.* **[3]**
+
+**1.** The **diploid cell undergoes mitosis.**
+
+**2.** **During prophase, chromatin condenses to form 22 chromosomes each with 2 sister chromatids.**
+
+**3.** As the **mitotic spindle is not able to form, non-disjunction occurs.**
+
+**4.** **Centromeres divide and the 2 sister chromatids of each chromosome now form daughter chromosomes.**
+
+**5.** **Daughter chromosomes cannot be pulled to opposite poles, resulting in the doubling of the chromosomes in the cell**, that is **44 chromosomes / 4 copies of each chromosome**. **Accept sister chromatids for daughter chromosomes.**
+
+**6.** Any three. This is **polyploidy, a whole extra set**, and it is not the same outcome as Q4(c), where the same spindle failure in meiosis gives **aneuploidy, n+1 and n-1 gametes**. Keep the two products apart, because a scheme in this file rejects polyploidy as the answer to the aneuploidy question.
+
+**Source:** TMJC Prelim 2025 P2 Q4(c), stem and key verbatim including the marking cap (a); School (HCI) Prelim 2023 P2 Q5(c)(i), stem, table and key verbatim including every reject (b), with Table 5.1 renumbered 8.1 and its diagram column marked "given" because the paper's three drawings could not be recovered; RI Prelim 2024 P3 Q3(a)(i), key verbatim (c), with the watermelon preamble cut to the two sentences the question actually needs and the reference to Fig. 3.1 removed.
+**Archetype:** describe a structure's role stage by stage, then complete a table that only works if you know which stage does what, then explain a drug result. Spindle questions are the fastest-growing group in the 2023 to 2025 intake: four separate drug questions attack the spindle pharmacologically.
+**Trap:** describing the spindle without naming the stage, which caps you at 2; writing "contract" for spindle fibres, which the key rejects; saying the fibres pull the pair of homologous chromosomes rather than pulling them apart; drawing telophase II with duplicated or V-shaped chromosomes, both rejected; calling the colchicine product aneuploidy.
+**LOs:** 2(n) the behaviour of the spindle through the four stages of mitosis; 2(s) the behaviour of the spindle through meiosis I and meiosis II, and the identification of prophase II; reaches back to Book 2 LO 2(k) for polyploidy.
+**Concepts fused:** (1) kinetochore attachment in prophase; (2) alignment in metaphase; (3) shortening in anaphase; (4) non-kinetochore elongation in telophase; (5) anaphase I separating homologues, not chromatids; (6) prophase II re-forming the spindle; (7) telophase II as four haploid nuclei; (8) single chromosomes, not duplicated ones, at telophase II; (9) spindle failure as the mechanism of colchicine; (10) centromere division without pole separation; (11) polyploidy as a whole extra set; (12) polyploidy set against aneuploidy.
+
+---
+
+### Question 9
+
+**(a)** *Complete Table 9.1.* **[2]**
+
+**1.** One mark for all the DNA molecule counts correct, one mark for all the DNA amounts correct.
+
+| phase of cell cycle | number of DNA molecules per cell | amount of DNA / arbitrary units |
 |---|---|---|
-| 3 | 8 to 11 | All four sections developed and connected. Copying accuracy explained mechanistically, not asserted, and includes proofreading. Distribution tied to named stages and linked to what genetic identity is for. Variation separated into reshuffling by meiosis and creation by mutation, with the germline condition stated. Prose continuous and the exact stage named for every event. |
-| 2 | 4 to 7 | Both halves present but one is thin, or the account is stage-by-stage description with the link to stability or variation left implicit. Replication asserted as semi-conservative without the base-pairing or proofreading mechanism. Mutation mentioned without the germline against somatic condition. |
-| 1 | 1 to 3 | A description of mitosis and meiosis with little or no reference to accuracy of copying, or a list of sources of variation with no mechanism. Vague across stages. |
+| G1 phase | **4** | **2x** |
+| G2 phase | **8** | **4x** |
+| AI | **8** | **4x** |
+| DI | **8** | **4x** |
+| AII | **4** | **2x** |
+| DII | **4** | **2x** |
+| cytokinesis | **2** | **x** |
 
-*Quality of written communication.* **Good spread of knowledge communicated without ambiguity, which correctly identifies the type of cellular division, mitosis or meiosis, and shows how meiotic division results in variation with relevant elaboration.**
+**(b)** *Account for the changes in the number of chromosomes and the amount of DNA per cell from G1 till the end of DI.* **[3]**
 
-*Examiner comment on the real sitting, and what changed.* **Students who did not score well were generally unable to link the processes in mitosis or meiosis to the stability of DNA or to how variation arises. Common errors include vague descriptions of the various stages without identifying the exact stage at which each event occurs, and the use of vague terms in describing the chromosomes, for example referencing crossing over of chromosomes instead of non-sister chromatids of homologous chromosomes.** That report also warned that **a significant number delved into mutations, either non-disjunction or chromosomal mutations, which are not needed in this question**, which was true of the original stem, which asked only about the processes of cell division. On this stem gene mutation is required and carries two of the eleven marks. What is still not wanted is the chromosomal half: **non-disjunction belongs to Q3(c) and unequal crossing over to Q5(d)**, and neither earns anything here.
+**1.** **During interphase, DNA undergoes replication during S phase, giving rise to a doubling of DNA content from 2x to 4x.**
 
-**Source:** SAJC Prelim 2017 P2 Q3a and the growth-factor pathway questions in the Cell_Signalling bank (a, the EGF to receptor tyrosine kinase to transcription factor to cell proliferation chain); HCI Book 3 chapter 3.1 §§3 to 5, quoted verbatim through Cluster 1 (a, reception, dimerisation, autophosphorylation, relay-protein docking, phosphorylation cascade, amplification and change in gene expression); School (HCI) Prelim 2024 P3 Q4(b) (b, verbatim stem as originally set, worth **10 marks**, the two-sided marking scheme, the QWC descriptor and the verbatim examiner comment; the stem is rewritten here to require the copying half and the roles half, and random fertilisation and the constant chromosome number are added, which LO 2(t) names and the original did not require); JPJC Prelim 2023 P2 Q7aii, TJC Prelim 2023 P2 Q4cii and CJC Prelim 2023 P3 Q5a (b, verbatim roles of mitosis and both rejects); HCI Book 3 chapter 3.2 §6 (b, verbatim genetic stability chain); School Prelim 2025 P3 Q5a examiner comment (b, the within-chromosomes against between-chromosomes distinction, verbatim); School Prelim 2024 P3 Q4a and HCI Prelim 2024 P3 Q4(a), with Topical 2007 STQ Q2a(ii) from MJC Prelim P2 Q5(a)(ii), and EJC Prelim 2018 P2 Q4a(ii) and CJC Prelim 2023 P2 Q3a, routed through Book 2 Cluster 1 Q1 (b, the complementary base pairing compulsory point, the 2 nm one-purine-one-pyrimidine reason and the redundancy-and-repair point, all verbatim); JPJC Prelim 2025 P3 Q4a, routed through Book 2 Cluster 1 Q2 (b, the DNA polymerase III proofreading step and its 3' to 5' exonuclease activity, verbatim from the enzyme roster); ACJC Prelim 2015 P2 Q10b, School Prelim 2023 P2 Q4b and HCI Prelim 2023 P2, routed through Book 2 Cluster 3 Q1 (b, the substitution against indel comparison and the germline against somatic contrast, verbatim). The levels descriptor is [INFERRED], rescaled from the School Prelim 2025 P3 Q5a banding; the original 10-mark key was marked point-by-point with two maxima and shipped no bands.
-**Archetype:** mechanism explain-chain across two clusters, then evaluate and discuss at essay scale. The corpus files 44 essay-scale Book 3 stems and cell division alone supplies 14, the most of any node in the Book, and almost every one of the 44 asks you to hold two things together rather than describe one.
-**Trap:** calling a receptor binding site an active site, an explicit examiner comment; stopping the signalling answer at transduction and never reaching the change in gene expression; answering the essay out of Book 3 alone, which is now a Level 2 cap, because the stem says **copies** as well as **distributes**; asserting semi-conservative replication without the mechanism that makes it accurate; describing stages without naming the exact stage; saying crossing over of chromosomes instead of non-sister chromatids of homologous chromosomes; treating meiosis as a source of new alleles when it only recombines existing ones; drifting into non-disjunction or chromosomal aberration, which are examined in Q3(c) and Q5(d) and earn nothing here; giving one section at length and another in a sentence, when all five are capped.
-**LOs:** 2(o) and 2(t), pulling in 2(n) and 2(s) for the stage detail; reaches back to Cluster 1 LOs 3(m), 3(m ii), 3(m iii) and 3(o) in part (a), and to Book 2 LOs **2(a)** and **2(b)** for base pairing, semi-conservative replication and proofreading, and **2(k)** and **2(l)** for gene mutation and its consequences.
-**Concepts fused:** (1) ligand-receptor complementarity and 3D conformation; (2) receptor dimerisation and autophosphorylation; (3) relay proteins docking on specific phosphotyrosines and the phosphorylation cascade; (4) amplification as one molecule producing many; (5) the response as a change in gene expression driving cell cycle entry; (6) semi-conservative replication with each parental strand as template; (7) complementary base pairing as the specificity mechanism, with the 2 nm geometric reason; (8) proofreading by DNA polymerase III's 3' to 5' exonuclease activity; (9) redundancy of information allowing template-directed repair; (10) condensation preventing entanglement and breakage; (11) single-file alignment, chromatid separation and equal distribution giving genetic identity; (12) growth, repair, replacement, regeneration and asexual reproduction as what identity is for; (13) synapsis and crossing-over between non-sister chromatids; (14) independent assortment at metaphase I; (15) random fertilisation and the constant chromosome number; (16) variation within chromosomes against variation in combinations; (17) gene mutation as the only creator of new alleles; (18) substitution against frameshift; (19) germline against somatic as the inheritance condition; (20) holding five capped sections in proportion.
+**2.** **Although the replicated DNA now exists as two identical sister chromatids, it is still considered as a single chromosome, and thus the number of chromosomes per cell remains constant at 4 throughout interphase.**
+
+**3.** **The number of chromosomes remains at 4 per cell from interphase till the end of telophase I, as anaphase I involves the separation of homologous chromosomes to opposite poles of the cell.**
+
+**4.** **Consequently, the amount of DNA is halved from 4x to 2x and the daughter cell is now haploid.**
+
+**(c)** *State the number of chromosomes present in M. musculus spermatozoa.* **[1]**
+
+**1.** **20.**
+
+**2.** If a question asks for the **chromosome number** rather than the number of chromosomes, it has to be presented as **n = 20**.
+
+**(d)** *Describe two differences in DNA behaviour during binary fission in a prokaryotic cell and mitosis in a eukaryotic cell.* **[2]**
+
+**1.** In binary fission, **DNA replication of the circular bacterial chromosome occurs during binary fission**, whereas in mitosis **DNA replication of chromosomes occurs during the S phase of interphase prior to mitosis**.
+
+**2.** In binary fission, the **circular chromosome does not condense prior to separation**, whereas in mitosis **all chromosomes in the nucleus will condense during prophase**.
+
+**3.** In binary fission, the **chromosome does not attach to spindle fibres**, whereas in mitosis **chromosomes attach to spindle fibres via kinetochore proteins**.
+
+**4.** In binary fission, the **single chromosome does not line up across the equator of the cell**, whereas in mitosis **chromosomes line up in a single row at the metaphase plate**.
+
+**5.** In binary fission, the **chromosome does not separate into chromatids**, whereas in mitosis **chromosomes separate into sister chromatids during anaphase**.
+
+**6.** Any two, each stated for **both** cells. Any other valid point is accepted.
+
+**Source:** MI Prelim 2021 P2 Q4(b), stem, table and key verbatim (a), with the paper's Fig. 4.1 dropped because part (b) does not need it and the stage-label convention stated in words instead; MI Prelim 2021 P2 Q4(c), stem and key verbatim (b); NYJC Prelim 2023 P2 Q3(b)(ii), stem and key verbatim (c), with the diploid number carried into the stem from the paper's own Q3(a) preamble; RI Prelim 2023 P2 Q2(a), stem and key verbatim (d), with the *S. aureus* preamble cut to one sentence and the reference to Fig. 2.1 removed.
+**Archetype:** quantitative bookkeeping. This is the one question in the drill where you can be right about every stage and still lose the marks by counting DNA molecules as chromosomes.
+**Trap:** halving the chromosome number at S phase because the DNA doubled; halving the DNA at anaphase I because the chromosome number halved; giving 40 for the spermatozoon because the diploid number is 40; answering (d) one-sidedly, about bacteria only.
+**LOs:** 2(s) the meiotic cell cycle and the behaviour of chromosomes; 2(o) asexual reproduction and the contrast with prokaryotic division; reaches back to Book 2 LOs 2(a) and 2(b) for semi-conservative replication in S phase.
+**Concepts fused:** (1) one chromosome remains one chromosome after replication; (2) DNA content doubling at S phase; (3) chromosome number constant through interphase; (4) homologue separation halving the chromosome number at anaphase I; (5) DNA content halving one division later than you expect; (6) cytokinesis as the point the per-cell count falls; (7) haploid number from diploid number; (8) circular against linear chromosome; (9) no condensation in binary fission; (10) no spindle and no kinetochore in binary fission; (11) no metaphase plate in binary fission; (12) no chromatid separation in binary fission.
+
+---
+
+### Question 10
+
+**(a)** *Suggest and explain how the type of reproduction that makes spores is advantageous in a changing environment.* **[3]**
+
+**1.** It produces **genetic variation**.
+
+**2.** This is **due to crossing over / independent assortment**.
+
+**3.** **Some individuals will be adapted to the changing environment / will survive, which avoids the whole population being wiped out.** The reverse argument is also credited.
+
+**4.** It **allows random mating / fertilisation / fusion of gametes.**
+
+**5.** **Some offspring have advantageous combinations of alleles.**
+
+**6.** Any other valid point, for example reference to **dormancy that allows the population to survive even when conditions are not favourable, preserving genetic variation.**
+
+**7.** Any three. The comparison being set up is with the asexual route, budding, **which needs no mating partner but produces no variation**.
+
+**(b)** *Suggest the importance of controlling the timing of the mitotic cell cycle in mammals.* **[2]**
+
+**1.** **Prevent tumour / cancer formation due to uncontrolled cell division.**
+
+**2.** **Only cells that are needed, or whose functions are needed, will be produced.**
+
+**3.** **Allows for coordination of growth / limiting growth.**
+
+**4.** Any two.
+
+**(c)** *Outline how events before metaphase I and after meiosis lead to genetic variation between offspring of the same parents.* **[2]**
+
+**1.** **Non-sister chromatids of homologous chromosomes may cross over at chiasmata in prophase I to exchange the alleles between the non-sister chromatids to form recombinant chromosomes.**
+
+**2.** **Two random genetically non-identical haploid gametes containing chromosomes with different allelic combinations fuse to form a diploid zygotic cell with a different genotype from the parents.**
+
+**3.** The stem rules out metaphase I, so **independent assortment earns nothing here**. The second marking point is **random fertilisation**, which LO 2(t) names and which no other question in this drill makes the focus.
+
+**Source:** CJC Prelim 2025 P2 Q3c(ii), question sentence and key verbatim (a), with the yeast life cycle of the paper's Fig. 3.2 written into the stem as three sentences of prose because that figure could not be recovered, and the paper's stage numbers replaced by what each stage is; TJC Prelim 2018 P2 Q5(d) and NYJC Prelim 2022 P2 Q6(d), stem and key verbatim (b); YIJC Prelim 2023 P2 Q5(c), stem and key verbatim (c), with the paper's label "stage J" replaced by what stage J is, metaphase I, so it stands without Fig. 5.1.
+**Archetype:** significance questions. Each one asks what a process is *for* rather than how it works, and each is marked on consequences rather than on mechanism.
+**Trap:** answering (a) with the mechanism of crossing over instead of what the variation buys the population; giving only the cancer point in (b) when the key credits three separate ideas; putting independent assortment into (c) when the stem has excluded it; forgetting random fertilisation, which is half the marks in (c).
+**LOs:** 2(t) the significance of meiosis, including how meiosis and random fertilisation lead to variation; 2(o) the significance of the mitotic cell cycle, asexual reproduction, and the need to regulate it tightly.
+**Concepts fused:** (1) sexual reproduction as a variation generator; (2) variation as insurance against environmental change; (3) asexual reproduction as speed without variation; (4) random fusion of gametes; (5) advantageous allele combinations; (6) dormancy as a survival strategy; (7) tissue-specific cycle length; (8) producing only the cells that are needed; (9) coordinated growth; (10) uncontrolled division as the failure mode; (11) crossing over as the pre-metaphase I source of variation; (12) random fertilisation as the post-meiotic source.

@@ -303,10 +303,11 @@ for qno in sorted(QS, key=int):
             if CONFIDENCE:
                 blocks.append(f'<div class="confidence">{CONFIDENCE_TEXT}</div>')
             label = f"Answer  -  part ({part})" if part else "Answer"
+            btn = f"Show answer ({part})" if part else "Show answer"
             blocks.append(
                 f'<div class="block answer"><span class="label">{label}</span>'
                 f'<div class="answer-content">{ans}</div>'
-                f'<div class="answer-overlay"><button class="reveal-btn">Show answer ({part})</button></div></div>'
+                f'<div class="answer-overlay"><button class="reveal-btn">{btn}</button></div></div>'
             )
     arch = render(meta, qno, None) if meta else "<p> - </p>"
     blocks.append(
