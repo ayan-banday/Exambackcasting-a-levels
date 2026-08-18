@@ -65,6 +65,11 @@
   .flag{font-family:-apple-system,sans-serif;font-size:.72em;color:#92400e;background:var(--amber-soft);border:1px solid #fcd34d;border-radius:4px;padding:2px 7px;display:inline-block;margin-left:4px}
   .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:7px 13px;border-radius:4px;margin:10px 0 0;font-size:.88em}
   .trap b{color:var(--red)}
+  .ansbox{display:none;margin-top:14px;border-top:2px solid #cfd8cf;padding-top:12px}
+  .revwrap{margin-top:12px}
+  .revbtn{font:inherit;font-size:.86em;font-weight:600;padding:6px 14px;border-radius:5px;border:1px solid #cbd5cb;background:#eef2ee;color:#1f2937;cursor:pointer;margin-right:8px}
+  .revbtn:hover{background:#e2e8e2}
+  @media print{.ansbox{display:block !important}.revwrap{display:none}.controls{display:none}}
   .calc{font-size:.95em;margin:6px 0}
   hr{border:none;border-top:1px solid var(--border);margin:20px 0}
   @media print{body{background:#fff;padding:16px;max-width:100%}.controls{display:none!important}.qcard,.msq{box-shadow:none;page-break-inside:avoid}#markscheme{display:block!important}}
@@ -94,6 +99,12 @@
 
 <div class="secbar"><span>Questions 1–10 &nbsp;·&nbsp; all structured</span><span class="r">93 marks &nbsp;·&nbsp; show all working</span></div>
 
+<div class="controls">
+  <button class="revbtn" onclick="allAns(true)">Reveal all</button>
+  <button class="revbtn" onclick="allAns(false)">Hide all</button>
+  <span class="hint">Each answer sits under its own question. Say your confidence out loud <b>before</b> you reveal — high / medium / guessed — then tell me every part below full marks and every one you flagged medium or guessed.</span>
+</div>
+
 <!-- ==================== Q1 ==================== -->
 <div class="qcard" id="q1">
   <div class="qhead"><span>Question 1</span><span class="tot">[9] &nbsp;·&nbsp; running total 9 / 93</span></div>
@@ -105,143 +116,9 @@
   <div class="sub">(i) Ammonia reacts with water according to \(\ce{NH3 + H2O <=> NH4+ + OH-}\). Identify the Brønsted-Lowry acid and the Brønsted-Lowry base in the forward reaction. <span class="marks">[1]</span></div>
   <div class="sub">(ii) \(\ce{BF3}\) reacts with \(\ce{NH3}\). Identify the Lewis acid and the Lewis base, and describe the bond that is formed. <span class="marks">[2]</span></div>
   <div class="conf">Confidence: high / medium / guessed</div>
-</div>
-
-<!-- ==================== Q2 ==================== -->
-<div class="qcard" id="q2">
-  <div class="qhead"><span>Question 2</span><span class="tot">[9] &nbsp;·&nbsp; running total 18 / 93</span></div>
-  <div class="src">(a) HCI Soln / N2018 / P3 / Q3(d), stem reconstructed &nbsp;·&nbsp; (b) HCI Prelim / N2021 / P2 / Q2(c) &nbsp;·&nbsp; (c) HCI Soln / N2021 / P2 / Q2(b) = RI TYS / N2021 / P2 / Q2</div>
-  <div class="part"><span class="pl">(a)</span> Four substances are listed below in no particular order: <b>propanoic acid, glycine (\(\ce{H2NCH2CO2H}\)), pentane, butylamine</b>. Arrange them in order of <b>increasing</b> melting point and explain the order you have given. <span class="marks">[4]</span></div>
-  <div class="part"><span class="pl">(b)</span> Nitrobenzene boils at 211 °C. Explain why nitrobenzene has a higher boiling point than water. <span class="marks">[2]</span></div>
-  <div class="part"><span class="pl">(c)</span> State the <b>two</b> factors that affect the numerical magnitude of a lattice energy. The interionic distances of \(\ce{NaCl}\), \(\ce{NaF}\) and \(\ce{MgO}\) are 0.276 nm, 0.231 nm and 0.205 nm respectively. Using these values, deduce which of the two factors has the greater effect on the numerical magnitude of the lattice energy. <span class="marks">[3]</span></div>
-  <div class="conf">Confidence: high / medium / guessed</div>
-</div>
-
-<!-- ==================== Q3 ==================== -->
-<div class="qcard" id="q3">
-  <div class="qhead"><span>Question 3</span><span class="tot">[7] &nbsp;·&nbsp; running total 25 / 93</span></div>
-  <div class="src">N2020 / P3 / Q1(f) &nbsp;=&nbsp; HCI Soln / N2020 / P3 / Q1(f)</div>
-  <p class="stem-lead">Sodium nitrite, \(\ce{NaNO2}\), is used as a preservative in meat. To find the nitrite content of a 1.00 g sample of preserved meat, the sample is treated with 50.00 cm\(^3\) of 0.00500 mol dm\(^{-3}\) acidified \(\ce{KMnO4}\) (an excess), which oxidises \(\ce{NO2^-}\) to \(\ce{NO3^-}\). The excess \(\ce{KMnO4}\) is then reacted with excess \(\ce{KI}\), and the liberated \(\ce{I2}\) titrated against 0.0150 mol dm\(^{-3}\) sodium thiosulfate, requiring 22.40 cm\(^3\).</p>
-  <div class="part"><span class="pl">(i)</span> Construct the overall ionic equation for the reaction between \(\ce{MnO4^-}\) and \(\ce{NO2^-}\). <span class="marks">[2]</span></div>
-  <div class="part"><span class="pl">(ii)</span> Calculate the percentage by mass of \(\ce{NaNO2}\) in the meat sample. <span class="marks">[5]</span></div>
-  <div class="conf">Confidence: high / medium / guessed</div>
-</div>
-
-<!-- ==================== Q4 ==================== -->
-<div class="qcard" id="q4">
-  <div class="qhead"><span>Question 4</span><span class="tot">[8] &nbsp;·&nbsp; running total 33 / 93</span></div>
-  <div class="src">(a), (b) N2017 / P3 / Q4(a)(i)–(ii) = HCI Soln / N2017 / P3 / Q4(a) &nbsp;·&nbsp; (c) N2018 / P3 / Q4(a)(ii)</div>
-  <p class="stem-lead">In anaerobic digestion, butanoic acid, \(\ce{C4H8O2}\), is broken down to give only methane and carbon dioxide.</p>
-  <div class="part"><span class="pl">(a)</span> Determine the average oxidation number of carbon in butanoic acid. <span class="marks">[1]</span></div>
-  <div class="part"><span class="pl">(b)</span> Construct the reduction and the oxidation half-equations, and hence the overall equation, for the conversion of butanoic acid to \(\ce{CH4}\) and \(\ce{CO2}\). <span class="marks">[3]</span></div>
-  <div class="part"><span class="pl">(c)</span> Thiosulfate ions, \(\ce{S2O3^2-}\), are oxidised by both chlorine and iodine, but the sulfur-containing product differs. Explain, in terms of their relative oxidising power, why the products differ, and construct an equation for each reaction. <span class="marks">[4]</span></div>
-  <div class="conf">Confidence: high / medium / guessed</div>
-</div>
-
-<!-- ==================== Q5 ==================== -->
-<div class="qcard" id="q5">
-  <div class="qhead"><span>Question 5</span><span class="tot">[9] &nbsp;·&nbsp; running total 42 / 93</span></div>
-  <div class="src">(a) HCI Soln / N2022 / P3 / Q2(e), stem reconstructed &nbsp;·&nbsp; (b) HCI Soln / N2017 / P3 / Q2(b) = RI TYS / N2017 / P3 / Q2(b) &nbsp;·&nbsp; (c), (d) HCI Prelim / N2023 / P2 / Q4(a)(ii) and Q4(c)(ii)</div>
-  <div class="part"><span class="pl">(a)</span> Ketene has the structure \(\ce{H2C_a=C_b=O}\). State the hybridisation of \(\ce{C_a}\), \(\ce{C_b}\) and \(\ce{O}\), and describe, in terms of orbital overlap, how each \(\sigma\) bond and each \(\pi\) bond in the molecule is formed. <span class="marks">[3]</span></div>
-  <div class="part"><span class="pl">(b)</span> The structure of diazene is \(\ce{HN=NH}\). Explain why diazene can exist as two isomers, state how the two isomers differ, and predict the \(\ce{H-N=N}\) bond angle. <span class="marks">[3]</span></div>
-  <div class="part"><span class="pl">(c)</span> With reference to the structure of penta-2,3-diene, \(\ce{CH3CH=C=CHCH3}\), explain why penta-2,3-diene can exhibit enantiomerism. <span class="marks">[1]</span></div>
-  <div class="part"><span class="pl">(d)</span> A proposed mechanism converts enantiomer 1 of penta-2,3-diene into intermediate X (step 1), which then re-forms the allene (step 2). In X the two remaining \(\pi\) electrons are delocalised over \(\ce{C_x}\), \(\ce{C_y}\) and \(\ce{C_z}\). With reference to steps 1 and 2, explain: <span class="marks">[2]</span></div>
-  <div class="sub">● why it is easier to rotate the \(\ce{C_y-C_z}\) bond in intermediate X than in enantiomer 1; and</div>
-  <div class="sub">● why step 2 is likely to form a racemic mixture of penta-2,3-diene.</div>
-  <div class="conf">Confidence: high / medium / guessed</div>
-</div>
-
-<!-- ==================== Q6 ==================== -->
-<div class="qcard" id="q6">
-  <div class="qhead"><span>Question 6</span><span class="tot">[10] &nbsp;·&nbsp; running total 52 / 93</span></div>
-  <div class="src">(a)–(c) NYJC 2017 Prelim / P3 / Q2(b)(i)–(iii), via HCI Alkenes compilation Q9 &nbsp;·&nbsp; (d) NJC 2017 Prelim / P3 / Q4(c), via HCI Alkenes compilation Q11</div>
-  <p class="stem-lead">Iodine monochloride, \(\ce{ICl}\), reacts with 1-phenylpropene, \(\ce{C6H5-CH=CH-CH3}\).</p>
-  <div class="part"><span class="pl">(a)</span> Name the mechanism and draw it, showing all curly arrows, partial charges, lone pairs and the intermediate. Label the slow and the fast step. <span class="marks">[3]</span></div>
-  <div class="part"><span class="pl">(b)</span> Two carbocation intermediates are possible in this reaction. State which one is preferred and explain your answer. <span class="marks">[2]</span></div>
-  <div class="part"><span class="pl">(c)</span> If the reaction is instead carried out in water, explain what additional product forms. <span class="marks">[1]</span></div>
-  <div class="part"><span class="pl">(d)</span> Compounds L and M are each treated separately with \(\ce{KMnO4}\), \(\ce{H2SO4}\)(aq), heat. L is the symmetrical diene \(\ce{(CH3)2C=CH-CH=C(CH3)2}\); M is an internal, non-terminal alkene. State the observations for each, and write an equation using [O] to show the organic products of the oxidative cleavage. <span class="marks">[4]</span></div>
-  <div class="conf">Confidence: high / medium / guessed</div>
-</div>
-
-<!-- ==================== Q7 ==================== -->
-<div class="qcard" id="q7">
-  <div class="qhead"><span>Question 7</span><span class="tot">[12] &nbsp;·&nbsp; running total 64 / 93</span></div>
-  <div class="src">(a) HCI Soln / N2020 / P3 / Q4(a)(i) &nbsp;·&nbsp; (b) HCI Soln / N2019 / P3 / Q4(c)(ii), stem reconstructed &nbsp;·&nbsp; (c) HCI Soln / N2022 / P3 / Q4(f)(iii), stem reconstructed &nbsp;·&nbsp; (d) HCI Prelim / N2024 / P2 / Q3(c)(i) &nbsp;·&nbsp; (e) HCI Soln / N2018 / P2 / Q3(b)(i)–(ii) = RI TYS / N2018 / P2</div>
-  <div class="part"><span class="pl">(a)</span> Explain why 1-bromobutane and 2-bromo-2-methylpropane react with \(\ce{OH-}\) by different mechanisms. <span class="marks">[2]</span></div>
-  <div class="part"><span class="pl">(b)</span> E and F are isomers, one a chloro compound and the other the corresponding hydroxy compound, both derived from \(\ce{C6H5C2H4Cl}\). When E reacts with \(\ce{NaOH}\)(aq), the rate of reaction is found to be independent of \(\ce{[OH^-]}\). Deduce whether E is the primary or the secondary chloroalkane, and explain your reasoning. <span class="marks">[2]</span></div>
-  <div class="part"><span class="pl">(c)</span> Three <b>primary</b> halogenoalkanes react separately with \(\ce{NaOH}\). They are listed below in no particular order.</div>
-  <table class="data">
-    <tr><th>Compound</th><th>Halogen present</th><th>Alkyl group</th></tr>
-    <tr><td><b>O</b></td><td>\(\ce{C-Br}\)</td><td class="l">highly branched, bulky chain</td></tr>
-    <tr><td><b>N</b></td><td>\(\ce{C-I}\)</td><td class="l">straight, unbranched chain</td></tr>
-    <tr><td><b>M</b></td><td>\(\ce{C-Br}\)</td><td class="l">straight, unbranched chain</td></tr>
-  </table>
-  <div class="part">Arrange M, N and O in order of <b>increasing</b> rate of hydrolysis and explain the order. <span class="marks">[3]</span></div>
-  <div class="part"><span class="pl">(d)</span> 2-bromopropane, 2-chloropropane and iodobenzene are each heated with \(\ce{OH-}\), then tested with acidified silver nitrate, and any residue is tested for solubility in dilute and in concentrated aqueous ammonia. Complete the observations for each of the three compounds. <span class="marks">[2]</span></div>
-  <div class="part"><span class="pl">(e)</span> 2-chlorobutane can be made to undergo elimination. State the reagents and conditions needed to bring about the elimination, and draw the skeletal formulae of the three alkene products D, E and F that are formed. <span class="marks">[3]</span></div>
-  <div class="conf">Confidence: high / medium / guessed</div>
-</div>
-
-<!-- ==================== Q8 ==================== -->
-<div class="qcard" id="q8">
-  <div class="qhead"><span>Question 8</span><span class="tot">[9] &nbsp;·&nbsp; running total 73 / 93</span></div>
-  <div class="src">(a), (b) HCI Soln / N2019 / P3 / Q5(c)(i)–(ii), stems reconstructed &nbsp;·&nbsp; (c) HCI Soln / N2022 / P3 / Q4(f)(i), stem reconstructed</div>
-  <p class="stem-lead">1,2-dibromoethane, \(\ce{BrCH2CH2Br}\), is converted into a dicarboxylic acid K by the three-step route below.</p>
-  <p class="stem-lead" style="text-align:center">\(\ce{BrCH2CH2Br}\) &nbsp;—step 1→&nbsp; <b>L</b> &nbsp;—step 2→&nbsp; <b>M</b> &nbsp;—step 3→&nbsp; <b>K</b> (a dicarboxylic acid)</p>
-  <div class="part"><span class="pl">(a)</span> Draw the structures of L, M and K, and state the reagents and conditions for each of the three steps. <span class="marks">[4]</span></div>
-  <div class="part"><span class="pl">(b)</span> State a possible side product formed in step 1 and state how its formation could be minimised. <span class="marks">[2]</span></div>
-  <div class="part"><span class="pl">(c)</span> In a separate reaction, 1-bromopropane reacts with \(\ce{NaCN}\). State the mechanism and draw it, showing curly arrows, the transition state and the products. <span class="marks">[3]</span></div>
-  <div class="conf">Confidence: high / medium / guessed</div>
-</div>
-
-<!-- ==================== Q9 ==================== -->
-<div class="qcard" id="q9">
-  <div class="qhead"><span>Question 9</span><span class="tot">[10] &nbsp;·&nbsp; running total 83 / 93</span></div>
-  <div class="src">(a), (b) HCI Soln / N2020 / P2 / Q4(a) and Q4(b) &nbsp;·&nbsp; (c) HCI Prelim / N2024 / P3 / Q2(c)(iii) &nbsp;·&nbsp; (d) HCI Prelim / N2024 / P3 / Q2(d)(ii)</div>
-  <div class="part"><span class="pl">(a)</span> Write an equation for the reaction of hydroquinone (benzene-1,4-diol) with excess \(\ce{NaOH}\)(aq). <span class="marks">[1]</span></div>
-  <div class="part"><span class="pl">(b)</span> Three compounds are listed below in no particular order: <b>phenol, ethanol, hydroquinone</b>. Describe an experiment to compare the acidity of the three compounds, and explain the order of acidity you would expect. <span class="marks">[5]</span></div>
-  <div class="part"><span class="pl">(c)</span> B, C and D are three iodo-alcohols: B is \(\ce{I(CH2)5OH}\), C is \(\ce{ICH2CH2CH(OH)CH2CH3}\) and D is \(\ce{ICH2CH2C(CH3)2OH}\). Describe how you would distinguish between them. <span class="marks">[3]</span></div>
-  <div class="sub"><b>I.</b> Heat each separately with acidified \(\ce{K2Cr2O7}\) and state what you would observe.</div>
-  <div class="sub"><b>II.</b> Suggest a reagent, other than 2,4-DNPH, that would distinguish between the products of the positive tests, and state the observations.</div>
-  <div class="part"><span class="pl">(d)</span> In compound E the group R could be at position 2, 3 or 4 relative to the \(\ce{-OH}\) on the ring. In step 1, E is treated with \(\ce{Br2}\)(aq) and the \(M_r\) changes from 178.0 in E to 335.8 in F, the major product. Deduce the position of R relative to the \(\ce{-OH}\). <span class="marks">[1]</span></div>
-  <div class="conf">Confidence: high / medium / guessed</div>
-</div>
-
-<!-- ==================== Q10 ==================== -->
-<div class="qcard" id="q10">
-  <div class="qhead"><span>Question 10</span><span class="tot">[10] &nbsp;·&nbsp; running total 93 / 93</span></div>
-  <div class="src">HCI Soln / N2017 / P3 / Q3(d) &nbsp;=&nbsp; N2017 / P3 / Q3(d), EJC key &nbsp;·&nbsp; stem reconstructed from the key</div>
-  <p class="stem-lead">Compound I has molecular formula \(\ce{C6H8O2}\). The results of a series of tests on I, and on the compounds derived from it, are given below.</p>
-  <table class="data">
-    <tr><th>Test</th><th>Result</th></tr>
-    <tr><td class="l">I is shaken with \(\ce{Br2}\)(aq)</td><td class="l">the bromine is decolourised</td></tr>
-    <tr><td class="l">I is treated with sodium metal</td><td class="l">no reaction</td></tr>
-    <tr><td class="l">I is warmed with alkaline aqueous iodine</td><td class="l">no reaction</td></tr>
-    <tr><td class="l">a solution of I is placed in a polarimeter</td><td class="l">the plane of plane-polarised light is rotated</td></tr>
-    <tr><td class="l">I is heated with \(\ce{H2SO4}\)(aq)</td><td class="l">J, \(\ce{C6H10O3}\), is formed</td></tr>
-    <tr><td class="l">J is heated with \(\ce{KMnO4}\)</td><td class="l">K, \(\ce{C3H4O3}\), is the only organic product</td></tr>
-    <tr><td class="l">K is treated with sodium metal</td><td class="l">a reaction occurs</td></tr>
-    <tr><td class="l">K is warmed with alkaline aqueous iodine</td><td class="l">a yellow precipitate forms</td></tr>
-  </table>
-  <div class="part">Use <b>all</b> of the evidence above to deduce the structures of I, J and K. For each observation, state the type of reaction involved and the deduction you draw from it, then draw the three structures. <span class="marks">[10]</span></div>
-  <div class="conf">Confidence: high / medium / guessed</div>
-</div>
-
-<hr>
-
-<div class="controls">
-  <button onclick="toggleMS(this)">Reveal mark scheme</button>
-  <span class="hint">Only after the whole paper is written. Mark yourself against the exact wording, then tell me every part below full marks and every part you flagged medium or guessed.</span>
-</div>
-
-<div id="markscheme" style="display:none">
-
-<div class="secbar"><span>Mark scheme &nbsp;·&nbsp; Questions 1–10</span><span class="r">93 marks</span></div>
-
-<!-- ---------- MS Q1 ---------- -->
+  <div class="revwrap"><button class="revbtn" onclick="tog('a1',this)">Show answer</button></div>
+  <div class="ansbox" id="a1">
 <div class="msq">
-  <h3>Question 1 — [9]</h3>
-  <div class="src">HCI Soln / N2019 / P3 / Q1(a), (b), (c) = RI TYS / N2019 / P3 / Q1</div>
 
   <div class="step"><div class="step-header">(a) Shapes and bond angles of BF₃, NH₃ and H₂O — [3]</div>
     <div class="restate">By considering the electron pairs around the central atom, explain the shapes and bond angles of \(\ce{BF3}\), \(\ce{NH3}\) and \(\ce{H2O}\).</div>
@@ -277,11 +154,20 @@
     </div>
   </div>
 </div>
+  </div>
+</div>
 
-<!-- ---------- MS Q2 ---------- -->
+<!-- ==================== Q2 ==================== -->
+<div class="qcard" id="q2">
+  <div class="qhead"><span>Question 2</span><span class="tot">[9] &nbsp;·&nbsp; running total 18 / 93</span></div>
+  <div class="src">(a) HCI Soln / N2018 / P3 / Q3(d), stem reconstructed &nbsp;·&nbsp; (b) HCI Prelim / N2021 / P2 / Q2(c) &nbsp;·&nbsp; (c) HCI Soln / N2021 / P2 / Q2(b) = RI TYS / N2021 / P2 / Q2</div>
+  <div class="part"><span class="pl">(a)</span> Four substances are listed below in no particular order: <b>propanoic acid, glycine (\(\ce{H2NCH2CO2H}\)), pentane, butylamine</b>. Arrange them in order of <b>increasing</b> melting point and explain the order you have given. <span class="marks">[4]</span></div>
+  <div class="part"><span class="pl">(b)</span> Nitrobenzene boils at 211 °C. Explain why nitrobenzene has a higher boiling point than water. <span class="marks">[2]</span></div>
+  <div class="part"><span class="pl">(c)</span> State the <b>two</b> factors that affect the numerical magnitude of a lattice energy. The interionic distances of \(\ce{NaCl}\), \(\ce{NaF}\) and \(\ce{MgO}\) are 0.276 nm, 0.231 nm and 0.205 nm respectively. Using these values, deduce which of the two factors has the greater effect on the numerical magnitude of the lattice energy. <span class="marks">[3]</span></div>
+  <div class="conf">Confidence: high / medium / guessed</div>
+  <div class="revwrap"><button class="revbtn" onclick="tog('a2',this)">Show answer</button></div>
+  <div class="ansbox" id="a2">
 <div class="msq">
-  <h3>Question 2 — [9]</h3>
-  <div class="src">(a) HCI Soln / N2018 / P3 / Q3(d) · (b) HCI Prelim / N2021 / P2 / Q2(c) · (c) HCI Soln / N2021 / P2 / Q2(b) = RI TYS / N2021 / P2 / Q2</div>
 
   <div class="step"><div class="step-header">(a) Order of melting point — [4]</div>
     <div class="restate">Arrange propanoic acid, glycine, pentane and butylamine in order of increasing melting point and explain the order.</div>
@@ -311,11 +197,20 @@
     </div>
   </div>
 </div>
+  </div>
+</div>
 
-<!-- ---------- MS Q3 ---------- -->
+<!-- ==================== Q3 ==================== -->
+<div class="qcard" id="q3">
+  <div class="qhead"><span>Question 3</span><span class="tot">[7] &nbsp;·&nbsp; running total 25 / 93</span></div>
+  <div class="src">N2020 / P3 / Q1(f) &nbsp;=&nbsp; HCI Soln / N2020 / P3 / Q1(f)</div>
+  <p class="stem-lead">Sodium nitrite, \(\ce{NaNO2}\), is used as a preservative in meat. To find the nitrite content of a 1.00 g sample of preserved meat, the sample is treated with 50.00 cm\(^3\) of 0.00500 mol dm\(^{-3}\) acidified \(\ce{KMnO4}\) (an excess), which oxidises \(\ce{NO2^-}\) to \(\ce{NO3^-}\). The excess \(\ce{KMnO4}\) is then reacted with excess \(\ce{KI}\), and the liberated \(\ce{I2}\) titrated against 0.0150 mol dm\(^{-3}\) sodium thiosulfate, requiring 22.40 cm\(^3\).</p>
+  <div class="part"><span class="pl">(i)</span> Construct the overall ionic equation for the reaction between \(\ce{MnO4^-}\) and \(\ce{NO2^-}\). <span class="marks">[2]</span></div>
+  <div class="part"><span class="pl">(ii)</span> Calculate the percentage by mass of \(\ce{NaNO2}\) in the meat sample. <span class="marks">[5]</span></div>
+  <div class="conf">Confidence: high / medium / guessed</div>
+  <div class="revwrap"><button class="revbtn" onclick="tog('a3',this)">Show answer</button></div>
+  <div class="ansbox" id="a3">
 <div class="msq">
-  <h3>Question 3 — [7]</h3>
-  <div class="src">N2020 / P3 / Q1(f) = HCI Soln / N2020 / P3 / Q1(f)</div>
 
   <div class="step"><div class="step-header">(i) Overall ionic equation — [2]</div>
     <div class="restate">Construct the overall ionic equation for the reaction between \(\ce{MnO4^-}\) and \(\ce{NO2^-}\).</div>
@@ -336,11 +231,21 @@
     <div class="trap"><b>Examiner's report on this exact question.</b> The two commonest errors were <b>omitting the initial amount of \(\ce{MnO4^-}\)</b> and <b>mis-calculating the amount of \(\ce{MnO4^-}\) that reacted with \(\ce{NO2^-}\)</b>. In any back titration, write down the total first, then the excess, and only then subtract.</div>
   </div>
 </div>
+  </div>
+</div>
 
-<!-- ---------- MS Q4 ---------- -->
+<!-- ==================== Q4 ==================== -->
+<div class="qcard" id="q4">
+  <div class="qhead"><span>Question 4</span><span class="tot">[8] &nbsp;·&nbsp; running total 33 / 93</span></div>
+  <div class="src">(a), (b) N2017 / P3 / Q4(a)(i)–(ii) = HCI Soln / N2017 / P3 / Q4(a) &nbsp;·&nbsp; (c) N2018 / P3 / Q4(a)(ii)</div>
+  <p class="stem-lead">In anaerobic digestion, butanoic acid, \(\ce{C4H8O2}\), is broken down to give only methane and carbon dioxide.</p>
+  <div class="part"><span class="pl">(a)</span> Determine the average oxidation number of carbon in butanoic acid. <span class="marks">[1]</span></div>
+  <div class="part"><span class="pl">(b)</span> Construct the reduction and the oxidation half-equations, and hence the overall equation, for the conversion of butanoic acid to \(\ce{CH4}\) and \(\ce{CO2}\). <span class="marks">[3]</span></div>
+  <div class="part"><span class="pl">(c)</span> Thiosulfate ions, \(\ce{S2O3^2-}\), are oxidised by both chlorine and iodine, but the sulfur-containing product differs. Explain, in terms of their relative oxidising power, why the products differ, and construct an equation for each reaction. <span class="marks">[4]</span></div>
+  <div class="conf">Confidence: high / medium / guessed</div>
+  <div class="revwrap"><button class="revbtn" onclick="tog('a4',this)">Show answer</button></div>
+  <div class="ansbox" id="a4">
 <div class="msq">
-  <h3>Question 4 — [8]</h3>
-  <div class="src">(a), (b) N2017 / P3 / Q4(a)(i)–(ii) = HCI Soln / N2017 / P3 / Q4(a) · (c) N2018 / P3 / Q4(a)(ii)</div>
 
   <div class="step"><div class="step-header">(a) Average oxidation number of carbon — [1]</div>
     <div class="restate">Determine the average oxidation number of carbon in butanoic acid, \(\ce{C4H8O2}\).</div>
@@ -370,11 +275,23 @@
     <div class="trap"><b>Quote the oxidation states, not just the words.</b> "Chlorine is stronger so it oxidises further" is half an answer. The marks sit on <b>+2 to +6</b> against <b>+2 to +2.5</b>, and on both equations balancing for charge as well as atoms.</div>
   </div>
 </div>
+  </div>
+</div>
 
-<!-- ---------- MS Q5 ---------- -->
+<!-- ==================== Q5 ==================== -->
+<div class="qcard" id="q5">
+  <div class="qhead"><span>Question 5</span><span class="tot">[9] &nbsp;·&nbsp; running total 42 / 93</span></div>
+  <div class="src">(a) HCI Soln / N2022 / P3 / Q2(e), stem reconstructed &nbsp;·&nbsp; (b) HCI Soln / N2017 / P3 / Q2(b) = RI TYS / N2017 / P3 / Q2(b) &nbsp;·&nbsp; (c), (d) HCI Prelim / N2023 / P2 / Q4(a)(ii) and Q4(c)(ii)</div>
+  <div class="part"><span class="pl">(a)</span> Ketene has the structure \(\ce{H2C_a=C_b=O}\). State the hybridisation of \(\ce{C_a}\), \(\ce{C_b}\) and \(\ce{O}\), and describe, in terms of orbital overlap, how each \(\sigma\) bond and each \(\pi\) bond in the molecule is formed. <span class="marks">[3]</span></div>
+  <div class="part"><span class="pl">(b)</span> The structure of diazene is \(\ce{HN=NH}\). Explain why diazene can exist as two isomers, state how the two isomers differ, and predict the \(\ce{H-N=N}\) bond angle. <span class="marks">[3]</span></div>
+  <div class="part"><span class="pl">(c)</span> With reference to the structure of penta-2,3-diene, \(\ce{CH3CH=C=CHCH3}\), explain why penta-2,3-diene can exhibit enantiomerism. <span class="marks">[1]</span></div>
+  <div class="part"><span class="pl">(d)</span> A proposed mechanism converts enantiomer 1 of penta-2,3-diene into intermediate X (step 1), which then re-forms the allene (step 2). In X the two remaining \(\pi\) electrons are delocalised over \(\ce{C_x}\), \(\ce{C_y}\) and \(\ce{C_z}\). With reference to steps 1 and 2, explain: <span class="marks">[2]</span></div>
+  <div class="sub">● why it is easier to rotate the \(\ce{C_y-C_z}\) bond in intermediate X than in enantiomer 1; and</div>
+  <div class="sub">● why step 2 is likely to form a racemic mixture of penta-2,3-diene.</div>
+  <div class="conf">Confidence: high / medium / guessed</div>
+  <div class="revwrap"><button class="revbtn" onclick="tog('a5',this)">Show answer</button></div>
+  <div class="ansbox" id="a5">
 <div class="msq">
-  <h3>Question 5 — [9]</h3>
-  <div class="src">(a) HCI Soln / N2022 / P3 / Q2(e) · (b) HCI Soln / N2017 / P3 / Q2(b) = RI TYS / N2017 / P3 / Q2(b) · (c), (d) HCI Prelim / N2023 / P2 / Q4(a)(ii) and Q4(c)(ii)</div>
 
   <div class="step"><div class="step-header">(a) Hybridisation and bonding in ketene — [3]</div>
     <div class="restate">State the hybridisation of \(\ce{C_a}\), \(\ce{C_b}\) and \(\ce{O}\) in \(\ce{H2C_a=C_b=O}\), and describe how each \(\sigma\) and each \(\pi\) bond is formed in terms of orbital overlap.</div>
@@ -410,11 +327,22 @@
     </div>
   </div>
 </div>
+  </div>
+</div>
 
-<!-- ---------- MS Q6 ---------- -->
+<!-- ==================== Q6 ==================== -->
+<div class="qcard" id="q6">
+  <div class="qhead"><span>Question 6</span><span class="tot">[10] &nbsp;·&nbsp; running total 52 / 93</span></div>
+  <div class="src">(a)–(c) NYJC 2017 Prelim / P3 / Q2(b)(i)–(iii), via HCI Alkenes compilation Q9 &nbsp;·&nbsp; (d) NJC 2017 Prelim / P3 / Q4(c), via HCI Alkenes compilation Q11</div>
+  <p class="stem-lead">Iodine monochloride, \(\ce{ICl}\), reacts with 1-phenylpropene, \(\ce{C6H5-CH=CH-CH3}\).</p>
+  <div class="part"><span class="pl">(a)</span> Name the mechanism and draw it, showing all curly arrows, partial charges, lone pairs and the intermediate. Label the slow and the fast step. <span class="marks">[3]</span></div>
+  <div class="part"><span class="pl">(b)</span> Two carbocation intermediates are possible in this reaction. State which one is preferred and explain your answer. <span class="marks">[2]</span></div>
+  <div class="part"><span class="pl">(c)</span> If the reaction is instead carried out in water, explain what additional product forms. <span class="marks">[1]</span></div>
+  <div class="part"><span class="pl">(d)</span> Compounds L and M are each treated separately with \(\ce{KMnO4}\), \(\ce{H2SO4}\)(aq), heat. L is the symmetrical diene \(\ce{(CH3)2C=CH-CH=C(CH3)2}\); M is an internal, non-terminal alkene. State the observations for each, and write an equation using [O] to show the organic products of the oxidative cleavage. <span class="marks">[4]</span></div>
+  <div class="conf">Confidence: high / medium / guessed</div>
+  <div class="revwrap"><button class="revbtn" onclick="tog('a6',this)">Show answer</button></div>
+  <div class="ansbox" id="a6">
 <div class="msq">
-  <h3>Question 6 — [10]</h3>
-  <div class="src">(a)–(c) NYJC 2017 Prelim / P3 / Q2(b)(i)–(iii) · (d) NJC 2017 Prelim / P3 / Q4(c)</div>
 
   <div class="step"><div class="step-header">(a) Mechanism for ICl and 1-phenylpropene — [3]</div>
     <div class="restate">Name the mechanism and draw it, showing curly arrows, partial charges, lone pairs and the intermediate, with the slow and fast steps labelled.</div>
@@ -452,11 +380,29 @@
     <div class="trap"><b>Effervescence is the diagnostic, not the decolourisation.</b> Every alkene decolourises hot acidified \(\ce{KMnO4}\). Only a <b>terminal \(\ce{=CH2}\)</b> is cleaved all the way to \(\ce{CO2}\), so the limewater test is what separates L from M.</div>
   </div>
 </div>
+  </div>
+</div>
 
-<!-- ---------- MS Q7 ---------- -->
+<!-- ==================== Q7 ==================== -->
+<div class="qcard" id="q7">
+  <div class="qhead"><span>Question 7</span><span class="tot">[12] &nbsp;·&nbsp; running total 64 / 93</span></div>
+  <div class="src">(a) HCI Soln / N2020 / P3 / Q4(a)(i) &nbsp;·&nbsp; (b) HCI Soln / N2019 / P3 / Q4(c)(ii), stem reconstructed &nbsp;·&nbsp; (c) HCI Soln / N2022 / P3 / Q4(f)(iii), stem reconstructed &nbsp;·&nbsp; (d) HCI Prelim / N2024 / P2 / Q3(c)(i) &nbsp;·&nbsp; (e) HCI Soln / N2018 / P2 / Q3(b)(i)–(ii) = RI TYS / N2018 / P2</div>
+  <div class="part"><span class="pl">(a)</span> Explain why 1-bromobutane and 2-bromo-2-methylpropane react with \(\ce{OH-}\) by different mechanisms. <span class="marks">[2]</span></div>
+  <div class="part"><span class="pl">(b)</span> E and F are isomers, one a chloro compound and the other the corresponding hydroxy compound, both derived from \(\ce{C6H5C2H4Cl}\). When E reacts with \(\ce{NaOH}\)(aq), the rate of reaction is found to be independent of \(\ce{[OH^-]}\). Deduce whether E is the primary or the secondary chloroalkane, and explain your reasoning. <span class="marks">[2]</span></div>
+  <div class="part"><span class="pl">(c)</span> Three <b>primary</b> halogenoalkanes react separately with \(\ce{NaOH}\). They are listed below in no particular order.</div>
+  <table class="data">
+    <tr><th>Compound</th><th>Halogen present</th><th>Alkyl group</th></tr>
+    <tr><td><b>O</b></td><td>\(\ce{C-Br}\)</td><td class="l">highly branched, bulky chain</td></tr>
+    <tr><td><b>N</b></td><td>\(\ce{C-I}\)</td><td class="l">straight, unbranched chain</td></tr>
+    <tr><td><b>M</b></td><td>\(\ce{C-Br}\)</td><td class="l">straight, unbranched chain</td></tr>
+  </table>
+  <div class="part">Arrange M, N and O in order of <b>increasing</b> rate of hydrolysis and explain the order. <span class="marks">[3]</span></div>
+  <div class="part"><span class="pl">(d)</span> 2-bromopropane, 2-chloropropane and iodobenzene are each heated with \(\ce{OH-}\), then tested with acidified silver nitrate, and any residue is tested for solubility in dilute and in concentrated aqueous ammonia. Complete the observations for each of the three compounds. <span class="marks">[2]</span></div>
+  <div class="part"><span class="pl">(e)</span> 2-chlorobutane can be made to undergo elimination. State the reagents and conditions needed to bring about the elimination, and draw the skeletal formulae of the three alkene products D, E and F that are formed. <span class="marks">[3]</span></div>
+  <div class="conf">Confidence: high / medium / guessed</div>
+  <div class="revwrap"><button class="revbtn" onclick="tog('a7',this)">Show answer</button></div>
+  <div class="ansbox" id="a7">
 <div class="msq">
-  <h3>Question 7 — [12]</h3>
-  <div class="src">(a) HCI Soln / N2020 / P3 / Q4(a)(i) · (b) HCI Soln / N2019 / P3 / Q4(c)(ii) · (c) HCI Soln / N2022 / P3 / Q4(f)(iii) · (d) HCI Prelim / N2024 / P2 / Q3(c)(i) · (e) HCI Soln / N2018 / P2 / Q3(b)(i)–(ii)</div>
 
   <div class="step"><div class="step-header">(a) Why the two bromoalkanes react by different mechanisms — [2]</div>
     <div class="restate">Explain why 1-bromobutane and 2-bromo-2-methylpropane react with \(\ce{OH-}\) by different mechanisms.</div>
@@ -504,11 +450,22 @@
     <div class="trap"><b>Elimination counts double.</b> Find every distinct alkene skeleton first, then check each one for cis-trans isomerism. Skipping the second check is how a three-product answer becomes a two-product answer.</div>
   </div>
 </div>
+  </div>
+</div>
 
-<!-- ---------- MS Q8 ---------- -->
+<!-- ==================== Q8 ==================== -->
+<div class="qcard" id="q8">
+  <div class="qhead"><span>Question 8</span><span class="tot">[9] &nbsp;·&nbsp; running total 73 / 93</span></div>
+  <div class="src">(a), (b) HCI Soln / N2019 / P3 / Q5(c)(i)–(ii), stems reconstructed &nbsp;·&nbsp; (c) HCI Soln / N2022 / P3 / Q4(f)(i), stem reconstructed</div>
+  <p class="stem-lead">1,2-dibromoethane, \(\ce{BrCH2CH2Br}\), is converted into a dicarboxylic acid K by the three-step route below.</p>
+  <p class="stem-lead" style="text-align:center">\(\ce{BrCH2CH2Br}\) &nbsp;—step 1→&nbsp; <b>L</b> &nbsp;—step 2→&nbsp; <b>M</b> &nbsp;—step 3→&nbsp; <b>K</b> (a dicarboxylic acid)</p>
+  <div class="part"><span class="pl">(a)</span> Draw the structures of L, M and K, and state the reagents and conditions for each of the three steps. <span class="marks">[4]</span></div>
+  <div class="part"><span class="pl">(b)</span> State a possible side product formed in step 1 and state how its formation could be minimised. <span class="marks">[2]</span></div>
+  <div class="part"><span class="pl">(c)</span> In a separate reaction, 1-bromopropane reacts with \(\ce{NaCN}\). State the mechanism and draw it, showing curly arrows, the transition state and the products. <span class="marks">[3]</span></div>
+  <div class="conf">Confidence: high / medium / guessed</div>
+  <div class="revwrap"><button class="revbtn" onclick="tog('a8',this)">Show answer</button></div>
+  <div class="ansbox" id="a8">
 <div class="msq">
-  <h3>Question 8 — [9]</h3>
-  <div class="src">(a), (b) HCI Soln / N2019 / P3 / Q5(c)(i)–(ii) · (c) HCI Soln / N2022 / P3 / Q4(f)(i)</div>
 
   <div class="step"><div class="step-header">(a) Structures of L, M and K with reagents and conditions — [4]</div>
     <div class="restate">Draw the structures of L, M and K, and state the reagents and conditions for each of the three steps from \(\ce{BrCH2CH2Br}\).</div>
@@ -539,11 +496,23 @@
     <div class="trap"><b>The transition state must be drawn and it must carry the negative charge.</b> Include \(\ce{Br^-}\) in the products, mark <sup>δ+</sup>C–Br<sup>δ−</sup> on the starting material, and state "S<sub>N</sub>2" explicitly — describing backside attack without naming the mechanism does not score.</div>
   </div>
 </div>
+  </div>
+</div>
 
-<!-- ---------- MS Q9 ---------- -->
+<!-- ==================== Q9 ==================== -->
+<div class="qcard" id="q9">
+  <div class="qhead"><span>Question 9</span><span class="tot">[10] &nbsp;·&nbsp; running total 83 / 93</span></div>
+  <div class="src">(a), (b) HCI Soln / N2020 / P2 / Q4(a) and Q4(b) &nbsp;·&nbsp; (c) HCI Prelim / N2024 / P3 / Q2(c)(iii) &nbsp;·&nbsp; (d) HCI Prelim / N2024 / P3 / Q2(d)(ii)</div>
+  <div class="part"><span class="pl">(a)</span> Write an equation for the reaction of hydroquinone (benzene-1,4-diol) with excess \(\ce{NaOH}\)(aq). <span class="marks">[1]</span></div>
+  <div class="part"><span class="pl">(b)</span> Three compounds are listed below in no particular order: <b>phenol, ethanol, hydroquinone</b>. Describe an experiment to compare the acidity of the three compounds, and explain the order of acidity you would expect. <span class="marks">[5]</span></div>
+  <div class="part"><span class="pl">(c)</span> B, C and D are three iodo-alcohols: B is \(\ce{I(CH2)5OH}\), C is \(\ce{ICH2CH2CH(OH)CH2CH3}\) and D is \(\ce{ICH2CH2C(CH3)2OH}\). Describe how you would distinguish between them. <span class="marks">[3]</span></div>
+  <div class="sub"><b>I.</b> Heat each separately with acidified \(\ce{K2Cr2O7}\) and state what you would observe.</div>
+  <div class="sub"><b>II.</b> Suggest a reagent, other than 2,4-DNPH, that would distinguish between the products of the positive tests, and state the observations.</div>
+  <div class="part"><span class="pl">(d)</span> In compound E the group R could be at position 2, 3 or 4 relative to the \(\ce{-OH}\) on the ring. In step 1, E is treated with \(\ce{Br2}\)(aq) and the \(M_r\) changes from 178.0 in E to 335.8 in F, the major product. Deduce the position of R relative to the \(\ce{-OH}\). <span class="marks">[1]</span></div>
+  <div class="conf">Confidence: high / medium / guessed</div>
+  <div class="revwrap"><button class="revbtn" onclick="tog('a9',this)">Show answer</button></div>
+  <div class="ansbox" id="a9">
 <div class="msq">
-  <h3>Question 9 — [10]</h3>
-  <div class="src">(a), (b) HCI Soln / N2020 / P2 / Q4(a) and Q4(b) · (c) HCI Prelim / N2024 / P3 / Q2(c)(iii) · (d) HCI Prelim / N2024 / P3 / Q2(d)(ii)</div>
 
   <div class="step"><div class="step-header">(a) Hydroquinone with excess NaOH(aq) — [1]</div>
     <div class="restate">Write an equation for the reaction of hydroquinone (benzene-1,4-diol) with excess \(\ce{NaOH}\)(aq).</div>
@@ -583,11 +552,30 @@
     <div class="trap"><b>Aqueous bromine, not bromine in \(\ce{CCl4}\).</b> Phenol's ring is <b>activated because the lone pair on O is delocalised into it</b>, so it brominates in <b>aqueous \(\ce{Br2}\) at room temperature with no halogen carrier</b>, by <b>electrophilic substitution</b> (each substitution costs \(M_r\) 78.9, since one H leaves). \(\ce{Br2}\) in \(\ce{CCl4}\) in the dark is the <b>\(\ce{C=C}\)</b> test, an electrophilic <b>addition</b> worth \(M_r\) 159.8.</div>
   </div>
 </div>
+  </div>
+</div>
 
-<!-- ---------- MS Q10 ---------- -->
+<!-- ==================== Q10 ==================== -->
+<div class="qcard" id="q10">
+  <div class="qhead"><span>Question 10</span><span class="tot">[10] &nbsp;·&nbsp; running total 93 / 93</span></div>
+  <div class="src">HCI Soln / N2017 / P3 / Q3(d) &nbsp;=&nbsp; N2017 / P3 / Q3(d), EJC key &nbsp;·&nbsp; stem reconstructed from the key</div>
+  <p class="stem-lead">Compound I has molecular formula \(\ce{C6H8O2}\). The results of a series of tests on I, and on the compounds derived from it, are given below.</p>
+  <table class="data">
+    <tr><th>Test</th><th>Result</th></tr>
+    <tr><td class="l">I is shaken with \(\ce{Br2}\)(aq)</td><td class="l">the bromine is decolourised</td></tr>
+    <tr><td class="l">I is treated with sodium metal</td><td class="l">no reaction</td></tr>
+    <tr><td class="l">I is warmed with alkaline aqueous iodine</td><td class="l">no reaction</td></tr>
+    <tr><td class="l">a solution of I is placed in a polarimeter</td><td class="l">the plane of plane-polarised light is rotated</td></tr>
+    <tr><td class="l">I is heated with \(\ce{H2SO4}\)(aq)</td><td class="l">J, \(\ce{C6H10O3}\), is formed</td></tr>
+    <tr><td class="l">J is heated with \(\ce{KMnO4}\)</td><td class="l">K, \(\ce{C3H4O3}\), is the only organic product</td></tr>
+    <tr><td class="l">K is treated with sodium metal</td><td class="l">a reaction occurs</td></tr>
+    <tr><td class="l">K is warmed with alkaline aqueous iodine</td><td class="l">a yellow precipitate forms</td></tr>
+  </table>
+  <div class="part">Use <b>all</b> of the evidence above to deduce the structures of I, J and K. For each observation, state the type of reaction involved and the deduction you draw from it, then draw the three structures. <span class="marks">[10]</span></div>
+  <div class="conf">Confidence: high / medium / guessed</div>
+  <div class="revwrap"><button class="revbtn" onclick="tog('a10',this)">Show answer</button></div>
+  <div class="ansbox" id="a10">
 <div class="msq">
-  <h3>Question 10 — [10]</h3>
-  <div class="src">HCI Soln / N2017 / P3 / Q3(d) = N2017 / P3 / Q3(d), EJC key</div>
   <div class="restate">Use all of the evidence to deduce the structures of I (\(\ce{C6H8O2}\)), J (\(\ce{C6H10O3}\)) and K (\(\ce{C3H4O3}\)), stating the type of reaction and the deduction for each observation.</div>
 
   <div class="step"><div class="step-header">The deduction table — one mark per row, up to [7]</div>
@@ -615,16 +603,21 @@
     <div class="trap"><b>Two oxygens, no reaction with Na, and a hydrolysis that adds \(\ce{H2O}\) means an ester.</b> That is the only functional group that hides both oxygens from sodium and reappears as an acid plus an alcohol after hydrolysis. In structural elucidation you must <b>explain qualitatively how you deduced the structure</b> — name the reaction type and the functional group behind every observation, not just the final answer.</div>
   </div>
 </div>
-
-</div><!-- /markscheme -->
+  </div>
+</div>
 
 <script>
-function toggleMS(btn){
-  var d = document.getElementById('markscheme');
-  var open = d.style.display !== 'none';
-  d.style.display = open ? 'none' : 'block';
-  btn.textContent = open ? 'Reveal mark scheme' : 'Hide mark scheme';
-  if(!open && window.MathJax && window.MathJax.typesetPromise){ window.MathJax.typesetPromise([d]); }
+function tog(id,btn){
+  var d=document.getElementById(id);
+  var open=d.style.display==='block';
+  d.style.display=open?'none':'block';
+  btn.textContent=open?'Show answer':'Hide answer';
+  if(!open&&window.MathJax&&window.MathJax.typesetPromise){window.MathJax.typesetPromise([d]);}
+}
+function allAns(show){
+  document.querySelectorAll('.ansbox').forEach(function(d){d.style.display=show?'block':'none';});
+  document.querySelectorAll('.revbtn[onclick^="tog"]').forEach(function(b){b.textContent=show?'Hide answer':'Show answer';});
+  if(show&&window.MathJax&&window.MathJax.typesetPromise){window.MathJax.typesetPromise();}
 }
 </script>
 </body>
