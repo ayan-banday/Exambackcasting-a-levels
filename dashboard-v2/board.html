@@ -115,10 +115,15 @@ button.dgr:hover{background:#3a2119;border-color:#7a4030}
 .alt{flex:1;color:var(--mut);font-size:12.5px;min-width:120px}
 .aldur{flex:0 0 60px;text-align:right;color:var(--dim);font-size:12px;font-variant-numeric:tabular-nums}
 .alm{flex:0 0 66px;text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
-.alw{flex:0 0 118px;display:flex;align-items:center;gap:7px;justify-content:flex-end}
-.alwbar{width:56px;height:7px;background:rgba(255,255,255,.07);border-radius:4px;overflow:hidden}
+.alw{flex:0 0 150px;display:flex;align-items:center;gap:8px;justify-content:flex-end}
+.alwbar{width:96px;height:7px;background:rgba(255,255,255,.07);border-radius:4px;overflow:hidden}
 .alwbar i{display:block;height:100%;border-radius:4px}
-.alwp{font-size:12px;color:var(--mut);font-variant-numeric:tabular-nums;flex:0 0 30px;text-align:right}
+.alwp{font-size:12px;color:var(--mut);font-variant-numeric:tabular-nums;flex:0 0 34px;text-align:right}
+/* stacked split of the whole subject */
+.alstack{display:flex;height:16px;margin:0 15px 11px;border-radius:5px;overflow:hidden;gap:2px}
+.alstack span{display:flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700;
+  letter-spacing:.04em;color:#0f1115;white-space:nowrap;overflow:hidden}
+.alscale{display:flex;justify-content:space-between;margin:0 15px 9px;font-size:10px;color:var(--dim)}
 .alsec{padding:3px 15px 7px 27px;font-size:11.5px;color:var(--dim);border-bottom:1px solid var(--line)}
 .alsec:last-child{border-bottom:none}
 .pick{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ok);
@@ -173,7 +178,7 @@ footer{margin-top:38px;color:var(--dim);font-size:12px;border-top:1px solid var(
 </div>
 
 <h2>Mark allocation — every paper</h2>
-<div class="note">What each paper is actually worth. <span class="pick">CHOICE</span> marks the only places you get to pick your question — everywhere else every mark is compulsory, so an uncovered topic is a guaranteed loss.</div>
+<div class="note">What each paper is actually worth. The stacked bar under each subject is that subject split into its papers — widths are the true weighting, so a half-width block really is half the grade. <span class="pick">CHOICE</span> marks the only places you get to pick your question; everywhere else every mark is compulsory, so an uncovered topic is a guaranteed loss.</div>
 <div id="alloc"></div>
 
 <footer>
@@ -502,13 +507,19 @@ function renderAlloc(){
       <span class="nm" style="color:${s.colour}">${s.nm}</span>
       <span class="cd">${s.cd}</span>
       <span class="tt">${s.total} marks total</span></div>`;
+    /* stacked bar — the whole subject split into its papers, widths = true weighting */
+    h+='<div class="alstack">'+s.papers.map((p,i)=>{
+        const shade=[1,.78,.56,.36][i]||.3;
+        return `<span style="width:${p.w}%;background:${s.colour};opacity:${shade}"
+          title="${p.p} — ${p.m} marks, ${p.w}%">${p.w>=12?p.p.replace('Paper ','P')+' '+p.w+'%':''}</span>`;
+      }).join('')+'</div>';
     s.papers.forEach(p=>{
       h+=`<div class="alrow">
         <span class="alp${p.prac?' prac2':''}">${p.p}</span>
         <span class="alt">${p.t}${p.choice?' <span class="pick">choice</span>':''}</span>
         <span class="aldur">${p.dur}</span>
         <span class="alm">${p.m} m</span>
-        <span class="alw"><span class="alwbar"><i style="width:${p.w*2}%;background:${s.colour}"></i></span>
+        <span class="alw"><span class="alwbar"><i style="width:${p.w}%;background:${s.colour}"></i></span>
         <span class="alwp">${p.w}%</span></span></div>`;
       if(p.sec) h+=`<div class="alsec">${p.sec}</div>`;
     });
