@@ -103,6 +103,27 @@ button.dgr:hover{background:#3a2119;border-color:#7a4030}
 .exp{flex:1;color:var(--mut);font-size:12.5px}
 .ext{flex:0 0 92px;text-align:right;color:var(--dim);font-size:11.5px;font-variant-numeric:tabular-nums}
 .prac{color:var(--bad)}
+/* ---------- 4. mark allocation ---------- */
+.alsub{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:13px}
+.alhd{display:flex;align-items:baseline;gap:10px;padding:11px 15px;border-bottom:1px solid var(--line)}
+.alhd .nm{font-weight:600;font-size:14.5px}
+.alhd .cd{font-size:11.5px;color:var(--dim);letter-spacing:.03em}
+.alhd .tt{margin-left:auto;font-size:12px;color:var(--mut);font-variant-numeric:tabular-nums}
+.alrow{display:flex;align-items:center;gap:12px;padding:8px 15px;border-bottom:1px solid var(--line);font-size:13px}
+.alrow:last-child{border-bottom:none}
+.alp{flex:0 0 132px;font-weight:600}
+.alt{flex:1;color:var(--mut);font-size:12.5px;min-width:120px}
+.aldur{flex:0 0 60px;text-align:right;color:var(--dim);font-size:12px;font-variant-numeric:tabular-nums}
+.alm{flex:0 0 66px;text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.alw{flex:0 0 118px;display:flex;align-items:center;gap:7px;justify-content:flex-end}
+.alwbar{width:56px;height:7px;background:rgba(255,255,255,.07);border-radius:4px;overflow:hidden}
+.alwbar i{display:block;height:100%;border-radius:4px}
+.alwp{font-size:12px;color:var(--mut);font-variant-numeric:tabular-nums;flex:0 0 30px;text-align:right}
+.alsec{padding:3px 15px 7px 27px;font-size:11.5px;color:var(--dim);border-bottom:1px solid var(--line)}
+.alsec:last-child{border-bottom:none}
+.pick{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ok);
+  border:1px solid rgba(95,211,168,.42);border-radius:4px;padding:1px 5px;font-weight:600;white-space:nowrap}
+.prac2{color:var(--bad)}
 footer{margin-top:38px;color:var(--dim);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
 </style>
 </head>
@@ -151,6 +172,10 @@ footer{margin-top:38px;color:var(--dim);font-size:12px;border-top:1px solid var(
   </div>
 </div>
 
+<h2>Mark allocation — every paper</h2>
+<div class="note">What each paper is actually worth. <span class="pick">CHOICE</span> marks the only places you get to pick your question — everywhere else every mark is compulsory, so an uncovered topic is a guaranteed loss.</div>
+<div id="alloc"></div>
+
 <footer>
   Stars come from my inspection of what you've actually drilled and how you performed, refreshed daily at 10pm. Override any of them freely — your edit wins until the next sync.
   Your edits live in this browser (localStorage). Use <b>Export backup</b> before clearing site data or switching machines.
@@ -166,7 +191,7 @@ const SEED = {v:4, cols:[
   ['2a. DNA Structure and Replication',2],['2b. Eukaryotic Gene Expression',2],
   ['2c. Organisation of Eukaryotic Genome',2],['2d. Control of Eukaryotic Gene Expression',2],
   ['2e. Gene and Chromosomal Mutations',2],['2f. Molecular Techniques',3],
-  ['3a. Cell Signalling',0],['3b. Cell & Nuclear Division',0],['3c. Cancer',0],['3d. Stem Cells',0],
+  ['3a. Cell Signalling',2],['3b. Cell & Nuclear Division',2],['3c. Cancer',0],['3d. Stem Cells',0],
   ['4a. Genetics of viruses',0],['4b. Genetics of Bacteria',0],
   ['5a. Photosynthesis',0],['5b. Cellular respiration',0],
   ['6a. Inheritance I',0],['6b. Inheritance II',0],
@@ -207,11 +232,48 @@ const ALEVEL=[
  ['2026-11-23','Chem','Paper 1 · MCQ','14:00','1h'],['2026-11-26','Bio','Paper 1 · MCQ','14:00','1h']];
 
 /* ---- Anki snapshot · synced 17 Aug 2026 · refreshed by the Study Agent, not by this page ---- */
-const ANKI={synced:'2026-08-17', decks:[
- {name:'CSC', colour:'#e8845f', total:29, mature:0, young:5, learn:2, nw:22, due:7,
+const ANKI={synced:'2026-08-18', decks:[
+ {name:'CSC', colour:'#e8845f', total:30, mature:0, young:7, learn:1, nw:22, due:6,
   tags:[['governance',25,0],['economy',4,0],['创新驱动',3,0],['P1.1',1,0]]},
  {name:'GP', colour:'#c78ae8', total:0, mature:0, young:0, learn:0, nw:0, due:0, tags:[], missing:true}
 ]};
+
+/* ---- mark allocation per paper (from the official syllabus specs) ---- */
+const ALLOC=[
+ {nm:'Mathematics', cd:'9758 H2', colour:'#6ea8fe', total:200, papers:[
+   {p:'Paper 1', t:'Pure Mathematics', dur:'3h', m:100, w:50,
+    sec:'10–12 questions, all compulsory · includes one real-world application question (min 12 marks)'},
+   {p:'Paper 2', t:'Pure + Probability & Statistics', dur:'3h', m:100, w:50,
+    sec:'Section A — Pure <b>40</b> (4–5 Q) · Section B — Prob &amp; Stats <b>60</b> (6–8 Q, incl. one application question min 12 marks)'}],
+  foot:'No MCQ. <b>No choice questions anywhere</b> — every mark is compulsory, so any uncovered topic is a straight loss. Statistics alone is 60 marks = 30% of the whole subject.'},
+ {nm:'Chemistry', cd:'9476 H2', colour:'#5fd3a8', total:240, papers:[
+   {p:'Paper 1', t:'Multiple Choice', dur:'1h', m:30, w:15, sec:'30 questions, all compulsory'},
+   {p:'Paper 2', t:'Structured', dur:'2h', m:75, w:30, sec:'All compulsory · data-based questions worth 20–25 marks'},
+   {p:'Paper 3', t:'Free Response', dur:'2h', m:80, w:35, choice:true,
+    sec:'Section A <b>60</b> — 3–4 compulsory free-response · Section B <b>20</b> — <b>answer 1 of 2</b>'},
+   {p:'Paper 4', t:'Practical', dur:'2h30', m:55, w:20, prac:true, sec:'Not yet prepped — needs a dedicated block'}],
+  foot:'Papers 2 and 3 together are <b>65%</b> of the subject. The only choice is 20 marks in P3 Section B.'},
+ {nm:'Biology', cd:'9477 H2', colour:'#e8c65f', total:260, papers:[
+   {p:'Paper 1', t:'Multiple Choice', dur:'1h', m:30, w:15, sec:'30 questions, all compulsory'},
+   {p:'Paper 2', t:'Structured', dur:'2h', m:100, w:30,
+    sec:'All compulsory · data-based and comprehension questions · deliberately integrates across topics'},
+   {p:'Paper 3', t:'Long Structured + Free Response', dur:'2h', m:75, w:35, choice:true,
+    sec:'Section A <b>50</b> — long structured · Section B <b>25</b> — <b>2 essays, choose 1</b> (sustained prose, not bullets)'},
+   {p:'Paper 4', t:'Practical', dur:'2h30', m:55, w:20, prac:true, sec:'Not yet prepped — needs a dedicated block'}],
+  foot:'P2 + P3 are <b>65%</b>. The 25-mark Section B essay is the one place you can dodge a whole topic.'},
+ {nm:'China Studies', cd:'9629 H2', colour:'#e8845f', total:150, papers:[
+   {p:'Paper 1', t:'Case Study 案例分析', dur:'2h45', m:60, w:40,
+    sec:'Group A <b>35</b> · Group B <b>25</b> · source-based, sub-questions 4–12 marks'},
+   {p:'Paper 2', t:'Essays 问答题', dur:'2h30', m:90, w:60, choice:true,
+    sec:'Group A — 1 compulsory extended essay (~30) · Group B — <b>choose 2 of 3</b> (~30 each)'}],
+  foot:'P2 is <b>60%</b> and two-thirds of it is chosen — 2–3 solid topics can carry the whole paper.'},
+ {nm:'General Paper', cd:'8881 H1', colour:'#c78ae8', total:100, papers:[
+   {p:'Paper 1', t:'Essay', dur:'1h30', m:50, w:50, choice:true,
+    sec:'<b>Choose 1 of 12</b> · Content <b>30</b> + Language <b>20</b>'},
+   {p:'Paper 2', t:'Comprehension', dur:'1h30', m:50, w:50,
+    sec:'All compulsory · Content <b>35</b> + Language <b>15</b> · includes summary and Application Question'}],
+  foot:'Language is <b>35 of 100 marks</b> across the two papers — it scores independently of how much content you know.'}
+];
 
 const KEY='ethan-mastery-board-v4';
 const PALETTE=['#6ea8fe','#5fd3a8','#e8c65f','#e8845f','#c78ae8','#7fd8e8','#e8a5c0','#a5e88a'];
@@ -433,7 +495,30 @@ function renderExams(){
   document.getElementById('stamp').textContent='updated '+lbl(today);
 }
 
-render(); renderAnki(); renderExams();
+function renderAlloc(){
+  let h='';
+  ALLOC.forEach(s=>{
+    h+=`<div class="alsub"><div class="alhd">
+      <span class="nm" style="color:${s.colour}">${s.nm}</span>
+      <span class="cd">${s.cd}</span>
+      <span class="tt">${s.total} marks total</span></div>`;
+    s.papers.forEach(p=>{
+      h+=`<div class="alrow">
+        <span class="alp${p.prac?' prac2':''}">${p.p}</span>
+        <span class="alt">${p.t}${p.choice?' <span class="pick">choice</span>':''}</span>
+        <span class="aldur">${p.dur}</span>
+        <span class="alm">${p.m} m</span>
+        <span class="alw"><span class="alwbar"><i style="width:${p.w*2}%;background:${s.colour}"></i></span>
+        <span class="alwp">${p.w}%</span></span></div>`;
+      if(p.sec) h+=`<div class="alsec">${p.sec}</div>`;
+    });
+    if(s.foot) h+=`<div class="alsec" style="color:var(--mut);padding-left:15px">${s.foot}</div>`;
+    h+='</div>';
+  });
+  document.getElementById('alloc').innerHTML=h;
+}
+
+render(); renderAnki(); renderExams(); renderAlloc();
 </script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chemistry — Cumulative Test 17 Aug 2026 (9476 H2)</title>
+<title>Chemistry — Cumulative Test (9476 H2)</title>
 <script>
   window.MathJax = {
     loader: { load: ['[tex]/mhchem'] },
@@ -20,7 +20,7 @@
     --purple:#7c3aed; --purple-soft:#f5f3ff; --red:#dc2626; --red-soft:#fef2f2; --ink:#111; }
   *{box-sizing:border-box}
   body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:40px 24px 100px;line-height:1.62;color:var(--text);background:var(--bg)}
-  h1,h2,h3,.label,.controls,button,.step-header,.marks,.hd .meta,.qhead,.secbar,.conf{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  h1,h2,h3,.label,.controls,button,.step-header,.marks,.hd .meta,.qhead,.secbar,.conf,.src{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
   .hd{border-bottom:3px solid var(--ink);padding-bottom:14px;margin:0 0 6px;text-align:center}
   .hd h1{font-size:1.7em;margin:0 0 6px;color:var(--ink);letter-spacing:.01em}
   .hd .meta{color:var(--muted);font-size:.86em;margin:3px 0}
@@ -37,36 +37,37 @@
   .qcard p{margin:9px 0}
   .part{margin:9px 0 9px 4px}
   .part .pl{font-weight:700;color:#374151}
+  .sub{margin:6px 0 6px 22px}
   .stem-lead{margin:2px 0 8px}
   .marks{display:inline-block;font-size:.78em;background:#fde68a;color:#92400e;padding:1px 8px;border-radius:10px;font-weight:700;margin-left:4px;vertical-align:middle}
   .conf{margin:12px 0 0;padding:5px 12px;background:var(--amber-soft);border:1px dashed #fcd34d;border-radius:5px;font-size:.78em;color:#92400e;font-weight:600;letter-spacing:.02em;display:inline-block}
+  .src{font-size:.76em;color:#6d28d9;background:var(--purple-soft);border:1px solid #ddd6fe;border-radius:5px;padding:4px 10px;display:inline-block;margin:0 0 12px}
   table.data{border-collapse:collapse;margin:12px 0;font-size:.9em;width:100%}
   table.data th,table.data td{border:1px solid #d1d5db;padding:6px 10px;text-align:center}
   table.data th{background:#f3f4f6;font-family:-apple-system,sans-serif;font-size:.82em;letter-spacing:.02em}
   table.data td.l{text-align:left}
 
-  .controls{position:sticky;top:0;background:linear-gradient(var(--bg) 70%,rgba(250,250,250,0));padding:14px 0;z-index:100;margin:34px 0 0;text-align:center}
-  .controls button{background:var(--ink);color:#fff;border:none;padding:11px 26px;border-radius:6px;cursor:pointer;font-size:.95em;font-weight:600;letter-spacing:.02em;box-shadow:0 2px 6px rgba(0,0,0,.15)}
+  .controls{padding:14px 0;margin:34px 0 0;text-align:center}
+  .controls button{background:var(--ink);color:#fff;border:none;padding:13px 30px;border-radius:6px;cursor:pointer;font-size:1em;font-weight:600;letter-spacing:.02em;box-shadow:0 2px 6px rgba(0,0,0,.15)}
   .controls button:hover{background:#333}
-  .controls .hint{display:block;color:var(--muted);font-size:.8em;margin-top:8px;font-style:italic;font-family:'Charter',serif}
+  .controls .hint{display:block;color:var(--muted);font-size:.8em;margin-top:10px;font-style:italic;font-family:'Charter',serif}
 
-  .sol{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:16px 22px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
-  .sol h3{font-size:1.05em;margin:0 0 4px;color:#1f2937}
-  .src{font-family:-apple-system,sans-serif;font-size:.76em;color:#6d28d9;background:var(--purple-soft);border:1px solid #ddd6fe;border-radius:5px;padding:4px 10px;display:inline-block;margin:0 0 12px}
-  .step{margin:10px 0;padding:9px 14px;background:#f9fafb;border-radius:5px;border-left:3px solid var(--green)}
+  .msq{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:16px 22px 18px;margin:18px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .msq h3{font-size:1.05em;margin:0 0 4px;color:#1f2937}
+  .restate{font-size:.9em;color:#4b5563;background:var(--cover);border-radius:5px;padding:8px 13px;margin:6px 0 12px;font-style:italic}
+  .step{margin:12px 0;padding:9px 14px;background:#f9fafb;border-radius:5px;border-left:3px solid var(--green)}
   .step-header{font-size:.78em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;font-family:-apple-system,sans-serif}
-  .m{display:inline-block;font-size:.8em;color:#fff;background:var(--green);font-weight:700;font-family:-apple-system,sans-serif;padding:0 7px;border-radius:8px;margin:0 2px;vertical-align:baseline}
+  .mk{display:inline-block;font-size:.78em;color:#fff;background:var(--green);font-weight:700;font-family:-apple-system,sans-serif;padding:0 7px;border-radius:8px;margin:0 2px;vertical-align:baseline}
   .verb{background:#eef7f1;border:1px dashed #059669;border-radius:5px;padding:9px 13px;margin:9px 0;font-size:.96em}
   .verb::before{content:'Verbatim mark-scheme wording — reproduce these exact words';display:block;font-family:-apple-system,sans-serif;font-size:.66em;letter-spacing:.04em;text-transform:uppercase;color:#047857;font-weight:700;margin-bottom:5px}
   .verb b{color:#065f46}
-  .verb p{margin:5px 0}
+  .verb p{margin:6px 0}
+  .flag{font-family:-apple-system,sans-serif;font-size:.72em;color:#92400e;background:var(--amber-soft);border:1px solid #fcd34d;border-radius:4px;padding:2px 7px;display:inline-block;margin-left:4px}
   .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:7px 13px;border-radius:4px;margin:10px 0 0;font-size:.88em}
   .trap b{color:var(--red)}
-  .fig{display:block;margin:12px auto;background:#fff;border:1px solid var(--border);border-radius:6px;max-width:100%}
   .calc{font-size:.95em;margin:6px 0}
-  .rad{font-family:'Charter','Georgia',serif;font-size:1.0em;letter-spacing:.01em}
   hr{border:none;border-top:1px solid var(--border);margin:20px 0}
-  @media print{body{background:#fff;padding:16px;max-width:100%}.controls{display:none!important}.qcard,.sol{box-shadow:none;page-break-inside:avoid}}
+  @media print{body{background:#fff;padding:16px;max-width:100%}.controls{display:none!important}.qcard,.msq{box-shadow:none;page-break-inside:avoid}#markscheme{display:block!important}}
 </style>
 </head>
 <body>
@@ -74,663 +75,557 @@
 <div class="hd">
   <h1>Chemistry — Cumulative Test</h1>
   <div class="meta code">H2 Chemistry 9476 &nbsp;·&nbsp; Structured Questions</div>
-  <div class="meta">17 Aug 2026 &nbsp;·&nbsp; <b>2 hours</b> &nbsp;·&nbsp; <b>90 marks</b> &nbsp;·&nbsp; 10 questions</div>
+  <div class="meta">18 Aug 2026 &nbsp;·&nbsp; <b>1 hour 30 minutes</b> &nbsp;·&nbsp; <b>93 marks</b> &nbsp;·&nbsp; 10 questions</div>
   <div class="meta">Answer <b>all</b> questions. The number of marks is given in brackets [ ] at the end of each question or part question.</div>
 </div>
 
 <div class="instr">
-  <b>Sit this cold and timed.</b> Two hours, pen and paper, no notes, no data booklet beyond the box below. Show full working in every calculation and draw every bond, lone pair, partial charge and curly arrow where a structure or mechanism is asked for. <b>Say your confidence out loud after each part before you move on</b> — high / medium / guessed. Reveal the answer only after you have written something down. Every question on this paper comes from a real Cambridge A-Level paper, an HCI prelim, or an HCI tutorial, and the source is printed on each answer.
+  <b>Sit this cold and timed.</b> Ninety minutes, pen and paper, no notes, nothing beyond the data box below. Show full working in every calculation, and draw every bond, lone pair, partial charge and curly arrow wherever a structure or mechanism is asked for. <b>Say your confidence out loud after each part before you move on</b> — high / medium / guessed. The mark scheme sits at the very bottom behind a single button: <b>do not open it until the whole paper is written</b>. Every question on this paper is a real stem from a Cambridge A-Level paper, an HCI prelim, or a JC prelim, and the paper and question number are printed on each question.
 </div>
 
 <div class="databox">
   <b>Data provided.</b>
-  \(A_r\): H, 1.0; C, 12.0; N, 14.0; O, 16.0; Na, 23.0; Mg, 24.3; S, 32.1; Cl, 35.5; Ca, 40.1; Mn, 54.9; Fe, 55.8; Br, 79.9; Sr, 87.6; I, 126.9; Ba, 137.3.
-  &nbsp;·&nbsp; Molar gas volume = 24.0 dm\(^3\) mol\(^{-1}\) at r.t.p.; 22.7 dm\(^3\) mol\(^{-1}\) at s.t.p.
-  &nbsp;·&nbsp; Ionic radii / nm: \(\ce{Na+}\) 0.095; \(\ce{Mg^2+}\) 0.065; \(\ce{Al^3+}\) 0.050; \(\ce{Cl-}\) 0.181; \(\ce{Br-}\) 0.195.
-  &nbsp;·&nbsp; Bond energies / kJ mol\(^{-1}\): \(\ce{Cl-Cl}\) +244, \(\ce{Br-Br}\) +193, \(\ce{C-Cl}\) +340, \(\ce{C-Br}\) +280, \(\ce{C-I}\) +238.
-  &nbsp;·&nbsp; From the Data Booklet you may use \(\ce{MnO4^- + 8H+ + 5e^- -> Mn^2+ + 4H2O}\) and \(\ce{I2 + 2S2O3^2- -> 2I^- + S4O6^2-}\).
+  \(A_r\): H, 1.0; C, 12.0; N, 14.0; O, 16.0; Na, 23.0; Mg, 24.3; S, 32.1; Cl, 35.5; K, 39.1; Ca, 40.1; Mn, 54.9; Fe, 55.8; Br, 79.9; I, 126.9.
+  &nbsp;·&nbsp; Molar gas volume = 24.0 dm\(^3\) mol\(^{-1}\) at r.t.p.; 22.7 dm\(^3\) mol\(^{-1}\) at s.t.p. Avogadro constant \(L\) = 6.02 × 10\(^{23}\) mol\(^{-1}\).
+  &nbsp;·&nbsp; Bond energies / kJ mol\(^{-1}\): \(\ce{C-Cl}\) +340, \(\ce{C-Br}\) +280, \(\ce{C-I}\) +238, \(\ce{C-C}\) +350, \(\ce{C=C}\) +610.
+  &nbsp;·&nbsp; Ionic radii / nm: \(\ce{Mg^2+}\) 0.065, \(\ce{Na+}\) 0.095, \(\ce{F-}\) 0.133, \(\ce{Cl-}\) 0.181, \(\ce{O^2-}\) 0.140.
+  &nbsp;·&nbsp; From the Data Booklet you may quote \(\ce{MnO4^- + 8H+ + 5e^- -> Mn^2+ + 4H2O}\), \(\ce{I2 + 2e^- -> 2I^-}\) and \(\ce{S4O6^2- + 2e^- -> 2S2O3^2-}\).
 </div>
 
-<div class="controls">
-  <button class="revbtn" onclick="revealAll()">Reveal all answers</button>
-  <button class="revbtn" onclick="hideAll()">Hide all answers</button>
-  <span class="hint">Do a question, say your confidence out loud, reveal, mark yourself against the exact wording — then tell me every part below full marks and every one you flagged medium or guessed.</span>
-</div>
-
-<div class="secbar"><span>Questions 1–10 &nbsp;·&nbsp; all structured</span><span class="r">90 marks &nbsp;·&nbsp; show all working</span></div>
+<div class="secbar"><span>Questions 1–10 &nbsp;·&nbsp; all structured</span><span class="r">93 marks &nbsp;·&nbsp; show all working</span></div>
 
 <!-- ==================== Q1 ==================== -->
 <div class="qcard" id="q1">
-  <div class="qhead"><span>Question 1</span><span class="tot">[9] &nbsp;·&nbsp; running total 9 / 90</span></div>
-  <p class="stem-lead">Sodium chloride melts at 801 °C and magnesium chloride at 714 °C. Aluminium chloride, in contrast, does not melt under ordinary conditions at all — it sublimes at 180 °C, and the vapour consists of \(\ce{Al2Cl6}\) molecules.</p>
-  <div class="part"><span class="pl">(a)</span> State the <b>two</b> factors that determine the numerical magnitude of a lattice energy. Use both factors, together with the ionic radii in the data box, to explain why more energy is needed to melt \(\ce{MgCl2}\) than \(\ce{NaCl}\) even though both are chlorides of a Period 3 metal. <span class="marks">[3]</span></div>
-  <div class="part"><span class="pl">(b)</span> On the charge-and-radius argument alone, \(\ce{AlCl3}\) should be held together even more strongly than \(\ce{MgCl2}\). Explain why it is instead a low-melting, essentially covalent solid, and predict with a reason whether \(\ce{AlBr3}\) would have <b>more</b> or <b>less</b> covalent character than \(\ce{AlCl3}\). <span class="marks">[3]</span></div>
-  <div class="part"><span class="pl">(c)</span> Draw the structure of \(\ce{Al2Cl6}\), labelling clearly any co-ordinate (dative) bonds and describing how each one forms. Hence explain why molten \(\ce{MgCl2}\) conducts electricity but molten \(\ce{AlCl3}\) does not. <span class="marks">[3]</span></div>
+  <div class="qhead"><span>Question 1</span><span class="tot">[9] &nbsp;·&nbsp; running total 9 / 93</span></div>
+  <div class="src">HCI Soln / N2019 / P3 / Q1(a), (b), (c) &nbsp;=&nbsp; RI TYS / N2019 / P3 / Q1 &nbsp;·&nbsp; part (b) stem reconstructed from the key</div>
+  <p class="stem-lead">This question is about \(\ce{BF3}\), \(\ce{NH3}\) and \(\ce{H2O}\).</p>
+  <div class="part"><span class="pl">(a)</span> By considering the electron pairs around the central atom, explain the shapes and bond angles of \(\ce{BF3}\), \(\ce{NH3}\) and \(\ce{H2O}\). <span class="marks">[3]</span></div>
+  <div class="part"><span class="pl">(b)</span> Draw diagrams showing the polarity of the bonds in each of the three molecules, and deduce whether each has a net dipole moment. <span class="marks">[3]</span></div>
+  <div class="part"><span class="pl">(c)</span></div>
+  <div class="sub">(i) Ammonia reacts with water according to \(\ce{NH3 + H2O <=> NH4+ + OH-}\). Identify the Brønsted-Lowry acid and the Brønsted-Lowry base in the forward reaction. <span class="marks">[1]</span></div>
+  <div class="sub">(ii) \(\ce{BF3}\) reacts with \(\ce{NH3}\). Identify the Lewis acid and the Lewis base, and describe the bond that is formed. <span class="marks">[2]</span></div>
   <div class="conf">Confidence: high / medium / guessed</div>
-
-<button class="revbtn" onclick="tog('a1',this)">Show answer</button>
-<div class="ansbox" id="a1" style="display:none">
-<div class="sol">
-    <h3>Question 1 — [9]</h3>
-    <div class="src">HCI Soln / N2021 / P2 / Q2(b) = RI TYS / N2021 / P2 / Q2 &nbsp;·&nbsp; RI TYS / N2015 / P1 / Q32 with HCI Soln / N2017 / P1 / Q9 &nbsp;·&nbsp; HCI Prelim / N2023 / P3 / Q3(c)(i) with HCI Soln / N2020 / P3 / Q5(b)(ii)</div>
-
-    <div class="step"><div class="step-header">(a) The two lattice-energy factors — [3]</div>
-      <div class="verb">
-        <p>The two factors are the <b>interionic distance</b> and the <b>product of the cationic and anionic charge</b>. Lattice energy magnitude \(\propto |q^+ \times q^-| / (r^+ + r^-)\). <span class="m">1</span></p>
-        <p><b>\(\ce{Mg^2+}\) has a higher charge (+2 against +1) and a smaller ionic radius (0.065 nm against 0.095 nm) than \(\ce{Na+}\)</b>. Substituting into the expression, \(\ce{MgCl2}\) therefore has the <b>larger magnitude of lattice energy</b>. <span class="m">1</span></p>
-        <p>More energy is required to <b>overcome the stronger electrostatic forces of attraction between the oppositely charged ions</b> in the giant ionic lattice of \(\ce{MgCl2}\). <span class="m">1</span></p>
-      </div>
-      <div class="trap"><b>The wording that costs the mark.</b> Say "<b>larger magnitude of lattice energy</b>", never "larger lattice energy" — lattice energy is negative, so "larger" is ambiguous and examiners penalise it. And <b>quote the actual charges and the Data Booklet radii and put them into the expression</b>. Asserting "bigger charge, smaller radius" without the numbers is a partial answer.</div>
-    </div>
-
-    <div class="step"><div class="step-header">(b) Why AlCl₃ is covalent — [3]</div>
-      <div class="verb">
-        <p><b>\(\ce{Al^3+}\) has a very high charge density</b> (high charge, +3, and a small ionic radius, 0.050 nm), and therefore a <b>high polarising power</b>. <span class="m">1</span></p>
-        <p>It <b>distorts / polarises the electron cloud of the polarisable \(\ce{Cl-}\) anion</b>. The electron density is drawn into the region between the two nuclei, giving <b>effective overlap of the electron clouds — that is, a covalent bond</b>. <span class="m">1</span></p>
-        <p><b>\(\ce{AlBr3}\) has stronger covalent character</b> than \(\ce{AlCl3}\), because <b>\(\ce{Br-}\) is larger (0.195 nm against 0.181 nm) and its electron cloud is therefore more easily polarised</b> by the \(\ce{Al^3+}\) cation. <span class="m">1</span></p>
-      </div>
-      <div class="trap">Say "<b>overlap of electron clouds</b>", not "overlap of orbitals". Polarisation is a distortion of a charge cloud, not orbital hybridisation.</div>
-    </div>
-
-    <div class="step"><div class="step-header">(c) Al₂Cl₆ and electrical conductivity — [3]</div>
-      <div class="verb">
-        <p>Two \(\ce{AlCl3}\) units joined by <b>two chlorine bridges</b>. Each Al is bonded to two terminal Cl by normal covalent bonds and to two bridging Cl; of each pair of bridging bonds, <b>one is a normal covalent bond and the other is a dative (co-ordinate) bond</b>. Every Cl shows its three non-bonding lone pairs and all atoms attain an octet. <span class="m">1</span></p>
-        <p>The dative bond forms because <b>a lone pair on a bridging Cl of one \(\ce{AlCl3}\) is donated into the empty (vacant) orbital of the electron-deficient Al of the other \(\ce{AlCl3}\)</b> — Al has only six electrons in its valence shell and can accept two more. <span class="m">1</span></p>
-        <p>Molten \(\ce{MgCl2}\) has <b>free, mobile ions that act as mobile charge carriers</b>, so it conducts. \(\ce{AlCl3}\) exists as <b>discrete, neutral \(\ce{Al2Cl6}\) molecules with no mobile ions</b>, so it cannot conduct. <span class="m">1</span></p>
-      </div>
-      <svg class="fig" width="440" height="215" viewBox="0 0 440 215" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="15">
-        <defs>
-          <marker id="dat" markerWidth="9" markerHeight="9" refX="7.5" refY="3.2" orient="auto"><path d="M0,0 L7.5,3.2 L0,6.4 z" fill="#b91c1c"/></marker>
-        </defs>
-        <text x="42" y="50">Cl</text>
-        <text x="42" y="175">Cl</text>
-        <text x="118" y="112" font-weight="bold">Al</text>
-        <text x="205" y="62">Cl</text>
-        <text x="205" y="163">Cl</text>
-        <text x="288" y="112" font-weight="bold">Al</text>
-        <text x="368" y="50">Cl</text>
-        <text x="368" y="175">Cl</text>
-        <line x1="62" y1="52" x2="112" y2="96" stroke="#111" stroke-width="1.6"/>
-        <line x1="62" y1="164" x2="112" y2="116" stroke="#111" stroke-width="1.6"/>
-        <line x1="140" y1="98" x2="200" y2="60" stroke="#111" stroke-width="1.6"/>
-        <line x1="308" y1="114" x2="222" y2="158" stroke="#111" stroke-width="1.6"/>
-        <line x1="330" y1="98" x2="366" y2="56" stroke="#111" stroke-width="1.6"/>
-        <line x1="330" y1="114" x2="366" y2="164" stroke="#111" stroke-width="1.6"/>
-        <line x1="222" y1="60" x2="284" y2="98" stroke="#b91c1c" stroke-width="1.8" marker-end="url(#dat)"/>
-        <line x1="200" y1="156" x2="140" y2="116" stroke="#b91c1c" stroke-width="1.8" marker-end="url(#dat)"/>
-        <circle cx="200" cy="44" r="2.4" fill="#111"/><circle cx="210" cy="44" r="2.4" fill="#111"/>
-        <circle cx="200" cy="178" r="2.4" fill="#111"/><circle cx="210" cy="178" r="2.4" fill="#111"/>
-        <text x="242" y="40" font-size="12" fill="#b91c1c">dative (co-ordinate) bond</text>
-        <text x="96" y="196" font-size="12" fill="#b91c1c">dative (co-ordinate) bond</text>
-        <text x="18" y="22" font-size="13" fill="#6b7280">Al₂Cl₆ — two bridging Cl, each donating one lone pair into a vacant Al orbital</text>
-      </svg>
-    </div>
-  </div>
-</div>
 </div>
 
 <!-- ==================== Q2 ==================== -->
 <div class="qcard" id="q2">
-  <div class="qhead"><span>Question 2</span><span class="tot">[8] &nbsp;·&nbsp; running total 17 / 90</span></div>
-  <p class="stem-lead">This question is about the forces between molecules and the physical properties that follow from them.</p>
-  <div class="part"><span class="pl">(a)</span> Pentane, butylamine (\(\ce{CH3CH2CH2CH2NH2}\)), propanoic acid and glycine (\(\ce{H2NCH2CO2H}\)) have similar relative molecular masses but very different melting points. Place the four in order of <b>increasing</b> melting point and explain the position of each. <span class="marks">[4]</span></div>
-  <div class="part"><span class="pl">(b)</span> Pentane boils at 36 °C, and 2,2-dimethylpropane, \(\ce{C(CH3)4}\), boils at 10 °C. Both are non-polar and have the same number of electrons. Explain the difference. <span class="marks">[2]</span></div>
-  <div class="part"><span class="pl">(c)</span> Nitrobenzene, which cannot form hydrogen bonds, boils at 211 °C, whereas water, which can, boils at 100 °C. Explain this. <span class="marks">[2]</span></div>
+  <div class="qhead"><span>Question 2</span><span class="tot">[9] &nbsp;·&nbsp; running total 18 / 93</span></div>
+  <div class="src">(a) HCI Soln / N2018 / P3 / Q3(d), stem reconstructed &nbsp;·&nbsp; (b) HCI Prelim / N2021 / P2 / Q2(c) &nbsp;·&nbsp; (c) HCI Soln / N2021 / P2 / Q2(b) = RI TYS / N2021 / P2 / Q2</div>
+  <div class="part"><span class="pl">(a)</span> Four substances are listed below in no particular order: <b>propanoic acid, glycine (\(\ce{H2NCH2CO2H}\)), pentane, butylamine</b>. Arrange them in order of <b>increasing</b> melting point and explain the order you have given. <span class="marks">[4]</span></div>
+  <div class="part"><span class="pl">(b)</span> Nitrobenzene boils at 211 °C. Explain why nitrobenzene has a higher boiling point than water. <span class="marks">[2]</span></div>
+  <div class="part"><span class="pl">(c)</span> State the <b>two</b> factors that affect the numerical magnitude of a lattice energy. The interionic distances of \(\ce{NaCl}\), \(\ce{NaF}\) and \(\ce{MgO}\) are 0.276 nm, 0.231 nm and 0.205 nm respectively. Using these values, deduce which of the two factors has the greater effect on the numerical magnitude of the lattice energy. <span class="marks">[3]</span></div>
   <div class="conf">Confidence: high / medium / guessed</div>
-
-<button class="revbtn" onclick="tog('a2',this)">Show answer</button>
-<div class="ansbox" id="a2" style="display:none">
-<div class="sol">
-    <h3>Question 2 — [8]</h3>
-    <div class="src">HCI Soln / N2018 / P3 / Q3(d) &nbsp;·&nbsp; HCI Prelim / N2021 / P1 / Q2 (statement 3) &nbsp;·&nbsp; HCI Prelim / N2021 / P2 / Q2(c)</div>
-
-    <div class="step"><div class="step-header">(a) Melting-point order — [4]</div>
-      <div class="verb">
-        <p>Order of increasing melting point: <b>pentane &lt; butylamine &lt; propanoic acid &lt; glycine</b>. <span class="m">1</span></p>
-        <p><b>Pentane is a non-polar molecule with only weak dispersion forces</b>, so the least energy is required to break its intermolecular forces — <b>lowest melting point</b>. <span class="m">1</span></p>
-        <p>Both <b>butylamine and propanoic acid have hydrogen bonding</b>, which is stronger than dispersion but weaker than ionic bonding. The <b>hydrogen bonding in propanoic acid is stronger than in butylamine because O is more electronegative than N</b>, so more energy is needed for propanoic acid. <span class="m">1</span></p>
-        <p><b>Glycine exists as zwitterions in the solid state</b>; the <b>strong ionic bonding between the zwitterions requires the most energy to break</b> — <b>highest melting point</b>. <span class="m">1</span></p>
-      </div>
-    </div>
-
-    <div class="step"><div class="step-header">(b) Pentane vs 2,2-dimethylpropane — [2]</div>
-      <div class="verb">
-        <p>Both are <b>simple non-polar molecules with the same number of electrons</b>, so only <b>instantaneous dipole–induced dipole (dispersion) forces</b> act between them and the electron cloud size is the same. <span class="m">1</span></p>
-        <p>The <b>straight-chain pentane has a greater surface area of contact between adjacent molecules and therefore more extensive dispersion forces</b> than the branched \(\ce{C(CH3)4}\), so pentane has the higher boiling point. <span class="m">1</span></p>
-      </div>
-      <div class="trap"><b>The direction you have got backwards before.</b> More branching makes the molecule <b>more compact</b>, so <b>less surface is in contact</b> with a neighbour, so the dispersion forces are <b>weaker</b> and the boiling point is <b>lower</b>. The quantity that matters is the <b>surface area of contact between adjacent molecules</b>, not surface area in isolation. Verbatim line to reproduce: "the larger the surface area of contact between adjacent molecules, the more easily induced dipoles are formed, the stronger the dispersion forces."</div>
-    </div>
-
-    <div class="step"><div class="step-header">(c) Nitrobenzene vs water — [2]</div>
-      <div class="verb">
-        <p>Nitrobenzene has a <b>much larger electron cloud / more electrons than water</b> (64 electrons per molecule against 10). <span class="m">1</span></p>
-        <p>More energy is therefore required to break the <b>stronger dispersion forces between nitrobenzene molecules than the hydrogen bonding between water molecules</b>, so nitrobenzene has the higher boiling point. <span class="m">1</span></p>
-      </div>
-      <div class="trap"><b>The pattern-match this is built to punish.</b> "Hydrogen bonding beats dispersion" is only true when the electron clouds are comparable. A big enough electron cloud makes dispersion the dominant force — which is why \(\ce{I2}\) is a solid and \(\ce{H2O}\) is a liquid. Always compare <b>number of electrons first</b>, then force type.</div>
-    </div>
-  </div>
-</div>
 </div>
 
 <!-- ==================== Q3 ==================== -->
 <div class="qcard" id="q3">
-  <div class="qhead"><span>Question 3</span><span class="tot">[8] &nbsp;·&nbsp; running total 25 / 90</span></div>
-  <div class="part"><span class="pl">(a)</span> Compound <b>N</b> is a gas at room conditions and has the molecular formula \(\ce{C}_x\ce{H}_y\ce{O}\). A 15 cm\(^3\) sample of <b>N</b> was mixed with 100 cm\(^3\) of oxygen, an excess, and the mixture was exploded. The apparatus was cooled back to the original temperature, and 92.5 cm\(^3\) of gas remained. This gas was passed through concentrated aqueous sodium hydroxide, after which 77.5 cm\(^3\) of gas remained. All volumes were measured at the same temperature and pressure.<br>Deduce the molecular formula of <b>N</b>, showing your reasoning. <span class="marks">[4]</span></div>
-  <div class="part"><span class="pl">(b)</span> 0.118 g of a Group 2 metal nitrate, \(\ce{M(NO3)2}\), was heated until it had completely decomposed to its oxide, MO. The residue was dissolved in 35.0 cm\(^3\) of 0.080 mol dm\(^{-3}\) hydrochloric acid, an excess. The acid left over required 21.6 cm\(^3\) of 0.0780 mol dm\(^{-3}\) sodium hydroxide to neutralise it.<br>Write an equation for the thermal decomposition, and hence identify the metal M. <span class="marks">[4]</span></div>
+  <div class="qhead"><span>Question 3</span><span class="tot">[7] &nbsp;·&nbsp; running total 25 / 93</span></div>
+  <div class="src">N2020 / P3 / Q1(f) &nbsp;=&nbsp; HCI Soln / N2020 / P3 / Q1(f)</div>
+  <p class="stem-lead">Sodium nitrite, \(\ce{NaNO2}\), is used as a preservative in meat. To find the nitrite content of a 1.00 g sample of preserved meat, the sample is treated with 50.00 cm\(^3\) of 0.00500 mol dm\(^{-3}\) acidified \(\ce{KMnO4}\) (an excess), which oxidises \(\ce{NO2^-}\) to \(\ce{NO3^-}\). The excess \(\ce{KMnO4}\) is then reacted with excess \(\ce{KI}\), and the liberated \(\ce{I2}\) titrated against 0.0150 mol dm\(^{-3}\) sodium thiosulfate, requiring 22.40 cm\(^3\).</p>
+  <div class="part"><span class="pl">(i)</span> Construct the overall ionic equation for the reaction between \(\ce{MnO4^-}\) and \(\ce{NO2^-}\). <span class="marks">[2]</span></div>
+  <div class="part"><span class="pl">(ii)</span> Calculate the percentage by mass of \(\ce{NaNO2}\) in the meat sample. <span class="marks">[5]</span></div>
   <div class="conf">Confidence: high / medium / guessed</div>
-
-<button class="revbtn" onclick="tog('a3',this)">Show answer</button>
-<div class="ansbox" id="a3" style="display:none">
-<div class="sol">
-    <h3>Question 3 — [8]</h3>
-    <div class="src">HCI Soln / N2022 / P2 / Q3(f) &nbsp;·&nbsp; HCI Prelim / N2022 / P1 / Q7 (converted from MCQ to structured)</div>
-
-    <div class="step"><div class="step-header">(a) Molecular formula of N — [4]</div>
-      <p><b>Build the initial / final / reacted table first.</b> Water is a liquid at the measuring temperature, so it contributes nothing to the final gas volume.</p>
-      <table class="data">
-        <tr><th>volume / cm\(^3\)</th><th>\(\ce{C}_x\ce{H}_y\ce{O}\) (N)</th><th>\(\ce{O2}\)</th><th>\(\ce{CO2}\)</th><th>\(\ce{H2O(l)}\)</th></tr>
-        <tr><td>initial</td><td>15</td><td>100</td><td>—</td><td>—</td></tr>
-        <tr><td>final</td><td>0</td><td><b>77.5</b></td><td><b>15</b></td><td>— (liquid)</td></tr>
-        <tr><td>reacted</td><td>15</td><td><b>22.5</b></td><td><b>15</b></td><td>—</td></tr>
-      </table>
-      <div class="verb">
-        <p>Volume of \(\ce{CO2}\) = 92.5 − 77.5 = <b>15 cm\(^3\)</b> (this is the contraction on absorption by NaOH, since \(\ce{CO2}\) is acidic). <span class="m">1</span></p>
-        <p>The volume of \(\ce{CO2}\) is <b>equal to the volume of N</b>, so <b>\(x\) = 1</b>. <span class="m">1</span></p>
-        <p>Volume of \(\ce{O2}\) reacted = 100 − 77.5 = <b>22.5 cm\(^3\)</b>. <span class="m">1</span></p>
-        <p>\(\ce{C}_x\ce{H}_y\ce{O} + (x + y/4 - 1/2)\ce{O2 -> }x\ce{CO2} + (y/2)\ce{H2O}\). Volume ratio \(\ce{O2 : CO2} = (x + y/4 - \tfrac12)/x = 22.5/15\); substituting \(x=1\) gives <b>\(y\) = 4</b>, so the molecular formula of N is <b>\(\ce{CH4O}\)</b>. <span class="m">1</span></p>
-      </div>
-      <div class="trap"><b>The mark that gets dropped.</b> You must <b>account for the O atom already inside N</b> — the coefficient of \(\ce{O2}\) is \((x + y/4 - \tfrac12)\), not \((x + y/4)\). Use \((x + y/4)\) and you get the alkane answer and lose the last two marks.</div>
-    </div>
-
-    <div class="step"><div class="step-header">(b) Identifying M — [4]</div>
-      <div class="verb">
-        <p><b>\(\ce{M(NO3)2 -> MO + 2NO2 + 1/2 O2}\)</b>; then \(\ce{MO + 2HCl -> MCl2 + H2O}\), and the excess acid is neutralised by \(\ce{HCl + NaOH -> NaCl + H2O}\). <span class="m">1</span></p>
-        <p>\(n(\ce{NaOH})\) = 0.0780 × 0.0216 = <b>0.001685 mol</b> = \(n\)(excess HCl). <span class="m">1</span></p>
-        <p>\(n(\ce{HCl})\) added = 0.0350 × 0.080 = 0.00280 mol, so \(n(\ce{HCl})\) that reacted with MO = 0.00280 − 0.001685 = 0.001115 mol. Since MO reacts with HCl in a 1 : 2 ratio, \(n(\ce{MO})\) = 0.001115 / 2 = <b>0.0005575 mol</b> = \(n(\ce{M(NO3)2})\). <span class="m">1</span></p>
-        <p>\(M_r(\ce{M(NO3)2})\) = 0.118 / 0.0005575 = 211.7, so \(A_r\)(M) = 211.7 − 2(14.0 + 3 × 16.0) = 211.7 − 124.0 = <b>87.7</b>. <b>M is strontium, Sr.</b> <span class="m">1</span></p>
-      </div>
-      <div class="trap"><b>Three places this bites.</b> Writing \(\ce{MNO3}\) instead of \(\ce{M(NO3)2}\); forgetting that the <b>oxide MO takes two HCl per mole</b>, so \(n(\ce{MO})\) is <b>half</b> the acid consumed; and subtracting \(A_r(\ce{NO3})\) once instead of twice at the end. In any back titration write three separate lines — total added, amount found by the titration, and the difference.</div>
-    </div>
-  </div>
-</div>
 </div>
 
 <!-- ==================== Q4 ==================== -->
 <div class="qcard" id="q4">
-  <div class="qhead"><span>Question 4</span><span class="tot">[9] &nbsp;·&nbsp; running total 34 / 90</span></div>
-  <p class="stem-lead">Ethanedioate ions, \(\ce{C2O4^2-}\), are oxidised by acidified potassium manganate(VII).</p>
-  <div class="part"><span class="pl">(a)</span> Construct the oxidation half-equation for the ethanedioate ion and hence the overall ionic equation for its reaction with \(\ce{MnO4^-}\) in acid. 25.0 cm\(^3\) of 0.0100 mol dm\(^{-3}\) acidified \(\ce{KMnO4}\) was then mixed with 25.0 cm\(^3\) of 0.0100 mol dm\(^{-3}\) sodium ethanedioate. Identify the limiting reagent, justifying your choice, and calculate the volume of gas produced measured at s.t.p. <span class="marks">[4]</span></div>
-  <div class="part"><span class="pl">(b)</span> In a separate experiment, 20 cm\(^3\) of an acidified 0.020 mol dm\(^{-3}\) solution of iron(II) ethanedioate, \(\ce{FeC2O4}\), was oxidised completely by 15 cm\(^3\) of 0.020 mol dm\(^{-3}\) \(\ce{KMnO4}\). <b>Both</b> the \(\ce{Fe^2+}\) and the \(\ce{C2O4^2-}\) are oxidised. Deduce the final oxidation state of manganese. <span class="marks">[3]</span></div>
-  <div class="part"><span class="pl">(c)</span> Chlorine reacts with cold aqueous sodium hydroxide: \(\ce{Cl2 + NaOH -> NaCl + NaClO3 + H2O}\). By considering electron transfer, state the type of reaction chlorine undergoes here and justify your answer. <span class="marks">[1]</span></div>
-  <div class="part"><span class="pl">(d)</span> State why no indicator is added to a manganate(VII) titration, and describe the colour change at the end point. <span class="marks">[1]</span></div>
+  <div class="qhead"><span>Question 4</span><span class="tot">[8] &nbsp;·&nbsp; running total 33 / 93</span></div>
+  <div class="src">(a), (b) N2017 / P3 / Q4(a)(i)–(ii) = HCI Soln / N2017 / P3 / Q4(a) &nbsp;·&nbsp; (c) N2018 / P3 / Q4(a)(ii)</div>
+  <p class="stem-lead">In anaerobic digestion, butanoic acid, \(\ce{C4H8O2}\), is broken down to give only methane and carbon dioxide.</p>
+  <div class="part"><span class="pl">(a)</span> Determine the average oxidation number of carbon in butanoic acid. <span class="marks">[1]</span></div>
+  <div class="part"><span class="pl">(b)</span> Construct the reduction and the oxidation half-equations, and hence the overall equation, for the conversion of butanoic acid to \(\ce{CH4}\) and \(\ce{CO2}\). <span class="marks">[3]</span></div>
+  <div class="part"><span class="pl">(c)</span> Thiosulfate ions, \(\ce{S2O3^2-}\), are oxidised by both chlorine and iodine, but the sulfur-containing product differs. Explain, in terms of their relative oxidising power, why the products differ, and construct an equation for each reaction. <span class="marks">[4]</span></div>
   <div class="conf">Confidence: high / medium / guessed</div>
-
-<button class="revbtn" onclick="tog('a4',this)">Show answer</button>
-<div class="ansbox" id="a4" style="display:none">
-<div class="sol">
-    <h3>Question 4 — [9]</h3>
-    <div class="src">N2020 / P1 / Q12 = HCI Soln / N2020 / P1 / Q12 (converted from MCQ to structured) &nbsp;·&nbsp; HCI Prelim / N2024 / P1 / Q9 (converted from MCQ) &nbsp;·&nbsp; HCI Prelim / N2025 / P2 / Q4(a)(i) &nbsp;·&nbsp; N2013 / P1 / Q15</div>
-
-    <div class="step"><div class="step-header">(a) Equations, limiting reagent and gas volume — [4]</div>
-      <div class="verb">
-        <p>Oxidation half-equation: <b>\(\ce{C2O4^2- -> 2CO2 + 2e^-}\)</b>. <span class="m">1</span></p>
-        <p>Overall ionic equation: <b>\(\ce{2MnO4^- + 5C2O4^2- + 16H+ -> 2Mn^2+ + 10CO2 + 8H2O}\)</b>. <span class="m">1</span></p>
-        <p>\(n(\ce{MnO4^-})\) = \(n(\ce{C2O4^2-})\) = 25.0/1000 × 0.0100 = 0.000250 mol each. The mole ratio required is \(\ce{MnO4^- : C2O4^2-}\) = 2 : 5, so 0.000250 mol of \(\ce{MnO4^-}\) needs 0.000625 mol of ethanedioate, and only 0.000250 mol is present. Hence <b>\(\ce{C2O4^2-}\) is the limiting reagent</b>. <span class="m">1</span></p>
-        <p>Mole ratio \(\ce{C2O4^2- : CO2}\) = 5 : 10, so \(n(\ce{CO2})\) = 0.000250 / 5 × 10 = 0.000500 mol. At s.t.p., \(V\) = 0.000500 × 22.7 = 0.01135 dm\(^3\) = <b>11.4 cm\(^3\)</b>. <span class="m">1</span></p>
-      </div>
-      <div class="trap"><b>Lock the rule you wrote for yourself.</b> "If there is a \(\ce{C2O4^2-}\), it splits to 2 \(\ce{CO2}\), no matter what." <b>Ethanedioate always oxidises to \(\ce{CO2}\)</b> — C goes from +3 in \(\ce{C2O4^2-}\) to +4 in \(\ce{CO2}\), a change of +1 per carbon × 2 carbons = <b>2 electrons released per ion</b>. Build every half-equation the same way: (i) balance the redox electrons using the oxidation-number change, (ii) balance charge with \(\ce{H+}\), (iii) balance O with \(\ce{H2O}\).</div>
-    </div>
-
-    <div class="step"><div class="step-header">(b) Final oxidation state of Mn — [3]</div>
-      <div class="verb">
-        <p>\(n(\ce{FeC2O4})\) = 0.020 × 0.020 = 4.0 × 10\(^{-4}\) mol. Each unit loses <b>1 electron from \(\ce{Fe^2+ -> Fe^3+}\) plus 2 electrons from \(\ce{C2O4^2- -> 2CO2}\), i.e. 3 electrons</b>, so total electrons lost = 3 × 4.0 × 10\(^{-4}\) = <b>1.2 × 10\(^{-3}\) mol</b>. <span class="m">1</span></p>
-        <p>\(n(\ce{MnO4^-})\) = 0.015 × 0.020 = 3.0 × 10\(^{-4}\) mol, so electrons gained per Mn = 1.2 × 10\(^{-3}\) / 3.0 × 10\(^{-4}\) = <b>4</b>. <span class="m">1</span></p>
-        <p>Mn is +7 in \(\ce{MnO4^-}\), so the final oxidation state is 7 − 4 = <b>+3</b>. <span class="m">1</span></p>
-      </div>
-      <div class="trap"><b>The trap is the word "both".</b> The reflex is to count only the \(\ce{Fe^2+}\) (1 electron) and land on \(\ce{Mn^2+}\), the answer you have written a hundred times. Count the <b>ethanedioate as well</b> — 3 electrons per formula unit — and the manganese does not reach +2 at all.</div>
-    </div>
-
-    <div class="step"><div class="step-header">(c) Type of reaction — [1]</div>
-      <div class="verb">
-        <p><b>Disproportionation</b> — chlorine (oxidation state <b>0</b> in \(\ce{Cl2}\)) is simultaneously <b>reduced to −1 (in \(\ce{NaCl}\))</b> and <b>oxidised to +5 (in \(\ce{NaClO3}\))</b>. <span class="m">1</span></p>
-      </div>
-    </div>
-
-    <div class="step"><div class="step-header">(d) Why no indicator — [1]</div>
-      <div class="verb">
-        <p><b>\(\ce{KMnO4}\) is self-indicating</b>: the purple \(\ce{MnO4^-}\) is decolourised to a very pale pink \(\ce{Mn^2+}\), and the end point is the <b>first permanent pale pink</b> produced by one drop of excess \(\ce{KMnO4}\). <span class="m">1</span></p>
-      </div>
-      <div class="trap">You must say "<b>self-indicating</b>" and "<b>pale pink</b>". "Purple" at the end point is wrong — a full purple means you have gone well past the end point.</div>
-    </div>
-  </div>
-</div>
 </div>
 
 <!-- ==================== Q5 ==================== -->
 <div class="qcard" id="q5">
-  <div class="qhead"><span>Question 5</span><span class="tot">[8] &nbsp;·&nbsp; running total 42 / 90</span></div>
-  <p class="stem-lead">Penta-2,3-diene, \(\ce{CH3CH=C=CHCH3}\), contains two double bonds that share a central carbon atom. It exists as a pair of enantiomers even though it contains <b>no chiral carbon</b>.</p>
-  <div class="part"><span class="pl">(a)</span> With reference to the structure of penta-2,3-diene, explain how it can exhibit enantiomerism. <span class="marks">[2]</span></div>
-  <div class="part"><span class="pl">(b)</span> On heating, one enantiomer of penta-2,3-diene converts into the other. The proposed mechanism passes through an intermediate <b>X</b>, in which the two remaining \(\pi\) electrons are delocalised over three adjacent carbon atoms \(\ce{C_x}\), \(\ce{C_y}\) and \(\ce{C_z}\). Explain (i) why it is easier to rotate the \(\ce{C_y-C_z}\) bond in <b>X</b> than in the enantiomer itself, and (ii) why the product is a racemic mixture. <span class="marks">[2]</span></div>
-  <div class="part"><span class="pl">(c)</span> A non-cyclic compound contains only one oxygen atom, is a ketone, and is optically active. Deduce the <b>minimum</b> number of carbon atoms it can contain, and justify your answer by showing that no smaller ketone qualifies. <span class="marks">[2]</span></div>
-  <div class="part"><span class="pl">(d)</span> A different compound contains <b>two</b> chiral carbon atoms and yet has no effect on plane-polarised light. Explain how this is possible, and state the correct general criterion for optical activity. <span class="marks">[2]</span></div>
+  <div class="qhead"><span>Question 5</span><span class="tot">[9] &nbsp;·&nbsp; running total 42 / 93</span></div>
+  <div class="src">(a) HCI Soln / N2022 / P3 / Q2(e), stem reconstructed &nbsp;·&nbsp; (b) HCI Soln / N2017 / P3 / Q2(b) = RI TYS / N2017 / P3 / Q2(b) &nbsp;·&nbsp; (c), (d) HCI Prelim / N2023 / P2 / Q4(a)(ii) and Q4(c)(ii)</div>
+  <div class="part"><span class="pl">(a)</span> Ketene has the structure \(\ce{H2C_a=C_b=O}\). State the hybridisation of \(\ce{C_a}\), \(\ce{C_b}\) and \(\ce{O}\), and describe, in terms of orbital overlap, how each \(\sigma\) bond and each \(\pi\) bond in the molecule is formed. <span class="marks">[3]</span></div>
+  <div class="part"><span class="pl">(b)</span> The structure of diazene is \(\ce{HN=NH}\). Explain why diazene can exist as two isomers, state how the two isomers differ, and predict the \(\ce{H-N=N}\) bond angle. <span class="marks">[3]</span></div>
+  <div class="part"><span class="pl">(c)</span> With reference to the structure of penta-2,3-diene, \(\ce{CH3CH=C=CHCH3}\), explain why penta-2,3-diene can exhibit enantiomerism. <span class="marks">[1]</span></div>
+  <div class="part"><span class="pl">(d)</span> A proposed mechanism converts enantiomer 1 of penta-2,3-diene into intermediate X (step 1), which then re-forms the allene (step 2). In X the two remaining \(\pi\) electrons are delocalised over \(\ce{C_x}\), \(\ce{C_y}\) and \(\ce{C_z}\). With reference to steps 1 and 2, explain: <span class="marks">[2]</span></div>
+  <div class="sub">● why it is easier to rotate the \(\ce{C_y-C_z}\) bond in intermediate X than in enantiomer 1; and</div>
+  <div class="sub">● why step 2 is likely to form a racemic mixture of penta-2,3-diene.</div>
   <div class="conf">Confidence: high / medium / guessed</div>
-
-<button class="revbtn" onclick="tog('a5',this)">Show answer</button>
-<div class="ansbox" id="a5" style="display:none">
-<div class="sol">
-    <h3>Question 5 — [8]</h3>
-    <div class="src">HCI Prelim / N2023 / P2 / Q4(a)(ii) &nbsp;·&nbsp; HCI Prelim / N2023 / P2 / Q4(c)(ii) &nbsp;·&nbsp; HCI Soln / N2016 / P1 / Q37 (converted from MCQ) &nbsp;·&nbsp; HCI Soln / N2022 / P1 / Q24 = RI TYS / N2022 / P1 / Q24</div>
-
-    <div class="step"><div class="step-header">(a) Enantiomerism in penta-2,3-diene — [2]</div>
-      <div class="verb">
-        <p>In the \(\ce{C=C=C}\) allene unit the <b>two \(\pi\) bonds are mutually perpendicular</b>, because the <b>central sp carbon keeps two unhybridised p orbitals that are perpendicular to each other</b> and each overlaps side-on with a p orbital on one of the terminal sp\(^2\) carbons. The two end carbons and their substituents therefore lie in <b>two perpendicular planes</b>. <span class="m">1</span></p>
-        <p>Each end carbon carries <b>two different groups (H and \(\ce{CH3}\))</b>, so the rigid molecule has <b>no plane of symmetry and is non-superimposable on its mirror image</b> — hence it exists as a pair of enantiomers, <b>despite having no chiral carbon</b>. <span class="m">1</span></p>
-      </div>
-      <svg class="fig" width="640" height="200" viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="15">
-        <text x="24" y="70">H₃C</text>
-        <text x="34" y="150">H</text>
-        <line x1="66" y1="66" x2="106" y2="98" stroke="#111" stroke-width="1.6"/>
-        <line x1="52" y1="142" x2="106" y2="110" stroke="#111" stroke-width="1.6"/>
-        <text x="108" y="110">C</text>
-        <line x1="122" y1="101" x2="156" y2="101" stroke="#111" stroke-width="1.6"/>
-        <line x1="122" y1="107" x2="156" y2="107" stroke="#111" stroke-width="1.6"/>
-        <text x="158" y="110">C</text>
-        <line x1="172" y1="101" x2="206" y2="101" stroke="#111" stroke-width="1.6"/>
-        <line x1="172" y1="107" x2="206" y2="107" stroke="#111" stroke-width="1.6"/>
-        <text x="208" y="110">C</text>
-        <polygon points="220,100 254,58 260,64" fill="#111"/>
-        <text x="256" y="52">CH₃</text>
-        <line x1="220" y1="110" x2="252" y2="150" stroke="#111" stroke-width="1.5" stroke-dasharray="4,3"/>
-        <text x="256" y="158">H</text>
-        <text x="60" y="188" font-size="13" fill="#6b7280">enantiomer 1</text>
-        <line x1="320" y1="30" x2="320" y2="176" stroke="#e5e7eb" stroke-width="1.6"/>
-        <text x="300" y="24" font-size="12" fill="#9ca3af">mirror</text>
-        <text x="378" y="70">H₃C</text>
-        <text x="388" y="150">H</text>
-        <line x1="420" y1="66" x2="460" y2="98" stroke="#111" stroke-width="1.6"/>
-        <line x1="406" y1="142" x2="460" y2="110" stroke="#111" stroke-width="1.6"/>
-        <text x="462" y="110">C</text>
-        <line x1="476" y1="101" x2="510" y2="101" stroke="#111" stroke-width="1.6"/>
-        <line x1="476" y1="107" x2="510" y2="107" stroke="#111" stroke-width="1.6"/>
-        <text x="512" y="110">C</text>
-        <line x1="526" y1="101" x2="560" y2="101" stroke="#111" stroke-width="1.6"/>
-        <line x1="526" y1="107" x2="560" y2="107" stroke="#111" stroke-width="1.6"/>
-        <text x="562" y="110">C</text>
-        <line x1="574" y1="100" x2="606" y2="60" stroke="#111" stroke-width="1.5" stroke-dasharray="4,3"/>
-        <text x="608" y="52">CH₃</text>
-        <polygon points="574,110 606,150 600,156" fill="#111"/>
-        <text x="608" y="158">H</text>
-        <text x="414" y="188" font-size="13" fill="#6b7280">enantiomer 2 — non-superimposable</text>
-      </svg>
-    </div>
-
-    <div class="step"><div class="step-header">(b) Rotation in X and the racemic product — [2]</div>
-      <div class="verb">
-        <p>In the enantiomer the \(\ce{C_y-C_z}\) bond is a <b>full \(\ce{C=C}\) double bond (\(\sigma\) + \(\pi\))</b>; rotation is <b>restricted because it would require breaking the strong \(\pi\) bond</b>. In intermediate X the two remaining \(\pi\) electrons are <b>delocalised over \(\ce{C_x}\), \(\ce{C_y}\) and \(\ce{C_z}\)</b>, so the \(\ce{C_y-C_z}\) bond has only <b>partial double-bond character</b> (lower bond order, more single-bond-like) and can rotate much more easily. <span class="m">1</span></p>
-        <p>After rotation, the \(\ce{CH3}\) on \(\ce{C_z}\) can re-form the allene pointing to <b>either side with equal probability</b>, so enantiomer 1 and enantiomer 2 are produced in <b>equal (50:50) amounts — a racemic mixture</b>. <span class="m">1</span></p>
-      </div>
-    </div>
-
-    <div class="step"><div class="step-header">(c) Minimum carbon count — [2]</div>
-      <div class="verb">
-        <p><b>Five carbon atoms is not possible.</b> The three \(\ce{C5H10O}\) ketones are pentan-2-one \(\ce{CH3COCH2CH2CH3}\), pentan-3-one \(\ce{CH3CH2COCH2CH3}\) and 3-methylbutan-2-one \(\ce{CH3COCH(CH3)CH3}\); <b>none of them has a carbon bonded to four different atoms or groups</b> (in 3-methylbutan-2-one the relevant carbon carries two identical \(\ce{CH3}\) groups). <span class="m">1</span></p>
-        <p>The <b>minimum is six carbon atoms</b>, for example 3-methylpentan-2-one, \(\ce{CH3COCH(CH3)CH2CH3}\), in which C3 carries \(\ce{CH3}\), H, \(\ce{COCH3}\) and \(\ce{CH2CH3}\) — <b>four different groups, hence a chiral centre</b>. <span class="m">1</span></p>
-      </div>
-    </div>
-
-    <div class="step"><div class="step-header">(d) Two chiral carbons, no optical activity — [2]</div>
-      <div class="verb">
-        <p>The molecule is a <b>meso compound</b>: it has two chiral carbons but also an <b>internal plane of symmetry</b>, so one half is the mirror image of the other and the molecule is <b>superimposable on its own mirror image</b>. The rotations caused by the two halves are equal and opposite and cancel within the single molecule. <span class="m">1</span></p>
-        <p>The correct general criterion is therefore that <b>a molecule is optically active only if it is non-superimposable on its mirror image</b> — equivalently, only if it has <b>no plane of symmetry</b>. "A carbon bonded to four different groups" is the common <i>cause</i> of chirality, not the definition of it. <span class="m">1</span></p>
-      </div>
-      <div class="trap"><b>This question and part (a) are the two halves of the same trap.</b> Part (a) is a chiral molecule with <b>no</b> chiral carbon; part (d) is an achiral molecule with <b>two</b> chiral carbons. Counting chiral carbons answers neither. Test for a <b>plane of symmetry</b>, and if there are two stereocentres, redraw the molecule rotated about the central C–C bond before you decide.</div>
-    </div>
-  </div>
-</div>
 </div>
 
 <!-- ==================== Q6 ==================== -->
 <div class="qcard" id="q6">
-  <div class="qhead"><span>Question 6</span><span class="tot">[8] &nbsp;·&nbsp; running total 50 / 90</span></div>
-  <div class="part"><span class="pl">(a)</span> Draw the mechanism for the reaction of propane with bromine to form <b>2-bromopropane</b>. Name the mechanism and name each of its stages, and give equations for every step. <span class="marks">[3]</span></div>
-  <div class="part"><span class="pl">(b)</span> Methylcyclohexane is treated with a limited amount of bromine in ultraviolet light. Ignoring stereoisomers, deduce how many <b>constitutionally isomeric</b> monobromo products can form, and state how many of them are <b>chiral</b>. Justify both answers. <span class="marks">[3]</span></div>
-  <div class="part"><span class="pl">(c)</span> Predict which single monobromo product is formed in the greatest yield, and explain why counting the number of equivalent hydrogen atoms alone does not give the right answer. <span class="marks">[2]</span></div>
+  <div class="qhead"><span>Question 6</span><span class="tot">[10] &nbsp;·&nbsp; running total 52 / 93</span></div>
+  <div class="src">(a)–(c) NYJC 2017 Prelim / P3 / Q2(b)(i)–(iii), via HCI Alkenes compilation Q9 &nbsp;·&nbsp; (d) NJC 2017 Prelim / P3 / Q4(c), via HCI Alkenes compilation Q11</div>
+  <p class="stem-lead">Iodine monochloride, \(\ce{ICl}\), reacts with 1-phenylpropene, \(\ce{C6H5-CH=CH-CH3}\).</p>
+  <div class="part"><span class="pl">(a)</span> Name the mechanism and draw it, showing all curly arrows, partial charges, lone pairs and the intermediate. Label the slow and the fast step. <span class="marks">[3]</span></div>
+  <div class="part"><span class="pl">(b)</span> Two carbocation intermediates are possible in this reaction. State which one is preferred and explain your answer. <span class="marks">[2]</span></div>
+  <div class="part"><span class="pl">(c)</span> If the reaction is instead carried out in water, explain what additional product forms. <span class="marks">[1]</span></div>
+  <div class="part"><span class="pl">(d)</span> Compounds L and M are each treated separately with \(\ce{KMnO4}\), \(\ce{H2SO4}\)(aq), heat. L is the symmetrical diene \(\ce{(CH3)2C=CH-CH=C(CH3)2}\); M is an internal, non-terminal alkene. State the observations for each, and write an equation using [O] to show the organic products of the oxidative cleavage. <span class="marks">[4]</span></div>
   <div class="conf">Confidence: high / medium / guessed</div>
-
-<button class="revbtn" onclick="tog('a6',this)">Show answer</button>
-<div class="ansbox" id="a6" style="display:none">
-<div class="sol">
-    <h3>Question 6 — [8]</h3>
-    <div class="src">HCI Prelim / N2021 / P3 / Q4(a)(i) &nbsp;·&nbsp; HCI Prelim / N2024 / P1 / Q19 (converted from MCQ to structured) &nbsp;·&nbsp; HCI Soln / N2017 / P3 / Q4(c)(iv) = RI TYS / N2017 / P3 / Q4(c)</div>
-
-    <div class="step"><div class="step-header">(a) Mechanism for propane → 2-bromopropane — [3]</div>
-      <div class="verb">
-        <p>Name of mechanism: <b>free radical substitution</b>.</p>
-        <p class="rad"><b>Initiation:</b> &nbsp; Br—Br &nbsp;—ultra-violet light→&nbsp; 2 Br• &nbsp;&nbsp;(<b>homolytic fission — half / fishhook arrows must be drawn, one from each half of the bond</b>) <span class="m">1</span></p>
-        <p class="rad"><b>Propagation:</b> &nbsp; (a) CH₃CH₂CH₃ + Br• → CH₃ĊHCH₃ + HBr &nbsp;&nbsp;&nbsp; (b) CH₃ĊHCH₃ + Br₂ → CH₃CHBrCH₃ + Br• &nbsp;&nbsp; then (a), (b), (a), (b), … <span class="m">1</span></p>
-        <p class="rad"><b>Termination:</b> &nbsp; 2 Br• → Br₂ &nbsp;&nbsp;&nbsp; CH₃ĊHCH₃ + Br• → CH₃CHBrCH₃ &nbsp;&nbsp;&nbsp; 2 CH₃ĊHCH₃ → (CH₃)₂CHCH(CH₃)₂ <span class="m">1</span></p>
-      </div>
-      <div class="trap"><b>Examiner's common errors on this exact question.</b> The product asked for is <b>2-bromopropane, not 1-bromopropane</b>, so the radical you abstract must be the <b>secondary</b> hydrogen. You must <b>name the mechanism and name every stage</b>, include the <b>second propagation step</b> (it regenerates the radical), and give <b>all three</b> termination equations — every termination step is the collision of two radicals.</div>
-    </div>
-
-    <div class="step"><div class="step-header">(b) Monobromo products of methylcyclohexane — [3]</div>
-      <div class="verb">
-        <p>There are <b>five constitutionally isomeric monosubstituted products</b>: substitution on the \(\ce{CH3}\) group, and at ring carbons C1 (the one bearing the methyl), C2/C6, C3/C5 and C4. <span class="m">1</span></p>
-        <p><b>Exactly two of them are chiral</b>: 1-bromo-2-methylcyclohexane and 1-bromo-3-methylcyclohexane. <span class="m">1</span></p>
-        <p>Each of those two has <b>two stereocentres and no internal mirror plane</b>, so each is non-superimposable on its mirror image. The other three are achiral: in (bromomethyl)cyclohexane no carbon carries four different groups; in 1-bromo-1-methylcyclohexane and 1-bromo-4-methylcyclohexane <b>the two ring arms leading away from the substituted carbon are identical, so there is an internal plane of symmetry</b>. <span class="m">1</span></p>
-      </div>
-      <div class="trap">Ring compounds are the place people over-count. Two ring positions are the <b>same environment</b> whenever the two paths round the ring to them are equivalent — so C2 and C6 give one product, not two, and C3 and C5 give one product, not two. Substitution on the \(\ce{CH3}\) gives \(\ce{HX}\), never \(\ce{H2}\).</div>
-    </div>
-
-    <div class="step"><div class="step-header">(c) Which product predominates — [2]</div>
-      <div class="verb">
-        <p><b>1-bromo-1-methylcyclohexane</b> is expected in greatest yield, formed by substituting the <b>single tertiary hydrogen</b> at C1, because the <b>tertiary free radical produced is significantly more stable</b> than a secondary or primary radical. <span class="m">1</span></p>
-        <p>The overall ratio is dependent on <b>both the probability of substitution and the stability of the radical formed</b>. The probability of substitution is determined by the <b>number of equivalent hydrogens available to be substituted</b>; on that count alone the primary product would dominate. The greater stability of the tertiary radical means the tertiary product forms preferentially <b>despite the probability of substitution</b>. <span class="m">1</span></p>
-      </div>
-      <div class="trap"><b>Read the question before you pick your tool.</b> When the paper says "ignore any other information" or gives you no observed ratio, prediction rests on the <b>probability of substituting different H atoms</b> alone. When the paper asks you to <b>explain an observed ratio</b> or to predict the <b>major</b> product, radical stability (3° &gt; 2° &gt; 1°) enters and can overturn the head-count.</div>
-    </div>
-  </div>
-</div>
 </div>
 
 <!-- ==================== Q7 ==================== -->
 <div class="qcard" id="q7">
-  <div class="qhead"><span>Question 7</span><span class="tot">[11] &nbsp;·&nbsp; running total 61 / 90</span></div>
-  <div class="part"><span class="pl">(a)</span> But-1-ene, \(\ce{CH2=CHCH2CH3}\), is bubbled into a solution of bromine dissolved in methanol, \(\ce{CH3OH}\). Two organic products are formed. Draw the mechanism leading to <b>both</b>, name the mechanism, label the slow and fast steps, and identify which product is major and which is minor with a reason. Explain also why 2-bromo-1-methoxybutane is <b>not</b> formed. <span class="marks">[4]</span></div>
-  <div class="part"><span class="pl">(b)</span> Equimolar buta-1,3-diene and \(\ce{HBr}\) give two products: \(\ce{CH3CHBrCH=CH2}\) (the 1,2-product) and \(\ce{CH3CH=CHCH2Br}\) (the 1,4-product). Draw the carbocation intermediate that leads to each, and hence explain how the 1,4-product can arise at all. <span class="marks">[3]</span></div>
-  <div class="part"><span class="pl">(c)</span> Buta-1,3-diene does <b>not</b> react with cyanide ions. 4-methylpent-1-en-3-one, \(\ce{CH2=CH-CO-CH(CH3)2}\), does: \(\ce{CN^-}\) adds to the <b>terminal carbon of its \(\ce{C=C}\)</b> rather than to the carbonyl carbon. Account for both observations. <span class="marks">[4]</span></div>
+  <div class="qhead"><span>Question 7</span><span class="tot">[12] &nbsp;·&nbsp; running total 64 / 93</span></div>
+  <div class="src">(a) HCI Soln / N2020 / P3 / Q4(a)(i) &nbsp;·&nbsp; (b) HCI Soln / N2019 / P3 / Q4(c)(ii), stem reconstructed &nbsp;·&nbsp; (c) HCI Soln / N2022 / P3 / Q4(f)(iii), stem reconstructed &nbsp;·&nbsp; (d) HCI Prelim / N2024 / P2 / Q3(c)(i) &nbsp;·&nbsp; (e) HCI Soln / N2018 / P2 / Q3(b)(i)–(ii) = RI TYS / N2018 / P2</div>
+  <div class="part"><span class="pl">(a)</span> Explain why 1-bromobutane and 2-bromo-2-methylpropane react with \(\ce{OH-}\) by different mechanisms. <span class="marks">[2]</span></div>
+  <div class="part"><span class="pl">(b)</span> E and F are isomers, one a chloro compound and the other the corresponding hydroxy compound, both derived from \(\ce{C6H5C2H4Cl}\). When E reacts with \(\ce{NaOH}\)(aq), the rate of reaction is found to be independent of \(\ce{[OH^-]}\). Deduce whether E is the primary or the secondary chloroalkane, and explain your reasoning. <span class="marks">[2]</span></div>
+  <div class="part"><span class="pl">(c)</span> Three <b>primary</b> halogenoalkanes react separately with \(\ce{NaOH}\). They are listed below in no particular order.</div>
+  <table class="data">
+    <tr><th>Compound</th><th>Halogen present</th><th>Alkyl group</th></tr>
+    <tr><td><b>O</b></td><td>\(\ce{C-Br}\)</td><td class="l">highly branched, bulky chain</td></tr>
+    <tr><td><b>N</b></td><td>\(\ce{C-I}\)</td><td class="l">straight, unbranched chain</td></tr>
+    <tr><td><b>M</b></td><td>\(\ce{C-Br}\)</td><td class="l">straight, unbranched chain</td></tr>
+  </table>
+  <div class="part">Arrange M, N and O in order of <b>increasing</b> rate of hydrolysis and explain the order. <span class="marks">[3]</span></div>
+  <div class="part"><span class="pl">(d)</span> 2-bromopropane, 2-chloropropane and iodobenzene are each heated with \(\ce{OH-}\), then tested with acidified silver nitrate, and any residue is tested for solubility in dilute and in concentrated aqueous ammonia. Complete the observations for each of the three compounds. <span class="marks">[2]</span></div>
+  <div class="part"><span class="pl">(e)</span> 2-chlorobutane can be made to undergo elimination. State the reagents and conditions needed to bring about the elimination, and draw the skeletal formulae of the three alkene products D, E and F that are formed. <span class="marks">[3]</span></div>
   <div class="conf">Confidence: high / medium / guessed</div>
-
-<button class="revbtn" onclick="tog('a7',this)">Show answer</button>
-<div class="ansbox" id="a7" style="display:none">
-<div class="sol">
-    <h3>Question 7 — [11]</h3>
-    <div class="src">HCI 11-Alkenes Tutorial Q3 &nbsp;·&nbsp; HCI Prelim / N2025 / P2 / Q5(c)(i) &nbsp;·&nbsp; HCI Soln / N2018 / P3 / Q1(e)(ii)</div>
-
-    <div class="step"><div class="step-header">(a) But-1-ene with bromine in methanol — [4]</div>
-      <div class="verb">
-        <p>Name of mechanism: <b>electrophilic addition</b>. <b>Slow step:</b> a curly arrow from the \(\ce{C=C}\) \(\pi\) bond to the \(\delta+\) Br of \(\ce{Br2}\) (drawn \(^{\delta+}\)Br–Br\(^{\delta-}\)), and a second curly arrow from the \(\ce{Br-Br}\) bond to the far Br; this forms the <b>secondary carbocation CH<sub>3</sub>CH<sub>2</sub>&ndash;<sup>+</sup>CH&ndash;CH<sub>2</sub>Br</b> together with \(\ce{:Br^-}\), and is labelled <b>slow</b>. <span class="m">1</span></p>
-        <p><b>Fast step, route 1:</b> a curly arrow from a lone pair on \(\ce{Br^-}\) to the positively charged carbon gives <b>1,2-dibromobutane — the minor product</b>. <span class="m">1</span></p>
-        <p><b>Fast step, route 2:</b> a lone pair on the O of \(\ce{CH3OH}\) attacks the secondary carbocation; the oxonium ion then loses \(\ce{H+}\) (to \(\ce{Br^-}\)), giving <b>1-bromo-2-methoxybutane — the major product — plus HBr</b>. It is major <b>because methanol, the solvent, is present in a much higher concentration than the bromide ion</b> and therefore attacks the intermediate preferentially in the second step. <span class="m">1</span></p>
-        <p>2-bromo-1-methoxybutane is <b>not</b> formed because both products arise from the <b>secondary carbocation</b>, which is <b>more stable than the primary carbocation due to the two electron-donating alkyl groups on the positively charged carbon</b>. That requires \(\ce{Br}\) to add to the terminal \(\ce{CH2}\), fixing Br on C1 and the incoming nucleophile on C2. <span class="m">1</span></p>
-      </div>
-      <svg class="fig" width="700" height="300" viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="15">
-        <defs>
-          <marker id="ah7" markerWidth="9" markerHeight="9" refX="7.5" refY="3.2" orient="auto"><path d="M0,0 L7.5,3.2 L0,6.4 z" fill="#b91c1c"/></marker>
-          <marker id="rx7" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 z" fill="#111"/></marker>
-        </defs>
-        <text x="18" y="76">H₂C</text>
-        <line x1="60" y1="67" x2="92" y2="67" stroke="#111" stroke-width="1.6"/>
-        <line x1="60" y1="73" x2="92" y2="73" stroke="#111" stroke-width="1.6"/>
-        <text x="95" y="76">CH</text>
-        <line x1="130" y1="70" x2="158" y2="70" stroke="#111" stroke-width="1.6"/>
-        <text x="161" y="76">CH₂CH₃</text>
-        <path d="M76,56 C76,30 112,26 118,42" fill="none" stroke="#b91c1c" stroke-width="1.7" marker-end="url(#ah7)"/>
-        <text x="252" y="60">Br</text>
-        <line x1="278" y1="55" x2="306" y2="55" stroke="#111" stroke-width="1.6"/>
-        <text x="309" y="60">Br</text>
-        <text x="248" y="40" font-size="12" fill="#2563eb">δ+</text>
-        <text x="308" y="40" font-size="12" fill="#2563eb">δ−</text>
-        <path d="M292,66 C306,88 340,82 336,62" fill="none" stroke="#b91c1c" stroke-width="1.7" marker-end="url(#ah7)"/>
-        <line x1="380" y1="70" x2="436" y2="70" stroke="#111" stroke-width="1.8" marker-end="url(#rx7)"/>
-        <text x="388" y="62" font-size="13" font-weight="bold">slow</text>
-        <text x="470" y="76">CH₃CH₂</text>
-        <line x1="538" y1="70" x2="558" y2="70" stroke="#111" stroke-width="1.6"/>
-        <text x="561" y="76">C</text>
-        <text x="573" y="66" font-size="13" font-weight="bold">+</text>
-        <line x1="568" y1="86" x2="568" y2="102" stroke="#111" stroke-width="1.6"/>
-        <text x="561" y="118">H</text>
-        <line x1="580" y1="70" x2="600" y2="70" stroke="#111" stroke-width="1.6"/>
-        <text x="603" y="76">CH₂Br</text>
-        <text x="470" y="146" font-size="13" fill="#6b7280">secondary carbocation — two electron-donating alkyl groups</text>
-        <line x1="30" y1="176" x2="670" y2="176" stroke="#e5e7eb" stroke-width="1.4"/>
-        <text x="30" y="212" font-size="14" font-weight="bold">route 1 (minor)</text>
-        <text x="150" y="212">:Br⁻ attacks C⁺</text>
-        <line x1="270" y1="207" x2="320" y2="207" stroke="#111" stroke-width="1.8" marker-end="url(#rx7)"/>
-        <text x="278" y="200" font-size="13" font-weight="bold">fast</text>
-        <text x="335" y="212">CH₃CH₂CHBrCH₂Br   (1,2-dibromobutane)</text>
-        <text x="30" y="258" font-size="14" font-weight="bold">route 2 (major)</text>
-        <text x="150" y="258">CH₃OH lone pair attacks C⁺, then − H⁺</text>
-        <line x1="400" y1="253" x2="450" y2="253" stroke="#111" stroke-width="1.8" marker-end="url(#rx7)"/>
-        <text x="408" y="246" font-size="13" font-weight="bold">fast</text>
-        <text x="463" y="258">CH₃CH₂CH(OCH₃)CH₂Br</text>
-        <text x="463" y="284" font-size="13" fill="#6b7280">1-bromo-2-methoxybutane + HBr</text>
-      </svg>
-      <div class="trap"><b>The three-nucleophile rule.</b> Only the <b>\(\ce{Br2}\) can act as the electrophile</b> — it is the species that is polarised and opens the \(\ce{C=C}\) in the slow step. Everything else in the flask (\(\ce{Br^-}\), \(\ce{CH3OH}\), \(\ce{H2O}\), \(\ce{Cl^-}\) if brine is present) is a <b>nucleophile that can only attack the carbocation in step 2</b>. That is why bromine water gives up to three products and why no di-methoxy or dichloro product ever appears.</div>
-    </div>
-
-    <div class="step"><div class="step-header">(b) The 1,2- and 1,4-products — [3]</div>
-      <div class="verb">
-        <p>\(\ce{H+}\) adds to C1 of buta-1,3-diene to give a <b>resonance-stabilised allylic carbocation</b>. The form leading to the 1,2-product is <b>CH<sub>3</sub>&ndash;<sup>+</sup>CH&ndash;CH=CH<sub>2</sub></b> (positive charge on C2). <span class="m">1</span></p>
-        <p>The delocalised form leading to the 1,4-product is <b>CH<sub>3</sub>&ndash;CH=CH&ndash;<sup>+</sup>CH<sub>2</sub></b> (positive charge on C4). <span class="m">1</span></p>
-        <p>Because the <b>positive charge is delocalised over C2 and C4 (allylic resonance)</b>, \(\ce{Br^-}\) can attack at either position — at C2 to give the 1,2-product or at C4 to give the 1,4-product. <span class="m">1</span></p>
-      </div>
-      <svg class="fig" width="640" height="130" viewBox="0 0 640 130" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="15">
-        <text x="20" y="60">CH₃</text>
-        <line x1="60" y1="54" x2="82" y2="54" stroke="#111" stroke-width="1.6"/>
-        <text x="85" y="60">C</text>
-        <text x="97" y="50" font-size="13" font-weight="bold">+</text>
-        <line x1="90" y1="70" x2="90" y2="84" stroke="#111" stroke-width="1.6"/>
-        <text x="84" y="100">H</text>
-        <line x1="104" y1="54" x2="126" y2="54" stroke="#111" stroke-width="1.6"/>
-        <text x="129" y="60">CH</text>
-        <line x1="164" y1="51" x2="192" y2="51" stroke="#111" stroke-width="1.6"/>
-        <line x1="164" y1="57" x2="192" y2="57" stroke="#111" stroke-width="1.6"/>
-        <text x="195" y="60">CH₂</text>
-        <text x="60" y="122" font-size="13" fill="#6b7280">charge on C2 → Br⁻ at C2 → 1,2-product</text>
-        <text x="278" y="60" font-size="20">↔</text>
-        <text x="330" y="60">CH₃</text>
-        <line x1="370" y1="54" x2="392" y2="54" stroke="#111" stroke-width="1.6"/>
-        <text x="395" y="60">CH</text>
-        <line x1="432" y1="51" x2="460" y2="51" stroke="#111" stroke-width="1.6"/>
-        <line x1="432" y1="57" x2="460" y2="57" stroke="#111" stroke-width="1.6"/>
-        <text x="463" y="60">CH</text>
-        <line x1="500" y1="54" x2="522" y2="54" stroke="#111" stroke-width="1.6"/>
-        <text x="525" y="60">CH₂</text>
-        <text x="562" y="50" font-size="13" font-weight="bold">+</text>
-        <text x="360" y="122" font-size="13" fill="#6b7280">charge on C4 → Br⁻ at C4 → 1,4-product</text>
-      </svg>
-    </div>
-
-    <div class="step"><div class="step-header">(c) Why the enone reacts with CN⁻ and the diene does not — [4]</div>
-      <div class="verb">
-        <p>Due to the <b>lack of electronegativity difference between the two carbon atoms</b>, the \(\ce{C=C}\) bond in buta-1,3-diene is <b>non-polar</b>. Its \(\pi\) electron cloud is <b>electron rich, making it susceptible to electrophilic attack</b>; with no electron-deficient carbon present, nucleophilic attack is not possible. <span class="m">1</span></p>
-        <p>The \(\ce{C=O}\) group next to the \(\ce{C=C}\) in 4-methylpent-1-en-3-one is an <b>electron-withdrawing group, by both resonance and inductive effects</b>. <span class="m">1</span></p>
-        <p>The electron density in the \(\ce{C=C}\) <b>delocalises onto the \(\ce{C=O}\)</b> (the p orbitals of the sp\(^2\) carbons and the oxygen overlap continuously), <b>reducing the electron density on the terminal carbon of the \(\ce{C=C}\)</b> and so enabling attack there by the \(\ce{CN^-}\) nucleophile. <span class="m">1</span></p>
-        <p>The same delocalisation also <b>reduces the electron deficiency of the carbonyl carbon, making it less susceptible to nucleophilic attack</b>. In addition the bulky <b>\(\ce{-CH(CH3)2}\) group causes steric hindrance</b>, repelling the incoming nucleophile, in contrast to the sterically unhindered terminal carbon of the \(\ce{C=C}\), which bears only 2 H atoms. <span class="m">1</span></p>
-      </div>
-      <div class="trap"><b>This is the four-concept question.</b> The mark scheme wants <b>electronegativity, electronic (inductive/resonance) effect, delocalisation and steric effect</b> — one mark each. "Alkenes undergo electrophilic addition" is a pattern-match that scores zero here, because the whole point is a \(\ce{C=C}\) that has been made electron-<b>poor</b> by the group next to it.</div>
-    </div>
-  </div>
-</div>
 </div>
 
 <!-- ==================== Q8 ==================== -->
 <div class="qcard" id="q8">
-  <div class="qhead"><span>Question 8</span><span class="tot">[8] &nbsp;·&nbsp; running total 69 / 90</span></div>
-  <p class="stem-lead">The defence secretion of a termite contains \(\beta\)-myrcene, \(\ce{(CH3)2C=CH-CH2-CH2-C(=CH2)-CH=CH2}\), shown below. Its three carbon–carbon double bonds are labelled <b>1</b>, <b>2</b> and <b>3</b>.</p>
-  <svg class="fig" width="660" height="200" viewBox="0 0 660 200" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="16">
-    <text x="14" y="58">H₃C</text>
-    <text x="14" y="140">H₃C</text>
-    <line x1="58" y1="52" x2="94" y2="86" stroke="#111" stroke-width="1.6"/>
-    <line x1="58" y1="134" x2="94" y2="100" stroke="#111" stroke-width="1.6"/>
-    <text x="97" y="100">C</text>
-    <line x1="112" y1="91" x2="146" y2="91" stroke="#111" stroke-width="1.6"/>
-    <line x1="112" y1="97" x2="146" y2="97" stroke="#111" stroke-width="1.6"/>
-    <text x="149" y="100">CH</text>
-    <line x1="186" y1="94" x2="212" y2="94" stroke="#111" stroke-width="1.6"/>
-    <text x="215" y="100">CH₂</text>
-    <line x1="258" y1="94" x2="284" y2="94" stroke="#111" stroke-width="1.6"/>
-    <text x="287" y="100">CH₂</text>
-    <line x1="330" y1="94" x2="356" y2="94" stroke="#111" stroke-width="1.6"/>
-    <text x="359" y="100">C</text>
-    <line x1="361" y1="110" x2="361" y2="140" stroke="#111" stroke-width="1.6"/>
-    <line x1="367" y1="110" x2="367" y2="140" stroke="#111" stroke-width="1.6"/>
-    <text x="348" y="162">CH₂</text>
-    <line x1="376" y1="94" x2="402" y2="94" stroke="#111" stroke-width="1.6"/>
-    <text x="405" y="100">CH</text>
-    <line x1="443" y1="91" x2="477" y2="91" stroke="#111" stroke-width="1.6"/>
-    <line x1="443" y1="97" x2="477" y2="97" stroke="#111" stroke-width="1.6"/>
-    <text x="480" y="100">CH₂</text>
-    <text x="118" y="76" font-size="13" font-weight="bold" fill="#dc2626">1</text>
-    <text x="380" y="130" font-size="13" font-weight="bold" fill="#dc2626">2</text>
-    <text x="452" y="76" font-size="13" font-weight="bold" fill="#dc2626">3</text>
-    <text x="14" y="192" font-size="13" fill="#6b7280">β-myrcene, C₁₀H₁₆</text>
-  </svg>
-  <div class="part"><span class="pl">(a)</span> \(\beta\)-myrcene is treated with an <b>excess</b> of cold dilute alkaline \(\ce{KMnO4}\). State what happens to each double bond, and deduce how many chiral centres the product contains. Justify each one. <span class="marks">[3]</span></div>
-  <div class="part"><span class="pl">(b)</span> A separate sample is heated with an <b>excess</b> of hot acidified \(\ce{KMnO4}\). Deduce the <b>organic</b> products, stating the reasoning that fixes each one. <span class="marks">[3]</span></div>
-  <div class="part"><span class="pl">(c)</span> A limited amount of aqueous bromine reacts preferentially at double bond <b>1</b>. Explain why the major product contains a <b>tertiary</b> alcohol group rather than a secondary one. <span class="marks">[2]</span></div>
+  <div class="qhead"><span>Question 8</span><span class="tot">[9] &nbsp;·&nbsp; running total 73 / 93</span></div>
+  <div class="src">(a), (b) HCI Soln / N2019 / P3 / Q5(c)(i)–(ii), stems reconstructed &nbsp;·&nbsp; (c) HCI Soln / N2022 / P3 / Q4(f)(i), stem reconstructed</div>
+  <p class="stem-lead">1,2-dibromoethane, \(\ce{BrCH2CH2Br}\), is converted into a dicarboxylic acid K by the three-step route below.</p>
+  <p class="stem-lead" style="text-align:center">\(\ce{BrCH2CH2Br}\) &nbsp;—step 1→&nbsp; <b>L</b> &nbsp;—step 2→&nbsp; <b>M</b> &nbsp;—step 3→&nbsp; <b>K</b> (a dicarboxylic acid)</p>
+  <div class="part"><span class="pl">(a)</span> Draw the structures of L, M and K, and state the reagents and conditions for each of the three steps. <span class="marks">[4]</span></div>
+  <div class="part"><span class="pl">(b)</span> State a possible side product formed in step 1 and state how its formation could be minimised. <span class="marks">[2]</span></div>
+  <div class="part"><span class="pl">(c)</span> In a separate reaction, 1-bromopropane reacts with \(\ce{NaCN}\). State the mechanism and draw it, showing curly arrows, the transition state and the products. <span class="marks">[3]</span></div>
   <div class="conf">Confidence: high / medium / guessed</div>
-
-<button class="revbtn" onclick="tog('a8',this)">Show answer</button>
-<div class="ansbox" id="a8" style="display:none">
-<div class="sol">
-    <h3>Question 8 — [8]</h3>
-    <div class="src">HCI Prelim / N2025 / P1 / Q21 (converted from MCQ to structured — each option becomes a part)</div>
-
-    <div class="step"><div class="step-header">(a) Cold alkaline KMnO₄ — mild oxidation — [3]</div>
-      <div class="verb">
-        <p>Cold dilute alkaline \(\ce{KMnO4}\) causes <b>mild oxidation: only the \(\pi\) bond breaks, and each of the two former \(\ce{C=C}\) carbons gains an \(\ce{-OH}\) group</b>; both oxygen atoms come from the manganate and the \(\sigma\) framework survives. With an excess, <b>all three \(\ce{C=C}\) are dihydroxylated</b> to give a hexa-ol. (Observation: purple \(\ce{KMnO4}\) decolourised, brown \(\ce{MnO2}\) precipitate.) <span class="m">1</span></p>
-        <p>Taking each in turn: from bond <b>1</b>, the \(\ce{(CH3)2C(OH)-}\) carbon carries <b>two identical methyl groups</b> and is <b>not</b> chiral, but the adjacent \(\ce{-CH(OH)-}\) carries H, OH, \(\ce{C(CH3)2OH}\) and \(\ce{CH2-}\) — <b>four different groups, so it is chiral</b>. <span class="m">1</span></p>
-        <p>From bond <b>2</b>, the central carbon now carries OH, \(\ce{CH2OH}\), the \(\ce{-CH2CH2-}\) chain and the \(\ce{-CH(OH)CH2OH}\) fragment — <b>chiral</b>. From bond <b>3</b>, the \(\ce{-CH(OH)-}\) carries H, OH, \(\ce{CH2OH}\) and that same quaternary carbon — <b>chiral</b>. Hence the product contains <b>three chiral centres</b>. <span class="m">1</span></p>
-      </div>
-    </div>
-
-    <div class="step"><div class="step-header">(b) Hot acidified KMnO₄ — oxidative cleavage — [3]</div>
-      <div class="verb">
-        <p>Hot acidified \(\ce{KMnO4}\) causes <b>oxidative cleavage</b>: work backwards from each alkene carbon by its H count. <b>\(\ce{=CR2}\) (0 H) → ketone; \(\ce{=CHR}\) (1 H) → carboxylic acid; terminal \(\ce{=CH2}\) (2 H) → \(\ce{CO2}\)</b>. <span class="m">1</span></p>
-        <p>Bond <b>1</b>: the \(\ce{(CH3)2C=}\) end has 0 H → <b>propanone, \(\ce{(CH3)2C=O}\)</b>; the \(\ce{=CH-}\) end has 1 H → a \(\ce{-CO2H}\) on the chain. Bond <b>2</b>: the substituted carbon has 0 H → a <b>ketone</b> in the chain; its terminal \(\ce{=CH2}\) → \(\ce{CO2}\). Bond <b>3</b>: the \(\ce{-CH=}\) has 1 H → a second \(\ce{-CO2H}\); its terminal \(\ce{=CH2}\) → \(\ce{CO2}\). <span class="m">1</span></p>
-        <p>Rejoining the surviving chain gives <b>\(\ce{HO2C-CH2CH2-CO-CO2H}\), 2-oxopentanedioic acid</b>. The organic products are therefore <b>propanone and 2-oxopentanedioic acid — only two organic products</b>, together with 2 mol of \(\ce{CO2}\), which is inorganic. <span class="m">1</span></p>
-      </div>
-      <div class="trap"><b>Count the carbons before and after.</b> \(\ce{C10}\) in: propanone takes 3, the keto-diacid takes 5, and the two \(\ce{CO2}\) take 1 each — 3 + 5 + 2 = 10. If your carbons do not balance you have mis-assigned a fragment. And note that the question asks for <b>organic</b> products, so \(\ce{CO2}\) is not counted.</div>
-    </div>
-
-    <div class="step"><div class="step-header">(c) Why the halohydrin has a tertiary alcohol — [2]</div>
-      <div class="verb">
-        <p>With aqueous bromine the electrophile is the polarised \(\ce{Br2}\); \(\ce{Br}\) adds to the alkene carbon that leaves the <b>positive charge on the more substituted carbon</b>, so the intermediate is the <b>tertiary carbocation at the \(\ce{(CH3)2C-}\) carbon</b>, which is more stable because <b>three electron-donating alkyl groups disperse the positive charge</b> (Markovnikov). <span class="m">1</span></p>
-        <p>In the fast step, <b>water attacks that tertiary carbocation</b> and, after loss of \(\ce{H+}\), the \(\ce{-OH}\) ends up on the <b>tertiary</b> carbon, giving \(\ce{(CH3)2C(OH)-CHBr-}\) as the major halohydrin. A secondary alcohol would require the less stable secondary carbocation and would be the minor product. <span class="m">1</span></p>
-      </div>
-    </div>
-  </div>
-</div>
 </div>
 
 <!-- ==================== Q9 ==================== -->
 <div class="qcard" id="q9">
-  <div class="qhead"><span>Question 9</span><span class="tot">[12] &nbsp;·&nbsp; running total 81 / 90</span></div>
-  <div class="part"><span class="pl">(a)</span> The reaction \(\ce{Cl-C(H)(D)(C6H5) + OH^- -> HO-C(H)(D)(C6H5) + Cl^-}\) has an energy profile with <b>two maxima separated by a shallow minimum</b>. The first maximum, labelled <b>Z</b>, is the higher of the two.<br>Deduce the mechanism and justify it from the profile; write the rate equation and explain its form; state whether the resulting solution rotates plane-polarised light, with a reason; and state what species corresponds to <b>Z</b>. <span class="marks">[4]</span></div>
-  <div class="part"><span class="pl">(b)</span> <b>M</b>, <b>N</b> and <b>O</b> are three primary halogenoalkanes that react with aqueous sodium hydroxide. <b>N</b> contains a \(\ce{C-I}\) bond; <b>M</b> and <b>O</b> both contain a \(\ce{C-Br}\) bond, and the alkyl group in <b>O</b> is much more highly branched than that in <b>M</b>. Arrange <b>M</b>, <b>N</b> and <b>O</b> in order of <b>increasing</b> rate of hydrolysis and explain your order, quoting relevant data. <span class="marks">[3]</span></div>
-  <div class="part"><span class="pl">(c)</span> 2-bromopropane, 2-chloropropane and iodobenzene were each heated separately with aqueous sodium hydroxide. Each mixture was acidified with dilute nitric acid and aqueous silver nitrate was added. For each compound, state what would be observed, and state the solubility of any residue in <b>dilute</b> aqueous ammonia. <span class="marks">[3]</span></div>
-  <div class="part"><span class="pl">(d)</span> Heating a halogenoalkane with <b>ethanolic</b> KOH normally gives an alkene. Yet \(\ce{C6H5CHBrC(CH3)3}\), heated with ethanolic KOH, gives \(\ce{C6H5CH(OH)C(CH3)3}\). Explain why. <span class="marks">[2]</span></div>
+  <div class="qhead"><span>Question 9</span><span class="tot">[10] &nbsp;·&nbsp; running total 83 / 93</span></div>
+  <div class="src">(a), (b) HCI Soln / N2020 / P2 / Q4(a) and Q4(b) &nbsp;·&nbsp; (c) HCI Prelim / N2024 / P3 / Q2(c)(iii) &nbsp;·&nbsp; (d) HCI Prelim / N2024 / P3 / Q2(d)(ii)</div>
+  <div class="part"><span class="pl">(a)</span> Write an equation for the reaction of hydroquinone (benzene-1,4-diol) with excess \(\ce{NaOH}\)(aq). <span class="marks">[1]</span></div>
+  <div class="part"><span class="pl">(b)</span> Three compounds are listed below in no particular order: <b>phenol, ethanol, hydroquinone</b>. Describe an experiment to compare the acidity of the three compounds, and explain the order of acidity you would expect. <span class="marks">[5]</span></div>
+  <div class="part"><span class="pl">(c)</span> B, C and D are three iodo-alcohols: B is \(\ce{I(CH2)5OH}\), C is \(\ce{ICH2CH2CH(OH)CH2CH3}\) and D is \(\ce{ICH2CH2C(CH3)2OH}\). Describe how you would distinguish between them. <span class="marks">[3]</span></div>
+  <div class="sub"><b>I.</b> Heat each separately with acidified \(\ce{K2Cr2O7}\) and state what you would observe.</div>
+  <div class="sub"><b>II.</b> Suggest a reagent, other than 2,4-DNPH, that would distinguish between the products of the positive tests, and state the observations.</div>
+  <div class="part"><span class="pl">(d)</span> In compound E the group R could be at position 2, 3 or 4 relative to the \(\ce{-OH}\) on the ring. In step 1, E is treated with \(\ce{Br2}\)(aq) and the \(M_r\) changes from 178.0 in E to 335.8 in F, the major product. Deduce the position of R relative to the \(\ce{-OH}\). <span class="marks">[1]</span></div>
   <div class="conf">Confidence: high / medium / guessed</div>
-
-<button class="revbtn" onclick="tog('a9',this)">Show answer</button>
-<div class="ansbox" id="a9" style="display:none">
-<div class="sol">
-    <h3>Question 9 — [12]</h3>
-    <div class="src">HCI Prelim / N2023 / P1 / Q7 (converted from MCQ to structured) &nbsp;·&nbsp; HCI Soln / N2022 / P3 / Q4(f)(iii) &nbsp;·&nbsp; HCI Prelim / N2024 / P2 / Q3(c)(i) with HCI Soln / N2020 / P1 / Q21 and N2022 / P1 / Q23 &nbsp;·&nbsp; HCI Prelim / N2024 / P1 / Q23 (option C, converted)</div>
-
-    <div class="step"><div class="step-header">(a) Reading the energy profile — [4]</div>
-      <div class="verb">
-        <p>The <b>two-peak profile with an intermediate between the peaks indicates an S<sub>N</sub>1 mechanism</b> — two distinct steps with a <b>carbocation intermediate</b> sitting in the trough. This is consistent with a <b>benzylic</b> carbon, whose carbocation is stabilised by delocalisation into the ring. <span class="m">1</span></p>
-        <p><b>Rate = \(k[\ce{RCl}]\)</b> — <b>first order, and independent of \([\ce{OH^-}]\)</b> — because the <b>rate-determining step is the slow heterolytic formation of the carbocation</b>, which involves only the halogenoalkane. <span class="m">1</span></p>
-        <p>The solution <b>does not rotate plane-polarised light</b>: S<sub>N</sub>1 proceeds via a <b>planar (trigonal) carbocation</b>, so \(\ce{OH^-}\) attacks <b>from above and below the plane with equal probability</b>, giving <b>equal amounts of both enantiomers — a racemic mixture</b> whose rotations cancel. <span class="m">1</span></p>
-        <p><b>Z is the first, rate-determining transition state</b>, corresponding to the <b>\(\ce{C-Cl}\) bond breaking to form the carbocation</b>. \(\ce{OH^-}\) is <b>not yet bonded</b> at Z, so a five-coordinate species [Cl&middot;&middot;&middot;C&middot;&middot;&middot;OH]<sup>&minus;</sup> is <b>not</b> what Z represents — that would be an S<sub>N</sub>2 transition state. <span class="m">1</span></p>
-      </div>
-    </div>
-
-    <div class="step"><div class="step-header">(b) Order of increasing rate of hydrolysis — [3]</div>
-      <div class="verb">
-        <p>The relative rate increases from <b>O to M to N</b>. <span class="m">1</span></p>
-        <p>All three are primary halogenoalkanes undergoing nucleophilic substitution via <b>S<sub>N</sub>2</b>. The <b>\(\ce{C-I}\) bond in N is weaker than the \(\ce{C-Br}\) bond</b> in M and O (\(\ce{C-I}\) +238 against \(\ce{C-Br}\) +280 kJ mol\(^{-1}\)), so N has a <b>lower activation energy</b> and the fastest rate. <span class="m">1</span></p>
-        <p>The <b>highly branched alkyl group in O is bulkier than in M, causing greater steric hindrance</b> to nucleophilic attack, and hence the slowest rate. Hence <b>O &lt; M &lt; N</b>. <span class="m">1</span></p>
-      </div>
-      <div class="trap"><b>The error you made confidently.</b> Rate is set by <b>\(\ce{C-X}\) bond energy, not electronegativity</b>. \(\ce{C-I}\) is the <b>weakest</b> bond (lowest bond energy, longest bond) so it hydrolyses <b>fastest</b>; \(\ce{C-F}\) is the strongest and hydrolyses slowest. Rate order \(\ce{R-I > R-Br > R-Cl}\). Whether the mechanism is S<sub>N</sub>1 or S<sub>N</sub>2, <b>breaking of the \(\ce{C-X}\) bond occurs in the rate-determining step</b>.</div>
-    </div>
-
-    <div class="step"><div class="step-header">(c) Silver nitrate observations — [3]</div>
-      <table class="data">
-        <tr><th>Compound</th><th>Observation with \(\ce{AgNO3}\)</th><th>Solubility in dilute \(\ce{NH3}\)</th><th></th></tr>
-        <tr><td class="l"><b>2-bromopropane</b></td><td class="l"><b>cream precipitate (\(\ce{AgBr}\))</b></td><td class="l"><b>insoluble</b> in dilute \(\ce{NH3}\); soluble only in concentrated \(\ce{NH3}\)</td><td><span class="m">1</span></td></tr>
-        <tr><td class="l"><b>2-chloropropane</b></td><td class="l"><b>white precipitate (\(\ce{AgCl}\))</b></td><td class="l"><b>soluble</b> in dilute \(\ce{NH3}\)</td><td><span class="m">1</span></td></tr>
-        <tr><td class="l"><b>iodobenzene</b></td><td class="l"><b>no precipitate</b> — the \(\ce{C-I}\) bond to the ring does not hydrolyse with \(\ce{OH^-}\), so no \(\ce{I^-}\) is released</td><td class="l">no residue — not applicable</td><td><span class="m">1</span></td></tr>
-      </table>
-      <div class="trap"><b>Lock the ladder.</b> \(\ce{AgCl}\) <b>white</b>, dissolves in <b>dilute</b> \(\ce{NH3}\). \(\ce{AgBr}\) <b>cream</b>, dissolves only in <b>concentrated</b> \(\ce{NH3}\). \(\ce{AgI}\) <b>yellow</b>, <b>insoluble</b> in both. And "no precipitate" does not prove a halogenoarene — a <b>fluoroalkane</b> also gives none, because the \(\ce{C-F}\) bond is very strong. An <b>acyl chloride</b> is the opposite trap: it reacts immediately at room temperature without needing NaOH first.</div>
-    </div>
-
-    <div class="step"><div class="step-header">(d) Why substitution, not elimination — [2]</div>
-      <div class="verb">
-        <p>In \(\ce{C6H5CHBrC(CH3)3}\) the carbon bearing Br has <b>no \(\beta\)-hydrogen</b> — its two neighbours are the <b>phenyl ring</b> and the <b>quaternary carbon of the tert-butyl group</b>, neither of which carries a hydrogen that could be abstracted. <b>Elimination is therefore impossible</b>. <span class="m">1</span></p>
-        <p>The benzylic \(\ce{C-Br}\) instead undergoes <b>nucleophilic substitution, via S<sub>N</sub>1 through a phenyl-stabilised carbocation</b>, to give the alcohol — even though ethanolic conditions would normally favour elimination. <span class="m">1</span></p>
-      </div>
-      <div class="trap"><b>The reagent rule and its exception.</b> <b>Aqueous NaOH, warm → nucleophilic substitution → alcohol.</b> <b>Ethanolic NaOH/KOH, heat → elimination → alkene</b> (in ethanol \(\ce{OH^-}\) is less solvated, so it is a stronger base and abstracts a \(\beta\)-hydrogen). The exception is structural, not conditional: <b>no \(\beta\)-hydrogen means no elimination</b>, whatever the solvent. Always check the neighbours of the C–X carbon before you apply the rule.</div>
-    </div>
-  </div>
-</div>
 </div>
 
 <!-- ==================== Q10 ==================== -->
 <div class="qcard" id="q10">
-  <div class="qhead"><span>Question 10</span><span class="tot">[9] &nbsp;·&nbsp; running total 90 / 90</span></div>
-  <div class="part"><span class="pl">(a)</span> Describe an experiment using sodium metal that would compare the acidities of ethanol, benzene-1,4-diol (hydroquinone) and phenol, stating the measurement you would take. Predict the order you would obtain and explain it fully. <span class="marks">[4]</span></div>
-  <div class="part"><span class="pl">(b)</span> Compound <b>E</b> is a benzene ring carrying an \(\ce{-OH}\) group at position 1 and one other group <b>R</b>, which could be at position 2, 3 or 4. \(M_r\) of <b>E</b> is 178.0. When <b>E</b> is treated with aqueous bromine at room temperature, the major product <b>F</b> has \(M_r\) = 335.8.<br>(i) Deduce the position of <b>R</b> relative to the \(\ce{-OH}\) group, explaining your reasoning. (ii) State why the reagent for this ring reaction is <b>aqueous</b> bromine with no catalyst, whereas the test for a \(\ce{C=C}\) uses \(\ce{Br2}\) in \(\ce{CCl4}\) in the dark. (iii) State what \(\Delta M_r\) would have been if one \(\ce{Br2}\) had instead <b>added</b> across a \(\ce{C=C}\). <span class="marks">[3]</span></div>
-  <div class="part"><span class="pl">(c)</span> Compound <b>Q</b> was warmed with alkaline aqueous iodine and the mixture was then acidified. A yellow precipitate formed, together with methanoic acid, \(\ce{HCO2H}\). Deduce the structure of <b>Q</b> and name the yellow precipitate. <span class="marks">[2]</span></div>
+  <div class="qhead"><span>Question 10</span><span class="tot">[10] &nbsp;·&nbsp; running total 93 / 93</span></div>
+  <div class="src">HCI Soln / N2017 / P3 / Q3(d) &nbsp;=&nbsp; N2017 / P3 / Q3(d), EJC key &nbsp;·&nbsp; stem reconstructed from the key</div>
+  <p class="stem-lead">Compound I has molecular formula \(\ce{C6H8O2}\). The results of a series of tests on I, and on the compounds derived from it, are given below.</p>
+  <table class="data">
+    <tr><th>Test</th><th>Result</th></tr>
+    <tr><td class="l">I is shaken with \(\ce{Br2}\)(aq)</td><td class="l">the bromine is decolourised</td></tr>
+    <tr><td class="l">I is treated with sodium metal</td><td class="l">no reaction</td></tr>
+    <tr><td class="l">I is warmed with alkaline aqueous iodine</td><td class="l">no reaction</td></tr>
+    <tr><td class="l">a solution of I is placed in a polarimeter</td><td class="l">the plane of plane-polarised light is rotated</td></tr>
+    <tr><td class="l">I is heated with \(\ce{H2SO4}\)(aq)</td><td class="l">J, \(\ce{C6H10O3}\), is formed</td></tr>
+    <tr><td class="l">J is heated with \(\ce{KMnO4}\)</td><td class="l">K, \(\ce{C3H4O3}\), is the only organic product</td></tr>
+    <tr><td class="l">K is treated with sodium metal</td><td class="l">a reaction occurs</td></tr>
+    <tr><td class="l">K is warmed with alkaline aqueous iodine</td><td class="l">a yellow precipitate forms</td></tr>
+  </table>
+  <div class="part">Use <b>all</b> of the evidence above to deduce the structures of I, J and K. For each observation, state the type of reaction involved and the deduction you draw from it, then draw the three structures. <span class="marks">[10]</span></div>
   <div class="conf">Confidence: high / medium / guessed</div>
+</div>
 
-<button class="revbtn" onclick="tog('a10',this)">Show answer</button>
-<div class="ansbox" id="a10" style="display:none">
-<div class="sol">
-    <h3>Question 10 — [9]</h3>
-    <div class="src">HCI Soln / N2020 / P2 / Q4(b) &nbsp;·&nbsp; HCI Prelim / N2024 / P3 / Q2(d)(ii) &nbsp;·&nbsp; HCI Prelim / N2024 / P3 / Q4(d)(iii)</div>
+<hr>
 
-    <div class="step"><div class="step-header">(a) Comparing acidity with sodium — [4]</div>
-      <div class="verb">
-        <p><b>Record the time taken for a fixed volume (e.g. 10 cm\(^3\)) of \(\ce{H2}\) gas to be collected</b> for each compound when Na metal is added, using the same amount of each compound at the same temperature. <span class="m">1</span></p>
-        <p>Acidity increases from <b>ethanol &lt; benzene-1,4-diol &lt; phenol</b>, so the <b>time taken is shortest for phenol and longest for ethanol</b> (rate of \(\ce{H2}\) production fastest for phenol, slowest for ethanol). <span class="m">1</span></p>
-        <p>The <b>electron-donating alkyl group intensifies the negative charge on the oxygen of the ethoxide ion</b>, destabilising it, so ethanol is the weakest acid. Both phenoxides have <b>resonance stabilisation due to delocalisation of the negative charge into the benzene ring</b>, so phenol and hydroquinone are stronger acids than ethanol. <span class="m">1</span></p>
-        <p>However, <b>hydroquinone has an additional electron-donating \(\ce{-OH}\) group on the ring, which intensifies the negative charge on the O and destabilises its conjugate base</b>; hence <b>phenol is a stronger acid than hydroquinone</b> and gives the greatest rate of \(\ce{H2}\) production. <span class="m">1</span></p>
-      </div>
-      <div class="trap"><b>Two things this is built to catch.</b> First, <b>\(\ce{-OH}\) on a ring is electron-DONATING</b> (the O lone pair is pushed into the ring), so a second \(\ce{-OH}\) makes the phenoxide <b>worse</b>, not better — the intuition that "more OH means more acidic" is wrong. Second, you <b>cannot</b> differentiate the three by the <b>volume</b> of gas collected: equal amounts of each give the same volume of \(\ce{H2}\) (0.010/2 × 24 000 = 120 cm\(^3\)). The measurement has to be a <b>rate</b>. Hold the ladder: carboxylic acid &gt; carbonic acid &gt; phenol &gt; water &gt; alcohol — so \(\ce{NaHCO3}\) effervescence separates a carboxylic acid from a phenol, NaOH separates a phenol from an alcohol, and <b>Na reacts with all three</b> (giving the alkoxide or phenoxide plus \(\ce{H2}\)).</div>
+<div class="controls">
+  <button onclick="toggleMS(this)">Reveal mark scheme</button>
+  <span class="hint">Only after the whole paper is written. Mark yourself against the exact wording, then tell me every part below full marks and every part you flagged medium or guessed.</span>
+</div>
+
+<div id="markscheme" style="display:none">
+
+<div class="secbar"><span>Mark scheme &nbsp;·&nbsp; Questions 1–10</span><span class="r">93 marks</span></div>
+
+<!-- ---------- MS Q1 ---------- -->
+<div class="msq">
+  <h3>Question 1 — [9]</h3>
+  <div class="src">HCI Soln / N2019 / P3 / Q1(a), (b), (c) = RI TYS / N2019 / P3 / Q1</div>
+
+  <div class="step"><div class="step-header">(a) Shapes and bond angles of BF₃, NH₃ and H₂O — [3]</div>
+    <div class="restate">By considering the electron pairs around the central atom, explain the shapes and bond angles of \(\ce{BF3}\), \(\ce{NH3}\) and \(\ce{H2O}\).</div>
+    <div class="verb">
+      <p>The <b>3 bond pairs (and no lone pairs) of \(\ce{BF3}\)</b> arrange themselves to minimise electronic repulsion, adopting a <b>trigonal planar shape with a bond angle of 120°</b>. <span class="mk">1</span></p>
+      <p>The 4 regions of electron density of \(\ce{NH3}\) and \(\ce{H2O}\) adopt a tetrahedral electron-pair geometry. <b>\(\ce{NH3}\), with 3 bond pairs and 1 lone pair, has a bond angle of 107°</b> (smaller than 109.5°) due to <b>lone pair–bond pair repulsion being stronger than bond pair–bond pair repulsion</b>. <span class="mk">1</span></p>
+      <p><b>\(\ce{H2O}\), with 2 bond pairs and 2 lone pairs, has additional lone pair–lone pair repulsion</b> (which is stronger than lone pair–bond pair, which is stronger than bond pair–bond pair), leading to a smaller angle of <b>105°</b>. <span class="mk">1</span></p>
     </div>
+  </div>
 
-    <div class="step"><div class="step-header">(b) Deducing the position of R — [3]</div>
-      <div class="verb">
-        <p>(i) \(\Delta M_r\) = 335.8 − 178.0 = 157.8 = 2 × 78.9, so <b>two bromine atoms are substituted</b> into the ring. <b>Phenol directs bromination to the positions ortho and para to \(\ce{-OH}\)</b> (positions 2, 4 and 6). Since only <b>two</b> (not three) Br are introduced, <b>one of these activated positions must already be occupied by R</b>; therefore <b>R is at position 2 or 4</b> — ortho or para to \(\ce{-OH}\) — and not at position 3. <span class="m">1</span></p>
-        <p>(ii) The <b>ring of phenol is activated because the lone pair on the O is delocalised into it</b>, raising the electron density enough for bromination to occur with <b>aqueous \(\ce{Br2}\) at room temperature with no halogen carrier</b>. The reaction is <b>electrophilic substitution</b>. \(\ce{Br2}\) in \(\ce{CCl4}\) in the dark is the test for a \(\ce{C=C}\), where the reaction is <b>electrophilic addition</b>; the dark and the non-polar solvent are there to prevent free-radical substitution. <span class="m">1</span></p>
-        <p>(iii) <b>Substituting</b> Br costs \(M_r\) 78.9 each (79.9 in, 1.0 H out). <b>Adding</b> \(\ce{Br2}\) across a \(\ce{C=C}\) removes no hydrogen, so it would give <b>\(\Delta M_r\) = 159.8</b>. <span class="m">1</span></p>
-      </div>
+  <div class="step"><div class="step-header">(b) Bond polarity and net dipole moment — [3]</div>
+    <div class="restate">Draw diagrams showing the polarity of the bonds in each of the three molecules, and deduce whether each has a net dipole moment.</div>
+    <div class="verb">
+      <p><b>\(\ce{BF3}\)</b> is trigonal planar with three \(\ce{B->F}\) dipoles. It <b>does not have a net dipole moment</b> as the <b>individual dipoles cancel off</b>. <span class="mk">1</span></p>
+      <p><b>\(\ce{NH3}\)</b> is trigonal pyramidal and <b>has a net dipole moment</b>, as the individual dipoles <b>do not cancel off</b>. <span class="mk">1</span></p>
+      <p><b>\(\ce{H2O}\)</b> is bent and <b>has a net dipole moment</b>, as the individual dipoles <b>do not cancel off</b>. In each case the lone pair(s) on the central atom prevent the symmetrical cancellation seen in \(\ce{BF3}\). <span class="mk">1</span></p>
     </div>
+    <div class="trap"><b>Draw the dipole arrows on the actual shape.</b> A dipole argument that never shows the geometry cannot earn the cancellation mark, because cancellation is a statement about the arrangement in space, not about the bonds alone.</div>
+  </div>
 
-    <div class="step"><div class="step-header">(c) Structure of Q and the yellow precipitate — [2]</div>
-      <div class="verb">
-        <p>Q = <b>\(\ce{CH3CH2OH}\) (ethanol)</b>. It contains the <b>\(\ce{CH3CH(OH)-}\) unit</b> required for the tri-iodomethane test, and the remaining fragment appears as methanoate, giving \(\ce{HCO2H}\) on acidification. <span class="m">1</span></p>
-        <p>It gives a <b>positive tri-iodomethane (iodoform) test</b> — the <b>yellow precipitate is \(\ce{CHI3}\)</b>, tri-iodomethane. <span class="m">1</span></p>
-      </div>
-      <div class="trap"><b>The iodoform trigger.</b> A positive test requires <b>\(\ce{CH3CH(OH)-}\) or \(\ce{CH3CO-}\)</b> — a methyl group attached directly to a carbon carrying either an OH-and-H or a carbonyl. Ethanol is the smallest alcohol that qualifies; methanol and propan-1-ol do not. The second product tells you what the rest of the molecule was: here \(\ce{HCO2H}\) means only one carbon was left over.</div>
+  <div class="step"><div class="step-header">(c)(i) Brønsted-Lowry acid and base — [1]</div>
+    <div class="restate">Ammonia reacts with water according to \(\ce{NH3 + H2O <=> NH4+ + OH-}\). Identify the Brønsted-Lowry acid and the Brønsted-Lowry base in the forward reaction.</div>
+    <div class="verb">
+      <p><b>\(\ce{NH3}\) is the Brønsted base (\(\ce{H+}\) acceptor)</b> and <b>\(\ce{H2O}\) is the Brønsted acid (\(\ce{H+}\) donor)</b>. <span class="mk">1</span></p>
+    </div>
+  </div>
+
+  <div class="step"><div class="step-header">(c)(ii) Lewis acid, Lewis base and the bond formed — [2]</div>
+    <div class="restate">\(\ce{BF3}\) reacts with \(\ce{NH3}\). Identify the Lewis acid and the Lewis base, and describe the bond that is formed.</div>
+    <div class="verb">
+      <p>\(\ce{NH3 + BF3 -> F3B\bond{<-}NH3}\). <b>\(\ce{NH3}\) is the Lewis base (electron-pair donor)</b>. <span class="mk">1</span></p>
+      <p>The <b>B atom in \(\ce{BF3}\) is electron-deficient</b>; it acts as the <b>Lewis acid by accepting a pair of electrons</b> from \(\ce{NH3}\). A <b>dative bond is formed between the N and B atoms</b>. <span class="mk">1</span></p>
     </div>
   </div>
 </div>
+
+<!-- ---------- MS Q2 ---------- -->
+<div class="msq">
+  <h3>Question 2 — [9]</h3>
+  <div class="src">(a) HCI Soln / N2018 / P3 / Q3(d) · (b) HCI Prelim / N2021 / P2 / Q2(c) · (c) HCI Soln / N2021 / P2 / Q2(b) = RI TYS / N2021 / P2 / Q2</div>
+
+  <div class="step"><div class="step-header">(a) Order of melting point — [4]</div>
+    <div class="restate">Arrange propanoic acid, glycine, pentane and butylamine in order of increasing melting point and explain the order.</div>
+    <div class="verb">
+      <p>The order of <b>increasing</b> melting point is <b>pentane &lt; butylamine &lt; propanoic acid &lt; glycine</b>. <span class="mk">1</span></p>
+      <p><b>Pentane</b> is a non-polar molecule with only weak <b>dispersion forces</b>, so the least energy is required to break its intermolecular forces and it has the <b>lowest melting point</b>. <span class="mk">1</span></p>
+      <p><b>Glycine</b> exists as <b>zwitterions in the solid state</b>; the <b>strong ionic bonding between zwitterions requires the most energy to break</b>, so it has the <b>highest melting point</b>. <span class="mk">1</span></p>
+      <p>Both <b>butylamine and propanoic acid have hydrogen bonding</b>, which is stronger than dispersion but weaker than ionic bonding. The <b>hydrogen bonding in propanoic acid is stronger than in butylamine because O is more electronegative than N</b>, so more energy is needed for propanoic acid. <span class="mk">1</span></p>
+    </div>
+  </div>
+
+  <div class="step"><div class="step-header">(b) Nitrobenzene against water — [2]</div>
+    <div class="restate">Explain why nitrobenzene has a higher boiling point than water.</div>
+    <div class="verb">
+      <p>Nitrobenzene has a <b>larger electron cloud / more electrons than water</b> (each nitrobenzene molecule has 64 electrons against 10 for water). <span class="mk">1</span></p>
+      <p>More energy is required to break the <b>stronger dispersion forces between nitrobenzene molecules than the hydrogen bonding between water molecules</b>. <span class="mk">1</span></p>
+    </div>
+    <div class="trap"><b>Hydrogen bonding does not automatically win.</b> Nitrobenzene forms no hydrogen bonds at all, yet still boils higher, because a sixfold difference in electron count outweighs the hydrogen bonding in water. Compare the electron clouds first, then the type of force.</div>
+  </div>
+
+  <div class="step"><div class="step-header">(c) The two lattice-energy factors and which dominates — [3]</div>
+    <div class="restate">State the two factors that affect the numerical magnitude of a lattice energy, and use the interionic distances of \(\ce{NaCl}\) (0.276 nm), \(\ce{NaF}\) (0.231 nm) and \(\ce{MgO}\) (0.205 nm) to deduce which factor has the greater effect.</div>
+    <div class="verb">
+      <p>The two factors are the <b>interionic distance</b> and the <b>product of the cationic and anionic charge</b>. <span class="mk">1</span></p>
+      <p>The interionic distances of \(\ce{NaCl}\), \(\ce{NaF}\) and \(\ce{MgO}\) are 0.276, 0.231 and 0.205 nm respectively, so the magnitude of lattice energy increases in this order. However, the <b>increase is greatest from \(\ce{NaF}\) to \(\ce{MgO}\)</b>, where the <b>ionic charges of \(\ce{Mg^2+}\) and \(\ce{O^2-}\) double</b> compared to \(\ce{Na+}\) and \(\ce{F-}\), and the magnitude more than quadruples, while only a smaller increase is seen from \(\ce{NaCl}\) to \(\ce{NaF}\). <span class="mk">1</span></p>
+      <p>This shows the <b>product of the ionic charges has the greater effect</b> on the numerical magnitude of lattice energy. <span class="mk">1</span></p>
+    </div>
+  </div>
 </div>
 
-<style id="inline-ans-css">
-.revbtn{display:inline-block;margin:14px 0 0;padding:7px 15px;font:600 13px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-  color:#065f46;background:#ecfdf5;border:1px solid #6ee7b7;border-radius:6px;cursor:pointer}
-.revbtn:hover{background:#d1fae5}
-.revbtn.on{color:#7c2d12;background:#fff7ed;border-color:#fdba74}
-.ansbox{margin:12px 0 2px;padding:2px 16px 6px;border-left:3px solid #6ee7b7;background:#f8fffc;border-radius:0 6px 6px 0}
-.ansbox>.sol{margin:0}
-.ansbox h3{margin-top:10px}
-@media print{.revbtn{display:none}.ansbox{display:block!important;border-left:2px solid #999;background:#fff}}
-</style>
+<!-- ---------- MS Q3 ---------- -->
+<div class="msq">
+  <h3>Question 3 — [7]</h3>
+  <div class="src">N2020 / P3 / Q1(f) = HCI Soln / N2020 / P3 / Q1(f)</div>
 
-<script id="inline-ans-js">
-function tog(id,btn){var d=document.getElementById(id);var open=d.style.display!=='none';
-  d.style.display=open?'none':'block';btn.textContent=open?'Show answer':'Hide answer';btn.classList.toggle('on',!open);}
-function revealAll(){document.querySelectorAll('.ansbox').forEach(function(d){d.style.display='block'});
-  document.querySelectorAll('.ansbox').forEach(function(d){var b=d.previousElementSibling;if(b&&b.classList.contains('revbtn')){b.textContent='Hide answer';b.classList.add('on')}});}
-function hideAll(){document.querySelectorAll('.ansbox').forEach(function(d){d.style.display='none'});
-  document.querySelectorAll('.ansbox').forEach(function(d){var b=d.previousElementSibling;if(b&&b.classList.contains('revbtn')){b.textContent='Show answer';b.classList.remove('on')}});}
+  <div class="step"><div class="step-header">(i) Overall ionic equation — [2]</div>
+    <div class="restate">Construct the overall ionic equation for the reaction between \(\ce{MnO4^-}\) and \(\ce{NO2^-}\).</div>
+    <div class="verb">
+      <p><b>\(\ce{2MnO4^- + 6H+ + 5NO2^- -> 2Mn^2+ + 3H2O + 5NO3^-}\)</b> <span class="mk">1</span> for correct species, <span class="mk">1</span> for the equation being <b>balanced in both atoms and charge</b>.</p>
+    </div>
+  </div>
+
+  <div class="step"><div class="step-header">(ii) Percentage by mass of NaNO₂ — [5]</div>
+    <div class="restate">Calculate the percentage by mass of \(\ce{NaNO2}\) in the 1.00 g meat sample.</div>
+    <div class="verb">
+      <p class="calc">\(n(\ce{S2O3^2-}) = \dfrac{22.40}{1000} \times 0.0150 = 0.000336\) mol, and since \(\ce{I2 + 2S2O3^2- -> 2I^- + S4O6^2-}\), \(n(\ce{I2}) = \tfrac{1}{2} \times 0.000336 = \mathbf{0.000168}\) <b>mol</b>. <span class="mk">1</span></p>
+      <p class="calc">For the excess-permanganate step, <b>\(\ce{10I^- + 2MnO4^- + 16H+ -> 5I2 + 2Mn^2+ + 8H2O}\)</b>, so the amount of \(\ce{MnO4^-}\) that <b>reacted with \(\ce{I-}\)</b> is \(0.000168 \times \tfrac{2}{5} = \mathbf{0.0000672}\) <b>mol</b>. <span class="mk">1</span></p>
+      <p class="calc">The amount of \(\ce{MnO4^-}\) that <b>reacted with \(\ce{NO2^-}\)</b> is therefore \(\left(\dfrac{50.00}{1000} \times 0.00500\right) - 0.0000672 = \mathbf{0.0001828}\) <b>mol</b>. <span class="mk">1</span></p>
+      <p class="calc">From the equation in (i), \(n(\ce{NO2^-})\) in 1.00 g \(= 0.0001828 \times \tfrac{5}{2} = 0.0004570\) mol, so the mass of \(\ce{NaNO2} = 0.0004570 \times (23.0 + 14.0 + 2(16.0)) = \mathbf{0.03153}\) <b>g</b>. <span class="mk">1</span></p>
+      <p class="calc"><b>Percentage by mass of \(\ce{NaNO2} = \dfrac{0.03153}{1.00} \times 100\% = 3.15\%\)</b>. <span class="mk">1</span></p>
+    </div>
+    <div class="trap"><b>Examiner's report on this exact question.</b> The two commonest errors were <b>omitting the initial amount of \(\ce{MnO4^-}\)</b> and <b>mis-calculating the amount of \(\ce{MnO4^-}\) that reacted with \(\ce{NO2^-}\)</b>. In any back titration, write down the total first, then the excess, and only then subtract.</div>
+  </div>
+</div>
+
+<!-- ---------- MS Q4 ---------- -->
+<div class="msq">
+  <h3>Question 4 — [8]</h3>
+  <div class="src">(a), (b) N2017 / P3 / Q4(a)(i)–(ii) = HCI Soln / N2017 / P3 / Q4(a) · (c) N2018 / P3 / Q4(a)(ii)</div>
+
+  <div class="step"><div class="step-header">(a) Average oxidation number of carbon — [1]</div>
+    <div class="restate">Determine the average oxidation number of carbon in butanoic acid, \(\ce{C4H8O2}\).</div>
+    <div class="verb">
+      <p>Let \(x\) be the average oxidation number of C. Then <b>\(4x + 8(+1) + 2(-2) = 0\)</b>, giving <b>\(x = -1\)</b>. <span class="mk">1</span></p>
+    </div>
+  </div>
+
+  <div class="step"><div class="step-header">(b) Half-equations and overall equation — [3]</div>
+    <div class="restate">Construct the reduction and the oxidation half-equations, and hence the overall equation, for the conversion of butanoic acid to \(\ce{CH4}\) and \(\ce{CO2}\).</div>
+    <div class="verb">
+      <p>Reduction: <b>\(\ce{C4H8O2 + 12H+ + 12e^- -> 4CH4 + 2H2O}\)</b> <span class="mk">1</span></p>
+      <p>Oxidation: <b>\(\ce{C4H8O2 + 6H2O -> 4CO2 + 20H+ + 20e^-}\)</b> <span class="mk">1</span></p>
+      <p>Combining so that electrons lost equal electrons gained gives the overall equation <b>\(\ce{2C4H8O2 + 2H2O -> 5CH4 + 3CO2}\)</b> (or \(\ce{C4H8O2 + H2O -> 2.5CH4 + 1.5CO2}\)). <span class="mk">1</span></p>
+      <p>Method: balance each half-equation by determining the oxidation numbers, balancing the change with electrons, balancing charge with \(\ce{H+}\) and oxygen with \(\ce{H2O}\), then combine.</p>
+    </div>
+  </div>
+
+  <div class="step"><div class="step-header">(c) Thiosulfate with chlorine and with iodine — [4]</div>
+    <div class="restate">Explain, in terms of their relative oxidising power, why the sulfur-containing products differ, and construct an equation for each reaction.</div>
+    <div class="verb">
+      <p>Chlorine, being a <b>stronger oxidising agent</b>, oxidises thiosulfate to <b>sulfate ions</b>, where the <b>average oxidation state of S increases from +2 to +6</b>. <span class="mk">1</span></p>
+      <p>Iodine, being a <b>weaker oxidising agent</b>, oxidises thiosulfate to <b>tetrathionate ions</b>, where the <b>average oxidation state of S only increases from +2 to +2.5</b>. <span class="mk">1</span></p>
+      <p><b>\(\ce{S2O3^2-(aq) + 4Cl2(aq) + 5H2O(l) -> 2SO4^2-(aq) + 8Cl^-(aq) + 10H+(aq)}\)</b> <span class="mk">1</span></p>
+      <p><b>\(\ce{2S2O3^2-(aq) + I2(aq) -> S4O6^2-(aq) + 2I^-(aq)}\)</b> <span class="mk">1</span></p>
+    </div>
+    <div class="trap"><b>Quote the oxidation states, not just the words.</b> "Chlorine is stronger so it oxidises further" is half an answer. The marks sit on <b>+2 to +6</b> against <b>+2 to +2.5</b>, and on both equations balancing for charge as well as atoms.</div>
+  </div>
+</div>
+
+<!-- ---------- MS Q5 ---------- -->
+<div class="msq">
+  <h3>Question 5 — [9]</h3>
+  <div class="src">(a) HCI Soln / N2022 / P3 / Q2(e) · (b) HCI Soln / N2017 / P3 / Q2(b) = RI TYS / N2017 / P3 / Q2(b) · (c), (d) HCI Prelim / N2023 / P2 / Q4(a)(ii) and Q4(c)(ii)</div>
+
+  <div class="step"><div class="step-header">(a) Hybridisation and bonding in ketene — [3]</div>
+    <div class="restate">State the hybridisation of \(\ce{C_a}\), \(\ce{C_b}\) and \(\ce{O}\) in \(\ce{H2C_a=C_b=O}\), and describe how each \(\sigma\) and each \(\pi\) bond is formed in terms of orbital overlap.</div>
+    <div class="verb">
+      <p><b>\(\ce{C_a}\) and \(\ce{O}\) are sp\(^2\) hybridised while \(\ce{C_b}\) is sp hybridised</b> (\(\ce{C_a}\) has 3 electron groups, \(\ce{C_b}\) has 2). <span class="mk">1</span></p>
+      <p>Each <b>\(\ce{C_a-H}\) \(\sigma\) bond is formed from the head-on overlap of the sp\(^2\) hybrid orbital of \(\ce{C_a}\) with the 1s orbital of H</b>. The <b>\(\ce{C_a-C_b}\) \(\sigma\) bond is formed from head-on overlap of the sp\(^2\) hybrid orbital of \(\ce{C_a}\) with the sp hybrid orbital of \(\ce{C_b}\)</b>, and the <b>\(\ce{C_b-O}\) \(\sigma\) bond from head-on overlap of the sp hybrid orbital of \(\ce{C_b}\) with the sp\(^2\) hybrid orbital of O</b>. <span class="mk">1</span></p>
+      <p>The <b>\(\ce{C_a-C_b}\) and \(\ce{C_b-O}\) \(\pi\) bonds are formed from side-on overlap of the unhybridised p orbitals</b> of \(\ce{C_a}\) and \(\ce{C_b}\), and of \(\ce{C_b}\) and O respectively. <span class="mk">1</span></p>
+    </div>
+  </div>
+
+  <div class="step"><div class="step-header">(b) Isomerism and bond angle in diazene — [3]</div>
+    <div class="restate">Explain why \(\ce{HN=NH}\) can exist as two isomers, state how the two isomers differ, and predict the \(\ce{H-N=N}\) bond angle.</div>
+    <div class="verb">
+      <p>Each N of the \(\ce{N=N}\) double bond possesses <b>one lone pair and one hydrogen atom</b>. Diazene exists as <b>cis-trans isomers due to the restricted rotation around the \(\ce{N=N}\) bond</b> and each N bearing <b>2 different groups</b> (a H atom and a lone pair of electrons). <span class="mk">1</span></p>
+      <p>Two non-superimposable isomers arise as the <b>two H atoms can be on the same side (cis) or on opposite sides (trans)</b> of the \(\ce{N=N}\). <span class="mk">1</span></p>
+      <p>With 3 regions of electron density (one \(\ce{N-H}\) single bond, one \(\ce{N=N}\) double bond and 1 lone pair), the \(\ce{H-N=N}\) bond angle is <b>just under 120°</b> (quoted as 117–118° due to bond pair – lone pair repulsion). <span class="mk">1</span></p>
+    </div>
+    <div class="trap"><b>A lone pair counts as one of the "two different groups".</b> Diazene is the standard trap because neither nitrogen carries two visible substituents. If you only look at atoms, you will wrongly conclude that no cis-trans isomerism is possible.</div>
+  </div>
+
+  <div class="step"><div class="step-header">(c) Enantiomerism in penta-2,3-diene — [1]</div>
+    <div class="restate">Explain why penta-2,3-diene, \(\ce{CH3CH=C=CHCH3}\), can exhibit enantiomerism.</div>
+    <div class="verb">
+      <p>In the \(\ce{C=C=C}\) allene unit the <b>two \(\pi\) bonds are mutually perpendicular</b>, so the two end (sp\(^2\)) carbons and their substituents lie in <b>two perpendicular planes</b>. Each end carbon carries <b>two different groups (H and \(\ce{CH3}\))</b>, so the rigid molecule has <b>no plane of symmetry and is non-superimposable on its mirror image</b> — hence it exists as a pair of enantiomers, <b>despite having no chiral carbon</b>. <span class="mk">1</span> <span class="flag">INFERRED — no official key</span></p>
+    </div>
+  </div>
+
+  <div class="step"><div class="step-header">(d) Rotation in intermediate X, and the racemic outcome — [2]</div>
+    <div class="restate">Explain why it is easier to rotate the \(\ce{C_y-C_z}\) bond in intermediate X than in enantiomer 1, and why step 2 is likely to form a racemic mixture.</div>
+    <div class="verb">
+      <p>In enantiomer 1 the \(\ce{C_y-C_z}\) bond is a <b>full \(\ce{C=C}\) double bond (\(\sigma\) + \(\pi\))</b>; rotation is <b>restricted because it would require breaking the strong \(\pi\) bond</b>. In intermediate X the two remaining \(\pi\) electrons are <b>delocalised over \(\ce{C_x}\), \(\ce{C_y}\) and \(\ce{C_z}\)</b>, so the \(\ce{C_y-C_z}\) bond has only <b>partial double-bond character</b> (lower bond order, more single-bond-like) and can rotate much more easily. <span class="mk">1</span></p>
+      <p>In step 2, after rotation the \(\ce{CH3}\) on \(\ce{C_z}\) can re-form the allene pointing to either side with <b>equal probability</b>, so enantiomer 1 and enantiomer 2 are produced in <b>equal (50:50) amounts — a racemic mixture</b>. <span class="mk">1</span> <span class="flag">INFERRED — no official key</span></p>
+    </div>
+  </div>
+</div>
+
+<!-- ---------- MS Q6 ---------- -->
+<div class="msq">
+  <h3>Question 6 — [10]</h3>
+  <div class="src">(a)–(c) NYJC 2017 Prelim / P3 / Q2(b)(i)–(iii) · (d) NJC 2017 Prelim / P3 / Q4(c)</div>
+
+  <div class="step"><div class="step-header">(a) Mechanism for ICl and 1-phenylpropene — [3]</div>
+    <div class="restate">Name the mechanism and draw it, showing curly arrows, partial charges, lone pairs and the intermediate, with the slow and fast steps labelled.</div>
+    <div class="verb">
+      <p>The mechanism is <b>electrophilic addition</b>. <span class="mk">1</span></p>
+      <p><b>Slow step:</b> a curly arrow runs from the <b>\(\ce{C=C}\) \(\pi\) bond of 1-phenylpropene to the \(\delta+\) I of I–Cl</b> (drawn <sup>δ+</sup>I–Cl<sup>δ−</sup>), and a second curly arrow runs from the <b>I–Cl bond to Cl</b>. This forms the <b>benzylic carbocation \(\ce{C6H5-C^+(H)-CH(I)-CH3}\)</b> together with \(\ce{Cl^-}\), and the step is labelled <b>"slow"</b>. <span class="mk">1</span></p>
+      <p><b>Fast step:</b> a curly arrow runs from a <b>lone pair on \(\ce{Cl-}\) to the positively charged carbon</b>, giving the product with Cl and I on adjacent carbons. <span class="mk">1</span></p>
+    </div>
+    <div class="trap"><b>The arrow must start on a bond or a lone pair and end on the atom, not on the "+" sign.</b> Marks are also routinely lost for omitting the induced partial charges on I–Cl and for not writing "slow" against the first step.</div>
+  </div>
+
+  <div class="step"><div class="step-header">(b) Which carbocation is preferred — [2]</div>
+    <div class="restate">Two carbocation intermediates are possible. State which is preferred and explain.</div>
+    <div class="verb">
+      <p>The <b>benzylic carbocation</b>, with the positive charge on the carbon next to the ring, <b>is more stable</b> than the alternative and hence is the preferred carbocation. <span class="mk">1</span></p>
+      <p>The <b>empty p orbital of the carbocation centre overlaps with the delocalised \(\pi\) electron cloud of the benzene ring</b>, so electrons from the benzene ring delocalise to the carbocation centre. Hence the <b>positive charge can be dispersed into the benzene ring</b>, stabilising it further. <span class="mk">1</span></p>
+    </div>
+  </div>
+
+  <div class="step"><div class="step-header">(c) Reaction carried out in water — [1]</div>
+    <div class="restate">Explain what additional product forms if the reaction is carried out in water.</div>
+    <div class="verb">
+      <p>The <b>lone pairs of electrons on O in \(\ce{H2O}\) act as a competing nucleophile</b> in the second step to attack the carbocation intermediate. A proton is lost subsequently to form the compound with an <b>\(\ce{-OH}\) group</b>, with \(\ce{H3O+}\) as the by-product. <span class="mk">1</span></p>
+    </div>
+  </div>
+
+  <div class="step"><div class="step-header">(d) Oxidative cleavage of L and M — [4]</div>
+    <div class="restate">State the observations when L and M are treated with \(\ce{KMnO4}\), \(\ce{H2SO4}\)(aq), heat, and give the organic products.</div>
+    <div class="verb">
+      <p><b>L:</b> the <b>purple \(\ce{KMnO4}\) decolourises</b>, and <b>effervescence</b> is observed; the gas forms a <b>white precipitate in limewater</b>. <span class="mk">1</span></p>
+      <p><b>L + 7[O] \(\rightarrow\) 2\(\ce{(CH3)2C=O}\) (propanone) + 2\(\ce{CO2}\) + \(\ce{H2O}\)</b> <span class="mk">1</span></p>
+      <p><b>M:</b> the <b>purple \(\ce{KMnO4}\) decolourises</b>, but <b>no gas is evolved</b>, because M has <b>no terminal \(\ce{=CH2}\)</b>. <span class="mk">1</span></p>
+      <p><b>M + 3[O] \(\rightarrow\) a ketone + a carboxylic acid</b>, with no \(\ce{CO2}\). <span class="mk">1</span></p>
+    </div>
+    <div class="trap"><b>Effervescence is the diagnostic, not the decolourisation.</b> Every alkene decolourises hot acidified \(\ce{KMnO4}\). Only a <b>terminal \(\ce{=CH2}\)</b> is cleaved all the way to \(\ce{CO2}\), so the limewater test is what separates L from M.</div>
+  </div>
+</div>
+
+<!-- ---------- MS Q7 ---------- -->
+<div class="msq">
+  <h3>Question 7 — [12]</h3>
+  <div class="src">(a) HCI Soln / N2020 / P3 / Q4(a)(i) · (b) HCI Soln / N2019 / P3 / Q4(c)(ii) · (c) HCI Soln / N2022 / P3 / Q4(f)(iii) · (d) HCI Prelim / N2024 / P2 / Q3(c)(i) · (e) HCI Soln / N2018 / P2 / Q3(b)(i)–(ii)</div>
+
+  <div class="step"><div class="step-header">(a) Why the two bromoalkanes react by different mechanisms — [2]</div>
+    <div class="restate">Explain why 1-bromobutane and 2-bromo-2-methylpropane react with \(\ce{OH-}\) by different mechanisms.</div>
+    <div class="verb">
+      <p><b>1-bromobutane undergoes S<sub>N</sub>2</b>: it has <b>fewer alkyl groups</b> attached to the electron-deficient carbon, so the attack by \(\ce{OH-}\) is <b>less sterically hindered</b>. It does not undergo S<sub>N</sub>1 as a <b>primary carbocation is unstable</b>. <span class="mk">1</span></p>
+      <p><b>2-bromo-2-methylpropane undergoes S<sub>N</sub>1</b>: the <b>alkyl groups are electron-donating</b>, so it forms a <b>more stable tertiary carbocation</b>. In S<sub>N</sub>1 the <b>\(\ce{C-Br}\) bond breaks in the slow step to form a carbocation</b>, and the electron-donating alkyl groups <b>disperse the positive charge</b>. <span class="mk">1</span></p>
+    </div>
+  </div>
+
+  <div class="step"><div class="step-header">(b) Deducing E from the kinetics — [2]</div>
+    <div class="restate">When E reacts with \(\ce{NaOH}\)(aq), the rate is independent of \(\ce{[OH^-]}\). Deduce whether E is the primary or the secondary chloroalkane, and explain.</div>
+    <div class="verb">
+      <p>Since the <b>rate is independent of \(\ce{[OH^-]}\)</b>, the nucleophilic substitution occurs via an <b>S<sub>N</sub>1 mechanism</b>, in which the rate-determining step involves only the halogenoalkane. <span class="mk">1</span></p>
+      <p>Hence E is the <b>secondary chloroalkane, \(\ce{C6H5CHClCH3}\)</b>, because the <b>secondary (benzylic) carbocation is more stable than a primary carbocation</b>. F is then \(\ce{C6H5CH(OH)CH3}\). <span class="mk">1</span></p>
+    </div>
+    <div class="trap"><b>Rate law first, mechanism second, structure third.</b> S<sub>N</sub>1 gives rate = \(k\ce{[RX]}\) (first order overall); S<sub>N</sub>2 gives rate = \(k\ce{[RX][Nu]}\) (second order overall). Never name the mechanism without naming the order it implies.</div>
+  </div>
+
+  <div class="step"><div class="step-header">(c) Order of increasing rate of hydrolysis — [3]</div>
+    <div class="restate">Arrange M, N and O in order of increasing rate of hydrolysis and explain the order.</div>
+    <div class="verb">
+      <p>The relative rate increases <b>from O to M to N</b>, that is <b>O &lt; M &lt; N</b>. All three are primary halogenoalkanes undergoing nucleophilic substitution via S<sub>N</sub>2. <span class="mk">1</span></p>
+      <p>The <b>\(\ce{C-I}\) bond in N is weaker than the \(\ce{C-Br}\) bond</b> in M and O, so N has a <b>lower activation energy and the fastest rate</b>. <span class="mk">1</span></p>
+      <p>The <b>highly branched alkyl group in O is bulkier than in M, causing greater steric hindrance</b> for nucleophilic attack, so O has the slowest rate. <span class="mk">1</span></p>
+    </div>
+    <div class="trap"><b>Bond energy, not electronegativity.</b> The rate of hydrolysis follows the <b>\(\ce{C-X}\) bond energy</b> because that bond breaks in the rate-determining step, so \(\ce{R-I > R-Br > R-Cl}\). Arguing from electronegativity gives the order backwards.</div>
+  </div>
+
+  <div class="step"><div class="step-header">(d) Silver nitrate observations — [2]</div>
+    <div class="restate">Complete the observations for 2-bromopropane, 2-chloropropane and iodobenzene after heating with \(\ce{OH-}\), acidifying and adding \(\ce{AgNO3}\).</div>
+    <div class="verb">
+      <p><b>2-bromopropane:</b> <b>cream precipitate (\(\ce{AgBr}\))</b>; <b>insoluble in dilute \(\ce{NH3}\)</b>; <b>soluble in concentrated \(\ce{NH3}\)</b>. <span class="mk">1</span></p>
+      <p><b>2-chloropropane:</b> <b>white precipitate (\(\ce{AgCl}\))</b>; <b>soluble in dilute \(\ce{NH3}\)</b>; soluble in concentrated \(\ce{NH3}\). <b>Iodobenzene:</b> <b>no precipitate</b>, since the <b>\(\ce{C-I}\) bond to the ring does not hydrolyse with \(\ce{OH-}\)</b>, so no \(\ce{I-}\) is released; there is no residue and the ammonia tests do not apply. <span class="mk">1</span> <span class="flag">INFERRED — no official key</span></p>
+    </div>
+    <div class="trap"><b>The aryl halide is the whole point of the question.</b> A halogen bonded directly to a benzene ring is not hydrolysed, because the <b>lone pair on the halogen delocalises into the ring, giving the \(\ce{C-X}\) bond partial double-bond character</b>, so it is stronger and resists nucleophilic substitution.</div>
+  </div>
+
+  <div class="step"><div class="step-header">(e) Elimination of 2-chlorobutane — [3]</div>
+    <div class="restate">State the reagents and conditions for the elimination, and draw the skeletal formulae of the three alkene products D, E and F.</div>
+    <div class="verb">
+      <p>Reagents and conditions: <b>\(\ce{NaOH}\) dissolved in ethanol, heat</b>. Elimination is favoured in an <b>ethanolic medium</b>. <span class="mk">1</span></p>
+      <p>During elimination of HX, the <b>H can be removed from either carbon adjacent to the carbon bearing the Cl</b>, which is why more than one alkene forms. <span class="mk">1</span></p>
+      <p>The three products are <b>D = trans-but-2-ene</b> (the \(\ce{CH3}\) groups on opposite sides of the \(\ce{C=C}\)), <b>E = cis-but-2-ene</b> (the \(\ce{CH3}\) groups on the same side) and <b>F = but-1-ene</b>, \(\ce{CH2=CH-CH2-CH3}\). <span class="mk">1</span></p>
+    </div>
+    <div class="trap"><b>Elimination counts double.</b> Find every distinct alkene skeleton first, then check each one for cis-trans isomerism. Skipping the second check is how a three-product answer becomes a two-product answer.</div>
+  </div>
+</div>
+
+<!-- ---------- MS Q8 ---------- -->
+<div class="msq">
+  <h3>Question 8 — [9]</h3>
+  <div class="src">(a), (b) HCI Soln / N2019 / P3 / Q5(c)(i)–(ii) · (c) HCI Soln / N2022 / P3 / Q4(f)(i)</div>
+
+  <div class="step"><div class="step-header">(a) Structures of L, M and K with reagents and conditions — [4]</div>
+    <div class="restate">Draw the structures of L, M and K, and state the reagents and conditions for each of the three steps from \(\ce{BrCH2CH2Br}\).</div>
+    <div class="verb">
+      <p><b>Step 1: limited ethanolic \(\ce{NH3}\), heat.</b> L is the <b>mono-amine bromide, \(\ce{Br-CH2CH2-NH2}\)</b> (nucleophilic substitution of one Br by \(\ce{NH3}\), followed by deprotonation). <span class="mk">1</span></p>
+      <p><b>Step 2: ethanolic \(\ce{KCN}\), heat.</b> M is the <b>nitrile</b> formed by <b>nucleophilic substitution</b> of the remaining Br by \(\ce{CN-}\), \(\ce{NC-CH2CH2-NH2}\). <span class="mk">1</span></p>
+      <p><b>Step 3: dilute \(\ce{H2SO4}\), heat.</b> This is the <b>hydrolysis of the nitrile group(s) to the carboxylic acid</b>, giving <b>K, the dicarboxylic acid</b>. <span class="mk">1</span></p>
+      <p>Correct structures of L, M and K drawn out in full. <span class="mk">1</span> Use <b>excess dibromoethane or limited \(\ce{NH3}\)</b> to control how far the substitution goes.</p>
+    </div>
+    <div class="trap"><b>The nitrile route is the only way to add a carbon.</b> \(\ce{RX ->[\ce{ethanolic KCN}] RCN}\) is a <b>+1 carbon step-up</b>; hydrolysis with dilute acid then gives \(\ce{RCO2H}\), and \(\ce{H2}\)/Ni or \(\ce{LiAlH4}\) instead gives the amine \(\ce{RCH2NH2}\). Learn all three destinations from the nitrile.</div>
+  </div>
+
+  <div class="step"><div class="step-header">(b) Side product in step 1 — [2]</div>
+    <div class="restate">State a possible side product formed in step 1 and how its formation could be minimised.</div>
+    <div class="verb">
+      <p>In step 1, <b>\(\ce{H2NCH2CH2NH2}\)</b> (the diamine) may be formed. <span class="mk">1</span></p>
+      <p><b>Use a limited amount of \(\ce{NH3}\).</b> <span class="mk">1</span> Since there are <b>two electron-deficient C atoms in 1,2-dibromoethane for \(\ce{NH3}\) to attack</b>, the diamine is the likely side product; avoid suggesting a side product whose formation is hard to minimise.</p>
+    </div>
+  </div>
+
+  <div class="step"><div class="step-header">(c) Mechanism for 1-bromopropane with NaCN — [3]</div>
+    <div class="restate">State the mechanism and draw it, showing curly arrows, the transition state and the products.</div>
+    <div class="verb">
+      <p>The mechanism is <b>nucleophilic substitution, S<sub>N</sub>2</b>, because 1-bromopropane is a <b>primary halogenoalkane</b>. <span class="mk">1</span></p>
+      <p><b>The nucleophile \(\ce{CN^-}\) attacks the \(\delta+\) carbon bearing Br from the side opposite to Br</b> (a curly arrow from the lone pair on the C of \(\ce{CN^-}\) to that carbon, and a second curly arrow from the \(\ce{C-Br}\) bond to Br). <span class="mk">1</span></p>
+      <p>This passes through a <b>pentacoordinate transition state [NC····C····Br]<sup>−</sup></b>, with the three other groups in a plane, and gives <b>\(\ce{NC-CH2CH2CH3}\) (butanenitrile) + \(\ce{Br^-}\)</b>. <span class="mk">1</span></p>
+    </div>
+    <div class="trap"><b>The transition state must be drawn and it must carry the negative charge.</b> Include \(\ce{Br^-}\) in the products, mark <sup>δ+</sup>C–Br<sup>δ−</sup> on the starting material, and state "S<sub>N</sub>2" explicitly — describing backside attack without naming the mechanism does not score.</div>
+  </div>
+</div>
+
+<!-- ---------- MS Q9 ---------- -->
+<div class="msq">
+  <h3>Question 9 — [10]</h3>
+  <div class="src">(a), (b) HCI Soln / N2020 / P2 / Q4(a) and Q4(b) · (c) HCI Prelim / N2024 / P3 / Q2(c)(iii) · (d) HCI Prelim / N2024 / P3 / Q2(d)(ii)</div>
+
+  <div class="step"><div class="step-header">(a) Hydroquinone with excess NaOH(aq) — [1]</div>
+    <div class="restate">Write an equation for the reaction of hydroquinone (benzene-1,4-diol) with excess \(\ce{NaOH}\)(aq).</div>
+    <div class="verb">
+      <p><b>HO–C<sub>6</sub>H<sub>4</sub>–OH + 2OH<sup>−</sup> &nbsp;→&nbsp; <sup>−</sup>O–C<sub>6</sub>H<sub>4</sub>–O<sup>−</sup> + 2H<sub>2</sub>O</b> <span class="mk">1</span> Phenol is acidic, hence in excess strong base \(\ce{NaOH}\)(aq) <b>both phenolic groups are deprotonated</b>.</p>
+    </div>
+  </div>
+
+  <div class="step"><div class="step-header">(b) Experiment to compare acidity, and the order — [5]</div>
+    <div class="restate">Describe an experiment to compare the acidity of phenol, ethanol and hydroquinone, and explain the order of acidity.</div>
+    <div class="verb">
+      <p><b>Record the time taken for a fixed volume (for example 10 cm\(^3\)) of \(\ce{H2}\) gas to be collected</b> for each compound when <b>Na metal is added</b>. <span class="mk">1</span></p>
+      <p>Since acidity increases from ethanol to hydroquinone to phenol, the <b>time taken is shortest for phenol and longest for ethanol</b> — that is, the <b>rate is fastest for phenol and slowest for ethanol</b>. <span class="mk">1</span></p>
+      <p>The <b>electron-donating alkyl group intensifies the negative charge on the oxygen of the ethoxide ion</b>, destabilising the conjugate base, so <b>ethanol is the weakest acid</b>. <span class="mk">1</span></p>
+      <p>Both phenoxides have <b>resonance stabilisation due to delocalisation of the negative charge into the benzene ring</b>, so <b>phenol and hydroquinone are stronger acids than ethanol</b>. <span class="mk">1</span></p>
+      <p>However, <b>hydroquinone has an additional electron-donating \(\ce{OH}\) group on the ring, which intensifies the negative charge on the O and destabilises its conjugate base</b>; hence <b>phenol is a stronger acid than hydroquinone</b> and gives the greatest rate of \(\ce{H2}\) production. <span class="mk">1</span></p>
+      <p>You cannot differentiate ethanol from phenol by the <b>volume</b> of gas collected, as both give the same volume: \(\tfrac{0.010}{2} \times 24000 = 120\) cm\(^3\), so collecting 10 cm\(^3\) is feasible.</p>
+    </div>
+    <div class="trap"><b>Judge the conjugate base, never the acid.</b> An electron-donating group <b>intensifies</b> the negative charge on the alkoxide or phenoxide, <b>destabilises</b> it, and makes the parent a <b>weaker</b> acid. An electron-withdrawing group disperses the charge, stabilises the base, and makes the parent a stronger acid.</div>
+  </div>
+
+  <div class="step"><div class="step-header">(c) Distinguishing the three iodo-alcohols — [3]</div>
+    <div class="restate">Describe how you would distinguish B, C and D using acidified \(\ce{K2Cr2O7}\), and then a reagent other than 2,4-DNPH to separate the products of the positive tests.</div>
+    <div class="verb">
+      <p>Step 1, heat with acidified \(\ce{K2Cr2O7}\): <b>B (primary) — orange dichromate turns green</b>, as it is oxidised to a carboxylic acid; <b>C (secondary) — orange turns green</b>, as it is oxidised to a ketone. <span class="mk">1</span></p>
+      <p><b>D (tertiary) — remains orange</b>, since a tertiary alcohol is not oxidised. <span class="mk">1</span></p>
+      <p>Step 2: the positive products are a <b>carboxylic acid (from B) and a ketone (from C)</b>. Reagent = <b>aqueous \(\ce{Na2CO3}\) (or \(\ce{NaHCO3}\))</b>: the carboxylic acid from B gives <b>effervescence (colourless \(\ce{CO2}\))</b>, while the ketone from C gives <b>no effervescence and no reaction</b>. <span class="mk">1</span> <span class="flag">INFERRED — no official key</span></p>
+    </div>
+    <div class="trap"><b>The carbonate test is a pKa ladder question.</b> A reaction only proceeds if your acid is <b>stronger than the conjugate acid being formed</b>. A carboxylic acid beats carbonic acid, so \(\ce{CO2}\) is released; <b>phenol does not</b>, which is exactly how a phenol is told apart from a carboxylic acid.</div>
+  </div>
+
+  <div class="step"><div class="step-header">(d) Position of R on the ring — [1]</div>
+    <div class="restate">Deduce the position of R relative to the \(\ce{-OH}\) from the change in \(M_r\) from 178.0 to 335.8 on treatment with \(\ce{Br2}\)(aq).</div>
+    <div class="verb">
+      <p>\(\Delta M_r = 335.8 - 178.0 = 157.8 = 2 \times 78.9\), so <b>two bromine atoms are substituted</b> into the ring. <b>Phenol directs bromination to positions ortho and para to \(\ce{-OH}\)</b> (positions 2, 4 and 6). Since only <b>two</b> and not three Br are introduced, <b>one of these activated positions must already be occupied by R</b>; therefore <b>R is at position 2 or 4</b>, ortho or para to \(\ce{-OH}\), and not position 3. <span class="mk">1</span> <span class="flag">INFERRED — no official key</span></p>
+    </div>
+    <div class="trap"><b>Aqueous bromine, not bromine in \(\ce{CCl4}\).</b> Phenol's ring is <b>activated because the lone pair on O is delocalised into it</b>, so it brominates in <b>aqueous \(\ce{Br2}\) at room temperature with no halogen carrier</b>, by <b>electrophilic substitution</b> (each substitution costs \(M_r\) 78.9, since one H leaves). \(\ce{Br2}\) in \(\ce{CCl4}\) in the dark is the <b>\(\ce{C=C}\)</b> test, an electrophilic <b>addition</b> worth \(M_r\) 159.8.</div>
+  </div>
+</div>
+
+<!-- ---------- MS Q10 ---------- -->
+<div class="msq">
+  <h3>Question 10 — [10]</h3>
+  <div class="src">HCI Soln / N2017 / P3 / Q3(d) = N2017 / P3 / Q3(d), EJC key</div>
+  <div class="restate">Use all of the evidence to deduce the structures of I (\(\ce{C6H8O2}\)), J (\(\ce{C6H10O3}\)) and K (\(\ce{C3H4O3}\)), stating the type of reaction and the deduction for each observation.</div>
+
+  <div class="step"><div class="step-header">The deduction table — one mark per row, up to [7]</div>
+    <table class="data">
+      <tr><th>Observation</th><th>Type of reaction</th><th>Deduction</th></tr>
+      <tr><td class="l">I (\(\ce{C6H8O2}\)) decolourises \(\ce{Br2}\)(aq)</td><td class="l"><b>Electrophilic addition</b></td><td class="l"><b>I is an alkene</b> <span class="mk">1</span></td></tr>
+      <tr><td class="l">I + Na, no reaction</td><td class="l">—</td><td class="l"><b>I has no alcohol or carboxylic acid group</b> <span class="mk">1</span></td></tr>
+      <tr><td class="l">I + alkaline \(\ce{I2}\)(aq), no reaction</td><td class="l">—</td><td class="l"><b>I has no \(\ce{-COCH3}\) group</b> <span class="mk">1</span></td></tr>
+      <tr><td class="l">I is optically active</td><td class="l">—</td><td class="l"><b>I contains a chiral carbon</b> <span class="mk">1</span></td></tr>
+      <tr><td class="l">I + hot \(\ce{H2SO4}\)(aq) \(\rightarrow\) J (\(\ce{C6H10O3}\))</td><td class="l"><b>Acid hydrolysis</b></td><td class="l"><b>I is a cyclic ester</b>; J has an extra \(\ce{H2O}\), so <b>J contains both a carboxylic acid and an alcohol group</b> <span class="mk">1</span></td></tr>
+      <tr><td class="l">J + hot \(\ce{KMnO4}\) \(\rightarrow\) K (\(\ce{C3H4O3}\)) as the only product</td><td class="l"><b>Oxidation</b></td><td class="l"><b>Oxidative cleavage of the \(\ce{C=C}\) with no loss of C</b>; J is not a terminal alkene; the <b>2° alcohol is oxidised to a ketone</b> <span class="mk">1</span></td></tr>
+      <tr><td class="l">K reacts with Na</td><td class="l"><b>Redox reaction</b></td><td class="l"><b>K contains a \(\ce{-CO2H}\) group</b> <span class="mk">1</span></td></tr>
+      <tr><td class="l">K + alkaline \(\ce{I2}\)(aq) \(\rightarrow\) yellow ppt</td><td class="l"><b>Positive iodoform test</b></td><td class="l"><b>K contains a \(\ce{-COCH3}\) group</b> <span class="mk">1</span></td></tr>
+    </table>
+    <p style="font-size:.86em;color:#4b5563">Award <b>up to 7 marks</b> across the eight rows; the reaction-type column and the deduction column must both be right for a row to score.</p>
+  </div>
+
+  <div class="step"><div class="step-header">The three structures — [3]</div>
+    <div class="verb">
+      <p><b>I is 3,5-dimethylfuran-2(5H)-one</b> — a <b>five-membered cyclic ester (lactone)</b> with a ring \(\ce{C=C}\), a methyl on the ring, and a <b>chiral carbon</b> bearing a methyl. <span class="mk">1</span></p>
+      <p><b>J is \(\ce{HO-CH(CH3)-CH=C(CH3)-CO2H}\)</b>, the hydroxy-acid from opening the lactone. <span class="mk">1</span></p>
+      <p><b>K is \(\ce{CH3-CO-CO2H}\)</b>, 2-oxopropanoic acid (pyruvic acid). <span class="mk">1</span></p>
+      <p>The EJC key reaches the same structures by prose: <b>degree of unsaturation = 3</b>; hydrolysis of the lactone gives the hydroxy-acid J; oxidative cleavage of J's \(\ce{C=C}\) gives <b>2 mol of K</b>.</p>
+    </div>
+    <div class="trap"><b>Two oxygens, no reaction with Na, and a hydrolysis that adds \(\ce{H2O}\) means an ester.</b> That is the only functional group that hides both oxygens from sodium and reappears as an acid plus an alcohol after hydrolysis. In structural elucidation you must <b>explain qualitatively how you deduced the structure</b> — name the reaction type and the functional group behind every observation, not just the final answer.</div>
+  </div>
+</div>
+
+</div><!-- /markscheme -->
+
+<script>
+function toggleMS(btn){
+  var d = document.getElementById('markscheme');
+  var open = d.style.display !== 'none';
+  d.style.display = open ? 'none' : 'block';
+  btn.textContent = open ? 'Reveal mark scheme' : 'Hide mark scheme';
+  if(!open && window.MathJax && window.MathJax.typesetPromise){ window.MathJax.typesetPromise([d]); }
+}
 </script>
 </body>
 </html>
