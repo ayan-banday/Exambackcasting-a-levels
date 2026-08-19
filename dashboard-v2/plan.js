@@ -1999,12 +1999,13 @@ window.PLAN = {
      "doneDate": null
     },
     {
-     "mins": 120,
+     "mins": 45,
      "subject": "maths",
-     "name": "Maths — Diff Eqns (deepen)",
-     "desc": "",
-     "done": false,
-     "doneDate": null
+     "name": "Maths — Series Expansion + Differential Equations GAP CLUSTER (6Q · 45m)",
+     "desc": "DRILLED 19 Aug. CLOSED: displacement-by-integration, family of solution curves, factor-out-the-constant. STILL ACTIVE: validity = INTERSECTION of ranges (Q5iii); implicitly differentiating the substitution (Q4, was a blank); constant placement on separation (Q1, recurring). Careless: didn't substitute the constant back (Q2), one letter instead of two (Q3), copied wrong general term (Q5i). New: raising a series to a power (Q6i).",
+     "done": true,
+     "doneDate": "2026-08-19",
+     "clusterHref": "clusters/gap_math_de_maclaurin.html"
     }
    ],
    "week": 5
