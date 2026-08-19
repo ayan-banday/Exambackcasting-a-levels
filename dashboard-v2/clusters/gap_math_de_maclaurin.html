@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Series Expansion × Differential Equations — Gap Cluster (9758)</title>
+<script>
+  window.MathJax = { tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], processEscapes: true, tags:'none' }, svg:{fontCache:'global'} };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card-bg:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --amber:#d97706; --green:#059669; --green-soft:#ecfdf5;
+    --cover:#f3f4f6; --accent:#6d28d9; --red:#dc2626; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:920px;margin:0 auto;padding:36px 24px 90px;line-height:1.65;color:var(--text);background:var(--bg)}
+  h1,h3,.label,.controls,button,.step-header,.hd .sub,.hd .meta,.cardhead,.conf,.src,.marks,.testline{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  .hd{border-bottom:2.5px solid #111;padding-bottom:16px;margin-bottom:10px;text-align:center}
+  .hd h1{font-size:1.55em;font-weight:800;letter-spacing:.4px;margin:0;color:#111}
+  .hd .sub{font-size:1.02em;margin-top:4px;color:#333}
+  .hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:.8em;color:var(--muted);margin-top:9px}
+  p{margin:8px 0}
+  .intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--accent);padding:15px 20px;border-radius:6px;margin:18px 0}
+  .conv{background:#fff7ed;border:2px solid var(--amber);border-radius:8px;padding:13px 18px;margin:18px 0 8px;font-size:.95em;color:#7c2d12}
+  .conv b{color:#b91c1c}
+  .controls{position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:100;border-bottom:1px solid var(--border);margin:22px 0 20px;display:flex;gap:10px;flex-wrap:wrap}
+  .controls button{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.85em;font-weight:500}
+  .toc{background:var(--card-bg);border:1px solid var(--border);padding:16px 24px;border-radius:6px;margin-bottom:30px;font-size:.9em}
+  .toc strong{display:block;margin-bottom:8px;color:#111}
+  .toc a{color:var(--blue);text-decoration:none;display:inline-block;width:31%;min-width:120px;line-height:2}
+  .toc a b{color:#111}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin:24px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .cardhead{font-size:.72em;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+  .src{font-family:ui-monospace,Menlo,monospace;font-size:.72em;color:var(--amber);margin:3px 0 10px}
+  .stem{background:#1e293b;color:#f1f5f9;padding:14px 18px;border-radius:6px;margin:8px 0;line-height:1.75}
+  .stem .sub{display:block;margin-top:8px}
+  .marks{display:inline-block;font-size:.8em;background:#fde68a;color:#92400e;padding:2px 8px;border-radius:10px;font-weight:700;margin-left:6px}
+  .conf{background:#f8fafc;border:1px dashed #cbd5e1;border-radius:6px;padding:8px 14px;margin:12px 0 4px;font-size:.85em;color:#475569}
+  .conf b{color:#0f172a}
+  .block.answer{background:var(--green-soft);border-left:4px solid var(--green);border-radius:6px;position:relative;min-height:60px;padding:12px 16px 14px;margin:14px 0 2px}
+  .label{display:block;text-transform:uppercase;font-size:.73em;letter-spacing:.08em;font-weight:700;margin-bottom:6px;color:var(--green)}
+  .step{margin:10px 0;padding:8px 12px;background:rgba(255,255,255,.6);border-radius:4px;border-left:2px solid var(--green)}
+  .step-header{font-size:.78em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .mk{display:inline-block;font-size:.8em;color:var(--green);font-weight:700;margin-left:4px}
+  .name{display:block;font-size:.86em;color:#475569;font-style:italic;margin:6px 0;border-left:2px solid var(--border);padding-left:10px}
+  .keynote{background:#fef2f2;border-left:3px solid var(--red);padding:7px 12px;border-radius:4px;margin:9px 0 0;font-size:.87em;color:#7f1d1d}
+  .keynote b{color:var(--red)}
+  .testline{margin-top:12px;padding-top:8px;border-top:1px dashed #a7f3d0;font-size:.8em;color:#047857}
+  .testline b{color:#065f46}
+  .reveal-btn{position:absolute;top:10px;right:10px;background:var(--green);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:.8em;font-weight:600;z-index:3}
+  .reveal-btn.hide-state{background:var(--muted)}
+  .answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-style:italic;font-size:.9em;z-index:2;text-align:center;padding:0 20px}
+  .answer-overlay.hidden{opacity:0;pointer-events:none}
+  .block.answer .answer-content{padding-right:60px}
+  table{border-collapse:collapse;margin:11px 0;font-size:.88em;width:100%}
+  th,td{border:1px solid #e5e7eb;padding:5px 9px;text-align:left;vertical-align:top}
+  th{background:#f3f4f6;font-weight:600;font-family:-apple-system,sans-serif}
+  hr{border:none;border-top:1px solid var(--border);margin:40px 0}
+  mjx-container{overflow-x:auto;overflow-y:hidden;max-width:100%}
+  @media print{body{background:#fff;padding:20px;max-width:100%}.controls,.reveal-btn{display:none!important}.answer-overlay{display:none!important}.card{box-shadow:none;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<div class="hd">
+  <h1>H2 MATHEMATICS</h1>
+  <div class="sub">Series Expansion &times; Differential Equations &mdash; Gap Cluster</div>
+  <div class="meta">9758 &middot; 6 questions &middot; <b>45 marks &middot; ~45 min &middot; built from your 17 Aug 11-question drill</b></div>
+</div>
+
+<div class="intro">
+Six questions, one per gap, no padding. Every stem is a real A-Level or prelim question you have <b>not</b> seen, and each attacks a gap from a different angle than the question that exposed it. Attempt cold, say your confidence out loud before you reveal, then self-mark against the worked solution.
+</div>
+
+<div class="conv">
+<b>The two that cost you whole answers.</b> On the cooling question you solved everything correctly and then stopped: <em>"once I found A, which is correct, I didn't go ahead and find K."</em> And on the parachutist you tried to get the time by dividing: <em>"I can't just divide like that, I need to integrate it again."</em> Q1 and Q2 are those two, in different clothes.
+</div>
+
+<div class="controls"><button onclick="revealAll()">Reveal all</button><button onclick="hideAll()">Hide all</button></div>
+
+<div class="toc"><strong>The 6 questions &middot; 45 marks</strong>
+<a href="#q1"><b>Q1</b> <span class="marks">[5]</span></a><a href="#q2"><b>Q2</b> <span class="marks">[8]</span></a><a href="#q3"><b>Q3</b> <span class="marks">[8]</span></a>
+<a href="#q4"><b>Q4</b> <span class="marks">[5]</span></a><a href="#q5"><b>Q5</b> <span class="marks">[11]</span></a><a href="#q6"><b>Q6</b> <span class="marks">[8]</span></a>
+</div>
+
+
+<!-- Q1 -->
+<div class="card" id="q1">
+  <div class="cardhead">Question 1 <span class="marks">[5]</span></div>
+  <div class="src">CJC 2015 Tutorial Q7 &middot; HCI Ch9 Supplementary Q1</div>
+  <div class="stem">
+    In a favourable environment the number of bacteria increases at a rate proportional to the number present. If \( 1\,000\,000 \) bacteria are present at a certain time and \( 2\,000\,000 \) are present an hour later, find the number of bacteria present four hours after the first measurement.
+    <span class="marks">[5]</span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">form and solve the DE &mdash; general solution first</div>
+        <span class="name">"Rate of increase proportional to the number present" with \(N\) the number at time \(t\) hours.</span>
+        \[ \frac{\mathrm dN}{\mathrm dt}=kN,\qquad k>0 \]<span class="mk">(1)</span>
+        \[ \int\frac1N\,\mathrm dN=\int k\,\mathrm dt\ \Rightarrow\ \ln N=kt+c\ \Rightarrow\ N=A e^{kt},\quad A=e^{c} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">FIRST data point gives \(A\)</div>
+        <span class="name">Take \(t=0\) at the first measurement: \(N=1\,000\,000\).</span>
+        \[ 1\,000\,000=Ae^{0}\ \Rightarrow\ A=10^{6} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">SECOND data point gives \(k\) &mdash; this is the step that is easy to skip</div>
+        <span class="name">At \(t=1\), \(N=2\,000\,000\).</span>
+        \[ 2\times10^{6}=10^{6}e^{k}\ \Rightarrow\ e^{k}=2\ \Rightarrow\ k=\ln 2 \]<span class="mk">(1)</span>
+        \[ \therefore\ N=10^{6}e^{(\ln 2)t}=10^{6}\cdot 2^{\,t} \]
+      </div>
+      <div class="step"><div class="step-header">now answer what was asked</div>
+        \[ t=4:\qquad N=10^{6}\times 2^{4}=16\,000\,000 \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>The exact miss from the cooling question.</b> A particular solution has <b>two</b> unknowns — the constant of integration \(A\) <em>and</em> the proportionality constant \(k\). You need <b>two</b> pieces of data: the initial condition pins \(A\), a <b>second</b> reading pins \(k\). If a stem gives you two data points, that is why. Finding \(A\) and stopping leaves \(k\) unknown and the question unanswerable.</div>
+      <div class="testline"><b>Tests:</b> forming an exponential-growth DE, and using both given data points &mdash; one for \(A\), one for \(k\) &mdash; before evaluating.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q2 -->
+<div class="card" id="q2">
+  <div class="cardhead">Question 2 <span class="marks">[8]</span></div>
+  <div class="src">A-Level 2016 P1 Q8</div>
+  <div class="stem">
+    A stone is released on the surface of a pond and falls vertically. The distance fallen in \(t\) seconds is \(x\) metres, and \(x=0\) and \( \dfrac{\mathrm dx}{\mathrm dt}=0 \) when \(t=0\). The motion is modelled by \( \dfrac{\mathrm d^2x}{\mathrm dt^2}+2\dfrac{\mathrm dx}{\mathrm dt}=10 \).
+    <span class="sub">(i)(a) By substituting \( y=\dfrac{\mathrm dx}{\mathrm dt} \), show that the differential equation can be written as \( \dfrac{\mathrm dy}{\mathrm dt}=10-2y \). <span class="marks">[1]</span></span>
+    <span class="sub">(i)(b) Find \(y\) in terms of \(t\), and hence find \(x\) in terms of \(t\). <span class="marks">[6]</span></span>
+    <span class="sub">(ii) The pond is \(5\) metres deep. Find the time the stone takes to reach the bottom, giving your answer to 2 decimal places. <span class="marks">[1]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i)(a) the substitution drops the order by one</div>
+        <span class="name">\( y=\dfrac{\mathrm dx}{\mathrm dt} \Rightarrow \dfrac{\mathrm dy}{\mathrm dt}=\dfrac{\mathrm d^2x}{\mathrm dt^2} \).</span>
+        \[ \frac{\mathrm dy}{\mathrm dt}+2y=10\ \Rightarrow\ \frac{\mathrm dy}{\mathrm dt}=10-2y\ \text{(shown)} \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(i)(b) separate and solve for \(y\)</div>
+        \[ \int\frac{1}{10-2y}\,\mathrm dy=\int\mathrm dt\ \Rightarrow\ -\tfrac12\ln|10-2y|=t+c \]<span class="mk">(1)</span>
+        \[ 10-2y=Ae^{-2t}\ \Rightarrow\ y=5-\tfrac{A}{2}e^{-2t} \]<span class="mk">(1)</span>
+        <span class="name">\( y=0 \) when \( t=0 \): \( 0=5-\tfrac A2 \Rightarrow \tfrac A2=5 \).</span>
+        \[ y=5\left(1-e^{-2t}\right) \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">now INTEGRATE \(y\) to get \(x\) &mdash; a second integration, so a second constant</div>
+        <span class="name">\( y=\dfrac{\mathrm dx}{\mathrm dt} \), so \( x=\displaystyle\int y\,\mathrm dt \).</span>
+        \[ x=\int 5\left(1-e^{-2t}\right)\mathrm dt=5t+\tfrac52 e^{-2t}+D \]<span class="mk">(1)</span>
+        <span class="name">\( x=0 \) when \( t=0 \): \( 0=0+\tfrac52+D \Rightarrow D=-\tfrac52 \).</span>
+        \[ x=5t-\tfrac52+\tfrac52 e^{-2t} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) solve for the time</div>
+        \[ 5t-\tfrac52+\tfrac52 e^{-2t}=5\ \Rightarrow\ t=1.47\ \text{s (2 d.p.)} \]<span class="mk">(1)</span>
+        <span class="name">(No exact rearrangement &mdash; solve numerically on the GC, but show the equation you solved.)</span>
+      </div>
+      <div class="keynote"><b>Distance is never velocity ÷ time here.</b> The velocity is changing, so you must <b>integrate</b>: \( x=\int v\,\mathrm dt \). Differentiate for acceleration, integrate for displacement. Note also the <b>two separate constants</b> — \(A\) from solving for \(y\), then a fresh \(D\) from integrating again. Two integrations, two letters.</div>
+      <div class="testline"><b>Tests:</b> reducing a second-order equation with \( y=\frac{\mathrm dx}{\mathrm dt} \); solving for velocity; then integrating velocity to displacement with a second independent constant; and a numerical solve.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q3 -->
+<div class="card" id="q3">
+  <div class="cardhead">Question 3 <span class="marks">[8]</span></div>
+  <div class="src">SAJC 2016 Prelim P1 Q8 (modified) &middot; HCI Tutorial 9 Q6</div>
+  <div class="stem">
+    The variables \(w\), \(x\) and \(y\) are connected by the differential equations
+    \[ \frac{\mathrm dw}{\mathrm dx}=-\tfrac32 w-2\quad\text{(A)},\qquad\qquad \frac{\mathrm dy}{\mathrm dx}=w\quad\text{(B)}. \]
+    <span class="sub">(i) Solve equation (A) to find \(w\) in terms of \(x\). <span class="marks">[3]</span></span>
+    <span class="sub">(ii) Hence find \(y\) in terms of \(x\). <span class="marks">[2]</span></span>
+    <span class="sub">(iii) Different arbitrary constants found in part (ii) yield different solution curves. Some of the solution curves are straight lines. Write down the equation of one of these lines. On a single diagram, sketch your line together with a non-linear solution curve that has your line as an asymptote, indicating clearly any axes intercepts. <span class="marks">[3]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) separate, integrate, keep the constant alive</div>
+        \[ \frac{\mathrm dw}{\mathrm dx}=-\frac{3w+4}{2}\ \Rightarrow\ \int\frac{2}{3w+4}\,\mathrm dw=-\int\mathrm dx \]<span class="mk">(1)</span>
+        \[ \tfrac23\ln|3w+4|=-x+c\ \Rightarrow\ \ln|3w+4|=-\tfrac32x+c' \]<span class="mk">(1)</span>
+        <span class="name">Exponentiate; \( \pm e^{c'} \) collapses into a single new constant \(B\).</span>
+        \[ 3w+4=Be^{-\frac32x}\ \Rightarrow\ w=\tfrac13 Be^{-\frac32x}-\tfrac43 \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) integrate again &mdash; and use a NEW letter for the new constant</div>
+        \[ y=\int w\,\mathrm dx=\int\left(\tfrac13 Be^{-\frac32x}-\tfrac43\right)\mathrm dx=-\tfrac29 Be^{-\frac32x}-\tfrac43x+D \]<span class="mk">(1)</span>
+        <span class="name">Write \( C=-\tfrac29B \) to tidy it. \(C\) and \(D\) are <b>independent</b> arbitrary constants.</span>
+        \[ y=Ce^{-\frac32x}-\tfrac43x+D \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) the family &mdash; and which member is a straight line</div>
+        <span class="name">Different \((C,D)\) give different members of the family. The curve is a straight line exactly when the exponential term vanishes, i.e. \( C=0 \).</span>
+        \[ C=0:\qquad y=-\tfrac43x+D. \quad\text{Taking }D=0:\ \ \boxed{y=-\tfrac43x} \]<span class="mk">(1)</span>
+        <span class="name">For a non-linear member take \(C\neq0\), say \(C=1\), \(D=0\): \( y=e^{-\frac32x}-\tfrac43x \). As \(x\to\infty\), \( e^{-\frac32x}\to0 \), so this curve <b>approaches the line \(y=-\tfrac43x\) from above</b> — the line is its asymptote. As \(x\to-\infty\) the exponential blows up, so the curve rises steeply. It cuts the \(y\)-axis at \( y=1 \).</span>
+        \[ \text{Sketch: the line }y=-\tfrac43x\text{, and the curve }y=e^{-\frac32x}-\tfrac43x\text{ hugging it as }x\to\infty,\ \text{with }y\text{-intercept }1. \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>"Family of solution curves" — what the question actually wants.</b> The general solution contains arbitrary constants; <b>each choice of constants is one member</b> of the family. Two things earn the marks: (1) name a specific member (here, kill the exponential with \(C=0\) to get the straight line); (2) sketch a second, non-linear member and show the <b>shared asymptotic behaviour</b> — because the decaying exponential dies, every member converges onto the same line. Mark axes intercepts.</div>
+      <div class="testline"><b>Tests:</b> keeping the arbitrary constant through exponentiation; a second integration introducing a second independent constant; and reading a family of solution curves off the general solution.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q4 -->
+<div class="card" id="q4">
+  <div class="cardhead">Question 4 <span class="marks">[5]</span></div>
+  <div class="src">NYJC 2020 Prelim P1 Q7 &middot; HCI Tutorial 9 Q5</div>
+  <div class="stem">
+    The curve \(C\), where \(y\ge 0\), satisfies the differential equation
+    \[ \left(1+x^2\right)y\,\frac{\mathrm dy}{\mathrm dx}+2xy^2=0, \]
+    where \(y=1\) when \(x=0\). By using the substitution \( z=y^2 \), solve the differential equation and find the value of \(y\) when \(x=1\).
+    <span class="marks">[5]</span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">differentiate the substitution, then substitute BOTH things</div>
+        <span class="name">\( z=y^2 \). Differentiate implicitly with respect to \(x\): \( \dfrac{\mathrm dz}{\mathrm dx}=2y\dfrac{\mathrm dy}{\mathrm dx} \), so \( y\dfrac{\mathrm dy}{\mathrm dx}=\tfrac12\dfrac{\mathrm dz}{\mathrm dx} \).</span>
+        <span class="name">Now replace <b>both</b> \( y\frac{\mathrm dy}{\mathrm dx} \) <b>and</b> \( y^2 \) in the equation.</span>
+        \[ \left(1+x^2\right)\cdot\tfrac12\frac{\mathrm dz}{\mathrm dx}+2xz=0\ \Rightarrow\ \frac{\mathrm dz}{\mathrm dx}=\frac{-4xz}{1+x^2} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">separate &mdash; the right side is an \(f'/f\) log</div>
+        \[ \int\frac1z\,\mathrm dz=-2\int\frac{2x}{1+x^2}\,\mathrm dx\ \Rightarrow\ \ln|z|=-2\ln\left(1+x^2\right)+c \]<span class="mk">(1)</span>
+        \[ z=\frac{A}{\left(1+x^2\right)^{2}} \]
+      </div>
+      <div class="step"><div class="step-header">return to \(y\), then apply the condition</div>
+        <span class="name">\( z=y^2 \) and \( y\ge0 \), so take the positive root.</span>
+        \[ y=\frac{\sqrt A}{1+x^2}. \qquad y=1\ \text{when}\ x=0\ \Rightarrow\ \sqrt A=1 \]
+        \[ y=\frac{1}{1+x^2} \]<span class="mk">(1)</span>
+        \[ x=1:\qquad y=\tfrac12 \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Substitution DEs — the two-substitution rule you worked out yourself.</b> Whatever the substitution, you always do <b>two</b> replacements: (1) differentiate the substitution to convert the derivative, (2) replace the original variable wherever it appears. Here \(z=y^2\) handles both \(y\frac{\mathrm dy}{\mathrm dx}\) and \(y^2\). Miss either and you are left with a mixed equation you cannot separate.</div>
+      <div class="testline"><b>Tests:</b> a substitution differential equation of a different flavour from \(z=x-y\) &mdash; here \(z=y^2\) &mdash; plus an \(f'/f\) integral and returning to the original variable before applying the condition.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q5 -->
+<div class="card" id="q5">
+  <div class="cardhead">Question 5 <span class="marks">[11]</span></div>
+  <div class="src">A-Level 2007 P2 Q3</div>
+  <div class="stem">
+    <span class="sub">(i) By successively differentiating \( (1+x)^n \), find Maclaurin's series for \( (1+x)^n \), up to and including the term in \( x^3 \). <span class="marks">[4]</span></span>
+    <span class="sub">(ii) Obtain the expansion of \( (4-x)^{3/2}\left(1+2x^2\right)^{3/2} \) up to and including the term in \( x^3 \). <span class="marks">[5]</span></span>
+    <span class="sub">(iii) Find the set of values of \(x\) for which the expansion in part (ii) is valid. <span class="marks">[2]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) repeated differentiation at \(x=0\)</div>
+        <span class="name">\( \mathrm f(x)=(1+x)^n \Rightarrow \mathrm f'(x)=n(1+x)^{n-1} \), \( \mathrm f''(x)=n(n-1)(1+x)^{n-2} \), \( \mathrm f'''(x)=n(n-1)(n-2)(1+x)^{n-3} \). At \(x=0\) these are \(1,\,n,\,n(n-1),\,n(n-1)(n-2)\).</span>
+        \[ (1+x)^n=1+nx+\frac{n(n-1)}{2!}x^2+\frac{n(n-1)(n-2)}{3!}x^3+\cdots \]<span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii) FACTOR THE CONSTANT OUT of the first bracket before expanding</div>
+        <span class="name">\( (4-x)^{3/2} \) is not of the form \( (1+u)^n \) until you pull the \(4\) out — the constant, not the coefficient of \(x\).</span>
+        \[ (4-x)^{3/2}=4^{3/2}\left(1-\tfrac x4\right)^{3/2}=8\left(1-\tfrac x4\right)^{3/2} \]<span class="mk">(1)</span>
+        <span class="name">Expand each factor to \(x^3\) using (i) with \(n=\tfrac32\):</span>
+        \[ \left(1-\tfrac x4\right)^{3/2}=1-\tfrac{3}{8}x+\tfrac{3}{128}x^2+\tfrac{1}{1024}x^3+\cdots \]<span class="mk">(1)</span>
+        \[ \left(1+2x^2\right)^{3/2}=1+3x^2+\cdots\quad(\text{next term is in }x^4,\ \text{so it does not reach }x^3) \]<span class="mk">(1)</span>
+        <span class="name">Multiply and collect up to \(x^3\). Note the \(3x^2\) from the second bracket multiplies the \(x\)-term of the first to reach \(x^3\) — this is why both factors must be carried far enough.</span>
+        \[ 8\left(1-\tfrac38x+\tfrac{3}{128}x^2+\tfrac{1}{1024}x^3\right)\left(1+3x^2\right) \]
+        \[ =8-3x+\frac{387}{16}x^2-\frac{1151}{128}x^3+\cdots \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(iii) validity is the INTERSECTION of the two conditions</div>
+        <span class="name">\( \left(1-\tfrac x4\right)^{3/2} \) needs \( \left|\tfrac x4\right|<1\Rightarrow|x|<4 \). \( \left(1+2x^2\right)^{3/2} \) needs \( \left|2x^2\right|<1\Rightarrow|x|<\tfrac1{\sqrt2} \).</span>
+        \[ \text{Both must hold: }\ \left\{x\in\mathbb R:\ -\tfrac{1}{\sqrt2}<x<\tfrac{1}{\sqrt2}\right\} \]<span class="mk">(1)</span><span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>Three of your gaps in one question.</b> (1) <b>Factor out the constant</b>, not the coefficient of \(x\): \( (4-x)^{3/2}=8\left(1-\tfrac x4\right)^{3/2} \). (2) <b>Expand each factor far enough</b> — a low-order term in one series multiplies a high-order term in the other, so to reach \(x^3\) in a <em>product</em> you must carry both to \(x^3\). (3) Validity of a product is the <b>intersection</b> of the individual ranges — the tighter one wins.</div>
+      <div class="testline"><b>Tests:</b> deriving the binomial series by repeated differentiation; expanding a product of two binomial series to a required power; and finding the validity range of a product expansion.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<!-- Q6 -->
+<div class="card" id="q6">
+  <div class="cardhead">Question 6 <span class="marks">[8]</span></div>
+  <div class="src">A-Level 2011 P1 Q4</div>
+  <div class="stem">
+    <span class="sub">(i) Use the first three non-zero terms of the Maclaurin series for \( \cos x \) to find the Maclaurin series for \( \mathrm g(x) \), where \( \mathrm g(x)=\cos^6 x \), up to and including the term in \( x^4 \). <span class="marks">[3]</span></span>
+    <span class="sub">(ii)(a) Use your answer to part (i) to give an approximation for \( \displaystyle\int_{0}^{a}\mathrm g(x)\,\mathrm dx \) in terms of \(a\), and evaluate this approximation in the case where \( a=\tfrac{\pi}{4} \). <span class="marks">[3]</span></span>
+    <span class="sub">(ii)(b) Use your calculator to find an accurate value for \( \displaystyle\int_{0}^{\pi/4}\mathrm g(x)\,\mathrm dx \). Why is the approximation in part (ii)(a) not very good? <span class="marks">[2]</span></span>
+  </div>
+  <div class="conf">Before you reveal &mdash; say it out loud: &nbsp;Confidence: &nbsp;<b>high</b> &nbsp;/ &nbsp;<b>medium</b> &nbsp;/ &nbsp;<b>guessed</b></div>
+  <div class="block answer"><button class="reveal-btn">Reveal solution</button>
+    <div class="answer-content"><div class="label">Solution</div>
+      <div class="step"><div class="step-header">(i) raise the series to the sixth power, keeping only up to \(x^4\)</div>
+        <span class="name">\( \cos x=1-\tfrac{x^2}{2}+\tfrac{x^4}{24}-\cdots \). Write \( u=-\tfrac{x^2}{2}+\tfrac{x^4}{24} \) and use \( (1+u)^6=1+6u+15u^2+\cdots \) — terms beyond \(u^2\) start at \(x^6\), so they are not needed.</span>
+        \[ 6u=-3x^2+\tfrac{x^4}{4};\qquad 15u^2=15\left(\tfrac{x^4}{4}\right)=\tfrac{15}{4}x^4\ \ \left(\text{only the }x^4\text{ part of }u^2\right) \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ \cos^6x=1-3x^2+\left(\tfrac14+\tfrac{15}{4}\right)x^4+\cdots=1-3x^2+4x^4+\cdots \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii)(a) integrate the series term by term</div>
+        \[ \int_{0}^{a}\mathrm g(x)\,\mathrm dx\approx\int_{0}^{a}\left(1-3x^2+4x^4\right)\mathrm dx=\left[x-x^3+\tfrac45x^5\right]_{0}^{a}=a-a^3+\tfrac45a^5 \]<span class="mk">(1)</span><span class="mk">(1)</span>
+        \[ a=\tfrac{\pi}{4}:\qquad \tfrac{\pi}{4}-\left(\tfrac{\pi}{4}\right)^3+\tfrac45\left(\tfrac{\pi}{4}\right)^5=0.540\ (3\ \text{s.f.}) \]<span class="mk">(1)</span>
+      </div>
+      <div class="step"><div class="step-header">(ii)(b) compare, then explain WHY</div>
+        \[ \int_{0}^{\pi/4}\cos^6x\,\mathrm dx=0.475\ (3\ \text{s.f.}) \]<span class="mk">(1)</span>
+        <span class="name">The approximation \(0.540\) is well off the accurate \(0.475\).</span>
+        \[ \text{Because }a=\tfrac{\pi}{4}\approx0.785\ \text{is \textbf{not small}, so the truncated series } 1-3x^2+4x^4 \]
+        \[ \text{deviates significantly from }\cos^6x\ \text{over much of the interval of integration.} \]<span class="mk">(1)</span>
+      </div>
+      <div class="keynote"><b>"Why is the approximation not good?" — the answer you were missing.</b> Two things to check, in order:<br>
+      <b>1. Is \(x\) inside the validity range?</b> If the expansion is invalid there, that alone answers it.<br>
+      <b>2. If it is valid, is \(x\) small?</b> A Maclaurin series is built at \(x=0\) and only hugs the function <em>near</em> \(0\). Here \( \tfrac{\pi}{4}\approx0.785 \) is far from \(0\), so the truncated series drifts.<br>
+      Say the number, say the comparison, and say <em>why</em> — a bare "it's not accurate" scores nothing.</div>
+      <div class="testline"><b>Tests:</b> building a series for a power of a standard series; term-by-term integration as an approximation; and justifying the quality of an approximation by how far the point is from the expansion centre.</div>
+    </div><div class="answer-overlay">Attempt it cold first &mdash; then click Reveal</div>
+  </div>
+</div>
+
+
+<hr>
+
+<h3 style="font-family:-apple-system,sans-serif;font-size:1.05em">What each question was closing</h3>
+<p style="color:var(--muted);font-size:.9em">Read this only <em>after</em> you have attempted the sheet.</p>
+<table>
+<tr><th>Gap from the 17 Aug drill</th><th>Drilled in</th></tr>
+<tr><td><b>Priority —</b> particular solution needs BOTH constants: initial condition gives \(A\), a <b>second data point</b> gives \(k\). You found \(A\) and stopped.</td><td>Q1</td></tr>
+<tr><td><b>Priority —</b> displacement from velocity requires <b>integration</b>, not division</td><td>Q2</td></tr>
+<tr><td>Arbitrary constant lost on exponentiating; a <b>second</b> integration needs a <b>second</b> letter</td><td>Q2, Q3</td></tr>
+<tr><td><b>"Family of solution curves"</b> — you did not know what the question wanted</td><td>Q3</td></tr>
+<tr><td>Substitution DEs (<em>"I haven't done that yet"</em>) — the two-substitution rule</td><td>Q4</td></tr>
+<tr><td>Multiplying two series: <b>expand each factor far enough</b> to reach the required power</td><td>Q5(ii)</td></tr>
+<tr><td>Factor out the <b>constant</b>, not the coefficient of \(x\), to force \((1+u)^n\)</td><td>Q5(ii)</td></tr>
+<tr><td>Validity of a product = <b>intersection</b> of the ranges</td><td>Q5(iii)</td></tr>
+<tr><td><b>"Is the approximation appropriate?"</b> — validity first, then how far \(x\) is from \(0\)</td><td>Q6(ii)(b)</td></tr>
+</table>
+
+<p style="color:var(--muted);font-size:.9em;margin-top:20px">Six questions, 45 marks, about forty-five minutes. If Q1, Q2 and Q3 land clean and confident, the three priority gaps close. Paste me the transcript and I will update the tracker.</p>
+
+<script>
+  document.querySelectorAll('.reveal-btn').forEach(btn=>{btn.addEventListener('click',function(){const b=this.parentElement,o=b.querySelector('.answer-overlay');if(o.classList.contains('hidden')){o.classList.remove('hidden');this.textContent='Reveal solution';this.classList.remove('hide-state');}else{o.classList.add('hidden');this.textContent='Hide';this.classList.add('hide-state');}});});
+  function revealAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.add('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Hide';b.classList.add('hide-state');});}
+  function hideAll(){document.querySelectorAll('.answer-overlay').forEach(o=>o.classList.remove('hidden'));document.querySelectorAll('.reveal-btn').forEach(b=>{b.textContent='Reveal solution';b.classList.remove('hide-state');});}
+</script>
+</body>
+</html>
