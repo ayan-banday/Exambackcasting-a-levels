@@ -1,300 +1,153 @@
-# Pre-Study Sheet, Biology H2 (9477) > Book 9: Infectious Diseases (Extension Topic A)
+# Pre-Study Sheet: Infectious Diseases
 
-> **Layer 1: the main arguments of each chapter, with the key terms named.** Not the sub-arguments,
-> not the reasoning, not examples or data. Those are Cluster 1, 2 and 3.
->
-> **Target:** see an exam question and think *"I've studied this, I could bullshit a rough answer."*
-> Roughly 10 to 20% exam performance. 10 to 20 minutes.
->
-> **Then:** work out the **big 3 ideas** that hold the whole Book together, and teach them back to me.
+Layer 1 = main arguments. Layer 2 = sub-arguments. No detail, no examples, anchor points only.
 
-**Know this before you start.** This Book is **Extension Topic A**, not a Core Idea, so its outcomes are
-lettered **(a) to (k)** with no number in front. Every reference below uses those letters.
+Roughly 4.7 to 5.7% of the whole A-level on the 9477 specimen, and the last thing you meet on both Paper 1 and Paper 2.
 
 ---
 
-## 9.1 Introduction, Definitions and Overview
+## PART A: 9.1 AND 9.2, DEFINITIONS AND INNATE IMMUNITY
 
-1. An **infectious disease** is caused by a **pathogen** and passes between people, which is why it is
-   also called a **communicable disease**.
-2. The named pathogens are **viruses, bacteria, fungi, protozoans, parasitic worms and prions**, and
-   **pathogenicity** is a pathogen's ability to damage its host.
-3. **Immunity** is resistance to infectious disease, and the **immune system** is what produces it.
-4. The whole system rests on one distinction, **self against non-self**, and its two defining features
-   are **specificity** and **memory**.
-5. An **antigen** is any substance the immune system can recognise, and it binds either an **antibody**
-   or a **T cell receptor**.
-6. **Antigen presentation** is the display of antigen fragments on **MHC** molecules, done by the
-   **antigen-presenting cells** that LO (b) names.
-7. An **antibody**, also called an **immunoglobulin**, is made by **B lymphocytes** and carries a unique
-   **antigen-binding site**.
-8. Immunity comes in two forms that arrive in a fixed order, the fast **innate** system first and the
-   slower **adaptive** system second, and LO (a) requires both.
-9. Every blood cell descends from **haematopoietic stem cells**, splitting into the **lymphoid** and
-   **myeloid** lineages, which is the bridge back to Book 3.
+### 1. The whole system rests on one distinction, self against non-self
 
----
+- 1.1 An **infectious disease** is caused by a **pathogen** and passes between hosts, hence **communicable**. Named pathogens: **viruses, bacteria, fungi, protozoans, parasitic worms, prions**. **Pathogenicity** is the ability to damage the host.
+- 1.2 **Immunity** is resistance to infectious disease, and the system's two defining features are **specificity** and **memory**.
+- 1.3 An **antigen** is any substance the system can recognise, binding an **antibody** or a **T cell receptor**. Every blood cell descends from **haematopoietic stem cells** down the **lymphoid** or **myeloid** lineage.
+- 1.4 The two halves arrive in a fixed order, fast **innate** first and slower **adaptive** second, and the outcome requires both.
 
-## 9.2 Innate Immunity
+### 2. There are three lines of defence and the first two are innate
 
-1. The body defends itself in **three lines of defence**, the first two innate and the third adaptive.
-2. The **first line** is a set of **non-specific external barriers**, and the mark-bearing phrase is that
-   they **operate regardless of the exact nature of the invader**.
-3. Those barriers are the **skin** and its **keratinocytes**, the **mucous membranes** with **mucus** and
-   **ciliated epithelium**, **acidic pH**, **lysozyme** and the **commensal microbes**.
-4. The **second line** is the **innate immune response**, which is **present from birth**, acts
-   **immediately**, is **non-specific**, and leaves **no memory**.
-5. Its cells are the **phagocytes**, named as the **neutrophil**, the **macrophage** and the **dendritic
-   cell**.
-6. **Natural killer cells** are the innate lymphocytes, and they destroy **infected and abnormal host
-   cells** without any antigen-specific receptor.
-7. Innate immunity also uses **defensive proteins**, namely the **cytokines**, with **interferons** as
-   the antiviral example, and the **complement system**.
-8. **Complement** has three effects worth three marks, **lysis**, **opsonisation** and **stimulation of
-   inflammation**.
-9. **Inflammation** brings defensive cells and proteins to the site, is triggered by **histamine** from
-   **mast cells**, and shows as **redness, warmth, swelling and pain**.
-10. **Phagocytosis** is how a phagocyte engulfs and digests a pathogen, and the named compartments are
-    the **phagosome** and the **lysosome**.
-11. **Fever** is innate too, raising phagocyte activity while slowing bacterial reproduction.
+- 2.1 **First line**, external barriers that **operate regardless of the exact nature of the invader**: **skin**, **mucous membranes** with mucus and ciliated epithelium, **acidic pH**, **lysozyme**, **commensal microbes**.
+- 2.2 **Second line**, the innate response: **present from birth**, acting **immediately**, **non-specific**, leaving **no memory**.
+- 2.3 Its cells are the **phagocytes**, the **neutrophil**, **macrophage** and **dendritic cell**, plus the **natural killer cell**, which kills infected and abnormal host cells with no antigen-specific receptor.
+
+### 3. Innate immunity acts through cells, proteins and two whole-body responses
+
+- 3.1 **Phagocytosis**: engulf and digest, with the **phagosome** fusing with the **lysosome**.
+- 3.2 **Defensive proteins**: the **cytokines**, with **interferons** as the antiviral case, and the **complement system**.
+- 3.3 **Complement** has three effects worth three marks: **lysis**, **opsonisation**, **stimulation of inflammation**.
+- 3.4 **Inflammation** brings defensive cells and proteins to the site, triggered by **histamine** from **mast cells**, showing as **redness, warmth, swelling, pain**.
+- 3.5 **Fever** raises phagocyte activity while slowing bacterial reproduction.
 
 ---
 
-## 9.3 Adaptive Immunity
+## PART B: 9.3 ADAPTIVE IMMUNITY
 
-1. **Adaptive immunity** is the **third line of defence**, it is **specific**, it is **slower to start**,
-   and it alone generates **immunological memory**.
-2. It splits into two arms LO (a) makes you hold apart, **humoral immunity** against **extracellular**
-   microbes and **cell-mediated immunity** against **intracellular** ones.
-3. Its cells are the **lymphocytes**, and the two lineages mature in different places, **B lymphocytes**
-   in the **bone marrow** and **T lymphocytes** in the **thymus**.
-4. A **B lymphocyte** carries membrane antibody as its receptor and differentiates into the
-   antibody-secreting **plasma cell** and the long-lived **memory B cell**.
-5. The **helper T lymphocyte** is the switch for the whole response, activating B cells, cytotoxic T
-   cells and macrophages through **cytokines**.
-6. The **cytotoxic T lymphocyte** kills infected host cells using **perforin** and **granzymes**, and the
-   target dies by **apoptosis**.
-7. The **antigen-presenting cells** of LO (b) are the **dendritic cell**, the **macrophage** and the
-   **B cell**, and they display antigen on **MHC**.
-8. **MHC class I** presents to cytotoxic T cells and **MHC class II** to helper T cells, and your notes
-   say so only once, inside a figure caption.
-9. **Clonal selection** is the antigen picking out the one **pre-existing** clone whose receptor fits,
-   and **clonal expansion** is the proliferation that follows.
-10. LO (b) turns on one comparison, the **primary immune response** against the **secondary immune
-    response**, and the second is **faster, larger and longer lasting** because of the **memory cells**
-    the first one left behind.
-11. Antibodies destroy pathogens four named ways, **neutralisation**, **agglutination**,
-    **opsonisation** and **complement activation**.
+### 1. Adaptive immunity is the third line, and it alone remembers
 
----
+- 1.1 It is **specific**, **slower to start**, and it alone generates **immunological memory**.
+- 1.2 Two arms to hold apart: **humoral immunity** against **extracellular** microbes, **cell-mediated immunity** against **intracellular** ones.
+- 1.3 Its cells are the **lymphocytes**, maturing in different places, **B lymphocytes** in the **bone marrow** and **T lymphocytes** in the **thymus**.
 
-## 9.4 Antigen Recognition, Antibody Structure and Diversity
+### 2. Four cell roles carry the whole outcome
 
-1. The part of an antigen that actually binds a receptor is the **epitope**, also called the **antigenic
-   determinant**, and one antigen carries several.
-2. The **B cell receptor** binds intact antigen while the **T cell receptor** binds only fragments
-   presented on **MHC**.
-3. LO (c) is a structure-to-function outcome, so an **antibody** is **four polypeptide chains**, **two
-   heavy** and **two light**, in a **Y shape** held by **disulfide bonds**.
-4. The **variable regions** form the two **antigen-binding sites**, and the heavy chain's **constant
-   region**, the **Fc region**, decides what the antibody does after binding.
-5. The **hinge region** is the third feature worth naming, and two identical binding sites make an
-   antibody **bivalent**.
-6. There are **five classes of immunoglobulin**, **IgG, IgA, IgM, IgD and IgE**, and LO (c) names
-   **IgG** as the worked example.
-7. LO (d) names exactly **three** mechanisms that generate **millions of different antibody molecules**,
-   and attaching the right one to the right effect is the whole outcome.
-8. **Somatic recombination** happens in developing B lymphocytes **before** antigen, and it builds the
-   **variable region** from separate **gene segments**.
-9. **Somatic hypermutation** happens in **activated B lymphocytes after** antigen, and it changes the
-   **affinity** of the antibody, which is **affinity maturation**.
-10. **Class switching**, also called **isotype switching**, also follows antigen, and it changes the
-    **class** while the **antigen specificity stays the same**.
-11. LO (a) needs a two-by-two grid, so immunity is either **active** or **passive**, and either
-    **naturally acquired** or **artificially acquired**, with only active immunity lasting.
+- 2.1 The **B lymphocyte** carries membrane antibody as its receptor and becomes the antibody-secreting **plasma cell** or the long-lived **memory B cell**.
+- 2.2 The **helper T lymphocyte** is the switch for everything, activating B cells, cytotoxic T cells and macrophages through **cytokines**.
+- 2.3 The **cytotoxic T lymphocyte** kills infected host cells with **perforin** and **granzymes**, and the target dies by **apoptosis**.
+- 2.4 The **antigen-presenting cells** are the **dendritic cell**, **macrophage** and **B cell**, displaying antigen on **MHC**: **class I** to cytotoxic T cells, **class II** to helper T cells.
+
+### 3. Clonal selection explains specificity, memory explains the secondary response
+
+- 3.1 **Clonal selection** is the antigen picking out the one **pre-existing** clone whose receptor fits; **clonal expansion** is the proliferation that follows.
+- 3.2 The outcome turns on **primary against secondary response**, the second being **faster, larger and longer lasting** thanks to the **memory cells** the first left.
+- 3.3 Antibodies destroy pathogens four named ways: **neutralisation**, **agglutination**, **opsonisation**, **complement activation**.
+
+### 4. Immunity is a two-by-two grid
+
+- 4.1 Either **active** or **passive**, and either **naturally acquired** or **artificially acquired**.
+- 4.2 Only **active** immunity leaves memory and lasts; passive immunity is borrowed antibody and fades.
 
 ---
 
-## 9.5 Viral Infections in Humans
+## PART C: 9.4 ANTIGEN RECOGNITION, ANTIBODY STRUCTURE AND DIVERSITY
 
-1. **Viral pathogenesis** is how a virus infection leads to disease, and LO (g) asks for it through
-   **disruption of host tissue and functions**.
-2. LO (g) names two viruses and their target cells, so **influenza** with the **epithelial cells of the
-   respiratory tract** and **HIV** with **helper T cells** is the outcome.
-3. **Influenza** spreads in **respiratory droplets**, and its two surface glycoproteins are
-   **haemagglutinin** and **neuraminidase**.
-4. The tissue influenza destroys, the **epithelial lining of the respiratory tract**, is also the body's
-   own **first line of defence**, and that is why the damage matters.
-5. **HIV** is a **retrovirus**, its receptor is **CD4**, and its named enzymes are **reverse
-   transcriptase** and **integrase**.
-6. HIV survives long term by integrating as a **provirus** and entering a **latent** state, hidden from
-   cytotoxic T cells.
-7. The function HIV destroys is **cell-mediated immunity**, and because helper T cells run both arms,
-   losing them disables humoral immunity too.
-8. **AIDS** is not itself a disease but a collection of **opportunistic infections** that follow the
-   immunodeficiency HIV causes.
-9. Untreated infection runs through **three clinical phases**, **acute**, **chronic** or **latent**, and
-   **crisis**, which is AIDS.
+### 1. Recognition happens at the epitope, and the two receptors see different things
+
+- 1.1 The **epitope**, or **antigenic determinant**, is the part of an antigen that actually binds, and one antigen carries several.
+- 1.2 The **B cell receptor** binds intact antigen; the **T cell receptor** binds only fragments presented on **MHC**.
+
+### 2. Antibody structure is a structure-to-function outcome
+
+- 2.1 Four polypeptide chains, **two heavy and two light**, in a **Y shape** held by **disulfide bonds**, with a **hinge region**.
+- 2.2 The **variable regions** form two **antigen-binding sites**, so the antibody is **bivalent**; the heavy chain's **constant region**, the **Fc region**, decides what happens after binding.
+- 2.3 Five classes exist, **IgG, IgA, IgM, IgD, IgE**, and **IgG** is the one the outcome names.
+
+### 3. Three mechanisms generate millions of antibodies, each with its own effect
+
+- 3.1 **Somatic recombination**, in developing B lymphocytes **before** antigen, builds the **variable region** from separate **gene segments**.
+- 3.2 **Somatic hypermutation**, in **activated B lymphocytes after** antigen, changes **affinity**, which is **affinity maturation**.
+- 3.3 **Class switching**, also after antigen, changes the **class** while the **antigen specificity stays the same**.
 
 ---
 
-## 9.6 Bacterial Infections in Humans and Treatment
+## PART D: 9.5 AND 9.6, VIRAL AND BACTERIAL DISEASE AND ANTIBIOTICS
 
-1. LO (h) asks for **modes** of transmission in the plural, named as **contact**, **vehicle** and
-   **vector transmission**.
-2. LO (h) also asks for **mode of infection**, meaning the **virulence factors** that give a bacterium
-   its **pathogenicity**.
-3. There are **four classes of virulence factor**, **adherence**, **invasion**, **toxicity** and
-   **evasion of host defences**.
-4. Bacterial toxins split into the secreted protein **exotoxins** and the cell-wall **endotoxins** of
-   Gram-negative bacteria.
-5. LO (h) names one worked example, **Mycobacterium tuberculosis**, which causes **tuberculosis** and
-   travels in **airborne droplets**.
-6. What makes it dangerous is that it survives inside the cell meant to destroy it, the **alveolar
-   macrophage**, by blocking one step of **phagocytosis**.
-7. TB has two stages to tell apart, **latent** infection where the **tubercle** contains the bacteria and
-   the person is not contagious, and **active** infection where it ruptures and they are.
-8. An **antibiotic** kills or inhibits bacteria, and the property letting it spare the patient is
-   **selective toxicity**.
-9. LO (i) asks for **modes** of action in the plural too, and there are **four**, inhibiting **cell wall
-   synthesis**, **nucleic acid synthesis** or **protein synthesis**, or disrupting the **cell membrane**.
-10. LO (i) names one antibiotic, **penicillin**, and its target is the bacterial **cell wall**, so the
-    words you need are **peptidoglycan**, **transpeptidase** and **lysis**.
-11. Antibiotics have no effect on **viruses**, because a virus is not a cell and has none of those four
-    targets.
+### 1. Viruses cause disease by disrupting host tissue and function, which is all this outcome owns
 
----
+- 1.1 Book 4 owns the replication cycle and antigenic shift and drift; here the question is only what the virus does to the host.
+- 1.2 **Influenza** targets the **epithelial cells of the respiratory tract**, spreads in **respiratory droplets**, and carries **haemagglutinin** and **neuraminidase**.
+- 1.3 The tissue it destroys is itself the body's **first line of defence**, which is why the damage matters.
+- 1.4 **HIV** is a **retrovirus** binding **CD4** on **helper T cells**, with **reverse transcriptase** and **integrase**. It persists by integrating as a **provirus** and going **latent**, hidden from cytotoxic T cells.
+- 1.5 It destroys **cell-mediated immunity**, and since helper T cells run both arms, humoral immunity fails too. **AIDS** is not a disease but the **opportunistic infections** that follow, through **acute**, **chronic or latent** and **crisis** phases.
 
-## 9.7 Vaccination
+### 2. Bacterial pathogenicity is transmission plus virulence factors
 
-1. A **vaccine** is a preparation containing **antigens** used to stimulate an immune response
-   artificially, and **vaccination** confers **artificial active immunity**.
-2. LO (e) states its own scope limit and it is unusually tight, so the outcome is **limited to** two
-   claims and nothing else.
-3. Claim one is that **vaccination stimulates immunity without causing the disease**, and behind it sit
-   the **memory cells** left by a **primary response**.
-4. Claim two is that **vaccination of a high enough proportion of the population can break the disease
-   transmission cycle**, and the word for that is **herd immunity**.
-5. **Herd immunity** protects people who cannot be vaccinated themselves, which is why the outcome frames
-   it as a population argument rather than an individual one.
-6. The three vaccine types worth naming are **live attenuated**, **inactivated** and **toxoid**, each
-   balancing strength against risk differently.
-7. LO (e) names one case study, the **eradication of smallpox**, and the two viruses to keep straight are
-   **variola**, which causes it, and **vaccinia**, which is the vaccine.
-8. Smallpox was eradicable because of properties of the disease itself, so the answer is about
-   **surveillance** and **ring vaccination**, not the vaccine alone.
-9. LO (f) is a whole outcome for the **benefits and risks of vaccination**, and its command word is
-   **discuss**, meaning both sides weighed and a judgement reached.
-10. A **risk** here means something that can happen to the vaccinated person, so reversion of a live
-    vaccine counts and cost or access does not.
+- 2.1 **Modes of transmission**, plural: **contact**, **vehicle**, **vector**.
+- 2.2 **Mode of infection** means the **virulence factors** behind pathogenicity, in four classes: **adherence**, **invasion**, **toxicity**, **evasion of host defences**.
+- 2.3 Toxins split into secreted protein **exotoxins** and the cell-wall **endotoxins** of Gram-negative bacteria.
+- 2.4 The named example is ***Mycobacterium tuberculosis***, airborne, surviving inside the **alveolar macrophage** meant to destroy it by blocking a step of **phagocytosis**.
+- 2.5 Two stages: **latent**, where the **tubercle** contains the bacteria and the person is not contagious, and **active**, where it ruptures and they are.
+
+### 3. Antibiotics act on four bacterial targets, none of which a virus has
+
+- 3.1 An **antibiotic** kills or inhibits bacteria, and **selective toxicity** is what lets it spare the patient.
+- 3.2 **Modes of action**, plural, and there are four: inhibiting **cell wall synthesis**, **nucleic acid synthesis** or **protein synthesis**, or disrupting the **cell membrane**.
+- 3.3 **Penicillin** is the named one, targeting the cell wall, so the words are **peptidoglycan**, **transpeptidase** and **lysis**.
+- 3.4 Antibiotics do nothing to **viruses**, because a virus is not a cell and has none of those four targets.
 
 ---
 
-## The two outcomes your notes do not contain
+## PART E: 9.7 VACCINATION AND EPIDEMIOLOGY
 
-**Read this twice.** LOs (j) and (k) are taught nowhere in Book 9's 139 pages. The cover page promises
-epidemiology and R0; the sections were never written. **The 9477 specimen has an R0 question on it.**
+### 1. The vaccination outcome is limited to two claims, and the syllabus uses the words "limited to"
 
-1. LO (j) names the **basic reproduction number**, written **R0**, as an indicator of the
-   **transmissibility**, or **contagiousness**, of an infectious agent.
-2. **R0** is the mean number of new cases one infected person produces where **everyone is
-   susceptible**, and that last condition is the whole of its meaning.
-3. The outcome asks how R0 **predicts the progress of a disease outbreak**, which turns on whether it is
-   **above 1**, **equal to 1** or **below 1**.
-4. The syllabus names R0 a second time in its **mathematical requirements**, beside standard deviation
-   and the chi-squared test, so it is a number to **use** and not only to define.
-5. R0 is also the link back to LO (e), because how much of a population must be immune before
-   transmission breaks depends on how high R0 is.
-6. LO (k) asks you to **outline** three terms, **outbreak**, **epidemic** and **pandemic**, with
-   **influenza** as the syllabus's own example.
-7. The three differ in **geographic scale**, which is the only distinction the outcome asks for.
+- 1.1 A **vaccine** is a preparation containing **antigens** used to stimulate an immune response artificially, so vaccination confers **artificial active immunity**.
+- 1.2 Claim one, **immunity without the disease**: antigens imitate infection, trigger clonal selection and expansion, and leave **memory cells** for a fast secondary response.
+- 1.3 Claim two, **herd immunity**: vaccinating a high enough proportion leaves too few susceptible people for the pathogen to reach, breaking the **transmission cycle** and protecting those who cannot be vaccinated.
+- 1.4 Three vaccine types carry the risk argument: **live attenuated**, **inactivated**, **toxoid**.
+- 1.5 The named case is the **eradication of smallpox**: **variola** causes it, **vaccinia** is the vaccine virus, and the answer runs on **surveillance** and **ring vaccination**.
 
----
+### 2. Benefits and risks is a separate outcome, and its command word is discuss
 
-## Scope corrections: what your notes teach that 9477 does not examine
+- 2.1 **Discuss** means both sides weighed and a judgement reached, not a list.
+- 2.2 A **risk** is something that can happen to the vaccinated person, so reversion of a live vaccine counts and cost or access does not.
 
-Every term below was searched four ways, as an en dash, a hyphen, a space and a closed word.
+### 3. R0 measures transmissibility and predicts where an outbreak goes
 
-**Genuinely gone. No outcome carries these in any wording, so cut them.**
+- 3.1 **R0**, the **basic reproduction number**, is the mean number of new cases one infected individual produces in a **wholly susceptible** population. That condition is the whole of its meaning.
+- 3.2 It is the syllabus's stated indicator of the **transmissibility**, or **contagiousness**, of an infectious agent.
+- 3.3 It predicts an outbreak by which side of **1** it falls: **above 1** cases grow, **at 1** the disease is endemic and stable, **below 1** the outbreak dies out.
+- 3.4 What moves it: contact rate, transmission probability per contact, infectious period, vector abundance, proportion already immune.
+- 3.5 The syllabus lists R0 in its **Mathematical Requirements** beside standard deviation and the chi-squared test, so it is a number to **use**, not only to define.
+- 3.6 It ties straight back to vaccination, because the higher R0, the greater the proportion that must be immune before transmission breaks.
 
-1. **Antibiotic resistance mechanisms.** How resistance arises and spreads belongs to Book 4.
-   Beta-lactamase stays, as part of how penicillin works.
-2. **Autoimmunity, allergy, hypersensitivity and the immunodeficiency classification.**
-3. **The bacterial growth curve, minimum inhibitory concentration and the disk-diffusion test.** Four
-   pages of chapter 9.6 with no content outcome. Keep it as practical method for October, not as recall.
-4. **Lymphatic system anatomy.** Bone marrow and thymus stay, as where B and T cells mature.
-5. **The history of immunisation.** Marked FYI by your school, and it gets a fact wrong. Smallpox
-   eradication stays because the outcome names it; Jenner's dates do not.
-6. **Extract, recombinant and DNA vaccines.** The other three types carry the whole argument.
-7. **RAG-1, RAG-2, TdT, gene segment counts and junctional diversity by name.**
-8. **Blood counts, normal ranges and the formed elements table.**
-9. **Vaccine ethics, hesitancy and mandate debates.** LO (f) wants a scientific weighing.
-10. **Immunological tolerance, contraction and homeostasis, and specialisation.**
+### 4. Outbreak, epidemic and pandemic are a scale ladder, not a severity ladder
 
-**Loses the word, keeps the biology. Zero hits as terms, but a broader outcome clause carries them, so
-learn the biology and expect the exam not to hand you the word.**
-
-- **Phagocytosis, phagocyte, macrophage, neutrophil, inflammation, complement, interferon, natural
-  killer cell and cytokine** are all carried by five words in LO (a), **the non-specific (innate) immune
-  system**.
-- **Antigen, epitope, plasma cell, cytotoxic T cell, MHC, clonal selection and clonal expansion** are
-  carried by LO (b)'s **roles of B lymphocytes, T lymphocytes, antigen-presenting cells and memory
-  cells**.
-- **Herd immunity** is written out longhand in LO (e) as **vaccination of a high enough proportion of
-  the population can break the disease transmission cycle**.
-- **Attenuated** is carried twice, by LO (e)'s **without causing the disease** and LO (f)'s **risks**.
-- **Opsonisation, agglutination and toxin** are carried by LO (c)'s **functions** and LO (h)'s
-  **infection** clause.
-- **AIDS** is absent while HIV appears three times, carried by LO (g)'s **cause diseases in humans**.
-- **IgM, IgA, IgD and IgE** are all absent, so **IgG is the only class the syllabus names**.
-
-**Three rulings.**
-
-1. **LO (e) is limited to two clauses, and the syllabus uses the words limited to.** Biggest single cut
-   here. Immunity without disease and herd immunity are protected; the vaccine-type survey, the
-   immunisation history and the WHO programme detail are not.
-2. **LO (d) owns antibody diversity outright.** Your question bank files it under Control of Gene
-   Expression, which is Book 2. The syllabus does not, and the specimen tested all three mechanisms in
-   an Extension Topic A question.
-3. **Chapter 9.5 is short on purpose.** Replication cycles and antigenic shift and drift belong to
-   Book 4, which owns what a pathogen does to its own genome. Book 9 owns what it does to the host.
+- 4.1 **Outbreak**: cases rising above the number normally expected, confined to a limited area, community or group.
+- 4.2 **Epidemic**: the same rise spreading more widely, across a region or a whole country.
+- 4.3 **Pandemic**: spread across several countries or continents, affecting very large numbers, with **influenza** as the syllabus's own example.
+- 4.4 The only distinction the outcome asks for is **geographic extent**. None of the three says anything about severity.
 
 ---
 
-## Six errors in the notes themselves
+## One-line mental map
 
-Each is contradicted correctly elsewhere in the same Book, and the wrong version always sits in the more
-memorable place.
+**A:** Self against non-self, judged by specificity and memory → three lines of defence, the first two innate → barriers, then phagocytes and natural killer cells, then complement, cytokines, inflammation and fever, all immediate, non-specific and memoryless.
 
-1. **Chapter 9.7 page 118 swaps the smallpox and cowpox viruses.** Page 126 gets it right. **Variola**
-   causes smallpox; **vaccinia** is the vaccine virus.
-2. **Chapter 9.4 says twice that somatic hypermutation happens after the plasma cell has met antigen.**
-   Its own definition box says activated B cells, and so does the specimen paper.
-3. **Chapter 9.3 page 34 defines clonal selection as the mitosis.** Pages 38 and 40 define it correctly
-   as the antigen selecting a pre-existing clone.
-4. **Chapter 9.3 page 35 says cytotoxic T cells kill with hydrogen peroxide.** Page 49 gives perforin
-   and granzymes. Hydrogen peroxide is a phagocyte's tool.
-5. **Chapter 9.7 page 119 describes natural active immunity as receiving a vaccination.** Chapter 9.4
-   page 75 gets it right: it comes from infection.
-6. **Chapter 9.6 figure 6.26 says penicillin blocks glycoprotein peptidases.** The facing page says
-   transpeptidases, which is the name the mark schemes want.
+**B:** The adaptive third line is specific, slow and remembering → humoral against extracellular, cell-mediated against intracellular → B cells make plasma and memory cells, helper T cells switch everything on, cytotoxic T cells kill, antigen-presenting cells display on MHC → clonal selection picks the pre-existing clone, memory makes the second response faster and larger.
 
----
+**C:** Binding happens at the epitope, intact for the B cell receptor and MHC-presented for the T cell receptor → the Y of two heavy and two light chains puts specificity in the variable regions and function in the Fc → recombination before antigen builds diversity, hypermutation raises affinity, class switching changes class but never specificity.
 
-## Before Cluster 1
+**D:** Influenza wrecks the respiratory epithelium that is itself a first-line barrier, HIV wrecks the helper T cell running both adaptive arms → bacteria transmit by contact, vehicle or vector and damage through adherence, invasion, toxins and evasion, TB surviving inside the macrophage → antibiotics hit cell wall, nucleic acid, protein synthesis or membrane, so never a virus.
 
-Two things, in this order.
-
-First, the **big 3 ideas** that hold Book 9 together. Teach them back to me in your own words.
-
-Second, notice the shape of the reading. This Book was only about **5% of the whole A-level** on the
-specimen, against Book 3's 13 to 16%, so it earns proportionally less of your time. But **Explain is
-30.4% of its questions and Suggest is 23.8%**, the highest Suggest share of any Book measured. Suggest
-means no recall answer exists, so nearly a quarter of this topic hands you a pathogen, a drug or an
-outbreak you have never seen and asks you to run a known mechanism on it. As you read, keep asking
-*would this still work if the pathogen were called something else*, because that is the form it arrives
-in, not a request to recite.
-
-One more thing, about timing. On the specimen, Infectious Diseases was the **last two questions of
-Paper 1 and the last question of Paper 2**, so it is what you meet when the clock is running out. Drill
-it at the end of a session rather than fresh.
+**E:** Vaccination gives immunity without the disease and, at high enough coverage, breaks the transmission cycle → benefits and risks weighed to a judgement → R0 is new cases per case in a wholly susceptible population, growing above 1, endemic at 1, dying below 1, and setting how much immunity herd protection needs → outbreak, epidemic and pandemic scale that spread by geography, not severity.
