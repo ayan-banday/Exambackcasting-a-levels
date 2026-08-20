@@ -1,127 +1,160 @@
-# Pre-Study Sheet, Biology H2 (9477) > Book 7: Biological Evolution
+# Pre-Study Sheet: Biological Evolution
 
-> **Layer 1: the main arguments of each chapter, with the key terms named.** Not the sub-arguments,
-> not the reasoning, not examples or data. Those are Cluster 1, 2 and 3.
->
-> **Target:** see an exam question and think *"I've studied this, I could bullshit a rough answer."*
-> Roughly 10 to 20% exam performance. 10 to 20 minutes.
->
-> **Then:** work out the **big 3 ideas** that hold the whole Book together, and teach them back to me.
+Layer 1 = main arguments. Layer 2 = sub-arguments. No detail, no examples, anchor points only.
+
+Roughly 9 to 11% of the whole A-level on the 9477 specimen, across three of the four papers.
 
 ---
 
-## 7.1 Syllabus and Definitions
+## PART A: 7.1 SYLLABUS AND DEFINITIONS
 
-1. **Biological evolution** is defined as **descent with modification**, and those three words are what the outcome asks for before anything else.
-2. Evolution encompasses both **microevolution** and **macroevolution**, and the outcome asks you to explain the **link** between them, not just to define each.
-3. **Microevolution** is change in **allele frequencies** or **genotype frequencies** within a **population** over a few generations, which is the short-term zoomed-in view.
-4. **Macroevolution** is large-scale change over geological time that produces groups at **species level and higher**, which is the long-term zoomed-out view.
-5. **Populations evolve and individual organisms do not**, and this is a whole learning outcome on its own.
-6. The environment does not direct changes in DNA, it acts on **phenotypes** produced by random changes in DNA, and this is the correction the whole topic is built to enforce.
-7. **Genetic variation** is a **pre-requisite** for **natural selection**, which is why variation gets its own outcome ahead of selection.
-8. **Fitness** is measured by the number of surviving offspring an individual leaves to the next generation, not by strength or by survival alone.
-9. **Adaptation** is the accumulation of favourable genetic changes through natural selection, and it is a property of a population rather than of an individual.
-10. The Book is organised around three things and the whole of Core Idea 4 hangs off them, which are the **definition** of evolution as descent with modification, the **processes** of evolutionary change which are **natural selection** and **genetic drift**, and the **patterns** of evolutionary relationship which are shown as **phylogenetic trees**.
+### 1. Biological evolution is descent with modification
 
----
+- 1.1 Full definition: **descent with modification**, cumulative change in a **population** from generation to generation.
+- 1.2 It **encompasses both microevolution and macroevolution**, and the outcome wants the link, not each alone.
+- 1.3 **Microevolution**: change in **allele or genotype frequencies** within a population over a few generations. Zoomed in, short term.
+- 1.4 **Macroevolution**: large-scale change over geological time producing groups at **species level and higher**. Zoomed out, long term.
+- 1.5 The link runs one way: **macroevolution results from microevolution and cannot take place without it**.
 
-## 7.2 Theories of Evolution
+### 2. Populations evolve and individual organisms do not
 
-1. **Lamarck's** theory rests on two ideas, **use and disuse of organs** and **inheritance of acquired characters**, and both are wrong.
-2. **Darwin** and **Wallace** made two main points, **descent with modification** as the pattern and **natural selection** as the mechanism that produces it.
-3. The essential features of the theory run as **four observations and two inferences**, ending in evolution of the population rather than in a new species.
-4. Variation arises **spontaneously and before** the environmental change, and the environment merely **selects** among what is already there.
-5. The **Modern Synthesis**, also called **Neo-Darwinism**, differs from Darwinism in exactly one respect, that it adds **Mendelian genetics** and **molecular biology**, meaning **mutation** and **allele frequency change**.
-6. Natural selection on its own produces **adaptation** but not a new species, and speciation additionally requires **reproductive isolation**, which is also called **genetic isolation**.
-7. The evidence outcome names **three** lines and you owe all three, which are **molecular homologies** in biochemical data, **anatomical homologies** in the fossil record, and **biogeography supported by Wallace's findings**.
-8. **Homology** is similarity resulting from **shared ancestry** and it demonstrates **divergent evolution**, with the **pentadactyl limb** as the named case.
-9. **Analogy** is similarity resulting from similar selection pressures in different lineages and it demonstrates **convergent evolution**, which means it tells you nothing about relatedness.
-10. **Biogeography** is the study of the geographical distribution of species, it supplies evidence through **island biogeography** and **continent biogeography**, and **Wallace** is named in the outcome by name so his findings are part of the answer.
-11. Every piece of evidence in this chapter is written as an **observation followed by a conclusion**, and that two-step is the answer shape the outcome wants rather than a list of facts.
+- 2.1 The **population** is the smallest unit with a **gene pool** whose composition can change; an individual's genotype is fixed at fertilisation, so it can be selected but never evolve.
+
+### 3. The environment selects among variation and never directs it
+
+- 3.1 Variation arises by **random changes in DNA** and the environment acts on the resulting **phenotypes**, so **variation is a pre-requisite for natural selection**.
+- 3.2 **Fitness** = number of surviving offspring left to the next generation, not strength and not survival alone.
+- 3.3 **Adaptation** = accumulation of favourable genetic changes by natural selection, a property of populations.
 
 ---
 
-## 7.3 Microevolution
+## PART B: 7.2 THEORIES OF EVOLUTION
 
-1. Five definitions carry this whole Core Idea and they are worth memorising in the school's exact words, which are **population**, **gene pool**, **allele frequency**, **genotype frequency** and **population genetics**.
-2. The **population** is the smallest unit that can evolve, because it is the smallest thing that has a **gene pool** whose composition can change.
-3. The variation outcome names **three** sources and you owe all three, which are **mutation** as the only source of **new alleles**, and **meiosis** and **sexual reproduction** as sources of new **combinations** of alleles that already exist.
-4. **Natural selection** is differential survival and reproduction of better-adapted individuals, it acts on **pre-existing** alleles and on the **phenotype** rather than on the genotype directly, and the **environment** is the **selection pressure**.
-5. The three **modes of selection** are **directional**, **stabilising** and **disruptive**, and they are told apart by what happens to the **distribution curve**.
-6. The selection outcome demands **named examples**, and the two the notes supply are **industrial melanism** in the **peppered moth** and **antibiotic resistance** in bacteria.
-7. **Genetic drift** changes **allele frequencies** by chance rather than by fitness, and the two named cases are the **bottleneck effect** and the **founder effect**.
-8. **Gene flow** is the movement of alleles between populations, and it reduces the differences that selection and drift have built up.
-9. **Only natural selection consistently produces adaptive evolution**, which is the one sentence that separates it from drift and gene flow.
-10. Genetic variation is preserved in a natural population by **diploidy**, which hides **harmful recessive alleles** in heterozygotes, and by **balanced polymorphism**, which works through **heterozygote advantage** and **frequency-dependent selection**.
-11. The **Hardy-Weinberg model** describes a hypothetical population that is not evolving, one outcome asks for the model together with the **five conditions** it operates in, which are **large population**, **random mating**, **no gene flow**, **no mutation** and **no natural selection**, and a second outcome asks you to **calculate** allele, genotype and phenotype frequencies from the **Hardy-Weinberg equation**.
+### 1. Lamarck's mechanism fails because the environment cannot induce a directed change in DNA
 
----
+- 1.1 **Use and disuse of organs**: a need induces the structure, and unused structures degenerate.
+- 1.2 **Inheritance of acquired characters**: traits gained in a lifetime pass to the offspring.
 
-## 7.4 Speciation and Macroevolution
+### 2. Darwin and Wallace supplied a pattern and a mechanism for it
 
-1. The **biological species concept** defines a species by the potential to **interbreed in nature** and produce **viable, fertile offspring**, and both adjectives carry marks.
-2. The species outcome asks for **the limitations** as well as the concept, so half of it is the four cases where the definition fails.
-3. **Reproductive isolating mechanisms** are the barriers that keep gene pools separate, and they split into **prezygotic** barriers and **postzygotic** barriers.
-4. The single idea underneath this whole chapter is **gene flow**, because a species is defined by the absence of gene flow with other groups, a barrier is defined by blocking it, and speciation is complete only when it can no longer be restored.
-5. **Speciation** is the process by which one species splits into two or more species, and it requires the accumulation of **sufficient** reproductive isolating mechanisms rather than any single barrier.
-6. Speciation is taught as a **four-stage model**, running from a single population, through a **barrier**, through **differentiation**, to the point where **reproductive isolation** is tested.
-7. The speciation outcome names exactly **two modes**, **allopatric speciation** through **geographical isolation**, and **sympatric speciation** through **behavioural or physiological isolation within the same geographical location**.
-8. **Allopatric speciation** is the more common mode, and it happens faster in **small isolated populations** because **genetic drift** is stronger in them.
-9. In **sympatric speciation** the reproductive barrier arises at the **start** of the split rather than at the end, which is the structural difference from the allopatric case.
-10. **Biological classification** is the organisation of species according to **shared characteristics**, and it **may not** take evolutionary relationship into account, which is the whole distinction from phylogeny.
-11. **Macroevolution occurs as a result of microevolution and cannot take place without it**, and that sentence is the second half of the descent-with-modification outcome.
+- 2.1 Two main points: **descent with modification** is the pattern, **natural selection** is the mechanism.
+- 2.2 Set out as **four observations and two inferences**: reproductive potential, environmental restriction on numbers, struggle for existence, variation arising **spontaneously and before** the environmental change, survival of the fittest, differential reproduction.
+- 2.3 Selection alone gives **adaptation**, not a new species; speciation also needs **reproductive isolation**.
+- 2.4 **Neo-Darwinism**, the **Modern Synthesis**, differs from Darwinism in one respect: it adds **Mendelian genetics and molecular biology**, meaning **mutation** and **allele frequency change**.
+
+### 3. Three lines of evidence corroborate the theory, and the outcome names all three
+
+- 3.1 **Anatomical homologies**: **homology** = similarity from **shared ancestry**, showing **divergent evolution**, with the **pentadactyl limb** as the case.
+- 3.2 Against it, **analogy** = similarity from similar selection pressures in different lineages, showing **convergent evolution**, so it says nothing about relatedness.
+- 3.3 **Molecular homologies**: the universal genetic code, plus differences accumulating with time since divergence. Named molecules: **cytochrome c**, **haemoglobin**.
+- 3.4 **Fossil record**: sedimentary layering, the rarity of fossilisation, the **horse lineage** as the worked sequence.
+- 3.5 **Biogeography, supported by Wallace's findings**: **island biogeography**, island species resembling the nearest mainland not islands of similar climate; **continent biogeography**, the **Wallace Line**, marsupials against placentals.
+- 3.6 Every evidence block is written as **observation then conclusion**, which is the answer shape.
 
 ---
 
-## 7.5 Phylogeny and its Reconstruction
+## PART C: 7.3 MICROEVOLUTION
 
-1. **Phylogeny** is the organisation of species to **show their evolutionary relationships**, and that is the definition the outcome asks for word for word.
-2. A phylogeny is a **hypothesis** about evolutionary history, which means it is testable and gets revised when new evidence arrives.
-3. **Classification** groups by shared characteristics and may ignore evolutionary relationship, while **phylogeny** is built on evolutionary relationship, and these are two separate outcomes for that reason.
-4. A **phylogenetic tree** is read through four components, the **root**, the **branches**, the **nodes** and the **tips**, and every tree question is answered from those four.
-5. The **most recent common ancestor** of any group is found by tracing backwards until the branches converge.
-6. Two things a tree cannot tell you are the **absolute age** of a species and that one taxon **evolved from the taxon next to it**, and both are stated corrections to standard misreadings.
-7. **Similarity does not equal relatedness**, because **convergent evolution** produces **analogous** structures in unrelated lineages, so homologous characters must be sorted from analogous ones first.
-8. Evolutionary relationship is established using **shared derived characters**, which define a **clade**, as against **shared ancestral characters**, which do not distinguish anything within the group, and which characters count as derived is decided by comparing the **ingroup** against an **outgroup**.
-9. The molecular outcome asks for the importance of **genome sequences** in reconstructing phylogenetic relationships, and the core inference is that greater **sequence similarity** means closer relationship.
-10. **Multiple sequence alignment** is named in the outcome and it is required for both **nucleotide** and **amino acid** data, so it is a process you owe by name.
-11. The same outcome asks you to **state the advantages of molecular methods**, so the advantages are a listed answer in their own right and not a throwaway comment.
+### 1. Population genetics is the vocabulary every other outcome is written in
 
----
+- 1.1 Five definitions carry the Core Idea: **population**, **gene pool**, **allele frequency**, **genotype frequency**, **population genetics**.
+- 1.2 **Microevolution** = change in allele frequencies in a gene pool over generations, by three mechanisms: **natural selection**, **genetic drift**, **gene flow**.
 
-## Scope corrections: what your notes teach that 9477 does not examine
+### 2. Variation has three sources, and without it there is no differential survival
 
-All checked by literal search of the syllabus PDF, so these are safe to act on.
+- 2.1 **Mutation**: the only source of **new alleles**.
+- 2.2 **Meiosis**: recombines existing alleles by **crossing over** and **independent assortment**.
+- 2.3 **Sexual reproduction**: recombines them again at **random fertilisation**.
 
-**Genuinely gone. No outcome carries these under any wording, and nothing in Core Idea 4 implies them.** **Adaptive radiation** and **mass extinction** as nodes in their own right, **binomial nomenclature** and **Linnaeus** and the eight-rank **taxonomic hierarchy** as content, the four **non-biological species concepts**, **vestigial structures**, **early embryonic development** as evidence, the **fitness coefficient** arithmetic, **coevolution**, **sexual selection**, **artificial selection**, **autopolyploidy against allopolyploidy** with its **colchicine** and **bread wheat** detail, the **distance matrix** formalism, **PhyloCode**, and the **geological time scale**. That is roughly 22 of the Book's 129 pages, about 17%.
+### 3. Natural selection edits pre-existing variation, and it works through the phenotype
 
-**Zero hits as words, but still examined under other wording. Do not cut these.** **Genetic drift**, **bottleneck effect**, **founder effect**, **gene pool**, **allele frequency** and **gene flow** are all absent as named terms, and all six are carried by the outcome about the population being the smallest evolving unit. **Heterozygote advantage**, **balanced polymorphism**, **diploidy** and **polymorphism** are absent, and all four are carried by the outcome about preserving genetic variation including harmful recessive alleles. **Reproductive isolation**, **prezygotic** and **postzygotic** are absent, and the speciation outcome names geographical, behavioural and physiological isolation instead. **Phylogenetic tree**, **clade**, **synapomorphy** and **outgroup** are absent, and the outcome about how evolutionary relationship is established carries all of them. **Molecular clock** is absent and the reconstruction outcome carries it. **Peppered moth** and **antibiotic resistance** are absent and the outcome that says with examples demands them. Learn the biology, and expect not to be handed the word.
+- 3.1 Differential survival and reproduction of better-adapted individuals, **environment as the selection pressure**, acting on **pre-existing** alleles through the **phenotype**, only indirectly on the genotype.
+- 3.2 Editing, not creation: an antibiotic selects resistant bacteria already present, it does not create them.
+- 3.3 Named examples are required: **industrial melanism in the peppered moth**, pressure = bird predation; **antibiotic resistance in MRSA**, pressure = the antibiotic.
+- 3.4 Read off a **distribution curve**: mean shifts to one extreme, curve narrows around the mean, or splits into two peaks. The shapes are examined, not the names directional, stabilising and disruptive.
 
-**Six specific rulings.**
+### 4. Drift and gene flow shift frequencies too, but only selection adapts a population
 
-1. **Hardy-Weinberg is examinable and the calculation is required, not optional.** It has **two of the fourteen outcomes** in this Core Idea, one for the model and its conditions and one for the calculation, and the syllabus prints the equation itself in its Mathematical Requirements alongside the t-test and the chi-squared test. It also appeared on the official specimen Paper 1.
-2. **Your question bank is almost empty on it.** Five records out of 1650 mention Hardy-Weinberg at all. The bank predates this syllabus, which added the node. Every Hardy-Weinberg question you drill has to be built rather than harvested, so do not read the bank's silence as evidence it does not matter.
-3. **The three named modes of selection are not named anywhere in the syllabus.** Directional, stabilising and disruptive all return zero hits. The **shapes** are fully examinable, because reading a distribution curve and explaining what selection has done to it is what the selection outcomes ask for. Learn the three names, the three curve shapes and one example each in about fifteen minutes as insurance against a stem that uses the vocabulary, and then stop. Do not build a cluster on them.
-4. **Sickle cell heterozygote advantage is examinable in two different Books and the two answers are different.** In Book 2 it sits under the outcome about gene mutations causing disease, and there the answer is the substitution, the amino acid change and the sickling. In Book 7 it sits under the outcome about preserving harmful recessive alleles, and there the answer is the two opposing selection pressures that make the heterozygote fitter than either homozygote. The words sickle, malaria and heterozygote advantage appear **nowhere** in Core Idea 4, so the name will not be handed to you here.
-5. **Polyploidy is not named by the speciation outcome**, which names behavioural or physiological isolation instead. Keep three lines on it, that chromosome doubling makes a polyploid unable to form fertile hybrids with its diploid parent so isolation is achieved in one generation in the same place, and drop the other four pages.
-6. **Bioethics is dropped entirely.** Do not read any of it in this Book.
+- 4.1 **Genetic drift**: frequency change by **chance** rather than fitness, strongest in **small populations**.
+- 4.2 **Founder effect** (a few individuals start a new population) and **bottleneck effect** (a crash cuts numbers): both leave an unrepresentative allele sample.
+- 4.3 **Gene flow**: movement of alleles between populations, reducing the differences selection and drift built up.
+- 4.4 **Only natural selection consistently produces adaptive evolution.**
 
-**Why this Book is different from Book 2 and Book 3.** It sits inside **one Core Idea**, all fourteen outcomes match the syllabus letter for letter with no offset error, and roughly 13% of the question corpus tests content with no outcome against Book 3's 23% to 30%. This is the cleanest Book you have. The one thing to watch runs the other way from every previous Book: the corpus tests **less** than the syllabus requires, and the gap is entirely Hardy-Weinberg.
+### 5. Two mechanisms shelter harmful recessive alleles in the gene pool
 
----
+- 5.1 **Diploidy** hides recessives in **heterozygotes**, and the rarer the allele the greater the protection.
+- 5.2 **Balanced polymorphism** through **balancing selection**: **heterozygote advantage**, two opposing pressures making the heterozygote fitter than either homozygote, and **frequency-dependent selection**.
 
-## Three errors in the notes themselves
+### 6. Hardy-Weinberg describes a population that is not evolving, and the calculation is required
 
-1. **Chapter 7.4 page 71 opens by saying a species is the smallest independently evolving unit.** The syllabus says the **population** is, chapter 7.3 says the population is, and chapter 7.3 has a whole section headed that way. Write population, always.
-2. **Chapter 7.3 page 53 files sickle cell and heterozygote advantage under stabilising selection.** Page 67 of the same chapter lists stabilising selection among the processes that **reduce** genetic variation and heterozygote advantage among those that **maintain** it. It is **balancing selection**. Learn it from pages 67 and 68, not from page 53.
-3. **Chapter 7.3 page 45 says beneficial mutations are the only source of genetic variation that makes evolution possible.** Page 47 of the same chapter says sexual reproduction provides much of that variation, and the outcome names three sources. Mutation is the only source of **new alleles**, and that is the sentence to write.
+- 6.1 The model: allele and genotype frequencies stay constant across generations when no disrupting factor acts.
+- 6.2 The five conditions **it operates in**, each owing its reason: **large population**, **random mating**, **no gene flow**, **no mutation**, **no natural selection**.
+- 6.3 Equations: **p + q = 1** and **p² + 2pq + q² = 1**. p dominant, q recessive, p² homozygous dominant, 2pq heterozygous, q² homozygous recessive.
+- 6.4 Standard route enters from the **recessive phenotype**, the only one whose genotype reads directly: frequency = q² → q → p = 1 − q → p² and 2pq.
+- 6.5 Observed departing from predicted means a condition is broken, so the population is evolving. A test, not a formula.
 
 ---
 
-## Before Cluster 1
+## PART D: 7.4 SPECIATION AND MACROEVOLUTION
 
-Two things, in this order.
+### 1. The biological species concept defines a species by gene flow, and it fails in four cases
 
-First, the **big 3 ideas** that hold Book 7 together. Teach them back to me in your own words.
+- 1.1 Members **interbreed in nature** and produce **viable, fertile** offspring, and cannot do so with other populations. Both adjectives carry marks.
+- 1.2 Four limitations, half the outcome: **fossils** cannot be tested, **asexual and self-fertilising** organisms fall outside it, **hybrids** form between distinct species, some populations of one species never interbreed.
+- 1.3 The idea under the whole chapter is **gene flow**: a species is its absence, a barrier is its blocking, speciation is its irreversibility.
 
-Second, notice the shape of the reading. Book 7 was **9 to 11% of the whole A-level** on the specimen, which puts it level with Book 2 and below Book 3, and it appeared on three of the four papers. It is tested differently from either. **Explain is 41% of every structured part, the highest of any Book, and Suggest is 18.5%, also the highest.** Together that is 59%, which means the modal question is a causal chain run on material you have never seen. The specimen's largest single Book 7 part was five marks, one undifferentiated part, command word Suggest, on a climate figure with no scaffolding. Its largest block on Paper 3 was a nucleotide alignment you had to count differences across and rank by relatedness, with a follow-up asking you to explain the method you used. So as you read, keep asking *could I run this on an organism the notes never mention*, because that is the form it arrives in, not a request to recite.
+### 2. Isolating mechanisms split by whether they act before or after the zygote
+
+- 2.1 **Prezygotic**: **habitat**, **temporal**, **behavioural**, and **physiological** split into **mechanical** and **gametic**.
+- 2.2 **Postzygotic**: **hybrid inviability**, **hybrid sterility** with the **mule**, and **hybrid breakdown**.
+- 2.3 Isolation needs a **combination** of barriers, because one alone may not seal a gene pool.
+
+### 3. Speciation runs through four stages and arrives by exactly two modes
+
+- 3.1 Four stages: one population → a **barrier** interrupts gene flow → **differentiation** under different pressures and drift → barrier goes and **reproductive isolation** is tested.
+- 3.2 **Allopatric**, by **geographical isolation**: the more common mode, faster in **small isolated populations** because drift is stronger there.
+- 3.3 **Sympatric**, by **behavioural or physiological isolation within the same geographical location**: the barrier arises at the **start** of the split, not the end.
+- 3.4 Chromosome doubling is one physiological route: a polyploid cannot form fertile hybrids with its diploid parent, so isolation arrives in one generation.
+
+---
+
+## PART E: 7.5 PHYLOGENY AND ITS RECONSTRUCTION
+
+### 1. A phylogeny is a hypothesis about evolutionary history, not a record of it
+
+- 1.1 **Phylogeny** = the organisation of species to **show their evolutionary relationships**, wanted word for word.
+- 1.2 **Biological classification** = organisation of species by **shared characteristics**, and it **may not** take evolutionary relationship into account. That clause is the whole distinction.
+- 1.3 Being a hypothesis, a phylogeny is testable and gets revised on new evidence.
+
+### 2. Every tree question comes off four components and two prohibitions
+
+- 2.1 Components: **root**, **branches**, **nodes**, **tips**. The **most recent common ancestor** is found by tracing back until branches converge.
+- 2.2 A tree cannot give **absolute age**, does not show one taxon **evolving from the one next to it**, and does not change when a node is **rotated**.
+
+### 3. Relationship is established from shared derived characters, not from similarity
+
+- 3.1 **Similarity does not equal relatedness**: **convergent evolution** makes **analogous** structures in unrelated lineages, so homology must be sorted from analogy first.
+- 3.2 **Shared derived characters** define a **clade**; **shared ancestral characters** run through the whole group and distinguish nothing within it.
+- 3.3 Which characters count as derived depends on the level, decided by comparing the **ingroup** with an **outgroup** known to have diverged earlier.
+
+### 4. Molecular data does the same job better, and the outcome names the method
+
+- 4.1 Core inference: greater **sequence similarity** means closer relationship, more differences mean longer since divergence.
+- 4.2 The **molecular clock** assumes a roughly constant mutation rate, which is what a limitation question attacks.
+- 4.3 **Multiple sequence alignment**, named in the outcome for **nucleotide and amino acid** data both. Insertions and deletions shift everything downstream and break it.
+- 4.4 Genes evolve at different rates: **rRNA** resolves deep divergences, **mtDNA** recent ones.
+- 4.5 **Advantages**, a listed answer: genetic and unambiguous, usable in organisms with no fossil record, quantifiable so relatedness is graded not judged, reaching relationships anatomy cannot. Limitation: inconclusive for near-simultaneous ancient divergences.
+
+---
+
+## One-line mental map
+
+**7.1:** Descent with modification → micro is allele frequencies in a population, macro is species and above over geological time, macro is accumulated micro → populations evolve not individuals, and the environment selects phenotypes rather than directing DNA.
+
+**7.2:** Lamarck wrong → Darwin and Wallace give the pattern plus natural selection → Neo-Darwinism adds mutation and allele frequencies → corroborated by anatomical homologies, molecular homologies and biogeography, each observation then conclusion.
+
+**7.3:** Variation from mutation, meiosis and sex → selection edits it through the phenotype, drift randomises it, gene flow blends it, only selection adapts → diploidy and balanced polymorphism shelter recessives → Hardy-Weinberg is the not-evolving baseline and deviation means evolution.
+
+**7.4:** A species is a gene pool sealed by prezygotic then postzygotic barriers → barrier, differentiation, isolation tested → allopatric by geography, sympatric by behaviour or physiology in one place.
+
+**7.5:** Classification groups by shared characters and may ignore ancestry, a phylogeny is a testable hypothesis read from root, nodes, branches and tips → sort homology from analogy → shared derived characters against an outgroup define clades → sequence similarity plus alignment grades relatedness.
