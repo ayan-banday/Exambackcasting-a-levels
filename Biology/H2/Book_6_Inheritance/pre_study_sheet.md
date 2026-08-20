@@ -1,280 +1,112 @@
-# Pre-Study Sheet, Biology H2 (9477) > Book 6: Inheritance
+# Pre-Study Sheet: Inheritance
 
-> **How to read this.** Each lettered section opens with a **Layer 1** claim, which is a main argument
-> of the Book. Under it sit the **Layer 2** sub-arguments that make that claim true. They are together
-> on purpose, because a main argument you cannot see the parts of is just a sentence to memorise.
->
-> **Target:** see an exam question and think *I've studied this, I could rough out an answer.* Roughly
-> 10 to 20% exam performance. 15 to 20 minutes.
->
-> **Then:** work out the **big 3 ideas** that hold the whole Book together, and teach them back to me.
+Layer 1 = main arguments. Layer 2 = sub-arguments. No detail, no examples, anchor points only.
+
+Roughly **4% to 6%** of the whole A-level on the 9477 specimen: few questions, but each is close to all-or-nothing.
 
 ---
 
-## The whole Book in one arc, before any of the detail
+## PART A: OVERVIEW
 
-Every question in Book 6 is one of two moves, and it helps enormously to know that before you start.
+### 1. Every question in this Book is one of two moves, forwards or backwards
 
-**Forwards:** you are told the parents and asked what the offspring will look like, and in what
-proportions. **Backwards:** you are handed offspring counts and asked what the parents must have been,
-or which gene arrangement explains the numbers.
+- **1.1** **Forwards**: given the parents, state what the offspring will be and in what proportions.
+- **1.2** **Backwards**: given offspring counts, deduce the parents or the gene arrangement behind the numbers.
+- **1.3** The **test cross** is the standard backwards move: cross the unknown dominant phenotype with the **homozygous recessive**; any recessive offspring proves it was **heterozygous**.
+- **1.4** Everything else serves those moves: vocabulary states the situation, the **genetic diagram** executes it, **ratios** are its predictions, the **chi-squared test** judges the fit.
 
-Everything else in the Book exists to serve those two moves. The **vocabulary** exists so you can state
-the situation precisely. The **genetic diagram** is the method that runs both moves and the thing you
-are actually paid marks for. The **ratios** are the predictions the method produces. Most of the Book
-is then a catalogue of **things that shift the ratio away from the simple case**, each with its own
-signature in the numbers. And the **chi-squared test** is the one tool that answers the question sitting
-underneath all of it: when the counts do not match the prediction, is that chance or is the prediction
-wrong?
+### 2. The overview sheet is a routing map: read the cross, pick the branch, predict the ratio
 
-Hold that shape. If you can place any new fact into "this is a thing that shifts the ratio, and here is
-its signature", the Book stops being a list.
+- **2.1** First split: are the genes on **different** chromosomes (unlinked, independent assortment holds) or the **same** chromosome (linked, it does not)?
+- **2.2** **Monohybrid** (one character, one gene): **3:1** from a heterozygous cross, **1:1** from a test cross. **Dihybrid** (two characters, two unlinked genes): **9:3:3:1** and **1:1:1:1**.
+- **2.3** **Codominance** gives **1:2:1** phenotypic, because the heterozygote is its own visible class.
+- **2.4** Three branches have **no fixed ratio at all**, and saying so is often the answer: **multiple alleles**, **sex-linked** crosses, **incomplete linkage**.
+- **2.5** The residual branch: if the data fits none of them, suspect **mutation** or **modification by the environment**.
 
 ---
 
-## A. Meiosis is the engine, and every ratio in this Book is a consequence of it
+## PART B: INHERITANCE I
 
-**Layer 1.** Ratios exist because **meiosis puts exactly one allele of each pair into each gamete**, and
-**fertilisation** then pairs gametes at random. Nothing in inheritance is a rule about organisms; it is
-arithmetic about gametes.
+### 1. Meiosis is the engine, and every ratio here is arithmetic about gametes
 
-**Layer 2, why that produces ratios at all:**
+- **1.1** The two alleles at a **locus** sit on **homologous chromosomes** and separate at **anaphase I**, so a heterozygote makes two gamete types equally.
+- **1.2** Genes on **different** chromosomes assort **independently** at **metaphase I**, so a double heterozygote makes four gamete types.
+- **1.3** **Random fertilisation** multiplies the two gamete lists together, which is what a Punnett square does.
 
-- The two alleles at a **locus** sit on **homologous chromosomes**, which separate at anaphase I, so a
-  gamete gets one or the other and never both. That single fact is what makes a heterozygote produce
-  two kinds of gamete in equal numbers.
-- Different gene pairs on **different** chromosomes assort **independently**, so their gamete types
-  combine in every possible pairing. This is why a dihybrid heterozygote makes four gamete types rather
-  than two.
-- **Random fertilisation** then multiplies the two gamete lists together, which is exactly what a
-  Punnett square is doing when you draw it.
+### 2. Ten words, and they describe only two things: where a gene is and which version you hold
 
-**This is your Book 3 link, and it is worth making now.** You have already studied meiosis in Book 3
-chapter 3.2. Book 6 does not re-teach it; it assumes it and works out the consequences. When a Book 6
-answer feels like it is missing a step, the missing step is usually a meiotic one.
+- **2.1** **Where**: the **locus** is the position on the chromosome, and **linkage** says two loci share one chromosome, which is what breaks independent assortment.
+- **2.2** **Which version**: an **allele** is one version at that locus, you hold two, and **homozygous** or **heterozygous** says whether they match.
+- **2.3** **How the pair is expressed**: **dominant** and **recessive** means one masks the other, **codominant** means neither does, so both show.
+- **2.4** **What you see against what you have**: **genotype** is the alleles, **phenotype** the observable result, and the chain **allele → polypeptide → enzyme → trait** is what makes epistasis explicable in Part C.
 
----
+### 3. The genetic diagram is the method, and most of the marks sit on the layout rather than the answer
 
-## B. Ten words, and they only describe two things: where a gene is, and which version you have
+- **3.1** The rows are fixed and paid line by line: **define the alleles** → parental **phenotypes** → parental **genotypes** → **gametes** → **random fertilisation** → **Punnett square** → offspring **genotypes** → offspring **phenotypes** → **ratio**.
+- **3.2** **Gametes must be circled.** Circling is part of the same mark point, so an uncircled row scores nothing even with the right alleles.
+- **3.3** **Every genotype sits under its phenotype.** A bare ratio with no phenotypes is rejected.
+- **3.4** The Punnett square is **labelled by parent and by sex**, which is load-bearing in every sex-linkage question.
+- **3.5** Three notation variants: **sex linkage** superscripts alleles onto X and Y; **linkage** uses a two-line fraction, one chromosome's alleles above its homologue's; **codominance and multiple alleles** share a capital with superscripts.
+- **3.6** Tolerance is tight: one mistake in a row survives, **two in the same row scores zero for that row**.
+- **3.7** Books 1 to 5 are explained; this one is **executed**, with a pen.
 
-**Layer 1.** The syllabus names ten terms in a single outcome, and the whole of the rest of the Book is
-written in them: **locus, allele, dominant, recessive, codominant, homozygous, heterozygous, phenotype,
-genotype** and **linkage**. Learn them as a structure, not a glossary.
+### 4. There is one baseline, and the rest is named deviations from it, each with a signature in the numbers
 
-**Layer 2, the structure they form:**
-
-- **Where:** the **locus** is the position on the chromosome. **Linkage** is the statement that two loci
-  are on the *same* chromosome, which matters only because it breaks the independent assortment in
-  section A.
-- **Which version:** an **allele** is one version of the gene at that locus. You hold two.
-  **Homozygous** and **heterozygous** describe whether your two match.
-- **How the pair is expressed:** **dominant** and **recessive** describe one allele masking the other.
-  **Codominant** describes neither masking the other, so both show.
-- **What you see versus what you have:** **genotype** is the alleles, **phenotype** is the observable
-  result, and the chain between them runs **allele to polypeptide to enzyme to trait**. That chain is
-  the reason a gene can affect anything at all, and it is also the reason epistasis in section E works
-  the way it does.
+- **4.1** **Codominance and multiple alleles** change what the heterozygote looks like. Signature: more phenotypic classes than plain dominance allows.
+- **4.2** **Sex linkage** makes the ratio differ between the sexes: the gene is on the **X** and a male is **hemizygous**. Signature: far more affected males, and **reciprocal crosses giving non-identical results**.
+- **4.3** **Autosomal linkage** breaks independent assortment because two loci travel together, and **crossing-over** at a **chiasma** partly undoes it:
+    - **Complete linkage**: parental types only, so a test cross gives 1:1 and an F2 gives 3:1.
+    - **Incomplete linkage**: four classes, **no fixed ratio**, a large **parental** majority against a small **recombinant** minority.
+- **4.4** **Epistasis** makes phenotypic classes merge, which is Part C.
+- **4.5** **The environment, and death.** A phenotype can be modified after the genotype has acted, and a class that dies before counting never enters the data.
+- **4.6** **Pedigree analysis** runs the same deduction on human family data: settle dominant or recessive first, then autosomal or X-linked, quoting the individuals that prove it.
 
 ---
 
-## C. The genetic diagram is the method, and the marks are on the layout
+## PART C: INHERITANCE II
 
-**Layer 1.** Both moves, forwards and backwards, are executed through a **genetic diagram** with a
-**fixed set of labelled rows**, and the mark scheme pays you line by line for producing those rows.
+### 1. Gene interaction is two or more genes acting on ONE character, which is not what a dihybrid cross is
 
-**Layer 2, what that means in practice:**
+- **1.1** Dihybrid inheritance = **two** characters, two genes. Gene interaction = **one** character, two or more genes. Collapsing them is the commonest error here.
+- **1.2** **Non-epistatic interaction**: the gene products interact to give new visible classes, but neither gene blocks the other.
 
-- The rows run parental **phenotypes**, parental **genotypes**, **gametes** (conventionally circled),
-  the **Punnett square** or fusion lines, offspring **genotypes**, offspring **phenotypes**, and the
-  **ratio**. Missing rows lose marks even when the final answer is right.
-- A **test cross** is the standard backwards move: to find the unknown genotype behind a dominant
-  phenotype, cross it with the **homozygous recessive**. If any offspring show the recessive phenotype,
-  the unknown parent was heterozygous.
-- This is the one place in Biology where **presentation is the content**. That is not a study tip, it is
-  what the marks are attached to.
+### 2. Epistasis is one locus suppressing the expression of a different locus
 
-**This is also why Book 6 feels different from Books 1 to 5.** Those Books are explained; this one is
-**executed**. Read this sheet for the map and the vocabulary, then accept that the real learning here
-happens with a pen, working crosses.
+- **2.1** It is not dominance. **Dominance** acts between alleles at the **same** locus, **epistasis** between alleles at **different** loci.
+- **2.2** The suppressing gene is **epistatic**, the suppressed one **hypostatic**, and suppression can come from either a recessive or dominant genotype.
+- **2.3** Underneath every case is a **metabolic pathway with a step blocked**: no enzyme for an early step means nothing downstream happens, whatever the later genes say.
+- **2.4** The answer that earns marks **names the enzyme that fails and the product that never forms**.
+- **2.5** Because several genotypes now look alike, classes **merge**, so an epistatic cross gives **fewer classes** than a plain dihybrid. Explaining the merge is the question.
+- **2.6** The outcome states in its own brackets that expected ratios are **not required**; the focus is **problem solving**. Derive the ratio, never recall it.
 
----
+### 3. The kind of variation decides the kind of data, and therefore the test
 
-## D. There is one default ratio family, and five named things that shift it
+- **3.1** **Discontinuous variation**: distinct countable classes, **one or a few genes**, little environmental effect. Data are counts.
+- **3.2** **Continuous variation**: a range with intermediates, because **many genes act additively** and the environment modifies the result. Data are measurements.
+- **3.3** That distinction routes the statistics: **discrete counts go to the chi-squared test, measured means go to the t-test.**
+- **3.4** The **environment** modifies the phenotype after the genotype has acted; the named example is **diet** and the differentiation of **honeybees**.
 
-**Layer 1.** Unlinked genes with straightforward dominance give the standard ratios. **Everything else
-in this Book is a named deviation from those ratios, and each deviation has a signature you can read
-off the numbers.** Learning the Book as five deviations from one baseline is far less work than
-learning five separate topics.
+### 4. Meiosis and fertilisation make new combinations, but only mutation makes a new allele
 
-**Layer 2, the five, and what each one does to the numbers:**
+- **4.1** Crossing-over, independent assortment and random fertilisation only shuffle alleles that already exist.
+- **4.2** A genuinely new allele needs a change to the base sequence, which is **mutation**.
+- **4.3** **Only a mutation in a gamete is inherited.** A somatic mutation stops with that individual.
 
-1. **Codominance and multiple alleles** change **what the heterozygote looks like**. Codominance gives a
-   third visible class instead of masking; multiple alleles mean more than two versions exist in the
-   population, though any individual still carries two. Signature: more phenotypic classes than a plain
-   dominant and recessive cross allows.
-2. **Sex linkage** makes the ratio **differ between the sexes**. The gene sits on the **X chromosome**,
-   and a male carrying only one X is **hemizygous**, so he expresses whatever single allele he has.
-   Signature: the condition appearing far more often in males, and a cross where sons and daughters
-   give different results.
-3. **Linkage** breaks the independent assortment from section A, because two loci on the same chromosome
-   travel together. **Crossing-over** partly undoes this. Signature: four classes still appear, but in
-   a large **parental** majority and a small **recombinant** minority instead of the expected
-   proportions.
-4. **Epistasis** makes phenotypic classes **merge**, which is section E.
-5. **The environment**, and death. A phenotype can be modified after the genotype has done its work, and
-   a class that dies before you count it cannot appear in your data.
+### 5. When the counts miss the prediction, the chi-squared test decides whether that matters
 
-**Three of the five have no fixed ratio attached at all**, and knowing which is itself a common answer:
-**multiple alleles**, **sex-linked** crosses, and **incomplete linkage**.
+- **5.1** Every predicted ratio assumes **random fertilisation**, **equal survival** and a **large sample**, and those are the assumptions to state when data misbehaves.
+- **5.2** The test asks whether the gap between **observed** and **expected** counts is small enough to be chance.
+- **5.3** Five steps: state **H0** and **HA** → turn the ratio into **expected numbers** → compute χ² → compare with the **critical value** at the right **degrees of freedom** → conclude.
+- **5.4** **Degrees of freedom counts phenotypic classes, not offspring.** Write **v = c − 1**, where c is the number of classes.
+- **5.5** Formula, symbol meanings and table are **given to you in the exam**. What is tested is turning a ratio into expected numbers and reading the correct row.
+- **5.6** The conclusion carries two marks: the **statistical** verdict on H0, then the **biological** conclusion from it.
 
 ---
 
-## E. Epistasis is the deepest form of "genes do not act alone"
+## One-line mental map
 
-**Layer 1.** **Epistasis** is an interaction in which an allele at **one locus suppresses the expression
-of alleles at a different locus**. It is not the same thing as dominance, which is an interaction
-between two alleles at the **same** locus.
+**Overview:** every question is forwards (parents → offspring ratio) or backwards (offspring counts → parents), and the routing map branches on whether the genes share a chromosome.
 
-**Layer 2, and this is the part that makes it answerable:**
+**Inheritance I:** meiosis puts one allele per gamete → random fertilisation multiplies the lists → the fixed-layout genetic diagram executes both moves and carries the marks → codominance, sex linkage, autosomal linkage and the environment each shift the baseline readably.
 
-- The suppressing gene is **epistatic**, the suppressed one is **hypostatic**, and the suppression can
-  come from either a recessive or a dominant genotype.
-- Underneath every epistasis case is a **metabolic pathway with a step missing**. Go back to the
-  genotype-to-phenotype chain in section B: if the enzyme for an early step never forms, nothing
-  downstream can happen, whatever the downstream genes say. **The answer that earns marks names the
-  enzyme that fails and the product that never forms.**
-- Because several genotypes now produce the same appearance, phenotypic classes **merge**, and an
-  epistatic cross gives **fewer classes** than a plain dihybrid. That merging is what you are asked to
-  explain.
-
-**Do not memorise the ratios.** The outcome says in its own brackets that knowledge of the expected
-ratio for various types of epistasis is **not required** and the focus is **problem solving**. Learn the
-one procedure that generates any of them, including combinations you have never seen.
-
----
-
-## F. When the counts do not match the prediction, one test decides whether that matters
-
-**Layer 1.** A predicted ratio is a prediction, and real offspring never land on it exactly. The
-**chi-squared test** asks whether the gap between **observed** and **expected** counts is small enough
-to be attributed to **chance**.
-
-**Layer 2, what the test rests on and how it is marked:**
-
-- The prediction itself assumes **random fertilisation**, **equal survival** of all offspring, and a
-  **large sample**. Those are the assumptions a question asks you to state when the data misbehaves,
-  and note that "equal survival" is deviation 5 from section D wearing a different hat.
-- The formula, the symbols and the critical-value table are all **given to you in the exam**. Nothing
-  about this test is a memory test. What is tested is turning a ratio into **expected numbers** and
-  reading the correct row.
-- **Degrees of freedom counts phenotypic classes, not offspring.** Write **v = c − 1**, where **c** is
-  the number of classes. Your notes write **df = n − 1** using **n** to mean classes, but in the
-  syllabus and on the official specimen paper **n** means **sample size**. Same biology, different
-  letter, and an examiner report names wrong degrees of freedom as a specific credit-losing error.
-- The conclusion has fixed wording and two separate marks: the statistical verdict, and then the
-  **biological** conclusion drawn from it.
-
----
-
-## G. The phenotype is not only the genotype, and the kind of variation decides the kind of data
-
-**Layer 1.** Genotype sets what is possible; the **environment** modifies what actually appears. And
-variation comes in **two kinds**, which is not a side note because **the kind of variation decides which
-statistical test you are allowed to use**.
-
-**Layer 2:**
-
-- **Discontinuous variation** gives **distinct countable classes** and comes from **one or a few genes**
-  with little environmental input. **Continuous variation** gives a **range with intermediates**,
-  because **many genes contribute additively** and the environment then modifies the result.
-- That distinction routes straight into section F. **Discrete counts go to the chi-squared test.
-  Measured means go to the t-test.** This is the cleanest link in the Book and it is worth fixing now.
-- The named example of environmental modification is the effect of **diet** on the differentiation of
-  **honeybees**, which the syllabus names by itself.
-
----
-
-## H. Where new variation actually comes from, and the distinction that closes the Book
-
-**Layer 1.** Meiosis and fertilisation produce new **combinations** of alleles. They never produce a new
-**allele**. Only **mutation** does that.
-
-**Layer 2:**
-
-- Section A's mechanisms, segregation, independent assortment, crossing-over and random fertilisation,
-  are all shuffles of alleles that already exist in the population.
-- A genuinely new allele requires a change to the base sequence, which is **mutation**, and you have
-  already met that in Book 2 chapter 2.5.
-- **Only a mutation in a gamete is inherited.** A mutation in a somatic cell affects that individual and
-  stops there. That is the germline versus somatic distinction from Book 2, arriving here as an
-  inheritance question.
-
----
-
-## Scope corrections: what your notes teach that 9477 does not examine
-
-All checked by literal search of the syllabus PDF, then re-checked with every hyphen, dash, space and
-closed-up spelling, so these are safe to act on. Nothing on the cut list was hiding behind a different
-dash.
-
-**Cut entirely.** **Chromosome mapping** is the big one: linkage maps, map units, **centimorgans**,
-crossover value as a computed number, and deducing gene order from three measurements. That is five
-pages of chapter 6.1 with **zero** syllabus hits under nine search terms and no outcome behind it. Also
-gone: the **phenotypic variance** equation, the terms **coupling** and **repulsion**, **lethal alleles**
-as a named topic, **back crosses**, and stating **Mendel's** laws by name. Mendel is not mentioned once
-in 9477.
-
-**Zero hits as words, but still fully examined.** **Monohybrid**, **pedigree**, **recombinant**,
-**polygenic**, **null hypothesis**, **incomplete dominance**, **hemizygous** and **carrier** are all
-absent from the syllabus and every one of them is live. Continuous and discontinuous variation look
-absent too, until you notice the outcome splits the phrase across a clause. **Learn the biology and
-expect not to be handed the word.**
-
-**Three specific rulings.**
-
-1. **Epistasis is examinable and its ratios are not**, as section E says. Your notes give you a two-page
-   table of seven ratios. Do not learn it.
-2. **Autosomal linkage is fully examinable and is the more heavily signposted half.** The outcome names
-   sex linkage and autosomal linkage side by side, and **autosomal linkage is the correct answer to the
-   only clear Book 6 question on the official specimen paper**. What is cut is only the arithmetic on
-   top: recognising linkage from data stays, converting it to a map distance goes.
-3. **The chi-squared formula, symbol meanings and table are given to you in the exam.**
-
-**Why your notes overshoot, measured.** In the Book 6 question bank, **5.1%** of questions turn on
-recalling a modified epistasis ratio rather than deriving one, and **2.5%** on chromosome mapping.
-Bigger than either: **288 records** in the Biostatistics bank are t-tests, standard deviations and
-microscopy, which belong to other papers entirely. Filter before you drill.
-
----
-
-## Four errors in the notes themselves
-
-1. **Chapter 6.2 page 9, the Fig. 6 caption says genotype aa gives a white mouse.** It does not. The
-   question stem three lines above and the diagram directly above both say **bb** gives white and **aa**
-   with a dominant B gives **black**. The caption was copied from the Labrador figure opposite with the
-   letters swapped wrongly.
-2. **Chapter 6.1 page 42, the Case 1 map puts one of its two measured distances on the wrong interval**,
-   and the next sentence contradicts the diagram. Only matters if you study mapping, which you should
-   not.
-3. **Chapter 6.1 page 31 calls a sex-linked dominant pedigree recessive**, while the figure caption on
-   the same page calls it dominant. The caption is right.
-4. **Chapter 6.0 gives the lethal-gene cross a genotypic ratio that cannot belong to the same offspring
-   as the phenotypic ratio printed beside it**, because it counts a class that has already died. Chapter
-   6.1 gets it right.
-
----
-
-## Before Cluster 1
-
-Two things, in this order.
-
-First, the **big 3 ideas** that hold Book 6 together. Teach them back to me in your own words.
-
-Second, know the shape of the reading. Book 6 measured at roughly **4% to 6% of the whole A-level** on
-the specimen against Book 3's 13% to 16%, and it was completely absent from Paper 3. But your school
-question bank files more Inheritance questions than almost any other topic. The honest reading is that
-this is a **high-density, low-volume** Book: few questions, but each carries a lot of marks and is close
-to all-or-nothing, because a genetic diagram or a chi-squared calculation either works or it does not.
-So the goal is not depth of coverage, it is **reliability**. Drill the two methods until they are
-automatic, then stop. As you read, keep asking *what would this look like as four offspring counts in a
-table*, because that is the form it arrives in, not a request to explain.
+**Inheritance II:** two genes on one character → epistasis blocks a pathway step so classes merge → discrete classes against continuous range decides chi-squared against t-test → only mutation makes a new allele.

@@ -1,80 +1,105 @@
-# Pre-Study Sheet, Biology H2 (9477) > Book 5: Energetics (Photosynthesis and Respiration)
+# Pre-Study Sheet: Photosynthesis & Cellular Respiration
 
-> **Layer 1: the main arguments of each chapter, with the key terms named.** Not the sub-arguments,
-> not the reasoning, not examples or data. Those are Cluster 1, 2 and 3.
->
-> **Target:** see an exam question and think *"I've studied this, I could bullshit a rough answer."*
-> Roughly 10 to 20% exam performance. 10 to 20 minutes.
->
-> **Then:** work out the **big 3 ideas** that hold the whole Book together, and teach them back to me.
+Layer 1 = main arguments. Layer 2 = sub-arguments. No detail, no examples, anchor points only.
+
+Roughly **23% to 25%** of the whole A-level on the 9477 specimen, the highest-value Book measured, half of it on Paper 4.
 
 ---
 
-## 5.1 Photosynthesis
+## PART A: PHOTOSYNTHESIS
 
-1. **Photosynthesis** converts **light energy** into **chemical energy**, and the syllabus splits the whole process into the **light-dependent reactions** and the **light-independent reactions**.
-2. The two stages happen in different parts of the **chloroplast**, the light-dependent ones in the **thylakoid membrane** and the light-independent ones in the **stroma**, which is why two separate outcomes make you relate chloroplast structure to function.
-3. Light is captured by **photosynthetic pigments**, and only **chlorophyll a** takes part directly while the **accessory pigments** hand their energy on to it.
-4. One whole outcome exists for a single comparison, the **absorption spectrum** of the pigments set against the **action spectrum** of photosynthesis.
-5. The light-dependent reactions run through **photosystems** and an **electron transport chain**, and what they exist to make is **ATP** and **reduced NADP**.
-6. **Photolysis of water** is the light-driven splitting of water inside that stage, and it is where the **oxygen** a plant releases comes from.
-7. There are two routes through the light-dependent stage, **non-cyclic photophosphorylation** and **cyclic photophosphorylation**, and the exam almost always wants them set against each other.
-8. **Chemiosmosis** is how the ATP is actually made, and it is one shared outcome covering the chloroplast and the mitochondrion together.
-9. The **Calvin cycle** is the light-independent reaction, and the outcome names its three phases in this order: **CO2 fixation**, **PGA reduction** and **RuBP regeneration**.
-10. That same outcome names exactly three things whose roles you have to be able to give, **rubisco**, **ATP** and **reduced NADP**, and it rules out nearly everything else about the intermediates.
-11. A separate outcome covers **limiting factors**, and the three it names are **temperature**, **light intensity** and **carbon dioxide concentration**.
+### 1. Photosynthesis converts light energy into chemical energy, and chloroplast structure splits the job into two stages
 
----
+- **1.1** **Light-dependent reactions** on the **thylakoid membrane**; **light-independent reactions** (the **Calvin cycle**) in the **stroma**.
+- **1.2** **Thylakoids** stacked into **grana** give large surface area for pigments and electron carriers; **intergranal lamellae** join the thylakoid spaces into one continuous compartment.
+- **1.3** The thylakoid membrane is **impermeable to protons**, which is why a gradient can be held across it.
+- **1.4** The **stroma** holds the Calvin cycle enzymes, plus circular DNA and 70S ribosomes.
+- **1.5** You must **identify these components in drawings, photomicrographs and electron micrographs**, not just name them.
 
-## 5.2 Cellular Respiration
+### 2. Light is captured by a set of pigments, but only chlorophyll a converts it
 
-1. **Cellular respiration** releases the energy held in **glucose** and uses it to make **ATP**, and it runs by an **aerobic** route when oxygen is present and an **anaerobic** one when it is not.
-2. **Glycolysis** happens in the **cytoplasm** and converts **glucose** to **pyruvate**, with a **net gain of ATP** and **reduced NAD**.
-3. Everything after glycolysis happens in the **mitochondrion**, with the **link reaction** and the **Krebs cycle** in the **matrix** and **oxidative phosphorylation** at the **inner membrane**.
-4. The outcome hands you the two words to write the link reaction and the Krebs cycle in, **dehydrogenation** and **decarboxylation**, and mark schemes reject vaguer verbs in their place.
-5. The **Krebs cycle** is called a cycle because its acceptor is **regenerated**, and what it mainly hands on is **reduced coenzymes** rather than ATP.
-6. **Oxidative phosphorylation** is where almost all the ATP is made, and it runs on the **electron transport chain** with **oxygen** as the **final electron acceptor**.
-7. **Chemiosmosis** is the mechanism that ATP synthesis actually uses here, and it is the same idea as in the chloroplast, which is why one outcome covers both.
-8. Take oxygen away and the chain stops, so only **glycolysis** keeps running and the cell is left with a **small yield of ATP**.
-9. **Fermentation** exists to **regenerate NAD** so that glycolysis can continue, and the syllabus says in its own words that this regeneration is the point.
-10. The two fermentations named are **ethanol** in **yeast** and **lactate** in **mammals**, and only one of the two products can be recovered later.
-11. A final outcome makes the **rate of respiration** something you have to investigate, and it names **substrate concentration**, **oxygen concentration** and **temperature**.
+- **2.1** **Chlorophyll a** is the only pigment that takes part directly in the light-dependent reaction.
+- **2.2** All others are **accessory pigments** (chlorophyll b, **carotenoids**): they absorb wavelengths chlorophyll a misses and pass the energy on to it; carotenoids also give **photoprotection**.
+- **2.3** **Absorption spectrum** (light absorbed per wavelength) against **action spectrum** (rate of photosynthesis per wavelength): the close match is the evidence those pigments drive it; the shared green trough is why leaves look green.
+- **2.4** Paper 4 reaches this through **chromatography**: pigments separate by relative solubility, each identified by its **Rf value**.
 
----
+### 3. The light-dependent reactions exist to make ATP and reduced NADP
 
-## Scope corrections: what your notes teach that 9477 does not examine
+- **3.1** **Photosystems** = light-harvesting complexes + reaction centre + primary electron acceptor. **PSII** carries **P680**, **PSI** carries **P700**, named after their absorption peaks.
+- **3.2** Two routes through the stage, and the exam sets them against each other:
+    - **Non-cyclic photophosphorylation** (Z scheme): both photosystems, electrons flow PSII → **ETC** → PSI → NADP. Products = **ATP**, **reduced NADP**, **oxygen**.
+    - **Cyclic photophosphorylation**: PSI only, electron cycles back. Product = **ATP only**, because the Calvin cycle needs more ATP than reduced NADP.
+- **3.3** **Photolysis of water** replaces PSII's lost electrons, adds protons to the thylakoid space, and is the sole source of released oxygen.
+- **3.4** **Chemiosmosis** makes the ATP: protons pumped into the thylakoid space flow back through **ATP synthase** down the **proton gradient**. One outcome covers chloroplast and mitochondrion together.
 
-All checked by literal search of the syllabus PDF, so these are safe to act on. **Five of the twelve outcomes carry a written not-required clause, so most of what follows is a quotation rather than a judgement call.**
+### 4. The Calvin cycle fixes carbon in three phases and rebuilds its own acceptor
 
-**Cut, and the syllabus says so in writing.** The **ten named steps of glycolysis** and their **enzymes**, which also kills Concept Check 1. The **named ETC complexes and carriers**, an exclusion printed **three separate times**. The **total ATP yield**, which your own notes ban in bold twice. The **detailed mechanism of ATP synthase**. And **the structure of the Calvin cycle intermediates**, along with **every enzyme except rubisco**.
+- **4.1** **CO2 fixation**: CO2 joins the 5C acceptor **RuBP** under **rubisco**, giving an unstable 6C intermediate that breaks into two 3C **PGA**.
+- **4.2** **PGA reduction**: **ATP** supplies energy, **reduced NADP** supplies hydrogen, giving **triose phosphate**. Both light-dependent products are spent here.
+- **4.3** **RuBP regeneration**: five of every six triose phosphate are recycled to rebuild RuBP at the cost of more ATP; the sixth leaves.
+- **4.4** Two triose phosphate build one hexose, so the cycle turns **six times per hexose**, feeding into carbohydrates, lipids and amino acids.
+- **4.5** **Rubisco** is the only enzyme to name; the outcome asks for the **role** of rubisco, ATP and reduced NADP.
 
-**Cut, on zero hits.** **Leaf anatomy and plant tissue types**, the **structure of ATP**, **phosphofructokinase and the regulation of glycolysis**, the **shuttle systems**, **photorespiration, C4 and CAM plants**, and the **eight named Krebs intermediates**.
+### 5. The rate is set by whichever factor is furthest from its optimum
 
-**Zero hits as words, but still examined. Do not cut these.** **Photolysis**, **photosystem**, **PSI**, **PSII**, **P680**, **P700**, **photophosphorylation**, **triose phosphate**, **substrate-level phosphorylation**, **proton gradient** and **FAD** are all absent as named terms and every one is carried by a broader clause. Triose phosphate is the one to watch, because the outcome demands the PGA reduction phase and a phase has to have a product.
-
-**Three rulings.** The Calvin exclusion says **structure**, so the **carbon counts survive**. It says the names of **other** enzymes, so **rubisco stays**. And **compensation point** has zero hits yet is worth ten marks on the specimen practical, which defines the term for you in the stem.
-
-**Measured.** Your notes run to 79 pages and roughly **49 of those are examinable**, a cut of about **38%**, nearly all of it one block of named chemistry you can delete whole sections at a time.
-
-**The Paper 4 flag, and it is the biggest finding in this build.** **Book 5 supplied 60% of the official specimen practical paper**, 30 marks of 50. Your question bank agrees independently: **199 of its 1,275 records come from Paper 4**, against six in all of Book 3. Two things those papers ask for are taught nowhere in your notes, **respiratory quotient values by substrate** and **pigment chromatography with Rf values**. This is an October block, not a footnote.
+- **5.1** **Principle of limiting factors**: a multi-step process runs at the rate of its slowest step, set by the factor nearest its minimum.
+- **5.2** Three named factors: **light intensity**, **carbon dioxide concentration**, **temperature**. On a curve: rising region (that factor limiting), then plateau (another factor limiting), joined at the **light saturation point**.
+- **5.3** Temperature behaves differently: it acts on Calvin cycle enzymes, so its curve peaks and **falls** as they denature, while light and CO2 only plateau.
+- **5.4** **Compensation point** = photosynthesis rate equals respiration rate, so **no net gaseous exchange**. Shade plants reach it at lower light intensity than sun plants.
+- **5.5** The outcome says **carry out investigations**: apparatus, a measured variable (O2 released or CO2 taken up), controls.
 
 ---
 
-## Four errors in the notes themselves
+## PART B: CELLULAR RESPIRATION
 
-1. **Chapter 5.2 page 5 says one glucose yields 4 CO2.** It yields **6**, and the chapter's own budget table on page 23 says six. The most dangerous error in the Book, because it sits on the Overview page and nothing in the syllabus excludes it.
-2. **That same page 5 gives two different ATP totals**, 36 or 38 in the flow chart and 30 to 32 in the boxed equation beside it. Do not quote a total at all.
-3. **Chapter 5.2 page 18 says the inner mitochondrial membrane is permeable to pyruvate.** Page 19 and its own figure caption say **active transport** through a transport protein, and page 19 is right.
-4. **Chapter 5.1 page 13 has the colours of chlorophyll a and b the wrong way round.** Chlorophyll a is **blue-green**, chlorophyll b is **yellow-green**.
+### 1. Respiration is a chain of redox reactions that moves the energy in glucose into ATP
 
-The digest flags **27 findings, of which nine are genuine factual or arithmetic errors**. Read it before Cluster 1.
+- **1.1** **Oxidation** = loss of electrons, loss of hydrogen, or gain of oxygen; **reduction** is the reverse, and the two always pair.
+- **1.2** The outcome hands you the verbs: **dehydrogenation** (removal of hydrogen) and **decarboxylation** (removal of carbon as CO2). Vaguer verbs are not credited.
+- **1.3** **Coenzymes NAD and FAD** are transient carriers: they collect hydrogen early and deliver it to the ETC.
+- **1.4** Four stages in order: **glycolysis** → **link reaction** → **Krebs cycle** → **oxidative phosphorylation**. Every route begins with glycolysis.
+- **1.5** **Aerobic** = complete oxidation of glucose to CO2 and water, oxygen as final electron acceptor. **Anaerobic** = incomplete oxidation, no oxygen.
+
+### 2. Glycolysis is the universal first stage and needs neither oxygen nor a mitochondrion
+
+- **2.1** Location: the **cytoplasm**, in every cell.
+- **2.2** Raw material **glucose**; products **pyruvate**, **reduced NAD**, and a **net gain of ATP** by **substrate-level phosphorylation** (net, since ATP is invested first).
+
+### 3. The link reaction and Krebs cycle strip glucose of its carbons and load the coenzymes
+
+- **3.1** Structure to function: **matrix** holds link reaction and Krebs enzymes; **inner membrane folded into cristae** gives surface area for ETC and ATP synthase, and is **impermeable to protons**.
+- **3.2** **Link reaction** (matrix): pyruvate enters by **active transport**, then is decarboxylated and dehydrogenated to **acetyl CoA**, releasing CO2 and reduced NAD.
+- **3.3** **Krebs cycle** (matrix): acetyl CoA joins a 4C acceptor; per turn two carbons enter as acetate and two leave as CO2, by repeated decarboxylation and dehydrogenation.
+- **3.4** It is a **cycle** because the acceptor **oxaloacetate is regenerated** each turn.
+- **3.5** What these stages mainly hand on is **reduced NAD and reduced FAD**, not ATP.
+
+### 4. Oxidative phosphorylation makes almost all the ATP, and it does so by chemiosmosis
+
+- **4.1** Reduced coenzymes are re-oxidised at the **ETC** on the inner membrane, where each carrier has higher electron affinity than the last, forcing one-way flow.
+- **4.2** Energy released as electrons drop **pumps protons** from matrix to intermembrane space, building a gradient with a **chemical (pH)** and an **electrical** component, together the **proton motive force**.
+- **4.3** Protons flow back through **ATP synthase**, coupling exergonic flow to endergonic phosphorylation of ADP. Same chemiosmosis as the chloroplast.
+- **4.4** **Oxygen is the final electron acceptor**, reduced to water. Remove it and the chain backs up, so nothing re-oxidises the coenzymes.
+
+### 5. Without oxygen the cell keeps only glycolysis, and fermentation exists to keep it running
+
+- **5.1** Chain stops → reduced NAD is never re-oxidised → NAD runs out → glycolysis would halt too.
+- **5.2** **Fermentation** re-oxidises reduced NAD using an organic molecule as terminal electron acceptor. **The regeneration of NAD is the point**, not the product.
+- **5.3** Two named fermentations:
+    - **Yeast**: pyruvate is decarboxylated to ethanal, releasing CO2, then reduced to **ethanol**, a toxic dead end.
+    - **Mammalian muscle**: pyruvate is reduced directly to **lactate**, no CO2, and lactate is reconvertible to pyruvate later.
+- **5.4** Only a **small yield of ATP** results, because it comes from glycolysis alone.
+
+### 6. Rate of respiration is something you measure, not just describe
+
+- **6.1** The three named factors are **substrate concentration**, **oxygen concentration** and **temperature**.
+- **6.2** A **respirometer** measures oxygen uptake: **soda lime** absorbs released CO2 so manometer movement tracks oxygen alone, and a **compensation tube** cancels pressure and temperature changes.
+- **6.3** **Respiratory quotient** = CO2 produced ÷ O2 consumed, and its value identifies the respiratory substrate in use.
+- **6.4** Redox dyes (DCPIP, methylene blue) go colourless when reduced, so time-to-decolourise is a proxy for rate of dehydrogenation.
 
 ---
 
-## Before Cluster 1
+## One-line mental map
 
-Two things, in this order.
+**Photosynthesis:** light hits thylakoid pigments → photosystems + ETC + photolysis → chemiosmosis makes ATP and reduced NADP → the Calvin cycle spends both to fix CO2 into sugar → rate capped by the factor nearest its minimum.
 
-First, the **big 3 ideas** that hold Book 5 together. Teach them back to me in your own words.
-
-Second, notice the shape of the reading. Book 5 was worth roughly **23% to 25% of the whole A-level** on the specimen, against Book 3's 13 to 16% and Book 2's 8 to 11%, which makes it the highest-value Book measured so far, and **about half of that sits on Paper 4**. Of the rest, **47.8% of its questions are figure-led** and **explain is the commonest command word at 27.7%**, nearly double describe. So keep asking two things as you read: *what would this look like as a graph or an apparatus diagram*, because that is the form it arrives in, and *what is this stage for*, because the specimen asked for the role of one coenzyme and the consequence of removing oxygen and never once asked for the four stages in order.
+**Respiration:** glucose → glycolysis in the cytoplasm → link reaction and Krebs in the matrix load the coenzymes → ETC and chemiosmosis cash them in, oxygen as final acceptor → no oxygen, so fermentation regenerates NAD to keep glycolysis and its small yield alive.
