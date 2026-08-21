@@ -2093,10 +2093,19 @@ window.PLAN = {
    "type": "test",
    "subject": "conv",
    "flag": "",
-   "mins": 360,
+   "mins": 430,
    "label": "Saturday TEST — full Bio P2 + GP essay mock",
    "focus": "",
    "blocks": [
+    {
+     "mins": 70,
+     "subject": "chem",
+     "name": "Chem — Hydroxy + Halogen RE-DRILL (7Q · 65 marks · 1h10)",
+     "desc": "Proves whether the cumulative-test gaps are closed. Answer revealable under EVERY part. Silver halide + iodoform + organic chains all tested.",
+     "done": false,
+     "doneDate": null,
+     "clusterHref": "clusters/redrill_chem_hydroxy_halogen.html"
+    },
     {
      "mins": 360,
      "subject": "conv",
