@@ -2093,10 +2093,19 @@ window.PLAN = {
    "type": "test",
    "subject": "conv",
    "flag": "",
-   "mins": 470,
+   "mins": 590,
    "label": "Saturday TEST — full Bio P2 + GP essay mock",
    "focus": "",
    "blocks": [
+    {
+     "mins": 120,
+     "subject": "maths",
+     "name": "Maths — CUMULATIVE TEST (12Q · 105 marks · 2h)",
+     "desc": "Full coverage of all 5 studied topics: every learning outcome tested. Diff 24 / Int 25 / Vectors 25 / Series 15 / DE 21 marks. Zero repeated stems (400 prior questions checked).",
+     "done": false,
+     "doneDate": null,
+     "clusterHref": "clusters/test_math_cumulative_2026-08-22.html"
+    },
     {
      "mins": 55,
      "subject": "chem",

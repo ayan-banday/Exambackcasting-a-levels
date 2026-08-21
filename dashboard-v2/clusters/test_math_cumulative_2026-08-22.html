@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>H2 Mathematics 9758 &middot; Cumulative Test &middot; 2026-08-22</title>
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], processEscapes: true, tags: 'none' },
+    svg: { fontCache: 'global' },
+    options: { skipHtmlTags: ['script','noscript','style','textarea','pre'] }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#ffffff; --card-bg:#ffffff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --amber-soft:#fffbeb;
+    --green:#059669; --green-soft:#ecfdf5; --purple:#7c3aed; --purple-soft:#f5f3ff;
+    --red:#dc2626; --red-soft:#fef2f2; --ink:#111111; --panel:#fafafa; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:940px;margin:0 auto;padding:34px 24px 110px;line-height:1.62;color:var(--text);background:var(--bg)}
+  h1,h2,h3,.label,.controls,button,.step-header,.marks,.hd .meta,.qhead,.conf,.src,.gaptag,.tot,.toc strong,.figcap{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  .hd{border-bottom:3px solid var(--ink);padding-bottom:14px;margin:0 0 8px;text-align:center}
+  .hd h1{font-size:1.5em;margin:0 0 6px;color:var(--ink);letter-spacing:.01em}
+  .hd .meta{color:var(--muted);font-size:.86em;margin:3px 0}
+  .hd .code{font-weight:700;color:#374151;letter-spacing:.04em}
+  .instr{background:var(--panel);border:1px solid var(--border);border-left:4px solid var(--blue);padding:14px 20px;border-radius:6px;margin:20px 0 10px;font-size:.93em}
+  .instr b{color:#1e3a8a}
+  .databox{background:var(--amber-soft);border:1px solid #fde68a;border-left:4px solid var(--amber);padding:10px 18px;border-radius:6px;margin:10px 0 20px;font-size:.9em}
+  .databox b{color:#92400e}
+  .toc{background:var(--panel);border:1px solid var(--border);border-radius:6px;padding:12px 20px;margin:0 0 24px;font-size:.88em}
+  .toc a{color:var(--blue);text-decoration:none;display:block;line-height:1.9}
+  .toc a b{color:var(--ink)}
+  .toc strong{display:block;margin-bottom:4px;color:var(--ink);font-size:.92em}
+  .topbar{position:sticky;top:0;z-index:80;background:var(--bg);border-bottom:1px solid var(--border);padding:10px 0;margin:0 0 18px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .topbar button{background:#fff;border:1px solid #cbd5cb;padding:6px 14px;border-radius:5px;cursor:pointer;font-size:.84em;font-weight:600;color:#1f2937}
+  .topbar button:hover{background:#eef2ee}
+  .topbar .clock{font-family:-apple-system,sans-serif;font-size:.8em;color:var(--muted);margin-left:auto}
+  .qcard{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:18px 24px 20px;margin:22px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .qhead{font-size:1.04em;font-weight:700;color:#1f2937;border-bottom:1px solid var(--border);padding-bottom:8px;margin:0 0 12px;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+  .qhead .tot{font-size:.8em;color:var(--muted);font-weight:600;white-space:nowrap}
+  .qcard p{margin:9px 0}
+  .stem-lead{margin:2px 0 10px}
+  .part{margin:16px 0 4px;padding:12px 15px 10px;border:1px solid #eef0f2;border-left:3px solid #d1d5db;border-radius:6px;background:#fcfcfd}
+  .part .pl{font-weight:700;color:#374151}
+  .sub{margin:6px 0 6px 22px}
+  .marks{display:inline-block;font-size:.78em;background:#fde68a;color:#92400e;padding:1px 8px;border-radius:10px;font-weight:700;margin-left:4px;vertical-align:middle}
+  .conf{margin:10px 0 0;padding:5px 12px;background:var(--amber-soft);border:1px dashed #fcd34d;border-radius:5px;font-size:.78em;color:#92400e;font-weight:600;letter-spacing:.02em;display:inline-block}
+  .src{font-size:.74em;color:#6d28d9;background:var(--purple-soft);border:1px solid #ddd6fe;border-radius:5px;padding:3px 9px;display:inline-block;margin:0 0 8px}
+  .revwrap{margin-top:10px}
+  .revbtn{font:inherit;font-size:.84em;font-weight:600;padding:6px 14px;border-radius:5px;border:1px solid #cbd5cb;background:#eef2ee;color:#1f2937;cursor:pointer}
+  .revbtn:hover{background:#e2e8e2}
+  .ansbox{display:none;margin-top:12px;border-top:2px solid #cfd8cf;padding-top:12px}
+  .step{margin:10px 0;padding:9px 14px;background:var(--green-soft);border-radius:5px;border-left:3px solid var(--green)}
+  .step-header{font-size:.78em;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .mk{display:inline-block;font-size:.74em;color:#fff;background:var(--green);font-weight:700;font-family:-apple-system,sans-serif;padding:1px 7px;border-radius:8px;margin:0 3px;vertical-align:baseline;letter-spacing:.03em}
+  .mk.b{background:#0f766e}
+  .mk.m{background:#1d4ed8}
+  .note{display:block;font-size:.88em;color:#475569;font-style:italic;margin:6px 0;border-left:2px solid var(--border);padding-left:10px}
+  .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:8px 13px;border-radius:4px;margin:10px 0 0;font-size:.89em}
+  .trap b{color:var(--red)}
+  .fig{display:block;margin:12px auto;background:#fff;border:1px solid var(--border);border-radius:6px;max-width:100%}
+  .figcap{text-align:center;font-size:.78em;color:var(--muted);margin:-4px 0 10px}
+  hr{border:none;border-top:1px solid var(--border);margin:24px 0}
+  .wrapup{background:var(--panel);border:1px solid var(--border);border-left:4px solid var(--blue);padding:14px 20px;border-radius:6px;margin:28px 0;font-size:.92em}
+  mjx-container{overflow-x:auto;overflow-y:hidden;max-width:100%}
+  table.cov{border-collapse:collapse;width:100%;font-size:.84em;margin:10px 0}
+  table.cov th,table.cov td{border:1px solid #d1d5db;padding:5px 9px;text-align:left}
+  table.cov th{background:#f3f4f6;font-family:-apple-system,sans-serif;font-size:.9em}
+  @media print{.ansbox{display:block !important}.revwrap{display:none}.topbar{display:none!important}body{background:#fff;padding:16px;max-width:100%}.qcard{box-shadow:none;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<div class="hd">
+  <h1>H2 Mathematics 9758 &middot; Cumulative Test &middot; 2 hours &middot; 105 marks</h1>
+  <div class="meta code">Topics 05 Differentiation &middot; 06 Integration &middot; 07 Vectors &middot; 08 Series Expansion &middot; 09 Differential Equations</div>
+  <div class="meta"><b>12 questions</b> &nbsp;&middot;&nbsp; Answer <b>all</b> questions &nbsp;&middot;&nbsp; 22 August 2026</div>
+  <div class="meta">The number of marks is given in brackets [ ] at the end of each question or part question.</div>
+</div>
+
+<div class="instr">
+  <b>Conditions.</b> Two hours, pen and paper, graphing calculator allowed except where a part says otherwise. Give non-exact numerical answers correct to 3 significant figures, or 1 decimal place for angles in degrees, unless a different accuracy is specified. Set the calculator to <b>radians</b>. Every question on this paper is taken from a real A-Level, prelim, block-test or school tutorial paper, and the source is printed under each part.
+</div>
+
+<div class="databox">
+  <b>You may quote without proof:</b> everything in MF26, including the standard series, the standard integrals, and the volume formulae. <b>Cone:</b> volume \(\tfrac13\pi r^2h\), curved surface area \(\pi r l\). Where a part says <b>&ldquo;Do not use a calculator&rdquo;</b> or asks for an <b>exact</b> value, a decimal answer scores nothing.
+</div>
+
+<div class="topbar">
+  <button onclick="revealAll()">Reveal all</button>
+  <button onclick="hideAll()">Hide all</button>
+  <span class="clock">105 marks &middot; about a minute a mark &middot; stop at 2 h</span>
+</div>
+
+<div class="toc"><strong>Contents</strong>
+  <a href="#q1"><b>1</b> <span class="marks">[3]</span> &nbsp;Implicit differentiation with an inverse trigonometric function</a>
+  <a href="#q2"><b>2</b> <span class="marks">[8]</span> &nbsp;A curve defined parametrically &mdash; sketch, normal, exact area</a>
+  <a href="#q3"><b>3</b> <span class="marks">[12]</span> &nbsp;Rates of change in a cone and an angle to be maximised</a>
+  <a href="#q4"><b>4</b> <span class="marks">[15]</span> &nbsp;Integration techniques and a volume of revolution</a>
+  <a href="#q5"><b>5</b> <span class="marks">[6]</span> &nbsp;Region bounded by two curves; rotation about the \(y\)-axis</a>
+  <a href="#q6"><b>6</b> <span class="marks">[7]</span> &nbsp;Vectors &mdash; ratio theorem, scalar product, vector product</a>
+  <a href="#q7"><b>7</b> <span class="marks">[7]</span> &nbsp;A line and a plane that never meet; projection vectors</a>
+  <a href="#q8"><b>8</b> <span class="marks">[11]</span> &nbsp;Vectors in context &mdash; a pipeline and a layer of rock</a>
+  <a href="#q9"><b>9</b> <span class="marks">[8]</span> &nbsp;Binomial series, range of validity, quality of an approximation</a>
+  <a href="#q10"><b>10</b> <span class="marks">[7]</span> &nbsp;Maclaurin series from a differential relation</a>
+  <a href="#q11"><b>11</b> <span class="marks">[9]</span> &nbsp;Differential equations &mdash; substitution and repeated integration</a>
+  <a href="#q12"><b>12</b> <span class="marks">[12]</span> &nbsp;Families of solution curves and a differential equation from words</a>
+</div>
+
+
+<!-- ==================== Q1 ==================== -->
+<div class="qcard" id="q1">
+  <div class="qhead"><span>1 &nbsp; Implicit differentiation</span><span class="tot">Total: 3</span></div>
+
+  <div class="part">
+    <div>A curve has equation \(\sin^{-1}y+xe^{y}=3x\). Find \(\dfrac{\mathrm dy}{\mathrm dx}\) in terms of \(x\) and \(y\). <span class="marks">[3]</span></div>
+    <div class="src">CJC 2009 Promo Q10 &middot; HCI Differentiation Supplementary Exercise Q1(b)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">differentiate term by term, keeping the chain factor on every \(y\)</div>
+        <span class="note">Differentiate every term with respect to \(x\). From MF26, \(\dfrac{\mathrm d}{\mathrm dx}\left(\sin^{-1}y\right)=\dfrac{1}{\sqrt{1-y^{2}}}\dfrac{\mathrm dy}{\mathrm dx}\), and \(xe^{y}\) needs the product rule with \(\dfrac{\mathrm d}{\mathrm dx}\left(e^{y}\right)=e^{y}\dfrac{\mathrm dy}{\mathrm dx}\).</span>
+        \[ \frac{1}{\sqrt{1-y^{2}}}\frac{\mathrm dy}{\mathrm dx}+xe^{y}\frac{\mathrm dy}{\mathrm dx}+e^{y}=3 \] <span class="mk m">M1</span>
+        \[ \frac{\mathrm dy}{\mathrm dx}+\sqrt{1-y^{2}}\,xe^{y}\frac{\mathrm dy}{\mathrm dx}=\left(3-e^{y}\right)\sqrt{1-y^{2}} \] <span class="mk m">M1</span>
+        \[ \boxed{\ \frac{\mathrm dy}{\mathrm dx}=\frac{\left(3-e^{y}\right)\sqrt{1-y^{2}}}{1+xe^{y}\sqrt{1-y^{2}}}\ } \] <span class="mk">A1</span>
+        <div class="trap"><b>Two separate slips live in this one line.</b> Forgetting the \(\dfrac{\mathrm dy}{\mathrm dx}\) factor after differentiating \(\sin^{-1}y\) or \(e^{y}\) kills the M1; treating \(xe^{y}\) as a single chain-rule object instead of a product kills the other. Every time the variable being differentiated is \(y\), a \(\dfrac{\mathrm dy}{\mathrm dx}\) must come out with it.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ==================== Q2 ==================== -->
+<div class="qcard" id="q2">
+  <div class="qhead"><span>2 &nbsp; A curve defined parametrically</span><span class="tot">Total: 8</span></div>
+  <p class="stem-lead">A curve \(D\) has parametric equations
+  \[ x=t-\cos t,\qquad y=1-\cos t,\qquad \text{for } 0\le t\le 2\pi. \]</p>
+
+  <div class="part">
+    <div><span class="pl">(a)</span> Sketch the graph of \(D\). Give in exact form the coordinates of the points where \(D\) meets the \(x\)-axis, and the coordinates of the maximum point. <span class="marks">[4]</span></div>
+    <div class="src">A-Level 2016 P2 Q5(i)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (a)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(a) work in the parameter, then convert to coordinates</div>
+        <span class="note">Meeting the \(x\)-axis means \(y=0\); the maximum of \(y\) is where \(y\) is largest, and \(y=1-\cos t\) is largest when \(\cos t\) is smallest.</span>
+        \[ y=0\ \Longrightarrow\ 1-\cos t=0\ \Longrightarrow\ \cos t=1\ \Longrightarrow\ t=0\ \text{ or }\ t=2\pi \] <span class="mk m">M1</span>
+        \[ t=0:\ x=0-\cos 0=-1;\qquad t=2\pi:\ x=2\pi-\cos 2\pi=2\pi-1 \]
+        \[ \text{\(x\)-axis crossings: }(-1,\,0)\ \text{ and }\ (2\pi-1,\,0) \] <span class="mk">A1</span>
+        \[ y\text{ maximum}\ \Longrightarrow\ \cos t=-1\ \Longrightarrow\ t=\pi\ \Longrightarrow\ y=2,\quad x=\pi-(-1)=\pi+1 \]
+        \[ \text{Maximum point: }(\pi+1,\,2) \] <span class="mk">A1</span>
+        <svg class="fig" width="560" height="250" viewBox="0 0 560 250" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="13">
+          <line x1="40" y1="200" x2="530" y2="200" stroke="#111" stroke-width="1.2"/>
+          <polygon points="530,200 522,196 522,204" fill="#111"/>
+          <line x1="90" y1="230" x2="90" y2="30" stroke="#111" stroke-width="1.2"/>
+          <polygon points="90,30 86,38 94,38" fill="#111"/>
+          <text x="536" y="204">x</text><text x="80" y="28">y</text>
+          <path d="M110,200 C150,196 200,150 300,80 C400,150 450,196 490,200" fill="none" stroke="#2563eb" stroke-width="2"/>
+          <circle cx="110" cy="200" r="3" fill="#2563eb"/><circle cx="490" cy="200" r="3" fill="#2563eb"/><circle cx="300" cy="80" r="3" fill="#dc2626"/>
+          <text x="82" y="218" font-size="12">O</text>
+          <text x="96" y="222" font-size="12">(&#8722;1, 0)</text>
+          <text x="452" y="222" font-size="12">(2&#960;&#8722;1, 0)</text>
+          <text x="262" y="70" font-size="12" fill="#dc2626">(&#960;+1, 2)</text>
+        </svg>
+        <div class="figcap">One arch, symmetric about \(t=\pi\), rising from \((-1,0)\) to \((\pi+1,2)\) and back down to \((2\pi-1,0)\).</div>
+        <span class="mk">A1</span> for a correct single arch with both endpoints and the maximum labelled.
+      </div>
+    </div>
+  </div>
+
+  <div class="part">
+    <div><span class="pl">(b)</span> The normal to \(D\) at \(t=\tfrac12\pi\) cuts the \(x\)-axis at \(E\) and the \(y\)-axis at \(F\). Find the exact area of the triangle \(OEF\), where \(O\) is the origin. <span class="marks">[4]</span></div>
+    <div class="src">A-Level 2016 P2 Q5(ii)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (b)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(b) parametric gradient first, then the normal, then the two intercepts</div>
+        \[ \frac{\mathrm dx}{\mathrm dt}=1+\sin t,\qquad \frac{\mathrm dy}{\mathrm dt}=\sin t\ \Longrightarrow\ \frac{\mathrm dy}{\mathrm dx}=\frac{\sin t}{1+\sin t} \] <span class="mk m">M1</span>
+        \[ t=\tfrac12\pi:\quad \frac{\mathrm dy}{\mathrm dx}=\frac{1}{1+1}=\tfrac12,\qquad \text{gradient of normal}=-2 \]
+        \[ x=\tfrac{\pi}{2}-\cos\tfrac{\pi}{2}=\tfrac{\pi}{2},\qquad y=1-\cos\tfrac{\pi}{2}=1\ \Longrightarrow\ \text{point }\left(\tfrac{\pi}{2},\,1\right) \] <span class="mk">A1</span>
+        \[ \text{Normal: } y-1=-2\left(x-\tfrac{\pi}{2}\right)\ \Longrightarrow\ y=-2x+\pi+1 \] <span class="mk m">M1</span>
+        \[ y=0:\ x=\frac{\pi+1}{2}\ \Rightarrow\ E\!\left(\frac{\pi+1}{2},0\right);\qquad x=0:\ y=\pi+1\ \Rightarrow\ F\left(0,\pi+1\right) \]
+        \[ \text{Area}=\tfrac12\cdot OE\cdot OF=\tfrac12\cdot\frac{\pi+1}{2}\cdot(\pi+1)=\boxed{\ \frac{(\pi+1)^{2}}{4}\ }\text{ units}^{2} \] <span class="mk">A1</span>
+        <div class="trap"><b>Do not convert to Cartesian.</b> Eliminating \(t\) from \(x=t-\cos t\) is impossible, so every gradient here has to come from \(\dfrac{\mathrm dy}{\mathrm dt}\div\dfrac{\mathrm dx}{\mathrm dt}\). Note also that \(\dfrac{\mathrm dx}{\mathrm dt}=1+\sin t\), not \(1-\sin t\) &mdash; the minus sign in \(-\cos t\) differentiates to \(+\sin t\).</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== Q3 ==================== -->
+<div class="qcard" id="q3">
+  <div class="qhead"><span>3 &nbsp; A conical sculpture and the angle it subtends</span><span class="tot">Total: 12</span></div>
+  <p class="stem-lead">[It is given that the curved surface area and volume of a right circular cone with radius \(r\), slant height \(l\) and height \(h\) are \(\pi rl\) and \(\tfrac13\pi r^{2}h\) respectively.]</p>
+  <p class="stem-lead">The Sunny Island Art Museum is organising a Clay Sculpting Workshop where participants make a closed right circular cone with radius \(r\) cm, slant height \(l\) cm, height \(h\) cm and a semi-vertical angle of \(\tfrac{\pi}{6}\) radians.</p>
+
+  <div class="part">
+    <div><span class="pl">(a)</span> Assume the closed conical clay sculpture is uniformly expanding when heated, so that its shape is unchanged and \(r/h\) remains constant. Given that the rate of increase of the total surface area and the rate of increase of the volume are \(\alpha\) cm\(^2\)s\(^{-1}\) and \(\beta\) cm\(^3\)s\(^{-1}\) respectively, show that the height is 14 cm at the instant when the ratio of the value of \(\alpha\) to the value of \(\beta\) is \(3:7\). <span class="marks">[5]</span></div>
+    <div class="src">HCI 2022 JC1 H2 Block Test Q9(a) &middot; HCI Differentiation Supplementary Exercise Q19</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (a)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(a) put everything in one variable first &mdash; here, in \(h\)</div>
+        <span class="note">The semi-vertical angle fixes the shape: \(\tan\tfrac{\pi}{6}=\dfrac{r}{h}\) and \(\sin\tfrac{\pi}{6}=\dfrac{r}{l}\).</span>
+        \[ \frac{1}{\sqrt3}=\frac{r}{h}\ \Longrightarrow\ r=\frac{h}{\sqrt3};\qquad \frac12=\frac{r}{l}\ \Longrightarrow\ l=2r=\frac{2h}{\sqrt3} \] <span class="mk">B1</span>
+        \[ V=\tfrac13\pi r^{2}h=\tfrac13\pi\left(\frac{h}{\sqrt3}\right)^{2}h=\frac{1}{9}\pi h^{3}\ \Longrightarrow\ \frac{\mathrm dV}{\mathrm dh}=\tfrac13\pi h^{2} \] <span class="mk">A1</span>
+        \[ A=\pi r^{2}+\pi rl=\pi\left(\frac{h}{\sqrt3}\right)^{2}+\pi\left(\frac{h}{\sqrt3}\right)\left(\frac{2h}{\sqrt3}\right)=\frac{\pi h^{2}}{3}+\frac{2\pi h^{2}}{3}=\pi h^{2}\ \Longrightarrow\ \frac{\mathrm dA}{\mathrm dh}=2\pi h \] <span class="mk">A1</span>
+        <span class="note">"Closed" cone, so the total surface area includes the circular base as well as the curved surface. \(\alpha=\dfrac{\mathrm dA}{\mathrm dt}\) and \(\beta=\dfrac{\mathrm dV}{\mathrm dt}\), and \(\alpha:\beta=3:7\) means \(7\alpha=3\beta\).</span>
+        \[ 7\frac{\mathrm dA}{\mathrm dt}=3\frac{\mathrm dV}{\mathrm dt}\ \Longrightarrow\ 7\frac{\mathrm dA}{\mathrm dh}\frac{\mathrm dh}{\mathrm dt}=3\frac{\mathrm dV}{\mathrm dh}\frac{\mathrm dh}{\mathrm dt} \] <span class="mk m">M1</span>
+        \[ 7(2\pi h)=3\left(\tfrac13\pi h^{2}\right)\ \Longrightarrow\ 14\pi h=\pi h^{2}\ \Longrightarrow\ h=14\ \ (\text{since }h>0)\quad\text{(shown)} \] <span class="mk">A1</span>
+        <div class="trap"><b>The common factor \(\dfrac{\mathrm dh}{\mathrm dt}\) is what makes this work.</b> Both rates are chained through the same variable, so it cancels and no numerical rate is ever needed. Writing the ratio as \(3\alpha=7\beta\) instead of \(7\alpha=3\beta\) gives \(h=\tfrac{2}{3}\cdot\ldots\) and loses everything after it.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="part">
+    <div><span class="pl">(b)</span> 15 identical closed conical clay sculptures, each of height 14 cm, are stacked to create a vertical static display placed above the museum, which is of height 8.6 m. The eye level of a passer-by is 1.5 m above the ground, and the angle the display subtends at eye level is \(\theta\) radians.</div>
+    <div class="sub"><b>(i)</b> Show that \(\tan\theta=\dfrac{2.1x}{x^{2}+65.32}\), where \(x\) m is the distance from the base of the museum to the passer-by. <span class="marks">[3]</span></div>
+    <div class="src">HCI 2022 JC1 H2 Block Test Q9(b)(i)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (b)(i)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(b)(i) two right-angled triangles sharing the same base \(x\)</div>
+        <span class="note">Convert to metres and measure heights <b>from eye level</b>, not from the ground. Display height \(=15\times14=210\) cm \(=2.1\) m. Museum roof above eye level \(=8.6-1.5=7.1\) m. Top of display above eye level \(=7.1+2.1=9.2\) m.</span>
+        <svg class="fig" width="520" height="230" viewBox="0 0 520 230" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="13">
+          <line x1="60" y1="200" x2="470" y2="200" stroke="#111" stroke-width="1.2"/>
+          <line x1="400" y1="200" x2="400" y2="60" stroke="#111" stroke-width="1.6"/>
+          <line x1="400" y1="60" x2="400" y2="24" stroke="#dc2626" stroke-width="3"/>
+          <line x1="60" y1="200" x2="400" y2="60" stroke="#2563eb" stroke-width="1.4"/>
+          <line x1="60" y1="200" x2="400" y2="24" stroke="#2563eb" stroke-width="1.4"/>
+          <text x="196" y="216" font-size="12">x m</text>
+          <text x="410" y="140" font-size="12">7.1 m</text>
+          <text x="410" y="46" font-size="12" fill="#dc2626">2.1 m</text>
+          <text x="86" y="188" font-size="12">&#945;</text>
+          <text x="92" y="170" font-size="12">&#952;</text>
+          <text x="34" y="204" font-size="12">eye</text>
+        </svg>
+        <div class="figcap">\(\alpha\) is the angle to the museum roof, \(\theta+\alpha\) the angle to the top of the display.</div>
+        \[ \tan\alpha=\frac{7.1}{x},\qquad \tan(\theta+\alpha)=\frac{9.2}{x} \] <span class="mk">B1</span>
+        \[ \tan\theta=\tan\big((\theta+\alpha)-\alpha\big)=\frac{\dfrac{9.2}{x}-\dfrac{7.1}{x}}{1+\dfrac{9.2}{x}\cdot\dfrac{7.1}{x}} \] <span class="mk m">M1</span>
+        \[ =\frac{\dfrac{2.1}{x}}{1+\dfrac{65.32}{x^{2}}}=\frac{2.1x}{x^{2}+65.32}\quad\text{(shown)} \] <span class="mk">A1</span>
+        <div class="trap"><b>Do not reach for the sine or cosine rule here.</b> There is a right angle at the base of the tower, so both angles come straight out of \(\tan=\text{opposite}/\text{adjacent}\) with the same adjacent side \(x\), and the subtended angle is the <b>difference</b> of the two. Note \(9.2\times7.1=65.32\), which is where the constant in the printed answer comes from.</div>
+      </div>
+    </div>
+
+    <div class="sub"><b>(ii)</b> The optimal angle \(\theta\) is where \(\tan\theta\) is maximised. Determine, by differentiation, the distance from the base of the museum to the passer-by so as to subtend an optimal angle at the passer-by's eye level. <span class="marks">[4]</span></div>
+    <div class="src">HCI 2022 JC1 H2 Block Test Q9(b)(ii)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (b)(ii)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(b)(ii) differentiate implicitly, then justify the maximum</div>
+        \[ \sec^{2}\theta\,\frac{\mathrm d\theta}{\mathrm dx}=\frac{\left(x^{2}+65.32\right)(2.1)-(2.1x)(2x)}{\left(x^{2}+65.32\right)^{2}}=\frac{137.172-2.1x^{2}}{\left(x^{2}+65.32\right)^{2}} \] <span class="mk m">M1</span><span class="mk">A1</span>
+        \[ \frac{\mathrm d\theta}{\mathrm dx}=0\ \Longrightarrow\ 137.172-2.1x^{2}=0\ \Longrightarrow\ x^{2}=65.32\ \Longrightarrow\ x=\sqrt{65.32}=8.08207894\ (x>0) \] <span class="mk">A1</span>
+        <span class="note">Justification by the first-derivative test. Since \(\sec^{2}\theta>0\), the sign of \(\dfrac{\mathrm d\theta}{\mathrm dx}\) is the sign of \(137.172-2.1x^{2}\).</span>
+        <table class="cov">
+          <tr><th>\(x\)</th><th>\(\sqrt{65.32}^{\,-}\)</th><th>\(\sqrt{65.32}\)</th><th>\(\sqrt{65.32}^{\,+}\)</th></tr>
+          <tr><td>\(\mathrm d\theta/\mathrm dx\)</td><td>\(+\)</td><td>\(0\)</td><td>\(-\)</td></tr>
+          <tr><td>shape</td><td>\(\diagup\)</td><td>\(-\)</td><td>\(\diagdown\)</td></tr>
+        </table>
+        \[ \therefore\ \theta\text{ is a maximum, and the required distance is }\sqrt{65.32}\approx 8.08\ \text{m}. \] <span class="mk">A1</span>
+        <div class="trap"><b>The second-derivative test is legal but slower here.</b> \(\dfrac{\mathrm d^{2}\theta}{\mathrm dx^{2}}\Big|_{x=\sqrt{65.32}}=-0.00196<0\) also earns the mark. What earns nothing is asserting "maximum" with no test at all &mdash; and if a second derivative ever comes out as \(0\), the first-derivative sign table is the only route left.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== Q4 ==================== -->
+<div class="qcard" id="q4">
+  <div class="qhead"><span>4 &nbsp; Integration techniques and a volume of revolution</span><span class="tot">Total: 15</span></div>
+
+  <div class="part">
+    <div><span class="pl">(a)</span> Find \(\displaystyle\int\frac{x^{3}+x^{2}-x+5}{x^{2}+x-2}\,\mathrm dx\). <span class="marks">[4]</span></div>
+    <div class="src">HCI Integration Tutorial 6A Q3(b)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (a)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(a)</div>
+        <span class="note">Degree of numerator \(=3\), degree of denominator \(=2\). The fraction is improper, so long division comes first &mdash; there is no partial-fraction split until it is done.</span>
+        \[ \frac{x^{3}+x^{2}-x+5}{x^{2}+x-2}=x+\frac{x+5}{x^{2}+x-2}=x+\frac{x+5}{(x+2)(x-1)} \] <span class="mk m">M1</span>
+        \[ \frac{x+5}{(x+2)(x-1)}=\frac{A}{x+2}+\frac{B}{x-1}\ \Longrightarrow\ A(x-1)+B(x+2)=x+5 \]
+        \[ x=1:\ 3B=6\Rightarrow B=2;\qquad x=-2:\ -3A=3\Rightarrow A=-1 \] <span class="mk">A1</span>
+        \[ \int\frac{x^{3}+x^{2}-x+5}{x^{2}+x-2}\,\mathrm dx=\int x-\frac{1}{x+2}+\frac{2}{x-1}\,\mathrm dx \] <span class="mk m">M1</span>
+        \[ =\boxed{\ \tfrac12x^{2}-\ln|x+2|+2\ln|x-1|+C\ } \] <span class="mk">A1</span>
+        <div class="trap"><b>Fourth appearance of this trap.</b> Check the two degrees before you do anything else with an algebraic fraction &mdash; splitting, integrating or expanding. Numerator degree \(\ge\) denominator degree means divide first, every time. Note also that both logarithms keep modulus signs, because \(x+2\) and \(x-1\) each change sign.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="part">
+    <div><span class="pl">(b)</span> Find \(\displaystyle\int\frac{6\tan 3x}{1+\cos 6x}\,\mathrm dx\). <span class="marks">[3]</span></div>
+    <div class="src">HCI Prelim 9758/2021 P1 Q4(a)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (b)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(b)</div>
+        <span class="note">Nothing integrates while two different angles are present. The double-angle identity \(\cos 2A=2\cos^{2}A-1\) with \(A=3x\) collapses \(6x\) to \(3x\).</span>
+        \[ 1+\cos 6x=1+\left(2\cos^{2}3x-1\right)=2\cos^{2}3x \] <span class="mk">B1</span>
+        \[ \int\frac{6\tan 3x}{2\cos^{2}3x}\,\mathrm dx=\int 3\tan 3x\sec^{2}3x\,\mathrm dx \] <span class="mk m">M1</span>
+        <span class="note">This is now \(\displaystyle\int \mathrm f'(x)\,\mathrm f(x)\,\mathrm dx\) with \(\mathrm f(x)=\tan 3x\) and \(\mathrm f'(x)=3\sec^{2}3x\).</span>
+        \[ =\boxed{\ \tfrac12\tan^{2}(3x)+C\ } \] <span class="mk">A1</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="part">
+    <div><span class="pl">(c)</span> It is given that \(I_{n}=\displaystyle\int_{1}^{e}(\ln x)^{n}\,\mathrm dx\), for \(n\in\mathbb Z^{+}\).</div>
+    <div class="sub"><b>(i)</b> Use integration by parts to show that \(I_{n}=e-nI_{n-1}\). <span class="marks">[2]</span></div>
+    <div class="src">HCI Prelim 9758/2021 P1 Q4(b)(i)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (c)(i)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(c)(i)</div>
+        <span class="note">Take \(u=(\ln x)^{n}\) and \(v'=1\), so \(v=x\) and \(u'=n(\ln x)^{n-1}\cdot\dfrac1x\).</span>
+        \[ I_{n}=\Big[x(\ln x)^{n}\Big]_{1}^{e}-\int_{1}^{e}x\cdot n(\ln x)^{n-1}\cdot\frac1x\,\mathrm dx \] <span class="mk m">M1</span>
+        \[ =\left(e\cdot 1^{n}-1\cdot 0^{n}\right)-n\int_{1}^{e}(\ln x)^{n-1}\mathrm dx=e-nI_{n-1}\quad\text{(shown)} \] <span class="mk">A1</span>
+      </div>
+    </div>
+    <div class="sub"><b>(ii)</b> The region bounded by the curve \(y=(\ln x)^{2}\), the \(x\)-axis and the line \(x=e\) is rotated through \(2\pi\) radians about the \(x\)-axis. Using the result in part (c)(i), find the exact volume of the solid formed. <span class="marks">[3]</span></div>
+    <div class="src">HCI Prelim 9758/2021 P1 Q4(b)(ii)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (c)(ii)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(c)(ii)</div>
+        <span class="note">Square the \(y\) first, then integrate. \(y^{2}=\big[(\ln x)^{2}\big]^{2}=(\ln x)^{4}\), and the region runs from \(x=1\) (where \(y=0\)) to \(x=e\).</span>
+        \[ V=\pi\int_{1}^{e}\left[(\ln x)^{2}\right]^{2}\mathrm dx=\pi\int_{1}^{e}(\ln x)^{4}\,\mathrm dx=\pi I_{4} \] <span class="mk m">M1</span>
+        \[ I_{1}=\int_{1}^{e}\ln x\,\mathrm dx=\Big[x\ln x-x\Big]_{1}^{e}=1 \]
+        \[ I_{2}=e-2I_{1}=e-2,\qquad I_{3}=e-3(e-2)=-2e+6,\qquad I_{4}=e-4(-2e+6)=9e-24 \] <span class="mk">A1</span>
+        \[ V=\boxed{\ (9e-24)\pi\ \text{units}^{3}\ } \] <span class="mk">A1</span>
+        <div class="trap"><b>Square before you integrate, never after.</b> \(\pi\int y^{2}\,\mathrm dx\) with \(y=(\ln x)^{2}\) needs \((\ln x)^{4}\), so the recursion has to be run four times down to \(I_{1}\), not two. And \(I_{0}=\int_1^e 1\,\mathrm dx=e-1\) is a legitimate alternative starting point &mdash; check it gives the same \(I_{1}=e-1(e-1)=1\).</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="part">
+    <div><span class="pl">(d)</span> Use the substitution \(u=1+e^{2x}\) to find \(\displaystyle\int\frac{e^{2x}}{\left(1+e^{2x}\right)^{3}}\,\mathrm dx\). <span class="marks">[3]</span></div>
+    <div class="src">A-Level 2021 P2 Q5(d)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (d)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(d) change the variable, and change every part of the integral with it</div>
+        \[ u=1+e^{2x}\ \Longrightarrow\ \frac{\mathrm du}{\mathrm dx}=2e^{2x}\ \Longrightarrow\ e^{2x}\,\mathrm dx=\tfrac12\,\mathrm du \] <span class="mk m">M1</span>
+        \[ \int\frac{e^{2x}}{\left(1+e^{2x}\right)^{3}}\,\mathrm dx=\int\frac{1}{u^{3}}\cdot\tfrac12\,\mathrm du=\tfrac12\int u^{-3}\,\mathrm du=\tfrac12\cdot\frac{u^{-2}}{-2}=-\frac{1}{4u^{2}}+C \] <span class="mk">A1</span>
+        \[ =\boxed{\ -\frac{1}{4\left(1+e^{2x}\right)^{2}}+C\ } \] <span class="mk">A1</span>
+        <div class="trap"><b>An indefinite integral must come back to \(x\).</b> Leaving the answer in \(u\) throws away the last mark every time. Check by differentiating: \(\dfrac{\mathrm d}{\mathrm dx}\left[-\tfrac14\left(1+e^{2x}\right)^{-2}\right]=-\tfrac14(-2)\left(1+e^{2x}\right)^{-3}\left(2e^{2x}\right)=\dfrac{e^{2x}}{\left(1+e^{2x}\right)^{3}}\), which is the integrand.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== Q5 ==================== -->
+<div class="qcard" id="q5">
+  <div class="qhead"><span>5 &nbsp; A region bounded by two curves</span><span class="tot">Total: 6</span></div>
+  <p class="stem-lead">The region \(R\) is bounded by the curves \(y=\sqrt{x}\), \(y=\sqrt{2-x}\) and the \(x\)-axis.</p>
+
+  <div class="part">
+    <div><span class="pl">(a)</span> Find the exact value of the area of \(R\). <span class="marks">[3]</span></div>
+    <div class="src">CJC 2007 C2 Block Test 1 Q9(i) &middot; HCI Integration Supplementary (Applications) Q4</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (a)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(a) find where the curves cross, then split the region at that value of \(x\)</div>
+        \[ \sqrt x=\sqrt{2-x}\ \Longrightarrow\ x=2-x\ \Longrightarrow\ x=1 \] <span class="mk">B1</span>
+        <span class="note">To the left of \(x=1\) the upper boundary is \(y=\sqrt x\); to the right of it the upper boundary is \(y=\sqrt{2-x}\), which reaches the \(x\)-axis at \(x=2\). The two pieces are mirror images in \(x=1\), so the second integral equals the first.</span>
+        \[ \text{Area}=\int_{0}^{1}\sqrt x\,\mathrm dx+\int_{1}^{2}\sqrt{2-x}\,\mathrm dx=2\int_{0}^{1}\sqrt x\,\mathrm dx \] <span class="mk m">M1</span>
+        \[ =2\left[\frac{x^{3/2}}{\tfrac32}\right]_{0}^{1}=2\left(\tfrac23\right)=\boxed{\ \tfrac43\ \text{units}^{2}\ } \] <span class="mk">A1</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="part">
+    <div><span class="pl">(b)</span> Find the exact value of the volume of the solid formed when \(R\) is rotated through \(2\pi\) radians about the \(y\)-axis. <span class="marks">[3]</span></div>
+    <div class="src">CJC 2007 C2 Block Test 1 Q9(iii) &middot; HCI Integration Supplementary (Applications) Q4</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (b)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(b) rotating about \(y\) means \(\pi\displaystyle\int x^{2}\,\mathrm dy\), so make \(x\) the subject of both curves</div>
+        <span class="note">\(y=\sqrt x\Rightarrow x=y^{2}\) (the left boundary) and \(y=\sqrt{2-x}\Rightarrow x=2-y^{2}\) (the right boundary). The two curves meet at \(x=1,\ y=1\), and the region runs from \(y=0\) up to \(y=1\). The solid is the outer rotation minus the inner rotation.</span>
+        \[ V=\pi\int_{0}^{1}\left(2-y^{2}\right)^{2}\mathrm dy-\pi\int_{0}^{1}\left(y^{2}\right)^{2}\mathrm dy \] <span class="mk m">M1</span>
+        \[ =\pi\int_{0}^{1}\left(4-4y^{2}+y^{4}\right)-y^{4}\,\mathrm dy=\pi\int_{0}^{1}4-4y^{2}\,\mathrm dy \] <span class="mk">A1</span>
+        \[ =4\pi\left[y-\frac{y^{3}}{3}\right]_{0}^{1}=4\pi\left(1-\tfrac13\right)=\boxed{\ \tfrac{8\pi}{3}\ \text{units}^{3}\ } \] <span class="mk">A1</span>
+        <div class="trap"><b>The \(y^{4}\) terms cancel &mdash; that is the whole point of the question.</b> Anyone who rotates the two pieces separately and adds, instead of subtracting inner from outer, ends up integrating \(y^4\) twice and gets neither mark. For comparison, rotating the same \(R\) about the \(x\)-axis gives \(\pi\), a completely different number.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== Q6 ==================== -->
+<div class="qcard" id="q6">
+  <div class="qhead"><span>6 &nbsp; Scalar and vector products</span><span class="tot">Total: 7</span></div>
+  <p class="stem-lead">Relative to the origin \(O\), two points \(A\) and \(B\) have position vectors given by \(\mathbf a=14\mathbf i+14\mathbf j+14\mathbf k\) and \(\mathbf b=11\mathbf i-13\mathbf j+2\mathbf k\) respectively.</p>
+
+  <div class="part">
+    <div><span class="pl">(a)</span> The point \(P\) divides the line \(AB\) in the ratio \(2:1\). Find the coordinates of \(P\). <span class="marks">[2]</span></div>
+    <div class="src">A-Level N2009 P2 Q2(i) &middot; HCI Vectors Tutorial 7A Q8</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (a)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(a) ratio theorem</div>
+        <span class="note">\(AP:PB=2:1\), so \(P\) is two-thirds of the way from \(A\) to \(B\). The ratio theorem puts the <b>far</b> ratio number on each vector: \(\overrightarrow{OP}=\dfrac{2\,\overrightarrow{OB}+1\,\overrightarrow{OA}}{2+1}\).</span>
+        \[ \overrightarrow{OP}=\frac{2\mathbf b+\mathbf a}{3}=\frac13\left[2\begin{pmatrix}11\\-13\\2\end{pmatrix}+\begin{pmatrix}14\\14\\14\end{pmatrix}\right]=\frac13\begin{pmatrix}36\\-12\\18\end{pmatrix}=\begin{pmatrix}12\\-4\\6\end{pmatrix} \] <span class="mk m">M1</span>
+        \[ \text{Coordinates of }P\text{ are }(12,\,-4,\,6). \] <span class="mk">A1</span>
+        <div class="trap"><b>Answer in coordinates, not as a column vector.</b> The question said "coordinates". Also check the ratio is the right way round: \(\dfrac{\mathbf a+2\mathbf b}{3}\), not \(\dfrac{2\mathbf a+\mathbf b}{3}\), which would land at \((13,5,10)\).</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="part">
+    <div><span class="pl">(b)</span> Show that \(AB\) and \(OP\) are perpendicular. <span class="marks">[2]</span></div>
+    <div class="src">A-Level N2009 P2 Q2(ii) &middot; HCI Vectors Tutorial 7A Q8</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (b)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(b)</div>
+        \[ \overrightarrow{AB}=\mathbf b-\mathbf a=\begin{pmatrix}11\\-13\\2\end{pmatrix}-\begin{pmatrix}14\\14\\14\end{pmatrix}=\begin{pmatrix}-3\\-27\\-12\end{pmatrix} \] <span class="mk m">M1</span>
+        \[ \overrightarrow{AB}\cdot\overrightarrow{OP}=\begin{pmatrix}-3\\-27\\-12\end{pmatrix}\cdot\begin{pmatrix}12\\-4\\6\end{pmatrix}=-36+108-72=0 \]
+        \[ \text{Since }\overrightarrow{AB}\cdot\overrightarrow{OP}=0,\ AB\text{ and }OP\text{ are perpendicular.} \] <span class="mk">A1</span>
+        <div class="trap"><b>Dot product zero means perpendicular; cross product zero means parallel.</b> These two get swapped more than any other pair in this topic. Say the conclusion out in words &mdash; a bare "\(=0\)" with no statement does not earn the A1.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="part">
+    <div><span class="pl">(c)</span> Find \(\mathbf a\times\mathbf p\), where \(\mathbf p\) is the vector \(\overrightarrow{OP}\), and give the geometrical meaning of \(|\mathbf a\times\mathbf p|\). Hence write down the area of triangle \(OAP\). <span class="marks">[3]</span></div>
+    <div class="src">A-Level N2009 P2 Q2(iv) &middot; HCI Vectors Tutorial 7A Q8</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (c)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(c)</div>
+        \[ \mathbf a\times\mathbf p=\begin{pmatrix}14\\14\\14\end{pmatrix}\times\begin{pmatrix}12\\-4\\6\end{pmatrix}=\begin{pmatrix}14(6)-14(-4)\\14(12)-14(6)\\14(-4)-14(12)\end{pmatrix}=\begin{pmatrix}140\\84\\-224\end{pmatrix}=28\begin{pmatrix}5\\3\\-8\end{pmatrix} \] <span class="mk">A1</span>
+        \[ |\mathbf a\times\mathbf p|\text{ is the area of the parallelogram with sides }OA\text{ and }OP. \] <span class="mk">B1</span>
+        \[ \text{Area of }\triangle OAP=\tfrac12|\mathbf a\times\mathbf p|=\tfrac12\left|28\begin{pmatrix}5\\3\\-8\end{pmatrix}\right|=14\sqrt{25+9+64}=14\sqrt{98}=98\sqrt2\ \text{units}^{2} \] <span class="mk">A1</span>
+        <div class="trap"><b>The two vectors in a triangle-area cross product must start at the same vertex of that triangle.</b> Here the triangle is \(OAP\) and both \(\mathbf a\) and \(\mathbf p\) start at \(O\), so \(\tfrac12|\mathbf a\times\mathbf p|\) is correct. If the question had asked for triangle \(OAB\) you would need \(\overrightarrow{OA}\times\overrightarrow{OB}\) or \(\overrightarrow{AO}\times\overrightarrow{AB}\), never one vector from \(O\) and one from \(A\).</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== Q7 ==================== -->
+<div class="qcard" id="q7">
+  <div class="qhead"><span>7 &nbsp; A line and a plane that never meet</span><span class="tot">Total: 7</span></div>
+  <p class="stem-lead">The plane \(\Pi\) has equation
+  \[ \mathbf r=(1+\alpha+\beta)\mathbf i+(2+\alpha)\mathbf j+(1+5\alpha+3\beta)\mathbf k,\qquad \alpha,\beta\in\mathbb R, \]
+  and the line \(l\) has Cartesian equation \(\dfrac{x-4}{-1}=\dfrac{y+3}{2}=\dfrac{z-7}{1}\).</p>
+
+  <div class="part">
+    <div><span class="pl">(a)</span> Show that \(\Pi\) and \(l\) do not intersect, and determine the distance between them. <span class="marks">[4]</span></div>
+    <div class="src">HCI Vectors Tutorial 7C Q9</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (a)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(a) convert both to their working forms first</div>
+        <span class="note">Read the two direction vectors of \(\Pi\) off the coefficients of \(\alpha\) and \(\beta\): \(\Pi:\ \mathbf r=\begin{pmatrix}1\\2\\1\end{pmatrix}+\alpha\begin{pmatrix}1\\1\\5\end{pmatrix}+\beta\begin{pmatrix}1\\0\\3\end{pmatrix}\). The Cartesian form of \(l\) gives the point \((4,-3,7)\) and direction \((-1,2,1)\).</span>
+        \[ \mathbf n=\begin{pmatrix}1\\1\\5\end{pmatrix}\times\begin{pmatrix}1\\0\\3\end{pmatrix}=\begin{pmatrix}3\\2\\-1\end{pmatrix},\qquad \Pi:\ \mathbf r\cdot\begin{pmatrix}3\\2\\-1\end{pmatrix}=\begin{pmatrix}1\\2\\1\end{pmatrix}\cdot\begin{pmatrix}3\\2\\-1\end{pmatrix}=6 \] <span class="mk m">M1</span>
+        \[ \begin{pmatrix}-1\\2\\1\end{pmatrix}\cdot\begin{pmatrix}3\\2\\-1\end{pmatrix}=-3+4-1=0\ \Longrightarrow\ l\ \text{is parallel to}\ \Pi \] <span class="mk">A1</span>
+        \[ \begin{pmatrix}4\\-3\\7\end{pmatrix}\cdot\begin{pmatrix}3\\2\\-1\end{pmatrix}=12-6-7=-1\ne 6\ \Longrightarrow\ (4,-3,7)\ \text{does not lie on}\ \Pi \] <span class="mk">A1</span>
+        <span class="note">Both statements are needed: parallel <b>and</b> a point of \(l\) off the plane. Parallel alone allows \(l\) to lie inside \(\Pi\).</span>
+        \[ \text{Distance}=\left|\left[\begin{pmatrix}4\\-3\\7\end{pmatrix}-\begin{pmatrix}1\\2\\1\end{pmatrix}\right]\cdot\frac{1}{\sqrt{14}}\begin{pmatrix}3\\2\\-1\end{pmatrix}\right|=\frac{|9-10-6|}{\sqrt{14}}=\frac{7}{\sqrt{14}}=\frac{\sqrt{14}}{2}\ \text{units} \] <span class="mk">A1</span>
+        <div class="trap"><b>The direction of a line being perpendicular to the normal is what makes the line parallel to the plane.</b> The other half of the same idea &mdash; a line <b>perpendicular</b> to a plane has direction <b>parallel to the normal</b>, so \(\mathbf d=\lambda\mathbf n\) &mdash; is the version that has cost marks twice. Watch the sign traps in the Cartesian form too: \(\dfrac{x-4}{-1}\) gives \(-1\), not \(1\), for the first component.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="part">
+    <div><span class="pl">(b)</span> The points \(A\) and \(B\) have coordinates \((2,-1,1)\) and \((-1,0,1)\) respectively. Find the projection vector of \(\overrightarrow{AB}\) onto the normal of \(\Pi\), and hence the projection vector of \(\overrightarrow{AB}\) onto \(\Pi\). <span class="marks">[3]</span></div>
+    <div class="src">HCI Vectors Tutorial 7C Q9 (extension)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (b)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(b) the projection-vector formula, then a vector subtraction</div>
+        <span class="note">Length of projection is \(\left|\overrightarrow{AB}\cdot\hat{\mathbf n}\right|\), a scalar with a modulus. The <b>projection vector</b> is \(\left(\overrightarrow{AB}\cdot\hat{\mathbf n}\right)\hat{\mathbf n}\) &mdash; no modulus, because the sign carries the direction.</span>
+        \[ \overrightarrow{AB}=\begin{pmatrix}-1\\0\\1\end{pmatrix}-\begin{pmatrix}2\\-1\\1\end{pmatrix}=\begin{pmatrix}-3\\1\\0\end{pmatrix} \] <span class="mk">B1</span>
+        \[ \text{Projection vector onto }\mathbf n=\left(\overrightarrow{AB}\cdot\hat{\mathbf n}\right)\hat{\mathbf n}=\left[\begin{pmatrix}-3\\1\\0\end{pmatrix}\cdot\frac{1}{\sqrt{14}}\begin{pmatrix}3\\2\\-1\end{pmatrix}\right]\frac{1}{\sqrt{14}}\begin{pmatrix}3\\2\\-1\end{pmatrix} \] <span class="mk m">M1</span>
+        \[ =\left(\frac{-7}{\sqrt{14}}\right)\frac{1}{\sqrt{14}}\begin{pmatrix}3\\2\\-1\end{pmatrix}=-\tfrac12\begin{pmatrix}3\\2\\-1\end{pmatrix} \]
+        \[ \text{Projection vector onto }\Pi=\overrightarrow{AB}-\left(-\tfrac12\begin{pmatrix}3\\2\\-1\end{pmatrix}\right)=\begin{pmatrix}-3\\1\\0\end{pmatrix}+\tfrac12\begin{pmatrix}3\\2\\-1\end{pmatrix}=\tfrac12\begin{pmatrix}-3\\4\\-1\end{pmatrix} \] <span class="mk">A1</span>
+        <div class="trap"><b>Learn the shape of the formula, not the picture.</b> Projection vector \(=\left(\mathbf u\cdot\hat{\mathbf d}\right)\hat{\mathbf d}\): dot with the unit vector to get a signed length, then multiply by the unit vector again to point it. As a check, the length of projection of \(\overrightarrow{AB}\) onto \(\Pi\) is \(\left|\overrightarrow{AB}\times\hat{\mathbf n}\right|=\sqrt{\tfrac{13}{2}}\), which is exactly \(\left|\tfrac12(-3,4,-1)\right|\).</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== Q8 ==================== -->
+<div class="qcard" id="q8">
+  <div class="qhead"><span>8 &nbsp; A pipeline and a layer of rock</span><span class="tot">Total: 11</span></div>
+  <p class="stem-lead">Points are defined relative to an origin \((0,0,0)\) at a gas field, where the \(x\)-, \(y\)- and \(z\)-axes point east, north and vertically upwards respectively, and the units are metres. A straight pipeline runs from the point \(P\) with coordinates \((1136,\,92,\,p)\) to the point \(Q\) with coordinates \((200,\,20,\,-15)\).</p>
+
+  <div class="part">
+    <div><span class="pl">(a)</span> The length of the pipeline \(PQ\) is 939 m. Given that the level of \(P\) is below that of \(Q\), find the value of \(p\). <span class="marks">[3]</span></div>
+    <div class="src">A-Level 2022 P1 Q11(a)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (a)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(a)</div>
+        \[ \overrightarrow{PQ}=\begin{pmatrix}200-1136\\20-92\\-15-p\end{pmatrix}=\begin{pmatrix}-936\\-72\\-15-p\end{pmatrix} \] <span class="mk m">M1</span>
+        \[ 939=\sqrt{936^{2}+72^{2}+(p+15)^{2}}\ \Longrightarrow\ (p+15)^{2}=881721-876096-5184=441 \] <span class="mk">A1</span>
+        \[ p+15=\pm21\ \Longrightarrow\ p=6\ \text{ or }\ p=-36 \]
+        \[ P\text{ is below }Q\text{, so }p<-15,\ \text{reject }p=6.\qquad \boxed{\ p=-36\ } \] <span class="mk">A1</span>
+        <div class="trap"><b>The context, not the algebra, kills the second root.</b> "Below" means a smaller \(z\), and \(Q\) sits at \(z=-15\), so \(p=6\) would put \(P\) 21 m above \(Q\). Rejections have to be justified in words to score.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="part">
+    <div><span class="pl">(b)</span> A layer of rock is modelled as a plane passing through the points with coordinates \((400,\,600,\,-20)\), \((500,\,200,\,-70)\) and \((600,\,-340,\,-50)\). Find the Cartesian equation of this plane. <span class="marks">[4]</span></div>
+    <div class="src">A-Level 2022 P1 Q11(b)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (b)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(b) two direction vectors in the plane, then a normal</div>
+        \[ \text{Let }A(400,600,-20),\ B(500,200,-70),\ C(600,-340,-50). \]
+        \[ \overrightarrow{AB}=\begin{pmatrix}100\\-400\\-50\end{pmatrix}=50\begin{pmatrix}2\\-8\\-1\end{pmatrix},\qquad \overrightarrow{AC}=\begin{pmatrix}200\\-940\\-30\end{pmatrix}=10\begin{pmatrix}20\\-94\\-3\end{pmatrix} \] <span class="mk m">M1</span>
+        \[ \mathbf n=\begin{pmatrix}2\\-8\\-1\end{pmatrix}\times\begin{pmatrix}20\\-94\\-3\end{pmatrix}=\begin{pmatrix}(-8)(-3)-(-1)(-94)\\ (-1)(20)-(2)(-3)\\ (2)(-94)-(-8)(20)\end{pmatrix}=\begin{pmatrix}-70\\-14\\-28\end{pmatrix}=-14\begin{pmatrix}5\\1\\2\end{pmatrix} \] <span class="mk">A1</span>
+        \[ \mathbf r\cdot\begin{pmatrix}5\\1\\2\end{pmatrix}=\begin{pmatrix}400\\600\\-20\end{pmatrix}\cdot\begin{pmatrix}5\\1\\2\end{pmatrix}=2000+600-40=2560 \] <span class="mk m">M1</span>
+        \[ \boxed{\ 5x+y+2z=2560\ } \] <span class="mk">A1</span>
+        <div class="trap"><b>\(\mathbf r\cdot\mathbf n=d\) says one thing: every point of the plane has the same projection onto \(\mathbf n\).</b> That is why substituting <b>any</b> of the three given points must return the same 2560 &mdash; a fast check worth ten seconds. Scaling the direction vectors down before crossing is legal and keeps the arithmetic small; the plane is unchanged.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="part">
+    <div><span class="pl">(c)</span> Hence find the coordinates of the point where the pipeline meets the rock. <span class="marks">[4]</span></div>
+    <div class="src">A-Level 2022 P1 Q11(c)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (c)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(c) line into plane</div>
+        \[ \overrightarrow{PQ}=\begin{pmatrix}200-1136\\20-92\\-15-(-36)\end{pmatrix}=\begin{pmatrix}-936\\-72\\21\end{pmatrix} \]
+        \[ l_{PQ}:\ \mathbf r=\begin{pmatrix}200\\20\\-15\end{pmatrix}+\lambda\begin{pmatrix}-936\\-72\\21\end{pmatrix},\qquad\lambda\in\mathbb R \] <span class="mk m">M1</span>
+        \[ (200-936\lambda)(5)+(20-72\lambda)(1)+2(-15+21\lambda)=2560 \] <span class="mk m">M1</span>
+        \[ 1000-4680\lambda+20-72\lambda-30+42\lambda=2560\ \Longrightarrow\ 990-4710\lambda=2560\ \Longrightarrow\ \lambda=-\tfrac13 \] <span class="mk">A1</span>
+        \[ \mathbf r=\begin{pmatrix}200\\20\\-15\end{pmatrix}-\tfrac13\begin{pmatrix}-936\\-72\\21\end{pmatrix}=\begin{pmatrix}200+312\\20+24\\-15-7\end{pmatrix}=\begin{pmatrix}512\\44\\-22\end{pmatrix} \]
+        \[ \text{The pipeline meets the rock at }(512,\,44,\,-22). \] <span class="mk">A1</span>
+        <div class="trap"><b>A negative \(\lambda\) is not an error here.</b> The point lies beyond \(Q\) on the \(Q\to P\) side, which is exactly what the geometry wants &mdash; the rock layer sits between the two ends. Only reject a parameter when the question restricts the segment.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== Q9 ==================== -->
+<div class="qcard" id="q9">
+  <div class="qhead"><span>9 &nbsp; Binomial series and validity</span><span class="tot">Total: 8</span></div>
+
+  <div class="part">
+    <div><span class="pl">(a)</span> Find the first three non-zero terms in the expansion of \(\sqrt{\dfrac{1-x}{1+2x}}\) in ascending powers of \(x\). State the range of values of \(x\) for which the expansion is valid. <span class="marks">[4]</span></div>
+    <div class="src">HCI Series Expansion Chapter 8, Example Q4(b)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (a)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(a) split the surd into two separate binomials</div>
+        \[ \sqrt{\frac{1-x}{1+2x}}=(1-x)^{1/2}(1+2x)^{-1/2} \] <span class="mk m">M1</span>
+        \[ (1-x)^{1/2}=1+\tfrac12(-x)+\frac{\left(\tfrac12\right)\left(-\tfrac12\right)}{2!}(-x)^{2}+\cdots=1-\tfrac12x-\tfrac18x^{2}+\cdots \] <span class="mk">A1</span>
+        \[ (1+2x)^{-1/2}=1+\left(-\tfrac12\right)(2x)+\frac{\left(-\tfrac12\right)\left(-\tfrac32\right)}{2!}(2x)^{2}+\cdots=1-x+\tfrac32x^{2}+\cdots \] <span class="mk">A1</span>
+        <span class="note">To reach the \(x^{2}\) term of the product, both factors must be carried to \(x^{2}\). Three products contribute: \(1\cdot\tfrac32x^{2}\), \(\left(-\tfrac12x\right)(-x)\), and \(\left(-\tfrac18x^{2}\right)(1)\).</span>
+        \[ \sqrt{\frac{1-x}{1+2x}}=\left(1-\tfrac12x-\tfrac18x^{2}\right)\left(1-x+\tfrac32x^{2}\right)=1-\tfrac32x+\tfrac{15}{8}x^{2}+\cdots \]
+        \[ \text{Valid for }|x|<1\ \text{ and }\ |2x|<1;\ \text{the intersection gives }\ \boxed{\ -\tfrac12&lt;x&lt;\tfrac12\ } \] <span class="mk">A1</span>
+        <div class="trap"><b>The validity of a product is the intersection of the two ranges, never the union and never just the last one you wrote.</b> \(|x|<1\) alone would let \(x=0.7\) through, where the second series diverges. And the under-expansion trap sits right next to it: stopping the second bracket at \(-x\) loses \(\tfrac32x^{2}\) and the whole \(x^{2}\) coefficient.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="part">
+    <div><span class="pl">(b)</span> Expand \(\sqrt[3]{1+3x}\) as a series in ascending powers of \(x\), up to and including the term in \(x^{2}\). <span class="marks">[2]</span></div>
+    <div class="src">HCI Series Expansion Chapter 8, Example Q7</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (b)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(b)</div>
+        \[ (1+3x)^{1/3}=1+\tfrac13(3x)+\frac{\left(\tfrac13\right)\left(-\tfrac23\right)}{2!}(3x)^{2}+\cdots=1+x-\tfrac19(9x^{2})+\cdots=1+x-x^{2}+\cdots \] <span class="mk m">M1</span><span class="mk">A1</span>
+      </div>
+    </div>
+    <div class="sub"><b>(i)</b> By putting \(x=\tfrac{1}{1000}\) in your expansion, estimate the value of \(\sqrt[3]{1003}\), giving your answer correct to four decimal places. Is \(x=\tfrac{1002}{3}\) a suitable value to be used in your expansion to estimate \(\sqrt[3]{1003}\)? <span class="marks">[2]</span></div>
+    <div class="src">HCI Series Expansion Chapter 8, Example Q7(i) and (ii)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (b)(i)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(b)(i)</div>
+        <span class="note">\(x=\tfrac{1}{1000}\) makes \(1+3x=\tfrac{1003}{1000}\), and \(\sqrt[3]{1003}=10\sqrt[3]{\tfrac{1003}{1000}}\).</span>
+        \[ \left(\tfrac{1003}{1000}\right)^{1/3}\approx 1+0.001-(0.001)^{2}=1.000999 \]
+        \[ \sqrt[3]{1003}\approx 10(1.000999)=10.00999=\boxed{\ 10.0100\ }\ (4\text{ d.p.}) \] <span class="mk">A1</span>
+        \[ \text{The expansion is valid only for }|3x|<1,\ \text{that is }-\tfrac13&lt;x&lt;\tfrac13. \]
+        <p>\(x=\tfrac{1002}{3}=334\) lies outside this range, so it is <b>not</b> a suitable value. <span class="mk">A1</span></p>
+        <div class="trap"><b>"Is the approximation good?" is a two-stage answer, and stage one is validity.</b> Check the substituted value against the range first; only if it is inside do you go on to compare the estimate with the exact value and comment on how many terms were kept. A value outside the range makes the series meaningless, however many terms you take.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== Q10 ==================== -->
+<div class="qcard" id="q10">
+  <div class="qhead"><span>10 &nbsp; Maclaurin series from a differential relation</span><span class="tot">Total: 7</span></div>
+  <p class="stem-lead">It is given that \(y=\ln(\sec x)\).</p>
+
+  <div class="part">
+    <div><span class="pl">(a)</span> Show that \(\dfrac{\mathrm d^{3}y}{\mathrm dx^{3}}=2\left(\dfrac{\mathrm d^{2}y}{\mathrm dx^{2}}\right)\left(\dfrac{\mathrm dy}{\mathrm dx}\right)\). <span class="marks">[3]</span></div>
+    <div class="src">A-Level 2023 P2 Q2(a)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (a)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(a) exponentiate first so that the differentiation stays inside the relation</div>
+        \[ y=\ln(\sec x)\ \Longrightarrow\ e^{y}=\sec x \] <span class="mk m">M1</span>
+        \[ e^{y}\frac{\mathrm dy}{\mathrm dx}=\sec x\tan x\ \Longrightarrow\ \frac{\mathrm dy}{\mathrm dx}=\frac{\sec x\tan x}{\sec x}=\tan x \] <span class="mk">A1</span>
+        \[ \frac{\mathrm d^{2}y}{\mathrm dx^{2}}=\sec^{2}x=e^{2y} \]
+        \[ \frac{\mathrm d^{3}y}{\mathrm dx^{3}}=2e^{2y}\frac{\mathrm dy}{\mathrm dx}=2\left(\frac{\mathrm d^{2}y}{\mathrm dx^{2}}\right)\left(\frac{\mathrm dy}{\mathrm dx}\right)\quad\text{(shown)} \] <span class="mk">A1</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="part">
+    <div><span class="pl">(b)</span> Hence, or otherwise, obtain the Maclaurin expansion of \(y\) in terms of \(x\), up to and including the term in \(x^{4}\). <span class="marks">[3]</span></div>
+    <div class="src">A-Level 2023 P2 Q2(b)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (b)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(b) differentiate the shown relation once more, then evaluate everything at \(x=0\)</div>
+        \[ \frac{\mathrm d^{4}y}{\mathrm dx^{4}}=2\left[\left(\frac{\mathrm d^{2}y}{\mathrm dx^{2}}\right)^{2}+\left(\frac{\mathrm dy}{\mathrm dx}\right)\left(\frac{\mathrm d^{3}y}{\mathrm dx^{3}}\right)\right] \] <span class="mk m">M1</span>
+        \[ x=0:\quad y=\ln(\sec 0)=0,\quad \frac{\mathrm dy}{\mathrm dx}=\tan 0=0,\quad \frac{\mathrm d^{2}y}{\mathrm dx^{2}}=\sec^{2}0=1 \]
+        \[ \frac{\mathrm d^{3}y}{\mathrm dx^{3}}=2(1)(0)=0,\qquad \frac{\mathrm d^{4}y}{\mathrm dx^{4}}=2\left[1^{2}+(0)(0)\right]=2 \] <span class="mk">A1</span>
+        \[ y=0+0\cdot x+\frac{1}{2!}x^{2}+\frac{0}{3!}x^{3}+\frac{2}{4!}x^{4}+\cdots=\boxed{\ \tfrac12x^{2}+\tfrac{1}{12}x^{4}+\cdots\ } \] <span class="mk">A1</span>
+        <div class="trap"><b>Every derivative is evaluated at \(x=0\), and only then divided by the factorial.</b> The zero first and third derivatives are not an accident: \(\ln(\sec x)\) is an even function, so all odd-power terms vanish. If an odd term survives your working, the arithmetic is wrong.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="part">
+    <div><span class="pl">(c)</span> Using your answer to part (b), find an approximation to \(\displaystyle\int_{0}^{\frac{1}{10}\pi}\ln(\sec x)\,\mathrm dx\). Give your answer correct to 4 significant figures. <span class="marks">[1]</span></div>
+    <div class="src">A-Level 2023 P2 Q2(d)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (c)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(c)</div>
+        \[ \int_{0}^{\pi/10}\ln(\sec x)\,\mathrm dx\approx\int_{0}^{\pi/10}\left(\tfrac12x^{2}+\tfrac{1}{12}x^{4}\right)\mathrm dx=\left[\tfrac16x^{3}+\tfrac{1}{60}x^{5}\right]_{0}^{\pi/10} \]
+        \[ =\tfrac16\left(\tfrac{\pi}{10}\right)^{3}+\tfrac{1}{60}\left(\tfrac{\pi}{10}\right)^{5}=0.005219\ (4\text{ s.f.}) \] <span class="mk">A1</span>
+        <div class="trap"><b>This one is safe because \(\tfrac{\pi}{10}\approx0.314\) is small.</b> The same move over \(0\) to \(\tfrac{\pi}{2}\) would be worthless, since the series is only a good fit near \(x=0\) and \(\ln(\sec x)\) blows up at \(\tfrac{\pi}{2}\). Always look at where the upper limit sits before trusting a series-approximated integral.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== Q11 ==================== -->
+<div class="qcard" id="q11">
+  <div class="qhead"><span>11 &nbsp; Differential equations by substitution and by repeated integration</span><span class="tot">Total: 9</span></div>
+
+  <div class="part">
+    <div><span class="pl">(a)</span> The variables \(x\) and \(y\) are connected by the differential equation \(x^{2}\dfrac{\mathrm dy}{\mathrm dx}=2xy+\ln x\).</div>
+    <div class="sub"><b>(i)</b> Show that the substitution \(y=zx^{2}\) reduces the equation to \(\dfrac{\mathrm dz}{\mathrm dx}=\dfrac{\ln x}{x^{4}}\). <span class="marks">[2]</span></div>
+    <div class="src">PJC 2015 C2 Mid-Year Exam P1 Q8(i) &middot; HCI Differential Equations Tutorial 9 Q4</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (a)(i)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(a)(i) differentiate the substitution implicitly &mdash; \(z\) is a variable, not a constant</div>
+        \[ y=zx^{2}\ \Longrightarrow\ \frac{\mathrm dy}{\mathrm dx}=x^{2}\frac{\mathrm dz}{\mathrm dx}+2zx \] <span class="mk m">M1</span>
+        \[ x^{2}\left(x^{2}\frac{\mathrm dz}{\mathrm dx}+2zx\right)=2x\left(zx^{2}\right)+\ln x \]
+        \[ x^{4}\frac{\mathrm dz}{\mathrm dx}+2zx^{3}=2zx^{3}+\ln x\ \Longrightarrow\ x^{4}\frac{\mathrm dz}{\mathrm dx}=\ln x\ \Longrightarrow\ \frac{\mathrm dz}{\mathrm dx}=\frac{\ln x}{x^{4}}\quad\text{(shown)} \] <span class="mk">A1</span>
+        <div class="trap"><b>Writing \(\dfrac{\mathrm dy}{\mathrm dx}=2zx\) is the error that blocks this entire family of questions.</b> \(x\), \(y\) and \(z\) are all variables, so \(zx^{2}\) is a product of two functions of \(x\) and needs the product rule. The same applies to \(z=y^{2}\Rightarrow\dfrac{\mathrm dz}{\mathrm dx}=2y\dfrac{\mathrm dy}{\mathrm dx}\), and to \(u=x+y\Rightarrow\dfrac{\mathrm du}{\mathrm dx}=1+\dfrac{\mathrm dy}{\mathrm dx}\).</div>
+      </div>
+    </div>
+    <div class="sub"><b>(ii)</b> Show that \(y=-\dfrac{\ln x}{3x}-\dfrac{1}{9x}+Cx^{2}\), where \(C\) is an arbitrary constant. <span class="marks">[3]</span></div>
+    <div class="src">PJC 2015 C2 Mid-Year Exam P1 Q8(ii)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (a)(ii)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(a)(ii) integrate by parts, then undo the substitution</div>
+        <span class="note">Take \(u=\ln x\) and \(v'=x^{-4}\), so \(u'=\dfrac1x\) and \(v=\dfrac{x^{-3}}{-3}\).</span>
+        \[ z=\int\frac{\ln x}{x^{4}}\,\mathrm dx=-\frac{\ln x}{3x^{3}}+\frac13\int x^{-4}\,\mathrm dx \] <span class="mk m">M1</span>
+        \[ =-\frac{\ln x}{3x^{3}}-\frac{1}{9x^{3}}+C \] <span class="mk">A1</span>
+        \[ z=\frac{y}{x^{2}}\ \Longrightarrow\ \frac{y}{x^{2}}=-\frac{\ln x}{3x^{3}}-\frac{1}{9x^{3}}+C\ \Longrightarrow\ y=-\frac{\ln x}{3x}-\frac{1}{9x}+Cx^{2}\quad\text{(shown)} \] <span class="mk">A1</span>
+      </div>
+    </div>
+    <div class="sub"><b>(iii)</b> Sketch the solution curve in part (a)(ii) corresponding to \(C=0\). <span class="marks">[1]</span></div>
+    <div class="src">PJC 2015 C2 Mid-Year Exam P1 Q8(iii)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (a)(iii)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(a)(iii)</div>
+        \[ C=0:\qquad y=-\frac{\ln x}{3x}-\frac{1}{9x},\qquad x>0. \]
+        <svg class="fig" width="500" height="230" viewBox="0 0 500 230" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="13">
+          <line x1="60" y1="150" x2="450" y2="150" stroke="#111" stroke-width="1.2"/>
+          <polygon points="450,150 442,146 442,154" fill="#111"/>
+          <line x1="90" y1="205" x2="90" y2="30" stroke="#111" stroke-width="1.2"/>
+          <polygon points="90,30 86,38 94,38" fill="#111"/>
+          <text x="456" y="154">x</text><text x="80" y="28">y</text><text x="76" y="166" font-size="12">O</text>
+          <line x1="90" y1="205" x2="90" y2="30" stroke="#dc2626" stroke-width="1" stroke-dasharray="5,4"/>
+          <path d="M96,36 C104,110 118,168 150,180 C210,196 300,166 440,154" fill="none" stroke="#2563eb" stroke-width="2"/>
+          <circle cx="150" cy="180" r="3" fill="#dc2626"/>
+          <text x="146" y="200" font-size="12" fill="#dc2626">(1.95, &#8722;0.171)</text>
+          <text x="360" y="142" font-size="12" fill="#6b7280">y = 0</text>
+          <text x="96" y="44" font-size="12" fill="#dc2626">x = 0</text>
+        </svg>
+        <div class="figcap">Vertical asymptote \(x=0\), horizontal asymptote \(y=0\), minimum point at \((1.95,\,-0.171)\).</div>
+        <span class="mk">B1</span> for the shape with both asymptotes and the minimum shown.
+        <span class="note">As \(x\to\infty\), \(\dfrac{\ln x}{3x}\to0\) and \(\dfrac{1}{9x}\to0\), so \(y\to0\) from below. The curve crosses the \(x\)-axis where \(3\ln x+1=0\), i.e. \(x=e^{-1/3}\approx0.717\).</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="part">
+    <div><span class="pl">(b)</span> Find the general solution of the differential equation \(\dfrac{\mathrm d^{2}y}{\mathrm dx^{2}}=16-9x^{2}\), giving your answer in the form \(y=\mathrm f(x)\). <span class="marks">[3]</span></div>
+    <div class="src">A-Level 2012 P2 Q1(a)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (b)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(b) integrate twice, and give the second integration its own letter</div>
+        \[ \frac{\mathrm dy}{\mathrm dx}=\int 16-9x^{2}\,\mathrm dx=16x-3x^{3}+C_{1} \] <span class="mk m">M1</span><span class="mk">A1</span>
+        \[ y=\int 16x-3x^{3}+C_{1}\,\mathrm dx=8x^{2}-\tfrac34x^{4}+C_{1}x+C_{2} \] <span class="mk">A1</span>
+        <div class="trap"><b>A second-order equation needs two arbitrary constants, and \(C_{1}\) must be carried through the second integration as a term.</b> Dropping it, or reusing the letter \(C\) for both, is the standard way to lose the final mark. A particular solution for this equation would require <b>two</b> conditions to pin down \(C_{1}\) and \(C_{2}\) &mdash; finding one and stopping leaves the answer unfinished.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== Q12 ==================== -->
+<div class="qcard" id="q12">
+  <div class="qhead"><span>12 &nbsp; Families of solution curves, and a differential equation from words</span><span class="tot">Total: 12</span></div>
+
+  <div class="part">
+    <div><span class="pl">(a)</span> Consider the differential equation \(\dfrac{\mathrm dy}{\mathrm dx}=\dfrac{3x}{x^{2}+1}\).</div>
+    <div class="sub"><b>(i)</b> Find the general solution of the differential equation. <span class="marks">[2]</span></div>
+    <div class="src">A-Level 2008 P1 Q4(i)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (a)(i)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(a)(i)</div>
+        <span class="note">The right-hand side is already \(\tfrac32\times\dfrac{\mathrm f'(x)}{\mathrm f(x)}\) with \(\mathrm f(x)=x^{2}+1\), so this is a direct integration, not a separation.</span>
+        \[ y=\int\frac{3x}{x^{2}+1}\,\mathrm dx=\frac32\int\frac{2x}{x^{2}+1}\,\mathrm dx=\tfrac32\ln\left(x^{2}+1\right)+C \] <span class="mk m">M1</span><span class="mk">A1</span>
+        <span class="note">No modulus is needed because \(x^{2}+1>0\) for every real \(x\).</span>
+      </div>
+    </div>
+    <div class="sub"><b>(ii)</b> Find the particular solution of the differential equation for which \(y=2\) when \(x=0\). <span class="marks">[1]</span></div>
+    <div class="src">A-Level 2008 P1 Q4(ii)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (a)(ii)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(a)(ii)</div>
+        \[ x=0,\ y=2:\quad 2=\tfrac32\ln 1+C\ \Longrightarrow\ C=2,\qquad y=\tfrac32\ln\left(x^{2}+1\right)+2 \] <span class="mk">A1</span>
+      </div>
+    </div>
+    <div class="sub"><b>(iii)</b> What can you say about the gradient of every solution curve as \(x\to\infty\)? <span class="marks">[1]</span></div>
+    <div class="src">A-Level 2008 P1 Q4(iii)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (a)(iii)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(a)(iii)</div>
+        \[ \text{As }x\to\infty,\ \frac{\mathrm dy}{\mathrm dx}=\frac{3x}{x^{2}+1}\approx\frac{3}{x}\to 0. \]
+        \[ \text{The gradient of every solution curve tends to }0. \] <span class="mk">B1</span>
+      </div>
+    </div>
+    <div class="sub"><b>(iv)</b> Sketch, on a single diagram, the graph of the solution found in part (a)(ii), together with two other members of the family of solution curves. <span class="marks">[3]</span></div>
+    <div class="src">A-Level 2008 P1 Q4(iv)</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (a)(iv)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(a)(iv) the family is one curve translated vertically</div>
+        <span class="note">Changing \(C\) shifts the whole curve up or down; the shape never changes. Draw \(C=2\) and, say, \(C=0\) and \(C=-2\).</span>
+        <svg class="fig" width="520" height="250" viewBox="0 0 520 250" xmlns="http://www.w3.org/2000/svg" font-family="Georgia,serif" font-size="13">
+          <line x1="40" y1="160" x2="480" y2="160" stroke="#111" stroke-width="1.2"/>
+          <polygon points="480,160 472,156 472,164" fill="#111"/>
+          <line x1="260" y1="235" x2="260" y2="20" stroke="#111" stroke-width="1.2"/>
+          <polygon points="260,20 256,28 264,28" fill="#111"/>
+          <text x="486" y="164">x</text><text x="250" y="18">y</text><text x="246" y="176" font-size="12">O</text>
+          <path d="M60,42 C140,60 220,92 260,96 C300,92 380,60 460,42" fill="none" stroke="#2563eb" stroke-width="2"/>
+          <path d="M60,88 C140,106 220,138 260,142 C300,138 380,106 460,88" fill="none" stroke="#059669" stroke-width="2" stroke-dasharray="6,4"/>
+          <path d="M60,134 C140,152 220,184 260,188 C300,184 380,152 460,134" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="2,4"/>
+          <circle cx="260" cy="96" r="3" fill="#2563eb"/>
+          <text x="268" y="92" font-size="12" fill="#2563eb">(0, 2) &nbsp;C = 2</text>
+          <text x="268" y="140" font-size="12" fill="#059669">(0, 0) &nbsp;C = 0</text>
+          <text x="268" y="186" font-size="12" fill="#d97706">(0, &#8722;2) &nbsp;C = &#8722;2</text>
+        </svg>
+        <div class="figcap">Three members of the family, each with a minimum on the \(y\)-axis and flattening out as \(|x|\) grows.</div>
+        <span class="mk">B1</span> correct shape for one curve, with the minimum at \((0,C)\).<br>
+        <span class="mk">B1</span> two further curves drawn as vertical translates, not crossing each other.<br>
+        <span class="mk">B1</span> the curve through \((0,2)\) identified.
+        <div class="trap"><b>Members of a family never cross.</b> Through any point there is exactly one solution curve, so if two of your sketched curves meet, one of them is wrong. Label the \(y\)-intercepts &mdash; that is what shows the examiner which value of \(C\) each curve carries.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="part">
+    <div><span class="pl">(b)</span> Water is poured into a filtration device at a constant rate of \(k\) litres per minute. The device discharges water at a rate proportional to the volume of water in the device. At time \(t\) minutes after the device is activated, the volume of water in the device is \(v\) litres. When the volume is 1 litre, it remains at this value. Show that \(\dfrac{\mathrm dv}{\mathrm dt}=k(1-v)\) and hence find the general solution for \(v\) in terms of \(t\). <span class="marks">[5]</span></div>
+    <div class="src">HCI 2011 C2 Prelim P1 Q9(b) &middot; HCI Differential Equations Supplementary Exercise Q4</div>
+    <div class="conf">Confidence: high / medium / guessed</div>
+    <div class="revwrap"><button class="revbtn">Show answer (b)</button></div>
+    <div class="ansbox">
+      <div class="step"><div class="step-header">(b) rate of change of volume = rate in &minus; rate out</div>
+        <span class="note">"Discharges at a rate proportional to the volume" introduces one positive constant. "Remains at this value" means the volume is not changing, so \(\dfrac{\mathrm dv}{\mathrm dt}=0\) there.</span>
+        \[ \frac{\mathrm dv}{\mathrm dt}=k-mv,\qquad m\ \text{a positive constant} \] <span class="mk m">M1</span>
+        \[ v=1:\ 0=k-m(1)\ \Longrightarrow\ m=k \]
+        \[ \frac{\mathrm dv}{\mathrm dt}=k-kv=k(1-v)\quad\text{(shown)} \] <span class="mk">A1</span>
+      </div>
+      <div class="step"><div class="step-header">(b) separate, keeping \(k\) on the \(\mathrm dt\) side</div>
+        \[ \int\frac{1}{1-v}\,\mathrm dv=\int k\,\mathrm dt \] <span class="mk m">M1</span>
+        \[ -\ln|1-v|=kt+C \]
+        \[ \ln|1-v|=-kt-C\ \Longrightarrow\ |1-v|=e^{-C}e^{-kt}\ \Longrightarrow\ 1-v=\pm e^{-C}e^{-kt} \] <span class="mk">A1</span>
+        \[ \boxed{\ v=1-Be^{-kt},\quad\text{where }B=\pm e^{-C}\ } \] <span class="mk">A1</span>
+        <div class="trap"><b>Three separate places to lose a mark, all in four lines.</b> First, \(k\) is a constant of the model, so it travels with \(\mathrm dt\), not with \(\mathrm dv\) &mdash; \(\int\frac{1}{k(1-v)}\mathrm dv=\int\mathrm dt\) is equivalent but the \(k\) must not be dropped. Second, the modulus is removed by attaching \(\pm\) to a <b>new</b> constant, and \(e^{-C}\) becomes that constant &mdash; it does not vanish. Third, remove the modulus and relabel <b>before</b> substituting any condition; substituting into \(\ln|1-v|\) first is what produces the wrong sign later. In this context \(v\) increases towards the asymptote \(v=1\), so \(B>0\).</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="wrapup">
+  <b>When you finish.</b> Reveal all, mark part by part against the printed method marks, and record three things for every part you dropped: what the question was actually testing, which line you first went wrong on, and whether you had the idea but not the notation. Anything you got right but tagged <b>guessed</b> stays open. Coverage in this paper &mdash; <b>Differentiation:</b> product, quotient and chain rules, implicit differentiation including inverse trigonometric functions, parametric differentiation, tangents and normals, stationary points with a first- and second-derivative test, connected rates of change, maxima and minima in context. <b>Integration:</b> MF26 standard forms, reverse chain rule, polynomial division before partial fractions, partial fractions, trigonometric double-angle work, a given substitution, integration by parts and a reduction formula, definite integrals, area between two curves, and volumes of revolution about both axes. <b>Vectors:</b> scalar and vector products, ratio theorem, projection vectors, angle and distance, a plane in parametric, scalar-product and Cartesian form, a line parallel to a plane, line&ndash;plane intersection, and a plane through three points. <b>Series:</b> binomial expansion with a rewrite, range of validity as an intersection, series multiplication, Maclaurin series by repeated differentiation of a relation, and approximation against an exact value. <b>Differential equations:</b> substitution to reduce to separable form, direct integration including second order, forming an equation from a worded rate, general and particular solutions, families of solution curves, and long-run behaviour.
+</div>
+
+<script>
+  document.querySelectorAll('.revbtn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var box = this.parentElement.nextElementSibling;
+      var open = box.style.display === 'block';
+      box.style.display = open ? 'none' : 'block';
+      this.textContent = this.textContent.replace(open ? 'Hide answer' : 'Show answer', open ? 'Show answer' : 'Hide answer');
+    });
+  });
+  function revealAll(){
+    document.querySelectorAll('.ansbox').forEach(function(b){ b.style.display='block'; });
+    document.querySelectorAll('.revbtn').forEach(function(b){ b.textContent = b.textContent.replace('Show answer','Hide answer'); });
+  }
+  function hideAll(){
+    document.querySelectorAll('.ansbox').forEach(function(b){ b.style.display='none'; });
+    document.querySelectorAll('.revbtn').forEach(function(b){ b.textContent = b.textContent.replace('Hide answer','Show answer'); });
+  }
+</script>
+</body>
+</html>
