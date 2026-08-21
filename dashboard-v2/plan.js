@@ -2093,18 +2093,27 @@ window.PLAN = {
    "type": "test",
    "subject": "conv",
    "flag": "",
-   "mins": 430,
+   "mins": 470,
    "label": "Saturday TEST — full Bio P2 + GP essay mock",
    "focus": "",
    "blocks": [
     {
-     "mins": 70,
+     "mins": 55,
      "subject": "chem",
-     "name": "Chem — Hydroxy + Halogen RE-DRILL (7Q · 65 marks · 1h10)",
-     "desc": "Proves whether the cumulative-test gaps are closed. Answer revealable under EVERY part. Silver halide + iodoform + organic chains all tested.",
+     "name": "Chem — HYDROXY re-drill (6Q · 55 marks · 55 min)",
+     "desc": "Phenol>hydroquinone>ethanol ranking (bitten twice), -OH electron-DONATING, Na as an experiment, pKa ladder, iodoform + equation, both esterification routes, oxidation ladder.",
      "done": false,
      "doneDate": null,
-     "clusterHref": "clusters/redrill_chem_hydroxy_halogen.html"
+     "clusterHref": "clusters/redrill_chem_hydroxy.html"
+    },
+    {
+     "mins": 55,
+     "subject": "chem",
+     "name": "Chem — HALOGEN re-drill (6Q · 52 marks · 55 min)",
+     "desc": "SN2 attacking species + Na+ spectator, SN1/SN2 kinetics off an energy profile, AgNO3 + NH3 ladder, C-X bond energy (reject electronegativity), aq vs ethanolic NaOH, nitrile adds ONE carbon.",
+     "done": false,
+     "doneDate": null,
+     "clusterHref": "clusters/redrill_chem_halogen.html"
     },
     {
      "mins": 360,
