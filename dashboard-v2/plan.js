@@ -1905,10 +1905,10 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "chem",
-     "name": "Chem — CUMULATIVE TEST (10Q · 90 marks · 2h · all structured)",
-     "desc": "Rebuilt harder per your feedback: zero MCQs, multi-concept fusion, real papers cited on every Q. 77% older topics / 23% Halogen+Hydroxy. Answers reveal under each question.",
-     "done": false,
-     "doneDate": null,
+     "name": "Chem — CUMULATIVE TEST (16Q · 160 marks · 2h) — PART-SAT to Q9(b)",
+     "desc": "Sat 18 Aug, stopped at Q9(b) — Q9(c) onward still to do. 13 gaps logged in Chem/_STUDY_tests/gaps_cumulative_2026-08-17.md (bonding definition, gas-vs-solid opener, nucleophile reasoning, SN2 attacking species, Na+ spectator, AgNO3 test, Na experimental design, phenol acidity ranking).",
+     "done": true,
+     "doneDate": "2026-08-18",
      "clusterHref": "clusters/test_chem_cumulative_2026-08-17.html"
     },
     {
