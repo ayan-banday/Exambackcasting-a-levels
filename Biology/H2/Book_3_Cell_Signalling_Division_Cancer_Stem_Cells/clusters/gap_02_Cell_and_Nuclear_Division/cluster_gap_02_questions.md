@@ -1,22 +1,4 @@
 # Gap Cluster 02 Drill: Cell and Nuclear Division
-### Biology H2 (9477) · Book 3 · attempt on Loom/Wispr Flow, reasoning aloud, BEFORE reading answers
-
-**Eight questions, 55 marks, roughly an hour.** A gap drill is shorter than a full cluster drill
-because it only has to hit what the transcript exposed. Read `gap_02 - MEND (read before the
-drill).md` first.
-
-**Every question here is a real exam paper question**, lifted as the paper prints it, with the paper
-and question number recorded in the Sources block at the end of each question. Where a question has
-been edited it is because scope forced it, and the edit is stated in the mark scheme.
-
-**Question 7 is the full-cycle one.** It is a Section B stem worth 10 marks and it runs meiosis from
-prophase I to the gametes, which is the shape you asked for after the last sitting.
-
-**How to run it.** One part at a time, aloud, mark scheme untouched. Rate your confidence before
-every reveal: high, medium or guessed. Check (a) before you start (b). When you hit a blank, say the
-blank in plain words, because the transcript is the gap list.
-
----
 
 ## Questions
 

@@ -43,7 +43,12 @@ CAPTION = {
 }
 
 # --- per-cluster config overrides -------------------------------------------------
-if CONFIG.get("figmap"):
+# "figmap": {} means this drill has no figures on purpose. Without the `is not None` test an
+# empty map fell through to the Cluster 1 default and printed a red "figures not recovered" panel
+# listing another cluster's filenames.
+if CONFIG.get("figmap") is not None and not CONFIG.get("figmap"):
+    FIGMAP = {}
+elif CONFIG.get("figmap"):
     # keys are "<question>|<part>"; an empty part means the figure sits in the question stem,
     # before part (a), which the parser represents as part=None
     def _key(k):
