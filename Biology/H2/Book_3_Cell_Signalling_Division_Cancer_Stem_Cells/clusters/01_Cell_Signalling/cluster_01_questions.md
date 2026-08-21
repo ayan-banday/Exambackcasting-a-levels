@@ -28,7 +28,7 @@ plain words, because the transcript is the gap list.
 
 ## Questions
 
-### Question 1  [12 marks]
+### Question 1 [12 marks]
 
 **(a)** Fig. 1.1 shows a G-protein linked receptor in a cell surface membrane.
 
@@ -46,7 +46,7 @@ the cytosol. Account for the position of the receptor, and for the way it is hel
 
 ---
 
-### Question 2  [12 marks]
+### Question 2 [12 marks]
 
 **(a)** Fig. 2.1 shows five numbered stages in one example of cell signalling.
 
@@ -85,7 +85,7 @@ response, and name which requirement for amplification the drug has broken. **[3
 
 ---
 
-### Question 3  [14 marks]
+### Question 3 [14 marks]
 
 **(a)** Fig. 3.1 outlines the response of a liver cell to glucagon. Glucagon itself never enters the cell.
 
@@ -111,7 +111,7 @@ would still run if that one enzyme alone were missing. **[4]**
 
 ---
 
-### Question 4  [12 marks]
+### Question 4 [12 marks]
 
 **(a)** Fig. 4.1 shows part of a signal transduction pathway. W is the signal molecule, X is the
 receptor before binding, Y is the phosphorylated intracellular region of the receptor, and Z is a small
@@ -136,7 +136,7 @@ pathway. **[5]**
 
 ---
 
-### Question 5  [13 marks]
+### Question 5 [13 marks]
 
 **(a)** Four proteins were isolated from a human cell and tested for the presence of three domains.
 Table 5.1 shows the results.
@@ -181,7 +181,7 @@ stating each difference positively on both sides. **[3]**
 
 ---
 
-### Question 6  [14 marks]
+### Question 6 [14 marks]
 
 **(a)** Table 6.1 shows blood glucose concentration and blood insulin concentration in one person after
 a glucose-rich meal eaten at 07.00.
@@ -218,7 +218,7 @@ Decide whether that is right, and account for your decision. **[3]**
 
 ---
 
-### Question 7  [13 marks]
+### Question 7 [13 marks]
 
 **(a)** Fig. 7.1 shows the IL6 signalling pathway. IL6, a cytokine, binds to its receptor IL6R, and the
 complex then binds gp130, which works in the same way as a receptor tyrosine kinase. The tyrosine
@@ -375,7 +375,7 @@ event.* **[8]**
 
 **Source:** School Prelim 2023 P1 Q24, key B, correct in 90.68% of the cohort (a, verbatim figure and stem; enzyme Q is adenylyl cyclase and second messenger R is cyclic AMP); TJC Prelim 2023 P2 Q3di [2] (a, the conformational change and GTP displacing GDP, verbatim); YIJC Prelim 2023 P2 Q7c [3] (a, the subunit dissociating and translocating along the membrane to adenylyl cyclase, verbatim); TMJC Prelim 2025 P2 Q9b [2] and Q9c [3] (a, the active G protein causing a conformational change to the effector, and why glucagon cannot cross the bilayer, verbatim); ACJC Prelim 2013 P2 Q6a [2] and NJC Prelim 2023 P2 Q8ai [3] (a, the displacement of GDP with GTP, verbatim); RI Prelim 2021 P1 Q24, key B (a, GDP is exchanged with GTP and is not phosphorylated, and the binding is via weak interactions to allow the exchange, verbatim); RVHS Prelim 2023 P3 Q2a [2] and ASRJC Prelim 2023 P2 Q3a [1] and Q3c [4] (b, kinases transferring phosphate from ATP, phosphate activating and inactivating enzymes, and PKA reusable and unchanged, verbatim); ASRJC Prelim 2022 P1 Q24, key A (b, dephosphorylation by protein phosphatase results in signal termination, verbatim); ACJC Prelim 2024 P3 Q4(b) [10] (b, inhibitors that inhibit phosphatases to prevent dephosphorylation, verbatim); RI Prelim 2024 P2 Q6(d) [1] and RI Prelim 2023 P3 Q3d [2] (c, phosphatases as the inactivating enzymes, and phosphodiesterase inhibitors raising cAMP, verbatim); MI Prelim 2016 P1 Q26 and PJC Prelim 2017 P1 Q21, key D (c, constitutive signalling when the GTPase fails to hydrolyse GTP to GDP, verbatim). The three termination mechanisms and the two conditions for amplification are chapter 3.1 pp. 22 and 24. Parts (b) and (c) are extensions in their framing.
 **Archetype:** mechanism explain-chain on a figure, then a prediction, then a ranking. LO 3(o) is tested as written, that is, kinases and phosphatases inside amplification specifically.
-**Trap:** saying the GDP is phosphorylated to become GTP, the single most-repeated reject in the chapter 3.1 corpus. Second trap: treating phosphorylation as always activating, when the chapter's own glucagon figure has protein kinase A phosphorylating glycogen synthase to inhibit it. Third trap: answering that the response is only longer, and missing that removing the brake also raises turnover per enzyme.
+**Trap:** saying the GDP is phosphorylated to become GTP, the single most-repeated reject in the chapter 3.1 the papers. Second trap: treating phosphorylation as always activating, when the chapter's own glucagon figure has protein kinase A phosphorylating glycogen synthase to inhibit it. Third trap: answering that the response is only longer, and missing that removing the brake also raises turnover per enzyme.
 **Concepts fused:** (1) complementary binding at an extracellular site; (2) why a peptide hormone cannot enter, and the conformational change as the thing that crosses; (3) GDP or GTP occupancy as the on and off states of a molecular switch; (4) GTP displacing GDP, with the reject that goes with it; (5) weak interactions as the reason the exchange is possible; (6) lateral diffusion in a fluid membrane, from Book 1; (7) the effector as a separate membrane enzyme making a second messenger; (8) the kinase and phosphatase definitions and the balance between them; (9) phosphorylation that inhibits rather than activates; (10) persistence of the active form as the link from termination back to amplification; (11) termination as the reason a cell can respond a second time; (12) the three named termination enzymes and their three different substrates; (13) an enzyme intrinsic to its target against enzymes that are separate; (14) constitutive signalling as the consequence of a failed GTPase; (15) ranking lesions by position in a dependency chain rather than by severity.
 
 ---
@@ -504,7 +504,7 @@ event.* **[8]**
 
 **8.** The deep reason the effects are opposite is that the **response proteins differ**, not that the signalling machinery differs. One cascade ends on **glycogen synthase in its active form and GLUT4 in the membrane**, the other ends on **glycogen phosphorylase in its active form and glycogen synthase inhibited**. Note that the same enzyme, **glycogen synthase**, is the target of both, activated by one hormone and phosphorylated to inhibit it by the other, which is a clean demonstration that **phosphorylation does not always lead to the activation of a protein**.
 
-**(c)** *Does glucagon stimulate glycogenolysis in skeletal muscle as well as in liver?* [INFERRED: the school notes contradict themselves here, and no scheme in the corpus settles it] **[3]**
+**(c)** *Does glucagon stimulate glycogenolysis in skeletal muscle as well as in liver?* [INFERRED: the school notes contradict themselves here, and no scheme in the papers settles it] **[3]**
 
 **1.** The student is **wrong**. Write **liver, and only liver, for glucagon.**
 

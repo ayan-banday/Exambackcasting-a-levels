@@ -11,7 +11,7 @@ tested more than once, from a different angle each time. Questions 1 to 4 are vi
 viral genome and the cell theory, 36 marks. Questions 5 to 8 are the phage cycles, 40 marks. Two
 sittings is a reasonable way to run it.
 
-**Six real figures, five questions figure-led.** Book 4 is the most figure-led Book in the corpus at
+**Six real figures, five questions figure-led.** Book 4 is the most figure-led Book in the papers at
 **43.8% figure-led overall and 45.7% among structured parts**, so nearly half of every structured
 question in this Book opens with a diagram or a micrograph. Every figure here is the real image lifted
 from the paper the question came from, not a redrawing. Two further figures could not be recovered from
@@ -44,7 +44,7 @@ every reveal.
 
 ## Questions
 
-### Question 1  [9 marks]
+### Question 1 [9 marks]
 
 Fig. 1.1 shows the structure of a coronavirus, SARS-CoV, which caused the Severe Acute Respiratory
 Syndrome (SARS). Infection by SARS-CoV causes symptoms resembling influenza that can be deadly.
@@ -66,7 +66,7 @@ intervals, and label C points to one of these spheres.]
 
 ---
 
-### Question 2  [9 marks]
+### Question 2 [9 marks]
 
 The human papillomavirus (HPV) is sexually transmitted and can cause the development of cervical
 intraepithelial neoplasia (CIN). Patients with CIN are observed to have abnormal growth of cells that
@@ -101,7 +101,7 @@ appear in different shapes. **[1]**
 
 ---
 
-### Question 3  [9 marks]
+### Question 3 [9 marks]
 
 **(a)** The Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) infects human host cells of
 multiple organ systems, resulting in the disease COVID-19. Its genome is single-stranded RNA of
@@ -121,19 +121,19 @@ Explain, with an example, how the Central Dogma may not always hold true. **[2]*
 
 ---
 
-### Question 4  [9 marks]
+### Question 4 [9 marks]
 
 **(a)** Which features of viruses provide evidence that they are non-living? **[1]**
 
-1  Viral nucleic acids can be cut into small fragments by bacterial restriction enzymes.
-2  Complete virus particles usually contain only one type of nucleic acid.
-3  Virus particles can be isolated and crystallised.
-4  Viruses cannot synthesise ATP.
+1 Viral nucleic acids can be cut into small fragments by bacterial restriction enzymes.
+2 Complete virus particles usually contain only one type of nucleic acid.
+3 Virus particles can be isolated and crystallised.
+4 Viruses cannot synthesise ATP.
 
-A  1, 2 and 3
-B  1, 2 and 4
-C  2, 3 and 4
-D  3 and 4 only
+A 1, 2 and 3
+B 1, 2 and 4
+C 2, 3 and 4
+D 3 and 4 only
 
 **(b)** Explain your answer, stating for each of the four numbered features whether it is evidence that
 viruses are non-living, and why. **[3]**
@@ -156,7 +156,7 @@ No ribosomes, no cytoplasm and no organelles are drawn.]
 
 ---
 
-### Question 5  [12 marks]
+### Question 5 [12 marks]
 
 **(a)** Fig. 5.1 shows a type of virus called a T2 phage. It consists of a protein coat enclosing a DNA
 molecule. This DNA causes the bacterial cell to make new copies of the T2 phage. State two ways in
@@ -170,7 +170,7 @@ T4 phage. **[10]**
 
 ---
 
-### Question 6  [12 marks]
+### Question 6 [12 marks]
 
 **(a)** Fig. 6.1 shows the reproductive cycles of a temperate bacteriophage, of which the lambda phage
 that infects *Escherichia coli* is an example. What is a lambda phage? **[1]**
@@ -200,7 +200,7 @@ it could be engineered to deliver the insulin gene into bacteria. **[4]**
 
 ---
 
-### Question 7  [6 marks]
+### Question 7 [6 marks]
 
 **(a)** The diagram shows the structure of a T4 virus with its components labelled **P** to **S**.
 Which statement is not correct? **[1]**
@@ -225,7 +225,7 @@ Explain how infection by phage A resulted in clear zones. **[2]**
 
 ---
 
-### Question 8  [10 marks]
+### Question 8 [10 marks]
 
 Bacteriophage therapy is being developed as a treatment for bacterial infections in humans, and
 research into it is increasing because of the emergence of pathogenic bacteria resistant to most or all
@@ -372,7 +372,7 @@ Discuss whether this statement is true and explain your reasoning. **[1]**
 **3.** An additional valid point is a **suggestion of variation in the number, arrangement or organisation of tegument protein.**
 
 **Source:** RI Prelim 2024 P3 Q1(a), stem, Fig. 1.1 and key verbatim (a); NJC Prelim 2024 P2 Q4(a)(ii), stem and key verbatim (b), with the EBV genome description folded into the stem from the paper's own Fig. 4.1 caption so the part stands alone; EJC Prelim 2021 P2 Q5(a)(i), stem and key verbatim (c), with the paper's Fig. 5.1 renumbered 2.2 and its description carried in the stem because the image could not be recovered; SAJC Prelim 2024 P3 Q2(b), stem and key verbatim (d), with structure T described inline in place of the paper's Fig. 2.1B. The Fig. 2.1 image is the real Fig. 1.1 from the RI 2024 Paper 3 question paper.
-**Archetype:** predict and apply to a novel case. Three of the four viruses here, HPV, Hantavirus and HCMV, appear in no syllabus and none is on the school's list. Apply-to-novel-case is 14.1% of the in-scope Book 4 corpus against Book 3's 1.7%, which is the single sharpest difference between the two Books.
+**Archetype:** predict and apply to a novel case. Three of the four viruses here, HPV, Hantavirus and HCMV, appear in no syllabus and none is on the school's list. Apply-to-novel-case is far commoner in Book 4 than in Book 3, and that is the single sharpest difference between the two Books.
 **Trap:** giving one-sided differences instead of point-to-point pairs; forgetting that a virus can carry histones only if it takes them from the host; treating "three segments" as the only Hantavirus point when the enzyme, the circularity and the bound protein are each separate marks; describing HPV as a naked virus without saying what the T4 has instead.
 **LOs:** 1(e) structural components of viruses including bacteriophages, and interpreting drawings of them, in (a) and (d); 2(d) the structure and organisation of viral genomes and, by contrast, eukaryotic genomes, in (a), (b) and (c). Reach-back to Book 2 genome organisation for histones, linearity and chromosome number in (c).
 **Concepts fused:** (1) capsid as the shared feature of naked and tailed viruses; (2) capsomere subunit structure; (3) histone association as a borrowed eukaryotic feature; (4) capsid symmetry; (5) phage-specific structures; (6) number of capsid protein types; (7) DNA against RNA genome; (8) strandedness; (9) segmentation; (10) which polymerase a genome type forces the virion to carry; (11) circular against linear genome; (12) nucleocapsid protein against histone; (13) envelope fluidity as the cause of pleomorphism.
@@ -422,7 +422,7 @@ Discuss whether this statement is true and explain your reasoning. **[1]**
 **4.** Any one point plus its example earns one mark, and two such pairs earn both marks.
 
 **Source:** SAJC Prelim 2025 P2 Q4(a)(ii), stem and key verbatim (a), with the paper's Fig. 4.1 genome caption folded into the stem so the part stands without the figure; School (HCI) Prelim 2023 P3 Q2(b), stem, key and marker's note verbatim (b); PJC Prelim 2017 P2 Q5(b), stem and key verbatim (c), with "this virion" replaced by "the influenza virion" so the part stands alone; MJC Prelim 2013 P2 Q2(a), stem and key verbatim (d), with the paper's Fig. 2.1 flow chart described in the stem in one clause.
-**Archetype:** mechanism explain-chain, 12.5% of the in-scope Book. Every part here is a why, and every mark is a link in a chain rather than a recalled fact.
+**Archetype:** mechanism explain-chain. Every part here is a why, and every mark is a link in a chain rather than a recalled fact.
 **Trap:** saying that RNA is converted or turned into DNA, or that negative sense RNA is converted into positive sense, both of which a scheme rejects by name, when the language wanted is template and synthesis with the original strand surviving; claiming the host has an RNA-dependent RNA polymerase for one virus and not the other; giving reverse transcriptase only one activity when the scheme credits three; naming an example in (d) without stating which principle of the central dogma it breaks.
 **LOs:** 2(d) the structure and organisation of viral genomes, specifically DNA against RNA and sense, in (a), (b) and (d); 1(e) the viral enzymes carried in the virion in (a) and (c). Reach-back to Book 2 for transcription, translation and DNA replication throughout (d).
 **Concepts fused:** (1) positive sense as directly translatable; (2) negative sense as needing a template step first; (3) why the virion has to carry an enzyme it cannot make yet; (4) the same positive-sense strand serving twice, as mRNA and as template; (5) the naming convention for a dependent polymerase; (6) RNase H activity; (7) the DNA polymerase activity that finishes the second cDNA strand; (8) ribonucleotides against deoxyribonucleotides; (9) reverse information flow; (10) RNA as a hereditary molecule; (11) RNA replication with no DNA stage.
@@ -464,7 +464,7 @@ Discuss whether this statement is true and explain your reasoning. **[1]**
 **3.** **Identify one tenet of the cell theory that it challenges**, that is **cells are the basic unit of life**, or **all living things are made from cells**, or **all cells come from pre-existing cells**.
 
 **Source:** 9477 Specimen Paper 1 Question 3 in full, verbatim from the official question paper (a); the follow-on wording in (b) is the drill's, and the reasoning is the YIJC Prelim 2025 P1 Q16 key verbatim, that paper setting the same four features among six with a full per-statement audit; YIJC Prelim 2023 P2 Q4(b)(iv), stem and key verbatim (c), with the EBOV preamble kept from the paper; VJC Prelim 2024 P2 Q1(b), stem, Fig. 1.2 and key verbatim (d), renumbered Fig. 4.1. The Fig. 4.1 image is the real Fig. 1.2 from the VJC 2024 Paper 2 question paper.
-**Archetype:** evaluate and discuss, only 1.4% of the in-scope corpus and almost all of it concentrated on this one node, plus the specimen's own MCQ, which is not plain recall but a test of each statement against a criterion of life.
+**Archetype:** evaluate and discuss, plus the specimen's own MCQ, which is not plain recall but a test of each statement against a criterion of life.
 **Trap:** reading the restriction-enzyme statement as evidence because it sounds molecular; answering (d) with the non-living side only, when the scheme requires a living characteristic and a named tenet as well; answering (c) with "cannot reproduce outside a host" alone when the two-mark version wants the acellular point and the host-resources point; drifting into vaccines and immunity, which belong to Extension Topic A.
 **LOs:** 1(f) how viruses challenge the cell theory and concepts of what is considered living, in (a), (b), (c) and (d); 1(e) structural components, read off Fig. 4.1, in (d).
 **Concepts fused:** (1) one type of nucleic acid against both in every cell; (2) crystallisation as a chemical property; (3) inability to synthesise ATP; (4) what is not diagnostic of being non-living; (5) acellular structure; (6) absence of biosynthetic machinery; (7) dependence on host building blocks, machinery and energy; (8) reading absence of organelles off a figure; (9) replication as a living characteristic; (10) the three tenets of the cell theory.
@@ -509,10 +509,10 @@ Discuss whether this statement is true and explain your reasoning. **[1]**
 
 **11.** Quality of written communication: **obtain at least 1 mark each from a minimum of 3 out of the 5 stages of the reproductive cycle.**
 
-**12.** Two further marks routinely credited elsewhere in the corpus and worth adding: **the capsid is left on the outside of the bacterial cell wall**, and **water enters the cell by osmosis, causing the cell to swell and burst**, which is marked separately from the enzyme action.
+**12.** Two further marks routinely credited elsewhere in the papers and worth adding: **the capsid is left on the outside of the bacterial cell wall**, and **water enters the cell by osmosis, causing the cell to swell and burst**, which is marked separately from the enzyme action.
 
 **Source:** DHS Prelim 2022 P2 Q6(a)(i), stem, Fig. 6 description and key table verbatim (a), with the figure carried as prose in the stem because the image could not be recovered; SAJC Prelim 2023 P3 Q5(a), a Section B free-response essay, stem and key verbatim including the quality of written communication line, at its real 10 marks (b). Marking point 12 is added from the mark schemes attached to ACJC Prelim 2024 P2 Q5(b)(i) and the school's own chapter, and is flagged as an addition rather than part of the SAJC key.
-**Archetype:** the full-cycle process question. Book 4 essays are process-led: almost every one of the 22 essay-scale in-scope stems in the corpus asks for a process laid out in order and then for one thing to be said about it. This is the rehearsed process on which three of those essays depend.
+**Archetype:** the full-cycle process question. Book 4 essays are process-led: almost every one of the 22 essay-scale in-scope stems in the papers asks for a process laid out in order and then for one thing to be said about it. This is the rehearsed process on which three of those essays depend.
 **Trap:** starting at penetration and skipping adsorption; saying the phage enters the cell rather than that the DNA is injected and the capsid stays outside; forgetting that host DNA is degraded and recycled as nucleotides, which is a mark in its own right; giving lysis as one mark when the enzyme action and the osmotic entry of water are marked separately; describing the protein coat and the DNA in (a) with only one of the two named, when every difference has to be stated for both.
 **LOs:** 2(e)i outlining the reproductive cycle of bacteriophages that reproduce via the lytic cycle, in (b); 1(e) structural components of bacteriophages in (a) and (b). Reach-back to Book 1 for amino acids, peptide bonds and levels of protein structure and to Book 2 for nucleotides, phosphodiester bonds and the double helix in (a).
 **Concepts fused:** (1) monomer type as a structural difference; (2) bond type; (3) levels of organisation; (4) number of subunit types; (5) tail-fibre recognition of a complementary receptor; (6) enzymatic breach of the wall; (7) mechanical injection by sheath contraction; (8) host DNA polymerase copying phage DNA; (9) host RNA polymerase and ribosomes hijacked; (10) inhibition of host macromolecular synthesis; (11) host genome degraded for raw material; (12) self-assembly of structural proteins; (13) genome packaging; (14) lysozyme packaged for the next round; (15) lysis and osmotic burst.
@@ -592,7 +592,7 @@ Discuss whether this statement is true and explain your reasoning. **[1]**
 **2.** **Hence it can infect and cause osmotic lysis of the bacterial cell, which shows up as clear zones.**
 
 **Source:** School (HCI) Prelim 2021 P1 Q13 in full, stem, figure and options verbatim, key letter from the official school answer grid (a); the follow-on wording in (b) is the drill's, with the per-option reasoning taken from the VJC Prelim 2025 P1 Q11 and ASRJC Prelim 2022 P1 Q9 keys, which set the same phage-structure mapping and print full reasoning; DHS Prelim 2023 P2 Q5(b), stem and key verbatim (c), with the paper's Fig. 5.2 plate layout carried in the stem as prose because the image could not be recovered. The figure is the real diagram from the HCI 2021 Paper 1 question paper.
-**Archetype:** figure-led MCQ, then the audit of every option, then an applied explain. MCQ is 25.6% of the in-scope Book and 38.5% of MCQs are figure-led.
+**Archetype:** figure-led MCQ, then the audit of every option, then an applied explain.
 **Trap:** picking C because "complementary to the bacterial cell wall" sounds imprecise, when the paper accepts it; forgetting that T4 carries DNA and not RNA, which is the single fact the whole item turns on; answering (c) with lysis alone and losing the specificity mark, or with specificity alone and losing the lysis mark; saying the viruses have entered the cell where a scheme wants attachment, which is a reject printed on a related T4 data question.
 **LOs:** 1(e) structural components of viruses including bacteriophages, and interpreting drawings of them, in (a) and (b); 2(d) the viral genome, DNA against RNA and single against double stranded, in (b); 2(e)i the lytic cycle, specifically adsorption and penetration and lysis, in (b) and (c).
 **Concepts fused:** (1) capsid built from repeated subunits; (2) T4 genome type; (3) sheath contraction as a mechanical process; (4) tail fibre conformation and host range; (5) lysozyme at the base plate; (6) complementary binding as the basis of specificity; (7) osmotic lysis as the cause of a plaque; (8) why three of four phages produced nothing.

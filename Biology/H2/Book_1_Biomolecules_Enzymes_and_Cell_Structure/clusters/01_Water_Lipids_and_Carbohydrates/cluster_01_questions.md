@@ -28,7 +28,7 @@ only as a supporting step inside an answer about a molecule that *is* examinable
 
 ## Questions
 
-### Question 1  [11 marks]
+### Question 1 [11 marks]
 
 **(a)** Glycogen is a compact molecule with many branches. Which types of glycosidic bond result in the
 biologically important characteristics of the glycogen molecule? **[1]**
@@ -69,7 +69,7 @@ equal mass of free glucose. **[2]**
 
 ---
 
-### Question 2  [11 marks]
+### Question 2 [11 marks]
 
 **(a)** Pullulan is a polysaccharide. The diagram shows the repeating unit present in pullulan. **[1]**
 
@@ -140,7 +140,7 @@ replaces it there, and state why the storage location in your row could not have
 
 ---
 
-### Question 3  [11 marks]
+### Question 3 [11 marks]
 
 **(a)** Olestra is an artificial lipid. It is made by attaching fatty acids, by condensation, to a
 sucrose molecule. **[1]**
@@ -155,7 +155,7 @@ Humans cannot hydrolyse olestra. However, other animals may be able to do so.
 How many molecules of water would be needed to hydrolyse one molecule of olestra into fatty acids,
 fructose and glucose?
 
-A 11  B 10  C 9  D 8
+A 11 B 10 C 9 D 8
 
 Show how you arrived at the number, naming each of the two different bond types you counted and saying
 how many of each there are. Then say what miscount each of A, B and D corresponds to. **[3]**
@@ -178,7 +178,7 @@ together. **[3]**
 
 ---
 
-### Question 4  [12 marks]
+### Question 4 [12 marks]
 
 **(a)** The diagram shows two molecules of glucose. Four possible bonding positions are labelled p, q,
 r and s on one molecule and t, u, v and w on another molecule. **[1]**
@@ -215,7 +215,7 @@ bond in cellulose. Circle the bond formed between the two monomers. **[4]**
 
 ---
 
-### Question 5  [12 marks]
+### Question 5 [12 marks]
 
 **(a)** Fig. 5.1 is a scanning electronmicrograph of part of a tobacco (*Nicotiana tabacum*) protoplast
 in an early stage of cell wall synthesis at magnification ×3075.
@@ -248,7 +248,7 @@ three rows that makes that row impossible and say why. **[2]**
 
 ---
 
-### Question 6  [10 marks]
+### Question 6 [10 marks]
 
 **(a)** Three artificial cells, each surrounded by a partially permeable membrane, contained equal
 masses of food reserves. One cell contained fat, one glycogen and one glucose. Which of the following
@@ -288,14 +288,14 @@ studded with ribosomes).]
 
 ---
 
-### Question 7  [12 marks]
+### Question 7 [12 marks]
 
 **(a)** Which of these statements about the differences between phospholipids and triglycerides are
 false? **[1]**
 
 1. Phospholipids have hydrophobic regions but triglycerides do not.
 2. The fatty acids in a triglyceride are always saturated but in a phospholipid they may be saturated
-   or unsaturated.
+ or unsaturated.
 3. Phospholipids contain phosphoester bonds but triglycerides do not.
 
 A 2 only
@@ -321,7 +321,7 @@ explain why none of the others on its own could produce a bilayer. **[2]**
 
 ---
 
-### Question 8  [11 marks]
+### Question 8 [11 marks]
 
 **(a)** Archaea are single-celled microorganisms which inhabit extreme environments, such as hot
 springs and volcanic vents at temperatures over 100 °C. Fig. 8.1 shows the molecular structure of a
@@ -372,7 +372,7 @@ fully saturated fatty acid chains joined by ester linkages, every C and H drawn.
 
 ---
 
-### Question 9  [11 marks]
+### Question 9 [11 marks]
 
 **(a)** The diagram shows the structure of a lipid molecule. **[1]**
 
@@ -382,13 +382,13 @@ acids; the top and bottom chains are fully saturated, and the middle chain carri
 Which statements are not correct?
 
 1. The fatty acid occupying the central (second) position of the lipid molecule has a molecular
-   formula of C₁₆H₃₂O₂, while the fatty acid occupying the other two positions has a molecular formula
-   of C₁₈H₃₄O₂.
+ formula of C₁₆H₃₂O₂, while the fatty acid occupying the other two positions has a molecular formula
+ of C₁₈H₃₄O₂.
 2. More ATP can be obtained from the lipid molecule than an equal mass of glycogen.
 3. The molecule is able to dissolve in an aqueous medium due to the presence of polar bonds.
 4. The molecule increases fluidity of membranes as it contains a kink.
 
-A 1 and 4  B 2 and 3  C 3 and 4  D 1, 3 and 4
+A 1 and 4 B 2 and 3 C 3 and 4 D 1, 3 and 4
 
 Take the statements one at a time. Read the figure to show what is wrong with statement 1. Name the
 ratio that makes statement 2 correct. Say what statement 3 mistakes for polarity. Then explain why
@@ -412,7 +412,7 @@ corresponds to a secretory vesicle. **[3]**
 
 ---
 
-### Question 10  [11 marks]
+### Question 10 [11 marks]
 
 **(a)** A student prepared three solutions of sugars, X, Y and Z, and diluted them to varying
 concentrations. A sample of each was heated with Benedict's reagent, with or without prior acid
@@ -469,7 +469,7 @@ Which statements are consistent with the results shown above?
 2. Melibiose is a disaccharide.
 3. Raffinose is composed of three different monosaccharides.
 4. The products of digestion by galactosidase and sucrase will yield a brick red precipitate when
-   heated with Benedict's reagent.
+ heated with Benedict's reagent.
 
 A 1, 2, 3 and 4
 B 1, 2 and 3 only
@@ -481,7 +481,7 @@ incubations, then justify statements 2 and 4 using that order. **[3]**
 
 ---
 
-### Question 11  [11 marks]
+### Question 11 [11 marks]
 
 **(a)** Which row shows the chemical groups present in the biological molecules listed? **[1]**
 
@@ -536,7 +536,7 @@ condensation. **[1]**
 
 ---
 
-### Question 12  [10 marks]
+### Question 12 [10 marks]
 
 **(a)** The figure below shows the structure of a biomolecule extracted from a cell. **[1]**
 
@@ -552,7 +552,7 @@ structures similar to that shown above. Which of the following statements are tr
 3. This biomolecule is contained within the secretory vesicle.
 4. When completely hydrolysed, all the monomers of this biomolecule are soluble in water.
 
-A 1 and 3 only  B 2 and 4 only  C 1, 2 and 4 only  D 2, 3 and 4 only
+A 1 and 3 only B 2 and 4 only C 1, 2 and 4 only D 2, 3 and 4 only
 
 Justify your choice statement by statement, naming the monomers released in statement 4. Then name the
 bond that joins the carbohydrate portion to the rest of the molecule, state which face of the cell
@@ -1360,27 +1360,27 @@ hydrolysis. Q7(c) closes it with a verbatim mark scheme.
 ### Deliberate exclusions
 
 1. **Water is absent as a tested topic.** There is no learning outcome for it in 9477, and the whole
-   question pool contains no real question on specific heat capacity, cohesion, surface tension, the
-   density of ice, or transparency. The only real anchor that reached water at all was the
-   glucose-versus-triglyceride solubility MCQ, which is one of the two questions you rejected as too
-   easy, so it is gone. Water reasoning now appears only where it supports an examinable outcome —
-   inside the osmotic argument in Q6(a), the hydrophobic exclusion argument in Q5(c) and Q9(c), and the
-   solubility argument in Q12(a).
+ question pool contains no real question on specific heat capacity, cohesion, surface tension, the
+ density of ice, or transparency. The only real anchor that reached water at all was the
+ glucose-versus-triglyceride solubility MCQ, which is one of the two questions you rejected as too
+ easy, so it is gone. Water reasoning now appears only where it supports an examinable outcome —
+ inside the osmotic argument in Q6(a), the hydrophobic exclusion argument in Q5(c) and Q9(c), and the
+ solubility argument in Q12(a).
 2. **The elemental composition MCQ is gone.** [Topical 2007/MCQ/Q11] asked which family contains which
-   elements and nothing else. Its replacement, Q11, tests functional groups across four molecules,
-   what each family releases on hydrolysis, condensation counting, and the polymer definition — the
-   same territory at four times the density.
+ elements and nothing else. Its replacement, Q11, tests functional groups across four molecules,
+ what each family releases on hydrolysis, condensation counting, and the polymer definition — the
+ same territory at four times the density.
 3. **Cholesterol is not tested.** The examiner guide assigns it to **Cluster 03** under the fluid mosaic
-   node (j), and no question in the pool tests it on its own. Left for that drill.
+ node (j), and no question in the pool tests it on its own. Left for that drill.
 4. **Collagen versus cellulose is held back.** [Topical 2007/FRQ/Q1] · NYJC Prelim P2 Q8(a) is the
-   richest cellulose comparison in the pool, but half its mark scheme is collagen, which the examiner
-   guide places in **Cluster 02**. It is reserved for that drill, where you will already have the
-   protein half. The same applies to [Topical 2007/STQ/Q1c] and [Topical 2007/MCQ/Q28].
+ richest cellulose comparison in the pool, but half its mark scheme is collagen, which the examiner
+ guide places in **Cluster 02**. It is reserved for that drill, where you will already have the
+ protein half. The same applies to [Topical 2007/STQ/Q1c] and [Topical 2007/MCQ/Q28].
 5. **Carbon tetravalency** (study sheet B1) still has no question of its own anywhere in the pool. It
-   is low-yield alone and is only ever assumed inside structural questions. Keep it as an open recall
-   prompt.
+ is low-yield alone and is only ever assumed inside structural questions. Keep it as an open recall
+ prompt.
 6. **The iodine colour for glycogen (red-violet)** appears in no pooled question. Iodine is tested only
-   for starch, in the Q10(b) flow chart. Keep it as a recall prompt from study sheet section F.
+ for starch, in the Q10(b) flow chart. Keep it as a recall prompt from study sheet section F.
 
 ### Figures
 

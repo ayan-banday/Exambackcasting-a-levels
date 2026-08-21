@@ -31,7 +31,7 @@ already know from your own three takeaways where the answer lives.
 
 ## Questions
 
-### Question 1  [15 marks]
+### Question 1 [15 marks]
 
 **(a)** A mammary gland cell stimulated to secrete large amounts of a glycoprotein develops nucleoli
 that are larger and more darkly stained than those of an unstimulated cell of the same type. Explain
@@ -48,7 +48,7 @@ organised, and explain how it exports the enzyme. **[4]**
 
 ---
 
-### Question 2  [14 marks]
+### Question 2 [14 marks]
 
 **(a)** A graph of the rate of entry of glucose into a cell against the concentration of glucose
 outside the cell rises steeply, then flattens into a plateau marked **X**. Four suggestions are made
@@ -72,7 +72,7 @@ process. **[5]**
 
 ---
 
-### Question 3  [13 marks]
+### Question 3 [13 marks]
 
 **(a)** A red blood cell is forced through a capillary narrower than its own diameter, then returns to
 its original shape without leaking. Explain how the cell surface membrane allows this. *(Answer in
@@ -96,7 +96,7 @@ independent explanations for the bursting. **[5]**
 
 ---
 
-### Question 4  [18 marks]
+### Question 4 [18 marks]
 
 **(a)** Fig. 4.1 shows the four structural levels of β-keratin in a feather.
 
@@ -121,7 +121,7 @@ gives way. **[8]**
 
 ---
 
-### Question 5  [15 marks]
+### Question 5 [15 marks]
 
 **(a)** Describe the structure of haemoglobin. **[5]**
 
@@ -135,7 +135,7 @@ stay in solution. **[5]**
 
 ---
 
-### Question 6  [14 marks]
+### Question 6 [14 marks]
 
 **(a)** A graph of the rate of an enzyme-catalysed reaction against substrate concentration rises
 steeply from the origin, then flattens. Account for the shape of the curve across its whole range, and
@@ -153,7 +153,7 @@ and off. **[4]**
 
 ---
 
-### Question 7  [13 marks]
+### Question 7 [13 marks]
 
 **(a)** Draw the reaction that joins two α-glucose molecules, then describe the reverse reaction in
 full. *(Four separate things are credited in the drawing.)* **[6]**
@@ -169,7 +169,7 @@ branch point and why nothing else would do, then state what the branching achiev
 
 ---
 
-### Question 8  [12 marks]
+### Question 8 [12 marks]
 
 **(a)** A liver cell is deprived of glucose for thirty minutes, and then for three days. Predict which
 of its two energy stores it draws on in each period, and justify both choices. **[4]**

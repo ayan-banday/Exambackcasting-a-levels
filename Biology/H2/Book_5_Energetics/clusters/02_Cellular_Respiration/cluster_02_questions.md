@@ -61,7 +61,7 @@ every reveal.
 
 ## Questions
 
-### Question 1  [8 marks]
+### Question 1 [8 marks]
 
 **(a)** Which row shows where the link reaction and oxidative phosphorylation occur in a mitochondrion?
 **[1]**
@@ -99,7 +99,7 @@ membrane and the outer membrane. **[3]**
 
 ---
 
-### Question 2  [10 marks]
+### Question 2 [10 marks]
 
 **(a)** Fig. 7.1 shows the Krebs cycle and the reactions preceding it: glucose is converted to
 pyruvate, pyruvate enters the mitochondrion and is converted to acetyl CoA with loss of CO2 and
@@ -112,15 +112,15 @@ forms pyruvate. **[2]**
 the proteins found in the mitochondrial matrix. Name and outline **two** respiratory processes that
 depend on the proteins found in the mitochondrial matrix. **[6]**
 
-> name of process 1 ..............................  outline ..............................
+> name of process 1.. outline..
 >
-> name of process 2 ..............................  outline ..............................
+> name of process 2.. outline..
 
 **(c)** Outline how ATP is synthesised in the Krebs cycle. **[2]**
 
 ---
 
-### Question 3  [8 marks]
+### Question 3 [8 marks]
 
 **(a)** Glucose enters bacterial cells via glucose transporters found on the plasma membrane. Glucose
 then undergoes glycolysis. Outline briefly the process of glycolysis for one molecule of glucose.
@@ -139,7 +139,7 @@ cells makes them more susceptible to the effects of either mutation. **[2]**
 
 ---
 
-### Question 4  [9 marks]
+### Question 4 [9 marks]
 
 **(a)** The diagram shows some of the reactions occurring in a mitochondrion. Which description of the
 reactions are correct? **[1]**
@@ -151,16 +151,16 @@ acetyl coenzyme A. A blue arrow leads away to CO2 outside the organelle. On the 
 of the cristae, a pink arrow runs from NAD to reduced NAD; an orange arrow runs from ADP + Pi to ATP;
 and a yellow arrow leads down and out to O2.]
 
-1  Acetyl group from acetyl coenzyme A will combine with a 4-carbon compound.
+1 Acetyl group from acetyl coenzyme A will combine with a 4-carbon compound.
 
-2  Reduction of NAD occurs at the cristae.
+2 Reduction of NAD occurs at the cristae.
 
-3  Substance Z had been formed by oxidation of a hexose.
+3 Substance Z had been formed by oxidation of a hexose.
 
-A  1 and 2 only
-B  1 and 3 only
-C  2 and 3 only
-D  1, 2 and 3
+A 1 and 2 only
+B 1 and 3 only
+C 2 and 3 only
+D 1, 2 and 3
 
 *Then say, out loud, whether each of the three numbered statements is true or false and why.*
 
@@ -175,7 +175,7 @@ role of coenzyme A in cellular respiration. **[2]**
 
 ---
 
-### Question 5  [12 marks]
+### Question 5 [12 marks]
 
 **(a)** Inhibitors can block electron flow at specific points in the electron transport chain,
 preventing further electron transfer downstream of the block. By observing which carriers become
@@ -217,14 +217,14 @@ chemiosmosis in chloroplasts. **[1]**
 
 ---
 
-### Question 6  [15 marks]
+### Question 6 [15 marks]
 
 Section B, free response. Describe the features of the processes of aerobic respiration that allow
 energy from a glucose molecule to be harnessed. **[15]**
 
 ---
 
-### Question 7  [7 marks]
+### Question 7 [7 marks]
 
 **(a)** Leigh disease can be due to a mutation in the mtDNA affecting the MT-ATP6 gene. The mutated
 allele results in the production of a non-functional subunit in the ATP synthase complex which allows
@@ -245,7 +245,7 @@ actual net number of ATP molecules synthesised is less than the theoretical numb
 
 ---
 
-### Question 8  [10 marks]
+### Question 8 [10 marks]
 
 **(a)** A student watered a potted plant too excessively, causing the soil to become waterlogged.
 Fortunately, the roots of this plant could carry out anaerobic respiration under low oxygen conditions
@@ -263,13 +263,13 @@ significantly when yeast cells switch from aerobic to anaerobic respiration. **[
 
 ---
 
-### Question 9  [10 marks]
+### Question 9 [10 marks]
 
 Section B, free response. Discuss the significance of membranes in aerobic respiration. **[10]**
 
 ---
 
-### Question 10  [7 marks]
+### Question 10 [7 marks]
 
 **(a)** Migratory animals alter their energy intake and their dietary composition, preferring higher
 amounts of fats in preparation for migration. Fatty acids contain a greater energy yield per unit mass
@@ -482,7 +482,7 @@ Krebs cycle during seed germination. **[2]**
 **2.** **Delivers the acetyl group to the Krebs cycle.**
 
 **Source:** School (HCI) Prelim 2024 P1 Q23, stem, diagram, all three statements, all four options, the percentage correct and the examiner comment verbatim (a), with the diagram lifted from the 2024 school prelim PDF; 9477 Specimen P2 Q7a, stem and mark allocation verbatim from the question paper (b); Topical 2021 STQ Q10c, reprinting VJC Prelim P2 Q8c, stem and key verbatim (c); HCI Prelim 2021 P2 Q8b, stem and key verbatim (d). The ATP-yield sentence at the end of (b) is a scope warning added by this drill, not part of any paper.
-**Archetype:** figure-led MCQ with a measured failure rate, then function-of-a-coenzyme recall. The coenzymes heading is the smallest in the respiration bank at 15 records, and **9477 Specimen Paper 2 Question 7(a) opened on it for three marks.** The corpus under-tests exactly what the specimen asked first.
+**Archetype:** figure-led MCQ with a measured failure rate, then function-of-a-coenzyme recall. The coenzymes heading is the smallest in the respiration bank at 15 records, and **9477 Specimen Paper 2 Question 7(a) opened on it for three marks.** The prelim papers under-test exactly what the specimen asked first.
 **Trap:** "reduction of NAD occurs at the cristae", which over 40% of your own cohort chose; describing the pathway instead of the coenzyme, when the stem asks only for the role of NAD; quoting an ATP-per-NADH figure that the syllabus excludes and that two schemes give differently.
 **LOs:** 3(g) products formed in terms of dehydrogenation and decarboxylation, throughout; 3(h) the role of the ETC in (b); reach-forward to Cluster 1's LO 3(d) for NADP in (c).
 **Concepts fused:** (1) where NAD is reduced against where it is oxidised; (2) oxaloacetate as the four-carbon acceptor; (3) pyruvate as the oxidation product of a hexose; (4) NAD as a coenzyme of dehydrogenases; (5) NAD as a shuttle between the matrix and the inner membrane; (6) regeneration as the reason the pool never runs out; (7) NADP as a terminal acceptor against NAD as an intermediate carrier; (8) reduced NADP as reducing power in the Calvin cycle; (9) coenzyme A as an acetyl carrier.
@@ -609,7 +609,7 @@ Any fourteen from the following. **Starred points are compulsory for the award o
 **23.** So the structure is **four features, not four stages**: enzyme-catalysed reactions, redox reactions, substrate-level phosphorylation, oxidative phosphorylation. Write it in that order, with the stages as the evidence inside each feature.
 
 **Source:** School (HCI) Prelim 2024 P3 Q5(a), stem, the whole key, the starred-point rule, the QWC condition and the examiner comment verbatim. This is the full-cycle question of the drill: glycolysis through to oxidative phosphorylation, at its real 15 marks, on your own school's paper. Points 1 and 15 carry a scope warning added by this drill; the paper is 9744-era and awards ATP totals that 9477 excludes in writing.
-**Archetype:** the essay. The corpus files 57 essay-scale stems for Book 5, 42 of them from Paper 3, and the specimen gave Book 5 none, so treat this as cheap insurance rather than a certainty. The four rehearsed bridges for this Book are chemiosmosis across the two organelles, the Calvin cycle against the Krebs cycle, aerobic against anaerobic, and ATP as a cross-syllabus theme.
+**Archetype:** the essay. The papers set 57 essay-scale stems for Book 5, 42 of them from Paper 3, and the specimen gave Book 5 none, so treat this as cheap insurance rather than a certainty. The four rehearsed bridges for this Book are chemiosmosis across the two organelles, the Calvin cycle against the Krebs cycle, aerobic against anaerobic, and ATP as a cross-syllabus theme.
 **Trap:** organising by stage, which loses the quality-of-written-communication mark even when every content point is right; using "broken down" and "converted"; merging the oxidation of a substrate with the phosphorylation it is coupled to; reproducing the ATP totals this scheme awards.
 **LOs:** 3(f), 3(g), 3(h) and 3(l) together, which is the whole of aerobic respiration; 3(a) supplies every location.
 **Concepts fused:** the entire cluster, organised by feature rather than by sequence. This is the one question in the set whose marking points deliberately reach across Questions 1 to 5.
@@ -665,7 +665,7 @@ Any one of the following.
 **6.** The CIE mark scheme also accepts **some energy lost as heat**.
 
 **Source:** SAJC Prelim 2017 P3 Q1c, stem and key verbatim (a); SAJC Prelim 2017 P3 Q1d, stem and both keyed routes verbatim including the reject line (b); Topical 2021 STQ Q4f, reprinting JPJC Prelim P2 Q7f, stem and key verbatim (c); EJC Prelim 2023 P2 Q7b(ii), stem and the full accepted list verbatim (d), with the theoretical-yield calculation of the earlier part removed from the stem because 9477 excludes it.
-**Archetype:** inhibitors and uncouplers applied rather than named. The corpus files 45 records on respiratory poisons; the compound names are decoration and the three consequences are pure chemiosmosis reasoning, which is a standard way of testing LO 3(h) and LO 3(l).
+**Archetype:** inhibitors and uncouplers applied rather than named. The papers set 45 records on respiratory poisons; the compound names are decoration and the three consequences are pure chemiosmosis reasoning, which is a standard way of testing LO 3(h) and LO 3(l).
 **Trap:** predicting **lower** oxygen consumption for the ATP synthase mutant, which is the intuitive answer and the wrong one, because nothing in the mutation touches electron flow; expecting carbon dioxide from lactate fermentation, when only alcoholic fermentation releases it; calling oxygen the final electron **carrier**, which the scheme rejects by name.
 **LOs:** 3(h) the roles of oxygen and the ETC; 3(l) chemiosmosis; 3(i) and 3(j) in (c).
 **Concepts fused:** (1) a leaky ATP synthase as an uncoupler; (2) electron flow being independent of ATP synthesis; (3) compensatory glycolysis; (4) cyanide as a chain blocker; (5) coenzyme regeneration as the reason the matrix stages stop; (6) lactate fermentation releasing no carbon dioxide; (7) real yields falling short of theoretical ones for reasons that are all leaks and side-reactions.

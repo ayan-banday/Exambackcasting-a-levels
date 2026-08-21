@@ -44,7 +44,7 @@ argument. Apoptosis appears only inside p53's own mechanism.
 
 ## Questions
 
-### Question 1  [12 marks]
+### Question 1 [12 marks]
 
 Figure 1.1 shows the DNA base sequences of part of the H-ras proto-oncogene and the same part of the
 H-ras oncogene. The H-ras oncogene arises from the H-ras proto-oncogene by mutation. Figure 1.1 also
@@ -93,14 +93,14 @@ before the other two.]
 
 ---
 
-### Question 2  [11 marks]
+### Question 2 [11 marks]
 
 **(a)** What is a normal function of tumour suppressor genes?
 
-A  to dysregulate a checkpoint of cell division
-B  to prevent the mutation of proto-oncogenes
-C  to promote the death of cells with DNA damage
-D  to stimulate the activity of cellular oncogenes
+A to dysregulate a checkpoint of cell division
+B to prevent the mutation of proto-oncogenes
+C to promote the death of cells with DNA damage
+D to stimulate the activity of cellular oncogenes
 
 **[1]**
 
@@ -127,7 +127,7 @@ in its genome. State the number of p53 alleles an African elephant has in its ge
 
 ---
 
-### Question 3  [8 marks]
+### Question 3 [8 marks]
 
 **(a)** Uncontrolled mitosis can cause cancer in humans. While some mutations occur spontaneously due
 to errors in DNA replication, others could be induced by environmental factors or biological agents.
@@ -143,7 +143,7 @@ of resistance to the same drug. **[2]**
 
 ---
 
-### Question 4  [7 marks]
+### Question 4 [7 marks]
 
 **(a)** Cancer development occurs in stages. The advanced stage of cancer is characterised by the
 spread of cancer development to other parts of the body via the circulatory system to form secondary
@@ -165,7 +165,7 @@ Explain why capsaicin is an effective chemopreventive agent. **[3]**
 
 ---
 
-### Question 5  [10 marks]
+### Question 5 [10 marks]
 
 Section B, free response. Answer in continuous prose.
 
@@ -173,7 +173,7 @@ Discuss the factors which may reduce the probability that cancer will occur. **[
 
 ---
 
-### Question 6  [13 marks]
+### Question 6 [13 marks]
 
 **(a)** Lymphoid stem cells are a subset of blood stem cells that give rise to the B lymphocytes and
 T lymphocytes of the immune system. Outline two defining features of stem cells. **[2]**
@@ -198,7 +198,7 @@ required in the lining of the small intestine. **[3]**
 
 ---
 
-### Question 7  [13 marks]
+### Question 7 [13 marks]
 
 **(a)** Lymphoid stem cells are a subset of blood stem cells that give rise to the B lymphocytes and
 T lymphocytes of the immune system. State the level of potency of lymphoid stem cells. **[1]**
@@ -221,10 +221,10 @@ cannot be described as haematopoietic stem cells (HSCs). **[2]**
 **(d)** Fig. 7.1 shows how a stem cell can differentiate into different specialised cell types. Which
 statement is not correct?
 
-A  Myeloid and lymphoid stem cells are multipotent.
-B  The stem cells can be found in both a fetus and an adult body.
-C  The stem cells can differentiate into the three germ layers in the adult body.
-D  The stem cells may be used in a bone marrow transplant to treat a patient with leukaemia, a form of blood cancer.
+A Myeloid and lymphoid stem cells are multipotent.
+B The stem cells can be found in both a fetus and an adult body.
+C The stem cells can differentiate into the three germ layers in the adult body.
+D The stem cells may be used in a bone marrow transplant to treat a patient with leukaemia, a form of blood cancer.
 
 **[1]**
 
@@ -238,7 +238,7 @@ cell. **[3]**
 
 ---
 
-### Question 8  [10 marks]
+### Question 8 [10 marks]
 
 Section B, free response. Answer in continuous prose.
 
@@ -249,7 +249,7 @@ Discuss how gene mutations contribute to the development of cancer in a cell lin
 
 ---
 
-### Question 9  [8 marks]
+### Question 9 [8 marks]
 
 **(a)** Early studies found that patients with antibodies against CagA showed higher rates of gastric
 adenocarcinoma. The C-terminal tail of CagA is a target for phosphorylation by kinases coded by
@@ -268,7 +268,7 @@ cells. Suggest how GATA2 mutation may lead to increased incidence of cancer. **[
 
 ---
 
-### Question 10  [12 marks]
+### Question 10 [12 marks]
 
 **(a)** Describe features of embryonic stem cells and adult stem cells that distinguish them from each
 other. **[6]**

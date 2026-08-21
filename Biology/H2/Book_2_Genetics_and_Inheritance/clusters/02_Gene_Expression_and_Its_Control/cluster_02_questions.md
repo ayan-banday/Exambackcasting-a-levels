@@ -33,7 +33,7 @@ repressors are proteins; enhancers and silencers are DNA.
 
 ## Questions
 
-### Question 1  [11 marks]
+### Question 1 [11 marks]
 
 **(a)** Explain why mRNA is formed as a continuous strand during transcription while one of the two new
 DNA strands is formed discontinuously during replication, and state what each of the two polymerases
@@ -44,7 +44,7 @@ gene. **[5]**
 
 ---
 
-### Question 2  [10 marks]
+### Question 2 [10 marks]
 
 **(a)** Exceptions to the universal genetic code are found in mammalian mitochondria, as shown in
 Table 2.1. Fig. 2.1 gives the standard code.
@@ -69,10 +69,10 @@ TATTCTTCCACT
 How many peptide bonds would be formed by ribosomes during translation in mammalian cell cytoplasm and
 in mammalian mitochondria?
 
-A  cytoplasm 2, mitochondria 1
-B  cytoplasm 2, mitochondria 0
-C  cytoplasm 3, mitochondria 0
-D  cytoplasm 3, mitochondria 1
+A cytoplasm 2, mitochondria 1
+B cytoplasm 2, mitochondria 0
+C cytoplasm 3, mitochondria 0
+D cytoplasm 3, mitochondria 1
 
 For every option, say whether it is correct and why. **[5]**
 
@@ -82,7 +82,7 @@ tolerated, and explain why. **[5]**
 
 ---
 
-### Question 3  [13 marks]
+### Question 3 [13 marks]
 
 **(a)** Gene X codes for two proteins that differ in molecular weight. Fig. 3.1 shows the pre-mRNA and
 five possible mature mRNA variants that can be produced from gene X. Only some variants can be
@@ -95,10 +95,10 @@ variant 3 is Q R S, variant 4 is P Q S, variant 5 is P S R.]
 
 Which row is correct?
 
-A  mature mRNAs that will undergo translation: 2 and 3; post-transcriptional modification: alternative splicing removing introns changes the coding sequence of mature mRNA
-B  mature mRNAs that will undergo translation: 2 and 4; post-transcriptional modification: one mRNA had a 5' cap and a poly-A tail and the other mRNA did not
-C  mature mRNAs that will undergo translation: 1 and 4; post-transcriptional modification: differing poly-A tail lengths of mRNA can lead to different expression levels of the two proteins
-D  mature mRNAs that will undergo translation: 1 and 5; post-transcriptional modification: the 5' UTR is removed during mRNA processing, so two different proteins can be expressed
+A mature mRNAs that will undergo translation: 2 and 3; post-transcriptional modification: alternative splicing removing introns changes the coding sequence of mature mRNA
+B mature mRNAs that will undergo translation: 2 and 4; post-transcriptional modification: one mRNA had a 5' cap and a poly-A tail and the other mRNA did not
+C mature mRNAs that will undergo translation: 1 and 4; post-transcriptional modification: differing poly-A tail lengths of mRNA can lead to different expression levels of the two proteins
+D mature mRNAs that will undergo translation: 1 and 5; post-transcriptional modification: the 5' UTR is removed during mRNA processing, so two different proteins can be expressed
 
 For every option, say whether it is correct and why. **[5]**
 
@@ -110,7 +110,7 @@ the nucleus, and say which of the two the ribosome itself reads. **[3]**
 
 ---
 
-### Question 4  [18 marks]
+### Question 4 [18 marks]
 
 **(a)** During protein synthesis in the cells of an embryo, every tRNA molecule with the anticodon UAC
 is found to be carrying arginine instead of methionine. Suggest how this could have arisen, and predict
@@ -126,7 +126,7 @@ to do from the moment the drug binds. **[5]**
 
 ---
 
-### Question 5  [14 marks]
+### Question 5 [14 marks]
 
 **(a)** Starting from the way DNA is packaged in a eukaryotic chromosome, explain how acetylating the
 histone tails around one gene raises the rate at which it is transcribed, while methylating the
@@ -146,7 +146,7 @@ type of protein encoded by this gene differs between them, with a reason. **[6]*
 
 ---
 
-### Question 6  [13 marks]
+### Question 6 [13 marks]
 
 **(a)** A cloned promoter region divided into four adjacent stretches, A to D, was joined upstream of
 the reporter gene luciferase, whose expression can be quantified by colorimetry. Each stretch was then
@@ -171,7 +171,7 @@ of LCT. Suggest how a mutation inside an intron of one gene can keep a different
 
 ---
 
-### Question 7  [13 marks]
+### Question 7 [13 marks]
 
 **(a)** The same mRNA was prepared with five different 5' caps and introduced into cells. Table 7.1
 gives the half-life of each preparation and the amount of protein it produced, relative to the normal
@@ -196,7 +196,7 @@ output. *(answer in terms of the level of control)* **[7]**
 
 ---
 
-### Question 8  [12 marks]
+### Question 8 [12 marks]
 
 **(a)** The POMC gene is transcribed to one mRNA and translated to one polypeptide of 285 amino acids,
 which is cut into nine different peptide hormones; the set produced differs between the pituitary
@@ -210,7 +210,7 @@ again. **[7]**
 
 ---
 
-### Question 9  [14 marks]
+### Question 9 [14 marks]
 
 **(a)** Explain the advantage a eukaryotic cell gains from being able to regulate gene expression at
 each of five levels rather than at one. **[9]**
@@ -257,7 +257,7 @@ slowest, then account for the fact that the two rankings run in opposite directi
 **6.** The active site exists only because of folding: it is **formed by the R groups of residues that are far apart in the primary structure and are brought together by the tertiary structure**, with **binding residues determining specificity and catalytic residues doing the chemistry**. Denature RNA polymerase and the pocket stops existing, which is why the enzyme is a protein and the template is not.
 
 **Source:** Topical 2017/GE-STQ/Q7a · TJC Prelim 2017 P2 Q4(a) (a, first three marking points verbatim; the primer half and the one-fork argument are an extension); Topical 2018/STQ/Q1d · ACJC Prelim 2018 P2 Q3d (b, verbatim key, with "tRNA molecules" restated as "an RNA molecule from a tRNA gene"; the Book 1 folding link is an extension).
-**Archetype:** mechanism explain-chain, ~28% of the Book, with a compare-and-distinguish spine.
+**Archetype:** mechanism explain-chain, with a compare-and-distinguish spine.
 **Trap:** direction reversal — a polymerase reading 5' to 3', or the lagging strand described as continuous. Also the quiet one: assuming RNA polymerase needs a primer because DNA polymerase does.
 **LOs:** 2(c); reaches back to 2(b) (Cluster 1) and to Core Idea 1 enzymes (Book 1).
 **Concepts fused:** (1) 5' to 3' synthesis as a chemical constraint, not a convention; (2) free 3'-OH as the thing every polymerase needs; (3) double-stranded antiparallel template against single-stranded template; (4) fork direction forcing discontinuity; (5) Okazaki fragments and their size; (6) primase, DNA polymerase I and ligase as the price of discontinuity; (7) RNA polymerase self-priming from the transcription initiation complex; (8) active-site complementarity to two different substrates at once; (9) catalytic residues breaking hydrogen bonds; (10) activation energy and enzyme reuse explaining simultaneous transcription; (11) tertiary structure building the active site.

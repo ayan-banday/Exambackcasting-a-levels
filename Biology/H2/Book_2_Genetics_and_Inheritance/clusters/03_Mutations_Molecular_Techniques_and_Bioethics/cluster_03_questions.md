@@ -39,7 +39,7 @@ When you hit a blank, say the blank in plain words, because the transcript is th
 
 ## Questions
 
-### Question 1  [16 marks]
+### Question 1 [16 marks]
 
 **(a)** Two patients each carry a change at the twelfth codon of the same 400-codon gene: in one it is
 a single-base substitution, in the other a single-base insertion. Predict which patient is more
@@ -51,7 +51,7 @@ not in his sperm. State what follows from this for him and for any children he h
 
 ---
 
-### Question 2  [18 marks]
+### Question 2 [18 marks]
 
 **(a)** Fig. 2.1 shows a red blood cell from an unaffected person and a red blood cell from a person
 with sickle cell anaemia.
@@ -70,7 +70,7 @@ decide whether the mutation is better called harmful or advantageous. **[6]**
 
 ---
 
-### Question 3  [16 marks]
+### Question 3 [16 marks]
 
 **(a)** Apart from a polymerase, PCR uses none of the proteins that a cell uses to replicate its DNA.
 Account for how each of those jobs gets done instead, and identify the one requirement of the
@@ -82,7 +82,7 @@ of PCR makes the experiment possible at all. **[6]**
 
 ---
 
-### Question 4  [16 marks]
+### Question 4 [16 marks]
 
 **(a)** Fig. 4.1 shows the products of a PCR run on DNA from three deer mice, using primers that flank
 a gene whose mutant allele carries a deletion.
@@ -102,7 +102,7 @@ separation. **[6]**
 
 ---
 
-### Question 5  [16 marks]
+### Question 5 [16 marks]
 
 **(a)** Fig. 5.1 shows a stained agarose gel of digested genomic DNA beside the autoradiogram of a
 Southern blot made from the same lane of that gel.
@@ -140,7 +140,7 @@ search another species for a related gene, and whether the same molecule could s
 
 ---
 
-### Question 6  [18 marks]
+### Question 6 [18 marks]
 
 **(a)** A single unequal crossing over between synapsed chromosomes at meiosis produces two abnormal
 chromosomes at once. Identify both, and account for the fact that one of them is usually far more
@@ -164,7 +164,7 @@ Then decide whether an inversion of a segment of the same length would carry the
 
 ---
 
-### Question 7  [16 marks]
+### Question 7 [16 marks]
 
 **(a)** Fig. 7.1 shows non-disjunction happening at two different points in meiosis.
 
@@ -189,7 +189,7 @@ happened, and name precisely what the consequence of non-disjunction should be c
 
 ---
 
-### Question 8  [18 marks]
+### Question 8 [18 marks]
 
 **(a)** Fig. 8.1 shows the risk of Down syndrome in live births against the age of the mother.
 
@@ -219,7 +219,7 @@ Account for the trend, and judge what it does and does not establish about the s
 
 ---
 
-### Question 9  [14 marks]
+### Question 9 [14 marks]
 
 **(a)** Fig. 9.1 shows gene expression profiles for a healthy individual and an affected individual,
 for each of two genetic diseases X and Y. Each profile was made by reverse-transcribing the mRNA of a
@@ -408,7 +408,7 @@ surrounding tissue due to shortage in oxygen**; and the **sickled red blood cell
 and easily destroyed, further decreasing the oxygen carrying capacity of blood**.
 
 **9.** The mutation is **inherited, so it is germline and present in every cell from the zygote
-onwards** — it is not something the red cell acquired. Note that one prelim stem in the corpus opens
+onwards** — it is not something the red cell acquired. Note that one prelim stem in the papers opens
 "Sickle cell anaemia is caused by a somatic mutation"; that premise is wrong.
 
 *What has not changed, max 3:*
@@ -612,12 +612,11 @@ verbatim); YIJC Prelim 2023 P3 Q2a(ii) [2] (b — thermostability against the lo
 verbatim); TMJC Prelim 2023 P1 Q18, key D (b — the advantage-and-limitation grid); VJC Prelim 2025 P1
 Q16, key D (b — a mutation inside the primer binding site prevents amplification); MI Prelim 2023 P2
 Q5d [2] (the half-life reasoning, verbatim). The ranking in (b) is the extension.
-**Archetype:** technique procedure plus purpose, the dominant archetype in this chapter at 51% of its
-corpus, inverted so that the purpose is argued rather than recited.
+**Archetype:** technique procedure plus purpose, the dominant archetype in this chapter, inverted so that the purpose is argued rather than recited.
 **Trap:** describing PCR as if it happened in a cell — transformation, plasmids, a host organism.
 PCR is **in vitro** and **cell-free**. Second trap: naming a step without its purpose, which the
 schemes here reject consistently. Third trap: forgetting that **the advantages and limitations are
-written into LO 2(j)(i)** and are a separate node from the procedure — the corpus files 54 questions
+written into LO 2(j)(i)** and are a separate node from the procedure — the papers set 54 questions
 on the procedure and only 13 on what PCR can and cannot do.
 **LOs:** 2(j)(i) the principles and procedures of PCR, including its advantages and limitations.
 Reach-back 2(b) DNA replication and its enzymes, Core Idea 1 enzymes.
@@ -1017,7 +1016,7 @@ NJC Prelim 2023 P1 Q16 and SAJC Prelim 2023 P1 Q5 (the 13-21 carrier version); C
 Q14, key D (inversion identified against translocation and deletion); CJC Prelim 2018 P3 Q3a [3] (how
 chromosome fusion occurs). The figure is the school's own Fig. 14, 2.5 p. 20. The 95/5 split is 2.5
 p. 27. The inversion comparison is **[INFERRED — extension, no official key]**, because inversion is
-untested anywhere in the 343-question corpus and appears only inside mark-scheme lists.
+untested anywhere in the 343-question the papers and appears only inside mark-scheme lists.
 **Archetype:** compare / distinguish closed with a prediction on an untested type.
 **Trap:** treating "no genetic material is lost or gained" as though it meant "no consequence". The
 scheme's own wording is that a translocation **does not directly alter viability**, and the word doing
@@ -1284,7 +1283,7 @@ termination rate as self-evidently good or self-evidently bad has **imported a c
 does not contain**.
 
 **Source:** **[INFERRED — extension, no official key.]** This is the one question in the drill with no
-past paper behind it, and it is flagged deliberately. A corpus-wide search across all 27 topic files
+past paper behind it, and it is flagged deliberately. A the papers-wide search across all 27 topic files
 for amniocentesis, prenatal, chorionic villus, NIPT, maternal screening and screening-for-trisomy
 returns **16 records, of which 15 are not about maternal screening at all**, and all four 9477
 specimen papers contain **zero** bioethics questions. The nearest real question with a real key is
@@ -1300,8 +1299,7 @@ Everything quoted in bold above is **verbatim from the school's own chapter 2.5 
 bioethical considerations, and chapter 2.7 pp. 2–3, the four principles and the decision scaffold**.
 Both figures are the school's own, 2.5 pp. 26 and 27. The data-description discipline in (b) follows
 9477 Specimen P2 Q3(e).
-**Archetype:** discuss / evaluate — 44% of the Bioethics file and almost nowhere else in the Book —
-opened by data / figure interpretation.
+**Archetype:** discuss / evaluate, set almost nowhere else in the Book, opened by data / figure interpretation.
 **Trap:** producing a list. **The command word is *discuss*, and *discuss* requires both sides plus a
 position**; a list of considerations with no judgement caps however long it is. Second trap: arguing
 only for the parents and never naming **people already living with the condition**, who are the

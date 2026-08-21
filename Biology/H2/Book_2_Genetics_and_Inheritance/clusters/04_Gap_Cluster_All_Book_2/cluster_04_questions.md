@@ -19,7 +19,7 @@ Every question is one or two sentences long and every answer is long. No stem li
 
 ---
 
-### Question 1  [16 marks]
+### Question 1 [16 marks]
 
 The microsatellite is a short tandemly repeated sequence at a known locus. Fig. 1.1 shows the two microsatellite alleles that sit close to a gene **G/g**, and Fig. 1.2 shows the amplified microsatellite products from six lanes of one agarose gel. Lanes 1 and 6 hold a DNA ladder; lanes 2 to 5 hold four individuals, all of whom are carriers.
 
@@ -35,7 +35,7 @@ The microsatellite is a short tandemly repeated sequence at a known locus. Fig. 
 
 ---
 
-### Question 2  [16 marks]
+### Question 2 [16 marks]
 
 **(a)** Each row of the table pairs a claimed advantage of the polymerase chain reaction with a claimed limitation. Decide whether each half of each row is correct, and give the reason in every case.
 
@@ -54,7 +54,7 @@ The microsatellite is a short tandemly repeated sequence at a known locus. Fig. 
 
 ---
 
-### Question 3  [16 marks]
+### Question 3 [16 marks]
 
 **(a)** Three patients each carry a different structural change to one chromosome. Patient P is healthy but has had three miscarriages and one child with multiple abnormalities; her chromosome count is 46, and a segment of chromosome 14 is joined to chromosome 21. Patient Q has a recessive condition although only one of his parents carries the recessive allele, and one of his chromosome 5 homologues is measurably shorter than the other. Patient R has a normal quantity of genetic material and no change to any base sequence, but a gene lying next to a break point is no longer expressed, and the gene order in that region runs in reverse. Name the aberration in each patient and account for what each patient shows. **[12]**
 
@@ -62,7 +62,7 @@ The microsatellite is a short tandemly repeated sequence at a known locus. Fig. 
 
 ---
 
-### Question 4  [16 marks]
+### Question 4 [16 marks]
 
 **(a)** Four drugs each act at a different level of the control of eukaryotic gene expression. Table 4.1 gives what is found in a liver cell for one gene, **T**, after each treatment. Deduce the level at which each drug acts and describe one mechanism the cell itself uses at that level.
 
@@ -81,7 +81,7 @@ The microsatellite is a short tandemly repeated sequence at a known locus. Fig. 
 
 ---
 
-### Question 5  [16 marks]
+### Question 5 [16 marks]
 
 **(a)** Two cell lines each carry a single amino acid substitution in the gene for the aminoacyl-tRNA synthetase that charges the tRNA with anticodon GAA. In line 1 the enzyme charges that tRNA normally. In line 2 the enzyme works at the normal rate but attaches leucine to it. State where in the enzyme each substitution must lie, account for both outcomes, and describe the region of the enzyme that line 2 has altered. **[8]**
 
@@ -89,7 +89,7 @@ The microsatellite is a short tandemly repeated sequence at a known locus. Fig. 
 
 ---
 
-### Question 6  [18 marks]
+### Question 6 [18 marks]
 
 Table 6.1 gives the template-strand triplet coding for the sixth amino acid residue of one of the two types of polypeptide subunit in haemoglobin, in five individuals, each triplet written 3' to 5'. Individual W is unaffected. Fig. 6.1 gives the genetic code.
 
@@ -111,7 +111,7 @@ Table 6.1 gives the template-strand triplet coding for the sixth amino acid resi
 
 ---
 
-### Question 7  [16 marks]
+### Question 7 [16 marks]
 
 **(a)** Three mRNA molecules are made in vitro from the same gene and introduced into cells. Molecule A carries a poly(A) tail and has all introns removed, but has no 5' cap. Molecule B carries a 5' cap and has all introns removed, but has no poly(A) tail. Molecule C carries both a cap and a tail, but intron 1 has been left in. Predict and account for the fate of each, and state why an RNA molecule needs such protection when the DNA it was copied from does not. **[9]**
 
@@ -123,7 +123,7 @@ Table 6.1 gives the template-strand triplet coding for the sixth amino acid resi
 
 ---
 
-### Question 8  [18 marks]
+### Question 8 [18 marks]
 
 **(a)** Non-coding eukaryotic DNA is classified in the scheme below. Decide whether each of the four statements is correct and give the reason in each case.
 
@@ -154,7 +154,7 @@ D 2 and 3 only
 
 ---
 
-### Question 9  [18 marks]
+### Question 9 [18 marks]
 
 **(a)** Trisomy-21 arises by non-disjunction in 95% of cases. Define non-disjunction, state the two divisions at which it can occur and how the resulting gametes differ, and explain why the outcome is described as aneuploidy and not polyploidy. **[5]**
 
@@ -232,7 +232,7 @@ Row A's limitation is correct: **after several cycles enzymes may get denatured 
 
 Limitation: the **size range of the DNA fragments that can be amplified is limited to 0.1 to 5 kb**. **[1]**
 
-**Defect in the school's own key, flagged.** The TMJC scheme's note on row A opens with the words *Taq DNA polymerase is a DNA polymerase, hence it has a proof-reading mechanism*. That clause is wrong, and every other scheme in the corpus contradicts it. Answer with the version above: **Taq lacks 3' to 5' exonuclease activity, therefore no proofreading**.
+**Defect in the school's own key, flagged.** The TMJC scheme's note on row A opens with the words *Taq DNA polymerase is a DNA polymerase, hence it has a proof-reading mechanism*. That clause is wrong, and every other scheme in the papers contradicts it. Answer with the version above: **Taq lacks 3' to 5' exonuclease activity, therefore no proofreading**.
 
 **(b)** *The counting, and which limitation defeats which laboratory.* **[10]**
 
@@ -548,7 +548,7 @@ Replication is **semi-conservative** and **every new strand is built 5' to 3' on
 
 At the extreme end of a **linear** molecule, when the **final RNA primer is removed there is no upstream strand onto which DNA polymerase can build**, so **no free 3' OH group is available** and **the gap cannot be filled**. A **circular** molecule has no ends, so every primer removed has an upstream strand available and every gap is filled and sealed, which is also why a bacterium never faces the problem. **[1]**
 
-The loss falls at **both ends of the linear chromosome, not one**. The **two replication forks travel away from the origin in opposite directions**, so **each daughter strand is leading at one end and lagging at the other**; each daughter molecule therefore ends up short at one end and its partner short at the other, and across the pair sequence is lost from both ends. The sequence lost is the **telomere**, which also **prevents the cell's DNA repair machinery from recognising the chromosome end as a double-strand break**.  **[1]**
+The loss falls at **both ends of the linear chromosome, not one**. The **two replication forks travel away from the origin in opposite directions**, so **each daughter strand is leading at one end and lagging at the other**; each daughter molecule therefore ends up short at one end and its partner short at the other, and across the pair sequence is lost from both ends. The sequence lost is the **telomere**, which also **prevents the cell's DNA repair machinery from recognising the chromosome end as a double-strand break**. **[1]**
 
 **Source:** CJC Prelim 2016 P1 Q14, itself modified from HCI Prelim 2015 P1 Q14 (a, verbatim stem, classification, four statements, key **B** and the full statement-by-statement reasoning, converted from a row-select into a written audit); NYJC Prelim 2025 P3 Q4a and NJC Prelim 2023 P2 Q6 (b, the four-level packing key, verbatim, including the ionic bonds, the H1 stabilisation, the solenoid and the non-histone scaffold); TJC Prelim 2023 P2 (the *DNA does not get entangled and break in mitosis/meiosis* marking point, verbatim); NYJC Prelim 2025 P2 Q3b [4] (the centromere and telomere as structure and function, verbatim); CJC Prelim 2023 P2 Q3c [2] (the end replication problem, the fullest written-out version of that key, verbatim). The circularisation framing and the centriole comparison are extensions, no official key.
 

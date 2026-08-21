@@ -53,7 +53,7 @@ every reveal.
 
 ## Questions
 
-### Question 1  [7 marks]
+### Question 1 [7 marks]
 
 Fig. 1.1 shows the arrangement of the bacterial chromosome and a plasmid in a bacterial cell.
 
@@ -74,7 +74,7 @@ plant cell. **[3]**
 
 ---
 
-### Question 2  [8 marks]
+### Question 2 [8 marks]
 
 In 1987, Cann, Stoneking and Wilson published the suggestion that all modern humans are descended from
 one woman, who became known as Mitochondrial Eve. Their suggestion was based on the analysis of
@@ -97,7 +97,7 @@ State two differences between the genetic material of bacteria and viruses. **[2
 
 ---
 
-### Question 3  [10 marks]
+### Question 3 [10 marks]
 
 **(a)** Prokaryotes differ from eukaryotes in terms of cell structure, genome organisation and cellular
 processes. Outline the mechanism of asexual reproduction by binary fission in a typical bacterial cell
@@ -105,7 +105,7 @@ and compare this with the mechanism of mitosis in a eukaryotic cell. **[10]**
 
 ---
 
-### Question 4  [8 marks]
+### Question 4 [8 marks]
 
 **(a)** Bacteria reproduce by the process of binary fission. Explain the significance of binary fission
 in bacteria. **[2]**
@@ -144,7 +144,7 @@ rules that option in or out. **[3]**
 
 ---
 
-### Question 5  [5 marks]
+### Question 5 [5 marks]
 
 Fig. 5.1 shows a classic experiment used to show that physical contact between bacterial cells is
 necessary for conjugation to happen. A student tried to replicate the experiment but did not get the
@@ -169,7 +169,7 @@ experiment. Explain your answer. **[2]**
 
 ---
 
-### Question 6  [11 marks]
+### Question 6 [11 marks]
 
 *Escherichia coli* is a common human food contaminant. An *E. coli* strain carrying the *aphA1* and
 *aphA2* genes is resistant to the antibiotic kanamycin.
@@ -181,7 +181,7 @@ coli* cells by transformation. **[3]**
 
 ---
 
-### Question 7  [9 marks]
+### Question 7 [9 marks]
 
 Fig. 7.1 shows two bacterial cells, bacterium **A** and bacterium **B**, involved in process **X**. Fig.
 7.2 shows a section of an electron micrograph of bacterium **A** in Fig. 7.1, with structure **C**
@@ -205,14 +205,14 @@ conjugation and transduction. **[3]**
 
 ---
 
-### Question 8  [14 marks]
+### Question 8 [14 marks]
 
 **(a)** Explain how viruses challenge the cell theory while prokaryotes and eukaryotes comply with the
 cell theory. **[14]**
 
 ---
 
-### Question 9  [6 marks]
+### Question 9 [6 marks]
 
 **(a)** Some strains of bacteria have become resistant to practically all of the commonly available
 antibiotics. A notorious case is methicillin-resistant *Staphylococcus aureus* (MRSA). An old
@@ -249,7 +249,7 @@ offered is correct and why the other is wrong. **[3]**
 
 **4.** **Number per cell.** There is **only 1** bacterial chromosome, while there may be **none, 1 copy, or many** plasmids.
 
-**5.** A further credited point elsewhere in the corpus: the plasmid is **capable of replication independent of the bacterial chromosome since it possesses its own origin of replication.**
+**5.** A further credited point elsewhere in the papers: the plasmid is **capable of replication independent of the bacterial chromosome since it possesses its own origin of replication.**
 
 **(b)** *Describe how the bacterial DNA is packaged to fit into the nucleoid region of a S. pneumoniae cell.* **[2]**
 
@@ -278,7 +278,7 @@ offered is correct and why the other is wrong. **[3]**
 **7.** **Reject: comparisons involving cell wall and flagella. Ignore: comparisons involving chloroplasts, vacuoles, mitochondria and so on.** Read the stem before choosing axes, because this scheme narrows the ground and rejects two of the features LO 1(d) itself names.
 
 **Source:** ASRJC Prelim 2025 P2 Q7(a), stem, Fig. 7.1 and key verbatim (a), renumbered Fig. 1.1; YIJC Prelim 2021 P2 Q4(a), reprinted as HCI Topical 2021 STQ Q16(a), stem and key verbatim (b); SRJC Prelim 2018 P3 Q1(a), stem and key verbatim including both the reject and the ignore lines (c). The Fig. 1.1 image is the real Fig. 7.1 from the ASRJC 2025 Paper 2 question paper.
-**Archetype:** recall, state and describe, 12.8% of the in-scope Book. All three parts can be asked cold, and all three are answered from the five features LO 1(d) names plus the two credited extras.
+**Archetype:** recall, state and describe. All three parts can be asked cold, and all three are answered from the five features LO 1(d) names plus the two credited extras.
 **Trap:** giving the plasmid difference one-sidedly, for example "plasmids are small", instead of stating both; treating the packing question as a chromosome question and describing histones and nucleosomes, which are eukaryotic; offering the cell wall or the flagellum in (c), which that scheme rejects by name even though LO 1(d) names the peptidoglycan cell wall; forgetting that the nucleoid is a region and not a compartment, so there is no envelope and no pore.
 **LOs:** 1(d) the structure of a typical bacterial cell, in (a) and (c); 2(d) the structure and organisation of prokaryotic genomes, specifically circularity, packing of DNA and extrachromosomal DNA, in (a), (b) and (c). Reach-back to Book 1 for plant cell ultrastructure in (c).
 **Concepts fused:** (1) plasmid against chromosome on gene number; (2) essential against non-essential genes; (3) copy number per cell; (4) independent replication from its own origin; (5) non-histone proteins as the packing agent; (6) looped domains; (7) supercoiling; (8) absence of membrane-bound organelles; (9) circular against linear DNA; (10) nucleoid against nucleus; (11) 70S against 80S ribosomes; (12) plasmids as a feature eukaryotes lack.
@@ -340,7 +340,7 @@ offered is correct and why the other is wrong. **[3]**
 **4.** **Bacteria may have plasmids while viruses do not have plasmids.**
 
 **Source:** 9477 Specimen Paper 3 Question 1(a)(i), (ii) and (iii) in full, verbatim from the official question paper, at their real 1, 3 and 2 marks, with the paper's own preamble on Mitochondrial Eve condensed into the stem (a), (b) and (c). The specimen ships without a mark scheme, so every marking point is inferred and cross-checked against the school keys named above. EJC Prelim 2018 P3 Q1(a), stem and key verbatim (d).
-**Archetype:** compare and distinguish, 7.2% of the in-scope Book, and the only place Book 4 surfaced on the specimen's Paper 3. Note what the specimen actually asked: not the reproductive cycles and not antigenic variation, but LO 2(d) as a prokaryote-against-eukaryote comparison.
+**Archetype:** compare and distinguish, and the only place Book 4 surfaced on the specimen's Paper 3. Note what the specimen actually asked: not the reproductive cycles and not antigenic variation, but LO 2(d) as a prokaryote-against-eukaryote comparison.
 **Trap:** losing the similarity mark in (a) by giving a difference; developing the three differences in (b) into paragraphs when the command word is list; answering (c) with "mitochondria have DNA", which does not distinguish them from a nucleus, instead of circular DNA not associated with histones; forgetting in (d) that the virus column has to be stated as an either-or, because the whole point of the viral genome is that it varies.
 **LOs:** 2(d) the structure and organisation of viral, prokaryotic and eukaryotic genomes, in (a), (b), (c) and (d); 1(d) the structure of a typical bacterial cell, specifically circular DNA and 70S ribosomes, in (c). Reach-back to Cluster 1 for the viral genome in (d) and to Book 2 for histones, nucleosomes, introns and splicing in (b).
 **Concepts fused:** (1) double-stranded DNA as the shared property; (2) circularity; (3) chromosome number; (4) nucleoid against nucleus; (5) two different packing ladders; (6) introns and splicing; (7) extrachromosomal DNA; (8) genome size and non-coding proportion; (9) circular DNA without histones as endosymbiont evidence; (10) 70S ribosomes as endosymbiont evidence; (11) division by splitting; (12) an organelle's own transcription and translation machinery; (13) the double membrane as a consequence of engulfment; (14) DNA or RNA as the viral variable.
@@ -385,7 +385,7 @@ offered is correct and why the other is wrong. **[3]**
 
 **15.** Difference: reference to **attachment of microtubules to chromosomes or the lack of it.**
 
-**16.** Two further points credited on the same node elsewhere in the corpus and worth adding. The bacterial chromosome has a **single origin of replication**, where a eukaryotic chromosome has many. And on septum formation, **the cell membrane folds inwards, that is invaginates, to form a double layer across the long axis of the cell**, with **Reject: cell wall invaginates, cell invaginates** printed beside it. The wall material is added afterwards, and saying it the wrong way round costs the mark.
+**16.** Two further points credited on the same node elsewhere in the papers and worth adding. The bacterial chromosome has a **single origin of replication**, where a eukaryotic chromosome has many. And on septum formation, **the cell membrane folds inwards, that is invaginates, to form a double layer across the long axis of the cell**, with **Reject: cell wall invaginates, cell invaginates** printed beside it. The wall material is added afterwards, and saying it the wrong way round costs the mark.
 
 **Source:** HCI Prelim 2021 P3 Q4(b), a Section B free-response essay, stem and key verbatim, at its real 10 marks. Marking point 16 is added from the YJC Prelim 2016 P2 Q10(a) and SAJC Prelim 2011 P2 Q3(b) keys, which set the same process and print the invagination reject, and is flagged as an addition rather than part of the HCI key.
 **Archetype:** the full-cycle process question. Book 4 essays are process-led, and this is one of the four rehearsed processes the whole Book's essay stock is built from: binary fission, plus a rider. Here the rider is mitosis.
@@ -423,7 +423,7 @@ offered is correct and why the other is wrong. **[3]**
 
 **1.** **The case for A, binary fission.** The original culture was grown **in ampicillin**, so **every cell in it already carried the F plasmid**. It was then inoculated into **sterile** broth, so **no F- partner exists** for a mating. The stated observation is that **cell number rose more than 15 million-fold in eight hours**, which is **replication**, and that **"most, but not all" cells were resistant**, which is the classic pattern of **plasmid loss during growth without selection**. Conjugation between two F+ cells does not occur efficiently.
 
-**2.** **The case for B, conjugation.** The phrase **"gene transfer from one bacterial cell to another"** is the standard wording for **horizontal transfer**, and a prelim scheme elsewhere in the corpus rejects binary fission outright on the ground that it **"is cell division, not gene transfer between cells"**.
+**2.** **The case for B, conjugation.** The phrase **"gene transfer from one bacterial cell to another"** is the standard wording for **horizontal transfer**, and a prelim scheme elsewhere in the papers rejects binary fission outright on the ground that it **"is cell division, not gene transfer between cells"**.
 
 **3.** **C, transduction, is ruled out by feature 4**: the strain is **resistant to infection by T1 phage**, and the broth is sterile, so **no phage vector is present to carry DNA between cells.**
 
@@ -460,7 +460,7 @@ offered is correct and why the other is wrong. **[3]**
 **3.** The logic of the whole item is worth holding: **the filter removes cell-to-cell contact, so conjugation is impossible**; **DNase removes naked DNA, so transformation is impossible**; **what is left that is small enough to cross a filter and is not naked DNA is a phage**, and that is transduction.
 
 **Source:** CJC Prelim 2023 P2 Q8(a), stem, Fig. 8.1 and key verbatim (a), renumbered Fig. 5.1; CJC Prelim 2023 P2 Q8(b), stem and key verbatim (b); CJC Prelim 2023 P2 Q8(c), stem and key verbatim (c), with the paper's own bridging paragraph about the undamaged filter kept. The Fig. 5.1 image is the real Fig. 8.1 from the CJC 2023 Paper 2 question paper.
-**Archetype:** predict and apply to a novel case, 14.1% of the in-scope Book. The classic Davis U-tube is handed to you as an experiment and the three transfer mechanisms have to be used as hypotheses to be eliminated, which is a completely different demand from describing them.
+**Archetype:** predict and apply to a novel case. The classic Davis U-tube is handed to you as an experiment and the three transfer mechanisms have to be used as hypotheses to be eliminated, which is a completely different demand from describing them.
 **Trap:** naming conjugation in (c) because the stem's opening sentence is about conjugation, when the filter is precisely what rules it out; giving "DNase destroys DNA" for (a) without the word naked, which is what makes it transformation rather than anything else; forgetting in (b) that two separate marks are on offer, the mechanism and the size argument.
 **LOs:** 2(g) how transformation, transduction and conjugation give rise to variation in prokaryotic genomes, in all three parts. Reach-back to Cluster 1 for the bacteriophage as a vector in (c).
 **Concepts fused:** (1) naked DNA as the material of transformation; (2) DNase as the tool that removes it; (3) a filter as the tool that removes cell contact; (4) size as the reason a phage crosses a filter and a cell does not; (5) transduction as the remaining hypothesis; (6) designing a control by elimination.
@@ -520,7 +520,7 @@ offered is correct and why the other is wrong. **[3]**
 **15.** The single word that distinguishes them: generalised is **random**, because each portion of the bacterial genome has approximately the same probability of being transferred; specialised is **adjacent**, because only genes near the prophage insertion site can travel.
 
 **Source:** ACJC Prelim 2021 P2 Q7(a), reprinted as HCI Topical 2021 STQ Q3(a), stem and key verbatim (a), with marking point 6 added from the transformation scheme quoted in the Book 4 examiner's guide; CJC Prelim 2016 P2 Q10(b), stem and key verbatim including both maxima (b), with marking points 14 and 15 added from the transduction schemes quoted in the same guide.
-**Archetype:** recall and describe a process, at essay scale. Transduction is 12.1% of in-scope records and transformation 8.0%, and 8.3% of in-scope records touch two or more of the three mechanisms in one question.
+**Archetype:** recall and describe a process, at essay scale. Transduction is 12.1% of in-scope records and transformation 8.0%.
 **Trap:** writing "lytic phage" and "lysogenic phage" where **virulent** and **temperate** are the wanted words; attaching generalised transduction to a temperate phage or specialised to a virulent one, which schemes reject in both directions; giving transformation as uptake of chromosomal DNA rather than of fragments of naked DNA; forgetting homologous recombination, which is the step that makes the transferred DNA heritable and without which there is transfer but no inheritance and therefore no variation.
 **LOs:** 2(g) how transformation and transduction give rise to variation in prokaryotic genomes, in (a) and (b); homologous recombination, in (b). Reach-back to Cluster 1 for the lytic and lysogenic cycles, the prophage and the prophage insertion site throughout (b).
 **Concepts fused:** (1) competence and competence factors; (2) exogenous naked DNA as the material; (3) energy requirement; (4) fragments rather than a whole chromosome; (5) host chromosome degraded in the lytic cycle; (6) mispackaging at assembly; (7) the defective phage; (8) injection into a second host; (9) homologous recombination in the recipient; (10) prophage integration in the lysogenic cycle; (11) imprecise excision; (12) adjacency to the insertion site; (13) random against adjacent as the whole distinction; (14) virulent against temperate as the wanted vocabulary.
@@ -545,7 +545,7 @@ offered is correct and why the other is wrong. **[3]**
 
 **7.** **The F plasmid may also contain beneficial genes such as antibiotic or xenobiotic resistance.**
 
-**8.** Points 6 and 7 are the ones to notice. **Neither the rolling circle mechanism nor the origin of transfer appears anywhere in your chapter 4.2**, and at least eight prelim schemes in the corpus credit the rolling circle mechanism as a mark point, several credit **oriT**, and two credit the **tra genes**. This is the largest single gap between your notes and the schemes anywhere in Book 4, and it is a missing mark rather than a wrong one. Add the words.
+**8.** Points 6 and 7 are the ones to notice. **Neither the rolling circle mechanism nor the origin of transfer appears anywhere in your chapter 4.2**, and at least eight prelim schemes in the papers credit the rolling circle mechanism as a mark point, several credit **oriT**, and two credit the **tra genes**. This is the largest single gap between your notes and the schemes anywhere in Book 4, and it is a missing mark rather than a wrong one. Add the words.
 
 **(b)** *Contrast conjugation and transduction.* **[3]**
 
@@ -636,7 +636,7 @@ offered is correct and why the other is wrong. **[3]**
 **22.** The chapter's own closing line is the safest way to resolve the discussion rather than leaving it open: it is best to describe viruses as **infectious particles which are active as the intracellular virus state, or inactive as the extracellular virion state, as opposed to living or non-living.**
 
 **Source:** ACJC Prelim 2023 P3 Q4(a), a Section B free-response essay, stem, key and quality of written communication line verbatim, at its real 14 marks. Marking point 22 is added from the digest of the school's own chapter 4.1 and is flagged as an addition rather than part of the ACJC key.
-**Archetype:** evaluate and discuss. Only 1.4% of in-scope records fall here and almost all of them sit on this node, but the corpus files a 14-mark essay on it, and **discuss** is the only two-sided command word in Book 4.
+**Archetype:** evaluate and discuss. Only 1.4% of in-scope records fall here and almost all of them sit on this node, but the papers set a 14-mark essay on it, and **discuss** is the only two-sided command word in Book 4.
 **Trap:** giving a list of things viruses do and stopping, when the shape is three statements each conceded and then qualified; writing "smaller" where "simpler or less complex" is wanted, which the scheme rejects by name; writing "adapt to" for evolution, also rejected; running the whole 14 marks on viruses and giving nothing on prokaryotes and eukaryotes, when the quality of written communication mark requires two points from each; forgetting that a virion is metabolically inert and that a new virion is never formed directly from a pre-existing virion.
 **LOs:** 1(a) the cell theory, in full; 1(f) how viruses challenge the cell theory and concepts of what is considered living; 1(d) the structure of a typical bacterial cell; 2(g) binary fission. Reach-back to Cluster 1 for everything about viruses and to Book 3 for mitosis, meiosis and fertilisation.
 **Concepts fused:** (1) the three statements of the cell theory; (2) acellularity as the core challenge; (3) simplicity rather than size as the wanted wording; (4) a genome coding for proteins as a living characteristic; (5) reproduction inside a host as a living characteristic; (6) mutation and evolution as a living characteristic; (7) absence of cytoplasm and organelles; (8) absence of metabolic enzymes; (9) prokaryotic compliance through binary fission; (10) eukaryotic compliance through mitosis; (11) meiosis and fertilisation; (12) cytoplasm and a cell surface membrane in both; (13) unicellular against multicellular; (14) the intracellular against extracellular resolution.

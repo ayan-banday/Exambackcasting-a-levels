@@ -28,7 +28,7 @@ contrast needs both sides on the same axis, point to point.
 
 ## Questions
 
-### Question 1  [25 marks]
+### Question 1 [25 marks]
 
 **(a)** Figs 1.1, 1.2 and 1.3 show the structures of human papillomavirus (HPV), T4 bacteriophage and
 human immunodeficiency virus (HIV).
@@ -63,7 +63,7 @@ cell theory. **[14]**
 
 ---
 
-### Question 2  [11 marks]
+### Question 2 [11 marks]
 
 **(a)** Fig. 2.1 is an electron micrograph of an organelle from a rat liver cell.
 
@@ -91,7 +91,7 @@ of Table 2.1 you used. **[3]**
 
 ---
 
-### Question 3  [14 marks]
+### Question 3 [14 marks]
 
 **(a)** Fig. 3.1 is an electron photomicrograph of a planctomycete, a bacterium with atypical prokaryotic
 features.
@@ -127,7 +127,7 @@ rest of the cell. **[4]**
 
 ---
 
-### Question 4  [12 marks]
+### Question 4 [12 marks]
 
 **(a)** Fig. 4.1 is an electron micrograph of a structure from the cytoplasm of an animal cell.
 
@@ -168,7 +168,7 @@ For every statement, say whether it is correct and why, correcting any part that
 
 ---
 
-### Question 5  [18 marks]
+### Question 5 [18 marks]
 
 **(a)** Peptic cells from a mammalian stomach, which secrete the enzyme precursor pepsinogen, were
 cultured in radioactively labelled amino acids. Fig. 5.1 shows one such cell, with the time in minutes
@@ -199,12 +199,12 @@ Golgi apparatus. The four statements below are about the two bulk-transport proc
 membrane.
 
 1. During endocytosis, vesicles bud inwards from the cell surface membrane, leading to a loss of
-   phospholipids.
+ phospholipids.
 2. During endocytosis, vesicle membrane fuses with the cell surface membrane, leading to a gain of
-   phospholipids.
+ phospholipids.
 3. During exocytosis, vesicles fuse with the cell surface membrane, leading to a gain of phospholipids.
 4. During exocytosis, vesicles bud off from the cell surface membrane, leading to a loss of
-   phospholipids.
+ phospholipids.
 
 Suggest how the Golgi apparatus carries out that sorting, then for every statement say whether it is
 correct and why, and state what each of the two processes does to the quantity of phospholipid in the cell
@@ -212,7 +212,7 @@ surface membrane. **[6]**
 
 ---
 
-### Question 6  [16 marks]
+### Question 6 [16 marks]
 
 **(a)** The observations below were all made on cell surface membranes.
 
@@ -220,7 +220,7 @@ surface membrane. **[6]**
 2. Proteins labelled with fluorescent dyes change position over time.
 3. Lectins are proteins that bind to polysaccharides. They only attach to the outside of membrane samples.
 4. Electron microscope images of membranes fractured by freezing show a large number of regularly
-   arranged particles interrupted by larger particles.
+ arranged particles interrupted by larger particles.
 5. Some membranes contain more cholesterol and unsaturated fatty acid chains than other membranes.
 6. Some proteins can only be separated from the membrane by disrupting the membrane with detergent.
 
@@ -250,7 +250,7 @@ system reads that chain rather than the protein or lipid carrying it. **[6]**
 
 ---
 
-### Question 7  [14 marks]
+### Question 7 [14 marks]
 
 **(a)** Fig. 7.1 shows the speed of movement of oxygen molecules through water and through three membranes
 at four temperatures: lens lipid from a calf eyeball, a synthetic palmitic acid membrane with cholesterol
@@ -307,7 +307,7 @@ channel proteins of the kind found in the cell surface membrane. **[4]**
 
 ---
 
-### Question 8  [14 marks]
+### Question 8 [14 marks]
 
 **(a)** Table 8.1 shows the concentration of two drugs inside animal cells 5 minutes after the cells were
 placed in containers of different drug concentration.
@@ -354,7 +354,7 @@ account for region Y. **[6]**
 
 ---
 
-### Question 9  [14 marks]
+### Question 9 [14 marks]
 
 **(a)** Fig. 9.1 shows a partially permeable membrane separating solution 1 from solution 2, with the
 solute diameters, the concentrations and the pore diameter drawn proportionately. Water molecules are not
@@ -1195,7 +1195,7 @@ solution 2**. It gets the water right. Each distractor is the key with **exactly
 corrupted**, which is why reading an option whole and asking "does it feel right" fails here.
 
 **(b)** *Water potential arithmetic for a protoplast.* [INFERRED — extension, no official key. There is no
-numerical water-potential question anywhere in the corpus; this is built on the real protoplast stem from
+numerical water-potential question anywhere in the papers; this is built on the real protoplast stem from
 School Prelim 2023 P2 Q1a, which asks the qualitative version.] **[4]**
 
 **1.** A protoplast has had its **cell wall removed**, so it **cannot develop a pressure potential** and
@@ -1265,7 +1265,7 @@ worse. That change is **reversible on cooling**; the denaturation of the pump is
 **Source:** 9477 Specimen P1 Q4 (a, verbatim stem, figure and options — Cambridge publishes no scheme, so
 the key and the audit are inferred) [FIG: q11a.png]; School Prelim 2023 P2 Q1a, also set as HCI Prelim 2023
 P2 Q1a (b, the protoplast stem and the marker's note on "less negative / more negative" and on turgor are
-verbatim; all the numbers and the arithmetic are an extension, because the corpus contains no numerical
+verbatim; all the numbers and the arithmetic are an extension, because the papers contains no numerical
 water-potential question); School Prelim 2024 P2 Q1b(i), also set as HCI Prelim 2024 P2 Q1b(i) (c, first
 half, verbatim including the full examiner comment; the 45 °C half is a cross-cluster extension built on
 the same contractile vacuole).
@@ -1316,17 +1316,17 @@ reversible while the protein's is not.
 ### The five required items from the topic examiner guide
 
 1. **Electron-micrograph identification** — Q2(a) rat liver nucleus, Q3(a) planctomycete, Q3(c) dividing
-   bacterium, Q4(a) centrioles in two sections, Q5(a) the peptic-cell secretory pathway.
+ bacterium, Q4(a) centrioles in two sections, Q5(a) the peptic-cell secretory pathway.
 2. **Magnification or scale-bar calculation** — Q2(a) is the scale-bar calculation and Q2(b) the
-   eyepiece-graticule calibration, the same measurement problem through the other technique.
+ eyepiece-graticule calibration, the same measurement problem through the other technique.
 3. **Water potential** — Q9(a) the qualitative direction off a scale drawing, Q9(b) the ψ = ψs + ψp
-   arithmetic, Q9(c) applied to a real organelle.
+ arithmetic, Q9(c) applied to a real organelle.
 4. **Rate versus concentration separating the processes** — Q8 in full: Q8(a) simple against facilitated
-   from a two-drug table, Q8(b) linear proportionality against saturation, Q8(c) saturation and
-   accumulation under active transport from region Y.
+ from a two-drug table, Q8(b) linear proportionality against saturation, Q8(c) saturation and
+ accumulation under active transport from region Y.
 5. **The two measured traps** — Q4(b) the centriole membrane status (28% correct) and Q5(c) the
-   endocytosis / exocytosis phospholipid balance (45% correct). Both were multiple-choice in the source
-   papers and are written audits here, so the whole mark rides on the reasoning rather than on a letter.
+ endocytosis / exocytosis phospholipid balance (45% correct). Both were multiple-choice in the source
+ papers and are written audits here, so the whole mark rides on the reasoning rather than on a letter.
 
 ### Primary concept of each question, checked for duplication
 

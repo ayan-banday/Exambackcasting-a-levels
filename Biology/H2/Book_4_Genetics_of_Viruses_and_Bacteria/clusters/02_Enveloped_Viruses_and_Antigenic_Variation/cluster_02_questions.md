@@ -46,7 +46,7 @@ every reveal.
 
 ## Questions
 
-### Question 1  [9 marks]
+### Question 1 [9 marks]
 
 Fig. 1.1 shows the main structural features of the influenza virus.
 
@@ -75,14 +75,14 @@ only seven RNA segments, labelled PB2, PB1, P3, HEF, NP, M and NS.]
 
 ---
 
-### Question 2  [13 marks]
+### Question 2 [13 marks]
 
 **(a)** Describe the reproductive cycle of the influenza virus and explain how new strains of the virus
 may arise as a result of mutation. **[13]**
 
 ---
 
-### Question 3  [11 marks]
+### Question 3 [11 marks]
 
 Human immunodeficiency virus (HIV) is a retrovirus and has two main types, HIV-1 and HIV-2. Fig. 3.1
 shows the structure of HIV.
@@ -101,7 +101,7 @@ infection. **[5]**
 
 ---
 
-### Question 4  [7 marks]
+### Question 4 [7 marks]
 
 **(a)** Some features of the reproductive cycle of the human immunodeficiency virus (HIV) are listed.
 How many of these features also occur in the reproductive cycle of the influenza virus? **[1]**
@@ -125,7 +125,7 @@ bacteriophage. **[2]**
 
 ---
 
-### Question 5  [10 marks]
+### Question 5 [10 marks]
 
 **(a)** Fig. 5.1 shows how the H3N2 influenza virus attacks human respiratory epithelial cells inside
 the nose. In stage 6, new viruses are formed and released as a result of the action of viral enzyme U.
@@ -157,7 +157,7 @@ out into a narrow stalk beneath it. The bulk of the cell beneath is labelled hos
 
 ---
 
-### Question 6  [11 marks]
+### Question 6 [11 marks]
 
 **(a)** The diagram shows the emergence of new influenza strains, M and N, resulting in antigenic shift
 in influenza A. Which events lead to antigenic shift? **[1]**
@@ -200,7 +200,7 @@ for your answer. **[3]**
 
 ---
 
-### Question 7  [13 marks]
+### Question 7 [13 marks]
 
 Fig. 7.1 shows the structure of haemagglutinin (HA) of the influenza virus. The numbers in Fig. 7.1
 indicate the positions of amino acids that are frequently changed.
@@ -224,7 +224,7 @@ statement is true. Give a reason for your answer. **[3]**
 
 ---
 
-### Question 8  [8 marks]
+### Question 8 [8 marks]
 
 **(a)** The 1968 flu pandemic is one of the deadliest pandemics in history, killing approximately 4
 million individuals globally. This pandemic was caused by the novel H3N2 influenza virus. With
@@ -284,7 +284,7 @@ and explain why this enzyme is needed to form new virions. **[3]**
 **5.** **Influenza A has RNA segments coding for HA and NA and PA while influenza C has RNA segments coding for HEF and P3.**
 
 **Source:** ASRJC Prelim 2022 P2 Q5(a), stem, Fig. 5.1 and key verbatim (a); ACJC Prelim 2022 P2 Q4(b)(ii), stem and key verbatim (b), with the figure reference renumbered from Fig. 4.2 to Fig. 1.1 so the part stands on this question's own figure; CJC Prelim 2025 P2 Q5(b), stem and key verbatim (c); ACJC Prelim 2025 P2 Q5(b), stem, key and the paper's own instruction that the contrast must be point to point, verbatim (d), with the paper's Fig. 5.1 carried in the stem as prose because the image could not be recovered. The Fig. 1.1 image is the real Fig. 5.1 from the ASRJC 2022 Paper 2 question paper.
-**Archetype:** figure-led identification and role, then a point-to-point contrast. Influenza and enveloped viruses account for 20.9% of in-scope records, and 45.7% of in-scope structured parts are figure-led.
+**Archetype:** figure-led identification and role, then a point-to-point contrast. Influenza and enveloped viruses account for 20.9% of in-scope records.
 **Trap:** naming E as haemagglutinin because it is the more familiar word, when haemagglutinin is already labelled on the figure; abbreviating to HA and NA on a part that asks you to explain a role, which one scheme rejects by name; giving the influenza coat as capsomeres, which your own chapter does twice, when the correct terms are nucleoprotein and nucleocapsid; contrasting influenza A and C one-sidedly by listing what A has.
 **LOs:** 2(e)ii the reproductive cycle of enveloped viruses including influenza, in (a), (b) and (c); 2(d) the structure and organisation of viral genomes, specifically segmentation and sense, in (a) and (d). Reach-back to Cluster 1 for the envelope and its glycoproteins throughout.
 **Concepts fused:** (1) neuraminidase identified from position on the envelope; (2) neuraminidase cleaving sialic acid at release; (3) the genome as negative-sense single-stranded RNA; (4) the genome as a template and as a set of genes; (5) haemagglutinin binding sialic acid; (6) receptor-mediated endocytosis as the entry route; (7) the nucleus as the site of genome replication; (8) segment number as a structural axis; (9) surface antigen identity as a structural axis; (10) polymerase subunit composition.
@@ -436,7 +436,7 @@ and explain why this enzyme is needed to form new virions. **[3]**
 **3.** **T4 bacteriophages are not enveloped viruses, hence they exit the host cell through lysis.**
 
 **Source:** 9477 Specimen Paper 1 Question 11 in full, verbatim from the official question paper (a); the follow-on wording in (b) is the drill's, with the per-feature reasoning cross-checked against the NYJC Prelim 2022 P2 Q5(d) and MI Prelim 2018 P2 Q2(b) keys, which contrast the two cycles feature by feature; NYJC Prelim 2025 P2 Q8(c), stem and key verbatim including the reject, (c).
-**Archetype:** the compare and distinguish archetype, 7.2% of the in-scope Book, delivered as a count-the-overlap MCQ. This is the single most efficient revision target in Book 4: build the HIV-against-influenza comparison once and it answers a stem shaped like this, a compare question and half of an essay.
+**Archetype:** the compare and distinguish archetype, delivered as a count-the-overlap MCQ. This is the single most efficient revision target in Book 4: build the HIV-against-influenza comparison once and it answers a stem shaped like this, a compare question and half of an essay.
 **Trap:** generalising a DNA stage, reverse transcription or integration from HIV to influenza, which is exactly what the specimen is built to catch; giving exocytosis for HIV, which a scheme rejects by name; comparing yes against no rather than point to point, which schemes reject outright, so say where each virus fuses rather than that one fuses and the other does not.
 **LOs:** 2(e)ii and 2(e)iii held together, the reproductive cycles of enveloped viruses and of retroviruses, in (a) and (b); 2(e) exit route by virus, in (c). Reach-back to Cluster 1 for phage lysis in (c).
 **Concepts fused:** (1) penetration as a shared slot with different mechanisms; (2) integration as retrovirus-only; (3) reverse transcription as retrovirus-only; (4) transcription of viral DNA as retrovirus-only; (5) assembly as a shared slot; (6) budding as the enveloped exit; (7) where the envelope comes from; (8) lysis as the naked-phage exit; (9) why the exit route follows from whether the virus has an envelope.
@@ -546,7 +546,7 @@ and explain why this enzyme is needed to form new virions. **[3]**
 **5.** **No: influenza C does not have two RNA segments for HA and NA to exchange with influenza A**, or **influenza A does not have a HEF RNA segment to exchange with influenza C**, or **they have different RNA segments coding for different proteins, for example HEF against HA and NA.**
 
 **Source:** DHS Prelim 2022 P1 Q13 in full, stem, figure, table and options verbatim, key letter from the official DHS answer grid (a); the follow-on wording in (b) is the drill's, with the reasoning cross-checked against the ACJC Prelim 2023 P2 Q5(b), EJC Prelim 2023 P3 Q1(e) and JPJC Prelim 2022 P1 Q10 keys, and marking point 4 added from the digest of the school's own chapter 4.1; RVHS Prelim 2022 P2 Q5(b), stem and key verbatim (c); ASRJC Prelim 2022 P2 Q5(b)(ii), stem, Table 5.1 and key verbatim (d), renumbered Table 6.1, with the paper's tick-box instruction replaced by "state whether or not"; ACJC Prelim 2025 P2 Q5(d), stem, key and the paper's own note on the command word verbatim (e). The Fig. image is the real diagram from the DHS 2022 Paper 1 question paper.
-**Archetype:** figure-led MCQ with every option justified, then applied evaluation. Antigenic shift and drift is only 4.4% of the in-scope corpus but is a whole learning outcome with one of the cleanest reproducible answer structures in the syllabus, so the drill weights it above corpus frequency.
+**Archetype:** figure-led MCQ with every option justified, then applied evaluation. Antigenic shift and drift is only 4.4% of the in-scope the papers but is a whole learning outcome with one of the cleanest reproducible answer structures in the syllabus, so the drill weights it above the papers frequency.
 **Trap:** **the single most dangerous error in Book 4**, which is your own chapter's claim on page 40 that shift can occur without genetic change; calling drift genetic drift, which a scheme rejects by name; defining shift and drift by big change against small change rather than by two or more strains against one strain and reassortment against point mutation; accepting Student Y's claim because H2N2, H1N1 and H3N2 all infect humans, when the requirement is the same host cell in the same organism at the same time; answering (e) one-sidedly when the command word is discuss whether.
 **LOs:** 2(f) how variation in viral genomes arises, including antigenic shift, in (a), (b), (c), (d) and (e); 2(d) segmentation of the viral genome as the mechanical precondition for reassortment, in (c) and (e).
 **Concepts fused:** (1) mutation as the mechanism of drift and not shift; (2) recombination held apart from reassortment; (3) reassortment as repackaging of whole segments; (4) co-infection of one cell as the precondition; (5) segmentation as the mechanical precondition; (6) assembly as the stage at which reassortment happens; (7) a novel combination of surface antigens as the output; (8) no pre-existing immunity as the reason for a pandemic; (9) same host cell against same species; (10) influenza's lack of latency as a reason two strains cannot meet across decades; (11) segment number compatibility between subtypes; (12) matching gene content as a precondition for exchange.
@@ -642,7 +642,7 @@ and explain why this enzyme is needed to form new virions. **[3]**
 **5.** **and for replication, that is to make more copies of the viral RNA.**
 
 **Source:** TJC Prelim 2021 P2 Q3(a), reprinted as HCI Topical 2021 STQ Q13(a), stem and key verbatim (a); TJC Prelim 2021 P2 Q3(b), reprinted as STQ Q13(b), stem and key verbatim (b); TJC Prelim 2021 P2 Q3(c), reprinted as STQ Q13(c), stem and key verbatim (c); RVHS Prelim 2021 P2 Q5(b)(ii), stem and key verbatim (d), with the EBOV preamble kept from the paper so the part stands alone. All three TJC parts run off the same Fig. 3.1 flow chart, carried in the stem of Question 5(a) as prose because the image could not be recovered.
-**Archetype:** predict and apply to a novel case, 14.1% of the in-scope Book. Three of these four parts are answered with material from a different Book entirely, which is what a suggest question in Book 4 usually means.
+**Archetype:** predict and apply to a novel case. Three of these four parts are answered with material from a different Book entirely, which is what a suggest question in Book 4 usually means.
 **Trap:** naming a viral enzyme for T when the stem says host enzyme; giving "capping" for S without saying what capping does for translation; answering (d) with "the virus needs it" and losing the two marks that say why the host cannot supply it; forgetting in (a) that host range is set by a complementary fit between a viral surface protein and a receptor located on the host cell, and that a scheme prints a reject if the receptor is not clearly placed on the host cell.
 **LOs:** 2(e)ii the reproductive cycle of enveloped viruses including influenza, in (a), (b) and (c); 2(d) the viral genome and what it forces the virion to carry, in (d); 1(e) viral enzymes in (d). Reach-back to Book 2 for the 5' cap, the poly-A tail, splicing, aminoacyl-tRNA synthetase and peptidyl transferase in (b) and (c).
 **Concepts fused:** (1) host range set by a complementary fit; (2) the receptor located on the host cell; (3) post-transcriptional modification of a viral transcript by host machinery; (4) why a cap or tail is needed for translation; (5) charging of tRNA; (6) peptide bond formation; (7) identifying an unfamiliar virion enzyme from the genome type; (8) the absence of a host RNA-dependent RNA polymerase; (9) the same enzyme serving both transcription and genome replication.

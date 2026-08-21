@@ -48,7 +48,7 @@ Book if it is weak, so Q2 attacks it directly and Q5 comes back at it from the f
 
 ## Questions
 
-### Question 1  [18 marks]
+### Question 1 [18 marks]
 
 **(a)** Misfolded proteins in the endoplasmic reticulum tend to spontaneously associate with one
 another to form an aggregate, causing cellular toxicity. The misfolded proteins contained many of the
@@ -94,7 +94,7 @@ of carbohydrate polymers compared to protein polymers. **[7]**
 
 ---
 
-### Question 2  [17 marks]
+### Question 2 [17 marks]
 
 **(a)** Fig. 2.1 shows a molecule of phosphofructokinase (PFK).
 
@@ -151,7 +151,7 @@ judgement. **[3]**
 
 ---
 
-### Question 3  [14 marks]
+### Question 3 [14 marks]
 
 **(a)** Christian Anfinsen performed pioneering experiments on the folding of pancreatic ribonuclease
 (RNase A). He found that RNase A is most stable between pH 2.0 and pH 4.5 at 100 °C. Fig. 3.1 shows
@@ -195,7 +195,7 @@ heating a polysaccharide with acid do not do the same kind of damage to the mole
 
 ---
 
-### Question 4  [15 marks]
+### Question 4 [15 marks]
 
 **(a)** Unlike haemoglobin, which circulates in the blood, myoglobin is the oxygen-binding protein
 located primarily in muscles. Myoglobin serves as a local oxygen reservoir that can temporarily
@@ -233,7 +233,7 @@ what that costs myoglobin. **[3]**
 
 ---
 
-### Question 5  [15 marks]
+### Question 5 [15 marks]
 
 **(a)** Fig. 5.1 shows a typical amino acid sequence from a segment of a collagen α-chain.
 
@@ -266,7 +266,7 @@ judgement. **[4]**
 
 ---
 
-### Question 6  [15 marks]
+### Question 6 [15 marks]
 
 **(a)** Fig. 6.1 shows a model of glycogen phosphorylase, an enzyme that catalyses the hydrolysis of
 glycosidic bonds to break glycogen up into glucose subunits. The three amino acids that form the
@@ -301,7 +301,7 @@ compared with catalase P. **[3]**
 
 ---
 
-### Question 7  [17 marks]
+### Question 7 [17 marks]
 
 **(a)** In beer-making, enzymes present in malting barley hydrolyse starch into sugar, ready for
 fermentation. Fig. 7.1 shows the production of sugar at three different temperatures over a period of
@@ -322,7 +322,7 @@ Which of these statements can be concluded from the results? **[1]**
 3 Sugar concentration remains at 10 a.u. until 5 min because sugar is absent in barley.
 4 The optimum temperature for the enzymes is 50 °C.
 
-A 1, 2 and 4    B 2, 3 and 4    C 1 and 3    D 2 only
+A 1, 2 and 4 B 2, 3 and 4 C 1 and 3 D 2 only
 
 For the statement you accepted, name the feature of the trace that proves it. Then, for each of the
 three statements you rejected, name the specific reason it cannot be concluded from this graph —
@@ -382,7 +382,7 @@ D rate of reaction against enzyme concentration, with the amount of substrate li
 
 ---
 
-### Question 8  [12 marks]
+### Question 8 [12 marks]
 
 **(a)** Phosphatases are enzymes that catalyse the removal of phosphate groups from organic compounds.
 Some students investigated the effect of substrate concentration on the rate of the reaction catalysed
@@ -441,7 +441,7 @@ difference in where the inhibitor binds that produces the different answer. **[4
 
 ---
 
-### Question 9  [17 marks]
+### Question 9 [17 marks]
 
 **(a)** For individuals suffering from insulin-dependent diabetes mellitus, inhibiting α-amylase could
 be a beneficial treatment to slow down the breakdown of starch. Tendamistat, a protein molecule
@@ -504,7 +504,7 @@ of enzyme W? **[1]**
 4 The quantity of intermediate 3 would decrease.
 5 There would be wastage of resources.
 
-A 1 and 5 only    B 2, 3 and 4 only    C 1, 3 and 5 only    D 2, 3, 4 and 5 only
+A 1 and 5 only B 2, 3 and 4 only C 1, 3 and 5 only D 2, 3, 4 and 5 only
 
 Take all five numbered statements in turn and say for each what happens to that quantity and why.
 **[2]**
@@ -634,7 +634,7 @@ key, converted from MCQ to open response); Topical 2017/STQ/Q2c · AJC Prelim 20
 diversity half verbatim). The R-group placement half of (a) and the counting explanation in (c) are
 extensions. **Cross-cluster:** the closing hydrophobic-interaction point of (a) and the three-bond
 comparison in (c) are extensions built on Cluster 1, sections B3, C2, C3 and D3 of
-`../01_Water_Lipids_and_Carbohydrates/cluster_01_study_sheet.md`; both are tagged
+`./01_Water_Lipids_and_Carbohydrates/cluster_01_study_sheet.md`; both are tagged
 [INFERRED — extension, no official key] in the scheme above.
 **[FIG: q1b.png]** — Fig. 1.1, the eight amino acids with non-polar R groups, from ASRJC 2023 JC2 H2
 Biology Prelims Paper 3 (QP) page 4, printed there as Fig. 1.2.
@@ -790,7 +790,7 @@ Q4 (c, verbatim stem, options and key). Part (d) is an extension, drawing on the
 Topical 2007/STQ/Q5a(ii) and (iii) · TPJC Prelim 2007 P2 Q6 and SAJC Prelim/2024/P2/Q4c.
 **Cross-cluster:** the two-coil comparison closing (a) is an extension on top of the real RI stem, with
 no official key — the α-helix half quotes Cluster 2 section B and the amylose half quotes Cluster 1
-sections D2 and D5 of `../01_Water_Lipids_and_Carbohydrates/cluster_01_study_sheet.md`.
+sections D2 and D5 of `./01_Water_Lipids_and_Carbohydrates/cluster_01_study_sheet.md`.
 **[FIG: q3b.png]** — Fig. 2.1, PFK, from RI Prelim 2018 H2 Bio Paper 2 (QP) page 3, Q1(b) Fig. 1.2. The
 "Catalytic sites" and "Allosteric sites" labels are printed on the original, so they stay, and they
 hand over part of the answer to (a).
@@ -904,7 +904,7 @@ Prelim/2024/P2/Q1b(ii) (b, verbatim); DHS Prelim/2023/P2/Q2d (c, verbatim, Fig 2
 mark scheme adds the peptide-bond protonation point recorded above); ACJC Prelim/2023/P3/Q1b(ii) (d,
 verbatim). The middle point of (d) is an extension. **Cross-cluster:** the starch half of (d) is an
 extension with no official key, built on Cluster 1 sections D3 and D5 of
-`../01_Water_Lipids_and_Carbohydrates/cluster_01_study_sheet.md`, and it sits here deliberately —
+`./01_Water_Lipids_and_Carbohydrates/cluster_01_study_sheet.md`, and it sits here deliberately —
 part (c) has just made acid disrupt ionic bonds in a protein without breaking it apart, so the contrast
 with acid hydrolysing a polysaccharide lands in the same question.
 **[FIG: q4b.png]** — Fig. 3.1, Anfinsen's three-stage RNase A diagram, from 2024 RI H2 Bio Paper 2 (QP)
@@ -1085,7 +1085,7 @@ then judge which mechanism produces more of it.*
 
 [INFERRED — extension, no official key; the collagen half quotes the RVHS and ACJC collagen schemes
 already used in (a) to (c), and the cellulose half quotes Cluster 1 section D6 of
-`../01_Water_Lipids_and_Carbohydrates/cluster_01_study_sheet.md`]
+`./01_Water_Lipids_and_Carbohydrates/cluster_01_study_sheet.md`]
 
 1. **Monomer and the bond along a chain.** Collagen is a **protein**: its monomers are **amino acids**,
 joined by **peptide bonds** into three **α-chains carrying the repeating Gly–X–Y tripeptide sequence**.
@@ -1132,7 +1132,7 @@ no official key. It replaces the old haemoglobin-versus-collagen contrast, which
 hydrophobic-placement and solubility points already tested in Q1 (a) and Q4 (c)(ii) and (d). The
 collagen half of the new (d) is keyed to the RVHS and ACJC schemes already quoted in (a) to (c); the
 cellulose half quotes Cluster 1 section D6 of
-`../01_Water_Lipids_and_Carbohydrates/cluster_01_study_sheet.md`. The fibrous-versus-globular contrast
+`./01_Water_Lipids_and_Carbohydrates/cluster_01_study_sheet.md`. The fibrous-versus-globular contrast
 the old part carried is not lost — it is still drilled through Q4 on the globular side and Q5 (a) to
 (c) on the fibrous side.
 **[FIG: q6a.png]** — Fig. 5.1, collagen α-chain backbone with the Gly–X–Y repeating motif marked and a
@@ -1713,11 +1713,11 @@ work that text cannot do, and each keeps a written part worth 2–3 marks that f
 every option.
 
 1. **Q2 (c)** — the ribbon model. You have to see the α-helices and β-sheets in the picture to reason
-   about which levels are lost and which survive.
+ about which levels are lost and which survive.
 2. **Q7 (a)** — the three-temperature kinetics trace. Every one of the four statements is settled by a
-   specific feature of the curve: a plateau height, a starting value, an initial gradient.
+ specific feature of the curve: a plateau height, a starting value, an initial gradient.
 3. **Q9 (d)** — the metabolic pathway flow chart. You have to trace material through five boxes to say
-   what accumulates where.
+ what accumulates where.
 
 Every other MCQ in the old build was either an isolated recall item or a text stem wearing an MCQ
 costume, and has been converted to an open question or cut. The old Q11 (d) linear-relationship item
@@ -1726,29 +1726,29 @@ survives as an **open** part inside Q7 (d) rather than as a fourth MCQ.
 ### What was cut from the 14-question build, and why
 
 1. **The serine-and-alanine placement MCQ, the α-helix hydrogen-bond MCQ, the specificity-levels MCQ,
-   the protein-P-Q-R table MCQ, the active-site-specificity MCQ, the P-Q-R-S saturation-curve MCQ and
-   the four-curve inhibition MCQ.** Seven MCQs, all text-stem or duplicating a concept already tested
-   in prose elsewhere in this build.
+ the protein-P-Q-R table MCQ, the active-site-specificity MCQ, the P-Q-R-S saturation-curve MCQ and
+ the four-curve inhibition MCQ.** Seven MCQs, all text-stem or duplicating a concept already tested
+ in prose elsewhere in this build.
 2. **The whole of the old Q10 (pH).** Its 4-mark "why the rate is zero" scheme duplicated the
-   denaturation chain now tested once, in Q3, so pH-on-rate is drilled through comparison and
-   adaptation data in Q7 (c) instead.
+ denaturation chain now tested once, in Q3, so pH-on-rate is drilled through comparison and
+ adaptation data in Q7 (c) instead.
 3. **The old Q11 (a) and (c), the old Q12 (a) enzyme-B pairing and the old Q14 (e) acarbose part.**
-   Each duplicated a limiting-factor or competitive-inhibition point that now has exactly one home.
+ Each duplicated a limiting-factor or competitive-inhibition point that now has exactly one home.
 4. **Cofactors, coenzymes and prosthetic groups.** At least eight records in the Enzymes bank test them
-   and the school sets them, but the 9477 enzyme learning outcomes do not require them. The one place
-   they appear here is the haem group in Q4, where the syllabus does require it.
+ and the school sets them, but the 9477 enzyme learning outcomes do not require them. The one place
+ they appear here is the haem group in Q4, where the syllabus does require it.
 5. **Enzyme immobilisation and industrial use.** Repeatedly asked in Paper 4 but outside the LOs. Held
-   for the practical block in October.
+ for the practical block in October.
 6. **Gel electrophoresis of haemoglobin variants** [NYJC Prelim/2023/P2/Q2c(i)] is a molecular-
-   techniques skill wearing a haemoglobin costume. Held for that topic.
+ techniques skill wearing a haemoglobin costume. Held for that topic.
 7. **The 15- and 20-mark essays** — [TPE/2025/P3/Q5a] on haemoglobin, [SAJC Prelim/2025/P3/Q4a] on
-   collagen, [School Prelim/2023/P3/Q4a] on enzyme mode of action and regulation, [9477
-   Specimen/P3/Q4] on the roles of proteins — are not set as drill questions. They belong in a timed
-   Paper 3 sitting, not in a mark-scheme drill, and their content is distributed across Q2, Q4, Q5 and
-   Q6 in structured form instead.
+ collagen, [School Prelim/2023/P3/Q4a] on enzyme mode of action and regulation, [9477
+ Specimen/P3/Q4] on the roles of proteins — are not set as drill questions. They belong in a timed
+ Paper 3 sitting, not in a mark-scheme drill, and their content is distributed across Q2, Q4, Q5 and
+ Q6 in structured form instead.
 8. **Sickle cell and HbS fibre formation** [NYJC Prelim/2023/P2/Q2a and Q2b] is genuinely a Gene and
-   Chromosomal Mutations question. The R-group logic it rests on — hydrophilic glutamate replaced by
-   hydrophobic valine — is drilled here in Q1 (a) and Q4 (c)(ii) instead.
+ Chromosomal Mutations question. The R-group logic it rests on — hydrophilic glutamate replaced by
+ hydrophobic valine — is drilled here in Q1 (a) and Q4 (c)(ii) instead.
 
 ### Figures
 

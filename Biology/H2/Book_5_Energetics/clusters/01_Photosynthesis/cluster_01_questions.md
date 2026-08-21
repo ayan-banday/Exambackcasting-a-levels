@@ -32,7 +32,7 @@ Cluster 1 answer, so say it out loud when it happens.
 hydrolysis" against it. Write **ATP is synthesised**, never "energy is produced", because two schemes
 reject that outright. Say **stroma**, not chloroplast, when a stem prints the word precisely. Name
 both nouns correctly: the **chlorophyll a is photoactivated** and the **electron is photoexcited**,
-because two schemes in the corpus disagree about which one they take. Answer in the **singular** when
+because two schemes in the papers disagree about which one they take. Answer in the **singular** when
 a stem says name the structure, because a scheme prints "R! Grana". Quote figures with units off any
 graph you are told to refer to.
 
@@ -47,7 +47,7 @@ every reveal.
 
 ## Questions
 
-### Question 1  [7 marks]
+### Question 1 [7 marks]
 
 **(a)** Fig. 8.1 is a transmission electron micrograph of part of a chloroplast. Table 8.1 shows some
 substrates and products involved in photosynthesis. Use letter **A** or letter **B** from Fig. 8.1 to
@@ -59,10 +59,10 @@ Label line B points to the lighter granular ground substance between the stacks,
 
 | substrate or product | location |
 |---|---|
-| oxygen produced | ............ |
-| carbon dioxide used | ............ |
-| reduced NADP used | ............ |
-| hexose produced | ............ |
+| oxygen produced |. |
+| carbon dioxide used |. |
+| reduced NADP used |. |
+| hexose produced |. |
 
 **(b)** Fig. 8.1 (ACJC) shows a different electron micrograph of structures within a chloroplast. Name
 the structures labelled **X** and **Y** in that micrograph. **[2]**
@@ -81,7 +81,7 @@ structure of the chloroplast is adapted for its function. **[2]**
 
 ---
 
-### Question 2  [9 marks]
+### Question 2 [9 marks]
 
 **(a)** Fig. 8.1 shows the absorption spectra of a type of photosynthetic bacteria, cyanobacteria,
 grown under two different lighting conditions. Define the term **absorption spectrum** for
@@ -125,7 +125,7 @@ mostly violet and blue light are expected to increase coral growth. **[3]**
 
 ---
 
-### Question 3  [11 marks]
+### Question 3 [11 marks]
 
 Cyanobacteria are photosynthetic prokaryotes that carry out both photosynthesis and respiration. Under
 favourable conditions they may undergo rapid population growth, forming harmful algal blooms in
@@ -155,13 +155,13 @@ Describe the photoactivation of chlorophyll in photosystem II. **[3]**
 
 ---
 
-### Question 4  [10 marks]
+### Question 4 [10 marks]
 
 Outline the process of photophosphorylation and its advantages. **[10]**
 
 ---
 
-### Question 5  [12 marks]
+### Question 5 [12 marks]
 
 **(a)** The Calvin cycle requires the products of the light-dependent reactions. Compare non-cyclic and
 cyclic photophosphorylation. **[3]**
@@ -191,7 +191,7 @@ information given, explain how rising sea temperatures affect photosynthesis in 
 
 ---
 
-### Question 6  [10 marks]
+### Question 6 [10 marks]
 
 The unicellular green alga *Chlorella*, a photosynthetic protoctist, has been studied for its potential
 as a food source. In one study into the productivity of *Chlorella*, carbon dioxide concentration was
@@ -230,7 +230,7 @@ Describe **step P**. **[2]**
 
 ---
 
-### Question 7  [10 marks]
+### Question 7 [10 marks]
 
 **(a)** In the dark, the concentration of Mg2+ ions in the stroma of chloroplasts is low. In the light,
 Mg2+ ions move into the stroma. When the concentration of Mg2+ ions is high, CO2 reacts with the active
@@ -243,10 +243,10 @@ to form and activating rubisco.
 
 Which statement is supported by this information? **[1]**
 
-A  Carbon dioxide fixation increases when the carbamate group dissociates from rubisco.
-B  Inactivated rubisco can be reactivated as light intensity decreases.
-C  In low concentrations of Mg2+, an ATPase enables the activation of rubisco.
-D  Rubisco without the carbamate group is inhibited by RuBP.
+A Carbon dioxide fixation increases when the carbamate group dissociates from rubisco.
+B Inactivated rubisco can be reactivated as light intensity decreases.
+C In low concentrations of Mg2+, an ATPase enables the activation of rubisco.
+D Rubisco without the carbamate group is inhibited by RuBP.
 
 *Then say, out loud, why each of the other three options is wrong.*
 
@@ -280,7 +280,7 @@ Sox4 curve lies above it from about 300 mg m-3 onwards and plateaus at 47.]
 
 ---
 
-### Question 8  [12 marks]
+### Question 8 [12 marks]
 
 **(a)** The graph shows how the rate of oxygen production by the photosynthetic alga *Chlamydomonas*
 varies with temperature, when all other factors are kept constant.
@@ -293,18 +293,18 @@ curve, at about 45 °C.]
 
 Three factors that can limit the rate of oxygen production by *Chlamydomonas* are listed.
 
-1  carbon dioxide concentration
+1 carbon dioxide concentration
 
-2  light intensity
+2 light intensity
 
-3  temperature
+3 temperature
 
 Which of these factors **must** be limiting the rate of oxygen production at R? **[1]**
 
-A  1, 2 and 3
-B  1 and 2 only
-C  1 and 3 only
-D  3 only
+A 1, 2 and 3
+B 1 and 2 only
+C 1 and 3 only
+D 3 only
 
 *Then say, out loud, why each of the other three options is wrong.*
 
@@ -340,14 +340,14 @@ of every row. **[3]**
 
 ---
 
-### Question 9  [13 marks]
+### Question 9 [13 marks]
 
 Photosynthesis is a complex process. With reference to the structure and function of the chloroplast,
 explain how the efficiency of photosynthesis is maximised in plants. **[13]**
 
 ---
 
-### Question 10  [6 marks]
+### Question 10 [6 marks]
 
 **(a)** Dinitrophenol is a metabolic poison that can embed within the thylakoid membranes of
 chloroplasts and provide an alternative route for H+ to diffuse across the thylakoid membranes.
@@ -404,7 +404,7 @@ death of a plant. **[2]**
 **1.** In the **stroma**.
 
 **Source:** School (HCI) Prelim 2024 P2 Q8(a), stem, Fig. 8.1, Table 8.1, key and examiner comment verbatim (a); ACJC Prelim 2024 P2 Q8(a)(i), stem and key verbatim including both reject lines (b); YIJC Prelim 2023 P2 Q1(a)(ii), stem and key verbatim (c); TMJC Prelim 2023 P2 Q4b, stem and key verbatim (d). Fig. 8.1 in part (a) is the real micrograph from the 2024 school prelim paper. The ACJC micrograph in part (b) could not be recovered from a PDF, so the paper's own description of it is printed instead; the part is answerable from that description.
-**Archetype:** identification off a micrograph, then structure to function. Recall and identification is 13.0% of the Book 5 corpus and chloroplast structure is the smallest photosynthesis heading in the bank at 21 records, but LO 3(a) and LO 3(c) both depend on it and micrograph identification is a recurring one-mark opener.
+**Archetype:** identification off a micrograph, then structure to function. Chloroplast structure is the smallest photosynthesis heading, but LO 3(a) and LO 3(c) both rest on it.
 **Trap:** writing grana where granum is asked, which a scheme rejects outright; answering "chloroplast" where a compartment is wanted; missing that reduced NADP is **produced** at A and **used** at B, so the answer depends on the verb in the row, not the molecule.
 **LOs:** 3(a) identify components of chloroplasts in drawings, photomicrographs and electronmicrographs, throughout; 3(c) with reference to chloroplast structure in (c); reach-back to Book 1 cell structure for circular DNA and 70S ribosomes in the stroma in (d).
 **Concepts fused:** (1) the thylakoid membrane as the site of the light-dependent reactions; (2) the stroma as the site of the Calvin cycle; (3) reading a location from the verb used or produced; (4) granum against intergranal lamella; (5) singular against plural in a naming answer; (6) surface area as the reason for stacking; (7) proton impermeability as the reason a gradient can exist; (8) the chloroplast's own genome.
@@ -450,7 +450,7 @@ death of a plant. **[2]**
 **4.** **This increases sugars / food passed from algae to coral and hence increases coral growth.**
 
 **Source:** HCI Prelim 2018 P2 Q8b(i), stem and key verbatim (a); SAJC Prelim 2023 P2 Q3e, stem and key verbatim (b); SAJC Prelim 2023 P2 Q3g, stem and key verbatim (c); ASRJC Prelim 2022 P2 Q8a(ii), also filed as Topical 2021 STQ Q5a(ii) reprinting NJC Prelim P2 Q3a(ii), stem, Fig. 8.1 description and key verbatim (d); RI Prelim 2025 P2 Q9a(iii), stem, Table 9.1, Table 9.2 and key verbatim (e), with the two tables merged into one for the drill so both are visible at once. No figure in this question could be recovered from a PDF, so the papers' own descriptions are printed; every part is answerable from them.
-**Archetype:** data and figure interpretation, which is 43.2% of the Photosynthesis file. LO 3(b) is a whole outcome carrying only 34 main-bank records, which makes it low frequency, explicitly required and cheap: two graphs and one inference.
+**Archetype:** data and figure interpretation. LO 3(b) is a whole outcome carrying only 34 main-bank records, which makes it low frequency, explicitly required and cheap: two graphs and one inference.
 **Trap:** defining an action spectrum where an absorption spectrum was asked for; describing the accessory pigment's role as passing **electrons** rather than **energy**, which a scheme rejects; in (e), quoting the wavelengths without also using the abundance column, which is the second mark.
 **LOs:** 3(b) explain the absorption and action spectra of photosynthetic pigments, throughout.
 **Concepts fused:** (1) absorption spectrum defined by what is measured; (2) why the two curves track each other; (3) the accessory pigment as an antenna feeding chlorophyll a; (4) the gap between the two curves as evidence of other pigments; (5) reading a pigment table for peak position; (6) reading a pigment table for abundance; (7) linking algal photosynthesis to coral growth.
@@ -512,7 +512,7 @@ Either of two routes is accepted.
 **9.** The three products are **electrons, protons and oxygen**, and the proton fate is the one candidates omit.
 
 **Source:** YIJC Prelim 2025 P2 Q7a(i), stem, Fig. 7.1 description, both accepted routes and the examiner comment verbatim (a); YIJC Prelim 2025 P2 Q7a(ii), stem and key verbatim (b); JPJC Prelim 2025 P2 Q7a, stem and key verbatim (c); MJC Prelim 2016 P2 Q6b, stem and key verbatim (d). Fig. 7.1 could not be recovered from a PDF, so the paper's own description is printed instead; every part is answerable from it.
-**Archetype:** mechanism explain-chain, 19.1% of the Book, applied to an unfamiliar inhibitor. Suggest and "with reference to" together account for 24.5% of structured parts and both signal that the answer has to be built from the supplied figure rather than recalled.
+**Archetype:** mechanism explain-chain, applied to an unfamiliar inhibitor. Suggest and "with reference to" together account for 24.5% of structured parts and both signal that the answer has to be built from the supplied figure rather than recalled.
 **Trap:** naming cytochrome c in a photosynthesis answer, which an examiner comment names as one of the two commonest confusions in this topic; calling oxygen the final electron acceptor in photosynthesis, which is the other one; writing hydrolysis for photolysis, which a scheme rejects outright; saying the light-harvesting complex passes **electrons** to the reaction centre when it passes **energy**.
 **LOs:** 3(c) with reference to chloroplast structure, describe and explain how light energy is harnessed and converted into chemical energy during the light-dependent reactions, throughout.
 **Concepts fused:** (1) reading an inhibition point off a pathway figure; (2) a backed-up chain leaving carriers reduced; (3) why blocking the far end of the chain stops photolysis at the near end; (4) what cyclic flow lacks; (5) resonance energy transfer within the light-harvesting complex; (6) photoactivation at the reaction centre; (7) capture by the primary electron acceptor; (8) the three separate fates of the products of photolysis.
@@ -554,7 +554,7 @@ Either of two routes is accepted.
 **13.** Note what the scheme does **not** reward: no total ATP yield, no proton-to-ATP ratio, and no named carriers beyond ferredoxin and the cytochrome complex, both of which the scheme itself uses.
 
 **Source:** NJC Prelim 2022 P3 Q5b, stem and the whole two-section key verbatim including the QWC condition. This is the full-cycle question of the drill: the light-dependent stage run end to end for 10 marks, in the wording of a real Section B scheme.
-**Archetype:** essay-scale process outline. The corpus files 57 essay-scale stems for Book 5, 42 of them from Paper 3, and the specimen gave Book 5 none, so treat this as cheap insurance rather than a certainty. Note that the mark allocation is split 7 process and minimum 2 advantages, so an answer that only describes the pathway caps at 7 out of 10.
+**Archetype:** essay-scale process outline. The papers set 57 essay-scale stems for Book 5, 42 of them from Paper 3, and the specimen gave Book 5 none, so treat this as cheap insurance rather than a certainty. Note that the mark allocation is split 7 process and minimum 2 advantages, so an answer that only describes the pathway caps at 7 out of 10.
 **Trap:** writing the mechanism of ATP synthase rotation, which is excluded twice in the syllabus and earns nothing; quoting a total ATP yield, which is excluded in writing by LO 3(h); running out of time on the process and never reaching section B, which costs three marks including the QWC mark.
 **LOs:** 3(c) the light-dependent reactions; 3(l) outline chemiosmosis in photosynthesis. This is the one question in the set that reaches across the whole light stage on purpose, so its marking points deliberately overlap Questions 3 and 5.
 **Concepts fused:** (1) location of photophosphorylation; (2) what sits in the membrane; (3) primary electron acceptors feeding two chains; (4) where each chain ends; (5) cyclic flow returning to P700; (6) energy from electron transport driving proton pumping; (7) the thylakoid space as a reservoir; (8) ATP synthase making ATP from ADP and phosphate; (9) light energy to chemical energy as the point of the whole thing; (10) the Calvin cycle as the customer; (11) oxygen as the by-product that sustains aerobic life.
@@ -605,7 +605,7 @@ Either of two routes is accepted.
 **5.** The stem rules denaturation out in writing, so an answer built on denatured rubisco earns nothing. The mark is for **leakiness collapsing the gradient**, which is Book 1 membrane fluidity applied here.
 
 **Source:** NJC Prelim 2024 P2 Q7(c), stem and the whole comparison table verbatim (a); SAJC Prelim 2025 P2 Q7b, stem, Fig. 7.1 description and key verbatim (b); Topical 2021 STQ Q7a(iii), reprinting SAJC Prelim P2 Q3a(iii), stem and key verbatim including the ignore line (c); ASRJC Prelim 2023 P3 Q3a(i), stem and key verbatim (d), with the polyp and zooxanthella background folded into the stem so it stands without Fig. 3.1. The SAJC ATP synthase figure could not be recovered from a PDF, so the paper's own description is printed instead.
-**Archetype:** compare and distinguish, 4.9% of the Photosynthesis file, plus a mechanism chain applied to an unfamiliar stress. The cyclic against non-cyclic comparison is one of the Book's four rehearsed bridges.
+**Archetype:** compare and distinguish, plus a mechanism chain applied to an unfamiliar stress. The cyclic against non-cyclic comparison is one of the Book's four rehearsed bridges.
 **Trap:** giving cyclic flow an oxygen product; saying protons **diffuse** into the thylakoid space when the accepted phrase is **active transport of H+ ions into thylakoid space from stroma**; in (d), answering with denaturation when the stem has already ruled it out; forgetting that a leaky membrane still allows electron transport, so the chain runs faster, not slower.
 **LOs:** 3(c) cyclic and non-cyclic photophosphorylation; 3(l) outline chemiosmosis in photosynthesis; reach-back to Book 1 for the hydrophobic core of the bilayer in (c) and for temperature and membrane fluidity in (d).
 **Concepts fused:** (1) electron source and final acceptor in each route; (2) oxygen present in one route only; (3) which products each route makes; (4) which photosystems each uses; (5) electron transport releasing free energy; (6) proton pumping against the gradient; (7) impermeability as the precondition; (8) why a charged ion needs a protein; (9) fluidity and leakiness collapsing a gradient; (10) an uncoupled chain running faster while making less ATP.
@@ -835,7 +835,7 @@ Either of two routes is accepted.
 **18.** Every point on this list is a **structure paired with the efficiency it buys**. An answer that describes photosynthesis without naming the structural feature each time answers a different question.
 
 **Source:** CJC Prelim 2021 P3 Q4a, stem and the whole key verbatim, section headings included.
-**Archetype:** structure-to-function essay. One of the recurring Paper 3 shapes in the corpus, alongside "Describe how plants harness light energy" [15] and "Outline and contrast chemiosmosis in photosynthesis and respiration" [15].
+**Archetype:** structure-to-function essay. One of the recurring Paper 3 shapes in the papers, alongside "Describe how plants harness light energy" [15] and "Outline and contrast chemiosmosis in photosynthesis and respiration" [15].
 **Trap:** writing the light-dependent reaction as a process narrative and never naming a structure, which loses every mark on this list; organising by stage rather than by feature, which an examiner comment on a related 15-mark essay names as the reason almost nobody earned the quality-of-written-communication mark.
 **LOs:** 3(a) chloroplast structure; 3(b) pigments; 3(c) the light-dependent reactions with reference to chloroplast structure; 3(d) the Calvin cycle; 3(l) chemiosmosis.
 **Concepts fused:** (1) several pigments widening the absorbed spectrum; (2) funnelling to the reaction centre; (3) pigment orientation relative to incoming light; (4) thylakoid folding and surface area; (5) the energy ladder along the carriers; (6) photolysis coupled to PSII; (7) carriers doubling as proton pumps; (8) surface area setting ATP synthase copy number; (9) cyclic flow topping up ATP; (10) compartmentalisation concentrating the Calvin cycle enzymes. Note the one marking point this question shares with Question 1(c), thylakoid folding for surface area; everything else on this list is new.
@@ -867,7 +867,7 @@ Either of two routes is accepted.
 **3.** **No glucose made for respiration.**
 
 **Source:** IJC Prelim 2017 P3 (9744) Q2b, stem and key verbatim (a); EJC Prelim 2022 P2 Q7d(iii), stem and key verbatim (b), with the DCPIP definition folded into the stem so it stands without the earlier parts; JJC Prelim 2014 P2 Q6e, also filed as IJC Prelim 2017 P2 (9648) Q6d, stem and key verbatim (c).
-**Archetype:** apply the mechanism to a novel inhibitor. The corpus files 45 records on respiratory poisons and uncouplers; the compound names are decoration and the three consequences are pure chemiosmosis reasoning.
+**Archetype:** apply the mechanism to a novel inhibitor. The papers set 45 records on respiratory poisons and uncouplers; the compound names are decoration and the three consequences are pure chemiosmosis reasoning.
 **Trap:** treating an uncoupler as a chain blocker, which predicts the wrong direction for electron flow; predicting that RuBP rises in (b) when the natural acceptor is bypassed, when the Calvin cycle still consumes it and the regeneration supply has been cut; in (c), stopping at "no photosynthesis" instead of following the chain through to no glucose for respiration.
 **LOs:** 3(c) the light-dependent reactions; 3(d) the Calvin cycle; 3(l) chemiosmosis, all applied rather than recalled.
 **Concepts fused:** (1) an uncoupler as a proton leak; (2) gradient steepness setting ATP output; (3) which Calvin intermediate accumulates when ATP runs short; (4) an artificial electron acceptor diverting electrons from NADP; (5) consumption without regeneration as the reason a pool empties; (6) blocking PSI killing both routes at once; (7) the plant dying of respiratory substrate shortage, not of no photosynthesis directly.

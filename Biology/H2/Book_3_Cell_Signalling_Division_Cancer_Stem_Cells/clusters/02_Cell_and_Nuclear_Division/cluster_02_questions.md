@@ -38,7 +38,7 @@ every reveal.
 
 ## Questions
 
-### Question 1  [12 marks]
+### Question 1 [12 marks]
 
 **(a)** Fig. 1.1 is a photomicrograph of actively dividing onion root tip cells, undergoing a type of
 nuclear division that produces genetically identical cells. Identify the phase of nuclear division
@@ -90,7 +90,7 @@ for anaphase in minutes. Show your working. **[2]**
 
 ---
 
-### Question 2  [11 marks]
+### Question 2 [11 marks]
 
 Figure 2.1 shows movements that take place in a cell during two stages of mitosis in an animal cell.
 The three curves show changes in distance between:
@@ -119,7 +119,7 @@ behaviour in mitosis. **[4]**
 
 ---
 
-### Question 3  [14 marks]
+### Question 3 [14 marks]
 
 **(a)** Flow cytometry is used to analyse cell cycle phases by measuring DNA content; the amount of
 fluorescent dye that binds to a cell is directly proportional to its DNA content. Graph **A** in
@@ -149,7 +149,7 @@ divided by mitosis. Describe how the rate of mitosis is controlled. **[4]**
 
 ---
 
-### Question 4  [12 marks]
+### Question 4 [12 marks]
 
 **(a)** In a study on chromosomal structures, cells were arrested at a particular stage in the cell
 cycle. A technique known as Fluorescence In-Situ Hybridisation was then employed. It involves the use
@@ -184,24 +184,24 @@ mice. **[1]**
 
 ---
 
-### Question 5  [14 marks]
+### Question 5 [14 marks]
 
 **(a)** The statements are about meiosis.
 
-1  Pairs of homologous chromosomes form bivalents within which crossing-over occurs.
+1 Pairs of homologous chromosomes form bivalents within which crossing-over occurs.
 
-2  Daughter chromosomes segregate independently during anaphase II.
+2 Daughter chromosomes segregate independently during anaphase II.
 
-3  Alleles of the same genes are exchanged between sister chromatids during prophase I.
+3 Alleles of the same genes are exchanged between sister chromatids during prophase I.
 
-4  The two chromosomes of a homologous pair undergo independent segregation.
+4 The two chromosomes of a homologous pair undergo independent segregation.
 
 Which features of meiosis can contribute to genetic variation between gametes?
 
-A  1, 2 and 3
-B  1, 2 and 4
-C  1, 3 and 4
-D  2, 3 and 4
+A 1, 2 and 3
+B 1, 2 and 4
+C 1, 3 and 4
+D 2, 3 and 4
 
 **[1]**
 
@@ -231,10 +231,10 @@ individual. **[1]**
 
 4 unequal crossing over.
 
-A  1 and 2
-B  3 and 4
-C  1, 2 and 4
-D  All of the above
+A 1 and 2
+B 3 and 4
+C 1, 2 and 4
+D All of the above
 
 **[1]**
 
@@ -242,7 +242,7 @@ D  All of the above
 
 ---
 
-### Question 6  [15 marks]
+### Question 6 [15 marks]
 
 **(a)** Using fluorescent dye, a centromere can be visualised as a single dot. The centromere of a
 chromosome with a pair of chromatids will appear as one dot. The total number of dots corresponds to
@@ -274,7 +274,7 @@ offspring are infertile. **[2]**
 
 ---
 
-### Question 7  [10 marks]
+### Question 7 [10 marks]
 
 Section B, free response. Answer in continuous prose.
 
@@ -283,7 +283,7 @@ genetic variation in eukaryotes. **[10]**
 
 ---
 
-### Question 8  [10 marks]
+### Question 8 [10 marks]
 
 **(a)** Describe how the spindle is involved during the process of mitosis. **[3]**
 
@@ -310,7 +310,7 @@ watermelon seedlings resulted in formation of tetraploid (4n = 44 chromosomes) p
 
 ---
 
-### Question 9  [8 marks]
+### Question 9 [8 marks]
 
 **(a)** The number of chromosomes per cell changes during the meiotic cell cycle of an organism. The
 three stages of interphase are G1, S and G2. Meiosis I and meiosis II are shown as MI and MII
@@ -343,7 +343,7 @@ cell. **[2]**
 
 ---
 
-### Question 10  [7 marks]
+### Question 10 [7 marks]
 
 **(a)** *Saccharomyces cerevisiae* is a yeast that can carry out either asexual reproduction by mitosis
 or sexual reproduction by meiosis. Diploid cells reproduce asexually by budding. When there is a lack
@@ -420,7 +420,7 @@ same parents. **[2]**
 **2.** **0.58% × 12 hours = 0.0696 hr; 0.0696 × 60 = 4 min (accept 4.2 or 4.18 min).** Error carried forward is allowed.
 
 **Source:** School (HCI) Prelim 2023 P2 Q5(a)(i), stem, figure and key verbatim (a); School (HCI) Prelim 2023 P2 Q5(a)(ii), stem and full accept/reject list verbatim including the examiner's non-observable example (b); RI Prelim 2025 P2 Q4(a), stem, figure and both marking points verbatim (c); ASRJC Prelim 2023 P2 Q2(b), stem and both rejects verbatim (d); SAJC Prelim 2021 P2 Q4(a)(iv), stem and key verbatim (e); JPJC Prelim 2022 P2 Q7(a), key verbatim (f), stem lightly edited from "A pair of rod-like structures can be found in region A" to "at each pole of a dividing animal cell" so it stands without Fig. 7.1; TMJC Prelim 2025 P2 Q4(b), stem, table and key verbatim (g), with Table 4.1 renumbered 1.1 and its own preamble folded into the stem.
-**Archetype:** stage identification off a micrograph, then observation against inference, then a data-to-duration conversion. Stage identification is only 1.1% of the corpus but 9477 Specimen P2 Q6(a)(i) asks for it directly inside an 11-mark question, so the specimen outranks the corpus.
+**Archetype:** stage identification off a micrograph, then observation against inference, then a data-to-duration conversion. Stage identification is only 1.1% of the papers but 9477 Specimen P2 Q6(a)(i) asks for it directly inside an 11-mark question, so the specimen outranks the papers.
 **Trap:** giving a difference that is real but not visible in the figure; calling the metaphase plate a single row or line, which the scheme rejects outright; naming only one class of microtubule in telophase; saying "reforms" for the nucleolus; blaming genetics for the non-identity of daughter cells at cytokinesis; forgetting to convert hours to minutes in (g).
 **LOs:** 2(n) across all four named structures, chromosomes in (a), (b) and (c), nuclear envelope in (b) and (d), cell surface membrane through cytokinesis in (e), centrioles in (f); the mitotic cell cycle itself in (g).
 **Concepts fused:** (1) stage identification from chromosome appearance; (2) nuclear envelope presence as a stage marker; (3) degree of condensation as a stage marker; (4) observable against inferable evidence; (5) metaphase alignment making chromatids equidistant from the poles; (6) centromere division at anaphase; (7) telophase spindle disassembly; (8) nuclear envelope and nucleolus reformation; (9) cytokinesis as an unequal partition of cytoplasm; (10) centriole structure as 9 triplets; (11) the centriole as microtubule organising centre; (12) proportion of cells in a stage as a proxy for the duration of that stage.

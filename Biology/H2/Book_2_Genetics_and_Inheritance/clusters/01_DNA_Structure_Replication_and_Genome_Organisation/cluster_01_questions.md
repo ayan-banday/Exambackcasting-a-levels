@@ -29,7 +29,7 @@ When you hit a blank, say the blank in plain words, because the transcript is th
 
 ## Questions
 
-### Question 1  [16 marks]
+### Question 1 [16 marks]
 
 **(a)** A student argues that no single molecule can be both a chemically stable store of information
 and a source of variation, because the two demands pull against each other. Decide whether DNA
@@ -42,7 +42,7 @@ more readily. **[4]**
 
 ---
 
-### Question 2  [16 marks]
+### Question 2 [16 marks]
 
 **(a)** Fig. 2.1 shows the two strands of a DNA molecule.
 
@@ -64,7 +64,7 @@ furthest before it failed. **[4]**
 
 ---
 
-### Question 3  [10 marks]
+### Question 3 [10 marks]
 
 **(a)** Fig. 3.1 shows the three models that were proposed for DNA replication before the mechanism
 was settled.
@@ -81,7 +81,7 @@ for three generations (F1, F2 and F3) in a culture medium containing only the no
 
 "…1… percent of the DNA molecules extracted from the F2 generation contains ¹⁵N. When the DNA is
 extracted from the F3 generation, separated into single strands and centrifuged with caesium
-chloride, the DNA will separate into …2… and …3… bands in the relative proportion of …4… ."
+chloride, the DNA will separate into …2… and …3… bands in the relative proportion of …4…."
 
 **A** 1: 100 | 2: heavy density | 3: light density | 4: 1 : 7
 **B** 1: 50 | 2: light density | 3: intermediate density | 4: 3 : 1
@@ -95,7 +95,7 @@ which is the earliest generation whose banding pattern could tell all three mode
 
 ---
 
-### Question 4  [14 marks]
+### Question 4 [14 marks]
 
 **(a)** Fig. 4.1 shows one level of DNA condensation in a eukaryotic nucleus.
 
@@ -116,7 +116,7 @@ transcribed. **[4]**
 
 ---
 
-### Question 5  [12 marks]
+### Question 5 [12 marks]
 
 **(a)** Fig. 5.1 shows a linear chromosome part-way through one round of replication.
 
@@ -137,7 +137,7 @@ is right. *(answer in terms of what each daughter strand is doing at each of the
 
 ---
 
-### Question 6  [16 marks]
+### Question 6 [16 marks]
 
 **(a)** Fig. 6.1 is an electron micrograph of a fully condensed duplicated human chromosome, with two
 of its non-coding regions indicated.
@@ -166,7 +166,7 @@ the same stage. **[6]**
 
 ---
 
-### Question 7  [14 marks]
+### Question 7 [14 marks]
 
 **(a)** Fig. 7.1 shows the range of genome sizes found across taxonomic groups on a logarithmic scale,
 and Table 7.1 gives genome size, gene number and gene density for a range of species.
@@ -214,7 +214,7 @@ for the difference and decide whether it makes the human genome the less efficie
 
 ---
 
-### Question 8  [14 marks]
+### Question 8 [14 marks]
 
 **(a)** Fig. 8.1 shows a eukaryotic protein-coding gene and what becomes of its transcript.
 
@@ -242,7 +242,7 @@ is protein. **[6]**
 
 ---
 
-### Question 9  [14 marks]
+### Question 9 [14 marks]
 
 **(a)** Fig. 9.1 shows the two pentose sugars found in nucleic acids, with one position on each boxed
 in red.

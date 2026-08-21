@@ -39,7 +39,7 @@ cold. Q4(d) needs the whole feedback chain from carbon dioxide supply back to ph
 non-cyclic photophosphorylation and the position of NADP in it. Q7 and Q9 need the role of oxygen and
 enzyme kinetics from Book 1. Say the gap out loud when it surfaces.
 
-**What the marks reward on Paper 4.** Three separate examiner comments in this corpus name the same
+**What the marks reward on Paper 4.** Three separate examiner comments in this the papers name the same
 four failures: **selecting the wrong data series**, **omitting units**, **not reading to half the
 smallest division**, and **not noticing that the graph does not start at the origin**. The habit that
 beats all four is fixed: **describe the trend, quote two values with units from the correct series,
@@ -55,7 +55,7 @@ their own.
 
 ## Questions
 
-### Question 1  [16 marks]
+### Question 1 [16 marks]
 
 In this question you will investigate the effect of light intensity on the rate of photosynthesis.
 
@@ -106,7 +106,7 @@ confidence in the conclusions and explain how these modifications would achieve 
 
 ---
 
-### Question 2  [10 marks]
+### Question 2 [10 marks]
 
 All green plants photosynthesise in the light, taking in carbon dioxide and releasing oxygen. They also
 respire continuously, taking in oxygen and releasing carbon dioxide. The light intensity at which
@@ -147,7 +147,7 @@ out. **[10]**
 
 ---
 
-### Question 3  [9 marks]
+### Question 3 [9 marks]
 
 **(a)** Fig. 1.2 plots CO2 assimilation rate against increasing light intensity for a plant when carbon
 dioxide concentration is not a limiting factor. The curve starts at about minus 3 arbitrary units at
@@ -170,10 +170,10 @@ plants cross zero at a higher light intensity, rise more steeply and plateau at 
 
 Which of the following statements can be concluded from the graph? **[1]**
 
-A  Below the compensation point, plants grown at high illumination give out less carbon dioxide than plants grown in low illumination.
-B  The compensation point for plants grown in high illumination occurs at a lower light intensity than those grown in low illumination.
-C  Light intensity is no longer a limiting factor for photosynthesis for light intensity above 150 units for plants grown in high illumination.
-D  For light intensity from 20 units to 50 units, carbon fixation for the plants grown in high illumination is similar to that grown in low illumination.
+A Below the compensation point, plants grown at high illumination give out less carbon dioxide than plants grown in low illumination.
+B The compensation point for plants grown in high illumination occurs at a lower light intensity than those grown in low illumination.
+C Light intensity is no longer a limiting factor for photosynthesis for light intensity above 150 units for plants grown in high illumination.
+D For light intensity from 20 units to 50 units, carbon fixation for the plants grown in high illumination is similar to that grown in low illumination.
 
 *Then say, out loud, why each of the other three options is wrong.*
 
@@ -186,7 +186,7 @@ value. **[2]**
 
 ---
 
-### Question 4  [8 marks]
+### Question 4 [8 marks]
 
 **(a)** A student investigated the effect of carbon dioxide on the rate of photosynthesis, using leaf
 discs cut from the leaf of a spinach plant and sodium hydrogencarbonate solution. The leaf discs are
@@ -214,7 +214,7 @@ hydrogencarbonate solution and the mean time taken for the leaf discs to rise to
 
 ---
 
-### Question 5  [8 marks]
+### Question 5 [8 marks]
 
 **(a)** To investigate the effect of wavelength of light on photosynthesis, blue DCPIP solution was
 added to a suspension of isolated chloroplasts. DCPIP turns from blue to colourless when it accepts
@@ -223,16 +223,16 @@ a sample was drawn into a capillary tube and illuminated by coloured light of a 
 
 Which statements about the expected results of the experiment are correct? **[1]**
 
-1  DCPIP decolourised at different rates in different wavelengths of light.
+1 DCPIP decolourised at different rates in different wavelengths of light.
 
-2  DCPIP decolourised faster in red than in green wavelengths of light.
+2 DCPIP decolourised faster in red than in green wavelengths of light.
 
-3  The end point of the reaction was a colourless solution.
+3 The end point of the reaction was a colourless solution.
 
-A  1 only
-B  1 and 2 only
-C  2 and 3 only
-D  1, 2 and 3
+A 1 only
+B 1 and 2 only
+C 2 and 3 only
+D 1, 2 and 3
 
 *Then say, out loud, whether each of the three numbered statements is true or false and why.*
 
@@ -256,7 +256,7 @@ the results for red light and for green light. **[3]**
 
 ---
 
-### Question 6  [9 marks]
+### Question 6 [9 marks]
 
 **(a)** Table 9.1 shows the relative abundance of the chloroplast pigments in the algae of corals, as a
 percentage of the total: chlorophyll a 39, peridinin 39, chlorophyll c2 13, dinoxanthin 7 and
@@ -281,7 +281,7 @@ this conclusion. **[2]**
 
 ---
 
-### Question 7  [8 marks]
+### Question 7 [8 marks]
 
 **(a)** Fig. 4.2 shows a respirometer, a device used to measure the rate of respiration of a living
 organism by measuring its rate of exchange of oxygen and carbon dioxide. Mung bean seeds rest above a
@@ -318,7 +318,7 @@ shown in Table 8.1. **[3]**
 
 ---
 
-### Question 8  [6 marks]
+### Question 8 [6 marks]
 
 **(a)** Different types of respiratory substrate can have different energy values and therefore release
 different quantities of energy when they are respired. Complete Table 1.1 to show the energy value of
@@ -336,7 +336,7 @@ aerobically, their respiratory quotient (RQ) values may be different from the RQ
 respiratory substrates. RQ is the number of molecules of carbon dioxide produced divided by the number
 of molecules of oxygen taken in. When malic acid is respired aerobically, the equation is
 
-> C4H6O5 + .......... O2 goes to 4CO2 + 3H2O + energy
+> C4H6O5 +. O2 goes to 4CO2 + 3H2O + energy
 
 Calculate how many molecules of oxygen are taken in when one molecule of malic acid is respired
 aerobically. **[1]**
@@ -364,7 +364,7 @@ potassium hydroxide solution when measuring RQ values. **[1]**
 
 ---
 
-### Question 9  [8 marks]
+### Question 9 [8 marks]
 
 **(a)** Baker's yeast, *Saccharomyces cerevisiae*, converts sugars to ethanol and carbon dioxide under
 anaerobic conditions. You will investigate the effects of different concentrations of ethanol on the
@@ -404,7 +404,7 @@ immediately upon addition. **[2]**
 
 ---
 
-### Question 10  [8 marks]
+### Question 10 [8 marks]
 
 **(a)** The unicellular green alga *Chlorella* was supplied with carbon dioxide at 1% for 200 seconds,
 after which the concentration was reduced to 0.03% for a further 200 seconds. The concentrations of
@@ -527,7 +527,7 @@ A **ruled table with clear borders**, containing all of the following.
 
 ### Question 2
 
-*Plan an investigation to find the light intensity at which shade leaves and sun leaves from an ivy plant reach their compensation points.* **[10]** [INFERRED: no official key for the 9477 specimen; the plan below is built from the paper's own printed bullet list and cross-checked against the school prelim planning keys in the corpus, which mark the same criteria]
+*Plan an investigation to find the light intensity at which shade leaves and sun leaves from an ivy plant reach their compensation points.* **[10]** [INFERRED: no official key for the 9477 specimen; the plan below is built from the paper's own printed bullet list and cross-checked against the school prelim planning keys in the papers, which mark the same criteria]
 
 **Variables.**
 
@@ -570,7 +570,7 @@ A **ruled table with clear borders**, containing all of the following.
 **17. Answer the printed bullets in the order they are printed.** Ten marks, most of them for **structure rather than cleverness**: a repeatable method, accurate and repeatable collection, a diagram if it helps, the dependent and independent variables named, the controlled variables named, correct technical terms.
 
 **Source:** 9477 Specimen P4 Q3, stem, Table 3.1, apparatus list, the printed marking bullets and the mark allocation verbatim from the question paper. The specimen ships without a mark scheme, so the plan is inferred and tagged.
-**Archetype:** the planning question. The corpus files **29 planning questions, 2.3% of all records**, and the specimen practical closes with a 10-mark one. **Compensation point returns zero hits on a whole-document search of the 9477 syllabus, and the paper defines it for you in the stem** and then builds ten marks on it. That is the clearest case in the whole Book of a term that has lost the word but kept the biology.
+**Archetype:** the planning question. The papers set **29 planning questions, and the specimen practical closes with a 10-mark one. **Compensation point returns zero hits on a whole-document search of the 9477 syllabus, and the paper defines it for you in the stem** and then builds ten marks on it. That is the clearest case in the whole Book of a term that has lost the word but kept the biology.
 **Trap:** reporting a colour as the result when the result is a **light intensity**; forgetting the dark control in foil; not equilibrating the indicator first, so the tubes do not all start red; varying light intensity by moving the lamp without acknowledging that this also changes the heat reaching the tubes; leaving the tubes unsealed.
 **LOs:** 3(e) limiting factors and investigations on the rate of photosynthesis; 3(k) investigate the effect of factors on the rate of respiration, since the compensation point is where the two rates meet.
 **Concepts fused:** (1) compensation point defined as equal rates and no net gas exchange; (2) hydrogencarbonate indicator as a pH proxy for carbon dioxide; (3) the inverse-square relationship between intensity and distance; (4) leaf discs as a way of standardising tissue area; (5) equilibration as a starting condition; (6) a no-tissue control against a dark control; (7) colour standards against subjective judgement; (8) sun and shade leaf physiology as the prediction; (9) one plant as its own control.
@@ -624,7 +624,7 @@ A **ruled table with clear borders**, containing all of the following.
 **3.** So the plant is **below its compensation point**: with no added carbon dioxide the rate of photosynthesis falls below the rate of respiration, and the **net** change in dissolved oxygen is a loss.
 
 **Source:** YIJC Prelim 2023 P2 Q1b(ii), stem, Fig. 1.2 description and key verbatim (a); YIJC Prelim 2023 P2 Q1b(i), stem and key verbatim (b); IJC Prelim 2018 P2 Q6c(i), stem and key verbatim (c), with Fig. 6.3's own numbers folded into the (a) stem so the three parts share one figure; MI Prelim 2017 P1 Q29, stem, graph description and all four options verbatim (d); HCI Prelim 2022 P2 Q8b(ii), stem and key verbatim (e), with the apparatus paragraph folded into the stem. No figure here could be recovered from a PDF, so each paper's own description is printed and every part is answerable from it.
-**Archetype:** compensation point read off a net-exchange curve. The corpus files 31 records on compensation point and 19 on sun and shade leaves, and the specimen built a 10-mark plan on both.
+**Archetype:** compensation point read off a net-exchange curve. The papers set 31 records on compensation point and 19 on sun and shade leaves, and the specimen built a 10-mark plan on both.
 **Trap:** reading the plateau height as the gross rate when the axis is a net rate; getting the sun and shade compensation points the wrong way round, which is option B; explaining a negative dissolved-oxygen change as "the plant died" rather than as respiration outrunning photosynthesis.
 **LOs:** 3(e) limiting factors, including compensation point and sun and shade plants; 3(k) the rate of respiration, since the negative region is respiration showing through.
 **Concepts fused:** (1) compensation point as equal rates; (2) no net gain in dry mass; (3) saturation and photoactivation at maximum rate; (4) net against gross gas exchange; (5) reading a non-zero intercept; (6) shade tissue having the lower respiration rate and therefore the lower compensation point; (7) a negative net oxygen change as evidence of being below the compensation point.
@@ -724,7 +724,7 @@ Any three of the following, all written as red light against green light, or the
 **5.** The colorimeter reading is **absorbance of the suspension**, and it **falls** as DCPIP is reduced, so a **steeper fall means a faster light-dependent reaction**. Red falls from 1.50 to about 0.70 in four minutes; green falls only to about 1.44.
 
 **Source:** School (HCI) Prelim 2024 P1 Q22, also set as HCI Prelim 2024 P1 Q22 and DHS Prelim 2023 P1 Q25, stem, all three statements, all four options, the percentage correct and the full examiner comment verbatim (a); JJC Prelim 2014 P2 Q6d, stem and key verbatim (b), with the tube A context named in the stem so the part stands alone; NYJC Prelim 2025 P2 Q7a(i), stem, Fig. 7.1 description and key verbatim (c); NYJC Prelim 2025 P2 Q7a(iii), stem and key verbatim (d). The colorimeter graph could not be recovered from a PDF, so the paper's own description is printed in the (c) stem and both parts are answerable from it.
-**Archetype:** the redox-dye method, which isolates the light-dependent reaction from the Calvin cycle. This is one of two places in the whole Biology corpus where a real cohort failure rate is recorded, and it is three quarters.
+**Archetype:** the redox-dye method, which isolates the light-dependent reaction from the Calvin cycle. This is one of two places in the whole Biology the papers where a real cohort failure rate is recorded, and it is three quarters.
 **Trap:** the colourless endpoint; describing DCPIP as replacing water rather than replacing NADP; forgetting that keeping the suspension dark is about controlling the **start time**, not about protecting the chloroplasts; explaining the graph without saying which direction absorbance moves.
 **LOs:** 3(c) the light-dependent reactions; 3(b) pigments and wavelength; 3(e) carrying out investigations on the rate of photosynthesis.
 **Concepts fused:** (1) an artificial electron acceptor substituting for NADP; (2) where in the chain the dye intercepts; (3) reduction of the dye as the colour change; (4) the suspension colour against the dye colour; (5) wavelength setting the rate of photoactivation; (6) darkness as a way of fixing time zero; (7) absorbance falling as the dye is reduced.
@@ -794,7 +794,7 @@ Any two of the following.
 **6.** Marker's note: **the Rf value of a pigment is specific to that particular pigment, which allows identification; the number of pigment spots and the associated Rf values indicate the number of types of pigments present, not the concentration.**
 
 **Source:** RI Prelim 2025 P2 Q9a(ii), stem, Table 9.1 and key verbatim (a); School (HCI) Prelim 2023 P4 Q1b, stem, the whole expected table, all four marking criteria, the layout rule and the marker's note verbatim (b); School (HCI) Prelim 2023 P4 Q1d(i), stem, all three keyed pairs and the marker's note verbatim (c); School (HCI) Prelim 2023 P4 Q1g(ii), stem, key, reject line and marker's note verbatim (d), with the conclusion of Q1g(i) stated in the stem so the part stands alone.
-**Archetype:** the pigment chromatography practical. **This node is taught nowhere in your Book 5 chapters**, which mention chromatography once inside a history box about Calvin. The corpus carries it with full Paper 4 schemes covering table layout, the calculation and the standard limitations, and your school's own Learning Experiences block names spinach pigment extraction, so it is taught in the laboratory rather than in the notes. This question is the whole of that hole, filled from your own school's 2023 practical paper.
+**Archetype:** the pigment chromatography practical. **This node is taught nowhere in your Book 5 chapters**, which mention chromatography once inside a history box about Calvin. The papers carries it with full Paper 4 schemes covering table layout, the calculation and the standard limitations, and your school's own Learning Experiences block names spinach pigment extraction, so it is taught in the laboratory rather than in the notes. This question is the whole of that hole, filled from your own school's 2023 practical paper.
 **Trap:** using an Rf value as evidence of **concentration**, which the scheme rejects by name; splitting the two extracts into two separate tables; giving units to Rf; citing a trivial limitation such as pipette volume when the real one is that the spots ran together.
 **LOs:** 3(b) explain the absorption and action spectra of photosynthetic pigments, since separating an extract shows which pigments a leaf actually contains, plus the Paper 4 skill areas for measurement, observation and data presentation.
 **Concepts fused:** (1) chromatography as a separation method; (2) Rf as a ratio of two measured distances; (3) Rf as an identifier, not a quantity; (4) one table for two treatments; (5) independent variable leftmost, processed data rightmost; (6) colour as a recorded observation; (7) which limitations are worth citing; (8) number of pigment types against concentration of pigment.
@@ -840,7 +840,7 @@ Any two of the following.
 **4.** The **rate decreases after 30 °C due to denaturation of enzymes and loss of the specific three-dimensional conformation of the active sites**, falling to **0.60 mm min-1 at 50 °C**.
 
 **Source:** Topical 2021 STQ Q9c, reprinting TMJC Prelim P2 Q4c, stem, Fig. 4.2 description and key verbatim (a); MJC Prelim 2017 P4 Q1 step 6, stem and key verbatim (b); MJC Prelim 2017 P4 Q1 step 19d, stem and key verbatim (c); MJC Prelim 2017 P4 Q1 step 16, stem and key verbatim (d); RI Prelim 2023 P2 Q7d(i), stem, Fig. 7.4 description and key verbatim (e); ASRJC Prelim 2025 P2 Q8c(ii), stem, Table 8.1 and key verbatim (f). No respirometer figure could be recovered from a PDF, so each paper's own description is printed and every part is answerable from it.
-**Archetype:** the respirometer, which is the standard apparatus for LO 3(k). The corpus files 42 records on the respirometer and respiratory quotient together, including full Paper 4 planning questions.
+**Archetype:** the respirometer, which is the standard apparatus for LO 3(k). The papers set 42 records on the respirometer and respiratory quotient together, including full Paper 4 planning questions.
 **Trap:** predicting the wrong direction of dye movement, which turns on the absorbent being present; forgetting why the equilibration period exists; treating the glass-bead tubes as spare repeats rather than as controls for pressure and temperature; explaining the temperature curve without naming denaturation on the falling limb, or naming it on the rising limb where a different scheme rejects it.
 **LOs:** 3(k) investigate the effect of factors including substrate concentration, oxygen concentration and temperature on the rate of respiration, throughout; reach-back to Book 1 enzymes for kinetic energy, effective collisions and denaturation in (f).
 **Concepts fused:** (1) the absorbent making the reading mean oxygen; (2) equilibration before time zero; (3) a respiratory quotient of 1 giving no net volume change; (4) repeated readings as a check on steadiness; (5) rate arithmetic from two points with units and significant figures; (6) inert controls for physical volume change; (7) the enzyme-kinetics shape of a temperature curve.
@@ -884,7 +884,7 @@ Any two of the following.
 **2.** Read the two ends of the range off Table 1.2: **1.0 is pure carbohydrate and 0.7 is pure lipid**, so a mixed diet sits between them, with **protein at 0.8** in the middle. An **RQ above 1.0**, as malic acid gives, means the substrate is already partly oxidised, or that some **anaerobic respiration is contributing carbon dioxide without consuming oxygen**.
 
 **Source:** NYJC Prelim 2025 P3 Q1a, stem, Table 1.1 and key verbatim including the all-or-nothing rule (a); NYJC Prelim 2025 P3 Q1b(i), stem, the malic acid equation and key verbatim (b); NYJC Prelim 2025 P3 Q1b(ii), stem and key verbatim (c); NYJC Prelim 2025 P3 Q1c(i), stem, Table 1.2 and key verbatim (d); NYJC Prelim 2025 P3 Q1c(ii), stem and key verbatim (e); VJC Prelim 2024 P3 Q2c(ii), stem and key verbatim (f). The balancing reasoning in (b) point 2 and the range reasoning in (f) point 2 are added by this drill; the rest is the papers' own.
-**Archetype:** respiratory quotient. **Your chapter defines RQ and derives both calculation cases correctly, then stops without giving the values by substrate**, which is one of the two genuine holes in Book 5. **Table 1.2 in part (d) is that missing table, printed in a real paper's own stem**: carbohydrate 1.0, lipid 0.7, protein 0.8. State the confidence honestly: LO 3(k) names substrate **concentration**, not substrate **type**, so the RQ link is inferred rather than quoted. The corpus is nonetheless unambiguous, with 42 records including full planning questions, and this is the standard apparatus for the outcome.
+**Archetype:** respiratory quotient. **Your chapter defines RQ and derives both calculation cases correctly, then stops without giving the values by substrate**, which is one of the two genuine holes in Book 5. **Table 1.2 in part (d) is that missing table, printed in a real paper's own stem**: carbohydrate 1.0, lipid 0.7, protein 0.8. State the confidence honestly: LO 3(k) names substrate **concentration**, not substrate **type**, so the RQ link is inferred rather than quoted. The papers are nonetheless unambiguous, with 42 records including full planning questions, and this is the standard apparatus for the outcome.
 **Trap:** dividing oxygen by carbon dioxide instead of carbon dioxide by oxygen; failing to balance the oxygen atoms already present in the substrate, which is what makes an organic acid give an RQ above 1; treating the soda lime as a safety measure rather than as the thing that makes the reading mean oxygen.
 **LOs:** 3(k) investigate the effect of factors on the rate of respiration; 3(g) respiratory substrates other than glucose feeding into the Krebs cycle.
 **Concepts fused:** (1) energy value by substrate class; (2) balancing a respiration equation; (3) RQ as a ratio of gas volumes; (4) the respirometer as the measuring instrument; (5) the absorbent isolating oxygen uptake; (6) RQ values identifying the substrate; (7) why a mixed diet gives an intermediate value; (8) why an already-oxidised substrate exceeds 1.0.
@@ -942,7 +942,7 @@ Any three of the following.
 **3.** Examiner comment: **this part was not well done, with only a small proportion scoring full credit; students who failed to do so often lost credit for failing to recognise the need for yeast enzymes to hydrolyse sucrose, which is a non-reducing sugar, into glucose and fructose, which are reducing sugars, before they can be used as respiratory substrates. In addition, some students failed to explain how TTC can be reduced by the hydrogen ions removed from reducing sugars during respiration.**
 
 **Source:** NJC Prelim 2023 P4 Q1b, stem, apparatus description, procedure, the expected table and all three marking criteria verbatim (a); RI Prelim 2024 P4 Q2(a), stem and key verbatim (b); EJC Prelim 2023 P4 Q1a(iii), stem and the whole accepted list verbatim including the reject line (c), with its own Visking-tubing context replaced by the one already given in (b) so the two parts share a stem; School (HCI) Prelim 2024 P4 Q1b(ii), stem, key and examiner comment verbatim (d).
-**Archetype:** yeast investigations, which cover all three factors LO 3(k) names with one apparatus. The corpus files 145 records on investigating the rate of respiration in the main respiration bank.
+**Archetype:** yeast investigations, which cover all three factors LO 3(k) names with one apparatus. The papers set 145 records on investigating the rate of respiration in the main respiration bank.
 **Trap:** writing "repeat to check reproducibility" when the scheme rejects that exact phrase and wants replicates for anomalies or for a mean; giving carbon dioxide volume to inconsistent precision; in (d), starting at TTC and never mentioning that **sucrose is a non-reducing sugar** that has to be hydrolysed first, which is where most of the cohort lost the mark.
 **LOs:** 3(k) investigate the effect of factors including substrate concentration, oxygen concentration and temperature on the rate of respiration; reach-back to Book 1 carbohydrates for reducing against non-reducing sugars in (d).
 **Concepts fused:** (1) gas volume by water displacement; (2) results-table criteria; (3) dissolved carbon dioxide lowering pH; (4) subjective colour judgement as a source of inaccuracy; (5) sampling interval and accuracy; (6) replicates for anomalies rather than for reproducibility; (7) sucrose needing hydrolysis before it can be respired; (8) a redox indicator standing in for NAD or FAD.
@@ -957,7 +957,7 @@ Any three of the following.
 
 **2.** **Mean rate of decrease = 1.8 divided by 150 = 0.012 arbitrary units s-1**, to 2 significant figures.
 
-**3.** This is the specimen's own calculation, on a paper whose corpus otherwise shows Calculate at only 2.4%. **Show the working, carry the unit through, and obey the significant-figures instruction**, all three of which are separately marked.
+**3.** This is the specimen's own calculation, on a paper whose the papers otherwise shows Calculate at only 2.4%. **Show the working, carry the unit through, and obey the significant-figures instruction**, all three of which are separately marked.
 
 **(b)** *Describe the effects of heat stress and of spraying MeJA on net photosynthesis.* **[2]**
 
@@ -987,7 +987,7 @@ Any three of the following.
 
 **8.** Quote data: **the CO2 compensation point for sugar cane is 10 ppm against barley at 50 ppm at 25 °C.**
 
-**9. Note the data-selection trap.** The figure carries **four** curves and the question names **two**. An examiner comment elsewhere in this corpus rejects an answer purely for citing the wrong series: **"it is imperative that students focus on accuracy in selection of data for discussion; citing of data up to half the smallest division, noting also that the graph did not start from the origin; and citing of units."** Both 10 °C curves are decoys here.
+**9. Note the data-selection trap.** The figure carries **four** curves and the question names **two**. An examiner comment elsewhere in this the papers rejects an answer purely for citing the wrong series: **"it is imperative that students focus on accuracy in selection of data for discussion; citing of data up to half the smallest division, noting also that the graph did not start from the origin; and citing of units."** Both 10 °C curves are decoys here.
 
 **Source:** 9477 Specimen P2 Q5(c), stem, Figure 5.1 and mark allocation verbatim from the question paper (a), with Figure 5.1 lifted from the specimen PDF; DHS Prelim 2023 P3 Q3b(i), stem, Table 3 values and key verbatim (b); ACJC Prelim 2022 P2 Q2a(i), stem, Figure 2.2 description, the whole eight-point key and the two-trends-plus-data rule verbatim (c). **Part (a) is the one question moved out of another cluster on purpose:** it is 9477 Specimen Paper 2 Question 5(c), which belongs to the Calvin cycle by content but is a data-handling item by skill, and Cluster 3 is where data handling is tested.
 **Archetype:** data-quoting discipline as a skill in its own right. With **11.4% of structured parts opening "with reference to"** and three separate examiner comments naming data selection, units, half-smallest-division reading and non-zero origins, this is a cross-Book skill worth its own drill set. The habit is fixed: **describe the trend, quote two values with units from the correct series, then account for it.**
