@@ -52,13 +52,9 @@ if CONFIG.get("figmap"):
     FIGMAP = {_key(k): v for k, v in CONFIG["figmap"].items()}
 if CONFIG.get("caption"):
     CAPTION = dict(CONFIG["caption"])
-DEFAULT_INTRO = """<div class="intro">
-<p><strong>Answers sit directly under each part, hidden.</strong> Click <em>Show answer</em> only after
-you have said your full reasoning aloud for that part. Check (a) before you start (b) - that is the
-point of the layout.</p>
-<p>Every question is built on a real prelim question and every figure is the real image from the paper
-it came from, not a redrawing. Say your gaps out loud when you hit one; the transcript is what becomes
-your gap list.</p></div>"""
+# Ethan, 21 Aug: "remove this huge chunk for all the clusters we dont need it."
+# No intro block. The drill opens on Question 1. A config may still set intro_html to override.
+DEFAULT_INTRO = ""
 
 TITLE    = CONFIG.get("title", "Cluster Drill")
 SUBTITLE = CONFIG.get("subtitle", "H2 Biology 9477 - Book 1")
