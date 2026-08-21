@@ -1872,9 +1872,9 @@ window.PLAN = {
      "mins": 150,
      "subject": "bio",
      "name": "Bio — Books 1-2 CUMULATIVE TEST (19Q · answers inline)",
-     "desc": "Section A 12 MCQ + Section B 7 structured. Reveal each answer under its own question as you go.",
-     "done": false,
-     "doneDate": null,
+     "desc": "Sat 17 Aug — full spoken transcript captured. 6 gaps logged (priming, molecules-vs-strands, origins→primers, mutation permutation chain, stop codons, Km/Vmax variants). He called it too easy.",
+     "done": true,
+     "doneDate": "2026-08-17",
      "clusterHref": "clusters/test_bio_books1-2.html"
     },
     {
