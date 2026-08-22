@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vectors — Question-Type Playbook (9758)</title>
+<script>
+  window.MathJax = { tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], processEscapes: true, tags:'none' }, svg:{fontCache:'global'} };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root { --bg:#fafafa; --card:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --amber-soft:#fffbeb;
+    --green:#059669; --green-soft:#ecfdf5; --red:#dc2626; --red-soft:#fef2f2;
+    --purple:#6d28d9; --purple-soft:#f5f3ff; --teal:#0d9488; --teal-soft:#f0fdfa; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:980px;margin:0 auto;padding:34px 22px 90px;line-height:1.62;color:var(--text);background:var(--bg)}
+  h1,h2,h3,.tag,.hd .sub,.hd .meta,.nav,.lbl,.archhead,.num{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  .hd{border-bottom:2.5px solid #111;padding-bottom:14px;margin-bottom:8px;text-align:center}
+  .hd h1{font-size:1.5em;font-weight:800;letter-spacing:.4px;margin:0;color:#111}
+  .hd .sub{font-size:1em;margin-top:4px;color:#333}
+  .hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:.78em;color:var(--muted);margin-top:8px}
+  h2{font-size:1.12em;margin:38px 0 12px;padding:7px 12px;background:#111;color:#fff;border-radius:5px;font-weight:700;letter-spacing:.02em}
+  h3{font-size:.98em;margin:20px 0 6px;color:#111;font-weight:700}
+  .nav{background:var(--card);border:1px solid var(--border);padding:13px 18px;border-radius:6px;margin:16px 0 26px;font-size:.85em}
+  .nav a{color:var(--blue);text-decoration:none;display:inline-block;margin:0 14px 5px 0}
+  .nav a:hover{text-decoration:underline}
+  .nav b{display:block;margin:8px 0 3px;color:#111;font-size:.92em}
+
+  .arch{background:var(--card);border:1px solid var(--border);border-radius:7px;padding:0 0 14px;margin:20px 0;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+  .archhead{background:#f1f5f9;border-bottom:1px solid var(--border);padding:10px 16px;font-weight:700;font-size:.97em;color:#0f172a;display:flex;align-items:center;gap:11px}
+  .num{background:#111;color:#fff;border-radius:4px;min-width:28px;height:24px;display:inline-flex;align-items:center;justify-content:center;font-size:.8em;font-weight:800;flex:none}
+  .arch > div:not(.archhead){margin-left:16px;margin-right:16px}
+  .trig{background:var(--blue-soft);border-left:3px solid var(--blue);padding:8px 12px;margin-top:12px;font-size:.88em;border-radius:0 4px 4px 0}
+  .trig b{color:var(--blue);font-size:.86em;letter-spacing:.05em;text-transform:uppercase}
+  .trig i{font-style:italic;color:#1e3a8a}
+  .steps{margin-top:11px;font-size:.92em}
+  .steps ol{margin:0;padding-left:22px}
+  .steps li{margin:5px 0}
+  .steps ol ol{margin:4px 0;padding-left:20px;list-style:lower-alpha}
+  .eg{background:var(--green-soft);border-left:3px solid var(--green);padding:8px 12px;margin-top:11px;font-size:.88em;border-radius:0 4px 4px 0}
+  .eg .lbl{color:var(--green);font-size:.7em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:3px}
+  .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:8px 12px;margin-top:11px;font-size:.88em;border-radius:0 4px 4px 0;color:#7f1d1d}
+  .trap b{color:var(--red);font-size:.86em;letter-spacing:.05em;text-transform:uppercase}
+  .yours{background:var(--purple-soft);border-left:3px solid var(--purple);padding:8px 12px;margin-top:11px;font-size:.87em;border-radius:0 4px 4px 0}
+  .yours b{color:var(--purple);font-size:.86em;letter-spacing:.05em;text-transform:uppercase}
+  .yours i{color:#4c1d95}
+  .note{background:var(--amber-soft);border:1px solid #fcd34d;border-left:4px solid var(--amber);padding:11px 15px;border-radius:6px;margin:14px 0;font-size:.9em;color:#7c2d12}
+  .note b{color:#b91c1c}
+  .key{background:var(--purple-soft);border:1px solid #ddd6fe;border-left:4px solid var(--purple);padding:11px 15px;border-radius:6px;margin:14px 0;font-size:.9em}
+  .key b{color:var(--purple)}
+  .f{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--blue);border-radius:6px;padding:11px 16px;margin:12px 0}
+  table{border-collapse:collapse;margin:12px 0;font-size:.86em;width:100%;background:#fff}
+  th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+  th{background:#f1f5f9;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:.94em}
+  tr:nth-child(even) td{background:#fcfcfd}
+  code{font-family:ui-monospace,Menlo,monospace;font-size:.88em;background:#f1f5f9;padding:1px 5px;border-radius:3px}
+  .chk{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:6px 16px;margin:12px 0}
+  .chk li{margin:7px 0;font-size:.9em}
+  .src{font-family:ui-monospace,Menlo,monospace;font-size:.72em;color:var(--muted);margin-top:9px}
+  @media print{
+    body{background:#fff;padding:0;max-width:none;font-size:10.5pt}
+    .nav{display:none}
+    .arch{page-break-inside:avoid;box-shadow:none}
+    h2{background:#111 !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .trig,.eg,.trap,.yours,.note,.key,th,.num{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+</style>
+</head>
+<body>
+
+<div class="hd">
+  <h1>VECTORS — QUESTION-TYPE PLAYBOOK</h1>
+  <div class="sub">H2 Mathematics 9758 &nbsp;·&nbsp; Chapter 7 &nbsp;·&nbsp; 39 archetypes, each with its own procedure</div>
+  <div class="meta">Built from HCI 2025 Chapter 7 notes (all 121 pp) + your own drill transcripts &nbsp;|&nbsp; every worked value machine-verified</div>
+</div>
+
+<div class="note" style="margin-top:20px">
+<b>How this differs from the formula sheet.</b> <code>formula_sheet_vectors.html</code> is organised by <i>topic</i> — go there when you know what you need and want the formula. This file is organised by <i>what the question says</i>. You read the stem, match the trigger phrase, and follow the numbered steps. Where you worked out a method yourself in a transcript, that method is printed in your own framing and marked <span style="color:var(--purple);font-weight:700">YOUR WORDS</span>.
+</div>
+
+<div class="nav">
+  <b>Triage</b>
+  <a href="#t0">Reading the stem</a><a href="#mod">The modulus table</a><a href="#trees">Decision trees</a>
+  <b>A · Vector fundamentals</b>
+  <a href="#t1">1 Unit / given length</a><a href="#t2">2 Equal vectors, parallelogram</a><a href="#t3">3 Ratio theorem</a><a href="#t4">4 Collinear</a><a href="#t5">5 Prove a geometric result</a>
+  <b>B · Products &amp; projections</b>
+  <a href="#t6">6 Angle between vectors</a><a href="#t7">7 Show perpendicular</a><a href="#t8">8 Vector ⊥ to two</a><a href="#t9">9 Projection</a><a href="#t10">10 Area</a><a href="#t11">11 Geometrical meaning</a><a href="#t12">12 Cross-product algebra</a>
+  <b>C · Lines</b>
+  <a href="#t13">13 Equation of a line</a><a href="#t14">14 Convert forms</a><a href="#t15">15 Point on line?</a><a href="#t16">16 Two lines</a><a href="#t17">17 Angle line–line</a><a href="#t18">18 Foot of ⊥ to line</a><a href="#t19">19 Distance to line</a><a href="#t20">20 Fixed distance (±)</a>
+  <b>D · Planes</b>
+  <a href="#t21">21 Equation of a plane</a><a href="#t22">22 Convert forms</a><a href="#t23">23 On plane / which side</a><a href="#t24">24 Distance to plane</a><a href="#t25">25 Foot of ⊥ to plane</a><a href="#t26">26 Parallel / equidistant plane</a>
+  <b>E · Line ↔ plane, plane ↔ plane</b>
+  <a href="#t27">27 Line vs plane</a><a href="#t28">28 Intersection point</a><a href="#t29">29 Angle line–plane</a><a href="#t30">30 Distance line–plane</a><a href="#t31">31 Two planes</a><a href="#t32">32 Angle plane–plane</a><a href="#t33">33 Line of intersection</a>
+  <b>F · Reflections</b>
+  <a href="#t34">34 Point in a line</a><a href="#t35">35 Point in a plane</a><a href="#t36">36 Line in a plane</a>
+  <b>G · Interpretation &amp; proof</b>
+  <a href="#t37">37 Geometrical interpretation</a><a href="#t38">38 No-solution / discriminant</a><a href="#t39">39 Applied contexts</a>
+  <b>Close</b>
+  <a href="#rules">Your own rules</a><a href="#markloss">Mark-loser checklist</a>
+</div>
+
+<h2 id="t0">TRIAGE — reading the stem in ten seconds</h2>
+
+<p style="font-size:.92em">Almost every Vectors question is decided by three questions asked in order.</p>
+
+<table>
+<tr><th style="width:32%">Ask</th><th>What it settles</th></tr>
+<tr><td><b>1. How many objects, and of what kind?</b><br>points / vectors / lines / planes</td><td>Points-and-vectors only → Part A/B. One line → 13–20. One plane → 21–26. Two objects → 16, 27, 31.</td></tr>
+<tr><td><b>2. What relationship word appears?</b><br>parallel · perpendicular · contains · lies in · meets · reflects · nearest</td><td>This is the single highest-yield word in the stem. <i>Parallel</i> → scalar multiple or cross <b>= 0</b>. <i>Perpendicular</i> → dot <b>= 0</b>. <i>Nearest / shortest</i> → distance formula. <i>Contains / lies in</i> → substitute the general point.</td></tr>
+<tr><td><b>3. Is the answer a scalar or a vector?</b></td><td>Decides whether a modulus goes on. Length of projection, distance and angle are scalars and take a modulus. Projection vector, position vector and normal are vectors and do not.</td></tr>
+</table>
+
+<div class="key">
+<b>The one-line summary of your two Priority-1 gaps.</b> <b>Dot = 0 means perpendicular. Cross = 0 means parallel.</b> And a line perpendicular to a plane has its direction <b>parallel</b> to the normal, so you test it with a <b>scalar multiple</b>, never with a dot product.
+</div>
+
+<h2 id="mod">THE MODULUS TABLE — where the bars go and why</h2>
+
+<p style="font-size:.92em">Your notes are deliberately inconsistent here, and it is not a misprint. The modulus appears exactly when the definition forces the answer to be positive.</p>
+
+<table>
+<tr><th style="width:34%">Quantity</th><th style="width:33%">Formula</th><th>Why</th></tr>
+<tr><td>Angle between two <b>vectors</b></td><td>\( \cos\theta = \dfrac{\mathbf a\cdot\mathbf b}{|\mathbf a||\mathbf b|} \)<br><b>no bars</b></td><td>Two vectors have a genuine direction, so the angle between them may be obtuse. Bars would destroy that.</td></tr>
+<tr><td>Angle between two <b>lines</b></td><td>\( \cos\theta = \dfrac{|\mathbf d_1\cdot\mathbf d_2|}{|\mathbf d_1||\mathbf d_2|} \)<br><b>bars</b></td><td>A line has no direction, only a slope, so the angle is <i>defined</i> as the acute one.</td></tr>
+<tr><td>Angle between <b>line and plane</b></td><td>\( \sin\theta = \dfrac{|\mathbf d\cdot\mathbf n|}{|\mathbf d||\mathbf n|} \)<br><b>bars, and SIN</b></td><td>Same acute definition, but you compute the angle to the <i>normal</i> first, and \( \cos(90^\circ-\theta)=\sin\theta \).</td></tr>
+<tr><td>Angle between two <b>planes</b></td><td>\( \cos\theta = \dfrac{|\mathbf n_1\cdot\mathbf n_2|}{|\mathbf n_1||\mathbf n_2|} \)<br><b>bars</b></td><td>Defined as acute.</td></tr>
+<tr><td><b>Length</b> of projection</td><td>\( |\mathbf a\cdot\hat{\mathbf b}| \) &nbsp;<b>bars</b></td><td>A length cannot be negative.</td></tr>
+<tr><td>Projection <b>vector</b></td><td>\( (\mathbf a\cdot\hat{\mathbf b})\,\hat{\mathbf b} \) &nbsp;<b>no bars</b></td><td>The sign carries real information: a negative value means the projection points opposite to \( \mathbf b \).</td></tr>
+<tr><td>All <b>distances</b></td><td>\( |\overrightarrow{AP}\times\hat{\mathbf d}| \), \( |\overrightarrow{AP}\cdot\hat{\mathbf n}| \)<br><b>bars</b></td><td>Distance is a length.</td></tr>
+</table>
+
+<div class="note">
+<b>An inconsistency in your own notes, so you are not caught out.</b> Page 95 writes the plane–plane angle <i>with</i> modulus bars, page 107 writes the same result <i>without</i> them. Use the bars. The definition on p73 says the angle between two planes "is always taken to be the acute angle," so bars are what makes the formula match the definition. Without them a valid normal pointing the other way flips your answer to the obtuse supplement.
+</div>
+
+<div class="key">
+<b>The pair that decides dot versus cross for projections.</b> Projecting onto the <b>normal</b> of a plane (i.e. finding how far off the plane something reaches) uses the <b>dot</b>: \( |\overrightarrow{AB}\cdot\hat{\mathbf n}| \). Projecting onto the <b>plane itself</b> (the shadow lying in the plane) uses the <b>cross</b>: \( |\overrightarrow{AB}\times\hat{\mathbf n}| \). Verified: for \( \overrightarrow{AB}=(3,1,2) \) and \( \hat{\mathbf n}=(0,0,1) \), the shadow has length \( \sqrt{10} \) by both the cross product and by Pythagoras.
+</div>
+
+<h2 id="trees">THREE DECISION TREES</h2>
+
+<h3>Which product?</h3>
+<div class="f" style="font-size:.9em">
+Do I want a <b>number</b> (angle, length, a test for perpendicularity)? → <b>dot</b>.<br>
+Do I want a <b>new vector perpendicular to what I have</b> (a normal, an area, a distance to a line)? → <b>cross</b>.<br>
+Am I testing <b>parallel</b>? → scalar multiple, or cross \( = \mathbf 0 \).<br>
+Am I testing <b>perpendicular</b>? → dot \( = 0 \).
+</div>
+
+<h3>Which distance formula? (there are only two in 9758)</h3>
+<div class="f" style="font-size:.9em">
+Point to a <b>LINE</b> → \( |\overrightarrow{AP}\times\hat{\mathbf d}| \) &nbsp; (A is any point on the line)<br>
+Point to a <b>PLANE</b> → \( |\overrightarrow{AP}\cdot\hat{\mathbf n}| \) &nbsp; (A is any point on the plane)<br>
+<span style="color:var(--red)"><b>Line to line (skew) is NOT in 9758.</b></span> The syllabus excludes both the shortest distance between skew lines and the common perpendicular, and it excludes triple products \( \mathbf a\cdot(\mathbf b\times\mathbf c) \), which that formula is. If a stem looks like a skew-distance question, the real ask is a point-to-line minimisation.
+</div>
+
+<div class="note">
+<b>Do not assume they are the same distance.</b> Your notes state it flatly on p97: <i>"the ⊥ distance from A to plane is different from the ⊥ distance from A to line, though the line is on the plane."</i> Dropping perpendicular to a line inside a plane lands you somewhere further away than dropping perpendicular to the plane.
+</div>
+
+<h3>Foot of perpendicular — line or plane?</h3>
+<div class="f" style="font-size:.9em">
+To a <b>LINE</b>: you already know \( F \) is <i>on</i> the line, so write \( \overrightarrow{OF}=\mathbf a+\lambda\mathbf d \) and impose \( \overrightarrow{PF}\cdot\mathbf d=0 \). <b>The unknown is where along the line.</b><br>
+To a <b>PLANE</b>: you already know the <i>direction</i> you travel is \( \mathbf n \), so write \( \mathbf r=\overrightarrow{OP}+t\mathbf n \) and substitute into \( \mathbf r\cdot\mathbf n=D \). <b>The unknown is how far you travel.</b><br>
+<i>That is the whole distinction: for a line you know the road and solve for the position; for a plane you know the heading and solve for the distance.</i>
+</div>
+
+<h2>PART A — VECTOR FUNDAMENTALS</h2>
+
+<div class="arch" id="t1">
+<div class="archhead"><span class="num">1</span> Unit vector, or a vector of stated length in a stated direction</div>
+<div class="trig"><b>Trigger</b> <i>"find a unit vector in the direction of…", "find the vector of magnitude 12 in the direction of…", "\(\overrightarrow{ST}\) has length k and is parallel to…"</i></div>
+<div class="steps"><ol>
+<li>Compute \( |\mathbf a|=\sqrt{a_1^2+a_2^2+a_3^2} \).</li>
+<li>\( \hat{\mathbf a}=\dfrac{\mathbf a}{|\mathbf a|} \).</li>
+<li>For a stated length: (required vector) = (magnitude) × (unit vector).</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( \mathbf a=(2,-1,2) \Rightarrow |\mathbf a|=3 \), \( \hat{\mathbf a}=\tfrac13(2,-1,2) \). Length 12 in that direction: \( 12\cdot\tfrac13(2,-1,2)=(8,-4,8) \).</div>
+<div class="trap"><b>Trap</b> Two vectors of the same length may point opposite ways. If the stem only says "parallel to" and not "in the direction of," there are <b>two</b> answers, \( \pm \).</div>
+</div>
+
+<div class="arch" id="t2">
+<div class="archhead"><span class="num">2</span> Show two vectors are equal, or a quadrilateral is a parallelogram</div>
+<div class="trig"><b>Trigger</b> <i>"show that ABCD is a parallelogram", "show that \(\mathbf p=\mathbf q\)"</i></div>
+<div class="steps"><ol>
+<li>To show two non-zero vectors are equal you need <b>both</b>: \( \mathbf p \parallel \mathbf q \) (i.e. \( \mathbf p=k\mathbf q \)) <b>and</b> \( |\mathbf p|=|\mathbf q| \). Equivalently just show the column vectors are identical.</li>
+<li>For a parallelogram \( ABCD \), show \( \overrightarrow{AB}=\overrightarrow{DC} \).</li>
+</ol></div>
+<div class="trap"><b>Trap</b> Your notes flag this explicitly: <i>"the vertices in a polygon must be labelled in either clockwise or anticlockwise manner."</i> So in \(ABCD\) the side opposite \(AB\) is \(DC\), not \(CD\). Getting this backwards gives you \( \overrightarrow{AB}=-\overrightarrow{CD} \) and a sign error.</div>
+</div>
+
+<div class="arch" id="t3">
+<div class="archhead"><span class="num">3</span> Ratio theorem — position vector of a dividing point</div>
+<div class="trig"><b>Trigger</b> <i>"P divides AB in the ratio λ : μ", "AN : NB = 1 : 2", "M is the midpoint of…", "BP is produced to…"</i></div>
+<div class="steps"><ol>
+<li>Draw the segment and mark the two ratio numbers on it.</li>
+<li>Apply \( \overrightarrow{OP}=\dfrac{\mu\,\mathbf a+\lambda\,\mathbf b}{\lambda+\mu} \) where \( AP:PB=\lambda:\mu \). <b>Each weight sits on the OPPOSITE endpoint.</b> The far end gets the near number.</li>
+<li>Midpoint is the special case \( \overrightarrow{OM}=\tfrac12(\mathbf a+\mathbf b) \).</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( A(1,2,3) \), \( B(4,-1,0) \), \( AP:PB=2:1 \). Then \( \overrightarrow{OP}=\dfrac{1\cdot\mathbf a+2\cdot\mathbf b}{3}=\dfrac{(1,2,3)+(8,-2,0)}{3}=(3,0,1) \). The <b>2</b> from \(AP\) lands on \(\mathbf b\).</div>
+<div class="key" style="margin:11px 0 0"><b>The generalisation the notes give and most people miss.</b> <i>"When using the ratio theorem, all three vectors must be pointing outwards (or inwards) from a common point. The common point need not necessarily be the origin O."</i> So \( \overrightarrow{CP}=\tfrac16(5\overrightarrow{CB}+\overrightarrow{CA}) \) is just as legal as the \(O\) version. Anchoring at a vertex instead of dragging everything back to the origin shortens a lot of the harder ratio questions.</div>
+<div class="trap"><b>Trap</b> \( \overrightarrow{OM}\neq\tfrac12\overrightarrow{BD} \) for a midpoint \(M\) of \(BD\). What <i>is</i> true is \( \overrightarrow{BM}=\tfrac12\overrightarrow{BD} \). The half applies to the displacement along the segment, not to the position vector.<br><br>For a <b>produced</b> line (P beyond C), convert the ratio first: \( BC:BP=1:\lambda \) becomes \( BC:CP=1:(\lambda-1) \).</div>
+</div>
+
+<div class="arch" id="t4">
+<div class="archhead"><span class="num">4</span> Prove three points are collinear</div>
+<div class="trig"><b>Trigger</b> <i>"show that A, B and C are collinear", "show that P lies on AB"</i></div>
+<div class="steps"><ol>
+<li>Form two displacement vectors that <b>share a point</b>: \( \overrightarrow{AB} \) and \( \overrightarrow{AC} \).</li>
+<li>Show one is a scalar multiple of the other: \( \overrightarrow{AB}=k\,\overrightarrow{AC} \).</li>
+<li><b>State the common point in words.</b> "Since \( \overrightarrow{AB}=k\overrightarrow{AC} \), \(AB\) is parallel to \(AC\), and they share the common point \(A\); therefore \(A\), \(B\), \(C\) are collinear."</li>
+</ol></div>
+<div class="trap"><b>Trap</b> Parallel alone is not collinear. Two parallel lines a metre apart are still parallel. The common point is a mark, so write it down.<br><br>And the notes' standing warning: <i>"There is no division in vectors. Hence it is incorrect to write \( k=\mathbf u/\mathbf v \)."</i> If you want a ratio of lengths, write \( \dfrac{1}{1-\lambda}=\dfrac{AB}{AP} \) using unbolded <b>lengths</b>, never a quotient of vectors.</div>
+</div>
+
+<div class="arch" id="t5">
+<div class="archhead"><span class="num">5</span> Prove a geometric result by expanding a dot product</div>
+<div class="trig"><b>Trigger</b> <i>"prove that the diagonals of a rhombus are perpendicular", "deduce the cosine rule", "show that the median…"</i></div>
+<div class="steps"><ol>
+<li>Name the two independent sides \( \mathbf p \) and \( \mathbf q \). Everything else is built from these.</li>
+<li>Write the objects of interest in terms of \( \mathbf p,\mathbf q \) (diagonals of a parallelogram are \( \mathbf p+\mathbf q \) and \( \mathbf p-\mathbf q \)).</li>
+<li>Expand the dot product using distributivity, and use \( \mathbf a\cdot\mathbf a=|\mathbf a|^2 \).</li>
+<li>Apply the special condition (rhombus ⇒ \( |\mathbf p|=|\mathbf q| \)) and read off the conclusion.</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( (\mathbf p+\mathbf q)\cdot(\mathbf p-\mathbf q)=|\mathbf p|^2-|\mathbf q|^2 \). In a rhombus \( |\mathbf p|=|\mathbf q| \), so this is \(0\), so the diagonals are perpendicular.</div>
+<div class="trap"><b>Trap</b> \( (3\mathbf b-2\mathbf c)\cdot(3\mathbf b-2\mathbf c)=|3\mathbf b-2\mathbf c|^2 \), and that is <b>not</b> \( (3\mathbf b-2\mathbf c)^2 \) — squaring a vector is meaningless notation. Also: \( \mathbf a\cdot\mathbf b=\mathbf a\cdot\mathbf c \) does <b>not</b> give \( \mathbf b=\mathbf c \). There is no cancellation law.</div>
+</div>
+
+<h2>PART B — PRODUCTS AND PROJECTIONS</h2>
+
+<div class="arch" id="t6">
+<div class="archhead"><span class="num">6</span> Angle between two vectors</div>
+<div class="trig"><b>Trigger</b> <i>"find angle AOB", "find the acute angle between…", "find the angle \(\mathbf p\) makes with the positive x-axis"</i></div>
+<div class="steps"><ol>
+<li>Make sure both vectors <b>diverge from</b> (or both converge to) the shared vertex. For \( \angle ABO \) the vectors are \( \overrightarrow{BA} \) and \( \overrightarrow{BO} \), not \( \overrightarrow{AB} \).</li>
+<li>\( \cos\theta=\dfrac{\mathbf a\cdot\mathbf b}{|\mathbf a||\mathbf b|} \) — <b>no modulus</b>, because the answer is allowed to be obtuse.</li>
+<li>For an axis, dot with \( \mathbf i=(1,0,0) \), \( \mathbf j=(0,1,0) \) or \( \mathbf k=(0,0,1) \).</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( (1,2,2)\cdot(2,-1,2)=4 \), both have magnitude 3, so \( \cos\theta=\tfrac49 \) and \( \theta=63.6^\circ \).</div>
+<div class="trap"><b>Trap</b> The sign of the dot product is information: positive means acute, negative means obtuse. Slapping a modulus on out of habit destroys it. Bars go on <b>only</b> when the stem says "acute" or when the objects are lines or planes (which have no direction).</div>
+</div>
+
+<div class="arch" id="t7">
+<div class="archhead"><span class="num">7</span> Show perpendicular / find the unknown that makes it perpendicular</div>
+<div class="trig"><b>Trigger</b> <i>"show that OA is perpendicular to OB", "find the value of p for which … are perpendicular", "show that l is perpendicular to plane π"</i></div>
+<div class="steps"><ol>
+<li><b>First decide what kind of objects they are.</b> This is the step that has cost you marks twice.
+  <ol>
+  <li>vector ⊥ vector, or line ⊥ line → \( \mathbf d_1\cdot\mathbf d_2=0 \).</li>
+  <li>line ⊥ <b>plane</b> → the direction is <b>parallel to the normal</b>. Show \( \mathbf d=k\mathbf n \). <b>Do not dot them.</b></li>
+  <li>plane ⊥ plane → \( \mathbf n_1\cdot\mathbf n_2=0 \).</li>
+  <li>line <b>lies in</b> plane → \( \mathbf d\cdot\mathbf n=0 \) <i>and</i> a point of the line satisfies the plane.</li>
+  </ol></li>
+<li>Set the relevant expression to zero and solve for the unknown.</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( (1,2,p)\cdot(3,-1,2)=3-2+2p=1+2p=0 \Rightarrow p=-\tfrac12 \).</div>
+<div class="yours"><b>Your words</b> On "show \(l\) is perpendicular to \(p\)" you tried to dot the direction with the normal: <i>"I will dot… we get 2, minus 12. That's not working. Wait, wait, I'm confused. How do I show that it's perpendicular, unless I can dot this with that? But it doesn't make sense."</i> Then you got there: <i>"the line perpendicular to the plane… parallel… so it's scalar multiple."</i> That is the rule. Line ⊥ plane is proved by a <b>scalar multiple</b>, because the line is parallel to the normal.</div>
+<div class="trap"><b>Trap</b> \( \mathbf d\cdot\mathbf n=0 \) is the test for the line being <b>parallel to</b> (or lying in) the plane — the exact opposite of perpendicular. The two tests are easy to swap under time pressure. Read the object type before you reach for a product.</div>
+</div>
+
+<div class="arch" id="t8">
+<div class="archhead"><span class="num">8</span> Find a vector perpendicular to two given vectors</div>
+<div class="trig"><b>Trigger</b> <i>"find a vector perpendicular to both…", "find a normal to the plane containing…"</i></div>
+<div class="steps"><ol>
+<li>Cross them: \( \mathbf a\times\mathbf b=(a_2b_3-a_3b_2,\ -(a_1b_3-a_3b_1),\ a_1b_2-a_2b_1) \). The middle entry carries a leading minus.</li>
+<li><b>Simplify by factoring out any common scalar.</b> \( (-2,-2,-2)=-2(1,1,1) \), so quote \( (1,1,1) \).</li>
+<li><b>Check.</b> Dot your answer with each original vector; both must give zero.</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( (1,1,-2)\times(3,1,-4)=(-2,-2,-2)=-2(1,1,1) \). Check: \( (1,1,1)\cdot(1,1,-2)=0 \) and \( (1,1,1)\cdot(3,1,-4)=0 \). ✓</div>
+<div class="yours"><b>Your words</b> Simplifying the normal is a logged gap: on \( (-3,3,3)=-3(1,-1,-1) \) you said <i>"how do you get inverse 1 −1 −1? what's an inverse? that actually got me good."</i> It is not an inverse. You are dividing every component by the common factor \(-3\), which gives a shorter vector pointing the same way along the same line, and any such vector is an equally valid normal.</div>
+<div class="trap"><b>Trap</b> The answer is not unique — any non-zero multiple works, in either direction. That means a "wrong-looking" normal can still be right. But it also means <b>you must use the same normal consistently</b> through the rest of the question, especially in a distance-between-planes calculation.</div>
+</div>
+
+<div class="arch" id="t9">
+<div class="archhead"><span class="num">9</span> Length of projection vs projection vector</div>
+<div class="trig"><b>Trigger</b> <i>"find the length of projection of a on b", "find the projection vector of OA onto BC", "find \(\overrightarrow{AN}\) where N is the foot of perpendicular from A to OB"</i></div>
+<div class="steps"><ol>
+<li>Build \( \hat{\mathbf b}=\mathbf b/|\mathbf b| \).</li>
+<li>Compute the <b>signed</b> scalar \( s=\mathbf a\cdot\hat{\mathbf b} \).</li>
+<li><b>Length</b> of projection \( =|s| \). Take the modulus.</li>
+<li><b>Projection vector</b> \( =s\,\hat{\mathbf b} \). Keep the sign.</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( \mathbf a=(1,2,-2) \), \( \mathbf b=(2,-1,2) \), \( |\mathbf b|=3 \). \( s=-\tfrac43 \). Length of projection \( =\tfrac43 \). Projection vector \( =-\tfrac43\cdot\tfrac13(2,-1,2)=\left(-\tfrac89,\tfrac49,-\tfrac89\right) \), which points <b>opposite</b> to \( \mathbf b \) — and the negative sign is what tells you so.</div>
+<div class="yours"><b>Your words</b> <i>"I forgot the projection factor. I don't even know what the projection…"</i> Rebuild it from the picture, not from memory: drop a perpendicular from the tip of \( \mathbf a \) onto the line of \( \mathbf b \). The <b>distance along</b> \( \mathbf b \) is \( \mathbf a\cdot\hat{\mathbf b} \); to turn that distance into a vector you re-attach the direction by multiplying by \( \hat{\mathbf b} \) again. That is the whole formula.</div>
+<div class="trap"><b>Trap</b> Answering the wrong species. If the question says "length," a vector answer scores nothing, and vice versa. Read the last word of the stem.</div>
+</div>
+
+<div class="arch" id="t10">
+<div class="archhead"><span class="num">10</span> Area of a triangle or parallelogram</div>
+<div class="trig"><b>Trigger</b> <i>"find the area of triangle ABC", "find the area of parallelogram OPQR", "find the exact area of…"</i></div>
+<div class="steps"><ol>
+<li><b>Pick a single vertex and build both vectors from it.</b> For triangle \(XYZ\), use \( \overrightarrow{XY} \) and \( \overrightarrow{XZ} \).</li>
+<li>Triangle: \( \tfrac12|\overrightarrow{XY}\times\overrightarrow{XZ}| \). Parallelogram: \( |\overrightarrow{AB}\times\overrightarrow{AD}| \).</li>
+<li>For a parallelogram you may also use one side and one <b>diagonal</b>: \( |\overrightarrow{AB}\times\overrightarrow{AC}| \) gives the same area.</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( A(1,0,0),B(0,2,0),C(0,0,3) \). \( \overrightarrow{AB}\times\overrightarrow{AC}=(6,3,2) \), magnitude \(7\), so the triangle has area \( \tfrac72 \).</div>
+<div class="yours"><b>Your words</b> On triangle \(OAC\) you reached for a vector involving \(B\), then caught it: <i>"there ain't no B there, that's my first mistake."</i> Fix: before you cross anything, write down the three letters in the triangle's name and check that both of your vectors are built only from those letters, starting at the same one.</div>
+<div class="trap"><b>Trap</b> Using \( \overrightarrow{AB}\times\overrightarrow{BC} \) instead of \( \overrightarrow{AB}\times\overrightarrow{AC} \). It happens to give the same area here, but the same slip in a <b>normal-to-a-plane</b> question changes the normal and wrecks everything downstream. Always start both vectors at the same vertex.</div>
+</div>
+
+<div class="arch" id="t11">
+<div class="archhead"><span class="num">11</span> "Give the geometrical meaning of…"</div>
+<div class="trig"><b>Trigger</b> <i>"state the geometrical meaning of \(|\mathbf a\cdot\mathbf c|\)", "give the geometrical meaning of \(|\mathbf a\times\hat{\mathbf p}|\)"</i></div>
+<div class="steps"><ol>
+<li>Check whether the second vector is a <b>unit</b> vector. If it is, the phrasing is clean; if not, you must divide by its magnitude in your description.</li>
+<li>Dot form \( |\mathbf a\cdot\hat{\mathbf b}| \) → "the length of projection of \( \mathbf a \) onto \( \mathbf b \)."</li>
+<li>Cross form \( |\mathbf a\times\hat{\mathbf b}| \) → "the perpendicular distance from the point \(A\) to the line through \(O\) with direction \( \mathbf b \)."</li>
+<li>Name the actual points from the question, not the letters from the formula.</li>
+</ol></div>
+<div class="trap"><b>Trap</b> These are two marks for a sentence, and the sentence has to be specific. "It's the projection" is not enough — say <i>length of projection of what onto what</i>. Likewise for the cross form, name the point and name the line.</div>
+</div>
+
+<div class="arch" id="t12">
+<div class="archhead"><span class="num">12</span> Cross-product algebra — expand and simplify</div>
+<div class="trig"><b>Trigger</b> <i>"show that \(\mathbf m\times\mathbf n=(3\lambda^2-4\lambda+2)(\mathbf b\times\mathbf a)\)", "given \(\mathbf a\times3\mathbf b=2\mathbf a\times\mathbf c\), show that \(3\mathbf b-2\mathbf c=\lambda\mathbf a\)"</i></div>
+<div class="steps"><ol>
+<li><b>Expand immediately.</b> The cross product distributes: \( \mathbf a\times(\mathbf b\pm\mathbf c)=\mathbf a\times\mathbf b\pm\mathbf a\times\mathbf c \), and scalars pull straight out.</li>
+<li>Kill every self-term: \( \mathbf q\times\mathbf q=\mathbf 0 \).</li>
+<li>Use anticommutativity to line up the remaining terms: \( \mathbf b\times\mathbf a=-(\mathbf a\times\mathbf b) \).</li>
+<li>If the result is \( \mathbf u\times\mathbf v=\mathbf 0 \), conclude \( \mathbf u \parallel \mathbf v \), so \( \mathbf u=\lambda\mathbf v \).</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( \big((1-\lambda)\mathbf p+\lambda\mathbf q\big)\times\mathbf q=(1-\lambda)(\mathbf p\times\mathbf q)+\lambda(\mathbf q\times\mathbf q)=(1-\lambda)(\mathbf p\times\mathbf q) \). Verified symbolically.</div>
+<div class="yours"><b>Your words</b> <i>"they just expanded it. So next time when you see A, it will just immediately expand."</i> Exactly right, and it is worth making it reflexive: any bracket crossed with something goes straight to expansion, and then you look for the self-term to delete.</div>
+<div class="trap"><b>Trap</b> Order matters. \( \mathbf a\times\mathbf b=-(\mathbf b\times\mathbf a) \), so if the target answer is written in terms of \( \mathbf b\times\mathbf a \) and you produced \( \mathbf a\times\mathbf b \), you owe a sign flip. In a "show that" this is the difference between full marks and none.</div>
+</div>
+
+<h2>PART C — LINES</h2>
+
+<div class="arch" id="t13">
+<div class="archhead"><span class="num">13</span> Find the equation of a line</div>
+<div class="trig"><b>Trigger</b> <i>"find a vector equation of the line through A and B", "find the equation of the line through P parallel to…"</i></div>
+<div class="steps"><ol>
+<li>Get a <b>direction</b>: \( \mathbf d=\overrightarrow{AB}=\mathbf b-\mathbf a \), or copy it from whatever the line is parallel to.</li>
+<li><b>Factor out any common scalar</b> to keep the numbers small.</li>
+<li>Get a <b>point</b>: either given point works.</li>
+<li>Write \( l:\ \mathbf r=\mathbf a+\lambda\mathbf d,\ \lambda\in\mathbb R \). <b>The "\( \lambda\in\mathbb R \)" is part of the answer.</b></li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>Through \( A(1,2,3) \) and \( B(3,5,4) \): \( \mathbf d=(2,3,1) \), so \( \mathbf r=(1,2,3)+\lambda(2,3,1),\ \lambda\in\mathbb R \).</div>
+<div class="trap"><b>Trap</b> The equation is <b>not unique</b>. Using \(B\) as the point, or \(-\mathbf d\) as the direction, gives a different-looking but equally correct answer. Do not panic when your answer does not match the printed one — check instead that the printed point satisfies your equation and the directions are parallel.<br><br>A line through the origin has \( \mathbf a=\mathbf 0 \), so \( \mathbf r=\lambda\mathbf d \). The axes are \( \mathbf r=\lambda(1,0,0) \), \( \lambda(0,1,0) \), \( \lambda(0,0,1) \).</div>
+</div>
+
+<div class="arch" id="t14">
+<div class="archhead"><span class="num">14</span> Convert between vector, parametric and Cartesian form</div>
+<div class="trig"><b>Trigger</b> <i>"express l in Cartesian form", "the line \(\frac{x-1}{3}=\frac{y+2}{4}=z\)", any line handed to you as equations rather than vectors</i></div>
+<div class="steps"><ol>
+<li><b>Parametric is the bridge.</b> Never jump straight from vector to Cartesian; go through parametric.</li>
+<li>Vector → parametric: read off \( x=a_1+\lambda d_1 \), \( y=a_2+\lambda d_2 \), \( z=a_3+\lambda d_3 \).</li>
+<li>Parametric → Cartesian: make \( \lambda \) the subject of each row and equate: \( \dfrac{x-a_1}{d_1}=\dfrac{y-a_2}{d_2}=\dfrac{z-a_3}{d_3} \).</li>
+<li>Cartesian → vector: <b>force every term into the shape \( \dfrac{x-a}{d} \) first</b>, then read \( \mathbf a \) from the numerators and \( \mathbf d \) from the denominators.</li>
+<li>If a component is <b>constant</b>, it has no denominator and is written separately: \( \dfrac{x-1}{3}=\dfrac{y-2}{4},\ z=5 \).</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example (the exact trap you hit)</div>\( 10-x=\dfrac{y}{2}=-z-1 \). Rewrite: \( 10-x=\dfrac{x-10}{-1} \) and \( -z-1=\dfrac{z+1}{-1} \). So \( \dfrac{x-10}{-1}=\dfrac{y-0}{2}=\dfrac{z-(-1)}{-1} \), giving \( \mathbf r=(10,0,-1)+\lambda(-1,2,-1) \). Verified: this reproduces \( x=10-\lambda \), \( y=2\lambda \), \( z=-1-\lambda \).</div>
+<div class="yours"><b>Your words</b> <i>"you always have to make sure that there's a denominator… always have to read the standard form."</i> That is the fix, and it is mechanical: before reading anything off, rewrite every term as (variable minus number) over (number). A bare \( 10-x \) is \( \dfrac{x-10}{-1} \), and a bare \( y \) is \( \dfrac{y-0}{1} \).</div>
+<div class="trap"><b>Trap</b> Reading \( 10-x \) as \( x-10 \) flips the sign of that component of the direction vector. Everything downstream — the angle, the intersection, the foot of perpendicular — comes out wrong, and there is no internal check to catch it.<br><br>Also: a line <b>parallel to a coordinate plane</b> has a zero in the matching component of \( \mathbf d \), which means that variable becomes a constant with no denominator. Parallel to the \(y\)–\(z\) plane looks like \( x=a_1,\ \dfrac{y-a_2}{d_2}=\dfrac{z-a_3}{d_3} \).</div>
+</div>
+
+<div class="arch" id="t15">
+<div class="archhead"><span class="num">15</span> Does a point lie on a line?</div>
+<div class="trig"><b>Trigger</b> <i>"determine whether the point (…) lies on l", "show that C is on the line AB"</i></div>
+<div class="steps"><ol>
+<li>Set the point equal to the general point: \( \mathbf a+\lambda\mathbf d=\overrightarrow{OC} \).</li>
+<li>Equate components to get three equations, each giving a value of \( \lambda \).</li>
+<li><b>The point lies on the line only if all three give the SAME \( \lambda \).</b></li>
+<li>If they differ, write the conclusion in words: "since the values of \( \lambda \) obtained from each equation are different, there is no \( \lambda \) satisfying the equation, so the point does not lie on \(l\)."</li>
+</ol></div>
+<div class="trap"><b>Trap</b> Checking only two components. Two out of three will often agree by coincidence. All three, or nothing.</div>
+</div>
+
+<div class="arch" id="t16">
+<div class="archhead"><span class="num">16</span> Relationship between two lines — parallel, intersecting or skew</div>
+<div class="trig"><b>Trigger</b> <i>"determine whether l₁ and l₂ intersect", "show that the lines are skew", "are the lines coplanar?"</i></div>
+<div class="steps"><ol>
+<li><b>Test parallel FIRST.</b> Is \( \mathbf d_1=k\mathbf d_2 \)? If yes, they are parallel — and then check whether a point of one lies on the other to tell "same line" from "distinct parallel lines." Stop here.</li>
+<li>If not parallel, equate the two vector equations: \( \mathbf a_1+\lambda\mathbf d_1=\mathbf a_2+\mu\mathbf d_2 \).</li>
+<li>That is <b>three equations in two unknowns</b>. Solve two of them for \( \lambda,\mu \).</li>
+<li><b>Substitute into the third to check consistency.</b> This step is the whole question.
+  <ol><li>Consistent → the lines <b>intersect</b>. Substitute back into either line to get the point.</li>
+  <li>Inconsistent → the lines are <b>skew</b>.</li></ol></li>
+<li>On the GC: <code>APPS → 5:PlySmlt2 → 2:SIMULT EQN SOLVER</code>, set 3 equations and 2 unknowns. "NO SOLUTION FOUND" means skew.</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( l_1:\mathbf r=(1,0,0)+\lambda(1,1,0) \), \( l_2:\mathbf r=(0,1,1)+\mu(1,0,1) \). Directions are not parallel. From \(y\): \( \lambda=1 \). From \(z\): \( \mu=-1 \). Check in \(x\): \( 1+1=2 \) but \( 0+\mu=-1 \). Inconsistent, so the lines are <b>skew</b>. Verified: no solution exists.</div>
+<div class="key" style="margin:11px 0 0"><b>The vocabulary mark.</b> Lines on the same plane are <b>coplanar</b>. Parallel lines are coplanar; intersecting lines are coplanar; <b>skew lines are non-coplanar</b>. If a stem asks "are they coplanar," it is asking "are they anything other than skew."</div>
+<div class="yours"><b>Your words</b> <i>"I forgot how to do this already"</i> — then you rebuilt both halves correctly. The half that goes missing is always step 4, the consistency check. Without it you have solved two equations and proved nothing.</div>
+<div class="trap"><b>Trap</b> Declaring "skew" from an inconsistent system without first ruling out parallel. Two <b>parallel</b> distinct lines also fail to intersect, and they are <b>not</b> skew — they are coplanar. Skew needs <b>both</b> conditions: directions not parallel, <i>and</i> no solution. That is why the parallel test comes first.<br><br>Watch the wording too. The notes define intersection by the existence of <b>unique</b> values of \( \lambda \) and \( \mu \). A "show that" answer should say "there are no values of \( \lambda \) and \( \mu \) satisfying all three equations," not just "the equations don't work."</div>
+</div>
+
+<div class="arch" id="t17">
+<div class="archhead"><span class="num">17</span> Acute angle between two lines</div>
+<div class="trig"><b>Trigger</b> <i>"find the acute angle between l₁ and l₂", "find the angle l makes with the y-axis"</i></div>
+<div class="steps"><ol>
+<li>Take the two direction vectors only. Points are irrelevant.</li>
+<li>\( \cos\theta=\dfrac{|\mathbf d_1\cdot\mathbf d_2|}{|\mathbf d_1||\mathbf d_2|} \) — <b>modulus present.</b></li>
+<li>For an axis, the direction is \( (1,0,0) \), \( (0,1,0) \) or \( (0,0,1) \).</li>
+</ol></div>
+<div class="trap"><b>Trap</b> Forgetting the modulus gives the obtuse supplement, which is a wrong answer even though it is the "same" angle geometrically.<br><br>Note that this formula works for <b>skew</b> lines too. They never meet, but the angle between them is still defined as the angle between their directions.</div>
+</div>
+
+<div class="arch" id="t18">
+<div class="archhead"><span class="num">18</span> Foot of perpendicular from a point to a LINE</div>
+<div class="trig"><b>Trigger</b> <i>"find the position vector of the foot of perpendicular from P to l", "find the point on l nearest to P"</i></div>
+<div class="steps"><ol>
+<li><b>Method 1 — dot product (the default).</b>
+  <ol><li>\( N \) is on \( l \), so \( \overrightarrow{ON}=\mathbf a+\lambda\mathbf d \) for some \( \lambda \). &nbsp;…(1)</li>
+  <li>Express \( \overrightarrow{PN}=\overrightarrow{ON}-\overrightarrow{OP} \) in terms of \( \lambda \). &nbsp;…(2)</li>
+  <li>Since \( PN\perp l \), impose \( \overrightarrow{PN}\cdot\mathbf d=0 \) and solve for \( \lambda \). &nbsp;…(3)</li>
+  <li>Substitute \( \lambda \) into (1) for \( \overrightarrow{ON} \), or into (2) for \( \overrightarrow{PN} \).</li>
+  </ol></li>
+<li><b>Method 2 — projection vector (faster when a point A on \(l\) is obvious).</b>
+  <ol><li>\( \overrightarrow{AP}=\overrightarrow{OP}-\overrightarrow{OA} \).</li>
+  <li>\( \overrightarrow{AN}=(\overrightarrow{AP}\cdot\hat{\mathbf d})\,\hat{\mathbf d} \) &nbsp;— <b>no modulus</b>, this is a vector.</li>
+  <li>\( \overrightarrow{ON}=\overrightarrow{OA}+\overrightarrow{AN} \).</li>
+  </ol></li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( P(1,2,3) \), \( l:\mathbf r=\lambda(1,1,1) \). \( \overrightarrow{PN}=(\lambda-1,\lambda-2,\lambda-3) \); dotting with \( (1,1,1) \) gives \( 3\lambda-6=0 \), so \( \lambda=2 \) and \( N(2,2,2) \). Then \( \overrightarrow{PN}=(1,0,-1) \) and the distance is \( \sqrt2 \).</div>
+<div class="trap"><b>Trap</b> Dotting \( \overrightarrow{PN} \) with \( \overrightarrow{OP} \) or with \( \mathbf a \) instead of with \( \mathbf d \). The perpendicularity is to the <b>direction of the line</b>, nothing else.</div>
+</div>
+
+<div class="arch" id="t19">
+<div class="archhead"><span class="num">19</span> Shortest distance from a point to a LINE</div>
+<div class="trig"><b>Trigger</b> <i>"find the shortest distance from P to l", "find the perpendicular distance from the origin to the line…"</i></div>
+<div class="steps"><ol>
+<li><b>Method 1 — cross product (fastest, use this unless the foot is also wanted).</b> \( PN=|\overrightarrow{AP}\times\hat{\mathbf d}| \), where \( A \) is any point on \( l \). From the origin: \( |\overrightarrow{AO}\times\hat{\mathbf d}| \).</li>
+<li><b>Method 2 — projection and Pythagoras.</b> \( AN=|\overrightarrow{AP}\cdot\hat{\mathbf d}| \) (modulus, it is a length), then \( PN=\sqrt{AP^2-AN^2} \).</li>
+<li><b>Method 3 — via the foot.</b> Do archetype 18, then take \( |\overrightarrow{PN}| \). Only worth it if the question also asks for \( N \).</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>Same data as archetype 18. Method 1: \( (1,2,3)\times\tfrac{1}{\sqrt3}(1,1,1) \) has magnitude \( \sqrt2 \). Method 2: \( AN=6/\sqrt3 \), \( AP^2=14 \), \( \sqrt{14-12}=\sqrt2 \). Method 3 gave \( \sqrt2 \). All three verified to agree.</div>
+<div class="trap"><b>Trap</b> Using \( \mathbf d \) instead of \( \hat{\mathbf d} \) in Method 1. If you keep the un-normalised \( \mathbf d \) you must divide by \( |\mathbf d| \) at the end: \( |\overrightarrow{AP}\times\mathbf d|/|\mathbf d| \). Pick one and be consistent.</div>
+</div>
+
+<div class="arch" id="t20">
+<div class="archhead"><span class="num">20</span> Points on a line at a fixed distance (the ± question)</div>
+<div class="trig"><b>Trigger</b> <i>"find the points on l which are at a distance k from N", "find the two possible positions of Q"</i></div>
+<div class="steps"><ol>
+<li>Write the general point \( \overrightarrow{OQ}=\mathbf a+\lambda\mathbf d \).</li>
+<li>Form \( \overrightarrow{NQ} \) and set \( |\overrightarrow{NQ}|=k \).</li>
+<li>Solve. A modulus or a square root gives <b>two</b> values of \( \lambda \).</li>
+<li><b>Quote both points.</b> If the stem restricts to one side ("on the same side as B"), test each and justify which you keep.</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( l:\mathbf r=\lambda(1,1,1) \), \( N(2,2,2) \), distance \( \sqrt3 \). Then \( |\lambda-2|\sqrt3=\sqrt3 \), so \( \lambda=1 \) or \( \lambda=3 \), giving \( (1,1,1) \) and \( (3,3,3) \). Verified.</div>
+<div class="trap"><b>Trap</b> Giving one answer. The geometry is symmetric about \( N \), so unless the question rules one out there are always two, and a single answer caps the mark.</div>
+</div>
+
+<h2>PART D — PLANES</h2>
+
+<div class="arch" id="t21">
+<div class="archhead"><span class="num">21</span> Find the equation of a plane — the normals table</div>
+<div class="trig"><b>Trigger</b> <i>"find the equation of the plane containing…", "find the Cartesian equation of π"</i></div>
+<div class="steps"><ol>
+<li>You need exactly two things: <b>one point</b> on the plane, and <b>the normal</b>.</li>
+<li>Get the normal from the table below by matching how the plane is described.</li>
+<li>Simplify the normal by factoring out common scalars.</li>
+<li><b>Check the normal</b> by dotting it with a direction that lies in the plane — must be zero.</li>
+<li>Write \( \mathbf r\cdot\mathbf n=\mathbf a\cdot\mathbf n \). Expand for Cartesian.</li>
+</ol></div>
+<table style="margin-left:16px;margin-right:16px;width:calc(100% - 32px)">
+<tr><th style="width:52%">How the plane is described</th><th>Normal</th></tr>
+<tr><td>through three points \(A,B,C\)</td><td>\( \mathbf n=\overrightarrow{AB}\times\overrightarrow{AC} \)</td></tr>
+<tr><td>through \(B,C\) and <b>parallel to</b> a line \(l\)</td><td>\( \mathbf n=\overrightarrow{BC}\times\mathbf d \)</td></tr>
+<tr><td>through \(B\) and <b>containing</b> a line \(l\)</td><td>\( \mathbf n=\overrightarrow{AB}\times\mathbf d \) &nbsp;(\(A\) on \(l\))</td></tr>
+<tr><td>containing <b>two intersecting lines</b></td><td>\( \mathbf n=\mathbf d_1\times\mathbf d_2 \)</td></tr>
+<tr><td>through \(B,C\) and <b>perpendicular to plane</b> \( \pi_1 \)</td><td>\( \mathbf n=\overrightarrow{BC}\times\mathbf n_1 \)</td></tr>
+<tr><td><b>perpendicular to a LINE</b> \(AB\)</td><td>\( \mathbf n=\overrightarrow{AB} \) &nbsp;(no cross product at all)</td></tr>
+</table>
+<div class="eg"><div class="lbl">Micro-example</div>Through \( A(1,0,0),B(0,2,0),C(0,0,3) \): \( \mathbf n=\overrightarrow{AB}\times\overrightarrow{AC}=(6,3,2) \), \( \mathbf a\cdot\mathbf n=6 \), so \( \mathbf r\cdot(6,3,2)=6 \), i.e. \( 6x+3y+2z=6 \). Check \(B\): \(6\)✓, \(C\): \(6\)✓.</div>
+<div class="key" style="margin:11px 0 0"><b>The asymmetry that has caught you three times.</b> Plane ⊥ a <b>LINE</b> ⇒ the line's direction <b>IS</b> the normal. Plane ⊥ a <b>PLANE</b> ⇒ that plane's normal is a <b>direction lying inside</b> your plane, so you still have to cross it with something else. Same word "perpendicular," opposite roles, because a line is one-dimensional and a plane is two.</div>
+<div class="yours"><b>Your words</b> You unlocked it mid-question — <i>"Even though the plane is normal, it's parallel to the required plane… oh, that's why we cross them"</i> — then reverted at the end of the session: <i>"2, 3, 4 is my normal, no? Why is that not my normal?"</i> It is not, because \( (2,3,4) \) is perpendicular to \( \pi_1 \), and your plane is <i>also</i> perpendicular to \( \pi_1 \), which means \( (2,3,4) \) lies <b>flat inside</b> your plane. A vector lying in a plane cannot be normal to it.</div>
+<div class="trap"><b>Trap</b> A normal is not unique — any non-zero multiple works. So does the opposite direction. Do not reject your answer just because it does not match the book's.</div>
+</div>
+
+<div class="arch" id="t22">
+<div class="archhead"><span class="num">22</span> Convert a plane between its three forms</div>
+<div class="trig"><b>Trigger</b> <i>"express π in scalar product form", "find the Cartesian equation", "express π in the form r = a + λb + μc"</i></div>
+<div class="steps"><ol>
+<li><b>Parametric</b> \( \mathbf r=\mathbf a+\lambda\mathbf b+\mu\mathbf c \) — needs a point and <b>two non-parallel</b> directions lying in the plane.</li>
+<li><b>Scalar product</b> \( \mathbf r\cdot\mathbf n=p \) where \( p=\mathbf a\cdot\mathbf n \) — needs a point and a normal.</li>
+<li><b>Cartesian</b> \( n_1x+n_2y+n_3z=p \) — just the scalar product form with \( \mathbf r=(x,y,z) \) written out.</li>
+<li>Parametric → scalar product: \( \mathbf n=\mathbf b\times\mathbf c \).</li>
+<li>Scalar product → parametric: find <b>any point</b> satisfying the equation by inspection, then find <b>two non-parallel vectors perpendicular to \( \mathbf n \)</b> by inspection (swap two components and negate one, put a zero in the third; then repeat with a different pair).</li>
+</ol></div>
+<div class="yours"><b>Your words</b> Two logged moments live here. <i>"What is this? This is in parametric form. What's parametric… Oh, this is parametric form. Scalar product form is like that."</i> — you re-sorted the three forms twice in one session. And on building the parametric form from a normal: <i>"Oooh, that is what this is!"</i><br><br>Tell them apart by <b>what appears in the equation</b>: parametric has <b>two parameters</b> and no dot. Scalar product has <b>a dot and a number</b>. Cartesian has \(x,y,z\) written out. One glance, no thinking.</div>
+<div class="trap"><b>Trap</b> Choosing two parallel directions for the parametric form. If \( \mathbf b \parallel \mathbf c \) they span a line, not a plane, and the equation is worthless. Check they are not multiples before you write them down. If the stem also demands \( \mathbf b\perp\mathbf c \), you must additionally impose \( \mathbf b\cdot\mathbf c=0 \).</div>
+</div>
+
+<div class="arch" id="t23">
+<div class="archhead"><span class="num">23</span> Does a point lie on the plane? Which side?</div>
+<div class="trig"><b>Trigger</b> <i>"show that A lies on π", "determine whether A and B lie on the same side of π"</i></div>
+<div class="steps"><ol>
+<li>Substitute the position vector into \( \mathbf r\cdot\mathbf n=p \).</li>
+<li>Equals \( p \) → the point lies on the plane.</li>
+<li>For <b>same side</b>: compute \( \mathbf a\cdot\mathbf n \) and \( \mathbf b\cdot\mathbf n \), and compare each with \( p \).
+  <ol><li>Both greater than \(p\), or both less than \(p\) → <b>same side</b>.</li>
+  <li>One greater, one less → <b>opposite sides</b>.</li></ol></li>
+</ol></div>
+<div class="trap"><b>Trap</b> You must use the <b>same normal</b> for both substitutions. Flipping the normal's sign between the two calculations reverses the inequality and gives the opposite conclusion.<br><br>Note also: if the plane's equation is \( \mathbf r\cdot\mathbf n=0 \), the perpendicular distance from the origin is zero, so <b>the plane passes through the origin</b>. That is a free observation worth a mark when asked.</div>
+</div>
+
+<div class="arch" id="t24">
+<div class="archhead"><span class="num">24</span> Distance from a point (or the origin) to a plane</div>
+<div class="trig"><b>Trigger</b> <i>"find the perpendicular distance from A to π", "find the distance from the origin to the plane"</i></div>
+<div class="steps"><ol>
+<li>Find <b>any</b> point \( B \) on the plane <b>by inspection</b> — set two coordinates to zero and read off the third.</li>
+<li>\( \text{distance}=|\overrightarrow{BA}\cdot\hat{\mathbf n}| \).</li>
+<li><b>From the origin, faster:</b> write the plane in standard form by dividing through by \( |\mathbf n| \), giving \( \mathbf r\cdot\hat{\mathbf n}=d \). Then \( |d| \) <b>is</b> the distance from \( O \) to the plane, read straight off.</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>Distance from \( P(1,1,1) \) to \( 6x+3y+2z=6 \): \( \dfrac{|(1,1,1)\cdot(6,3,2)-6|}{7}=\dfrac{|11-6|}{7}=\dfrac57 \). Verified against the foot-of-perpendicular route, which also gives \( \tfrac57 \).</div>
+<div class="trap"><b>Trap</b> Forgetting to divide by \( |\mathbf n| \). The raw quantity \( |\mathbf a\cdot\mathbf n-p| \) is not a distance until it is normalised. Using \( \hat{\mathbf n} \) from the start removes the risk.</div>
+</div>
+
+<div class="arch" id="t25">
+<div class="archhead"><span class="num">25</span> Foot of perpendicular from a point to a PLANE</div>
+<div class="trig"><b>Trigger</b> <i>"find the foot of the perpendicular from P to π", "find the point on π closest to P"</i></div>
+<div class="steps"><ol>
+<li><b>Method 1 — treat it as a line-meets-plane problem. This is the one you built yourself.</b>
+  <ol><li>Plane: \( \mathbf r\cdot\mathbf n=D \). &nbsp;…(1)</li>
+  <li>\( PN \) is parallel to \( \mathbf n \), so the line \( PN \) is \( \mathbf r=\overrightarrow{OP}+\lambda\mathbf n \). &nbsp;…(2)</li>
+  <li>Substitute (2) into (1) and solve for \( \lambda \).</li>
+  <li>Substitute \( \lambda \) back into (2) to get \( \overrightarrow{ON} \).</li>
+  </ol></li>
+<li><b>Method 2 — projection vector.</b> Pick \( A \) on the plane by inspection, form \( \overrightarrow{AP} \), compute \( \overrightarrow{NP}=(\overrightarrow{AP}\cdot\hat{\mathbf n})\hat{\mathbf n} \) (no modulus), then \( \overrightarrow{ON}=\overrightarrow{OP}-\overrightarrow{NP} \).</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( P(1,1,1) \), plane \( \mathbf r\cdot(6,3,2)=6 \). Sub \( (1,1,1)+t(6,3,2) \): \( 11+49t=6 \Rightarrow t=-\tfrac{5}{49} \), so \( N=\tfrac{1}{49}(19,34,39) \) and \( |PN|=\tfrac57 \), agreeing with archetype 24. All verified.</div>
+<div class="yours"><b>Your words</b> You built this 4-step procedure unprompted in the C1–C3 drill, and it is logged as a strength. It is also the identical procedure to archetype 28 (line meets plane) — your notes say so directly: <i>"We use the above 4 steps to find the foot of perpendicular from a point A to a plane."</i> One procedure, two question types.</div>
+<div class="trap"><b>Trap</b> The one you flagged as <i>"there's nothing to substitute it into."</i> That reaction comes from trying the <b>line</b> method on a plane. For a line you impose a dot-product-is-zero condition; for a plane you <b>substitute into the plane equation</b>. If you find yourself with nothing to substitute into, you have picked the wrong method for the object in front of you.</div>
+</div>
+
+<div class="arch" id="t26">
+<div class="archhead"><span class="num">26</span> Find a parallel plane at a given distance, or an equidistant plane</div>
+<div class="trig"><b>Trigger</b> <i>"find the equation of the plane parallel to π at a distance k", "find π₂ such that A is equidistant from π₁ and π₂"</i></div>
+<div class="steps"><ol>
+<li>A parallel plane has the <b>same normal</b>, so it is \( \mathbf r\cdot\mathbf n=D \) with \( D \) unknown.</li>
+<li>Impose the distance condition: \( \dfrac{|D-p|}{|\mathbf n|}=k \).</li>
+<li>The modulus gives <b>two</b> values of \( D \), one plane on each side. Quote both unless the stem rules one out.</li>
+<li><b>Equidistant alternative:</b> if \( A \) is equidistant from \( \pi_1 \) and \( \pi_2 \), then \( \overrightarrow{BA}=\overrightarrow{AC} \) by similar triangles, so \( \overrightarrow{OC}=\overrightarrow{AC}+\overrightarrow{OA} \), and then form \( \mathbf r\cdot\mathbf n=\overrightarrow{OC}\cdot\mathbf n \).</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>Planes parallel to \( x+y+z=1 \) at distance \( \sqrt3 \): \( \dfrac{|D-1|}{\sqrt3}=\sqrt3 \Rightarrow |D-1|=3 \Rightarrow D=4 \) or \( D=-2 \). Verified.</div>
+<div class="trap"><b>Trap</b> Giving one plane. There are two, symmetric about the original.</div>
+</div>
+
+<h2>PART E — LINE ↔ PLANE AND PLANE ↔ PLANE</h2>
+
+<div class="arch" id="t27">
+<div class="archhead"><span class="num">27</span> Relationship between a line and a plane</div>
+<div class="trig"><b>Trigger</b> <i>"show that l lies in π", "show that l is parallel to π", "determine whether l meets π", "find p and q such that…"</i></div>
+<div class="steps"><ol>
+<li><b>Compute \( \mathbf d\cdot\mathbf n \) first.</b> Everything branches off this one number.</li>
+<li>\( \mathbf d\cdot\mathbf n\neq0 \) → the line <b>cuts</b> the plane at exactly one point. Go to archetype 28.</li>
+<li>\( \mathbf d\cdot\mathbf n=0 \) → the line is parallel to the plane. Now test a point:
+  <ol><li>a point of \( l \) satisfies the plane → the line <b>lies in</b> the plane;</li>
+  <li>it does not → the line is <b>parallel and outside</b>.</li></ol></li>
+</ol></div>
+<div class="yours"><b>Your words — an efficiency win worth keeping.</b> To show a line lies in a plane, substitute the <b>general</b> point \( \mathbf a+\lambda\mathbf d \) into the plane equation and watch the \( \lambda \) terms cancel, leaving an identity. As you put it: <i>"I didn't need to solve for lambda… once I substitute general point of line into this thing, it actually just gives −3."</i> That single substitution does both tests at once, because the \( \lambda \)-terms vanishing <b>is</b> \( \mathbf d\cdot\mathbf n=0 \) and the constant matching <b>is</b> the point test.</div>
+<div class="trap"><b>Trap</b> Stopping at \( \mathbf d\cdot\mathbf n=0 \) and concluding "the line is parallel to the plane" when it actually lies inside it. Parallel-and-outside versus lying-in are different answers, and the point test is what separates them.<br><br>If substituting gives \( \text{constant}=\text{different constant} \), write the conclusion properly: "there are no values of \( \lambda \) giving a point satisfying the plane, therefore there are no points of intersection."</div>
+</div>
+
+<div class="arch" id="t28">
+<div class="archhead"><span class="num">28</span> Point of intersection of a line and a plane</div>
+<div class="trig"><b>Trigger</b> <i>"find the point of intersection of l and π", "find where l meets the plane"</i></div>
+<div class="steps"><ol>
+<li>General point on the line: \( \overrightarrow{OP}=\mathbf a+\lambda\mathbf d \).</li>
+<li>Substitute into \( \mathbf r\cdot\mathbf n=p \).</li>
+<li>Solve for \( \lambda \).</li>
+<li>Substitute \( \lambda \) back into the line to get the point.</li>
+</ol></div>
+<div class="key" style="margin:11px 0 0"><b>Same four steps as archetype 25.</b> Foot of perpendicular to a plane <i>is</i> a line-meets-plane problem where the line happens to have direction \( \mathbf n \). Learn it once.</div>
+<div class="trap"><b>Trap</b> If the plane is given in <b>parametric</b> form, you cannot substitute directly. Either convert it to scalar product form first (cross the two directions), or equate the two vector equations and solve three simultaneous equations in three parameters on the GC.</div>
+</div>
+
+<div class="arch" id="t29">
+<div class="archhead"><span class="num">29</span> Angle between a line and a plane</div>
+<div class="trig"><b>Trigger</b> <i>"find the acute angle between l and π"</i></div>
+<div class="steps"><ol>
+<li><b>This is the only angle in the chapter that uses sine.</b></li>
+<li>\( \sin\theta=\dfrac{|\mathbf d\cdot\mathbf n|}{|\mathbf d||\mathbf n|} \), or equivalently \( \theta=90^\circ-\cos^{-1}\dfrac{|\mathbf d\cdot\mathbf n|}{|\mathbf d||\mathbf n|} \).</li>
+<li>Both routes are accepted. The \(\sin^{-1}\) one is one step shorter.</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( \mathbf d=(1,1,1) \), \( \mathbf n=(6,3,2) \). \( \sin\theta=\dfrac{11}{7\sqrt3}=\dfrac{11\sqrt3}{21} \), so \( \theta=65.1^\circ \). Verified.</div>
+<div class="trap"><b>Trap</b> Using cosine. The dot product gives you the angle to the <b>normal</b>, which is \( 90^\circ-\theta \), and \( \cos(90^\circ-\theta)=\sin\theta \). Skipping that conversion hands in the complement of the right answer.<br><br>You stated this correctly and unprompted in the last drill, so it is currently a strength. Keep it there.</div>
+</div>
+
+<div class="arch" id="t30">
+<div class="archhead"><span class="num">30</span> Shortest distance from a line to a plane</div>
+<div class="trig"><b>Trigger</b> <i>"find the shortest distance between l and π"</i></div>
+<div class="steps"><ol>
+<li><b>Check parallel first</b> (\( \mathbf d\cdot\mathbf n=0 \)). If they are not parallel, the line pierces the plane and the distance is <b>zero</b>. Say so and stop.</li>
+<li>If parallel, pick <b>any</b> point \( A \) on the line and compute its distance to the plane: \( |\overrightarrow{BA}\cdot\hat{\mathbf n}| \) with \( B \) on the plane.</li>
+</ol></div>
+<div class="trap"><b>Trap</b> Grinding out a calculation without checking parallelism first, and producing a non-zero "distance" for a line that actually goes through the plane. The check takes one dot product.</div>
+</div>
+
+<div class="arch" id="t31">
+<div class="archhead"><span class="num">31</span> Relationship between two planes, and the distance between parallel planes</div>
+<div class="trig"><b>Trigger</b> <i>"show that the planes are parallel", "find the distance between π₁ and π₂", "show that the planes are perpendicular"</i></div>
+<div class="steps"><ol>
+<li>Two distinct planes are <b>parallel</b> ⟺ \( \mathbf n_2=k\mathbf n_1 \). They are <b>perpendicular</b> ⟺ \( \mathbf n_1\cdot\mathbf n_2=0 \). Otherwise they meet in a line (archetype 33).</li>
+<li><b>Distance between parallel planes:</b>
+  <ol><li>Rescale so both use the <b>same normal</b>: if \( \mathbf n_2=k\mathbf n_1 \), rewrite \( \pi_2 \) as \( \mathbf r\cdot\mathbf n_1=D_2/k \).</li>
+  <li>Divide both by \( |\mathbf n_1| \) to get standard form.</li>
+  <li>Distance \( =\left|\dfrac{D_1}{|\mathbf n_1|}-\dfrac{D_2/k}{|\mathbf n_1|}\right| \).</li>
+  </ol></li>
+<li>Sign reading: if \( D_1 \) and \( D_2/k \) have the <b>same sign</b>, both planes are on the same side of the origin; opposite signs means the origin sits between them.</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( x+y+z=1 \) and \( 2x+2y+2z=8 \). Here \( k=2 \), so \( D_2/k=4 \). Distance \( =\dfrac{|4-1|}{\sqrt3}=\sqrt3 \). Verified.</div>
+<div class="trap"><b>Trap</b> The one your notes call out explicitly: <i>"To compare distance between the planes, we need to make sure the normal vectors are taken to be in the same direction."</i> Subtracting \( D_1 \) and \( D_2 \) without rescaling by \( k \) gives a wrong distance every time the normals are written at different scales — and they usually are.</div>
+</div>
+
+<div class="arch" id="t32">
+<div class="archhead"><span class="num">32</span> Angle between two planes</div>
+<div class="trig"><b>Trigger</b> <i>"find the acute angle between π₁ and π₂"</i></div>
+<div class="steps"><ol>
+<li>\( \theta=\cos^{-1}\dfrac{|\mathbf n_1\cdot\mathbf n_2|}{|\mathbf n_1||\mathbf n_2|} \) — the angle between the planes equals the angle between their normals.</li>
+<li>Keep the modulus. The definition says acute.</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( \mathbf n_1=(1,0,0) \), \( \mathbf n_2=(1,1,0) \): \( \cos\theta=\tfrac{1}{\sqrt2} \), \( \theta=45^\circ \). Verified.</div>
+<div class="trap"><b>Trap</b> Your notes print this formula <b>with</b> bars on p95 and <b>without</b> on p107. Use the bars. A normal chosen in the opposite direction is equally valid, and without the modulus that choice silently changes your answer to \( 180^\circ-\theta \).</div>
+</div>
+
+<div class="arch" id="t33">
+<div class="archhead"><span class="num">33</span> Line of intersection of two planes</div>
+<div class="trig"><b>Trigger</b> <i>"find a vector equation of the line of intersection", "find the line common to both planes"</i></div>
+<div class="steps"><ol>
+<li><b>Direction:</b> \( \mathbf d=\mathbf n_1\times\mathbf n_2 \). The line lies in both planes, so it is perpendicular to both normals.</li>
+<li><b>A point:</b> set one variable to a convenient value (usually \( z=0 \)), then solve the resulting two equations in two unknowns.</li>
+<li>Write \( \mathbf r=(\text{that point})+\lambda\mathbf d \).</li>
+<li><b>Check:</b> the point must satisfy both plane equations, and \( \mathbf d \) must dot to zero with both normals.</li>
+<li>GC alternative: put both in Cartesian form, solve the 2×3 system, set the free variable to \( \lambda \) and read off the vector equation.</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( x+y+z=1 \) and \( x-y=0 \). \( \mathbf d=(1,1,1)\times(1,-1,0)=(1,1,-2) \). Set \( z=0 \): \( x+y=1 \), \( x=y \), so \( \left(\tfrac12,\tfrac12,0\right) \). Line: \( \mathbf r=\left(\tfrac12,\tfrac12,0\right)+\lambda(1,1,-2) \). All four checks verified.</div>
+<div class="yours"><b>Your words</b> <i>"I still don't get why you can set it to be 0."</i> Here is why. The line of intersection is infinite, so it contains infinitely many points, and you only need <b>one</b>. Setting \( z=0 \) asks "where does this line cross the \(xy\)-plane," and the answer is a single specific point on the line. Any consistent choice picks a different point on the <b>same</b> line, which is why two people can get different-looking correct answers.<br><br>One caution: if the line happens to be parallel to the plane \( z=0 \), it never crosses it and the two equations become inconsistent. When that happens, set a different variable to zero instead.</div>
+<div class="trap"><b>Trap</b> The answer is not unique, and your notes say so after working the same example two ways: <i>"the equation of \(l\) obtained is different using Method 1 and Method 2. This is because equation of a line is not unique."</i> Verify rather than compare.</div>
+</div>
+
+<h2>PART F — REFLECTIONS</h2>
+
+<div class="arch" id="t34">
+<div class="archhead"><span class="num">34</span> Reflection of a point in a LINE</div>
+<div class="trig"><b>Trigger</b> <i>"find the position vector of the reflection of P in the line l", "find the image of P"</i></div>
+<div class="steps"><ol>
+<li>Find the foot of perpendicular \( N \) using archetype 18.</li>
+<li>\( N \) is the midpoint of \( PP' \), so \( \overrightarrow{OP'}=2\overrightarrow{ON}-\overrightarrow{OP} \).</li>
+</ol></div>
+<div class="yours"><b>Your words</b> <i>"But how do you reflect? I don't remember."</i> — then you recovered it. Rebuild it from the picture rather than the formula: the foot of perpendicular is <b>halfway</b> between the point and its image, so \( \overrightarrow{ON}=\tfrac12(\overrightarrow{OP}+\overrightarrow{OP'}) \), and rearranging gives \( \overrightarrow{OP'}=2\overrightarrow{ON}-\overrightarrow{OP} \). It is the ratio theorem with a 1:1 ratio.</div>
+<div class="trap"><b>Trap</b> Writing \( \overrightarrow{OP'}=2\overrightarrow{ON} \) or \( \overrightarrow{ON}-\overrightarrow{OP} \). The full expression has all three pieces. Sanity-check by confirming \( |\overrightarrow{P'N}|=|\overrightarrow{PN}| \).</div>
+</div>
+
+<div class="arch" id="t35">
+<div class="archhead"><span class="num">35</span> Reflection of a point in a PLANE</div>
+<div class="trig"><b>Trigger</b> <i>"find the mirror image of A in π", "find the reflection of P in the plane"</i></div>
+<div class="steps"><ol>
+<li>Find the foot of perpendicular \( F \) using archetype 25.</li>
+<li>\( \overrightarrow{OP'}=2\overrightarrow{OF}-\overrightarrow{OP} \).</li>
+</ol></div>
+<div class="eg"><div class="lbl">Micro-example</div>\( P(1,1,1) \) in the plane \( x+y+z=1 \). Sub \( (1,1,1)+t(1,1,1) \): \( 3+3t=1 \Rightarrow t=-\tfrac23 \), so \( F=\left(\tfrac13,\tfrac13,\tfrac13\right) \) and \( P'=2F-P=\left(-\tfrac13,-\tfrac13,-\tfrac13\right) \). Verified.</div>
+<div class="trap"><b>Trap</b> Identical formula to archetype 34 — only the way you find the foot differs. Check your answer by confirming \( P \) and \( P' \) are on <b>opposite sides</b> (archetype 23) and equidistant.</div>
+</div>
+
+<div class="arch" id="t36">
+<div class="archhead"><span class="num">36</span> Reflection of a LINE in a plane</div>
+<div class="trig"><b>Trigger</b> <i>"find the equation of the line l′, the reflection of l in π"</i></div>
+<div class="steps"><ol>
+<li><b>Case 1 — \( l \) is not parallel to \( \pi \).</b>
+  <ol><li>Find \( P \), the point where \( l \) meets \( \pi \) (archetype 28). \( P \) is <b>fixed</b> by the reflection, so it lies on \( l' \) too.</li>
+  <li>Take any other point \( A \) on \( l \) and reflect it to \( A' \) (archetype 35).</li>
+  <li>\( l':\ \mathbf r=\overrightarrow{OP}+\lambda\overrightarrow{PA'} \).</li>
+  </ol></li>
+<li><b>Case 2 — \( l \) is parallel to \( \pi \).</b> There is no fixed point, so reflect <b>two</b> points \( A,B \) on \( l \) to \( A',B' \) and build the line through them.</li>
+</ol></div>
+<div class="trap"><b>Trap</b> Reflecting the <b>direction vector</b>. Directions are not position vectors and \( 2\overrightarrow{OF}-\overrightarrow{OP} \) does not apply to them. Reflect points, then rebuild the direction from the reflected points.</div>
+</div>
+
+<h2>PART G — INTERPRETATION AND PROOF</h2>
+
+<div class="arch" id="t37">
+<div class="archhead"><span class="num">37</span> Geometrical interpretation of a vector equation</div>
+<div class="trig"><b>Trigger</b> <i>"describe the set of points R such that \((\mathbf r-\mathbf p)\times\mathbf q=\mathbf 0\)", "interpret \((\mathbf r-\mathbf p)\cdot\mathbf q=0\) geometrically"</i></div>
+<div class="steps"><ol>
+<li><b>Cross product equal to zero means parallel.</b> \( (\mathbf r-\mathbf p)\times\mathbf q=\mathbf 0 \Rightarrow \mathbf r-\mathbf p=\lambda\mathbf q \Rightarrow \mathbf r=\mathbf p+\lambda\mathbf q \). So \( R \) traces <b>the line through \(P\) parallel to \( \mathbf q \)</b>.</li>
+<li><b>Dot product equal to zero means perpendicular.</b> \( (\mathbf r-\mathbf p)\cdot\mathbf q=0 \Rightarrow \overrightarrow{PR}\perp\mathbf q \) for every such \( R \). So \( R \) traces <b>the plane through \(P\) with normal \( \mathbf q \)</b>.</li>
+<li>Answer in a full sentence naming the object, the point it passes through, and its direction or normal.</li>
+</ol></div>
+<div class="key" style="margin:11px 0 0"><b>This is the cleanest test of your Priority-1 gap.</b> Cross gives a <b>line</b> (because parallel means one direction). Dot gives a <b>plane</b> (because perpendicular to one vector leaves two free directions). If you can generate that pair on sight, the underlying confusion is gone.</div>
+<div class="trap"><b>Trap</b> The right-hand sides are different objects. \( (\mathbf r-\mathbf p)\times\mathbf q=\mathbf 0 \) sets it equal to the <b>zero vector</b>; \( (\mathbf r-\mathbf p)\cdot\mathbf q=0 \) sets it equal to the <b>scalar zero</b>. Writing a bold \( \mathbf 0 \) where a plain \( 0 \) belongs, or the reverse, is the giveaway that you have not registered which product you are looking at.<br><br>And describe the <b>set of points</b>, not the equation. "It is a line through \( P(-1,2,4) \) parallel to \( (3,-5,2) \)" earns the mark; "it means they are parallel" does not.</div>
+</div>
+
+<div class="arch" id="t38">
+<div class="archhead"><span class="num">38</span> Prove no solution exists — the discriminant argument</div>
+<div class="trig"><b>Trigger</b> <i>"show that there is no value of λ for which…", "show that P can never coincide with…", "deduce that the lines never meet"</i></div>
+<div class="steps"><ol>
+<li>Set up the equation the question denies, in one unknown.</li>
+<li>If it reduces to a <b>quadratic</b>, compute the discriminant \( b^2-4ac \) and show it is negative.</li>
+<li>State the conclusion in words: "since the discriminant is negative, there are no real values of \( \lambda \), so no such point exists."</li>
+<li>If it reduces to a <b>linear contradiction</b> (\( 3=5 \)), say so directly — no discriminant needed.</li>
+</ol></div>
+<div class="yours"><b>Your words</b> <i>"Oh, discriminant. Oh god, that's why I don't select all the potentials."</i> You called it <i>"a very good question, should be tested again."</i> The trigger to memorise: <b>whenever a "show that it never happens" question produces a quadratic, the discriminant is the argument.</b> There is rarely anything cleverer.</div>
+<div class="trap"><b>Trap</b> Solving the quadratic and writing "no real roots" without showing \( b^2-4ac<0 \). The discriminant calculation is the mark.</div>
+</div>
+
+<div class="arch" id="t39">
+<div class="archhead"><span class="num">39</span> Applied and real-world contexts</div>
+<div class="trig"><b>Trigger</b> <i>flight paths, mountain slopes, ramps, sunlight and shadows, pyramids, robot arms — anything with a story</i></div>
+<div class="steps"><ol>
+<li><b>Translate before you calculate.</b> Write a one-line dictionary: "path of aircraft = line", "hillside = plane", "closest approach = shortest distance from point to line", "angle of ascent = angle between line and plane".</li>
+<li>Set up coordinates if none are given, and state your choice.</li>
+<li>Solve the abstract problem with the matching archetype.</li>
+<li><b>Translate back and include units.</b> A bare number is not an answer to an applied question.</li>
+</ol></div>
+<div class="trap"><b>Trap</b> The stem usually hides <b>which</b> distance is wanted. "How close does the aircraft get to the tower" is point-to-line. "How high above the ground" is point-to-plane. These use different formulas and give different numbers, even when the tower stands on the ground.</div>
+</div>
+
+<h2 id="rules">YOUR OWN RULES — pulled from the drill transcripts</h2>
+
+<div class="chk">
+<ol>
+<li><b>"If it's a dot, it's perpendicular. But if it's cross, it's parallel."</b> Your own correction, and the single most repeated failure across three sessions. Say it before touching any relationship question.</li>
+<li><b>"Parallel not just… it just means a scalar multiple itself."</b> When a stem says parallel, reach for \( \mathbf u=k\mathbf v \) first. A cross product is the slower route to the same conclusion, and on a "show that" it invites algebra errors.</li>
+<li><b>"You always have to make sure that there's a denominator… always have to read the standard form."</b> Every Cartesian line gets rewritten as \( \dfrac{x-a}{d} \) before you read anything off it.</li>
+<li><b>"There ain't no B there, that's my first mistake."</b> Before crossing anything for an area or a normal, check that both vectors are built from the letters actually named in the object, and that both start at the same vertex.</li>
+<li><b>"They just expanded it. So next time when you see A, it will just immediately expand."</b> Brackets in a cross product get expanded on sight, then the self-term is deleted.</li>
+<li><b>"I didn't need to solve for lambda."</b> To show something lies in something, substitute the <b>general</b> point and read off the identity. Solving for the parameter first is wasted time.</li>
+<li><b>Check every normal and every cross product.</b> Dot the result with both inputs; both must be zero. Your notes make the same point: <i>"The accuracy of the answer can be checked by performing scalar product."</i> It costs ten seconds and catches nearly every arithmetic slip in the chapter.</li>
+<li><b>Nothing here is unique.</b> Line equations, plane equations and normals all have infinitely many correct forms. Verify your answer against the conditions; never against the printed answer's appearance.</li>
+</ol>
+</div>
+
+<h2 id="markloss">MARK-LOSER CHECKLIST — read before you hand in</h2>
+
+<div class="chk">
+<ol>
+<li><b>Did I write \( \lambda\in\mathbb R \)?</b> Line and plane equations are incomplete without the parameter's domain.</li>
+<li><b>Modulus check.</b> Is every angle-between-lines, angle-between-planes, line-plane angle, length and distance wearing its bars? Is every angle-between-vectors and every projection <b>vector</b> free of them?</li>
+<li><b>Sine, not cosine</b>, for the line-and-plane angle. The only sine in the chapter.</li>
+<li><b>Did I check consistency in the third equation?</b> Two equations solved is not a proof of intersection.</li>
+<li><b>Did I normalise?</b> \( \hat{\mathbf d} \) and \( \hat{\mathbf n} \), not \( \mathbf d \) and \( \mathbf n \), inside every distance formula.</li>
+<li><b>Two answers or one?</b> Fixed-distance points, parallel planes at a given distance, and "parallel to" directions all come in \( \pm \) pairs.</li>
+<li><b>Did I use the same normal throughout?</b> Especially in same-side tests and distance-between-planes.</li>
+<li><b>Did I answer the species asked?</b> Length or vector. Position vector or coordinates. Exact or 3 s.f.</li>
+<li><b>Did I state the geometrical conclusion in words?</b> "Therefore the lines are skew." "Therefore \(A\), \(B\), \(C\) are collinear, since they share the common point \(A\)." The sentence is often the mark.</li>
+<li><b>Excluded content check.</b> If I have written a triple product \( \mathbf a\cdot(\mathbf b\times\mathbf c) \) or a skew-line distance, I have gone outside 9758 and misread the question.</li>
+</ol>
+</div>
+
+<div class="src">Sources: HCI 2025 Chapter 7 Vectors (Student Copy), all 121 pp — §7.1–§7.29, Skill Set pp.92–108, Summary pp.78–84. Your drill transcripts: 27 Jul (C2), 28 Jul (C1+C2 gap), 16 Aug (C3 planes), 16 Aug (C1–C3 full drill). Every numerical result in this file was verified symbolically before publication.</div>
+
+</body>
+</html>

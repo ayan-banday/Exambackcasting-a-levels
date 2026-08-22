@@ -1837,6 +1837,15 @@ window.PLAN = {
      "clusterHref": "clusters/formula_sheet_vectors.html"
     },
     {
+     "mins": 0,
+     "subject": "maths",
+     "name": "Maths — Vectors QUESTION-TYPE PLAYBOOK (39 archetypes · method reference)",
+     "desc": "The companion to the formula sheet, organised by what the QUESTION says rather than by topic. 39 archetypes, each with its trigger phrase, numbered method, a verified micro-example and its trap. Built from all 121 pages of the HCI Ch7 notes plus your own drill transcripts — where you worked out a method yourself it is printed in your own words. Opens with a triage table, the modulus table (where the bars go and why), and three decision trees: which product, which distance, foot-of-perp line vs plane. Ends with your own eight rules and a 10-point mark-loser checklist.",
+     "done": false,
+     "doneDate": null,
+     "clusterHref": "clusters/playbook_vectors.html"
+    },
+    {
      "mins": 50,
      "subject": "maths",
      "name": "Maths — Vectors C3 GAP CLUSTER (7Q · 27m · plane equations)",
