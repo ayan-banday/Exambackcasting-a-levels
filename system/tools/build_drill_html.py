@@ -197,6 +197,7 @@ def inline(t):
 def render(text, qno=None, part=None, figs_used=None):
     """Markdown-ish block renderer: tables, blockquotes, lists, figures, paragraphs."""
     out, lines, i = [], text.split("\n"), 0
+    shown_here = set()
     while i < len(lines):
         ln = lines[i]
         # figure placeholder (may span several lines until the closing bracket)
@@ -217,6 +218,15 @@ def render(text, qno=None, part=None, figs_used=None):
                 fn = slot
             svg = svgfig(fn) if fn else None
             data = None if svg else (b64img(fn) if fn else None)
+            if fn and (svg or data):
+                # remember it against its printed figure number, so a later part that says
+                # "Fig. 5.1" can have it shown again instead of sending him back up the page
+                num = re.search(r"Fig(?:ure)?\.?\s*(\d+\.\d+)", desc)
+                if not num:
+                    num = re.search(r"Fig(?:ure)?\.?\s*(\d+\.\d+)", CAPTION.get(fn, ""))
+                if num:
+                    FIG_BY_NUM[num.group(1)] = fn
+                    shown_here.add(num.group(1))
             if svg:
                 out.append(
                     f'<figure class="fig fig-svg">{svg}'
@@ -291,13 +301,35 @@ def render(text, qno=None, part=None, figs_used=None):
                     and not (is_mcq_run(lines, i) and not first):
                 para.append(lines[i]); i += 1
                 first = False
-            out.append(f"<p>{inline(' '.join(para))}</p>")
+            txt = " ".join(para)
+            out.append(f"<p>{inline(txt)}</p>")
+            # Ethan, 22 Aug: "whenever you talk about the figure, the figure is included."
+            # A part that names a figure already printed further up gets it again, inline,
+            # so he never has to scroll back and guess which figure the number belongs to.
+            for num in dict.fromkeys(re.findall(r"Fig(?:ure)?\.?\s*(\d+\.\d+)", txt)):
+                fn = FIG_BY_NUM.get(num)
+                if not fn or (qno, part, num) in FIG_REPEATED or num in shown_here:
+                    continue
+                FIG_REPEATED.add((qno, part, num))
+                svg2 = svgfig(fn)
+                cap = html.escape(CAPTION.get(fn, fn))
+                if svg2:
+                    out.append(f'<figure class="fig fig-svg fig-again">{svg2}'
+                               f'<figcaption>{cap}</figcaption></figure>')
+                else:
+                    d2 = b64img(fn)
+                    if d2:
+                        out.append(f'<figure class="fig fig-again">'
+                                   f'<img src="data:image/png;base64,{d2}" alt="figure">'
+                                   f'<figcaption>{cap}</figcaption></figure>')
             continue
         i += 1
     return "\n".join(out)
 
 
 FIG_IDX = {}
+FIG_BY_NUM = {}
+FIG_REPEATED = set()
 QS, MS = split_questions(qhalf), split_questions(mhalf)
 figs_used = set()
 cards = []
@@ -409,6 +441,8 @@ border-radius:10px;font-weight:700;margin-left:4px;font-family:-apple-system,san
 .fig{margin:14px 0;padding:12px;background:var(--fig-bg);border:1px solid var(--border);border-radius:6px;text-align:center}
 .fig img{max-width:100%;height:auto;border-radius:3px}
 .fig-svg{background:#fff}
+.fig-again{opacity:.97;border-style:dashed}
+.fig-again figcaption::before{content:'shown again  ';color:var(--muted);font-style:italic}
 .fig-svg svg{max-width:100%;height:auto;display:block;margin:0 auto}
 .fig-svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#16181d}
 .fig-svg .lbl{font-size:12px}

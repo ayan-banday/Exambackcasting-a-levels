@@ -13,12 +13,12 @@
   "5|a": "q5_telomere_length_divisions.png"
  },
  "caption": {
-  "q1a_dna_and_chromosome_traces.png": "DHS Prelim 2015 P2 Q1, Fig. 1.2, extracted from the question paper. Amount of DNA per nucleus and number of chromosomes per nucleus plotted on the same axes across one cycle of meiosis, from interphase I through telophase I to telophase II",
-  "q1b_testis_dna_histograms.png": "NYJC Prelim 2014 P2 Q2, Fig. 2.1, extracted from the question paper. Amount of DNA in the nuclei of cells taken from different parts of a mammalian testis, Graph 1 above and Graph 2 below",
-  "q1d_drosophila_bivalents.png": "DHS Prelim 2016 P2 Q4, Fig. 4.2, extracted from the question paper. A Drosophila cell at a stage of nuclear division, showing 11 bivalents and one unpaired pair of chromosomes",
+  "q1a_dna_and_chromosome_traces.png": "Fig. 1.1  DHS Prelim 2015 P2 Q1, Fig. 1.2, extracted from the question paper. Amount of DNA per nucleus and number of chromosomes per nucleus plotted on the same axes across one cycle of meiosis, from interphase I through telophase I to telophase II",
+  "q1b_testis_dna_histograms.png": "Fig. 1.2  NYJC Prelim 2014 P2 Q2, Fig. 2.1, extracted from the question paper. Amount of DNA in the nuclei of cells taken from different parts of a mammalian testis, Graph 1 above and Graph 2 below",
+  "q1d_drosophila_bivalents.png": "Fig. 1.3  DHS Prelim 2016 P2 Q4, Fig. 4.2, extracted from the question paper. A Drosophila cell at a stage of nuclear division, showing 11 bivalents and one unpaired pair of chromosomes",
   "q2_dna_content_histogram.png": "VJC Prelim 2024 P1 Q11, extracted from the question paper. Distribution of cells of varying DNA content during interphase, with regions X, Y and Z boxed",
-  "q4a_animal_cell_tem.png": "RI Prelim 2023 P2 Q1, Fig. 1.1, extracted from the question paper. Transmission electron micrograph of part of an animal cell, with A, B and C labelled",
-  "q4b_metaphase_chromosomes_tem.png": "ASRJC Prelim 2025 P2 Q3, Fig. 3.2, extracted from the question paper. Transmission electron micrograph of two human chromosomes at metaphase of mitosis, magnification x14000",
-  "q5_telomere_length_divisions.png": "VJC Prelim 2017 P2 Q5, Fig. 5, extracted from the question paper. Change in telomere length of Cell X and Cell Y with increasing rounds of cell division, with M1 the Hayflick limit and M2 crisis"
+  "q4a_animal_cell_tem.png": "Fig. 4.1  RI Prelim 2023 P2 Q1, Fig. 1.1, extracted from the question paper. Transmission electron micrograph of part of an animal cell, with A, B and C labelled",
+  "q4b_metaphase_chromosomes_tem.png": "Fig. 4.2  ASRJC Prelim 2025 P2 Q3, Fig. 3.2, extracted from the question paper. Transmission electron micrograph of two human chromosomes at metaphase of mitosis, magnification x14000",
+  "q5_telomere_length_divisions.png": "Fig. 5.1  VJC Prelim 2017 P2 Q5, Fig. 5, extracted from the question paper. Change in telomere length of Cell X and Cell Y with increasing rounds of cell division, with M1 the Hayflick limit and M2 crisis"
  }
 }

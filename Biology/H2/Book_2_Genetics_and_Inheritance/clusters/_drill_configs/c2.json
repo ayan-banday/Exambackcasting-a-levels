@@ -8,8 +8,8 @@
   "5|b": "q5b_methylation_lollipop.png"
  },
  "caption": {
-  "q2a_codon_table.png": "HCI Book 2, chapter 2.2 Eukaryotic Gene Expression, p. 21, Fig. 19 — the genetic code, 64 codons as mRNA base triplets",
-  "q3a_splice_variants.png": "HCI (School) Prelim 2025 P1 Q9 — pre-mRNA of gene X and five possible mature mRNA variants",
-  "q5b_methylation_lollipop.png": "RI Prelim 2025 P2 Q5, Fig. 5.1 — bisulfite methylation data for iPSC lines T1, T2 and normal lines N1, N2"
+  "q2a_codon_table.png": "Fig. 2.1  HCI Book 2, chapter 2.2 Eukaryotic Gene Expression, p. 21, Fig. 19 — the genetic code, 64 codons as mRNA base triplets",
+  "q3a_splice_variants.png": "Fig. 3.1  HCI (School) Prelim 2025 P1 Q9 — pre-mRNA of gene X and five possible mature mRNA variants",
+  "q5b_methylation_lollipop.png": "Fig. 5.1  RI Prelim 2025 P2 Q5, Fig. 5.1 — bisulfite methylation data for iPSC lines T1, T2 and normal lines N1, N2"
  }
 }
