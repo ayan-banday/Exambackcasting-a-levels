@@ -2109,10 +2109,10 @@ window.PLAN = {
     {
      "mins": 120,
      "subject": "maths",
-     "name": "Maths — CUMULATIVE TEST (12Q · 105 marks · 2h)",
-     "desc": "Full coverage of all 5 studied topics: every learning outcome tested. Diff 24 / Int 25 / Vectors 25 / Series 15 / DE 21 marks. Zero repeated stems (400 prior questions checked).",
-     "done": false,
-     "doneDate": null,
+     "name": "Maths — CUMULATIVE TEST (12Q · 210 marks) ✓ SAT 22 Aug",
+     "desc": "SAT IN FULL 22 Aug, spoken transcript processed. Full coverage of all 5 studied topics. Self-verdict 'very bad'; the paper itself worked — 'great job at giving me questions', 'that's why this is so good to test'. 4 Priority-1 gaps (semi-vertical angle inverted, differentiating volume to get area, magnitude of position vectors instead of the displacement, limiting gradient off the DE) plus 18 ACTIVE. Gaps logged in Math/_STUDY_tests/gaps_test_math_cumulative_2026-08-22.md. GAP CLUSTER NOT YET BUILT.",
+     "done": true,
+     "doneDate": "2026-08-22",
      "clusterHref": "clusters/test_math_cumulative_2026-08-22.html"
     },
     {
