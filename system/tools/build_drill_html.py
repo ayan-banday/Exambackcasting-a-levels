@@ -171,6 +171,20 @@ def b64img(fn):
     return base64.b64encode(open(p, "rb").read()).decode()
 
 
+# Ethan, 22 Aug: "im getting a lot of figure not recovered ... or you just create the diagram
+# yourself." Schematics that no PDF crop exists for are drawn as SVG and inlined here, so they
+# stay sharp at any zoom and theme-aware via currentColor. A .svg in the figures folder is used
+# exactly like a .png.
+def svgfig(fn):
+    p = os.path.join(FIGS, fn)
+    if not fn.lower().endswith(".svg") or not os.path.exists(p):
+        return None
+    s = open(p, encoding="utf-8").read()
+    s = re.sub(r"<\?xml.*?\?>", "", s, flags=re.S)
+    s = re.sub(r"<!DOCTYPE.*?>", "", s, flags=re.S)
+    return s.strip()
+
+
 def inline(t):
     t = html.escape(t)
     t = re.sub(r"\*\*\[(\d+)\]\*\*", r'<span class="marks">[\1]</span>', t)
@@ -201,8 +215,16 @@ def render(text, qno=None, part=None, figs_used=None):
                 FIG_IDX[k] = idx + 1
             else:
                 fn = slot
-            data = b64img(fn) if fn else None
-            if data:
+            svg = svgfig(fn) if fn else None
+            data = None if svg else (b64img(fn) if fn else None)
+            if svg:
+                out.append(
+                    f'<figure class="fig fig-svg">{svg}'
+                    f'<figcaption>{html.escape(CAPTION.get(fn, fn))}</figcaption></figure>'
+                )
+                if figs_used is not None:
+                    figs_used.add(fn)
+            elif data:
                 out.append(
                     f'<figure class="fig"><img src="data:image/png;base64,{data}" alt="figure">'
                     f'<figcaption>{html.escape(CAPTION.get(fn, fn))}</figcaption></figure>'
@@ -386,6 +408,15 @@ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;backgro
 border-radius:10px;font-weight:700;margin-left:4px;font-family:-apple-system,sans-serif}
 .fig{margin:14px 0;padding:12px;background:var(--fig-bg);border:1px solid var(--border);border-radius:6px;text-align:center}
 .fig img{max-width:100%;height:auto;border-radius:3px}
+.fig-svg{background:#fff}
+.fig-svg svg{max-width:100%;height:auto;display:block;margin:0 auto}
+.fig-svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#16181d}
+.fig-svg .lbl{font-size:12px}
+.fig-svg .lbl-b{font-size:12px;font-weight:600}
+.fig-svg .tick{font-size:10px;fill:#5b6472}
+.fig-svg .ax{stroke:#16181d;stroke-width:1.4;fill:none}
+.fig-svg .ld{stroke:#5b6472;stroke-width:.9;fill:none}
+.fig-svg .out{stroke:#16181d;stroke-width:1.5;fill:none}
 .fig figcaption{margin-top:8px;font-size:.8em;color:var(--muted);font-family:-apple-system,sans-serif}
 .fig-missing{margin:14px 0;padding:12px 14px;background:var(--red-soft);border:1px solid var(--red);
 border-left:4px solid var(--red);border-radius:6px;font-size:.9em}

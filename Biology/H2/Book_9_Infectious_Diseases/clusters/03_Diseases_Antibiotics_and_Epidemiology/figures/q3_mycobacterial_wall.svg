@@ -1,0 +1,43 @@
+<svg viewBox="0 0 660 320" width="660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cross-section of the mycobacterial cell wall">
+<rect width="660" height="320" fill="#fff"/>
+<text class="lbl-b" x="30" y="28">outside the cell</text>
+<!-- free lipids and surface proteins -->
+<g stroke="#16181d" stroke-width="1.6" fill="none">
+ <path d="M96 46 l0 14"/><path d="M136 40 l0 20"/><path d="M300 44 l0 16"/><path d="M420 38 l0 22"/>
+</g>
+<g fill="#fff" stroke="#16181d" stroke-width="1.6"><rect x="190" y="34" width="30" height="26" rx="4"/><rect x="490" y="34" width="30" height="26" rx="4"/></g>
+<text class="tick" x="640" y="46" text-anchor="end">surface proteins and free lipids</text>
+<!-- mycolic acid waxy layer -->
+<rect x="30" y="62" width="600" height="66" fill="#e6e9ee" stroke="#16181d" stroke-width="1.5"/>
+<g stroke="#16181d" stroke-width="1.2">
+ <path d="M60 128 L60 76 q6 -10 12 0 L72 128" fill="none"/><path d="M110 128 L110 76 q6 -10 12 0 L122 128" fill="none"/>
+ <path d="M160 128 L160 76 q6 -10 12 0 L172 128" fill="none"/><path d="M210 128 L210 76 q6 -10 12 0 L222 128" fill="none"/>
+ <path d="M260 128 L260 76 q6 -10 12 0 L272 128" fill="none"/><path d="M310 128 L310 76 q6 -10 12 0 L322 128" fill="none"/>
+ <path d="M360 128 L360 76 q6 -10 12 0 L372 128" fill="none"/><path d="M410 128 L410 76 q6 -10 12 0 L422 128" fill="none"/>
+ <path d="M460 128 L460 76 q6 -10 12 0 L472 128" fill="none"/><path d="M510 128 L510 76 q6 -10 12 0 L522 128" fill="none"/>
+ <path d="M560 128 L560 76 q6 -10 12 0 L572 128" fill="none"/>
+</g>
+<text class="lbl" x="42" y="106">long-chain mycolic acids, a waxy coat</text>
+<!-- arabinogalactan -->
+<rect x="30" y="128" width="600" height="46" fill="#dfe6ee" stroke="#16181d" stroke-width="1.5"/>
+<text class="lbl" x="42" y="156">arabinogalactan</text>
+<!-- peptidoglycan -->
+<rect x="30" y="174" width="600" height="52" fill="#cfd8e3" stroke="#16181d" stroke-width="1.5"/>
+<g stroke="#16181d" stroke-width="1.1" opacity=".7">
+ <line x1="60" y1="180" x2="60" y2="220"/><line x1="120" y1="180" x2="120" y2="220"/><line x1="180" y1="180" x2="180" y2="220"/>
+ <line x1="240" y1="180" x2="240" y2="220"/><line x1="300" y1="180" x2="300" y2="220"/><line x1="360" y1="180" x2="360" y2="220"/>
+ <line x1="420" y1="180" x2="420" y2="220"/><line x1="480" y1="180" x2="480" y2="220"/><line x1="540" y1="180" x2="540" y2="220"/>
+ <line x1="42" y1="200" x2="618" y2="200"/>
+</g>
+<text class="lbl" x="42" y="248">peptidoglycan</text>
+<!-- plasma membrane -->
+<rect x="30" y="252" width="600" height="40" fill="#f1f3f6" stroke="#16181d" stroke-width="1.5"/>
+<g fill="#fff" stroke="#16181d" stroke-width="1.1">
+ <circle cx="56" cy="260" r="6"/><circle cx="80" cy="260" r="6"/><circle cx="104" cy="260" r="6"/><circle cx="128" cy="260" r="6"/>
+ <circle cx="152" cy="260" r="6"/><circle cx="176" cy="260" r="6"/><circle cx="200" cy="260" r="6"/><circle cx="224" cy="260" r="6"/>
+ <circle cx="56" cy="284" r="6"/><circle cx="80" cy="284" r="6"/><circle cx="104" cy="284" r="6"/><circle cx="128" cy="284" r="6"/>
+ <circle cx="152" cy="284" r="6"/><circle cx="176" cy="284" r="6"/><circle cx="200" cy="284" r="6"/><circle cx="224" cy="284" r="6"/>
+</g>
+<text class="lbl" x="260" y="277">plasma membrane</text>
+<text class="lbl-b" x="30" y="312">inside the cell</text>
+</svg>

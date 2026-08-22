@@ -61,6 +61,15 @@ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;backgro
 border-radius:10px;font-weight:700;margin-left:4px;font-family:-apple-system,sans-serif}
 .fig{margin:14px 0;padding:12px;background:var(--fig-bg);border:1px solid var(--border);border-radius:6px;text-align:center}
 .fig img{max-width:100%;height:auto;border-radius:3px}
+.fig-svg{background:#fff}
+.fig-svg svg{max-width:100%;height:auto;display:block;margin:0 auto}
+.fig-svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#16181d}
+.fig-svg .lbl{font-size:12px}
+.fig-svg .lbl-b{font-size:12px;font-weight:600}
+.fig-svg .tick{font-size:10px;fill:#5b6472}
+.fig-svg .ax{stroke:#16181d;stroke-width:1.4;fill:none}
+.fig-svg .ld{stroke:#5b6472;stroke-width:.9;fill:none}
+.fig-svg .out{stroke:#16181d;stroke-width:1.5;fill:none}
 .fig figcaption{margin-top:8px;font-size:.8em;color:var(--muted);font-family:-apple-system,sans-serif}
 .fig-missing{margin:14px 0;padding:12px 14px;background:var(--red-soft);border:1px solid var(--red);
 border-left:4px solid var(--red);border-radius:6px;font-size:.9em}
@@ -125,7 +134,76 @@ p{margin:8px 0}
 <div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><p><strong>(c)</strong> <em>State the location of viral genome replication in the cell.</em> <span class="marks">[1]</span></p>
 <p><strong>1.</strong> The viral genome is replicated in the <strong>nucleus</strong>.</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
 <div class="qpart"><p><strong>(d)</strong> Fig. 1.2 shows cross-sections of influenza A virus and influenza C virus side by side. With reference to Fig. 1.2, contrast the structure of influenza A virus with that of influenza C virus. <span class="marks">[2]</span></p>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: Fig. 1.2, cross-sections of influenza A virus on the left and influenza C virus on the right. Influenza A is an enveloped particle studded with rod-shaped HA spikes and mushroom-shaped NA spikes plus M2 channels, with M1 lining the envelope and eight helical RNA segments inside, labelled PB2, PB1, PA, HA, NP, NA, M and NS, each bound to an RNA polymerase complex of PB2, PB1 and PA. Influenza C has the same envelope layout but is studded with a single type of spike labelled HEF, plus M2 channels, and only seven RNA segments, labelled PB2, PB1, P3, HEF, NP, M and NS.</div>
+<figure class="fig fig-svg"><svg viewBox="0 0 660 340" width="660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cross-sections of influenza A and influenza C virus particles">
+<rect width="660" height="340" fill="#fff"/>
+<defs>
+ <g id="ha"><line x1="0" y1="0" x2="0" y2="-22" stroke="#16181d" stroke-width="2"/><rect x="-4" y="-30" width="8" height="9" fill="#16181d"/></g>
+ <g id="na"><line x1="0" y1="0" x2="0" y2="-20" stroke="#16181d" stroke-width="2"/><circle cx="0" cy="-26" r="6" fill="#fff" stroke="#16181d" stroke-width="2"/></g>
+ <g id="m2"><line x1="0" y1="0" x2="0" y2="-14" stroke="#16181d" stroke-width="3.2"/></g>
+</defs>
+
+<!-- INFLUENZA A -->
+<g transform="translate(170,182)">
+  <circle r="104" fill="#f4f6f9" stroke="#16181d" stroke-width="2.2"/>
+  <circle r="93" fill="#fff" stroke="#16181d" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <g><g transform="rotate(0)   translate(0,-104)"><use href="#ha"/></g>
+     <g transform="rotate(40)  translate(0,-104)"><use href="#ha"/></g>
+     <g transform="rotate(80)  translate(0,-104)"><use href="#na"/></g>
+     <g transform="rotate(120) translate(0,-104)"><use href="#ha"/></g>
+     <g transform="rotate(160) translate(0,-104)"><use href="#m2"/></g>
+     <g transform="rotate(200) translate(0,-104)"><use href="#na"/></g>
+     <g transform="rotate(240) translate(0,-104)"><use href="#ha"/></g>
+     <g transform="rotate(280) translate(0,-104)"><use href="#ha"/></g>
+     <g transform="rotate(320) translate(0,-104)"><use href="#na"/></g></g>
+  <!-- eight helical segments -->
+  <g stroke="#16181d" stroke-width="2" fill="none">
+    <path d="M-58 -46 q8 -8 16 0 q8 8 16 0 q8 -8 16 0"/><path d="M-58 -22 q8 -8 16 0 q8 8 16 0 q8 -8 16 0"/>
+    <path d="M-58 2   q8 -8 16 0 q8 8 16 0 q8 -8 16 0"/><path d="M-58 26  q8 -8 16 0 q8 8 16 0 q8 -8 16 0"/>
+    <path d="M6 -46 q8 -8 16 0 q8 8 16 0 q8 -8 16 0"/><path d="M6 -22 q8 -8 16 0 q8 8 16 0 q8 -8 16 0"/>
+    <path d="M6 2   q8 -8 16 0 q8 8 16 0 q8 -8 16 0"/><path d="M6 26  q8 -8 16 0 q8 8 16 0 q8 -8 16 0"/>
+  </g>
+  <text class="tick" x="-58" y="-56">PB2</text><text class="tick" x="-58" y="-32">PB1</text>
+  <text class="tick" x="-58" y="-8">PA</text><text class="tick" x="-58" y="16">HA</text>
+  <text class="tick" x="6" y="-56">NP</text><text class="tick" x="6" y="-32">NA</text>
+  <text class="tick" x="6" y="-8">M</text><text class="tick" x="6" y="16">NS</text>
+  <text class="lbl-b" x="0" y="66" text-anchor="middle">8 RNA segments</text>
+</g>
+<text class="lbl-b" x="170" y="30" text-anchor="middle">influenza A virus</text>
+
+<!-- INFLUENZA C -->
+<g transform="translate(490,182)">
+  <circle r="104" fill="#f4f6f9" stroke="#16181d" stroke-width="2.2"/>
+  <circle r="93" fill="#fff" stroke="#16181d" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <g><g transform="rotate(0)   translate(0,-104)"><use href="#ha"/></g>
+     <g transform="rotate(40)  translate(0,-104)"><use href="#ha"/></g>
+     <g transform="rotate(80)  translate(0,-104)"><use href="#ha"/></g>
+     <g transform="rotate(120) translate(0,-104)"><use href="#ha"/></g>
+     <g transform="rotate(160) translate(0,-104)"><use href="#m2"/></g>
+     <g transform="rotate(200) translate(0,-104)"><use href="#ha"/></g>
+     <g transform="rotate(240) translate(0,-104)"><use href="#ha"/></g>
+     <g transform="rotate(280) translate(0,-104)"><use href="#ha"/></g>
+     <g transform="rotate(320) translate(0,-104)"><use href="#ha"/></g></g>
+  <g stroke="#16181d" stroke-width="2" fill="none">
+    <path d="M-58 -46 q8 -8 16 0 q8 8 16 0 q8 -8 16 0"/><path d="M-58 -22 q8 -8 16 0 q8 8 16 0 q8 -8 16 0"/>
+    <path d="M-58 2   q8 -8 16 0 q8 8 16 0 q8 -8 16 0"/><path d="M-58 26  q8 -8 16 0 q8 8 16 0 q8 -8 16 0"/>
+    <path d="M6 -46 q8 -8 16 0 q8 8 16 0 q8 -8 16 0"/><path d="M6 -22 q8 -8 16 0 q8 8 16 0 q8 -8 16 0"/>
+    <path d="M6 2   q8 -8 16 0 q8 8 16 0 q8 -8 16 0"/>
+  </g>
+  <text class="tick" x="-58" y="-56">PB2</text><text class="tick" x="-58" y="-32">PB1</text>
+  <text class="tick" x="-58" y="-8">P3</text><text class="tick" x="-58" y="16">HEF</text>
+  <text class="tick" x="6" y="-56">NP</text><text class="tick" x="6" y="-32">M</text><text class="tick" x="6" y="-8">NS</text>
+  <text class="lbl-b" x="0" y="66" text-anchor="middle">7 RNA segments</text>
+</g>
+<text class="lbl-b" x="490" y="30" text-anchor="middle">influenza C virus</text>
+
+<g class="lbl">
+ <rect x="18" y="304" width="14" height="9" fill="#16181d"/><text x="38" y="313">HA, rod-shaped spike</text>
+ <circle cx="182" cy="309" r="6" fill="#fff" stroke="#16181d" stroke-width="2"/><text x="194" y="313">NA, mushroom-shaped spike</text>
+ <line x1="392" y1="302" x2="392" y2="316" stroke="#16181d" stroke-width="3.2"/><text x="402" y="313">M2 channel</text>
+ <rect x="500" y="304" width="14" height="9" fill="#16181d"/><text x="520" y="313">HEF, single spike type</text>
+</g>
+<text class="tick" x="642" y="290" text-anchor="end">M1 lines the inner face of the envelope in both</text>
+</svg><figcaption>Fig. 1.2  Cross-sections of influenza A (eight RNA segments, HA and NA spikes) and influenza C (seven RNA segments, a single HEF spike type). Redrawn as a schematic.</figcaption></figure>
 <p>---</p></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
 <div class="block answer"><span class="label">Answer  -  part (d)</span><div class="answer-content"><p><strong>(d)</strong> <em>With reference to Fig. 1.2, contrast the structure of influenza A virus with that of influenza C virus.</em> <span class="marks">[2]</span></p>
@@ -224,7 +302,37 @@ p{margin:8px 0}
 <div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> 9477 Specimen Paper 1 Question 11 in full, verbatim from the official question paper (a); the follow-on wording in (b) is the drill&#x27;s, with the per-feature reasoning cross-checked against the NYJC Prelim 2022 P2 Q5(d) and MI Prelim 2018 P2 Q2(b) keys, which contrast the two cycles feature by feature; NYJC Prelim 2025 P2 Q8(c), stem and key verbatim including the reject, (c). <strong>Archetype:</strong> the compare and distinguish archetype, delivered as a count-the-overlap MCQ. This is the single most efficient revision target in Book 4: build the HIV-against-influenza comparison once and it answers a stem shaped like this, a compare question and half of an essay. <strong>Trap:</strong> generalising a DNA stage, reverse transcription or integration from HIV to influenza, which is exactly what the specimen is built to catch; giving exocytosis for HIV, which a scheme rejects by name; comparing yes against no rather than point to point, which schemes reject outright, so say where each virus fuses rather than that one fuses and the other does not. <strong>LOs:</strong> 2(e)ii and 2(e)iii held together, the reproductive cycles of enveloped viruses and of retroviruses, in (a) and (b); 2(e) exit route by virus, in (c). Reach-back to Cluster 1 for phage lysis in (c). <strong>Concepts fused:</strong> (1) penetration as a shared slot with different mechanisms; (2) integration as retrovirus-only; (3) reverse transcription as retrovirus-only; (4) transcription of viral DNA as retrovirus-only; (5) assembly as a shared slot; (6) budding as the enveloped exit; (7) where the envelope comes from; (8) lysis as the naked-phage exit; (9) why the exit route follows from whether the virus has an envelope.</p>
 <p>---</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q5"><h3>Question 5 <span class="marks">[10 marks]</span></h3><div class="qpart"></div>
 <div class="qpart"><p><strong>(a)</strong> Fig. 5.1 shows how the H3N2 influenza virus attacks human respiratory epithelial cells inside the nose. In stage 6, new viruses are formed and released as a result of the action of viral enzyme U. Explain how viral enzyme U helps with the release of new influenza viruses. <span class="marks">[1]</span></p>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: Fig. 5.1, a six-stage flow chart. Stage 1, virus attaches to protein receptors on the host cell surface membrane. Stage 2, viral RNA migrates to the host cell nucleus as the capsid breaks down. Stage 3, complementary RNA strands are synthesised from the viral RNA. Stage 4, complementary RNA strands are modified via process S for translation to occur. Stage 5, modified complementary RNA strands are translated with the help of host enzyme T, to form viral enzyme U. Stage 6, new viruses are formed and released as a result of the action of viral enzyme U.</div></div>
+<figure class="fig fig-svg"><svg viewBox="0 0 620 470" width="600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Six-stage flow chart of influenza replication">
+<rect width="620" height="470" fill="#fff"/>
+<defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#16181d"/></marker></defs>
+<g stroke="#16181d" stroke-width="1.8" fill="#fff">
+ <rect x="40" y="24"  width="540" height="52" rx="6"/>
+ <rect x="40" y="98"  width="540" height="52" rx="6"/>
+ <rect x="40" y="172" width="540" height="52" rx="6"/>
+ <rect x="40" y="246" width="540" height="52" rx="6"/>
+ <rect x="40" y="320" width="540" height="52" rx="6"/>
+ <rect x="40" y="394" width="540" height="52" rx="6"/>
+</g>
+<g stroke="#16181d" stroke-width="1.8" marker-end="url(#ar)">
+ <line x1="310" y1="76" x2="310" y2="94"/><line x1="310" y1="150" x2="310" y2="168"/>
+ <line x1="310" y1="224" x2="310" y2="242"/><line x1="310" y1="298" x2="310" y2="316"/>
+ <line x1="310" y1="372" x2="310" y2="390"/>
+</g>
+<g class="lbl-b"><text x="58" y="55">1</text><text x="58" y="129">2</text><text x="58" y="203">3</text>
+ <text x="58" y="277">4</text><text x="58" y="351">5</text><text x="58" y="425">6</text></g>
+<g class="lbl">
+ <text x="82" y="55">virus attaches to protein receptors on the host cell surface membrane</text>
+ <text x="82" y="122">viral RNA migrates to the host cell nucleus as the capsid</text>
+ <text x="82" y="140">breaks down</text>
+ <text x="82" y="203">complementary RNA strands are synthesised from the viral RNA</text>
+ <text x="82" y="270">complementary RNA strands are modified via process <tspan font-weight="600">S</tspan></text>
+ <text x="82" y="288">for translation to occur</text>
+ <text x="82" y="344">modified complementary RNA strands are translated with the help</text>
+ <text x="82" y="362">of host enzyme <tspan font-weight="600">T</tspan>, to form viral enzyme <tspan font-weight="600">U</tspan></text>
+ <text x="82" y="418">new viruses are formed and released as a result of the action</text>
+ <text x="82" y="436">of viral enzyme <tspan font-weight="600">U</tspan></text>
+</g>
+</svg><figcaption>Fig. 5.1  The six stages of influenza replication as the paper sets them out, with S, T and U left unnamed.</figcaption></figure></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
 <div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>(a)</strong> <em>Explain how viral enzyme U helps with the release of new influenza viruses.</em> <span class="marks">[1]</span></p>
 <p><strong>1.</strong> <strong>Viral enzyme U is neuraminidase and it cleaves sialic acid receptors away from the surface of the new influenza particles.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
@@ -246,7 +354,28 @@ p{margin:8px 0}
 <p><strong>5.</strong> <strong>Immature viral particles bud off from the host cell at the exit points,</strong></p>
 <p><strong>6.</strong> <strong>thus acquiring a viral envelope with glycoprotein from the host cell surface membrane.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
 <div class="qpart"><p><strong>(d)</strong> Viruses make use of certain properties of the cell membrane to facilitate their release from the host cell. Fig. 5.2 is an electron micrograph of the surface of a host cell, showing a virus in the act of budding out of the membrane. Explain clearly how the structure of the cell membrane facilitates this process. <span class="marks">[3]</span></p>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: Fig. 5.2, an electron micrograph of the surface of a host cell. A small round dark particle labelled virus sits at the tip of an outward projection of the cell surface membrane, which is drawn out into a narrow stalk beneath it. The bulk of the cell beneath is labelled host cell.</div>
+<figure class="fig fig-svg"><svg viewBox="0 0 520 300" width="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A virus particle budding from the surface of a host cell">
+<rect width="520" height="300" fill="#fff"/>
+<!-- host cell body -->
+<path d="M0 300 L0 176 C 60 168, 120 176, 178 180 C 206 182, 226 176, 244 156
+         L 262 156 C 282 176, 302 182, 330 180 C 390 176, 452 168, 520 176 L520 300 Z"
+      fill="#f4f6f9" stroke="#16181d" stroke-width="2.2"/>
+<!-- the narrow stalk drawn out of the membrane -->
+<path d="M244 156 C 246 122, 240 106, 240 96 M262 156 C 260 122, 266 106, 266 96"
+      fill="none" stroke="#16181d" stroke-width="2.2"/>
+<!-- the budding virion at the tip -->
+<circle cx="253" cy="70" r="30" fill="#16181d"/>
+<circle cx="253" cy="70" r="30" fill="none" stroke="#16181d" stroke-width="2.2"/>
+<!-- second membrane line to show the envelope is continuous with the cell membrane -->
+<path d="M244 156 C 246 122, 240 106, 240 96 A30 30 0 0 1 266 96 C 266 106, 260 122, 262 156"
+      fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="3 3" opacity=".8"/>
+<line class="ld" x1="286" y1="60" x2="380" y2="40"/>
+<text class="lbl-b" x="386" y="38">virus</text>
+<line class="ld" x1="270" y1="132" x2="392" y2="112"/>
+<text class="lbl" x="398" y="110">cell surface membrane drawn</text><text class="lbl" x="398" y="126">out into a narrow stalk</text>
+<line class="ld" x1="120" y1="214" x2="120" y2="252"/>
+<text class="lbl-b" x="120" y="270" text-anchor="middle">host cell</text>
+</svg><figcaption>Fig. 5.2  A virus particle at the tip of an outward projection of the host cell surface membrane. Redrawn as a schematic from the source micrograph.</figcaption></figure>
 <p>---</p></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
 <div class="block answer"><span class="label">Answer  -  part (d)</span><div class="answer-content"><p><strong>(d)</strong> <em>Explain clearly how the structure of the cell membrane facilitates this process.</em> <span class="marks">[3]</span></p>

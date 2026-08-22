@@ -11,7 +11,9 @@
    "q7a_cjc25_global_temp.png",
    "q7a_cjc25_robin_migration.png"
   ],
-  "7|b": "q7b_cjc25_caterpillar_abundance.png"
+  "7|b": "q7b_cjc25_caterpillar_abundance.png",
+  "4|a": "q4_sea_level.svg",
+  "6|a": "q6_elevation_shift.svg"
  },
  "caption": {
   "q_spec_p1q28_feedback_web.png": "9477 Specimen Paper 1 Q28. Feedback web of the possible effects of global warming, with two positive feedbacks and one negative feedback labelled on the diagram",
@@ -19,6 +21,8 @@
   "q5b_ri23_symbiont_density.png": "RI Prelim 2023 P2 Q9, Fig. 9.1. Symbiont cell density in Pocillopora damicornis colonies dominated by group C and group D Symbiodinium, with mean water temperature as box plots",
   "q7a_cjc25_global_temp.png": "CJC Prelim 2025 P3 Q3, Fig. 3.1. Average global temperature from about 1880 to 2015",
   "q7a_cjc25_robin_migration.png": "CJC Prelim 2025 P3 Q3, Fig. 3.2. Migration period of the American robin from north to south Canada in 1950 and in 2000",
-  "q7b_cjc25_caterpillar_abundance.png": "CJC Prelim 2025 P3 Q3, Fig. 3.3. Period of greatest caterpillar abundance in south Canada in 1950 and in 2000"
+  "q7b_cjc25_caterpillar_abundance.png": "CJC Prelim 2025 P3 Q3, Fig. 3.3. Period of greatest caterpillar abundance in south Canada in 1950 and in 2000",
+  "q4_sea_level.svg": "Fig. 11.2  Change in global mean sea level relative to the 1993 to 2008 average, 1960 to the early 2020s. Redrawn from the paper's own data.",
+  "q6_elevation_shift.svg": "Fig. 10.1  Mean elevation of each plant species in 2018 against its mean elevation in 1950, with the line of equality. Redrawn from the paper's own data."
  }
 }

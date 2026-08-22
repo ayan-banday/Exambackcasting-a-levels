@@ -9,7 +9,9 @@
   "4|d": "q4_marseillevirus.png",
   "6|a": "q5_lytic_lysogenic_cycles.png",
   "6|b": "q6_lambda_uv_induction.png",
-  "7|a": "q7_t4_phage_labelled.png"
+  "7|a": "q7_t4_phage_labelled.png",
+  "2|c": "q2_hantavirus.svg",
+  "5|a": "q5_t2_phage.svg"
  },
  "caption": {
   "q1_coronavirus_sars_cov.png": "School (HCI) Prelim 2024 P2 Q4, Fig. 4.1. SARS-CoV, with the envelope A, the genome B, the nucleoproteins C and the glycoprotein spikes D labelled",
@@ -17,6 +19,8 @@
   "q4_marseillevirus.png": "VJC Prelim 2024 P2 Q1, Fig. 1.2. Marseillevirus in section and intact, with inner membrane, capsid and genomic DNA labelled",
   "q5_lytic_lysogenic_cycles.png": "ACJC Prelim 2018 P2 Q4, Fig. 4.1. The lytic and lysogenic cycles of a temperate bacteriophage",
   "q6_lambda_uv_induction.png": "AJC Prelim 2018 P2 Q4, Fig. 4.2. Extracellular lambda phage numbers against time, with brief UV irradiation marked",
-  "q7_t4_phage_labelled.png": "School (HCI) Prelim 2021 P1 Q13. T4 bacteriophage with components P to S labelled"
+  "q7_t4_phage_labelled.png": "School (HCI) Prelim 2021 P1 Q13. T4 bacteriophage with components P to S labelled",
+  "q2_hantavirus.svg": "Fig. 2.2  Cross-section of an enveloped hantavirus particle: G1 and G2 glycoprotein spikes on the lipid envelope, three ribonucleoprotein segments (L, M, S) and molecules of RNA-dependent RNA polymerase. Redrawn as a schematic.",
+  "q5_t2_phage.svg": "Fig. 5.1  T2 bacteriophage. Redrawn as a schematic."
  }
 }

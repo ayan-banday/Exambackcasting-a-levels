@@ -1,0 +1,28 @@
+<svg viewBox="0 0 600 300" width="600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A cytotoxic T cell interlocking with an antigen presenting cell">
+<rect width="600" height="300" fill="#fff"/>
+<!-- cytotoxic T cell -->
+<g transform="translate(150,152)">
+ <circle r="76" fill="#fff" stroke="#16181d" stroke-width="2.2"/>
+ <ellipse cx="-10" cy="0" rx="30" ry="24" fill="#f1f3f6" stroke="#16181d" stroke-width="1.6"/>
+ <text class="tick" x="-10" y="4" text-anchor="middle">nucleus</text>
+</g>
+<text class="lbl-b" x="150" y="258" text-anchor="middle">cytotoxic T cell</text>
+<!-- APC, larger and irregular -->
+<g transform="translate(410,150)">
+ <path d="M-96 -20 C -104 -74, -50 -116, 6 -106 C 66 -96, 116 -56, 112 4
+          C 108 66, 56 116, -6 108 C -60 100, -90 60, -96 -20 Z"
+       fill="#fff" stroke="#16181d" stroke-width="2.2"/>
+ <ellipse cx="14" cy="4" rx="38" ry="30" fill="#f1f3f6" stroke="#16181d" stroke-width="1.6"/>
+ <text class="tick" x="14" y="8" text-anchor="middle">nucleus</text>
+</g>
+<text class="lbl-b" x="416" y="282" text-anchor="middle">APC</text>
+<!-- the interlocking pair at the contact point -->
+<g>
+ <path d="M226 138 L246 138 L246 130 L258 130 L258 146 L246 146 L246 138" fill="#fff" stroke="#16181d" stroke-width="2"/>
+ <path d="M316 130 L304 130 L304 122 L290 122 L290 154 L304 154 L304 146 L316 146 Z" fill="#fff" stroke="#16181d" stroke-width="2"/>
+ <rect x="272" y="132" width="14" height="12" fill="#16181d"/>
+</g>
+<line class="ld" x1="236" y1="122" x2="212" y2="76"/><text class="tick" x="206" y="72" text-anchor="end">receptor on the T cell</text>
+<line class="ld" x1="308" y1="118" x2="352" y2="70"/><text class="tick" x="356" y="66">antigen-presenting molecule</text>
+<line class="ld" x1="279" y1="150" x2="279" y2="196"/><text class="tick" x="279" y="212" text-anchor="middle">peptide</text>
+</svg>

@@ -1,0 +1,58 @@
+<svg viewBox="0 0 700 400" width="700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="From germline heavy chain locus through rearrangement, transcription, splicing and translation">
+<rect width="700" height="400" fill="#fff"/>
+<defs><marker id="d2" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#16181d"/></marker></defs>
+<g transform="translate(0,30)">
+ <text class="lbl" x="30" y="-8">germ-line heavy chain locus</text>
+ <rect x="30" y="0" width="640" height="28" fill="#fff" stroke="#16181d" stroke-width="1.6"/>
+ <rect x="30" y="0" width="40" height="28" fill="#e6e9ee" stroke="#16181d" stroke-width="1.3"/><text class="tick" x="50" y="18" text-anchor="middle">P</text>
+ <g fill="#f1f3f6" stroke="#16181d" stroke-width="1.1"><rect x="80" y="5" width="18" height="18"/><rect x="102" y="5" width="18" height="18"/><rect x="124" y="5" width="18" height="18"/><rect x="146" y="5" width="18" height="18"/><rect x="168" y="5" width="18" height="18"/></g>
+ <g fill="#dfe6ee" stroke="#16181d" stroke-width="1.1"><rect x="212" y="5" width="18" height="18"/><rect x="234" y="5" width="18" height="18"/><rect x="256" y="5" width="18" height="18"/></g>
+ <g fill="#cfd8e3" stroke="#16181d" stroke-width="1.1"><rect x="304" y="5" width="18" height="18"/><rect x="326" y="5" width="18" height="18"/><rect x="348" y="5" width="18" height="18"/></g>
+ <rect x="470" y="0" width="120" height="28" fill="#e6e9ee" stroke="#16181d" stroke-width="1.3"/><text class="tick" x="530" y="18" text-anchor="middle">constant segment</text>
+ <rect x="626" y="0" width="44" height="28" fill="#16181d"/>
+ <text class="tick" x="133" y="44" text-anchor="middle">many V</text><text class="tick" x="243" y="44" text-anchor="middle">many D</text><text class="tick" x="335" y="44" text-anchor="middle">many J</text>
+ <text class="tick" x="648" y="44" text-anchor="middle" fill="#5b6472">terminator</text>
+</g>
+<path d="M350 84 L350 112" fill="none" stroke="#16181d" stroke-width="2" marker-end="url(#d2)"/>
+<text class="lbl" x="362" y="102">DNA rearrangement joins one V, one D and one J; the rest are deleted</text>
+<g transform="translate(0,122)">
+ <rect x="30" y="0" width="640" height="28" fill="#fff" stroke="#16181d" stroke-width="1.6"/>
+ <rect x="30" y="0" width="40" height="28" fill="#e6e9ee" stroke="#16181d" stroke-width="1.3"/><text class="tick" x="50" y="18" text-anchor="middle">P</text>
+ <rect x="80" y="5" width="18" height="18" fill="#f1f3f6" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="98" y="5" width="18" height="18" fill="#dfe6ee" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="116" y="5" width="18" height="18" fill="#cfd8e3" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="470" y="0" width="120" height="28" fill="#e6e9ee" stroke="#16181d" stroke-width="1.3"/>
+ <rect x="626" y="0" width="44" height="28" fill="#16181d"/>
+ <text class="tick" x="150" y="-6">ATG</text><text class="tick" x="592" y="-6">stop</text>
+</g>
+<path d="M350 156 L350 184" fill="none" stroke="#16181d" stroke-width="2" marker-end="url(#d2)"/>
+<text class="lbl" x="362" y="174">transcription</text>
+<g transform="translate(0,194)">
+ <rect x="80" y="0" width="510" height="26" rx="4" fill="#fff" stroke="#16181d" stroke-width="1.5" stroke-dasharray="5 3"/>
+ <rect x="86" y="4" width="18" height="18" fill="#f1f3f6" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="104" y="4" width="18" height="18" fill="#dfe6ee" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="122" y="4" width="18" height="18" fill="#cfd8e3" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="464" y="4" width="120" height="18" fill="#e6e9ee" stroke="#16181d" stroke-width="1.1"/>
+ <text class="lbl" x="30" y="17">pre-mRNA</text>
+ <text class="tick" x="300" y="17" text-anchor="middle" fill="#5b6472">intron</text>
+</g>
+<path d="M350 226 L350 254" fill="none" stroke="#16181d" stroke-width="2" marker-end="url(#d2)"/>
+<text class="lbl" x="362" y="244">RNA splicing removes the intron regions</text>
+<g transform="translate(0,264)">
+ <rect x="80" y="0" width="290" height="26" rx="4" fill="#fff" stroke="#16181d" stroke-width="1.5"/>
+ <rect x="86" y="4" width="18" height="18" fill="#f1f3f6" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="104" y="4" width="18" height="18" fill="#dfe6ee" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="122" y="4" width="18" height="18" fill="#cfd8e3" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="244" y="4" width="120" height="18" fill="#e6e9ee" stroke="#16181d" stroke-width="1.1"/>
+ <text class="lbl" x="30" y="17">mRNA</text>
+</g>
+<path d="M350 296 L350 324" fill="none" stroke="#16181d" stroke-width="2" marker-end="url(#d2)"/>
+<text class="lbl" x="362" y="314">translation</text>
+<g transform="translate(0,334)">
+ <path d="M110 26 C 140 4, 190 4, 220 26 C 250 48, 300 48, 330 26" fill="none" stroke="#16181d" stroke-width="3"/>
+ <path d="M330 26 C 380 4, 470 4, 520 26" fill="none" stroke="#16181d" stroke-width="3" stroke-dasharray="6 4"/>
+ <text class="lbl" x="30" y="30">heavy chain</text>
+ <text class="tick" x="220" y="58" text-anchor="middle">variable region, from the joined V, D and J</text>
+ <text class="tick" x="440" y="58" text-anchor="middle">constant region</text>
+</g>
+</svg>

@@ -7,12 +7,14 @@
   "1|a": "q1_bacterial_chromosome_plasmid.png",
   "5|a": "q5_utube_conjugation.png",
   "7|a": [
-   "q7_conjugating_bacteria.png"
+   "q7_conjugating_bacteria.png",
+   "q7_plasmid_in_cell.svg"
   ]
  },
  "caption": {
   "q1_bacterial_chromosome_plasmid.png": "ASRJC Prelim 2025 P2 Q7, Fig. 7.1. A bacterial cell in section, with the cell wall, cell surface membrane, bacterial chromosome and plasmid labelled",
   "q5_utube_conjugation.png": "CJC Prelim 2023 P2 Q8, Fig. 8.1. The U-tube experiment, with strains A and B separated by a filter that medium crosses and cells do not",
-  "q7_conjugating_bacteria.png": "PJC Prelim 2017 P2 Q6, Fig. 6.1. Electron micrograph of bacterium A joined to bacterium B by a single long filament, during process X"
+  "q7_conjugating_bacteria.png": "PJC Prelim 2017 P2 Q6, Fig. 6.1. Electron micrograph of bacterium A joined to bacterium B by a single long filament, during process X",
+  "q7_plasmid_in_cell.svg": "Fig. 7.2  Section through bacterium A. Structure C is a small circular DNA molecule lying free in the cytoplasm, separate from the much larger bacterial chromosome. Redrawn from PJC Prelim 2017 P2 Fig. 6.2."
  }
 }

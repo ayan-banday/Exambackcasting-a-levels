@@ -1,0 +1,27 @@
+<svg viewBox="0 0 620 340" width="620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Phagocytosis of a pathogen by a neutrophil with P Q R S labelled">
+<rect width="620" height="340" fill="#fff"/>
+<path d="M120 300 C 40 288, 40 150, 130 96 C 190 60, 236 58, 262 74
+         L 262 118 C 240 118, 218 132, 218 158 C 218 190, 246 206, 274 206
+         C 320 206, 348 176, 348 140 L 392 140 C 470 150, 520 200, 500 264
+         C 480 320, 220 322, 120 300 Z"
+      fill="#f4f6f9" stroke="#16181d" stroke-width="2.2"/>
+<text class="lbl-b" x="440" y="298">neutrophil</text>
+<!-- pathogen being engulfed -->
+<circle cx="286" cy="118" r="34" fill="#fff" stroke="#16181d" stroke-width="2.2"/>
+<g fill="#16181d"><circle cx="272" cy="94" r="4.5"/><circle cx="300" cy="92" r="4.5"/><circle cx="314" cy="112" r="4.5"/>
+ <circle cx="258" cy="116" r="4.5"/><circle cx="278" cy="146" r="4.5"/><circle cx="306" cy="142" r="4.5"/></g>
+<!-- lysosome -->
+<ellipse cx="430" cy="216" rx="30" ry="21" fill="#dfe6ee" stroke="#16181d" stroke-width="2"/>
+<g fill="#16181d"><circle cx="420" cy="212" r="2.6"/><circle cx="434" cy="220" r="2.6"/><circle cx="440" cy="208" r="2.6"/><circle cx="424" cy="224" r="2.6"/></g>
+<!-- vesicle already formed, lower left -->
+<circle cx="196" cy="238" r="34" fill="#fff" stroke="#16181d" stroke-width="2" stroke-dasharray="5 4"/>
+<circle cx="196" cy="238" r="21" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+<line class="ld" x1="300" y1="82" x2="366" y2="40"/><text class="lbl-b" x="372" y="38">P</text>
+<text class="tick" x="392" y="38">surface molecules on the pathogen</text>
+<line class="ld" x1="240" y1="106" x2="150" y2="70"/><text class="lbl-b" x="142" y="66" text-anchor="end">Q</text>
+<text class="tick" x="128" y="66" text-anchor="end">membrane extensions</text>
+<line class="ld" x1="454" y1="204" x2="524" y2="176"/><text class="lbl-b" x="530" y="174">R</text>
+<text class="tick" x="546" y="174">lysosome</text>
+<line class="ld" x1="196" y1="276" x2="196" y2="312"/><text class="lbl-b" x="196" y="328" text-anchor="middle">S</text>
+<text class="tick" x="214" y="328">vesicle containing the engulfed pathogen</text>
+</svg>

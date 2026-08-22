@@ -1,0 +1,45 @@
+<svg viewBox="0 0 720 260" width="720" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four-stage sequence of opsonisation and phagocytosis">
+<rect width="720" height="260" fill="#fff"/>
+<defs>
+ <g id="ab"><path d="M0 0 L0 -8 M0 -8 L-6 -16 M0 -8 L6 -16" stroke="#16181d" stroke-width="1.8" fill="none"/></g>
+ <marker id="a9" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#16181d"/></marker>
+</defs>
+<g class="lbl-b"><text x="86" y="26" text-anchor="middle">stage 1</text><text x="256" y="26" text-anchor="middle">stage 2</text>
+ <text x="440" y="26" text-anchor="middle">stage 3</text><text x="620" y="26" text-anchor="middle">stage 4</text></g>
+<!-- stage 1 -->
+<g transform="translate(86,0)">
+ <rect x="-30" y="52" width="60" height="20" rx="10" fill="#fff" stroke="#16181d" stroke-width="2"/>
+ <g transform="translate(-20,52)"><use href="#ab"/></g><g transform="translate(0,52)"><use href="#ab"/></g><g transform="translate(20,52)"><use href="#ab"/></g>
+ <path d="M-64 128 C -40 108, 40 108, 64 128 L64 190 L-64 190 Z" fill="#f4f6f9" stroke="#16181d" stroke-width="2"/>
+ <g stroke="#16181d" stroke-width="1.8"><path d="M-30 116 l0 -10 l-6 -8 M-30 106 l6 -8"/><path d="M0 114 l0 -10 l-6 -8 M0 104 l6 -8"/><path d="M30 116 l0 -10 l-6 -8 M30 106 l6 -8"/></g>
+ <circle cx="34" cy="164" r="10" fill="#dfe6ee" stroke="#16181d" stroke-width="1.6"/>
+</g>
+<text class="tick" x="86" y="212" text-anchor="middle">Structure Y coats the</text><text class="tick" x="86" y="226" text-anchor="middle">bacterium; Fc receptors</text><text class="tick" x="86" y="240" text-anchor="middle">on the macrophage</text>
+<!-- stage 2 -->
+<g transform="translate(256,0)">
+ <path d="M-64 190 L-64 120 C -54 92, -34 74, -12 70 L-12 96 C -22 100, -28 110, -28 122
+          C -28 138, -14 148, 0 148 C 14 148, 28 138, 28 122 C 28 110, 22 100, 12 96 L12 70
+          C 34 74, 54 92, 64 120 L64 190 Z" fill="#f4f6f9" stroke="#16181d" stroke-width="2"/>
+ <rect x="-24" y="98" width="48" height="18" rx="9" fill="#fff" stroke="#16181d" stroke-width="2"/>
+ <circle cx="40" cy="168" r="10" fill="#dfe6ee" stroke="#16181d" stroke-width="1.6"/>
+</g>
+<text class="tick" x="256" y="212" text-anchor="middle">membrane engulfs the</text><text class="tick" x="256" y="226" text-anchor="middle">antibody-coated bacterium</text>
+<!-- stage 3 -->
+<g transform="translate(440,0)">
+ <path d="M-64 190 L-64 118 C -40 96, 40 96, 64 118 L64 190 Z" fill="#f4f6f9" stroke="#16181d" stroke-width="2"/>
+ <circle cx="-10" cy="146" r="26" fill="#fff" stroke="#16181d" stroke-width="2" stroke-dasharray="5 4"/>
+ <rect x="-30" y="138" width="40" height="16" rx="8" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+ <circle cx="40" cy="128" r="10" fill="#dfe6ee" stroke="#16181d" stroke-width="1.6"/>
+ <circle cx="46" cy="164" r="10" fill="#dfe6ee" stroke="#16181d" stroke-width="1.6"/>
+ <path d="M28 132 L6 140 M34 160 L12 152" stroke="#16181d" stroke-width="1.4" marker-end="url(#a9)"/>
+</g>
+<text class="tick" x="440" y="212" text-anchor="middle">two Organelle X</text><text class="tick" x="440" y="226" text-anchor="middle">approach the vesicle</text>
+<!-- stage 4 -->
+<g transform="translate(620,0)">
+ <path d="M-64 190 L-64 118 C -40 96, 40 96, 64 118 L64 190 Z" fill="#f4f6f9" stroke="#16181d" stroke-width="2"/>
+ <circle cx="0" cy="148" r="32" fill="#eef2f6" stroke="#16181d" stroke-width="2"/>
+ <g fill="#16181d"><rect x="-16" y="140" width="10" height="5" rx="2"/><rect x="2" y="134" width="9" height="5" rx="2"/>
+  <rect x="-8" y="156" width="9" height="5" rx="2"/><rect x="10" y="152" width="8" height="5" rx="2"/><rect x="-20" y="126" width="8" height="5" rx="2"/></g>
+</g>
+<text class="tick" x="620" y="212" text-anchor="middle">organelles have fused; the</text><text class="tick" x="620" y="226" text-anchor="middle">bacterium is broken down</text>
+</svg>

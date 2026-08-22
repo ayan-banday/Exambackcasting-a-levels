@@ -1,0 +1,22 @@
+<svg viewBox="0 0 520 300" width="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A virus particle budding from the surface of a host cell">
+<rect width="520" height="300" fill="#fff"/>
+<!-- host cell body -->
+<path d="M0 300 L0 176 C 60 168, 120 176, 178 180 C 206 182, 226 176, 244 156
+         L 262 156 C 282 176, 302 182, 330 180 C 390 176, 452 168, 520 176 L520 300 Z"
+      fill="#f4f6f9" stroke="#16181d" stroke-width="2.2"/>
+<!-- the narrow stalk drawn out of the membrane -->
+<path d="M244 156 C 246 122, 240 106, 240 96 M262 156 C 260 122, 266 106, 266 96"
+      fill="none" stroke="#16181d" stroke-width="2.2"/>
+<!-- the budding virion at the tip -->
+<circle cx="253" cy="70" r="30" fill="#16181d"/>
+<circle cx="253" cy="70" r="30" fill="none" stroke="#16181d" stroke-width="2.2"/>
+<!-- second membrane line to show the envelope is continuous with the cell membrane -->
+<path d="M244 156 C 246 122, 240 106, 240 96 A30 30 0 0 1 266 96 C 266 106, 260 122, 262 156"
+      fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="3 3" opacity=".8"/>
+<line class="ld" x1="286" y1="60" x2="380" y2="40"/>
+<text class="lbl-b" x="386" y="38">virus</text>
+<line class="ld" x1="270" y1="132" x2="392" y2="112"/>
+<text class="lbl" x="398" y="110">cell surface membrane drawn</text><text class="lbl" x="398" y="126">out into a narrow stalk</text>
+<line class="ld" x1="120" y1="214" x2="120" y2="252"/>
+<text class="lbl-b" x="120" y="270" text-anchor="middle">host cell</text>
+</svg>

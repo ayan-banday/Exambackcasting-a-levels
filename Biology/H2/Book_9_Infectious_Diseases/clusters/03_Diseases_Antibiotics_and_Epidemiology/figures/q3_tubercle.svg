@@ -1,0 +1,43 @@
+<svg viewBox="0 0 600 400" width="580" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Structure of a tubercle">
+<rect width="600" height="400" fill="#fff"/>
+<circle cx="250" cy="200" r="176" fill="#f7f8fa" stroke="#16181d" stroke-width="2"/>
+<!-- outer rim of fibroblasts -->
+<g fill="#fff" stroke="#16181d" stroke-width="1.5">
+  <ellipse cx="250" cy="28"  rx="26" ry="9"/><ellipse cx="371" cy="79"  rx="26" ry="9" transform="rotate(45 371 79)"/>
+  <ellipse cx="422" cy="200" rx="26" ry="9" transform="rotate(90 422 200)"/><ellipse cx="371" cy="321" rx="26" ry="9" transform="rotate(135 371 321)"/>
+  <ellipse cx="250" cy="372" rx="26" ry="9"/><ellipse cx="129" cy="321" rx="26" ry="9" transform="rotate(45 129 321)"/>
+  <ellipse cx="78"  cy="200" rx="26" ry="9" transform="rotate(90 78 200)"/><ellipse cx="129" cy="79"  rx="26" ry="9" transform="rotate(135 129 79)"/>
+  <ellipse cx="316" cy="48"  rx="24" ry="8" transform="rotate(22 316 48)"/><ellipse cx="184" cy="48"  rx="24" ry="8" transform="rotate(-22 184 48)"/>
+  <ellipse cx="316" cy="352" rx="24" ry="8" transform="rotate(-22 316 352)"/><ellipse cx="184" cy="352" rx="24" ry="8" transform="rotate(22 184 352)"/>
+</g>
+<!-- ring of T helper cells -->
+<g fill="#16181d">
+  <circle cx="250" cy="66" r="8"/><circle cx="330" cy="92" r="8"/><circle cx="382" cy="160" r="8"/><circle cx="382" cy="240" r="8"/>
+  <circle cx="330" cy="308" r="8"/><circle cx="250" cy="334" r="8"/><circle cx="170" cy="308" r="8"/><circle cx="118" cy="240" r="8"/>
+  <circle cx="118" cy="160" r="8"/><circle cx="170" cy="92" r="8"/>
+</g>
+<!-- macrophages packing the interior -->
+<g fill="#e6e9ee" stroke="#16181d" stroke-width="1.3">
+  <path d="M198 128 c14 -14 40 -10 44 8 c4 18 -14 30 -32 26 c-18 -4 -24 -22 -12 -34 z"/>
+  <path d="M264 116 c16 -10 38 0 38 18 c0 18 -20 26 -36 20 c-16 -6 -18 -30 -2 -38 z"/>
+  <path d="M176 194 c16 -12 40 -4 42 14 c2 18 -18 28 -34 22 c-16 -6 -22 -26 -8 -36 z"/>
+  <path d="M254 186 c18 -8 38 4 36 22 c-2 18 -24 24 -38 16 c-14 -8 -14 -30 2 -38 z"/>
+  <path d="M320 176 c16 -10 36 0 36 18 c0 18 -20 26 -34 20 c-14 -6 -18 -28 -2 -38 z"/>
+  <path d="M204 260 c16 -12 38 -2 38 16 c0 18 -20 26 -36 20 c-16 -6 -18 -26 -2 -36 z"/>
+  <path d="M284 256 c16 -10 38 0 38 18 c0 18 -22 26 -36 18 c-14 -8 -18 -26 -2 -36 z"/>
+</g>
+<!-- bacteria -->
+<g fill="#16181d">
+  <rect x="230" y="196" width="18" height="6" rx="3" transform="rotate(20 230 196)"/>
+  <rect x="272" y="214" width="18" height="6" rx="3" transform="rotate(-30 272 214)"/>
+  <rect x="216" y="234" width="18" height="6" rx="3" transform="rotate(50 216 234)"/>
+  <rect x="298" y="192" width="18" height="6" rx="3" transform="rotate(10 298 192)"/>
+</g>
+<!-- key -->
+<g class="tick">
+ <ellipse cx="452" cy="64" rx="20" ry="7" fill="#fff" stroke="#16181d" stroke-width="1.5"/><text x="482" y="68">fibroblast</text>
+ <path d="M440 104 c14 -12 36 -4 36 14 c0 16 -20 24 -34 16 c-14 -8 -16 -22 -2 -30 z" fill="#e6e9ee" stroke="#16181d" stroke-width="1.3"/><text x="482" y="122">macrophage</text>
+ <circle cx="452" cy="166" r="8" fill="#16181d"/><text x="482" y="170">T helper cell</text>
+ <rect x="442" y="206" width="20" height="7" rx="3.5" fill="#16181d"/><text x="482" y="214" font-style="italic">M. tuberculosis</text>
+</g>
+</svg>

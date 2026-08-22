@@ -61,6 +61,15 @@ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;backgro
 border-radius:10px;font-weight:700;margin-left:4px;font-family:-apple-system,sans-serif}
 .fig{margin:14px 0;padding:12px;background:var(--fig-bg);border:1px solid var(--border);border-radius:6px;text-align:center}
 .fig img{max-width:100%;height:auto;border-radius:3px}
+.fig-svg{background:#fff}
+.fig-svg svg{max-width:100%;height:auto;display:block;margin:0 auto}
+.fig-svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#16181d}
+.fig-svg .lbl{font-size:12px}
+.fig-svg .lbl-b{font-size:12px;font-weight:600}
+.fig-svg .tick{font-size:10px;fill:#5b6472}
+.fig-svg .ax{stroke:#16181d;stroke-width:1.4;fill:none}
+.fig-svg .ld{stroke:#5b6472;stroke-width:.9;fill:none}
+.fig-svg .out{stroke:#16181d;stroke-width:1.5;fill:none}
 .fig figcaption{margin-top:8px;font-size:.8em;color:var(--muted);font-family:-apple-system,sans-serif}
 .fig-missing{margin:14px 0;padding:12px 14px;background:var(--red-soft);border:1px solid var(--red);
 border-left:4px solid var(--red);border-radius:6px;font-size:.9em}
@@ -111,7 +120,62 @@ p{margin:8px 0}
 </div>
 <div class="toc"><strong>Questions</strong><br><a href="#q1">Q1</a> <a href="#q2">Q2</a> <a href="#q3">Q3</a> <a href="#q4">Q4</a> <a href="#q5">Q5</a> <a href="#q6">Q6</a> <a href="#q7">Q7</a> <a href="#q8">Q8</a> <a href="#q9">Q9</a></div>
 <div class="card" id="q1"><h3>Question 1 <span class="marks">[7 marks]</span></h3><div class="qpart"><p><em>Salmonella enterica</em> is a species of pathogenic bacteria that causes gastrointestinal disease in humans and animals. The pathogen is shown to be remarkably adaptive, being able to invade a large range of host organisms. <em>Salmonella enterica</em> serotype typhimurium (<em>S. typhimurium</em>) is the most significant cause of food poisoning in western countries. Infection is possible from ingestion of contaminated food and water. <em>S. typhimurium</em> typically enters the body via the gut. The intestinal barrier thus plays an important role in preventing infections by <em>S. typhimurium</em>. Fig. 1.1 shows the composition of the intestinal barrier.</p>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: Fig. 1.1, a cross-section through the intestinal wall. From the bottom upwards: the intestinal wall tissue; a single layer of ciliated gut epithelial cells joined by tight junctions; an inner mucus layer directly on the epithelium containing antimicrobial proteins and lysozyme and free of bacteria; an outer mucus layer containing the commensal microbiota; and above it the lumen of the intestine, in which rod-shaped <em>S. typhimurium</em> cells are drawn.</div></div>
+<figure class="fig fig-svg"><svg viewBox="0 0 660 340" width="660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cross-section through the intestinal wall showing the two mucus layers">
+<rect width="660" height="340" fill="#fff"/>
+<!-- lumen -->
+<rect x="40" y="20" width="580" height="86" fill="#fff" stroke="none"/>
+<text class="lbl-b" x="52" y="40">lumen of the intestine</text>
+<g fill="#16181d">
+ <rect x="150" y="58" width="26" height="10" rx="5"/><rect x="240" y="46" width="26" height="10" rx="5"/>
+ <rect x="330" y="66" width="26" height="10" rx="5"/><rect x="430" y="50" width="26" height="10" rx="5"/>
+ <rect x="520" y="70" width="26" height="10" rx="5"/>
+</g>
+<text class="lbl" x="574" y="52" text-anchor="end" font-style="italic">S. typhimurium</text>
+<!-- outer mucus with commensals -->
+<rect x="40" y="106" width="580" height="52" fill="#eef2f6" stroke="#16181d" stroke-width="1.2"/>
+<g fill="none" stroke="#16181d" stroke-width="1.6">
+ <rect x="110" y="122" width="20" height="9" rx="4"/><rect x="200" y="132" width="20" height="9" rx="4"/>
+ <rect x="290" y="120" width="20" height="9" rx="4"/><rect x="380" y="134" width="20" height="9" rx="4"/>
+ <rect x="470" y="124" width="20" height="9" rx="4"/><rect x="540" y="136" width="20" height="9" rx="4"/>
+</g>
+<text class="lbl" x="52" y="150">outer mucus layer, contains the commensal microbiota</text>
+<!-- inner mucus, sterile -->
+<rect x="40" y="158" width="580" height="44" fill="#dfe6ee" stroke="#16181d" stroke-width="1.2"/>
+<text class="lbl" x="52" y="176">inner mucus layer: antimicrobial proteins and lysozyme,</text>
+<text class="lbl" x="52" y="192">no bacteria</text>
+<!-- epithelium -->
+<g>
+ <rect x="40" y="202" width="580" height="62" fill="#f7f8fa" stroke="#16181d" stroke-width="1.4"/>
+ <g stroke="#16181d" stroke-width="1.4">
+  <line x1="112" y1="202" x2="112" y2="264"/><line x1="184" y1="202" x2="184" y2="264"/>
+  <line x1="256" y1="202" x2="256" y2="264"/><line x1="328" y1="202" x2="328" y2="264"/>
+  <line x1="400" y1="202" x2="400" y2="264"/><line x1="472" y1="202" x2="472" y2="264"/>
+  <line x1="544" y1="202" x2="544" y2="264"/>
+ </g>
+ <!-- cilia -->
+ <g stroke="#16181d" stroke-width="1.2">
+  <line x1="60" y1="202" x2="58" y2="190"/><line x1="76" y1="202" x2="74" y2="188"/><line x1="92" y1="202" x2="90" y2="190"/>
+  <line x1="132" y1="202" x2="130" y2="188"/><line x1="148" y1="202" x2="146" y2="190"/><line x1="164" y1="202" x2="162" y2="188"/>
+  <line x1="204" y1="202" x2="202" y2="190"/><line x1="220" y1="202" x2="218" y2="188"/><line x1="236" y1="202" x2="234" y2="190"/>
+  <line x1="276" y1="202" x2="274" y2="188"/><line x1="292" y1="202" x2="290" y2="190"/><line x1="308" y1="202" x2="306" y2="188"/>
+  <line x1="348" y1="202" x2="346" y2="190"/><line x1="364" y1="202" x2="362" y2="188"/><line x1="380" y1="202" x2="378" y2="190"/>
+  <line x1="420" y1="202" x2="418" y2="188"/><line x1="436" y1="202" x2="434" y2="190"/><line x1="452" y1="202" x2="450" y2="188"/>
+  <line x1="492" y1="202" x2="490" y2="190"/><line x1="508" y1="202" x2="506" y2="188"/><line x1="524" y1="202" x2="522" y2="190"/>
+  <line x1="564" y1="202" x2="562" y2="188"/><line x1="580" y1="202" x2="578" y2="190"/><line x1="596" y1="202" x2="594" y2="188"/>
+ </g>
+ <!-- tight junctions -->
+ <g fill="#16181d">
+  <rect x="109" y="206" width="6" height="7"/><rect x="181" y="206" width="6" height="7"/><rect x="253" y="206" width="6" height="7"/>
+  <rect x="325" y="206" width="6" height="7"/><rect x="397" y="206" width="6" height="7"/><rect x="469" y="206" width="6" height="7"/>
+  <rect x="541" y="206" width="6" height="7"/>
+ </g>
+</g>
+<line class="ld" x1="614" y1="210" x2="640" y2="210"/><text class="lbl" x="644" y="206" text-anchor="end"></text>
+<text class="lbl" x="52" y="240">ciliated gut epithelial cells joined by tight junctions</text>
+<!-- wall tissue -->
+<rect x="40" y="264" width="580" height="52" fill="#e6e9ee" stroke="#16181d" stroke-width="1.4"/>
+<text class="lbl" x="52" y="296">intestinal wall tissue</text>
+</svg><figcaption>Fig. 1.1  Cross-section through the intestinal wall. Redrawn as a schematic.</figcaption></figure></div>
 <div class="qpart"><p><strong>(a)</strong> With reference to Fig. 1.1 and biological knowledge of the human immune system, describe the role played by the gut epithelial cells in preventing infections of <em>S. typhimurium</em>. <span class="marks">[3]</span></p></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
 <div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>(a)</strong> <em>With reference to Fig. 1.1, describe the role played by the gut epithelial cells in preventing infections of S. typhimurium.</em> <span class="marks">[3]</span></p>
@@ -138,7 +202,29 @@ p{margin:8px 0}
 <p><strong>2.</strong> OR <strong>these bacteria cells (gram negative bacteria) have a lower proportion of peptidoglycan in their cell walls.</strong></p>
 <p><strong>3.</strong> Book 4 reach-back check. If you could not say what peptidoglycan is made of, that is the gap: <strong>alternating N-acetylglucosamine (NAG) and N-acetylmuramic acid (NAM) cross-linked by short peptide bridges</strong>, and a <strong>gram-negative outer membrane sits outside it</strong>. The same wall is penicillin&#x27;s target in Cluster 3, so the two answers share a molecule and nothing else.</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
 <div class="qpart"><p><strong>(d)</strong> <em>Helicobacter pylori</em> is a spiral shaped bacterium that infects the gastrointestinal tract. Epithelial cells lining the stomach secrete a thick layer of mucus to protect against digestive enzymes and hydrochloric acid. <em>H. pylori</em> is able to colonize the harsh environment of the stomach by swimming through this layer of mucus. The bacterium lives beneath the mucus layer, adjacent to the surface, and infects gastric epithelial cells. With reference to Fig. 1.2, explain why <em>H. pylori</em> is able to colonize the gastric epithelial cells despite the &quot;harsh environment of the stomach&quot;. <span class="marks">[2]</span></p>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: Fig. 1.2, a diagram of the stomach lining, showing a thick mucus layer overlying the gastric epithelial cells, with spiral <em>H. pylori</em> cells labelled with their flagella shown burrowing down through the mucus and lying against the epithelial surface beneath it.</div>
+<figure class="fig fig-svg"><svg viewBox="0 0 600 300" width="600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="H. pylori burrowing through the gastric mucus layer">
+<rect width="600" height="300" fill="#fff"/>
+<text class="lbl-b" x="40" y="34">lumen of the stomach</text>
+<rect x="30" y="48" width="540" height="150" fill="#eef2f6" stroke="#16181d" stroke-width="1.3"/>
+<text class="lbl" x="42" y="70">thick mucus layer</text>
+<g fill="none" stroke="#16181d" stroke-width="2.2">
+  <path d="M120 84 q12 -12 24 0 q12 12 24 0"/><path d="M168 84 q10 8 18 16"/>
+  <path d="M232 122 q12 -12 24 0 q12 12 24 0"/><path d="M280 122 q10 8 18 16"/>
+  <path d="M348 158 q12 -12 24 0 q12 12 24 0"/><path d="M396 158 q10 8 18 16"/>
+  <path d="M452 182 q12 -12 24 0 q12 12 24 0"/><path d="M500 182 q10 8 18 16"/>
+</g>
+<line class="ld" x1="180" y1="96" x2="240" y2="62"/><text class="lbl" x="244" y="60">flagella</text>
+<line class="ld" x1="140" y1="76" x2="90" y2="54"/><text class="lbl" x="86" y="50" text-anchor="end" font-style="italic">H. pylori</text>
+<path d="M108 96 C 200 130, 320 170, 470 194" fill="none" stroke="#5b6472" stroke-width="1.4" stroke-dasharray="6 5"/>
+<text class="lbl" x="300" y="164" fill="#5b6472">burrows down through the mucus</text>
+<rect x="30" y="198" width="540" height="64" fill="#f7f8fa" stroke="#16181d" stroke-width="1.4"/>
+<g stroke="#16181d" stroke-width="1.4">
+ <line x1="120" y1="198" x2="120" y2="262"/><line x1="210" y1="198" x2="210" y2="262"/>
+ <line x1="300" y1="198" x2="300" y2="262"/><line x1="390" y1="198" x2="390" y2="262"/><line x1="480" y1="198" x2="480" y2="262"/>
+</g>
+<text class="lbl" x="42" y="234">gastric epithelial cells</text>
+<rect x="30" y="262" width="540" height="26" fill="#e6e9ee" stroke="#16181d" stroke-width="1.3"/>
+</svg><figcaption>Fig. 1.2  H. pylori burrowing through the gastric mucus layer. Redrawn as a schematic.</figcaption></figure>
 <p>---</p></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
 <div class="block answer"><span class="label">Answer  -  part (d)</span><div class="answer-content"><p><strong>(d)</strong> <em>With reference to Fig. 1.2, explain why H. pylori is able to colonize the gastric epithelial cells despite the harsh environment of the stomach.</em> <span class="marks">[2]</span> [INFERRED: no official key for this paper]</p>
@@ -148,7 +234,33 @@ p{margin:8px 0}
 <div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> ASRJC Prelim 2021 P3 Q3(a)(i), stem, figure and full accept list verbatim (a); ASRJC Prelim 2021 P3 Q3(b), stem and key verbatim (b); MJC Prelim 2013 P2 Q1(d), stem and key verbatim (c); CJC Prelim 2013 P2 Q3(c), stem and figure verbatim (d), key inferred because no official key exists for that paper. Fig. 3.1 of the ASRJC paper is renumbered Fig. 1.1 and Fig. 3.1 of the CJC paper is renumbered Fig. 1.2. Neither paper&#x27;s PDF is in the papers, so both figures carry the source paper&#x27;s own printed description. <strong>Archetype:</strong> first-line barrier identification off a figure, then two Suggest parts that transfer the barrier idea to unfamiliar bacteria. Mechanism explain-chain is 35.0% of Book 9 and Suggest is 23.8%; this question runs one of each. <strong>Trap:</strong> answering the topic instead of the stem by bringing in lymphocytes or antibodies on a first-line question, which the scheme rejects outright; giving mucus without the cilia that move it; naming lysozyme without saying what bond or what polymer it attacks. <strong>LOs:</strong> (a), the non-specific innate system, first line only. Reach-back to Book 4 for the peptidoglycan wall and the gram-negative outer membrane. <strong>Concepts fused:</strong> (1) epithelium as a physical barrier; (2) mucus as a trap; (3) the mucociliary escalator; (4) antimicrobial peptides; (5) lysozyme hydrolysing NAG to NAM bonds; (6) commensals and competitive exclusion; (7) capsule or slime layer as an accessibility barrier; (8) gram-negative wall composition; (9) acid as a chemical barrier; (10) a pathogen defeating one barrier while another holds.</p>
 <p>---</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q2"><h3>Question 2 <span class="marks">[10 marks]</span></h3><div class="qpart"></div>
 <div class="qpart"><p><strong>(a)</strong> The diagram shows the process of phagocytosis of a pathogen by a neutrophil. Which row shows the correct identification of the structures and function? <span class="marks">[1]</span></p>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: a diagram of phagocytosis of a pathogen by a neutrophil. P labels the surface molecules on the pathogen recognised by the neutrophil; Q labels the arm-like membrane extensions engulfing the pathogen; R labels the membrane-bound organelle containing hydrolytic enzymes that fuses with the engulfed vesicle; and S labels the vesicle containing the engulfed pathogen.</div>
+<figure class="fig fig-svg"><svg viewBox="0 0 620 340" width="620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Phagocytosis of a pathogen by a neutrophil with P Q R S labelled">
+<rect width="620" height="340" fill="#fff"/>
+<path d="M120 300 C 40 288, 40 150, 130 96 C 190 60, 236 58, 262 74
+         L 262 118 C 240 118, 218 132, 218 158 C 218 190, 246 206, 274 206
+         C 320 206, 348 176, 348 140 L 392 140 C 470 150, 520 200, 500 264
+         C 480 320, 220 322, 120 300 Z"
+      fill="#f4f6f9" stroke="#16181d" stroke-width="2.2"/>
+<text class="lbl-b" x="440" y="298">neutrophil</text>
+<!-- pathogen being engulfed -->
+<circle cx="286" cy="118" r="34" fill="#fff" stroke="#16181d" stroke-width="2.2"/>
+<g fill="#16181d"><circle cx="272" cy="94" r="4.5"/><circle cx="300" cy="92" r="4.5"/><circle cx="314" cy="112" r="4.5"/>
+ <circle cx="258" cy="116" r="4.5"/><circle cx="278" cy="146" r="4.5"/><circle cx="306" cy="142" r="4.5"/></g>
+<!-- lysosome -->
+<ellipse cx="430" cy="216" rx="30" ry="21" fill="#dfe6ee" stroke="#16181d" stroke-width="2"/>
+<g fill="#16181d"><circle cx="420" cy="212" r="2.6"/><circle cx="434" cy="220" r="2.6"/><circle cx="440" cy="208" r="2.6"/><circle cx="424" cy="224" r="2.6"/></g>
+<!-- vesicle already formed, lower left -->
+<circle cx="196" cy="238" r="34" fill="#fff" stroke="#16181d" stroke-width="2" stroke-dasharray="5 4"/>
+<circle cx="196" cy="238" r="21" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+<line class="ld" x1="300" y1="82" x2="366" y2="40"/><text class="lbl-b" x="372" y="38">P</text>
+<text class="tick" x="392" y="38">surface molecules on the pathogen</text>
+<line class="ld" x1="240" y1="106" x2="150" y2="70"/><text class="lbl-b" x="142" y="66" text-anchor="end">Q</text>
+<text class="tick" x="128" y="66" text-anchor="end">membrane extensions</text>
+<line class="ld" x1="454" y1="204" x2="524" y2="176"/><text class="lbl-b" x="530" y="174">R</text>
+<text class="tick" x="546" y="174">lysosome</text>
+<line class="ld" x1="196" y1="276" x2="196" y2="312"/><text class="lbl-b" x="196" y="328" text-anchor="middle">S</text>
+<text class="tick" x="214" y="328">vesicle containing the engulfed pathogen</text>
+</svg><figcaption>Phagocytosis of a pathogen by a neutrophil, with P, Q, R and S labelled. Redrawn as a schematic.</figcaption></figure>
 <div class="mcq"><div class="opt"><span class="optl">A</span><span class="optb">P antibiotic, Q fimbriae, R lysozyme, S lysosome; innate immunity.</span></div><div class="opt"><span class="optl">B</span><span class="optb">P antibiotic, Q pseudopodia, R Golgi vesicles, S phagosome; cell-mediated immunity.</span></div><div class="opt"><span class="optl">C</span><span class="optb">P antigen, Q fimbriae, R Golgi vesicles, S lysozyme; cell-mediated immunity.</span></div><div class="opt"><span class="optl">D</span><span class="optb">P antigen, Q pseudopodia, R lysosome, S phagosome; innate immunity.</span></div></div></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
 <div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>(a)</strong> <em>Which row shows the correct identification of the structures and function?</em> <span class="marks">[1]</span> [INFERRED: the official key gives the letter only; the audit below is worked out here]</p>
@@ -166,7 +278,51 @@ p{margin:8px 0}
 <p><strong>3.</strong> <strong>The phagocytic vesicle then fuses with a lysosome, which releases hydrolytic enzymes into the phagolysosome to digest / break down the bacteria cells.</strong></p>
 <p><strong>4.</strong> An examiner comment attached to the tuberculosis questions in this file names vague versions of this sequence as <strong>lacking rigour</strong>, giving <em>&quot;prevent fusion of lysosomes&quot;</em> and <em>&quot;hide in host cells&quot;</em> as the rejected forms. <strong>Name the compartment at every step.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
 <div class="qpart"><p><strong>(c)</strong> Fig. 2.1 shows a process occurring between a bacterium (<em>Escherichia coli</em>) and a phagocyte. Identify organelle X and explain how its structure facilitates the process in Fig. 2.1. <span class="marks">[3]</span></p>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: Fig. 2.1, a four-stage sequence read left to right. In stage 1 a rod-shaped bacterium is coated with Y-shaped antibody molecules, labelled &quot;Structure Y&quot;, and lies above the surface of a macrophage whose membrane carries projections labelled &quot;Fc receptors&quot;; a small circular organelle labelled &quot;Organelle X&quot; sits inside the macrophage cytoplasm. In stage 2 the membrane has engulfed the antibody-coated bacterium into a vesicle. In stage 3 the vesicle containing the bacterium is fully inside the cell with two Organelle X approaching it. In stage 4 the organelles have fused with the vesicle and the bacterium inside is shown broken down into fragments.</div></div>
+<figure class="fig fig-svg"><svg viewBox="0 0 720 260" width="720" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four-stage sequence of opsonisation and phagocytosis">
+<rect width="720" height="260" fill="#fff"/>
+<defs>
+ <g id="ab"><path d="M0 0 L0 -8 M0 -8 L-6 -16 M0 -8 L6 -16" stroke="#16181d" stroke-width="1.8" fill="none"/></g>
+ <marker id="a9" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#16181d"/></marker>
+</defs>
+<g class="lbl-b"><text x="86" y="26" text-anchor="middle">stage 1</text><text x="256" y="26" text-anchor="middle">stage 2</text>
+ <text x="440" y="26" text-anchor="middle">stage 3</text><text x="620" y="26" text-anchor="middle">stage 4</text></g>
+<!-- stage 1 -->
+<g transform="translate(86,0)">
+ <rect x="-30" y="52" width="60" height="20" rx="10" fill="#fff" stroke="#16181d" stroke-width="2"/>
+ <g transform="translate(-20,52)"><use href="#ab"/></g><g transform="translate(0,52)"><use href="#ab"/></g><g transform="translate(20,52)"><use href="#ab"/></g>
+ <path d="M-64 128 C -40 108, 40 108, 64 128 L64 190 L-64 190 Z" fill="#f4f6f9" stroke="#16181d" stroke-width="2"/>
+ <g stroke="#16181d" stroke-width="1.8"><path d="M-30 116 l0 -10 l-6 -8 M-30 106 l6 -8"/><path d="M0 114 l0 -10 l-6 -8 M0 104 l6 -8"/><path d="M30 116 l0 -10 l-6 -8 M30 106 l6 -8"/></g>
+ <circle cx="34" cy="164" r="10" fill="#dfe6ee" stroke="#16181d" stroke-width="1.6"/>
+</g>
+<text class="tick" x="86" y="212" text-anchor="middle">Structure Y coats the</text><text class="tick" x="86" y="226" text-anchor="middle">bacterium; Fc receptors</text><text class="tick" x="86" y="240" text-anchor="middle">on the macrophage</text>
+<!-- stage 2 -->
+<g transform="translate(256,0)">
+ <path d="M-64 190 L-64 120 C -54 92, -34 74, -12 70 L-12 96 C -22 100, -28 110, -28 122
+          C -28 138, -14 148, 0 148 C 14 148, 28 138, 28 122 C 28 110, 22 100, 12 96 L12 70
+          C 34 74, 54 92, 64 120 L64 190 Z" fill="#f4f6f9" stroke="#16181d" stroke-width="2"/>
+ <rect x="-24" y="98" width="48" height="18" rx="9" fill="#fff" stroke="#16181d" stroke-width="2"/>
+ <circle cx="40" cy="168" r="10" fill="#dfe6ee" stroke="#16181d" stroke-width="1.6"/>
+</g>
+<text class="tick" x="256" y="212" text-anchor="middle">membrane engulfs the</text><text class="tick" x="256" y="226" text-anchor="middle">antibody-coated bacterium</text>
+<!-- stage 3 -->
+<g transform="translate(440,0)">
+ <path d="M-64 190 L-64 118 C -40 96, 40 96, 64 118 L64 190 Z" fill="#f4f6f9" stroke="#16181d" stroke-width="2"/>
+ <circle cx="-10" cy="146" r="26" fill="#fff" stroke="#16181d" stroke-width="2" stroke-dasharray="5 4"/>
+ <rect x="-30" y="138" width="40" height="16" rx="8" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+ <circle cx="40" cy="128" r="10" fill="#dfe6ee" stroke="#16181d" stroke-width="1.6"/>
+ <circle cx="46" cy="164" r="10" fill="#dfe6ee" stroke="#16181d" stroke-width="1.6"/>
+ <path d="M28 132 L6 140 M34 160 L12 152" stroke="#16181d" stroke-width="1.4" marker-end="url(#a9)"/>
+</g>
+<text class="tick" x="440" y="212" text-anchor="middle">two Organelle X</text><text class="tick" x="440" y="226" text-anchor="middle">approach the vesicle</text>
+<!-- stage 4 -->
+<g transform="translate(620,0)">
+ <path d="M-64 190 L-64 118 C -40 96, 40 96, 64 118 L64 190 Z" fill="#f4f6f9" stroke="#16181d" stroke-width="2"/>
+ <circle cx="0" cy="148" r="32" fill="#eef2f6" stroke="#16181d" stroke-width="2"/>
+ <g fill="#16181d"><rect x="-16" y="140" width="10" height="5" rx="2"/><rect x="2" y="134" width="9" height="5" rx="2"/>
+  <rect x="-8" y="156" width="9" height="5" rx="2"/><rect x="10" y="152" width="8" height="5" rx="2"/><rect x="-20" y="126" width="8" height="5" rx="2"/></g>
+</g>
+<text class="tick" x="620" y="212" text-anchor="middle">organelles have fused; the</text><text class="tick" x="620" y="226" text-anchor="middle">bacterium is broken down</text>
+</svg><figcaption>Fig. 2.1  Four-stage sequence: antibody-coated bacterium, engulfment, Organelle X approaching, fusion and breakdown. Redrawn as a schematic.</figcaption></figure></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
 <div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><p><strong>(c)</strong> <em>Identify organelle X and explain how its structure facilitates the process in Fig. 2.1.</em> <span class="marks">[3]</span></p>
 <p><strong>1.</strong> Organelle X is the <strong>lysosome</strong>.</p>
@@ -188,7 +344,58 @@ p{margin:8px 0}
 <div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> VJC Prelim 2025 P1 Q28, stem, figure description and options verbatim (a), option-by-option audit inferred because the official key gives only the letter; the identical stem is also HCI Prelim 2017 P1 Q28. EJC Prelim 2023 P2 Q9(b), stem and key verbatim (b), with the stem of Q9(a) folded in so the part names the alveolar macrophage for you. SAJC Prelim 2025 P2 Q5(a), stem, figure and key verbatim (c). VJC Prelim 2025 P2 Q4(c)(i) and Q4(c)(ii), stems and keys verbatim (d) and (e), with the lipid raft definition from the Q4(b) preamble folded into (d) so it stands alone. <strong>Fig. 2.2 is the real image from VJC Prelim 2025 P2.</strong> <strong>Archetype:</strong> identification from a diagram, then the same sequence written out in prose, then structure paired to function. The papers&#x27;s largest archetype is the mechanism explain-chain at 35.0%, and this is the Book&#x27;s most-repeated chain. <strong>Trap:</strong> calling the compartment a vacuole and stopping there; naming lysozyme where the lysosome is wanted; giving structure without the function it produces, which the examiner comment in this file rejects for antibodies and applies equally here; importing antibody into a second-line answer. <strong>LOs:</strong> (a), the non-specific innate system, second line. Reach-back to Book 1 for lysosome structure and membrane fluidity. <strong>Concepts fused:</strong> (1) antigen against antibiotic; (2) pseudopodium against fimbria; (3) lysosome against Golgi vesicle; (4) phagosome against phagolysosome; (5) innate against cell-mediated; (6) the four-stage phagocytosis sequence; (7) lysosomal membrane fusion; (8) hydrolytic enzyme digestion; (9) opsonisation through Fc receptors; (10) membrane fluidity as the enabler of shape change; (11) saturated against unsaturated tail packing.</p>
 <p>---</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q3"><h3>Question 3 <span class="marks">[9 marks]</span></h3><div class="qpart"></div>
 <div class="qpart"><p><strong>(a)</strong> The figure below illustrates an infection by influenza virus. Which one of the following statements is correct? <span class="marks">[1]</span></p>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: a diagram of the respiratory tract during influenza infection. Inhaled virus particles land on the mucus layer covering the ciliated epithelial cells of the upper respiratory tract; some are trapped and swept out, while others infect the epithelial cells. Dendritic cells beneath the epithelium take up viral antigen and migrate to a lymph node, and macrophages in the tissue phagocytose infected cells and present antigen; MHC class I and class II molecules are labelled on the antigen-presenting cells.</div>
+<figure class="fig fig-svg"><svg viewBox="0 0 700 380" width="700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The respiratory tract during influenza infection">
+<rect width="700" height="380" fill="#fff"/>
+<defs><marker id="b1" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#16181d"/></marker></defs>
+<text class="lbl-b" x="30" y="30">lumen of the upper respiratory tract</text>
+<g fill="#16181d"><circle cx="120" cy="52" r="6"/><circle cx="230" cy="44" r="6"/><circle cx="352" cy="58" r="6"/><circle cx="470" cy="46" r="6"/><circle cx="588" cy="56" r="6"/></g>
+<text class="lbl" x="646" y="50" text-anchor="end">inhaled virus particles</text>
+<!-- mucus -->
+<rect x="24" y="76" width="652" height="42" fill="#eef2f6" stroke="#16181d" stroke-width="1.3"/>
+<text class="lbl" x="36" y="102">mucus layer</text>
+<path d="M540 96 C 600 90, 646 96, 668 90" fill="none" stroke="#5b6472" stroke-width="1.4" marker-end="url(#b1)"/>
+<text class="tick" x="560" y="130" fill="#5b6472">trapped and swept out</text>
+<!-- epithelium -->
+<rect x="24" y="118" width="652" height="72" fill="#f7f8fa" stroke="#16181d" stroke-width="1.4"/>
+<g stroke="#16181d" stroke-width="1.3">
+ <line x1="112" y1="118" x2="112" y2="190"/><line x1="200" y1="118" x2="200" y2="190"/><line x1="288" y1="118" x2="288" y2="190"/>
+ <line x1="376" y1="118" x2="376" y2="190"/><line x1="464" y1="118" x2="464" y2="190"/><line x1="552" y1="118" x2="552" y2="190"/>
+</g>
+<g stroke="#16181d" stroke-width="1.1">
+ <line x1="44" y1="118" x2="42" y2="106"/><line x1="62" y1="118" x2="60" y2="104"/><line x1="80" y1="118" x2="78" y2="106"/>
+ <line x1="132" y1="118" x2="130" y2="104"/><line x1="150" y1="118" x2="148" y2="106"/><line x1="168" y1="118" x2="166" y2="104"/>
+ <line x1="220" y1="118" x2="218" y2="106"/><line x1="238" y1="118" x2="236" y2="104"/><line x1="256" y1="118" x2="254" y2="106"/>
+ <line x1="308" y1="118" x2="306" y2="104"/><line x1="326" y1="118" x2="324" y2="106"/><line x1="344" y1="118" x2="342" y2="104"/>
+ <line x1="396" y1="118" x2="394" y2="106"/><line x1="414" y1="118" x2="412" y2="104"/><line x1="432" y1="118" x2="430" y2="106"/>
+</g>
+<text class="lbl" x="36" y="176">ciliated epithelial cells</text>
+<!-- infected cell -->
+<rect x="288" y="118" width="88" height="72" fill="#dfe6ee" stroke="#16181d" stroke-width="1.6"/>
+<g fill="#16181d"><circle cx="312" cy="146" r="5"/><circle cx="340" cy="158" r="5"/><circle cx="356" cy="138" r="5"/></g>
+<line class="ld" x1="332" y1="190" x2="332" y2="214"/><text class="tick" x="332" y="228" text-anchor="middle">infected epithelial cell</text>
+<!-- tissue below -->
+<rect x="24" y="190" width="652" height="164" fill="#f4f6f9" stroke="#16181d" stroke-width="1.4"/>
+<!-- dendritic cell -->
+<g transform="translate(150,268)">
+ <path d="M0 -26 L14 -12 L30 -18 L20 0 L34 12 L14 14 L6 30 L-6 14 L-24 18 L-16 2 L-30 -10 L-12 -14 Z"
+       fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+ <circle r="7" fill="#16181d"/>
+</g>
+<text class="tick" x="150" y="316" text-anchor="middle">dendritic cell</text>
+<path d="M186 262 C 250 250, 300 262, 348 268" fill="none" stroke="#16181d" stroke-width="1.6" marker-end="url(#b1)"/>
+<text class="tick" x="266" y="248" text-anchor="middle">migrates to a lymph node</text>
+<!-- macrophage -->
+<g transform="translate(470,262)">
+ <path d="M-42 6 C -44 -22, -18 -36, 6 -30 C 30 -24, 46 -6, 40 16 C 34 38, 4 44, -16 34 C -32 26, -40 20, -42 6 Z"
+       fill="#fff" stroke="#16181d" stroke-width="2"/>
+ <ellipse cx="-4" cy="0" rx="12" ry="9" fill="#16181d"/>
+</g>
+<text class="tick" x="470" y="316" text-anchor="middle">macrophage phagocytoses infected cells</text>
+<g class="tick"><rect x="596" y="216" width="10" height="10" fill="#16181d"/><text x="612" y="225">MHC class I</text>
+ <rect x="596" y="236" width="10" height="10" fill="#fff" stroke="#16181d" stroke-width="1.6"/><text x="612" y="245">MHC class II</text></g>
+<g fill="#16181d"><rect x="146" y="238" width="8" height="8"/><rect x="466" y="230" width="8" height="8"/></g>
+<g fill="#fff" stroke="#16181d" stroke-width="1.4"><rect x="158" y="238" width="8" height="8"/><rect x="478" y="230" width="8" height="8"/></g>
+</svg><figcaption>The respiratory tract during influenza infection. Redrawn as a schematic.</figcaption></figure>
 <div class="mcq"><div class="opt"><span class="optl">A</span><span class="optb">The presence of mucus facilitates the movement of influenza virus into the lung.</span></div><div class="opt"><span class="optl">B</span><span class="optb">Macrophages are examples of cells that express both MHC Class I and Class II.</span></div><div class="opt"><span class="optl">C</span><span class="optb">Dendritic cells (DCs) are part of the adaptive immunity and are responsible for secreting immunoglobulin.</span></div><div class="opt"><span class="optl">D</span><span class="optb">The epithelial cells lining the upper respiratory tract (URT) are not part of the immune system.</span></div></div></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
 <div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>(a)</strong> <em>Which one of the following statements is correct?</em> <span class="marks">[1]</span></p>
@@ -214,7 +421,46 @@ p{margin:8px 0}
 <p><strong>2.</strong> <strong>Anti-viral proteins inhibit reproduction of DENV in the cell, preventing DENV from multiplying and spreading to other cells.</strong></p>
 <p><strong>3.</strong> The discipline: <strong>write interferon, not cytokine, whenever the answer is antiviral resistance.</strong> Interferon is the named antiviral example in the outcome; cytokine is the class it belongs to and does not earn the specific mark.</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
 <div class="qpart"><p><strong>(d)</strong> Influenza virus infected cells secrete interferon. Fig. 3.1 shows the functions of interferon. Using your knowledge, explain why the secretion of interferon is <strong>not</strong> considered an adaptive immune response. <span class="marks">[2]</span></p>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: Fig. 3.1, in which an infected cell secretes interferon, which diffuses to neighbouring uninfected cells and binds their surface receptors, inducing an antiviral state; the induced genes destroy viral RNA, block viral protein synthesis and can trigger apoptosis of infected cells; interferon also activates natural killer cells and increases MHC class I expression.</div>
+<figure class="fig fig-svg"><svg viewBox="0 0 700 330" width="700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Interferon secreted by an infected cell acting on neighbouring cells">
+<rect width="700" height="330" fill="#fff"/>
+<defs><marker id="b2" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#16181d"/></marker></defs>
+<!-- infected cell -->
+<g transform="translate(120,160)">
+ <circle r="72" fill="#dfe6ee" stroke="#16181d" stroke-width="2.2"/>
+ <ellipse cx="0" cy="6" rx="26" ry="20" fill="#fff" stroke="#16181d" stroke-width="1.6"/>
+ <g fill="#16181d"><circle cx="-36" cy="-32" r="5"/><circle cx="30" cy="-38" r="5"/><circle cx="42" cy="26" r="5"/><circle cx="-40" cy="34" r="5"/></g>
+ <text class="tick" x="0" y="10" text-anchor="middle">nucleus</text>
+</g>
+<text class="lbl-b" x="120" y="256" text-anchor="middle">infected cell</text>
+<!-- interferon molecules -->
+<g fill="#16181d"><circle cx="216" cy="120" r="5"/><circle cx="248" cy="146" r="5"/><circle cx="222" cy="180" r="5"/><circle cx="256" cy="204" r="5"/></g>
+<path d="M198 130 L282 122 M198 176 L282 194" fill="none" stroke="#16181d" stroke-width="1.5" marker-end="url(#b2)"/>
+<text class="lbl" x="240" y="96" text-anchor="middle">interferon</text>
+<!-- neighbouring cells -->
+<g transform="translate(392,110)">
+ <circle r="58" fill="#fff" stroke="#16181d" stroke-width="2.2"/>
+ <g stroke="#16181d" stroke-width="2" fill="none"><path d="M-58 -6 l-14 0"/><path d="M-52 -26 l-13 -6"/></g>
+ <ellipse cy="4" rx="20" ry="15" fill="#f1f3f6" stroke="#16181d" stroke-width="1.4"/>
+</g>
+<g transform="translate(392,232)">
+ <circle r="58" fill="#fff" stroke="#16181d" stroke-width="2.2"/>
+ <g stroke="#16181d" stroke-width="2" fill="none"><path d="M-58 6 l-14 0"/><path d="M-52 26 l-13 6"/></g>
+ <ellipse cy="4" rx="20" ry="15" fill="#f1f3f6" stroke="#16181d" stroke-width="1.4"/>
+</g>
+<text class="lbl-b" x="392" y="308" text-anchor="middle">neighbouring uninfected cells enter an antiviral state</text>
+<!-- consequences -->
+<g class="lbl">
+ <text x="470" y="72">destroy viral RNA</text>
+ <text x="470" y="98">block viral protein synthesis</text>
+ <text x="470" y="124">trigger apoptosis of infected cells</text>
+ <text x="470" y="168">activate natural killer cells</text>
+ <text x="470" y="194">increase MHC class I expression</text>
+</g>
+<path d="M452 96 L462 78 M452 100 L462 100 M452 104 L462 120" fill="none" stroke="#16181d" stroke-width="1.4" marker-end="url(#b2)"/>
+<path d="M452 232 L462 200 M452 236 L462 174" fill="none" stroke="#16181d" stroke-width="1.4" marker-end="url(#b2)"/>
+<text class="tick" x="470" y="46" fill="#5b6472">induced genes:</text>
+<text class="tick" x="470" y="146" fill="#5b6472">interferon also:</text>
+</svg><figcaption>Fig. 3.1  Interferon secreted by an infected cell inducing an antiviral state in neighbours. Redrawn as a schematic.</figcaption></figure>
 <p>---</p></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
 <div class="block answer"><span class="label">Answer  -  part (d)</span><div class="answer-content"><p><strong>(d)</strong> <em>Explain why the secretion of interferon is not considered an adaptive immune response.</em> <span class="marks">[2]</span></p>
@@ -236,7 +482,50 @@ p{margin:8px 0}
 <p><strong>6.</strong> <strong>The recruited phagocytes assist in the elimination of the microbes at the site of infection.</strong></p>
 <p><strong>7.</strong> The one marking point this part shares with Question 2 is <strong>phagocytosis happens</strong>. Everything else here is recognition, signalling and recruitment, and everything in Question 2 is the compartments inside the cell. If you found yourself giving Question 2&#x27;s phagosome answer here, you answered the wrong half of the outcome.</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
 <div class="qpart"><p><strong>(b)</strong> The body&#x27;s immune system normally functions to protect itself by attacking pathogens like bacteria and viruses. In autoimmune diseases, the immune system mistakenly attacks cells in the body instead. Rheumatoid arthritis is an autoimmune disease in which the immune system attacks the synovial membrane, which is a layer of connective tissue that lines the cavities of joints, causing inflammation. Fig. 4.1 shows both a healthy joint and an arthritic joint. With reference to Fig. 4.1, outline the inflammatory response in the arthritic joint and its resultant effects. <span class="marks">[3]</span></p>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: Fig. 4.1 has two labelled drawings side by side. The healthy joint shows two bone ends capped with cartilage, enclosed by a joint capsule (fibrous envelope that covers joint), with a joint space containing fluid produced by the synovial membrane, and a thin synovial membrane lining the capsule. The arthritic joint shows the same joint with a markedly thickened, bulging synovial membrane, eroded bone at the joint surfaces, an osteoclast labelled &quot;(bone cell that breaks down bone tissue)&quot; attacking the bone, and a phagocyte labelled &quot;(phagocyte)&quot; within the inflamed synovial tissue.</div></div>
+<figure class="fig fig-svg"><svg viewBox="0 0 700 340" width="700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A healthy joint and an arthritic joint side by side">
+<rect width="700" height="340" fill="#fff"/>
+<text class="lbl-b" x="176" y="28" text-anchor="middle">healthy joint</text>
+<text class="lbl-b" x="520" y="28" text-anchor="middle">arthritic joint</text>
+<!-- HEALTHY -->
+<g transform="translate(176,0)">
+ <path d="M-44 46 L-44 116 C -44 132, -30 140, 0 140 C 30 140, 44 132, 44 116 L44 46 Z" fill="#f4f6f9" stroke="#16181d" stroke-width="2"/>
+ <path d="M-44 116 C -44 132, -30 140, 0 140 C 30 140, 44 132, 44 116 Z" fill="#dfe6ee" stroke="#16181d" stroke-width="1.8"/>
+ <path d="M-44 292 L-44 216 C -44 200, -30 192, 0 192 C 30 192, 44 200, 44 216 L44 292 Z" fill="#f4f6f9" stroke="#16181d" stroke-width="2"/>
+ <path d="M-44 216 C -44 200, -30 192, 0 192 C 30 192, 44 200, 44 216 Z" fill="#dfe6ee" stroke="#16181d" stroke-width="1.8"/>
+ <path d="M-70 60 C -92 120, -92 216, -70 276 M70 60 C 92 120, 92 216, 70 276" fill="none" stroke="#16181d" stroke-width="2.4"/>
+ <path d="M-64 66 C -84 122, -84 214, -64 270 M64 66 C 84 122, 84 214, 64 270" fill="none" stroke="#16181d" stroke-width="1.4"/>
+</g>
+<g class="tick">
+ <text x="20" y="120">joint capsule</text><line class="ld" x1="80" y1="116" x2="104" y2="128"/>
+ <text x="20" y="150">synovial membrane</text><line class="ld" x1="94" y1="146" x2="112" y2="152"/>
+ <text x="20" y="180">joint space, contains fluid</text><line class="ld" x1="116" y1="176" x2="150" y2="168"/>
+ <text x="252" y="120">cartilage</text><line class="ld" x1="250" y1="116" x2="222" y2="130"/>
+ <text x="252" y="278">bone</text><line class="ld" x1="250" y1="274" x2="222" y2="264"/>
+</g>
+<!-- ARTHRITIC -->
+<g transform="translate(520,0)">
+ <path d="M-44 46 L-44 112 C -44 124, -26 132, 0 130 C 22 128, 44 122, 44 112 L44 46 Z" fill="#f4f6f9" stroke="#16181d" stroke-width="2"/>
+ <path d="M-44 112 C -36 126, -16 118, 0 130 C 18 120, 30 128, 44 112" fill="none" stroke="#16181d" stroke-width="1.8" stroke-dasharray="4 3"/>
+ <path d="M-44 292 L-44 220 C -44 208, -24 200, 0 202 C 24 204, 44 210, 44 220 L44 292 Z" fill="#f4f6f9" stroke="#16181d" stroke-width="2"/>
+ <path d="M-44 220 C -34 206, -14 216, 0 202 C 16 214, 32 206, 44 220" fill="none" stroke="#16181d" stroke-width="1.8" stroke-dasharray="4 3"/>
+ <!-- thickened bulging synovium -->
+ <path d="M-70 60 C -118 122, -118 214, -70 276 M70 60 C 118 122, 118 214, 70 276" fill="none" stroke="#16181d" stroke-width="2.4"/>
+ <path d="M-64 66 C -96 118, -96 218, -64 270 M64 66 C 96 118, 96 218, 64 270" fill="none" stroke="#16181d" stroke-width="1.4"/>
+ <path d="M-92 100 C -70 130, -70 206, -92 236 M92 100 C 70 130, 70 206, 92 236"
+       fill="#e6e9ee" stroke="#16181d" stroke-width="1.6"/>
+ <!-- osteoclast eroding bone -->
+ <path d="M-22 152 C -34 146, -36 166, -24 172 C -12 178, -2 170, -6 158 Z" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+ <!-- phagocyte in inflamed tissue -->
+ <path d="M74 176 C 62 168, 62 194, 76 196 C 90 198, 96 182, 86 174 Z" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+</g>
+<g class="tick">
+ <text x="352" y="216">osteoclast</text><text x="352" y="230">(breaks down bone tissue)</text>
+ <line class="ld" x1="446" y1="212" x2="486" y2="176"/>
+ <text x="612" y="252">phagocyte</text><line class="ld" x1="640" y1="240" x2="606" y2="196"/>
+ <text x="612" y="120">thickened synovial</text><text x="612" y="134">membrane</text><line class="ld" x1="640" y1="140" x2="616" y2="164"/>
+ <text x="352" y="292">eroded bone at the joint surfaces</text><line class="ld" x1="470" y1="288" x2="494" y2="240"/>
+</g>
+</svg><figcaption>Fig. 4.1  A healthy joint and an arthritic joint. Redrawn as a schematic.</figcaption></figure></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
 <div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>(b)</strong> <em>With reference to Fig. 4.1, outline the inflammatory response in the arthritic joint and its resultant effects.</em> <span class="marks">[3]</span></p>
 <p>Any 3.</p>
@@ -345,7 +634,46 @@ p{margin:8px 0}
 <p><strong>4.</strong> <strong>It responds the same way for every antigen encounter / not specific to any pathogen.</strong></p>
 <p><strong>5.</strong> Your Book&#x27;s five features, for cross-checking: <strong>always present from birth and available before the onset of infection</strong>; <strong>immediately available</strong> against a wide range of pathogens; <strong>non-specific</strong>, and it <strong>does not lead to lasting immunity</strong>, so it is the <strong>same magnitude on every re-exposure</strong>; <strong>it instructs the adaptive system</strong>; and it is <strong>phylogenetically older and common to all animals</strong> while adaptive immunity is <strong>found only in vertebrates</strong>.</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
 <div class="qpart"><p><strong>(b)</strong> With reference to Fig. 8.1, describe how heat stress results in decreased inflammation in buffaloes. <span class="marks">[5]</span></p>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: Fig. 8.1 shows the role of HSP60 in PKC signalling in a buffalo T lymphocyte. Heat stress raises HSP60, which binds the surface receptor TLR2; activated TLR2 activates STAT3, which enters the nucleus and switches on the SOCS3 gene; the SOCS3 protein then binds the CXCR4 receptor and blocks the PKC signalling pathway that would otherwise drive inflammation.</div>
+<figure class="fig fig-svg"><svg viewBox="0 0 660 340" width="660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Role of HSP60 in PKC signalling in a buffalo T lymphocyte">
+<rect width="660" height="340" fill="#fff"/>
+<defs><marker id="b4" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#16181d"/></marker>
+ <marker id="bar" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><line x1="6" y1="0" x2="6" y2="10" stroke="#16181d" stroke-width="2.4"/></marker></defs>
+<rect x="24" y="60" width="612" height="252" rx="22" fill="#f7f8fa" stroke="#16181d" stroke-width="2"/>
+<text class="lbl-b" x="44" y="86">T lymphocyte</text>
+<!-- membrane receptors -->
+<rect x="120" y="48" width="26" height="34" rx="4" fill="#fff" stroke="#16181d" stroke-width="2"/>
+<text class="tick" x="133" y="40" text-anchor="middle">TLR2</text>
+<rect x="470" y="48" width="26" height="34" rx="4" fill="#fff" stroke="#16181d" stroke-width="2"/>
+<text class="tick" x="483" y="40" text-anchor="middle">CXCR4</text>
+<!-- HSP60 -->
+<circle cx="133" cy="14" r="12" fill="#16181d"/>
+<text class="lbl" x="152" y="18">HSP60</text>
+<text class="tick" x="24" y="18">heat stress raises HSP60</text>
+<path d="M60 14 L116 14" fill="none" stroke="#16181d" stroke-width="1.5" marker-end="url(#b4)"/>
+<!-- STAT3 -->
+<rect x="104" y="128" width="72" height="30" rx="5" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+<text class="lbl" x="140" y="148" text-anchor="middle">STAT3</text>
+<path d="M133 82 L133 124" fill="none" stroke="#16181d" stroke-width="1.8" marker-end="url(#b4)"/>
+<!-- nucleus -->
+<ellipse cx="286" cy="196" rx="96" ry="66" fill="#fff" stroke="#16181d" stroke-width="2"/>
+<text class="tick" x="286" y="150" text-anchor="middle">nucleus</text>
+<rect x="238" y="182" width="96" height="30" rx="5" fill="#f1f3f6" stroke="#16181d" stroke-width="1.8"/>
+<text class="lbl" x="286" y="202" text-anchor="middle">SOCS3 gene</text>
+<path d="M176 148 L232 180" fill="none" stroke="#16181d" stroke-width="1.8" marker-end="url(#b4)"/>
+<!-- SOCS3 protein -->
+<rect x="404" y="182" width="94" height="30" rx="5" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+<text class="lbl" x="451" y="202" text-anchor="middle">SOCS3 protein</text>
+<path d="M338 197 L398 197" fill="none" stroke="#16181d" stroke-width="1.8" marker-end="url(#b4)"/>
+<path d="M470 182 L483 90" fill="none" stroke="#16181d" stroke-width="1.8" marker-end="url(#bar)"/>
+<!-- PKC pathway -->
+<rect x="520" y="182" width="94" height="30" rx="5" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+<text class="lbl" x="567" y="202" text-anchor="middle">PKC pathway</text>
+<path d="M496 82 L556 178" fill="none" stroke="#16181d" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#b4)"/>
+<rect x="520" y="256" width="94" height="30" rx="5" fill="#f1f3f6" stroke="#16181d" stroke-width="1.8"/>
+<text class="lbl" x="567" y="276" text-anchor="middle">inflammation</text>
+<path d="M567 212 L567 252" fill="none" stroke="#16181d" stroke-width="1.8" marker-end="url(#b4)"/>
+<text class="tick" x="636" y="112" text-anchor="end">SOCS3 blocks the receptor</text>
+</svg><figcaption>Fig. 8.1  The role of HSP60 in PKC signalling in a buffalo T lymphocyte. Redrawn as a schematic.</figcaption></figure>
 <p>---</p></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
 <div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>(b)</strong> <em>With reference to Fig. 8.1, describe how heat stress results in decreased inflammation in buffaloes.</em> <span class="marks">[5]</span></p>

@@ -7,12 +7,20 @@
   "1|a": "q1a_chloroplast_tem.png",
   "6|a": "q6_specimen_rubp_pga.png",
   "7|d": "q7d_sox4_co2_fixation.png",
-  "8|a": "q8a_chlamydomonas_temperature.png"
+  "8|a": "q8a_chlamydomonas_temperature.png",
+  "1|b": "q1_chloroplast_xyz.svg",
+  "2|d": "q2_absorption_action_spectrum.svg",
+  "3|": "q3_light_dependent_stage.svg",
+  "5|b": "q5_atp_synthase.svg"
  },
  "caption": {
   "q1a_chloroplast_tem.png": "School (HCI) Prelim 2024 P2 Q8, Fig. 8.1. Transmission electron micrograph of part of a chloroplast, with A on a thylakoid membrane inside a granum and B on the stroma",
   "q6_specimen_rubp_pga.png": "9477 Specimen Paper 2 Q5, Figure 5.1. RuBP and PGA concentrations in a Chlorella suspension switched from 1% to 0.03% carbon dioxide at 200 s",
   "q7d_sox4_co2_fixation.png": "School (HCI) Prelim 2024 P2 Q8, Fig. 8.2. Rate of CO2 fixation against CO2 concentration for wild type wheat and for Sox4, which over-expresses SBPase",
-  "q8a_chlamydomonas_temperature.png": "9477 Specimen Paper 1 Q20. Rate of oxygen production by Chlamydomonas against temperature, with point R on the descending limb"
+  "q8a_chlamydomonas_temperature.png": "9477 Specimen Paper 1 Q20. Rate of oxygen production by Chlamydomonas against temperature, with point R on the descending limb",
+  "q1_chloroplast_xyz.svg": "Part of a chloroplast. X marks a granum, Y a single lamella running between two grana, Z a lipid droplet in the stroma. Redrawn as a schematic from the source micrograph.",
+  "q2_absorption_action_spectrum.svg": "Fig. 8.1  Absorption spectrum of phycoerythrin (dashed) and action spectrum of red algae (solid). Redrawn from the paper's own data.",
+  "q3_light_dependent_stage.svg": "Fig. 7.1  The light-dependent stage in the thylakoid membrane. Redrawn as a schematic.",
+  "q5_atp_synthase.svg": "Fig. 7.1  ATP synthase embedded in a membrane. Region X lies above the membrane Z and region Y below it. Redrawn as a schematic."
  }
 }

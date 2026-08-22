@@ -1,0 +1,44 @@
+<svg viewBox="0 0 700 340" width="700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A healthy joint and an arthritic joint side by side">
+<rect width="700" height="340" fill="#fff"/>
+<text class="lbl-b" x="176" y="28" text-anchor="middle">healthy joint</text>
+<text class="lbl-b" x="520" y="28" text-anchor="middle">arthritic joint</text>
+<!-- HEALTHY -->
+<g transform="translate(176,0)">
+ <path d="M-44 46 L-44 116 C -44 132, -30 140, 0 140 C 30 140, 44 132, 44 116 L44 46 Z" fill="#f4f6f9" stroke="#16181d" stroke-width="2"/>
+ <path d="M-44 116 C -44 132, -30 140, 0 140 C 30 140, 44 132, 44 116 Z" fill="#dfe6ee" stroke="#16181d" stroke-width="1.8"/>
+ <path d="M-44 292 L-44 216 C -44 200, -30 192, 0 192 C 30 192, 44 200, 44 216 L44 292 Z" fill="#f4f6f9" stroke="#16181d" stroke-width="2"/>
+ <path d="M-44 216 C -44 200, -30 192, 0 192 C 30 192, 44 200, 44 216 Z" fill="#dfe6ee" stroke="#16181d" stroke-width="1.8"/>
+ <path d="M-70 60 C -92 120, -92 216, -70 276 M70 60 C 92 120, 92 216, 70 276" fill="none" stroke="#16181d" stroke-width="2.4"/>
+ <path d="M-64 66 C -84 122, -84 214, -64 270 M64 66 C 84 122, 84 214, 64 270" fill="none" stroke="#16181d" stroke-width="1.4"/>
+</g>
+<g class="tick">
+ <text x="20" y="120">joint capsule</text><line class="ld" x1="80" y1="116" x2="104" y2="128"/>
+ <text x="20" y="150">synovial membrane</text><line class="ld" x1="94" y1="146" x2="112" y2="152"/>
+ <text x="20" y="180">joint space, contains fluid</text><line class="ld" x1="116" y1="176" x2="150" y2="168"/>
+ <text x="252" y="120">cartilage</text><line class="ld" x1="250" y1="116" x2="222" y2="130"/>
+ <text x="252" y="278">bone</text><line class="ld" x1="250" y1="274" x2="222" y2="264"/>
+</g>
+<!-- ARTHRITIC -->
+<g transform="translate(520,0)">
+ <path d="M-44 46 L-44 112 C -44 124, -26 132, 0 130 C 22 128, 44 122, 44 112 L44 46 Z" fill="#f4f6f9" stroke="#16181d" stroke-width="2"/>
+ <path d="M-44 112 C -36 126, -16 118, 0 130 C 18 120, 30 128, 44 112" fill="none" stroke="#16181d" stroke-width="1.8" stroke-dasharray="4 3"/>
+ <path d="M-44 292 L-44 220 C -44 208, -24 200, 0 202 C 24 204, 44 210, 44 220 L44 292 Z" fill="#f4f6f9" stroke="#16181d" stroke-width="2"/>
+ <path d="M-44 220 C -34 206, -14 216, 0 202 C 16 214, 32 206, 44 220" fill="none" stroke="#16181d" stroke-width="1.8" stroke-dasharray="4 3"/>
+ <!-- thickened bulging synovium -->
+ <path d="M-70 60 C -118 122, -118 214, -70 276 M70 60 C 118 122, 118 214, 70 276" fill="none" stroke="#16181d" stroke-width="2.4"/>
+ <path d="M-64 66 C -96 118, -96 218, -64 270 M64 66 C 96 118, 96 218, 64 270" fill="none" stroke="#16181d" stroke-width="1.4"/>
+ <path d="M-92 100 C -70 130, -70 206, -92 236 M92 100 C 70 130, 70 206, 92 236"
+       fill="#e6e9ee" stroke="#16181d" stroke-width="1.6"/>
+ <!-- osteoclast eroding bone -->
+ <path d="M-22 152 C -34 146, -36 166, -24 172 C -12 178, -2 170, -6 158 Z" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+ <!-- phagocyte in inflamed tissue -->
+ <path d="M74 176 C 62 168, 62 194, 76 196 C 90 198, 96 182, 86 174 Z" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+</g>
+<g class="tick">
+ <text x="352" y="216">osteoclast</text><text x="352" y="230">(breaks down bone tissue)</text>
+ <line class="ld" x1="446" y1="212" x2="486" y2="176"/>
+ <text x="612" y="252">phagocyte</text><line class="ld" x1="640" y1="240" x2="606" y2="196"/>
+ <text x="612" y="120">thickened synovial</text><text x="612" y="134">membrane</text><line class="ld" x1="640" y1="140" x2="616" y2="164"/>
+ <text x="352" y="292">eroded bone at the joint surfaces</text><line class="ld" x1="470" y1="288" x2="494" y2="240"/>
+</g>
+</svg>

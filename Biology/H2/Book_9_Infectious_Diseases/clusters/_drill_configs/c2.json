@@ -6,11 +6,25 @@
  "figmap": {
   "1|a": "q_spec_p1_q29_primary_response.png",
   "2|c": "q_sch25p3_fig15_igg.png",
-  "4|": "q_spec_p3_q3_fig32.png"
+  "4|": "q_spec_p3_q3_fig32.png",
+  "1|b": "q1_tcell_activation.svg",
+  "2|a": "q2_clonal_selection.svg",
+  "3|b": "q3_tcr.svg",
+  "3|c": "q3_antibody_classes.svg",
+  "5|a": "q5_vdj_three_stage.svg",
+  "5|b": "q5_vdj_to_protein.svg",
+  "6|a": "q6_ctl_apc.svg"
  },
  "caption": {
   "q_spec_p1_q29_primary_response.png": "9477 Specimen Paper 1 Question 29. Part of a primary immune response, cells P, Q, R and S labelled, mitosis marked",
   "q_sch25p3_fig15_igg.png": "School (HCI) Prelim 2025 P3 Q1, Fig. 1.5. IgG antibody levels against days since infection, first infection and subsequent infection by the same serotype",
-  "q_spec_p3_q3_fig32.png": "9477 Specimen Paper 3 Question 3, Figure 3.2. Lymphoid stem cell to plasma cells secreting antibody variants X1, X2 and X3"
+  "q_spec_p3_q3_fig32.png": "9477 Specimen Paper 3 Question 3, Figure 3.2. Lymphoid stem cell to plasma cells secreting antibody variants X1, X2 and X3",
+  "q1_tcell_activation.svg": "Fig. 1.1  Two inactive T lymphocytes, U1 and V1, proliferating and differentiating to U4 and V4. Redrawn as a schematic.",
+  "q2_clonal_selection.svg": "Fig. 2.1  Clonal selection: tetanus toxin binds cell Q only, which divides to give plasma cell S and memory cells. Redrawn as a schematic.",
+  "q3_tcr.svg": "Fig. 3.1  A T cell receptor in the membrane of a naive T lymphocyte. Redrawn as a schematic.",
+  "q3_antibody_classes.svg": "Fig. 3.2  Levels of IgM, IgA and IgG against time after infection. Redrawn from the paper's own data.",
+  "q5_vdj_three_stage.svg": "Fig. 5.1  Germline heavy-chain locus, the rearranged locus after step Q, and the transcript. Redrawn as a schematic.",
+  "q5_vdj_to_protein.svg": "Fig. 5.2  From germline locus through rearrangement, transcription, splicing and translation to the heavy chain. Redrawn as a schematic.",
+  "q6_ctl_apc.svg": "Fig. 6.1  A cytotoxic T cell and an antigen-presenting cell interlocking at the contact point. Redrawn as a schematic."
  }
 }

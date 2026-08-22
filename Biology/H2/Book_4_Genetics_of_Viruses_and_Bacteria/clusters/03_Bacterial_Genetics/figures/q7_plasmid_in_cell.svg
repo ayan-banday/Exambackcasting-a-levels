@@ -1,0 +1,39 @@
+<svg viewBox="0 0 520 300" width="520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Section through bacterium A showing the nucleoid and a separate small circular plasmid labelled C">
+  <rect x="0" y="0" width="520" height="300" fill="#ffffff"/>
+
+  <!-- cell envelope: wall + membrane -->
+  <rect x="28" y="34" width="464" height="232" rx="106" fill="#f4f6f9" stroke="#16181d" stroke-width="2.4"/>
+  <rect x="40" y="46" width="440" height="208" rx="96" fill="#ffffff" stroke="#16181d" stroke-width="1.4"/>
+
+  <!-- nucleoid: one large closed loop, heavily supercoiled -->
+  <path d="M150 96
+           C 96 108, 92 148, 118 168
+           C 142 186, 128 214, 168 220
+           C 210 226, 232 200, 268 210
+           C 306 220, 330 208, 342 186
+           C 356 160, 336 138, 306 134
+           C 274 130, 268 108, 236 100
+           C 204 92, 180 90, 150 96 Z"
+        fill="none" stroke="#16181d" stroke-width="3.4"/>
+  <path d="M162 116 C 132 130, 138 158, 164 166 C 196 176, 214 156, 246 162
+           C 280 168, 302 158, 308 140"
+        fill="none" stroke="#16181d" stroke-width="1.5" opacity=".55"/>
+
+  <!-- plasmid: small closed circle, clearly separate -->
+  <ellipse cx="412" cy="112" rx="40" ry="27" fill="none" stroke="#16181d" stroke-width="3.4"/>
+  <ellipse cx="412" cy="112" rx="27" ry="16" fill="none" stroke="#16181d" stroke-width="1.4" opacity=".5"/>
+
+  <!-- labels -->
+  <line class="ld" x1="412" y1="76" x2="412" y2="52"/>
+  <text class="lbl-b" x="412" y="44" text-anchor="middle">C</text>
+
+  <line class="ld" x1="236" y1="222" x2="236" y2="258"/>
+  <text class="lbl" x="236" y="274" text-anchor="middle">bacterial chromosome (nucleoid)</text>
+
+  <line class="ld" x1="60" y1="70" x2="24" y2="52"/>
+  <text class="lbl" x="20" y="46" text-anchor="end">cell wall</text>
+  <line class="ld" x1="72" y1="86" x2="24" y2="86"/>
+  <text class="lbl" x="20" y="90" text-anchor="end">cell surface membrane</text>
+
+  <text class="lbl" x="470" y="248" text-anchor="end" fill="#5b6472">cytoplasm</text>
+</svg>

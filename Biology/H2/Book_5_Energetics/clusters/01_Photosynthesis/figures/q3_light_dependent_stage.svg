@@ -1,0 +1,43 @@
+<svg viewBox="0 0 700 360" width="700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The light-dependent stage in the thylakoid membrane">
+<rect width="700" height="360" fill="#fff"/>
+<defs><marker id="a2" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#16181d"/></marker></defs>
+<text class="lbl" x="16" y="46">stroma</text>
+<text class="lbl" x="16" y="316">thylakoid space (lumen)</text>
+<!-- membrane -->
+<rect x="60" y="132" width="620" height="86" fill="#f1f3f6" stroke="#16181d" stroke-width="1.4"/>
+<g fill="none" stroke="#16181d" stroke-width="1.1" opacity=".45">
+  <line x1="60" y1="146" x2="680" y2="146"/><line x1="60" y1="204" x2="680" y2="204"/>
+</g>
+<!-- PSII -->
+<rect x="92" y="126" width="96" height="98" rx="6" fill="#fff" stroke="#16181d" stroke-width="2"/>
+<text class="lbl-b" x="140" y="170" text-anchor="middle">photo-</text><text class="lbl-b" x="140" y="188" text-anchor="middle">system II</text>
+<!-- water splitting enzyme -->
+<rect x="64" y="228" width="120" height="34" rx="5" fill="#fff" stroke="#16181d" stroke-width="1.6"/>
+<text class="tick" x="124" y="243" text-anchor="middle">manganese-containing</text><text class="tick" x="124" y="256" text-anchor="middle">enzyme</text>
+<text class="lbl" x="64" y="290">H₂O → 2H⁺ + ½O₂ + 2e⁻</text>
+<line class="ld" x1="124" y1="228" x2="132" y2="224" marker-end="url(#a2)"/>
+<text class="lbl" x="200" y="290">O₂ leaves as a by-product</text>
+<!-- ETC carriers -->
+<rect x="222" y="140" width="52" height="70" rx="5" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+<rect x="298" y="140" width="52" height="70" rx="5" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+<rect x="374" y="140" width="52" height="70" rx="5" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+<text class="lbl" x="324" y="120" text-anchor="middle">electron transport chain</text>
+<!-- PSI -->
+<rect x="466" y="126" width="96" height="98" rx="6" fill="#fff" stroke="#16181d" stroke-width="2"/>
+<text class="lbl-b" x="514" y="170" text-anchor="middle">photo-</text><text class="lbl-b" x="514" y="188" text-anchor="middle">system I</text>
+<!-- electron path -->
+<path d="M188 160 L222 160 M274 160 L298 160 M350 160 L374 160 M426 160 L466 160"
+      fill="none" stroke="#16181d" stroke-width="2" marker-end="url(#a2)"/>
+<text class="tick" x="248" y="132" text-anchor="middle">e⁻</text>
+<!-- proton pumping -->
+<path d="M248 226 L248 260 M324 226 L324 260 M400 226 L400 260" fill="none" stroke="#16181d" stroke-width="1.8" marker-end="url(#a2)"/>
+<text class="lbl" x="324" y="278" text-anchor="middle">H⁺ pumped into the thylakoid space</text>
+<!-- ferredoxin and NADP reductase -->
+<circle cx="596" cy="96" r="24" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+<text class="tick" x="596" y="100" text-anchor="middle">Fd</text>
+<rect x="622" y="140" width="58" height="46" rx="5" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+<text class="tick" x="651" y="158" text-anchor="middle">NADP</text><text class="tick" x="651" y="172" text-anchor="middle">reductase</text>
+<path d="M540 130 L580 108 M600 122 L636 138" fill="none" stroke="#16181d" stroke-width="2" marker-end="url(#a2)"/>
+<text class="lbl" x="620" y="72">NADP⁺ + H⁺ + 2e⁻ → NADPH</text>
+<text class="tick" x="596" y="64" text-anchor="middle">ferredoxin</text>
+</svg>

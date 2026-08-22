@@ -1,0 +1,40 @@
+<svg viewBox="0 0 660 340" width="660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Role of HSP60 in PKC signalling in a buffalo T lymphocyte">
+<rect width="660" height="340" fill="#fff"/>
+<defs><marker id="b4" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#16181d"/></marker>
+ <marker id="bar" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><line x1="6" y1="0" x2="6" y2="10" stroke="#16181d" stroke-width="2.4"/></marker></defs>
+<rect x="24" y="60" width="612" height="252" rx="22" fill="#f7f8fa" stroke="#16181d" stroke-width="2"/>
+<text class="lbl-b" x="44" y="86">T lymphocyte</text>
+<!-- membrane receptors -->
+<rect x="120" y="48" width="26" height="34" rx="4" fill="#fff" stroke="#16181d" stroke-width="2"/>
+<text class="tick" x="133" y="40" text-anchor="middle">TLR2</text>
+<rect x="470" y="48" width="26" height="34" rx="4" fill="#fff" stroke="#16181d" stroke-width="2"/>
+<text class="tick" x="483" y="40" text-anchor="middle">CXCR4</text>
+<!-- HSP60 -->
+<circle cx="133" cy="14" r="12" fill="#16181d"/>
+<text class="lbl" x="152" y="18">HSP60</text>
+<text class="tick" x="24" y="18">heat stress raises HSP60</text>
+<path d="M60 14 L116 14" fill="none" stroke="#16181d" stroke-width="1.5" marker-end="url(#b4)"/>
+<!-- STAT3 -->
+<rect x="104" y="128" width="72" height="30" rx="5" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+<text class="lbl" x="140" y="148" text-anchor="middle">STAT3</text>
+<path d="M133 82 L133 124" fill="none" stroke="#16181d" stroke-width="1.8" marker-end="url(#b4)"/>
+<!-- nucleus -->
+<ellipse cx="286" cy="196" rx="96" ry="66" fill="#fff" stroke="#16181d" stroke-width="2"/>
+<text class="tick" x="286" y="150" text-anchor="middle">nucleus</text>
+<rect x="238" y="182" width="96" height="30" rx="5" fill="#f1f3f6" stroke="#16181d" stroke-width="1.8"/>
+<text class="lbl" x="286" y="202" text-anchor="middle">SOCS3 gene</text>
+<path d="M176 148 L232 180" fill="none" stroke="#16181d" stroke-width="1.8" marker-end="url(#b4)"/>
+<!-- SOCS3 protein -->
+<rect x="404" y="182" width="94" height="30" rx="5" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+<text class="lbl" x="451" y="202" text-anchor="middle">SOCS3 protein</text>
+<path d="M338 197 L398 197" fill="none" stroke="#16181d" stroke-width="1.8" marker-end="url(#b4)"/>
+<path d="M470 182 L483 90" fill="none" stroke="#16181d" stroke-width="1.8" marker-end="url(#bar)"/>
+<!-- PKC pathway -->
+<rect x="520" y="182" width="94" height="30" rx="5" fill="#fff" stroke="#16181d" stroke-width="1.8"/>
+<text class="lbl" x="567" y="202" text-anchor="middle">PKC pathway</text>
+<path d="M496 82 L556 178" fill="none" stroke="#16181d" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#b4)"/>
+<rect x="520" y="256" width="94" height="30" rx="5" fill="#f1f3f6" stroke="#16181d" stroke-width="1.8"/>
+<text class="lbl" x="567" y="276" text-anchor="middle">inflammation</text>
+<path d="M567 212 L567 252" fill="none" stroke="#16181d" stroke-width="1.8" marker-end="url(#b4)"/>
+<text class="tick" x="636" y="112" text-anchor="end">SOCS3 blocks the receptor</text>
+</svg>

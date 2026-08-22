@@ -1,0 +1,55 @@
+<svg viewBox="0 0 700 330" width="700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three-stage diagram of immunoglobulin heavy chain gene rearrangement">
+<rect width="700" height="330" fill="#fff"/>
+<defs><marker id="d1" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#16181d"/></marker></defs>
+<!-- germline -->
+<g transform="translate(0,42)">
+ <rect x="30" y="0" width="640" height="34" fill="#fff" stroke="#16181d" stroke-width="1.6"/>
+ <rect x="30" y="0" width="46" height="34" fill="#e6e9ee" stroke="#16181d" stroke-width="1.4"/>
+ <text class="tick" x="53" y="21" text-anchor="middle">Promoter</text>
+ <g fill="#f1f3f6" stroke="#16181d" stroke-width="1.2">
+  <rect x="86" y="6" width="22" height="22"/><rect x="112" y="6" width="22" height="22"/><rect x="138" y="6" width="22" height="22"/>
+  <rect x="164" y="6" width="22" height="22"/><rect x="190" y="6" width="22" height="22"/><rect x="216" y="6" width="22" height="22"/>
+ </g>
+ <text class="tick" x="162" y="-8" text-anchor="middle">V segments</text>
+ <g fill="#dfe6ee" stroke="#16181d" stroke-width="1.2">
+  <rect x="256" y="6" width="22" height="22"/><rect x="282" y="6" width="22" height="22"/><rect x="308" y="6" width="22" height="22"/><rect x="334" y="6" width="22" height="22"/>
+ </g>
+ <text class="tick" x="306" y="-8" text-anchor="middle">D segments</text>
+ <g fill="#cfd8e3" stroke="#16181d" stroke-width="1.2">
+  <rect x="376" y="6" width="22" height="22"/><rect x="402" y="6" width="22" height="22"/><rect x="428" y="6" width="22" height="22"/><rect x="454" y="6" width="22" height="22"/>
+ </g>
+ <text class="tick" x="426" y="-8" text-anchor="middle">J segments</text>
+ <rect x="504" y="0" width="96" height="34" fill="#e6e9ee" stroke="#16181d" stroke-width="1.4"/>
+ <text class="tick" x="552" y="21" text-anchor="middle">Control segment</text>
+ <rect x="614" y="0" width="56" height="34" fill="#16181d"/>
+ <text class="tick" x="642" y="-8" text-anchor="middle" fill="#5b6472">terminator</text>
+</g>
+<path d="M350 92 L350 128" fill="none" stroke="#16181d" stroke-width="2" marker-end="url(#d1)"/>
+<text class="lbl-b" x="362" y="114">Q</text>
+<!-- rearranged -->
+<g transform="translate(0,140)">
+ <rect x="30" y="0" width="640" height="34" fill="#fff" stroke="#16181d" stroke-width="1.6"/>
+ <rect x="30" y="0" width="46" height="34" fill="#e6e9ee" stroke="#16181d" stroke-width="1.4"/>
+ <text class="tick" x="53" y="21" text-anchor="middle">Promoter</text>
+ <rect x="86" y="6" width="22" height="22" fill="#f1f3f6" stroke="#16181d" stroke-width="1.2"/>
+ <rect x="108" y="6" width="22" height="22" fill="#dfe6ee" stroke="#16181d" stroke-width="1.2"/>
+ <rect x="130" y="6" width="22" height="22" fill="#cfd8e3" stroke="#16181d" stroke-width="1.2"/>
+ <text class="tick" x="97" y="-8" text-anchor="middle">V</text><text class="tick" x="119" y="-8" text-anchor="middle">D</text><text class="tick" x="141" y="-8" text-anchor="middle">J</text>
+ <rect x="504" y="0" width="96" height="34" fill="#e6e9ee" stroke="#16181d" stroke-width="1.4"/>
+ <text class="tick" x="552" y="21" text-anchor="middle">Control segment</text>
+ <rect x="614" y="0" width="56" height="34" fill="#16181d"/>
+ <text class="tick" x="320" y="21" text-anchor="middle" fill="#5b6472">intervening segments excised</text>
+</g>
+<path d="M350 190 L350 226" fill="none" stroke="#16181d" stroke-width="2" marker-end="url(#d1)"/>
+<text class="lbl" x="362" y="212">transcription</text>
+<!-- transcript -->
+<g transform="translate(0,238)">
+ <rect x="86" y="0" width="514" height="34" rx="4" fill="#fff" stroke="#16181d" stroke-width="1.6" stroke-dasharray="5 3"/>
+ <rect x="94" y="6" width="22" height="22" fill="#f1f3f6" stroke="#16181d" stroke-width="1.2"/>
+ <rect x="116" y="6" width="22" height="22" fill="#dfe6ee" stroke="#16181d" stroke-width="1.2"/>
+ <rect x="138" y="6" width="22" height="22" fill="#cfd8e3" stroke="#16181d" stroke-width="1.2"/>
+ <rect x="496" y="6" width="96" height="22" fill="#e6e9ee" stroke="#16181d" stroke-width="1.2"/>
+ <text class="tick" x="544" y="21" text-anchor="middle">Control segment</text>
+ <text class="lbl" x="30" y="21">transcript</text>
+</g>
+</svg>

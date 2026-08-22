@@ -61,6 +61,15 @@ font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;backgro
 border-radius:10px;font-weight:700;margin-left:4px;font-family:-apple-system,sans-serif}
 .fig{margin:14px 0;padding:12px;background:var(--fig-bg);border:1px solid var(--border);border-radius:6px;text-align:center}
 .fig img{max-width:100%;height:auto;border-radius:3px}
+.fig-svg{background:#fff}
+.fig-svg svg{max-width:100%;height:auto;display:block;margin:0 auto}
+.fig-svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#16181d}
+.fig-svg .lbl{font-size:12px}
+.fig-svg .lbl-b{font-size:12px;font-weight:600}
+.fig-svg .tick{font-size:10px;fill:#5b6472}
+.fig-svg .ax{stroke:#16181d;stroke-width:1.4;fill:none}
+.fig-svg .ld{stroke:#5b6472;stroke-width:.9;fill:none}
+.fig-svg .out{stroke:#16181d;stroke-width:1.5;fill:none}
 .fig figcaption{margin-top:8px;font-size:.8em;color:var(--muted);font-family:-apple-system,sans-serif}
 .fig-missing{margin:14px 0;padding:12px 14px;background:var(--red-soft);border:1px solid var(--red);
 border-left:4px solid var(--red);border-radius:6px;font-size:.9em}
@@ -124,7 +133,40 @@ p{margin:8px 0}
 <p><strong>5.</strong> <strong>P can be a pathogen.</strong> The question asks for <strong>possible</strong> identities, and what activates a B lymphocyte is antigen, which may be carried on a pathogen. <strong>B is wrong</strong> because a T lymphocyte is not the thing that turns into a B lymphocyte; <strong>A</strong> and <strong>C</strong> are already out on Q.</p>
 <p><strong>6.</strong> What this question is really testing, and the guide&#x27;s own summary of it: <strong>every wrong option is one cell type placed wrongly.</strong> The cells must be told apart <strong>by what they carry and what they do, not by name recognition.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
 <div class="qpart"><p><strong>(b)</strong> T-lymphocytes are produced in bone marrow and mature in the thymus gland. When mature, T-lymphocytes leave the thymus gland to travel throughout the body. They remain inactive inside organs, such as the spleen and lymph nodes, until activated by the presence of antigens. Fig. 1.1 shows what happens to two inactive T-lymphocytes, U1 and V1, in the presence of an antigen from a virus. U4 and V4 are different types of active T-lymphocyte. Describe the roles of cells U4 and V4 in a primary immune response. <span class="marks">[3]</span></p>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: Fig. 1.1 shows what happens to two inactive T-lymphocytes, U1 and V1, in the presence of an antigen from a virus; each is shown proliferating and differentiating through stages numbered 2 and 3 into a mature active cell, U4 and V4 respectively.</div></div>
+<figure class="fig fig-svg"><svg viewBox="0 0 660 300" width="660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two inactive T lymphocytes proliferating and differentiating in the presence of antigen">
+<rect width="660" height="300" fill="#fff"/>
+<defs><marker id="c1" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#16181d"/></marker></defs>
+<text class="lbl" x="330" y="24" text-anchor="middle">antigen from a virus present</text>
+<g class="tick"><text x="88" y="46" text-anchor="middle">1</text><text x="268" y="46" text-anchor="middle">2</text>
+ <text x="446" y="46" text-anchor="middle">3</text><text x="596" y="46" text-anchor="middle">4</text></g>
+<!-- row U -->
+<g transform="translate(0,110)">
+ <circle cx="88" r="26" fill="#fff" stroke="#16181d" stroke-width="2"/><circle cx="88" r="11" fill="#16181d"/>
+ <text class="lbl-b" x="88" y="46" text-anchor="middle">U1</text>
+ <circle cx="252" cy="-16" r="20" fill="#fff" stroke="#16181d" stroke-width="1.8"/><circle cx="252" cy="-16" r="8" fill="#16181d"/>
+ <circle cx="286" cy="18" r="20" fill="#fff" stroke="#16181d" stroke-width="1.8"/><circle cx="286" cy="18" r="8" fill="#16181d"/>
+ <text class="lbl" x="268" y="52" text-anchor="middle">proliferation</text>
+ <circle cx="430" cy="-16" r="20" fill="#fff" stroke="#16181d" stroke-width="1.8"/><circle cx="430" cy="-16" r="8" fill="#16181d"/>
+ <circle cx="464" cy="18" r="20" fill="#fff" stroke="#16181d" stroke-width="1.8"/><circle cx="464" cy="18" r="8" fill="#16181d"/>
+ <text class="lbl" x="446" y="52" text-anchor="middle">differentiation</text>
+ <circle cx="596" r="30" fill="#dfe6ee" stroke="#16181d" stroke-width="2.2"/><circle cx="596" r="12" fill="#16181d"/>
+ <text class="lbl-b" x="596" y="50" text-anchor="middle">U4</text>
+ <path d="M120 0 L212 0 M312 0 L392 0 M496 0 L560 0" fill="none" stroke="#16181d" stroke-width="1.8" marker-end="url(#c1)"/>
+</g>
+<!-- row V -->
+<g transform="translate(0,226)">
+ <circle cx="88" r="26" fill="#fff" stroke="#16181d" stroke-width="2" stroke-dasharray="5 3"/><circle cx="88" r="11" fill="#5b6472"/>
+ <text class="lbl-b" x="88" y="46" text-anchor="middle">V1</text>
+ <circle cx="252" cy="-16" r="20" fill="#fff" stroke="#16181d" stroke-width="1.8" stroke-dasharray="5 3"/><circle cx="252" cy="-16" r="8" fill="#5b6472"/>
+ <circle cx="286" cy="18" r="20" fill="#fff" stroke="#16181d" stroke-width="1.8" stroke-dasharray="5 3"/><circle cx="286" cy="18" r="8" fill="#5b6472"/>
+ <circle cx="430" cy="-16" r="20" fill="#fff" stroke="#16181d" stroke-width="1.8" stroke-dasharray="5 3"/><circle cx="430" cy="-16" r="8" fill="#5b6472"/>
+ <circle cx="464" cy="18" r="20" fill="#fff" stroke="#16181d" stroke-width="1.8" stroke-dasharray="5 3"/><circle cx="464" cy="18" r="8" fill="#5b6472"/>
+ <circle cx="596" r="30" fill="#eef2f6" stroke="#16181d" stroke-width="2.2" stroke-dasharray="5 3"/><circle cx="596" r="12" fill="#5b6472"/>
+ <text class="lbl-b" x="596" y="50" text-anchor="middle">V4</text>
+ <path d="M120 0 L212 0 M312 0 L392 0 M496 0 L560 0" fill="none" stroke="#16181d" stroke-width="1.8" marker-end="url(#c1)"/>
+</g>
+<text class="tick" x="20" y="116">inactive</text><text class="tick" x="20" y="232">inactive</text>
+</svg><figcaption>Fig. 1.1  Two inactive T lymphocytes, U1 and V1, proliferating and differentiating to U4 and V4. Redrawn as a schematic.</figcaption></figure></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
 <div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>(b)</strong> <em>Describe the roles of cells U4 and V4 in a primary immune response.</em> <span class="marks">[3]</span></p>
 <p>Maximum 2 marks for the helper T lymphocyte.</p>
@@ -146,7 +188,63 @@ p{margin:8px 0}
 <div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> 9477 Specimen P1 Q29, stem, diagram and all four option rows verbatim (a); the specimen ships without a mark scheme, so the correct letter and the option audit are inferred here. <strong>The figure in (a) is the real image from 9477 Specimen Paper 1.</strong> JPJC Prelim 2025 P2 Q10(a)(ii), stem and key verbatim (b), with the Q10 preamble and the Q10(a)(i) answer folded into the stem so the part stands alone; Fig. 10.1 renumbered Fig. 1.1 and carrying the source paper&#x27;s own description. TMJC Prelim 2023 P2 Q8(b), stem and key verbatim (c). <strong>Archetype:</strong> cell identification from a lineage diagram, then roles, then the consequence of removing one cell. Mechanism explain-chain is 35.0% of Book 9 and this concept is 35.7% mechanism-led. <strong>Trap:</strong> identifying cells by name recognition rather than by what they carry; forgetting that a memory B cell must first differentiate into a plasma cell before any antibody is secreted, which an examiner&#x27;s report names as a common misconception; listing what helper T cells do without saying that both arms fail together. <strong>LOs:</strong> (b), the roles of B lymphocytes, T lymphocytes, antigen-presenting cells and memory cells in the primary response. <strong>Concepts fused:</strong> (1) membrane antibody as the B cell receptor; (2) mitosis as clonal expansion; (3) the plasma cell as a secreting effector with no surface receptor; (4) the memory cell as long-lived and inactive; (5) helper T cells secreting cytokines; (6) cytokines activating B cells; (7) cytokines activating cytotoxic T cells; (8) cytokines recruiting phagocytes; (9) cytotoxic T cells killing infected cells; (10) MHC class II as the helper T cell&#x27;s docking molecule; (11) one cell failure disabling two arms.</p>
 <p>---</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q2"><h3>Question 2 <span class="marks">[11 marks]</span></h3><div class="qpart"><p><em>This is the full-cycle question. It runs one continuous chain: an antigen selects the one clone whose receptor fits, that clone expands, its progeny differentiate, antibody is secreted, memory persists, and the same antigen returns years later to a completely different response. Answer (a) to (c) as one story.</em></p></div>
 <div class="qpart"><p><strong>(a)</strong> Tetanus is a disease caused by a bacterium. When the tetanus bacteria enter the body they release a toxin which causes muscular rigidity and extreme pain. Explain what is happening at stages <strong>X</strong> and <strong>Y</strong> in the immune response to tetanus toxin. <span class="marks">[2]</span></p>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: Fig. 2.1 shows three B lymphocytes P, Q and R, each carrying a differently shaped membrane-bound antibody receptor. At stage X the tetanus toxin molecule binds to the receptor of cell Q only. At stage Y cell Q divides repeatedly to give a clone of identical cells, some of which become plasma cell S secreting antibody and others become memory cells.</div></div>
+<figure class="fig fig-svg"><svg viewBox="0 0 680 330" width="680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Clonal selection of B lymphocyte Q by tetanus toxin">
+<rect width="680" height="330" fill="#fff"/>
+<defs><marker id="c2" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#16181d"/></marker></defs>
+<!-- three B cells -->
+<g transform="translate(78,72)">
+ <circle r="30" fill="#fff" stroke="#16181d" stroke-width="2"/><circle r="12" fill="#16181d"/>
+ <g stroke="#16181d" stroke-width="2" fill="none"><path d="M0 -30 l0 -10 l-7 -8 M0 -40 l7 -8"/></g>
+ <text class="lbl-b" x="-44" y="6">P</text>
+</g>
+<g transform="translate(78,166)">
+ <circle r="30" fill="#dfe6ee" stroke="#16181d" stroke-width="2.4"/><circle r="12" fill="#16181d"/>
+ <g stroke="#16181d" stroke-width="2" fill="none"><path d="M0 -30 l0 -10 M-8 -50 l8 10 l8 -10"/></g>
+ <text class="lbl-b" x="-44" y="6">Q</text>
+</g>
+<g transform="translate(78,262)">
+ <circle r="30" fill="#fff" stroke="#16181d" stroke-width="2"/><circle r="12" fill="#16181d"/>
+ <g stroke="#16181d" stroke-width="2" fill="none"><path d="M0 -30 l0 -10 l-9 -4 M0 -40 l9 -4"/></g>
+ <text class="lbl-b" x="-44" y="6">R</text>
+</g>
+<!-- toxin -->
+<g transform="translate(178,124)">
+ <path d="M-9 8 L0 -8 L9 8 Z" fill="#16181d"/>
+</g>
+<text class="lbl" x="182" y="106" text-anchor="middle">tetanus toxin</text>
+<path d="M172 128 L118 152" fill="none" stroke="#16181d" stroke-width="1.6" marker-end="url(#c2)"/>
+<text class="lbl-b" x="150" y="176">X</text>
+<!-- clone -->
+<path d="M116 166 L206 166" fill="none" stroke="#16181d" stroke-width="1.8" marker-end="url(#c2)"/>
+<text class="lbl-b" x="160" y="158" text-anchor="middle">Y</text>
+<g transform="translate(266,166)">
+ <circle cx="0" cy="-52" r="21" fill="#dfe6ee" stroke="#16181d" stroke-width="1.8"/><circle cx="0" cy="-52" r="8" fill="#16181d"/>
+ <circle cx="0" cy="0" r="21" fill="#dfe6ee" stroke="#16181d" stroke-width="1.8"/><circle r="8" fill="#16181d"/>
+ <circle cx="0" cy="52" r="21" fill="#dfe6ee" stroke="#16181d" stroke-width="1.8"/><circle cx="0" cy="52" r="8" fill="#16181d"/>
+ <text class="lbl" x="0" y="92" text-anchor="middle">clone of identical cells</text>
+</g>
+<path d="M292 -46 l0 0" fill="none"/>
+<path d="M292 118 L372 84 M292 166 L372 166 M292 214 L372 246" fill="none" stroke="#16181d" stroke-width="1.6" marker-end="url(#c2)"/>
+<!-- plasma cell S -->
+<g transform="translate(430,74)">
+ <circle r="30" fill="#fff" stroke="#16181d" stroke-width="2.2"/>
+ <ellipse cx="-6" cy="0" rx="12" ry="14" fill="#16181d"/>
+ <g stroke="#16181d" stroke-width="1.2" fill="none"><path d="M6 -14 q14 6 0 12 q-14 6 0 12"/></g>
+ <text class="lbl-b" x="0" y="-40" text-anchor="middle">S</text>
+</g>
+<text class="lbl" x="474" y="72">plasma cell,</text><text class="lbl" x="474" y="88">secretes antibody</text>
+<g stroke="#16181d" stroke-width="1.8" fill="none">
+ <g transform="translate(600,58)"><path d="M0 0 l0 -8 M-6 -16 l6 8 l6 -8"/></g>
+ <g transform="translate(624,80)"><path d="M0 0 l0 -8 M-6 -16 l6 8 l6 -8"/></g>
+ <g transform="translate(596,102)"><path d="M0 0 l0 -8 M-6 -16 l6 8 l6 -8"/></g>
+</g>
+<!-- memory cells -->
+<g transform="translate(430,250)">
+ <circle cx="0" cy="-18" r="22" fill="#f1f3f6" stroke="#16181d" stroke-width="2"/><circle cx="0" cy="-18" r="9" fill="#16181d"/>
+ <circle cx="46" cy="16" r="22" fill="#f1f3f6" stroke="#16181d" stroke-width="2"/><circle cx="46" cy="16" r="9" fill="#16181d"/>
+</g>
+<text class="lbl" x="512" y="270">memory cells</text>
+</svg><figcaption>Fig. 2.1  Clonal selection: tetanus toxin binds cell Q only, which divides to give plasma cell S and memory cells. Redrawn as a schematic.</figcaption></figure></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
 <div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>(a)</strong> <em>Explain what is happening at stages X and Y in the immune response to tetanus toxin.</em> <span class="marks">[2]</span></p>
 <p><strong>1.</strong> <strong>X: only Q has receptor / clonal selection.</strong> <strong>Receptor and toxin have complementary shape.</strong></p>
@@ -188,7 +286,48 @@ p{margin:8px 0}
 <p><strong>5.</strong> Examiner&#x27;s comment, verbatim: <strong>students are reminded to write both structure and function.</strong> And the reject that goes with it: <strong>different combinations of heavy and light chains allow binding to different antigens on pathogens</strong> is rejected, because that <strong>addresses why a huge variety of pathogens can be recognised</strong>, which is a diversity answer and not a structure-to-function answer. LO (c)&#x27;s own wording is <strong>the relationship of the molecular structure of antibodies to their functions</strong>, so a bare structure list scores nothing.</p>
 <p><strong>6.</strong> Two further rejects the schemes enforce here. <strong>&quot;R: active site&quot;</strong> appears twice, with <strong>&quot;Reject: if the antibody is described as an enzyme&quot;</strong>, and a marker&#x27;s note adds that <strong>generic references to &quot;binding site&quot; were not acceptable</strong>: the required phrase is <strong>antigen-binding site</strong>. And <strong>&quot;R: formation of disulfide bonds as covalent bonds never occur between antigens and naturally produced antibodies&quot;</strong>, so disulfide bonds hold the <strong>chains</strong> together and never the antigen.</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
 <div class="qpart"><p><strong>(b)</strong> A variety of different membrane proteins are found on the cell surface membrane of naive T-lymphocytes. Amongst them, the T cell receptor (TCR) has an important function in antigen presentation. Compare the structure of the TCR shown in Fig. 3.1 to the structure of an antibody molecule secreted by plasma cells. <span class="marks">[3]</span></p>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: Fig. 3.1, a naive T-lymphocyte membrane drawn as a phospholipid bilayer carrying a T cell receptor made of two polypeptide chains joined by a disulfide bond, with an antigen binding site facing outwards.</div></div>
+<figure class="fig fig-svg"><svg viewBox="0 0 560 300" width="540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="T cell receptor in a naive T lymphocyte membrane">
+<rect width="560" height="300" fill="#fff"/>
+<text class="lbl" x="30" y="34">outside the cell</text>
+<!-- bilayer -->
+<g>
+ <g fill="#fff" stroke="#16181d" stroke-width="1.3">
+  <g id="head"/>
+ </g>
+ <rect x="24" y="150" width="512" height="66" fill="#f1f3f6" stroke="none"/>
+ <g fill="#fff" stroke="#16181d" stroke-width="1.2">
+  <circle cx="40" cy="156" r="8"/><circle cx="64" cy="156" r="8"/><circle cx="88" cy="156" r="8"/><circle cx="112" cy="156" r="8"/>
+  <circle cx="136" cy="156" r="8"/><circle cx="160" cy="156" r="8"/><circle cx="184" cy="156" r="8"/><circle cx="208" cy="156" r="8"/>
+  <circle cx="352" cy="156" r="8"/><circle cx="376" cy="156" r="8"/><circle cx="400" cy="156" r="8"/><circle cx="424" cy="156" r="8"/>
+  <circle cx="448" cy="156" r="8"/><circle cx="472" cy="156" r="8"/><circle cx="496" cy="156" r="8"/><circle cx="520" cy="156" r="8"/>
+  <circle cx="40" cy="210" r="8"/><circle cx="64" cy="210" r="8"/><circle cx="88" cy="210" r="8"/><circle cx="112" cy="210" r="8"/>
+  <circle cx="136" cy="210" r="8"/><circle cx="160" cy="210" r="8"/><circle cx="184" cy="210" r="8"/><circle cx="208" cy="210" r="8"/>
+  <circle cx="352" cy="210" r="8"/><circle cx="376" cy="210" r="8"/><circle cx="400" cy="210" r="8"/><circle cx="424" cy="210" r="8"/>
+  <circle cx="448" cy="210" r="8"/><circle cx="472" cy="210" r="8"/><circle cx="496" cy="210" r="8"/><circle cx="520" cy="210" r="8"/>
+ </g>
+ <g stroke="#16181d" stroke-width="1.1">
+  <line x1="40" y1="164" x2="40" y2="202"/><line x1="64" y1="164" x2="64" y2="202"/><line x1="88" y1="164" x2="88" y2="202"/>
+  <line x1="112" y1="164" x2="112" y2="202"/><line x1="136" y1="164" x2="136" y2="202"/><line x1="160" y1="164" x2="160" y2="202"/>
+  <line x1="184" y1="164" x2="184" y2="202"/><line x1="208" y1="164" x2="208" y2="202"/>
+  <line x1="352" y1="164" x2="352" y2="202"/><line x1="376" y1="164" x2="376" y2="202"/><line x1="400" y1="164" x2="400" y2="202"/>
+  <line x1="424" y1="164" x2="424" y2="202"/><line x1="448" y1="164" x2="448" y2="202"/><line x1="472" y1="164" x2="472" y2="202"/>
+  <line x1="496" y1="164" x2="496" y2="202"/><line x1="520" y1="164" x2="520" y2="202"/>
+ </g>
+</g>
+<!-- receptor: two chains -->
+<g stroke="#16181d" stroke-width="2.2" fill="#fff">
+ <path d="M244 216 L244 150 L236 118 C 236 96, 250 84, 268 84 L268 116 L262 150 L262 216 Z"/>
+ <path d="M296 216 L296 150 L304 118 C 304 96, 290 84, 272 84 L272 116 L278 150 L278 216 Z"/>
+</g>
+<line x1="256" y1="132" x2="284" y2="132" stroke="#16181d" stroke-width="2.4"/>
+<text class="tick" x="330" y="136">disulfide bond</text>
+<line class="ld" x1="292" y1="132" x2="326" y2="132"/>
+<path d="M258 84 q12 -14 24 0" fill="none" stroke="#16181d" stroke-width="2.4"/>
+<line class="ld" x1="270" y1="70" x2="270" y2="52"/>
+<text class="lbl-b" x="270" y="44" text-anchor="middle">antigen binding site</text>
+<text class="lbl" x="30" y="256">inside the cell (cytoplasm)</text>
+<text class="tick" x="536" y="34" text-anchor="end">T cell receptor, two polypeptide chains</text>
+</svg><figcaption>Fig. 3.1  A T cell receptor in the membrane of a naive T lymphocyte. Redrawn as a schematic.</figcaption></figure></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
 <div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>(b)</strong> <em>Compare the structure of the TCR shown in Fig. 3.1 to the structure of an antibody molecule secreted by plasma cells.</em> <span class="marks">[3]</span></p>
 <p>Must have at least one similarity and one difference.</p>
@@ -200,7 +339,37 @@ p{margin:8px 0}
 <p><strong>6.</strong> The functional consequence worth attaching, because it is what the two binding sites are for: being <strong>bivalent lets an antibody cross-link antigens into a large lattice</strong>, which is <strong>agglutination</strong>, and the lattice is <strong>readily phagocytosed</strong>. A TCR with one site cannot do that, and is <strong>never secreted</strong>.</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
 <div class="qpart"><p><strong>(c)</strong> The rubella virus stimulates the production of antibodies in humans but usually causes only mild infections. However, infection of pregnant women can cause serious problems for the developing fetus. Antibodies can be divided into five classes. Table 3.1 shows information about three of the five classes.</p>
 <div class="tw"><table><thead><tr><th>information</th><th>IgM</th><th>IgA</th><th>IgG</th></tr></thead><tbody><tr><td>shape</td><td>pentamer of five Y-shaped units joined in a ring</td><td>dimer of two Y-shaped units joined at the base</td><td>single Y-shaped monomer</td></tr><tr><td>number of antigen binding sites</td><td>10</td><td>4</td><td>2</td></tr><tr><td>can cross the placenta</td><td>no</td><td>no</td><td>yes</td></tr><tr><td>other details</td><td>secreted into blood</td><td>secreted into mucus, tears, saliva, colostrum (the first type of milk produced by the mother following birth)</td><td>secreted into blood</td></tr></tbody></table></div>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: Fig. 3.2 plots levels of antibody against time after infection in months for the three classes. IgM rises fastest to an early peak and then falls away. IgA rises early to a lower peak and then falls. IgG rises more slowly, reaches a high level and plateaus, persisting for several months.</div>
+<figure class="fig fig-svg"><svg viewBox="0 0 660 330" width="660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Levels of IgM, IgA and IgG antibody against time after infection">
+<rect width="660" height="330" fill="#fff"/>
+<line x1="78.0" y1="40" x2="78.0" y2="268" stroke="#eef0f3" stroke-width="1"/>
+<text class="tick" x="78.0" y="284" text-anchor="middle">0</text>
+<line x1="163.3" y1="40" x2="163.3" y2="268" stroke="#eef0f3" stroke-width="1"/>
+<text class="tick" x="163.3" y="284" text-anchor="middle">2</text>
+<line x1="248.7" y1="40" x2="248.7" y2="268" stroke="#eef0f3" stroke-width="1"/>
+<text class="tick" x="248.7" y="284" text-anchor="middle">4</text>
+<line x1="334.0" y1="40" x2="334.0" y2="268" stroke="#eef0f3" stroke-width="1"/>
+<text class="tick" x="334.0" y="284" text-anchor="middle">6</text>
+<line x1="419.3" y1="40" x2="419.3" y2="268" stroke="#eef0f3" stroke-width="1"/>
+<text class="tick" x="419.3" y="284" text-anchor="middle">8</text>
+<line x1="504.7" y1="40" x2="504.7" y2="268" stroke="#eef0f3" stroke-width="1"/>
+<text class="tick" x="504.7" y="284" text-anchor="middle">10</text>
+<line x1="590.0" y1="40" x2="590.0" y2="268" stroke="#eef0f3" stroke-width="1"/>
+<text class="tick" x="590.0" y="284" text-anchor="middle">12</text>
+<line x1="78" y1="268.0" x2="590" y2="268.0" stroke="#eef0f3" stroke-width="1"/>
+<line x1="78" y1="211.0" x2="590" y2="211.0" stroke="#eef0f3" stroke-width="1"/>
+<line x1="78" y1="154.0" x2="590" y2="154.0" stroke="#eef0f3" stroke-width="1"/>
+<line x1="78" y1="97.0" x2="590" y2="97.0" stroke="#eef0f3" stroke-width="1"/>
+<line x1="78" y1="40.0" x2="590" y2="40.0" stroke="#eef0f3" stroke-width="1"/>
+<path class="ax" d="M78 40 L78 268 L590 268"/>
+<path d="M78.0 268.0 L90.8 254.3 L103.6 208.7 L120.7 126.6 L137.7 76.5 L154.8 103.8 L180.4 163.1 L214.5 213.3 L257.2 240.6 L334.0 254.3 L462.0 261.2 L590.0 263.4" fill="none" stroke="#16181d" stroke-width="2.4"/>
+<path d="M78.0 268.0 L95.1 256.6 L116.4 222.4 L142.0 181.4 L167.6 195.0 L206.0 222.4 L257.2 240.6 L334.0 249.8 L462.0 254.3 L590.0 256.6" fill="none" stroke="#16181d" stroke-width="2" stroke-dasharray="7 4"/>
+<path d="M78.0 268.0 L103.6 261.2 L129.2 236.1 L163.3 176.8 L206.0 117.5 L248.7 85.6 L291.3 71.9 L355.3 67.4 L419.3 67.4 L504.7 69.6 L590.0 71.9" fill="none" stroke="#16181d" stroke-width="2" stroke-dasharray="2 3"/>
+<text class="lbl" transform="translate(26,154.0) rotate(-90)" text-anchor="middle">level of antibody / arbitrary units</text>
+<text class="lbl" x="334.0" y="308" text-anchor="middle">time after infection / months</text>
+<line x1="424" y1="72" x2="466" y2="72" stroke="#16181d" stroke-width="2.4"/><text class="lbl" x="474" y="76">IgM</text>
+<line x1="424" y1="94" x2="466" y2="94" stroke="#16181d" stroke-width="2" stroke-dasharray="7 4"/><text class="lbl" x="474" y="98">IgA</text>
+<line x1="424" y1="116" x2="466" y2="116" stroke="#16181d" stroke-width="2" stroke-dasharray="2 3"/><text class="lbl" x="474" y="120">IgG</text>
+</svg><figcaption>Fig. 3.2  Levels of IgM, IgA and IgG against time after infection. Redrawn from the paper&#x27;s own data.</figcaption></figure>
 <p>Using information provided throughout the whole of this question, assess the role of these three classes of antibodies in the immune response to the rubella virus. <span class="marks">[4]</span></p>
 <p>---</p></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
@@ -281,13 +450,124 @@ p{margin:8px 0}
 <div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> 9477 Specimen P3 Q3(c)(i), (ii) and (iii), stems, Figure 3.2 and the &quot;Name precisely&quot; instruction verbatim (a), (b) and (c), at their real one mark each; the specimen ships without a mark scheme, so the terms are inferred and cross-checked against the school keys quoted in the other parts of this question. <strong>Figure 4.1 is the real image from 9477 Specimen Paper 3.</strong> NYJC Prelim 2025 P2 Q10(c), stem and key verbatim (d), with &quot;process Q&quot; replaced by &quot;the process you named in (a)&quot; so the part stands without the NYJC figure. School (HCI) Prelim 2024 P1 Q29, stem, all four statements and all four options verbatim (e), with the official key letter and the reported facility; the statement-by-statement audit and the correction on statement 4 are worked out here from the specimen wording. ASRJC Prelim 2021 P2 Q10(b)(i) and Q10(b)(ii), stems and keys verbatim (f) and (g), including the compulsory line and the reject. <strong>Archetype:</strong> name-from-effect at one mark each, then a compare-and-distinguish, then an MCQ, then a genome calculation. Calculation is only 1.4% of Book 9, so part (f) is rare and worth rehearsing precisely because of that. <strong>Trap:</strong> naming the neighbouring mechanism, which scores zero with no partial credit; making the antibody rather than the cell the subject; saying alternative splicing; letting class switching change specificity; multiplying the two light chain loci together instead of adding them; writing somatic hypermutation into a plasma cell in prose. <strong>LOs:</strong> (d), how somatic recombination, hyper-mutation and class switching result in millions of different antibody molecules. Reach-back to Book 2 for gene segments, DNA rearrangement and the difference between a DNA-level and an RNA-level change. <strong>Concepts fused:</strong> (1) somatic recombination building the V region before antigen; (2) class switching replacing the heavy-chain constant region after antigen; (3) somatic hypermutation varying affinity within one specificity; (4) naming a mechanism from a described effect; (5) location, timing and product as the three axes separating them; (6) D segments in heavy chains only; (7) irreversibility of class switching through DNA deletion; (8) combinatorial diversity as a product of chain choices; (9) kappa or lambda exclusivity as an addition rather than a multiplication; (10) junctional diversity; (11) affinity maturation as selection of higher-affinity variants; (12) a terminally differentiated plasma cell cannot mutate and be selected.</p>
 <p>---</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q5"><h3>Question 5 <span class="marks">[11 marks]</span></h3><div class="qpart"></div>
 <div class="qpart"><p><strong>(a)</strong> Fig. 5.1 shows a process, labelled <strong>Q</strong>, that occurs naturally in a B cell. State precisely where the process shown in Fig. 5.1 occurs in the human body. <span class="marks">[1]</span></p>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: Fig. 5.1, a three-stage gene diagram. The top bar is the germline immunoglobulin heavy-chain locus, labelled left to right: &quot;Promoter&quot;, then a cluster of many &quot;V segments&quot;, a cluster of &quot;D segments&quot;, a cluster of &quot;J segments&quot;, a &quot;Control segment&quot; for the constant region, and a &quot;transcription terminator&quot; at the far right. A downward arrow labelled Q leads to the second bar, in which only one V, one D and one J segment remain, now joined together next to the control segment and the terminator, the intervening segments having been excised. A second downward arrow labelled &quot;transcription&quot; leads to the third bar, the transcript carrying the joined V, D and J segments plus the control segment.</div></div>
+<figure class="fig fig-svg"><svg viewBox="0 0 700 330" width="700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three-stage diagram of immunoglobulin heavy chain gene rearrangement">
+<rect width="700" height="330" fill="#fff"/>
+<defs><marker id="d1" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#16181d"/></marker></defs>
+<!-- germline -->
+<g transform="translate(0,42)">
+ <rect x="30" y="0" width="640" height="34" fill="#fff" stroke="#16181d" stroke-width="1.6"/>
+ <rect x="30" y="0" width="46" height="34" fill="#e6e9ee" stroke="#16181d" stroke-width="1.4"/>
+ <text class="tick" x="53" y="21" text-anchor="middle">Promoter</text>
+ <g fill="#f1f3f6" stroke="#16181d" stroke-width="1.2">
+  <rect x="86" y="6" width="22" height="22"/><rect x="112" y="6" width="22" height="22"/><rect x="138" y="6" width="22" height="22"/>
+  <rect x="164" y="6" width="22" height="22"/><rect x="190" y="6" width="22" height="22"/><rect x="216" y="6" width="22" height="22"/>
+ </g>
+ <text class="tick" x="162" y="-8" text-anchor="middle">V segments</text>
+ <g fill="#dfe6ee" stroke="#16181d" stroke-width="1.2">
+  <rect x="256" y="6" width="22" height="22"/><rect x="282" y="6" width="22" height="22"/><rect x="308" y="6" width="22" height="22"/><rect x="334" y="6" width="22" height="22"/>
+ </g>
+ <text class="tick" x="306" y="-8" text-anchor="middle">D segments</text>
+ <g fill="#cfd8e3" stroke="#16181d" stroke-width="1.2">
+  <rect x="376" y="6" width="22" height="22"/><rect x="402" y="6" width="22" height="22"/><rect x="428" y="6" width="22" height="22"/><rect x="454" y="6" width="22" height="22"/>
+ </g>
+ <text class="tick" x="426" y="-8" text-anchor="middle">J segments</text>
+ <rect x="504" y="0" width="96" height="34" fill="#e6e9ee" stroke="#16181d" stroke-width="1.4"/>
+ <text class="tick" x="552" y="21" text-anchor="middle">Control segment</text>
+ <rect x="614" y="0" width="56" height="34" fill="#16181d"/>
+ <text class="tick" x="642" y="-8" text-anchor="middle" fill="#5b6472">terminator</text>
+</g>
+<path d="M350 92 L350 128" fill="none" stroke="#16181d" stroke-width="2" marker-end="url(#d1)"/>
+<text class="lbl-b" x="362" y="114">Q</text>
+<!-- rearranged -->
+<g transform="translate(0,140)">
+ <rect x="30" y="0" width="640" height="34" fill="#fff" stroke="#16181d" stroke-width="1.6"/>
+ <rect x="30" y="0" width="46" height="34" fill="#e6e9ee" stroke="#16181d" stroke-width="1.4"/>
+ <text class="tick" x="53" y="21" text-anchor="middle">Promoter</text>
+ <rect x="86" y="6" width="22" height="22" fill="#f1f3f6" stroke="#16181d" stroke-width="1.2"/>
+ <rect x="108" y="6" width="22" height="22" fill="#dfe6ee" stroke="#16181d" stroke-width="1.2"/>
+ <rect x="130" y="6" width="22" height="22" fill="#cfd8e3" stroke="#16181d" stroke-width="1.2"/>
+ <text class="tick" x="97" y="-8" text-anchor="middle">V</text><text class="tick" x="119" y="-8" text-anchor="middle">D</text><text class="tick" x="141" y="-8" text-anchor="middle">J</text>
+ <rect x="504" y="0" width="96" height="34" fill="#e6e9ee" stroke="#16181d" stroke-width="1.4"/>
+ <text class="tick" x="552" y="21" text-anchor="middle">Control segment</text>
+ <rect x="614" y="0" width="56" height="34" fill="#16181d"/>
+ <text class="tick" x="320" y="21" text-anchor="middle" fill="#5b6472">intervening segments excised</text>
+</g>
+<path d="M350 190 L350 226" fill="none" stroke="#16181d" stroke-width="2" marker-end="url(#d1)"/>
+<text class="lbl" x="362" y="212">transcription</text>
+<!-- transcript -->
+<g transform="translate(0,238)">
+ <rect x="86" y="0" width="514" height="34" rx="4" fill="#fff" stroke="#16181d" stroke-width="1.6" stroke-dasharray="5 3"/>
+ <rect x="94" y="6" width="22" height="22" fill="#f1f3f6" stroke="#16181d" stroke-width="1.2"/>
+ <rect x="116" y="6" width="22" height="22" fill="#dfe6ee" stroke="#16181d" stroke-width="1.2"/>
+ <rect x="138" y="6" width="22" height="22" fill="#cfd8e3" stroke="#16181d" stroke-width="1.2"/>
+ <rect x="496" y="6" width="96" height="22" fill="#e6e9ee" stroke="#16181d" stroke-width="1.2"/>
+ <text class="tick" x="544" y="21" text-anchor="middle">Control segment</text>
+ <text class="lbl" x="30" y="21">transcript</text>
+</g>
+</svg><figcaption>Fig. 5.1  Germline heavy-chain locus, the rearranged locus after step Q, and the transcript. Redrawn as a schematic.</figcaption></figure></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
 <div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>(a)</strong> <em>State precisely where the process shown in Fig. 5.1 occurs in the human body.</em> <span class="marks">[1]</span></p>
 <p><strong>1.</strong> <strong>Bone marrow.</strong></p>
 <p><strong>2.</strong> The word &quot;precisely&quot; is doing work. <strong>Both B and T lymphocytes originate in the bone marrow</strong>, but <strong>only B lymphocytes mature there</strong>; the <strong>precursor T lymphocytes migrate to the thymus</strong> and mature there. Since the figure shows the <strong>immunoglobulin heavy-chain locus in a B cell</strong>, the answer is bone marrow and not &quot;in B cells&quot; or &quot;in the immune system&quot;.</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
 <div class="qpart"><p><strong>(b)</strong> The total number of antibody specificities available to an individual is known as the antibody repertoire. In humans, the antibody repertoire is at least 10¹¹. Fig. 5.2 is a schematic diagram of the production of a heavy chain polypeptide for an antibody. At the top is the chromosomal arrangement found in an immature B cell; at the bottom is shown the heavy chain polypeptide. With reference to Fig. 5.2, explain how somatic recombination during B cell development results in the formation of millions of different antibody molecules. <span class="marks">[4]</span></p>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: Fig. 5.2. The germ-line heavy chain locus is drawn as a promoter followed by many V segments, many D segments, many J segments and a constant segment, ending with a transcription terminator. DNA rearrangement joins one V, one D and one J segment and deletes the intervening segments. Transcription from the ATG start codon to the stop codon gives a pre-mRNA; RNA splicing removes the intron regions; translation gives a heavy chain with a variable region encoded by the joined V, D and J segments and a constant region encoded by the constant segment.</div></div>
+<figure class="fig fig-svg"><svg viewBox="0 0 700 400" width="700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="From germline heavy chain locus through rearrangement, transcription, splicing and translation">
+<rect width="700" height="400" fill="#fff"/>
+<defs><marker id="d2" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#16181d"/></marker></defs>
+<g transform="translate(0,30)">
+ <text class="lbl" x="30" y="-8">germ-line heavy chain locus</text>
+ <rect x="30" y="0" width="640" height="28" fill="#fff" stroke="#16181d" stroke-width="1.6"/>
+ <rect x="30" y="0" width="40" height="28" fill="#e6e9ee" stroke="#16181d" stroke-width="1.3"/><text class="tick" x="50" y="18" text-anchor="middle">P</text>
+ <g fill="#f1f3f6" stroke="#16181d" stroke-width="1.1"><rect x="80" y="5" width="18" height="18"/><rect x="102" y="5" width="18" height="18"/><rect x="124" y="5" width="18" height="18"/><rect x="146" y="5" width="18" height="18"/><rect x="168" y="5" width="18" height="18"/></g>
+ <g fill="#dfe6ee" stroke="#16181d" stroke-width="1.1"><rect x="212" y="5" width="18" height="18"/><rect x="234" y="5" width="18" height="18"/><rect x="256" y="5" width="18" height="18"/></g>
+ <g fill="#cfd8e3" stroke="#16181d" stroke-width="1.1"><rect x="304" y="5" width="18" height="18"/><rect x="326" y="5" width="18" height="18"/><rect x="348" y="5" width="18" height="18"/></g>
+ <rect x="470" y="0" width="120" height="28" fill="#e6e9ee" stroke="#16181d" stroke-width="1.3"/><text class="tick" x="530" y="18" text-anchor="middle">constant segment</text>
+ <rect x="626" y="0" width="44" height="28" fill="#16181d"/>
+ <text class="tick" x="133" y="44" text-anchor="middle">many V</text><text class="tick" x="243" y="44" text-anchor="middle">many D</text><text class="tick" x="335" y="44" text-anchor="middle">many J</text>
+ <text class="tick" x="648" y="44" text-anchor="middle" fill="#5b6472">terminator</text>
+</g>
+<path d="M350 84 L350 112" fill="none" stroke="#16181d" stroke-width="2" marker-end="url(#d2)"/>
+<text class="lbl" x="362" y="102">DNA rearrangement joins one V, one D and one J; the rest are deleted</text>
+<g transform="translate(0,122)">
+ <rect x="30" y="0" width="640" height="28" fill="#fff" stroke="#16181d" stroke-width="1.6"/>
+ <rect x="30" y="0" width="40" height="28" fill="#e6e9ee" stroke="#16181d" stroke-width="1.3"/><text class="tick" x="50" y="18" text-anchor="middle">P</text>
+ <rect x="80" y="5" width="18" height="18" fill="#f1f3f6" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="98" y="5" width="18" height="18" fill="#dfe6ee" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="116" y="5" width="18" height="18" fill="#cfd8e3" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="470" y="0" width="120" height="28" fill="#e6e9ee" stroke="#16181d" stroke-width="1.3"/>
+ <rect x="626" y="0" width="44" height="28" fill="#16181d"/>
+ <text class="tick" x="150" y="-6">ATG</text><text class="tick" x="592" y="-6">stop</text>
+</g>
+<path d="M350 156 L350 184" fill="none" stroke="#16181d" stroke-width="2" marker-end="url(#d2)"/>
+<text class="lbl" x="362" y="174">transcription</text>
+<g transform="translate(0,194)">
+ <rect x="80" y="0" width="510" height="26" rx="4" fill="#fff" stroke="#16181d" stroke-width="1.5" stroke-dasharray="5 3"/>
+ <rect x="86" y="4" width="18" height="18" fill="#f1f3f6" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="104" y="4" width="18" height="18" fill="#dfe6ee" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="122" y="4" width="18" height="18" fill="#cfd8e3" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="464" y="4" width="120" height="18" fill="#e6e9ee" stroke="#16181d" stroke-width="1.1"/>
+ <text class="lbl" x="30" y="17">pre-mRNA</text>
+ <text class="tick" x="300" y="17" text-anchor="middle" fill="#5b6472">intron</text>
+</g>
+<path d="M350 226 L350 254" fill="none" stroke="#16181d" stroke-width="2" marker-end="url(#d2)"/>
+<text class="lbl" x="362" y="244">RNA splicing removes the intron regions</text>
+<g transform="translate(0,264)">
+ <rect x="80" y="0" width="290" height="26" rx="4" fill="#fff" stroke="#16181d" stroke-width="1.5"/>
+ <rect x="86" y="4" width="18" height="18" fill="#f1f3f6" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="104" y="4" width="18" height="18" fill="#dfe6ee" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="122" y="4" width="18" height="18" fill="#cfd8e3" stroke="#16181d" stroke-width="1.1"/>
+ <rect x="244" y="4" width="120" height="18" fill="#e6e9ee" stroke="#16181d" stroke-width="1.1"/>
+ <text class="lbl" x="30" y="17">mRNA</text>
+</g>
+<path d="M350 296 L350 324" fill="none" stroke="#16181d" stroke-width="2" marker-end="url(#d2)"/>
+<text class="lbl" x="362" y="314">translation</text>
+<g transform="translate(0,334)">
+ <path d="M110 26 C 140 4, 190 4, 220 26 C 250 48, 300 48, 330 26" fill="none" stroke="#16181d" stroke-width="3"/>
+ <path d="M330 26 C 380 4, 470 4, 520 26" fill="none" stroke="#16181d" stroke-width="3" stroke-dasharray="6 4"/>
+ <text class="lbl" x="30" y="30">heavy chain</text>
+ <text class="tick" x="220" y="58" text-anchor="middle">variable region, from the joined V, D and J</text>
+ <text class="tick" x="440" y="58" text-anchor="middle">constant region</text>
+</g>
+</svg><figcaption>Fig. 5.2  From germline locus through rearrangement, transcription, splicing and translation to the heavy chain. Redrawn as a schematic.</figcaption></figure></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
 <div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>(b)</strong> <em>With reference to Fig. 5.2, explain how somatic recombination during B cell development results in the formation of millions of different antibody molecules.</em> <span class="marks">[4]</span></p>
 <p><strong>1.</strong> <strong>Reference to the process by which different segments of V, D and J are ligated to form the gene encoding different variable regions in the heavy chain of the antibody.</strong></p>
@@ -317,7 +597,34 @@ p{margin:8px 0}
 <div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> NYJC Prelim 2025 P2 Q10(a), stem, figure and key verbatim (a), with Fig. 10.1 renumbered Fig. 5.1. HCI Prelim 2017 P3 Q3(a), stem, figure and all five marking points verbatim (b), with Fig. 3.1 renumbered Fig. 5.2. TMJC Prelim 2023 P3 Q2(d), stem and key verbatim (c). TMJC Prelim 2025 P3 Q1(c)(i), stem and key verbatim (d). None of these papers is in the papers as a PDF, so both figures carry the source paper&#x27;s own description. <strong>Archetype:</strong> a one-word precise location, then a four-mark figure-led mechanism chain, then two explains that transfer the same mechanism to a new pathogen and to self-tolerance. <strong>Trap:</strong> answering (a) with &quot;in B cells&quot; instead of a location in the body; stopping (b) at the DNA rearrangement without reaching the folded binding site; explaining specificity by the antibody alone in (c), when the scheme also wants the different plasma cells and the different parent B cells. <strong>LOs:</strong> (d) for the recombination mechanism, (a) and (b) for one specificity per cell, self against non-self, and where lymphocytes mature. Reach-back to Book 2 for gene loci and to Book 1 for sequence determining conformation. <strong>Concepts fused:</strong> (1) B cells maturing in bone marrow and T cells in the thymus; (2) one V, one D and one J chosen; (3) intervening segments deleted; (4) segment number as the source of combinatorial diversity; (5) DNA change to mRNA change to amino acid change to conformation; (6) the repertoire problem the mechanism solves; (7) epitope defined; (8) several epitopes per antigen; (9) one specificity per lymphocyte; (10) different plasma cells from different parent B cells; (11) self against non-self; (12) negative selection in the thymus.</p>
 <p>---</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q6"><h3>Question 6 <span class="marks">[6 marks]</span></h3><div class="qpart"></div>
 <div class="qpart"><p><strong>(a)</strong> Fig. 6.1 shows an antigen presenting cell (APC) presenting an antigen from a pathogen, such as a virus, to a cytotoxic T cell. Using Fig. 6.1, describe how presentation of an antigen by an APC will lead to the elimination of the pathogen. <span class="marks">[3]</span></p>
-<div class="fig-missing"><strong>Figure not recovered.</strong> Described from the source paper: Fig. 6.1, two outlined cells side by side, each with a nucleus. The left, smaller cell is labelled cytotoxic T cell and the right, larger irregular cell is labelled APC. Where they meet, a small receptor shape on the T cell interlocks with a small antigen-presenting molecule bearing a peptide on the APC surface.</div></div>
+<figure class="fig fig-svg"><svg viewBox="0 0 600 300" width="600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A cytotoxic T cell interlocking with an antigen presenting cell">
+<rect width="600" height="300" fill="#fff"/>
+<!-- cytotoxic T cell -->
+<g transform="translate(150,152)">
+ <circle r="76" fill="#fff" stroke="#16181d" stroke-width="2.2"/>
+ <ellipse cx="-10" cy="0" rx="30" ry="24" fill="#f1f3f6" stroke="#16181d" stroke-width="1.6"/>
+ <text class="tick" x="-10" y="4" text-anchor="middle">nucleus</text>
+</g>
+<text class="lbl-b" x="150" y="258" text-anchor="middle">cytotoxic T cell</text>
+<!-- APC, larger and irregular -->
+<g transform="translate(410,150)">
+ <path d="M-96 -20 C -104 -74, -50 -116, 6 -106 C 66 -96, 116 -56, 112 4
+          C 108 66, 56 116, -6 108 C -60 100, -90 60, -96 -20 Z"
+       fill="#fff" stroke="#16181d" stroke-width="2.2"/>
+ <ellipse cx="14" cy="4" rx="38" ry="30" fill="#f1f3f6" stroke="#16181d" stroke-width="1.6"/>
+ <text class="tick" x="14" y="8" text-anchor="middle">nucleus</text>
+</g>
+<text class="lbl-b" x="416" y="282" text-anchor="middle">APC</text>
+<!-- the interlocking pair at the contact point -->
+<g>
+ <path d="M226 138 L246 138 L246 130 L258 130 L258 146 L246 146 L246 138" fill="#fff" stroke="#16181d" stroke-width="2"/>
+ <path d="M316 130 L304 130 L304 122 L290 122 L290 154 L304 154 L304 146 L316 146 Z" fill="#fff" stroke="#16181d" stroke-width="2"/>
+ <rect x="272" y="132" width="14" height="12" fill="#16181d"/>
+</g>
+<line class="ld" x1="236" y1="122" x2="212" y2="76"/><text class="tick" x="206" y="72" text-anchor="end">receptor on the T cell</text>
+<line class="ld" x1="308" y1="118" x2="352" y2="70"/><text class="tick" x="356" y="66">antigen-presenting molecule</text>
+<line class="ld" x1="279" y1="150" x2="279" y2="196"/><text class="tick" x="279" y="212" text-anchor="middle">peptide</text>
+</svg><figcaption>Fig. 6.1  A cytotoxic T cell and an antigen-presenting cell interlocking at the contact point. Redrawn as a schematic.</figcaption></figure></div>
 <div class="confidence">Say your confidence out loud before revealing: <b>high</b> / <b>medium</b> / <b>guessed</b>.</div>
 <div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>(a)</strong> <em>Using Fig. 6.1, describe how presentation of an antigen by an APC will lead to the elimination of the pathogen.</em> <span class="marks">[3]</span></p>
 <p><em>Activation of cytotoxic T cells, maximum 2:</em></p>

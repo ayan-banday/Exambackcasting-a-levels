@@ -1,0 +1,48 @@
+<svg viewBox="0 0 560 380" width="540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cross-section of a membrane with an embedded ATP synthase">
+<rect width="560" height="380" fill="#fff"/>
+<defs><marker id="a3" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#16181d"/></marker></defs>
+<!-- region X above -->
+<text class="lbl-b" x="34" y="46">X</text>
+<!-- membrane -->
+<rect x="20" y="96" width="520" height="80" fill="#f1f3f6" stroke="#16181d" stroke-width="1.4"/>
+<g stroke="#16181d" stroke-width="1" opacity=".4"><line x1="20" y1="110" x2="540" y2="110"/><line x1="20" y1="162" x2="540" y2="162"/></g>
+<text class="lbl-b" x="34" y="142">Z</text>
+<line class="ld" x1="46" y1="136" x2="76" y2="136"/>
+<!-- Fo: ring of c subunits + a subunit -->
+<g transform="translate(268,136)">
+  <ellipse rx="62" ry="40" fill="#fff" stroke="#16181d" stroke-width="2"/>
+  <g fill="none" stroke="#16181d" stroke-width="1.3">
+    <line x1="-44" y1="-28" x2="-44" y2="28"/><line x1="-26" y1="-36" x2="-26" y2="36"/>
+    <line x1="-8"  y1="-39" x2="-8"  y2="39"/><line x1="10" y1="-39" x2="10" y2="39"/>
+    <line x1="28" y1="-36" x2="28" y2="36"/><line x1="46" y1="-28" x2="46" y2="28"/>
+  </g>
+  <text class="tick" x="0" y="4" text-anchor="middle">c subunits</text>
+  <rect x="64" y="-40" width="30" height="80" rx="4" fill="#fff" stroke="#16181d" stroke-width="2"/>
+  <text class="tick" x="79" y="4" text-anchor="middle">a</text>
+</g>
+<!-- proton channel arrow -->
+<path d="M332 60 L332 96 L346 136 L332 176 L332 214" fill="none" stroke="#16181d" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#a3)"/>
+<text class="lbl-b" x="348" y="58">proton channel</text>
+<text class="lbl-b" x="348" y="232">3H⁺</text>
+<!-- stalk -->
+<rect x="258" y="176" width="20" height="52" fill="#fff" stroke="#16181d" stroke-width="2"/>
+<text class="tick" x="240" y="206" text-anchor="end">γ, ε</text>
+<line class="ld" x1="244" y1="202" x2="256" y2="202"/>
+<!-- peripheral stalk -->
+<path d="M186 116 L186 240" fill="none" stroke="#16181d" stroke-width="2"/>
+<text class="tick" x="178" y="182" text-anchor="end">b, δ</text>
+<!-- F1 head -->
+<g transform="translate(268,268)">
+  <ellipse rx="86" ry="46" fill="#fff" stroke="#16181d" stroke-width="2.2"/>
+  <g fill="none" stroke="#16181d" stroke-width="1.3">
+    <line x1="-58" y1="-32" x2="-58" y2="32"/><line x1="-29" y1="-42" x2="-29" y2="42"/>
+    <line x1="0" y1="-45" x2="0" y2="45"/><line x1="29" y1="-42" x2="29" y2="42"/>
+    <line x1="58" y1="-32" x2="58" y2="32"/>
+  </g>
+  <text class="tick" x="-44" y="-6" text-anchor="middle">α</text><text class="tick" x="-15" y="-6" text-anchor="middle">β</text>
+  <text class="tick" x="15" y="-6" text-anchor="middle">α</text><text class="tick" x="44" y="-6" text-anchor="middle">β</text>
+  <text class="tick" x="0" y="14" text-anchor="middle">F₁ head</text>
+</g>
+<text class="lbl-b" x="34" y="330">Y</text>
+<text class="tick" x="524" y="76" text-anchor="end">F₀ portion spans the membrane</text>
+</svg>
