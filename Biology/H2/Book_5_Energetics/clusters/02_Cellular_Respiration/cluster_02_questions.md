@@ -99,6 +99,8 @@ membrane and the outer membrane. **[3]**
 
 ---
 
+---
+
 ### Question 2 [10 marks]
 
 **(a)** Fig. 7.1 shows the Krebs cycle and the reactions preceding it: glucose is converted to
@@ -120,6 +122,8 @@ depend on the proteins found in the mitochondrial matrix. **[6]**
 
 ---
 
+---
+
 ### Question 3 [8 marks]
 
 **(a)** Glucose enters bacterial cells via glucose transporters found on the plasma membrane. Glucose
@@ -136,6 +140,8 @@ that encodes it results in haemolytic anaemia, the lysis of red blood cells. Pyr
 another enzyme in glycolysis, and a loss-of-function mutation in both copies of its gene similarly
 results in haemolytic anaemia. Suggest why the lack of membrane-bound organelles in mature red blood
 cells makes them more susceptible to the effects of either mutation. **[2]**
+
+---
 
 ---
 
@@ -172,6 +178,8 @@ photosynthesis respectively. Compare the roles of NAD and NADP. **[3]**
 
 **(d)** Coenzyme A is a nucleotide that plays an important role in cellular respiration. Describe the
 role of coenzyme A in cellular respiration. **[2]**
+
+---
 
 ---
 
@@ -217,10 +225,14 @@ chemiosmosis in chloroplasts. **[1]**
 
 ---
 
+---
+
 ### Question 6 [15 marks]
 
 Section B, free response. Describe the features of the processes of aerobic respiration that allow
 energy from a glucose molecule to be harnessed. **[15]**
+
+---
 
 ---
 
@@ -245,6 +257,8 @@ actual net number of ATP molecules synthesised is less than the theoretical numb
 
 ---
 
+---
+
 ### Question 8 [10 marks]
 
 **(a)** A student watered a potted plant too excessively, causing the soil to become waterlogged.
@@ -263,9 +277,13 @@ significantly when yeast cells switch from aerobic to anaerobic respiration. **[
 
 ---
 
+---
+
 ### Question 9 [10 marks]
 
 Section B, free response. Discuss the significance of membranes in aerobic respiration. **[10]**
+
+---
 
 ---
 
@@ -301,46 +319,9 @@ Krebs cycle during seed germination. **[2]**
 
 ---
 
-### Question 11 [8 marks]
-
-**(a)** Fig. 4.2 shows a respirometer, a device used to measure the rate of respiration of a living
-organism by measuring its rate of exchange of oxygen and carbon dioxide. Mung bean seeds rest above a
-layer of soda lime in a syringe barrel, and a horizontal capillary tube containing a drop of coloured
-dye runs from the nozzle against a ruler. Explain the direction of movement of the coloured dye.
-**[2]**
-
-**(b)** You add 10 mung bean seeds to the respirometer, place the plunger, and leave the respirometer
-for 5 minutes before taking the first reading. Explain the purpose of leaving the respirometer for
-5 minutes. **[1]**
-
-**(c)** In a further investigation, using the same respirometer at 20 °C, the soda lime was removed and
-the experiment repeated. The dye did not move. Suggest why the dye did not move. **[1]**
-
-**(d)** Suggest an advantage of recording the **cumulative** distance moved by the coloured dye every
-30 seconds, instead of only recording the total distance moved after 5 minutes. **[1]**
-
-**(e)** Respirometers were used to investigate the effect of temperature on the rate of respiration of
-germinating pea seeds. Four respirometers, A, B, C and D, were set up: A and B in a water bath at
-10 °C, C and D in a water bath at 25 °C. A and C each contained 30 germinating pea seeds; B and D each
-contained glass beads with a total volume equivalent to 30 pea seeds. The volume of oxygen taken up was
-calculated for each respirometer at 5, 10, 15 and 20 minutes. Respirometer C rose most steeply, from
-0.4 cm3 at 5 minutes to 1.7 cm3 at 20 minutes; respirometer A rose less steeply; respirometers B and D
-showed no oxygen uptake.
-
-Calculate the rate of oxygen uptake in cm3 per minute for respirometer C between 5 and 20 minutes.
-Give your answer to **two significant figures**. Show your working. **[1]**
-
-**(f)** Table 8.1 gives the rate of movement of the coloured liquid in a respirometer containing
-germinating peas at five temperatures: 10 °C, 0.40 mm min-1; 20 °C, 0.70 mm min-1; 30 °C,
-1.30 mm min-1; 40 °C, 1.15 mm min-1; 50 °C, 0.60 mm min-1. The rate of movement of the coloured liquid
-is related to the rate of respiration. Explain the effect of temperature on the rate of respiration
-shown in Table 8.1. **[3]**
-
 ---
 
----
-
-### Question 12 [6 marks]
+### Question 11 [6 marks]
 
 **(a)** Different types of respiratory substrate can have different energy values and therefore release
 different quantities of energy when they are respired. Complete Table 1.1 to show the energy value of
@@ -388,7 +369,9 @@ potassium hydroxide solution when measuring RQ values. **[1]**
 
 ---
 
-### Question 13 [8 marks]
+---
+
+### Question 12 [8 marks]
 
 **(a)** Baker's yeast, *Saccharomyces cerevisiae*, converts sugars to ethanol and carbon dioxide under
 anaerobic conditions. You will investigate the effects of different concentrations of ethanol on the
@@ -425,6 +408,8 @@ colour change of the redox indicator can be measured using a colorimeter. Using 
 of yeast cell suspension was added into a conical flask, followed by 10 cm3 of **sucrose** solution and
 1 cm3 of TTC. Explain why the colour change of TTC can only be observed after 10 minutes and not
 immediately upon addition. **[2]**
+
+---
 
 ---
 
@@ -482,6 +467,8 @@ immediately upon addition. **[2]**
 
 ---
 
+---
+
 ### Question 2
 
 **(a)** *State precisely the name and location of the process that forms pyruvate.* **[2]**
@@ -521,6 +508,8 @@ immediately upon addition. **[2]**
 **Trap:** writing "pyruvate diffuses into the mitochondrion", which your own Table 5 on 5.2 page 18 says and which the same chapter contradicts twice, on page 19 and in Fig. 15's caption; pyruvate is charged and crosses by **active transport through a transport protein**. Writing "broken down" or "converted" where the outcome's own verbs, decarboxylated and oxidised, belong, which a scheme rejects in writing. Counting acetyl CoA as a two-carbon molecule: the **acetyl group** is two carbons, coenzyme A is much larger, and the difference only matters the moment a question makes you count carbons. Quoting **4 CO2 per glucose** off your Overview page.
 **LOs:** 3(f) outline the process of glycolysis, highlighting location, raw materials used and products formed, in (a); 3(g) outline the processes of the link reaction and Krebs cycle in terms of dehydrogenation and decarboxylation, in (b) and (c); 3(a) precise location throughout.
 **Concepts fused:** (1) glycolysis located in the cytoplasm; (2) pyruvate crossing by active transport; (3) decarboxylation as one named reaction type; (4) dehydrogenation as the other; (5) coenzyme A picking up the acetyl group; (6) oxaloacetate as the regenerated acceptor; (7) the per-turn Krebs count; (8) the per-glucose doubling; (9) the 6 CO2 budget; (10) substrate-level phosphorylation defined as a coupling, not just as "ATP is made".
+
+---
 
 ---
 
@@ -567,6 +556,8 @@ immediately upon addition. **[2]**
 **Trap:** answering (a) with the ten-step pathway, which earns nothing and costs the time you need for the rest of the paper; giving "it is too big" alone in (b) when the mark is really about charge and the hydrophobic core; forgetting in (c) that a red blood cell has no mitochondria at all, so glycolysis is not merely its main route but its only one.
 **LOs:** 3(f) glycolysis: location, raw materials, products, in (a); reach-back to Book 1 membranes for the hydrophobic core and carrier specificity in (b); reach-back to Book 1 cell structure for the organelle inventory in (c).
 **Concepts fused:** (1) the energy-investment phase; (2) dehydrogenation producing reduced NAD; (3) substrate-level phosphorylation producing 4 gross and 2 net ATP; (4) pyruvate as the exit molecule; (5) charge as a barrier to diffusion; (6) carrier-protein specificity; (7) a cell with no mitochondria depending entirely on glycolysis.
+
+---
 
 ---
 
@@ -617,6 +608,8 @@ immediately upon addition. **[2]**
 **Trap:** "reduction of NAD occurs at the cristae", which over 40% of your own cohort chose; describing the pathway instead of the coenzyme, when the stem asks only for the role of NAD; quoting an ATP-per-NADH figure that the syllabus excludes and that two schemes give differently.
 **LOs:** 3(g) products formed in terms of dehydrogenation and decarboxylation, throughout; 3(h) the role of the ETC in (b); reach-forward to Cluster 1's LO 3(d) for NADP in (c).
 **Concepts fused:** (1) where NAD is reduced against where it is oxidised; (2) oxaloacetate as the four-carbon acceptor; (3) pyruvate as the oxidation product of a hexose; (4) NAD as a coenzyme of dehydrogenases; (5) NAD as a shuttle between the matrix and the inner membrane; (6) regeneration as the reason the pool never runs out; (7) NADP as a terminal acceptor against NAD as an intermediate carrier; (8) reduced NADP as reducing power in the Calvin cycle; (9) coenzyme A as an acetyl carrier.
+
+---
 
 ---
 
@@ -687,6 +680,8 @@ Any one of the following paired differences earns the mark.
 
 ---
 
+---
+
 ### Question 6
 
 *Describe the features of the processes of aerobic respiration that allow energy from a glucose molecule to be harnessed.* **[15]**
@@ -747,6 +742,8 @@ Any fourteen from the following. **Starred points are compulsory for the award o
 
 ---
 
+---
+
 ### Question 7
 
 **(a)** *State whether the mutated mitochondrion would have a higher, lower or equal oxygen consumption rate.* **[1]**
@@ -803,6 +800,8 @@ Any one of the following.
 
 ---
 
+---
+
 ### Question 8
 
 **(a)** *Outline the process of anaerobic respiration in the roots under waterlogged conditions.* **[4]**
@@ -853,6 +852,8 @@ Any four, in anaerobic conditions.
 
 ---
 
+---
+
 ### Question 9
 
 *Discuss the significance of membranes in aerobic respiration.* **[10]**
@@ -890,6 +891,8 @@ Any four, in anaerobic conditions.
 **Trap:** describing oxidative phosphorylation without naming a membrane feature; describing the fluid mosaic model without naming a respiratory step; forgetting the cell surface membrane entirely and starting at the mitochondrion.
 **LOs:** 3(a) mitochondrial structure; 3(f) to 3(h) the stages; 3(l) chemiosmosis; heavy reach-back to Book 1 Core Idea 1 on membrane structure, selective permeability, facilitated diffusion and compartmentalisation.
 **Concepts fused:** (1) the hydrophobic core as a retention device; (2) GLUT transporters as an entry device; (3) pyruvate transporters at the mitochondrial boundary; (4) cristae as a surface-area device; (5) the chain as an energy ladder; (6) proton pumps as the gradient builders; (7) ATP synthase as the gradient spender; (8) selective permeability as the precondition for a gradient; (9) compartmentalisation as a way of running incompatible reactions at once.
+
+---
 
 ---
 
@@ -931,55 +934,9 @@ Any four, in anaerobic conditions.
 
 ---
 
+---
+
 ### Question 11
-
-**(a)** *Explain the direction of movement of the coloured dye.* **[2]**
-
-**1.** **Soda lime will absorb CO2 produced by the mung bean seeds and O2 will be absorbed by the mung bean seeds.**
-
-**2.** **Thus the level of the coloured dye will move from left to right, towards the plastic syringe**, that is, **towards the respiring organisms**, because the total volume of gas in the sealed chamber falls and the pressure drops.
-
-**(b)** *Explain the purpose of leaving the respirometer for 5 minutes.* **[1]**
-
-**1.** **Allow the soda lime to completely absorb and remove all CO2 in the syringe chamber.**
-
-**(c)** *Suggest why the dye did not move when the soda lime was removed.* **[1]**
-
-**1.** **Idea that the volume of oxygen uptake equals the volume of carbon dioxide released, therefore there is no change in overall volume in the respirometer and the air pressure is unchanged.**
-
-**2.** Which is the same as saying **the respiratory quotient was 1.0**, so the substrate was carbohydrate. Hold that beside Question 8: **with the absorbent in, the reading gives oxygen consumed; with it out, the reading gives the difference between the two gases**, and the two readings together give RQ.
-
-**(d)** *Suggest an advantage of recording the cumulative distance every 30 seconds rather than only the total after 5 minutes.* **[1]**
-
-**1.** **Reference to checking that the rate is constant or steady.**
-
-**(e)** *Calculate the rate of oxygen uptake in cm3 per minute for respirometer C between 5 and 20 minutes, to two significant figures.* **[1]**
-
-**1.** **(1.7 minus 0.4) divided by (20 minus 5) = 1.3 / 15 = 0.08666 = 0.087 cm3 min-1 to 2 s.f.**
-
-**2.** Respirometers B and D contain glass beads and show no oxygen uptake. They are the **controls for physical changes in gas volume**, that is for changes in temperature and atmospheric pressure, which is what the compensation tube does in the standard apparatus.
-
-**(f)** *Explain the effect of temperature on the rate of respiration shown in Table 8.1.* **[3]**
-
-**1.** There is **reference to respiration being controlled by enzymes.**
-
-**2.** **As temperature increases, the kinetic energy of enzymes and substrates increases**, **leading to an increase in the frequency and rate of effective collisions between enzymes and substrates, that is, in enzyme-substrate complex formation.**
-
-**3.** **30 °C is the optimum temperature, where the highest rate of respiration is obtained**, at **1.30 mm min-1**.
-
-**4.** The **rate decreases after 30 °C due to denaturation of enzymes and loss of the specific three-dimensional conformation of the active sites**, falling to **0.60 mm min-1 at 50 °C**.
-
-**Source:** Topical 2021 STQ Q9c, reprinting TMJC Prelim P2 Q4c, stem, Fig. 4.2 description and key verbatim (a); MJC Prelim 2017 P4 Q1 step 6, stem and key verbatim (b); MJC Prelim 2017 P4 Q1 step 19d, stem and key verbatim (c); MJC Prelim 2017 P4 Q1 step 16, stem and key verbatim (d); RI Prelim 2023 P2 Q7d(i), stem, Fig. 7.4 description and key verbatim (e); ASRJC Prelim 2025 P2 Q8c(ii), stem, Table 8.1 and key verbatim (f). No respirometer figure could be recovered from a PDF, so each paper's own description is printed and every part is answerable from it.
-**Archetype:** the respirometer, which is the standard apparatus for LO 3(k). The papers set 42 records on the respirometer and respiratory quotient together, including full Paper 4 planning questions.
-**Trap:** predicting the wrong direction of dye movement, which turns on the absorbent being present; forgetting why the equilibration period exists; treating the glass-bead tubes as spare repeats rather than as controls for pressure and temperature; explaining the temperature curve without naming denaturation on the falling limb, or naming it on the rising limb where a different scheme rejects it.
-**LOs:** 3(k) investigate the effect of factors including substrate concentration, oxygen concentration and temperature on the rate of respiration, throughout; reach-back to Book 1 enzymes for kinetic energy, effective collisions and denaturation in (f).
-**Concepts fused:** (1) the absorbent making the reading mean oxygen; (2) equilibration before time zero; (3) a respiratory quotient of 1 giving no net volume change; (4) repeated readings as a check on steadiness; (5) rate arithmetic from two points with units and significant figures; (6) inert controls for physical volume change; (7) the enzyme-kinetics shape of a temperature curve.
-
----
-
----
-
-### Question 12
 
 **(a)** *Complete Table 1.1 with one tick per respiratory substrate.* **[1]**
 
@@ -1025,7 +982,9 @@ Any four, in anaerobic conditions.
 
 ---
 
-### Question 13
+---
+
+### Question 12
 
 **(a)** *Record your results in an appropriate table.* **[3]**
 

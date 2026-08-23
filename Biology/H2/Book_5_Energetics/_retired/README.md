@@ -20,3 +20,27 @@ figures and captions carried across intact:
 | Q9 yeast, anaerobic respiration | C2 Q13 | respiration |
 
 Kept only so the mapping is auditable. Nothing here is built or linked.
+
+## 23 Aug, second pass: the pure Paper 4 questions were then cut
+
+Ethan: *"you can reduce cluster 3 questions quite a bit tbh it's not very important."* Fair, because
+**Bio Paper 4 is skipped until the October practical block**, so a method-and-apparatus question earns
+nothing this month.
+
+**Kept**, because the content is examined on Papers 2 and 3 as well:
+
+- compensation point, sun against shade leaves (C1)
+- DCPIP and the effect of wavelength (C1)
+- *Chlorella* and the carbon dioxide switch, which is really a Calvin cycle question (C1)
+- respiratory quotient by substrate (C2)
+- yeast and anaerobic respiration (C2)
+
+**Cut and parked for October**, because they are pure Paper 4 skill:
+
+- Specimen P4 Q1 in full, 16 marks: sketch the graph, design the table, describe the method, evaluate it
+- Specimen P4 Q3, planning the compensation point investigation
+- leaf discs and carbon dioxide, whose limiting-factor content is already Cluster 1's own Q8
+- pigment chromatography method and Rf
+- the respirometer apparatus question
+
+All five still exist in `03_Energetics_in_Practice/` here. Rebuild them into a Paper 4 drill in October.
