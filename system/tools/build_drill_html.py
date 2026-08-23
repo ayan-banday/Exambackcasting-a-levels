@@ -202,6 +202,12 @@ def render(text, qno=None, part=None, figs_used=None):
     out, lines, i = [], text.split("\n"), 0
     while i < len(lines):
         ln = lines[i]
+        # Ethan, 23 Aug: "remove these lines that keep appearing too they are ugly af".
+        # A bare --- is a markdown horizontal rule used as a separator in the source; it is not
+        # content, and the paragraph branch used to render it as literal dashes.
+        if re.fullmatch(r"\s*(-{3,}|\*{3,}|_{3,})\s*", ln):
+            i += 1
+            continue
         # figure placeholder (may span several lines until the closing bracket)
         if ln.lstrip().startswith("[FIGURE:"):
             blk = [ln]
