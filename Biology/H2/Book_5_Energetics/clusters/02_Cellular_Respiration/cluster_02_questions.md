@@ -299,6 +299,137 @@ Krebs cycle during seed germination. **[2]**
 
 ---
 
+---
+
+### Question 11 [8 marks]
+
+**(a)** Fig. 4.2 shows a respirometer, a device used to measure the rate of respiration of a living
+organism by measuring its rate of exchange of oxygen and carbon dioxide. Mung bean seeds rest above a
+layer of soda lime in a syringe barrel, and a horizontal capillary tube containing a drop of coloured
+dye runs from the nozzle against a ruler. Explain the direction of movement of the coloured dye.
+**[2]**
+
+**(b)** You add 10 mung bean seeds to the respirometer, place the plunger, and leave the respirometer
+for 5 minutes before taking the first reading. Explain the purpose of leaving the respirometer for
+5 minutes. **[1]**
+
+**(c)** In a further investigation, using the same respirometer at 20 °C, the soda lime was removed and
+the experiment repeated. The dye did not move. Suggest why the dye did not move. **[1]**
+
+**(d)** Suggest an advantage of recording the **cumulative** distance moved by the coloured dye every
+30 seconds, instead of only recording the total distance moved after 5 minutes. **[1]**
+
+**(e)** Respirometers were used to investigate the effect of temperature on the rate of respiration of
+germinating pea seeds. Four respirometers, A, B, C and D, were set up: A and B in a water bath at
+10 °C, C and D in a water bath at 25 °C. A and C each contained 30 germinating pea seeds; B and D each
+contained glass beads with a total volume equivalent to 30 pea seeds. The volume of oxygen taken up was
+calculated for each respirometer at 5, 10, 15 and 20 minutes. Respirometer C rose most steeply, from
+0.4 cm3 at 5 minutes to 1.7 cm3 at 20 minutes; respirometer A rose less steeply; respirometers B and D
+showed no oxygen uptake.
+
+Calculate the rate of oxygen uptake in cm3 per minute for respirometer C between 5 and 20 minutes.
+Give your answer to **two significant figures**. Show your working. **[1]**
+
+**(f)** Table 8.1 gives the rate of movement of the coloured liquid in a respirometer containing
+germinating peas at five temperatures: 10 °C, 0.40 mm min-1; 20 °C, 0.70 mm min-1; 30 °C,
+1.30 mm min-1; 40 °C, 1.15 mm min-1; 50 °C, 0.60 mm min-1. The rate of movement of the coloured liquid
+is related to the rate of respiration. Explain the effect of temperature on the rate of respiration
+shown in Table 8.1. **[3]**
+
+---
+
+---
+
+### Question 12 [6 marks]
+
+**(a)** Different types of respiratory substrate can have different energy values and therefore release
+different quantities of energy when they are respired. Complete Table 1.1 to show the energy value of
+each of the three main types of respiratory substrate. Use one tick to identify which of the two
+possible energy values is correct for each respiratory substrate. **[1]**
+
+| type of respiratory substrate | approximately 17 kJ g-1 | approximately 37 kJ g-1 |
+|---|---|---|
+| carbohydrate | | |
+| lipid | | |
+| protein | | |
+
+**(b)** Organic acids such as malic acid can also act as respiratory substrates. When respired
+aerobically, their respiratory quotient (RQ) values may be different from the RQ values of the main
+respiratory substrates. RQ is the number of molecules of carbon dioxide produced divided by the number
+of molecules of oxygen taken in. When malic acid is respired aerobically, the equation is
+
+> C4H6O5 +. O2 goes to 4CO2 + 3H2O + energy
+
+Calculate how many molecules of oxygen are taken in when one molecule of malic acid is respired
+aerobically. **[1]**
+
+**(c)** Calculate the RQ for malic acid. Give your answer to **two** decimal places. **[1]**
+
+**(d)** Determining the RQ of an organism can be used to indicate the main type of respiratory substrate
+that is being metabolised in respiration, because the different types of respiratory substrate have
+different RQ values. Table 1.2 shows typical RQ values.
+
+| type of respiratory substrate | RQ value |
+|---|---|
+| carbohydrate | 1.0 |
+| lipid | 0.7 |
+| protein | 0.8 |
+
+State the name of the laboratory apparatus that can be used to determine the RQ value of organisms such
+as blowfly larvae. **[1]**
+
+**(e)** When determining RQ values using the apparatus stated in (d), chemicals such as soda lime or
+potassium hydroxide solution are used. State the reason for using chemicals such as soda lime or
+potassium hydroxide solution when measuring RQ values. **[1]**
+
+**(f)** Explain why the usual RQ value for respiration in humans is between 0.7 and 1.0. **[1]**
+
+---
+
+---
+
+### Question 13 [8 marks]
+
+**(a)** Baker's yeast, *Saccharomyces cerevisiae*, converts sugars to ethanol and carbon dioxide under
+anaerobic conditions. You will investigate the effects of different concentrations of ethanol on the
+rate of respiration in yeast. A conical flask containing yeast, sucrose, and water and/or ethanol
+stands in a water bath at about 37 °C. A rubber bung in the neck carries rubber tubing which leads to
+the open lower end of an inverted, water-filled burette clamped on a retort stand; gas collecting in
+the burette displaces the water.
+
+The procedure is: measure 100 cm3 of distilled water into a conical flask; weigh 1.0 g of yeast and
+2.0 g of sucrose, add them to the flask and shake to mix; incubate the flask in the water bath for
+5 minutes; fill the burette with water, invert and clamp it; attach the bung with tubing to the flask
+and insert the tubing into the open end of the burette; note the initial volume of water in the
+burette; measure the volume of carbon dioxide given off for 8 minutes by the amount of water displaced;
+then repeat all steps using 100 cm3 of 5.0% ethanol, and again using 100 cm3 of 10.0% ethanol.
+
+Record your results in an appropriate table. **[3]**
+
+**(b)** Yeast cells contain enzymes that catalyse respiratory reactions. A sample of yeast cells is
+added to a piece of Visking tubing placed inside a beaker containing 100 cm3 of distilled water. The
+Visking tubing is selectively permeable, so any carbon dioxide produced by the yeast diffuses through
+into the surrounding water. To test for the release of carbon dioxide, 1.0 cm3 of the water surrounding
+the Visking tubing is added to two drops of an indicator, **B**. As the concentration of carbon dioxide
+increases, B changes from blue to green to yellow. Explain why the indicator changes from blue to
+yellow. **[1]**
+
+**(c)** This investigation used colour to indicate the concentration of carbon dioxide in the sample.
+Suggest **three** improvements to this investigation that would increase the accuracy of the results.
+**[3]**
+
+**(d)** Respiration rates can also be measured using the redox indicator TTC. During respiration,
+hydrogen ions are removed from reducing sugars to reduce hydrogen carriers such as NAD and FAD; a redox
+indicator can be used as a hydrogen carrier in experimental conditions instead of NAD or FAD; and the
+colour change of the redox indicator can be measured using a colorimeter. Using a 10 cm3 syringe, 5 cm3
+of yeast cell suspension was added into a conical flask, followed by 10 cm3 of **sucrose** solution and
+1 cm3 of TTC. Explain why the colour change of TTC can only be observed after 10 minutes and not
+immediately upon addition. **[2]**
+
+---
+
+---
+
 # Mark Schemes
 
 ### Question 1
@@ -797,3 +928,157 @@ Any four, in anaerobic conditions.
 **Trap:** saying fatty acids cannot be respired anaerobically because "they need oxygen to be broken down", when the real reason is that they enter at acetyl CoA, downstream of glycolysis, and everything downstream needs the chain to run; predicting **lower** oxygen consumption for fats because they yield more ATP, when the ratio runs the other way.
 **LOs:** 3(g) the link reaction and Krebs cycle, and where other respiratory substrates enter; 3(h) the role of oxygen; reach-back to Book 1 lipids for the hydrogen-to-oxygen ratio of a triglyceride.
 **Concepts fused:** (1) fatty acids entering as acetyl CoA; (2) why entry point determines oxygen dependence; (3) hydrogen content setting oxygen demand; (4) glycerol entering glycolysis as triose phosphate; (5) oxaloacetate as the regenerated acceptor; (6) why a cycle cannot be a net source of its own acceptor.
+
+---
+
+### Question 11
+
+**(a)** *Explain the direction of movement of the coloured dye.* **[2]**
+
+**1.** **Soda lime will absorb CO2 produced by the mung bean seeds and O2 will be absorbed by the mung bean seeds.**
+
+**2.** **Thus the level of the coloured dye will move from left to right, towards the plastic syringe**, that is, **towards the respiring organisms**, because the total volume of gas in the sealed chamber falls and the pressure drops.
+
+**(b)** *Explain the purpose of leaving the respirometer for 5 minutes.* **[1]**
+
+**1.** **Allow the soda lime to completely absorb and remove all CO2 in the syringe chamber.**
+
+**(c)** *Suggest why the dye did not move when the soda lime was removed.* **[1]**
+
+**1.** **Idea that the volume of oxygen uptake equals the volume of carbon dioxide released, therefore there is no change in overall volume in the respirometer and the air pressure is unchanged.**
+
+**2.** Which is the same as saying **the respiratory quotient was 1.0**, so the substrate was carbohydrate. Hold that beside Question 8: **with the absorbent in, the reading gives oxygen consumed; with it out, the reading gives the difference between the two gases**, and the two readings together give RQ.
+
+**(d)** *Suggest an advantage of recording the cumulative distance every 30 seconds rather than only the total after 5 minutes.* **[1]**
+
+**1.** **Reference to checking that the rate is constant or steady.**
+
+**(e)** *Calculate the rate of oxygen uptake in cm3 per minute for respirometer C between 5 and 20 minutes, to two significant figures.* **[1]**
+
+**1.** **(1.7 minus 0.4) divided by (20 minus 5) = 1.3 / 15 = 0.08666 = 0.087 cm3 min-1 to 2 s.f.**
+
+**2.** Respirometers B and D contain glass beads and show no oxygen uptake. They are the **controls for physical changes in gas volume**, that is for changes in temperature and atmospheric pressure, which is what the compensation tube does in the standard apparatus.
+
+**(f)** *Explain the effect of temperature on the rate of respiration shown in Table 8.1.* **[3]**
+
+**1.** There is **reference to respiration being controlled by enzymes.**
+
+**2.** **As temperature increases, the kinetic energy of enzymes and substrates increases**, **leading to an increase in the frequency and rate of effective collisions between enzymes and substrates, that is, in enzyme-substrate complex formation.**
+
+**3.** **30 °C is the optimum temperature, where the highest rate of respiration is obtained**, at **1.30 mm min-1**.
+
+**4.** The **rate decreases after 30 °C due to denaturation of enzymes and loss of the specific three-dimensional conformation of the active sites**, falling to **0.60 mm min-1 at 50 °C**.
+
+**Source:** Topical 2021 STQ Q9c, reprinting TMJC Prelim P2 Q4c, stem, Fig. 4.2 description and key verbatim (a); MJC Prelim 2017 P4 Q1 step 6, stem and key verbatim (b); MJC Prelim 2017 P4 Q1 step 19d, stem and key verbatim (c); MJC Prelim 2017 P4 Q1 step 16, stem and key verbatim (d); RI Prelim 2023 P2 Q7d(i), stem, Fig. 7.4 description and key verbatim (e); ASRJC Prelim 2025 P2 Q8c(ii), stem, Table 8.1 and key verbatim (f). No respirometer figure could be recovered from a PDF, so each paper's own description is printed and every part is answerable from it.
+**Archetype:** the respirometer, which is the standard apparatus for LO 3(k). The papers set 42 records on the respirometer and respiratory quotient together, including full Paper 4 planning questions.
+**Trap:** predicting the wrong direction of dye movement, which turns on the absorbent being present; forgetting why the equilibration period exists; treating the glass-bead tubes as spare repeats rather than as controls for pressure and temperature; explaining the temperature curve without naming denaturation on the falling limb, or naming it on the rising limb where a different scheme rejects it.
+**LOs:** 3(k) investigate the effect of factors including substrate concentration, oxygen concentration and temperature on the rate of respiration, throughout; reach-back to Book 1 enzymes for kinetic energy, effective collisions and denaturation in (f).
+**Concepts fused:** (1) the absorbent making the reading mean oxygen; (2) equilibration before time zero; (3) a respiratory quotient of 1 giving no net volume change; (4) repeated readings as a check on steadiness; (5) rate arithmetic from two points with units and significant figures; (6) inert controls for physical volume change; (7) the enzyme-kinetics shape of a temperature curve.
+
+---
+
+---
+
+### Question 12
+
+**(a)** *Complete Table 1.1 with one tick per respiratory substrate.* **[1]**
+
+**1.** Carbohydrate: tick under **approximately 17 kJ g-1**.
+
+**2.** Lipid: tick under **approximately 37 kJ g-1**.
+
+**3.** Protein: tick under **approximately 17 kJ g-1**.
+
+**4.** **All three must be correct for the single mark.**
+
+**(b)** *Calculate how many molecules of oxygen are taken in when one molecule of malic acid is respired aerobically.* **[1]**
+
+**1.** Number of molecules of oxygen = **three**.
+
+**2.** Balance the equation. C4H6O5 already carries **five** oxygen atoms; the products need **8 from 4CO2 plus 3 from 3H2O, which is 11**. The shortfall is **6 oxygen atoms, so 3 O2**.
+
+**(c)** *Calculate the RQ for malic acid, to two decimal places.* **[1]**
+
+**1.** RQ = **4 divided by 3 = 1.33**.
+
+**(d)** *State the name of the apparatus that can be used to determine the RQ value.* **[1]**
+
+**1.** A **respirometer**.
+
+**(e)** *State the reason for using soda lime or potassium hydroxide solution when measuring RQ values.* **[1]**
+
+**1.** **To absorb / remove carbon dioxide.**
+
+**(f)** *Explain why the usual RQ value for respiration in humans is between 0.7 and 1.0.* **[1]**
+
+**1.** **RQ values will add up to 1.0 if complete breakdown of glucose is achieved; different tissues can utilise other forms of substrates aerobically.**
+
+**2.** Read the two ends of the range off Table 1.2: **1.0 is pure carbohydrate and 0.7 is pure lipid**, so a mixed diet sits between them, with **protein at 0.8** in the middle. An **RQ above 1.0**, as malic acid gives, means the substrate is already partly oxidised, or that some **anaerobic respiration is contributing carbon dioxide without consuming oxygen**.
+
+**Source:** NYJC Prelim 2025 P3 Q1a, stem, Table 1.1 and key verbatim including the all-or-nothing rule (a); NYJC Prelim 2025 P3 Q1b(i), stem, the malic acid equation and key verbatim (b); NYJC Prelim 2025 P3 Q1b(ii), stem and key verbatim (c); NYJC Prelim 2025 P3 Q1c(i), stem, Table 1.2 and key verbatim (d); NYJC Prelim 2025 P3 Q1c(ii), stem and key verbatim (e); VJC Prelim 2024 P3 Q2c(ii), stem and key verbatim (f). The balancing reasoning in (b) point 2 and the range reasoning in (f) point 2 are added by this drill; the rest is the papers' own.
+**Archetype:** respiratory quotient. **Your chapter defines RQ and derives both calculation cases correctly, then stops without giving the values by substrate**, which is one of the two genuine holes in Book 5. **Table 1.2 in part (d) is that missing table, printed in a real paper's own stem**: carbohydrate 1.0, lipid 0.7, protein 0.8. State the confidence honestly: LO 3(k) names substrate **concentration**, not substrate **type**, so the RQ link is inferred rather than quoted. The papers are nonetheless unambiguous, with 42 records including full planning questions, and this is the standard apparatus for the outcome.
+**Trap:** dividing oxygen by carbon dioxide instead of carbon dioxide by oxygen; failing to balance the oxygen atoms already present in the substrate, which is what makes an organic acid give an RQ above 1; treating the soda lime as a safety measure rather than as the thing that makes the reading mean oxygen.
+**LOs:** 3(k) investigate the effect of factors on the rate of respiration; 3(g) respiratory substrates other than glucose feeding into the Krebs cycle.
+**Concepts fused:** (1) energy value by substrate class; (2) balancing a respiration equation; (3) RQ as a ratio of gas volumes; (4) the respirometer as the measuring instrument; (5) the absorbent isolating oxygen uptake; (6) RQ values identifying the substrate; (7) why a mixed diet gives an intermediate value; (8) why an already-oxidised substrate exceeds 1.0.
+
+---
+
+---
+
+### Question 13
+
+**(a)** *Record your results in an appropriate table.* **[3]**
+
+A table of the following form is required.
+
+| concentration of ethanol / % | volume of carbon dioxide given off in 8 minutes / cm3 |
+|---|---|
+| 0 | 10.0 |
+| 5 | 2.7 |
+| 10 | 0.1 |
+
+Marks are awarded for the following.
+
+**1. H, headings with units.**
+
+**2. P, precision of data**, that is the **volume of CO2 given to 1 or 2 decimal places**, consistently.
+
+**3. T, trend of data**, that is a **decrease in CO2 with increase in ethanol concentration**.
+
+**4.** Note that the three marks here are the same three criteria the specimen awards five marks for in Question 1(b). Headings with units, consistent precision, and a sensible order for the independent variable are the whole of results-table marking.
+
+**(b)** *Explain why the indicator changes from blue to yellow.* **[1]**
+
+**1.** **Carbon dioxide dissolves to form (carbonic) acid.** **Accept: the solution becomes acidic.**
+
+**(c)** *Suggest three improvements that would increase the accuracy of the results.* **[3]**
+
+Any three of the following.
+
+**1.** **Use a colour chart or colorimeter for a more objective way of determining colour.**
+
+**2.** **Use smaller intervals of time, for example 30 s, instead of 1 minute.**
+
+**3.** **Conduct replicates to check for anomalous results, or conduct replicates and find the mean.** **Reject: "repeat experiment to check reproducibility of results".**
+
+**4.** **Use a syringe to measure a fixed volume of the indicator or of the surrounding water, instead of using a dropper.**
+
+**5.** **Use a thermostatically controlled water bath to maintain constant temperature.**
+
+**6.** Any other valid point, for example **use a pH meter or a carbon dioxide probe**.
+
+**(d)** *Explain why the colour change of TTC can only be observed after 10 minutes and not immediately upon addition.* **[2]**
+
+**1.** **Time is needed for the yeast enzymes to hydrolyse sucrose into reducing sugars.**
+
+**2.** **To be used as respiratory substrates, where hydrogen ions are removed and passed to TTC to cause the colour change.**
+
+**3.** Examiner comment: **this part was not well done, with only a small proportion scoring full credit; students who failed to do so often lost credit for failing to recognise the need for yeast enzymes to hydrolyse sucrose, which is a non-reducing sugar, into glucose and fructose, which are reducing sugars, before they can be used as respiratory substrates. In addition, some students failed to explain how TTC can be reduced by the hydrogen ions removed from reducing sugars during respiration.**
+
+**Source:** NJC Prelim 2023 P4 Q1b, stem, apparatus description, procedure, the expected table and all three marking criteria verbatim (a); RI Prelim 2024 P4 Q2(a), stem and key verbatim (b); EJC Prelim 2023 P4 Q1a(iii), stem and the whole accepted list verbatim including the reject line (c), with its own Visking-tubing context replaced by the one already given in (b) so the two parts share a stem; School (HCI) Prelim 2024 P4 Q1b(ii), stem, key and examiner comment verbatim (d).
+**Archetype:** yeast investigations, which cover all three factors LO 3(k) names with one apparatus. The papers set 145 records on investigating the rate of respiration in the main respiration bank.
+**Trap:** writing "repeat to check reproducibility" when the scheme rejects that exact phrase and wants replicates for anomalies or for a mean; giving carbon dioxide volume to inconsistent precision; in (d), starting at TTC and never mentioning that **sucrose is a non-reducing sugar** that has to be hydrolysed first, which is where most of the cohort lost the mark.
+**LOs:** 3(k) investigate the effect of factors including substrate concentration, oxygen concentration and temperature on the rate of respiration; reach-back to Book 1 carbohydrates for reducing against non-reducing sugars in (d).
+**Concepts fused:** (1) gas volume by water displacement; (2) results-table criteria; (3) dissolved carbon dioxide lowering pH; (4) subjective colour judgement as a source of inaccuracy; (5) sampling interval and accuracy; (6) replicates for anomalies rather than for reproducibility; (7) sucrose needing hydrolysis before it can be respired; (8) a redox indicator standing in for NAD or FAD.
+
+---
