@@ -164,15 +164,15 @@ from the most dominant to the least dominant. **[2]**
 nails, kneecaps and bones. It is caused by mutations in the *LMX1B* gene that encodes for a
 transcription factor that plays a vital role in early embryonic development.
 
-Fig. 6.1 shows the transmission of the nail patella syndrome along with ABO blood type. Individuals
+Fig. 8.1 shows the transmission of the nail patella syndrome along with ABO blood type. Individuals
 suffering from the nail patella syndrome are shaded, and the blood type of each individual is also
 stated.
 
-[FIGURE: Fig. 6.1, a three-generation pedigree of five sibships descending from I-1, an unaffected
+[FIGURE: Fig. 8.1, a three-generation pedigree of five sibships descending from I-1, an unaffected
 female of blood type O, and I-2, an affected male of blood type A. Affected individuals are shaded and
 every individual carries their ABO blood type beneath the symbol.]
 
-With reference to Fig. 6.1, justify why nail patella syndrome is an autosomal dominant disease. **[4]**
+With reference to Fig. 8.1, justify why nail patella syndrome is an autosomal dominant disease. **[4]**
 
 **(b)** Severe combined immunodeficiency (SCID) caused by adenosine deaminase (ADA) deficiency is a type
 of autosomal recessive disorder.
@@ -184,10 +184,10 @@ Explain what is meant by the term **recessive** in this context. **[2]**
 ### Question 7 [9 marks]
 
 Hereditary hypophosphatemic rickets is a genetic disorder that results in low level of phosphate in the
-blood (hypophosphatemia). Fig. 7.1 shows the inheritance of this disease over four generations in an
+blood (hypophosphatemia). Fig. 5.1 shows the inheritance of this disease over four generations in an
 extended family.
 
-[FIGURE: Fig. 7.1, a four-generation pedigree of an extended family with a printed key giving filled
+[FIGURE: Fig. 5.1, a four-generation pedigree of an extended family with a printed key giving filled
 square as affected male, open square as normal male, filled circle as affected female and open circle
 as normal female. Individuals are numbered within each generation I to IV.]
 
@@ -198,10 +198,10 @@ individual **III-7** and **III-8** can pass on the disease to their children. **
 
 **(c)** Rickets is a childhood disorder involving the softening and weakening of bones. It is usually
 caused by a lack of vitamin D, calcium ions or phosphate ions. A rare form of rickets that cannot be
-successfully treated with vitamin D therapy is caused by a mutant allele on the X chromosome. Fig. 7.2
+successfully treated with vitamin D therapy is caused by a mutant allele on the X chromosome. Fig. 4.1
 shows a pedigree for a different family that has a history of this condition.
 
-[FIGURE: Fig. 7.2, a three-generation pedigree in which shaded symbols are affected. Individual 1 is an
+[FIGURE: Fig. 4.1, a three-generation pedigree in which shaded symbols are affected. Individual 1 is an
 unaffected female married to individual 2, an affected male; their children are 3 to 6; individual 6 is
 married to the unaffected male 7 and their children are 8 to 11.]
 
@@ -227,14 +227,14 @@ blood cell lysis leading to haemolysis.
 **(b)** Using the information given, explain why only homozygous recessive individuals experience
 haemolysis. **[3]**
 
-**(c)** Fig. 8.1 is a pedigree showing inheritance of G6PD deficiency in a particular family.
+**(c)** Fig. 4.1 is a pedigree showing inheritance of G6PD deficiency in a particular family.
 
-[FIGURE: Fig. 8.1, a three-generation pedigree in which hatched symbols are affected. Generation I is
+[FIGURE: Fig. 4.1, a three-generation pedigree in which hatched symbols are affected. Generation I is
 the unaffected male I-1 married to the affected female I-2. Generation II holds their four children
 II-1 to II-4 plus the married-in affected male II-5. Generation III holds III-1, III-2 and a third
 child marked with a question mark.]
 
-With reference to Fig. 8.1, cite evidence that the inheritance of G6PD is sex-linked recessive. **[2]**
+With reference to Fig. 4.1, cite evidence that the inheritance of G6PD is sex-linked recessive. **[2]**
 
 ---
 
@@ -571,7 +571,7 @@ about the two albino parents, and name the type of gene interaction it points to
 
 **2.** A scheme on a parallel pedigree question **rejects "individual must be homozygous recessive" on its own, because recessive is not explained**. The expected shape names the conclusion and then the reason: **recessive, because it requires both alleles to be defective before the child is phenotypically affected.**
 
-**Source:** RI Prelim 2024 P2 Q8(a), stem, Fig. 6.1 and all four marking points verbatim, including the accept line on marking point 4 (a); HCI Prelim 2021 P3 Q1(b), stem and key verbatim, with the pedigree-scheme reject line added from the papers because it governs the wording (b).
+**Source:** RI Prelim 2024 P2 Q8(a), stem, Fig. 8.1 and all four marking points verbatim, including the accept line on marking point 4 (a); HCI Prelim 2021 P3 Q1(b), stem and key verbatim, with the pedigree-scheme reject line added from the papers because it governs the wording (b).
 **Archetype:** pedigree analysis. Note that this pedigree is doing two jobs at once: marking point 4 rules out X-linked dominance, which is the exact distinction your own notes get wrong on page 31 of chapter 6.1.
 **Trap:** justifying dominance without first disposing of the possibility that the married-in partners are carriers, which is marking point 1 and is the one candidates skip; naming the mode and stopping, when the scheme wants the mode plus the pedigree feature that forces it; forgetting that an affected father with an unaffected daughter is the single observation that kills X-linked dominance; writing "homozygous recessive" as the whole of an explanation of recessive.
 **LOs:** 2(u) dominant, recessive, homozygous and heterozygous applied to real family data; 2(v) transmission through gametes read backwards from phenotypes.
@@ -613,7 +613,7 @@ about the two albino parents, and name the type of gene interaction it points to
 
 **5.** [INFERRED] Watch the letters in this paper. **X^R is the mutant allele and it is the dominant one**, so the capital does not mean "normal" here. Reading R as wild type inverts every genotype in the family.
 
-**Source:** MJC Prelim 2013 P2 Q5(a), stem, Fig. 7.1 and key verbatim including all four worked examples (a); MJC Prelim 2013 P2 Q5(b), stem and the paper's own printed diagram verbatim, with its five mark positions (b); RVHS Prelim 2014 P2 Q4(b), stem, Fig. 7.2 and key verbatim, with the bracketed reasoning reproduced as the paper's answer prints it (c).
+**Source:** MJC Prelim 2013 P2 Q5(a), stem, Fig. 5.1 and key verbatim including all four worked examples (a); MJC Prelim 2013 P2 Q5(b), stem and the paper's own printed diagram verbatim, with its five mark positions (b); RVHS Prelim 2014 P2 Q4(b), stem, Fig. 4.1 and key verbatim, with the bracketed reasoning reproduced as the paper's answer prints it (c).
 **Archetype:** pedigree analysis feeding straight into diagram construction, which is how this Book usually builds an extended question. It is also the question that punishes an error in your own notes: **chapter 6.1 page 31 introduces Fig. 16 as "sex-linked recessive" when the section heading, the caption, the genotypes inside the figure and the characteristics list all say dominant.** The caption is right. A candidate carrying the lead-in sentence into this question reads the whole family backwards.
 **Trap:** reading an X-linked dominant pedigree as recessive, which is the notes error above; concluding "dominant" from the trait appearing in every generation and stopping, when the mark is for the father-to-all-daughters transmission with a named example; writing plain D and d because the stem supplied those letters, losing the sex-linkage notation and with it the parental genotype mark; assuming a capital letter means the normal allele in part (c), where it means the mutant one; giving a ratio with no phenotypes.
 **LOs:** 2(u) dominant, recessive and heterozygous in context; 2(x) sex linkage; 2(v) transmission of one allele per gamete, here from a hemizygous father who has only one X to give.
@@ -643,7 +643,7 @@ about the two albino parents, and name the type of gene interaction it points to
 
 **2.** The **affected mother has an X chromosome with the recessive allele, which is passed down to her sons.**
 
-**Source:** IJC Prelim 2015 P2 Q4(a)(i), key verbatim (a); IJC Prelim 2015 P2 Q4(a)(ii), stem and all four marking points verbatim (b); IJC Prelim 2015 P2 Q4(c), stem, Fig. 8.1 and both marking points verbatim (c). The introductory paragraph is the paper's own stem, reproduced in full because (b) cannot be answered without the NADPH pathway it contains.
+**Source:** IJC Prelim 2015 P2 Q4(a)(i), key verbatim (a); IJC Prelim 2015 P2 Q4(a)(ii), stem and all four marking points verbatim (b); IJC Prelim 2015 P2 Q4(c), stem, Fig. 4.1 and both marking points verbatim (c). The introductory paragraph is the paper's own stem, reproduced in full because (b) cannot be answered without the NADPH pathway it contains.
 **Archetype:** the enzyme-level explanation of dominance, which is the genotype-to-phenotype chain of Q2 run on a named enzyme, followed by pedigree evidence. It is the cleanest example in the Book of why LO 2(w) is worth over-learning.
 **Trap:** answering (b) with "the normal allele masks the mutant one" and never naming the enzyme, the reaction it catalyses or the product that is missing, which is the same failure the epistasis schemes punish with "penalise once if no reference to enzyme"; citing the pedigree in general terms rather than naming the individuals, since the scheme's wording is specifically about the sons of the affected generation I mother; saying "sex-linked" without saying which chromosome carries the locus.
 **LOs:** 2(w) the genotype-to-phenotype chain through an enzyme; 2(u) dominance and homozygosity in context; 2(x) sex linkage read off family data.

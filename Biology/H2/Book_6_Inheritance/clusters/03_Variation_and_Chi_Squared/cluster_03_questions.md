@@ -226,12 +226,12 @@ Which combination correctly describes the result of the χ² test?
 
 **(a)** The interpupillary distance (IPD) is the distance in millimetres between the centres of the
 pupils of the eyes. IPD is one example of a characteristic of human facial structure that shows
-variation. Fig. 6.1 shows the pattern of variation in IPD in a large sample of adults.
+variation. Fig. 3.2 shows the pattern of variation in IPD in a large sample of adults.
 
-[FIGURE: Fig. 6.1, a frequency distribution of number of people against interpupillary distance in mm,
+[FIGURE: Fig. 3.2, a frequency distribution of number of people against interpupillary distance in mm,
 running from 50 mm to 80 mm, rising smoothly to a peak at about 63 mm and falling away symmetrically.]
 
-Name the type of variation shown in Fig. 6.1. **[1]**
+Name the type of variation shown in Fig. 3.2. **[1]**
 
 **(b)** In Labradors, fur colour is chocolate, black or yellow, and is determined by the two genes *TYRP1*
 and *MC1R*.
@@ -520,11 +520,11 @@ Explain how the different combination of phenotypes in each individual could hav
 
 ### Question 6
 
-**(a)** *Name the type of variation shown in Fig. 6.1.* **[1]**
+**(a)** *Name the type of variation shown in Fig. 3.2.* **[1]**
 
 **1.** **Continuous.** **Reject: normal distribution, stabilising selection.**
 
-**2.** Note what the reject line is about. **Describing the shape of the curve is not naming the phenomenon.** The same paper set at another centre asks for the name **and** an explanation for two marks, and its key needs: the variation is **continuous**, and the **range of IPD between 50 mm and 76 mm seen in Fig. 6.1 is due to slight phenotypic differences that vary along a continuum**.
+**2.** Note what the reject line is about. **Describing the shape of the curve is not naming the phenomenon.** The same paper set at another centre asks for the name **and** an explanation for two marks, and its key needs: the variation is **continuous**, and the **range of IPD between 50 mm and 76 mm seen in Fig. 3.2 is due to slight phenotypic differences that vary along a continuum**.
 
 **(b)** *Justify whether Labrador fur colour is continuous or discontinuous.* **[3]**
 
@@ -554,7 +554,7 @@ Explain how the different combination of phenotypes in each individual could hav
 
 **4.** **The trait is solely genetically determined and not affected by environmental factors.**
 
-**Source:** School Prelim 2023 P3 Q3(a)(i), also printed as HCI Prelim 2023 P3 Q3(a)(i) and EJC Prelim 2023 P3 Q3(a)(i), stem, Fig. 6.1 and key verbatim including the reject line and the EJC variant (a); DHS Prelim 2023 P2 Q7(b), stem and key verbatim, with the stem trimmed to name the two genes so it stands without the full *TYRP1* and *MC1R* paragraph (b); School Prelim 2024 P3 Q3(b), also printed as HCI Prelim 2024 P3 Q3(b), stem, key and the full examiner comment verbatim (c); EJC Prelim 2021 P3 Q1(c), stem and key verbatim, cut from two reasons to one so it does not repeat the reasons already given in (b) (d).
+**Source:** School Prelim 2023 P3 Q3(a)(i), also printed as HCI Prelim 2023 P3 Q3(a)(i) and EJC Prelim 2023 P3 Q3(a)(i), stem, Fig. 3.2 and key verbatim including the reject line and the EJC variant (a); DHS Prelim 2023 P2 Q7(b), stem and key verbatim, with the stem trimmed to name the two genes so it stands without the full *TYRP1* and *MC1R* paragraph (b); School Prelim 2024 P3 Q3(b), also printed as HCI Prelim 2024 P3 Q3(b), stem, key and the full examiner comment verbatim (c); EJC Prelim 2021 P3 Q1(c), stem and key verbatim, cut from two reasons to one so it does not repeat the reasons already given in (b) (d).
 **Archetype:** classification of a named trait from a stimulus, which is how LO 2(cc) is almost always set. Question 7 asks for the systematic comparison; this question asks you to **read a specific case and cite the specific evidence in front of you**, which is a different skill and is where the examiner comment says candidates lose the marks.
 **Trap:** naming the shape of the graph instead of the type of variation, which one scheme rejects by name; citing "four colours" for the morning glory when discrete colours are evidence **against** continuity, which the examiner names explicitly; saying "the environment affects it" without pointing at the carbon dioxide evidence the stem supplies; giving a general definition instead of the case in front of you.
 **LOs:** 2(cc) continuous and discontinuous variation and their causes; 2(bb) the environment's effect on phenotype.

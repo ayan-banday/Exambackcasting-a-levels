@@ -11,19 +11,18 @@
   "1|b": "q1_chloroplast_xyz.svg",
   "2|d": "q2_absorption_action_spectrum.svg",
   "3|": "q3_light_dependent_stage.svg",
-  "5|b": "q5_atp_synthase.svg",
-  "13|a": "q10a_specimen_rubp_pga.png"
+  "5|b": "q5_atp_synthase.svg"
  },
  "caption": {
-  "q1a_chloroplast_tem.png": "Fig. 1.1  ·  School (HCI) Prelim 2024 P2 Q8",
-  "q6_specimen_rubp_pga.png": "Fig. 6.1",
-  "q7d_sox4_co2_fixation.png": "Fig. 7.1  ·  School (HCI) Prelim 2024 P2 Q8",
+  "q1a_chloroplast_tem.png": "Fig. 8.1  ·  School (HCI) Prelim 2024 P2 Q8",
+  "q6_specimen_rubp_pga.png": "Fig. 5.1",
+  "q7d_sox4_co2_fixation.png": "Fig. 8.2  ·  School (HCI) Prelim 2024 P2 Q8",
   "q8a_chlamydomonas_temperature.png": "Figure",
   "q1_chloroplast_xyz.svg": "Fig. 1.2",
-  "q2_absorption_action_spectrum.svg": "Fig. 2.1",
-  "q3_light_dependent_stage.svg": "Fig. 3.1",
-  "q5_atp_synthase.svg": "Fig. 5.1",
+  "q2_absorption_action_spectrum.svg": "Fig. 8.1",
+  "q3_light_dependent_stage.svg": "Fig. 7.1",
+  "q5_atp_synthase.svg": "Fig. 7.1",
   "q1_specimen_p4_apparatus.png": "Fig. 1.1",
-  "q10a_specimen_rubp_pga.png": "Fig. 13.1"
+  "q10a_specimen_rubp_pga.png": "Fig. 5.1"
  }
 }

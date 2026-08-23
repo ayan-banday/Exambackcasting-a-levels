@@ -203,10 +203,10 @@ addition of inhibitor. Give the order of the electron carriers in this electron 
 **(b)** Explain why NAD cannot be regenerated from reduced NAD in mitochondria in the absence of
 oxygen. **[3]**
 
-**(c)** Figure 5.1 is a diagram of ATP synthase in the inner mitochondrial membrane. Explain how the
+**(c)** Figure 7.1 is a diagram of ATP synthase in the inner mitochondrial membrane. Explain how the
 proton gradient that drives ATP synthesis is produced. **[3]**
 
-[FIGURE: Figure 5.1, a cross-section of the inner mitochondrial membrane shown as a phospholipid
+[FIGURE: Figure 7.1, a cross-section of the inner mitochondrial membrane shown as a phospholipid
 bilayer. Embedded in it is the ATP synthase: a barrel-shaped channel spanning the membrane, a central
 stalk, and a large mushroom-shaped head made of several rounded subunits projecting into the matrix
 below, with a side stalk connecting the head to the membrane portion. Many H+ symbols are drawn in the
@@ -214,7 +214,7 @@ space above the membrane, the intermembrane space; arrows show H+ entering the c
 passing down through the membrane portion and emerging as a single H+ below the membrane, with a
 curved rotation arrow at the base of the central stalk.]
 
-**(d)** With reference to Figure 5.1, outline how the proton gradient drives ATP synthesis. **[3]**
+**(d)** With reference to Figure 7.1, outline how the proton gradient drives ATP synthesis. **[3]**
 
 **(e)** The inner membrane contains a very high proportion of the molecule cardiolipin. Cardiolipin
 makes the membrane impermeable to some ions. Suggest why the inner membrane contains a very high
@@ -641,7 +641,7 @@ immediately upon addition. **[2]**
 
 **4.** Because the **inner membrane is impermeable to protons**, they accumulate there, so the **intermembrane space develops a higher H+ concentration and lower pH than the matrix**, which is an **electrochemical (proton) gradient** across the membrane.
 
-**(d)** *With reference to Figure 5.1, outline how the proton gradient drives ATP synthesis.* **[3]** [INFERRED: no official key for the 9477 specimen]
+**(d)** *With reference to Figure 7.1, outline how the proton gradient drives ATP synthesis.* **[3]** [INFERRED: no official key for the 9477 specimen]
 
 **1.** **Protons diffuse down the electrochemical gradient from the intermembrane space back into the matrix**, and because the rest of the membrane is impermeable to them they **can only pass through the channel in the ATP synthase**. This is **chemiosmosis**.
 
@@ -672,7 +672,7 @@ Any one of the following paired differences earns the mark.
 | final electron acceptor | **oxygen** | **NADP** |
 | end product | **formation of water** | **reduced NADP** |
 
-**Source:** SAJC Prelim 2025 P2 Q7c(i), stem, Table 7.2 and key verbatim (a); 9477 Specimen P2 Q7b, stem and mark allocation verbatim from the question paper (b); 9477 Specimen P2 Q7c(i) (c) and Q7c(ii) (d), stems, Figure 5.1 and mark allocations verbatim from the question paper, with Figure 5.1 lifted from the specimen PDF; NYJC Prelim 2023 P2 Q7a(iii), stem and key verbatim (e); JPJC Prelim 2023 P2 Q9c, stem and the whole difference table verbatim (f). The specimen ships without a mark scheme, so (b), (c) and (d) are inferred and tagged.
+**Source:** SAJC Prelim 2025 P2 Q7c(i), stem, Table 7.2 and key verbatim (a); 9477 Specimen P2 Q7b, stem and mark allocation verbatim from the question paper (b); 9477 Specimen P2 Q7c(i) (c) and Q7c(ii) (d), stems, Figure 7.1 and mark allocations verbatim from the question paper, with Figure 7.1 lifted from the specimen PDF; NYJC Prelim 2023 P2 Q7a(iii), stem and key verbatim (e); JPJC Prelim 2023 P2 Q9c, stem and the whole difference table verbatim (f). The specimen ships without a mark scheme, so (b), (c) and (d) are inferred and tagged.
 **Archetype:** the respiration anchor of the specimen paper. Twelve marks, three parts, opening on one sentence. Note what it does and does not ask: it never asks for the stages of respiration, only for the role of one coenzyme, the consequence of oxygen absence, and chemiosmosis read off a figure.
 **Trap:** in (a), reading the table the wrong way round, so that carriers **behind** the block are called oxidised; in (b), stopping at "no ATP is made" without saying why NAD specifically cannot be reoxidised; in (c) and (d), running the two parts together, since (c) is how the gradient is **built** and (d) is how it is **spent**; going past the conformational change into the full rotor mechanism, which is excluded twice.
 **LOs:** 3(h) outline the process of oxidative phosphorylation, including the roles of oxygen and the electron transport chain, in (a) to (c); 3(l) outline chemiosmosis in photosynthesis and respiration, in (d) to (f); 3(i) and 3(j) are set up by (b).

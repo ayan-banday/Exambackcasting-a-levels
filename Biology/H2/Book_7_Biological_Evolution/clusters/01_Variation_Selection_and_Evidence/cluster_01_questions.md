@@ -86,12 +86,12 @@ algae. The proportion of carnivore or omnivore forms of *S. multiplicata* tadpol
 environmental conditions, such as the presence of other competing spadefoot toad species, for example
 *S. bombifrons* and *S. hammondii* in the same pond. Researchers studied how the proportion of carnivore
 forms of *S. multiplicata* tadpoles varied depending on whether other toad species were present in the
-pond. Fig. 3.1 shows the percentage of carnivore forms of *S. multiplicata* tadpoles in ponds without and
+pond. Fig. 9.2 shows the percentage of carnivore forms of *S. multiplicata* tadpoles in ponds without and
 with competing species.
 
-Explain how the data shown in Fig. 3.1 supports natural selection. **[5]**
+Explain how the data shown in Fig. 9.2 supports natural selection. **[5]**
 
-[FIGURE: Fig. 3.1, a bar chart of percentage carnivore forms of S. multiplicata tadpoles, y-axis 0 to
+[FIGURE: Fig. 9.2, a bar chart of percentage carnivore forms of S. multiplicata tadpoles, y-axis 0 to
 100 with gridlines at 25, 50 and 75. The bar for ponds without competing species reaches about 20%. The
 bar for ponds with competing species reaches about 95%.]
 
@@ -314,7 +314,7 @@ the frequency of a gene mutation can increase in a population. Consider both pro
 
 ### Question 3
 
-**(a)** *Explain how the data shown in Fig. 3.1 supports natural selection.* **[5]**
+**(a)** *Explain how the data shown in Fig. 9.2 supports natural selection.* **[5]**
 
 **1.** **Quotes data where there are 23% of carnivore forms in ponds without competing species and 90% of carnivore forms in ponds with competing species.**
 
@@ -362,7 +362,7 @@ the frequency of a gene mutation can increase in a population. Consider both pro
 
 **6.** **Over time, allele frequencies change and bacteria resistant to rifampicin become predominant in the population.** **Maximum 4.**
 
-**Source:** School (HCI) Prelim 2025 P2 Q9(b), stem, Fig. 3.1 and the full key verbatim including the MP4-or-MP5 rule and the examiner's note (a), with the two tadpole forms carried in from the paper's own Q9(a) preamble so the part stands alone; NYJC Prelim 2025 P2 Q11(a), stem and key verbatim (b), with Fig. 11.1, Fig. 11.2 and the method paragraph compressed into the stem and Fig. 11.3 described rather than reproduced, because the mark is for the gradient comparison and not for reading a value; NYJC Prelim 2023 P2 Q9(b)(ii), stem and key verbatim (c); SAJC Prelim 2023 P3 Q1(a)(viii), stem and key verbatim including the reject line and the max (d).
+**Source:** School (HCI) Prelim 2025 P2 Q9(b), stem, Fig. 9.2 and the full key verbatim including the MP4-or-MP5 rule and the examiner's note (a), with the two tadpole forms carried in from the paper's own Q9(a) preamble so the part stands alone; NYJC Prelim 2025 P2 Q11(a), stem and key verbatim (b), with Fig. 11.1, Fig. 11.2 and the method paragraph compressed into the stem and Fig. 11.3 described rather than reproduced, because the mark is for the gradient comparison and not for reading a value; NYJC Prelim 2023 P2 Q9(b)(ii), stem and key verbatim (c); SAJC Prelim 2023 P3 Q1(a)(viii), stem and key verbatim including the reject line and the max (d).
 **Archetype:** data and figure interpretation, run into a mechanism chain. The concept heading these parts sit under is 51% figure-led, the most graph-driven in the Book.
 **Trap:** the spadefoot scheme fails any answer that names a resource without tying it to the right pond, so "detritus is the selection pressure" with no pond named scores nothing. Quoting no data at all loses MP1 outright. In (d) the scheme rejects **traits** and **characteristics** as what is passed on, because what is inherited is the **allele**. The framing trap across the whole question is the same one: the antibiotic did not cause the resistance, it selected resistant cells that mutation had already produced. A drug does not create resistant pathogens.
 **LOs:** 4(b) in all four parts, which is the outcome that says "with examples" and names none, so competition in (a), temperature in (b), dissolved oxygen in (c) and an antibiotic in (d) are four different environmental factors acting as forces of selection. 4(c) in (a) point 7 and (d) point 6, where the chain closes on a changed allele frequency. Reach-back to Book 4 in (d) point 5, horizontal gene transfer by transformation, transduction and conjugation.
