@@ -49,11 +49,11 @@ every reveal.
 
 ### Question 1 [7 marks]
 
-**(a)** Fig. 8.1 is a transmission electron micrograph of part of a chloroplast. Table 8.1 shows some
-substrates and products involved in photosynthesis. Use letter **A** or letter **B** from Fig. 8.1 to
+**(a)** Fig. 1.1 is a transmission electron micrograph of part of a chloroplast. Table 8.1 shows some
+substrates and products involved in photosynthesis. Use letter **A** or letter **B** from Fig. 1.1 to
 complete Table 8.1 to show the location where the substrates or products are used or produced. **[2]**
 
-[FIGURE: Fig. 8.1, a transmission electron micrograph of part of a chloroplast. Label line A points to
+[FIGURE: Fig. 1.1, a transmission electron micrograph of part of a chloroplast. Label line A points to
 a membrane within one of the dark stacked disc systems, that is a thylakoid membrane within a granum.
 Label line B points to the lighter granular ground substance between the stacks, that is the stroma.]
 
@@ -64,7 +64,7 @@ Label line B points to the lighter granular ground substance between the stacks,
 | reduced NADP used |. |
 | hexose produced |. |
 
-**(b)** Fig. 8.1 (ACJC) shows a different electron micrograph of structures within a chloroplast. Name
+**(b)** Fig. 1.1 (ACJC) shows a different electron micrograph of structures within a chloroplast. Name
 the structures labelled **X** and **Y** in that micrograph. **[2]**
 
 [FIGURE: An electron micrograph of part of a chloroplast. Running diagonally across the field are many
@@ -85,7 +85,7 @@ structure of the chloroplast is adapted for its function. **[2]**
 
 ### Question 2 [9 marks]
 
-**(a)** Fig. 8.1 shows the absorption spectra of a type of photosynthetic bacteria, cyanobacteria,
+**(a)** Fig. 2.1 shows the absorption spectra of a type of photosynthetic bacteria, cyanobacteria,
 grown under two different lighting conditions. Define the term **absorption spectrum** for
 photosynthesis. **[1]**
 
@@ -96,11 +96,11 @@ photosynthesis. **[1]**
 in photosynthesis. **[2]**
 
 **(d)** Red algae are multicellular photosynthetic eukaryotes that contain phycoerythrin.
-Phycoerythrin is a photosynthetic pigment. Fig. 8.1 shows the absorption spectrum of phycoerythrin and
-the action spectrum of red algae. Explain how the data in Fig. 8.1 show that phycoerythrin is not the
+Phycoerythrin is a photosynthetic pigment. Fig. 2.1 shows the absorption spectrum of phycoerythrin and
+the action spectrum of red algae. Explain how the data in Fig. 2.1 show that phycoerythrin is not the
 only photosynthetic pigment in red algae. **[2]**
 
-[FIGURE: Fig. 8.1, percentage absorption of light on the left y-axis from 0 to 75 and rate of
+[FIGURE: Fig. 2.1, percentage absorption of light on the left y-axis from 0 to 75 and rate of
 photosynthesis in arbitrary units on the right y-axis from 0 to 100, both against wavelength in nm
 from 400 to 700. The dotted line is the absorption spectrum of phycoerythrin: near zero from 400 to
 450 nm, rising from about 450 nm, a small shoulder near 500 nm at about 33 per cent, then a peak of
@@ -139,13 +139,13 @@ to disrupt the light-dependent reactions of photosynthesis. After inhibitor Y wa
 researchers observed a progressive decline in net oxygen evolution. Both PSI and PSII electron
 carriers remained in a reduced state for prolonged periods of time.
 
-[FIGURE: Fig. 7.1 shows the light-dependent stage in the thylakoid membrane. Photosystem II sits on
+[FIGURE: Fig. 3.1 shows the light-dependent stage in the thylakoid membrane. Photosystem II sits on
 the left, with a manganese-containing enzyme catalysing the photolysis of water beside it and oxygen
 leaving as a by-product. An electron transport chain runs from photosystem II across the membrane to
 photosystem I, pumping protons into the thylakoid space. From photosystem I the electron passes to
 ferredoxin and then to NADP reductase, which reduces NADP+ to NADPH on the stroma side.]
 
-**(a)** With reference to Fig. 7.1, state the enzyme which inhibitor Y acts on and explain why there is
+**(a)** With reference to Fig. 3.1, state the enzyme which inhibitor Y acts on and explain why there is
 a progressive decline in net oxygen evolution. **[3]**
 
 **(b)** A student suggested that a small amount of oxygen is still produced at high concentrations of
@@ -174,13 +174,13 @@ Outline the process of photophosphorylation and its advantages. **[10]**
 **(a)** The Calvin cycle requires the products of the light-dependent reactions. Compare non-cyclic and
 cyclic photophosphorylation. **[3]**
 
-**(b)** ATP synthase is an enzyme that synthesises ATP from ADP and inorganic phosphate. Fig. 7.1 shows
+**(b)** ATP synthase is an enzyme that synthesises ATP from ADP and inorganic phosphate. Fig. 5.1 shows
 the structure of ATP synthase. It is found in both chloroplasts and mitochondria. In both organelles, a
 proton gradient exists across the membrane where ATP synthase is located. The synthesis of ATP via ATP
 synthase is coupled with the diffusion of H+ across the proton channel down its concentration
 gradient. Describe how this proton gradient is generated in the chloroplast. **[3]**
 
-[FIGURE: Fig. 7.1, a cross-section of a membrane with an embedded ATP synthase. The membrane-spanning
+[FIGURE: Fig. 5.1, a cross-section of a membrane with an embedded ATP synthase. The membrane-spanning
 Fo portion contains a ring of c subunits with an a subunit beside it and a central proton channel
 labelled at the top. A stalk made of gamma and epsilon subunits connects down to the F1 head made of
 alternating alpha and beta subunits, with a b and delta peripheral stalk to one side. A dashed arrow
@@ -213,11 +213,11 @@ varied to investigate its effect on the light-independent stage of photosynthesi
 - The concentrations of RuBP and PGA were measured at regular intervals.
 - Throughout the investigation, the temperature of the suspension was kept at 25 °C.
 
-The results are shown in Figure 5.1.
+The results are shown in Figure 6.1.
 
 **(a)** State **precisely** where in the chloroplast RuBP and PGA are synthesised. **[1]**
 
-[FIGURE: Figure 5.1, concentration in arbitrary units from 0 to 4 against time in seconds from 0 to
+[FIGURE: Figure 6.1, concentration in arbitrary units from 0 to 4 against time in seconds from 0 to
 400. The region 0 to 200 s is labelled 1% CO2 and the region 200 to 400 s is labelled 0.03% CO2. The
 solid PGA line is constant at 2.0 from 0 to 200 s, then falls steeply to 0.2 at about 340 s and stays
 there. The dashed RuBP line is constant at 1.0 from 0 to about 205 s, rises to a peak of about 1.6 at
@@ -282,10 +282,10 @@ regeneration of RuBP in the Calvin cycle. Wheat plants were genetically modified
 the resulting plants were named Sox4. A leaf from a wild type plant was placed in a sealed glass
 vessel, the carbon dioxide concentration in the vessel was increased, all other environmental
 conditions were kept constant, and the CO2 fixation rate was measured. The experiment was repeated with
-a leaf from a Sox4 plant. With reference to Fig. 8.2, suggest explanations for the differences in the
+a leaf from a Sox4 plant. With reference to Fig. 7.1, suggest explanations for the differences in the
 rate of CO2 fixation between wild type plants and Sox4 plants. **[3]**
 
-[FIGURE: Fig. 8.2, CO2 fixation rate in micromol CO2 per square metre per second on the y-axis from 0
+[FIGURE: Fig. 7.1, CO2 fixation rate in micromol CO2 per square metre per second on the y-axis from 0
 to 50, against CO2 concentration in mg per cubic metre on the x-axis from 0 to 2000. The solid wild
 type curve rises steeply from near zero, passes about 33 at 550 mg m-3, and plateaus at 42. The dashed
 Sox4 curve lies above it from about 300 mg m-3 onwards and plateaus at 47.]
@@ -478,13 +478,13 @@ the results for red light and for green light. **[3]**
 
 **(a)** The unicellular green alga *Chlorella* was supplied with carbon dioxide at 1% for 200 seconds,
 after which the concentration was reduced to 0.03% for a further 200 seconds. The concentrations of
-RuBP and PGA were measured at regular intervals and the results are shown in Figure 5.1. PGA is
+RuBP and PGA were measured at regular intervals and the results are shown in Figure 13.1. PGA is
 2.0 arbitrary units at 200 seconds and 0.2 arbitrary units at 350 seconds.
 
 Calculate the mean rate of decrease in the concentration of PGA between 200 seconds and 350 seconds.
 Show your working and give your answer to **two significant figures**. **[2]**
 
-[FIGURE: Figure 5.1, concentration in arbitrary units from 0 to 4 against time in seconds from 0 to
+[FIGURE: Figure 13.1, concentration in arbitrary units from 0 to 4 against time in seconds from 0 to
 400. The region 0 to 200 s is labelled 1% CO2 and the region 200 to 400 s is labelled 0.03% CO2. The
 solid PGA line is constant at 2.0 from 0 to 200 s, then falls steeply to 0.2 at about 340 s and stays
 there. The dashed RuBP line is constant at 1.0 from 0 to about 205 s, rises to a peak of about 1.6 at
@@ -519,7 +519,7 @@ sugar cane in response to increasing carbon dioxide concentrations **at 25 °C**
 
 ### Question 1
 
-**(a)** *Use letter A or letter B from Fig. 8.1 to complete Table 8.1, showing where each substrate or product is used or produced.* **[2]**
+**(a)** *Use letter A or letter B from Fig. 1.1 to complete Table 8.1, showing where each substrate or product is used or produced.* **[2]**
 
 **1.** **Oxygen produced: A.**
 
@@ -555,7 +555,7 @@ sugar cane in response to increasing carbon dioxide concentrations **at 25 °C**
 
 **1.** In the **stroma**.
 
-**Source:** School (HCI) Prelim 2024 P2 Q8(a), stem, Fig. 8.1, Table 8.1, key and examiner comment verbatim (a); ACJC Prelim 2024 P2 Q8(a)(i), stem and key verbatim including both reject lines (b); YIJC Prelim 2023 P2 Q1(a)(ii), stem and key verbatim (c); TMJC Prelim 2023 P2 Q4b, stem and key verbatim (d). Fig. 8.1 in part (a) is the real micrograph from the 2024 school prelim paper. The ACJC micrograph in part (b) could not be recovered from a PDF, so the paper's own description of it is printed instead; the part is answerable from that description.
+**Source:** School (HCI) Prelim 2024 P2 Q8(a), stem, Fig. 1.1, Table 8.1, key and examiner comment verbatim (a); ACJC Prelim 2024 P2 Q8(a)(i), stem and key verbatim including both reject lines (b); YIJC Prelim 2023 P2 Q1(a)(ii), stem and key verbatim (c); TMJC Prelim 2023 P2 Q4b, stem and key verbatim (d). Fig. 1.1 in part (a) is the real micrograph from the 2024 school prelim paper. The ACJC micrograph in part (b) could not be recovered from a PDF, so the paper's own description of it is printed instead; the part is answerable from that description.
 **Archetype:** identification off a micrograph, then structure to function. Chloroplast structure is the smallest photosynthesis heading, but LO 3(a) and LO 3(c) both rest on it.
 **Trap:** writing grana where granum is asked, which a scheme rejects outright; answering "chloroplast" where a compartment is wanted; missing that reduced NADP is **produced** at A and **used** at B, so the answer depends on the verb in the row, not the molecule.
 **LOs:** 3(a) identify components of chloroplasts in drawings, photomicrographs and electronmicrographs, throughout; 3(c) with reference to chloroplast structure in (c); reach-back to Book 1 cell structure for circular DNA and 70S ribosomes in the stroma in (d).
@@ -603,7 +603,7 @@ sugar cane in response to increasing carbon dioxide concentrations **at 25 °C**
 
 **4.** **This increases sugars / food passed from algae to coral and hence increases coral growth.**
 
-**Source:** HCI Prelim 2018 P2 Q8b(i), stem and key verbatim (a); SAJC Prelim 2023 P2 Q3e, stem and key verbatim (b); SAJC Prelim 2023 P2 Q3g, stem and key verbatim (c); ASRJC Prelim 2022 P2 Q8a(ii), also filed as Topical 2021 STQ Q5a(ii) reprinting NJC Prelim P2 Q3a(ii), stem, Fig. 8.1 description and key verbatim (d); RI Prelim 2025 P2 Q9a(iii), stem, Table 9.1, Table 9.2 and key verbatim (e), with the two tables merged into one for the drill so both are visible at once. No figure in this question could be recovered from a PDF, so the papers' own descriptions are printed; every part is answerable from them.
+**Source:** HCI Prelim 2018 P2 Q8b(i), stem and key verbatim (a); SAJC Prelim 2023 P2 Q3e, stem and key verbatim (b); SAJC Prelim 2023 P2 Q3g, stem and key verbatim (c); ASRJC Prelim 2022 P2 Q8a(ii), also filed as Topical 2021 STQ Q5a(ii) reprinting NJC Prelim P2 Q3a(ii), stem, Fig. 2.1 description and key verbatim (d); RI Prelim 2025 P2 Q9a(iii), stem, Table 9.1, Table 9.2 and key verbatim (e), with the two tables merged into one for the drill so both are visible at once. No figure in this question could be recovered from a PDF, so the papers' own descriptions are printed; every part is answerable from them.
 **Archetype:** data and figure interpretation. LO 3(b) is a whole outcome carrying only 34 main-bank records, which makes it low frequency, explicitly required and cheap: two graphs and one inference.
 **Trap:** defining an action spectrum where an absorption spectrum was asked for; describing the accessory pigment's role as passing **electrons** rather than **energy**, which a scheme rejects; in (e), quoting the wavelengths without also using the abundance column, which is the second mark.
 **LOs:** 3(b) explain the absorption and action spectra of photosynthetic pigments, throughout.
@@ -667,7 +667,7 @@ Either of two routes is accepted.
 
 **9.** The three products are **electrons, protons and oxygen**, and the proton fate is the one candidates omit.
 
-**Source:** YIJC Prelim 2025 P2 Q7a(i), stem, Fig. 7.1 description, both accepted routes and the examiner comment verbatim (a); YIJC Prelim 2025 P2 Q7a(ii), stem and key verbatim (b); JPJC Prelim 2025 P2 Q7a, stem and key verbatim (c); MJC Prelim 2016 P2 Q6b, stem and key verbatim (d). Fig. 7.1 could not be recovered from a PDF, so the paper's own description is printed instead; every part is answerable from it.
+**Source:** YIJC Prelim 2025 P2 Q7a(i), stem, Fig. 3.1 description, both accepted routes and the examiner comment verbatim (a); YIJC Prelim 2025 P2 Q7a(ii), stem and key verbatim (b); JPJC Prelim 2025 P2 Q7a, stem and key verbatim (c); MJC Prelim 2016 P2 Q6b, stem and key verbatim (d). Fig. 3.1 could not be recovered from a PDF, so the paper's own description is printed instead; every part is answerable from it.
 **Archetype:** mechanism explain-chain, applied to an unfamiliar inhibitor. Suggest and "with reference to" together account for 24.5% of structured parts and both signal that the answer has to be built from the supplied figure rather than recalled.
 **Trap:** naming cytochrome c in a photosynthesis answer, which an examiner comment names as one of the two commonest confusions in this topic; calling oxygen the final electron acceptor in photosynthesis, which is the other one; writing hydrolysis for photolysis, which a scheme rejects outright; saying the light-harvesting complex passes **electrons** to the reaction centre when it passes **energy**.
 **LOs:** 3(c) with reference to chloroplast structure, describe and explain how light energy is harnessed and converted into chemical energy during the light-dependent reactions, throughout.
@@ -764,7 +764,7 @@ Either of two routes is accepted.
 
 **5.** The stem rules denaturation out in writing, so an answer built on denatured rubisco earns nothing. The mark is for **leakiness collapsing the gradient**, which is Book 1 membrane fluidity applied here.
 
-**Source:** NJC Prelim 2024 P2 Q7(c), stem and the whole comparison table verbatim (a); SAJC Prelim 2025 P2 Q7b, stem, Fig. 7.1 description and key verbatim (b); Topical 2021 STQ Q7a(iii), reprinting SAJC Prelim P2 Q3a(iii), stem and key verbatim including the ignore line (c); ASRJC Prelim 2023 P3 Q3a(i), stem and key verbatim (d), with the polyp and zooxanthella background folded into the stem so it stands without Fig. 3.1. The SAJC ATP synthase figure could not be recovered from a PDF, so the paper's own description is printed instead.
+**Source:** NJC Prelim 2024 P2 Q7(c), stem and the whole comparison table verbatim (a); SAJC Prelim 2025 P2 Q7b, stem, Fig. 5.1 description and key verbatim (b); Topical 2021 STQ Q7a(iii), reprinting SAJC Prelim P2 Q3a(iii), stem and key verbatim including the ignore line (c); ASRJC Prelim 2023 P3 Q3a(i), stem and key verbatim (d), with the polyp and zooxanthella background folded into the stem so it stands without Fig. 3.1. The SAJC ATP synthase figure could not be recovered from a PDF, so the paper's own description is printed instead.
 **Archetype:** compare and distinguish, plus a mechanism chain applied to an unfamiliar stress. The cyclic against non-cyclic comparison is one of the Book's four rehearsed bridges.
 **Trap:** giving cyclic flow an oxygen product; saying protons **diffuse** into the thylakoid space when the accepted phrase is **active transport of H+ ions into thylakoid space from stroma**; in (d), answering with denaturation when the stem has already ruled it out; forgetting that a leaky membrane still allows electron transport, so the chain runs faster, not slower.
 **LOs:** 3(c) cyclic and non-cyclic photophosphorylation; 3(l) outline chemiosmosis in photosynthesis; reach-back to Book 1 for the hydrophobic core of the bilayer in (c) and for temperature and membrane fluidity in (d).
@@ -818,7 +818,7 @@ Either of two routes is accepted.
 
 **3.** **The carbon skeletons of 5 molecules of G3P are rearranged into 3 molecules of RuBP.**
 
-**Source:** 9477 Specimen P2 Q5(a), stem, Figure 5.1 and mark allocation verbatim from the question paper (a); 9477 Specimen P2 Q5(b) (b); 9477 Specimen P2 Q5(d) (c); NJC Prelim 2014 P2 Q5e, stem and key verbatim (d); AJC Prelim 2018 P2 Q7c(i), stem, Fig. 7.2 description and key verbatim (e). Figure 5.1 is the specimen's own image, lifted from the specimen paper PDF. The specimen ships without a mark scheme, so (a) to (c) are inferred and tagged. **9477 Specimen P2 Q5(c), the mean-rate calculation, is deliberately not here: it is a data-handling item and it sits in the Cluster 3 drill instead.**
+**Source:** 9477 Specimen P2 Q5(a), stem, Figure 6.1 and mark allocation verbatim from the question paper (a); 9477 Specimen P2 Q5(b) (b); 9477 Specimen P2 Q5(d) (c); NJC Prelim 2014 P2 Q5e, stem and key verbatim (d); AJC Prelim 2018 P2 Q7c(i), stem, Fig. 7.2 description and key verbatim (e). Figure 6.1 is the specimen's own image, lifted from the specimen paper PDF. The specimen ships without a mark scheme, so (a) to (c) are inferred and tagged. **9477 Specimen P2 Q5(c), the mean-rate calculation, is deliberately not here: it is a data-handling item and it sits in the Cluster 3 drill instead.**
 **Archetype:** the switch-off question, which is the single highest-frequency question shape in the whole Book and is 9477 Specimen P2 Q5 exactly. The Calvin cycle carries 68 main-bank records.
 **Trap:** predicting that RuBP falls when carbon dioxide is removed, which is the specimen's own trap; assuming every intermediate moves in the same direction; naming "RuBP not available" or "RuBP is saturated" as a limiting factor, both of which a scheme rejects outright; putting 1,3-bisphosphoglycerate into the reduction step, which LO 3(d) excludes as an intermediate structure.
 **LOs:** 3(d) outline the three phases of the Calvin cycle, indicating the roles of rubisco, ATP and reduced NADP, throughout; 3(a) precise location in (a); 3(e) the effect of a changed condition in (b) and (d).
@@ -878,7 +878,7 @@ Either of two routes is accepted.
 
 **4.** Examiner comment: **students should have described the differences in rate of CO2 fixation even if the command words did not explicitly call for describe and explain; good responses made reference to the genetic modification of having more or more effective SBPase before applying this to improved RuBP regeneration and hence CO2 fixation.**
 
-**Source:** 9477 Specimen P1 Q19, stem, all four options and mark allocation verbatim from the question paper (a); HCI Prelim 2017 P3 Q1c, stem, both reaction equations and key verbatim (b); MJC Prelim 2017 P3 Q3a, stem and key verbatim (c), with the photorespiration paragraph of the original stem removed because the word carries no learning outcome and the question stands without it; School (HCI) Prelim 2024 P2 Q8b(ii), stem, Fig. 8.2, key and examiner comment verbatim (d). Fig. 8.2 is the real graph from the 2024 school prelim paper.
+**Source:** 9477 Specimen P1 Q19, stem, all four options and mark allocation verbatim from the question paper (a); HCI Prelim 2017 P3 Q1c, stem, both reaction equations and key verbatim (b); MJC Prelim 2017 P3 Q3a, stem and key verbatim (c), with the photorespiration paragraph of the original stem removed because the word carries no learning outcome and the question stands without it; School (HCI) Prelim 2024 P2 Q8b(ii), stem, Fig. 7.1, key and examiner comment verbatim (d). Fig. 7.1 is the real graph from the 2024 school prelim paper.
 **Archetype:** unseen-application transfer, plus data quoting under a Suggest command. Suggest is 13.1% of structured parts in Book 5 and it always signals that no recall answer exists.
 **Trap:** answering (a) from memory of rubisco instead of from the passage; in (d), explaining without first quoting the two plateau values, which the examiner comment names as the commonest omission; naming SBPase as something you were supposed to know, when LO 3(d) excludes the names of enzymes other than rubisco and the stem defines it for you.
 **LOs:** 3(d) indicating the roles of rubisco, ATP and reduced NADP, throughout; reach-back to Book 1 Core Idea 1 LOs on active sites and competitive inhibition in (a) and (b).
@@ -1200,7 +1200,7 @@ Any three of the following, all written as red light against green light, or the
 
 **9. Note the data-selection trap.** The figure carries **four** curves and the question names **two**. An examiner comment elsewhere in this the papers rejects an answer purely for citing the wrong series: **"it is imperative that students focus on accuracy in selection of data for discussion; citing of data up to half the smallest division, noting also that the graph did not start from the origin; and citing of units."** Both 10 °C curves are decoys here.
 
-**Source:** 9477 Specimen P2 Q5(c), stem, Figure 5.1 and mark allocation verbatim from the question paper (a), with Figure 5.1 lifted from the specimen PDF; DHS Prelim 2023 P3 Q3b(i), stem, Table 3 values and key verbatim (b); ACJC Prelim 2022 P2 Q2a(i), stem, Figure 2.2 description, the whole eight-point key and the two-trends-plus-data rule verbatim (c). **Part (a) is the one question moved out of another cluster on purpose:** it is 9477 Specimen Paper 2 Question 5(c), which belongs to the Calvin cycle by content but is a data-handling item by skill, and Cluster 3 is where data handling is tested.
+**Source:** 9477 Specimen P2 Q5(c), stem, Figure 13.1 and mark allocation verbatim from the question paper (a), with Figure 13.1 lifted from the specimen PDF; DHS Prelim 2023 P3 Q3b(i), stem, Table 3 values and key verbatim (b); ACJC Prelim 2022 P2 Q2a(i), stem, Figure 2.2 description, the whole eight-point key and the two-trends-plus-data rule verbatim (c). **Part (a) is the one question moved out of another cluster on purpose:** it is 9477 Specimen Paper 2 Question 5(c), which belongs to the Calvin cycle by content but is a data-handling item by skill, and Cluster 3 is where data handling is tested.
 **Archetype:** data-quoting discipline as a skill in its own right. With **11.4% of structured parts opening "with reference to"** and three separate examiner comments naming data selection, units, half-smallest-division reading and non-zero origins, this is a cross-Book skill worth its own drill set. The habit is fixed: **describe the trend, quote two values with units from the correct series, then account for it.**
 **Trap:** quoting a trend without a figure, or a figure without a unit; selecting the wrong series off a four-curve figure; giving a calculated answer to the wrong number of significant figures, or without working, when both are separately instructed; reading a compensation point off the wrong axis, since in (c) it is a **carbon dioxide** compensation point in ppm, not a light compensation point.
 **LOs:** 3(d) and 3(e) supply the content in (a) and (b); 3(e) supplies (c); the skill being tested throughout is the Paper 4 data-handling discipline named in LO 3(e) and LO 3(k).

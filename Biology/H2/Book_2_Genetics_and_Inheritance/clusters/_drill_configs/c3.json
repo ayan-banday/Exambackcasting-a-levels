@@ -14,14 +14,14 @@
   "9|a": "q9a_expression_gels.png"
  },
  "caption": {
-  "q2a_sickle_sem.png": "Fig. 2.1  HCI Book 2, chapter 2.5 Gene and Chromosomal Mutations, p. 14 — scanning electron micrographs of a normal and a sickled red blood cell, both to a 7 μm scale bar",
-  "q4a_gel_deermice.png": "Fig. 4.1  NYJC Prelim 2025 P3 Q1(e), Fig. 1.4 — PCR products of the Mx1/Mx2 gene from three deer mice, separated by gel electrophoresis",
-  "q5a_gel_blot.png": "Fig. 5.1  HCI Book 2, chapter 2.6 Molecular Techniques, p. 17 — lane 1 HindIII-cut phage λ size markers, lane 2 EcoRI-cut Arabidopsis genomic DNA, and the autoradiogram of a Southern blot of lane 2",
-  "q5b_stringency.png": "Fig. 5.2  HCI Book 2, chapter 2.6 Molecular Techniques, p. 15 — the same probe and the same mixture hybridised at 42 °C and at 35 °C",
-  "q6b_translocation.png": "Fig. 6.1  HCI Book 2, chapter 2.5 Gene and Chromosomal Mutations, p. 20, Fig. 14 — chromosomal translocation, as the school's own figure prints it",
-  "q7a_nondisjunction.png": "Fig. 7.1  HCI Book 2, chapter 2.5 Gene and Chromosomal Mutations, p. 22, Fig. 16 — non-disjunction of homologous chromosomes in meiosis I and of sister chromatids in meiosis II, with the gametes produced by each",
-  "q8a_downrisk.png": "Fig. 8.1  HCI Book 2, chapter 2.5 Gene and Chromosomal Mutations, p. 26, Fig. 21 — risk of Down syndrome in live births against maternal age",
-  "q8b_singapore_trend.png": "Fig. 8.2  HCI Book 2, chapter 2.5 Gene and Chromosomal Mutations, p. 27 — Down syndrome livebirths and abortuses as percentages of identified Down syndrome pregnancies, 1993 to 1998",
-  "q9a_expression_gels.png": "Fig. 9.1  HCI (School) Prelim 2024 P2 Q5(c), Fig. 5.2 — gene expression profiles of healthy and diseased individuals for genetic diseases X and Y"
+  "q2a_sickle_sem.png": "Fig. 2.1",
+  "q4a_gel_deermice.png": "Fig. 4.1  ·  NYJC Prelim 2025 P3 Q1(e)",
+  "q5a_gel_blot.png": "Fig. 5.1",
+  "q5b_stringency.png": "Fig. 5.2",
+  "q6b_translocation.png": "Fig. 6.1",
+  "q7a_nondisjunction.png": "Fig. 7.1",
+  "q8a_downrisk.png": "Fig. 8.1",
+  "q8b_singapore_trend.png": "Fig. 8.2",
+  "q9a_expression_gels.png": "Fig. 9.1"
  }
 }

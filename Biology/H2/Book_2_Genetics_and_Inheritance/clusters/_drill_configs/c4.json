@@ -14,11 +14,11 @@
   "9|b": "q9b_screening_table.png"
  },
  "caption": {
-  "q1_microsat_alleles.png": "Fig. 1.1  RVHS Prelim 2023 P2 Q6, Fig. 6.1. The microsatellite marker: six TAGA repeats linked to the recessive allele g, ten linked to the dominant allele G",
-  "q1a_gel_microsat.png": "Fig. 1.2  RVHS Prelim 2023 P2 Q6, Fig. 6.2. Amplified microsatellite products from four carriers, with DNA ladders in lanes 1 and 6",
-  "q2b_pcr_3cycles.png": "Fig. 2.1  HCI Book 2, chapter 2.6 Molecular Techniques, p. 6, Fig. 4. DNA amplification by three rounds of the PCR cycle",
-  "q6a_codon_table.png": "Fig. 6.1  HCI Book 2, chapter 2.2 Eukaryotic Gene Expression, p. 21, Fig. 19. The genetic code, 64 codons as mRNA base triplets",
-  "q7c_polyA_length.png": "Fig. 7.1  RVHS Prelim 2023 P2 Q3, Fig. 3.1. Poly(A) tail length and protein concentration in a zygote from 20 to 140 minutes after fertilisation",
-  "q9b_screening_table.png": "HCI Book 2, chapter 2.5 Gene and Chromosomal Mutations, p. 27, Table 3. Screening tests for Down syndrome with detection rate and false positive rate"
+  "q1_microsat_alleles.png": "Fig. 1.1  ·  RVHS Prelim 2023 P2 Q6",
+  "q1a_gel_microsat.png": "Fig. 1.2  ·  RVHS Prelim 2023 P2 Q6",
+  "q2b_pcr_3cycles.png": "Fig. 2.1",
+  "q6a_codon_table.png": "Fig. 6.1",
+  "q7c_polyA_length.png": "Fig. 7.1  ·  RVHS Prelim 2023 P2 Q3",
+  "q9b_screening_table.png": "Figure"
  }
 }

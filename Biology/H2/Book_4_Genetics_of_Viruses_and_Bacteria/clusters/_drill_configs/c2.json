@@ -13,12 +13,12 @@
   "5|d": "q5_budding.svg"
  },
  "caption": {
-  "q1_influenza_structure.png": "Fig. 1.1  ASRJC Prelim 2022 P2 Q5, Fig. 5.1. Influenza virion, with haemagglutinin, matrix protein and viral envelope labelled, and E and F to be identified",
-  "q3_hiv_structure_enzymes.png": "Fig. 3.1  NYJC Prelim 2023 P2 Q6, Fig. 6.1. HIV virion, with glycoproteins labelled and enzymes A and B inside the capsid",
-  "q6_antigenic_shift_coinfection.png": "DHS Prelim 2022 P1 Q13. One host cell co-infected by influenza strains K and L, producing new strains M and N",
-  "q7_haemagglutinin_variable_sites.png": "Fig. 7.1  NJC Prelim 2023 P2 Q4, Fig. 4.2. Haemagglutinin, with the positions of frequently changed amino acids numbered",
-  "q1_influenza_a_vs_c.svg": "Fig. 1.2  Cross-sections of influenza A (eight RNA segments, HA and NA spikes) and influenza C (seven RNA segments, a single HEF spike type). Redrawn as a schematic.",
-  "q5_replication_flowchart.svg": "Fig. 5.1  The six stages of influenza replication as the paper sets them out, with S, T and U left unnamed.",
-  "q5_budding.svg": "Fig. 5.2  A virus particle at the tip of an outward projection of the host cell surface membrane. Redrawn as a schematic from the source micrograph."
+  "q1_influenza_structure.png": "Fig. 1.1  ·  ASRJC Prelim 2022 P2 Q5",
+  "q3_hiv_structure_enzymes.png": "Fig. 3.1  ·  NYJC Prelim 2023 P2 Q6",
+  "q6_antigenic_shift_coinfection.png": "Figure  ·  DHS Prelim 2022 P1 Q13",
+  "q7_haemagglutinin_variable_sites.png": "Fig. 7.1  ·  NJC Prelim 2023 P2 Q4",
+  "q1_influenza_a_vs_c.svg": "Fig. 1.2",
+  "q5_replication_flowchart.svg": "Fig. 5.1",
+  "q5_budding.svg": "Fig. 5.2"
  }
 }

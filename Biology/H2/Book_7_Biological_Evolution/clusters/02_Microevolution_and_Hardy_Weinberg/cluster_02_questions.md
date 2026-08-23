@@ -55,17 +55,17 @@ drift in producing the different body sizes of the two subspecies of reindeer. *
 
 A species of mouse, *Peromyscus polionotus*, found in Florida, USA, has a number of different coat
 colours. Dark fur is produced when the hair-producing cells secrete a pigment called eumelanin. A change
-in the *MC1R* gene means that there are two alleles, R and C, where allele C produces light fur. Fig. 1.2
+in the *MC1R* gene means that there are two alleles, R and C, where allele C produces light fur. Fig. 2.1
 shows the distribution of the different coloured mice and the relative frequencies of the alleles R and
 C in each population.
 
-[FIGURE: Fig. 1.2, a sketch map of Northern Florida. A sandy beach runs along the coast on the left and
+[FIGURE: Fig. 2.1, a sketch map of Northern Florida. A sandy beach runs along the coast on the left and
 upper part of the map; the interior to the right is labelled forest/shrub. Population 3 sits on the
 sandy beach at the far left with allele frequency 5% R, 95% C. Population 2 sits on the sandy beach
 further along with allele frequency 30% R, 70% C. Population 1 sits inland in the forest/shrub with
 allele frequency 100% R, 0% C.]
 
-**(a)** With reference to Fig. 1.2, suggest how fur colour is related to environmental conditions. **[2]**
+**(a)** With reference to Fig. 2.1, suggest how fur colour is related to environmental conditions. **[2]**
 
 **(b)** The difference between the allele frequencies in populations 2 and 3 occurred over a short period
 of time, despite both living on beaches. Suggest an explanation for the change in the allele
@@ -196,10 +196,10 @@ those who show the sickle cell trait. **[4]**
 > constructed, and it is labelled as constructed in its answer.
 
 Human activity has resulted in the forest landscapes of Europe existing as a mixture of fragments of
-different ages and sizes. Fig. 1.5 shows the fragmentation of forests surrounded by developed land.
+different ages and sizes. Fig. 7.1 shows the fragmentation of forests surrounded by developed land.
 Three fragments of forest **P**, **Q** and **R** are labelled on the 1910 map.
 
-[FIGURE: Fig. 1.5, four outline maps of the same area of forest at 1775, 1852, 1884 and 1910. In 1775
+[FIGURE: Fig. 7.1, four outline maps of the same area of forest at 1775, 1852, 1884 and 1910. In 1775
 the forest is a single continuous complex; by 1910 it has been broken up into small isolated patches
 surrounded by developed land. On the 1910 map, R lies adjacent to the remaining main body of forest and
 is joined to it, P is a small detached fragment to the west, and Q is the smallest and most isolated,
@@ -314,7 +314,7 @@ Explain the roles of chance and isolation in an evolution that leads to the emer
 
 ### Question 2
 
-**(a)** *With reference to Fig. 1.2, suggest how fur colour is related to environmental conditions.* **[2]**
+**(a)** *With reference to Fig. 2.1, suggest how fur colour is related to environmental conditions.* **[2]**
 
 **1.** **Mice with light fur found in an environment providing light backgrounds / sandy beaches.**
 
@@ -352,7 +352,7 @@ Explain the roles of chance and isolation in an evolution that leads to the emer
 
 **5.** Examiner's comment. **Students who did not score full marks fell into two categories. The first used terminology loosely and said the gene is passed on instead of the allele. The question requires the student to link natural selection to relative allele frequency, which means tracing the pathway by which allele C increases and proving it by making the logical leap to the 95% figure. The second group wrote well but scored nothing because they did not identify the correct population. Lastly, fur is not inheritable regardless of the colour.**
 
-**Source:** Timed Practice Exercise 2025 P3 Q1(b)(i), (b)(ii) and (b)(iii), also set verbatim as Timed Practice Exercise 2024 P3 Q1(b). Stem, Fig. 1.2 and all three keys verbatim, including every reject line, the maximum on (b) and both examiner comments. The 2024 key for (c) omits the predation marking point and words the last two points more loosely; the 2025 key printed above is the fuller of the two. The *MC1R* preamble is carried in from the paper's own Q1(a) so the question stands alone.
+**Source:** Timed Practice Exercise 2025 P3 Q1(b)(i), (b)(ii) and (b)(iii), also set verbatim as Timed Practice Exercise 2024 P3 Q1(b). Stem, Fig. 2.1 and all three keys verbatim, including every reject line, the maximum on (b) and both examiner comments. The 2024 key for (c) omits the predation marking point and words the last two points more loosely; the 2025 key printed above is the fuller of the two. The *MC1R* preamble is carried in from the paper's own Q1(a) so the question stands alone.
 **Archetype:** data and figure interpretation feeding a mechanism explain-chain. This is the **full-cycle question of this drill**: variation already present in the gene pool, an environmental factor acting as a selection pressure, differential survival, transmission of the allele, and a named final allele frequency of 95%.
 **Trap:** the whole question is built to separate drift from selection. Part (b) rules selection out because both populations sit on the same beach, so the environment cannot explain the difference. Part (c) then asks for selection in the one place it does apply. Getting the two the wrong way round is the failure mode. The second trap is vocabulary: the scheme rejects **gene** and rejects **fur** as what is inherited. What is passed on is the **allele**. The third is that the mutation is not created by the environment; alleles C and R were already in the gene pool.
 **LOs:** 4(d) in (b), genetic drift and the bottleneck. 4(b) and 4(c) in (a) and (c), an environmental factor acting as a force of selection and the role of selection in changing allele frequency.
@@ -665,7 +665,7 @@ Explain the roles of chance and isolation in an evolution that leads to the emer
 
 **8.** Read what is asked for. LO 4(n) names **alleles**, **genotypes** and **phenotypes**, three different outputs. An **allele frequency** is p or q. A **genotype frequency** is p², 2pq or q². A **phenotype frequency** groups genotypes, so the **frequency of the dominant phenotype is p² + 2pq**. If a **number** of individuals is wanted, multiply the frequency by the population size.
 
-**Source:** School (HCI) Prelim 2023 P3 Q1(h), stem, Fig. 1.5 and key verbatim including both reject lines and the examiner's comment (a); the five-condition table in point 6 and the deviation note in point 7 are added by this build from LO 4(m) and chapter 7.3, and are not part of the HCI key. School (HCI) Prelim 2023 P3 Q1(i), stem, both accepted orderings and the examiner's comment verbatim (b); the school key names Fig. 1.6 in its supporting-information line, which is a slip, since P, Q and R are labelled on Fig. 1.5. School (HCI) Prelim 2024 P3 Q3(a), stem, full worked key, the reject on √0.6, the error-carried-forward allowance and the examiner's comment verbatim (c); also banked under Biostatistics. DHS Prelim 2014 P1 Q34, stem and the four-row option table verbatim (d); the school key prints the letter C only, so the working and the option audit in points 2 to 5 are `[INFERRED]`. Part (e) is constructed by this build and carries no paper attribution.
+**Source:** School (HCI) Prelim 2023 P3 Q1(h), stem, Fig. 7.1 and key verbatim including both reject lines and the examiner's comment (a); the five-condition table in point 6 and the deviation note in point 7 are added by this build from LO 4(m) and chapter 7.3, and are not part of the HCI key. School (HCI) Prelim 2023 P3 Q1(i), stem, both accepted orderings and the examiner's comment verbatim (b); the school key names Fig. 1.6 in its supporting-information line, which is a slip, since P, Q and R are labelled on Fig. 7.1. School (HCI) Prelim 2024 P3 Q3(a), stem, full worked key, the reject on √0.6, the error-carried-forward allowance and the examiner's comment verbatim (c); also banked under Biostatistics. DHS Prelim 2014 P1 Q34, stem and the four-row option table verbatim (d); the school key prints the letter C only, so the working and the option audit in points 2 to 5 are `[INFERRED]`. Part (e) is constructed by this build and carries no paper attribution.
 **Archetype:** calculation. The prelim papers set few of these because they predate 9477; the syllabus asks for more. Treat it as a live node.
 **Trap:** assigning p and q to the wrong alleles. **p is the dominant allele frequency, q the recessive**, and every calculation enters through q² because the homozygous recessive is the only genotype readable from a phenotype. Confusing **q** with **q²**, which is what makes rows A and D wrong in (d). Computing **pq** instead of **2pq**, which the HCI examiner names as the commonest error in (c). Giving a **frequency** when a **number** was asked for, or the reverse. Listing all five conditions in (a) when the scheme rejects the three that are not violated in that context.
 **LOs:** 4(m) in (a), the model and its conditions. 4(n) in (c), (d) and (e), the calculation of allele, genotype and phenotype frequencies. 4(d) in (b), gene flow, and in (d), the founder effect. Bridge to 4(j) in (d), behavioural isolation. Reach-back to Book 6 throughout, since every part needs allele, genotype, homozygous, heterozygous, dominant and recessive used precisely.

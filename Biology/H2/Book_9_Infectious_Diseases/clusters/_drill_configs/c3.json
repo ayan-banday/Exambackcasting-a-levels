@@ -14,13 +14,13 @@
   "3|c": "q3_tubercle.svg"
  },
  "caption": {
-  "q_sch25p2_fig51_52_hiv.png": "Fig. 2.1  School (HCI) Prelim 2025 P2 Q5, Fig. 5.1 and Fig. 5.2. Plasma viral RNA levels after HIV-1 and HIV-2 infection, and time to AIDS and death in West Africa",
-  "q_sch24p2_fig101_tb.png": "Fig. 3.4  School (HCI) Prelim 2024 P2 Q10, Fig. 10.1. Bacterial cell count against time, with the IFN-gamma and antibody detection windows bracketed",
-  "q_spec_p2_q9_fig91.png": "Fig. 4.1  9477 Specimen Paper 2 Question 9, Figure 9.1. An antibody and an antibiotic drawn to the same scale",
-  "q_ri25p2_fig111_varicella.png": "Fig. 7.1  RI Prelim 2025 P2 Q11, Fig. 11.1. Vaccinated and unvaccinated children with chickenpox, and vaccination coverage, 1995 to 2004",
-  "q1_vaccination_uptake.svg": "Fig. 1.1  Weekly seasonal flu and H1N1 vaccinations in the US, August 2009 to March 2010. Redrawn from the paper's own data.",
-  "q3_tb_lifecycle.svg": "Fig. 3.1  Life cycle of M. tuberculosis in an infected person. Redrawn as a schematic.",
-  "q3_mycobacterial_wall.svg": "Fig. 3.2  Cross-section of the mycobacterial cell wall. Redrawn as a schematic.",
-  "q3_tubercle.svg": "Fig. 3.3  Structure of a tubercle. Redrawn as a schematic."
+  "q_sch25p2_fig51_52_hiv.png": "Fig. 2.1  ·  School (HCI) Prelim 2025 P2 Q5",
+  "q_sch24p2_fig101_tb.png": "Fig. 3.4  ·  School (HCI) Prelim 2024 P2 Q10",
+  "q_spec_p2_q9_fig91.png": "Fig. 4.1",
+  "q_ri25p2_fig111_varicella.png": "Fig. 7.1  ·  RI Prelim 2025 P2 Q11",
+  "q1_vaccination_uptake.svg": "Fig. 1.1",
+  "q3_tb_lifecycle.svg": "Fig. 3.1",
+  "q3_mycobacterial_wall.svg": "Fig. 3.2",
+  "q3_tubercle.svg": "Fig. 3.3"
  }
 }

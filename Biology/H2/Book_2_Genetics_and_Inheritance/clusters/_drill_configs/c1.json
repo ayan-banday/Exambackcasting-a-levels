@@ -13,15 +13,15 @@
   "9|a": "q9_pentose.png"
  },
  "caption": {
-  "q2_antiparallel.png": "Fig. 2.1  The two strands of DNA are antiparallel, with the 5' phosphate and 3' hydroxyl labelled at each end.",
-  "q3_models.png": "Fig. 3.1  The three alternative models of replication: conservative, semi-conservative and dispersive.",
-  "q4_nucleosome.png": "Fig. 4.1  Structure of a nucleosome: histone octamer, linker DNA, 10 nm, 146 bp.",
-  "q5_end_problem.png": "Fig. 5.1  The end replication problem.",
-  "q6_chromosome.png": "Fig. 6.1  Electron micrograph of a fully condensed duplicated chromosome, with the centromere and the (TTAGGG)n telomeres indicated.",
-  "q6_centromere.png": "Fig. 6.2  Segregation of a chromosome (A) with one centromere and (B) with no centromere.",
-  "q7_genome_size.png": "Fig. 7.1  Genome size on a log scale against taxonomic group.",
-  "q8_gene.png": "Fig. 8.1  A eukaryotic protein-coding gene through to mature mRNA.",
-  "q9_pentose.png": "Fig. 9.1  Deoxyribose and ribose."
+  "q2_antiparallel.png": "Fig. 2.1",
+  "q3_models.png": "Fig. 3.1",
+  "q4_nucleosome.png": "Fig. 4.1",
+  "q5_end_problem.png": "Fig. 5.1",
+  "q6_chromosome.png": "Fig. 6.1",
+  "q6_centromere.png": "Fig. 6.2",
+  "q7_genome_size.png": "Fig. 7.1",
+  "q8_gene.png": "Fig. 8.1",
+  "q9_pentose.png": "Fig. 9.1"
  },
  "confidence_prompt": true
 }

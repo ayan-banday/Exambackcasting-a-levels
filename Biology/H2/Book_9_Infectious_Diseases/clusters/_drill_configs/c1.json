@@ -16,15 +16,15 @@
   "8|b": "q8_hsp60_pkc.svg"
  },
  "caption": {
-  "q2_vjc_lipid_raft.png": "Fig. 2.2  VJC Prelim 2025 P2 Q4, Fig. 4.2. A region of cell membrane containing a lipid raft region, raft and non-raft regions bracketed",
-  "q7_vjc_mhc_protein.png": "Fig. 7.1  VJC Prelim 2025 P2 Q10, Fig. 10.1. The two-chain, four-domain membrane protein of a mouse macrophage, antigen-binding region labelled",
-  "q1_gut_barrier.svg": "Fig. 1.1  Cross-section through the intestinal wall. Redrawn as a schematic.",
-  "q1_h_pylori.svg": "Fig. 1.2  H. pylori burrowing through the gastric mucus layer. Redrawn as a schematic.",
-  "q2_phagocytosis_pqrs.svg": "Phagocytosis of a pathogen by a neutrophil, with P, Q, R and S labelled. Redrawn as a schematic.",
-  "q2_opsonisation.svg": "Fig. 2.1  Four-stage sequence: antibody-coated bacterium, engulfment, Organelle X approaching, fusion and breakdown. Redrawn as a schematic.",
-  "q3_respiratory_tract.svg": "The respiratory tract during influenza infection. Redrawn as a schematic.",
-  "q3_interferon.svg": "Fig. 3.1  Interferon secreted by an infected cell inducing an antiviral state in neighbours. Redrawn as a schematic.",
-  "q4_joint.svg": "Fig. 4.1  A healthy joint and an arthritic joint. Redrawn as a schematic.",
-  "q8_hsp60_pkc.svg": "Fig. 8.1  The role of HSP60 in PKC signalling in a buffalo T lymphocyte. Redrawn as a schematic."
+  "q2_vjc_lipid_raft.png": "Fig. 2.2  ·  VJC Prelim 2025 P2 Q4",
+  "q7_vjc_mhc_protein.png": "Fig. 7.1  ·  VJC Prelim 2025 P2 Q10",
+  "q1_gut_barrier.svg": "Fig. 1.1",
+  "q1_h_pylori.svg": "Fig. 1.2",
+  "q2_phagocytosis_pqrs.svg": "Figure",
+  "q2_opsonisation.svg": "Fig. 2.1",
+  "q3_respiratory_tract.svg": "Figure",
+  "q3_interferon.svg": "Fig. 3.1",
+  "q4_joint.svg": "Fig. 4.1",
+  "q8_hsp60_pkc.svg": "Fig. 8.1"
  }
 }

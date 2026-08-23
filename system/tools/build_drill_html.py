@@ -196,6 +196,12 @@ def inline(t):
 
 def render(text, qno=None, part=None, figs_used=None):
     """Markdown-ish block renderer: tables, blockquotes, lists, figures, paragraphs."""
+    # Ethan, 23 Aug: "it's saying 8.1 and it's just the same figure showing again and again even
+    # though it's different." Figure numbers repeat across questions, so the number-to-file map
+    # is only valid inside one question. Reset it the moment the question changes.
+    if FIG_Q[0] != qno:
+        FIG_Q[0] = qno
+        FIG_BY_NUM.clear()
     out, lines, i = [], text.split("\n"), 0
     shown_here = set()
     while i < len(lines):
@@ -328,8 +334,9 @@ def render(text, qno=None, part=None, figs_used=None):
 
 
 FIG_IDX = {}
-FIG_BY_NUM = {}
+FIG_BY_NUM = {}      # figure number -> filename, CLEARED AT EVERY QUESTION
 FIG_REPEATED = set()
+FIG_Q = [None]       # which question FIG_BY_NUM currently belongs to
 QS, MS = split_questions(qhalf), split_questions(mhalf)
 figs_used = set()
 cards = []

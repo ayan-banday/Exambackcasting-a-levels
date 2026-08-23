@@ -186,20 +186,20 @@ coding for no rays. The inheritance of these genes is an example of autosomal li
 
 Explain the meaning of the term **autosomal linkage**. **[2]**
 
-**(b)** Fig 4.1 shows the alleles of two genes on chromosome 1 of two fruit flies. The female fruit fly is heterozygous for both genes **A** and **B**, whereas the male fruit fly is homozygous for both genes **A** and **B**.
+**(b)** Fig 5.1 shows the alleles of two genes on chromosome 1 of two fruit flies. The female fruit fly is heterozygous for both genes **A** and **B**, whereas the male fruit fly is homozygous for both genes **A** and **B**.
 
-[FIGURE: Fig. 4.1, two pairs of homologous copies of chromosome 1 drawn as vertical bars. The female
+[FIGURE: Fig. 5.1, two pairs of homologous copies of chromosome 1 drawn as vertical bars. The female
 fruit fly carries alleles A1 and B3 on one chromosome and A2 and B4 on its homologue. The male fruit fly
 carries A1 and B3 on both.]
 
 The fruit flies were crossed and 200 progenies were produced. Using Southern Blotting, the banding
-patterns of the parents and progeny were visualised, as shown in Fig. 4.2.
+patterns of the parents and progeny were visualised, as shown in Fig. 5.2.
 
-[FIGURE: Fig. 4.2, a Southern blot of chromosome 1 run from negative to positive, one lane per parent and
+[FIGURE: Fig. 5.2, a Southern blot of chromosome 1 run from negative to positive, one lane per parent and
 one lane for each of the four progeny classes, with band positions labelled A1, A2, B3 and B4. The
 progeny classes number 72, 69, 31 and 28 out of 200.]
 
-With reference to Fig. 4.1 and Fig. 4.2, state precisely the type of genetic inheritance observed. **[1]**
+With reference to Fig. 5.1 and Fig. 5.2, state precisely the type of genetic inheritance observed. **[1]**
 
 **(c)** Explain your answer in **(b)**. **[2]**
 
@@ -296,12 +296,12 @@ and the recessive alleles of both on its homologue. **[3]**
 
 ### Question 9 [7 marks]
 
-Nail patella syndrome is a rare genetic syndrome caused by mutations in the *LMX1B* gene. Fig. 8.1 shows
+Nail patella syndrome is a rare genetic syndrome caused by mutations in the *LMX1B* gene. Fig. 9.1 shows
 the transmission of the nail patella syndrome along with ABO blood type. Individuals suffering from the
 nail patella syndrome are shaded, and the blood type of each individual is also stated. **The gene coding
 for the ABO blood type is located on the same chromosome as the *LMX1B* gene.**
 
-[FIGURE: Fig. 8.1, a three-generation pedigree of five sibships descending from I-1, an unaffected female
+[FIGURE: Fig. 9.1, a three-generation pedigree of five sibships descending from I-1, an unaffected female
 of blood type O, and I-2, an affected male of blood type A. Affected individuals are shaded and every
 individual carries their ABO blood type beneath the symbol.]
 
@@ -568,7 +568,7 @@ fruit shapes in summer squashes come about. **[3]**
 
 **4.** **Aneuploidy results, where gametes are n+1 and n-1.** **Reject: polyploidy.**
 
-**Source:** School Prelim 2023 P2 Q6(a), also printed as HCI Prelim 2023 P2 Q6(a), VJC Prelim 2024 P2 Q7(a)(ii) and TMJC Prelim 2025 P2 Q8(a), stem and key verbatim with the parallel keys and every reject line from those four reprints (a); ASRJC Prelim 2025 P2 Q4(b)(i), stem, Fig. 4.1, Fig. 4.2 and key verbatim (b); ASRJC Prelim 2025 P2 Q4(b)(ii), key verbatim including both reject lines (c); ASRJC Prelim 2025 P2 Q4(c), stem and all four marking points verbatim including the "any 3" instruction and the polyploidy reject (d).
+**Source:** School Prelim 2023 P2 Q6(a), also printed as HCI Prelim 2023 P2 Q6(a), VJC Prelim 2024 P2 Q7(a)(ii) and TMJC Prelim 2025 P2 Q8(a), stem and key verbatim with the parallel keys and every reject line from those four reprints (a); ASRJC Prelim 2025 P2 Q4(b)(i), stem, Fig. 5.1, Fig. 5.2 and key verbatim (b); ASRJC Prelim 2025 P2 Q4(b)(ii), key verbatim including both reject lines (c); ASRJC Prelim 2025 P2 Q4(c), stem and all four marking points verbatim including the "any 3" instruction and the polyploidy reject (d).
 **Archetype:** recognising linkage from data, which is what LO 2(z) actually asks for. Note what this question does **not** ask: it never asks for a map distance, a crossover value or a gene order. Chromosome mapping is not in the learning outcomes, so the arithmetic your notes spend five pages on is not examinable. Recognising linkage stays; converting it to a distance goes.
 **Trap:** saying **alleles** on the same chromosome instead of **genes**, which is an explicit reject; giving only one half of the autosomal linkage definition; narrating crossing over instead of pointing at the class sizes, which is an explicit reject; reading a skewed four-class result as sex linkage when the blot shows both sexes behaving alike; in (d), writing polyploidy for aneuploidy.
 **LOs:** 2(z) autosomal linkage recognised from data; 2(u) gene against allele; reach-back to Books 2 and 3 for the centromere, the kinetochore, non-disjunction and aneuploidy.
@@ -700,7 +700,7 @@ fruit shapes in summer squashes come about. **[3]**
 
 **1.** **Crossing over between two particular loci is a rare event**, so **it occurs in only some of the cells undergoing meiosis**, and **even in those cells only two of the four chromatids cross over**. So **parental combinations are the majority and recombinant combinations are the minority**.
 
-**Source:** RI Prelim 2024 P2 Q8(b)(i), stem, Fig. 8.1 and all five marking points verbatim (a); RI Prelim 2024 P2 Q8(b)(ii), stem and key verbatim (b); the reasoning in (c) is inferred from the chapter's own three-step account, because this paper does not set that part.
+**Source:** RI Prelim 2024 P2 Q8(b)(i), stem, Fig. 9.1 and all five marking points verbatim (a); RI Prelim 2024 P2 Q8(b)(ii), stem and key verbatim (b); the reasoning in (c) is inferred from the chapter's own three-step account, because this paper does not set that part.
 **Archetype:** linkage inside a pedigree, which is where the two largest concept headings in Book 6 meet. Note the shape of the question: **it tells you the genes are linked and tells you to assume no crossing over, and then part (b) makes you find the one individual for whom that assumption failed.**
 **Trap:** writing Pp I^A I^o instead of the stick form, which strikes two marking points; forgetting that the pedigree fixes the parental genotypes for you, so guessing them is unnecessary; failing to say which generation III individual corresponds to which square of the diagram, which is marking point 5; picking a recombinant by eye without checking which allele combinations the parents could actually have supplied on one chromosome.
 **LOs:** 2(z) autosomal linkage and crossing over; 2(x) multiple alleles inside a two-gene cross; 2(u) dominant and recessive read off a pedigree.

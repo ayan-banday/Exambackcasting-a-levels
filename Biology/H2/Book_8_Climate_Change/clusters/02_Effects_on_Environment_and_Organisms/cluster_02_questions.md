@@ -136,11 +136,11 @@ contribute to climate change. **[2]**
 
 ### Question 4 [10 marks]
 
-**(a)** Researchers have been monitoring and recording the global sea level every year. Fig. 11.2 shows
+**(a)** Researchers have been monitoring and recording the global sea level every year. Fig. 4.1 shows
 the change in sea level compared to the average sea level from 1993 to 2008, across the years from 1960
-to 2022. Explain the changes in global sea level as seen in Fig. 11.2. **[3]**
+to 2022. Explain the changes in global sea level as seen in Fig. 4.1. **[3]**
 
-[FIGURE: Fig. 11.2, a line graph with two overlapping noisy traces. The x-axis is year from 1960 to
+[FIGURE: Fig. 4.1, a line graph with two overlapping noisy traces. The x-axis is year from 1960 to
 beyond 2020. The y-axis is change in sea level compared to the 1993 to 2008 average, in mm, from -100 to
 above 50, with gridlines at -100, -50, 0 and 50. The traces start at about -65 mm in 1960, fluctuate but
 climb steadily, cross the 0 mm line at about 1993, and reach about +80 to +90 mm by the early 2020s. The
@@ -178,11 +178,11 @@ Explain how climate change can result in the projected water supply in Year 2030
 
 ### Question 5 [10 marks]
 
-**(a)** Fig. 11.1 shows the percentage cover of live corals, coral transplant by man and the temperature
-of the sea surface over 40 years. Using Fig. 11.1, describe the change in sea surface temperature and
+**(a)** Fig. 5.1 shows the percentage cover of live corals, coral transplant by man and the temperature
+of the sea surface over 40 years. Using Fig. 5.1, describe the change in sea surface temperature and
 the percentage coverage of live corals. **[3]**
 
-[FIGURE: Fig. 11.1, a graph over 40 years from 1980 to 2020. The left y-axis is sea surface temperature
+[FIGURE: Fig. 5.1, a graph over 40 years from 1980 to 2020. The left y-axis is sea surface temperature
 in degrees Celsius from 26.0 to 30.0 and the right y-axis is coral coverage as a percentage from 0 to
 100. Three traces: a dashed line with filled circles is sea temperature, rising from about 26.1 °C in
 1980 to about 28.9 °C in 2020; a solid line with filled squares is coral coverage, falling from about
@@ -194,7 +194,7 @@ combat shrinking coral habitat. **[3]**
 
 **(c)** Reef-building corals harbour algal symbionts from the genus *Symbiodinium*, and colonies of
 *Pocillopora damicornis* are dominated by *Symbiodinium* from genetically distinct groups, C or D.
-Fig. 9.1 shows the symbiont cell densities, as algal cell mass per gram of coral tissue, in colonies
+Fig. 5.2 shows the symbiont cell densities, as algal cell mass per gram of coral tissue, in colonies
 dominated by group C (open circles, dashed line) and group D (filled circles, solid line) at each time
 point during the warming period and the bleaching event. The mean water temperature experienced by the
 corals over the 14-day period preceding each sampling point is shown as the middle line of the box
@@ -203,7 +203,7 @@ plots.
 Describe and explain the relationship between mean water temperature and the trend observed for symbiont
 cell densities during the warming period. **[3]**
 
-[FIGURE: Fig. 9.1, a combined graph. The left y-axis is symbiont cell density in arbitrary units from
+[FIGURE: Fig. 5.2, a combined graph. The left y-axis is symbiont cell density in arbitrary units from
 0.00 to 0.28, the right y-axis is temperature in degrees Celsius from 4 to 36, and the x-axis gives five
 sampling dates: 12 Feb, 11 Apr, 14 Jun, 13 Aug and 18 Aug. A vertical divider separates a warming period
 covering the first three dates from a bleaching event covering the last two. Box plots show mean water
@@ -230,9 +230,9 @@ conducted a comprehensive field survey to determine the mean elevation of the sa
 incomplete data were excluded. It is estimated that the rapid climate warming in this area started
 during 1985 to 1990.
 
-Using the data in Fig. 10.1, explain how climate change affects plant distribution. **[3]**
+Using the data in Fig. 6.1, explain how climate change affects plant distribution. **[3]**
 
-[FIGURE: Fig. 10.1, a scatter plot of mean elevation in 2018 in metres on the y-axis against mean
+[FIGURE: Fig. 6.1, a scatter plot of mean elevation in 2018 in metres on the y-axis against mean
 elevation in 1950 in metres on the x-axis. Each point is a single plant species, plotted against a line
 of equality. The key gives three categories: downhill shift, 19 species, lying below the line; no
 change, 11 species, lying on the line; and upward shift, 53 species, lying above the line.]
@@ -259,27 +259,27 @@ southern region to seek their food source, caterpillars. Over the years, climate
 population of American robins, their migration pattern, and possibly their survival.
 
 **(a)** Climate change has been said to affect the migratory phenology of the American robins. With
-reference to Fig. 3.1 and Fig. 3.2, describe and explain how climate change has caused the change in the
+reference to Fig. 7.1 and Fig. 7.2, describe and explain how climate change has caused the change in the
 migration pattern. **[3]**
 
-[FIGURE: Fig. 3.1, a line graph of average global temperature in degrees Celsius, y-axis 13.0 to 15.0,
+[FIGURE: Fig. 7.1, a line graph of average global temperature in degrees Celsius, y-axis 13.0 to 15.0,
 against year from about 1880 to 2015. The noisy trace starts at about 13.8 °C in the 1880s, dips to a
 minimum of about 13.5 °C around 1910, rises with fluctuation to about 14.2 °C around 1945, dips again to
 about 13.8 °C in the 1950s to 1970s, then rises steadily from about 1975 to reach roughly 14.8 °C at the
 end of the record.]
 
-[FIGURE: Fig. 3.2, a timeline chart with the twelve months January to December across the top and a
+[FIGURE: Fig. 7.2, a timeline chart with the twelve months January to December across the top and a
 robin icon at the left. The 1950 row carries a double-headed arrow spanning roughly September to
 October. The 2000 row carries a double-headed arrow spanning roughly October to November, that is,
 shifted about one month later.]
 
-**(b)** Explain why the caterpillars are found in abundance earlier as shown in Fig. 3.3. **[2]**
+**(b)** Explain why the caterpillars are found in abundance earlier as shown in Fig. 7.3. **[2]**
 
-[FIGURE: Fig. 3.3, a timeline chart of the same layout with a caterpillar icon at the left. The 1950 row
+[FIGURE: Fig. 7.3, a timeline chart of the same layout with a caterpillar icon at the left. The 1950 row
 carries a double-headed arrow spanning roughly September to October. The 2000 row carries a double-headed
 arrow spanning roughly August to September, that is, shifted about one month earlier.]
 
-**(c)** Discuss how the changes shown in Fig. 3.2 and Fig. 3.3 can impact the American robins. **[3]**
+**(c)** Discuss how the changes shown in Fig. 7.2 and Fig. 7.3 can impact the American robins. **[3]**
 
 **(d)** In the mountains of North America, when winter changes into spring, the coat colour of snowshoe
 hares changes from white to brown. The change in coat colour occurs when new fur replaces old fur, and
@@ -437,7 +437,7 @@ Discuss the effects of climate change (as a result of greenhouse gas emissions).
 
 ### Question 4
 
-**(a)** *Explain the changes in global sea level as seen in Fig. 11.2.* **[3]**
+**(a)** *Explain the changes in global sea level as seen in Fig. 4.1.* **[3]**
 
 **1. Quote the data, worth 1 mark.** **From 1960 to 2020 or 2022, the change in sea level compared to the 1993 to 2008 average increased from -60 mm to 80 mm.** Accept a range of -70 to -60 mm and of 80 to 90 mm.
 
@@ -483,7 +483,7 @@ Discuss the effects of climate change (as a result of greenhouse gas emissions).
 
 **3.** It can **alter precipitation patterns and hydrological systems in many regions, which can result in droughts and thus reduce water supply.**
 
-**Source:** TJC Prelim 2025 P2 Q11b, stem and full key verbatim including the tolerance ranges (a); **Fig. 11.2 could not be recovered because the TJC 2025 papers are not in the inputs archive, so the figure carries the source paper's own description.** CJC Prelim 2023 P2 Q11a, stem and all three alternative marking points verbatim (b), with the Fig. 11.1 description folded into the stem for the same reason. RVHS Prelim 2023 P2 Q11a, stem and key verbatim (c), with the Fig. 11.1 description folded into the stem. ASRJC Prelim 2023 P2 Q11d, stem and key verbatim (d). VJC Prelim 2023 P2 Q11b, stem and key verbatim (e), with the Fig. 11.1 figures folded into the stem so the part stands without Q11(a).
+**Source:** TJC Prelim 2025 P2 Q11b, stem and full key verbatim including the tolerance ranges (a); **Fig. 4.1 could not be recovered because the TJC 2025 papers are not in the inputs archive, so the figure carries the source paper's own description.** CJC Prelim 2023 P2 Q11a, stem and all three alternative marking points verbatim (b), with the Fig. 11.1 description folded into the stem for the same reason. RVHS Prelim 2023 P2 Q11a, stem and key verbatim (c), with the Fig. 11.1 description folded into the stem. ASRJC Prelim 2023 P2 Q11d, stem and key verbatim (d). VJC Prelim 2023 P2 Q11b, stem and key verbatim (e), with the Fig. 11.1 figures folded into the stem so the part stands without Q11(a).
 **Archetype:** LO (b)'s named effects run as short causal chains, each attached to a real data set. Four of the outcome's eight named effects appear here: melting of polar ice caps, rising sea levels, stress on fresh water supplies, and the underlying temperature asymmetry that drives them.
 **Trap:** giving meltwater as the only cause of sea level rise and omitting thermal expansion, which the school's own notes call the main cause; letting melting sea ice raise sea level, when floating ice already displaces its own mass; explaining the land-against-ocean warming gap with heat capacity, which the stem rules out by name; and describing the 2030 supply projection without naming a mechanism.
 **LOs:** (b) melting of polar ice caps, rising sea levels, stress on fresh water supplies, extreme weather.
@@ -493,7 +493,7 @@ Discuss the effects of climate change (as a result of greenhouse gas emissions).
 
 ### Question 5
 
-**(a)** *Using Fig. 11.1, describe the change in sea surface temperature and the percentage coverage of live corals.* **[3]**
+**(a)** *Using Fig. 5.1, describe the change in sea surface temperature and the percentage coverage of live corals.* **[3]**
 
 **1.** **From 1980 to 1990 there is a slight decrease of coral coverage from 100% to 90% as sea surface temperature rises from 26.1 to 26.5 °C.**
 
@@ -537,7 +537,7 @@ Discuss the effects of climate change (as a result of greenhouse gas emissions).
 
 ### Question 6
 
-**(a)** *Using the data in Fig. 10.1, explain how climate change affects plant distribution.* **[3]**
+**(a)** *Using the data in Fig. 6.1, explain how climate change affects plant distribution.* **[3]**
 
 **1. Upward shift.** **The majority, 53 species of plant, experience an upward shift in mean elevation, where mean elevation in 2018 is greater than mean elevation in 1950.**
 
@@ -591,7 +591,7 @@ Discuss the effects of climate change (as a result of greenhouse gas emissions).
 
 **8.** Any other valid point is accepted. Keep the vocabulary apart: a **habitat is the physical place an organism lives**, while an **ecological niche is its total way of life**, including every environmental factor it needs to grow, survive and reproduce.
 
-**Source:** School (HCI) Prelim 2023 P2 Q10a, stem and full key verbatim including the max-2 restriction (a); **Fig. 10.1 could not be recovered, because the scatter plot on that page of the HCI paper does not render or extract as an image, so the figure carries the paper's own description.** School (HCI) Prelim 2023 P2 Q10b, stem, key and the reject line verbatim (b). ASRJC Prelim 2025 P2 Q6d, stem and full key verbatim (c), with the foxglove genetics context from the parent question dropped because this part does not use it. RVHS Prelim 2023 P2 Q11b, stem and full key verbatim (d).
+**Source:** School (HCI) Prelim 2023 P2 Q10a, stem and full key verbatim including the max-2 restriction (a); **Fig. 6.1 could not be recovered, because the scatter plot on that page of the HCI paper does not render or extract as an image, so the figure carries the paper's own description.** School (HCI) Prelim 2023 P2 Q10b, stem, key and the reject line verbatim (b). ASRJC Prelim 2025 P2 Q6d, stem and full key verbatim (c), with the foxglove genetics context from the parent question dropped because this part does not use it. RVHS Prelim 2023 P2 Q11b, stem and full key verbatim (d).
 **Archetype:** the most figure-led block in the whole Biology the papers. **The habitats and niches heading runs at 61% data and figure interpretation.** Reciting a case study is not what gets tested here; reading a new range shift off a new figure is.
 **Trap:** explaining only the majority upward shift and ignoring the 11 species that did not move and the 19 that moved down, which is where the explanation marks are; quoting three data points and expecting three marks, when the scheme caps data at 2; giving a change of distribution in (c) with no physiological mechanism behind it; and answering (d) with habitat loss when the stem asks specifically for food chains and niche occupation.
 **LOs:** (f) effects of increased environmental stress on habitats, organisms, food chains and niche occupation, in all four parts; reach-back Core Idea 1 LO (q) enzymes and temperature, and LO (l) water movement, in (c).
@@ -601,7 +601,7 @@ Discuss the effects of climate change (as a result of greenhouse gas emissions).
 
 ### Question 7
 
-**(a)** *With reference to Fig. 3.1 and Fig. 3.2, describe and explain how climate change has caused the change in the migration pattern.* **[3]**
+**(a)** *With reference to Fig. 7.1 and Fig. 7.2, describe and explain how climate change has caused the change in the migration pattern.* **[3]**
 
 **1.** **From 1950 to 2000 there was an increase in the average global temperature, from 13.8 °C to 14.8 °C, due to global warming.**
 
@@ -609,7 +609,7 @@ Discuss the effects of climate change (as a result of greenhouse gas emissions).
 
 **3.** **Global warming resulted in warmer winters or a delayed onset of winter, during which food resources remain available, and this might have postponed the robins' migration or departure from southern Canada.**
 
-**(b)** *Explain why the caterpillars are found in abundance earlier as shown in Fig. 3.3.* **[2]**
+**(b)** *Explain why the caterpillars are found in abundance earlier as shown in Fig. 7.3.* **[2]**
 
 **1.** **The increase in global temperature can increase enzymatic activity or the metabolic rate of the insect, which speeds up developmental time.**
 
@@ -617,7 +617,7 @@ Discuss the effects of climate change (as a result of greenhouse gas emissions).
 
 **3.** A bonus route in one of the two schemes, not required: **the rise in global temperatures may also cause plants to produce new leaves sooner, which provides food for caterpillars earlier in the season, leading to their earlier abundance.**
 
-**(c)** *Discuss how the changes shown in Fig. 3.2 and Fig. 3.3 can impact the American robins.* **[3]**
+**(c)** *Discuss how the changes shown in Fig. 7.2 and Fig. 7.3 can impact the American robins.* **[3]**
 
 **1.** **Global warming causes caterpillars to become abundant earlier, while robins migrate later, leading to a mismatch in timing.**
 
@@ -635,7 +635,7 @@ Discuss the effects of climate change (as a result of greenhouse gas emissions).
 
 **2.** The **hares which have yet to moult, the white hares, are more easily seen, eaten or killed by predators**, or by any named example of a predator.
 
-**Source:** CJC Prelim 2025 P3 Q3a, stem, Fig. 3.1, Fig. 3.2 and key verbatim, with the parallel VJC Prelim 2023 P3 Q3b wording of the last point noted (a); CJC Prelim 2025 P3 Q3b, stem, Fig. 3.3 and key verbatim, with the VJC Prelim 2023 P3 Q3c two-point version noted (b); CJC Prelim 2025 P3 Q3c, stem and key verbatim at 3 marks, with the VJC Prelim 2023 P3 Q3d five-point 4-mark key given in full (c); SAJC Prelim 2023 P2 Q10b, stem and key verbatim (d), with the moulting explanation kept and the population-level research finding dropped because this part does not use it.
+**Source:** CJC Prelim 2025 P3 Q3a, stem, Fig. 7.1, Fig. 7.2 and key verbatim, with the parallel VJC Prelim 2023 P3 Q3b wording of the last point noted (a); CJC Prelim 2025 P3 Q3b, stem, Fig. 7.3 and key verbatim, with the VJC Prelim 2023 P3 Q3c two-point version noted (b); CJC Prelim 2025 P3 Q3c, stem and key verbatim at 3 marks, with the VJC Prelim 2023 P3 Q3d five-point 4-mark key given in full (c); SAJC Prelim 2023 P2 Q10b, stem and key verbatim (d), with the moulting explanation kept and the population-level research finding dropped because this part does not use it.
 **Archetype:** phenology read off two timelines that move in opposite directions. This is the shape the papers like most on LO (f) and it is the one where reciting the caribou case from the notes earns nothing.
 **Trap:** explaining the robin shift and the caterpillar shift separately and never putting them together, which is the whole of (c); assuming both species respond to the same cue, when the point is that they do not; and giving "less camouflage" in (d) without the predation consequence.
 **LOs:** (f) effects of environmental stress on food chains and on niche occupation; reach-back Core Idea 1 LO (q) enzymes and temperature in (b), and Core Idea 4 selection pressure in (d).

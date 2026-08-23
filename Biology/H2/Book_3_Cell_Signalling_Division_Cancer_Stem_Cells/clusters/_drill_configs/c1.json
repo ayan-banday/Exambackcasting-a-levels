@@ -13,12 +13,12 @@
   "7|a": "q8_il6_stat3.png"
  },
  "caption": {
-  "q1_gplr_structure.png": "Fig. 1.1  HCI Book 3, chapter 3.1 Cell Signalling and Communication, p. 14, Fig. 10. Structure of a G-protein linked receptor, with the signal-binding site and the segment that interacts with G proteins labelled",
-  "q2a_spec_cascade.png": "Fig. 2.1  9477 Specimen Paper 1 Q22, p. 12. Five numbered stages in one example of cell signalling",
-  "q5_glucagon_gplr.png": "Fig. 3.1  School Prelim 2023 P1 Q24, p. 20. The response of liver cells to glucagon, with enzyme Q and second messenger R unnamed",
-  "q4_unknown_pathway.png": "Fig. 4.1  RI Prelim 2025 P2 Q8, Fig. 8.1. Part of a signal transduction pathway, with W, X, Y and Z unnamed",
-  "q6_rtk_stages.png": "Fig. 5.1  ACJC Prelim 2025 P2 Q8, Fig. 8.1. Tyrosine kinase signalling in four stages",
-  "q7_insulin_adipose.png": "Fig. 6.1  TJC Prelim 2025 P2 Q8(b), Fig. 8.1. The signal transduction pathway in an adipose cell in response to insulin",
-  "q8_il6_stat3.png": "Fig. 7.1  School Prelim 2024 P3 Q1, Fig. 1.1. The IL6 signalling pathway, from gp130 dimerisation to STAT3 target genes"
+  "q1_gplr_structure.png": "Fig. 1.1",
+  "q2a_spec_cascade.png": "Fig. 2.1",
+  "q5_glucagon_gplr.png": "Fig. 3.1  ·  School Prelim 2023 P1 Q24",
+  "q4_unknown_pathway.png": "Fig. 4.1  ·  RI Prelim 2025 P2 Q8",
+  "q6_rtk_stages.png": "Fig. 5.1  ·  ACJC Prelim 2025 P2 Q8",
+  "q7_insulin_adipose.png": "Fig. 6.1  ·  TJC Prelim 2025 P2 Q8(b)",
+  "q8_il6_stat3.png": "Fig. 7.1  ·  School Prelim 2024 P3 Q1"
  }
 }

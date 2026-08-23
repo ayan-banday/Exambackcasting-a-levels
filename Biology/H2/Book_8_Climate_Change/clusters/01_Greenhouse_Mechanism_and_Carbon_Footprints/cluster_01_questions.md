@@ -50,15 +50,15 @@ every reveal.
 ### Question 1 [16 marks]
 
 Over thousands and millions of years, the Earth's climate is subject to natural periods of warming and
-cooling. Figure 8.1 is a diagram representing two mountains in the tropics during a warm phase and a
+cooling. Figure 1.1 is a diagram representing two mountains in the tropics during a warm phase and a
 cool phase in the Earth's climate. The shape of the lines corresponds to a vertical section through the
 mountains to show their height and shape. The distribution of rain forest vegetation with altitude is
 shown by the hatched shading.
 
 **(a)** Suggest how repeated changes in climate between the warm phase and cool phase shown in
-Figure 8.1 may lead to the evolution of new species and greater species diversity. **[5]**
+Figure 1.1 may lead to the evolution of new species and greater species diversity. **[5]**
 
-[FIGURE: Figure 8.1, two panels. The upper panel, warm phase, plots altitude in metres from 0 to 2000
+[FIGURE: Figure 1.1, two panels. The upper panel, warm phase, plots altitude in metres from 0 to 2000
 against distance, with a second vertical scale on the right giving temperature in degrees Celsius, 21
 at 2000 m, 27 at 1000 m and 32 at sea level. Two mountain peaks rise to about 2200 m with a deep saddle
 between them falling to about 600 m. Hatched shading, marking rain forest vegetation, occupies a band on
@@ -236,14 +236,14 @@ potential (GWP). Which row correctly best describes the characteristics of these
 **(b)** Explain your answer to **(a)**, taking each of the other three rows in turn and stating why it is
 wrong. **[3]**
 
-**(c)** Fig. 11.1 shows the annual change in atmospheric methane concentrations at Baring Head, New
+**(c)** Fig. 6.1 shows the annual change in atmospheric methane concentrations at Baring Head, New
 Zealand between 1990 and 2022. The dashed line shows the change in atmospheric methane concentration
 from year to year.
 
-With reference to Fig. 11.1, deduce how the change in atmospheric methane concentration between 2004 and
+With reference to Fig. 6.1, deduce how the change in atmospheric methane concentration between 2004 and
 2022 could affect the temperatures at Baring Head during this period. **[2]**
 
-[FIGURE: Fig. 11.1, a scatter graph with annual change in atmospheric methane concentration in parts per
+[FIGURE: Fig. 6.1, a scatter graph with annual change in atmospheric methane concentration in parts per
 billion on the y-axis from -10 to 20, against year on the x-axis from 1990 to beyond 2020. Individual
 data points are scattered widely, from about -5.6 around 2001 up to about 19 around 2020. A smooth
 dashed trend line is superimposed: it starts at about 8 parts per billion in 1990, falls to a minimum of
@@ -270,13 +270,13 @@ future. **[2]**
 
 **(c)** Palm oil is a vegetable oil that is used very widely in food products. The oil is extracted from
 the fruit of the oil palm tree. Oil palm trees have a higher oil yield than that of other oil-producing
-plants. Fig. 10.1 shows the oil yield of four crop plants.
+plants. Fig. 7.1 shows the oil yield of four crop plants.
 
 Calculate how many hectares (ha) of soya bean plants would be needed to produce the same yield of oil as
 one hectare of oil palm trees per year. Show your working and write your answer to **one** decimal
 place. **[2]**
 
-[FIGURE: Fig. 10.1, a bar chart drawn on graph paper with oil yield in kg ha⁻¹ yr⁻¹ on the y-axis from 0
+[FIGURE: Fig. 7.1, a bar chart drawn on graph paper with oil yield in kg ha⁻¹ yr⁻¹ on the y-axis from 0
 to 5000 in steps of 1000. Four bars: oil palm tree at 5000, olive tree at about 1200, sunflower plant at
 about 700, soya bean plant at about 350.]
 
@@ -310,14 +310,14 @@ thousands of years ago, while those near the surface were formed recently. As ic
 of air are trapped in the ice. These air bubbles can be analysed to determine the concentration of
 carbon dioxide present. It is also possible to use chemical techniques to determine when the air bubbles
 were trapped. Scientists studying climate change measured carbon dioxide concentrations in air bubbles
-from ice samples of known age, collected from near the surface. Fig. 11.1 shows the concentration of
+from ice samples of known age, collected from near the surface. Fig. 8.1 shows the concentration of
 carbon dioxide measured in air bubbles that were trapped in ice from 1959 to 1990. Direct measurements
 of atmospheric carbon dioxide from 1948 to 1978 are also shown.
 
 **(a)** With reference to the information provided, suggest and explain how climate change scientists can
 estimate atmospheric carbon dioxide concentrations 10 000 years ago. **[2]**
 
-[FIGURE: Fig. 11.1, a graph of percentage concentration of carbon dioxide on the y-axis from 0.030 to
+[FIGURE: Fig. 8.1, a graph of percentage concentration of carbon dioxide on the y-axis from 0.030 to
 0.036 against year on the x-axis from 1950 to 1990. Key: crosses are measurements in the atmosphere, a
 solid line is measurements in air bubbles. The crosses run from about 0.0311 in 1949 to about 0.0335 in
 1978. The solid line runs from about 0.0311 in 1959, lying almost exactly on top of the atmospheric
@@ -325,12 +325,12 @@ crosses wherever the two data sets coincide, and continues rising to about 0.035
 
 **(b)** It is possible to estimate past temperatures by analysing the ratio of the hydrogen isotope ¹H to
 the hydrogen isotope ²H in ice samples. The ratio of ¹H to ²H increases as the temperature increases.
-Fig. 11.2 shows the ratio of ¹H to ²H in ice samples formed over the last 800 000 years and the
+Fig. 8.2 shows the ratio of ¹H to ²H in ice samples formed over the last 800 000 years and the
 corresponding atmospheric carbon dioxide concentrations.
 
-Use Fig. 11.2 to comment on changes in temperature over the last 800 000 years. **[2]**
+Use Fig. 8.2 to comment on changes in temperature over the last 800 000 years. **[2]**
 
-[FIGURE: Fig. 11.2, two graphs stacked one above the other, both with the x-axis age in years ago
+[FIGURE: Fig. 8.2, two graphs stacked one above the other, both with the x-axis age in years ago
 running from 800 000 on the left to 0 on the right. The upper graph plots the ratio of ¹H to ²H and
 shows a jagged trace with about eight large peaks separated by long troughs, and a sharp rise at the
 extreme right-hand, most recent, end. The lower graph plots percentage concentration of carbon dioxide
@@ -341,11 +341,11 @@ peaks reaching about 0.028 to 0.030 and troughs falling to about 0.018.]
 world. Scientists calculated the mean global temperature for the twentieth century, and the mean global
 temperature for each decade from 1880 to 2020. The mean temperature for each decade was compared to the
 mean for the twentieth century, and for each decade the difference in temperature was calculated. The
-calculated differences are shown in Fig. 2.2.
+calculated differences are shown in Fig. 8.3.
 
-Describe the results as shown in Fig. 2.2. **[4]**
+Describe the results as shown in Fig. 8.3. **[4]**
 
-[FIGURE: Fig. 2.2, a line graph on fine graph paper of calculated temperature difference in degrees
+[FIGURE: Fig. 8.3, a line graph on fine graph paper of calculated temperature difference in degrees
 Celsius, y-axis from -0.4 to +0.9, against year, x-axis from 1880 to 2020 in decades. A horizontal line
 at 0.0 is labelled mean for the twentieth century. Points read about -0.09 in 1880, -0.32 in 1890, -0.14
 in 1900, -0.38 in 1910, -0.24 in 1920, -0.05 in 1930, +0.14 in 1940, +0.05 in 1950, +0.09 in 1960, +0.09
@@ -371,7 +371,7 @@ Discuss the benefits and risks to society of using these two sources of plant ch
 
 ### Question 1
 
-**(a)** *Figure 8.1, suggest how repeated changes in climate between the warm phase and cool phase may lead to the evolution of new species and greater species diversity.* **[5]** [INFERRED: the 9477 specimen ships without a mark scheme. The chain below is Core Idea 4 LO (j) allopatric speciation, cross-checked against the standard prelim keys for geographic-isolation speciation]
+**(a)** *Figure 1.1, suggest how repeated changes in climate between the warm phase and cool phase may lead to the evolution of new species and greater species diversity.* **[5]** [INFERRED: the 9477 specimen ships without a mark scheme. The chain below is Core Idea 4 LO (j) allopatric speciation, cross-checked against the standard prelim keys for geographic-isolation speciation]
 
 **1.** In the **warm phase the rain forest is restricted to a band near the tops of the two mountains, so the two patches of rain forest are separated by unsuitable lowland habitat**, and any rain forest population is split into **two geographically isolated populations**.
 
@@ -425,7 +425,7 @@ Discuss the benefits and risks to society of using these two sources of plant ch
 
 **3.** **Both figures are published and neither is wrong, so the answer is to rank from the table supplied.** LO (d) asks only for **relative differences**, so **quote the table's own values and its own units** and do not substitute a memorised ranking. Reciting a per-kWh ranking over a per-MJ table is the trap this part exists to catch.
 
-**Source:** 9477 Specimen Paper 2 Question 8 in full, all five parts verbatim from the question paper, worth **13 marks** on the real paper and kept at 13 here; Figure 8.1 and Table 8.1 are the specimen's own. Part (f) is **CONSTRUCTED**: no question in the 517-record Book 8 the papers asks the candidate to rank energy sources from a supplied table, and the papers has no carbon-footprint ranking question of any kind, so this part was written to close that gap. Its content is not invented: the conflict between the school's per-kWh ranking (coal 820 highest) and the specimen's per-MJ ranking (oil 1000 highest) is real, documented in the topic examiner's guide, and named there as the runner-up trap of this Book. The specimen ships without a mark scheme, so every marking point above is inferred; (b)'s reject line is verbatim from a prelim scheme on the direct-against-indirect distinction and (d)'s two reject lines are verbatim from the Timed Practice Exercise 2024 P3 Q5b scheme.
+**Source:** 9477 Specimen Paper 2 Question 8 in full, all five parts verbatim from the question paper, worth **13 marks** on the real paper and kept at 13 here; Figure 1.1 and Table 8.1 are the specimen's own. Part (f) is **CONSTRUCTED**: no question in the 517-record Book 8 the papers asks the candidate to rank energy sources from a supplied table, and the papers has no carbon-footprint ranking question of any kind, so this part was written to close that gap. Its content is not invented: the conflict between the school's per-kWh ranking (coal 820 highest) and the specimen's per-MJ ranking (oil 1000 highest) is real, documented in the topic examiner's guide, and named there as the runner-up trap of this Book. The specimen ships without a mark scheme, so every marking point above is inferred; (b)'s reject line is verbatim from a prelim scheme on the direct-against-indirect distinction and (d)'s two reject lines are verbatim from the Timed Practice Exercise 2024 P3 Q5b scheme.
 **Archetype:** the Book 8 anchor question. A supplied diagram read for a Core Idea answer, then a classification (direct against indirect), then three mechanism-explain parts on LO (d) none of which asks for a number, then a ranking evaluation off a supplied table.
 **Trap:** answering (a) with climate content instead of speciation, which is what the specimen punishes hardest, since 5 of the real 13 marks are Core Idea 4 and nothing else; giving a direct activity where indirect was asked; attacking bioethanol's combustion rather than its carbon debt; reading "no CO2 at the point of generation" as "no CO2"; and reciting the school's coal-first ranking over the paper's oil-first table.
 **LOs:** reach-back 4(j) allopatric speciation in (a); (a) of Extension Topic B in (b); (d) in (c), (d), (e) and (f).
@@ -605,7 +605,7 @@ Discuss the benefits and risks to society of using these two sources of plant ch
 
 **5.** Row B is the useful one to think through, because the four anthropogenic methane sources named in this Book, **enteric fermentation, manure management, rice paddies and landfill**, are all the same mechanism: **oxygen-poor conditions in which bacteria decompose organic material to produce CH4**. Learn them as one anaerobic mechanism and you can generate the list rather than recall it.
 
-**(c)** *With reference to Fig. 11.1, deduce how the change in atmospheric methane concentration between 2004 and 2022 could affect the temperatures at Baring Head during this period.* **[2]**
+**(c)** *With reference to Fig. 6.1, deduce how the change in atmospheric methane concentration between 2004 and 2022 could affect the temperatures at Baring Head during this period.* **[2]**
 
 **1.** **As the rate of change of methane increased from 2004 to 2022, temperatures would have increased at a more drastic rate at Baring Head.**
 
@@ -623,7 +623,7 @@ Discuss the benefits and risks to society of using these two sources of plant ch
 
 **4.** **Reject chlorofluorocarbon**, because it is not naturally occurring. **Accept hydrofluorocarbons (HFCs), perfluorocarbons (PFCs), sulfur hexafluoride (SF6) and nitrogen trifluoride (NF3).**
 
-**Source:** PJC Prelim 2018 P1 Q30, stem, table and all four rows verbatim, worth 1 mark on the real paper (a), with the drill's own explain follow-on at (b) built on the published reject lines; ACJC Prelim 2024 P2 Q11(c), stem, figure and both marking points verbatim (c), with the Fig. 11.1 preamble folded into the stem so the part stands without Q11(a) and Q11(b); ACJC Prelim 2024 P2 Q11(d), stem and full accept and reject list verbatim (d).
+**Source:** PJC Prelim 2018 P1 Q30, stem, table and all four rows verbatim, worth 1 mark on the real paper (a), with the drill's own explain follow-on at (b) built on the published reject lines; ACJC Prelim 2024 P2 Q11(c), stem, figure and both marking points verbatim (c), with the Fig. 6.1 preamble folded into the stem so the part stands without Q11(a) and Q11(b); ACJC Prelim 2024 P2 Q11(d), stem and full accept and reject list verbatim (d).
 **Archetype:** MCQ discrimination across three gas properties, then a deduce part off a real figure with the read-off demand removed, then a one-mark naming part whose whole difficulty is the reject list.
 **Trap:** reading the ACJC y-axis as concentration rather than as annual change, which inverts the whole answer; writing a formula where the scheme wants the name; offering CFCs as naturally occurring; and assuming the higher GWP gas must be the bigger contributor, which Q3 already punished from the other side.
 **LOs:** (a) accumulation of CO2 and methane, in all four parts.
@@ -657,7 +657,7 @@ Discuss the benefits and risks to society of using these two sources of plant ch
 
 **2.** It wins on **every column at once**: it has the **lowest cultivation, processing and distribution figure, tied with Indonesian palm at 41**, the **lowest grassland conversion figure at 57**, and the **lowest forest conversion figure at 176**. The decision has to be read across the whole table, not off one column.
 
-**Source:** EJC Prelim 2023 P2 Q10b, stem and key verbatim (a), with the Fig. 10.1 preamble on rising meat consumption folded into the stem so the part stands without Q10(a); EJC Prelim 2023 P2 Q10c, stem and key verbatim (b); NJC Prelim 2024 P2 Q10(a), stem, figure and both marking points verbatim (c); HCI Prelim 2017 P3 Q1f(i), stem, table and key verbatim (d), with the table's column headings rewritten as six flat columns because the original is a merged two-level header.
+**Source:** EJC Prelim 2023 P2 Q10b, stem and key verbatim (a), with the Fig. 7.1 preamble on rising meat consumption folded into the stem so the part stands without Q10(a); EJC Prelim 2023 P2 Q10c, stem and key verbatim (b); NJC Prelim 2024 P2 Q10(a), stem, figure and both marking points verbatim (c); HCI Prelim 2017 P3 Q1f(i), stem, table and key verbatim (d), with the table's column headings rewritten as six flat columns because the original is a merged two-level header.
 **Archetype:** the food and land side of LO (d). Two mechanism chains, then a scaling calculation off a real bar chart, then a multi-column ranking judgement. Note that the calculation uses the figure but is not a read-off: it needs both bars and a division.
 **Trap:** answering (a) with methane, which the stem has already given away and excluded; giving a food-security answer to (b) without the land-per-unit-food mechanism; inverting the ratio in (c); and choosing the Indonesian palm row in (d) by reading only the cultivation column, where it ties with Malaysia, and missing that Malaysia is lower on both land-use conversion columns.
 **LOs:** (d) food production, animal-based against plant-based, in all four parts; (a) food choices in (a).
@@ -671,9 +671,9 @@ Discuss the benefits and risks to society of using these two sources of plant ch
 
 **1. Suggest:** **Scientists can analyse the concentration of carbon dioxide in air bubbles trapped deeper in the ice sheets 10 000 years ago**, as an estimate of the atmospheric carbon dioxide concentrations then, and **extract ice samples from different depths of the ice sheets and determine the age of the ice samples.**
 
-**2. Explain:** **The graph in Fig. 11.1 shows that the concentration of carbon dioxide measured in air bubbles trapped in ice is a good and accurate match with the direct measurements of atmospheric carbon dioxide at the time when the air bubbles were formed**, so **air bubbles could be regarded as samples of the atmosphere from the time at which they formed**, that is, the bubble measurement is a **good indicator of atmospheric carbon dioxide levels**.
+**2. Explain:** **The graph in Fig. 8.1 shows that the concentration of carbon dioxide measured in air bubbles trapped in ice is a good and accurate match with the direct measurements of atmospheric carbon dioxide at the time when the air bubbles were formed**, so **air bubbles could be regarded as samples of the atmosphere from the time at which they formed**, that is, the bubble measurement is a **good indicator of atmospheric carbon dioxide levels**.
 
-**(b)** *Use Fig. 11.2 to comment on changes in temperature over the last 800 000 years.* **[2]**
+**(b)** *Use Fig. 8.2 to comment on changes in temperature over the last 800 000 years.* **[2]**
 
 **1.** **Rise and fall of the ratio of ¹H to ²H corresponds with the percentage concentration of carbon dioxide.**
 
@@ -681,7 +681,7 @@ Discuss the benefits and risks to society of using these two sources of plant ch
 
 **3.** The reasoning depends on the sentence the paper gave you, that **the ratio of ¹H to ²H increases as the temperature increases**, so the upper trace is a **temperature proxy** and not a temperature measurement.
 
-**(c)** *Describe the results as shown in Fig. 2.2.* **[4]**
+**(c)** *Describe the results as shown in Fig. 8.3.* **[4]**
 
 **1.** Any four, with **at least one point for data**.
 
@@ -699,9 +699,9 @@ Discuss the benefits and risks to society of using these two sources of plant ch
 
 **2.** Marks are for the **correct working shown** and the **correct answer to 2 s.f.** The divisor is **4**, because 1980 to 2020 is **four decade intervals, not five points and not 40 years**.
 
-**Source:** School (HCI) Prelim 2022 P2 Q11a, stem, figure and both marking points verbatim (a); School (HCI) Prelim 2022 P2 Q11b, stem, figure and both marking points verbatim (b); TMJC Prelim 2025 P3 Q2b(i), stem, figure and full key verbatim including the tolerance line (c); TMJC Prelim 2025 P3 Q2b(ii), stem and key verbatim (d), with the Fig. 2.2 preamble folded into (c)'s stem so both parts stand without Q2(a).
+**Source:** School (HCI) Prelim 2022 P2 Q11a, stem, figure and both marking points verbatim (a); School (HCI) Prelim 2022 P2 Q11b, stem, figure and both marking points verbatim (b); TMJC Prelim 2025 P3 Q2b(i), stem, figure and full key verbatim including the tolerance line (c); TMJC Prelim 2025 P3 Q2b(ii), stem and key verbatim (d), with the Fig. 8.3 preamble folded into (c)'s stem so both parts stand without Q2(a).
 **Archetype:** proxy reasoning, then correlation read as mechanism, then the Book's single largest mark surface, a describe-with-quoted-data part. **"With reference to" or "use the data" opens, nearly double Book 3, and a quarter of the structured marks are gated on quoting data correctly.
-**Trap:** in (a), answering "look at older ice" without the validation step, which is what the overlapping data sets in Fig. 11.1 are for; in (b), reporting the ¹H:²H ratio as if it were temperature; in (c), describing the trend with no quoted values, when a coral scheme in this Book states that **each point must include duration, coverage and temperature, and no mark is awarded for any point read off the wrong graph or axis**; and in (d), dividing by 5 or by 40.
+**Trap:** in (a), answering "look at older ice" without the validation step, which is what the overlapping data sets in Fig. 8.1 are for; in (b), reporting the ¹H:²H ratio as if it were temperature; in (c), describing the trend with no quoted values, when a coral scheme in this Book states that **each point must include duration, coverage and temperature, and no mark is awarded for any point read off the wrong graph or axis**; and in (d), dividing by 5 or by 40.
 **LOs:** (a) accumulation of greenhouse gases, evidenced; (b) effects of climate change, in the temperature record.
 **Concepts fused:** (1) trapped air bubbles as a direct atmospheric sample; (2) validating a proxy against a direct measurement over an overlap period; (3) dating by depth; (4) isotope ratio as a temperature proxy; (5) covariation of CO2 and temperature across glacial cycles; (6) greenhouse trapping as the mechanism behind the correlation; (7) describing a trend with quoted values, units and intervals; (8) an anomaly plotted against a baseline rather than an absolute temperature; (9) rate over a number of intervals rather than a number of points.
 

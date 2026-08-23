@@ -12,11 +12,11 @@
   "7|b": "q7a_haematopoiesis.png"
  },
  "caption": {
-  "q1a_hras_sequences.png": "Fig. 1.1  9477 Specimen Paper 2 Q3, Figure 3.1. DNA base sequences of part of the H-ras proto-oncogene and the H-ras oncogene, with the corresponding parts of the ras protein primary structure each encodes",
-  "q1b_cmyc_translocation.png": "Fig. 1.2  9477 Specimen Paper 2 Q3(d), Figure 3.2. Movement of the c-myc gene from chromosome 8 to chromosome 14 in Burkitt's lymphoma",
-  "q3a_tumour_incidence.png": "Fig. 1.3  9477 Specimen Paper 2 Q3(e), Figure 3.3. Percentage of mice without tumours against age, for c-myc alone, H-ras alone and the two combined",
-  "q4a_angiogenesis_metastasis.png": "Fig. 4.1  HCI Book 3, chapter 3.3 p. 6, Fig. 2, standing in for the figure of MI Prelim 2017 P2 Q6. The spread of tumour cells to locations distant from the primary tumour site through the blood circulatory system",
-  "q6a_cleavage_blastocyst.png": "Fig. 6.1  HCI Book 3, chapter 3.4 p. 15, Fig. 1.8, standing in for the figure of NJC Prelim 2023 P2 Q3. Cleavage and blastocyst formation, day 0 to day 6, with the inner cell mass, blastocoele and trophoblast labelled",
-  "q7a_haematopoiesis.png": "Fig. 7.1  HCI Book 3, chapter 3.4 p. 22, Fig. 1.13, standing in for Fig. 8.1 of NJC Prelim 2022 P2 Q8 and the lineage diagram of DHS Prelim 2023 P1 Q20. The derivation of blood cells from multipotent stem cells, showing the common lymphoid progenitor and the common myeloid progenitor and everything each supplies"
+  "q1a_hras_sequences.png": "Fig. 1.1",
+  "q1b_cmyc_translocation.png": "Fig. 1.2",
+  "q3a_tumour_incidence.png": "Fig. 1.3",
+  "q4a_angiogenesis_metastasis.png": "Fig. 4.1  ·  MI Prelim 2017 P2 Q6",
+  "q6a_cleavage_blastocyst.png": "Fig. 6.1  ·  NJC Prelim 2023 P2 Q3",
+  "q7a_haematopoiesis.png": "Fig. 7.1  ·  NJC Prelim 2022 P2 Q8 and the lineage diagra"
  }
 }

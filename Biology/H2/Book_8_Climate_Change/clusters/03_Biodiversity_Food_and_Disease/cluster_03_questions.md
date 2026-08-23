@@ -51,17 +51,17 @@ every reveal.
 ### Question 1 [12 marks]
 
 Global biodiversity is undergoing rapid declines, driven in large part by changes to land use and
-climate. Fig. 11.1 shows the results of a study on the predicted sensitivity of biodiversity to climate
+climate. Fig. 1.1 shows the results of a study on the predicted sensitivity of biodiversity to climate
 change across biomes as illustrated by using boxplots, which are visual representations comparing the
 distribution of datasets. The results show the predicted percentage change in vertebrate species
 richness for each °C of climate warming expected. A boxplot consists of the box that represents the data
 distribution through their quartiles, consisting of lower (25), median (50) and upper (75), and the
 whiskers extending beyond the box that represent the two extreme quartiles, lower (0) and upper (100).
 
-**(a)** With reference to Fig. 11.1, compare the effects of climate warming on the biodiversity in
+**(a)** With reference to Fig. 1.1, compare the effects of climate warming on the biodiversity in
 tropical and temperate regions. **[3]**
 
-[FIGURE: Fig. 11.1, a box and whisker plot. The y-axis is richness change per °C as a percentage, from
+[FIGURE: Fig. 1.1, a box and whisker plot. The y-axis is richness change per °C as a percentage, from
 -30 to above +10, with a dashed reference line at 0. The x-axis is biome, with seven boxes. TrF,
 tropical forest, has a median of about -12.5, a box from about -16 to -8 and whiskers from about -29 to
 +4.5. TrG, tropical grasslands, has a median of about -11.5, a box from about -15 to -7 and whiskers from
@@ -94,7 +94,7 @@ D smaller reservoir for biomedicines due to reduced biodiversity of the tropics.
 
 The Himalayan region, one of the world's biodiversity hotspots, has the highest concentration of
 medicinal herb species. About 2000 recorded species of medicinal herbs are found in Nepal, one of the
-Himalayan countries. Fig. 11.1 shows the altitude ranges and the temperatures at which three different
+Himalayan countries. Fig. 2.1 shows the altitude ranges and the temperatures at which three different
 species of medicinal herbs belonging to the family Ranunculaceae grow in the wild mountainous regions in
 Nepal.
 
@@ -109,7 +109,7 @@ growth and survival of two of these species. **[1]**
 | *Aconitum ferox* | 2100 to 3800 | 4664 | 3359 | |
 | *Delphinium himalayae* | 3000 to 4500 | 2648 | 970 | |
 
-[FIGURE: Fig. 11.1, a cross-section of a mountain with altitude marked in metres above sea level on the
+[FIGURE: Fig. 2.1, a cross-section of a mountain with altitude marked in metres above sea level on the
 right, from 2000 up to above 5000, and the temperature range in a year alongside it: below 0 °C above
 5000 m, 0 to 12 °C between about 3000 and 5000 m, and 10 to 20 °C between 2000 and 3000 m. On the left,
 three vertical bars mark the altitude range of each medicinal herb species. *Aconitum spicatum* spans
@@ -117,7 +117,7 @@ about 1800 to 4200 m, *Aconitum ferox* about 2100 to 3800 m, and *Delphinium him
 4500 m.]
 
 **(b)** Due to global warming, the largest increase in mean annual temperature of Nepal is expected to be
-about 4 °C by the end of 2100. Using the data given in Fig. 11.1 and Table 11.1, predict and explain the
+about 4 °C by the end of 2100. Using the data given in Fig. 2.1 and Table 11.1, predict and explain the
 effect of climate change on the distribution of the three medicinal plant species at the different
 altitudes. **[5]**
 
@@ -298,15 +298,15 @@ the greater spread of mosquitoes. Comment if this matter requires both urgent an
 beach morning glory, *Ipomoea pes-caprae*. The scientists placed *I. pes-caprae* plants in chambers and
 measured the width of open stomata, the stomatal apertures, after the plants had been exposed to
 different CO2 concentrations for 40 minutes. Light intensity and temperature were kept constant. The
-relationship between CO2 concentration and the mean width of stomatal apertures is shown in Fig. 3.1.
+relationship between CO2 concentration and the mean width of stomatal apertures is shown in Fig. 9.1.
 
 The current atmospheric CO2 concentration is 400 µmol mol⁻¹. In the future, climate change may reduce
 water availability and increase atmospheric CO2 concentrations in some habitats.
 
-Explain how the stomatal response shown in Fig. 3.1 would allow *I. pes-caprae* to survive the effects of
+Explain how the stomatal response shown in Fig. 9.1 would allow *I. pes-caprae* to survive the effects of
 climate change. **[3]**
 
-[FIGURE: Fig. 3.1, a line graph. The y-axis is mean width of stomatal aperture in micrometres, from 0.0
+[FIGURE: Fig. 9.1, a line graph. The y-axis is mean width of stomatal aperture in micrometres, from 0.0
 to 2.0 in steps of 0.5. The x-axis is CO2 concentration in µmol mol⁻¹, from 300 to 1000 in steps of 100.
 Four plotted points joined by straight lines fall from about 1.95 µm at 350 µmol mol⁻¹, to about 1.15 µm
 at 500, to about 0.8 µm at 700, to about 0.5 µm at 900, a steep initial fall that becomes progressively
@@ -323,7 +323,7 @@ potato, rice and wheat, commonly grown in temperate regions. C4 plants produce a
 their first photosynthetic product, and examples are common grass crops of tropical regions such as
 maize, millet, sorghum and sugarcane. The rate of carbon dioxide uptake at a range of carbon dioxide
 concentrations by barley, a C3 plant, and sugar cane, a C4 plant, were compared at two temperatures. The
-results are presented in Fig. 3.2.
+results are presented in Fig. 9.2.
 
 The current carbon dioxide concentration in the atmosphere is more than 400 parts per million and it is
 likely to increase in the future. It is widely believed that the carbon dioxide concentration of the
@@ -343,11 +343,11 @@ in regions with higher rainfall.
 | millet (C4) | 285 |
 | sorghum (C4) | 204 |
 
-With reference to Fig. 3.2 and Table 3.1, discuss the likely impact of the predicted changes in carbon
+With reference to Fig. 9.2 and Table 3.1, discuss the likely impact of the predicted changes in carbon
 dioxide concentration, global temperatures and rainfall patterns on the global distribution of C3 and C4
 plants. **[3]**
 
-[FIGURE: Fig. 3.2, a line graph on fine graph paper. The y-axis is rate of carbon dioxide uptake in
+[FIGURE: Fig. 9.2, a line graph on fine graph paper. The y-axis is rate of carbon dioxide uptake in
 µg m⁻² h⁻¹, from -15 to 35. The x-axis is carbon dioxide concentration in parts per million, from 0 to
 600. Four labelled curves: sugar cane at 25 °C rises very steeply from about -5 at 0 ppm and plateaus at
 about 34 from roughly 100 ppm onwards; barley at 25 °C rises more gradually from about -5 and plateaus at
@@ -360,11 +360,11 @@ sugar cane at 10 °C plateaus low at about 2.]
 
 ### Question 1
 
-**(a)** *With reference to Fig. 11.1, compare the effects of climate warming on the biodiversity in tropical and temperate regions.* **[3]**
+**(a)** *With reference to Fig. 1.1, compare the effects of climate warming on the biodiversity in tropical and temperate regions.* **[3]**
 
 **1. One route.** There are **greater reductions in biodiversity in tropical regions compared to temperate regions**. Accept **number of species**; **richness is rejected**.
 
-**2.** Two marks for **quoting of relevant supporting data from Fig. 11.1**, for example that **TrF, TrG or the tropical regions have a median of -12 to -13% of species richness per °C of climate warming**, **while TeF or TeG has a median of -2% to -4% of species richness per °C of climate warming**. **Mean and average are rejected**, because the figure shows a median.
+**2.** Two marks for **quoting of relevant supporting data from Fig. 1.1**, for example that **TrF, TrG or the tropical regions have a median of -12 to -13% of species richness per °C of climate warming**, **while TeF or TeG has a median of -2% to -4% of species richness per °C of climate warming**. **Mean and average are rejected**, because the figure shows a median.
 
 **3. Alternative route.** **Temperate regions could have a positive change or increase in biodiversity, compared to tropical regions which are mainly negative**, with two marks for **quoting of relevant supporting data**, for example that **TeG has a boxplot which goes above 0%, where the upper quartile has +4% of species richness per °C of climate warming**, **while the boxplots for TrF and TrG have negative values which range between -8% and -16% of species richness per °C of climate warming.**
 
@@ -422,7 +422,7 @@ sugar cane at 10 °C plateaus low at about 2.]
 
 **2.** Working: **(3359 - 4664) / 4664 × 100% = -28.0%** and **(970 - 2648) / 2648 × 100% = -63.4%.**
 
-**(b)** *Using Fig. 11.1 and Table 11.1, predict and explain the effect of climate change on the distribution of the three medicinal plant species at the different altitudes.* **[5]**
+**(b)** *Using Fig. 2.1 and Table 11.1, predict and explain the effect of climate change on the distribution of the three medicinal plant species at the different altitudes.* **[5]**
 
 **1. Quote the new temperatures at each altitude band.** **Altitudes between 3500 and 5000 m above sea level would be between 4 °C and 16 °C**, and **altitudes between 2000 and 2500 m above sea level would be between 14 °C and 24 °C.**
 
@@ -726,7 +726,7 @@ sugar cane at 10 °C plateaus low at about 2.]
 
 ### Question 9
 
-**(a)** *Explain how the stomatal response shown in Fig. 3.1 would allow I. pes-caprae to survive the effects of climate change.* **[3]**
+**(a)** *Explain how the stomatal response shown in Fig. 9.1 would allow I. pes-caprae to survive the effects of climate change.* **[3]**
 
 **1.** An **increase in CO2 concentration from 350 or 400 µmol mol⁻¹ to 900 µmol mol⁻¹ causes the mean width of stomatal aperture to decrease from 2.0, 1.9 or 1.75 µm to 0.5 µm.**
 
@@ -748,7 +748,7 @@ sugar cane at 10 °C plateaus low at about 2.]
 
 **5. Examiner comment, verbatim.** **Many students who read the question in its entirety gave balanced responses that summarised the net effect of reduced stomatal aperture, a lower rate of CO2 intake, despite a steeper CO2 concentration gradient. Vague responses made reference to temperature without stating that the temperatures are below optimal, or erroneously stated that the temperatures are above optimal, which is not acceptable because the question clearly stated the plant did grow, it just did not grow as much as hypothesised. Very few students linked the function of the stomata to gaseous exchange, which includes oxygen, and even fewer were able to articulate that plant growth is not a direct consequence of photosynthesis but an overall result: photosynthesis makes glucose or TP, which is used in cellular respiration where ATP is made for cell division to create more plant cells for growth, or the glucose is used to make cellulose cell walls or glycoproteins that are building blocks of cells.**
 
-**(c)** *With reference to Fig. 3.2 and Table 3.1, discuss the likely impact of the predicted changes in carbon dioxide concentration, global temperatures and rainfall patterns on the global distribution of C3 and C4 plants.* **[3]**
+**(c)** *With reference to Fig. 9.2 and Table 3.1, discuss the likely impact of the predicted changes in carbon dioxide concentration, global temperatures and rainfall patterns on the global distribution of C3 and C4 plants.* **[3]**
 
 **1.** **An increase in carbon dioxide concentration will likely increase temperature.**
 

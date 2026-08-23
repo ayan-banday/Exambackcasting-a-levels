@@ -12,9 +12,9 @@
   "6|a": "q6a_hci_ipd_histogram.png"
  },
  "caption": {
-  "q1_spec_table41.png": "9477 Specimen Paper 2 Q4, Table 4.1. The observed grain counts, total 380",
-  "q1_spec_table42.png": "9477 Specimen Paper 2 Q4, Table 4.2. The working table, with two (O - E)squared/E cells pre-filled at 0.024 and 0.639. Note it gives the two yellow classes as 55 and 31 where Table 4.1 gives 65 and 21",
-  "q1_spec_table43_df.png": "9477 Specimen Paper 2 Q4(d), Table 4.3 and the official degrees-of-freedom equation, v = c - 1, where v is degrees of freedom and c is the number of classes",
-  "q6a_hci_ipd_histogram.png": "Fig. 3.2  School (HCI) Prelim 2023 P3 Q3(a), Fig. 3.2. Interpupillary distance in a large sample of adults, 50 mm to 80 mm"
+  "q1_spec_table41.png": "Figure",
+  "q1_spec_table42.png": "Figure",
+  "q1_spec_table43_df.png": "Figure",
+  "q6a_hci_ipd_histogram.png": "Fig. 6.1  ·  School (HCI) Prelim 2023 P3 Q3(a)"
  }
 }
