@@ -1848,8 +1848,8 @@ window.PLAN = {
     {
      "mins": 0,
      "subject": "maths",
-     "name": "Maths — TOPIC SPLIT: where the marks actually are (P1 vs P2)",
-     "desc": "Counted from 53 prelim papers (2016-2025, 19 JCs) and 12 A-Level papers (2017-2022) — 712 questions classified by topic and marks, the two datasets reported side by side. Confirms the syllabus fixes only P1=100 Pure / P2 SecA=40 Pure / P2 SecB=60 Stats, and publishes NO per-topic weighting. Paper 1 is flat: the top six topics are 12-16 marks each. Also shows what you can currently attempt: 57% of P1, 0% of Section B, 40% of the full 200.",
+     "name": "Maths — TOPIC WEIGHTING: P1 / P2 / weighted / ~marks per year",
+     "desc": "One table: every topic with its share of P1, its share of P2, the weighted share, and marks per year out of 200. Counted from 712 questions across 53 prelim papers (2016-2025, 19 JCs) and 12 A-Level papers (2017-2022), the two datasets shown side by side. Pure:Stats falls out at 140:60, exactly the syllabus split, which is the check that the count is faithful. Biggest topic in the whole qualification is Integration at 23 of 200 marks — nothing is skippable. Your five studied topics are 57% of P1 but 0% of Section B.",
      "done": false,
      "doneDate": null,
      "clusterHref": "clusters/topic_split_p1_p2.html"
