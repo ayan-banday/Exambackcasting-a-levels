@@ -207,6 +207,29 @@ footer a{color:var(--dim)}
 .methsteps li{counter-increment:ms;font-size:13.5px;color:var(--dim);padding:5px 0 5px 28px;position:relative;line-height:1.55}
 .methsteps li::before{content:counter(ms);position:absolute;left:0;top:4px;font-family:var(--mono);font-size:10px;color:var(--warn);border:1px solid var(--line2);border-radius:4px;width:17px;height:17px;text-align:center;line-height:16px}
 .methsteps li b{color:var(--fg);font-weight:500}
+
+.bsp{display:flex;flex-direction:column;gap:2px}
+.bsphd,.bsprow{display:grid;grid-template-columns:1fr 46px 46px 46px 92px 44px;gap:8px;align-items:center;padding:7px 12px}
+.bsphd{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim2);border-bottom:1px solid var(--line)}
+.bsprow{background:var(--card);border:1px solid var(--line);border-radius:9px}
+.bsprow.hi{border-left:2px solid var(--ok)}
+.bsprow.lo{border-left:2px solid var(--bad);opacity:.72}
+.bspt{font-size:13px;font-weight:500;line-height:1.35}
+.bspb{font-family:var(--mono);font-size:9px;color:var(--dim2);margin-left:6px}
+.bspn{font-family:var(--mono);font-size:11px;color:var(--dim);text-align:right}
+.bspn.pk{color:var(--fg);font-weight:600}
+.bspw{display:flex;align-items:center;gap:7px}
+.bspbar{flex:1;height:7px;background:rgba(255,255,255,.06);border-radius:4px;overflow:hidden}
+.bspbar i{display:block;height:100%;border-radius:4px}
+.bspwn{font-family:var(--mono);font-size:11px;font-weight:600;min-width:34px;text-align:right}
+.bspm{font-family:var(--mono);font-size:11px;color:var(--dim2);text-align:right}
+.bspnote{grid-column:1/-1;font-size:11.5px;color:var(--dim);line-height:1.5;padding-top:5px;border-top:1px dashed var(--line);margin-top:5px}
+@media(max-width:760px){
+  .bsphd{display:none}
+  .bsprow{grid-template-columns:1fr 44px 44px;grid-auto-rows:min-content;row-gap:5px}
+  .bspt{grid-column:1/-1}
+  .bspw{grid-column:1/-1}
+}
 </style>
 </head>
 <body>
@@ -283,6 +306,11 @@ footer a{color:var(--dim)}
   <h2>🗺 The full map — everything to drill<span class="rule"></span></h2>
   <div class="h2sub">Every topic across all five subjects, with its tutorial number. <b>DRILL</b> = prelim priority · <b>LATER</b> = pushed to A-levels · <b>BUILT</b> = done. By the A-levels (2–27 Nov 2026) everything here should be nailed, multiple times.</div>
   <div id="map"></div>
+
+  <h2>🧬 Bio topic split — what each paper actually asks<span class="rule"></span></h2>
+  <div class="h2sub">Every JC prelim in the archive, classified by topic and weighted by the real 9477 marks (P1 30 · P2 90 · P3 75; P4 excluded, practicals skipped). <b>Use it to choose what to sacrifice.</b> Green = top third. Red = bottom third, the cheap cuts.<span id="bspmeta" style="color:var(--dim2)"></span></div>
+  <div class="bsp" id="bsp"></div>
+  <div class="h2sub" style="margin-top:14px;font-size:12px" id="bspcav"></div>
 
   <footer>
     This dashboard tracks your <b>readiness per subject</b>, ranked — not guessed hours. Each subject's % is the mean mastery across its topics; it rises every time you drill something and it survives to November. Days-to-prelim and study-days-left update live.<br>
@@ -528,6 +556,35 @@ footer a{color:var(--dim)}
         ${m.note?`<div class="mnote">${m.note}</div>`:''}
       </div></details>`;}).join('');
 })();
+
+  // ---- Bio topic split ----
+  (function(){
+    const BS=(window.PLAN&&window.PLAN.bioSplit)||null, host=document.getElementById('bsp');
+    if(!BS||!host) return;
+    const r=BS.rows.slice().sort((a,b)=>b.w-a.w), n=r.length;
+    const hi=Math.ceil(n/3), lo=n-Math.ceil(n/3);
+    const col=v=>v>=8?'var(--ok)':v>=3?'var(--warn)':'var(--bad)';
+    const mx=Math.max.apply(null,r.map(x=>x.w));
+    let out='<div class="bsphd"><span>Topic (book)</span><span style="text-align:right">P1</span><span style="text-align:right">P2</span><span style="text-align:right">P3</span><span>Weighted</span><span style="text-align:right">mk/yr</span></div>';
+    r.forEach((x,i)=>{
+      const cls=i<hi?' hi':(i>=lo?' lo':'');
+      const pk=Math.max(x.p1,x.p2,x.p3);
+      const cell=(v)=>`<span class="bspn${v===pk?' pk':''}">${v.toFixed(1)}</span>`;
+      out+=`<div class="bsprow${cls}">`
+         + `<span class="bspt">${x.t}<span class="bspb">BOOK ${x.b}</span></span>`
+         + cell(x.p1)+cell(x.p2)+cell(x.p3)
+         + `<span class="bspw"><span class="bspbar"><i style="width:${Math.max(3,x.w/mx*100)}%;background:${col(x.w)}"></i></span><span class="bspwn">${x.w.toFixed(1)}%</span></span>`
+         + `<span class="bspm">${x.m}</span>`
+         + (x.n?`<span class="bspnote">${x.n}</span>`:'')
+         + `</div>`;
+    });
+    host.innerHTML=out;
+    const mt=document.getElementById('bspmeta');
+    if(mt) mt.textContent=` — ${BS.meta.papers} papers, ${BS.meta.marks.toLocaleString()} marks and MCQs.`;
+    const cv=document.getElementById('bspcav');
+    if(cv) cv.innerHTML=`<b>Read it with these in mind.</b> ${BS.meta.src} ${BS.meta.unc}.`;
+  })();
+
 </script>
 </body>
 </html>

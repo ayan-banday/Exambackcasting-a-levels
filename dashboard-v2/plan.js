@@ -4136,3 +4136,148 @@ window.PLAN = {
   }
  }
 };
+
+// ---- Bio topic split: 282 JC prelim papers, 17,781 marks and MCQs (23 Aug 2026) ----
+window.PLAN.bioSplit={
+  meta:{papers:282,marks:17781,src:"JC prelims only — no real Cambridge papers exist in the archive. Mostly 9744-era, so topics 9477 added are under-counted. P3 essay topics are slightly inflated because Section B offers a choice of two and both options were counted.",unc:"unclassified: P1 17%, P2 6%, P3 19%"},
+  rows:[{"t": "Gene expression & control", "b": 2, "p1": 10.6, "p2": 11.8, "p3": 11.4, "w": 11.4, "m": 22, "n": ""}, {"t": "Infectious diseases & immunity", "b": 9, "p1": 3.8, "p2": 8.0, "p3": 18.1, "w": 11.2, "m": 22, "n": "the biggest thing in Paper 3 — sacrificing Book 9 gambles a fifth of P3"}, {"t": "Biomolecules", "b": 1, "p1": 9.4, "p2": 9.1, "p3": 7.5, "w": 8.5, "m": 17, "n": ""}, {"t": "Genetics of viruses", "b": 4, "p1": 6.1, "p2": 7.3, "p3": 9.6, "w": 8.0, "m": 16, "n": ""}, {"t": "Inheritance", "b": 6, "p1": 11.7, "p2": 10.0, "p3": 0.9, "w": 6.8, "m": 13, "n": "P1 and P2 only; almost never an essay"}, {"t": "Cell & nuclear division", "b": 3, "p1": 5.8, "p2": 6.9, "p3": 4.9, "w": 6.0, "m": 12, "n": ""}, {"t": "Cell structure", "b": 1, "p1": 5.4, "p2": 4.8, "p3": 6.8, "w": 5.6, "m": 11, "n": ""}, {"t": "Photosynthesis", "b": 5, "p1": 5.1, "p2": 5.0, "p3": 5.8, "w": 5.3, "m": 10, "n": ""}, {"t": "Climate change", "b": 8, "p1": 2.5, "p2": 3.8, "p3": 6.3, "w": 4.6, "m": 9, "n": ""}, {"t": "Cell signalling", "b": 3, "p1": 4.3, "p2": 4.4, "p3": 3.8, "w": 4.2, "m": 8, "n": ""}, {"t": "Enzymes", "b": 1, "p1": 5.4, "p2": 3.9, "p3": 3.4, "w": 3.9, "m": 8, "n": ""}, {"t": "Respiration", "b": 5, "p1": 3.5, "p2": 4.7, "p3": 2.9, "w": 3.8, "m": 7, "n": ""}, {"t": "Molecular techniques", "b": 2, "p1": 4.2, "p2": 2.4, "p3": 5.0, "w": 3.7, "m": 7, "n": ""}, {"t": "Cancer", "b": 3, "p1": 3.1, "p2": 2.9, "p3": 4.4, "w": 3.5, "m": 7, "n": ""}, {"t": "Speciation & phylogeny", "b": 7, "p1": 2.6, "p2": 3.4, "p3": 1.2, "w": 2.4, "m": 5, "n": ""}, {"t": "Stem cells", "b": 3, "p1": 3.3, "p2": 2.5, "p3": 1.7, "w": 2.4, "m": 5, "n": ""}, {"t": "DNA structure & replication", "b": 2, "p1": 3.0, "p2": 2.5, "p3": 0.8, "w": 2.0, "m": 4, "n": ""}, {"t": "Evolution & selection", "b": 7, "p1": 2.3, "p2": 1.5, "p3": 1.4, "w": 1.6, "m": 3, "n": ""}, {"t": "Cell membranes", "b": 1, "p1": 1.7, "p2": 2.2, "p3": 0.5, "w": 1.5, "m": 3, "n": "the genuinely safe cut inside Book 1, not Biomolecules"}, {"t": "Genome organisation", "b": 2, "p1": 1.7, "p2": 0.9, "p3": 1.5, "w": 1.2, "m": 2, "n": ""}, {"t": "Genetics of bacteria", "b": 4, "p1": 2.2, "p2": 0.8, "p3": 1.0, "w": 1.1, "m": 2, "n": ""}, {"t": "Mutations", "b": 2, "p1": 1.6, "p2": 0.5, "p3": 0.9, "w": 0.8, "m": 2, "n": ""}, {"t": "Biostatistics", "b": 6, "p1": 0.7, "p2": 0.7, "p3": 0.2, "w": 0.5, "m": 1, "n": "understated — 9744-era corpus; 9477 ADDED Hardy-Weinberg and the specimen puts it on the paper"}]
+,
+ "topicSplit": {
+  "maths": {
+   "label": "H2 Mathematics 9758",
+   "note": "<b>Weighted</b> uses the real 9758 marks — P1 100, P2 100 — so both papers count equally and Weighted is the average of the two columns. <b>~marks/yr</b> is that share of the full 200 you sit. Stats topics read 0.0% in P1 because Paper 1 is Pure only.",
+   "source": "712 questions counted across 53 prelim papers (2016–2025, 19 JCs) and 12 A-Level papers (2017–2022). Pure : Stats falls out at 140 : 60, exactly the syllabus split — that is the check that the count is faithful.",
+   "href": "clusters/topic_split_p1_p2.html",
+   "rows": [
+    {
+     "t": "Integration",
+     "p1": 16.0,
+     "p2": 6.8,
+     "w": 11.4,
+     "m": 23,
+     "pure": true
+    },
+    {
+     "t": "Vectors",
+     "p1": 12.1,
+     "p2": 8.1,
+     "w": 10.1,
+     "m": 20,
+     "pure": true
+    },
+    {
+     "t": "Sequences & Series",
+     "p1": 13.2,
+     "p2": 6.6,
+     "w": 9.9,
+     "m": 20,
+     "pure": true
+    },
+    {
+     "t": "Probability & P&C",
+     "p1": 0.0,
+     "p2": 14.6,
+     "w": 7.3,
+     "m": 15,
+     "pure": false
+    },
+    {
+     "t": "Differentiation",
+     "p1": 12.3,
+     "p2": 2.2,
+     "w": 7.3,
+     "m": 15,
+     "pure": true
+    },
+    {
+     "t": "Graphs & Transformations",
+     "p1": 12.0,
+     "p2": 2.1,
+     "w": 7.1,
+     "m": 14,
+     "pure": true
+    },
+    {
+     "t": "Differential Equations",
+     "p1": 11.9,
+     "p2": 0.8,
+     "w": 6.3,
+     "m": 13,
+     "pure": true
+    },
+    {
+     "t": "Complex Numbers",
+     "p1": 7.9,
+     "p2": 4.4,
+     "w": 6.1,
+     "m": 12,
+     "pure": true
+    },
+    {
+     "t": "Normal Distribution",
+     "p1": 0.0,
+     "p2": 10.7,
+     "w": 5.4,
+     "m": 11,
+     "pure": false
+    },
+    {
+     "t": "DRV & Binomial",
+     "p1": 0.0,
+     "p2": 10.4,
+     "w": 5.2,
+     "m": 10,
+     "pure": false
+    },
+    {
+     "t": "Functions",
+     "p1": 5.9,
+     "p2": 4.2,
+     "w": 5.0,
+     "m": 10,
+     "pure": true
+    },
+    {
+     "t": "Hypothesis Testing",
+     "p1": 0.0,
+     "p2": 9.6,
+     "w": 4.8,
+     "m": 9,
+     "pure": false
+    },
+    {
+     "t": "Correlation & Regression",
+     "p1": 0.0,
+     "p2": 9.0,
+     "w": 4.5,
+     "m": 9,
+     "pure": false
+    },
+    {
+     "t": "Maclaurin Series",
+     "p1": 4.6,
+     "p2": 4.4,
+     "w": 4.5,
+     "m": 9,
+     "pure": true
+    },
+    {
+     "t": "Sampling",
+     "p1": 0.0,
+     "p2": 5.9,
+     "w": 3.0,
+     "m": 6,
+     "pure": false
+    },
+    {
+     "t": "Equations & Inequalities",
+     "p1": 4.2,
+     "p2": 0.1,
+     "w": 2.1,
+     "m": 4,
+     "pure": true
+    }
+   ]
+  }
+ }
+};
