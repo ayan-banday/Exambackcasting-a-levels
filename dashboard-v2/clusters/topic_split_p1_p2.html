@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>H2 Math — Topic Split by Paper</title>
+<style>
+  :root { --bg:#fafafa; --card:#fff; --border:#e5e7eb; --text:#1a1a1a; --muted:#6b7280;
+    --blue:#2563eb; --blue-soft:#eff6ff; --amber:#d97706; --amber-soft:#fffbeb;
+    --green:#059669; --green-soft:#ecfdf5; --red:#dc2626; --red-soft:#fef2f2;
+    --purple:#6d28d9; --purple-soft:#f5f3ff; --teal:#0d9488; --teal-soft:#f0fdfa; }
+  *{box-sizing:border-box}
+  body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:980px;margin:0 auto;padding:34px 22px 90px;line-height:1.62;color:var(--text);background:var(--bg)}
+  h1,h2,h3,.tag,.hd .sub,.hd .meta,.nav,.lbl,.archhead,.num{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+  .hd{border-bottom:2.5px solid #111;padding-bottom:14px;margin-bottom:8px;text-align:center}
+  .hd h1{font-size:1.5em;font-weight:800;letter-spacing:.4px;margin:0;color:#111}
+  .hd .sub{font-size:1em;margin-top:4px;color:#333}
+  .hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:.78em;color:var(--muted);margin-top:8px}
+  h2{font-size:1.12em;margin:38px 0 12px;padding:7px 12px;background:#111;color:#fff;border-radius:5px;font-weight:700;letter-spacing:.02em}
+  h3{font-size:.98em;margin:20px 0 6px;color:#111;font-weight:700}
+  .nav{background:var(--card);border:1px solid var(--border);padding:13px 18px;border-radius:6px;margin:16px 0 26px;font-size:.85em}
+  .nav a{color:var(--blue);text-decoration:none;display:inline-block;margin:0 14px 5px 0}
+  .nav a:hover{text-decoration:underline}
+  .nav b{display:block;margin:8px 0 3px;color:#111;font-size:.92em}
+
+  .arch{background:var(--card);border:1px solid var(--border);border-radius:7px;padding:0 0 14px;margin:20px 0;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+  .archhead{background:#f1f5f9;border-bottom:1px solid var(--border);padding:10px 16px;font-weight:700;font-size:.97em;color:#0f172a;display:flex;align-items:center;gap:11px}
+  .num{background:#111;color:#fff;border-radius:4px;min-width:28px;height:24px;display:inline-flex;align-items:center;justify-content:center;font-size:.8em;font-weight:800;flex:none}
+  .arch > div:not(.archhead){margin-left:16px;margin-right:16px}
+  .trig{background:var(--blue-soft);border-left:3px solid var(--blue);padding:8px 12px;margin-top:12px;font-size:.88em;border-radius:0 4px 4px 0}
+  .trig b{color:var(--blue);font-size:.86em;letter-spacing:.05em;text-transform:uppercase}
+  .trig i{font-style:italic;color:#1e3a8a}
+  .steps{margin-top:11px;font-size:.92em}
+  .steps ol{margin:0;padding-left:22px}
+  .steps li{margin:5px 0}
+  .steps ol ol{margin:4px 0;padding-left:20px;list-style:lower-alpha}
+  .eg{background:var(--green-soft);border-left:3px solid var(--green);padding:8px 12px;margin-top:11px;font-size:.88em;border-radius:0 4px 4px 0}
+  .eg .lbl{color:var(--green);font-size:.7em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:3px}
+  .trap{background:var(--red-soft);border-left:3px solid var(--red);padding:8px 12px;margin-top:11px;font-size:.88em;border-radius:0 4px 4px 0;color:#7f1d1d}
+  .trap b{color:var(--red);font-size:.86em;letter-spacing:.05em;text-transform:uppercase}
+  .yours{background:var(--purple-soft);border-left:3px solid var(--purple);padding:8px 12px;margin-top:11px;font-size:.87em;border-radius:0 4px 4px 0}
+  .yours b{color:var(--purple);font-size:.86em;letter-spacing:.05em;text-transform:uppercase}
+  .yours i{color:#4c1d95}
+  .note{background:var(--amber-soft);border:1px solid #fcd34d;border-left:4px solid var(--amber);padding:11px 15px;border-radius:6px;margin:14px 0;font-size:.9em;color:#7c2d12}
+  .note b{color:#b91c1c}
+  .key{background:var(--purple-soft);border:1px solid #ddd6fe;border-left:4px solid var(--purple);padding:11px 15px;border-radius:6px;margin:14px 0;font-size:.9em}
+  .key b{color:var(--purple)}
+  .f{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--blue);border-radius:6px;padding:11px 16px;margin:12px 0}
+  table{border-collapse:collapse;margin:12px 0;font-size:.86em;width:100%;background:#fff}
+  th,td{border:1px solid var(--border);padding:7px 10px;text-align:left;vertical-align:top}
+  th{background:#f1f5f9;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:.94em}
+  tr:nth-child(even) td{background:#fcfcfd}
+  code{font-family:ui-monospace,Menlo,monospace;font-size:.88em;background:#f1f5f9;padding:1px 5px;border-radius:3px}
+  .chk{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:6px 16px;margin:12px 0}
+  .chk li{margin:7px 0;font-size:.9em}
+  .src{font-family:ui-monospace,Menlo,monospace;font-size:.72em;color:var(--muted);margin-top:9px}
+  @media print{
+    body{background:#fff;padding:0;max-width:none;font-size:10.5pt}
+    .nav{display:none}
+    .arch{page-break-inside:avoid;box-shadow:none}
+    h2{background:#111 !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .trig,.eg,.trap,.yours,.note,.key,th,.num{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+
+  .n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .bar{background:#eef2f7;border-radius:3px;height:15px;overflow:hidden}
+  .bar i{display:block;height:100%;background:linear-gradient(90deg,#2563eb,#60a5fa)}
+  tr.done td{background:#f0fdf4}
+  tr.done:nth-child(even) td{background:#e9fbef}
+  .pill{font-family:-apple-system,sans-serif;font-size:.63em;font-weight:700;letter-spacing:.04em;
+        text-transform:uppercase;padding:1px 6px;border-radius:9px;margin-left:5px;vertical-align:1px}
+  .pill.done{background:#dcfce7;color:#166534}
+  .pill.todo{background:#fee2e2;color:#991b1b}
+  .big{display:flex;gap:14px;flex-wrap:wrap;margin:16px 0}
+  .big div{flex:1;min-width:150px;background:#fff;border:1px solid var(--border);border-radius:7px;padding:13px 15px}
+  .big .v{font-family:-apple-system,sans-serif;font-size:1.7em;font-weight:800;color:#111;line-height:1.1}
+  .big .l{font-size:.79em;color:var(--muted);margin-top:3px}
+</style></head><body>
+<div class="hd"><h1>WHERE THE MARKS ACTUALLY ARE</h1>
+<div class="sub">H2 Mathematics 9758 &nbsp;·&nbsp; topic split for Paper 1 and Paper 2</div>
+<div class="meta">53 prelim papers (2016&ndash;2025, 19 JCs) &nbsp;+&nbsp; 12 A-Level papers (2017&ndash;2022) &nbsp;|&nbsp; 712 questions classified</div></div>
+
+<div class="key" style="margin-top:20px"><b>Your guess was right.</b> Paper 2 Section B is <b>60 marks of Probability &amp; Statistics</b>, and that is fixed by the syllabus, not an accident of one paper. What the syllabus does <b>not</b> do is publish any per-topic weighting. The only splits Cambridge commits to are: P1 = 100 marks all Pure, P2 Section A = 40 marks Pure, P2 Section B = 60 marks Stats. So Pure : Stats = <b>140 : 60</b> across the qualification. Everything finer than that has to be counted from real papers, which is what the rest of this page is.</div>
+
+<div class="big">
+<div><div class="v">100</div><div class="l">Paper 1 &mdash; all Pure, 10&ndash;12 questions</div></div>
+<div><div class="v">40</div><div class="l">Paper 2 Section A &mdash; Pure, 4&ndash;5 questions</div></div>
+<div><div class="v">60</div><div class="l">Paper 2 Section B &mdash; Stats, 6&ndash;8 questions</div></div>
+<div><div class="v">70 / 30</div><div class="l">Pure : Stats across both papers</div></div>
+</div>
+
+<h2>How to read the tables</h2>
+<p style="font-size:.92em"><b>Prelims</b> and <b>A-Level</b> are two independent counts of the same thing, kept separate on purpose so you can see where they agree. <b>Marks</b> is the blend of the two, scaled to that paper's mark total &mdash; treat it as the expected marks for that topic on a typical paper. <b>In how many papers</b> is the prelim figure: how often the topic shows up at all, which matters more than its average when you are deciding what you cannot afford to skip.</p>
+
+<h2>PAPER 1 &mdash; Pure Mathematics, 100 marks</h2>
+<table><tr><th>Topic</th><th class="n">Prelims</th><th class="n">A-Level</th><th class="n">Marks / 100</th><th class="n">In how many papers</th><th style="width:22%">Share</th></tr><tr class="done"><td><b>Integration</b> <span class="pill done">studied</span></td><td class="n">17.6%</td><td class="n">14.4%</td><td class="n"><b>16.0</b></td><td class="n">100%</td><td><div class="bar"><i style="width:100.0%"></i></div></td></tr><tr><td><b>Sequences & Series</b> <span class="pill todo">not yet</span></td><td class="n">13.0%</td><td class="n">13.4%</td><td class="n"><b>13.2</b></td><td class="n">93%</td><td><div class="bar"><i style="width:82.6%"></i></div></td></tr><tr class="done"><td><b>Differentiation</b> <span class="pill done">studied</span></td><td class="n">11.0%</td><td class="n">13.6%</td><td class="n"><b>12.3</b></td><td class="n">85%</td><td><div class="bar"><i style="width:76.8%"></i></div></td></tr><tr class="done"><td><b>Vectors</b> <span class="pill done">studied</span></td><td class="n">11.5%</td><td class="n">12.8%</td><td class="n"><b>12.1</b></td><td class="n">100%</td><td><div class="bar"><i style="width:75.9%"></i></div></td></tr><tr><td><b>Graphs & Transformations</b> <span class="pill todo">not yet</span></td><td class="n">12.2%</td><td class="n">11.8%</td><td class="n"><b>12.0</b></td><td class="n">85%</td><td><div class="bar"><i style="width:75.1%"></i></div></td></tr><tr class="done"><td><b>Differential Equations</b> <span class="pill done">studied</span></td><td class="n">10.7%</td><td class="n">13.0%</td><td class="n"><b>11.9</b></td><td class="n">93%</td><td><div class="bar"><i style="width:74.1%"></i></div></td></tr><tr><td><b>Complex Numbers</b> <span class="pill todo">not yet</span></td><td class="n">9.6%</td><td class="n">6.2%</td><td class="n"><b>7.9</b></td><td class="n">89%</td><td><div class="bar"><i style="width:49.3%"></i></div></td></tr><tr><td><b>Functions</b> <span class="pill todo">not yet</span></td><td class="n">6.7%</td><td class="n">5.0%</td><td class="n"><b>5.9</b></td><td class="n">59%</td><td><div class="bar"><i style="width:36.7%"></i></div></td></tr><tr class="done"><td><b>Maclaurin Series</b> <span class="pill done">studied</span></td><td class="n">3.9%</td><td class="n">5.2%</td><td class="n"><b>4.6</b></td><td class="n">44%</td><td><div class="bar"><i style="width:28.5%"></i></div></td></tr><tr><td><b>Equations & Inequalities</b> <span class="pill todo">not yet</span></td><td class="n">3.8%</td><td class="n">4.6%</td><td class="n"><b>4.2</b></td><td class="n">59%</td><td><div class="bar"><i style="width:26.2%"></i></div></td></tr></table>
+<div class="note"><b>Read this one first.</b> Paper 1 is remarkably flat. The top six topics sit between 12 and 16 marks each and together make about 78 of the 100. There is no single topic worth more than about a sixth of the paper, and there is nothing you can safely drop &mdash; the smallest topic on the list, Equations &amp; Inequalities, still shows up in 59% of prelim papers, usually as the opening question.</div>
+
+<h2>PAPER 2 SECTION A &mdash; Pure Mathematics, 40 marks</h2>
+<table><tr><th>Topic</th><th class="n">Prelims</th><th class="n">A-Level</th><th class="n">Marks / 40</th><th class="n">In how many papers</th><th style="width:22%">Share</th></tr><tr class="done"><td><b>Vectors</b> <span class="pill done">studied</span></td><td class="n">25.4%</td><td class="n">14.9%</td><td class="n"><b>8.1</b></td><td class="n">92%</td><td><div class="bar"><i style="width:100.0%"></i></div></td></tr><tr class="done"><td><b>Integration</b> <span class="pill done">studied</span></td><td class="n">8.3%</td><td class="n">25.7%</td><td class="n"><b>6.8</b></td><td class="n">38%</td><td><div class="bar"><i style="width:84.4%"></i></div></td></tr><tr><td><b>Sequences & Series</b> <span class="pill todo">not yet</span></td><td class="n">15.4%</td><td class="n">17.6%</td><td class="n"><b>6.6</b></td><td class="n">62%</td><td><div class="bar"><i style="width:82.0%"></i></div></td></tr><tr><td><b>Complex Numbers</b> <span class="pill todo">not yet</span></td><td class="n">12.6%</td><td class="n">9.5%</td><td class="n"><b>4.4</b></td><td class="n">54%</td><td><div class="bar"><i style="width:54.9%"></i></div></td></tr><tr class="done"><td><b>Maclaurin Series</b> <span class="pill done">studied</span></td><td class="n">12.5%</td><td class="n">9.5%</td><td class="n"><b>4.4</b></td><td class="n">58%</td><td><div class="bar"><i style="width:54.7%"></i></div></td></tr><tr><td><b>Functions</b> <span class="pill todo">not yet</span></td><td class="n">11.7%</td><td class="n">9.5%</td><td class="n"><b>4.2</b></td><td class="n">50%</td><td><div class="bar"><i style="width:52.5%"></i></div></td></tr><tr class="done"><td><b>Differentiation</b> <span class="pill done">studied</span></td><td class="n">2.6%</td><td class="n">8.6%</td><td class="n"><b>2.2</b></td><td class="n">12%</td><td><div class="bar"><i style="width:27.7%"></i></div></td></tr><tr><td><b>Graphs & Transformations</b> <span class="pill todo">not yet</span></td><td class="n">5.7%</td><td class="n">5.0%</td><td class="n"><b>2.1</b></td><td class="n">27%</td><td><div class="bar"><i style="width:26.5%"></i></div></td></tr><tr class="done"><td><b>Differential Equations</b> <span class="pill done">studied</span></td><td class="n">4.0%</td><td class="n">0.0%</td><td class="n"><b>0.8</b></td><td class="n">15%</td><td><div class="bar"><i style="width:9.8%"></i></div></td></tr><tr><td><b>Normal Distribution</b> <span class="pill todo">not yet</span></td><td class="n">1.1%</td><td class="n">0.0%</td><td class="n"><b>0.2</b></td><td class="n">4%</td><td><div class="bar"><i style="width:2.6%"></i></div></td></tr></table>
+<div class="note"><b>Treat these percentages as soft.</b> Section A is only four or five questions, so a single question moves the numbers a lot, and the A-Level column here rests on just 6 papers. The two counts disagree most on Vectors and Integration for exactly that reason. What both agree on: <b>Vectors and Maclaurin are near-certain</b>, and Section A is where Maclaurin lives &mdash; it is roughly three times more likely here than in Paper 1.</div>
+
+<h2>PAPER 2 SECTION B &mdash; Probability &amp; Statistics, 60 marks</h2>
+<table><tr><th>Topic</th><th class="n">Prelims</th><th class="n">A-Level</th><th class="n">Marks / 60</th><th class="n">In how many papers</th><th style="width:22%">Share</th></tr><tr><td><b>Probability & P&C</b> <span class="pill todo">not yet</span></td><td class="n">22.9%</td><td class="n">25.6%</td><td class="n"><b>14.5</b></td><td class="n">96%</td><td><div class="bar"><i style="width:100.0%"></i></div></td></tr><tr><td><b>Normal Distribution</b> <span class="pill todo">not yet</span></td><td class="n">14.8%</td><td class="n">20.3%</td><td class="n"><b>10.5</b></td><td class="n">81%</td><td><div class="bar"><i style="width:72.5%"></i></div></td></tr><tr><td><b>DRV & Binomial</b> <span class="pill todo">not yet</span></td><td class="n">22.5%</td><td class="n">12.2%</td><td class="n"><b>10.4</b></td><td class="n">92%</td><td><div class="bar"><i style="width:71.6%"></i></div></td></tr><tr><td><b>Hypothesis Testing</b> <span class="pill todo">not yet</span></td><td class="n">18.6%</td><td class="n">13.3%</td><td class="n"><b>9.6</b></td><td class="n">100%</td><td><div class="bar"><i style="width:66.0%"></i></div></td></tr><tr><td><b>Correlation & Regression</b> <span class="pill todo">not yet</span></td><td class="n">12.2%</td><td class="n">17.8%</td><td class="n"><b>9.0</b></td><td class="n">77%</td><td><div class="bar"><i style="width:61.8%"></i></div></td></tr><tr><td><b>Sampling</b> <span class="pill todo">not yet</span></td><td class="n">9.0%</td><td class="n">10.8%</td><td class="n"><b>5.9</b></td><td class="n">46%</td><td><div class="bar"><i style="width:40.9%"></i></div></td></tr></table>
+<div class="note"><b>Statistics is the most predictable part of the whole qualification.</b> Six topics, all six appear in almost every paper, and none is skippable. Hypothesis Testing appeared in <b>100% of the prelim papers counted</b>. The last two questions of Section B are almost always the two longest &mdash; Normal Distribution and Hypothesis Testing, 11&ndash;15 marks each.</div>
+
+<h2>WHERE YOU STAND RIGHT NOW</h2>
+<p style="font-size:.92em">Against the five topics you have actually studied &mdash; Differentiation, Integration, Vectors, Series Expansion and Differential Equations:</p>
+<div class="big">
+<div><div class="v">57%</div><div class="l">of Paper 1 you can currently attempt<br><b>57 marks</b> reachable, 43 not yet</div></div>
+<div><div class="v">56%</div><div class="l">of P2 Section A<br><b>22 of 40 marks</b></div></div>
+<div><div class="v">0%</div><div class="l">of P2 Section B<br><b>0 of 60 marks</b> &mdash; no stats studied</div></div>
+<div><div class="v">40%</div><div class="l">of the full 200<br><b>79 marks</b> reachable today</div></div>
+</div>
+<div class="note"><b>The blunt version.</b> Your five studied topics cover a bit over half of Paper 1 and none of Section B. The four largest unstudied blocks in Paper 1 &mdash; Sequences &amp; Series, Graphs &amp; Transformations, Complex Numbers, Functions &mdash; are worth about 39 marks between them, which is more than Integration, Differentiation and Vectors combined.</div>
+
+<h2>METHOD, AND WHAT NOT TO TRUST</h2>
+<div class="chk"><ol>
+<li><b>Two independent datasets.</b> 593 questions from 53 prelim papers (2016&ndash;2025, across 19 JCs), and 119 questions from 12 A-Level papers (2017&ndash;2022). They were counted separately and are reported separately so you can see the agreement rather than take my word for it.</li>
+<li><b>Validation that the count is faithful.</b> Every one of the 53 prelim papers reconciles to between 90 and 110 marks, and the Pure-to-Stats split falls out at <b>70 : 30</b> &mdash; which is what the syllabus specifies. Nothing was tuned to make that happen; it is what the data did.</li>
+<li><b>Marks, not question counts.</b> A topic's share is its share of marks, which is the thing that decides your grade.</li>
+<li><b>The A-Level source is a school compilation</b> labelled &ldquo;Modified&rdquo;, so a few stems have been reworded. Six questions were dropped because the PDF text ran them together and I could not split them cleanly. That is why some A-Level papers below total under 100.</li>
+<li><b>The 9758 syllabus started in 2017.</b> Papers before that are 9740 and test different content, so they are excluded entirely.</li>
+<li><b>Where the two columns disagree by more than about 5 points, believe the prelims</b> &mdash; there are four times as many of them. The exception is Section B, where both samples are large enough to trust.</li>
+<li><b>One judgement call worth knowing about.</b> Some Pure questions genuinely straddle two topics (a parametric curve you then integrate, say). Each question is counted once, under the topic doing the most work. That slightly blurs the Graphs / Integration / Differentiation boundary, and it is the main reason those three move around between the two columns.</li>
+</ol></div>
+<div class="src">Prelims: 2016&ndash;2025 catalogues across 19 JCs. A-Level: HCI Modified GCEA 2017&ndash;2022 compilation. Syllabus structure verified against the official 9758 document, Scheme of Examination Papers.</div>
+</body></html>

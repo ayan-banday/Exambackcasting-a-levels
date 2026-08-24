@@ -1846,6 +1846,15 @@ window.PLAN = {
      "clusterHref": "clusters/playbook_vectors.html"
     },
     {
+     "mins": 0,
+     "subject": "maths",
+     "name": "Maths — TOPIC SPLIT: where the marks actually are (P1 vs P2)",
+     "desc": "Counted from 53 prelim papers (2016-2025, 19 JCs) and 12 A-Level papers (2017-2022) — 712 questions classified by topic and marks, the two datasets reported side by side. Confirms the syllabus fixes only P1=100 Pure / P2 SecA=40 Pure / P2 SecB=60 Stats, and publishes NO per-topic weighting. Paper 1 is flat: the top six topics are 12-16 marks each. Also shows what you can currently attempt: 57% of P1, 0% of Section B, 40% of the full 200.",
+     "done": false,
+     "doneDate": null,
+     "clusterHref": "clusters/topic_split_p1_p2.html"
+    },
+    {
      "mins": 50,
      "subject": "maths",
      "name": "Maths — Vectors C3 GAP CLUSTER (7Q · 27m · plane equations)",
