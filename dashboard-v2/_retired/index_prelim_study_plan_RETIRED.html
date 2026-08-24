@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prelim Study Plan — Ethan Lim</title>
+<meta name="description" content="Day-by-day prelim study plan to 24 Aug 2026. Every day laid out clearly: which clusters, which blocks, which test. Foldable schedule, full topic map at the bottom.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0b0d; --card:#121317; --card2:#17181e; --line:#23252d; --line2:#2f323c;
+  --fg:#e9ebee; --dim:#8c909b; --dim2:#5f636d;
+  --ok:#5fd3a8; --warn:#e8c65f; --bad:#e8705f;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:400 15px/1.55 'Inter',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;padding:34px 20px 90px}
+.wrap{max-width:1120px;margin:0 auto}
+
+header{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;
+  padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:26px}
+h1{font-size:23px;font-weight:600;letter-spacing:-.02em}
+.sub{color:var(--dim);font-size:13px;margin-top:6px}
+.sub .mono{font-family:var(--mono);color:var(--dim2)}
+.countdown{text-align:right;flex-shrink:0}
+.countdown .n{font-family:var(--mono);font-size:42px;font-weight:500;line-height:1;letter-spacing:-.03em}
+.countdown .l{font-size:10.5px;color:var(--dim2);text-transform:uppercase;letter-spacing:.12em;margin-top:7px}
+
+.callout{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px}
+.callout .k{font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:var(--dim2);margin-bottom:6px}
+.callout p{font-size:13.5px;color:var(--dim);line-height:1.6}
+.callout p b{color:var(--fg);font-weight:500}
+
+.stats{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;
+  background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:22px 0 12px}
+.rankcard{border:1px solid var(--line);border-radius:11px;overflow:hidden;background:rgba(255,255,255,.015)}
+.rkhd{display:flex;justify-content:space-between;align-items:baseline;padding:9px 14px 8px;font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--dim2);border-bottom:1px solid var(--line)}
+.rkrow{display:flex;align-items:center;gap:11px;padding:8px 14px;border-bottom:1px solid var(--line);font-size:14px}
+.rkrow:last-child{border-bottom:none}
+.rkrow.tot{background:rgba(255,255,255,.04)}
+.rknum{flex:0 0 18px;text-align:center;font-family:var(--mono);font-weight:600;color:var(--dim2);font-size:12px}
+.rkname{flex:0 0 82px;font-weight:600}
+.rkbar{flex:1;min-width:50px;height:8px;background:rgba(255,255,255,.07);border-radius:5px;overflow:hidden}
+.rkbar i{display:block;height:100%;border-radius:5px}
+.rknums{flex:0 0 auto;color:var(--dim2);font-family:var(--mono);font-size:12px;white-space:nowrap}
+.rknums b{color:#e7e7ea;font-weight:600}
+.stats .grid{grid-template-columns:1fr;gap:16px;align-self:center;min-width:118px}
+.ring{width:134px;height:134px;border-radius:50%;display:grid;place-items:center;position:relative;flex-shrink:0}
+.ring::after{content:'';position:absolute;inset:11px;background:var(--card);border-radius:50%}
+.ring .v{position:relative;z-index:1;text-align:center}
+.ring .p{font-family:var(--mono);font-size:30px;font-weight:500;letter-spacing:-.02em}
+.ring .c{font-size:9.5px;color:var(--dim2);text-transform:uppercase;letter-spacing:.12em;margin-top:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(122px,1fr));gap:22px 16px}
+.stat .k{font-size:10px;color:var(--dim2);text-transform:uppercase;letter-spacing:.1em;margin-bottom:7px}
+.stat .v{font-family:var(--mono);font-size:21px;font-weight:500;letter-spacing:-.01em}
+.stat .v small{font-size:12px;color:var(--dim2);font-weight:400}
+
+h2{font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--dim2);font-weight:500;
+  margin:40px 0 6px;display:flex;align-items:center;gap:12px}
+h2 .rule{flex:1;height:1px;background:var(--line)}
+.h2sub{font-size:13px;color:var(--dim);margin-bottom:16px;line-height:1.6}
+.h2sub b{color:var(--fg);font-weight:500}
+
+/* fold button */
+.foldbar{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.foldbtn{font-family:var(--mono);font-size:11.5px;color:var(--fg);background:var(--card);
+  border:1px solid var(--line2);border-radius:8px;padding:9px 16px;cursor:pointer;letter-spacing:.03em}
+.foldbtn:hover{border-color:var(--warn);color:var(--warn)}
+.foldbar .hint{font-size:12px;color:var(--dim2)}
+
+/* map */
+.mp{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:9px;overflow:hidden}
+.mp summary{list-style:none;cursor:pointer;padding:17px 20px;display:flex;align-items:center;gap:12px}
+.mp summary::-webkit-details-marker{display:none}
+.mp .arw{color:var(--dim2);font-size:10px;transition:transform .18s}
+.mp[open] .arw{transform:rotate(90deg)}
+.mp .snm{font-weight:600;font-size:16px}
+.mp .scd{font-family:var(--mono);font-size:11.5px;color:var(--dim2)}
+.mp .stag{font-family:var(--mono);font-size:11.5px;color:var(--dim2);font-style:italic}
+.mp .sun{margin-left:auto;font-family:var(--mono);font-size:11.5px;color:var(--dim2)}
+.mp .body{border-top:1px solid var(--line);padding:6px 20px 18px 42px}
+.sec{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:var(--ok);
+  text-transform:uppercase;margin:18px 0 10px}
+.tp{padding:11px 0;border-bottom:1px dashed var(--line)}
+.tp:last-child{border-bottom:0}
+.tp .th{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.tp .tn{font-weight:600;font-size:14.5px}
+.badge{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;padding:2.5px 7px;border-radius:5px;font-weight:500}
+.b-DRILL{background:rgba(232,112,95,.15);color:#e8705f}
+.b-LATER{background:rgba(140,144,155,.15);color:var(--dim)}
+.twwrap{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--card)}
+  .twscroll{overflow-x:auto}
+  table.tw{border-collapse:collapse;width:100%;font-size:13px;min-width:680px}
+  table.tw th{background:var(--card2);color:var(--dim);font-weight:600;font-size:10.5px;
+    letter-spacing:.06em;text-transform:uppercase;padding:9px 10px;text-align:right;
+    border-bottom:1px solid var(--line2);white-space:nowrap}
+  table.tw th:first-child{text-align:left}
+  table.tw td{padding:7px 10px;text-align:right;border-bottom:1px solid var(--line);
+    font-variant-numeric:tabular-nums;color:var(--dim)}
+  table.tw td:first-child{text-align:left;color:var(--fg)}
+  table.tw tr:last-child td{border-bottom:none}
+  table.tw tr:hover td{background:var(--card2)}
+  .twW{font-weight:700;color:var(--fg)}
+  .twbar{display:inline-block;height:7px;border-radius:2px;background:var(--ok);
+    vertical-align:middle;margin-left:7px;min-width:2px;opacity:.75}
+  .twflag{font-size:9.5px;font-weight:700;letter-spacing:.04em;padding:1px 5px;border-radius:3px;white-space:nowrap}
+  .f-KEEP{background:rgba(232,112,95,.15);color:var(--bad)}
+  .f-TRIM{background:rgba(232,198,95,.15);color:var(--warn)}
+  .f-CUT{background:rgba(95,211,168,.15);color:var(--ok)}
+  .twnote{font-size:12px;color:var(--dim);line-height:1.6}
+  .twnote b{color:var(--fg)}
+  .twkey{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--dim2);margin:10px 0 0}
+  .b-COVERAGE{background:rgba(140,144,155,.15);color:var(--dim)}
+.b-BUILT{background:rgba(95,211,168,.15);color:var(--ok)}
+.tp .tf{font-size:12px;color:var(--dim);font-style:italic}
+.tp ul{list-style:none;margin-top:7px}
+.tp li{font-size:13.5px;color:var(--dim);padding:2.5px 0 2.5px 20px;position:relative}
+.tp li::before{content:'└';position:absolute;left:2px;color:var(--dim2);font-family:var(--mono);font-size:11px}
+.tp .inline{font-size:13.5px;color:var(--dim);margin-top:6px;padding-left:20px;position:relative}
+.tp .inline::before{content:'└';position:absolute;left:2px;color:var(--dim2);font-family:var(--mono);font-size:11px}
+.mnote{font-size:12.5px;color:var(--dim2);font-style:italic;margin-top:16px}
+
+/* schedule */
+.wk{margin-bottom:30px}
+.wkh{display:flex;align-items:baseline;gap:12px;margin:0 0 10px}
+.wkh .t{font-family:var(--mono);font-size:12px;color:var(--fg);letter-spacing:.05em;font-weight:500}
+.wkh .d{font-size:12.5px;color:var(--dim);font-style:italic}
+.wkh .rule{flex:1;height:1px;background:var(--line);align-self:center}
+.wkh .pc{font-family:var(--mono);font-size:11.5px;color:var(--dim2)}
+.day{background:var(--card);border:1px solid var(--line);border-radius:11px;margin-bottom:7px;overflow:hidden}
+.day.today{border-color:var(--warn);background:var(--card2)}
+.day.past{opacity:.55}
+.day.alldone{border-left:2px solid var(--ok)}
+.day.test{background:linear-gradient(90deg,rgba(232,112,95,.06),transparent)}
+.dh{display:flex;align-items:center;gap:13px;padding:13px 17px;cursor:pointer;flex-wrap:wrap}
+.dh .dn{font-family:var(--mono);font-size:11px;color:var(--dim2);width:44px;flex-shrink:0}
+.dh .dd{font-family:var(--mono);font-size:12px;color:var(--fg);width:78px;flex-shrink:0}
+.dh .tag{font-family:var(--mono);font-size:9.5px;text-transform:uppercase;letter-spacing:.07em;
+  padding:2.5px 7px;border-radius:5px;flex-shrink:0;font-weight:500}
+.dh .lb{font-size:14px;font-weight:500;min-width:0}
+.dh .mn{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--dim2);flex-shrink:0}
+.dh .ck{font-family:var(--mono);font-size:10.5px;color:var(--ok);flex-shrink:0}
+.day.alldone .dh .lb{color:var(--dim2)}
+.dbody{border-top:1px solid var(--line);padding:12px 17px 14px 17px}
+.focus{font-size:12.5px;color:var(--dim);line-height:1.55;margin-bottom:11px;font-style:italic}
+.blk{display:flex;align-items:flex-start;gap:10px;padding:5px 0;font-size:13px}
+.cb{width:15px;height:15px;border:1.5px solid var(--line2);border-radius:4px;flex-shrink:0;margin-top:2px;
+  display:grid;place-items:center;font-size:10px;color:var(--bg)}
+.cb.on{background:var(--ok);border-color:var(--ok)}
+.cb.on::after{content:'✓';font-weight:700;line-height:1}
+.blk .bm{font-family:var(--mono);font-size:10.5px;color:var(--warn);width:42px;flex-shrink:0;margin-top:2px}
+.blk .bn{font-weight:500}
+.blk .bd{font-size:12px;color:var(--dim2);margin-top:2px}
+.blk.done .bn{color:var(--dim2);text-decoration:line-through;text-decoration-color:var(--dim2)}
+.blk .bdd{margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--ok);flex-shrink:0;margin-top:3px}
+.blk .bn a.clink{color:var(--warn);text-decoration:underline;text-underline-offset:2px}
+.blk .bn a.clink:hover{color:var(--fg)}
+.blk .openpill{font-family:var(--mono);font-size:9px;color:var(--bg);background:var(--warn);border-radius:4px;padding:1px 6px;margin-left:5px;text-transform:uppercase;letter-spacing:.05em}
+.rest{display:flex;align-items:center;gap:12px;padding:9px 17px;margin-bottom:7px;
+  font-family:var(--mono);font-size:11.5px;color:var(--dim2);
+  border:1px dashed var(--line);border-radius:11px}
+.restrow{opacity:.55}
+.restrow .dh{cursor:default}
+.restpill{background:#2a2a30;color:var(--dim)}
+.missedrow{opacity:.8;border-left:2px solid var(--bad);background:linear-gradient(90deg,rgba(232,112,95,.06),transparent)}
+.missedpill{background:rgba(232,112,95,.18);color:var(--bad)}
+.missedrow .lb{color:var(--bad)}
+.exam{background:linear-gradient(90deg,rgba(232,112,95,.14),transparent);border:1px solid #3a2724;
+  border-radius:11px;padding:17px 20px;display:flex;align-items:center;gap:15px;margin-top:16px;flex-wrap:wrap}
+.exam .n{font-family:var(--mono);font-size:12px;color:var(--bad);font-weight:500}
+.exam .t{font-size:14px;font-weight:600}
+.exam .s{font-size:12.5px;color:var(--dim);margin-left:auto}
+
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:12px;color:var(--dim2);line-height:1.75}
+footer code{font-family:var(--mono);background:var(--card2);padding:1.5px 5px;border-radius:4px;color:var(--dim)}
+footer a{color:var(--dim)}
+@media(max-width:680px){
+  body{padding:22px 13px 60px}
+  .stats{grid-template-columns:1fr;justify-items:stretch;text-align:left;gap:20px}
+  .grid,.rankcard{width:100%}
+  .stats .grid{grid-template-columns:1fr 1fr}
+  header{flex-direction:column}.countdown{text-align:left}
+  .dh .dn{display:none}.dh .lb{flex-basis:100%;order:5}
+  .mp .body{padding-left:20px}
+}
+.logday{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:13px 17px;margin-bottom:8px}
+.logday.planned{border-left:2px solid var(--warn)}
+.logday.alldone{border-left:2px solid var(--ok)}
+.logh{display:flex;align-items:center;gap:12px;margin-bottom:9px;flex-wrap:wrap}
+.logh .ld{font-family:var(--mono);font-size:12.5px;color:var(--fg)}
+.logh .lt{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:.08em;padding:2px 7px;border-radius:5px}
+.logh .lm{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--dim2)}
+.logi{display:flex;align-items:flex-start;gap:10px;padding:4px 0;font-size:13px}
+.logi .cb{margin-top:2px}
+.logi .lsub{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:.05em;padding:2px 0;border-radius:4px;flex-shrink:0;margin-top:1px;width:54px;text-align:center}
+.logi .lmin{font-family:var(--mono);font-size:10.5px;color:var(--warn);width:38px;flex-shrink:0;margin-top:2px}
+.logi .lw{min-width:0}
+.logi.done .lw{color:var(--dim2);text-decoration:line-through;text-decoration-color:var(--dim2)}
+.lognote{margin-top:9px;padding-top:9px;border-top:1px solid var(--line);font-size:12.5px;color:var(--dim);line-height:1.55}
+.logempty{font-size:13px;color:var(--dim2);font-style:italic;padding:4px 0}
+.exams{display:flex;flex-direction:column;gap:6px}
+.exrow{display:flex;align-items:center;gap:13px;background:var(--card);border:1px solid var(--line);border-radius:9px;padding:9px 15px;flex-wrap:wrap}
+.exrow.prac{border-left:2px solid var(--bad)}
+.exrow .exd{font-family:var(--mono);font-size:12px;color:var(--fg);width:96px;flex-shrink:0}
+.exrow .extag{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:.06em;padding:2px 8px;border-radius:5px;flex-shrink:0;min-width:50px;text-align:center}
+.exrow .exp{font-size:13.5px;font-weight:500}
+.exrow .ext{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--dim2);flex-shrink:0}
+.tt{display:flex;flex-direction:column;gap:8px}
+.ttrow{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:12px 16px}
+.ttrow.done{border-left:2px solid var(--ok)}
+.ttrow.gaps{border-left:2px solid var(--warn)}
+.tth{display:flex;align-items:center;gap:11px;margin-bottom:8px;flex-wrap:wrap}
+.tth .ttag{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:.06em;padding:2px 8px;border-radius:5px;flex-shrink:0;min-width:50px;text-align:center}
+.tth .ttop{font-size:14px;font-weight:600}
+.tth .ttst{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:.07em;padding:2px 7px;border-radius:5px}
+.tth .ttd{margin-left:auto;font-family:var(--mono);font-size:10.5px;color:var(--dim2)}
+.ttsubs{display:flex;flex-wrap:wrap;gap:6px}
+.ttsubs span{font-size:11.5px;color:var(--dim);background:var(--card2);border:1px solid var(--line);border-radius:6px;padding:2px 9px}
+.meth{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:8px}
+.meth.decl{border-left:2px solid var(--warn)}
+.meth.proc{border-left:2px solid var(--ok)}
+.methh{display:flex;align-items:baseline;gap:12px;margin-bottom:10px;flex-wrap:wrap}
+.methk{font-weight:600;font-size:15px}
+.meths{font-family:var(--mono);font-size:11.5px;color:var(--dim2)}
+.methsteps{list-style:none;counter-reset:ms}
+.methsteps li{counter-increment:ms;font-size:13.5px;color:var(--dim);padding:5px 0 5px 28px;position:relative;line-height:1.55}
+.methsteps li::before{content:counter(ms);position:absolute;left:0;top:4px;font-family:var(--mono);font-size:10px;color:var(--warn);border:1px solid var(--line2);border-radius:4px;width:17px;height:17px;text-align:center;line-height:16px}
+.methsteps li b{color:var(--fg);font-weight:500}
+
+.bsp{display:flex;flex-direction:column;gap:2px}
+.bsphd,.bsprow{display:grid;grid-template-columns:1fr 46px 46px 46px 92px 44px;gap:8px;align-items:center;padding:7px 12px}
+.bsphd{font-family:var(--mono);font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim2);border-bottom:1px solid var(--line)}
+.bsprow{background:var(--card);border:1px solid var(--line);border-radius:9px}
+.bsprow.hi{border-left:2px solid var(--ok)}
+.bsprow.lo{border-left:2px solid var(--bad);opacity:.72}
+.bspt{font-size:13px;font-weight:500;line-height:1.35}
+.bspb{font-family:var(--mono);font-size:9px;color:var(--dim2);margin-left:6px}
+.bspn{font-family:var(--mono);font-size:11px;color:var(--dim);text-align:right}
+.bspn.pk{color:var(--fg);font-weight:600}
+.bspw{display:flex;align-items:center;gap:7px}
+.bspbar{flex:1;height:7px;background:rgba(255,255,255,.06);border-radius:4px;overflow:hidden}
+.bspbar i{display:block;height:100%;border-radius:4px}
+.bspwn{font-family:var(--mono);font-size:11px;font-weight:600;min-width:34px;text-align:right}
+.bspm{font-family:var(--mono);font-size:11px;color:var(--dim2);text-align:right}
+.bspnote{grid-column:1/-1;font-size:11.5px;color:var(--dim);line-height:1.5;padding-top:5px;border-top:1px dashed var(--line);margin-top:5px}
+@media(max-width:760px){
+  .bsphd{display:none}
+  .bsprow{grid-template-columns:1fr 44px 44px;grid-auto-rows:min-content;row-gap:5px}
+  .bspt{grid-column:1/-1}
+  .bspw{grid-column:1/-1}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Prelim Study Plan</h1>
+      <div class="sub" id="hsub"></div>
+    </div>
+    <div class="countdown"><div class="n" id="cd">—</div><div class="l" id="cdl">days to prelim</div></div>
+  </header>
+
+  <div class="callout"><div class="k">Target</div><p id="mTarget"></p></div>
+
+  <div class="stats">
+    <div class="rankcard" id="rankTable"></div>
+    <div class="grid">
+      <div class="stat"><div class="k">Days to prelim</div><div class="v" id="s_prelim">—</div></div>
+      <div class="stat"><div class="k">Study days left</div><div class="v" id="s_studyleft">—</div></div>
+    </div>
+  </div>
+
+  <h2>🧭 How you study each subject<span class="rule"></span></h2>
+  <div class="h2sub">Two methods (from the 18 Jul mentor call). <b>Procedural</b> — Maths & Chem: solve and extract the process. <b>Declarative</b> — CSC, GP & Bio: the 5-step model-answer loop. Wispr Flow for every essay attempt.</div>
+  <div id="methods"></div>
+
+  <h2>🗓 Your day-by-day plan<span class="rule"></span></h2>
+  <div class="h2sub">Every study day, spelled out. Click a day to open its blocks — or use the button to open or close all of them at once. Most days are <b>two clusters (2h + 2h)</b>; a cluster's gap-drill adds ~30 min and can spill into the next day. <b>GP</b> is one 50-min phase every 2–3 days. <b>Saturday</b> = cumulative test (4–6h); <b>Sunday</b> = rest.</div>
+  <div class="foldbar">
+    <button class="foldbtn" id="foldBtn">⊞ Expand all days</button>
+    <span class="hint">show every block on every day, or collapse back to the date rows</span>
+  </div>
+  <div id="sched"></div>
+
+  <h2>🎯 Your prelim papers<span class="rule"></span></h2>
+  <div class="h2sub">The finish line — every paper you sit, in order. GP opens it (24 Aug); Biology closes it. The two <span style="color:var(--bad)">practical</span> papers come early and still need dedicated prep in October.</div>
+  <div class="exams" id="exams"></div>
+
+  <h2>🏁 A-Level papers — the real thing<span class="rule"></span></h2>
+  <div class="h2sub">Official SEAB 2026 timetable (updated 13 Feb 2026). Your five subjects, in order. The two <span style="color:var(--bad)">practicals</span> fall in October; every written paper runs 2–26 Nov 2026. Prelims are the rehearsal — this is the finish line.</div>
+  <div class="exams" id="alevelExams"></div>
+
+  <style>
+  #rdboard .rdb{border:1px solid var(--line,#2a2d34);border-radius:8px;overflow:hidden;margin:10px 0 14px}
+  .rdbrow{display:flex;justify-content:space-between;padding:8px 14px;border-bottom:1px solid var(--line,#2a2d34);font-size:14px}
+  .rdbrow:last-child{border-bottom:none}.rdtot{background:rgba(255,255,255,.03)}.rdbn b{color:#e7e7ea}
+  .rdsub{border:1px solid var(--line,#2a2d34);border-radius:8px;margin:6px 0;overflow:hidden}
+  .rdsub summary{cursor:pointer;padding:9px 14px;display:flex;justify-content:space-between;align-items:center;font-size:14px;list-style:none}
+  .rdsub summary::-webkit-details-marker{display:none}
+  .rdname{font-weight:600}.rdroll{color:var(--mut,#8c909b);font-size:12.5px}
+  .rdrow{display:flex;align-items:center;gap:10px;padding:5px 14px;font-size:13px;border-top:1px solid var(--line,#2a2d34)}
+  .rdrow.sac{opacity:.45}.rdt{flex:0 0 46%;color:#c9ccd3}
+  .sacp{font-size:10px;color:var(--bad,#e8845f);border:1px solid var(--bad,#e8845f);border-radius:3px;padding:0 3px;margin-left:4px}
+  .rdbar{flex:1;height:7px;background:rgba(255,255,255,.06);border-radius:4px;overflow:hidden}
+  .rdbar i{display:block;height:100%;border-radius:4px}
+  .rdpct{flex:0 0 36px;text-align:right;color:var(--mut,#8c909b);font-size:12px}
+  </style>
+  <h2>📊 A-Level readiness<span class="rule"></span></h2>
+  <div class="h2sub">How prepped you are, per topic — updated after every test. <b>Prelim %</b> = distance to a prelim-B · <b>A-lvl %</b> = distance to full mastery. Tap a subject to expand.<span id="rdmeta" style="color:var(--mut)"></span></div>
+  <div id="rdboard"></div>
+  <div id="readiness"></div>
+
+  <style>.collap>summary{list-style:none;cursor:pointer}.collap>summary::-webkit-details-marker{display:none}.collap>summary h2{margin-top:24px}.collap[open]>summary h2 .rule{opacity:.5}</style>
+  <details class="collap">
+    <summary><h2>📓 Progress log <span style="font-size:11px;color:var(--mut);font-weight:400">▸ tap</span><span class="rule"></span></h2></summary>
+    <div class="h2sub">What you actually studied, newest first. The plan above is the target; this is the record of what really happened.</div>
+    <div id="log"></div>
+  </details>
+
+  <h2>🧪 Test topics — the cumulative test pool<span class="rule"></span></h2>
+  <div class="h2sub">Every topic you finish lands here. Each Saturday's cumulative test is built from this list.</div>
+  <div class="tt" id="tt"></div>
+
+  <h2>🗺 The full map — everything to drill<span class="rule"></span></h2>
+  <div class="h2sub">Every topic across all five subjects, with its tutorial number. <b>DRILL</b> = prelim priority · <b>LATER</b> = pushed to A-levels · <b>BUILT</b> = done. By the A-levels (2–27 Nov 2026) everything here should be nailed, multiple times.</div>
+  <div id="map"></div>
+
+  <h2>🧬 Bio topic split — what each paper actually asks<span class="rule"></span></h2>
+  <div class="h2sub">Every JC prelim in the archive, classified by topic and weighted by the real 9477 marks (P1 30 · P2 90 · P3 75; P4 excluded, practicals skipped). <b>Use it to choose what to sacrifice.</b> Green = top third. Red = bottom third, the cheap cuts.<span id="bspmeta" style="color:var(--dim2)"></span></div>
+  <div class="bsp" id="bsp"></div>
+  <div class="h2sub" style="margin-top:14px;font-size:12px" id="bspcav"></div>
+
+
+  <footer>
+    This dashboard tracks your <b>readiness per subject</b>, ranked — not guessed hours. Each subject's % is the mean mastery across its topics; it rises every time you drill something and it survives to November. Days-to-prelim and study-days-left update live.<br>
+    You report what you finished; it's written into <code>plan.js</code> and pushed.
+    <span id="lu"></span>
+  </footer>
+</div>
+
+<script src="plan.js"></script>
+<script>
+(function(){
+  const P=window.PLAN, S=P.subjects, M=P.meta;
+  const today=new Date().toISOString().slice(0,10);
+  const PRELIM='2026-08-24';
+  const h=m=>(m/60);
+  const fmt=m=>{const x=h(m); return (Math.round(x*10)/10).toString();};
+  const MO=['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const lbl=(s)=>{const[,mo,dy]=s.split('-');return +dy+' '+MO[+mo];};
+
+  // ---- accurate counters (no guessed hours, no delta, no "slipping") ----
+  const cdDays=Math.max(0,Math.round((new Date(PRELIM)-new Date(today))/864e5));
+  const studyLeft=P.days.filter(d=>d.type==='standard'&&d.date>=today).length;
+  // clusters done = finished-before-this-grid baseline + any grid cluster now ticked off
+  const seen=new Set();
+  P.days.forEach(d=>d.blocks.forEach(b=>{ if(b.clusterRef&&b.done&&!seen.has(b.clusterRef)){seen.add(b.clusterRef);} }));
+  const clustersDone=(M.clustersDone||0)+seen.size;
+  const clustersTot=M.clustersTotal||clustersDone||1;
+  const topicsLeft=Math.max(0,clustersTot-clustersDone);
+  const pct=clustersDone/clustersTot;
+
+  document.getElementById('hsub').innerHTML=
+    `${M.subtitle||('Ethan Lim · '+M.studyDays+' study days')} <span class="mono">${lbl(M.start)} → prelim ${lbl(PRELIM)}</span>`;
+  document.getElementById('cd').textContent=cdDays;
+  document.getElementById('cdl').textContent=cdDays===0?'prelim today':'days to prelim';
+  document.getElementById('mTarget').innerHTML=M.target;
+  document.getElementById('lu').textContent='Last updated '+M.lastUpdated+'.';
+
+  document.getElementById('s_prelim').textContent=cdDays;
+  document.getElementById('s_studyleft').textContent=studyLeft;
+
+  // ---- study methods ----
+  const methEl=document.getElementById('methods');
+  if(methEl && P.methods){
+    methEl.innerHTML=P.methods.map(m=>{
+      const decl=/declarative/i.test(m.kind);
+      return `<div class="meth ${decl?'decl':'proc'}">
+        <div class="methh"><span class="methk">${m.kind}</span><span class="meths">${m.subjects}</span></div>
+        <ol class="methsteps">${m.steps.map(s=>`<li>${s}</li>`).join('')}</ol></div>`;
+    }).join('');
+  }
+
+  const order=['maths','chem','csc','bio','gp'];
+
+  // ---- schedule (the star) ----
+  const byWeek={}; P.days.forEach(d=>(byWeek[d.week]||=[]).push(d));
+  let html='';
+  P.bounds.forEach(([w,a,b])=>{
+    const ds=byWeek[w]||[];
+    const wm=ds.reduce((x,d)=>x+d.mins,0), wd=ds.reduce((x,d)=>x+d.blocks.reduce((y,z)=>y+(z.done?z.mins:0),0),0);
+    const r0=ds[0].date, r1=ds[ds.length-1].date;
+    html+=`<div class="wk"><div class="wkh"><span class="t">▶ WEEK ${w} · ${lbl(r0)}–${lbl(r1)}</span>
+      <span class="d">${P.weekTitles[w]||''}</span><span class="rule"></span>
+      <span class="pc">${fmt(wd)}/${fmt(wm)}h</span></div>`;
+    ds.forEach(d=>{
+      if(d.type==='rest'){ const[,mo,dy]=d.date.split('-'); const mis=d.skipped;
+        html+=`<div class="day restrow${mis?' missedrow':''}"><div class="dh">
+          <span class="dn" style="${mis?'color:var(--bad)':''}">${mis?'⚑':'—'}</span><span class="dd">${d.weekday} ${+dy} ${MO[+mo]}</span>
+          <span class="tag ${mis?'missedpill':'restpill'}">${mis?'MISSED':'REST'}</span><span class="lb">${d.label}</span></div></div>`;
+        return; }
+      const s=S[d.subject]||{name:d.type,colour:'#8c909b'}, all=d.blocks.every(x=>x.done), any=d.blocks.some(x=>x.done);
+      const [,mo,dy]=d.date.split('-');
+      const cls=['day',d.type,d.date===today?'today':'',d.date<today?'past':'',all?'alldone':''].filter(Boolean).join(' ');
+      const nDone=d.blocks.filter(x=>x.done).length;
+      const tagTxt=d.type==='test'?'TEST':'';
+      const tagCol=d.type==='test'?'var(--bad)':s.colour;
+      html+=`<details class="${cls}" ${d.date===today?'open':''}>
+        <summary class="dh">
+          <span class="dn">${d.donePast?'DONE':'DAY '+d.n}</span>
+          <span class="dd">${d.weekday} ${+dy} ${MO[+mo]}</span>
+          ${tagTxt?`<span class="tag" style="background:${tagCol}1f;color:${tagCol}">${tagTxt}</span>`:''}
+          <span class="lb">${d.label}${d.flag?`<span style="color:var(--bad);font-size:11px;margin-left:5px">${d.flag}</span>`:''}</span>
+          ${all?'<span class="ck">✓ done</span>':(any?`<span class="ck">${nDone}/${d.blocks.length}</span>`:'')}
+          <span class="mn">${fmt(d.mins)}h</span>
+        </summary>
+        <div class="dbody">
+          ${d.focus?`<div class="focus">${d.focus}</div>`:''}
+          ${d.blocks.map(b=>`<div class="blk ${b.done?'done':''}">
+            <span class="cb ${b.done?'on':''}"></span>
+            <span class="bm">${b.mins}m</span>
+            <span><span class="bn">${b.clusterHref?`<a class="clink" href="${b.clusterHref}" target="_blank" rel="noopener">${b.name}</a><span class="openpill">open ▸</span>`:b.name}</span>${b.desc?`<div class="bd">${b.desc}</div>`:''}</span>
+            ${b.doneDate?`<span class="bdd">${b.doneDate}</span>`:''}
+          </div>`).join('')}
+        </div></details>`;
+    });
+    html+='</div>';
+  });
+  html+=`<div class="exam"><span class="n">24 AUG</span><span class="t">${M.prelimLabel||'Prelim exams begin — GP Paper 1'}</span>
+    <span class="s">Everything above should be drilled at least once by here.</span></div>`;
+  document.getElementById('sched').innerHTML=html;
+
+  // ---- expand / collapse all days ----
+  let expanded=false;
+  const foldBtn=document.getElementById('foldBtn');
+  foldBtn.onclick=function(){
+    expanded=!expanded;
+    document.querySelectorAll('#sched details.day').forEach(el=>{el.open=expanded;});
+    foldBtn.textContent=expanded?'⊟ Collapse all days':'⊞ Expand all days';
+  };
+
+  // ---- prelim exam dates ----
+  const exEl=document.getElementById('exams');
+  if(exEl && P.exams && P.exams.length){
+    exEl.innerHTML=P.exams.map(x=>{
+      const s=S[x.subject]||{name:x.subject,colour:'#8c909b'};
+      const [,mo,dy]=x.date.split('-');
+      const prac=/Practical/i.test(x.paper);
+      return `<div class="exrow ${prac?'prac':''}">
+        <span class="exd">${x.weekday} ${+dy} ${MO[+mo]}</span>
+        <span class="extag" style="background:${s.colour}1f;color:${s.colour}">${s.name}</span>
+        <span class="exp">${x.paper}</span>
+        <span class="ext">${x.time}${x.dur?' · '+x.dur:''}</span>
+      </div>`;
+    }).join('');
+  }
+
+  // ---- A-level papers ----
+  const alEl=document.getElementById('alevelExams');
+  if(alEl && P.alevelExams && P.alevelExams.length){
+    alEl.innerHTML=P.alevelExams.map(x=>{
+      const s=S[x.subject]||{name:x.subject,colour:'#8c909b'};
+      const [,mo,dy]=x.date.split('-');
+      const prac=/Practical/i.test(x.paper);
+      return `<div class="exrow ${prac?'prac':''}">
+        <span class="exd">${x.weekday} ${+dy} ${MO[+mo]}</span>
+        <span class="extag" style="background:${s.colour}1f;color:${s.colour}">${s.name}</span>
+        <span class="exp">${x.paper}</span>
+        <span class="ext">${x.time}${x.dur?' · '+x.dur:''}</span>
+      </div>`;
+    }).join('');
+  }
+
+  // ---- readiness ----
+  if(P.readiness){
+    const R=P.readiness, mEl=document.getElementById('rdmeta');
+    if(mEl) mEl.textContent=' · last test: '+R.lastTest;
+    const bc=m=> m>=70?'#5fd3a8':m>=40?'#e8c65f':m>=15?'#e8845f':'#4a4d55';
+    const board=[]; let body='';
+    for(const sk of Object.keys(R.subjects)){
+      const sub=S[sk]||{name:sk,colour:'#8c909b',full:sk};
+      const tops=R.subjects[sk].topics, cov=tops.filter(t=>!t.sac);
+      const al=Math.round(tops.reduce((a,t)=>a+t.m,0)/tops.length);
+      const pr=cov.length?Math.min(100,Math.round((cov.reduce((a,t)=>a+t.m,0)/cov.length)/0.68)):0;
+      board.push({name:sub.name,colour:sub.colour,pr,al});
+      let rows='';
+      tops.forEach(t=>{ rows+=`<div class="rdrow${t.sac?' sac':''}"><span class="rdt">${t.t}${t.sac?' <span class="sacp">skip</span>':''}</span><span class="rdbar"><i style="width:${t.m}%;background:${bc(t.m)}"></i></span><span class="rdpct">${t.m}%</span></div>`; });
+      body+=`<details class="rdsub"><summary><span class="rdname" style="color:${sub.colour}">${sub.full||sub.name}</span><span class="rdroll">prelim ${pr}% · A-lvl ${al}%</span></summary>${rows}</details>`;
+    }
+    board.sort((a,b)=>b.pr-a.pr);
+    let bd='<div class="rdb">';
+    board.forEach(b=>{bd+=`<div class="rdbrow"><span style="color:${b.colour};font-weight:600">${b.name}</span><span class="rdbn">prelim <b>${b.pr}%</b> · A-lvl <b>${b.al}%</b></span></div>`;});
+    const op=Math.round(board.reduce((a,b)=>a+b.pr,0)/board.length), oa=Math.round(board.reduce((a,b)=>a+b.al,0)/board.length);
+    bd+=`<div class="rdbrow rdtot"><span style="font-weight:700">Overall</span><span class="rdbn">prelim <b>${op}%</b> · A-lvl <b>${oa}%</b></span></div></div>`;
+    const bEl=document.getElementById('rdboard'); if(bEl) bEl.innerHTML=bd;
+    const rEl=document.getElementById('readiness'); if(rEl) rEl.innerHTML=body;
+
+    // ---- hero rank table (replaces the old ring; board already sorted by prelim desc) ----
+    const rkEl=document.getElementById('rankTable');
+    if(rkEl){
+      const barOf=(v)=>`<span class="rkbar"><i style="width:${Math.max(v,2)}%;background:${bc(v)}"></i></span>`;
+      let rk='<div class="rkhd"><span>Readiness — ranked</span><span>prelim · A&#8209;lvl</span></div>';
+      board.forEach((b,i)=>{ rk+=`<div class="rkrow"><span class="rknum">${i+1}</span><span class="rkname" style="color:${b.colour}">${b.name}</span>${barOf(b.pr)}<span class="rknums"><b>${b.pr}%</b> · ${b.al}%</span></div>`; });
+      rk+=`<div class="rkrow tot"><span class="rknum">Σ</span><span class="rkname">Overall</span>${barOf(op)}<span class="rknums"><b>${op}%</b> · ${oa}%</span></div>`;
+      rkEl.innerHTML=rk;
+    }
+  }
+
+  // ---- progress log ----
+  const logEl=document.getElementById('log');
+  if(P.log && P.log.length){
+    logEl.innerHTML=P.log.map(e=>{
+      const allDone=e.items.every(i=>i.done), anyDone=e.items.some(i=>i.done);
+      const [,mo,dy]=e.date.split('-');
+      const tot=e.items.reduce((x,i)=>x+i.mins,0), dn=e.items.reduce((x,i)=>x+(i.done?i.mins:0),0);
+      const status=allDone?['done','var(--ok)','rgba(95,211,168,.15)']
+                  :anyDone?['in progress','var(--warn)','rgba(232,198,95,.15)']
+                          :['planned','var(--warn)','rgba(232,198,95,.12)'];
+      const cls='logday '+(allDone?'alldone':(anyDone?'':'planned'));
+      return `<div class="${cls}">
+        <div class="logh"><span class="ld">${e.weekday} ${+dy} ${MO[+mo]}</span>
+          <span class="lt" style="color:${status[1]};background:${status[2]}">${status[0]}</span>
+          <span class="lm">${fmt(dn)}/${fmt(tot)}h</span></div>
+        ${e.items.map(i=>{const s=S[i.subject]||{name:i.subject,colour:'#8c909b'};
+          return `<div class="logi ${i.done?'done':''}">
+            <span class="cb ${i.done?'on':''}"></span>
+            <span class="lsub" style="background:${s.colour}1f;color:${s.colour}">${s.name}</span>
+            <span class="lmin">${i.mins}m</span>
+            <span class="lw">${i.what}</span>
+          </div>`;}).join('')}
+        ${e.note?`<div class="lognote">${e.note}</div>`:''}
+      </div>`;
+    }).join('');
+  } else {
+    logEl.innerHTML='<div class="logempty">No entries yet — your first logged day will appear here.</div>';
+  }
+
+  // ---- test topics ----
+  const ttEl=document.getElementById('tt');
+  if(ttEl && P.testTopics && P.testTopics.length){
+    ttEl.innerHTML=P.testTopics.map(t=>{
+      const s=S[t.subject]||{name:t.subject,colour:'#8c909b'};
+      const done=t.status==='done'||/done/.test(t.status||'');
+      const stc=done?'var(--ok)':'var(--warn)', stbg=done?'rgba(95,211,168,.15)':'rgba(232,198,95,.15)';
+      return `<div class="ttrow ${done?'done':'gaps'}">
+        <div class="tth">
+          <span class="ttag" style="background:${s.colour}1f;color:${s.colour}">${s.name}</span>
+          <span class="ttop">${t.topic}</span>
+          <span class="ttst" style="color:${stc};background:${stbg}">${t.status}</span>
+          <span class="ttd">${t.date||''}</span>
+        </div>
+        <div class="ttsubs">${(t.subs||[]).map(x=>`<span>${x}</span>`).join('')}</div>
+      </div>`;
+    }).join('');
+  } else if(ttEl){ ttEl.innerHTML='<div class="logempty">No finished topics yet.</div>'; }
+
+  // ---- map ----
+  document.getElementById('map').innerHTML=order.map((k,i)=>{
+    const s=S[k], m=P.map[k]; if(!m) return '';
+    return `<details class="mp" ${i===0?'open':''}>
+      <summary><span class="arw">▶</span><span class="snm" style="color:${s.colour}">${s.full}</span>
+        <span class="scd">${s.code.split(' ')[0]}</span><span class="stag">· ${m.tag}</span>
+        <span class="sun">${m.units||''}</span></summary>
+      <div class="body">
+        ${m.sections.map(sec=>`
+          <div class="sec">${sec.name}</div>
+          ${sec.topics.map(t=>`<div class="tp">
+            <div class="th"><span class="tn">${t.n}</span>
+              <span class="badge b-${t.b}">${t.b==='BUILT'?'✓ BUILT':t.b==='DRILL'?'◎ DRILL':t.b==='LATER'?'· LATER':'👁 COVER'}</span>
+              ${t.f?`<span class="tf">⚑ ${t.f}</span>`:''}</div>
+            ${t.subs&&t.subs.length? (t.subs.length>3
+                ? `<ul>${t.subs.map(x=>`<li>${x}</li>`).join('')}</ul>`
+                : `<div class="inline">${t.subs.join(' · ')}</div>`) : ''}
+          </div>`).join('')}`).join('')}
+        ${m.note?`<div class="mnote">${m.note}</div>`:''}
+      </div></details>`;}).join('');
+})();
+
+  // ---- Bio topic split ----
+  (function(){
+    const BS=(window.PLAN&&window.PLAN.bioSplit)||null, host=document.getElementById('bsp');
+    if(!BS||!host) return;
+    const r=BS.rows.slice().sort((a,b)=>b.w-a.w), n=r.length;
+    const hi=Math.ceil(n/3), lo=n-Math.ceil(n/3);
+    const col=v=>v>=8?'var(--ok)':v>=3?'var(--warn)':'var(--bad)';
+    const mx=Math.max.apply(null,r.map(x=>x.w));
+    let out='<div class="bsphd"><span>Topic (book)</span><span style="text-align:right">P1</span><span style="text-align:right">P2</span><span style="text-align:right">P3</span><span>Weighted</span><span style="text-align:right">mk/yr</span></div>';
+    r.forEach((x,i)=>{
+      const cls=i<hi?' hi':(i>=lo?' lo':'');
+      const pk=Math.max(x.p1,x.p2,x.p3);
+      const cell=(v)=>`<span class="bspn${v===pk?' pk':''}">${v.toFixed(1)}</span>`;
+      out+=`<div class="bsprow${cls}">`
+         + `<span class="bspt">${x.t}<span class="bspb">BOOK ${x.b}</span></span>`
+         + cell(x.p1)+cell(x.p2)+cell(x.p3)
+         + `<span class="bspw"><span class="bspbar"><i style="width:${Math.max(3,x.w/mx*100)}%;background:${col(x.w)}"></i></span><span class="bspwn">${x.w.toFixed(1)}%</span></span>`
+         + `<span class="bspm">${x.m}</span>`
+         + (x.n?`<span class="bspnote">${x.n}</span>`:'')
+         + `</div>`;
+    });
+    host.innerHTML=out;
+    const mt=document.getElementById('bspmeta');
+    if(mt) mt.textContent=` — ${BS.meta.papers} papers, ${BS.meta.marks.toLocaleString()} marks and MCQs.`;
+    const cv=document.getElementById('bspcav');
+    if(cv) cv.innerHTML=`<b>Read it with these in mind.</b> ${BS.meta.src} ${BS.meta.unc}.`;
+  })();
+
+</script>
+</body>
+</html>

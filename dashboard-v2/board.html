@@ -130,6 +130,67 @@ button.dgr:hover{background:#3a2119;border-color:#7a4030}
   border:1px solid rgba(95,211,168,.42);border-radius:4px;padding:1px 5px;font-weight:600;white-space:nowrap}
 .prac2{color:var(--bad)}
 footer{margin-top:38px;color:var(--dim);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
+
+.bsp{display:flex;flex-direction:column;gap:2px;margin-top:2px}
+.bsphd,.bsprow{display:grid;grid-template-columns:1fr 42px 42px 42px 96px 40px;gap:8px;align-items:center;padding:7px 12px}
+.bsphd{font-family:var(--mono,monospace);font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);border-bottom:1px solid var(--line)}
+.bsprow{background:var(--card,#121317);border:1px solid var(--line);border-radius:9px}
+.bsprow.hi{border-left:2px solid var(--ok)}
+.bsprow.lo{border-left:2px solid var(--bad);opacity:.72}
+.bspt{font-size:13px;font-weight:500;line-height:1.35}
+.bspb{font-family:var(--mono,monospace);font-size:9px;color:var(--dim);margin-left:6px}
+.bspn{font-family:var(--mono,monospace);font-size:11px;color:var(--dim);text-align:right}
+.bspn.pk{color:var(--fg);font-weight:600}
+.bspw{display:flex;align-items:center;gap:7px}
+.bspbar{flex:1;height:7px;background:rgba(255,255,255,.06);border-radius:4px;overflow:hidden}
+.bspbar i{display:block;height:100%;border-radius:4px}
+.bspwn{font-family:var(--mono,monospace);font-size:11px;font-weight:600;min-width:34px;text-align:right}
+.bspm{font-family:var(--mono,monospace);font-size:11px;color:var(--dim);text-align:right}
+.bspnote{grid-column:1/-1;font-size:11.5px;color:var(--dim);line-height:1.5;padding-top:5px;border-top:1px dashed var(--line);margin-top:5px}
+@media(max-width:760px){.bsphd{display:none}.bsprow{grid-template-columns:1fr 42px 42px;row-gap:5px}.bspt,.bspw{grid-column:1/-1}}
+
+.twwrap{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card);margin-top:12px}
+.twscroll{overflow-x:auto}
+table.tw{border-collapse:collapse;width:100%;font-size:13px;min-width:700px}
+table.tw th{background:var(--card2);color:var(--mut);font-weight:600;font-size:10.5px;
+  letter-spacing:.07em;text-transform:uppercase;padding:10px;text-align:right;
+  border-bottom:1px solid var(--line2);white-space:nowrap}
+table.tw th:first-child{text-align:left}
+table.tw td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--line);
+  font-variant-numeric:tabular-nums;color:var(--mut)}
+table.tw td:first-child{text-align:left;color:var(--tx)}
+table.tw tr:last-child td{border-bottom:none}
+table.tw tr:hover td{background:var(--card2)}
+.twW{font-weight:700;color:var(--tx)}
+.twbar{display:inline-block;height:7px;border-radius:2px;background:var(--chem);
+  vertical-align:middle;margin-left:8px;min-width:2px;opacity:.8}
+.twflag{font-size:9.5px;font-weight:700;letter-spacing:.04em;padding:1px 5px;border-radius:3px;
+  white-space:nowrap;margin-left:5px}
+.f-KEEP{background:rgba(232,132,95,.16);color:var(--bad)}
+.f-TRIM{background:rgba(232,198,95,.16);color:var(--warn)}
+.f-CUT{background:rgba(95,211,168,.16);color:var(--ok)}
+.twkey{display:flex;gap:16px;flex-wrap:wrap;font-size:11px;color:var(--dim);margin:11px 0 0}
+.twnote{font-size:12.5px;color:var(--mut);line-height:1.65;margin-top:9px}
+.twnote b{color:var(--tx)}
+
+.tsWrap{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card)}
+.tsScroll{overflow-x:auto}
+table.ts{border-collapse:collapse;width:100%;font-size:13px;min-width:620px}
+table.ts th{background:var(--card2);color:var(--mut);font-weight:600;font-size:10px;
+  text-transform:uppercase;letter-spacing:.09em;padding:9px 11px;text-align:right;
+  border-bottom:1px solid var(--line);white-space:nowrap}
+table.ts th:first-child{text-align:left}
+table.ts td{padding:8px 11px;text-align:right;border-bottom:1px solid var(--line);
+  color:var(--mut);font-variant-numeric:tabular-nums;white-space:nowrap}
+table.ts td:first-child{text-align:left;color:var(--tx);font-weight:500}
+table.ts tr:last-child td{border-bottom:none}
+table.ts tr:hover td{background:var(--card2)}
+.tsW{font-weight:700;color:var(--tx)}
+.tsBar{display:inline-block;height:6px;border-radius:3px;background:var(--maths);
+  margin-left:9px;vertical-align:middle;opacity:.85}
+.tsM{color:var(--tx);font-weight:600}
+.tsPure{font-size:9.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--maths)}
+.tsStat{font-size:9.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--warn)}
 </style>
 </head>
 <body>
@@ -180,6 +241,78 @@ footer{margin-top:38px;color:var(--dim);font-size:12px;border-top:1px solid var(
 <h2>Mark allocation — every paper</h2>
 <div class="note">What each paper is actually worth. The stacked bar under each subject is that subject split into its papers — widths are the true weighting, so a half-width block really is half the grade. <span class="pick">CHOICE</span> marks the only places you get to pick your question; everywhere else every mark is compulsory, so an uncovered topic is a guaranteed loss.</div>
 <div id="alloc"></div>
+
+<h2>Bio topic split — what each paper actually asks</h2>
+<div class="note">Every JC prelim in the archive classified by topic, weighted by the real 9477 marks (P1 30 &middot; P2 90 &middot; P3 75; P4 excluded, practicals skipped). <b>Use it to choose what to sacrifice.</b> Green = top third. Red = bottom third, the cheap cuts. <span id="bspmeta"></span></div>
+<div class="bsp" id="bsp"></div>
+<div class="note" style="margin-top:14px" id="bspcav"></div>
+
+<h2>Chem topic weighting &mdash; what the marks are actually worth</h2>
+<div class="note">Measured from <b>12 real papers</b> (HCI prelims 2023&ndash;25 + the official 2026 specimen), 815 tagged marks. Weighted across one full sitting: <b>P1 30 &middot; P2 75 &middot; P3 ~79</b> marks, P4 excluded since practicals are skipped. <b>Shared</b> = how much of a topic's marks are earned inside <i>other</i> topics' questions &mdash; that is the number that decides what is safe to drop, not the headline percentage.</div>
+<div class="twwrap"><div class="twscroll"><table class="tw">
+<tr><th>Topic</th><th>P1</th><th>P2</th><th>P3</th><th>Weighted</th><th>~marks/yr</th><th>Shared</th></tr>
+<tr><td>Transition Elements</td><td>5.0%</td><td>3.5%</td><td>17.1%</td><td class="twW">9.6%<span class="twbar" style="width:52px"></span></td><td>17.6</td><td>7%</td></tr>
+<tr><td>Periodicity</td><td>5.4%</td><td>10.8%</td><td>6.3%</td><td class="twW">8.0%<span class="twbar" style="width:43px"></span></td><td>14.7</td><td>&mdash;</td></tr>
+<tr><td>Energetics &amp; Thermodynamics</td><td>4.6%</td><td>8.8%</td><td>5.9%</td><td class="twW">6.9%<span class="twbar" style="width:37px"></span></td><td>12.6</td><td>&mdash;</td></tr>
+<tr><td>Electrochemistry</td><td>7.1%</td><td>5.0%</td><td>6.8%</td><td class="twW">6.1%<span class="twbar" style="width:33px"></span></td><td>11.2</td><td>9%</td></tr>
+<tr><td>Chemical Bonding</td><td>6.7%</td><td>7.5%</td><td>4.4%</td><td class="twW">6.1%<span class="twbar" style="width:33px"></span></td><td>11.1</td><td>&mdash;</td></tr>
+<tr><td>Reactions &amp; Stoichiometry<span class="twflag f-KEEP">KEEP</span></td><td>6.2%</td><td>9.0%</td><td>3.1%</td><td class="twW">6.0%<span class="twbar" style="width:32px"></span></td><td>11.1</td><td>22%</td></tr>
+<tr><td>Reaction Kinetics<span class="twflag f-TRIM">TRIM</span></td><td>7.5%</td><td>10.5%</td><td>1.0%</td><td class="twW">5.9%<span class="twbar" style="width:32px"></span></td><td>10.9</td><td>&mdash;</td></tr>
+<tr><td>Chemical Equilibria</td><td>2.5%</td><td>0.7%</td><td>10.0%</td><td class="twW">5.0%<span class="twbar" style="width:27px"></span></td><td>9.1</td><td>&mdash;</td></tr>
+<tr><td>Acid-Base Equilibria</td><td>4.6%</td><td>5.2%</td><td>3.9%</td><td class="twW">4.5%<span class="twbar" style="width:24px"></span></td><td>8.3</td><td>20%</td></tr>
+<tr><td>Nitrogen Compounds</td><td>5.4%</td><td>3.7%</td><td>5.0%</td><td class="twW">4.5%<span class="twbar" style="width:24px"></span></td><td>8.3</td><td>&mdash;</td></tr>
+<tr><td>Carboxylic Acids<span class="twflag f-KEEP">KEEP</span></td><td>3.8%</td><td>4.2%</td><td>4.3%</td><td class="twW">4.1%<span class="twbar" style="width:22px"></span></td><td>7.6</td><td>68%</td></tr>
+<tr><td>Carbonyl Compounds<span class="twflag f-KEEP">KEEP</span></td><td>4.2%</td><td>0.0%</td><td>7.7%</td><td class="twW">4.0%<span class="twbar" style="width:22px"></span></td><td>7.3</td><td>63%</td></tr>
+<tr><td>Halogen Derivatives<span class="twflag f-KEEP">KEEP</span></td><td>5.4%</td><td>3.3%</td><td>2.5%</td><td class="twW">3.3%<span class="twbar" style="width:18px"></span></td><td>6.1</td><td>48%</td></tr>
+<tr><td>Solubility Equilibria<span class="twflag f-CUT">CUT</span></td><td>2.1%</td><td>4.3%</td><td>2.5%</td><td class="twW">3.2%<span class="twbar" style="width:17px"></span></td><td>5.9</td><td>12%</td></tr>
+<tr><td>Isomerism</td><td>2.1%</td><td>4.3%</td><td>2.5%</td><td class="twW">3.2%<span class="twbar" style="width:17px"></span></td><td>5.9</td><td>43%</td></tr>
+<tr><td>Hydroxy Compounds<span class="twflag f-KEEP">KEEP</span></td><td>3.3%</td><td>1.3%</td><td>4.9%</td><td class="twW">3.2%<span class="twbar" style="width:17px"></span></td><td>5.8</td><td>83%</td></tr>
+<tr><td>Alkenes<span class="twflag f-KEEP">KEEP</span></td><td>2.5%</td><td>4.7%</td><td>1.6%</td><td class="twW">3.0%<span class="twbar" style="width:16px"></span></td><td>5.5</td><td>44%</td></tr>
+<tr><td>Arenes<span class="twflag f-KEEP">KEEP</span></td><td>2.5%</td><td>0.8%</td><td>4.8%</td><td class="twW">2.8%<span class="twbar" style="width:15px"></span></td><td>5.1</td><td>57%</td></tr>
+<tr><td>Alkanes<span class="twflag f-TRIM">TRIM</span></td><td>3.3%</td><td>3.0%</td><td>2.1%</td><td class="twW">2.6%<span class="twbar" style="width:14px"></span></td><td>4.9</td><td>0%</td></tr>
+<tr><td>Polymers</td><td>0.8%</td><td>4.8%</td><td>1.1%</td><td class="twW">2.6%<span class="twbar" style="width:14px"></span></td><td>4.8</td><td>&mdash;</td></tr>
+<tr><td>Atomic Structure<span class="twflag f-TRIM">TRIM</span></td><td>6.7%</td><td>2.8%</td><td>0.3%</td><td class="twW">2.4%<span class="twbar" style="width:13px"></span></td><td>4.4</td><td>&mdash;</td></tr>
+<tr><td>Gaseous State<span class="twflag f-TRIM">TRIM</span></td><td>5.0%</td><td>0.7%</td><td>1.3%</td><td class="twW">1.7%<span class="twbar" style="width:9px"></span></td><td>3.1</td><td>51%</td></tr>
+<tr><td>Intro Organic Chemistry<span class="twflag f-KEEP">KEEP</span></td><td>3.3%</td><td>1.0%</td><td>1.0%</td><td class="twW">1.4%<span class="twbar" style="width:8px"></span></td><td>2.5</td><td>100%</td></tr>
+</table></div></div>
+<div class="twkey">
+  <span><span class="twflag f-KEEP">KEEP</span> never drop, load-bearing for other topics</span>
+  <span><span class="twflag f-TRIM">TRIM</span> cut part of it only</span>
+  <span><span class="twflag f-CUT">CUT</span> genuinely low-risk</span>
+</div>
+<div class="twnote"><b>Safe to cut or thin:</b> enzyme kinetics (flagged out of 9476 in three papers) &middot; real-gas non-ideality prose &middot; Solubility beyond Ksp and the silver-halide/ammonia case &middot; Alkanes environmental content &middot; Atomic Structure beyond configurations and ionisation-energy reasoning.</div>
+<div class="twnote"><b>Never cut, however small the number:</b> Hydroxy (83&#37; shared), Carboxylic Acids (68&#37;), Carbonyl (63&#37;), Arenes (57&#37;), Intro Organic (opens every organic question), Reactions &amp; Stoichiometry (the arithmetic inside five other topics).</div>
+<div class="twnote"><b>Highest return per hour:</b> Transition Elements (17.1&#37; of P3, self-contained) &middot; Periodicity (10.8&#37; of P2, highest marks-per-part) &middot; Polymers (7.5&#37; of the specimen, smallest content load in the subject).</div>
+<div class="twnote"><b>The 2026 specimen shifts the subject toward organic:</b> Organic <b>31.9&#37; &rarr; 43.3&#37;</b>, taken out of Physical and Inorganic. Periodicity is the biggest faller (9.1&#37; &rarr; 4.6&#37;); Polymers, Carboxylic Acids, Stoichiometry and Alkenes all rise. Transition Elements stays the largest topic either way.</div>
+
+
+<h2>Topic weighting &mdash; where the Math marks are</h2>
+<div class="note">Counted from <b>65 real papers</b>: 53 JC prelims (2016&ndash;2025, 19 JCs) and 12 A-Level papers (2017&ndash;2022), 712 questions tagged by topic and marks. Weighted over one full sitting &mdash; <b>P1 100 &middot; P2 100</b> (Sec A 40 Pure + Sec B 60 Stats) &mdash; so both papers count equally and <b>Weighted</b> is the average of the two columns. Stats topics read 0.0% in P1 because Paper 1 is Pure only.</div>
+<div class="tsWrap"><div class="tsScroll"><table class="ts">
+<tr><th>Topic</th><th>P1</th><th>P2</th><th>Weighted</th><th>~marks/yr</th><th>Section</th></tr>
+<tr><td>Integration</td><td>16.0%</td><td>6.8%</td><td class="tsW">11.4%<span class="tsBar" style="width:54px"></span></td><td class="tsM">23</td><td><span class="tsPure">Pure</span></td></tr>
+<tr><td>Vectors</td><td>12.1%</td><td>8.1%</td><td class="tsW">10.1%<span class="tsBar" style="width:48px"></span></td><td class="tsM">20</td><td><span class="tsPure">Pure</span></td></tr>
+<tr><td>Sequences &amp; Series</td><td>13.2%</td><td>6.6%</td><td class="tsW">9.9%<span class="tsBar" style="width:47px"></span></td><td class="tsM">20</td><td><span class="tsPure">Pure</span></td></tr>
+<tr><td>Probability &amp; P&amp;C</td><td>0.0%</td><td>14.6%</td><td class="tsW">7.3%<span class="tsBar" style="width:35px"></span></td><td class="tsM">15</td><td><span class="tsStat">Stats</span></td></tr>
+<tr><td>Differentiation</td><td>12.3%</td><td>2.2%</td><td class="tsW">7.3%<span class="tsBar" style="width:35px"></span></td><td class="tsM">15</td><td><span class="tsPure">Pure</span></td></tr>
+<tr><td>Graphs &amp; Transformations</td><td>12.0%</td><td>2.1%</td><td class="tsW">7.1%<span class="tsBar" style="width:34px"></span></td><td class="tsM">14</td><td><span class="tsPure">Pure</span></td></tr>
+<tr><td>Differential Equations</td><td>11.9%</td><td>0.8%</td><td class="tsW">6.3%<span class="tsBar" style="width:30px"></span></td><td class="tsM">13</td><td><span class="tsPure">Pure</span></td></tr>
+<tr><td>Complex Numbers</td><td>7.9%</td><td>4.4%</td><td class="tsW">6.1%<span class="tsBar" style="width:29px"></span></td><td class="tsM">12</td><td><span class="tsPure">Pure</span></td></tr>
+<tr><td>Normal Distribution</td><td>0.0%</td><td>10.7%</td><td class="tsW">5.4%<span class="tsBar" style="width:26px"></span></td><td class="tsM">11</td><td><span class="tsStat">Stats</span></td></tr>
+<tr><td>DRV &amp; Binomial</td><td>0.0%</td><td>10.4%</td><td class="tsW">5.2%<span class="tsBar" style="width:25px"></span></td><td class="tsM">10</td><td><span class="tsStat">Stats</span></td></tr>
+<tr><td>Functions</td><td>5.9%</td><td>4.2%</td><td class="tsW">5.0%<span class="tsBar" style="width:24px"></span></td><td class="tsM">10</td><td><span class="tsPure">Pure</span></td></tr>
+<tr><td>Hypothesis Testing</td><td>0.0%</td><td>9.6%</td><td class="tsW">4.8%<span class="tsBar" style="width:23px"></span></td><td class="tsM">9</td><td><span class="tsStat">Stats</span></td></tr>
+<tr><td>Correlation &amp; Regression</td><td>0.0%</td><td>9.0%</td><td class="tsW">4.5%<span class="tsBar" style="width:21px"></span></td><td class="tsM">9</td><td><span class="tsStat">Stats</span></td></tr>
+<tr><td>Maclaurin Series</td><td>4.6%</td><td>4.4%</td><td class="tsW">4.5%<span class="tsBar" style="width:21px"></span></td><td class="tsM">9</td><td><span class="tsPure">Pure</span></td></tr>
+<tr><td>Sampling</td><td>0.0%</td><td>5.9%</td><td class="tsW">3.0%<span class="tsBar" style="width:14px"></span></td><td class="tsM">6</td><td><span class="tsStat">Stats</span></td></tr>
+<tr><td>Equations &amp; Inequalities</td><td>4.2%</td><td>0.1%</td><td class="tsW">2.1%<span class="tsBar" style="width:10px"></span></td><td class="tsM">4</td><td><span class="tsPure">Pure</span></td></tr>
+</table></div></div>
+<div class="note" style="margin-top:13px">
+<p style="margin:0 0 7px"><b>Nothing here is safe to cut.</b> The biggest topic in the whole subject is Integration at 23 of 200 marks, and the top six together are only 106. Math has no low-risk drop &mdash; the distribution is flat, so every topic you skip costs roughly what the next one would. That is the opposite of Bio, where the tail genuinely thins out.</p>
+<p style="margin:0 0 7px"><b>Paper 1 is flatter than Paper 2.</b> Six P1 topics sit within 12&ndash;16 marks of each other. Stats topics look individually larger only because they compete inside a 60-mark section rather than a 100-mark one.</p>
+<p style="margin:0 0 7px"><b>Section A percentages are the softest numbers here</b> &mdash; 4&ndash;5 questions per paper, so one question moves them. Section B is the most predictable part of the subject: six topics, all six in nearly every paper, Hypothesis Testing in <b>100%</b> of the prelims counted.</p>
+<p style="margin:0"><b>The check that says the count is faithful:</b> Pure&nbsp;:&nbsp;Stats falls out at <b>140&nbsp;:&nbsp;60</b>, exactly the syllabus split, and all 53 prelim papers reconcile to 90&ndash;110 marks. Nothing was tuned to produce that. <a href="clusters/topic_split_p1_p2.html" style="color:var(--maths)">Full breakdown with the prelim and A-Level columns side by side &rarr;</a></p>
+</div>
 
 <footer>
   Stars come from my inspection of what you've actually drilled and how you performed, refreshed daily at 10pm. Override any of them freely — your edit wins until the next sync.
@@ -530,6 +663,29 @@ function renderAlloc(){
 }
 
 render(); renderAnki(); renderExams(); renderAlloc();
+
+/* ============ Bio topic split ============ */
+const BIOSPLIT=[{"t": "Gene expression & control", "b": 2, "p1": 10.6, "p2": 11.8, "p3": 11.4, "w": 11.4, "m": 22, "n": ""}, {"t": "Infectious diseases & immunity", "b": 9, "p1": 3.8, "p2": 8.0, "p3": 18.1, "w": 11.2, "m": 22, "n": "biggest thing in Paper 3 — cutting Book 9 gambles a fifth of P3"}, {"t": "Biomolecules", "b": 1, "p1": 9.4, "p2": 9.1, "p3": 7.5, "w": 8.5, "m": 17, "n": ""}, {"t": "Genetics of viruses", "b": 4, "p1": 6.1, "p2": 7.3, "p3": 9.6, "w": 8.0, "m": 16, "n": ""}, {"t": "Inheritance", "b": 6, "p1": 11.7, "p2": 10.0, "p3": 0.9, "w": 6.8, "m": 13, "n": "P1 and P2 only; almost never an essay"}, {"t": "Cell & nuclear division", "b": 3, "p1": 5.8, "p2": 6.9, "p3": 4.9, "w": 6.0, "m": 12, "n": ""}, {"t": "Cell structure", "b": 1, "p1": 5.4, "p2": 4.8, "p3": 6.8, "w": 5.6, "m": 11, "n": ""}, {"t": "Photosynthesis", "b": 5, "p1": 5.1, "p2": 5.0, "p3": 5.8, "w": 5.3, "m": 10, "n": ""}, {"t": "Climate change", "b": 8, "p1": 2.5, "p2": 3.8, "p3": 6.3, "w": 4.6, "m": 9, "n": ""}, {"t": "Cell signalling", "b": 3, "p1": 4.3, "p2": 4.4, "p3": 3.8, "w": 4.2, "m": 8, "n": ""}, {"t": "Enzymes", "b": 1, "p1": 5.4, "p2": 3.9, "p3": 3.4, "w": 3.9, "m": 8, "n": ""}, {"t": "Respiration", "b": 5, "p1": 3.5, "p2": 4.7, "p3": 2.9, "w": 3.8, "m": 7, "n": ""}, {"t": "Molecular techniques", "b": 2, "p1": 4.2, "p2": 2.4, "p3": 5.0, "w": 3.7, "m": 7, "n": ""}, {"t": "Cancer", "b": 3, "p1": 3.1, "p2": 2.9, "p3": 4.4, "w": 3.5, "m": 7, "n": ""}, {"t": "Speciation & phylogeny", "b": 7, "p1": 2.6, "p2": 3.4, "p3": 1.2, "w": 2.4, "m": 5, "n": ""}, {"t": "Stem cells", "b": 3, "p1": 3.3, "p2": 2.5, "p3": 1.7, "w": 2.4, "m": 5, "n": ""}, {"t": "DNA structure & replication", "b": 2, "p1": 3.0, "p2": 2.5, "p3": 0.8, "w": 2.0, "m": 4, "n": ""}, {"t": "Evolution & selection", "b": 7, "p1": 2.3, "p2": 1.5, "p3": 1.4, "w": 1.6, "m": 3, "n": ""}, {"t": "Cell membranes", "b": 1, "p1": 1.7, "p2": 2.2, "p3": 0.5, "w": 1.5, "m": 3, "n": "the safe cut inside Book 1, not Biomolecules"}, {"t": "Genome organisation", "b": 2, "p1": 1.7, "p2": 0.9, "p3": 1.5, "w": 1.2, "m": 2, "n": ""}, {"t": "Genetics of bacteria", "b": 4, "p1": 2.2, "p2": 0.8, "p3": 1.0, "w": 1.1, "m": 2, "n": ""}, {"t": "Mutations", "b": 2, "p1": 1.6, "p2": 0.5, "p3": 0.9, "w": 0.8, "m": 2, "n": ""}, {"t": "Biostatistics", "b": 6, "p1": 0.7, "p2": 0.7, "p3": 0.2, "w": 0.5, "m": 1, "n": "understated — corpus is 9744-era and 9477 ADDED Hardy-Weinberg; the specimen puts it on the paper"}];
+(function(){
+  const host=document.getElementById('bsp'); if(!host) return;
+  const r=BIOSPLIT.slice().sort((a,b)=>b.w-a.w), n=r.length, hi=Math.ceil(n/3), lo=n-Math.ceil(n/3);
+  const col=v=>v>=8?'var(--ok)':v>=3?'var(--warn)':'var(--bad)';
+  const mx=Math.max.apply(null,r.map(x=>x.w));
+  let out='<div class="bsphd"><span>Topic (book)</span><span style="text-align:right">P1</span><span style="text-align:right">P2</span><span style="text-align:right">P3</span><span>Weighted</span><span style="text-align:right">mk/yr</span></div>';
+  r.forEach((x,i)=>{
+    const cls=i<hi?' hi':(i>=lo?' lo':''), pk=Math.max(x.p1,x.p2,x.p3);
+    const cell=v=>'<span class="bspn'+(v===pk?' pk':'')+'">'+v.toFixed(1)+'</span>';
+    out+='<div class="bsprow'+cls+'"><span class="bspt">'+x.t+'<span class="bspb">BOOK '+x.b+'</span></span>'
+       + cell(x.p1)+cell(x.p2)+cell(x.p3)
+       + '<span class="bspw"><span class="bspbar"><i style="width:'+Math.max(3,x.w/mx*100)+'%;background:'+col(x.w)+'"></i></span><span class="bspwn">'+x.w.toFixed(1)+'%</span></span>'
+       + '<span class="bspm">'+x.m+'</span>'
+       + (x.n?'<span class="bspnote">'+x.n+'</span>':'')+'</div>';
+  });
+  host.innerHTML=out;
+  document.getElementById('bspmeta').textContent='282 papers, 17,781 marks and MCQs.';
+  document.getElementById('bspcav').innerHTML='<b>Read it with these in mind.</b> JC prelims only — no real Cambridge papers exist in the archive. Mostly 9744-era, so topics 9477 added are under-counted. P3 essay topics are slightly inflated because Section B offers a choice of two and both options were counted. Unclassified: P1 17%, P2 6%, P3 19%.';
+})();
+
 </script>
 </body>
 </html>
