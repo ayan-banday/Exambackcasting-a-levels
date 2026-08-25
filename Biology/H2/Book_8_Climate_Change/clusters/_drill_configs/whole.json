@@ -1,7 +1,24 @@
 {
- "title": "Book 8 DRILL: Climate Change",
- "subtitle": "H2 Biology 9477 · Book 8 · 4 questions · 30 marks · about 30 minutes · all nine outcomes, (a) to (i)",
- "los_html": "<div class=\"los\"><strong>This is the whole book in one drill.</strong> The three separate cluster drills are retired; all nine outcomes, (a) to (i) are covered here. Read <em>1a - STUDY SHEET - Book 8</em> first.</div>",
+ "title": "Book 8 DRILL: whole book",
+ "subtitle": "H2 Biology 9477 · Book 8 · 8 questions · 81 marks · every stem a real exam question · all nine outcomes, (a) to (i)",
+ "los_html": "<div class=\"los\"><strong>Every question here is a real exam paper question at its own mark allocation</strong>, lifted as the paper sets it, with its verbatim mark scheme. Every stem is a real prelim or specimen question at its own mark allocation, including two Section B essays. Between them they cover all nine outcomes, (a) to (i). A note under each mark scheme says which outcomes it carries and why that question was chosen. Read <em>1a - STUDY SHEET - Book 8</em> first.</div>",
  "confidence_prompt": true,
- "figmap": {}
+ "figmap": {
+  "5|a": [
+   "q7a_cjc25_global_temp.png",
+   "q7a_cjc25_robin_migration.png"
+  ],
+  "5|b": "q7b_cjc25_caterpillar_abundance.png",
+  "6|a": "q2a_asrjc23_nepal_altitudes.png",
+  "7|a": "q9a_hci24_stomatal_aperture.png",
+  "7|c": "q9c_tjc23_c3_c4_uptake.png"
+ },
+ "caption": {
+  "q7a_cjc25_global_temp.png": "Fig. 3.1  ·  CJC Prelim 2025 P3 Q3",
+  "q7a_cjc25_robin_migration.png": "Fig. 3.2  ·  CJC Prelim 2025 P3 Q3",
+  "q7b_cjc25_caterpillar_abundance.png": "Fig. 3.3  ·  CJC Prelim 2025 P3 Q3",
+  "q2a_asrjc23_nepal_altitudes.png": "Fig. 11.1  ·  ASRJC Prelim 2023 P2 Q11",
+  "q9a_hci24_stomatal_aperture.png": "Fig. 3.1  ·  School (HCI) Prelim 2024 P3 Q3",
+  "q9c_tjc23_c3_c4_uptake.png": "Fig. 3.2  ·  TJC Prelim 2023 P3 Q3"
+ }
 }

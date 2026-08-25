@@ -1,7 +1,16 @@
 {
- "title": "Book 7 DRILL: Biological Evolution",
- "subtitle": "H2 Biology 9477 · Book 7 · 8 questions · 60 marks · about 60 minutes · all fourteen outcomes, 4(a) to 4(n)",
- "los_html": "<div class=\"los\"><strong>This is the whole book in one drill.</strong> The three separate cluster drills are retired; all fourteen outcomes, 4(a) to 4(n) are covered here. Read <em>1a - STUDY SHEET - Book 7</em> first.</div>",
+ "title": "Book 7 DRILL: whole book",
+ "subtitle": "H2 Biology 9477 · Book 7 · 8 questions · 90 marks · every stem a real exam question · all fourteen outcomes, 4(a) to 4(n)",
+ "los_html": "<div class=\"los\"><strong>Every question here is a real exam paper question at its own mark allocation</strong>, lifted as the paper sets it, with its verbatim mark scheme. Four of the eight are Paper 3 Section B essays, which is where this book is actually examined. Between them they cover all fourteen outcomes, 4(a) to 4(n). A note under each mark scheme says which outcomes it carries and why that question was chosen. Read <em>1a - STUDY SHEET - Book 7</em> first.</div>",
  "confidence_prompt": true,
- "figmap": {}
+ "figmap": {
+  "6|": "q7a_forest_fragments.png",
+  "8|c": "q6d_alignment.png",
+  "8|f": "q6g_mtdna_histogram.png"
+ },
+ "caption": {
+  "q7a_forest_fragments.png": "Fig. 1.5  ·  School (HCI) Prelim 2023 P3 Q1",
+  "q6d_alignment.png": "Fig. 1.1",
+  "q6g_mtdna_histogram.png": "Fig. 1.2"
+ }
 }
