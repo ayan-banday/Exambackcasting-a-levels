@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sequences & Series — Study Sheet (9758)</title>
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true,tags:'none'},svg:{fontCache:'global'}};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+:root{--bg:#fafafa;--card:#fff;--border:#e5e7eb;--text:#1a1a1a;--muted:#6b7280;
+--blue:#2563eb;--blue-soft:#eff6ff;--amber:#d97706;--amber-soft:#fffbeb;
+--green:#059669;--green-soft:#ecfdf5;--red:#dc2626;--red-soft:#fef2f2;
+--purple:#6d28d9;--purple-soft:#f5f3ff;}
+*{box-sizing:border-box}
+body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:980px;margin:0 auto;
+padding:32px 22px 90px;line-height:1.6;color:var(--text);background:var(--bg)}
+h1,h2,h3,.tag,.hd .sub,.hd .meta,.nav,.lbl,.secn{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+.hd{border-bottom:2.5px solid #111;padding-bottom:13px;margin-bottom:8px;text-align:center}
+.hd h1{font-size:1.45em;font-weight:800;letter-spacing:.4px;margin:0;color:#111}
+.hd .sub{font-size:.97em;margin-top:4px;color:#333}
+.hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:.76em;color:var(--muted);margin-top:7px}
+h2{font-size:1.06em;margin:32px 0 11px;padding:7px 12px;background:#111;color:#fff;border-radius:5px;font-weight:700}
+.nav{background:var(--card);border:1px solid var(--border);padding:12px 17px;border-radius:6px;margin:15px 0 24px;font-size:.84em}
+.nav a{color:var(--blue);text-decoration:none;display:inline-block;margin:0 13px 4px 0}
+.nav a:hover{text-decoration:underline}
+table{border-collapse:collapse;margin:11px 0;font-size:.85em;width:100%;background:#fff}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#f1f5f9;font-weight:700;font-family:-apple-system,sans-serif;font-size:.93em}
+tr:nth-child(even) td{background:#fcfcfd}
+.sec{background:var(--card);border:1px solid var(--border);border-radius:7px;margin:18px 0;overflow:hidden}
+.secn{background:#f1f5f9;border-bottom:1px solid var(--border);padding:9px 15px;font-weight:700;font-size:.95em;
+display:flex;align-items:center;gap:10px}
+.secn .n{background:#111;color:#fff;border-radius:4px;min-width:26px;height:23px;display:inline-flex;
+align-items:center;justify-content:center;font-size:.78em;font-weight:800;flex:none}
+.sec>div:not(.secn){margin:0 15px}
+.meth{background:var(--blue-soft);border-left:3px solid var(--blue);padding:9px 13px;margin-top:12px;border-radius:0 4px 4px 0;font-size:.92em}
+.meth .lbl{color:var(--blue);font-size:.68em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:4px;font-family:-apple-system,sans-serif}
+.eg{background:var(--green-soft);border-left:3px solid var(--green);padding:9px 13px;margin-top:11px;border-radius:0 4px 4px 0;font-size:.9em}
+.eg .lbl{color:var(--green);font-size:.68em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:4px;font-family:-apple-system,sans-serif}
+.pr{background:#fff;border:1px solid var(--border);border-left:3px solid var(--purple);padding:9px 13px;margin:11px 0 14px;border-radius:0 4px 4px 0;font-size:.9em}
+.pr .lbl{color:var(--purple);font-size:.68em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:4px;font-family:-apple-system,sans-serif}
+.src{font-family:ui-monospace,Menlo,monospace;font-size:.72em;color:var(--muted);margin-top:5px}
+.trap{background:var(--red-soft);border-left:3px solid var(--red);padding:8px 12px;margin-top:10px;border-radius:0 4px 4px 0;font-size:.87em;color:#7f1d1d}
+.trap b{color:var(--red)}
+.note{background:var(--amber-soft);border:1px solid #fcd34d;border-left:4px solid var(--amber);padding:10px 14px;border-radius:6px;margin:13px 0;font-size:.89em;color:#7c2d12}
+.note b{color:#b91c1c}
+.key{background:var(--purple-soft);border:1px solid #ddd6fe;border-left:4px solid var(--purple);padding:10px 14px;border-radius:6px;margin:13px 0;font-size:.89em}
+.key b{color:var(--purple)}
+button.rev{font-family:-apple-system,sans-serif;font-size:.78em;font-weight:600;background:#111;color:#fff;
+border:0;border-radius:5px;padding:5px 12px;cursor:pointer;margin-top:7px}
+button.rev:hover{background:#333}
+.ans{display:none;margin-top:9px;padding-top:9px;border-top:1px dashed var(--border)}
+.ans.on{display:block}
+@media print{body{background:#fff;padding:0;max-width:none;font-size:10.5pt}
+.nav,button.rev{display:none}.ans{display:block !important}.sec{page-break-inside:avoid}
+h2,.secn,.meth,.eg,.pr,.trap,.note,.key,th{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style></head><body>
+<div class="hd"><h1>SEQUENCES &amp; SERIES</h1><div class="sub">H2 Mathematics 9758 &nbsp;&middot;&nbsp; Topic 2.1 &nbsp;&middot;&nbsp; 60 minutes</div>
+<div class="meta">Every learning outcome &middot; formula &rarr; worked example &rarr; practice from HCI prelims</div></div>
+
+<div class="nav"><b style="display:block;margin-bottom:5px">Sections</b><a href="#s1">1 AP and GP — the formulae and the standard traps</a><a href="#s2">2 The link between \(u_n\) and \(S_n\)</a><a href="#s3">3 Recurrence relations</a><a href="#s4">4 Method of differences and telescoping sums</a><a href="#s5">5 Convergence, and sums of two series</a>
+<div style="margin-top:9px"><button class="rev" onclick="allOn(true)" style="margin-right:6px">Reveal all answers</button>
+<button class="rev" onclick="allOn(false)">Hide all</button></div></div>
+<h2>Learning outcomes this sheet covers</h2>
+<table><tr><th style="width:24%">Outcome</th><th>What the syllabus asks for</th></tr><tr><td><b>Concepts</b></td><td>Sequence and series, finite and infinite; sequence as a function \(y=f(n)\) for positive integer \(n\).</td></tr><tr><td><b>\(u_n\) and \(S_n\)</b></td><td>The relationship between the \(n\)th term and the sum to \(n\) terms.</td></tr><tr><td><b>Generating</b></td><td>Sequence given by a formula for the \(n\)th term; sequence generated by \(u_{n+1}=f(u_n)\), including use of a GC.</td></tr><tr><td><b>Combining</b></td><td>Sum and difference of two series.</td></tr><tr><td><b>Convergence</b></td><td>Convergence of a series and the sum to infinity.</td></tr><tr><td><b>AP</b></td><td>Formula for the \(n\)th term and the sum of a finite arithmetic series.</td></tr><tr><td><b>GP</b></td><td>Formula for the \(n\)th term and the sum of a finite geometric series; condition for an infinite geometric series to converge; sum to infinity.</td></tr></table>
+<div class="sec" id="s1"><div class="secn"><span class="n">1</span>AP and GP — the formulae and the standard traps</div><div class="meth"><div class="lbl">Everything you need, in one block</div><table><tr><th></th><th>Arithmetic (AP)</th><th>Geometric (GP)</th></tr>
+<tr><td>\(n\)th term</td><td>\(u_n=a+(n-1)d\)</td><td>\(u_n=ar^{\,n-1}\)</td></tr>
+<tr><td>Sum to \(n\)</td><td>\(S_n=\dfrac n2\big[2a+(n-1)d\big]=\dfrac n2(a+l)\)</td><td>\(S_n=\dfrac{a(1-r^{\,n})}{1-r}=\dfrac{a(r^{\,n}-1)}{r-1}\)</td></tr>
+<tr><td>Sum to infinity</td><td><b>never converges</b> (unless \(a=d=0\))</td><td>\(S_\infty=\dfrac{a}{1-r}\), <b>valid only if \(|r|<1\)</b></td></tr>
+<tr><td>Test for the type</td><td>\(u_{n+1}-u_n\) is constant</td><td>\(\dfrac{u_{n+1}}{u_n}\) is constant</td></tr></table>
+All of these are in <b>MF27</b> &mdash; do not waste memory on them, waste it on knowing when each applies.<br><br>
+<b>Proving a sequence is a GP</b> means showing \(\dfrac{u_{n+1}}{u_n}\) is a constant <i>independent of \(n\)</i>. Write the ratio out and say the words.</div><div class="meth"><div class="lbl">Where marks actually go</div>&bull; <b>&ldquo;Sum of the first \(n\) even-numbered terms&rdquo;</b> &mdash; these form a new AP or GP. For an AP, the odd-numbered terms \(u_1,u_3,u_5,\dots\) form an AP with first term \(a\) and common difference \(2d\).<br>
+&bull; <b>Number of terms.</b> From \(u_k\) to \(u_m\) inclusive there are \(m-k+1\) terms, not \(m-k\).<br>
+&bull; <b>&ldquo;Least \(n\) such that ...&rdquo;</b> &mdash; solve the inequality, then round <b>up</b> to the next integer and verify by substituting \(n\) and \(n-1\).</div><div class="eg"><div class="lbl">Example</div><b>A GP has \(S_8:S_4=17:16\). Find the possible common ratios.</b><br><br>
+\(\dfrac{S_8}{S_4}=\dfrac{a(1-r^8)/(1-r)}{a(1-r^4)/(1-r)}=\dfrac{1-r^8}{1-r^4}=\dfrac{(1-r^4)(1+r^4)}{1-r^4}=1+r^4\).<br>
+So \(1+r^4=\dfrac{17}{16}\Rightarrow r^4=\dfrac1{16}\Rightarrow r=\pm\dfrac12\).<br><br>
+The factorisation \(1-r^8=(1-r^4)(1+r^4)\) is what makes this a two-line question instead of a mess.</div><div class="trap"><b>Trap</b> Using \(S_\infty=\dfrac{a}{1-r}\) without first checking and <b>stating</b> \(|r|<1\). If the question gives you \(r\) in terms of an unknown, the condition \(|r|<1\) is usually the source of a whole sub-part asking for the range of that unknown.</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div>The first term of an arithmetic series is positive. The sum of the first 6 terms is 4.5, and the product of the first four terms is 0. Find the 13th term of the series.<div class="src">HCI 2022 Prelim Paper 2 Q4(b) &middot; [4]</div><button class="rev">Reveal answer</button><div class="ans">The product of the first four terms is \(0\), so <b>one of them is zero</b>. Since \(a>0\), it is not the first. So \(a+d=0\), \(a+2d=0\) or \(a+3d=0\).<br><br>
+\(S_6=\dfrac62\big[2a+5d\big]=3(2a+5d)=4.5\Rightarrow 2a+5d=1.5\).<br><br>
+<b>Case \(a+d=0\):</b> \(a=-d\Rightarrow -2d+5d=3d=1.5\Rightarrow d=0.5,\ a=-0.5\). Rejected, \(a>0\) fails.<br>
+<b>Case \(a+2d=0\):</b> \(a=-2d\Rightarrow -4d+5d=d=1.5\Rightarrow d=1.5,\ a=-3\). Rejected.<br>
+<b>Case \(a+3d=0\):</b> \(a=-3d\Rightarrow -6d+5d=-d=1.5\Rightarrow d=-1.5,\ a=4.5\). <b>Accepted.</b><br><br>
+Check: first four terms are \(4.5,\ 3,\ 1.5,\ 0\) &mdash; product zero &check;, and \(S_6=4.5+3+1.5+0-1.5-3=4.5\) &check;.<br><br>
+\(u_{13}=a+12d=4.5+12(-1.5)=\boxed{-13.5}\).<br><br>
+<b>The move worth keeping:</b> &ldquo;product is zero&rdquo; is never an algebra problem &mdash; it is a <b>case split</b>. Enumerate which factor vanishes, and use the other condition to kill the impossible cases.</div></div></div><div class="sec" id="s2"><div class="secn"><span class="n">2</span>The link between \(u_n\) and \(S_n\)</div><div class="meth"><div class="lbl">One formula, used constantly</div>\[u_n=S_n-S_{n-1}\quad\text{for }n\ge 2,\qquad u_1=S_1\]
+The \(n\ge2\) restriction matters: \(S_0\) is not defined by the formula, so \(u_1\) must always be checked separately. Sometimes the general expression happens to give the right \(u_1\) and sometimes it does not &mdash; say which.<br><br>
+Going the other way, \(S_n=\displaystyle\sum_{r=1}^{n}u_r\).<br><br>
+<b>Useful standard results</b> (all in MF27):<br>
+\(\displaystyle\sum_{r=1}^{n}r=\frac{n(n+1)}{2}\), \(\displaystyle\sum_{r=1}^{n}r^2=\frac{n(n+1)(2n+1)}{6}\), \(\displaystyle\sum_{r=1}^{n}r^3=\left[\frac{n(n+1)}{2}\right]^2\).</div><div class="meth"><div class="lbl">Shifting the index</div>\(\displaystyle\sum_{r=k}^{n}u_r=\sum_{r=1}^{n}u_r-\sum_{r=1}^{k-1}u_r\). Subtract the part you do not want &mdash; and note the upper limit \(k-1\), not \(k\).<br><br>
+For a shifted summand, substitute: \(\displaystyle\sum_{r=1}^{n}u_{r+2}=\sum_{s=3}^{n+2}u_s\).</div><div class="eg"><div class="lbl">Example</div><b>The sum of the first \(n\) terms of a series is \(S_n=3n(n+2)\). Show the series is an AP and find its first term and common difference.</b><br><br>
+For \(n\ge2\): \(u_n=S_n-S_{n-1}=3n(n+2)-3(n-1)(n+1)=3(n^2+2n)-3(n^2-1)=6n+3\).<br>
+Check \(n=1\): the formula gives \(9\), and \(S_1=3(1)(3)=9\) &check;, so \(u_n=6n+3\) holds for all \(n\ge1\).<br><br>
+\(u_{n+1}-u_n=6(n+1)+3-(6n+3)=6\), a constant, so the series is an AP with \(a=9\), \(d=6\).</div><div class="trap"><b>Trap</b> Applying \(u_n=S_n-S_{n-1}\) at \(n=1\) without checking. Always compute \(u_1=S_1\) separately and compare &mdash; and if they differ, say so and define the sequence piecewise.</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div>A data processing centre processes \(u_n\) units of data on day \(n\), where \(u_{n+1}=(1+p)u_n\) and \(p\) is a positive real constant.<br>
+(a) Explain why \(\{u_n\}\) is a geometric progression.<br>
+(b) On day 1, \(2^m\) units were processed. The total processed over the first three days is \(\dfrac{127}{36}\left(2^m\right)\) units. Find \(p\).<br>
+(c) Explain whether there is a limit to the total amount of data the centre can handle in the long run.<div class="src">HCI 2023 Prelim Paper 1 Q12(a)&ndash;(c) &middot; [1] [3] [1]</div><button class="rev">Reveal answer</button><div class="ans"><b>(a)</b> \(\dfrac{u_{n+1}}{u_n}=1+p\), which is a <b>constant independent of \(n\)</b>. A sequence whose consecutive terms have a constant ratio is a geometric progression. (And \(1+p\ne 0\) since \(p>0\).)<br><br>
+<b>(b)</b> With \(a=2^m\) and \(r=1+p\):<br>
+\(u_1+u_2+u_3=2^m\left[1+(1+p)+(1+p)^2\right]=\dfrac{127}{36}\,2^m\).<br>
+Divide by \(2^m\) and let \(t=1+p\): \(1+t+t^2=\dfrac{127}{36}\).<br>
+\(36t^2+36t+36=127\Rightarrow 36t^2+36t-91=0\).<br>
+Discriminant \(=36^2+4(36)(91)=1296+13104=14400=120^2\).<br>
+\(t=\dfrac{-36\pm120}{72}=\dfrac{84}{72}=\dfrac76\ \text{ or }\ -\dfrac{13}{6}\).<br>
+Since \(p>0\), \(t=1+p>1\), so \(t=\dfrac76\) and \(\boxed{p=\dfrac16}\).<br><br>
+<b>(c)</b> The common ratio is \(r=1+p>1\), so \(|r|>1\) and the geometric series <b>diverges</b>. There is <b>no limit</b> &mdash; the cumulative total grows without bound.<br><br>
+<b>Note how (a) pays for (c):</b> once you have named it a GP with ratio \(1+p\), the convergence question is answered by a one-line appeal to \(|r|<1\) failing. Sub-parts in this topic are almost always chained like that.</div></div></div><div class="sec" id="s3"><div class="secn"><span class="n">3</span>Recurrence relations</div><div class="meth"><div class="lbl">Reading and using \(u_{n+1}=f(u_n)\)</div>A recurrence defines each term from the previous one, plus a starting value. To work with it:<br><br>
+<b>Generating terms.</b> On the TI-84: <code>MODE &rarr; SEQ</code>, then in <code>Y=</code> set <code>nMin</code>, <code>u(n)</code> in terms of <code>u(n-1)</code>, and <code>u(nMin)</code>. Use <code>TABLE</code> to read terms off.<br><br>
+<b>Finding unknown constants.</b> Substitute the given terms to build simultaneous equations, then solve &mdash; on the GC if a calculator is allowed.<br><br>
+<b>Limiting behaviour.</b> If \(u_n\to L\) then \(u_{n+1}\to L\) too, so put \(L=f(L)\) and solve. State that the sequence converges before doing it; a sequence that diverges has no such \(L\).<br><br>
+<b>Proving a related sequence is an AP or GP.</b> Form \(v_{n+1}-v_n\) or \(\dfrac{v_{n+1}}{v_n}\) from the recurrence and simplify until the \(n\) cancels.</div><div class="eg"><div class="lbl">Example</div><b>A sequence satisfies \(u_{n+1}=\dfrac{1}{2}u_n+3\) with \(u_1=1\). Given that it converges, find its limit.</b><br><br>
+Let \(u_n\to L\). Then \(u_{n+1}\to L\) as well, so<br>
+\(L=\dfrac12L+3\Rightarrow \dfrac12 L=3\Rightarrow L=6\).<br><br>
+Sanity check by iterating: \(1,\ 3.5,\ 4.75,\ 5.375,\ 5.6875,\dots\) climbing towards \(6\) &check;.</div><div class="trap"><b>Trap</b> Solving \(L=f(L)\) without being told, or without showing, that the sequence converges. If \(|f'|>1\) near the fixed point the sequence runs away and \(L\) is meaningless &mdash; the equation still has a root, but it is not a limit.</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div>A sequence of real numbers \(x_n\) satisfies \(x_{n+1}=a(-3)^n+bn^2+cx_n\) for \(n\ge1\), where \(a,b,c\) are constants. Given \(x_1=1\), \(x_2=-8\), \(x_3=70\) and \(x_4=-377\), find \(a\), \(b\) and \(c\).<div class="src">HCI 2025 Prelim Paper 1 Q2 &middot; [3]</div><button class="rev">Reveal answer</button><div class="ans">Substitute \(n=1,2,3\) in turn.<br><br>
+\(n=1\): \(x_2=a(-3)^1+b(1)^2+cx_1\Rightarrow -8=-3a+b+c\).<br>
+\(n=2\): \(x_3=a(-3)^2+b(2)^2+cx_2\Rightarrow 70=9a+4b-8c\).<br>
+\(n=3\): \(x_4=a(-3)^3+b(3)^2+cx_3\Rightarrow -377=-27a+9b+70c\).<br><br>
+Three linear equations in \(a,b,c\). On the GC: <code>APPS &rarr; PlySmlt2 &rarr; SIMULT EQN SOLVER</code>, 3 equations and 3 unknowns, coefficient matrix<br>
+\(\begin{pmatrix}-3&1&1\\9&4&-8\\-27&9&70\end{pmatrix}\), right-hand side \(\begin{pmatrix}-8\\70\\-377\end{pmatrix}\).<br><br>
+This gives \(\boxed{a=2,\ b=3,\ c=-5}\).<br><br>
+<b>Now verify by running the recurrence forward</b> &mdash; not by re-substituting into your own equations:<br>
+\(x_2=2(-3)^1+3(1)^2+(-5)(1)=-6+3-5=-8\) &check;<br>
+\(x_3=2(-3)^2+3(2)^2+(-5)(-8)=18+12+40=70\) &check;<br>
+\(x_4=2(-3)^3+3(3)^2+(-5)(70)=-54+27-350=-377\) &check;<br><br>
+All four given terms reproduce, so the constants are right. Continuing the iteration gives \(x_{10}=-7\,210\,868\) and \(x_{11}=36\,172\,738\).<br><br>
+<b>The lesson this question is really teaching:</b> a recurrence with three unknowns is a <i>linear system</i> in disguise, and it must be solved on the GC and then <b>checked by forward-iterating the recurrence</b>. Substituting back into your own equations only proves you solved them; iterating the recurrence proves you set them up right.</div></div></div><div class="sec" id="s4"><div class="secn"><span class="n">4</span>Method of differences and telescoping sums</div><div class="meth"><div class="lbl">The technique</div>When a summand splits into a difference of consecutive terms of some sequence \(f\), the sum <b>telescopes</b>:<br>
+\[\sum_{r=1}^{n}\big[f(r)-f(r+1)\big]=f(1)-f(n+1)\]
+<b>Procedure:</b><br>
+<b>1.</b> Split the summand &mdash; usually by <b>partial fractions</b>, or by spotting a given identity in an earlier &ldquo;show that&rdquo; part.<br>
+<b>2.</b> Write out the first two or three terms and the last two, <b>in full</b>, with the cancellation visible. Examiners want to see the cancellation, not just the answer.<br>
+<b>3.</b> Collect what survives.<br>
+<b>4.</b> For the infinite sum, let \(n\to\infty\) and state which terms vanish.<br><br>
+<b>Shifted gaps.</b> If the split is \(f(r)-f(r+2)\), <b>two</b> terms survive at each end, not one. Always write out enough terms to see how many.</div><div class="eg"><div class="lbl">Example</div><b>Find \(\displaystyle\sum_{r=1}^{n}\frac{1}{r(r+1)}\) and hence the sum to infinity.</b><br><br>
+Partial fractions: \(\dfrac{1}{r(r+1)}=\dfrac1r-\dfrac1{r+1}\).<br><br>
+\(\sum_{r=1}^{n}\left(\dfrac1r-\dfrac1{r+1}\right)
+=\left(1-\tfrac12\right)+\left(\tfrac12-\tfrac13\right)+\cdots+\left(\tfrac1n-\tfrac1{n+1}\right)\)<br>
+Everything cancels except the first and last: \(=1-\dfrac{1}{n+1}=\dfrac{n}{n+1}\).<br><br>
+As \(n\to\infty\), \(\dfrac{1}{n+1}\to0\), so the sum to infinity is \(\boxed{1}\).</div><div class="trap"><b>Trap</b> Jumping to &ldquo;everything cancels except the first and last&rdquo; without writing the terms out. With a gap of 2 or more, that statement is false, and it is exactly the case examiners set.</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div>(a) Show that \(\dfrac{1}{r!}-\dfrac{1}{(r+1)!}=\dfrac{r}{(r+1)!}\).<br>
+(b) Hence find \(\displaystyle\sum_{r=1}^{n}\frac{r}{(r+1)!}\), and state the sum to infinity.<div class="src">The telescoping-factorial pattern; HCI set a factorial series in 2025 Paper 1 Q7 and SAJC set this exact identity in a 2023 prelim</div><button class="rev">Reveal answer</button><div class="ans"><b>(a)</b> \(\dfrac{1}{r!}-\dfrac{1}{(r+1)!}=\dfrac{(r+1)}{(r+1)!}-\dfrac{1}{(r+1)!}=\dfrac{(r+1)-1}{(r+1)!}=\dfrac{r}{(r+1)!}\). <b>Shown.</b><br>
+(Using \((r+1)!=(r+1)\cdot r!\), so \(\dfrac{1}{r!}=\dfrac{r+1}{(r+1)!}\).)<br><br>
+<b>(b)</b> \(\displaystyle\sum_{r=1}^{n}\frac{r}{(r+1)!}=\sum_{r=1}^{n}\left[\frac{1}{r!}-\frac{1}{(r+1)!}\right]\)<br>
+\(=\left(\dfrac{1}{1!}-\dfrac{1}{2!}\right)+\left(\dfrac{1}{2!}-\dfrac{1}{3!}\right)+\cdots+\left(\dfrac{1}{n!}-\dfrac{1}{(n+1)!}\right)\)<br>
+\(=\dfrac{1}{1!}-\dfrac{1}{(n+1)!}=\boxed{1-\dfrac{1}{(n+1)!}}\).<br><br>
+<b>Sum to infinity:</b> \((n+1)!\to\infty\), so \(\dfrac{1}{(n+1)!}\to0\) and the sum converges to \(\boxed{1}\).<br><br>
+<b>Check with \(n=2\):</b> \(\dfrac{1}{2!}+\dfrac{2}{3!}=\dfrac12+\dfrac13=\dfrac56\), and the formula gives \(1-\dfrac{1}{3!}=1-\dfrac16=\dfrac56\) &check;.</div></div></div><div class="sec" id="s5"><div class="secn"><span class="n">5</span>Convergence, and sums of two series</div><div class="meth"><div class="lbl">What converges and what does not</div><b>Geometric.</b> \(\sum ar^{\,r-1}\) converges \(\iff |r|<1\), to \(\dfrac{a}{1-r}\). This is the only convergence test in the syllabus, so almost every convergence question reduces to it.<br><br>
+<b>Arithmetic.</b> Never converges for a non-trivial AP &mdash; the terms do not tend to zero.<br><br>
+<b>Telescoping.</b> Converges when the surviving tail term tends to a limit. Compute \(S_n\) first, then take the limit.<br><br>
+<b>Combining series.</b> \(\displaystyle\sum(u_r\pm v_r)=\sum u_r\pm\sum v_r\), valid whenever both sides make sense. Split a mixed summand into the parts you can already do &mdash; typically one geometric and one telescoping, or one telescoping and one standard \(\sum r\).<br><br>
+<b>Convergence of a sum:</b> if both parts converge, so does the total, and the limits add. If one part diverges, the total diverges.</div><div class="eg"><div class="lbl">Example</div><b>Find \(\displaystyle\sum_{r=1}^{n}\left[\left(\tfrac13\right)^{r}+\frac{1}{r(r+1)}\right]\) and determine whether it converges.</b><br><br>
+Split it. The geometric part has \(a=\tfrac13\), \(r=\tfrac13\):<br>
+\(\displaystyle\sum_{r=1}^{n}\left(\tfrac13\right)^r=\frac{\tfrac13\left(1-\left(\tfrac13\right)^n\right)}{1-\tfrac13}=\frac12\left(1-\left(\tfrac13\right)^n\right)\).<br><br>
+The telescoping part is \(\dfrac{n}{n+1}\) from the previous section.<br><br>
+Total: \(\dfrac12\left(1-\left(\tfrac13\right)^n\right)+\dfrac{n}{n+1}\).<br>
+As \(n\to\infty\): \(\left(\tfrac13\right)^n\to0\) since \(\left|\tfrac13\right|<1\), and \(\dfrac{n}{n+1}\to1\).<br>
+<b>The series converges to \(\dfrac12+1=\dfrac32\).</b></div><div class="trap"><b>Trap</b> Quoting \(\dfrac{a}{1-r}\) with \(a\) taken as the <b>index-1 value of the formula</b> rather than the actual first term. For \(\sum_{r=1}^{n}\left(\tfrac13\right)^r\) the first term is \(\tfrac13\), not \(1\). Write out \(u_1\) explicitly before using any GP formula.</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div>An infinite geometric series has first term \(a\) and common ratio \(r\), where \(a\ne0\). The sum of the series is \(4a\).<br>
+(a) Find \(r\), and verify that the series converges.<br>
+(b) The first, third and fifth terms of this series form a new geometric series. Find its sum to infinity in terms of \(a\).<div class="src">Built on the infinite-GP structures HCI and NJC both set in 2025 prelims</div><button class="rev">Reveal answer</button><div class="ans"><b>(a)</b> \(S_\infty=\dfrac{a}{1-r}=4a\). Since \(a\ne0\), divide by \(a\): \(\dfrac{1}{1-r}=4\Rightarrow 1-r=\dfrac14\Rightarrow \boxed{r=\dfrac34}\).<br>
+\(|r|=\dfrac34<1\), so the series does converge and the use of \(S_\infty\) was legitimate.<br><br>
+<b>(b)</b> The terms \(u_1,u_3,u_5,\dots\) are \(a,\ ar^2,\ ar^4,\dots\) &mdash; a GP with first term \(a\) and common ratio \(r^2=\dfrac{9}{16}\).<br>
+\(\left|\dfrac{9}{16}\right|<1\), so it converges:<br>
+\(S_\infty=\dfrac{a}{1-\frac{9}{16}}=\dfrac{a}{\frac{7}{16}}=\boxed{\dfrac{16a}{7}}\).<br><br>
+<b>Sanity check:</b> the odd-numbered terms are a subset of the original series, all with the same sign as \(a\), so their sum should be smaller in magnitude than \(4a\). \(\dfrac{16}{7}\approx2.29<4\) &check;.</div></div></div>
+<script>
+document.addEventListener('click',e=>{
+  if(e.target.classList.contains('rev')){
+    const a=e.target.nextElementSibling;
+    a.classList.toggle('on');
+    e.target.textContent=a.classList.contains('on')?'Hide answer':'Reveal answer';
+  }
+});
+function allOn(v){document.querySelectorAll('.ans').forEach(a=>a.classList.toggle('on',v));
+  document.querySelectorAll('button.rev').forEach(b=>b.textContent=v?'Hide answer':'Reveal answer');}
+</script></body></html>

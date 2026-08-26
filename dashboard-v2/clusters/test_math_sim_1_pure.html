@@ -1,0 +1,137 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Math Simulative Test 1 — Today's Five Topics</title>
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true,tags:'none'},svg:{fontCache:'global'}};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+:root{--bg:#fafafa;--card:#fff;--border:#e5e7eb;--text:#1a1a1a;--muted:#6b7280;
+--blue:#2563eb;--blue-soft:#eff6ff;--amber:#d97706;--amber-soft:#fffbeb;
+--green:#059669;--green-soft:#ecfdf5;--red:#dc2626;--red-soft:#fef2f2;
+--purple:#6d28d9;--purple-soft:#f5f3ff;}
+*{box-sizing:border-box}
+body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:980px;margin:0 auto;
+padding:32px 22px 90px;line-height:1.6;color:var(--text);background:var(--bg)}
+h1,h2,h3,.tag,.hd .sub,.hd .meta,.nav,.lbl,.secn{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+.hd{border-bottom:2.5px solid #111;padding-bottom:13px;margin-bottom:8px;text-align:center}
+.hd h1{font-size:1.45em;font-weight:800;letter-spacing:.4px;margin:0;color:#111}
+.hd .sub{font-size:.97em;margin-top:4px;color:#333}
+.hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:.76em;color:var(--muted);margin-top:7px}
+h2{font-size:1.06em;margin:32px 0 11px;padding:7px 12px;background:#111;color:#fff;border-radius:5px;font-weight:700}
+.nav{background:var(--card);border:1px solid var(--border);padding:12px 17px;border-radius:6px;margin:15px 0 24px;font-size:.84em}
+.nav a{color:var(--blue);text-decoration:none;display:inline-block;margin:0 13px 4px 0}
+.nav a:hover{text-decoration:underline}
+table{border-collapse:collapse;margin:11px 0;font-size:.85em;width:100%;background:#fff}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#f1f5f9;font-weight:700;font-family:-apple-system,sans-serif;font-size:.93em}
+tr:nth-child(even) td{background:#fcfcfd}
+.sec{background:var(--card);border:1px solid var(--border);border-radius:7px;margin:18px 0;overflow:hidden}
+.secn{background:#f1f5f9;border-bottom:1px solid var(--border);padding:9px 15px;font-weight:700;font-size:.95em;
+display:flex;align-items:center;gap:10px}
+.secn .n{background:#111;color:#fff;border-radius:4px;min-width:26px;height:23px;display:inline-flex;
+align-items:center;justify-content:center;font-size:.78em;font-weight:800;flex:none}
+.sec>div:not(.secn){margin:0 15px}
+.meth{background:var(--blue-soft);border-left:3px solid var(--blue);padding:9px 13px;margin-top:12px;border-radius:0 4px 4px 0;font-size:.92em}
+.meth .lbl{color:var(--blue);font-size:.68em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:4px;font-family:-apple-system,sans-serif}
+.eg{background:var(--green-soft);border-left:3px solid var(--green);padding:9px 13px;margin-top:11px;border-radius:0 4px 4px 0;font-size:.9em}
+.eg .lbl{color:var(--green);font-size:.68em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:4px;font-family:-apple-system,sans-serif}
+.pr{background:#fff;border:1px solid var(--border);border-left:3px solid var(--purple);padding:9px 13px;margin:11px 0 14px;border-radius:0 4px 4px 0;font-size:.9em}
+.pr .lbl{color:var(--purple);font-size:.68em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:4px;font-family:-apple-system,sans-serif}
+.src{font-family:ui-monospace,Menlo,monospace;font-size:.72em;color:var(--muted);margin-top:5px}
+.trap{background:var(--red-soft);border-left:3px solid var(--red);padding:8px 12px;margin-top:10px;border-radius:0 4px 4px 0;font-size:.87em;color:#7f1d1d}
+.trap b{color:var(--red)}
+.note{background:var(--amber-soft);border:1px solid #fcd34d;border-left:4px solid var(--amber);padding:10px 14px;border-radius:6px;margin:13px 0;font-size:.89em;color:#7c2d12}
+.note b{color:#b91c1c}
+.key{background:var(--purple-soft);border:1px solid #ddd6fe;border-left:4px solid var(--purple);padding:10px 14px;border-radius:6px;margin:13px 0;font-size:.89em}
+.key b{color:var(--purple)}
+button.rev{font-family:-apple-system,sans-serif;font-size:.78em;font-weight:600;background:#111;color:#fff;
+border:0;border-radius:5px;padding:5px 12px;cursor:pointer;margin-top:7px}
+button.rev:hover{background:#333}
+.ans{display:none;margin-top:9px;padding-top:9px;border-top:1px dashed var(--border)}
+.ans.on{display:block}
+@media print{body{background:#fff;padding:0;max-width:none;font-size:10.5pt}
+.nav,button.rev{display:none}.ans{display:block !important}.sec{page-break-inside:avoid}
+h2,.secn,.meth,.eg,.pr,.trap,.note,.key,th{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+.q{background:var(--card);border:1px solid var(--border);border-radius:7px;margin:18px 0;overflow:hidden}
+.qh{background:#f1f5f9;border-bottom:1px solid var(--border);padding:9px 15px;font-weight:700;font-size:.95em;
+display:flex;align-items:center;gap:10px;font-family:-apple-system,sans-serif}
+.qh .n{background:#111;color:#fff;border-radius:4px;min-width:28px;height:23px;display:inline-flex;
+align-items:center;justify-content:center;font-size:.78em;font-weight:800;flex:none}
+.qh .mk{margin-left:auto;font-family:ui-monospace,Menlo,monospace;font-size:.8em;color:var(--muted);font-weight:600}
+.q>div:not(.qh){margin:0 15px}
+.stem{margin-top:12px;font-size:.94em}
+.part{margin:11px 0 0;padding:9px 12px;background:#fbfcfd;border:1px solid var(--border);border-radius:5px}
+.pq{font-size:.93em}
+.conf{background:var(--amber-soft);border-left:3px solid var(--amber);padding:6px 11px;margin-top:8px;
+font-size:.83em;color:#7c2d12;border-radius:0 4px 4px 0}
+.srcline{font-family:ui-monospace,Menlo,monospace;font-size:.72em;color:var(--muted);margin:8px 0 2px}
+button.rev{font-family:-apple-system,sans-serif;font-size:.76em;font-weight:600;background:#111;color:#fff;
+border:0;border-radius:5px;padding:4px 11px;cursor:pointer;margin-top:7px}
+button.rev:hover{background:#333}
+.ans{display:none;margin-top:8px;padding:9px 12px;background:var(--green-soft);border-left:3px solid var(--green);
+border-radius:0 4px 4px 0;font-size:.9em}
+.ans.on{display:block}
+.topbar{position:sticky;top:0;background:rgba(250,250,250,.96);backdrop-filter:blur(6px);
+border-bottom:1px solid var(--border);padding:9px 0;margin-bottom:6px;z-index:9}
+@media print{.topbar{display:none}.ans{display:block !important}.q{page-break-inside:avoid}}
+</style></head><body>
+<div class="hd"><h1>SIMULATIVE TEST 1</h1>
+<div class="meta">H2 Mathematics 9758 &middot; Paper 1 style &middot; 60 minutes &middot; 40 marks &middot; every question from an HCI prelim</div></div>
+<div class="topbar"><button class="rev" onclick="allOn(true)" style="margin-right:6px">Reveal all</button>
+<button class="rev" onclick="allOn(false)">Hide all</button></div>
+<div class="q"><div class="qh"><span class="n">1</span><span class="mk">[6]</span></div><div class="srcline">HCI 2022 Prelim Paper 1 Q1</div><div class="stem"><b>Do not use a calculator in this question.</b></div><div class="part"><div class="pq"><b>(a)</b> Solve algebraically the inequality \(\dfrac{x-1}{x-2}\ \ge\ \dfrac{x-2}{x-1}\). <span style="color:var(--muted)">[3]</span></div><div class="conf">Before you reveal &mdash; say it out loud: <b>confidence: high / medium / guessed</b></div><button class="rev">Reveal answer</button><div class="ans">\(\dfrac{x-1}{x-2}-\dfrac{x-2}{x-1}\ge0\Rightarrow\dfrac{(x-1)^2-(x-2)^2}{(x-2)(x-1)}\ge0\).<br>
+Difference of squares: \((x-1)^2-(x-2)^2=\big[(x-1)-(x-2)\big]\big[(x-1)+(x-2)\big]=2x-3\).<br>
+So \(\dfrac{2x-3}{(x-2)(x-1)}\ge0\); critical values \(1,\tfrac32,2\); sign diagram \(-\,+\,-\,+\).<br>
+<b>\(1<x\le\tfrac32\) or \(x>2\).</b></div></div><div class="part"><div class="pq"><b>(b)</b> Given \(\mathrm{f}(x)=\dfrac{x-1}{x-2}\), state the value of \(a\) such that \(\mathrm{f}(x-a)=\dfrac{2x-3}{2x-5}\). <span style="color:var(--muted)">[1]</span></div><div class="conf">Before you reveal &mdash; say it out loud: <b>confidence: high / medium / guessed</b></div><button class="rev">Reveal answer</button><div class="ans">\(\mathrm{f}(x)=1+\dfrac{1}{x-2}\), so \(\mathrm{f}(x-a)=1+\dfrac{1}{x-a-2}\). Also \(\dfrac{2x-3}{2x-5}=1+\dfrac{2}{2x-5}=1+\dfrac{1}{x-\frac52}\).<br>
+Matching: \(a+2=\tfrac52\), so <b>\(a=\tfrac12\)</b>.</div></div><div class="part"><div class="pq"><b>(c)</b> Hence solve \(\dfrac{2x-3}{2x-5}\ \ge\ \dfrac{2x-5}{2x-3}\). <span style="color:var(--muted)">[2]</span></div><div class="conf">Before you reveal &mdash; say it out loud: <b>confidence: high / medium / guessed</b></div><button class="rev">Reveal answer</button><div class="ans">Replace \(x\) by \(x-\tfrac12\) in the answer to (a):<br>
+\(1<x-\tfrac12\le\tfrac32\Rightarrow\tfrac32<x\le2\); &nbsp; \(x-\tfrac12>2\Rightarrow x>\tfrac52\).<br>
+<b>\(\tfrac32<x\le2\) or \(x>\tfrac52\).</b><br>
+<i>Do not re-solve from scratch &mdash; &ldquo;hence&rdquo; means translate the set you already have.</i></div></div><div style="height:10px"></div></div><div class="q"><div class="qh"><span class="n">2</span><span class="mk">[7]</span></div><div class="srcline">HCI 2023 Prelim Paper 1 Q5</div><div class="stem">A curve \(G\) with equation \(y=\mathrm{f}(3x-2)+a\), where \(a\) is a positive real constant, is transformed onto the curve \(y=\mathrm{f}(x)\) by a sequence of transformations.</div><div class="part"><div class="pq"><b>(a)</b> Describe fully, in terms of \(a\), the sequence of transformations. <span style="color:var(--muted)">[3]</span></div><div class="conf">Before you reveal &mdash; say it out loud: <b>confidence: high / medium / guessed</b></div><button class="rev">Reveal answer</button><div class="ans">Going <b>from \(G\) back to \(\mathrm{f}\)</b>, every step reverses and the order flips.<br>
+<b>1.</b> Translate \(a\) units in the <b>negative</b> \(y\)-direction &rarr; \(y=\mathrm{f}(3x-2)\).<br>
+<b>2.</b> Stretch parallel to the \(x\)-axis with scale factor <b>3</b> &rarr; \(y=\mathrm{f}(x-2)\).<br>
+<b>3.</b> Translate <b>2</b> units in the <b>negative</b> \(x\)-direction &rarr; \(y=\mathrm{f}(x)\).<br><br>
+<i>Trace a point to be sure. Take \(\mathrm{f}(x)=x^2\), so \(G:\ y=(3x-2)^2+a\) passes through \(\left(\tfrac23,a\right)\).</i><br>
+<i>Step 1 &rarr; \(\left(\tfrac23,0\right)\). &nbsp; Step 2 (stretch \(\times3\)) &rarr; \((2,0)\) on \(y=(x-2)^2\). &nbsp; Step 3 (2 units left) &rarr; \((0,0)\) on \(y=x^2\) &check;.</i></div></div><div class="part"><div class="pq"><b>(b)</b> A point on \(G\) with coordinates \((b,0)\) is mapped onto the point \((c,d)\) on the curve \(y=\dfrac{1}{\mathrm{f}(x)}\). Find \(c\) and \(d\) in terms of \(a\) and \(b\). <span style="color:var(--muted)">[4]</span></div><div class="conf">Before you reveal &mdash; say it out loud: <b>confidence: high / medium / guessed</b></div><button class="rev">Reveal answer</button><div class="ans">\((b,0)\) on \(G\) means \(\mathrm{f}(3b-2)+a=0\), so \(\mathrm{f}(3b-2)=-a\).<br>
+Write \(X=3b-2\); then \(\mathrm{f}(X)=-a\), so the point \((X,-a)\) lies on \(y=\mathrm{f}(x)\).<br>
+On \(y=\dfrac{1}{\mathrm{f}(x)}\) the \(x\)-coordinate is unchanged and the \(y\)-coordinate is the reciprocal:<br>
+<b>\(c=3b-2\)</b> and <b>\(d=-\dfrac1a\)</b>.<br>
+\(a>0\) is given, so \(d\) is defined and negative.</div></div><div style="height:10px"></div></div><div class="q"><div class="qh"><span class="n">3</span><span class="mk">[11]</span></div><div class="srcline">HCI 2023 Prelim Paper 1 Q9</div><div class="stem">The function \(\mathrm{f}\) is defined by \(\mathrm{f}:x\mapsto\ln(x+1)^2+2\), \(x\in\mathbb{R}\), \(x\ge0\).</div><div class="part"><div class="pq"><b>(a)</b> Show that \(\mathrm{f}\) has an inverse. <span style="color:var(--muted)">[2]</span></div><div class="conf">Before you reveal &mdash; say it out loud: <b>confidence: high / medium / guessed</b></div><button class="rev">Reveal answer</button><div class="ans">For \(x\ge0\), \(x+1\ge1>0\), so \((x+1)^2\) is <b>strictly increasing</b> on the domain, and \(\ln\) is strictly increasing. A composition of strictly increasing functions is strictly increasing, so \(\mathrm{f}\) is strictly increasing.<br>
+Hence every horizontal line \(y=k\) meets \(y=\mathrm{f}(x)\) <b>at most once</b>, so \(\mathrm{f}\) is one-one and \(\mathrm{f}^{-1}\) exists.</div></div><div class="part"><div class="pq"><b>(b)</b> Find \(\mathrm{f}^{-1}(x)\) and state the domain of \(\mathrm{f}^{-1}\). <span style="color:var(--muted)">[3]</span></div><div class="conf">Before you reveal &mdash; say it out loud: <b>confidence: high / medium / guessed</b></div><button class="rev">Reveal answer</button><div class="ans">\(y=\ln(x+1)^2+2=2\ln(x+1)+2\) (valid since \(x+1>0\)).<br>
+\(\Rightarrow \ln(x+1)=\dfrac{y-2}{2}\Rightarrow x+1=e^{(y-2)/2}\Rightarrow x=e^{(y-2)/2}-1\).<br>
+<b>\(\mathrm{f}^{-1}(x)=e^{(x-2)/2}-1\).</b><br>
+\(R_\mathrm{f}\): at \(x=0\), \(\mathrm{f}=\ln1+2=2\); as \(x\to\infty\), \(\mathrm{f}\to\infty\). Increasing, so \(R_\mathrm{f}=[2,\infty)\).<br>
+<b>\(D_{\mathrm{f}^{-1}}=[2,\infty)\).</b></div></div><div class="part"><div class="pq"><b>(c)</b> The function \(\mathrm{g}\) is defined by \(\mathrm{g}:x\mapsto\dfrac{1-x}{x+1}\), \(x\in\mathbb{R}\), \(x\ne-1\). Given that \(\mathrm{g}^{-1}\) exists, show that \(\mathrm{g}^{-1}\mathrm{f}^{-1}\) exists, and find the range of \(\mathrm{g}^{-1}\mathrm{f}^{-1}\). <span style="color:var(--muted)">[3]</span></div><div class="conf">Before you reveal &mdash; say it out loud: <b>confidence: high / medium / guessed</b></div><button class="rev">Reveal answer</button><div class="ans">\(\mathrm{g}^{-1}\mathrm{f}^{-1}\) exists \(\iff R_{\mathrm{f}^{-1}}\subseteq D_{\mathrm{g}^{-1}}\), and \(D_{\mathrm{g}^{-1}}=R_\mathrm{g}\).<br>
+\(\mathrm{g}(x)=\dfrac{1-x}{x+1}=\dfrac{-(x+1)+2}{x+1}=-1+\dfrac{2}{x+1}\), so \(R_\mathrm{g}=\mathbb{R}\setminus\{-1\}\).<br>
+\(R_{\mathrm{f}^{-1}}=D_\mathrm{f}=[0,\infty)\).<br>
+Since \(-1\notin[0,\infty)\), \(R_{\mathrm{f}^{-1}}\subseteq D_{\mathrm{g}^{-1}}\), so <b>\(\mathrm{g}^{-1}\mathrm{f}^{-1}\) exists</b>.<br><br>
+Range: push \(D_{\mathrm{f}^{-1}}=[2,\infty)\) through. \(\mathrm{f}^{-1}\) maps it to \([0,\infty)\). Then \(\mathrm{g}^{-1}\): note \(\mathrm{g}\) is self-inverse here, since \(\mathrm{g}(\mathrm{g}(x))=x\). So \(\mathrm{g}^{-1}=\mathrm{g}\), and \(\mathrm{g}\) maps \([0,\infty)\) to \((-1,1]\) (\(\mathrm{g}(0)=1\), and \(\mathrm{g}\to-1^+\) as \(x\to\infty\)).<br>
+<b>\(R_{\mathrm{g}^{-1}\mathrm{f}^{-1}}=(-1,1]\).</b></div></div><div class="part"><div class="pq"><b>(d)</b> Find the exact value of \(x\) such that \(\mathrm{g}^{-1}\mathrm{f}^{-1}(x)=\dfrac12\). <span style="color:var(--muted)">[3]</span></div><div class="conf">Before you reveal &mdash; say it out loud: <b>confidence: high / medium / guessed</b></div><button class="rev">Reveal answer</button><div class="ans">Since \(\mathrm{g}^{-1}=\mathrm{g}\), we need \(\mathrm{g}\big(\mathrm{f}^{-1}(x)\big)=\tfrac12\).<br>
+Let \(u=\mathrm{f}^{-1}(x)\). Then \(\dfrac{1-u}{u+1}=\dfrac12\Rightarrow 2-2u=u+1\Rightarrow u=\dfrac13\).<br>
+So \(\mathrm{f}^{-1}(x)=\dfrac13\Rightarrow x=\mathrm{f}\!\left(\dfrac13\right)=\ln\!\left(\dfrac43\right)^2+2=2\ln\dfrac43+2\).<br>
+<b>\(x=2\ln\dfrac43+2\).</b><br>
+Check it lies in \(D_{\mathrm{f}^{-1}}=[2,\infty)\): \(2\ln\tfrac43\approx0.575>0\) &check;.</div></div><div style="height:10px"></div></div><div class="q"><div class="qh"><span class="n">4</span><span class="mk">[8]</span></div><div class="srcline">HCI 2022 Prelim Paper 1 Q8 &middot; fully inside the 2026 cartesian-only scope</div><div class="stem"><b>Do not use a graphing calculator for this question.</b></div><div class="part"><div class="pq"><b>(a)</b> The complex number \(a+i\) is a root of \(z^2-2\sqrt2\,z+b=0\), where \(a\) and \(b\) are positive real constants. Find the exact values of \(a\) and \(b\). <span style="color:var(--muted)">[3]</span></div><div class="conf">Before you reveal &mdash; say it out loud: <b>confidence: high / medium / guessed</b></div><button class="rev">Reveal answer</button><div class="ans">The coefficients \(1,\ -2\sqrt2,\ b\) are all <b>real</b>, so the conjugate \(a-i\) is also a root.<br>
+Sum of roots \(=(a+i)+(a-i)=2a=2\sqrt2\Rightarrow \boxed{a=\sqrt2}\).<br>
+Product of roots \(=(a+i)(a-i)=a^2+1=2+1=3=b\Rightarrow \boxed{b=3}\).<br>
+Both positive, as required.</div></div><div class="part"><div class="pq"><b>(b)</b> It is given that \(\mathrm{f}(z)=z^6-3z^4+11z^2-9\). Show that \(\mathrm{f}(z)=\mathrm{f}(-z)\). <span style="color:var(--muted)">[1]</span></div><div class="conf">Before you reveal &mdash; say it out loud: <b>confidence: high / medium / guessed</b></div><button class="rev">Reveal answer</button><div class="ans">\(\mathrm{f}(-z)=(-z)^6-3(-z)^4+11(-z)^2-9=z^6-3z^4+11z^2-9=\mathrm{f}(z)\), since every power is even. <b>Shown.</b></div></div><div class="part"><div class="pq"><b>(c)</b> It is given that \(a+i\) is a root of \(\mathrm{f}(z)=0\). Using the results in (a) and (b), show that \(\mathrm{f}(z)\) can be factorised into 3 quadratic factors with real coefficients, in exact form. <span style="color:var(--muted)">[4]</span></div><div class="conf">Before you reveal &mdash; say it out loud: <b>confidence: high / medium / guessed</b></div><button class="rev">Reveal answer</button><div class="ans">From (a), \(\sqrt2+i\) is a root. Coefficients are real, so \(\sqrt2-i\) is a root.<br>
+From (b), \(\mathrm{f}(-z)=\mathrm{f}(z)\), so \(-\sqrt2-i\) and \(-\sqrt2+i\) are roots too.<br><br>
+The pair \(\sqrt2\pm i\) gives the real quadratic \(z^2-2\sqrt2 z+3\) (from part (a)).<br>
+The pair \(-\sqrt2\pm i\) gives \(z^2+2\sqrt2 z+3\).<br>
+Their product: \((z^2+3)^2-(2\sqrt2 z)^2=z^4+6z^2+9-8z^2=z^4-2z^2+9\).<br><br>
+Divide: \(\dfrac{z^6-3z^4+11z^2-9}{z^4-2z^2+9}=z^2-1\).<br>
+<b>\(\mathrm{f}(z)=\left(z^2-2\sqrt2 z+3\right)\left(z^2+2\sqrt2 z+3\right)\left(z^2-1\right)\)</b>, all three with real coefficients.<br>
+<i>Verified by expansion.</i></div></div><div style="height:10px"></div></div><div class="q"><div class="qh"><span class="n">5</span><span class="mk">[8]</span></div><div class="srcline">HCI 2023 Prelim Paper 1 Q6</div><div class="part"><div class="pq"><b>(a)</b> By writing \(\dfrac{1}{(2r+1)(2r+3)}\) in partial fractions, find an expression for \(\displaystyle\sum_{r=1}^{n}\frac{1}{(2r+1)(2r+3)}\) in terms of \(n\). <span style="color:var(--muted)">[4]</span></div><div class="conf">Before you reveal &mdash; say it out loud: <b>confidence: high / medium / guessed</b></div><button class="rev">Reveal answer</button><div class="ans">Partial fractions: \(\dfrac{1}{(2r+1)(2r+3)}=\dfrac12\left(\dfrac{1}{2r+1}-\dfrac{1}{2r+3}\right)\).<br><br>
+\(\displaystyle\sum_{r=1}^{n}=\frac12\left[\left(\frac13-\frac15\right)+\left(\frac15-\frac17\right)+\cdots+\left(\frac{1}{2n+1}-\frac{1}{2n+3}\right)\right]\)<br>
+Telescoping leaves the first and last: \(=\dfrac12\left(\dfrac13-\dfrac{1}{2n+3}\right)\).<br>
+Simplify: \(=\dfrac12\cdot\dfrac{(2n+3)-3}{3(2n+3)}=\dfrac{2n}{6(2n+3)}=\boxed{\dfrac{n}{3(2n+3)}}\).<br>
+<i>Check \(n=1\): formula gives \(\dfrac{1}{15}\); direct \(\dfrac{1}{3\cdot5}=\dfrac{1}{15}\) &check;.</i></div></div><div class="part"><div class="pq"><b>(b)</b> Explain why \(\displaystyle\sum_{r=1}^{\infty}\left[-\left(\frac13\right)^{r}+\frac{1}{(2r+1)(2r+3)}\right]\) is a convergent series, and state its sum to infinity. <span style="color:var(--muted)">[4]</span></div><div class="conf">Before you reveal &mdash; say it out loud: <b>confidence: high / medium / guessed</b></div><button class="rev">Reveal answer</button><div class="ans">Split into two series.<br>
+<b>First:</b> \(\displaystyle\sum_{r=1}^{\infty}-\left(\tfrac13\right)^r\) is geometric with first term \(-\tfrac13\) and ratio \(\tfrac13\). Since \(\left|\tfrac13\right|<1\) it <b>converges</b>, to \(\dfrac{-\frac13}{1-\frac13}=-\dfrac12\).<br>
+<b>Second:</b> from (a) the partial sum is \(\dfrac{n}{3(2n+3)}\to\dfrac{1}{6}\) as \(n\to\infty\), so it <b>converges</b> to \(\dfrac16\).<br><br>
+Both parts converge, so the sum of the two series converges, and the limits add:<br>
+<b>Sum to infinity \(=-\dfrac12+\dfrac16=-\dfrac13\).</b></div></div><div style="height:10px"></div></div>
+<script>
+document.addEventListener('click',e=>{if(e.target.classList.contains('rev')){
+ const a=e.target.nextElementSibling;a.classList.toggle('on');
+ e.target.textContent=a.classList.contains('on')?'Hide':'Reveal answer';}});
+function allOn(v){document.querySelectorAll('.ans').forEach(a=>a.classList.toggle('on',v));
+ document.querySelectorAll('.q button.rev').forEach(b=>b.textContent=v?'Hide':'Reveal answer');}
+</script></body></html>

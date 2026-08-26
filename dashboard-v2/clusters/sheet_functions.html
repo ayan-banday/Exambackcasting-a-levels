@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Functions — Study Sheet (9758)</title>
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true,tags:'none'},svg:{fontCache:'global'}};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+:root{--bg:#fafafa;--card:#fff;--border:#e5e7eb;--text:#1a1a1a;--muted:#6b7280;
+--blue:#2563eb;--blue-soft:#eff6ff;--amber:#d97706;--amber-soft:#fffbeb;
+--green:#059669;--green-soft:#ecfdf5;--red:#dc2626;--red-soft:#fef2f2;
+--purple:#6d28d9;--purple-soft:#f5f3ff;}
+*{box-sizing:border-box}
+body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:980px;margin:0 auto;
+padding:32px 22px 90px;line-height:1.6;color:var(--text);background:var(--bg)}
+h1,h2,h3,.tag,.hd .sub,.hd .meta,.nav,.lbl,.secn{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+.hd{border-bottom:2.5px solid #111;padding-bottom:13px;margin-bottom:8px;text-align:center}
+.hd h1{font-size:1.45em;font-weight:800;letter-spacing:.4px;margin:0;color:#111}
+.hd .sub{font-size:.97em;margin-top:4px;color:#333}
+.hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:.76em;color:var(--muted);margin-top:7px}
+h2{font-size:1.06em;margin:32px 0 11px;padding:7px 12px;background:#111;color:#fff;border-radius:5px;font-weight:700}
+.nav{background:var(--card);border:1px solid var(--border);padding:12px 17px;border-radius:6px;margin:15px 0 24px;font-size:.84em}
+.nav a{color:var(--blue);text-decoration:none;display:inline-block;margin:0 13px 4px 0}
+.nav a:hover{text-decoration:underline}
+table{border-collapse:collapse;margin:11px 0;font-size:.85em;width:100%;background:#fff}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#f1f5f9;font-weight:700;font-family:-apple-system,sans-serif;font-size:.93em}
+tr:nth-child(even) td{background:#fcfcfd}
+.sec{background:var(--card);border:1px solid var(--border);border-radius:7px;margin:18px 0;overflow:hidden}
+.secn{background:#f1f5f9;border-bottom:1px solid var(--border);padding:9px 15px;font-weight:700;font-size:.95em;
+display:flex;align-items:center;gap:10px}
+.secn .n{background:#111;color:#fff;border-radius:4px;min-width:26px;height:23px;display:inline-flex;
+align-items:center;justify-content:center;font-size:.78em;font-weight:800;flex:none}
+.sec>div:not(.secn){margin:0 15px}
+.meth{background:var(--blue-soft);border-left:3px solid var(--blue);padding:9px 13px;margin-top:12px;border-radius:0 4px 4px 0;font-size:.92em}
+.meth .lbl{color:var(--blue);font-size:.68em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:4px;font-family:-apple-system,sans-serif}
+.eg{background:var(--green-soft);border-left:3px solid var(--green);padding:9px 13px;margin-top:11px;border-radius:0 4px 4px 0;font-size:.9em}
+.eg .lbl{color:var(--green);font-size:.68em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:4px;font-family:-apple-system,sans-serif}
+.pr{background:#fff;border:1px solid var(--border);border-left:3px solid var(--purple);padding:9px 13px;margin:11px 0 14px;border-radius:0 4px 4px 0;font-size:.9em}
+.pr .lbl{color:var(--purple);font-size:.68em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:4px;font-family:-apple-system,sans-serif}
+.src{font-family:ui-monospace,Menlo,monospace;font-size:.72em;color:var(--muted);margin-top:5px}
+.trap{background:var(--red-soft);border-left:3px solid var(--red);padding:8px 12px;margin-top:10px;border-radius:0 4px 4px 0;font-size:.87em;color:#7f1d1d}
+.trap b{color:var(--red)}
+.note{background:var(--amber-soft);border:1px solid #fcd34d;border-left:4px solid var(--amber);padding:10px 14px;border-radius:6px;margin:13px 0;font-size:.89em;color:#7c2d12}
+.note b{color:#b91c1c}
+.key{background:var(--purple-soft);border:1px solid #ddd6fe;border-left:4px solid var(--purple);padding:10px 14px;border-radius:6px;margin:13px 0;font-size:.89em}
+.key b{color:var(--purple)}
+button.rev{font-family:-apple-system,sans-serif;font-size:.78em;font-weight:600;background:#111;color:#fff;
+border:0;border-radius:5px;padding:5px 12px;cursor:pointer;margin-top:7px}
+button.rev:hover{background:#333}
+.ans{display:none;margin-top:9px;padding-top:9px;border-top:1px dashed var(--border)}
+.ans.on{display:block}
+@media print{body{background:#fff;padding:0;max-width:none;font-size:10.5pt}
+.nav,button.rev{display:none}.ans{display:block !important}.sec{page-break-inside:avoid}
+h2,.secn,.meth,.eg,.pr,.trap,.note,.key,th{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style></head><body>
+<div class="hd"><h1>FUNCTIONS</h1><div class="sub">H2 Mathematics 9758 &nbsp;&middot;&nbsp; Topic 1.1 &nbsp;&middot;&nbsp; 30 minutes</div>
+<div class="meta">Every learning outcome &middot; formula &rarr; worked example &rarr; practice from HCI prelims</div></div>
+
+<div class="nav"><b style="display:block;margin-bottom:5px">Sections</b><a href="#s1">1 Domain, range, and the one-one test</a><a href="#s2">2 Finding the inverse — and its domain and range</a><a href="#s3">3 Composite functions</a><a href="#s4">4 The graph of \(f^{-1}\), and where \(f\) meets \(f^{-1}\)</a>
+<div style="margin-top:9px"><button class="rev" onclick="allOn(true)" style="margin-right:6px">Reveal all answers</button>
+<button class="rev" onclick="allOn(false)">Hide all</button></div></div>
+<h2>Learning outcomes this sheet covers</h2>
+<table><tr><th style="width:24%">Outcome</th><th>What the syllabus asks for</th></tr><tr><td><b>Concepts</b></td><td>Function, domain and range.</td></tr><tr><td><b>Inverse</b></td><td>Inverse functions, the condition for one to exist, and domain restriction to obtain one.</td></tr><tr><td><b>Composite</b></td><td>Composite functions and the condition for one to exist.</td></tr><tr><td><b>Graphs</b></td><td>Relationship between the graph of a one-to-one function and the graph of its inverse.</td></tr><tr><td><b>Excluded</b></td><td>The relation \((fg)^{-1}=g^{-1}f^{-1}\) is <b>out</b>, and so is restricting a domain in order to make a <i>composite</i> exist.</td></tr></table>
+<div class="sec" id="s1"><div class="secn"><span class="n">1</span>Domain, range, and the one-one test</div><div class="meth"><div class="lbl">Definitions and notation</div>\(D_f\) is the set of inputs, \(R_f\) the set of outputs. A function must give <b>exactly one</b> output per input.<br><br>
+<b>\(f^{-1}\) exists \(\iff\) \(f\) is one-one \(\iff\)</b> every horizontal line \(y=k\) cuts the graph <b>at most once</b>. That sentence, with the words &ldquo;horizontal line&rdquo; and &ldquo;at most once&rdquo;, is what earns the mark.<br><br>
+<b>To find a range:</b> sketch the graph over the stated domain and read off the \(y\)-values. Do not guess it from the formula.</div><div class="eg"><div class="lbl">Example</div><b>\(f(x)=\ln\!\big((x+1)^2\big)+2\) for \(x\ge 0\). Show that \(f^{-1}\) exists.</b><br><br>
+For \(x\ge 0\), \(x+1\ge 1>0\), so \((x+1)^2\) is <b>strictly increasing</b> on this domain, and \(\ln\) is strictly increasing, so \(f\) is strictly increasing.<br>
+A strictly increasing function is one-one, so any horizontal line meets \(y=f(x)\) at most once. Hence \(f^{-1}\) exists.<br><br>
+(Without the restriction \(x\ge0\), \((x+1)^2\) is symmetric about \(x=-1\) and \(f\) would <b>not</b> be one-one.)</div><div class="trap"><b>Trap</b> Writing &ldquo;\(f\) is one-one because it passes the vertical line test&rdquo;. The <b>vertical</b> line test only says it is a function at all. The <b>horizontal</b> line test is the one-one test.</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div>The function \(f\) is defined by \(f:x\mapsto \dfrac{ax-3}{5x-4}\) for \(x\in\mathbb{R}\), \(x\ne\dfrac45\), where \(a\in\mathbb{R}\). Find \(f^{-1}(x)\) and state its domain, and find the value of \(a\) for which \(f\) is self-inverse.<div class="src">Built on HCI 2025 Prelim Paper 1 Q8</div><button class="rev">Reveal answer</button><div class="ans">Let \(y=\dfrac{ax-3}{5x-4}\). Then \(y(5x-4)=ax-3\Rightarrow 5xy-ax=4y-3\Rightarrow x(5y-a)=4y-3\).<br>
+\(x=\dfrac{4y-3}{5y-a}\), so \(\boxed{f^{-1}(x)=\dfrac{4x-3}{5x-a}}\).<br><br>
+<b>Domain of \(f^{-1}=R_f\).</b> As \(x\to\pm\infty\), \(f(x)\to\dfrac{a}{5}\), and \(y=\dfrac a5\) is a horizontal asymptote never attained, so \(R_f=\mathbb{R}\setminus\left\{\dfrac a5\right\}\). Hence \(D_{f^{-1}}=\mathbb{R},\ x\ne\dfrac a5\).<br><br>
+<b>Self-inverse</b> means \(f=f^{-1}\), i.e. \(\dfrac{ax-3}{5x-4}=\dfrac{4x-3}{5x-a}\) for all valid \(x\). Comparing, \(a=4\).<br>
+<b>Check:</b> with \(a=4\), \(f(x)=\dfrac{4x-3}{5x-4}\) and \(f^{-1}(x)=\dfrac{4x-3}{5x-4}\). Identical, so \(a=4\).</div></div></div><div class="sec" id="s2"><div class="secn"><span class="n">2</span>Finding the inverse — and its domain and range</div><div class="meth"><div class="lbl">The four-step procedure</div><b>1.</b> Set \(y=f(x)\) and make \(x\) the subject.<br>
+<b>2.</b> Swap the letters to write \(f^{-1}(x)\).<br>
+<b>3.</b> \(D_{f^{-1}}=R_f\) &mdash; <b>always</b>. This is the step people drop, and it is usually its own mark.<br>
+<b>4.</b> \(R_{f^{-1}}=D_f\).<br><br>
+If step 1 gives a \(\pm\), the original domain tells you which sign to keep.</div><div class="meth"><div class="lbl">Domain restriction to create an inverse</div>If \(f\) is not one-one, restrict the domain to the largest interval on which it is. For a parabola with vertex at \(x=h\), take \(x\ge h\) (or \(x\le h\)) &mdash; and say <b>why</b>: on that interval \(f\) is strictly increasing (or decreasing), so it is one-one.</div><div class="eg"><div class="lbl">Example</div><b>\(f(x)=e^{2x}-4\), \(x\in\mathbb{R}\). Find \(f^{-1}\) and its domain.</b><br><br>
+\(y=e^{2x}-4\Rightarrow e^{2x}=y+4\Rightarrow 2x=\ln(y+4)\Rightarrow x=\tfrac12\ln(y+4)\).<br>
+So \(f^{-1}(x)=\tfrac12\ln(x+4)\).<br>
+\(R_f\): \(e^{2x}>0\) for all real \(x\), so \(f(x)>-4\), giving \(R_f=(-4,\infty)\).<br>
+Therefore \(D_{f^{-1}}=(-4,\infty)\).</div><div class="trap"><b>Trap</b> Giving \(f^{-1}\) without its domain. It is a separate mark on nearly every paper, and \(D_{f^{-1}}=R_f\) requires you to have actually found \(R_f\) &mdash; which usually means sketching \(f\).</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div>The function \(f\) is defined by \(f:x\mapsto \dfrac{1}{x-2}\), \(x\in\mathbb{R}\), \(x\ne 2\). Find \(f^{-1}\) in a similar form, and state the value of \(x\) for which \(f(x)=f^{-1}(x)\).<div class="src">Built on HCI 2021 Prelim Paper 1 Q8</div><button class="rev">Reveal answer</button><div class="ans">\(y=\dfrac{1}{x-2}\Rightarrow x-2=\dfrac1y\Rightarrow x=\dfrac1y+2\).<br>
+\(\boxed{f^{-1}:x\mapsto \dfrac1x+2,\ x\in\mathbb{R},\ x\ne 0}\) &mdash; the exclusion is \(x\ne0\) because \(R_f=\mathbb{R}\setminus\{0\}\).<br><br>
+<b>Where \(f=f^{-1}\):</b> \(\dfrac{1}{x-2}=\dfrac1x+2=\dfrac{1+2x}{x}\).<br>
+Cross-multiplying: \(x=(1+2x)(x-2)=2x^2-3x-2\Rightarrow 2x^2-4x-2=0\Rightarrow x^2-2x-1=0\).<br>
+\(x=1\pm\sqrt2\). Both are valid (neither is \(0\) or \(2\)).<br><br>
+<b>Shortcut worth knowing:</b> solutions of \(f(x)=f^{-1}(x)\) that lie on \(y=x\) can be found from \(f(x)=x\) instead, which is usually far quicker. Here \(\dfrac{1}{x-2}=x\) gives the same quadratic.</div></div></div><div class="sec" id="s3"><div class="secn"><span class="n">3</span>Composite functions</div><div class="meth"><div class="lbl">Existence and construction</div><b>\(fg\) means &ldquo;do \(g\) first, then \(f\)&rdquo;.</b><br><br>
+<b>\(fg\) exists \(\iff R_g\subseteq D_f\).</b> Learn it in that order &mdash; the <b>range of the inner</b> must fit inside the <b>domain of the outer</b>.<br><br>
+If it exists: \(D_{fg}=D_g\), and to get \(R_{fg}\), push the domain through in two stages: \(D_g\to R_g\to R_{fg}\), reading each range off a sketch.<br><br>
+To show \(fg\) does <b>not</b> exist, state \(R_g\), state \(D_f\), and name one element of \(R_g\) outside \(D_f\).</div><div class="meth"><div class="lbl">Iterated functions</div>\(f^2=ff\), \(f^3=fff\). If \(f^2=x\) then \(f\) is <b>self-inverse</b> and the pattern has period 2: \(f^{\text{even}}(x)=x\), \(f^{\text{odd}}=f\).<br>
+If \(f^3=x\), the period is 3 &mdash; reduce the exponent mod 3. Exam questions like \(f^{2030}\) are always solved this way, never by brute force.</div><div class="eg"><div class="lbl">Example</div><b>\(f:x\mapsto\dfrac{1}{x-3}\), \(x\ne3\); \(g:x\mapsto x^2\), \(x\in\mathbb{R}\). Only one of \(fg\), \(gf\) exists. Which, and why?</b><br><br>
+\(R_g=[0,\infty)\) and \(D_f=\mathbb{R}\setminus\{3\}\). Since \(3\in R_g\) but \(3\notin D_f\), \(R_g\not\subseteq D_f\), so <b>\(fg\) does not exist</b>.<br><br>
+\(R_f=\mathbb{R}\setminus\{0\}\) and \(D_g=\mathbb{R}\). Since \(R_f\subseteq D_g\), <b>\(gf\) exists</b>:<br>
+\(gf(x)=g\!\left(\dfrac{1}{x-3}\right)=\dfrac{1}{(x-3)^2}\), with \(D_{gf}=D_f=\mathbb{R}\setminus\{3\}\).</div><div class="trap"><b>Trap</b> Two things. <b>Order:</b> \(fg\) applies \(g\) first &mdash; reading left to right is wrong. <b>Domain of the composite:</b> it is \(D_g\), the domain of the <i>inner</i> function, not \(D_f\) and not the intersection.<br><br>
+Also note the syllabus <b>excludes</b> restricting a domain in order to make a composite exist &mdash; if a composite does not exist, say so and stop.</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div>The function \(f\) is defined by \(f(x)=\dfrac{1}{1-x}\) for \(x\in\mathbb{R}\), \(x\ne1\), \(x\ne0\). Show that \(f^2(x)=f^{-1}(x)\), and hence find \(f^{3}(x)\) and \(f^{2030}(x)\) in simplified form.<div class="src">Iterated-function pattern; the same device HCI used in a 2025 prelim (\(f^{2030}\))</div><button class="rev">Reveal answer</button><div class="ans"><b>\(f^2\):</b> \(f\!\left(\dfrac{1}{1-x}\right)=\dfrac{1}{1-\frac{1}{1-x}}=\dfrac{1-x}{(1-x)-1}=\dfrac{1-x}{-x}=\dfrac{x-1}{x}\).<br><br>
+<b>\(f^{-1}\):</b> \(y=\dfrac{1}{1-x}\Rightarrow 1-x=\dfrac1y\Rightarrow x=1-\dfrac1y=\dfrac{y-1}{y}\), so \(f^{-1}(x)=\dfrac{x-1}{x}\).<br>
+Rules match and both have domain \(\mathbb{R}\setminus\{0,1\}\), so \(f^2=f^{-1}\). <b>Shown.</b><br><br>
+<b>\(f^3\):</b> \(f^3=f\!\circ\! f^2=f\circ f^{-1}=x\). So \(f^3(x)=x\) &mdash; the function has <b>period 3</b>.<br><br>
+<b>\(f^{2030}\):</b> \(2030=3(676)+2\), so \(f^{2030}=f^{2}\), giving \(\dfrac{x-1}{x}\).</div></div></div><div class="sec" id="s4"><div class="secn"><span class="n">4</span>The graph of \(f^{-1}\), and where \(f\) meets \(f^{-1}\)</div><div class="meth"><div class="lbl">Reflection in y = x</div>The graph of \(y=f^{-1}(x)\) is the reflection of \(y=f(x)\) in the line \(y=x\). Everything swaps:<br>
+&bull; a point \((a,b)\) on \(f\) becomes \((b,a)\) on \(f^{-1}\);<br>
+&bull; a <b>vertical</b> asymptote \(x=k\) becomes a <b>horizontal</b> asymptote \(y=k\);<br>
+&bull; the domain and range swap.<br><br>
+<b>Intersections.</b> If \(f\) is <b>increasing</b>, every solution of \(f(x)=f^{-1}(x)\) lies on \(y=x\), so solve the much easier \(f(x)=x\). If \(f\) is <b>decreasing</b>, there can be solutions off the line \(y=x\) as well &mdash; then you must solve \(f(x)=f^{-1}(x)\) directly.</div><div class="eg"><div class="lbl">Example</div><b>\(f(x)=\sqrt{x-1}\), \(x\ge1\). Sketch \(f\) and \(f^{-1}\) on the same axes and find where they meet.</b><br><br>
+\(f\) is increasing, so intersections lie on \(y=x\): solve \(\sqrt{x-1}=x\Rightarrow x-1=x^2\Rightarrow x^2-x+1=0\).<br>
+Discriminant \(=1-4=-3<0\), so <b>there is no intersection at all</b> &mdash; the two curves are reflections that never meet.<br>
+\(f^{-1}(x)=x^2+1\) with \(D_{f^{-1}}=R_f=[0,\infty)\).</div><div class="trap"><b>Trap</b> Assuming \(f\) and \(f^{-1}\) always intersect on \(y=x\), or always intersect at all. Check whether \(f\) is increasing before using the shortcut, and check the discriminant before claiming a solution exists.</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div>The function \(f\) is defined by \(f(x)=\begin{cases}5+\ln x & 0<x\le 1\\ 2-x+6\sqrt{x} & 1<x\le a\end{cases}\). State the largest value of \(a\) for which \(f^{-1}\) exists, giving a reason.<div class="src">Built on the piecewise function in HCI 2022 Prelim Paper 1 Q6</div><button class="rev">Reveal answer</button><div class="ans">On \(0<x\le1\): \(5+\ln x\) is increasing, running from \(-\infty\) up to \(f(1)=5\).<br>
+On \(1<x\le a\): \(g(x)=2-x+6\sqrt x\), so \(g'(x)=-1+\dfrac{3}{\sqrt x}\).<br>
+\(g'(x)=0\Rightarrow \sqrt x=3\Rightarrow x=9\). For \(1<x<9\), \(g'>0\) (increasing); for \(x>9\), \(g'<0\).<br><br>
+So \(f\) increases throughout \(0<x\le 9\) and then turns. For \(f\) to stay one-one, the domain must stop at the turning point.<br>
+<b>Largest \(a=9\)</b>, because on \(0<x\le9\) the function is strictly increasing, so every horizontal line cuts the graph at most once and \(f^{-1}\) exists. Beyond \(x=9\) the curve turns back down and \(f\) would no longer be one-one.<br><br>
+<b>Continuity check:</b> \(g(1)=2-1+6=7\) while \(5+\ln1=5\), so there is a jump at \(x=1\). A jump does not break one-one-ness, so it does not affect the answer here.</div></div></div>
+<script>
+document.addEventListener('click',e=>{
+  if(e.target.classList.contains('rev')){
+    const a=e.target.nextElementSibling;
+    a.classList.toggle('on');
+    e.target.textContent=a.classList.contains('on')?'Hide answer':'Reveal answer';
+  }
+});
+function allOn(v){document.querySelectorAll('.ans').forEach(a=>a.classList.toggle('on',v));
+  document.querySelectorAll('button.rev').forEach(b=>b.textContent=v?'Hide answer':'Reveal answer');}
+</script></body></html>

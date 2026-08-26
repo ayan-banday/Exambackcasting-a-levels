@@ -1,0 +1,150 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphs & Transformations — Study Sheet (9758)</title>
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true,tags:'none'},svg:{fontCache:'global'}};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+:root{--bg:#fafafa;--card:#fff;--border:#e5e7eb;--text:#1a1a1a;--muted:#6b7280;
+--blue:#2563eb;--blue-soft:#eff6ff;--amber:#d97706;--amber-soft:#fffbeb;
+--green:#059669;--green-soft:#ecfdf5;--red:#dc2626;--red-soft:#fef2f2;
+--purple:#6d28d9;--purple-soft:#f5f3ff;}
+*{box-sizing:border-box}
+body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:980px;margin:0 auto;
+padding:32px 22px 90px;line-height:1.6;color:var(--text);background:var(--bg)}
+h1,h2,h3,.tag,.hd .sub,.hd .meta,.nav,.lbl,.secn{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+.hd{border-bottom:2.5px solid #111;padding-bottom:13px;margin-bottom:8px;text-align:center}
+.hd h1{font-size:1.45em;font-weight:800;letter-spacing:.4px;margin:0;color:#111}
+.hd .sub{font-size:.97em;margin-top:4px;color:#333}
+.hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:.76em;color:var(--muted);margin-top:7px}
+h2{font-size:1.06em;margin:32px 0 11px;padding:7px 12px;background:#111;color:#fff;border-radius:5px;font-weight:700}
+.nav{background:var(--card);border:1px solid var(--border);padding:12px 17px;border-radius:6px;margin:15px 0 24px;font-size:.84em}
+.nav a{color:var(--blue);text-decoration:none;display:inline-block;margin:0 13px 4px 0}
+.nav a:hover{text-decoration:underline}
+table{border-collapse:collapse;margin:11px 0;font-size:.85em;width:100%;background:#fff}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#f1f5f9;font-weight:700;font-family:-apple-system,sans-serif;font-size:.93em}
+tr:nth-child(even) td{background:#fcfcfd}
+.sec{background:var(--card);border:1px solid var(--border);border-radius:7px;margin:18px 0;overflow:hidden}
+.secn{background:#f1f5f9;border-bottom:1px solid var(--border);padding:9px 15px;font-weight:700;font-size:.95em;
+display:flex;align-items:center;gap:10px}
+.secn .n{background:#111;color:#fff;border-radius:4px;min-width:26px;height:23px;display:inline-flex;
+align-items:center;justify-content:center;font-size:.78em;font-weight:800;flex:none}
+.sec>div:not(.secn){margin:0 15px}
+.meth{background:var(--blue-soft);border-left:3px solid var(--blue);padding:9px 13px;margin-top:12px;border-radius:0 4px 4px 0;font-size:.92em}
+.meth .lbl{color:var(--blue);font-size:.68em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:4px;font-family:-apple-system,sans-serif}
+.eg{background:var(--green-soft);border-left:3px solid var(--green);padding:9px 13px;margin-top:11px;border-radius:0 4px 4px 0;font-size:.9em}
+.eg .lbl{color:var(--green);font-size:.68em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:4px;font-family:-apple-system,sans-serif}
+.pr{background:#fff;border:1px solid var(--border);border-left:3px solid var(--purple);padding:9px 13px;margin:11px 0 14px;border-radius:0 4px 4px 0;font-size:.9em}
+.pr .lbl{color:var(--purple);font-size:.68em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:4px;font-family:-apple-system,sans-serif}
+.src{font-family:ui-monospace,Menlo,monospace;font-size:.72em;color:var(--muted);margin-top:5px}
+.trap{background:var(--red-soft);border-left:3px solid var(--red);padding:8px 12px;margin-top:10px;border-radius:0 4px 4px 0;font-size:.87em;color:#7f1d1d}
+.trap b{color:var(--red)}
+.note{background:var(--amber-soft);border:1px solid #fcd34d;border-left:4px solid var(--amber);padding:10px 14px;border-radius:6px;margin:13px 0;font-size:.89em;color:#7c2d12}
+.note b{color:#b91c1c}
+.key{background:var(--purple-soft);border:1px solid #ddd6fe;border-left:4px solid var(--purple);padding:10px 14px;border-radius:6px;margin:13px 0;font-size:.89em}
+.key b{color:var(--purple)}
+button.rev{font-family:-apple-system,sans-serif;font-size:.78em;font-weight:600;background:#111;color:#fff;
+border:0;border-radius:5px;padding:5px 12px;cursor:pointer;margin-top:7px}
+button.rev:hover{background:#333}
+.ans{display:none;margin-top:9px;padding-top:9px;border-top:1px dashed var(--border)}
+.ans.on{display:block}
+@media print{body{background:#fff;padding:0;max-width:none;font-size:10.5pt}
+.nav,button.rev{display:none}.ans{display:block !important}.sec{page-break-inside:avoid}
+h2,.secn,.meth,.eg,.pr,.trap,.note,.key,th{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style></head><body>
+<div class="hd"><h1>GRAPHS &amp; TRANSFORMATIONS</h1><div class="sub">H2 Mathematics 9758 &nbsp;&middot;&nbsp; Topic 1.2 &nbsp;&middot;&nbsp; 60 minutes</div>
+<div class="meta">Every learning outcome &middot; formula &rarr; worked example &rarr; practice from HCI prelims</div></div>
+
+<div class="nav"><b style="display:block;margin-bottom:5px">Sections</b><a href="#s1">1 Conics — the five standard shapes</a><a href="#s2">2 Rational functions and their asymptotes</a><a href="#s3">3 Transformations — and the order they act in</a><a href="#s4">4 Related graphs — |f(x)|, f(|x|) and 1/f(x)</a><a href="#s5">5 Parametric curves</a>
+<div style="margin-top:9px"><button class="rev" onclick="allOn(true)" style="margin-right:6px">Reveal all answers</button>
+<button class="rev" onclick="allOn(false)">Hide all</button></div></div>
+<h2>Learning outcomes this sheet covers</h2>
+<table><tr><th style="width:24%">Outcome</th><th>What the syllabus asks for</th></tr><tr><td><b>Curve characteristics</b></td><td>Symmetry, axial intercepts, turning points and asymptotes of \(y^2=ax\), \(x^2=by\), the ellipse, both hyperbolas, \(y=\frac{ax+b}{cx+d}\) and \(y=\frac{ax^2+bx+c}{dx+e}\).</td></tr><tr><td><b>Asymptotes &amp; restrictions</b></td><td>Equations of asymptotes, axes of symmetry, and restrictions on the possible values of \(x\) and/or \(y\).</td></tr><tr><td><b>Transformations</b></td><td>Effect on \(y=f(x)\) of \(y=af(x)\), \(y=f(x)+a\), \(y=f(x+a)\), \(y=f(ax)\), and combinations of these.</td></tr><tr><td><b>Related graphs</b></td><td>Relating \(y=|f(x)|\), \(y=f(|x|)\) and \(y=\frac{1}{f(x)}\) to \(y=f(x)\).</td></tr><tr><td><b>Parametric</b></td><td>Simple parametric equations and their graphs.</td></tr><tr><td><b>GC</b></td><td>Use of a graphing calculator to graph a given function.</td></tr></table>
+<div class="sec" id="s1"><div class="secn"><span class="n">1</span>Conics — the five standard shapes</div><div class="meth"><div class="lbl">The forms you must recognise on sight</div><table><tr><th>Equation</th><th>Shape</th><th>Key features</th></tr>
+<tr><td>\(y^2=ax\)</td><td>Parabola, opens along \(x\)</td><td>Vertex \((0,0)\); symmetric about the \(x\)-axis; opens right if \(a>0\)</td></tr>
+<tr><td>\(x^2=by\)</td><td>Parabola, opens along \(y\)</td><td>Vertex \((0,0)\); symmetric about the \(y\)-axis</td></tr>
+<tr><td>\(\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\)</td><td>Ellipse</td><td>Centre \((0,0)\); \(x\)-intercepts \(\pm a\), \(y\)-intercepts \(\pm b\). <b>No asymptotes.</b> \(-a\le x\le a\), \(-b\le y\le b\)</td></tr>
+<tr><td>\(\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\)</td><td>Hyperbola, opens left/right</td><td>Vertices \((\pm a,0)\); <b>no \(y\)-intercept</b>; asymptotes \(y=\pm\dfrac{b}{a}x\); \(|x|\ge a\)</td></tr>
+<tr><td>\(\dfrac{y^2}{b^2}-\dfrac{x^2}{a^2}=1\)</td><td>Hyperbola, opens up/down</td><td>Vertices \((0,\pm b)\); <b>no \(x\)-intercept</b>; asymptotes \(y=\pm\dfrac{b}{a}x\); \(|y|\ge b\)</td></tr></table>
+<b>Shifted centre.</b> Replace \(x\) by \(x-h\) and \(y\) by \(y-k\) to move the centre to \((h,k)\). Every feature shifts with it, asymptotes included.</div><div class="meth"><div class="lbl">Getting a conic into standard form</div>Divide through until the right-hand side is \(1\). For \(x^2-3y^2=3\): divide by 3 to get \(\dfrac{x^2}{3}-\dfrac{y^2}{1}=1\), so \(a=\sqrt3\), \(b=1\).</div><div class="eg"><div class="lbl">Example</div><b>Sketch \(x^2-3y^2=3\), giving asymptotes and intercepts in exact form.</b><br><br>
+Divide by 3: \(\dfrac{x^2}{3}-\dfrac{y^2}{1}=1\). This is the left/right hyperbola with \(a=\sqrt3\), \(b=1\).<br>
+\(x\)-intercepts: set \(y=0\) &rArr; \(x^2=3\) &rArr; \(x=\pm\sqrt3\).<br>
+\(y\)-intercepts: set \(x=0\) &rArr; \(-3y^2=3\) &rArr; \(y^2=-1\), <b>no real solution, so no \(y\)-intercept</b>.<br>
+Asymptotes: \(y=\pm\dfrac{b}{a}x=\pm\dfrac{1}{\sqrt3}x\).<br>
+Two branches, one through \((\sqrt3,0)\) opening right, one through \((-\sqrt3,0)\) opening left, each approaching the asymptotes.</div><div class="trap"><b>Trap</b> Quoting \(y=\pm\dfrac{a}{b}x\) instead of \(y=\pm\dfrac{b}{a}x\). The gradient is <i>the \(y\)-denominator over the \(x\)-denominator</i>. Check it against the vertices: the curve must open <b>towards</b> the axis whose variable appears with the \(+\) sign.</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div>An ellipse has equation \(\dfrac{x^2}{4}+\dfrac{(y-1)^2}{9}=1\). Sketch it, stating the centre, the exact axial intercepts, and the range of possible values of \(x\) and of \(y\).<div class="src">Standard-form conic with a shifted centre &middot; the 2021 HCI P2 Q2 ellipse is the same idea with a "clear workings" instruction</div><button class="rev">Reveal answer</button><div class="ans">Centre \((0,1)\). Semi-axis \(2\) in \(x\), \(3\) in \(y\).<br>
+\(y\)-intercepts: \(x=0\Rightarrow (y-1)^2=9\Rightarrow y=4\) or \(y=-2\), so \((0,4)\) and \((0,-2)\).<br>
+\(x\)-intercepts: \(y=0\Rightarrow \dfrac{x^2}{4}+\dfrac{1}{9}=1\Rightarrow x^2=\dfrac{32}{9}\Rightarrow x=\pm\dfrac{4\sqrt2}{3}\).<br>
+Restrictions: \(-2\le x\le 2\) and \(-2\le y\le 4\).<br>
+<b>No asymptotes</b> &mdash; an ellipse is a closed curve.</div></div></div><div class="sec" id="s2"><div class="secn"><span class="n">2</span>Rational functions and their asymptotes</div><div class="meth"><div class="lbl">Two families, two different asymptote rules</div><b>(a) \(y=\dfrac{ax+b}{cx+d}\) &mdash; linear over linear.</b><br>
+Vertical asymptote where the denominator is zero: \(x=-\dfrac{d}{c}\).<br>
+Horizontal asymptote \(y=\dfrac{a}{c}\) (divide the leading coefficients).<br><br>
+<b>(b) \(y=\dfrac{ax^2+bx+c}{dx+e}\) &mdash; quadratic over linear.</b><br>
+Vertical asymptote \(x=-\dfrac{e}{d}\).<br>
+<b>Oblique asymptote:</b> long-divide to write \(y=(\text{linear})+\dfrac{R}{dx+e}\). The linear part <b>is</b> the oblique asymptote, because the remainder term \(\to 0\) as \(x\to\pm\infty\).</div><div class="meth"><div class="lbl">Restrictions on \(y\) — the discriminant method</div>To find which \(y\)-values are impossible: rearrange the equation into a <b>quadratic in \(x\)</b> with \(y\) as a parameter, then impose \(\text{discriminant}\ge 0\) for real \(x\) to exist. The set of \(y\) failing that test is the gap in the range.</div><div class="eg"><div class="lbl">Example</div><b>Find the asymptotes and the set of values \(y\) cannot take for \(y=\dfrac{x^2+1}{x-1}\).</b><br><br>
+Long division: \(\dfrac{x^2+1}{x-1}=x+1+\dfrac{2}{x-1}\).<br>
+Vertical asymptote \(x=1\); oblique asymptote \(y=x+1\).<br><br>
+Range: \(y(x-1)=x^2+1 \Rightarrow x^2-yx+(1+y)=0\).<br>
+Real \(x\) needs \(y^2-4(1+y)\ge 0 \Rightarrow y^2-4y-4\ge 0\).<br>
+Roots \(y=\dfrac{4\pm\sqrt{16+16}}{2}=2\pm 2\sqrt2\).<br>
+So \(y\le 2-2\sqrt2\) or \(y\ge 2+2\sqrt2\); the curve <b>cannot</b> take \(2-2\sqrt2<y<2+2\sqrt2\).</div><div class="trap"><b>Trap</b> Reading the horizontal asymptote off a quadratic-over-linear. There isn't one &mdash; it is <b>oblique</b>, and you only get it by long division. Conversely, a linear-over-linear never has an oblique asymptote.</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div>A function is defined by \(f(x)=\dfrac{x^2-2x+k}{x-2}\), where \(k\) is a constant. Find, in terms of \(k\), the equations of the asymptotes of \(y=f(x)\).<div class="src">Same shape as HCI 2022 Prelim P1 Q5 (a function \(\frac{\cdot}{x^2+k}\) with a constant to carry through)</div><button class="rev">Reveal answer</button><div class="ans">Long-divide: \(x^2-2x+k=(x-2)(x)+k\), so \(f(x)=x+\dfrac{k}{x-2}\).<br>
+<b>Vertical asymptote \(x=2\)</b> (provided \(k\ne 0\); if \(k=0\) the factor cancels and there is no asymptote, just a hole).<br>
+<b>Oblique asymptote \(y=x\).</b><br>
+Note the oblique asymptote does not depend on \(k\) at all &mdash; \(k\) only controls how fast the curve approaches it.</div></div></div><div class="sec" id="s3"><div class="secn"><span class="n">3</span>Transformations — and the order they act in</div><div class="meth"><div class="lbl">The four single moves</div><table><tr><th>New equation</th><th>What happens</th><th>Direction</th></tr>
+<tr><td>\(y=f(x)+a\)</td><td>Translate \(a\) units in the \(+y\) direction</td><td>Outside, so <b>as expected</b></td></tr>
+<tr><td>\(y=af(x)\)</td><td>Stretch parallel to \(y\), factor \(a\)</td><td>Outside, so <b>as expected</b></td></tr>
+<tr><td>\(y=f(x+a)\)</td><td>Translate \(a\) units in the \(-x\) direction</td><td>Inside, so <b>opposite</b></td></tr>
+<tr><td>\(y=f(ax)\)</td><td>Stretch parallel to \(x\), factor \(\dfrac{1}{a}\)</td><td>Inside, so <b>reciprocal</b></td></tr></table>
+Reflections are the special cases \(a=-1\): \(y=-f(x)\) reflects in the \(x\)-axis, \(y=f(-x)\) reflects in the \(y\)-axis.</div><div class="meth"><div class="lbl">Order — the rule that decides the marks</div>Anything <b>outside</b> \(f\) acts on \(y\); anything <b>inside</b> acts on \(x\). Within each group, work <b>outwards from \(x\)</b> when going \(f(x)\to\) target, and <b>inwards</b> when reversing.<br><br>
+For \(y=f(3x-2)+a\), the inside is \(3x-2=3\left(x-\tfrac23\right)\). Going <b>from</b> \(f(x)\): translate \(\tfrac23\) in \(+x\), then stretch factor \(\tfrac13\) parallel to \(x\), then translate \(a\) in \(+y\).<br>
+Going the <b>other way</b> (from \(G\) back to \(f\)) every step reverses <i>and</i> the order flips.</div><div class="eg"><div class="lbl">Example</div><b>State a sequence of 3 transformations taking \(y=x^2\) to \(y=-x^2+3x-4\).</b><br><br>
+Complete the square first &mdash; you cannot read transformations off an expanded quadratic:<br>
+\(-x^2+3x-4=-\left(x^2-3x\right)-4=-\left[\left(x-\tfrac32\right)^2-\tfrac94\right]-4=-\left(x-\tfrac32\right)^2-\tfrac74\).<br><br>
+So from \(y=x^2\):<br>
+<b>1.</b> Translate \(\tfrac32\) units in the \(+x\) direction &rarr; \(y=\left(x-\tfrac32\right)^2\).<br>
+<b>2.</b> Reflect in the \(x\)-axis &rarr; \(y=-\left(x-\tfrac32\right)^2\).<br>
+<b>3.</b> Translate \(\tfrac74\) units in the \(-y\) direction &rarr; \(y=-\left(x-\tfrac32\right)^2-\tfrac74\).</div><div class="trap"><b>Trap</b> Two things lose marks here every year. <b>First</b>, not completing the square &mdash; you cannot see the translation inside an expanded form. <b>Second</b>, describing a transformation without saying <i>how far</i> and <i>in which direction</i>: &ldquo;a translation&rdquo; scores nothing, &ldquo;a translation of \(\tfrac32\) units in the positive \(x\)-direction&rdquo; scores the mark.</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div>Given that \(b\) is a real constant with \(0<b<4\), describe fully a sequence of transformations that transforms the curve \(y=x^2\) to the curve \(y=4x^2+bx+1\).<div class="src">HCI 2025 Prelim Paper 1 Q6 (first part) &middot; [4]</div><button class="rev">Reveal answer</button><div class="ans">Complete the square, keeping \(b\) symbolic:<br>
+\(4x^2+bx+1=4\left(x^2+\tfrac{b}{4}x\right)+1=4\left[\left(x+\tfrac{b}{8}\right)^2-\tfrac{b^2}{64}\right]+1=4\left(x+\tfrac{b}{8}\right)^2+1-\tfrac{b^2}{16}\).<br><br>
+From \(y=x^2\):<br>
+<b>1.</b> Translate \(\dfrac{b}{8}\) units in the <b>negative</b> \(x\)-direction &rarr; \(y=\left(x+\tfrac{b}{8}\right)^2\).<br>
+<b>2.</b> Stretch parallel to the \(y\)-axis with scale factor \(4\) &rarr; \(y=4\left(x+\tfrac{b}{8}\right)^2\).<br>
+<b>3.</b> Translate \(\left(1-\dfrac{b^2}{16}\right)\) units in the <b>positive</b> \(y\)-direction.<br><br>
+<b>Why the condition \(0<b<4\) is given:</b> it forces \(1-\dfrac{b^2}{16}>0\), so the minimum sits above the \(x\)-axis and the quadratic has no real roots. That is what makes the reciprocal curve in the next part have no vertical asymptotes.</div></div></div><div class="sec" id="s4"><div class="secn"><span class="n">4</span>Related graphs — |f(x)|, f(|x|) and 1/f(x)</div><div class="meth"><div class="lbl">The three transformations you must be able to do by hand</div><b>\(y=|f(x)|\)</b> &mdash; reflect every part of the curve <b>below</b> the \(x\)-axis up into it. Everything above is unchanged. Sharp corners appear at the old \(x\)-intercepts.<br><br>
+<b>\(y=f(|x|)\)</b> &mdash; <b>delete</b> everything with \(x<0\), then reflect the \(x\ge 0\) part in the \(y\)-axis. The result is always symmetric about the \(y\)-axis.<br><br>
+<b>\(y=\dfrac{1}{f(x)}\)</b> &mdash; the one with the most marks in it:<br>
+&bull; \(x\)-intercept of \(f\) at \(x=k\) &rarr; <b>vertical asymptote</b> \(x=k\).<br>
+&bull; Vertical asymptote of \(f\) at \(x=k\) &rarr; <b>\(x\)-intercept</b> at \(x=k\)... more precisely the curve tends to \(0\).<br>
+&bull; Horizontal asymptote \(y=c\ (c\ne0)\) &rarr; horizontal asymptote \(y=\dfrac1c\).<br>
+&bull; Maximum point \((p,q)\) with \(q\ne 0\) &rarr; <b>minimum</b> point \(\left(p,\dfrac1q\right)\), and vice versa.<br>
+&bull; The sign never changes, and points where \(f=\pm1\) stay put.</div><div class="eg"><div class="lbl">Example</div><b>\(y=f(x)\) has a maximum at \((2,-3)\), an \(x\)-intercept at \(x=5\) and a horizontal asymptote \(y=-4\). Describe \(y=\dfrac{1}{f(x)}\).</b><br><br>
+<b>Turning point.</b> At \(x=2\), \(f=-3\) so \(\dfrac1f=-\dfrac13\). Just off the maximum, \(f\) is <i>more</i> negative, say \(-4\), giving \(\dfrac1f=-\dfrac14\), which is <b>larger</b>. So the reciprocal is smallest at \(x=2\): the maximum of \(f\) becomes a <b>minimum</b> of \(\dfrac1f\), at \(\left(2,-\dfrac13\right)\).<br>
+\(x\)-intercept at \(x=5\) &rarr; <b>vertical asymptote \(x=5\)</b>.<br>
+Horizontal asymptote \(y=-4\) &rarr; horizontal asymptote \(y=-\tfrac14\).</div><div class="trap"><b>Trap</b> Forgetting that a turning point of \(f\) at height \(q\) maps to height \(\dfrac1q\), not to \(-q\) or to \(q\). And a turning point <b>on</b> the \(x\)-axis (\(q=0\)) does not map to a point at all &mdash; it becomes a vertical asymptote.</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div>Given \(0<b<4\), sketch the curve \(y=\dfrac{1}{4x^2+bx+1}\), giving the equations of any asymptotes and the coordinates of any axial intercepts and turning points, in terms of \(b\) where appropriate.<div class="src">HCI 2025 Prelim Paper 1 Q6 (second part) &middot; [3]</div><button class="rev">Reveal answer</button><div class="ans">From the first part, \(4x^2+bx+1=4\left(x+\tfrac{b}{8}\right)^2+1-\dfrac{b^2}{16}\), and \(0<b<4\) makes \(1-\dfrac{b^2}{16}>0\).<br><br>
+So the denominator is <b>always positive</b> &mdash; it has a minimum value \(1-\dfrac{b^2}{16}>0\) and never reaches zero.<br>
+<b>No vertical asymptotes.</b> The whole curve lies above the \(x\)-axis.<br>
+<b>Horizontal asymptote \(y=0\)</b>, since the denominator \(\to\infty\).<br>
+The denominator's <b>minimum</b> at \(x=-\dfrac{b}{8}\) gives the reciprocal's <b>maximum</b>:<br>
+\(\left(-\dfrac{b}{8},\ \dfrac{1}{1-\frac{b^2}{16}}\right)=\left(-\dfrac{b}{8},\ \dfrac{16}{16-b^2}\right)\).<br>
+<b>\(y\)-intercept</b>: \(x=0\Rightarrow y=1\), so \((0,1)\). <b>No \(x\)-intercept.</b></div></div></div><div class="sec" id="s5"><div class="secn"><span class="n">5</span>Parametric curves</div><div class="meth"><div class="lbl">Sketching and converting</div><b>To sketch:</b> either use the GC in parametric mode (<code>MODE &rarr; PAR</code>, and set a sensible \(T\)-range), or build a small table of \(t\) against \((x,y)\) and mark the direction of increasing \(t\).<br><br>
+<b>To convert to cartesian:</b> eliminate the parameter. Make \(t\) the subject of the simpler equation and substitute; or use an identity such as \(\cos^2\theta+\sin^2\theta=1\) or \(1+\cot^2\theta=\csc^2\theta\).<br><br>
+<b>Gradient:</b> \(\dfrac{dy}{dx}=\dfrac{dy/dt}{dx/dt}\). <b>Then substitute the given \(t\)</b> to get a number before writing any tangent or normal.<br><br>
+<b>Restrictions matter.</b> The stated range of \(t\) often means only part of the cartesian curve is drawn &mdash; say so.</div><div class="eg"><div class="lbl">Example</div><b>\(x=t^2\), \(y=t^3+1\) for \(t\in\mathbb{R}\). Find the equation of the tangent at \(t=1\).</b><br><br>
+\(\dfrac{dx}{dt}=2t\), \(\dfrac{dy}{dt}=3t^2\), so \(\dfrac{dy}{dx}=\dfrac{3t^2}{2t}=\dfrac{3t}{2}\) for \(t\ne0\).<br>
+At \(t=1\): gradient \(=\dfrac32\), point \(=(1,2)\).<br>
+Tangent: \(y-2=\dfrac32(x-1)\), i.e. \(y=\dfrac32x+\dfrac12\).<br><br>
+Note \(x=t^2\ge 0\) always, so the whole curve lies in \(x\ge0\).</div><div class="trap"><b>Trap</b> Leaving \(\dfrac{dy}{dx}\) in terms of \(t\) and writing the tangent with a \(t\) in it. Substitute the parameter value first. This is the single most common parametric slip.</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div>A curve \(C\) has parametric equations \(x=t^2\), \(y=t^3+1\) for \(t\in\mathbb{R}\). The tangent to \(C\) at the point \(P\) where \(t=1\) meets the curve again at \(Q\). Find the exact coordinates of \(Q\).<div class="src">HCI 2023 Prelim Paper 2 Q4(c) &middot; [3]</div><button class="rev">Reveal answer</button><div class="ans">The tangent is \(y=\dfrac32x+\dfrac12\) from the example. A general point on \(C\) is \((t^2,\ t^3+1)\).<br>
+Substitute: \(t^3+1=\dfrac32t^2+\dfrac12 \Rightarrow 2t^3-3t^2+1=0\).<br>
+\(t=1\) is a root (it is \(P\), and a <b>repeated</b> root because the line is a tangent there), so factorise:<br>
+\(2t^3-3t^2+1=(t-1)^2(2t+1)\).<br>
+The new root is \(t=-\dfrac12\), giving \(Q=\left(\dfrac14,\ 1-\dfrac18\right)=\left(\dfrac14,\ \dfrac78\right)\).<br><br>
+<b>The idea worth keeping:</b> a tangent touching at \(t=1\) forces \((t-1)^2\) as a factor. Spotting the repeated root is what turns a cubic into a one-line factorisation.</div></div></div>
+<script>
+document.addEventListener('click',e=>{
+  if(e.target.classList.contains('rev')){
+    const a=e.target.nextElementSibling;
+    a.classList.toggle('on');
+    e.target.textContent=a.classList.contains('on')?'Hide answer':'Reveal answer';
+  }
+});
+function allOn(v){document.querySelectorAll('.ans').forEach(a=>a.classList.toggle('on',v));
+  document.querySelectorAll('button.rev').forEach(b=>b.textContent=v?'Hide answer':'Reveal answer');}
+</script></body></html>

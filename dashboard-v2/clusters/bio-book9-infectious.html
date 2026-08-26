@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Book 9 DRILL: Infectious Diseases</title>
+<style>
+/* Light is the default: Ethan finds a white background easier to read from.
+   Set "dark_theme": true in a config if a dark build is ever wanted again. */
+:root{--bg:#ffffff;--card-bg:#fafafa;--border:#e2e5ea;--text:#16181d;--muted:#5b6472;--blue:#1d4ed8;
+--blue-soft:#eef4ff;--amber:#a35a00;--green:#047857;--green-soft:#ecfdf5;--cover:#f1f3f6;
+--purple:#6d28d9;--purple-soft:#f5f3ff;--red:#b91c1c;--red-soft:#fef2f2;--btn:#f1f3f6;--btn-hover:#e2e5ea;--chip-bg:#fff3d1;--chip-fg:#8a5a00;--th-bg:#f1f3f6;--quote-bg:#fffbeb;--code-bg:#f1f3f6;--fig-bg:#fafafa;--dash:#c4cad3;--conf-b:#3f4855}
+.mcq{margin:10px 0 12px;padding:2px 0}
+.opt{display:flex;gap:10px;margin:6px 0;align-items:baseline}
+.mnote{margin:0 0 12px;padding:7px 12px;border-left:3px solid var(--amber);background:var(--quote-bg);border-radius:0 5px 5px 0;font-size:.9em}
+.mnote span{display:block;font-family:-apple-system,sans-serif;font-size:.72em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.optl{flex:0 0 1.6em;font-weight:700;color:var(--amber);font-family:-apple-system,sans-serif}
+.optb{flex:1}
+*{box-sizing:border-box}
+body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:960px;margin:0 auto;
+padding:32px 22px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+
+h1,h2,h3,.label,.controls,button{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+h1{font-size:1.9em;margin:0 0 6px;border-bottom:3px solid var(--muted);padding-bottom:10px}
+h3{font-size:1.15em;margin:0 0 14px;color:var(--text)}
+.meta{color:var(--muted);font-size:.9em;margin:4px 0 20px}
+.intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--red);
+padding:14px 18px;border-radius:6px;margin:14px 0 20px;font-size:.95em}
+.los{background:var(--blue-soft);border:1px solid #2b3648;border-left:4px solid var(--blue);
+padding:14px 18px;border-radius:6px;margin:0 0 26px;font-size:.9em}
+.los table{border-collapse:collapse;width:100%;margin-top:8px}
+.los td{padding:4px 8px 4px 0;border-bottom:1px solid #2b3648;vertical-align:top}
+.los td:first-child{white-space:nowrap;font-weight:600;color:var(--blue);width:42%}
+.los tr:last-child td{border-bottom:none}
+.controls{position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:100;
+border-bottom:1px solid var(--border);margin-bottom:18px;display:flex;gap:10px;flex-wrap:wrap}
+.controls button{background:var(--btn);color:var(--text);border:1px solid var(--border);padding:6px 14px;border-radius:5px;
+cursor:pointer;font-size:.85em;font-weight:500}
+.controls button:hover{background:var(--btn-hover)}
+.toc{background:var(--card-bg);border:1px solid var(--border);padding:12px 20px;border-radius:6px;
+margin-bottom:26px;font-size:.9em}
+.toc a{color:var(--blue);text-decoration:none;margin-right:12px;line-height:2}
+.card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:18px 22px;
+margin:22px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.qpart{margin:12px 0}
+.block{margin:12px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border);
+position:relative;min-height:56px}
+.block.answer{background:var(--green-soft);border-left-color:var(--green)}
+.block.reveal-archetype{background:var(--purple-soft);border-left-color:var(--purple);margin-top:20px}
+.label{display:block;text-transform:uppercase;font-size:.72em;letter-spacing:.08em;font-weight:700;
+margin-bottom:6px;color:var(--muted)}
+.block.answer .label{color:var(--green)}
+.block.reveal-archetype .label{color:var(--purple)}
+.answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:6px;display:flex;
+align-items:center;justify-content:center;cursor:pointer}
+.answer-overlay.hidden{display:none}
+.reveal-btn{background:var(--btn);border:1px solid var(--border);padding:7px 18px;border-radius:5px;
+cursor:pointer;font-size:.85em;font-weight:600;color:var(--text)}
+.reveal-btn:hover{background:var(--btn-hover)}
+.confidence{margin:10px 0 -4px;padding:5px 12px;border:1px dashed var(--dash);border-radius:5px;
+color:var(--muted);font-size:.78em;letter-spacing:.02em;
+font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;background:transparent}
+.confidence b{color:var(--conf-b);font-weight:600}
+.marks{display:inline-block;font-size:.8em;background:var(--chip-bg);color:var(--chip-fg);padding:2px 8px;
+border-radius:10px;font-weight:700;margin-left:4px;font-family:-apple-system,sans-serif}
+.fig{margin:14px 0;padding:12px;background:var(--fig-bg);border:1px solid var(--border);border-radius:6px;text-align:center}
+.fig img{max-width:100%;height:auto;border-radius:3px}
+.fig-svg{background:#fff}
+.fig-svg svg{max-width:100%;height:auto;display:block;margin:0 auto}
+.fig-svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#16181d}
+.fig-svg .lbl{font-size:12px}
+.fig-svg .lbl-b{font-size:12px;font-weight:600}
+.fig-svg .tick{font-size:10px;fill:#5b6472}
+.fig-svg .ax{stroke:#16181d;stroke-width:1.4;fill:none}
+.fig-svg .ld{stroke:#5b6472;stroke-width:.9;fill:none}
+.fig-svg .out{stroke:#16181d;stroke-width:1.5;fill:none}
+.fig figcaption{margin-top:8px;font-size:.8em;color:var(--muted);font-family:-apple-system,sans-serif}
+.fig-missing{margin:14px 0;padding:12px 14px;background:var(--red-soft);border:1px solid var(--red);
+border-left:4px solid var(--red);border-radius:6px;font-size:.9em}
+.tw{overflow-x:auto;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.92em;background:var(--card-bg)}
+th,td{border:1px solid var(--border);padding:6px 10px;color:var(--text);text-align:left;vertical-align:top}
+th{background:var(--th-bg);font-weight:600}
+blockquote{margin:12px 0;padding:10px 16px;background:var(--quote-bg);border-left:4px solid var(--amber);
+border-radius:4px;font-size:.93em}
+code{background:var(--code-bg);padding:1px 5px;border-radius:3px;font-size:.9em}
+ul{margin:8px 0;padding-left:22px}
+p{margin:8px 0}
+
+/* ---- Ethan, 25 Aug: usable on an iPhone, same features, nothing removed ---- */
+html{-webkit-text-size-adjust:100%}
+@media (max-width:820px){
+  body{padding:14px 13px 96px;font-size:17px;line-height:1.62}
+  h1{font-size:1.34em;line-height:1.25;padding-bottom:8px;border-bottom-width:2px}
+  h3{font-size:1.05em}
+  .meta{font-size:.86em;margin-bottom:14px}
+  .los,.intro{padding:12px 13px;font-size:.9em;border-radius:8px}
+  .card{padding:15px 14px;border-radius:10px}
+  .block{padding-left:11px}
+  /* sticky bar: full-width, thumb-sized, never wraps into a mess */
+  .controls{position:sticky;top:0;padding:9px 0 8px;display:flex;gap:8px;
+    box-shadow:0 6px 14px -10px rgba(0,0,0,.5)}
+  .controls button{flex:1;min-height:44px;padding:10px 8px;font-size:14px;border-radius:9px}
+  /* every tap target at least 44px, which is Apple's minimum */
+  .reveal-btn{width:100%;min-height:46px;padding:12px 16px;font-size:15px;border-radius:9px;
+    margin-top:10px}
+  /* wide things scroll inside themselves instead of stretching the page */
+  table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;
+    max-width:100%;font-size:.86em}
+  .los table{white-space:normal}
+  pre,code{white-space:pre-wrap;word-break:break-word;font-size:.85em}
+  blockquote{margin:12px 0;padding:10px 12px}
+  .fig{padding:8px;margin:12px -4px}
+  .fig img,.fig-svg svg{width:100%}
+  .fig figcaption{font-size:.78em}
+  .opt{gap:8px}
+  .optl{min-width:22px}
+  .marks{font-size:.75em}
+  /* the confidence prompt needs to stay readable, it drives the gap machine */
+  .conf{font-size:.88em;padding:9px 11px}
+}
+@media (max-width:400px){
+  body{padding:12px 10px 96px;font-size:16px}
+  h1{font-size:1.2em}
+  .controls button{font-size:13px;padding:9px 5px}
+  .card{padding:13px 11px}
+}
+/* iPhone notch / home indicator, phone widths only so desktop keeps its own padding */
+@media (max-width:820px){
+  @supports(padding:max(0px)){
+    body{padding-left:max(13px,env(safe-area-inset-left));
+         padding-right:max(13px,env(safe-area-inset-right));
+         padding-bottom:max(96px,calc(env(safe-area-inset-bottom) + 72px))}
+  }
+}
+@media print{.controls,.answer-overlay{display:none!important}.card{page-break-inside:avoid}}
+</style></head><body>
+<h1>Book 9 DRILL: Infectious Diseases</h1>
+<div class="meta">H2 Biology 9477 · Book 9 · 7 questions · 60 marks · about an hour · all eleven outcomes, (a) to (k)</div>
+
+<div class="los"><strong>The whole book in one drill</strong>, covering all eleven outcomes, (a) to (k). Read <em>1a - STUDY SHEET - Book 9 ... (condensed)</em> first.<p><strong>Book 9 is 18% of Paper 3</strong>, more than any other topic, so this hour is the best-value hour in Biology.</p></div>
+
+<div class="controls">
+<button id="revealAll">Reveal all answers</button>
+<button id="hideAll">Hide all answers</button>
+</div>
+<div class="toc"><strong>Questions</strong><br><a href="#q1">Q1</a> <a href="#q2">Q2</a> <a href="#q3">Q3</a> <a href="#q4">Q4</a> <a href="#q5">Q5</a> <a href="#q6">Q6</a> <a href="#q7">Q7</a></div>
+<div class="card" id="q1"><h3>Question 1 <span class="marks">[8 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> Describe <strong>three</strong> ways in which the body prevents pathogens entering, other than the skin acting as a physical barrier. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>Any three, and each needs its mechanism, not just the name.</div><p><strong>Mucus in the respiratory tract traps pathogens and cilia sweep the mucus up and out of the airway to be swallowed.</strong></p>
+<p><strong>Lysozyme in tears, saliva and mucus hydrolyses the peptidoglycan cell wall of bacteria, causing them to lyse.</strong></p>
+<p><strong>Stomach acid at about pH 2 kills most ingested pathogens.</strong></p>
+<p><strong>Commensal microbiota occupy the surface and compete with pathogens for space and nutrients, so pathogens cannot establish.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> Describe how a neutrophil destroys a bacterium once it has recognised it. <span class="marks">[4]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>All four.</div><p><strong>The neutrophil recognises surface molecules on the pathogen through its receptors and binds to it.</strong></p>
+<p><strong>It extends arm-like pseudopodia around the pathogen and engulfs it into a vesicle called a phagosome.</strong></p>
+<p><strong>A lysosome fuses with the phagosome.</strong></p>
+<p><strong>Hydrolytic enzymes from the lysosome digest the pathogen, and the products are absorbed or expelled.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> Explain how antibody speeds up this process. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><p><strong>Antibody coats the pathogen, and Fc receptors on the phagocyte bind the antibody, so engulfment is faster and more efficient. This is opsonisation.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> LO (a), innate half. Marking points from ASRJC Prelim 2021 P3 Q3(a), VJC Prelim 2025 P2 Q4(c) and the specimen&#x27;s opsonisation sequence.</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q2"><h3>Question 2 <span class="marks">[8 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> Describe how inflammation helps to clear an infection, naming the substance released and its effect on blood vessels. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>All three.</div><p><strong>Damaged tissue and mast cells release histamine.</strong></p>
+<p><strong>Histamine causes vasodilation and increased permeability of capillaries at the site.</strong></p>
+<p><strong>More blood reaches the area, bringing more phagocytes and plasma proteins to destroy the pathogen; the visible signs are redness, heat, swelling and pain.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> An infected cell secretes interferon. Explain what interferon does to neighbouring uninfected cells and why this limits the spread of a virus. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>All three.</div><p><strong>Interferon diffuses to neighbouring uninfected cells and binds to receptors on their surface.</strong></p>
+<p><strong>This induces an antiviral state: the induced genes degrade viral RNA and inhibit viral protein synthesis in those cells.</strong></p>
+<p><strong>So if the virus reaches them it cannot replicate, which limits its spread through the tissue.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> Explain how a natural killer cell recognises a virus-infected cell. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><p><strong>A virus-infected cell displays reduced MHC class I on its surface.</strong></p>
+<p><strong>The natural killer cell detects this absence of normal MHC class I display and kills the cell, releasing perforin and granzymes to trigger apoptosis.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> LO (a). Marking points from EJC Prelim 2023 P2 Q9(b), NJC Prelim 2022 P2 Q8(c) and TMJC Prelim 2025 P2 Q11(b).</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q3"><h3>Question 3 <span class="marks">[10 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> Describe the process of clonal selection, from the arrival of an antigen to the production of effector cells. <span class="marks">[4]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>All four, and the ORDER is the point.</div><p><strong>Each lymphocyte already carries a receptor of one specific shape, generated before it ever meets an antigen.</strong></p>
+<p><strong>The antigen binds only to the lymphocyte whose receptor is complementary to it, so that lymphocyte alone is selected and activated.</strong></p>
+<p><strong>The selected lymphocyte divides repeatedly by mitosis to produce a clone of genetically identical cells.</strong></p>
+<p><strong>The clone differentiates into effector cells, plasma cells secreting antibody in the case of a B cell, and into memory cells.</strong></p>
+<p>Gap check. <strong>The antigen selects a pre-existing cell and then that cell proliferates.</strong> Saying the antigen causes the cell to be made, or that clonal selection <em>is</em> the mitosis, loses the marking point.</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> Fig. 3.1 shows antibody concentration in the blood plotted against time. Following a first exposure to an antigen the concentration rises slowly after a delay to a low peak and then falls. Following a second exposure to the same antigen the concentration rises much more rapidly to a peak several times higher and remains elevated for longer.</p>
+<p>Explain the difference between the two responses. <span class="marks">[4]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>All four.</div><p><strong>The primary response has a lag phase because the specific lymphocyte must first be selected from a very small number of cells and then proliferate before enough antibody can be made.</strong></p>
+<p><strong>The secondary response is faster because memory cells specific to that antigen are already present in large numbers from the first exposure.</strong></p>
+<p><strong>The secondary response reaches a much higher peak because far more cells are available to differentiate into plasma cells.</strong></p>
+<p><strong>It remains elevated for longer, and the antibody produced is mainly IgG rather than the IgM of the primary response.</strong></p>
+<p>Do not write <strong>&quot;rapid&quot;</strong> alone; the scheme rejects it for <strong>lacking the comparison with the primary response</strong>.</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> State the role of a helper T cell, and explain why its loss is so damaging. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><p><strong>Helper T cells secrete cytokines that activate B cells, cytotoxic T cells and macrophages, so they coordinate the whole adaptive response.</strong></p>
+<p><strong>Losing them disables all three arms at once, which is why HIV, which infects helper T cells, leaves the individual vulnerable to infections a healthy immune system would clear.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> LOs (a), (b) and (c). Marking points from RVHS Prelim 2017 P2 Q9(a), TJC Prelim 2023 P2 Q10(a) and School (HCI) Prelim 2025 P3 Q1(f).</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q4"><h3>Question 4 <span class="marks">[8 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> Describe the structure of an antibody molecule. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>All three.</div><p><strong>Four polypeptide chains: two identical heavy chains and two identical light chains, held together by disulfide bonds in a Y shape.</strong></p>
+<p><strong>Each arm has a variable region whose amino acid sequence differs between antibodies, forming two antigen binding sites with a shape complementary to one specific antigen.</strong></p>
+<p><strong>The rest is the constant region, which is the same within a class and determines how the antibody is handled, for example binding to Fc receptors on phagocytes.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> State <strong>two</strong> ways in which antibodies act against a pathogen, and explain why an antibody cannot be said to kill it. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p>Any two of: <strong>neutralisation, blocking the pathogen&#x27;s binding sites so it cannot attach to host cells; agglutination, clumping pathogens together so they are more easily engulfed; opsonisation, coating the pathogen so phagocytes bind it more readily.</strong></p>
+<p><strong>Antibodies do not destroy the pathogen themselves; they mark or immobilise it so that phagocytes or complement destroy it.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> A single individual can produce millions of different antibodies from a limited amount of DNA. Explain how this diversity is generated. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>All three.</div><p><strong>The germline DNA contains many V, D and J segments, and DNA rearrangement joins one V, one D and one J segment together, deleting the intervening segments.</strong></p>
+<p><strong>This rearrangement occurs differently in each developing B cell, so an enormous variety of variable regions is produced from a limited amount of DNA.</strong></p>
+<p><strong>Further diversity arises from the random pairing of different heavy and light chains, and from somatic hypermutation in activated B lymphocytes.</strong></p>
+<p>Careful: <strong>hypermutation occurs in ACTIVATED B lymphocytes, not in plasma cells</strong>, which are terminally differentiated and no longer divide.</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> LOs (c) and (d). Marking points from SAJC Prelim 2017 P3 Q2(c), RI Prelim 2023 P2 Q10(b) and the 9477 Specimen P3 Q3(c).</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q5"><h3>Question 5 <span class="marks">[8 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> Complete the four categories of immunity, giving one example of each: naturally acquired active, artificially acquired active, naturally acquired passive, artificially acquired passive. <span class="marks">[4]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>Four, one per box.</div><p><strong>Naturally acquired active: recovering from an infection, so you make your own response and memory cells.</strong></p>
+<p><strong>Artificially acquired active: vaccination, which supplies antigen in a harmless form so you make your own response.</strong></p>
+<p><strong>Naturally acquired passive: antibodies crossing the placenta, or received in breast milk.</strong></p>
+<p><strong>Artificially acquired passive: injection of antiserum containing ready-made antibodies.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> Explain why passive immunity acts immediately but gives no long-term protection. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>The antibodies are already made and are supplied directly, so they act as soon as they are given without any lag.</strong></p>
+<p><strong>The individual&#x27;s own lymphocytes are never selected or activated, so no memory cells are produced, and once the supplied antibodies are broken down the protection is gone.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> Explain how a vaccine protects an individual against a disease they have never had. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><p><strong>The vaccine introduces antigen in a harmless form, live attenuated, inactivated or as a toxoid, which triggers a primary response and the production of memory cells.</strong></p>
+<p><strong>On later exposure to the real pathogen, the memory cells produce a rapid, high secondary response that clears the pathogen before symptoms develop.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> LOs (b) and (f). The two-by-two grid and marking points from ASRJC Prelim 2021 P2 Q10(b) and NYJC Prelim 2025 P2 Q10(c).</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q6"><h3>Question 6 <span class="marks">[10 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> Explain how penicillin kills bacteria, and why it has no effect on a virus. <span class="marks">[4]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>All four.</div><p><strong>Penicillin inhibits the enzymes that cross-link peptidoglycan in the bacterial cell wall.</strong></p>
+<p><strong>As the bacterium grows, new wall cannot be cross-linked, so the wall weakens.</strong></p>
+<p><strong>Water enters by osmosis and the cell bursts, so penicillin is bactericidal and acts only on growing bacteria.</strong></p>
+<p><strong>A virus has no peptidoglycan cell wall, no ribosomes and no metabolism of its own, since it uses the host cell&#x27;s machinery, so there is no bacterial structure for the antibiotic to act on.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> Explain how a population of bacteria becomes resistant to an antibiotic. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>All three.</div><p><strong>A resistance allele arises by random mutation, or is acquired from another bacterium by horizontal gene transfer through conjugation, transformation or transduction.</strong></p>
+<p><strong>The antibiotic acts as a selection pressure and kills the non-resistant bacteria, while the resistant ones survive.</strong></p>
+<p><strong>The survivors reproduce by binary fission and pass the allele on, so the frequency of the resistance allele in the population rises.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> <em>Mycobacterium tuberculosis</em> is phagocytosed by an alveolar macrophage but is not destroyed. Explain why, and describe what happens next in a person who develops active disease. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>All three.</div><p><strong>Its waxy cell wall of mycolic acids resists the hydrolytic enzymes of the lysosome, so the bacterium survives inside the macrophage and multiplies there.</strong></p>
+<p><strong>Immune cells are recruited and cluster around the infected macrophages to form a tubercle with a necrotic centre.</strong></p>
+<p><strong>In active disease the tubercle enlarges and ruptures into a bronchiole, so bacteria spread through the lungs and are expelled in aerosol droplets when the person coughs.</strong></p>
+<p>The boundary examiners police: <strong>vaccines ≠ antibodies ≠ antibiotics.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> LOs (e), (g) and (i). Marking points from RI Prelim 2025 P2 Q1(d), the 9477 Specimen P2 Q9, and CJC Prelim 2023 P3 Q2(a).</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q7"><h3>Question 7 <span class="marks">[8 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> Define R₀. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>R₀ is the average number of secondary cases produced by one infected individual introduced into a fully susceptible population.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> Explain what R₀ values of greater than 1, equal to 1 and less than 1 predict for an outbreak. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>R₀ greater than 1 means each case produces more than one further case, so the number of cases grows and the outbreak spreads.</strong></p>
+<p><strong>R₀ equal to 1 means the disease is stable and endemic; R₀ less than 1 means each case produces fewer than one further case, so the outbreak dies out.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> Measles has an R₀ of about 15 and smallpox had an R₀ of about 5. Calculate the herd immunity threshold for each and use your answers to explain why smallpox was eradicated and measles has not been. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>All three.</div><p><strong>Herd immunity threshold = 1 − 1/R₀.</strong></p>
+<p><strong>Measles: 1 − 1/15 = 0.933, so about 93.3% of the population must be immune. Smallpox: 1 − 1/5 = 0.80, so about 80%.</strong></p>
+<p><strong>The smallpox threshold was achievable with the vaccination coverage available, so transmission could be broken worldwide, whereas measles requires over 93% coverage sustained everywhere, and any region falling below that allows transmission to resume.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="qpart" data-part="d"><p><strong>(d)</strong> Distinguish between an outbreak, an epidemic and a pandemic. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (d)</span><div class="answer-content"><p><strong>These are defined by geographic extent, not by severity.</strong></p>
+<p><strong>An outbreak is a sudden rise in the number of cases confined to a limited area; an epidemic is a rise spreading through a population or region.</strong></p>
+<p><strong>A pandemic is an epidemic that has spread across multiple countries or continents.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (d)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> LOs (j) and (k). <strong>No real prelim question in the archive tests R₀</strong>, the 9477 Specimen P1 Q30 is the only record of it anywhere, and the syllabus lists R₀ in its Mathematical Requirements, so this is examinable but your school papers will not have prepared you for it.</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div>
+<script>
+document.querySelectorAll('.answer-overlay').forEach(function(o){
+  o.addEventListener('click', function(){ o.classList.add('hidden'); });
+});
+document.getElementById('revealAll').addEventListener('click', function(){
+  document.querySelectorAll('.answer-overlay').forEach(function(o){ o.classList.add('hidden'); });
+});
+document.getElementById('hideAll').addEventListener('click', function(){
+  document.querySelectorAll('.answer-overlay').forEach(function(o){ o.classList.remove('hidden'); });
+});
+</script>
+</body></html>

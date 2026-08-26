@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>GAP DRILL: Books 4 and 5 merged</title>
+<style>
+/* Light is the default: Ethan finds a white background easier to read from.
+   Set "dark_theme": true in a config if a dark build is ever wanted again. */
+:root{--bg:#ffffff;--card-bg:#fafafa;--border:#e2e5ea;--text:#16181d;--muted:#5b6472;--blue:#1d4ed8;
+--blue-soft:#eef4ff;--amber:#a35a00;--green:#047857;--green-soft:#ecfdf5;--cover:#f1f3f6;
+--purple:#6d28d9;--purple-soft:#f5f3ff;--red:#b91c1c;--red-soft:#fef2f2;--btn:#f1f3f6;--btn-hover:#e2e5ea;--chip-bg:#fff3d1;--chip-fg:#8a5a00;--th-bg:#f1f3f6;--quote-bg:#fffbeb;--code-bg:#f1f3f6;--fig-bg:#fafafa;--dash:#c4cad3;--conf-b:#3f4855}
+.mcq{margin:10px 0 12px;padding:2px 0}
+.opt{display:flex;gap:10px;margin:6px 0;align-items:baseline}
+.mnote{margin:0 0 12px;padding:7px 12px;border-left:3px solid var(--amber);background:var(--quote-bg);border-radius:0 5px 5px 0;font-size:.9em}
+.mnote span{display:block;font-family:-apple-system,sans-serif;font-size:.72em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.optl{flex:0 0 1.6em;font-weight:700;color:var(--amber);font-family:-apple-system,sans-serif}
+.optb{flex:1}
+*{box-sizing:border-box}
+body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:960px;margin:0 auto;
+padding:32px 22px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+
+h1,h2,h3,.label,.controls,button{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+h1{font-size:1.9em;margin:0 0 6px;border-bottom:3px solid var(--muted);padding-bottom:10px}
+h3{font-size:1.15em;margin:0 0 14px;color:var(--text)}
+.meta{color:var(--muted);font-size:.9em;margin:4px 0 20px}
+.intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--red);
+padding:14px 18px;border-radius:6px;margin:14px 0 20px;font-size:.95em}
+.los{background:var(--blue-soft);border:1px solid #2b3648;border-left:4px solid var(--blue);
+padding:14px 18px;border-radius:6px;margin:0 0 26px;font-size:.9em}
+.los table{border-collapse:collapse;width:100%;margin-top:8px}
+.los td{padding:4px 8px 4px 0;border-bottom:1px solid #2b3648;vertical-align:top}
+.los td:first-child{white-space:nowrap;font-weight:600;color:var(--blue);width:42%}
+.los tr:last-child td{border-bottom:none}
+.controls{position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:100;
+border-bottom:1px solid var(--border);margin-bottom:18px;display:flex;gap:10px;flex-wrap:wrap}
+.controls button{background:var(--btn);color:var(--text);border:1px solid var(--border);padding:6px 14px;border-radius:5px;
+cursor:pointer;font-size:.85em;font-weight:500}
+.controls button:hover{background:var(--btn-hover)}
+.toc{background:var(--card-bg);border:1px solid var(--border);padding:12px 20px;border-radius:6px;
+margin-bottom:26px;font-size:.9em}
+.toc a{color:var(--blue);text-decoration:none;margin-right:12px;line-height:2}
+.card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:18px 22px;
+margin:22px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.qpart{margin:12px 0}
+.block{margin:12px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border);
+position:relative;min-height:56px}
+.block.answer{background:var(--green-soft);border-left-color:var(--green)}
+.block.reveal-archetype{background:var(--purple-soft);border-left-color:var(--purple);margin-top:20px}
+.label{display:block;text-transform:uppercase;font-size:.72em;letter-spacing:.08em;font-weight:700;
+margin-bottom:6px;color:var(--muted)}
+.block.answer .label{color:var(--green)}
+.block.reveal-archetype .label{color:var(--purple)}
+.answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:6px;display:flex;
+align-items:center;justify-content:center;cursor:pointer}
+.answer-overlay.hidden{display:none}
+.reveal-btn{background:var(--btn);border:1px solid var(--border);padding:7px 18px;border-radius:5px;
+cursor:pointer;font-size:.85em;font-weight:600;color:var(--text)}
+.reveal-btn:hover{background:var(--btn-hover)}
+.confidence{margin:10px 0 -4px;padding:5px 12px;border:1px dashed var(--dash);border-radius:5px;
+color:var(--muted);font-size:.78em;letter-spacing:.02em;
+font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;background:transparent}
+.confidence b{color:var(--conf-b);font-weight:600}
+.marks{display:inline-block;font-size:.8em;background:var(--chip-bg);color:var(--chip-fg);padding:2px 8px;
+border-radius:10px;font-weight:700;margin-left:4px;font-family:-apple-system,sans-serif}
+.fig{margin:14px 0;padding:12px;background:var(--fig-bg);border:1px solid var(--border);border-radius:6px;text-align:center}
+.fig img{max-width:100%;height:auto;border-radius:3px}
+.fig-svg{background:#fff}
+.fig-svg svg{max-width:100%;height:auto;display:block;margin:0 auto}
+.fig-svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#16181d}
+.fig-svg .lbl{font-size:12px}
+.fig-svg .lbl-b{font-size:12px;font-weight:600}
+.fig-svg .tick{font-size:10px;fill:#5b6472}
+.fig-svg .ax{stroke:#16181d;stroke-width:1.4;fill:none}
+.fig-svg .ld{stroke:#5b6472;stroke-width:.9;fill:none}
+.fig-svg .out{stroke:#16181d;stroke-width:1.5;fill:none}
+.fig figcaption{margin-top:8px;font-size:.8em;color:var(--muted);font-family:-apple-system,sans-serif}
+.fig-missing{margin:14px 0;padding:12px 14px;background:var(--red-soft);border:1px solid var(--red);
+border-left:4px solid var(--red);border-radius:6px;font-size:.9em}
+.tw{overflow-x:auto;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.92em;background:var(--card-bg)}
+th,td{border:1px solid var(--border);padding:6px 10px;color:var(--text);text-align:left;vertical-align:top}
+th{background:var(--th-bg);font-weight:600}
+blockquote{margin:12px 0;padding:10px 16px;background:var(--quote-bg);border-left:4px solid var(--amber);
+border-radius:4px;font-size:.93em}
+code{background:var(--code-bg);padding:1px 5px;border-radius:3px;font-size:.9em}
+ul{margin:8px 0;padding-left:22px}
+p{margin:8px 0}
+
+/* ---- Ethan, 25 Aug: usable on an iPhone, same features, nothing removed ---- */
+html{-webkit-text-size-adjust:100%}
+@media (max-width:820px){
+  body{padding:14px 13px 96px;font-size:17px;line-height:1.62}
+  h1{font-size:1.34em;line-height:1.25;padding-bottom:8px;border-bottom-width:2px}
+  h3{font-size:1.05em}
+  .meta{font-size:.86em;margin-bottom:14px}
+  .los,.intro{padding:12px 13px;font-size:.9em;border-radius:8px}
+  .card{padding:15px 14px;border-radius:10px}
+  .block{padding-left:11px}
+  /* sticky bar: full-width, thumb-sized, never wraps into a mess */
+  .controls{position:sticky;top:0;padding:9px 0 8px;display:flex;gap:8px;
+    box-shadow:0 6px 14px -10px rgba(0,0,0,.5)}
+  .controls button{flex:1;min-height:44px;padding:10px 8px;font-size:14px;border-radius:9px}
+  /* every tap target at least 44px, which is Apple's minimum */
+  .reveal-btn{width:100%;min-height:46px;padding:12px 16px;font-size:15px;border-radius:9px;
+    margin-top:10px}
+  /* wide things scroll inside themselves instead of stretching the page */
+  table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;
+    max-width:100%;font-size:.86em}
+  .los table{white-space:normal}
+  pre,code{white-space:pre-wrap;word-break:break-word;font-size:.85em}
+  blockquote{margin:12px 0;padding:10px 12px}
+  .fig{padding:8px;margin:12px -4px}
+  .fig img,.fig-svg svg{width:100%}
+  .fig figcaption{font-size:.78em}
+  .opt{gap:8px}
+  .optl{min-width:22px}
+  .marks{font-size:.75em}
+  /* the confidence prompt needs to stay readable, it drives the gap machine */
+  .conf{font-size:.88em;padding:9px 11px}
+}
+@media (max-width:400px){
+  body{padding:12px 10px 96px;font-size:16px}
+  h1{font-size:1.2em}
+  .controls button{font-size:13px;padding:9px 5px}
+  .card{padding:13px 11px}
+}
+/* iPhone notch / home indicator, phone widths only so desktop keeps its own padding */
+@media (max-width:820px){
+  @supports(padding:max(0px)){
+    body{padding-left:max(13px,env(safe-area-inset-left));
+         padding-right:max(13px,env(safe-area-inset-right));
+         padding-bottom:max(96px,calc(env(safe-area-inset-bottom) + 72px))}
+  }
+}
+@media print{.controls,.answer-overlay{display:none!important}.card{page-break-inside:avoid}}
+</style></head><body>
+<h1>GAP DRILL: Books 4 and 5 merged</h1>
+<div class="meta">H2 Biology 9477 · Books 4 + 5 · 8 questions · 45 marks · about an hour · 28 of your 45 open gaps</div>
+
+<div class="los"><strong>Built from your four transcripts, not from the syllabus.</strong> Every part targets a gap you actually left, and each mark scheme names which one and quotes you back. Q2(c) is the third exposure of reverse transcriptase, it has failed twice.<p><strong>Two things in here buy back revision time rather than cost it:</strong> the glycolysis intermediates you recited are excluded by the syllabus, and the aerobic ATP total you quoted should not be quoted at all.</p></div>
+
+<div class="controls">
+<button id="revealAll">Reveal all answers</button>
+<button id="hideAll">Hide all answers</button>
+</div>
+<div class="toc"><strong>Questions</strong><br><a href="#q1">Q1</a> <a href="#q2">Q2</a> <a href="#q3">Q3</a> <a href="#q4">Q4</a> <a href="#q5">Q5</a> <a href="#q6">Q6</a> <a href="#q7">Q7</a> <a href="#q8">Q8</a></div>
+<div class="card" id="q1"><h3>Question 1 <span class="marks">[6 marks]</span></h3><div class="qpart" data-part="stem"><p>Fig. 1.1 shows the main structural features of the influenza virus. On the outside, one type of elongated pale spike is labelled haemagglutinin and a second, darker type of surface spike is labelled <strong>E</strong>. The lipid bilayer is labelled viral envelope and the beaded layer lining the inside of it is labelled matrix protein. Inside the particle are several coiled dark threads, and <strong>F</strong> points to one of these coiled internal threads.</p></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> Explain the role of <strong>E</strong> and <strong>F</strong> in the influenza virus. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>E is neuraminidase. Neuraminidase facilitates the release of newly formed virus from the infected host cell by cleaving the sialic acid receptors.</strong></p>
+<p><strong>F is single-stranded negative-sense RNA.</strong></p>
+<p><strong>F is the template for the synthesis of complementary positive-sense RNA, which are used for translation by host cell ribosomes into viral proteins in the cytoplasm, and are templates for making new copies of the single-stranded negative-sense RNA genome in the nucleus.</strong></p>
+<p><em>Gap note, B4-16. You fought this one in Cluster 2: &quot;is there an easier way to remember that it cuts the sialic acid? How do you leave if you cut away the sialic acid receptors?&quot; Hold them as a pair, because the question always sets them as a pair, <strong>HA binds sialic-acid-containing receptors at entry, NA cleaves sialic acid residues at release</strong>, so the new virions do not stick to the cell they just left or to each other. Your own confusion is the memory hook: if HA binds sialic acid, then without NA the new virions stay glued on.</em></p>
+<p><em>A related scheme awards <strong>haemagglutinin</strong> and <strong>neuraminidase</strong> in full and prints <strong>(Reject: HA, NA)</strong>, so on any part that says state or name, write both words out.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> Describe the role of the HA protein labelled in Fig. 1.1 in the viral reproductive cycle. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>HA protein is haemagglutinin, which binds to specific sialic acid receptors on the cell surface of the epithelial cells lining the respiratory tract.</strong></p>
+<p><strong>It allows the virus to be taken into cells via receptor-mediated endocytosis.</strong></p>
+<p><em>The step after this one is the one you never settled, B4-15: <strong>the endosome acidifies, and the LOW pH causes a conformational change in the haemagglutinin</strong>, and the changed HA drives fusion of the viral envelope with the endosomal membrane. <strong>The lysosome is a red herring.</strong> What matters is pH, and what the pH acts on is HA.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> State the location of viral genome replication in the cell. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><p><strong>The nucleus.</strong></p>
+<p><em>Gap note, B4-14. You asked this outright and hit the wall: &quot;as it moves to the nucleus... so it goes to the nucleus, it converts it, and then some of it escapes the nucleus... is that correct? Oh my god.&quot; <strong>Everything goes into the nucleus first.</strong> The eight segments are transported in, the viral RdRp makes (+) sense strands there, some leave to be read as mRNA on host ribosomes and others stay as templates for new (−) genomes. Influenza is unusual among RNA viruses in doing this, which is exactly why a paper asks about it.</em></p>
+<p><em>And B4-13, the reason it must carry its own enzyme: <strong>no animal cell has an RNA-dependent RNA polymerase, so no host enzyme can copy RNA into RNA.</strong> You said the host&#x27;s DNA polymerase does it. A DNA polymerase copies DNA from a DNA template and has nothing to do with this. <strong>Both directions, (−) to (+) and (+) back to (−), are the same viral RdRp.</strong></em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> ASRJC Prelim 2022 P2 Q5(a), stem, Fig. 5.1 and key verbatim (a), cut from four marks to three; ACJC Prelim 2022 P2 Q4(b)(ii), stem and key verbatim (b); CJC Prelim 2025 P2 Q5(b), stem and key verbatim (c).</p>
+<p><strong>Gaps targeted:</strong> B4-16 HA against NA, B4-15 the endosome pH, B4-14 replication in the nucleus, B4-13 the missing host enzyme, B4-4 negative sense.</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q2"><h3>Question 2 <span class="marks">[6 marks]</span></h3><div class="qpart" data-part="stem"><p>Fig. 2.1 shows the structure of HIV. The outer lipid bilayer envelope carries projecting spikes labelled glycoproteins. Inside are two concentric beaded layers, and within them two wavy strands of RNA. Two enzymes are labelled among the strands, enzyme <strong>A</strong> attached near the top of one RNA strand and enzyme</p>
+<div class="mcq"><div class="opt"><span class="optl">B</span><span class="optb">on the other.</span></div></div></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> Explain why HIV is called a retrovirus. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>HIV carries single-stranded positive-sense RNA as its genetic material.</strong> &quot;HIV has RNA&quot; alone is rejected.</p>
+<p><strong>During its reproductive cycle HIV uses its single-stranded RNA as a template and it is reverse transcribed to form single-stranded DNA, then double-stranded DNA, by reverse transcriptase, and the double-stranded DNA then integrates into the host&#x27;s chromosome as a provirus.</strong></p>
+<p><em>An examiner&#x27;s note on this key: some students wrote that HIV has <strong>negative</strong>-sense RNA. It is positive-sense.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> Describe how an enveloped virus such as HIV enters a host cell. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>gp120 on the surface of the HIV binds to the CD4 receptor expressed on T-helper cells and/or macrophages.</strong></p>
+<p><strong>gp120 then undergoes a conformational change to bind to co-receptor CXCR4 on T-helper cells, or CCR5 on macrophages.</strong></p>
+<p><strong>gp41 then pulls the virus closer to the host cell, and the HIV envelope fuses with the host cell membrane to release viral contents into the host cell.</strong></p>
+<p><em>Gap notes, B4-17 and B4-18. <strong>gp120 binds. gp41 fuses.</strong> Two glycoproteins, two jobs, marked separately. And the co-receptors: <strong>CXCR4 on T helper cells, CCR5 on macrophages</strong>, you had both names and kept swapping which cell each sits on.</em></p>
+<p><em>Four misconceptions recorded on this key, all of which cost marks: <strong>calling gp120 and gp41 receptors instead of glycoproteins</strong>; <strong>saying CD4 undergoes the conformational change instead of gp120</strong>; <strong>writing gp40 for gp41</strong>; and <strong>describing entry by receptor-mediated endocytosis instead of membrane fusion</strong>, that is influenza&#x27;s route, not HIV&#x27;s.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> Enzyme <strong>A</strong> is reverse transcriptase. State the <strong>three</strong> distinct catalytic activities it carries out, and what each one produces. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><p><strong>RNA-dependent DNA polymerase activity makes the first DNA strand from the viral RNA template. RNase H activity degrades the RNA of the resulting RNA-DNA hybrid. DNA-dependent DNA polymerase activity builds the second DNA strand, giving double-stranded DNA.</strong></p>
+<p><em>Gap note, and this is the one that has now failed <strong>twice</strong>, B4-10 in Cluster 1 and B4-19 in Cluster 2, unchanged. <strong>One enzyme, three activities. No host polymerase is involved at any point.</strong> You reached for &quot;DNA polymerase&quot; for the second strand on both occasions. A gap that survives two exposures needs the sentence learnt as a unit, not a third question: <strong>reverse transcriptase makes the first strand, chews out the RNA, and makes the second strand.</strong></em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> NYJC Prelim 2023 P2 Q6, stem and Fig. 6.1 verbatim, renumbered Fig. 2.1; School (HCI) Prelim 2025 P2 Q5(a)(i) with the stricter TMJC Prelim 2025 P3 Q1(d) key printed beside it (a); School (HCI) Prelim 2025 P2 Q5(a)(ii), stem, key and the full misconception list verbatim, cut from four marks to three (b); the three-activity statement is LO 2(e)(iii) as the corpus&#x27;s strictest scheme words it (c).</p>
+<p><strong>Gaps targeted:</strong> B4-17 gp120 and gp41, B4-18 the co-receptors, B4-19 and B4-10 reverse transcriptase&#x27;s three jobs, second exposure.</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q3"><h3>Question 3 <span class="marks">[4 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> The diagram shows a single host cell being co-infected by influenza strain K and influenza strain L. The segmented genomes of both strains enter the nucleus and mix, and two new virions, strain M and strain N, are shown leaving, each carrying a mixture of the RNA segments of strains K and L.</p>
+<p>Which events lead to antigenic shift? <span class="marks">[1]</span></p>
+<div class="tw"><table><thead><tr><th></th><th>Name of event</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>gene mutation</td><td>gene mutations in the viral genomes of strains K and L occurred in the cell resulting in strains M and N</td></tr><tr><td>2</td><td>recombination of viral genome</td><td>recombination of strains K and L resulted in new strains M and N</td></tr><tr><td>3</td><td>reassortment of viral genome</td><td>reassortment of the viral genomes of strains K and L occurred only when both strains infect the same cell</td></tr></tbody></table></div>
+<div class="mcq"><div class="opt"><span class="optl">A</span><span class="optb">2</span></div><div class="opt"><span class="optl">B</span><span class="optb">3</span></div><div class="opt"><span class="optl">C</span><span class="optb">2 and 3</span></div><div class="opt"><span class="optl">D</span><span class="optb">1, 2 and 3</span></div></div></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>The answer is B, event 3 only.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> Explain your answer, saying for each of the three named events whether it is what the diagram shows and whether it leads to antigenic shift. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>Event 1, gene mutation, does not lead to antigenic shift. Accumulated point mutations within a single strain are antigenic DRIFT, and the diagram shows two strains entering one cell rather than one strain accumulating changes.</strong></p>
+<p><strong>Event 2, recombination, is not what the diagram shows. Recombination is the exchange of genetic information between two genomes so that a SINGLE genome ends up carrying sequence from both. The diagram shows whole intact RNA segments being repackaged into new virions, which is not recombination.</strong></p>
+<p><strong>Event 3, reassortment, is antigenic shift, and the description is the reason. Reassortment requires that both strains infect the same host cell, because the segments have to be present in one cell at packaging.</strong></p>
+<p><em>Gap note, B4-20. You got stuck here in Cluster 2, &quot;why can&#x27;t recombination create... so only the reassortment... I thought that we found this exchange of genetic material&quot;, and then &quot;oh, so it&#x27;s only occurring in one virus, that&#x27;s weird.&quot; That is exactly the distinction: <strong>reassortment swaps whole SEGMENTS between two strains and needs a segmented genome; recombination ends with ONE genome carrying both contributions.</strong> Only reassortment gives shift. Point mutation gives drift.</em></p>
+<p><em>Two consequences you reasoned out unaided afterwards, both examinable and both worth keeping: <strong>H2N2 cannot reassort with a strain that was not circulating at the same time</strong>, and <strong>influenza A cannot reassort with influenza C</strong> because the segment counts differ, eight against seven.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> DHS Prelim P1, stem, figure description, the three-row table and all four options verbatim (a); the reasoning in (b) is inferred because the DHS key gives the letter only, cross-checked against the ACJC Prelim 2023 P2 Q5(b), EJC Prelim 2023 P3 Q1(e) and JPJC Prelim 2022 P1 Q10 keys, which set the same distinction.</p>
+<p><strong>Gaps targeted:</strong> B4-20 recombination against reassortment.</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q4"><h3>Question 4 <span class="marks">[7 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> List <strong>three</strong> ways in which a typical prokaryotic genome and a typical eukaryotic genome are different. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>Any three, each as **one line**, because the command word is **list**.</div><p><strong>Circular against linear. A single chromosome plus plasmids, against many chromosomes. Held in a nucleoid with no nuclear envelope, against enclosed in a nucleus by a nuclear envelope. Packed by histone-LIKE proteins into looped domains and supercoiled, against packed by histones into nucleosomes and chromatin. Introns absent so no splicing is required, against introns present so splicing is required. Smaller genome, that is fewer nucleotides, against larger genome with a higher proportion of non-coding DNA.</strong></p>
+<p><em>Two gap notes on one part. <strong>B4-21:</strong> asked to describe the bacterial chromosome you gave, at high confidence, the entire Book 2 nucleosome answer, histones, the lysine-to-phosphate ionic bonds, non-histone scaffold, loop domains. <strong>Every clause of that is eukaryotic.</strong> A bacterium has <strong>no histones, no histone octamer, no nucleosome, no solenoid and no non-histone scaffold.</strong> Its DNA is compacted by <strong>supercoiling and histone-LIKE proteins</strong>, and <strong>histone-like</strong> is the word that earns the mark.</em></p>
+<p><strong><em>B4-22:</strong> you said the prokaryotic genome is <strong>bigger</strong>. It is <strong>smaller</strong>. And you made the right point against yourself, a bare &quot;smaller&quot; is weak, so say <strong>fewer base pairs</strong> or <strong>fewer genes</strong>, and add <strong>no introns and very little non-coding DNA</strong>.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> Bacteria reproduce by the process of binary fission. Explain the significance of binary fission in bacteria. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>Any two.</div><p><strong>Asexual reproduction for a unicellular organism.</strong></p>
+<p><strong>Ensuring that offspring are genetically identical to the parent, so desirable alleles or traits are passed down.</strong></p>
+<p><strong>Rapid INCREASE in cell numbers under favourable conditions.</strong></p>
+<p><em>Gap note, B4-24. You said <strong>decrease</strong>, twice in the same minute, so it was not a slip. The clean version of the variation half: <strong>binary fission itself generates no variation, because the daughters are genetically identical. What it does is amplify a mutation that has already arisen in one cell</strong>, very fast, which is how a resistant strain sweeps a population.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> In an experiment, two strains of bacteria were separated by a filter in a U-tube and DNase was added to the medium. Briefly describe the role of DNase in this experiment. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><p><strong>DNase hydrolyses free, naked DNA in the medium, so that transformation is ruled out as an explanation for any hybrid colonies.</strong></p>
+<p><em>Gap note, B4-23. You guessed it was &quot;a silencer that prevents the synthesis of the sex pilus&quot;. It does nothing to the pilus. It is there to <strong>eliminate one variable</strong>, and it is one mark. The reasoning it sets up is the point of the experiment: <strong>without DNase, naked DNA from lysed cells crosses the filter and transforms the other strain; with DNase still giving hybrids, the answer is a bacteriophage small enough to pass through the filter, carrying bacterial DNA across by transduction.</strong></em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="qpart" data-part="d"><p><strong>(d)</strong> State the <strong>three</strong> conditions that must be met for transformation to occur. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (d)</span><div class="answer-content"><p><strong>Free DNA fragments must be present in the surrounding medium, released from lysed donor cells; the recipient must be COMPETENT, made so by competence factors; and the sequence must be HOMOLOGOUS with the recipient chromosome so it can recombine into it.</strong></p>
+<p><em>Gap note, B4-25. You gave competence factors and homology, then stopped, and said it yourself afterwards: &quot;many fragments have to be available, present in the environment, look, I didn&#x27;t say that.&quot; The missing one is the most obvious one.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (d)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> 9477 Specimen P3 Q1(a)(ii), stem verbatim, with the axes taken from the outcome&#x27;s own wording and cross-checked against MI Prelim 2017 P2 Q9(a) (a); TJC Prelim 2021 P2 and NJC Prelim 2022 P2 Q8, stems and keys verbatim (b); the U-tube DNase question, stem and key verbatim (c); LO 2(g) as the corpus keys word it (d).</p>
+<p><strong>Gaps targeted:</strong> B4-21 the eukaryotic packing instinct, B4-22 genome size inverted, B4-24 binary fission increases numbers, B4-23 the role of DNase, B4-25 the third condition for transformation.</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q5"><h3>Question 5 <span class="marks">[5 marks]</span></h3><div class="qpart" data-part="stem"><p>Inhibitors can block electron flow at specific points in the electron transport chain, preventing further electron transfer downstream of the block. By observing which carriers become reduced and which become oxidised when an inhibitor is introduced, we can deduce their positions relative to the block. An investigation studied the effect of three inhibitors A, B and C on the electron transport chain in mitochondria. In each of the three experiments a different inhibitor was added. Table 5.1 shows the state of the electron carriers, <strong>W</strong> to <strong>Z</strong>, after the addition of inhibitor.</p>
+<div class="tw"><table><thead><tr><th>inhibitor added</th><th>W</th><th>X</th><th>Y</th><th>Z</th></tr></thead><tbody><tr><td>A</td><td>oxidised</td><td>reduced</td><td>reduced</td><td>oxidised</td></tr><tr><td>B</td><td>oxidised</td><td>oxidised</td><td>reduced</td><td>oxidised</td></tr><tr><td>C</td><td>reduced</td><td>reduced</td><td>reduced</td><td>oxidised</td></tr></tbody></table></div></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> Give the order of the electron carriers in this electron transport chain, and explain how you worked it out. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>The order is Y, X, W, Z.</strong></p>
+<p><strong>An inhibitor leaves everything UPSTREAM of the block reduced, because electrons pile up behind it, and everything DOWNSTREAM oxidised, because nothing reaches them. Inhibitor B leaves only Y reduced, so Y is first. Inhibitor A leaves X and Y reduced, so X is second. Inhibitor C leaves W, X and Y reduced, so W is third. Z is oxidised in every row, so Z is last.</strong></p>
+<p><em>Gap note, B5-13, and this is the question you could not start: &quot;how do you tell 5A, bro?... isn&#x27;t that a wrong concept? I don&#x27;t know how to do this one.&quot; You then built the rule yourself and got it right, which is why it is here as two marks and not five. <strong>Upstream reduced, downstream oxidised</strong> is the whole method, and it answers every version of this question.</em></p>
+<p><em>B5-12 underneath it: <strong>a carrier is REDUCED when it gains electrons and OXIDISED when it passes them on.</strong> Each carrier is reduced and then immediately re-oxidised, over and over, which is why the chain runs continuously. Learn it as one sentence rather than re-deriving it from &quot;when you lose an electron...&quot; each time.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> Explain why NAD cannot be regenerated from reduced NAD in mitochondria in the absence of oxygen. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>Oxygen is the final (terminal) electron acceptor at the end of the electron transport chain, where it combines with electrons and protons to form water.</strong></p>
+<p><strong>Without oxygen the electrons cannot be removed from the last carrier in the chain, so all the carriers remain reduced and the chain stops working.</strong></p>
+<p><strong>Reduced NAD can therefore not be oxidised, because there is nowhere for it to pass its electrons to, so NAD is not regenerated. The link reaction and Krebs cycle also stop, because they need a supply of oxidised NAD.</strong></p>
+<p><em>You built this one unaided in the sitting, including the clause most candidates miss, <strong>the carriers cannot accept more electrons</strong>. Do not re-learn it; just note that the chain belongs to <strong>oxidative phosphorylation</strong>, not the Krebs cycle, which you corrected mid-sentence at 5:00.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> 9477 Specimen P2 Q7(c)(i), stem and Table 7.2 verbatim from the question paper, with the reasoning inferred because the specimen ships without a mark scheme (a); NJC Prelim 2022 P2 Q7(c), stem and key verbatim (b).</p>
+<p><strong>Gaps targeted:</strong> B5-13 inhibitor position, B5-12 the redox convention, B5-17 which stage the chain belongs to.</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q6"><h3>Question 6 <span class="marks">[6 marks]</span></h3><div class="qpart" data-part="stem"><p>Figure 6.1 is a diagram of ATP synthase in the inner mitochondrial membrane: a barrel-shaped channel spanning the membrane, a central stalk, and a large mushroom-shaped head projecting into the matrix. Many H⁺ symbols are drawn in the intermembrane space above the membrane, and arrows show H⁺ entering the channel from above and emerging below, with a curved rotation arrow at the base of the central stalk.</p></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> Explain how the proton gradient that drives ATP synthesis is produced. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>Reduced NAD and reduced FAD are OXIDISED at the inner mitochondrial membrane and release electrons to the electron transport chain.</strong></p>
+<p><strong>The electrons are passed along a series of carriers, each at a lower energy level, so energy is released at each transfer.</strong></p>
+<p><strong>This energy is used by the carriers to actively pump protons from the matrix across the inner membrane into the intermembrane space. Because the inner membrane is impermeable to protons they accumulate there, giving a higher H⁺ concentration and lower pH than the matrix, an electrochemical gradient.</strong></p>
+<p><em>Gap note, B5-14. You found the opening yourself, mid-answer: &quot;you have to say that they are <strong>oxidised</strong> first. They&#x27;re oxidised at the inner mitochondrial membrane. You have to say that.&quot; Correct, and it is marking point one. The answer cannot start at &quot;energy is released&quot; because the marker needs to see where the electrons came from.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> With reference to Figure 6.1, outline how the proton gradient drives ATP synthesis. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>Protons diffuse down the electrochemical gradient from the intermembrane space back into the matrix, and because the rest of the membrane is impermeable to them they can only pass through the channel in the ATP SYNTHASE. This is chemiosmosis.</strong></p>
+<p><strong>The flow of protons through the channel causes the central stalk to rotate, which changes the shape of the catalytic sites in the head projecting into the matrix, and this catalyses the phosphorylation of ADP to ATP.</strong></p>
+<p><em>Gap note, B5-15. You had the protons going back to the matrix &quot;because the membrane itself is impermeable&quot;. <strong>The impermeability is why the gradient can exist; it is not the route.</strong> Without <strong>ATP synthase</strong> named, the answer describes a gradient that does nothing.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> Describe <strong>one</strong> difference between the process of chemiosmosis in mitochondria and the process of chemiosmosis in chloroplasts. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>Any one difference, both sides stated.</div><p><strong>In the mitochondrion protons are pumped from the matrix into the intermembrane space; in the chloroplast they are pumped from the stroma into the thylakoid space.</strong></p>
+<p><strong>Or: in the mitochondrion the electrons come from reduced NAD and reduced FAD; in the chloroplast they come from the photolysis of water.</strong></p>
+<p><strong>Or: in the mitochondrion the final electron acceptor is oxygen; in the chloroplast it is NADP.</strong></p>
+<p><em>Gap note, B5-16. At 10:40 you tried to say the chloroplast version inside a mitochondrial answer and inverted the direction, then reached for photolysis as the electron source in the wrong organelle. One outcome covers both, and the corpus sets this comparison more than any other in the Book, so hold it as a table with the two asymmetries attached: <strong>photolysis contributes protons only in the chloroplast</strong>, and <strong>only the mitochondrion has oxygen as the final acceptor</strong>.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> 9477 Specimen P2 Q7(c)(i) and Q7(c)(ii), stems and Figure 7.1 verbatim from the question paper, with the keys inferred because the specimen ships without a mark scheme and cross-checked against TJC Prelim 2023 P2 Q6(b) (a) and (b); JPJC Prelim 2023 P2 Q9(c), stem and difference table verbatim (c).</p>
+<p><strong>Gaps targeted:</strong> B5-14 the oxidation opening, B5-15 ATP synthase named, B5-16 chemiosmosis across the two organelles.</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q7"><h3>Question 7 <span class="marks">[5 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> State the location, the raw materials and the products of glycolysis, and name the <strong>two</strong> mechanisms by which it is carried out. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>Location: the cytoplasm. Raw materials: glucose, ATP (2 for the investment), NAD. Products per glucose: 2 pyruvate, 2 net ATP (4 gross), 2 reduced NAD. The two mechanisms are SUBSTRATE-LEVEL PHOSPHORYLATION and DEHYDROGENATION.</strong></p>
+<p><em>Gap note, B5-18, and this one buys back revision time. At 17:27 you recited <strong>glucose-6-phosphate, fructose-1,6-bisphosphate, glyceraldehyde-3-phosphate, 1,3-bisphosphoglycerate, 3-phosphoglycerate.</em> </strong>The syllabus states the exclusion of intermediate compounds outright.** LO 3(f) wants glycolysis at outcome depth only, which is the four lines above. Learning the intermediate names is time spent on something no question can ask for.*</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> State the total number of molecules of carbon dioxide released per molecule of glucose in aerobic respiration, and state where each is released. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>Six carbon dioxide per glucose. Two are released in the LINK REACTION, one per pyruvate, and four in the KREBS CYCLE, two per turn and the cycle turns twice.</strong></p>
+<p><em>Gap note, B5-11, and it is your notes&#x27; fault originally. At 21:39 you said <strong>&quot;there&#x27;s 4 CO2 coming out from here, right? You have 4.&quot;</em> </strong>Chapter 5.2&#x27;s Overview page prints 4 and the rest of the chapter contradicts it.<strong> The full budget per glucose: </strong>6 CO2, 4 ATP, 10 reduced NAD, 2 reduced FAD.***</p>
+<p><em>And B5-19 while you are counting: <strong>do not quote a total ATP figure for aerobic respiration.</strong> You said &quot;36 to 38, or like 34&quot;. LO 3(i) wants the comparison, and the accepted answer for the aerobic side is <strong>&quot;much greater&quot;</strong>. The anaerobic figure is fixed at <strong>net 2 ATP per glucose</strong>; the aerobic one is not, which is why the totals in circulation disagree.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> Cyanide blocks the electron transport chain. Explain why the link reaction stops, and state what happens to the production of carbon dioxide. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><p><strong>Cyanide blocks the chain, so there is no electron flow and reduced NAD cannot be oxidised, so oxidised NAD is not regenerated. The link reaction requires oxidised NAD for its dehydrogenation step, so it stops, and no carbon dioxide is produced.</strong></p>
+<p><em>You built this chain correctly and unaided in the sitting. It is here only so the 6-CO₂ figure sits next to the reasoning that uses it.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> LO 3(f) at outcome depth, with the exclusion of intermediate compounds as the syllabus states it (a); LO 3(g)&#x27;s carbon dioxide budget, which is the correction the Cluster 2 drill added because the school&#x27;s Overview page is wrong (b); NJC Prelim 2022 P2 Q7(c), key verbatim (c).</p>
+<p><strong>Gaps targeted:</strong> B5-11 six carbon dioxide not four, B5-18 the glycolysis-intermediate exclusion, B5-19 not quoting an aerobic ATP total.</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q8"><h3>Question 8 <span class="marks">[6 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> State the fate of <strong>all three</strong> products of the photolysis of water. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>Electrons replace those lost from P680 when it was photoactivated.</strong></p>
+<p><strong>Oxygen is released as a by-product, and is either used in respiration or diffuses out of the leaf.</strong></p>
+<p><strong>Protons contribute to the proton gradient across the thylakoid membrane, and are accepted along with electrons by NADP to form reduced NADP.</strong></p>
+<p><em>Gap note, B5-6. You gave the oxygen and stopped. <strong>All three products have a fate and the protons are the one candidates omit</strong>, they do double duty, building the gradient and then being taken up by NADP.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> An electron released from P680 during photolysis was traced through the light-dependent stage. State where the electrons produced by photolysis go, and explain why. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>The electrons from photolysis go straight back into P680, to replace the electrons it lost on photoactivation. They do NOT travel along the electron transport chain themselves.</strong></p>
+<p><em>Gap note, B5-5. This is a clean distinction and it is easy to lose: <strong>the electron that travels the chain is the one P680 emitted; the electron from photolysis is the one that refills P680&#x27;s deficit.</strong> Photolysis is a replacement service, not a supply line into the chain.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> Outline <strong>two</strong> differences between cyclic and non-cyclic photophosphorylation, and explain why cyclic photophosphorylation alone cannot sustain the Calvin cycle. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>Any two differences, plus the reason.</div><p><strong>Non-cyclic uses both PSII and PSI; cyclic uses PSI only. Non-cyclic involves photolysis of water; cyclic does not. Non-cyclic releases oxygen; cyclic does not. Non-cyclic produces both ATP and reduced NADP; cyclic produces ATP only. In non-cyclic the electron ends up on NADP; in cyclic it returns to P700.</strong></p>
+<p><strong>Cyclic photophosphorylation alone cannot sustain the Calvin cycle because the cycle needs BOTH ATP and reduced NADP, reduced NADP supplies the hydrogen for the reduction of PGA to triose phosphate, and cyclic photophosphorylation produces no reduced NADP.</strong></p>
+<p><em>Gap note, B5-10. You reached this but slowly and rated it medium. The last row is the only genuine difference in how the gradient is built, and the &quot;why the Calvin cycle stalls&quot; clause is what turns a list into an explanation.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="qpart" data-part="d"><p><strong>(d)</strong> Triose phosphate is the product of the Calvin cycle. State <strong>two</strong> fates of triose phosphate other than conversion to carbohydrate. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (d)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>Any two other than carbohydrate.</div><p><strong>Converted to amino acids, by the addition of nitrogen. Converted to lipids or fatty acids and glycerol. Used to regenerate RuBP. Respired to release energy. Converted to nucleotides.</strong></p>
+<p><em>Gap note, B5-7. <strong>Triose phosphate makes more than carbohydrate, and that is the whole point of the question.</strong> Five of every six triose phosphate go back to regenerating RuBP; the sixth is the net product, and it is the precursor for amino acids, lipids and nucleotides, not only for glucose and starch.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (d)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> Book 5 Cluster 1 bank, LOs 3(c) and 3(d): the photolysis products question and the cyclic-against-non-cyclic table are the school&#x27;s own answer key in accepted wording; the triose phosphate fates are the corpus&#x27;s standard list.</p>
+<p><strong>Gaps targeted:</strong> B5-6 all three photolysis products, B5-5 where the photolysis electrons go, B5-10 cyclic against non-cyclic, B5-7 the fates of triose phosphate.</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div>
+<script>
+document.querySelectorAll('.answer-overlay').forEach(function(o){
+  o.addEventListener('click', function(){ o.classList.add('hidden'); });
+});
+document.getElementById('revealAll').addEventListener('click', function(){
+  document.querySelectorAll('.answer-overlay').forEach(function(o){ o.classList.add('hidden'); });
+});
+document.getElementById('hideAll').addEventListener('click', function(){
+  document.querySelectorAll('.answer-overlay').forEach(function(o){ o.classList.remove('hidden'); });
+});
+</script>
+</body></html>

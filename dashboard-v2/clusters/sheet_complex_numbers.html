@@ -1,0 +1,169 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complex Numbers — Study Sheet (9758, 2026 scope)</title>
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true,tags:'none'},svg:{fontCache:'global'}};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+:root{--bg:#fafafa;--card:#fff;--border:#e5e7eb;--text:#1a1a1a;--muted:#6b7280;
+--blue:#2563eb;--blue-soft:#eff6ff;--amber:#d97706;--amber-soft:#fffbeb;
+--green:#059669;--green-soft:#ecfdf5;--red:#dc2626;--red-soft:#fef2f2;
+--purple:#6d28d9;--purple-soft:#f5f3ff;}
+*{box-sizing:border-box}
+body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:980px;margin:0 auto;
+padding:32px 22px 90px;line-height:1.6;color:var(--text);background:var(--bg)}
+h1,h2,h3,.tag,.hd .sub,.hd .meta,.nav,.lbl,.secn{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif}
+.hd{border-bottom:2.5px solid #111;padding-bottom:13px;margin-bottom:8px;text-align:center}
+.hd h1{font-size:1.45em;font-weight:800;letter-spacing:.4px;margin:0;color:#111}
+.hd .sub{font-size:.97em;margin-top:4px;color:#333}
+.hd .meta{font-family:ui-monospace,Menlo,monospace;font-size:.76em;color:var(--muted);margin-top:7px}
+h2{font-size:1.06em;margin:32px 0 11px;padding:7px 12px;background:#111;color:#fff;border-radius:5px;font-weight:700}
+.nav{background:var(--card);border:1px solid var(--border);padding:12px 17px;border-radius:6px;margin:15px 0 24px;font-size:.84em}
+.nav a{color:var(--blue);text-decoration:none;display:inline-block;margin:0 13px 4px 0}
+.nav a:hover{text-decoration:underline}
+table{border-collapse:collapse;margin:11px 0;font-size:.85em;width:100%;background:#fff}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#f1f5f9;font-weight:700;font-family:-apple-system,sans-serif;font-size:.93em}
+tr:nth-child(even) td{background:#fcfcfd}
+.sec{background:var(--card);border:1px solid var(--border);border-radius:7px;margin:18px 0;overflow:hidden}
+.secn{background:#f1f5f9;border-bottom:1px solid var(--border);padding:9px 15px;font-weight:700;font-size:.95em;
+display:flex;align-items:center;gap:10px}
+.secn .n{background:#111;color:#fff;border-radius:4px;min-width:26px;height:23px;display:inline-flex;
+align-items:center;justify-content:center;font-size:.78em;font-weight:800;flex:none}
+.sec>div:not(.secn){margin:0 15px}
+.meth{background:var(--blue-soft);border-left:3px solid var(--blue);padding:9px 13px;margin-top:12px;border-radius:0 4px 4px 0;font-size:.92em}
+.meth .lbl{color:var(--blue);font-size:.68em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:4px;font-family:-apple-system,sans-serif}
+.eg{background:var(--green-soft);border-left:3px solid var(--green);padding:9px 13px;margin-top:11px;border-radius:0 4px 4px 0;font-size:.9em}
+.eg .lbl{color:var(--green);font-size:.68em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:4px;font-family:-apple-system,sans-serif}
+.pr{background:#fff;border:1px solid var(--border);border-left:3px solid var(--purple);padding:9px 13px;margin:11px 0 14px;border-radius:0 4px 4px 0;font-size:.9em}
+.pr .lbl{color:var(--purple);font-size:.68em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:4px;font-family:-apple-system,sans-serif}
+.src{font-family:ui-monospace,Menlo,monospace;font-size:.72em;color:var(--muted);margin-top:5px}
+.trap{background:var(--red-soft);border-left:3px solid var(--red);padding:8px 12px;margin-top:10px;border-radius:0 4px 4px 0;font-size:.87em;color:#7f1d1d}
+.trap b{color:var(--red)}
+.note{background:var(--amber-soft);border:1px solid #fcd34d;border-left:4px solid var(--amber);padding:10px 14px;border-radius:6px;margin:13px 0;font-size:.89em;color:#7c2d12}
+.note b{color:#b91c1c}
+.key{background:var(--purple-soft);border:1px solid #ddd6fe;border-left:4px solid var(--purple);padding:10px 14px;border-radius:6px;margin:13px 0;font-size:.89em}
+.key b{color:var(--purple)}
+button.rev{font-family:-apple-system,sans-serif;font-size:.78em;font-weight:600;background:#111;color:#fff;
+border:0;border-radius:5px;padding:5px 12px;cursor:pointer;margin-top:7px}
+button.rev:hover{background:#333}
+.ans{display:none;margin-top:9px;padding-top:9px;border-top:1px dashed var(--border)}
+.ans.on{display:block}
+@media print{body{background:#fff;padding:0;max-width:none;font-size:10.5pt}
+.nav,button.rev{display:none}.ans{display:block !important}.sec{page-break-inside:avoid}
+h2,.secn,.meth,.eg,.pr,.trap,.note,.key,th{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style></head><body>
+<div class="hd"><h1>COMPLEX NUMBERS</h1><div class="sub">H2 Mathematics 9758 &nbsp;&middot;&nbsp; Topic 4.1 &nbsp;&middot;&nbsp; <b>2026 scope only</b></div>
+<div class="meta">Cartesian form and Argand diagrams &middot; polar and exponential form are OUT for your sitting</div></div>
+<div class="note" style="margin-top:18px"><b>Read this before you start &mdash; the topic shrank for your exam.</b>
+The 2026 syllabus renames this topic <i>&ldquo;Introduction to Complex numbers&rdquo;</i>, keeps a single subtopic 4.1
+<i>&ldquo;Complex numbers expressed in cartesian form and Argand diagrams&rdquo;</i>, and states verbatim:
+<b>&ldquo;Exclude complex numbers expressed in polar (or modulus-argument) form and exponential form.&rdquo;</b>
+There is no mention of de Moivre's theorem, roots of unity, or loci anywhere in the content outline.
+<br><br>
+That means most Complex Numbers questions in the prelim papers you have <b>cannot be set on your paper</b>.
+Anything written \(r(\cos\theta+i\sin\theta)\) or \(re^{i\theta}\), anything asking for &ldquo;the locus of points such that
+\(|z-a|=|z-b|\)&rdquo;, and anything using de Moivre is off your syllabus. If you meet one while practising, skip it.
+<br><br>
+<b>What survives:</b> modulus, argument and conjugate as <i>quantities</i>, the four operations, equality,
+complex roots of quadratics, conjugate roots of real-coefficient polynomials, the Argand diagram, and the
+geometrical effect of conjugating, negating, adding, subtracting, and multiplying by \(i\). That is the whole
+topic, and it is why <b>60 minutes is generous for it</b>.</div>
+<div class="nav"><b style="display:block;margin-bottom:5px">Sections</b><a href="#s1">1 Cartesian arithmetic, equality, and the conjugate</a><a href="#s2">2 Complex roots of quadratics</a><a href="#s3">3 Conjugate roots of real-coefficient polynomials</a><a href="#s4">4 Argand diagrams and geometrical effects</a>
+<div style="margin-top:9px"><button class="rev" onclick="allOn(true)" style="margin-right:6px">Reveal all answers</button>
+<button class="rev" onclick="allOn(false)">Hide all</button></div></div>
+<h2>Learning outcomes this sheet covers</h2>
+<table><tr><th style="width:24%">Outcome</th><th>What the syllabus asks for</th></tr><tr><td><b>Number system</b></td><td>Extension from real numbers to complex numbers; \(i^2=-1\).</td></tr><tr><td><b>Quadratics</b></td><td>Complex roots of quadratic equations.</td></tr><tr><td><b>Mod / arg / conjugate</b></td><td>Modulus, argument and conjugate of a complex number.</td></tr><tr><td><b>Operations</b></td><td>The four operations; equality of complex numbers.</td></tr><tr><td><b>Polynomials</b></td><td>Conjugate roots of a polynomial equation with real coefficients.</td></tr><tr><td><b>Argand diagram</b></td><td>Representation of complex numbers on an Argand diagram.</td></tr><tr><td><b>Geometry</b></td><td>Geometrical effects of conjugation, negation, addition, subtraction, and multiplication by \(i\).</td></tr><tr><td><b>EXCLUDED</b></td><td>Polar (modulus-argument) form, exponential form, de Moivre, roots of unity, loci.</td></tr></table>
+<div class="sec" id="s1"><div class="secn"><span class="n">1</span>Cartesian arithmetic, equality, and the conjugate</div><div class="meth"><div class="lbl">The four operations</div>Write everything as \(a+bi\) with \(a,b\in\mathbb{R}\). Then \(i^2=-1\) and ordinary algebra applies.<br><br>
+<b>Multiply:</b> expand and replace \(i^2\) by \(-1\).<br>
+\((2+i)^2=4+4i+i^2=3+4i\).<br><br>
+<b>Divide:</b> multiply top and bottom by the <b>conjugate of the denominator</b>. This is the single most-used technique in the topic.<br>
+\(\dfrac{1}{2+i}=\dfrac{2-i}{(2+i)(2-i)}=\dfrac{2-i}{4+1}=\dfrac{2}{5}-\dfrac{1}{5}i\).<br><br>
+<b>Why it works:</b> \(zz^*=|z|^2\), which is always <b>real</b> and non-negative.</div><div class="meth"><div class="lbl">Equality, modulus, argument, conjugate</div><b>Equality.</b> \(a+bi=c+di \iff a=c\) <b>and</b> \(b=d\). Comparing real and imaginary parts turns one complex equation into two real ones &mdash; that is how most &ldquo;find the constants&rdquo; questions are solved.<br><br>
+<b>Modulus.</b> \(|z|=\sqrt{a^2+b^2}\), the distance from the origin. \(|z|^2=zz^*\).<br><br>
+<b>Argument.</b> \(\arg z\) is the angle from the positive real axis, taken in \(-\pi<\arg z\le\pi\). Find the acute reference angle \(\tan^{-1}\left|\dfrac ba\right|\) first, <b>then place it by quadrant</b>.<br><br>
+<b>Conjugate.</b> \(z^*=a-bi\). Useful identities: \((z_1z_2)^*=z_1^*z_2^*\), \(z+z^*=2\,\mathrm{Re}(z)\), \(z-z^*=2i\,\mathrm{Im}(z)\).</div><div class="eg"><div class="lbl">Example</div><b>Given \(z=3+4i\), find \(|z|\), \(\arg z\), and \(\dfrac{1}{z}\) in cartesian form.</b><br><br>
+\(|z|=\sqrt{9+16}=5\).<br>
+\(z\) is in the first quadrant, so \(\arg z=\tan^{-1}\dfrac43=0.927\) rad (3 s.f.).<br>
+\(\dfrac{1}{3+4i}=\dfrac{3-4i}{(3+4i)(3-4i)}=\dfrac{3-4i}{25}=\dfrac{3}{25}-\dfrac{4}{25}i\).<br><br>
+Note \(\left|\dfrac1z\right|=\dfrac{1}{|z|}=\dfrac15\), which checks out: \(\sqrt{(3/25)^2+(4/25)^2}=\dfrac{5}{25}=\dfrac15\).</div><div class="trap"><b>Trap</b> Taking \(\arg z=\tan^{-1}\dfrac ba\) straight off the calculator. For \(z=-1+i\) that gives \(-\dfrac\pi4\), but \(z\) is in the <b>second</b> quadrant and the true argument is \(\dfrac{3\pi}{4}\). Always sketch the point first, then place the reference angle.</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div>The complex number \(z_1\) is given by \(z_1=a+(a-3)i\), where \(a\) is a positive real constant, and \(\arg z_1=\theta\) where \(-\dfrac{\pi}{2}<\theta<0\). Find, in terms of \(\theta\), (i) \(\arg(-2z_1)\) and (ii) \(\arg(z_1-2a)\).<div class="src">HCI 2023 Prelim Paper 2 Q3(a) &middot; [2] [2] &middot; argument and negation only, so fully inside the 2026 scope</div><button class="rev">Reveal answer</button><div class="ans">We are told \(-\dfrac{\pi}{2}<\theta<0\), so \(z_1\) is in the <b>fourth</b> quadrant. Since \(a>0\), that is consistent: \(\mathrm{Re}=a>0\) and \(\mathrm{Im}=a-3<0\), so \(0<a<3\).<br><br>
+<b>(i) \(\arg(-2z_1)\).</b> Multiplying by the positive number 2 changes nothing; multiplying by \(-1\) rotates by \(\pi\). So \(\arg(-2z_1)=\theta\pm\pi\), and we pick the one landing in \((-\pi,\pi]\).<br>
+Since \(-\dfrac\pi2<\theta<0\), adding \(\pi\) gives \(\dfrac\pi2<\theta+\pi<\pi\), which is in range.<br>
+<b>\(\arg(-2z_1)=\theta+\pi\).</b><br><br>
+<b>(ii) \(\arg(z_1-2a)\).</b> \(z_1-2a=a+(a-3)i-2a=-a+(a-3)i\).<br>
+This is the reflection of \(z_1=a+(a-3)i\) in the <b>imaginary</b> axis (real part negates, imaginary part unchanged).<br>
+Real part \(-a<0\) and imaginary part \(a-3<0\), so the point is in the <b>third</b> quadrant.<br>
+Reflecting in the imaginary axis maps an argument \(\theta\) to \(\pi-\theta\); with \(\theta\) negative this gives a value above \(\pi\), so subtract \(2\pi\):<br>
+<b>\(\arg(z_1-2a)=-\pi-\theta\).</b><br>
+<b>Check:</b> with \(\theta\to 0^-\) the point tends to the negative real axis, giving \(\arg\to-\pi\) &check;. With \(\theta\to-\dfrac\pi2\), \(\arg\to-\dfrac\pi2\), pointing straight down &check;.</div></div></div><div class="sec" id="s2"><div class="secn"><span class="n">2</span>Complex roots of quadratics</div><div class="meth"><div class="lbl">The formula still works</div>For \(az^2+bz+c=0\) with <b>real</b> \(a,b,c\) and \(b^2-4ac<0\):<br>
+\[z=\frac{-b\pm\sqrt{b^2-4ac}}{2a}=\frac{-b\pm i\sqrt{4ac-b^2}}{2a}\]
+The two roots are a <b>conjugate pair</b>. Write \(\sqrt{-n}=i\sqrt n\) and carry on.<br><br>
+<b>Sum and product.</b> \(z_1+z_2=-\dfrac ba\) and \(z_1z_2=\dfrac ca\), exactly as for real roots. These give a fast check, and often a faster route than the formula.<br><br>
+<b>Building the quadratic back.</b> If \(p+qi\) is a root of a real quadratic, the quadratic is a multiple of<br>
+\(z^2-2pz+(p^2+q^2)\), i.e. \(z^2-(\text{sum})z+(\text{product})\).</div><div class="eg"><div class="lbl">Example</div><b>Solve \(z^2-4z+13=0\).</b><br><br>
+Discriminant \(=16-52=-36<0\), so the roots are complex.<br>
+\(z=\dfrac{4\pm\sqrt{-36}}{2}=\dfrac{4\pm 6i}{2}=2\pm 3i\).<br><br>
+Check: sum \(=4=-\dfrac{-4}{1}\) &check;, product \(=(2+3i)(2-3i)=4+9=13\) &check;.</div><div class="trap"><b>Trap</b> Writing \(\sqrt{-36}=-6\). It is \(6i\). And when the coefficients are <b>not</b> all real, the roots need <b>not</b> be a conjugate pair &mdash; the conjugate-pair result depends entirely on the coefficients being real.</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div>The equation \(z^2+(2+i)z+k=0\), where \(k\) is a complex constant, has \(z=1-i\) as a root. Find \(k\) and the other root.<div class="src">Non-real coefficients, so the conjugate-root shortcut is deliberately unavailable</div><button class="rev">Reveal answer</button><div class="ans"><b>Find \(k\):</b> substitute \(z=1-i\).<br>
+\((1-i)^2=1-2i+i^2=-2i\).<br>
+\((2+i)(1-i)=2-2i+i-i^2=2-i+1=3-i\).<br>
+So \(-2i+3-i+k=0\Rightarrow k=-3+3i\).<br><br>
+<b>Other root:</b> sum of roots \(=-(2+i)\).<br>
+\((1-i)+z_2=-2-i\Rightarrow z_2=-2-i-1+i=-3\).<br><br>
+<b>Check with the product:</b> \(z_1z_2=(1-i)(-3)=-3+3i=k\) &check;.<br><br>
+<b>The point of this question:</b> the other root is \(-3\), which is <b>not</b> the conjugate of \(1-i\). Because the coefficient \(2+i\) is not real, conjugate pairing does not apply &mdash; and a real root sitting alongside a complex one is perfectly possible.</div></div></div><div class="sec" id="s3"><div class="secn"><span class="n">3</span>Conjugate roots of real-coefficient polynomials</div><div class="meth"><div class="lbl">The theorem and how it is used</div><b>If a polynomial has all real coefficients and \(z=p+qi\) (with \(q\ne0\)) is a root, then \(z^*=p-qi\) is also a root.</b><br><br>
+Say the words when you use it: <i>&ldquo;since all the coefficients are real and \(p+qi\) is a root, \(p-qi\) is also a root&rdquo;</i>. That sentence is a mark.<br><br>
+<b>Consequences worth knowing:</b><br>
+&bull; Non-real roots come in <b>pairs</b>, so a polynomial of <b>odd</b> degree with real coefficients must have at least one real root.<br>
+&bull; A conjugate pair \(p\pm qi\) contributes the real quadratic factor \(z^2-2pz+(p^2+q^2)\). Dividing the polynomial by that factor leaves a lower-degree real polynomial to finish.<br>
+&bull; \((p+qi)(p-qi)=p^2+q^2=|z|^2\), so each conjugate pair contributes \(|z|^2\) to the product of the roots.</div><div class="meth"><div class="lbl">Symmetry shortcuts</div>If a quartic has only even powers, \(f(-z)=f(z)\), so roots come in \(\pm\) pairs as well. Combined with conjugation, <b>one root generates all four</b>: \(p+qi\Rightarrow p-qi,\ -p-qi,\ -p+qi\).<br><br>
+Spotting that symmetry turns a 6-mark question into two lines.</div><div class="eg"><div class="lbl">Example</div><b>\(z=1+2i\) is a root of \(z^3+az^2+bz+10=0\) where \(a,b\) are real. Find \(a\) and \(b\) and the third root.</b><br><br>
+Coefficients are real, so \(1-2i\) is also a root.<br>
+That pair gives the factor \(z^2-2z+5\) (sum \(2\), product \(1+4=5\)).<br>
+Product of all three roots \(=-\dfrac{10}{1}=-10\), and \((1+2i)(1-2i)=5\), so the third root is \(-\dfrac{10}{5}=-2\).<br><br>
+Then \(z^3+az^2+bz+10=(z^2-2z+5)(z+2)=z^3+2z^2-2z^2-4z+5z+10=z^3+z+10\).<br>
+So \(a=0\), \(b=1\).</div><div class="trap"><b>Trap</b> Applying conjugate pairing without checking the coefficients are real. If any coefficient is complex, the theorem is false &mdash; see the practice question in the previous section.</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div><b>Do not use a graphing calculator for this question.</b> It is given that \(\mathrm{f}(z)=z^4-6z^2+k\), where \(k\) is a non-zero constant.<br>
+(a) If \(k\) is purely imaginary, determine with justification whether \(\mathrm{f}(z)=0\) can have real roots. [1]<br>
+(b) Show that \(\mathrm{f}(-z)=\mathrm{f}(z)\). [1]<br>
+(c) Given that \(2+i\) is a root of \(\mathrm{f}(z)=0\), determine \(k\), and hence find the remaining roots. [6]<br>
+(d) Given that the product of all the roots is \(D\), find \(D\). [2]<br>
+(e) A complex number \(w_1\) satisfies \(kw^4-6w^2+1=0\). Given that \(w_1\) can be obtained from \(2+i\), find \(w_1\). [2]<div class="src">HCI 2025 Prelim Paper 1 Q12 &middot; [12] &middot; solution verbatim from the HCI mark scheme, every value re-verified symbolically</div><button class="rev">Reveal answer</button><div class="ans"><b>(a)</b> Suppose \(\mathrm{f}(z)=0\) had a real root \(x\). Then \(x^4-6x^2=-k\). The left side is <b>real</b> but the right side is purely imaginary and non-zero, a contradiction. Hence there are <b>no real roots</b>.<br><br>
+<b>(b)</b> \(\mathrm{f}(-z)=(-z)^4-6(-z)^2+k=z^4-6z^2+k=\mathrm{f}(z)\). <b>Shown.</b><br><br>
+<b>(c)</b> \((2+i)^2=4+4i+i^2=3+4i\), and \((2+i)^4=(3+4i)^2=9+24i+16i^2=-7+24i\).<br>
+Substituting: \(-7+24i-6(3+4i)+k=0\Rightarrow -7+24i-18-24i+k=0\Rightarrow \boxed{k=25}\).<br>
+Since all coefficients are real and \(2+i\) is a root, \(2-i\) is also a root.<br>
+Since \(\mathrm{f}(-z)=\mathrm{f}(z)\), if \(z\) is a root then so is \(-z\).<br>
+<b>Remaining roots: \(2-i,\ -2-i,\ -2+i\).</b><br><br>
+<b>(d)</b> \((2+i)(2-i)=4-i^2=5\) and \((-2+i)(-2-i)=4-i^2=5\).<br>
+<b>\(D=5\times5=25\).</b> (Consistent with the constant term: for a monic quartic the product of the roots is \(+k=25\).)<br><br>
+<b>(e)</b> Start from \(z^4-6z^2+25=0\) and divide through by \(z^4\):<br>
+\(1-\dfrac{6}{z^2}+\dfrac{25}{z^4}=0\), i.e. \(25\left(\dfrac1z\right)^4-6\left(\dfrac1z\right)^2+1=0\).<br>
+So \(w=\dfrac1z\) satisfies the new equation, and with \(z=2+i\):<br>
+\(w_1=\dfrac{1}{2+i}=\dfrac{2-i}{5}=\boxed{\dfrac25-\dfrac15 i}\).<br><br>
+<b>A second valid route</b> the HCI key also gives: multiply \(25w^4-6w^2+1=0\) by \(25\) to get \((5w)^4-6(5w)^2+25=0\), so \(5w\) is a root of the original, giving \(w=\dfrac{2+i}{5}=\dfrac25+\dfrac15 i\). Both are genuine roots &mdash; the four roots of the new equation are \(\dfrac{\pm2\pm i}{5}\), so either answer is defensible.</div></div></div><div class="sec" id="s4"><div class="secn"><span class="n">4</span>Argand diagrams and geometrical effects</div><div class="meth"><div class="lbl">What each operation does to the point</div><table><tr><th>Operation</th><th>Effect on the Argand diagram</th></tr>
+<tr><td>\(z^*\)</td><td>Reflection in the <b>real axis</b>. \(|z^*|=|z|\), \(\arg z^*=-\arg z\)</td></tr>
+<tr><td>\(-z\)</td><td>Rotation by \(\pi\) about \(O\) (equivalently, reflection in \(O\)). \(\arg(-z)=\arg z\pm\pi\)</td></tr>
+<tr><td>\(z_1+z_2\)</td><td><b>Vector addition</b> &mdash; the parallelogram rule</td></tr>
+<tr><td>\(z_1-z_2\)</td><td>The vector <b>from</b> \(z_2\) <b>to</b> \(z_1\). So \(|z_1-z_2|\) is the <b>distance between the two points</b></td></tr>
+<tr><td>\(iz\)</td><td>Rotation by \(+\dfrac{\pi}{2}\) about \(O\). Modulus unchanged</td></tr>
+<tr><td>\(kz\), \(k>0\) real</td><td>Scaling by \(k\) from \(O\). Argument unchanged</td></tr></table>
+<b>The reading that unlocks most questions:</b> \(|z_1-z_2|\) is a <b>distance</b> and \(\arg(z_1-z_2)\) is the <b>direction</b> of the line from \(z_2\) to \(z_1\).</div><div class="eg"><div class="lbl">Example</div><b>\(z=3+i\). Plot \(z\), \(z^*\), \(iz\) and \(-z\), and describe the quadrilateral they form.</b><br><br>
+\(z=3+i\) &rarr; \((3,1)\).<br>
+\(z^*=3-i\) &rarr; \((3,-1)\), the reflection in the real axis.<br>
+\(iz=i(3+i)=3i+i^2=-1+3i\) &rarr; \((-1,3)\), which is \(z\) rotated a quarter turn anticlockwise.<br>
+\(-z=-3-i\) &rarr; \((-3,-1)\).<br><br>
+All four lie on the circle of radius \(\sqrt{10}\) centred at \(O\), since each operation preserves the modulus.</div><div class="trap"><b>Trap</b> Reading \(|z_1-z_2|\) as &ldquo;the difference of the moduli&rdquo;. It is the <b>distance between the points</b>, and in general \(|z_1-z_2|\ne|z_1|-|z_2|\). The triangle inequality \(|z_1+z_2|\le|z_1|+|z_2|\) is the correct relation between them.</div><div class="pr"><div class="lbl">Practice &mdash; do this before revealing</div>A curve \(C\) has equation \(x^2-3y^2=3\). A complex number is given by \(z=x+iy\), where \(x\) and \(y\) are real and satisfy that equation, and \(\mathrm{Re}(z)\) is positive. State the behaviour of \(\arg z\) as \(\mathrm{Re}(z)\to\infty\).<div class="src">HCI 2022 Prelim Paper 1 Q4(ii) &middot; [3] &middot; a conic and an argument fused in one question</div><button class="rev">Reveal answer</button><div class="ans">Divide the conic by 3: \(\dfrac{x^2}{3}-y^2=1\), a hyperbola opening left and right with asymptotes \(y=\pm\dfrac{1}{\sqrt3}x\).<br><br>
+\(\mathrm{Re}(z)=x>0\) selects the <b>right-hand branch</b>, which has two arms: one going up along \(y=\dfrac{1}{\sqrt3}x\), one going down along \(y=-\dfrac{1}{\sqrt3}x\).<br><br>
+As \(x\to\infty\) the point approaches an asymptote, and \(\arg z=\tan^{-1}\dfrac yx\to\tan^{-1}\left(\pm\dfrac{1}{\sqrt3}\right)\).<br><br>
+<b>So \(\arg z\to\dfrac{\pi}{6}\) for the upper arm and \(\arg z\to-\dfrac{\pi}{6}\) for the lower arm.</b><br>
+The argument does not tend to a single value &mdash; it tends to \(\pm\dfrac\pi6\) depending on which arm the point runs along, and it approaches those values without reaching them.<br><br>
+<b>Why this works:</b> \(\arg z\) is the angle the line \(Oz\) makes with the real axis, and far out along the branch that line becomes parallel to an asymptote. The asymptote gradient <b>is</b> the limiting tangent of the argument.</div></div></div>
+<script>
+document.addEventListener('click',e=>{
+  if(e.target.classList.contains('rev')){
+    const a=e.target.nextElementSibling;
+    a.classList.toggle('on');
+    e.target.textContent=a.classList.contains('on')?'Hide answer':'Reveal answer';
+  }
+});
+function allOn(v){document.querySelectorAll('.ans').forEach(a=>a.classList.toggle('on',v));
+  document.querySelectorAll('button.rev').forEach(b=>b.textContent=v?'Hide answer':'Reveal answer');}
+</script></body></html>

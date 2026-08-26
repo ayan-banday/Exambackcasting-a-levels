@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>GAP DRILL: Books 6 and 9 merged</title>
+<style>
+/* Light is the default: Ethan finds a white background easier to read from.
+   Set "dark_theme": true in a config if a dark build is ever wanted again. */
+:root{--bg:#ffffff;--card-bg:#fafafa;--border:#e2e5ea;--text:#16181d;--muted:#5b6472;--blue:#1d4ed8;
+--blue-soft:#eef4ff;--amber:#a35a00;--green:#047857;--green-soft:#ecfdf5;--cover:#f1f3f6;
+--purple:#6d28d9;--purple-soft:#f5f3ff;--red:#b91c1c;--red-soft:#fef2f2;--btn:#f1f3f6;--btn-hover:#e2e5ea;--chip-bg:#fff3d1;--chip-fg:#8a5a00;--th-bg:#f1f3f6;--quote-bg:#fffbeb;--code-bg:#f1f3f6;--fig-bg:#fafafa;--dash:#c4cad3;--conf-b:#3f4855}
+.mcq{margin:10px 0 12px;padding:2px 0}
+.opt{display:flex;gap:10px;margin:6px 0;align-items:baseline}
+.mnote{margin:0 0 12px;padding:7px 12px;border-left:3px solid var(--amber);background:var(--quote-bg);border-radius:0 5px 5px 0;font-size:.9em}
+.mnote span{display:block;font-family:-apple-system,sans-serif;font-size:.72em;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.optl{flex:0 0 1.6em;font-weight:700;color:var(--amber);font-family:-apple-system,sans-serif}
+.optb{flex:1}
+*{box-sizing:border-box}
+body{font-family:'Charter','Georgia','Times New Roman',serif;max-width:960px;margin:0 auto;
+padding:32px 22px 80px;line-height:1.65;color:var(--text);background:var(--bg)}
+
+h1,h2,h3,.label,.controls,button{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+h1{font-size:1.9em;margin:0 0 6px;border-bottom:3px solid var(--muted);padding-bottom:10px}
+h3{font-size:1.15em;margin:0 0 14px;color:var(--text)}
+.meta{color:var(--muted);font-size:.9em;margin:4px 0 20px}
+.intro{background:var(--card-bg);border:1px solid var(--border);border-left:4px solid var(--red);
+padding:14px 18px;border-radius:6px;margin:14px 0 20px;font-size:.95em}
+.los{background:var(--blue-soft);border:1px solid #2b3648;border-left:4px solid var(--blue);
+padding:14px 18px;border-radius:6px;margin:0 0 26px;font-size:.9em}
+.los table{border-collapse:collapse;width:100%;margin-top:8px}
+.los td{padding:4px 8px 4px 0;border-bottom:1px solid #2b3648;vertical-align:top}
+.los td:first-child{white-space:nowrap;font-weight:600;color:var(--blue);width:42%}
+.los tr:last-child td{border-bottom:none}
+.controls{position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:100;
+border-bottom:1px solid var(--border);margin-bottom:18px;display:flex;gap:10px;flex-wrap:wrap}
+.controls button{background:var(--btn);color:var(--text);border:1px solid var(--border);padding:6px 14px;border-radius:5px;
+cursor:pointer;font-size:.85em;font-weight:500}
+.controls button:hover{background:var(--btn-hover)}
+.toc{background:var(--card-bg);border:1px solid var(--border);padding:12px 20px;border-radius:6px;
+margin-bottom:26px;font-size:.9em}
+.toc a{color:var(--blue);text-decoration:none;margin-right:12px;line-height:2}
+.card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:18px 22px;
+margin:22px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.qpart{margin:12px 0}
+.block{margin:12px 0;padding:12px 16px;border-radius:6px;border-left:4px solid var(--border);
+position:relative;min-height:56px}
+.block.answer{background:var(--green-soft);border-left-color:var(--green)}
+.block.reveal-archetype{background:var(--purple-soft);border-left-color:var(--purple);margin-top:20px}
+.label{display:block;text-transform:uppercase;font-size:.72em;letter-spacing:.08em;font-weight:700;
+margin-bottom:6px;color:var(--muted)}
+.block.answer .label{color:var(--green)}
+.block.reveal-archetype .label{color:var(--purple)}
+.answer-overlay{position:absolute;inset:0;background:var(--cover);border-radius:6px;display:flex;
+align-items:center;justify-content:center;cursor:pointer}
+.answer-overlay.hidden{display:none}
+.reveal-btn{background:var(--btn);border:1px solid var(--border);padding:7px 18px;border-radius:5px;
+cursor:pointer;font-size:.85em;font-weight:600;color:var(--text)}
+.reveal-btn:hover{background:var(--btn-hover)}
+.confidence{margin:10px 0 -4px;padding:5px 12px;border:1px dashed var(--dash);border-radius:5px;
+color:var(--muted);font-size:.78em;letter-spacing:.02em;
+font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;background:transparent}
+.confidence b{color:var(--conf-b);font-weight:600}
+.marks{display:inline-block;font-size:.8em;background:var(--chip-bg);color:var(--chip-fg);padding:2px 8px;
+border-radius:10px;font-weight:700;margin-left:4px;font-family:-apple-system,sans-serif}
+.fig{margin:14px 0;padding:12px;background:var(--fig-bg);border:1px solid var(--border);border-radius:6px;text-align:center}
+.fig img{max-width:100%;height:auto;border-radius:3px}
+.fig-svg{background:#fff}
+.fig-svg svg{max-width:100%;height:auto;display:block;margin:0 auto}
+.fig-svg text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#16181d}
+.fig-svg .lbl{font-size:12px}
+.fig-svg .lbl-b{font-size:12px;font-weight:600}
+.fig-svg .tick{font-size:10px;fill:#5b6472}
+.fig-svg .ax{stroke:#16181d;stroke-width:1.4;fill:none}
+.fig-svg .ld{stroke:#5b6472;stroke-width:.9;fill:none}
+.fig-svg .out{stroke:#16181d;stroke-width:1.5;fill:none}
+.fig figcaption{margin-top:8px;font-size:.8em;color:var(--muted);font-family:-apple-system,sans-serif}
+.fig-missing{margin:14px 0;padding:12px 14px;background:var(--red-soft);border:1px solid var(--red);
+border-left:4px solid var(--red);border-radius:6px;font-size:.9em}
+.tw{overflow-x:auto;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.92em;background:var(--card-bg)}
+th,td{border:1px solid var(--border);padding:6px 10px;color:var(--text);text-align:left;vertical-align:top}
+th{background:var(--th-bg);font-weight:600}
+blockquote{margin:12px 0;padding:10px 16px;background:var(--quote-bg);border-left:4px solid var(--amber);
+border-radius:4px;font-size:.93em}
+code{background:var(--code-bg);padding:1px 5px;border-radius:3px;font-size:.9em}
+ul{margin:8px 0;padding-left:22px}
+p{margin:8px 0}
+
+/* ---- Ethan, 25 Aug: usable on an iPhone, same features, nothing removed ---- */
+html{-webkit-text-size-adjust:100%}
+@media (max-width:820px){
+  body{padding:14px 13px 96px;font-size:17px;line-height:1.62}
+  h1{font-size:1.34em;line-height:1.25;padding-bottom:8px;border-bottom-width:2px}
+  h3{font-size:1.05em}
+  .meta{font-size:.86em;margin-bottom:14px}
+  .los,.intro{padding:12px 13px;font-size:.9em;border-radius:8px}
+  .card{padding:15px 14px;border-radius:10px}
+  .block{padding-left:11px}
+  /* sticky bar: full-width, thumb-sized, never wraps into a mess */
+  .controls{position:sticky;top:0;padding:9px 0 8px;display:flex;gap:8px;
+    box-shadow:0 6px 14px -10px rgba(0,0,0,.5)}
+  .controls button{flex:1;min-height:44px;padding:10px 8px;font-size:14px;border-radius:9px}
+  /* every tap target at least 44px, which is Apple's minimum */
+  .reveal-btn{width:100%;min-height:46px;padding:12px 16px;font-size:15px;border-radius:9px;
+    margin-top:10px}
+  /* wide things scroll inside themselves instead of stretching the page */
+  table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;
+    max-width:100%;font-size:.86em}
+  .los table{white-space:normal}
+  pre,code{white-space:pre-wrap;word-break:break-word;font-size:.85em}
+  blockquote{margin:12px 0;padding:10px 12px}
+  .fig{padding:8px;margin:12px -4px}
+  .fig img,.fig-svg svg{width:100%}
+  .fig figcaption{font-size:.78em}
+  .opt{gap:8px}
+  .optl{min-width:22px}
+  .marks{font-size:.75em}
+  /* the confidence prompt needs to stay readable, it drives the gap machine */
+  .conf{font-size:.88em;padding:9px 11px}
+}
+@media (max-width:400px){
+  body{padding:12px 10px 96px;font-size:16px}
+  h1{font-size:1.2em}
+  .controls button{font-size:13px;padding:9px 5px}
+  .card{padding:13px 11px}
+}
+/* iPhone notch / home indicator, phone widths only so desktop keeps its own padding */
+@media (max-width:820px){
+  @supports(padding:max(0px)){
+    body{padding-left:max(13px,env(safe-area-inset-left));
+         padding-right:max(13px,env(safe-area-inset-right));
+         padding-bottom:max(96px,calc(env(safe-area-inset-bottom) + 72px))}
+  }
+}
+@media print{.controls,.answer-overlay{display:none!important}.card{page-break-inside:avoid}}
+</style></head><body>
+<h1>GAP DRILL: Books 6 and 9 merged</h1>
+<div class="meta">H2 Biology 9477 · Books 6 + 9 · 8 questions · 42 marks · about an hour · your 33 open gaps, the 20 that pay most</div>
+
+<div class="los"><strong>Built from the two transcripts, not from the syllabus.</strong> Every part targets a gap you actually left on 26 August, and each mark scheme names which one and quotes you back. Q4 and Q5 are the full-cycle questions.<p><strong>Book 6 marks live in the LAYOUT.</strong> Seven rows, gametes circled, genotypes under phenotypes, linked genes in the two-line form. A right answer in the wrong shape still loses.</p></div>
+
+<div class="controls">
+<button id="revealAll">Reveal all answers</button>
+<button id="hideAll">Hide all answers</button>
+</div>
+<div class="toc"><strong>Questions</strong><br><a href="#q1">Q1</a> <a href="#q2">Q2</a> <a href="#q3">Q3</a> <a href="#q4">Q4</a> <a href="#q5">Q5</a> <a href="#q6">Q6</a> <a href="#q7">Q7</a> <a href="#q8">Q8</a></div>
+<div class="card" id="q1"><h3>Question 1 <span class="marks">[6 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> Wild-type freshwater snails, <em>Physa heterostropha</em>, have pigmented shells. Two pure-breeding albino snails were crossed and their F1 was pigmented.</p>
+<p>State what this result rules out about the two albino parents, and name the type of gene interaction it points to. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>Any two.</div><p><strong>Two pure-breeding albino parents are each homozygous, and their F1 is pigmented, so the two parents cannot be homozygous recessive for the same gene; if they were, every offspring would be albino as well.</strong></p>
+<p><strong>The two albino lines must therefore be homozygous recessive at two different gene loci, and the pigmented F1 carries at least one dominant allele of each.</strong></p>
+<p><strong>This is a gene interaction, that is, epistasis, in which one characteristic is controlled by two genes.</strong></p>
+<p><em>Gap note. This part is here because you defined gene interaction as suppression at 0:52:27. Suppression is epistasis, which is the special case. <strong>Gene interaction is the broader idea: two genes contributing to ONE character</strong>, as against a dihybrid where each gene controls its own character. That framing is what makes epistasis make sense.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> In Labradors, the <em>TYRP1</em> gene has alleles <strong>B</strong>, coding for an enzyme that produces melanin giving black fur, and <strong>b</strong>, coding for an enzyme that produces a brown melanin giving chocolate fur. A second gene <em>MC1R</em> has alleles <strong>E</strong>, which allows the alleles of <em>TYRP1</em> to be expressed, and <strong>e</strong>, which prevents them from being expressed. A dog with no melanin is yellow.</p>
+<p>Explain, in terms of enzymes, why a dog of genotype <strong>B B e e</strong> is yellow. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>A homozygous ee dog makes no functional product at the MC1R step, so the TYRP1 enzyme is not expressed, no melanin of either kind is deposited, and the dog is yellow whatever its TYRP1 genotype is.</strong></p>
+<p><em>A scheme in the bank prints <strong>penalise once if no reference to enzyme</strong>. You did name the enzyme unprompted in the Book 6 sitting, this part is here to keep that habit, not to correct it.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> Crossing two heterozygotes for both genes typically gives 9 black : 3 brown : 4 yellow.</p>
+<p>Explain how the phenotypic ratio will differ if genes <strong>B</strong>/<strong>b</strong> and <strong>E</strong>/<strong>e</strong> are located on the same homologous pair of chromosomes, tightly linked, with the dominant alleles of both genes on one chromosome and the recessive alleles of both on its homologue. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><p><strong>3 black : 1 yellow.</strong></p>
+<p><strong>Tightly linked, hence no crossing over, or no chiasma is formed between gene B/b and gene E/e.</strong></p>
+<p><strong>The two genes are inherited as one unit.</strong></p>
+<p><em>Read the two ratios together, because that is why they are set side by side. <strong>Unlinked</strong>, the double heterozygote makes four gamete types and the classes merge into <strong>9 : 3 : 4</strong>. <strong>Completely linked with both dominants on one chromosome</strong>, it makes only the two parental gametes <strong>BE</strong> and <strong>be</strong>, so it behaves like a single gene: <strong>3 B\_E\_ black : 1 bbee yellow</strong>, with <strong>no brown class at all</strong>, because the genotype that would produce brown, bbE\_, is never formed. The class disappears rather than shrinking.</em></p>
+<p><em>Write the merged class with its components in brackets, which is the school&#x27;s own form and the notation you said you had never seen: <strong>9 B\_E\_ : 3 bbE\_ : 4 (3 B\_ee + 1 bbee)</strong>.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> VJC Prelim 2017 P2 Q4, stem and data verbatim (a); VJC Prelim 2023 P2 Q7(b) key point on the enzyme, verbatim (b); MJC Prelim 2013 P2 Q5(c), stem and all three marking points verbatim, with the arrangement of the alleles written into the stem because the original supplied it as Fig. 5.2 (c).</p>
+<p><strong>Gaps targeted:</strong> B6-13 epistasis by locus, B6-16 gene interaction against epistasis, B6-12 complete-linkage ratios, B6-10 merged-class bracket notation.</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q2"><h3>Question 2 <span class="marks">[6 marks]</span></h3><div class="qpart" data-part="stem"><p>Following self-pollination, an isolated maize plant produced a total of <strong>380</strong> grains with four different phenotypes. The expected phenotypic ratio was <strong>9 purple, smooth : 3 purple, shrunken : 3 yellow, smooth : 1 yellow, shrunken</strong>. The observed numbers were purple smooth <strong>216</strong>, purple shrunken <strong>78</strong>, yellow smooth <strong>55</strong>, yellow shrunken <strong>31</strong>.</p>
+<p>A chi-squared test was carried out. The values of (O − E)² / E for the two purple classes have already been worked out as <strong>0.024</strong> and <strong>0.639</strong>.</p></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> Calculate the expected number (E) for each of the <strong>four</strong> phenotypes. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>The total of 380 is divided in the ratio 9 : 3 : 3 : 1, that is, into 16 parts of 23.75 each.</strong></p>
+<p><strong>Purple, smooth = 380 × 9/16 = 213.75. Purple, shrunken = 380 × 3/16 = 71.25. Yellow, smooth = 380 × 3/16 = 71.25. Yellow, shrunken = 380 × 1/16 = 23.75.</strong></p>
+<p><em>Work the fraction out, do not estimate it. A candidate who writes &quot;about 216&quot; for the first class corrupts every downstream cell. This is the step you could not resolve aloud at 1:21:25.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> Calculate the <strong>two</strong> missing values of (O − E)² / E, for yellow smooth grains and yellow shrunken grains. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>Yellow, smooth: (55 − 71.25)² ÷ 71.25 = 264.06 ÷ 71.25 = 3.71.</strong></p>
+<p><strong>Yellow, shrunken: (31 − 23.75)² ÷ 23.75 = 52.56 ÷ 23.75 = 2.21.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> Calculate the chi-squared value. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><p><strong>χ² = 0.024 + 0.639 + 3.71 + 2.21 = 6.58</strong>, accept <strong>6.58 to 6.59</strong>.</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="qpart" data-part="d"><p><strong>(d)</strong> The critical values of chi-squared at a probability of 0.05 are 3.84 for 1 degree of freedom, 5.99 for 2, 7.81 for 3 and 9.49 for 4. The number of degrees of freedom is given by <strong>v = c − 1</strong>, where v is the degrees of freedom and c is the number of classes.</p>
+<p>Use your calculated chi-squared value to conclude whether the observed number of each phenotype is significantly different to the expected number. Explain your conclusion. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (d)</span><div class="answer-content"><p><strong>There are four phenotypic classes, so c = 4 and v = c − 1 = 3.</strong> The critical value is quoted with its degrees of freedom attached: <strong>χ²crit, v = 3, α = 0.05 = 7.81</strong>.</p>
+<p><strong>The calculated χ² of 6.58 is smaller than the critical value of 7.81, so the probability that chance alone is the reason for the difference between observed and expected results is more than 5%. The deviation is not significant, hence do not reject H0.</strong></p>
+<p><strong>The observed results do fit the expected 9 : 3 : 3 : 1 ratio, so the two genes are inherited independently and are not linked.</strong></p>
+<p><em>Two disciplines the schemes enforce. <strong>Never write &quot;accept H0&quot;</strong>, every scheme in the bank words the negative branch <strong>do not reject H0</strong>. And <strong>&quot;due to chance&quot; on its own is rejected</strong>, so the full probability sentence is compulsory.</em></p>
+<p><em>Gap note. <strong>Four classes gives v = 3.</strong> At 1:24:19 you said a four-class dihybrid gives 2. Two classes gives 1 and five gives 4, which you had right; it is the four-class case that broke. The collision behind it: your notes write <strong>df = n − 1</strong> with n meaning classes, while the syllabus and the specimen print <strong>v = c − 1</strong> with <strong>c = classes and n = sample size</strong>. Write v = c − 1 and say &quot;classes&quot; out loud.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (d)</button></div></div>
+<div class="qpart" data-part="e"><p><strong>(e)</strong> The interpupillary distance (IPD) is the distance in millimetres between the centres of the pupils of the eyes. In a large sample of adults the frequency distribution of IPD rises smoothly from 50 mm to a peak at about 63 mm and falls away symmetrically to 80 mm.</p>
+<p>Name the type of variation shown, and state which statistical test would be used to analyse it. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (e)</span><div class="answer-content"><p><strong>Continuous variation</strong>, analysed by finding a <strong>mean and standard deviation</strong> and testing with a <strong>t-test</strong>. <strong>Reject: normal distribution, stabilising selection</strong>, describing the shape of the curve is not naming the phenomenon.</p>
+<p><em>Gap note, and this is the one that mattered most in the Book 6 sitting. At 1:28:09 you said <strong>&quot;chi-squared is for continuous variation&quot;</strong> and closed on <strong>&quot;everything put chi-squared.&quot;</em> It is the other way round. </strong>χ² tests discontinuous data<strong>, counts falling into discrete classes, compared against a predicted ratio. </strong>Continuous data take a t-test.** That is the join between LO 2(cc) and LO 2(dd).*</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (e)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> 9477 Specimen P2 Q4(c)(i), (ii), (iii) and Q4(d), stems and tables verbatim from the question paper, with the working inferred because the specimen ships without a mark scheme (a) to (d); School Prelim 2023 P3 Q3(a)(i), also printed as HCI Prelim 2023 P3 Q3(a)(i) and EJC Prelim 2023 P3 Q3(a)(i), stem and key verbatim including the reject line (e).</p>
+<p><strong>Gaps targeted:</strong> B6-1 which test for which variation, B6-2 v = c − 1 with four classes, B6-17 expected numbers from a ratio.</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q3"><h3>Question 3 <span class="marks">[6 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> In chickens, feather colour is either white, black or speckled. The alleles for black feathers and white feathers are denoted by <strong>C^B</strong> and <strong>C^W</strong> respectively. A cross between a white chicken and a black chicken gave rise to a speckled chicken.</p>
+<p>Using the symbols provided, draw a genetic diagram to show the results of a sibling mating between two speckled chickens. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>P1 phenotype: speckled chicken × speckled chicken. P1 genotype: C^B C^W × C^B C^W.</strong></p>
+<p><strong>Gametes, circled: C^B and C^W from one parent, C^B and C^W from the other.</strong></p>
+<p><strong>F1 genotypes: C^B C^B, C^B C^W, C^B C^W, C^W C^W.</strong></p>
+<p><strong>F1 phenotypes: black chicken, speckled chicken, speckled chicken, white chicken, in the phenotypic ratio 1 : 2 : 1.</strong></p>
+<p><em>One mark for the gametes, one for the genotypes, one for the phenotypes <strong>together with</strong> the ratio. <strong>There is no error carried forward for wrong parental genotypes, and one mark is penalised if the correct symbols are not used.</strong></em></p>
+<p><em>Speckled is <strong>codominance, not incomplete dominance</strong>: the heterozygote shows <strong>both parental colours distinctly, as separate black and white feathers</strong>, rather than a blended grey. A scheme rejects incomplete dominance outright on this cross, and it is distractor D on 9477 Specimen Paper 1 Question 18.</em></p>
+<p><em>Gap note. At 0:26:09 you described codominance as producing <strong>an intermediate</strong>. That is incomplete dominance. The two give <strong>identical 1 : 2 : 1 numbers</strong>, so the ratio cannot separate them and only the wording can: codominance gives <strong>two distinct products both visible</strong>, incomplete dominance gives a <strong>blend with no distinct classes</strong>. And the parental phenotype row is a separate mark, you omitted it at 0:42:07.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> Coat colour in cats is determined by the <em>tyr</em> gene, which has five alleles: full colour <strong>B</strong>, Burmese <strong>b^M</strong>, Siamese <strong>b^S</strong>, blue-eyed albino <strong>b^A</strong> and albino <strong>b</strong>. Any heterozygote carrying</p>
+<div class="mcq"><div class="opt"><span class="optl">B</span><span class="optb">is Normal. The heterozygote <strong>b^M b^S</strong> is Tonkinese, a distinct phenotype which is neither Burmese nor Siamese.</span></div></div>
+<p>Determine the relative dominance of the alleles <strong>B</strong>, <strong>b^M</strong> and <strong>b^S</strong>. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>B is completely dominant to both b^M and b^S</strong>, since any heterozygote carrying B is Normal, <strong>while b^M and b^S are codominant with each other</strong>, because the heterozygote b^M b^S has the distinct phenotype Tonkinese.</p>
+<p><em>A dominance hierarchy does not have to be a straight line. Here the pair at the bottom are codominant with each other while both are recessive to B.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> State what the number of alleles of the <em>tyr</em> gene in the population, and the number carried by any one cat, tells you about why no fixed phenotypic ratio can be quoted for a multiple-allele cross. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><p><strong>If a gene has three or more alleles they are called multiple alleles, but only two of them can be present in any one diploid individual, so which two the parents happen to carry decides which phenotypes are even available in the offspring.</strong></p>
+<p><strong>There is therefore no fixed ratio attached to multiple-allele crosses.</strong></p>
+<p><em>Gap note. At 0:28:11 the first thing out was <strong>&quot;more than two genes exist in the same gene&quot;</strong>. It is <strong>more than two ALLELES of one gene</strong>. Gene-for-allele is a named scheme reject in this Book and it is the commonest way a Book 6 definition loses its mark. You corrected it yourself, which is why this is one mark and not three.</em></p>
+<p><strong>Source:</strong> SAJC Prelim 2025 P2 Q2(a)(ii), stem and key verbatim including the no-error-carried-forward and wrong-symbol penalties (a); ACJC Prelim 2011 P2 Q4(a)(i), stem, Table 4.1 and the paper&#x27;s own printed answer verbatim, with the table restated as prose (b); VJC Prelim 2017 P2 Q4 (c).</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="qpart" data-part="d"><p><strong>(d)</strong> Haemophilia is caused by a recessive allele carried on the X chromosome. Explain what is meant by saying that a male is <strong>hemizygous</strong> for this gene, and state the consequence for the frequency of haemophilia in males. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (d)</span><div class="answer-content"><p><strong>A male has only one X chromosome and one Y chromosome, and the Y carries no allele for this gene, so he has only ONE allele at the locus rather than two, he is neither homozygous nor heterozygous.</strong></p>
+<p><strong>With no second allele to mask a recessive one, a single recessive allele is expressed, so X-linked recessive conditions are far commoner in males than in females.</strong></p>
+<p><em>Gap note. At 0:34:46 you said hemizygous means &quot;one copy of a gene&quot;, then corrected yourself at 0:35:50 to <strong>one allele at the locus</strong>. That second version is the phrasing; the first is not.</em></p>
+<p><strong>Gaps targeted:</strong> B6-6 codominance against incomplete dominance, B6-5 alleles not genes, B6-8 the parental phenotype row, B6-3 the monohybrid ratios, B6-7 hemizygosity, B6-9 the F1 × F1 step (part (a) is a sibling mating, so it is the second cross written out).</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (d)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> SAJC Prelim 2025 P2 Q2(a)(ii), stem and key verbatim including the no-error-carried-forward and wrong-symbol penalties (a); ACJC Prelim 2011 P2 Q4(a)(i), stem, Table 4.1 and the paper&#x27;s own printed answer verbatim, with the table restated as prose (b); VJC Prelim 2017 P2 Q4 (c).</p>
+<p><strong>(d)</strong> <strong>A male has only one X chromosome and one Y chromosome, and the Y carries no allele for this gene, so he has only ONE allele at the locus rather than two, he is neither homozygous nor heterozygous.</strong></p>
+<p><strong>With no second allele to mask a recessive one, a single recessive allele is expressed, so X-linked recessive conditions are far commoner in males than in females.</strong></p>
+<p><em>Gap note. At 0:34:46 you said hemizygous means &quot;one copy of a gene&quot;, then corrected yourself at 0:35:50 to <strong>one allele at the locus</strong>. That second version is the phrasing; the first is not.</em></p>
+<p><strong>Gaps targeted:</strong> B6-6 codominance against incomplete dominance, B6-5 alleles not genes, B6-8 the parental phenotype row, B6-3 the monohybrid ratios, B6-7 hemizygosity, B6-9 the F1 × F1 step (part (a) is a sibling mating, so it is the second cross written out).</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q4"><h3>Question 4 <span class="marks">[5 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> State the meaning of the term &#x27;complete linkage&#x27;. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>Both genes involved in the cross are adjacent to each other on the same chromosome.</strong></p>
+<p><strong>Or: there is no crossing over, no formation of recombinant gametes, and they are always inherited together.</strong></p>
+<p><em>Gap note. At 0:19:46 you said linked genes are <strong>&quot;at the same locus&quot;</strong>, then corrected to the same chromosome. Keep the correction and add the half that earns the mark: <strong>genes controlling different characters, on the same chromosome, at DIFFERENT loci</strong>. The corpus rejects &quot;alleles on the same chromosome&quot;.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> In an investigation on the tomato genome, pollen from a pure-bred plant with green leaves and hairy fruit was transferred to a pure-bred plant with mottled leaves and smooth fruit. All the F1 plants had green leaves and smooth fruit. A test cross was then made between the F1 plant and a pure-bred plant with mottled leaves and hairy fruit. The phenotypes of 100 offspring of the test cross were: green leaves and smooth fruit <strong>8</strong>; green leaves and hairy fruit <strong>46</strong>; mottled leaves and smooth fruit <strong>40</strong>; mottled leaves and hairy fruit <strong>6</strong>.</p>
+<p>Draw a genetic diagram to explain the results of the test cross. Use the symbols <strong>A</strong> and <strong>a</strong> to represent the alleles for leaf colour and <strong>B</strong> and <strong>b</strong> to represent the alleles for fruit texture. <span class="marks">[4]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>MP1, definition of symbols. Let A represent the dominant allele for green leaves; a represent the recessive allele for mottled leaves; B represent the dominant allele for smooth fruit; b represent the recessive allele for hairy fruit.</strong></p>
+<p><strong>MP2, parental genotypes with the linked genes underlined. F1 test cross: green leaves, smooth fruit (A b / a B) × mottled leaves, hairy fruit (a b / a b). Gametes, circled: from the F1, (A b), (a B), (A B) and (a b); from the pure-bred parent, (a b).</strong></p>
+<p><strong>MP3, random fertilisation shown as a complete Punnett square, giving offspring genotypes A b / a b, a B / a b, A B / a b and a b / a b.</strong></p>
+<p><strong>MP4, phenotypes listed in the same order as the genotypes: green leaves, hairy fruit 46; mottled leaves, smooth fruit 40; green leaves, smooth fruit 8; mottled leaves, hairy fruit 6, with the first two labelled Parental and the last two labelled Recombinants.</strong></p>
+<p><em>Marker&#x27;s notes, verbatim: <strong>many were careless in writing the genotype as aabb; while students remembered to circle the gametes, many did not underline the genotype to show that the genes are linked.</strong> And: <strong>many also indicated a phenotypic or genotypic ratio for the offspring as 1 : 1 : 1 : 1 even though it is not observed.</strong></em></p>
+<p><em>Gap note. This is the part that costs two marks at once. Writing <strong>AaBb</strong> or <strong>aabb</strong> instead of the <strong>two-line stick form</strong> strikes <strong>MP2 and MP3 together</strong>, under the scheme rule </em>penalise under MP2 and MP3 if linkage notation not used<em>. At 0:56:09 you were circling why the notation matters without landing it, the answer is that <strong>AaBb tells the marker nothing about which chromosome each allele sits on, and the two-line form does.</strong></em></p>
+<p><em>Note also which arrangement this is. The two mixed classes are the large ones, 46 and 40, so the dominant alleles are <strong>on opposite chromosomes</strong>, A with b on one and a with B on the other. Describe that in words; the Latin terms coupling and repulsion are not in the learning outcomes.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> ASRJC Prelim 2023 P2 Q6(b), stem and key verbatim (a); School Prelim 2025 P2 Q7(b), stem, Table 7.1, all four marking points and both marker&#x27;s notes verbatim, with the table restated as prose (b).</p>
+<p><strong>Gaps targeted:</strong> B6-4 different loci on the same chromosome, B6-11 the two-line notation and why it is marked, B6-8 the diagram rows. This is the full-cycle process question for Book 6.</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q5"><h3>Question 5 <span class="marks">[8 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> The diagram of phagocytosis of a pathogen by a neutrophil labels four features: <strong>P</strong>, the surface molecules on the pathogen recognised by the neutrophil; <strong>Q</strong>, the arm-like membrane extensions engulfing the pathogen; <strong>R</strong>, the membrane-bound organelle containing hydrolytic enzymes that fuses with the engulfed vesicle; and <strong>S</strong>, the vesicle containing the engulfed pathogen.</p>
+<p>Which row shows the correct identification of the structures and function? <span class="marks">[1]</span></p>
+<div class="mcq"><div class="opt"><span class="optl">A</span><span class="optb">P antibiotic, Q fimbriae, R lysozyme, S lysosome; innate immunity.</span></div><div class="opt"><span class="optl">B</span><span class="optb">P antibiotic, Q pseudopodia, R Golgi vesicles, S phagosome; cell-mediated immunity.</span></div><div class="opt"><span class="optl">C</span><span class="optb">P antigen, Q fimbriae, R Golgi vesicles, S lysozyme; cell-mediated immunity.</span></div><div class="opt"><span class="optl">D</span><span class="optb">P antigen, Q pseudopodia, R lysosome, S phagosome; innate immunity.</span></div></div></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>The answer is D.</strong></p>
+<p><strong>P is an antigen</strong>, not an antibiotic, an antigen is any substance recognised by the immune system, while an antibiotic is a substance produced by some microorganisms that kills or inhibits others. That rules out <strong>A</strong> and <strong>B</strong>.</p>
+<p><strong>Q is a pseudopodium</strong>, an extension of the cell surface membrane. Neutrophils are animal cells with no cell wall, and <strong>fimbriae are bacterial adherence structures</strong>. That rules out <strong>A</strong> and <strong>C</strong>.</p>
+<p><strong>R is the lysosome</strong>, the membrane-bound organelle containing hydrolytic enzymes. Golgi vesicles are secretory, and <strong>lysozyme is an enzyme, not an organelle</strong>, so it cannot label a membrane-bound structure. That rules out <strong>B</strong> and <strong>C</strong>.</p>
+<p><strong>S is the phagosome</strong>, the vesicle containing the engulfed pathogen. <strong>After fusion with the lysosome it becomes the phagolysosome.</strong></p>
+<p><strong>The line of defence is innate immunity</strong>, because phagocytosis by a neutrophil is second line and non-specific.</p>
+<p><em>Gap note, two of them. At 0:04:56 you said fusing with a lysosome <strong>&quot;creates a phagosome&quot;</strong>, it creates the <strong>phagolysosome</strong>, and you never used that word once in the sitting. And at 0:02:57 you had the neutrophil recognising <strong>an antigen</strong>; you corrected it yourself to surface molecules, which is right, innate cells bind <strong>general surface molecules through receptors</strong>, and antigen-specific recognition belongs to the adaptive system. Note the option list uses &quot;antigen&quot; loosely for those surface molecules.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> The main cause of tuberculosis in humans is the bacterium <em>Mycobacterium tuberculosis</em>. A healthy person who inhales droplets containing these bacteria has effective defence mechanisms in the respiratory airways, one of which involves the resident phagocytes, the alveolar macrophages.</p>
+<p>Describe the mode of action of this phagocyte in killing bacterial cells. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>Alveolar macrophages detect or recognise pathogens in the respiratory airways and form pseudopodia that surround or wrap around <em>M. tuberculosis</em>.</strong></p>
+<p><strong>The macrophage then engulfs the bacterial cells, placing them within a phagocytic vesicle.</strong></p>
+<p><strong>The phagocytic vesicle then fuses with a lysosome, which releases hydrolytic enzymes into the phagolysosome to digest or break down the bacterial cells.</strong></p>
+<p><em>An examiner comment attached to the tuberculosis questions in this file names vague versions of this sequence as <strong>lacking rigour</strong>. <strong>Name the compartment at every step.</strong></em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> The cell wall of <em>M. tuberculosis</em> carries an outer layer of long-chain mycolic acids forming a waxy coat.</p>
+<p>Explain <strong>two</strong> ways in which <em>M. tuberculosis</em> evades the killing mechanisms of the macrophage. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><p><strong>Their mycolic acid wax coat on their cell walls protects them against hydrolytic enzymes in lysosomes.</strong></p>
+<p><strong>And <em>M. tuberculosis</em> modifies the phagosome so that lysosomal fusion cannot occur, so no phagolysosome forms and the hydrolytic enzymes never reach the bacterium, which then survives and replicates inside the macrophage.</strong></p>
+<p><em>Gap note, and this is the Priority 1 error from the sitting. At 0:56:15 you said the phagosome <strong>does</strong> fuse with the lysosome and the bacterium survives because of the waxy coat. <strong>The block on fusion is the examined mechanism and it is the most-examined fact in the chapter.</strong> The waxy coat is real and it is worth a mark here, but on its own it is the wrong answer to &quot;how does it survive inside the macrophage&quot;. Both, in that order.</em></p>
+<p><strong>Source:</strong> VJC Prelim 2025 P1 Q28, stem, figure description and options verbatim, with the option audit inferred because the official key gives only the letter (a); the identical stem is also HCI Prelim 2017 P1 Q28. EJC Prelim 2023 P2 Q9(b), stem and key verbatim (b). School Prelim TB question, stem and both marking points verbatim (c).</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="qpart" data-part="d"><p><strong>(d)</strong> An antibiotic used to treat bacterial infections is penicillin. Describe the mode of action of penicillin. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (d)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>Any two.</div><p><strong>Penicillin acts as a competitive inhibitor which binds to the active site of the enzyme transpeptidase.</strong></p>
+<p><strong>This prevents transpeptidase from forming cross-links between peptidoglycan chains, resulting in weakened bacterial cell walls in actively dividing cells.</strong></p>
+<p><strong>When bacteria take in water by osmosis, there is increased turgor pressure which causes bacteria to swell and lyse.</strong></p>
+<p><em>Gap note, three parts of it. <strong>Write transpeptidase and nothing else</strong>, a scheme carries the bare line <strong>&quot;Reject: peptidyl transferase&quot;</strong>, and your own notes name a third enzyme that does not exist. You had &quot;blocks the cross-linking&quot; at 0:51:12 without ever naming it. Second, <strong>autolysins keep hydrolysing the existing wall</strong> while no new cross-links form, which is why the wall <strong>weakens</strong> rather than merely failing to grow. Third, water enters <strong>by osmosis down a water potential gradient</strong> and it is the <strong>weakened wall</strong>, not the membrane, that cannot resist the pressure, at 0:51:26 you said &quot;the membrane is not permeable&quot;, which is the wrong structure and the wrong reason.</em></p>
+<p><strong>Gaps targeted:</strong> B9-1 the lysosome-fusion block, B9-4 phagolysosome, B9-5 innate recognition, B9-14 penicillin. This is the full-cycle process question for Book 9.</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (d)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> VJC Prelim 2025 P1 Q28, stem, figure description and options verbatim, with the option audit inferred because the official key gives only the letter (a); the identical stem is also HCI Prelim 2017 P1 Q28. EJC Prelim 2023 P2 Q9(b), stem and key verbatim (b). School Prelim TB question, stem and both marking points verbatim (c).</p>
+<p><strong>(d)</strong> Any two.</p>
+<p><strong>Penicillin acts as a competitive inhibitor which binds to the active site of the enzyme transpeptidase.</strong></p>
+<p><strong>This prevents transpeptidase from forming cross-links between peptidoglycan chains, resulting in weakened bacterial cell walls in actively dividing cells.</strong></p>
+<p><strong>When bacteria take in water by osmosis, there is increased turgor pressure which causes bacteria to swell and lyse.</strong></p>
+<p><em>Gap note, three parts of it. <strong>Write transpeptidase and nothing else</strong>, a scheme carries the bare line <strong>&quot;Reject: peptidyl transferase&quot;</strong>, and your own notes name a third enzyme that does not exist. You had &quot;blocks the cross-linking&quot; at 0:51:12 without ever naming it. Second, <strong>autolysins keep hydrolysing the existing wall</strong> while no new cross-links form, which is why the wall <strong>weakens</strong> rather than merely failing to grow. Third, water enters <strong>by osmosis down a water potential gradient</strong> and it is the <strong>weakened wall</strong>, not the membrane, that cannot resist the pressure, at 0:51:26 you said &quot;the membrane is not permeable&quot;, which is the wrong structure and the wrong reason.</em></p>
+<p><strong>Gaps targeted:</strong> B9-1 the lysosome-fusion block, B9-4 phagolysosome, B9-5 innate recognition, B9-14 penicillin. This is the full-cycle process question for Book 9.</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q6"><h3>Question 6 <span class="marks">[7 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> A process labelled <strong>Q</strong> occurs naturally in a B cell. In the germline immunoglobulin heavy-chain locus, a promoter is followed by a cluster of many V segments, a cluster of D segments, a cluster of J segments and a control segment for the constant region. After process <strong>Q</strong>, only one V, one D and one J segment remain, joined together next to the control segment, the intervening segments having been excised.</p>
+<p>State precisely where the process shown occurs in the human body. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>Bone marrow.</strong></p>
+<p><em>The word &quot;precisely&quot; is doing work. <strong>Both B and T lymphocytes originate in the bone marrow, but only B lymphocytes mature there</strong>; precursor T lymphocytes migrate to the thymus. Since the figure shows the immunoglobulin heavy-chain locus in a B cell, the answer is bone marrow, not &quot;in B cells&quot;.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> The total number of antibody specificities available to an individual is known as the antibody repertoire. In humans, the antibody repertoire is at least 10¹¹.</p>
+<p>Explain how somatic recombination during B cell development results in the formation of millions of different antibody molecules. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>Any three.</div><p><strong>Different segments of V, D and J are ligated to form the gene encoding different variable regions in the heavy chain of the antibody.</strong></p>
+<p><strong>Only one segment from each of V, D and J is chosen.</strong></p>
+<p><strong>The remaining gene segments are removed.</strong></p>
+<p><strong>Different mRNA sequences lead to different amino acid sequences, and so to a different specific 3D conformation of the variable region.</strong></p>
+<p><em>That last point is the one people drop and it is the whole reason the mechanism matters: <strong>a DNA rearrangement only produces a different antibody because it produces a different amino acid sequence, which folds into a different three-dimensional binding site.</strong></em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> A B cell that has already encountered its antigen produces antibody which binds the same antigen as before, but with a different effector function.</p>
+<p>Name precisely the mechanism responsible. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><p><strong>Class switching.</strong></p>
+<p><em>Gap note, and this is the highest-value node in the Book. At 0:43:29 you said <strong>&quot;I don&#x27;t know&quot;</strong> twice and stopped. Specimen P3 Q3(c) tested <strong>all three, one mark each, with the command &quot;Name precisely&quot;</strong>, and <strong>naming a neighbouring mechanism scores nothing</strong>. Tell them apart by <strong>when</strong> and by <strong>what changes</strong>:</em></p>
+<p><em>,  <strong>Somatic recombination</strong>: <strong>before</strong> antigen, in developing B cells. One V, one D, one J picked at random and joined; intervening DNA deleted. It <strong>creates</strong> the specificity.</em></p>
+<p><em>,  <strong>Somatic hypermutation</strong>: <strong>after</strong> antigen, in <strong>activated</strong> B cells. <strong>Point mutations at very high rate in the V regions</strong>, giving affinity maturation. <strong>Specificity is kept</strong>; binding strength improves.</em></p>
+<p><em>,  <strong>Class switching</strong>: <strong>after</strong> antigen, triggered by helper T cytokines. Same V region joined to a <strong>different heavy-chain constant region</strong>, DNA deleted so it is irreversible. <strong>Specificity is kept; only effector function changes.</strong> That is what this stem describes.</em></p>
+<p><strong>Source:</strong> NYJC Prelim 2025 P2 Q10(a), stem, figure and key verbatim (a); HCI Prelim 2017 P3 Q3(a), stem, figure and marking points verbatim, cut from four marks to three (b); 9477 Specimen P3 Q3(c), the &quot;name precisely&quot; format, with the stem written to the effect the specimen describes (c).</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="qpart" data-part="d"><p><strong>(d)</strong> Explain how the structure of antibodies causes pathogens to be destroyed by macrophages. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (d)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>Any two.</div><p><strong>The variable regions at the tips of the Y form antigen-binding sites complementary in shape to one specific antigen, so the antibody binds and coats the pathogen.</strong></p>
+<p><strong>Having two binding sites lets one antibody bind two pathogens at once, so pathogens are clumped together in agglutination and cannot spread.</strong></p>
+<p><strong>The constant Fc region binds Fc receptors on the macrophage, so the antibody acts as an opsonin and engulfment is faster and more efficient.</strong></p>
+<p><em>Gap note. At 0:06:43 you asked <strong>&quot;what&#x27;s Fc? What is the full name for that?&quot;</strong> It is the <strong>fragment crystallisable</strong> region, the stem of the Y formed from the constant regions of the two heavy chains. What matters is what it does: it <strong>binds Fc receptors on phagocytes</strong> so the antibody acts as an <strong>opsonin</strong>, and it <strong>activates complement</strong>. Those are two separate routes, at 0:18:27 you merged them.</em></p>
+<p><em>And the outcome is a <strong>structure-to-function</strong> one. The corpus carries the examiner instruction <strong>&quot;students are reminded to write both structure and function&quot;</strong>, with structure-only answers rejected. At 0:34:05 you gave a clean structural list with no consequences attached. Every feature needs its pairing: variable regions → specificity; two binding sites → agglutination; hinge → the arms vary their separation so cross-linking works at different spacings; Fc → opsonisation and complement; too large to cross a membrane → acts outside cells only.</em></p>
+<p><strong>Gaps targeted:</strong> B9-3 the three diversity mechanisms told apart by effect, B9-13 the Fc region, B9-15 structure paired to function.</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (d)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> NYJC Prelim 2025 P2 Q10(a), stem, figure and key verbatim (a); HCI Prelim 2017 P3 Q3(a), stem, figure and marking points verbatim, cut from four marks to three (b); 9477 Specimen P3 Q3(c), the &quot;name precisely&quot; format, with the stem written to the effect the specimen describes (c).</p>
+<p><strong>(d)</strong> Any two.</p>
+<p><strong>The variable regions at the tips of the Y form antigen-binding sites complementary in shape to one specific antigen, so the antibody binds and coats the pathogen.</strong></p>
+<p><strong>Having two binding sites lets one antibody bind two pathogens at once, so pathogens are clumped together in agglutination and cannot spread.</strong></p>
+<p><strong>The constant Fc region binds Fc receptors on the macrophage, so the antibody acts as an opsonin and engulfment is faster and more efficient.</strong></p>
+<p><em>Gap note. At 0:06:43 you asked <strong>&quot;what&#x27;s Fc? What is the full name for that?&quot;</strong> It is the <strong>fragment crystallisable</strong> region, the stem of the Y formed from the constant regions of the two heavy chains. What matters is what it does: it <strong>binds Fc receptors on phagocytes</strong> so the antibody acts as an <strong>opsonin</strong>, and it <strong>activates complement</strong>. Those are two separate routes, at 0:18:27 you merged them.</em></p>
+<p><em>And the outcome is a <strong>structure-to-function</strong> one. The corpus carries the examiner instruction <strong>&quot;students are reminded to write both structure and function&quot;</strong>, with structure-only answers rejected. At 0:34:05 you gave a clean structural list with no consequences attached. Every feature needs its pairing: variable regions → specificity; two binding sites → agglutination; hinge → the arms vary their separation so cross-linking works at different spacings; Fc → opsonisation and complement; too large to cross a membrane → acts outside cells only.</em></p>
+<p><strong>Gaps targeted:</strong> B9-3 the three diversity mechanisms told apart by effect, B9-13 the Fc region, B9-15 structure paired to function.</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q7"><h3>Question 7 <span class="marks">[6 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> The immune response involves different cells and molecules. To ensure a coordinated response, cells and molecules communicate with one another regularly.</p>
+<p>Explain how cell signalling facilitates this communication. <span class="marks">[3]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><div class="mnote"><span>How it is marked</span>Any three.</div><p><strong>Ligands are small molecules that are transported via the bloodstream to various organs and cells. Examples specific to the immune system are cytokines and interferons.</strong></p>
+<p><strong>Cell surface receptors on immune cells have ligand-binding sites whose shapes are complementary to the shape of the ligand.</strong></p>
+<p><strong>Upon ligand binding, relay proteins in the cell transduce the signal to effector proteins, by a phosphorylation cascade or second messengers.</strong></p>
+<p><strong>Different types of cell give different cellular responses to the same ligand, because each cell contains different proteins.</strong></p>
+<p><em>Gap note. You asked at 0:10:20 whether interferon is examinable. <strong>It is</strong>, LO (a) names interferons as the antiviral cytokine. The chain: a <strong>virus-infected cell secretes interferon</strong> → it <strong>diffuses to neighbouring uninfected cells</strong> → <strong>binds their receptors</strong> → <strong>induces an antiviral state</strong>, so those cells express genes for <strong>antiviral proteins that inhibit viral protein synthesis</strong>. The neighbours are protected before they are infected, which is the point of it. In innate responses cytokines are produced by <strong>macrophages and natural killer cells</strong>.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> Lactose allergy results from the action of Immunoglobulin E, which activates mast cells. These subsequently secrete a chemical signal <strong>X</strong>.</p>
+<p>Name <strong>X</strong>, and state the <strong>two</strong> changes it produces in blood vessels. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>X is histamine.</strong></p>
+<p><strong>It causes blood vessels to dilate, and it increases their permeability.</strong></p>
+<p><em>Gap note. At 0:08:20 you had histamine coming from <strong>mast cells and red blood cells</strong>. A mature red blood cell has no nucleus and no granules and releases nothing; it is <strong>mast cells and damaged cells</strong>. You corrected it, so this is one mark.</em></p>
+<p><em>Those <strong>two vascular changes are the origin of all four cardinal signs</strong>, which is worth deriving rather than memorising: <strong>vasodilation</strong> brings more blood, giving <strong>redness and warmth</strong>; <strong>increased permeability</strong> lets plasma proteins and fluid leak out, giving <strong>swelling</strong>; and the swelling triggers nerve endings, giving <strong>pain</strong>.</em></p>
+<p><em>One more correction while you are here, because your notes cause it. <strong>Natural killer cells kill a cell that has LOST or reduced its MHC class I.</strong> All nucleated cells display MHC class I and that display is what <strong>protects</strong> them. At 0:15:18 you had the display allowing the NK cell to detect the cell, which is backwards, chapter 9.2 prints it that way round and the digest flagged it before you sat this.</em></p>
+<p><strong>Source:</strong> School Prelim P2, stem and all six marking points verbatim, cut from a longer key (a); the same paper&#x27;s Q9(b), stem and key verbatim, extended here to ask for the two vascular changes the two-mark version of this question wants (b).</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> On a second exposure to the same antigen, antibody appears in the blood far sooner than it did on the first exposure. Explain the role of memory cells in producing this faster response. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><p><strong>A pool of long-lived memory cells specific to that antigen already exists, so clonal selection and expansion begin from a much larger base with no naive-cell activation delay. The memory B cells differentiate into plasma cells, which then secrete antibody.</strong></p>
+<p><em>Gap note, and this is a named misconception in the corpus. At 0:29:29 you said <strong>&quot;memory cells produce IgG&quot;</strong>. <strong>Memory cells do not secrete antibody.</strong> They are long-lived and functionally inactive until re-stimulated, and they <strong>must differentiate into plasma cells first</strong>. You corrected it yourself at 0:29:51, which is why this is one mark. The comparison also has to be comparative: &quot;rapid&quot; alone is rejected, and &quot;secondary response&quot; without <strong>&quot;the same antigen&quot;</strong> is rejected.</em></p>
+<p><strong>Gaps targeted:</strong> B9-9 interferon, B9-6 histamine&#x27;s source, B9-2 natural killer cells and MHC class I, B9-8 the cytokine route, B9-7 memory cells differentiating into plasma cells.</p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> School Prelim P2, stem and all six marking points verbatim, cut from a longer key (a); the same paper&#x27;s Q9(b), stem and key verbatim, extended here to ask for the two vascular changes the two-mark version of this question wants (b).</p>
+<p><strong>(c)</strong> <strong>A pool of long-lived memory cells specific to that antigen already exists, so clonal selection and expansion begin from a much larger base with no naive-cell activation delay. The memory B cells differentiate into plasma cells, which then secrete antibody.</strong></p>
+<p><em>Gap note, and this is a named misconception in the corpus. At 0:29:29 you said <strong>&quot;memory cells produce IgG&quot;</strong>. <strong>Memory cells do not secrete antibody.</strong> They are long-lived and functionally inactive until re-stimulated, and they <strong>must differentiate into plasma cells first</strong>. You corrected it yourself at 0:29:51, which is why this is one mark. The comparison also has to be comparative: &quot;rapid&quot; alone is rejected, and &quot;secondary response&quot; without <strong>&quot;the same antigen&quot;</strong> is rejected.</em></p>
+<p><strong>Gaps targeted:</strong> B9-9 interferon, B9-6 histamine&#x27;s source, B9-2 natural killer cells and MHC class I, B9-8 the cytokine route, B9-7 memory cells differentiating into plasma cells.</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div><div class="card" id="q8"><h3>Question 8 <span class="marks">[4 marks]</span></h3><div class="qpart" data-part="stem"></div>
+<div class="qpart" data-part="a"><p><strong>(a)</strong> The basic reproduction number, R₀, of a disease depends on a number of factors. Which conditions are expected to lead to an increase in the R₀ number of viral dengue disease? <span class="marks">[1]</span></p>
+<div class="mcq"><div class="opt"><span class="optl">A</span><span class="optb">migration of people from where the disease is frequent to an area that the disease does <strong>not</strong> occur</span></div><div class="opt"><span class="optl">B</span><span class="optb">increased travel between countries in which viral dengue disease is well established</span></div><div class="opt"><span class="optl">C</span><span class="optb">increased rainfall in an area where the disease is always present but occurs at a low frequency</span></div><div class="opt"><span class="optl">D</span><span class="optb">an increase in the incidence of the disease in a population where outbreaks of the disease are frequent</span></div></div></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (a)</span><div class="answer-content"><p><strong>The answer is C.</strong></p>
+<p><strong>R₀ is the mean number of secondary cases produced by one infected individual introduced into a wholly susceptible population</strong>, so it rises when transmission becomes easier. Dengue is transmitted by the <em>Aedes</em> mosquito <strong>vector</strong>, and <strong>increased rainfall leaves more standing water for the mosquitoes to breed in, so vector numbers rise and each infected person infects more people.</strong></p>
+<p><strong>A is wrong</strong>, the new area has <strong>no established vector population</strong>, so infected arrivals produce few or no secondary cases.</p>
+<p><strong>B is wrong</strong>, in countries where the disease is <strong>already well established the population has already been exposed</strong>, so extra travel between them does not raise R₀.</p>
+<p><strong>D is wrong</strong>, in a population with frequent outbreaks <strong>a large proportion is already immune</strong>, which lowers the number of susceptible contacts and so <strong>lowers</strong> the effective reproduction number. <strong>Incidence is not the same quantity as transmissibility.</strong></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (a)</button></div></div>
+<div class="qpart" data-part="b"><p><strong>(b)</strong> Explain the meaning of the basic reproduction number, R₀, as an indicator of the transmissibility of an infectious agent. <span class="marks">[1]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (b)</span><div class="answer-content"><p><strong>R₀ is the mean number of secondary cases produced by one infected individual introduced into a wholly susceptible population.</strong></p>
+<p><strong>The higher the R₀, the more transmissible or contagious the infectious agent, because each primary case generates more new cases.</strong></p>
+<p><em>Gap note. From 1:02:25 you circled this three times and landed on fragments each time. Three parts of it carry the meaning: it is a <strong>mean</strong>, not a fixed count; it counts <strong>secondary cases from one primary case</strong>; and it assumes <strong>everybody else is susceptible</strong>, which is what makes R₀ a property of the pathogen rather than of the outbreak.</em></p>
+<p><em>The three regimes, which you did have: <strong>R₀ &gt; 1</strong> case numbers grow and the outbreak spreads; <strong>R₀ = 1</strong> numbers stay steady and the disease is <strong>endemic</strong>; <strong>R₀ &lt; 1</strong> case numbers fall and the outbreak dies out. You asked &quot;what&#x27;s endemic?&quot; at 1:03:40, that is it, constantly present at a stable level.</em></p>
+<p><em>And the four terms scaled by extent, which your notes do not teach: <strong>outbreak</strong>, a sudden rise above what is expected in a limited area; <strong>epidemic</strong>, a rapid rise across a region or country; <strong>pandemic</strong>, an epidemic across multiple countries or continents, with influenza as the syllabus&#x27;s own named example.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (b)</button></div></div>
+<div class="qpart" data-part="c"><p><strong>(c)</strong> The proportion of a population that must be immune before the transmission cycle of a disease is broken is given by <strong>1 − 1/R₀</strong>. Measles has an R₀ of 15.0 and smallpox an R₀ of 5.0.</p>
+<p>Calculate the percentage of the population that must be immune to break the transmission cycle of measles and of smallpox. Show your working. <span class="marks">[2]</span></p></div>
+<div class="confidence">Confidence: <b>high</b> / <b>medium</b> / <b>guessed</b></div>
+<div class="block answer"><span class="label">Answer  -  part (c)</span><div class="answer-content"><p><strong>Measles: 1 − 1/15.0 = 1 − 0.0667 = 0.933, so 93.3%</strong> (accept 93%).</p>
+<p><strong>Smallpox: 1 − 1/5.0 = 1 − 0.200 = 0.800, so 80.0%</strong> (accept 80%).</p>
+<p><em>Gap note. At 1:04:08 you met <strong>1 − 1/R₀</strong> for the first time and said so. <strong>The syllabus lists &quot;the use of R₀ value&quot; under MATHEMATICAL REQUIREMENTS</strong>, beside Hardy-Weinberg and the statistical tests, so this is an instruction to <strong>compute with it</strong>, not only to explain it.</em></p>
+<p><em>Three more worth having ready because they make the relationship intuitive: <strong>at R₀ = 2, half the population must be immune; at R₀ = 4, three quarters; at R₀ = 10, ninety per cent.</strong> And the consequence: <strong>smallpox needed about 80% and was eradicated; measles needs about 93%</strong>, which is a far harder target to reach and hold, which is why it has not been.</em></p></div><div class="answer-overlay"><button class="reveal-btn">Show answer (c)</button></div></div>
+<div class="block reveal-archetype"><span class="label">Sources &amp; concepts</span><div class="answer-content"><p><strong>Source:</strong> 9477 Specimen P1 Q30, stem and all four options verbatim, with the letter and option audit inferred because the specimen ships without a mark scheme (a). Parts (b) and (c) are <strong>constructed</strong>: the Book 9 bank holds 901 real questions and Specimen P1 Q30 is the only R₀ record in all of them. The definition and transmissibility framing in (b) are the wording of LO (j) itself; the threshold formula in (c) is standard epidemiology and the Mathematical Requirements citation is the syllabus, page 25.</p>
+<p><strong>Gaps targeted:</strong> B9-12 the R₀ definition, B9-11 endemic and the epidemiological terms, B9-10 the herd immunity threshold.</p></div><div class="answer-overlay"><button class="reveal-btn">Show sources</button></div></div></div>
+<script>
+document.querySelectorAll('.answer-overlay').forEach(function(o){
+  o.addEventListener('click', function(){ o.classList.add('hidden'); });
+});
+document.getElementById('revealAll').addEventListener('click', function(){
+  document.querySelectorAll('.answer-overlay').forEach(function(o){ o.classList.add('hidden'); });
+});
+document.getElementById('hideAll').addEventListener('click', function(){
+  document.querySelectorAll('.answer-overlay').forEach(function(o){ o.classList.remove('hidden'); });
+});
+</script>
+</body></html>
