@@ -48,6 +48,32 @@ border:0;border-radius:5px;padding:5px 12px;cursor:pointer;margin-top:7px}
 button.rev:hover{background:#333}
 .ans{display:none;margin-top:9px;padding-top:9px;border-top:1px dashed var(--border)}
 .ans.on{display:block}
+
+/* ---- phone ---- */
+html,body{max-width:100%;overflow-x:hidden}
+mjx-container[display]{overflow-x:auto;overflow-y:hidden;max-width:100%;padding-bottom:2px}
+mjx-container{max-width:100%}
+@media (max-width:640px){
+  body{padding:16px 12px 60px;font-size:16px;line-height:1.55;-webkit-text-size-adjust:100%}
+  .hd h1{font-size:1.15em;letter-spacing:.2px}
+  .hd .sub{font-size:.88em}
+  .hd .meta{font-size:.68em}
+  h2{font-size:.97em;padding:7px 10px;margin:24px 0 10px}
+  .nav{font-size:.8em;padding:10px 12px}
+  .nav a{margin:0 10px 4px 0}
+  .sec>div:not(.secn){margin:0 10px}
+  .secn{padding:8px 11px;font-size:.9em}
+  .meth,.eg,.pr,.trap,.note,.key{padding:8px 10px;font-size:.9em}
+  table{font-size:.8em;display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap}
+  table th,table td{white-space:normal;min-width:88px;padding:5px 7px}
+  .q>div:not(.qh){margin:0 10px}
+  .qh{padding:8px 11px;font-size:.9em}
+  .part{padding:8px 10px}
+  .ans,.stem,.pq{font-size:.92em}
+  button.rev{padding:7px 14px;font-size:.82em}
+  .topbar{padding:8px 0}
+  .src,.srcline{font-size:.68em;white-space:normal}
+}
 @media print{body{background:#fff;padding:0;max-width:none;font-size:10.5pt}
 .nav,button.rev{display:none}.ans{display:block !important}.sec{page-break-inside:avoid}
 h2,.secn,.meth,.eg,.pr,.trap,.note,.key,th{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
